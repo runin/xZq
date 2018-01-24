@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <style>
+    .container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+<section class="container" id="container" ></section>
+
+<script src="./static/js/zepto.js"></script>
+<script>
+  $.ajax({
+    type: 'GET',
+    async: true,
+    url: 'http://nmportal.yibo.so/nportal/api/enterprise/info',
+    data: { eu: 'eced02b0b77e41cab055e0d3e6df3056',cb:"EnterpriseInfoCallback"},
+    dataType: "jsonp",
+    jsonpCallback: 'EnterpriseInfoCallback',
+    timeout: 10000,
+    complete: function() {},
+    success: function(data) {
+      if (data.code === 0) {
+        var img = new Image();
+        img.src = data.pt;
+        $('#container').css({
+          'background': "url(" + img.src + ") no-repeat center center",
+          'background-size': "cover"
+        });
+        $('title').text(data.tt);
+        setTimeout(function () {
+          window.location.href = 'next.html'
+        },3e3)
+      }else{
+        console.error('信息获取失败');
+        console.error(JSON.stringify(data));
+      }
+    },
+    error: function(xmlHttpRequest, error) {}
+  });
+</script>
+</body>
+</html>

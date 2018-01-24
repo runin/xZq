@@ -1,0 +1,617 @@
+/*
+ * reset以及core.js中基本样式
+ *
+ * @version v1.0
+ * @author bobchen
+ * 请勿修改此文件
+ */
+
+/*
+  HTML5 Reset :: style.css
+  ----------------------------------------------------------
+  We have learned much from/been inspired by/taken code where offered from:
+  
+  Eric Meyer          :: http://meyerweb.com
+  HTML5 Doctor        :: http://html5doctor.com
+  and the HTML5 Boilerplate :: http://html5boilerplate.com
+  
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+
+/* Handle box-sizing while better addressing child elements: 
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted. 
+  don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+input[type=file], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover 
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+
+/*
+  core.css
+  ----------------------------------------------------------
+  公共基础样式
+  
+-------------------------------------------------------------------------------*/
+
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 { 
+  font-family: 'Microsoft YaHei','宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  outline:none;
+  -webkit-appearance: none
+}
+body {
+  overflow: hidden;
+}
+a,a:focus {
+  outline: 0 none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.ellipsis {
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.noscroll {
+  overflow: hidden !important;
+}
+.none {
+  display: none !important;
+}
+.none {
+  display: none;
+}
+.hidden {
+  visibility: hidden !important;
+}
+.hide {
+  opacity: 0 !important;
+}
+.zlow {
+  z-index: -1 !important;
+}
+.main *{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.transparent{
+  opacity: 0;
+}
+
+/****清除浮动****/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/**
+ * 页面切换
+ */
+
+@-webkit-keyframes controlEnter{
+  0% {
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    opacity: 0.5
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1
+  }
+}
+
+@keyframes controlEnter{
+  0% {
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    opacity: 0.5
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes controlLeave{
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    opacity: 1
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    opacity: 0
+  }
+}
+
+@keyframes controlLeave{
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes tabEnter{
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+@keyframes tabEnter{
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes tabLeave{
+  0% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+@keyframes tabLeave{
+  0% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.detail-enter,.detail-leave{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 568px;
+}
+
+.tab-enter,.tab-leave{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1
+}
+
+.control-enter {
+  -webkit-animation: controlEnter .25s forwards;
+  animation: controlEnter .25s forwards
+}
+.control-leave {
+  -webkit-animation: controlLeave .25s forwards;
+  animation: controlLeave .25s forwards
+}
+
+.fade-enter {
+  -webkit-animation: tabEnter .15s forwards;
+  animation: tabEnter .15s forwards
+}
+.fade-leave {
+  -webkit-animation: tabLeave .15s forwards;
+  animation: tabLeave .15s forwards
+}
+
+/**
+ * END OF　页面切换
+ */
+
+/**
+ * 空提示
+ */
+.empty-tips{
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+  padding: 12px 0;
+}
+/**
+ * END OF 空提示
+ */
+
+
+.detail-transition{
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.detail-enter, .detail-leave {
+  -webkit-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+  opacity: 0;
+}
+
+
+.fadein-enter-active, .fadein-leave-active {
+  transition: opacity 1.2s
+}
+.fadein-enter, .fadein-leave-active {
+  opacity: 0
+}
+
+.bottom-enter-active, .bottom-leave-active {
+  transition: all 0.2s;
+}
+.bottom-enter, .bottom-leave-active {
+  -webkit-transform: translate(0, 100%);
+  transform: translate(0%, 100%);
+  opacity: 0;
+}
+
+
+body,html,#app{
+  background: rgba(241,245,248,1);
+}
+#app{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+/**
+ * 封面动画1
+ */
+@-webkit-keyframes finger-touch{
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(-11.5deg);
+    transform: rotate(-11.5deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(-11.5deg);
+    transform: rotate(-11.5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes flash{
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes cover-show{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes birds-fly{
+  0% {
+    transform: translate(0, 0) scale(1.8);
+  }
+  10%{
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-270%, -120%) scale(0.8);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flower5{
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-300%, 550%);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flower4{
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-500%, 900%);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flower3{
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-400%, 800%);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flower2{
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-250%, 500%);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flower1{
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-120%, 300%);
+    opacity: 0;
+  }
+}
+/**
+ * END OF 封面动画1
+ */
+
+/**
+ * 封面动画2
+ */
+@-webkit-keyframes light-show{
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flower-swing{
+  0% {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0);
+  }
+
+  50% {
+    -webkit-transform: rotate(10deg) translate(-2%, 0);
+    transform: rotate(10deg) translate(-2%, 0);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0);
+  }
+}
+@-webkit-keyframes leave-fade{
+  0% {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(40%, 940%) rotate(-60deg);
+    transform: translate(40%, 940%) rotate(-60deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes leave-drop{
+  0% {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0);
+  }
+  10%{
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-90%, 835%) rotate(4deg);
+    transform: translate(-90%, 835%) rotate(4deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes leave-shadow{
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+/**
+ * END OF 封面动画2
+ */
+
+
+

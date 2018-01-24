@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" http-equiv="content-type" content="text/html" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Pragram" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>新闻预览</title>
+    <style type="text/css">html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}.none{display:none !important;}</style>
+    <style type="text/css">.article-wrapper{overflow:hidden;}.content{margin-bottom:15px;padding:8px 12px}.content .tail{margin-bottom:15px;color:#FFF;font-size:12px}.content .tail .flag{padding:2px 8px;background:#5BAAF3}.content .tail .type1{background:#ff4c6a}.content .tail .num{position:relative;top:1px;color:#848484}.content .tail .num:before{position:relative;top:1px;display:inline-block;margin-right:4px;width:12px;height:13px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAABKBAMAAAAbAFTyAAAAA3NCSVQICAjb4U/gAAAAMFBMVEX///91dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXXGulhdAAAAEHRSTlMAESIzRFVmd4iZqrvM3e7/dpUBFQAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAKcSURBVEiJtVbNbtNAELYdk6SlVL2CgPbUW9O+ACRHLlV5AtoXQCl3BH2DAEJIgIR7RkhBQkJckKnEAamCIOAeQMANufy1tMT+mF2vHe/OOs0BvkPsmf28Ozu/cRwd555GX5+0nFHw7kEguTGC4wZQuF5OupBxkJwv49TF8uD+A/H4XUbq0uJNevri1E07ZzK3Rdh2YCfRyjv16veBazbOEbJnJhNOAr9spAawlQtuD8mchRQiLqgXgIfW034WRN963hSwUZQ7GHDSCuKZonwK4F4PsavJVYtRHvBBU7gRvpukqmGSMGrXJB0FlnRNE39M0jRiQ3MMiUlqYt/QTLC9nTazgKxcM1Qdzd8CPrsKJZx5YY8nXogd00zuzbFIPbw3SRGe/bfjgnFuN5afVrFnaGo86xZZNVKtzhmqaRZzrhHftXRNk1d6ldV1wDPTteT4N5NEaaBfr2brPk0kWt2d5okpK0EzKuB14DgVvfipNfzgJPq02Gwa9i5Gxf8mF7y+0RoUKKDDBrUAFnCJi9RXP2cWRfTFGucsyyb/KL1EKN7jlsk5rkbBYzpxPkzf9w2rKtST8UIOjO1XciL06OetTlol1XPnTD5b4iVfsLSso0DhCz2vZPNnnfKCjNfC2aExIQxwL0vO4JJQnoCW5WI8qQvP3325fUu5q60NK5I+cac4flToPuTrhKcF4WzB7xTMjzaO40XDoIclG8mtVKnXSsaWI7NqLz9to4REvlHndW2jRmFKlUPFnqgpssXJknGbIkjreNE+SBUaadvosFlQxER6qz4fWQVQv3stY2KZyEOEIjJ1PkI0tEUmkCdsBZZjVnhxdoQrBeQmK+X/giTqogVeLY1uCorxOkXu4PYo3BHRw+HY+Yek7uGkzb9yVnC5RAffQAAAAABJRU5ErkJggg==) no-repeat;background-size:100% 100%;content:''}.content .title{margin-bottom:10px;color:#004CA4;font-size:19px;line-height:1.5;word-break:break-word}.content .info{margin-bottom:10px;color:#444;font-size:12px}.content .info .tvname{margin-right:8px}.content .detail{color:#888;font-size:15px;line-height:1.4;word-break:break-all;}.content .detail img{width:100%;height:auto}.video-wrapper{display:block;margin:20px auto;width:100%}.video-wrapper video{display:block;width:100%;height:100%}</style>
+</head>
+<body>
+    <div class="article-wrapper">
+        <div class="content">
+            <p class="tail">
+                <span class="flag none"></span>
+                <span class="num">0</span>
+            </p>
+            <h1 class="title"></h1>
+            <p class="info">
+                <span class="tvname"></span>
+                <span class="time"></span>
+            </p>
+            <div class="detail" v-html="detail"></div>
+            <div class="video-wrapper"></div>
+        </div>
+    </div>
+</body>
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+    var getQueryString = function( name, url ) {
+        if (!url) url = location.href;
+        var target = url.split('?');
+        if (url.indexOf('?') >= 0) {
+            var temp = '';
+            for(var i = 1; i < target.length; i++) {
+                if (i == 1) {
+                    temp = target[i];
+                } else {
+                    temp = temp + '&' + target[i];
+                }
+            };
+            var currentSearch = decodeURIComponent(temp);
+            if (currentSearch != '') {
+                var paras = currentSearch.split('&');
+                for ( var i = 0, l = paras.length, items; i < l; i++ ) {
+                    var ori = paras[i];
+                    if (paras[i].indexOf('#') >= 0) {
+                        paras[i] = paras[i].split('#')[0];
+                    }
+                    items = paras[i].split('=');
+                    if ( items[0] === name) return items[1];
+                };
+                return '';
+            } else {
+                return '';
+            }
+        } else {
+            return '';
+        }
+    };
+
+    $.ajax({
+        type: 'GET',
+        async: true,
+        // url: 'http://test.holdfun.cn/nportal/api/article/preview',
+        url: 'http://nmportal.yibo.so/nportal/api/article/preview',
+        data: {
+            au : getQueryString('au'),
+            cb : 'previewCallback'
+        },
+        dataType: 'jsonp',
+        jsonpCallback: 'previewCallback',
+        complete: function() {
+        },
+        success: function(data) {
+            if (data && data.code == 0) {
+                if (data.pn) $('.num').text(data.pn);
+                if (data.tt) $('.title').text(data.tt);
+                if (data.an) $('.tvname').text(data.an);
+                if (data.ht) $('.time').text(data.ht);
+                if (data.dl) $('.detail').html(data.dl);
+                if (data.vu) $('.video-wrapper').html('<video x-webkit-airplay="true" poster="' + data.pt + '" webkit-playsinline="yes" id="video" class="video" controls preload="auto"><source src="' + data.vu + '" type="video/mp4" /></video>');
+                if (data.tc == 3) {
+                    $('.flag').removeClass('none').addClass('type0').html('视频');
+                } else if (data.tc == 4) {
+                    $('.flag').removeClass('none').addClass('type1').html('直播');
+                }
+            }
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title></title>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        html,body,video {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #video {
+            width: 100%;
+            height: 230px;
+        }
+        .vbox {
+            position: relative;
+            width: 100%;
+        }
+        .vbox .btn-play {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ4AAACeCAMAAAD0W0NJAAAAmVBMVEVHcEz///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8JA+lgAAAAMnRSTlMA+6UcAsuM4e8FDfj0iNJJOQlwELrr25EpdFX9reckoDBGabMYlcPkWnk/gqgVQteaYmOq/pIAAAboSURBVHhe7Z3Zeuo6DIUXZCAOSQgEChDKPLfQ1u//cOcG7GKzKY5t8MX5r/a3O+lLLHlZkgX0IYPWIp0ug7coSihNougtWE7TRWtA8GLap309q9F/UMvq+1P7Vaa1+kGN/kkt6LeebqLX6TbpwzS7HQ9P49jZlFSRctM54gn4rXGNVqI2bvmwSzxsUA0awxj28MKIahKFHuyw6t/xhm3QrX+n6cdHmn7Xu8H2jp/0VzBPESa3/1ow7cwnBAJkMu9Mg+btHwkLmMVf9KhMshzmBADg4yYkHy4TKtNb+DBIHlCJt/BE8ADkFL5RiSCHKeJ+KblgOoMCs1Ry+LIfwwjzhkIAUwiXjTn0affF0JB6qISXimGp34Ymg4xe8d6JUZm4806vyAbQYpRce9ywDS3aw+sIkIxQHRKaj1dFeB0MQ4KKxF36m+UERpgs6W+6MSrhZVeLbgRjjK6WYOahArOrfXNawCDF9Gq/nkGZPKKcaATDjCLK6eVQ5JBQzsaDcbwN5UQHDetCAguQPuUkh6pvtrmDJXZNyohyBa+IhHVhibxHGdHD/uFtKeNtAotM3iij4eEhiowyshWssvr9two8gN+ljKCAZYqAMro+/iZ8pnVAHFBGH38yoozsCKvIa2mHPxgk3CuOeApH7h/JAHchGY8oEzyJCY8vGcE9eCRPcjyNPHls+c2FZfAsdpQxv+NFDQUnMgp/a434gW/aEDwVsvn7weQl2wA9PBmPbfNljpv43GtHeDo83mY+brHgyh0vgOv7BWRQsOjzXuAFFO8s4haQCYVX+8LXG0LCY9J1iRexZALdg8iafW2CFzFhT2j974cX4mWE4uOTv9KL8TLi3j+eUcGi4hAvZMj2heL2/7+38ULa7zefks+0QAfqtGGMDlMGPjgt9lBj5YTnJqG1LPVghJgtshY4Y3omhRqtnuFSSkrPjMFYXZLmtRWUWFBO78eHBndM6XCTlTiV9DfBAfqMZS/Y8BeuApGqPZ8eNOFusMEZr+TuosKISjQ/dN2YBxFPfLepskKTaeygRyq+XZZUmUGJgN4kmEGHGUu5nKPqRQ28QY3L0vsSaj3ldAUJ9V/bjNlirKRVLqukHn8IdeVkTwy83db18fFU1TxgMharvSNU5XR9pLwc0BJS3TzgkNFrugNUg1w2tgwAipKJeB3zQMR6fm191BP1ZfE7rzLUMw8oQqGiHC2IluqbA9jTM7muecCgS6/5akGdnJ7ZA/i8+DHRNw9oiRvdeAJVyCUOfAL4ukRTmDAPZBiJXSsxUC3efwHksl6mZswDjt+lUOD/8avtljWCgSRgdM0DZhutrhUuAgZ8z2iZMw8Yic0ldRWpNec2LZilJs1De59Ullr8jS74DkeMmgd4dUEoPC61yGXxpmwZbqFh3oOdV5sZHmPL3HXJ4opx8+D/CFKrNlSLLF3+LwvmAXEqSK09/oQL5DJg4q9uxTxZah3wAHUmkC+Pf23JPOB03pcUFtH6EtARMalsxTxZas0UEn0REubD1swDijWXWh0FPZ+AnvmwYx6XWirlsA965lnmFWHJFrmCec95uf4PX317lZf7DNfAIVCLLNw1LAcWefNt+CqBxXpYbgtH9J1SWLa8qWEnCL+6yqZGA6uSADNRs0yJiiQouzYF1WoqHjp2qoLKnhwlsl6OleWoLTGPkXTg9SqIeTtHITldEBwqHYWsHCSP65rW/Qx+kLRwDCeLSJDwYVH1GG48iYH5l5To00hiYGw0BSSnSVvVU0Bjwwm0WOjXp9GQ6CTQTKYf5XNj+X3USz+aSd4qnLoVk7c89V1qpL65bOI0Rtqpb2OFg/Zeqmy0zRQO+L6RVjZvJ+fLjJVdYla0qmjeRs42mila6ZX8MsqRc7X6JT+dginP6UuyyXDB1KPVys0/VGY8MVdu1izWxz0qkB0MFuu1Wx1+RNlETLY66DeKrCmn1i8MN4rot9nsa1w2mW+z0W9SGnxHlNLmcm6nSUm/xcufzAbEYouXfoOcb6FBzun2wqRwujmz73hrq9uNwY63VbvdlO54S7/bFyIcv07i9mUcp68yrZ2+CLaN3b5G5/YlRLevcLZdvwB7n5F4WfuZ169HDl2+5tapaDnyuqvrxO2L/y6PTdh6bg+dcHtkh9sDT1weF5McXB62E+Vujypyf9CTOsVzxmQVLg0Zi6UhYy6PaNu5PeDO8fGA+sy3JoYrzqXhiltT+ei1jdGU69jhwZ5ZDoOQ22NRx8P8rokkH47ZgjNbP5KHItoaKmt/JG8pjuQt7Y/kdX+gsfvjoN0fpi2PIqfKbDrH/we5X43Bz0r6J2XWb8V4DcV8/3nvQwQ+9/NCv2Cp/xEMofgRDKGZj2D4D6hM4xhM680hAAAAAElFTkSuQmCC) no-repeat;
+            background-size: 100% 100%;
+            z-index: 666;
+            left: 50%;
+            top: 50%;
+            margin-left: -40px;
+            margin-top: -40px;
+        }
+    </style>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <script type="text/javascript">
+    </script>
+</head>
+<body>
+<script type="text/javascript">
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+        var getQueryString = function( name, url ) {
+            if (!url) url = location.href;
+            var target = url.split('?');
+            if (url.indexOf('?') >= 0) {
+                var temp = '';
+                for(var i = 1; i < target.length; i++) {
+                    if (i == 1) {
+                        temp = target[i];
+                    } else {
+                        temp = temp + '&' + target[i];
+                    }
+                };
+                var currentSearch = decodeURIComponent(temp);
+                if (currentSearch != '') {
+                    var paras = currentSearch.split('&');
+                    for ( var i = 0, l = paras.length, items; i < l; i++ ) {
+                        var ori = paras[i];
+                        if (paras[i].indexOf('#') >= 0) {
+                            paras[i] = paras[i].split('#')[0];
+                        }
+                        items = paras[i].split('=');
+                        if ( items[0] === name) return items[1];
+                    };
+                    return '';
+                } else {
+                    return '';
+                }
+            } else {
+                return '';
+            }
+        };
+        
+        var video = null;
+        var videoPlay = false;
+        var videoState = 0;
+
+        var coverVideo = getQueryString('cvi');
+        var mainVideo = getQueryString('mvi');
+        var poster = getQueryString('cover');
+
+        function create(video) {
+            $('.vbox').remove();
+            $('body').append('<div class="vbox"><video id="video" width="100%" height="230px" src="' + video + '" preload="auto"  webkit-playsinline playsinline x5-video-player-type="h5" poster="' + poster + '"></video><a class="btn-play"></a></div>');
+        };
+
+        function play() {
+            video = document.getElementById("video");
+            video.currentTime = 0;
+            video.play();
+            setTimeout(function(){
+                document.body.style.backgroundColor = "#000";
+                video.style.backgroundColor = "#000";
+            }, 1000);
+            $('.btn-play').hide();
+            videoPlay = true;
+
+        
+            video.addEventListener("ended",function(){
+                if (videoState == 0) {
+                    videoState = 1;
+                } else {
+                    videoState = 2;
+                }
+
+                if (videoState == 1) {
+                    create(mainVideo);
+                    // play();
+                } else {
+                    pause();
+                }
+            }, false);
+        };
+
+        function pause() {
+            video = document.getElementById("video");
+            video.pause();
+            $('.btn-play').show();
+            videoPlay = false;
+        };
+
+        $('body').delegate('.btn-play', 'click', function(){
+            video = document.getElementById("video");
+            if (videoPlay) {
+                pause();
+            } else {
+                play();
+            }
+        }).delegate('#video', 'click', function(){
+            video = document.getElementById("video");
+            if (videoPlay) {
+                pause();
+            } else {
+                play();
+            }
+        });
+
+        if (coverVideo) {
+            videoState = 0;
+            create(coverVideo);
+        } else {
+            videoState = 1;
+            create(mainVideo);
+        }
+</script>
+</body>
+</html>
