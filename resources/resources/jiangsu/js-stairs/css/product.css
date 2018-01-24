@@ -1,0 +1,54 @@
+body{
+	width: 100%;
+	height: 93%;
+	background: url(../images/bg-q.jpg) center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.logo{
+	position: absolute;
+	width: 13%;
+	top: 10px;
+	left: 10px;
+}
+.title{
+	width: 60%;
+	margin: 20% auto 5%;
+}
+.list{
+
+}
+.list .item{
+
+}
+.list .item img{
+	width: 80%;
+	margin: 5% auto;
+	border: 2px solid #952321;
+	border-radius: 5%;
+}
+.list .item p{
+	display: block;
+	width: 80%;
+	text-align: center;
+	margin: 5px auto;
+	color: #952321;
+	font-size: 18px;
+	word-break: break-all;
+}
+.list .item .btn-exchange{
+	display: block;
+	width: 30%;
+	background: url(../images/btn-exchange.png) 0 0 no-repeat;
+	background-size: 100%;
+	height: 35px;
+	margin: 5% auto;
+}
+.null{
+	background: url(../images/btn-null.png) 0 0 no-repeat!important;
+	background-size: 100%!important;
+}
+.already{
+	background: url(../images/btn-already.png) 0 0 no-repeat!important;
+	background-size: 100%!important;
+}

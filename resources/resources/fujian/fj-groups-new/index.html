@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>帮帮团</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body id="main">
+	<header>
+		<a href="#" class="rule btn-rule" id="btn-rule" data-collect="true" data-collect-flag="fj-group-index-rule" data-collect-desc="首页-活动规则按钮">活动规则</a>
+		<a href="#" class="rule btn-rule none" style="top:35px;" id="btn-reserve" data-collect="true" data-collect-flag="fj-group-index-appointment" data-collect-desc="首页-节目预约按钮">节目预约</a>
+	</header>
+
+	<section class="main">
+		<img class="logo" src="images/logo.png" />
+		<p><span class="time-tips"></span><span class="detail-countdown none"></span></p>
+		<a href="support.html" data-collect="true"
+			data-collect-flag="fj-group-index_support-btn"
+			data-collect-desc="帮帮团首页进入投票页面" class="btn" id="btn-begin">话题投票</a>
+		<a href="baoliao.html" data-collect="true"
+			data-collect-flag="fj-group-index_baoliao-btn"
+			data-collect-desc="帮帮团首页进入爆料页面" class="btn" id="btn-begin">新闻曝料</a>
+	</section>
+	<div class="follow-box">
+		<div class="copyright" style="color: #710a00;"></div>
+		<div id="div_subscribe_area" class="div_subscribe_area_class"></div>
+	</div>
+
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script>
+
+</body>
+</html>

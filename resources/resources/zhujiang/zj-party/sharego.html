@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>2016广东春晚</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/sharego.css">
+</head>
+<body>
+<header>
+    <img class="dn" src="images/dn.png" />
+</header>
+
+<section class="not-chai ">
+    <div class="cy">
+        <h2>活动参与方式</h2>
+        <p>收看广东珠江频道春晚，打开微信，点击右上角进入“扫一扫”，扫描屏幕下方二维码即可参与春晚互动，丰厚大奖等你来哦！</p>
+    </div>
+    <div class="cy-bottom">
+        <a href="#" class="btn btn-cy" id="btn-cy" data-collect="true"
+           data-collect-flag="zj-party-sharego-cy" data-collect-desc="马上参与">马上参与</a>
+        <a href="#" class="btn btn-cy" id="btn-see" data-collect="true"
+           data-collect-flag="zj-party-sharego-see" data-collect-desc="查看贺卡">查看贺卡</a>
+    </div>
+</section>
+
+<section class="check none">
+    <div class="start">
+        <label id="mx-img"><img src=""></label>
+        <p class="triangle-right" data-collect="true"
+           data-collect-flag="zj-party-sharego-audio" data-collect-desc="播放语音">
+            <audio preload="auto" class="audio none" src="" id="music"></audio>
+            <span class="duri"></span><i></i>
+        </p>
+    </div>
+    <div class="start zfy">
+        <label id="self-img"><img src="images/avatar.png"></label>
+        <div class="gx" id="mywish" disabled></div><i></i>
+    </div>
+    <a href="javascript:void(0);" class="check-bottom zk" data-collect="true"
+       data-collect-flag="zj-party-sharego-check" data-collect-desc="我也要发按钮">
+        <img id="btn-pn" src="images/wf.png">
+    </a>
+</section>
+<footer><img src="images/sharebg-bottom.png"></footer>
+
+<div class="none">
+    <img src="images/check.jpg" />
+    <img src="images/not-chai.jpg" />
+</div>
+<script src="js/config.js"></script>
+
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.selector.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/touch.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+<script src="js/data.js"></script>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/wx_api_userinfo_share.js"></script>
+
+<script src="js/app/sharego.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

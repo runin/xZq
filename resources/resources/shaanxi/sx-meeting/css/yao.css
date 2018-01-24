@@ -1,0 +1,518 @@
+body{
+	background-color: #fff;
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+
+}
+.hidden{
+	visibility: hidden!important;
+}
+.yao-tlt{
+	margin: 10px 20px 0;
+	width: 28%;
+	display: block;
+	position: relative;
+}
+.spon{
+	padding: 13% 30% 0;
+}
+.marquee{
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	background: #382b0a;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.marqueebox {
+	color: #fff;
+	font-size: 13px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 86%;
+}
+.marqueebox::before{
+	content: "";
+	width: 12%;
+	height: 34px;
+	position: absolute;
+	top: 0px;
+	left: -14%;
+	background: url(../images/icon-laba.png) no-repeat center;
+	background-size: 70%;
+}
+.marquee ul{
+	width: 100%;
+	overflow:hidden;
+	zoom:1;
+	text-align: center;
+	height: 34px;
+}
+.marquee ul li{
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+	text-align:center;
+	padding: 0 10px;
+	list-style-type: circle;
+
+}
+.marquee ul li span{
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	padding-left: 20px;
+	position: relative;
+}
+.marquee ul li span::before{
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 100%;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -3px;
+}
+.marquee ul li ::after{
+	content: ""
+	width:0;
+	height: 0;
+	clear: both;
+}
+.main-top .content-box{
+	top: 40px;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+header {
+	writing-mode: lr-tb;
+	writing-mode: tb-rl;
+	width: 20px;
+	letter-spacing: 1em;
+	display: inline-block;
+	word-break: break-all;
+	font-size: 12px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	float: right;
+}
+header div.ctrls a#btn-reserve {
+	border-top: none;
+	display: block;
+}
+.red{
+	position: absolute;
+	width: 86%;
+	margin-top: auto;
+	z-index: 500;
+}
+.countdown{
+	color: #bb9613;
+	font-size: 13px;
+	margin-top: 20px;
+}
+.countdown .countdown-tip{
+	line-height: 30px;
+}
+.countdown .detail-countdown{
+	color: #fff;
+}
+.countdown .detail-countdown label{
+	display: inline-block;
+	padding: 6px 8px;
+	background: url(../images/icon-num-bg.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 0 1px;
+	font-size: 14px;
+}
+/*yao-s*/
+.home-box {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0;
+	background: url(../images/y-bg.jpg) no-repeat center;
+	background-size: cover;
+	text-align: center;
+}
+
+.yao-box{
+	width: 56%;
+	margin: 0 auto;
+	background: url(../images/yao-bg.png) no-repeat left;
+	background-size: 100%;
+	padding:15%;
+	margin-top: 13%;
+}
+.yao-text{
+	width: 100%;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	position: absolute;
+	top: 28%;
+	color: #fed956;
+
+}
+.yao-text p{
+	position:relative;
+	min-height: 30px;
+	color: #fed956;
+	opacity:0;
+}
+.yao-text p.texta span{
+	color: white;
+	font-weight: bold;
+	font-size: 17px;
+}
+.yao-text p:last-child span{
+	position:relative;
+	width:100%;
+}
+.yaonone-text{
+	animation-name:textshow;
+	-webkit-animation-name:textshow;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-duration:0.5s;
+	-webkit-animation-duration:0.5s;
+	animation-delay:0.1s;
+	-webkit-animation-delay:0.1s;
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	display: block;
+}
+#test{
+	/*visibility: hidden;*/
+}
+
+@keyframes textshow{
+	0%{
+		top:-100px;
+		opacity:0;
+	}
+	100%{
+		top:0;
+		opacity:1.0;
+	}
+}
+@-webkit-keyframes textshow{
+	0%{
+		top:-100px;
+		opacity:0;
+	}
+	100%{
+		top:0;
+		opacity:1.0;
+	}
+}
+@-webkit-keyframes shake {
+	0%, 100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+}
+
+@keyframes shake {
+	0%, 100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+}
+.shake {
+	-webkit-animation-name: shake;
+	animation-name: shake;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.btn-back {
+	display: block;
+	width: 30%;
+	margin: 6px auto 0;
+	text-align: center;
+	position: absolute;
+	bottom: 54px;
+	left: 35%;
+}
+.btn-back img{
+	display: block;
+	width: 100%;
+	
+}
+.btn-rule img{
+	display: block;
+}
+
+.ddtj{
+	position: absolute;
+	right: 10px;
+	top: 44px;
+	width: 100%;
+	text-align: right;
+}
+.ddtj .ddtj-box{
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+}
+.ddtj .ddtj-text{
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 4px;
+    text-decoration: underline;
+    margin: 0;
+}
+.ddtj .ddtj-before{
+	height: 26px;
+    width: 20px;
+    background: url(../images/redenve.png)  no-repeat center;
+    background-size: 20px;
+    display: inline-block;
+    float: left;
+}
+.ddtj .ddtj-box::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+@-webkit-keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}
+.count{
+	display: block;
+	text-align: left;
+	padding-left: 16px;
+	color: #fff;
+	font-size: 13px;
+	position: absolute;
+	top: 40px;
+}
+.copyright{
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	line-height: 13px;
+	height: 26px;
+}
+@-webkit-keyframes yao{
+    0%{
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateX(0deg);
+    }
+  	25% {
+        -webkit-transform: rotateZ(20deg);
+        transform: rotateZ(20deg);
+    }
+    50% {
+        -webkit-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg);
+    }
+    75% {
+        -webkit-transform: rotateZ(20deg);
+        transform: rotateZ(20deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes yao{
+      0%{
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateX(0deg);
+    }
+  	25% {
+        -webkit-transform: rotateZ(20deg);
+        transform: rotateZ(20deg);
+    }
+    50% {
+        -webkit-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg);
+    }
+    75% {
+        -webkit-transform: rotateZ(20deg);
+        transform: rotateZ(20deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+}
+.yao{
+	-webkit-transform-origin: center bottom;
+	transform-origin: center bottom;
+    -webkit-animation-name: yao;
+    animation-name: yao;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: 1;
+ 	animation-iteration-count: 1;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait){
+
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	
+}
+@media screen and (device-width : 360px) {
+.spon {
+    padding: 13% 34% 0;
+}
+
+}

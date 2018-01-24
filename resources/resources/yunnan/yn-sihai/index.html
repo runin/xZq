@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>纵横四海</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+	<section class="load-box">
+		<div class="gear-box"></div>
+		<span class='load-percent'>好故事即将开始...</span>
+		<div class="load-tips">
+			<img src="./images/load-tips.png">
+		</div>
+	</section>
+	<header class="none">
+		<div class="ctrls">
+			<a href="#" class="btn-rule" id="btn-rule" data-collect="true" data-collect-flag="index-rule" data-collect-desc="首页-活动规则按钮">
+				<img src="./images/index-rule.png">
+			</a>
+			<a href="#" class="none" id="btn-reserve" data-collect="true" data-collect-flag="index-yuyue" data-collect-desc="首页-预约本剧按钮">
+				<img src="./images/index-reserve.png">
+			</a>
+		</div>
+		<i class="tvlogo"></i>
+	</header>
+	<section class="content none">
+		<div class="join-box">
+			<a href="#" class="btn-join" id="btn-join" data-collect="true" data-collect-flag="index-joinnow" data-collect-desc="首页-进入互动按钮"><img src="images/index-join.png"></a>
+		</div>
+		<p class="copyright"></p>
+		<div id="div_subscribe_area" class="div_subscribe_area_class"></div>
+	</section>
+	
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script>
+	<img src="./images/award-bg.png" class="preload">
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

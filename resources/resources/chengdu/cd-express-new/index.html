@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>深夜快递</title>
+	
+	<link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+
+</head>
+<body>
+	
+	<div class="main" id="main">
+        <section id="index" class="none">
+            <div class="home-top">
+                <a href="javascript:toUrl('index.html');"><img src="images/logo.png" /></a>
+            </div>
+            <img id="logo" class="logo" src="images/home-logo.png" />
+            <h1 class="online">在线人数：<span id="user-count">0</span></h1>
+            <!--开始抽奖-->
+            <a id="lottery" class="btn btn-begin" data-collect="true"
+               data-collect-flag="cd-express-lottery-btn"
+               data-collect-desc="开始抽奖" >开始</a>
+
+            <!--活动未开始-->
+            <div id="lottery-time" class="not-started">
+                <span class="count-des"></span>
+                <span id="detail-countdown" class="detail-countdown"></span>
+            </div>
+
+            <!--首页-->
+            <a id="activity" class="btn vote canyu zhufu" data-collect="true"
+               data-collect-flag="cd-express-go-btn"
+               data-collect-desc="进入互动" >实时话题评论</a>
+
+            <label class="rule btn-rule" data-collect="true"
+                   data-collect-flag="cd-express-rule-btn"
+                   data-collect-desc="活动规则按钮" >活动规则</label>
+
+            <footer>
+                <p class="copyright">页面由成都电视台提供 Powered by holdfun.cn</p>
+                <div id="div_subscribe_area" class="div_subscribe_area_class"> </div>
+            </footer>
+        </section>
+
+        <section id="from" class="from none">
+            <img class="from-logo" src="images/home-logo.png" />
+            <ul>
+                <li><i>每晚21点锁定成都二套《深夜快递》</i></li>
+                <li><i>打开微信，进入摇一摇(电视)</i></li>
+                <li><i>对着电视摇一摇</i></li>
+                <li><i>参与话题互动还有机会摇大奖</i></li>
+            </ul>
+            <a id="try" class="btn" data-collect="true"
+               data-collect-flag="cd-express-go-try"
+               data-collect-desc="进入互动" >现在就去试试</a>
+            <footer>
+                <p class="copyright">页面由成都电视台提供 Powered by holdfun.cn</p>
+            </footer>
+        </section>
+
+	</div>
+	
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="js/app/dialog.js"></script>
+    <script src="js/app/index.js"></script>
+</body>
+</html>

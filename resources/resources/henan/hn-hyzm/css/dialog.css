@@ -1,0 +1,271 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+  z-index: 100;
+  overflow: hidden;
+}
+.modal .btn-close {
+	position: absolute;
+    background:#a97742 url(../images/close-icon.png) center no-repeat;
+	background-size:40% auto;
+    display: block;
+    width: 35px;
+    height: 35px;
+    z-index: 10000;
+    top:0px;
+    right:0px;
+    border-radius: 100%;
+}
+.dialog {
+  position: absolute;
+  color: #D6305A;
+  border-radius: 6px;
+  z-index: 1000;
+  overflow: hidden;
+}
+.dialog-assist{
+	width: 100%;
+	height: 100%;
+	padding: 4%;
+	border-radius: 6px;
+}
+
+.thank-dialog,.rule-dialog {
+	position: absolute;
+	color:#fff;
+	width: 80%;
+	height: 66%;
+	left: 10%;
+	top:17%;
+	padding: 2%;
+}
+.rule-dialog .dialog-assist{
+	background:url(../images/dia-bg.jpg) top center no-repeat;
+	background-size:100% 100%;
+	padding: 8% 2%;
+}
+.rule-dialog h1 {
+	color:#ffee99;
+	height:36px;
+	line-height:34px;
+	text-align:center;
+	font-size:17px;
+	font-weight:bolder;
+	width: 50%;
+	letter-spacing: 2px;
+	border: 1px solid #ffee99;
+	margin: 0 auto 4%;
+}
+.rule-dialog .content {
+	position:static;
+	margin:0 auto;
+	width:88%;
+	height: calc(100% - 50px);
+	height: -webkit-calc(100% - 50px);
+	max-height:86%;
+	overflow: hidden;
+}
+.rule-dialog .rule {
+	height: 100%;
+	font-size:14px;
+	line-height:24px;
+	overflow-y:auto;
+	color:#FFF;
+}
+.rule-dialog p {
+	line-height:16px;
+}
+.rule-dialog .btn-close{
+	background-color: #b3000d;
+	border-radius: 50%;
+	right: 2px;
+}
+
+@keyframes closeRotato
+{
+  0%
+  {   transform-origin:center center;
+      transform:rotateZ(0deg);
+  }
+  100%
+  {   transform-origin:center center;
+      transform:rotateZ(360deg);
+  }
+}
+@-webkit-keyframes closeRotato
+{
+  0%
+  {   -webkit-transform-origin:center center;
+      -webkit-transform:rotateZ(0deg);
+  }
+  100%
+  {   -webkit-transform-origin:center center;
+      -webkit-transform:rotateZ(360deg);
+  }
+}
+.lottery-good{
+	width: 100%;
+	height: 100%;
+	padding:6%;
+	overflow:hidden;
+	text-align: center;
+	background:url(../images/lottery-bg.jpg) top center no-repeat;
+	background-size:100% 100%;
+	border-radius: 10px;
+}
+.lottery-assit{
+	height: 100%;
+	overflow-y:auto ;
+	
+}
+.lottery-good  .contact h4{
+	font-size: 10px;
+	text-align: left;
+	color: #8d4200;
+}
+
+
+.lottery-good .award-img {
+  width: 100%;
+  text-align: center;
+
+}
+.lottery-card .award-img {
+	  padding: 16% 0 22%;
+}
+.lottery-dialog .award-img img {
+   display: block;
+}
+.lottery-dialog .contact {
+  position: relative;
+  padding: 10px 0;
+  z-index: 9999;
+  text-align: center;
+}
+
+
+#lottery-dialog .contact p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    border-radius: 6px;
+    margin: 4px auto;
+    text-align: left;
+}
+
+#lottery-dialog .contact input {
+    height: 36px;
+    padding: 2px 10px;
+    width: 100%;
+    color: #cc7800;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background:#fff;
+    background-size: 100% 100%;
+    font-size: 14px;
+}
+.lottery-good .btn{
+	display: inline-block;
+	letter-spacing: 6px;
+	font-size: 14px;
+	margin: 0 auto;
+	border-radius: 20px;
+	color: #fff;
+	background: #a97742;
+	text-align: center;
+	width: 120px;
+	height: 38px;
+	line-height: 38px;
+}
+ 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #cc7800;
+}
+
+#thanks-dialog h2{
+    color: #694500;
+    font-size: 12px;
+}
+#thanks-dialog .icon-thanks{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#thanks-dialog .btn-close {
+    top: -10px;
+    right: -8px;
+}
+#thanks-dialog .dialog{
+    overflow: initial;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+.lottery-dialog .contact {
+  padding: 0;
+}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 550px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+.lottery-dialog .contact {
+  padding: 0;
+}
+}
+
+
+
+
+/*dai*/
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait)
+{
+lottery-dialog .contact input {
+    height: 30px;
+}
+.lottery-good .btn{
+	height: 34px;
+	line-height: 34px;
+}
+.lottery-dialog .contact {
+  padding: 0;
+}
+}
+/*弹层展示隐藏动画*/
+.dispshow {
+  -webkit-animation-name: dispshow;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-backface-visibility:hidden;
+}
+.disphide {
+  -webkit-animation-name: disphide;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-backface-visibility:hidden;
+}
+@-webkit-keyframes dispshow {
+	0% {opacity: 0; -webkit-transform: scale(1.3,1.3)}
+	100% {opacity: 1; -webkit-transform: scale(1,1);}
+}
+
+@-webkit-keyframes disphide {
+	0% {opacity: 1; -webkit-transform: scale(1,1)}
+	100% {opacity: 0; -webkit-transform: scale(1.3,1.3); }
+}

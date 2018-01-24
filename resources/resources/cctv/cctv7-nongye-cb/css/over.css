@@ -1,0 +1,62 @@
+html {
+	height: 100%;
+}
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	background: url(../images/bg-over.png) no-repeat bottom center #97bd2c;
+	background-size: cover;
+}
+header {
+	position: relative;
+	width: 100%;
+}
+header .tvlogo {
+	position: absolute;
+	width: 26%;
+	top: 8px;
+	left: 8px;
+}
+.icon-over {
+	width: 92%;
+	margin: 18% auto 0;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+}
+footer .logo {
+	width: 50%;
+	margin: 0 auto 3%;
+}
+footer .showtime p {
+	color: #FFF;
+	font-size: 15px;
+	line-height: 20px;
+}
+footer .weixin {
+	display: inline-block;
+	margin: 8% auto 3%;
+	padding: 3px 22px;
+	color: #175432;
+	font-size: 13px;
+	border-radius: 22px;
+	border: 1px solid #365500;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#d0ee85), to(#7ca42b));
+}
+footer .tips {
+	font-size: 13px;
+	color: #175432;
+	margin-bottom: 22%;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" >
+	<title>万达影院</title>
+	<link rel="stylesheet" type="text/css" href="./css/core.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+    
+</head>
+<body>
+   <audio preload="auto" id="bgm" src="./music/bgm.mp3" class="none" loop></audio>
+   <section id="stage_main" class="none"></section>
+    <section id="stage_loading" class="stage none">
+        <section id="loading_bar" class="none">
+            <div class="sk-cube-grid">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+            </div>
+            <p class="loading-text">游戏努力加载中...</p>
+        </section>
+    </section>
+    
+	<section class="cover-bg">
+        <div class="wd-logo"></div>
+        <div class="wanda-bg"></div>
+        <span class="go-ani"></span><a href="javascript:void(0)" id="in-games">进入</a><p class="footer">页面由西安万达影城提供<br />新掌趣科技技术支持&Powered by holdfun.cn</p>
+    </section>
+    <section class="games-again none">
+      <i class="bao-pop"></i>
+      <a href="javascript:void(0)" class="rule-btn"></a>
+      <a href="javascript:void(0)" class="mycard-btn"></a>
+      <a href="javascript:void(0)" class="play-btn not" id="play-btn"></a>
+      <div class="corn-con"><span class="not"></span><span class="not"></span><span class="not"></span></div>
+    </section>
+    
+    
+    <script src="./js/config.js"></script>
+
+	<script src="./js/plugins/zepto.all.js"></script>
+    <script src="./js/corn.js"></script>
+
+	<script src="http://cdn.holdfun.cn/zhoubian/mc/pixi.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+	<script src="./js/plugins/core.js"></script>
+	<script src="./js/plugins/authorize_userinfo.js"></script>
+	<script src="./js/game.js"></script>
+	<script src="./js/index.js"></script>
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=50694779" charset="UTF-8"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+    
+</body>
+</html>

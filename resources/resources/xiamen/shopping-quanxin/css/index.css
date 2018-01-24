@@ -1,0 +1,353 @@
+.btn{
+	background: #ed2b60;
+}
+.main {
+	min-height: 100vh;
+	max-height: 100vh;
+	position: relative;
+	overflow: hidden;
+	zoom: 1;
+
+	margin: 0 auto;
+	
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #f5d9e5), color-stop(0.33, #dbd2f1), color-stop(0.5, #d0edf3), color-stop(0.67, #e1c9e9), color-stop(1, #f9cbd6));
+	background-image: -webkit-linear-gradient(left top,  #f5d9e5 0%, #dbd2f1 33%, #d0edf3 50%, #e1c9e9 67%, #f9cbd6 100%);
+	background-image: linear-gradient(left top,  #f5d9e5 0%, #dbd2f1 33%, #d0edf3 50%, #e1c9e9 67%, #f9cbd6 100%);
+}
+.ui-order-item {
+	width: 75vw;
+	margin: 0 auto 0;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.3);
+	box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.3);
+	position: relative;
+}
+
+.ui-order-item .item-detail {
+	position: relative;
+	overflow: hidden;
+	max-height: 45vh;
+	border-radius: 5px 5px 0 0;
+}
+
+.detail-cover {
+	max-width: 100%;
+	vertical-align: top;
+	border-radius: 5px 5px 0 0;
+}
+
+.detail-time {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0px;
+	border-radius: 5px 5px 0 0;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	height: 34px;
+	line-height: 34px;
+}
+
+.detail-time:before {
+	content: '';
+	display: inline-block;
+	vertical-align: top;
+	background: url(../images/icons.png) no-repeat -64px 0px;
+	background-size: 86px auto;
+	width: 22px;
+	height: 22px;
+	margin: 6px 6px 0 8px;
+}
+
+.detail-time strong {
+	font-weight: normal;
+	font-size: 14px;
+	color: #f93838;
+	margin-left: 6px;
+}
+
+.detail-info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.5);
+	min-height: 62px;
+	color: #fff;
+}
+
+.detail-info h2 {
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 7px 10px 0 10px;
+	line-height: 20px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.detail-info .curr-price {
+	margin-left: 8px;
+	color: #f93838;
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	right: 0;
+	height: 26px;
+	line-height: 26px;
+}
+
+.curr-price .currency {
+	font-size: 14px;
+}
+
+.curr-price .decimal {
+	font-size: 12px;
+}
+
+.curr-price strong {
+	font-size: 22px;
+	margin-left: -2px;
+	vertical-align: 0px;
+	line-height: 25px;
+}
+
+.detail-info .market-price {
+	font-size: 14px;
+	margin-left: 10px;
+	vertical-align: 0px;
+	text-decoration: line-through;
+	font-style: italic;
+	color: #fff;
+}
+
+.detail-info .sold {
+	font-size: 12px;
+	float: right;
+	color: #fff;
+	margin-top: 2px;
+	margin-right: 8px;
+}
+
+.item-ctrl {
+	padding: 10px 0 10px;
+	background: #EEEEEE;
+	border-radius: 0 0 6px 6px;
+}
+
+.item-ctrl .tip {
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.item-ctrl .btn {
+	margin: 2px auto 10px;
+	display: block;
+	width: 135px;
+	height: 35px;
+	line-height: 34px;
+	font-size: 20px;
+}
+
+.copyright {
+	color: #a6779d;
+	bottom: 0;
+	margin-top: 10px;
+	position: absolute;
+	bottom: 0;
+}
+
+.swiper-container {
+	height: 100vh;
+	width: 100vw;
+	zoom: 1;
+}
+
+.swiper-slide {
+	height: 100%;
+	opacity: 0.4;
+	-webkit-transition:-webkit-transform 300ms;
+	transition:transform 300ms;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.swiper-slide-visible {
+	opacity: 0.5;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.swiper-slide-visible .ui-order-item:before {
+	content: '';
+	display: block;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	border-radius: 5px;
+}
+
+.swiper-slide-active .ui-order-item:before {
+	display: none;
+}
+
+.swiper-slide-active {
+	top: 0;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.tab{
+	width: 88vw;
+	overflow: hidden;
+	margin: 20px auto 0;
+	position: relative;
+	z-index: 200;
+}
+.tab li{
+	width: 33.33%;
+	float: left;
+}
+.tab li a{
+	display: block;
+	text-align: center;
+	width: 100%;
+	line-height: 35px;
+	height: 35px;
+	border: 1px solid #ed2c60;
+	border-right: 0px;
+	color: #900000;
+	background: rgba(237, 43, 96, 0.1);
+}
+.tab li:first-child a{
+	border-radius: 5px 0 0 5px;
+}
+.tab li:last-child a{
+	border-radius: 0px 5px 5px 0;
+	border-right: 1px solid #ed2c60;
+}
+.tab li.active a{
+	background: #ed2b60;
+	color: white;
+	box-shadow: inset 0px 1px 3px #693939;
+}
+
+
+/**
+ *	我的订单
+ */
+.myorder-list{
+	margin: 20px 0 35px;
+}
+.myorder-list li{
+	border-top: 1px solid #e0e0e0;
+	opacity: 0;
+	transform: rotateX(-90deg);
+	transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+	background: rgba(255, 255, 255, 0.5);
+}
+.myorder-list li.empty{
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+	padding: 10px;
+}
+.myorder-list li.show {
+  opacity: 1;
+  transform: none;
+  transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+}
+.myorder-list li:first-child{
+	border-top: none;
+}
+.myorder-list li .item{
+	display: block;
+	overflow: hidden;
+	padding: 10px;
+}
+.myorder-list li .img-detail{
+	float: left;
+	width: 64px;
+	height: 64px;
+	overflow: hidden;
+}
+.myorder-list li .item .content-detail{
+	margin-left: 74px;
+	line-height: 22px;
+	font-size: 16px;
+	color: #333;
+}
+.myorder-list li .item .total{
+	color: #999;
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 20px;
+}
+.myorder-list li .item .sum{
+	color: #999;
+	font-size: 12px;
+	line-height: 20px;
+}
+.more{
+	border-top: 1px dashed #ddd;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+.myorder-list li .item .content-detail .content-num{
+	font-size: 10px;
+	color: #f83838;
+	padding-left: 2px;
+}
+.myorder-list li .item .content-detail .content-ot{
+	font-size: 12px;
+	color: #999;
+}
+.myorder-list li .item .content-detail .content-tel{
+	font-size: 12px;
+	color: #999;
+}
+
+.myorder-list li .item .content-detail .content-add{
+	font-size: 12px;
+	color: #999;
+}
+
+ /**
+ *	END OF 我的订单
+ */
+
+ /**
+ *	全部
+ */
+ .all-link{
+ 	position: absolute;
+ 	bottom: 45px;
+ 	color: #ed2b60;
+ 	font-size: 12px;
+ 	text-decoration: underline;
+ 	text-align: center;
+ 	display: block;
+ 	width: 100%;
+ 	z-index: 100;
+ }
+
+#tttj{
+	position: absolute;
+	bottom: 45px;
+	color: #ed2b60;
+	font-size: 12px;
+	text-decoration: underline;
+	text-align: center;
+	display: block;
+	width: 100%;
+	z-index: 100;
+}
+ /**
+ *	END OF 全部
+ */

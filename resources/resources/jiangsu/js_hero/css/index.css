@@ -1,0 +1,371 @@
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../images/bg0.jpg) no-repeat top center #000;
+    background-size: 100% auto;
+
+    // -webkit-animation: in 2s 1s 1 ease;
+    // -webkit-transform-origin: center center;
+    // -webkit-animation-fill-mode: forwards;
+}
+.sky-cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(../images/bg.jpg) no-repeat top center #000;
+    background-size: 100% auto;
+    z-index: 99999999;
+    opacity: .6;
+
+    -webkit-animation: out 3s 0s 1 ease;
+    -webkit-transform-origin: center center;
+    -webkit-animation-fill-mode: forwards;
+
+    pointer-events: none;
+}
+header {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4% 0 0;
+    overflow: hidden;
+    z-index: 99;
+    text-align: center;
+}
+header .tv {
+    display: inline-block;
+    width: 66%;
+}
+header #btn-rule, header #btn-reserve {
+    display: inline-block;
+    float: right;
+    font-size: 13px;
+    color: #FFF;
+    padding: 3px 12px;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    margin-left: 8px;
+}
+.btn-wrapper {
+    display: table;
+    position: relative;
+    width: 80%;
+    margin: 0 auto 20px;
+    vertical-align: middle;
+}
+.btn-wrapper a {
+    display: table-cell;
+    vertical-align: middle;
+}
+.btn-w {
+    width: 20%;
+}
+#btn-go {
+    position: relative;
+    width: 80%;
+    display: inline-block;
+    font-size: 18px;
+    // -webkit-animation: fuckdown 1s 2s 1 ease, fucktt 2s 2.8s infinite alternate;
+    // -webkit-transform-origin: center center;
+    // -webkit-animation-fill-mode: forwards;
+    // opacity: 0;
+    z-index: 5;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone5 */
+@media screen
+and (device-width:320px)
+and (device-height:568px)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone6plus */
+@media screen
+and (min-device-width:400px)
+and (max-device-width:736px)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+#canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    pointer-events: none;
+    opacity: 1;
+    // -webkit-animation: out 3s 0s 1 ease;
+    // -webkit-transform-origin: center center;
+    // -webkit-animation-fill-mode: forwards;
+}
+#container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: 0;
+    z-index: 999999999;
+    pointer-events: none;
+    
+    -webkit-transform: scaleX(-1);
+       -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+         -o-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+.rainbow {
+    width: 100%;
+    height: 100%;
+}
+.rainbow div {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    opacity: 0;
+}
+.red {
+    background: #FF3030;
+    position: relative;
+    top: 130px;
+    left: 300px;
+    animation: rainbows 1.15s infinite linear;
+    animation-delay: 0.15s;
+    -webkit-animation: rainbows 1.15s infinite linear;
+    -webkit-animation-delay: 0.15s;
+}
+
+.red:after {
+    width: 200px;
+    height: 200px;
+    content: "";
+    border-left: 1px solid #FF3030;
+    display: block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: relative;
+    top: -98px;
+    left: 42px;
+}
+
+.orange {
+    background: #CD6600;
+    position: relative;
+    top: 230px;
+    left: 400px;
+    animation: rainbows 1.45s infinite linear;
+    animation-delay: 0.35s;
+    -webkit-animation: rainbows 1.45s infinite linear;
+    -webkit-animation-delay: 0.35s;
+}
+.orange:after {
+    width: 200px;
+    height: 200px;
+    content: "";
+    border-left: 1px solid #CD6600;
+    display: block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: relative;
+    top: -98px;
+    left: 42px;
+}
+.yellow {
+    background: #FFD700;
+    position: relative;
+    top: 200px;
+    left: 600px;
+    animation: rainbows 1200ms infinite linear;
+    animation-delay: 0.55s;
+    -webkit-animation: rainbows 1200ms infinite linear;
+    -webkit-animation-delay: 0.55s;
+}
+.yellow:after {
+    width: 200px;
+    height: 200px;
+    content: "";
+    border-left: 1px solid #FFD700;
+    display: block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: relative;
+    top: -98px;
+    left: 42px;
+}
+.green {
+    background: #7FFF00;
+    position: relative;
+    top: 135px;
+    left: 800px;
+    animation: rainbows 1.5s infinite linear;
+    animation-delay: 0.75s;
+    -webkit-animation: rainbows 1.5s infinite linear;
+    -webkit-animation-delay: 0.75s;
+}
+.green:after {
+    width: 200px;
+    height: 200px;
+    content: "";
+    border-left: 1px solid #7FFF00;
+    display: block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: relative;
+    top: -98px;
+    left: 42px;
+}
+.cyan {
+    background: #6CA6CD;
+    position: relative;
+    top: 130px;
+    left: 960px;
+    animation: rainbows 1.25s infinite linear;
+    animation-delay: 0.95s;
+    -webkit-animation: rainbows 1.25s infinite linear;
+    -webkit-animation-delay: 0.95s;
+}
+.cyan:after {
+    width: 200px;
+    height: 200px;
+    content: "";
+    border-left: 1px solid #6CA6CD;
+    display: block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: relative;
+    top: -98px;
+    left: 42px;
+}
+.blue {
+    background: #4169E1;
+    position: relative;
+    top: 140px;
+    left: 1100px;
+    animation: rainbows 0.75s infinite linear;
+    animation-delay: 1.15s;
+    -webkit-animation: rainbows 0.75s infinite linear;
+    -webkit-animation-delay: 1.15s;
+}
+.blue:after {
+    width: 200px;
+    height: 200px;
+    content: "";
+    border-left: 1px solid #4169E1;
+    display: block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: relative;
+    top: -98px;
+    left: 42px;
+}
+.purple {
+    background: #9932CC;
+    position: relative;
+    top: 130px;
+    left: 1200px;
+    animation: rainbows 1.5s infinite linear;
+    animation-delay: 1.85s;
+    -webkit-animation: rainbows 1.5s infinite linear;
+    -webkit-animation-delay: 1.85s;
+}
+.purple:after {
+    width: 200px;
+    height: 200px;
+    content: "";
+    border-left: 1px solid #9932CC;
+    display: block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: relative;
+    top: -98px;
+    left: 42px;
+}
+@-webkit-keyframes rainbows {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0) translate(0, 0);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1)  translate(-200px, 200px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1) translate(-500px, 500px);
+    }
+}
+@keyframes rainbows {
+    0% {
+        opacity: 0;
+        transform: scale(0) translate(0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1)  translate(-200px, 200px);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1) translate(-500px, 500px);
+    }
+}
+
+@-webkit-keyframes out {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2);
+    }
+}
+
+@-webkit-keyframes in {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(5);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
+@keyframes out {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+@keyframes in {
+    0% {
+        opacity: 0;
+        transform: scale(5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

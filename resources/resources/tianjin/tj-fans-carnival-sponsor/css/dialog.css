@@ -1,0 +1,419 @@
+/* 通用弹层样式_S */
+.modal {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.modal:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.75);
+    z-index:99;
+}
+.modal-vote:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:transparent;
+    z-index:99;
+}
+.modal .flash-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility:hidden;
+}
+.modal .flash-box .icon-flash {
+    width: 100%;
+    height: 50%;
+}
+.modal .dialog {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    z-index: 999;
+}
+.modal .dialog .btn-dialog-close {
+    display: block;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/icon-close.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999999999;
+}
+.modal .dialog .bg-dialog-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal .dialog .bg-dialog-footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.modal .dialog .global-header {
+    position: relative;
+    width: 100%;
+    font-size: 0;
+}
+.modal .dialog .global-header .icon-redbag-gold, .modal .dialog .global-header .icon-redbag-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.modal .dialog .global-header .icon-luckytips {
+    position: absolute;
+    width: 76%;
+    top: 8%;
+    left: 12%;
+}
+.modal .dialog .dialog-content {
+    border: 1px solid #00DFD2;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 999;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    padding: 10px 0;
+    background: url(../images/dia-good-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.modal .link-dialog .dialog-content{
+	 padding: 20px 0;
+	 background: url(../images/dia-bg.jpg) no-repeat;
+	 background-size: 100% 100%;
+}
+.modal .link-dialog .dialog-content{
+	 padding: 20px 0;
+	 background: url(../images/dia-bg.jpg) no-repeat;
+	 background-size: 100% 100%;
+}
+.modal .wxcard-dialog .dialog-content{
+	 padding: 20px 0;
+	 background: url(../images/dia-bg.jpg) no-repeat;
+	 background-size: 100% 100%;
+}
+.modal .dialog .dialog-content .tlt img{
+    width: 150px;
+    margin: 0 auto;
+}
+.modal .dialog .dialog-content .info-qrcode {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 6px;
+    text-align: center;
+}
+.modal .dialog .dialog-content .icon-congrats {
+    width: 86%;
+    margin: 0 auto 2%;
+}
+.modal .dialog .dialog-content .award-luckTips {
+    width: 92%;
+    margin: -9% auto 6%;
+    font-size: 16px;
+    text-align: center;
+}
+.modal .dialog .dialog-content .award-luckTips img{
+    width: 73%;
+    margin: -15px auto 10px;
+}
+.modal .dialog .dialog-content .award-img {
+    width: 85%;
+    margin: 7px auto;
+   
+}
+.modal .link-dialog .dialog-content .award-img {
+    width: 85%;
+     margin: 20px auto ;
+}
+.modal .dialog .dialog-content .footer{
+    width: 100%;
+    margin: 2px auto;
+    color: #fff;
+}
+.modal .dialog .dialog-content .tip-box{
+	width: 90%;
+    padding:0 0 0 8px;
+    color: #fff;
+    font-size: 12px;
+    text-align: left;
+    margin: 0 auto;
+}
+.modal .dialog .dialog-content .award-nameTips {
+    width: 80%;
+    margin: 0 auto 2%;
+    font-size: 26px;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+.modal .dialog .dialog-content .award-keyTips {
+    width: 100%;
+    margin: 9% auto;
+    font-size: 18px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+}
+.modal .dialog .dialog-content .input-box {
+    width: 100%;
+    font-size: 15px;
+    color: #FFF;
+   
+}
+.modal .dialog .dialog-content .input-box h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin: 3px auto;
+}
+.modal .dialog .dialog-content .input-box .label {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.modal .dialog .dialog-content .input-box p {
+    /*display: inline-block;*/
+    color: #9B6115;
+    text-shadow: #FFF 1px 0 0,#FFF 0 1px 0,#FFF -1px 0 0,#FFF 0 -1px 0;
+    -webkit-text-shadow:#FFF 1px 0 0,#FFF 0 1px 0,#FFF -1px 0 0,#FFF 0 -1px 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+.modal .dialog .dialog-content .input-box span {
+    display: inline-block;
+}
+.modal .dialog .dialog-content .input-box input {
+    display: inline-block;
+    width: 86%;
+    padding: 4px 8px;
+    border: 0 none;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #666666!important;
+    background: #FFF;
+    background-size: 100% 100%;
+    margin-bottom: 5px;
+    vertical-align: baseline;
+}
+.modal .dialog .dialog-content .input-box input::-webkit-input-placeholder {
+    color: #666 !important;
+}
+.modal .dialog .dialog-content .info-box {
+    text-align: left;
+    width: 88%;
+    margin: 6% auto 0;
+    font-size: 15px;
+    line-height: 30px;
+    color: #FFF;
+}
+.modal .dialog .dialog-content .btn-lottery {
+    display: inline-block;
+    margin: 0 6px;
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.modal .dialog .dialog-content .btn-lottery-box {
+    width: 100%;
+}
+.modal .dialog .dialog-content .btn-lottery-box .btn-lottery {
+    display: inline-block;
+    margin: 0 6px;
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.modal .dialog .dialog-content .award-img-box {
+    position: relative;
+    width: 100%;
+}
+.modal .dialog .dialog-content .award-img-box .award-img {
+    position: relative;
+    z-index: 2;
+}
+.modal .dialog .dialog-content .award-img-box .icon-paper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation-name: paper;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    z-index: 1;
+}
+.modal .dialog .dialog-content .icon-ok {
+    width: 52%;
+    margin: 0 auto 1%;
+}
+.modal .dialog .dialog-content .qrcode-tips {
+    font-size: 15px !important;
+    color: #FFF !important;
+    font-weight: normal !important;
+    color: #F5F5F5;
+    margin-bottom: 5%;
+}
+.modal .dialog .dialog-content .qrcode-box {
+    position: relative;
+    width: 82%;
+    margin: 0 auto 5%;
+    padding: 0 0 36px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+.modal .dialog .dialog-content .qrcode-box p {
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    left: 0;
+    bottom: 0;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #6b0001;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 6%;
+}
+/* 通用弹层样式_E */
+
+/* 活动规则_S */
+#rule-dialog .dialog .dialog-content {
+    padding: 0 5%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #FFF;
+    background: #1FA9A4;
+    height: 100%;
+}
+#rule-dialog .dialog .btn-dialog-close {
+    background: url(../images/close.png) no-repeat;
+    background-size: 100% 100%;
+}
+#rule-dialog .dialog .dialog-content .icon-rule {
+    width: 40%;
+    margin: 10% auto 5%;
+}
+#rule-dialog .dialog .dialog-content h2 {
+    width: 100%;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 5px 0;
+    border-bottom: 1px solid #019691;
+}
+#rule-dialog .dialog .dialog-content .rule-content {
+    width: 100%;
+    height: 79%;
+    margin-top: 5%;
+    padding: 0 4%;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    word-break: break-all;
+    text-align: left;
+}
+#rule-dialog .dialog .dialog-content .rule-content * {
+    color: #FFF !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+/* 活动规则_E */
+
+/* 实物_S */
+.modal .dialog .dialog-content .info-box .info-address label{
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 75%;
+    vertical-align: top;
+}
+/* 实物_E */
+
+/* 卡劵_E */
+/* 卡劵_E */
+
+/* 兑奖码_S */
+.modal .dhm-dialog .dialog-content .cc{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 17%;
+    color: #fff;
+    font-size: 14px;
+}
+.modal .dhm-dialog .dialog-content label{
+
+}
+.modal .dhm-dialog .dialog-content .cc span{
+
+}
+/* 兑奖码_E */
+
+/*积分_S*/
+#jf-dialog .dialog-content h1 {
+    margin: 95px auto 5px!important;
+}
+/*积分_E*/
+
+
+/* 谢谢参与_S */
+.thanks-dialog h2{
+   font-size: 20px;
+    color: #fff;
+    margin-top: 15px;
+}
+.thanks-dialog h3{
+    font-size: 12px;
+    color: #C8A75D;
+}
+.thanks-dialog img{
+    width: 90%;
+    display: block;
+    margin: 12px auto;
+}
+/*.thanks-dialog .tlt img{
+    width: 150px;
+    margin: 0 10px;
+}*/
+/* 谢谢参与_E */
+

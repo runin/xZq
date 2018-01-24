@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>成都二套跨年晚会</title>
+	
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css"/>
+	<link rel="stylesheet" href="./css/index.css" />
+	
+	<script src="./js/wx_api.js"></script>
+</head>
+<body>
+	
+	<div class="main" id="main">
+        <section>
+            <div class="home-top">
+                <a href="javascript:toUrl('index.html');"><img src="images/logo.png" /></a>
+                <label class="rule btn-rule" data-collect="true"
+                       data-collect-flag="cd-party-rule-btn"
+                       data-collect-desc="活动规则按钮" >活动规则 ></label>
+            </div>
+            <img id="logo" class="logo" src="images/home-logo.png" />
+            <a id="szf" class="btn zhufu" data-collect="true"
+               data-collect-flag="cd-party-index-zhufu-btn"
+               data-collect-desc="我要送祝福按钮" >送祝福赢猪牛羊大奖</a>
+            <!--首页-->
+            <a id="vote" class="btn vote canyu" data-collect="true"
+               data-collect-flag="cd-party-vote-btn"
+               data-collect-desc="有奖竞猜按钮" >参与竞猜赢年货</a>
+            <!--活动未开始-->
+            <div id="not-started" class="not-started canyu none">
+                <h1>距离下次竞猜还剩</h1>
+                <p id="detail-countdown" class="detail-countdown"></p>
+            </div>
+
+            <a class="card" href="javascript:toUrl('card.html');" data-collect="true"
+               data-collect-flag="cd-party-index-card-btn"
+               data-collect-desc="我的卡包按钮" >
+                <div class="my-card">我的卡包</div>
+                <p>-</p>
+            </a>
+            <p class="copyright">此页面由成都电视台提供</p>
+        </section>
+
+	</div>
+
+
+    <script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.min.js"></script>
+    <script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.cookie.min.js"></script>
+    <script language="javascript" type="text/javascript">
+        document.write("<script src=\"http://cdn.holdfun.cn/resources/services/cd2-party/quizinfo.js?"+new Date().getTime()+"\"><\/script>");
+    </script>
+    <script src="./js/config.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/md5.js"></script>
+    <script src="./js/share.js"></script>
+    <script src="./js/data_collect.js"></script>
+    <script src="./js/dialog.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

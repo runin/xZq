@@ -1,0 +1,295 @@
+.modal {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.modal:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    z-index:99;
+}
+.modal-vote:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:transparent;
+    z-index:99;
+}
+.modal .dialog {
+    position: absolute;
+    width: 80%;
+    z-index: 999;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2082d3), color-stop(0.5, #2da9ed), to(#2797e0));
+    border-radius: 5%;
+    padding-top: 11%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}
+.modal .dialog .icon-denglong{
+    position: absolute;
+    width: 16%;
+    top: 12%;
+    z-index: 9999;
+}
+.modal .dialog .icon-bianpao{
+    position: absolute;
+    top: 12%;
+    z-index: 9999;
+    width: 16%;
+    right: 0;
+}
+.modal .red-dialog {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    margin-bottom: 50px;
+    z-index: 999;
+    border-radius: 5px;
+}
+.modal .dialog:before{
+    content: "";
+    background: url(../images/dialog-top.png) 0 0 no-repeat;
+    background-size: 100%;
+    width: 70%;
+    height: 100px;
+    position: absolute;
+    top: -7%;
+    z-index: 9999;
+    left: 15%;
+}
+#rule-dialog .dialog:before{
+    content: "";
+    background: url(../images/icon-rule.png) 0 0 no-repeat;
+    background-size: 100%;
+    width: 96%;
+    height: 100px;
+    position: absolute;
+    top: -6%;
+    z-index: 9999;
+    left: 2%;
+}
+#rule-dialog .dialog .dialog-content {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    overflow: hidden;
+    overflow-y: scroll;
+    text-align: left;
+}
+.modal .thanks-dialog:before{
+    content: "";
+    background: url(../images/thanks-dialog-top.png) 0 0 no-repeat!important;
+    background-size: 100%!important;
+    top: -14%!important;
+}
+.modal .exchange-dialog:before{
+    content: "";
+    background: url(../images/icon-exchange.png) 0 0 no-repeat!important;
+    background-size: 100%!important;
+}
+.modal .dialog .btn-dialog-close {
+    display: inline-block;
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    width: 22px;
+    height: 22px;
+    z-index: 9999999999;
+    background: url("../images/btn-close.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+#rule-dialog .dialog .btn-dialog-close {
+    display: inline-block;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 42px;
+    height: 42px;
+    z-index: 9999999999;
+    background: url("../images/btn-close.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.modal .dialog .bg-dialog-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal .dialog .bg-dialog-footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.modal .dialog .dialog-content {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    padding: 2%;
+    border-radius: 5%;
+    background: #195c91;
+}
+.modal .dialog .dialog-content .info-content{
+    margin-top: 5%;
+}
+.modal .dialog .dialog-content .icon-congrats {
+    width: 86%;
+    margin: 0 auto 2%;
+}
+.modal .dialog .dialog-content .award-keyTips {
+    width: 85%;
+    margin: 2% auto;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.modal .dialog .dialog-content .input-box {
+    width: 100%;
+    font-size: 15px;
+    color: #FFF;
+}
+.modal .dialog .dialog-content .input-box .label {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.modal .dialog .dialog-content .input-box input {
+    display: inline-block;
+    width: 70%;
+    padding: 3px 8px;
+    line-height: 20px;
+    border: 0 none;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #195C91;
+    margin: 2px 0;
+    background-color: #EEE;
+}
+.modal .dialog .dialog-content .input-box input::-webkit-input-placeholder {
+    color: #666 !important;
+}
+.modal .dialog .dialog-content .info-box {
+    text-align: left;
+    width: 100%;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    margin-top: 6%;
+    padding-left: 10%;
+}
+.modal .dialog .dialog-content .btn-lottery {
+    display: inline-block;
+    margin: 3% auto 1%;
+    width: 38%;
+    height: 35px;
+    background: url(../images/btn-lottery.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.modal .thanks-dialog .dialog-content .btn-lottery {
+    background: url(../images/btn-shake.png) 0 0 no-repeat!important;
+    background-size: 100% 100%!important;
+}
+.modal .shiwu-dialog .dialog-content .btn-shiwu-lottery-award {
+    background: url(../images/btn-submit.png) 0 0 no-repeat!important;
+    background-size: 100% 100%!important;
+}
+.modal .shiwu-dialog .dialog-content .btn-shiwu-lottery-close {
+    background: url(../images/btn-sure.png) 0 0 no-repeat!important;
+    background-size: 100% 100%!important;
+}
+.modal .thanks-dialog .dialog-content .thanks-title {
+    color: #bec269;
+    text-align: center;
+    margin: 10px auto;
+}
+.modal .dialog .dialog-content .btn-lottery-box {
+    width: 100%;
+    margin-top: 1%;
+}
+.modal .dialog .dialog-content .btn-lottery-box .btn-lottery {
+    display: inline-block;
+}
+.modal .dialog .dialog-content .award-img {
+    border-radius: 2%;
+}
+
+
+#share-dialog .dialog .dialog-content .logo{
+    width: 50%;
+    margin: 0 auto;
+}
+#share-dialog .dialog .dialog-content .qrcode{
+    width: 80%;
+    margin: 0 auto;
+}
+#share-dialog .dialog .dialog-content .tip{
+    font-size: 14px;
+}
+#share-dialog .sharelogo{
+    z-index: 999;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#share-dialog .share-title{
+    position: absolute;
+    z-index: 999;
+    top: 15%;
+    margin: 0 auto;
+    width: 100%;
+    color: #FFED00;
+}
+#thanks-dialog .thanks-tips{
+    width: 85%;
+    margin: 0 auto;
+}
+
+#rule-dialog .dialog {
+    width: 80% !important;
+    height: 66% !important;
+    top: 17% !important;
+    left: 10% !important;
+    min-height: initial !important;
+    margin-bottom: 0 !important;
+}
+
+/* iPhone4 */
+@media screen
+ and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (-webkit-min-device-pixel-ratio : 2){
+}
+@media screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (-webkit-min-device-pixel-ratio : 3){
+}
+
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+}

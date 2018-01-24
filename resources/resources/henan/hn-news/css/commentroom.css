@@ -1,0 +1,150 @@
+#page_comment{
+	background-color: #e6e6e6;
+	margin-top: 40px;
+}
+
+
+.commentrooms-wrapper{
+	background: rgba(0,0,0,0.4);
+	position: relative;
+}
+.commentrooms{
+	position: relative;
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+.commentrooms-input-wrapper{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+.commentrooms-input{
+	position: relative;
+	height: 44px;
+	padding-top: 6px;
+}
+.commentrooms-input .input-wrapper{
+	margin-right: 48px;
+	margin-left: 8px;
+	border-radius: 10px;
+	background: transparent;
+	box-shadow: inset 0px 0px 1px #ddd;
+	border: 1px solid #6f6f6f;
+}
+.commentrooms-input .input-wrapper input{
+	width: 100%;
+	border: none;
+	background: none;
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	color: #333;
+	padding: 0 5px;
+}
+.commentrooms-input .ok{
+	font-size: 14px;
+	display: block;
+	position: absolute;
+	right: 8px;
+	top: 6px;
+	display: block;
+	line-height: 32px;
+	height: 32px;
+	width: 32px;
+	color: #404040;
+	text-align: center;
+	border: 1px solid #6f6f6f;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	font-weight: bold;
+}
+
+.citem{
+	width: 70%;
+	padding: 8px 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.citem .citem-img{
+	float: left;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: #e6e6e6;
+	padding: 2px;
+	position: relative;
+	z-index: 2;
+}
+.citem.praised .citem-img{
+	background-color: #ed472c;
+}
+.citem .citem-img img{
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.citem .citem-content{
+	color: white;
+	line-height: 34px;
+	position: relative;
+	margin-left: 58px;
+	border-radius: 5px;
+	margin-top: 0px;
+	z-index: 1;
+}
+.citem .citem-content h3{
+	font-size: 12px;
+	line-height: 22px;
+	height: 22px;
+	width: 100%;
+	color: #939393;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	margin-top: 10px;
+	padding-bottom: 3px;
+}
+
+.citem .citem-content p{
+	color: #443e3e;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.citem.new .citem-content{
+	color: #fe014f;
+}
+.citem-no-more{
+	color: #b7b7b7;
+	text-align: center;
+	font-size: 12px;
+	opacity: 0.8;
+	padding: 15px 0 15px;
+	display: none;
+}
+
+.citem .citem-praise{
+	position: absolute;
+	display: block;
+	min-width: 20px;
+	height: 20px;
+	right: 8px;
+	top: 0px;
+
+	font-size: 12px;
+	color: #b7b7b7;
+	line-height: 18px;
+	
+	text-align: center;
+}
+
+.citem .citem-praise.praised{
+	border-color: #ed472c;
+	color: #ed472c;
+}
+.citem .citem-praise .pc-btn{
+	display: inline;
+	position: relative;
+	top: 2px;
+}

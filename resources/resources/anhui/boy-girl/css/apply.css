@@ -1,0 +1,235 @@
+html {
+	height: 100%;
+	
+}
+body {
+	background: #a2d9f5;
+	margin: 0 auto;
+	background: url(../images/bg-comment.jpg) repeat-y;
+	background-repeat: no-repeat;
+	background-position:top;  
+	background-size: 100%;
+	overflow: hidden;
+	
+}
+li{
+	list-style-type: none;
+	z-index:1;
+}
+.forms{
+	height: 100%;
+}
+.sign{
+	background:rgba(255,255,255,0.93);
+	width: 100%;
+	margin: 0px auto;
+	color: #000;
+	border-radius: 5px;
+	height: 100%;
+}
+.nameSex input{
+	height: 28px;
+}
+.sign .nameSex {
+	text-align: center;
+}
+.sign .nameSex input{
+	width:20%;
+	border: none;
+	color: #333;
+	margin-right: 5px;
+}
+.sign .nameSex  .name{
+	width:26%
+}
+.sign .content{
+}
+.sign .content p {
+	line-height: 50px;
+	border-bottom: 1px solid #E8EBEE;
+}
+.chanshu{
+	line-height: 40px;
+	
+}
+.chanshu label{
+	margin-left: 5%;
+	font-weight: bold;
+}
+.sign .content p input{
+	/*width: 40%;*/
+	width: 59%;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+	border: none;
+	background: none;
+}
+.sign .content p input[name='sex']{
+	width: 18px;
+	height: 18px;
+	display: none;
+}
+.sign .content p textarea{
+}
+.sign .content .livep{
+	clear: both;
+}
+.sign .have , .sign .nohave{
+	width: 10% !important;
+}
+.sign .content p label{
+	text-align: left;
+	width: 26%;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 5%;
+}
+.sign textarea{
+	height: 70px;
+	width: 100%;
+	border: none;
+	background: none;
+	padding: 0px 5%;
+}
+.sign .num input{
+	width: 59% !important;
+}
+ .psubmit{
+	background: url(../images/submit.png) no-repeat;
+	background-size:100% ;
+	width:65%;
+	height: 50px;
+	text-align: center;
+	line-height: 37px !important;
+	margin: 10px auto 0px;
+	
+}
+.psubmit a{
+	color: #fff;
+	font-size: 18px;
+}
+.sign .have, .sign .nohave{
+	vertical-align:middle;
+	margin-top:-2px; 
+	margin-bottom:1px;
+}
+.sign .heartP span{
+	margin-right: 15px;
+}
+.from-foot h3{
+	text-align: center;
+	font-size: 15px;
+	margin-top: 5px;
+	color: #36A1FE;
+	font-weight: bold;
+}
+.sign .content .radio{
+	width: 18px;
+	height: 18px;
+	display: none;
+}
+.sign .content .finalsP{
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+}
+.sign .content .finalsP .finLabel{
+	margin-left: 5%;
+	width: 100%;
+}
+.sign .content .finalsP .finalsPt{
+	display: inline-block;
+	width: 100%;
+	border: none;
+	text-align: left;
+}
+.finalsPt label{
+	  text-align: left;
+  width: 30%;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.sign .content p a{
+	margin-right: 6px;
+	font-size:16px;
+	border: 1px solid #30BCFF;
+	border-radius: 18px;
+	width: 50px;
+	display: inline-block;
+	height: 32px;
+	text-align: center;
+	line-height: 28px;
+}
+.sign .content .span-check .checked{
+	  display: inline-block;
+  background: #30BCFF;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 18px;
+  color: #fff;
+}
+
+.kong{
+	height: 30px;
+	background:rgba(255,255,255,0.6);
+}
+input::-webkit-input-placeholder {
+    color: #555;
+}
+input::input-placeholder {
+    color: #555;
+}
+/*省市*/
+.city{
+	  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #E8EBEE;
+}
+.checkoutBorder{
+}
+.checkoutBorder select{
+	font-size: 12px;
+	width: 70px;
+	height: 30px;
+	margin-bottom: 5px;
+}
+.city label{
+	text-align: left;
+  width: 30%;
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+  font-weight: bold;
+  margin-left: 5%;
+}
+.bordermy{
+	border: 3px red solid;
+}
+.from-foot{
+	background: #F1F1F1;
+	padding: 5%;
+}
+
+/*iphone4 适配*/
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+	.forms{
+	
+}
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+  padding: 10px 0;
+}

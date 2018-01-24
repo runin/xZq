@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>永城春晚</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="css/vote.css">
+    <link rel="stylesheet" href="./css/talk.css" />
+</head>
+<body>
+    <div class="zan-box">
+        <div class="zan">
+            <div class="voteinfo">
+                <div>asdasdsas</div>
+                <!--<p></p>-->
+            </div>
+            <a href="#" class="zan-btn" data-collect="true"
+               data-collect-flag="vote-sign" data-collect-desc="点赞按钮">为TA亮灯</a>
+            <!--<img class="lt" src="images/vote-lt.png" />-->
+            <!--<img class="ltl" src="images/vote-ltl.png" />-->
+            <!--<div class="zan-bg">-->
+                <!--<img class="baby" id="baby" src="images/test1.png" />-->
+            <!--</div>-->
+            <!--<img class="zand" id="zand" src="images/zand-bg.png" />-->
+            <div class="zan-per">
+                <span>票数</span>
+                <!--<img src="images/starts.png" />-->
+                <!--<div><p></p></div>-->
+            </div>
+        </div>
+        <div class="touch"></div>
+    </div>
+    <div class="talk-box">
+        <div id="body" class="body">
+            <ul id="comment_list" class="content">
+            </ul>
+        </div>
+        <p class="mesg-tip" id="mesg-tip">有新消息</p>
+        <footer class="footer">
+            <img class="handimg" src="" />
+            <input id="input_text" type="text" placeholder="留言15字以内" />
+            <a id="input_submit" data-collect="true" data-collect-flag="szws-bestex-talk-submit" data-collect-desc="聊天室页-评论发送按钮">
+                <img src="images/talk-inp-send.png" />
+            </a>
+        </footer>
+    </div>
+	<script src="js/config.js"></script>	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/scrollTo.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="js/app/vote.js"></script>
+	<script src="js/app/talk.js"></script>
+
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

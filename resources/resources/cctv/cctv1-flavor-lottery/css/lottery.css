@@ -1,0 +1,335 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg-yao-default.jpg) no-repeat center center #EEE;
+    background-size: 100% auto;
+}
+a.hover {
+    color:#FFF;
+}
+.sponsor-box {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 999999;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+}
+.sponsor-box.hide {
+    /*opacity: 0;*/
+    -webkit-transform: scale(0);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+}
+.sponsor-box p {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bolder;
+    color: #FFF;
+    margin: 2% auto 0;
+    text-shadow: 0 0 3px #F00;
+}
+.sponsor-box ul {
+    width: auto;
+    margin: 3% auto;
+    text-align: center;
+    overflow: hidden;
+}
+.sponsor-box ul li {
+    width: 22%;
+    float: left;
+    margin: 1.5%;
+    background: url(../images/icon-sponsor-load.gif) no-repeat;
+    background-size: 100% 100%;
+}
+.sponsor-box ul li img {
+    display: block;
+}
+.sponsor-box ul.show li {
+    -webkit-animation-name: sponsor-show;
+    animation-name: sponsor-show;
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+}
+.sponsor-box .btn-sponsor-close {
+    display: inline-block;
+    width: 50%;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 3%;
+    background-color: #ce0016;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.sponsor-box .btn-sponsor-close:hover {
+    background-color: #BF0115;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+.home-box {
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.home-box .bg-yao {
+    display: block;
+    position: absolute;
+    width: 76%;
+    left: 12%;
+    opacity: 1;
+}
+.home-box .yao-top {
+    bottom: 0;
+}
+.home-box .yao-bottom {
+    top: 0;
+}
+.main-top {
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:50%;
+    background: url(../images/bg-lottery-top.jpg) no-repeat bottom center;
+    background-size:cover;
+    text-align: center;
+    box-sizing:border-box;
+    -webkit-transition: -webkit-transform .2s ease;
+}
+.main-top .count {
+    font-size:15px;
+    color:#5e000a;
+    text-align:left;
+    margin: 5px;
+    font-weight: bolder;
+}
+.main-top .count label {
+    font-weight: bolder;
+}
+.main-top .info-box {
+    position: relative;
+    width: 100%;
+}
+.main-top .countdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 5%;
+    background: url(../images/bg-cd.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #5e000a;
+    padding: 3% 10%;
+    font-size: 14px;
+    font-weight: bolder;
+    z-index: 98;
+}
+.main-top .countdown .countdown-tip {
+    font-weight: bolder;
+}
+.main-top .countdown .detail-countdown label {
+    color: #5e000a;
+    font-weight: bolder;
+}
+.main-top .hidden {
+    visibility:hidden;
+}
+.main-top .marquee {
+    color: #FFF;
+    font-size: 13px;
+    background: #b73c3a;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    overflow: hidden;
+    top: 0;
+}
+.main-top .yao-text {
+    line-height: 30px;
+    margin: 16% 0 0;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.main-top .yao-text p {
+    position:relative;
+    min-height: 37px;
+    z-index: 30;
+}
+.main-top .yao-text p span {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #b73c3a;
+}
+.main-top .yao-text p span i {
+    font-size: 32px;
+    color: #D83D3A;
+    display: inline-block;
+    font-style: normal;
+    font-weight: bolder;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .2s;
+    -webkit-animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: ease;
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.main-foot {
+    position:absolute;
+    bottom:1px;
+    width:100%;
+    height:50%;
+    background: url(../images/bg-lottery-bottom.jpg) no-repeat top center;
+    background-size:cover;
+    box-sizing:border-box;
+    -webkit-transition: -webkit-transform .2s ease;
+}
+.main-foot .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    z-index: 8;
+}
+.main-foot .rednum {
+    width: 100%;
+    margin-bottom: 8%;
+    display: block;
+    color:#84252a;
+    font-size:16px;
+    text-align:center;
+    font-weight: bold;
+    opacity: 0;
+}
+.main-foot .rednum span {
+    display: inline-block;
+    color:#ff3234;
+    font-size:20px;
+    margin: 0 3px 0 5px;
+    font-weight: bolder;
+    vertical-align: bottom;
+}
+.main-foot .thanks-tips {
+    font-size: 18px;
+    color: #8C2026;
+    margin-bottom: -2%;
+    font-weight: bolder;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    -webkit-backface-visibility:hidden;
+}
+.main-foot .thanks-tips.show {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    -webkit-backface-visibility:hidden;
+}
+#tttj {
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    bottom: 15%;
+    display: inline-block;
+    z-index: 9;
+    text-align: center;
+}
+#tttj img {
+    display: inline-block;
+    width: 16px;
+    margin: 0 auto;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+#tttj p {
+    display: inline-block;
+    color: #7b0000;
+    font-size: 15px;
+    font-weight: bolder;
+/*    background-color: #DA1F1C;
+    background-image: -webkit-linear-gradient(-45deg, rgba(101, 46, 46, 0.6) 30%, #FF2E2B 50%, rgba(101, 46, 46, 0.6) 70%);
+    background-blend-mode: hard-light;
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: shine 4s infinite cubic-bezier(0.22, 0.61, 0.36, 1);*/
+}
+@-webkit-keyframes shine {
+    from {background-position: 150%;}
+    to {background-position: -50%;}
+}
+@-webkit-keyframes wobble {
+    0% { -webkit-transform: translateX(0%); }
+    15% { -webkit-transform: translateX(-25%) rotate(-5deg); }
+    30% { -webkit-transform: translateX(20%) rotate(3deg); }
+    45% { -webkit-transform: translateX(-15%) rotate(-3deg); }
+    60% { -webkit-transform: translateX(10%) rotate(2deg); }
+    75% { -webkit-transform: translateX(-5%) rotate(-1deg); }
+    100% { -webkit-transform: translateX(0%); }
+}
+@keyframes wobble {
+    0% { transform: translateX(0%); }
+    15% { transform: translateX(-25%) rotate(-5deg); }
+    30% { transform: translateX(20%) rotate(3deg); }
+    45% { transform: translateX(-15%) rotate(-3deg); }
+    60% { transform: translateX(10%) rotate(2deg); }
+    75% { transform: translateX(-5%) rotate(-1deg); }
+    100% { transform: translateX(0%); }
+}
+@-webkit-keyframes sponsor-show {
+    0%, 100% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(.9); }
+}
+@keyframes sponsor-show {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(.9); }
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .main-top .countdown {
+        margin-top: 3%;
+        padding: 2% 10%;
+        font-size: 14px;
+    }
+    .home-box .bg-yao {
+        width: 60%;
+        left: 20%;
+    }
+}

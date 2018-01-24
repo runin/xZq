@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>宜佳购物</title>
+	
+	<link rel="stylesheet" href="./css/select1.css" />
+</head>
+<body>
+	
+	<div class="wrapper">
+		<div class="banner">
+
+			<div class="tm">2.宜佳购物隶属于哪个电视台？</div>
+
+			<div class="xzt">
+				<form name="reg" onsubmit="return checkform(this);">
+					<table border="0" id="male">
+						<tr>
+							<td align="left"><input type="radio" id="sex_male"
+								checked="checked" name="sex" value="A" class="passwordShow"  data-collect="true" data-collect-flag="ln-select2-check1" data-collect-desc="第二题-选项一"/><label
+								name="sex_male" for="sex_male">A.辽宁广播电视台</label><br /></td>
+						</tr>
+						<tr>
+							<td align="left"><input type="radio" id="sex_female"
+								name="sex" value="B" class="passwordchanneldetail" data-collect="true" data-collect-flag="ln-select2-check2" data-collect-desc="第二题-选项二"/><label
+								name="sex_female" for="sex_female">B.中央电视台</label><br /></td>
+						</tr>
+						<tr>
+							<td align="left"><input type="radio" id="sex_nomale"
+								name="sex" value="C" class="passwordtrendsdetail" data-collect="true" data-collect-flag="ln-select2-check3" data-collect-desc="第二题-选项三"/><label
+								name="sex_nomale" for="sex_nomale">C.凤凰卫视</label><br /></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div class="djqr">
+				<img src="./images/yj_error.png" />
+			</div>
+		</div>
+	</div>
+	
+	<footer class="copyright">本页面由辽宁广播电视台提供</footer>
+	<!-- 页面内容END -->
+	
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+	<script src="./js/app/select2.js"></script> 
+</body>
+</html>

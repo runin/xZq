@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>新闻夜总汇</title>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/vote.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+    <audio preload="auto" id="audio-a" src="./media/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="./media/audio-b.mp3" class="preload"></audio>
+    <section class="module-con hide" id="J_userControl" data-size="window">
+        <h1>
+            <img class="avatar" src="./images/avatar.jpg">
+            <p>匿名用户</p>
+        </h1>
+        <section class="userWrapper">
+            <a href="javascript:;" class="btn-my" data-collect="true" data-collect-flag="btn-my" data-collect-desc="我的商品按钮">
+                <i></i>
+                <span>中奖记录</span>
+            </a>
+        </section>
+    </section>
+    <section class="module-con" id="J_cover" data-size="window" data-width="0">
+        <section class="touchMe" id="J_voteControl" data-size="window">
+            <section class="home-box" id="J_lotteryBox">
+                <section class="main-top m-t-b">
+                    <section class="module-con none" id="J_guide"><p>个人中心</p></section>
+                    <section id="marqueen"><ul></ul></section>
+                    <img class="marqueen-logo" src="images/marqueen-logo.png" />
+                    <img class="lottery-logo" src="images/lottery-logo.png" />
+                    <!--<section id="pv">当前人数：<label></label>人</section>-->
+                    <section id="avatar"><img src="./images/avatar.jpg" data-collect="true" data-collect-flag="btn-avatar" data-collect-desc="个人中心按钮"><p>个人中心</p></section>
+                    <section class="thanks-tips"></section>
+                    <img class="bg-yao yao-top" src="./images/icon-top.png">
+                </section>
+                <section class="main-bottom m-f-b">
+                    <img class="bg-yao yao-bottom" src="./images/icon-bottom.png">
+                    <section class="footer">
+                        <section class="countdown none"><span class="countdown-tip"></span><span class="detail-countdown"></span></section>
+                        <a href="javascript:;" class="btn-rule" id="btn-rule" data-collect="true" data-collect-flag="btn-rule" data-collect-desc="活动规则按钮"><img src="./images/btn-rule.png"></a>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+    <footer class="module-con">
+        <section class="copyright"></section>
+    </footer>
+    <section class="module-con" id="J_background" data-size="height"></section>
+    <!-- <input type="button" id="lottery" value="抽奖" style="position:absolute;top:30%;z-index:9999999999;"> -->
+    <!-- <input type="button" id="record" value="中奖记录" style="position:absolute;top:50%;z-index:9999999999;"> -->
+    
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/swiper.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/vote.js"></script>
+    <script src="./js/app/lottery.js"></script>
+</body>
+</html>

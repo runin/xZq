@@ -1,0 +1,183 @@
+body{
+    background-image: url(../images/lottery-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    color: #e8a303;
+}
+.countdown {
+    width: 100%;
+    display: block;
+    color: #330075 !important;
+    font-size: 12px !important;
+    height: 40px;
+    background: #f8b700 url(../images/time-bg.png) no-repeat center;
+    background-size: 94% 84%;
+    line-height: 40px;
+    text-align: center;
+}
+.countdown .detail-countdown label {
+    color: #e8ea5b;
+    margin: 0 2px;
+    padding: 2px 1px;
+    border: 1px solid #000;
+    border-top: 1px solid #39302f;
+    border-left: 1px solid #39302f;
+    border-radius: 2px;
+    box-shadow: 2px 2px 1px rgba(0,0,0,.3);
+    background-image: -webkit-linear-gradient(-90deg, #353233, #2a0c0c);
+}
+.countdown img{
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    -webkit-animation: 3s waggle;
+    animation: 3s waggle;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-delay: 0s;
+    animation-delay: .5s;
+}
+@-webkit-keyframes waggle {
+    0%, 7% {
+        transform: rotateZ(0);
+        -webkit-transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+        -webkit-transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+        -webkit-transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+        -webkit-transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+        -webkit-transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+        -webkit-transform: rotateZ(0);
+    }
+}
+
+.icon-hand{
+    width: 70%;
+    margin: 25% auto 0;
+    display: block;
+}
+.icon-shake{
+    width: 70%;
+    margin: -6% auto 0;
+    display: block;
+}
+
+@-webkit-keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.yao {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.marquee{
+    display: block;
+    width: 100%;
+    margin-top: 7%;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}

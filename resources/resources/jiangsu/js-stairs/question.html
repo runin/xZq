@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no"/>
+	<title>爱的阶梯</title>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/question.css" />
+</head>
+<body>
+	<section id="popup" class="none">
+		<section class="ask-container pop-c pop-ask bounceInDown">
+			<section class="ask-wrapper pop-w">
+				<section class="jifen-tips">
+					<p>答对题目，<label></label>积分就到手哦！</p>
+					<p>积分可用来兑换礼品~</p>
+				</section>
+				<ul></ul>
+			</section>
+		</section>
+		<section class="result-container pop-c pop-result ok none dispshow">
+			<section class="result-wrapper pop-w">
+				<img class="icon-result icon-ok" src="./images/icon-ok.png">
+				<img class="icon-result icon-error" src="./images/icon-error.png">
+				<p></p>
+				<a id="btn-tt" href="javascript:void(0);" data-collect="true" data-collect-flag="btn-tt" data-collect-desc="再摇一次按钮">
+					<img src="./images/btn-tt.png">
+				</a>
+			</section>
+		</section>
+	</section>
+	<section id="popup-share" class="popup-share none">
+		<img class="share-tips bounceInDown" src="./images/share-tips.png">
+	</section>
+	<section id="popup-lottery" class="popup-lottery none">
+		<section class="btn-golottery2 dispshow">
+			<a href="javascript:void(0);" class="btn-close" data-collect="true" data-collect-flag="btn-pop-lotteryClose" data-collect-desc="摇奖提示弹层关闭按钮">
+				<img src="./images/btn-close.png">
+			</a>
+			<img src="./images/btn-golottery2.png">
+			<a href="javascript:void(0);" class="btn-go" data-collect="true" data-collect-flag="btn-pop-go" data-collect-desc="摇奖提示弹层去摇奖按钮">
+				<img src="./images/btn-golottery.png">
+			</a>
+		</section>
+	</section>
+	<header>
+		<img class="banner" src="./images/banner.jpg">
+		<img class="tvlogo" src="./images/icon-tvlogo.png">
+		<div class="lottery-cd none">
+			<div class="countDown">
+				<span class="lottery-tip"></span>
+				<span class="lottery-countdown"></span>
+			</div>
+		</div>
+		<section class="shake-wrapper none">
+			<p><img class="waggle" src="./images/icon-shake.png"><span>摇奖进行中</span></p>
+			<a href="javascript:void(0);" class="btn-go2l" data-collect="true" data-collect-flag="btn-go2l" data-collect-desc="倒计时去摇奖按钮">
+				<img src="./images/btn-golottery.png">
+			</a>
+		</section>
+	</header>
+	<section class="jifen-wrapper">
+		<img id="avatar" src="./images/avatar-default.png">
+		<p class="name">追爱人：<label></label></p>
+		<p class="score none">积分：<label>0</label></p>
+	</section>
+	<section class="container">
+		<section class="dice-wrapper none">
+			<section id="dice" class="dice dice_t"></section>
+			<a id="btn-throw" href="javascript:void(0);" data-collect="true" data-collect-flag="btn-throw" data-collect-desc="扔骰子按钮">
+				<img class="btn-throw" src="./images/btn-throw.png">
+			</a>
+			<p>点击骰子登上爱的阶梯</p>
+		</section>
+		<img class="icon-moon wobble" src="./images/icon-moon.png">
+		<section class="icon-stair">
+			<img src="./images/icon-stair.png">
+			<section id="icon-people">
+				<img src="./images/icon-people.png">
+				<img class="host-avatar" src="./images/avatar-default.png">
+			</section>
+		</section>
+	</section>
+	<footer>
+		<a id="btn-talk" href="javascript:void(0);" data-collect="true" data-collect-flag="btn-talk" data-collect-desc="参与讨论按钮">
+			<img src="./images/btn-talk.png">
+		</a>
+		<a id="btn-jifen" href="javascript:void(0);" data-collect="true" data-collect-flag="btn-jifen" data-collect-desc="我的积分按钮">
+			<img src="./images/btn-jifen.png">
+		</a>
+		<section class="copyright"></section>
+	</footer>
+
+	<script src="./js/config.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="./js/app/count.js"></script>
+	<script src="./js/app/question.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" >
+	<title>男过女人关</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/core.css">
+	<link rel="stylesheet" type="text/css" href="./css/game.css">
+</head>
+<body>
+	<!-- 游戏主界面_S -->
+	<img src="images/dia-bg.png" class="none"/>
+	<section id="container">
+		<section id="stage_loading" class="stage none">
+			<section id="loading_bar" class="none">
+				<div class="sk-cube-grid">
+					<div class="sk-cube sk-cube1"></div>
+					<div class="sk-cube sk-cube2"></div>
+					<div class="sk-cube sk-cube3"></div>
+					<div class="sk-cube sk-cube4"></div>
+					<div class="sk-cube sk-cube5"></div>
+					<div class="sk-cube sk-cube6"></div>
+					<div class="sk-cube sk-cube7"></div>
+					<div class="sk-cube sk-cube8"></div>
+					<div class="sk-cube sk-cube9"></div>
+				</div>
+				<p class="stage-loading-text">游戏努力加载中...</p>
+			</section>
+		</section>
+		<section id="stage_index" class="stage none">
+			<section class="play-btn index-btn none" data-collect="true" data-collect-flag="tv-hbnm-mow-game-start-btn" data-collect-desc="游戏页面开始游戏按钮">
+				<img src="./images/icon-play.png">
+			</section>
+			<section class="yao-btn index-btn none" data-collect="true" data-collect-flag="tv-hbnm-mow-game-start-btn" data-collect-desc="游戏页面开始游戏按钮">
+				<img src="./images/yao.png">
+			</section>
+			<section class="game-back"><a id="game-back" data-collect="true" data-collect-flag="tv-hbnm-mow-game-back-index-btn" data-collect-desc="游戏页面返回首页按钮"><img src="images/icon-back.png"></a></section>
+			<section class="time none">
+		   	   <div class="time-box"><span class="time-tip">请稍候</span><span class="downContTime"></span></div>
+		   </section>
+		</section>
+        <section class="stage_main none" id="stage_main"></section>
+	</section>
+	<!-- 游戏主界面_E -->
+	
+	<section class="crop-animate-wrapper"></section>
+	<!-- 中奖弹层_S -->
+	<section id="win_dialog" class="dialog-wrapper none">
+		<!--抽奖弹层-->
+		<section class="lottery-box lottery-box-triangle dia-bg" data-width="640" data-height="170" data-top="166" data-left="0">
+			<a href="javascript:void(0)" class="btn-close close"></a>
+			<p id="score" class="score">250分</p>
+			<p>哇塞，好厉害啊！</p>
+			<p>恭喜您，获得一次抽奖机会！</p>
+			<a id="btn-lottery" class="btn-lottery" href="javascript:void(0)" data-collect="true" data-collect-flag="tv-hbnm-mow-game-lottery-btn" data-collect-desc="游戏页面抽奖按钮">去抽奖
+			</a>
+		</section>
+		<!--中奖-->
+		<section class="award-box none">
+			<!--中奖-->
+			<section class="dialog-win lottery-box-triangle dia-bg none" id="dialog-win">
+				<a href="javascript:void(0)" class="btn-close close" data-collect="true" data-collect-flag="tv-hbnm-mow-game-lottery-close-btn" data-collect-desc="中奖弹层关闭按钮"></a>
+				<!--实物-->
+				<section class="dialog-lottery  none" id="dialog-shiwu">
+	                <p class="award-tips"><img src="images/lott-title.png" alt="恭喜您中奖了" /></p>
+					<img class="award-img" src="">
+	                <div class="input-box" id="input-box">
+	                    <p class="input-box-tips">请填写信息，使用方法参见活动规则 </p>
+	                    <p><input class="name" id="name" placeholder="姓名："></p>
+	                    <p><input class="phone" id="phone" type="tel" placeholder="电话："></p>
+	                    <p><input class="address" id="address" placeholder="地址："></p>
+	                </div>
+	                <a href="javascript:void(0)" class="btn-lottery" id="btn-getGoods" data-collect="true" data-collect-flag="tv-hbnm-mow-game-lottery-award-btn" data-collect-desc="中奖弹层领奖按钮">领取</a>
+	                <a href="javascript:void(0)" class="btn-lottery close" id="btn-back" data-collect="true" data-collect-flag="tv-hbnm-mow-game-lottery-back-btn" data-collect-desc="中奖弹层领奖返回按钮">返回</a>
+				</section>
+				<!--外链,卡券,红包-->
+				<section class="dialog-lottery none" id="dialog-quan">
+	                <p class="award-tips"><img src="images/lott-title.png" alt="恭喜您中奖了" /></p>
+					<img class="award-img" src="" />
+	                <a href="javascript:void(0)" class="btn-lottery" id="btn-getQuan" data-collect="true" data-collect-flag="tv-hbnm-mow-game-lottery-award-btn" data-collect-desc="中奖弹层领奖按钮">领取</a>
+				</section>
+			</section>
+			<!--谢谢参与-->
+			<section class="dialog-lottery lottery-box-triangle dia-bg none" id="dialog-thanks">
+				<a href="javascript:void(0)" class="btn-close close" data-collect="true" data-collect-flag="tv-hbnm-mow-game-notlott-close-btn" data-collect-desc="未中奖弹层关闭按钮"></a>
+				<h1 class="title">
+					<img src="images/notLott.png" />
+				</h1>
+				<p><img src="images/sad.png"></p>
+				 <a href="javascript:void(0)" class="btn-lottery close" id="btn-goOn" data-collect="true" data-collect-flag="tv-hbnm-mow-game-notlott-goon-btn" data-collect-desc="未中奖弹层继续加油按钮">继续加油</a>
+			</section>
+		</section>
+	</section>
+	<!-- 中奖弹层_E -->
+
+	<!-- 闯关失败弹层_S -->
+	<section id="lost_dialog" class="dialog-wrapper none">
+		<section class="lost-content lottery-box-triangle dia-bg" data-width="640" data-height="330" data-top="200" data-left="0">
+			<a href="javascript:void(0)" class="btn-close lost-close" data-collect="true" data-collect-flag="tv-hbnm-mow-game-scores-less-close-btn" data-collect-desc="分数不够弹层关闭按钮"></a>
+			<p id="score" class="score">250分</p>
+			<p>这点分数还不够抽奖哦~</p>
+			<p>下次加油啦~~！</p>
+			<a class="btn-lottery lost-close"  href="javascript:void(0)" data-collect="true" data-collect-flag="tv-hbnm-mow-game-scores-less-btn" data-collect-desc="分数不够弹层再玩一次按钮">
+				<span class="a-tips">再玩一次</span>
+			</a>
+		</section>
+	</section>
+	<!-- 闯关失败弹层_E -->
+
+	<section class='none'><audio preload="auto" id="bgm" src="./music/bgm.mp3" loop="loop"></audio></section>
+
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.touch.js"></script>
+	<script src="./js/plugins/zepto.fx.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="https://yao.holdfun.cn/boss/resources/js/plugins/other/pixi.js"></script>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+	<script src="./js/plugins/game_component.js"></script>
+	<script src="./js/app/game.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

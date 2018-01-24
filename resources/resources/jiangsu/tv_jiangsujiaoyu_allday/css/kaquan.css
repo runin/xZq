@@ -1,0 +1,103 @@
+/*
+ *	红包
+ */
+.hongbao{
+	height: 100%;
+	position: relative;
+}
+
+.hongbao-bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.hongbao-title{
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+
+.hongbao-click{
+	display: block;
+	position: absolute;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+
+.hongbao-close{
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 48px;
+	height: 48px;
+	background: none;
+	z-index: 1;
+}
+
+/*
+ *	END OF红包
+ */
+ 
+.kaquan-wrapper{
+ 	overflow: hidden;
+ }
+ .kaquan-wrapper .hongbao-kaquan{
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: -10px auto 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.kaquan-wrapper .hongbao-kaquan img{
+	max-width: 100%;
+ 	max-height: 100%;
+ }
+
+.kaquan-wrapper .hongbao-click{
+ 	display: block;
+ 	width: 52%;
+ 	line-height: 40px;
+ 	color: white;
+ 	font-size: 14px;
+ 	text-align: center;
+ 	margin: 0 auto;
+ 	background: #ff9313;
+ }
+
+ /*
+ *	现金红包1
+ */
+ .kaquan-wrapper .hongbao-title img{
+ 	width: 100%;
+ 	height: 100%;
+ }
+ .kaquan-wrapper .hongbao-click-wrapper{
+ 	position: absolute;
+ 	bottom: 13%;
+ 	text-align: center;
+ 	width: 100%;
+ }
+ .kaquan-wrapper .hongbao-click-wrapper .hongbao-btn{
+ 	display: block;
+ 	width: 52%;
+ 	line-height: 40px;
+ 	color: white;
+ 	font-size: 14px;
+ 	text-align: center;
+ 	margin:  0 auto;
+ 	background: #ff9313;
+ }
+/*
+ *	END OF 现金红包1
+ */

@@ -1,0 +1,395 @@
+*{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input::-webkit-input-placeholder {
+    color:#6D6D6D !important;
+}
+input[placeholder], [placeholder], *[placeholder] {
+    color:#6D6D6D !important;
+}
+.modal:before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.75);
+    z-index: 100;
+}
+.modal .dialog{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 6px;
+    z-index: 101;
+}
+#rule-dialog .btn-close {
+    background:#ff8a00;
+    background-size: 100% 100%;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    position: absolute;
+    top:-12px;
+    right:-14px;
+    font-size: 28px;
+    color:#fff;
+    text-align: left;
+    line-height: 44px;
+    padding-left:10px;
+    font-weight: normal;
+}
+.modal .rule-dialog {
+    color: #fff;
+    background: #af3329;
+    /*border:1px solid #fff;*/
+    border-radius: 5px;
+    background-size: 100% 90%;
+    background-position: 0 10%;
+    overflow: hidden;
+
+}
+.rule-dialog h2 {
+    color: #FFF;
+    height: 32px;
+    line-height: 38px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.rule-dialog .content {
+    position: static;
+    margin: 0 auto;
+    padding: 10% 0 20%;
+    width: 88%;
+    height: 100%;
+    word-break: break-all;
+}
+
+.rule-dialog .rule {
+    font-size: 14px;
+    line-height: 24px;
+    max-height: 100%;
+    overflow-y: auto;
+    color: #FFF;
+    margin-top: 0;
+    height: 90%;
+    padding-bottom: 6%;
+}
+.rule-dialog p {
+    line-height: 22px;
+}
+.rule-dialog h3 {
+    margin-top: 22px;
+    font-size: 16px;
+}
+.rule-dialog .content .congrate{
+    color: #fffc00;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 23px;
+}
+.rule-dialog .content .redpack{
+    color: #fffc00;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+#lottery-dialog{
+    overflow-y: scroll;
+    z-index: 101;
+}
+.lottery-dialog {
+    width: 100%;
+    height: 100%;
+    background: url(../images/lottery-bg.png) no-repeat top center;
+    background-size: 100% 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.lottery-dialog .btn-close
+{
+    position: absolute;
+    right: -13px;
+    top: -16px;
+    height: 36px;
+    width: 40px;
+    background: url(../images/icon-close.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+.lottery-dialog .lottery-btn {
+    display: block;
+    width: 52%;
+    margin: 5% auto;
+    background: #F76300;
+    /*  border: 2px solid #2c3b70;*/
+    border-radius: 8px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+#Entlottery-dialog .lottery-dialog .lott-box {
+    width: 90%;
+    height: 53%;
+    margin: 12% auto 0;
+    color: #333;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+.lottery-dialog .lott-box {
+    width: 90%;
+    height: 53%;
+    margin: 18% auto 0;
+    color: #333;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center
+}
+.lottery-dialog .lott-box .award-tips {
+    width: 80%;
+    /*margin: 3% auto;*/
+}
+.lottery-dialog .lott-box .award-img{
+    width: 85%;
+    margin: 4% auto;
+}
+.lottery-dialog .lott-box .award-luck{
+    color: #ffca2f;
+    font-size: 17px;
+    font-weight: bold;
+}
+.lottery-dialog .lott-box .award-luckEt {
+    color: #fff;
+    font-size: 15px;
+}
+.lottery-dialog #not-lott .ltp {
+    font-size: 15px;
+    color: #FFF;
+}
+.lottery-dialog .duijiangma
+{
+    font-size:16px;
+    color:#fff;
+}
+.lottery-dialog .lott-box .inp .ple{
+    color: #fff;
+    display: block;
+    width: 90%;
+    text-align: left;
+    margin: 2% auto;
+    font-size: 12px;
+}
+.lottery-dialog .lott-box .inp{
+    color: #fff;
+    text-align: left;
+    padding-left:2%;
+}
+.lottery-dialog .lott-box .inp p{
+    color: #fff;
+    display: block;
+    margin: 3% auto;
+    text-align: center;
+}
+.lottery-dialog .lott-box .inp p input{
+    width: 90%;
+    font-size: 18px;
+}
+.lottery-dialog .lott-box .code .ple{
+    color: #fff;
+    font-size: 12px;
+}
+.lottery-dialog .lott-box .code .cd{
+    color: #c5092b;
+    display: block;
+    margin: 3% auto;
+    background: #fff;
+    height: 28px;
+    line-height: 28px;
+    width: 90%;
+    border-radius: 5px;
+}
+.lottery-dialog .lott-box .result .ple{
+    color: #fff;
+    font-size: 12px;
+}
+
+.lottery-dialog .lott-box .result .cd{
+    color: #fff;
+    display: block;
+    margin: 3% auto;
+    height: 22px;
+    line-height: 22px;
+    width: 90%;
+    text-align: left;
+    padding-left: 10%;
+}
+.lottery-dialog .lott-box .code .prize-desc{
+    background: none;
+    color: #B6B4B4;
+    font-size: 12px;
+    line-height: 15px;
+    height: auto;
+}
+.redlottery-dialog {
+    width: 100%;
+    height: 100%;
+    background: url(../images/red-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    /*border-bottom-left-radius: 8px;*/
+    /*border-bottom-right-radius: 8px;*/
+    overflow: hidden;
+    border-radius: 10px;
+}
+.redlottery-dialog .award-lpt{
+    position: absolute;
+    width: 100%;
+    color: #f0e243;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    /*margin-top: 3%;*/
+    top: 10%;
+}
+.redlottery-dialog .award-logo{
+    display: block;
+    width: 35%;
+    margin: 8% auto 0;
+}
+.redlottery-dialog .award-img{
+    display: block;
+    width: 45%;
+    margin: 40% auto 0;
+}
+.redlottery-dialog .lottery-btn{
+    position: absolute;
+    display: block;
+    /*background: #ebcf76;*/
+    width: 60%;
+    left: 20%;
+    /*margin: 20% auto 0;*/
+    top: 50%;
+    height: 40%;
+    /*line-height: 30px;*/
+    /*border-radius: 15px;*/
+    /*box-shadow: 0 0 8px rgba(0,0,0,0.4);*/
+    /*color: #ab1921;*/
+}
+.redlottery-dialog .award-ly{
+    display: block;
+    margin-top: 5%;
+    color: #fff;
+    font-size: 12px;
+    padding: 0px 10px;
+}
+.thanks-dialog img{
+    width: 82%;
+    margin: 40% auto 0;
+    display: block;
+}
+#Entlottery-dialog {
+    overflow-y: scroll;
+    height:100%;
+    width:100%;
+}
+#Entlottery-dialog #ent-result .lottery-btn {
+    display: inline-block;
+    width: 45%;
+    margin: 5% 5px;
+}
+.isend{
+    position: absolute;
+    width: 100%;
+    color: #d5ba6f;
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    top: 18%;
+    display: none;
+}
+/*.isend p{*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-color: #000000;*/
+    /*opacity: 0.8;*/
+/*}*/
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    #Entlottery-dialog .lottery-dialog .lott-box {
+        height: 56%;
+        margin: 6% auto 0;
+    }
+    #Entlottery-dialog .lottery-dialog .lott-box .award-img {
+        width: 66%;
+        margin: 3% auto;
+    }
+    .thanks-dialog img{
+        width: 90%;
+        margin: 25% auto 0;
+        display: block;
+    }
+    .lottery-dialog .lott-box .award-tips {
+        width: 92%;
+        margin: 1% auto 1%;
+    }
+    .lottery-dialog .lott-box {
+        margin: 8% auto 0;
+    }
+    .lottery-dialog .lott-box .award-img {
+        margin: 1% auto;
+    }
+    .lottery-dialog .lott-box .inp p {
+        margin: 1% auto;
+    }
+
+    .lottery-dialog .lott-box .code .cd{
+        margin: 1% auto;
+    }
+    .lottery-dialog .lott-box .result .cd{
+        margin: 1% auto;
+    }
+    /*.redlottery-dialog .award-logo{*/
+        /*margin: 6% auto 0;*/
+    /*}*/
+    /*.redlottery-dialog .award-img{*/
+        /*width: 60%;*/
+        /*margin: 28% auto 0;*/
+    /*}*/
+    /*.redlottery-dialog .lottery-btn{*/
+        /*margin: 10% auto 0;*/
+    /*}*/
+    /*.redlottery-dialog .award-ly{*/
+        /*margin-top: 5%;*/
+    /*}*/
+}
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .redlottery-dialog .award-logo{
+        width: 35%;
+        margin: 6% auto 0;
+    }
+    /*.redlottery-dialog .award-img{*/
+        /*width: 60%;*/
+        /*margin: 10% auto 0;*/
+    /*}*/
+    /*.redlottery-dialog .lottery-btn{*/
+        /*margin: 15% auto 0;*/
+    /*}*/
+    #lottery-dialog .lottery-dialog .lott-box {
+        margin: 9% auto 0;
+    }
+}

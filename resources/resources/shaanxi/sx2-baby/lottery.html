@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>陕西二套-萌宝活动规则</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+
+    <script src="./js/wx_api.js"></script>
+</head>
+<body>
+
+<div class="main">
+    <div id="lottery-container"></div>
+    <div class="none" id="lottery-result">
+
+        <!--中奖-->
+        <div class="lottery-item none" id="entity-item">
+            <img src=""/>
+            <p>请写领奖信息</p>
+            <p class=""><input type="text" id="s-name" placeholder="姓名" /></p>
+            <p class=""><input type="number" id="s-mobile"  placeholder="手机" /></p>
+            <p class="item-ctrl"><a href="#" class="btn btn-sign" id="btn-sign">提交</a></p>
+        </div>
+
+        <!--没有中奖-->
+        <div class="lottery-item none" id="without-item">
+            <img src=""/>
+            <a href="javascript:toUrl('list.html');">继续投票</a>
+            <a href="javascript:share();">喊小伙伴来</a>
+        </div>
+
+        <!--领奖-->
+        <div class="lottery-item none" id="award-item">
+            <img src=""/>
+            <div id="award-info"></div>
+            <div>领奖信息提交成功，请保持手机畅通，等候工作人员联系。</div>
+            <a href="javascript:toUrl('list.html');">继续投票</a>
+            <a href="javascript:share();">喊小伙伴来</a>
+        </div>
+
+    </div>
+    <p class="copyright">页面由陕西广播电视台提供</p>
+</div>
+
+
+<script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.min.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/md5.js"></script>
+<script src="./js/share.js"></script>
+<script src="./js/data_collect.js"></script>
+<script src="./js/lottery_cj.js"></script>
+<script src="./js/lottery.js"></script>
+</body>
+</html>

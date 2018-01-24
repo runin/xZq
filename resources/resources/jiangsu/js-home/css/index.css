@@ -1,0 +1,278 @@
+﻿body, html
+{
+	width:100%;
+    padding: 0px;
+    margin: 0px;
+    min-width: 300px;
+    height: 100%;
+    background-color: #CEF3FC;
+    background: url('../images/bg.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+    background-size: cover;
+	overflow: hidden;
+}
+.con-box{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+input
+{
+    padding: 0px;
+    margin: 0px;
+}
+footer
+{
+    height: 30px;
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    text-align: center;
+    color: #FFA313;
+    font-size: 12px;
+}
+.form,
+.success
+{
+    margin: auto;
+    width: 300px;
+    height: 252px;
+    background: url('../images/formbg.png') no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    margin-left: -150px;
+    margin-top: -180px;
+    padding: 30px 30px;
+    padding-top: 15px;
+    z-index: 9999;
+}
+.success{
+    background: url('../images/formbg_01.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+.ren-a{
+	position: absolute;
+	bottom: -32%;
+	left: -15%;
+	width: 50%;
+	height: 50%;
+	background: url('../images/ren_01.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+    background-size:contain;
+}
+.ren-b{
+	position: absolute;
+	bottom: -30%;
+	right: -55px;
+	width: 50%;
+	height: 50%;
+	background: url('../images/ren_02.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+    background-size:contain;
+}
+.success > h2 {
+	margin:30px 0 0;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	color:#e36d17;
+}
+.success > h3 {
+	margin:40px 0 0;
+	text-align:center;
+	font-size:21px;
+	font-weight:bold;
+	color:#e36d17;
+}
+.success > p {
+	line-height:25px;
+	margin:20px 0 0;
+	font-size:16px;
+	color:#e36d17;
+}
+
+.form > input, .form > .select, .form > .age
+{
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #FFA868;
+    border: 1px solid #79A0B3;
+    border-radius: 5px; /* color: white;*/
+    width: 187px;
+    color: White !important;
+}
+.form > .select
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FFA868 !important;
+    position: relative;
+    line-height: 33px;
+    position: relative;
+}
+
+
+
+
+
+.select dl
+{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: white;
+    margin-left: -4px;
+    border: 1px solid gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: Black;
+    display: none;
+}
+.select dl dt
+{
+    height: 35px;
+    line-height: 35px;
+    text-indent: 10px;
+}
+.s_m
+{
+}
+.s_l
+{
+    border-top: 1px solid gray;
+}
+.open dl
+{
+    display: block !important;
+}
+
+
+.downarrow_div
+{
+    position: absolute;
+    right: 0px;
+    height: 33px;
+    width: 30px;
+    top: 0px;
+    border-left: 1px solid #BC6729;
+}
+
+.downarrow
+{
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    width: 17px;
+}
+
+
+
+
+
+.form > .age
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FFA868 !important;
+    position: relative;
+    line-height: 33px;
+    position: relative;
+}
+.age dl
+{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: white;
+    margin-left: -4px;
+    border: 1px solid gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: Black;
+    z-index: 999999;
+    height: 200px;
+    overflow: auto;
+    display:none;
+}
+.age dl dt
+{
+    height: 30px;
+    line-height: 30px;
+    text-indent: 10px;
+    border-top: 1px solid gray;
+}
+
+
+
+
+
+
+
+.sex
+{
+    margin-top: 10px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 187px;
+    text-align: left;
+}
+.sex input
+{
+    display: inline;
+    vertical-align: middle;
+}
+.form input + input
+{
+    margin-top: 10px;
+}
+.submit
+{
+    position: absolute;
+    top: 110%;
+    width: 180px;
+    left: 50%;
+    margin-left: -90px;
+}
+.mark
+{
+    position: absolute;
+    top: -35px;
+    right: -15px;
+    width: 100px;
+}
+
+
+::-webkit-input-placeholder
+{
+    /* WebKit browsers */
+    color: white;
+}
+:-moz-placeholder
+{
+    /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+::-moz-placeholder
+{
+    /* Mozilla Firefox 19+ */
+    color: white;
+}
+:-ms-input-placeholder
+{
+    /* Internet Explorer 10+ */
+    color: white;
+}

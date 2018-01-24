@@ -1,0 +1,291 @@
+header
+{
+	position: relative;
+	height:50px;
+	width: 100%;
+	background:#c53336;
+  padding:0px 20px;
+
+}
+/*弹层*/
+.modal {
+    position: fixed;
+}
+/*用户中奖弹层*/
+.lucker-section
+{
+    position: relative;
+    width:80%;
+    margin-left: 10%;
+    margin-top:10%;
+    background-color:#fff;
+    overflow: hidden;
+    z-index: 1001;
+    background: url("../images/index-luck-bg.jpg") top center no-repeat;
+    background-size: 100% 100%;
+}
+.con-tab a
+{
+  width:40%;
+  padding: 5px 0px;
+  border-radius: 5px;
+  margin:5% auto 0px;
+  text-align: center;
+}
+
+.lucker-section .con
+{
+    overflow: hidden;
+    padding: 8% 10% 8% 10%;
+    text-align: center;
+}
+.lucker-section .con img
+{
+    display: block;
+    max-width: 50%;
+}
+.con-tab .duobao-close
+{
+  background-color: #f91546;
+  color:#fff;
+  font-size: 16px;
+  float:left;
+}
+
+.con-tab .confirm-now
+{
+  background-color: #f91546;
+  color:#fff;
+  font-size: 16px;
+  float:right;
+}
+.user-information
+{
+	height:100%;
+	width:100%;
+	position: relative;
+}
+.user-information li
+{
+	display: inline-block;
+	text-align: left;
+	color:#fff;
+	vertical-align: middle;
+	font-size: 16px;
+}
+.user-information li:nth-child(1)
+{
+	width:25%;
+	height:100%;
+}
+.user-information li:nth-child(2)
+{
+	width:30%;
+}
+
+.user-information li .head-img
+{
+	height:40px;
+	width:40px;
+	border-radius: 100%;
+  background-position:top center; 
+  background-repeat:no-repeat;
+	position: relative;
+  background-size: 100% 100%;
+	top:5px;
+}
+
+.user-information i 
+{
+    width: 32px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    float:left;
+    z-index: 2;
+    top:2px;  
+}
+li .money-market-icon
+{
+    background-image:url('../images/money-icon.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#money-amount
+{
+	  vertical-align: middle;
+}
+
+/*第二部分*/
+h2
+{
+	  padding-left:10px;
+	  padding-top:5px;
+}
+.top-image-nav
+{
+    width: 100%;
+    height: 120px;
+    position: relative;
+    margin-top: 2px;
+    clear:both;
+}
+
+.img-nav
+{
+    height: 100%;
+    width: calc(50% - 15px);
+    width: -webkit-calc(50% - 15px);
+    position: relative;
+    float:left;
+}
+.top-image-nav2>p
+{
+	  margin:0px 0px 5%;
+    max-height: calc(100% - 50px);
+    overflow: auto;
+}
+
+.top-image-nav1
+{
+    margin-left:10px;
+    /*background-image: url(../images/market-top-img.jpg);*/
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.top-image-nav2
+{
+ 	  margin-left: 10px;
+}
+
+.hot-label
+{
+    position: absolute;
+    top:-40px;
+    left:-40px;
+    width:80px;
+    height:80px;
+    background: red;
+    border-radius: 100%;
+    text-align: right;
+    vertical-align: bottom;
+    color:#fff;
+    line-height: 120px;
+}
+.hot-label>p
+{
+    position: absolute;
+    right: 12px;
+    bottom: -38px;
+}
+.gold-deduct
+{
+    width:140px;
+    height:34px;
+    border-radius: 5px;
+    background: #c53336;
+    line-height: 34px;
+    color:#fff;
+    position: absolute;
+    margin:5px auto;
+    display: block;
+    text-align:center;
+    bottom:0px;
+}
+.market-image-list
+{
+	  overflow: auto;
+}
+.image-list li
+{
+	padding:3px 0px 0px;
+	border-bottom: 1px solid #c0bfbf;
+    position: relative;
+    z-index: 1;
+}
+li .ex-change-prize
+{
+    position: absolute;
+    width: 38%;
+    height: 28px;
+  /*  border-left: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    border-right: 1px solid rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(0,0,0,1);*/
+    background: #c53336;
+    bottom: 18px;
+    left: 15%;
+    text-align: center;
+    color:#fff;
+    line-height: 28px;
+    border-radius: 5px;
+
+}
+.coupon
+{
+	  max-height: 100px;
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+  -webkit-backface-visibility:hidden;
+}
+.bounceOutDown {
+  -webkit-animation-name: bounceOutDown;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+  -webkit-backface-visibility:hidden;
+}
+
+@-webkit-keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes bounceOutDown {
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  40%, 45% {
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+}

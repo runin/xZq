@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=640, user-scalable=no">
+	<title>我们相爱吧</title>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script type="text/javascript">$(function () {var DEFAULT_WIDTH = 640,ua = navigator.userAgent.toLowerCase(),deviceWidth = window.screen.width,devicePixelRatio = window.devicePixelRatio || 1,targetDensitydpi;if(ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4){targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');}});</script>
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body>
+	<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+	<audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio>
+	<div class="lottery-wrap wrap">
+		<div class="main-top">
+			<div class="countdown none" id="lottery-countdown">
+				<span class="countdown-tip db"></span>
+				<span class="detail-countdown"></span>
+			</div>
+			<div class="thanks-tips"></div>
+		</div>
+		<div class="main-foot">
+			<div class="marquee none"><ul></ul></div>
+		</div>
+	</div>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/lottery.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+html {
+	height: 100%;
+}
+body {
+	width:100%;
+	min-height:100%;
+	background:url(../images/vote-info-bg.jpg) no-repeat;
+	background-size:cover;
+	overflow:hidden;
+	position: relative;
+}
+.main {
+}
+.back-btn {
+	display: block;
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	background-color: #ffa70d;
+	text-align: center;
+	color: #FFF;
+	font-size: 15px;
+	margin: initial;
+	padding: 0;
+}
+a.back-btn:visited,a.back-btn:active {
+	color:#FFF;
+}
+.form-group {
+	padding:6% 16px 10%;
+	margin-top:22px;
+}
+.form-item textarea {
+	border-radius: 5px;
+	width: 100%;
+	height: 120px;
+	padding: 10px;
+	border: 1px solid #602905;
+	font-size: 14px;
+	color: #4F3000;
+	background: rgba(244, 200, 133, .15);
+	margin-bottom: 10px;
+}
+textarea::-webkit-input-placeholder {
+	color: #4F3000;
+}
+
+/*上传-S*/
+.upload-box form {
+	height: 0;
+	opacity: 0;
+	position: absolute;
+	top: -100px;
+}
+.upload-box form input {
+	opacity: 0;
+}
+.upload-box .icon {
+	display: inline-block;
+	vertical-align: top;
+	width: 52px;
+	height: 52px;
+	line-height: 52px;
+	border-radius: 10px;
+	text-align: center;
+}
+.upload-box .icon:before {
+	content: '';
+	display: inline-block;
+	vertical-align: -2px;
+	width: 20px;
+	height: 20px;
+	background: url(../images/add.png) no-repeat 0 0;
+	background-size: cover;
+}
+
+.upload-box .img-preview {
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #602905;
+	border-radius: 10px;
+	text-align: center;
+	width: 52px;
+	height: 52px;
+	line-height: 52px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.upload-box .img-preview .close {
+	content: '';
+	display: block;
+	background: url(http://yao.holdfun.cn/portal/resources/news/images/close.png) no-repeat 0 0;
+	background-size: 18px auto;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: -6px;
+	top: -8px;
+	cursor: pointer;
+}
+.upload-box .img-preview .uploading {
+	display: none;
+}
+.upload-box .img-preview.loading .uploading {
+	height: 25px;
+	width: 25px;
+	margin: 0px auto;
+	position: relative;
+	-webkit-animation: loading-rotation .6s infinite linear;
+	animation: loading-rotation .6s infinite linear;
+	border-left: 3px solid rgba(255, 153, 163, 0.55);
+	border-right: 3px solid rgba(255, 153, 163, 0.55);
+	border-bottom: 3px solid rgba(255, 153, 163, 0.55);
+	border-top: 3px solid rgba(238,26,46,.85);
+	border-radius: 100%;
+	display: block;
+	line-height: 0;
+	font-size: 0;
+}
+.upload-box .img-preview .lc {
+	position: absolute;
+	left: 13px;
+	top: 13px;
+}
+.upload-box .img-preview .ic {
+	display: block;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.upload-box .img-preview img {
+	vertical-align: -11px;
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%;
+}
+.upload-box .btn-upload {
+	border: 2px dotted #602905;
+
+	margin-bottom: 10px;
+}
+/*.upload-box .btn-upload:before {
+    width: 28px;
+
+    height: 28px;
+    background-position: -79px 0px;
+    vertical-align: -7px;
+}*/
+
+.preview-box {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	z-index: 9999999;
+	background-size: 320px auto;
+	top: 0;
+	left: 0;
+}
+@-webkit-keyframes loading-rotation {
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(359deg);}
+}
+@keyframes loading-rotation {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(359deg);}
+}
+
+/*上传-E*/
+
+.btn-back-simple {
+	display: block;
+	width: 100%;
+	text-align: center;
+	letter-spacing:10px;
+	font-size: 18px;
+	margin: 8px auto 16px;
+	color: #ff6600;
+	font-weight: bolder;
+}
+.btn-submit {
+	background:#FAA41C;
+	display:block;
+	width:62%;
+	height:40px;
+	line-height:40px;
+	margin:23px auto 0;
+	border-radius:22px;
+	text-align:center;
+	font-size:18px;
+	color:#fff;
+}
+.preview-box {
+	width:100%;
+	height:100%;
+	position:fixed;
+	background:rgba(0,0,0,0.8);
+	z-index:9999999;
+	background-size:320px auto;
+	top:0;
+	left:0;
+}
+.loading-btn {
+	background:#ccc;
+	color:#fff;
+}
+.copyright {
+	position: absolute;
+	bottom: 3px;
+	color: #145699;
+}
+.not-start{
+	clear: both;
+	font-size: 19px;
+	color: #602905;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	margin-top: 25vh;
+	width: 90%;
+
+}

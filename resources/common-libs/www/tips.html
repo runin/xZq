@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" > 
+		<title>素材开发文档</title>
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/SyntaxHighlighter/shCoreDefault.css"/>
+	</head>
+	<body>
+		<header>
+			<section class="header-content">
+				<a href="./index.html" class="logo">
+					<img src="./images/logo.png" title="新掌趣" alt="新掌趣" />
+				</a>
+			</section>
+		</header>
+		<section class="main">
+			<nav>
+				<ul class="nav-list">
+					<li>
+						<h2>素材基础</h2>
+						<ul>
+							<li><a href="index.html">文档结构</a></li>
+							<li><a href="core.html">基本功能</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>公共组件</h2>
+						<ul>
+							<li><a href="reserve.html">预约</a></li>
+							<li><a href="subscribe.html">一键关注</a></li>
+							<li><a href="barrage.html">弹幕组件</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>工具方法</h2>
+						<ul>
+							<li><a href="date.html">日期</a></li>
+							<li><a href="string.html">URL处理</a></li>
+							<li><a href="countDown.html">倒计时</a></li>
+							<li class="active"><a href="tips.html">Tips(替代alert)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<section class="content-wrapper">
+				<section class="content">
+					<section class="content-header">
+						<h1>Tips(替代alert)</h1>
+						<p>最后更新时间：2015/7/8 18:00	更新人：陈智博<a class="float-right" href="mailto:bobchen@holdfun.cn">报错</a></p>
+					</section>
+					<section class="content-detail">
+						
+						<pre class="brush: js;">
+var showTips = function(word, pos, timer) {
+	if (aniTrue) {
+		aniTrue = false;
+		var pos = pos || '2',
+		timer = timer || 1500;
+		$('body').append('<div class="tips none"></div>');
+		$('.tips').css({
+			'position': 'fixed' ,
+			'max-width': '80%' ,
+			'top': '60%' ,
+			'left': '50%' ,
+			'z-index': '99999999' ,
+			'color': 'rgb(255, 255, 255)' ,
+			'padding': '20px 10px' ,
+			'border-radius': '5px' ,
+			'margin-left': '-120px' ,
+			'background': 'rgba(0, 0, 0, 0.8)' ,
+			'text-align': 'center'
+		});
+		$('.tips').html(word);
+		var winW = $(window).width(),
+			winH = $(window).height();
+		$('.tips').removeClass('none').css('opacity', '0');
+		var tipsW = $('.tips').width(),
+			tipsH = $('.tips').height();
+		$('.tips').css({'margin-left': -tipsW/2,'top':(winH - tipsH)/(pos - 0.2)}).removeClass('none');
+		$('.tips').animate({
+			'opacity': '1',
+			'top': (winH - tipsH)/pos}, 300, function() {
+				setTimeout(function() {
+					$('.tips').animate({'opacity':'0'}, 300, function() {
+						$('.tips').addClass('none').css('top', (winH - tipsH)/(pos - 0.2));
+					});
+				}, timer);
+				setTimeout(function() {
+					$('.tips').remove();
+					aniTrue = true;
+				}, timer + 350);
+		});
+	};
+};
+						</pre>
+
+					</section>
+
+				</section>
+			</section>
+
+		</section>
+
+		<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shCore.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shBrushXml.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shBrushJScript.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+	</body>
+</html>
+

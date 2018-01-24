@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>勇士的荣耀-崛起</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <!-- <link rel="stylesheet" href="css/common/reset.css" />
+    <link rel="stylesheet" href="css/common/core.css" />-->
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/lottery.css" />
+</head>
+<body data-type="wlf" data-tip="lottery">
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <section class="home-box">
+        <section class="main-top m-t-b">
+            <header>
+                <!--<section class="switch">
+                    <a class="btn-back" data-collect="true" data-collect-flag="btn-back" data-collect-desc="摇奖页-返回">&nbsp返&nbsp&nbsp回&nbsp</a>
+                </section>-->
+
+                <section class="count none">参与人数：<label></label></section>
+                <section class="fail-tips none">
+                    <p>跟着我的节奏<i>摇</i>起来</p>
+                </section>
+
+                <section class="countdown none" id="lottery-countdown">
+                    <span class="countdown-tip"></span>
+                    <span class="detail-countdown"></span>
+                </section>
+                <!--<section class="show-tips" id="show-tips"></section>-->
+            </header>
+
+            <img class="bg-yao yao-top" src="./images/bg-wheel-top.png">
+        </section>
+        <section class="main-foot m-f-b">
+            <img class="bg-yao yao-bottom" src="./images/bg-wheel-bottom.png">
+            <div id="ddtj" class="ddtj-div hidden"  data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+                <i class="ddtj-before"></i>
+                <p class="ddtj"></p>
+            </div>
+            <div class="AD none"  data-collect="true" data-collect-flag="lottery-AD" data-collect-desc="摇奖页广告">
+                <img class="AD-tips" src="images/lottery-out-tips.png" />
+            </div>
+            <section class="footer">
+                <section class="marquee hidden"><ul></ul></section>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <div class="copyright"></div>
+        <div id="div_subscribe_area" style=""></div>
+    </footer>
+     <!--<input type="button" class="" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;">-->
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="js/plugins/zepto.base.min.js"></script>
+
+
+    <script src="js/authorize_userinfo.js"></script>
+    <script src="js/plugins/common.js"></script>
+
+    <script src="js/plugins/sha1.min.js"></script>
+    <script src="js/plugins/shake.min.js"></script>
+
+    <script src="js/app/dialog.js"></script>
+    <script src="js/app/lottery.js"></script>
+
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=56058409" charset="UTF-8"></script>
+</body>
+</html>

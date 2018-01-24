@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>芝麻开门</title>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/swiper.min.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/vote.css" />
+</head>
+<body>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+<section class="vote">
+	<div class="border">
+		<div class="page-top">
+			<div class="countdown none" id="lottery-countdown">
+				<div class="tip-box">
+					<span class="countdown-tip"></span>
+					<span class="detail-countdown"></span>
+				</div>
+			</div>
+			<a class="tolottery-btn none" href="lottery.html">去摇奖</a>
+			<a class="apply-btn" href="apply.html">我要报名</a>
+		</div>
+		<!--<div class="vote-num none">-->
+			<!--<p class="tip">爱心值</p>-->
+			<!--<p class="num">0</p>-->
+		<!--</div>-->
+		<!--<a class="guess-btn">猜他会赢</a>-->
+		<!--<div class="swiper-container">-->
+			<!--<div class="swiper-wrapper">-->
+			<!--</div>-->
+			<!--&lt;!&ndash; 如果需要分页器 &ndash;&gt;-->
+			<!--<div class="swiper-pagination"></div>-->
+
+			<!--&lt;!&ndash; 如果需要导航按钮 &ndash;&gt;-->
+			<!--<div class="swiper-button-prev"></div>-->
+			<!--<div class="swiper-button-next"></div>-->
+		<!--</div>-->
+		<!--<div class="vote-countdown none">-->
+			<!--<div class="tip-box">-->
+				<!--<span class="vote-countdown-tip"></span>-->
+				<!--<span class="vote-detail-countdown"></span>-->
+			<!--</div>-->
+		<!--</div>-->
+		<div class="comments">
+			<ul id="comments_content">
+			</ul>
+			<div class="inp">
+				<input id="input-comment" placeholder="我有话说..." type="text">
+				<a class="submit" id="submit">发送</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="hart-list">
+
+	</div>
+</section>
+<section class="modal modal-vote none" id="vote-dialog">
+	<div class="vote-dialog">
+			<p>竞猜他们是否会拿到奖品呢？</p>
+			<div class="btns">
+				<a class="vote-ok">是</a>
+				<a class="vote-no">否</a>
+			</div>
+	</div>
+</section>
+<section class="modal modal-lottery none" id="lottery-dialog">
+	<div class="dialog lottery-dialog">
+		<img src="images/vote-tip.png" class="vote-tip">
+		<p>点击礼盒抽奖吧~</p>
+		<img src="images/vote-box.png" class="vote-box bounceInDown">
+		<img src="images/vote-li.png" class="vote-li">
+	</div>
+</section>
+<script src="js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/xss.min.js"></script>
+<script src="./js/plugins/swiper.min.js"></script>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="./js/app/dialog4vote.js"></script>
+<script src="./js/app/vote.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

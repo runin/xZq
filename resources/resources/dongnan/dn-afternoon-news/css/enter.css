@@ -1,0 +1,110 @@
+body{
+	padding: 3%;
+}
+header{
+	width: 100%;
+	position: absolute;
+	right: 0px;
+	padding-left: 70%;
+	text-align: right;
+	padding-right: 8px;
+	
+}
+.spon-logo{
+	display: block;
+
+}
+.main{
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	position: relative;
+	border: 1px solid rgba(255,255,255,0.4);
+}
+.index-btn{
+	width: 100%;
+	padding: 10px 10px;
+}
+.logo{
+	display: block;
+	width: 84%;
+	margin: 14% auto 0;
+}
+.index-btn .btn{
+	display:inline-block;
+	text-align: center;
+	width: 20%;
+	color: #000666;
+	font-size: 12px;
+}
+.index-btn .btn img{
+	display: inline-block;
+	width: 100%;
+}
+.index-btn .btn:nth-child(2){
+	padding: 1%;
+}
+@-webkit-keyframes swing{
+	5%{
+		-webkit-transform: rotate(20deg);
+	}
+	25%{ 
+		-webkit-transform: rotate(-20deg);
+	}
+	45%{
+		-webkit-transform: rotate(20deg);
+	}
+	75%{ 
+		-webkit-transform: rotate(-20deg);
+	}
+}
+@keyframes swing{
+	5%{
+		transform: rotate(20deg);
+	}
+	25%{ 
+		transform: rotate(-20deg);
+	}
+	45%{
+		transform: rotate(20deg);
+	}
+	75%{ 
+		transform: rotate(-20deg);
+	}
+}
+/* iPhone4 */
+@media screen and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+.logo{
+	display: block;
+	width: 80%;
+	margin: 10% auto 0;
+}
+}
+/* iPhone5 */
+@media screen and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone6 */
+@media screen and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+ 
+}
+/* huawei honor-6 */
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+
+}
+
+/* mi2*/
+@media screen and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}

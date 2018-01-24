@@ -1,0 +1,71 @@
+body {
+	background: url("../images/bg-body.jpg") no-repeat;
+	background-size: cover;
+}
+header a {
+	color: #9f1b0f;
+	display: block;
+	border: 1px solid #9f1b0f;
+	font-size: 12px;
+	text-align: center;
+	width: 64px;
+	height: 22px;
+	line-height: 22px;
+	border-radius: 20px;
+	margin: 6px auto 0;
+	position: absolute;
+	right: 9px;
+	top: 9px;
+}
+
+.logo{
+  width: 85%;
+  margin: 60px auto 40px;
+  display: block;
+}
+.main{
+	
+}
+.main p{
+	text-align: center;
+}
+.main  p span{
+	line-height: 20px;
+	color: #bf0567;
+	text-align: center;
+}
+.main a{
+  margin-top: 10px;
+  border: solid 2px #89aca9;
+  background: #e1ddda;
+  color: #bf0567;
+}
+
+.follow-box {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	clear: both;
+}
+#div_subscribe_area {
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+}
+.copyright {
+	position: static;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.logo {
+  		margin: 40px auto 20px;
+	}
+	.main a{
+	  margin-top: 5px;
+	}
+}

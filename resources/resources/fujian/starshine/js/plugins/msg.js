@@ -1,0 +1,11 @@
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/0q.jpg' class='c_head_img_img' /></div><div class='comment'>选手们都好棒啊,唱的很好听呢</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/1q.jpg' class='c_head_img_img' /></div><div class='comment'>我刚刚也报名,求晋级！</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/2q.jpg' class='c_head_img_img' /></div><div class='comment'>敢唱你就来,别等了就现在</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/3q.jpg' class='c_head_img_img' /></div><div class='comment'>准备和小伙伴拉帮结派去报名了</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/4q.jpg' class='c_head_img_img' /></div><div class='comment'>嗷嗷嗷什么时候可以来到我们这个区啊，捉急！！！</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/5q.jpg' class='c_head_img_img' /></div><div class='comment'>女朋友去参赛了，希望能在电视上看到她</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/6q.jpg' class='c_head_img_img' /></div><div class='comment'>好看！</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/7q.jpg' class='c_head_img_img' /></div><div class='comment'>我也想参加</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/8q.jpg' class='c_head_img_img' /></div><div class='comment'>现在电视上这个是我朋友</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/9q.jpg' class='c_head_img_img' /></div><div class='comment'>女主持人美美哒</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/7q.jpg' class='c_head_img_img' /></div><div class='comment'>激动啊</div></div>");

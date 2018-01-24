@@ -1,0 +1,207 @@
+#over {
+	width: 100%;
+	overflow: hidden;
+	min-height: 100%;
+	background: url(../images/bg-index.jpg) no-repeat #003e7b;
+	background-size: 100% 100%;
+}
+#over img {
+	display: block;
+}
+#over .icon-nextgift {
+	margin: 20% auto 0;
+	position: relative;
+}
+#over .icon-nextgift .over-tips{
+	display: block;
+	margin: 0 auto;
+	width: 45%;
+}
+#over .icon-nextgift .over-light1{
+	display: block;
+	position: absolute;
+	width: 10%;
+	top: -15px;
+	left: 26%;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+#over .icon-nextgift .over-light2{
+	display: block;
+	position: absolute;
+	width: 10%;
+	top: -7px;
+	left: 49%;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-delay: .8s;
+	animation-delay: .8s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+#over .icon-nextgift .over-light3{
+	display: block;
+	position: absolute;
+	width: 10%;
+	top: 0px;
+	left: 67%;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+#over .icon-surprise{
+	position: absolute;
+	width: 22%;
+	top: 0;
+	left: 0;
+}
+#over .over-cards{
+	margin-top: 15%;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+}
+.icon-red{
+	display: block;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 25%;
+	-webkit-animation-name: tada;
+	animation-name: tada;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.index-title{
+	position: absolute;
+	width: 50%;
+	top: 7%;
+	left: 25%;
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.index-logo{
+	position: absolute;
+	width: 76%;
+	top: 13%;
+	left: 12%;
+	z-index: 9;
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.index-light{
+	position: absolute;
+	width: 100%;
+	top: 14%;
+	opacity: 0;
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+	-webkit-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+.index-next{
+	position: absolute;
+	width: 36%;
+	top: 34%;
+	left: 32%;
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.index-main{
+	position: absolute;
+	width: 80%;
+	top: 39%;
+	left: 10%;
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.index-car1{
+	position: absolute;
+	width: 37%;
+	top: 68%;
+	right: 11%;
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.index-car2{
+	position: absolute;
+	width: 30%;
+	top: 72%;
+	left: 22%;
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+header .tvlogo {
+	position: absolute;
+	width: 15%;
+	top: 10px;
+	left: 8px;
+}
+/* iPhone4 */
+@media screen
+ and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}

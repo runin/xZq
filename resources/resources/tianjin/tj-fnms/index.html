@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>非你莫属</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/index.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+</head>
+<body>
+    <div class="tab" id="tab">
+        <a data-collect="true"
+           data-collect-flag="index-rule-btn"
+           data-collect-desc="活动规则" id="rule" class="rule">活动规则</a>
+        <a data-collect="true"
+           data-collect-flag="index-reserve-btn"
+           data-collect-desc="预约节目" class="record none" id="btn-reserve">预约节目</a>
+    </div>
+	<section id="index">
+		<div class="main" id="main" data-margin="70">
+    	    <div class="dst-logo"></div>
+			<img class="logo" src="images/title.png">
+			<img class="tip" src="images/tip.png">
+
+		</div>
+		<div class="follow-box">
+            <div class="index-btn">
+                <a data-collect="true"
+                   data-collect-flag="index-lottery-btn"
+                   data-collect-desc="进入摇奖" id="lottery" class="lottery"></a>
+				<img src="images/lun.png" class="lun">
+                <a data-collect="true"
+                   data-collect-flag="index-zan-btn"
+                   data-collect-desc="秒杀集赞" id="zan" class="zan"></a>
+            </div>
+			<div class="copyright"></div>
+		</div>
+	</section>
+	<script src="js/config.js"></script>	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script>
+	<img src="./images/person.png" class="preload">
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

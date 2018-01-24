@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>华豫之门</title>
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/sign.css" />
+</head>
+<body>
+<a class="back-btn" data-collect="true"
+   data-collect-flag="hn-hyzm-sign-index" data-collect-desc="返回首页"></a>
+
+<div class="form none">
+    <section class="hj-input">
+        <h2>宝主信息</h2>
+        <div class="name-out"><label><img src="images/name.png" /></label><input type="text" class="name" name="name" placeholder="请输入您的姓名"></div>
+        <div class="tel-out"><label><img src="images/tel.png" /></label><input type="tel" class="tel" name="tel" placeholder="请输入您电话号码"></div>
+        <div class="profession-out"><label><img src="images/profession.png" /></label><input type="text" class="profession" name="profession" placeholder="请输入您的职业"></div>
+        <div class="card-out"><label><img src="images/card.png" /></label><input type="text" class="card" name="card" placeholder="请输入您的身份证号码" id="card_no"></div>
+    </section>
+
+
+    <div class="upload-box" id="upload-box">
+        <h2>宝物资料<label>(请上传宝物照片)</label></h2>
+        <a href="javascript:void(0)" class="icon btn-upload"></a>
+    </div>
+
+    <textarea class="content" id="content" name="describe" placeholder="请输入宝物名称~~~"></textarea>
+    <h3>成功报名即有可能被选中参与节目录制噢！</h3>
+    <a href="#" data-collect="true"
+       data-collect-flag="hn-hyzm-sign-submit-btn"
+       data-collect-desc="提交报名信息" class="btn-submit" id="btn-submit"><img src="images/tj.png" /></a>
+</div>
+<div class="not-start none">活动尚未开始，请耐心等待!</div>
+
+<div class="copyright"></div>
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.selector.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/touch.js"></script>
+<script src="./js/plugins/md5.js"></script>
+
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/upload.min.js"></script>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+
+<script src="js/app/sign.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

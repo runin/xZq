@@ -1,0 +1,375 @@
+body {
+    overflow: hidden;
+    margin: 0 auto;
+}
+article {
+    position: relative;
+    overflow: hidden;
+}
+
+article:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(250,250,250,0.1)), color-stop(0.5, rgba(250,250,250,1)), to(rgba(250,250,250,0.2)));
+}
+.ctrls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 11%;
+    z-index: 50;
+    background-color: #c4337c;
+}
+.tab a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    width: 27%;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    font-size: 13px;
+    background: url(../images/btn-bg.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.record{
+    top: 40px!important;
+}
+.tttj{
+    position: absolute;
+    left: 7px;
+}
+.tttj .red{
+    width: 25px;
+    margin: 20% 20% 0 20%;
+}
+.tttj .tip{
+    color: #fff;
+    font-size: 9px;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    background-color: #336472;
+    z-index: 40;
+}
+.shouyi{
+    color: #fff;
+    display: block;
+    width: 55%;
+    font-size: 18px;
+    margin: 0% auto 0;
+    padding-top: 5%;
+}
+.persent{
+    display: block;
+    width: 55%;
+    margin: 2% auto 0;
+}
+.zan-per{
+    display: block;
+    background-color: #c22d78;
+    color: #fff;
+    text-align: center;
+    width: 55%;
+    margin: 2% auto 0;
+    padding: 2% 1%;
+    font-size: 13px;
+}
+.index-btn{
+    width: 90%;
+    margin: 2% auto 0;
+}
+.praise-tip{
+    display: block;
+    width: 85%;
+    margin: 1% auto 0;
+}
+.praised{
+    background: url(../images/praised.png) 0 0 no-repeat!important;
+    background-size: 100%!important;
+}
+.zaned {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: url(../images/plus.png) no-repeat;
+    background-size: 100% auto;
+    top: 24%;
+    left: 19%;
+    opacity: 0;
+    -webkit-animation-name:zaned;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes zaned {
+    0% {opacity:0;-webkit-transform:scale(0.2);}
+    40%, 70% {opacity:1;-webkit-transform:scale(1);}
+    100% {opacity:0;-webkit-transform:scale(1.5);}
+}
+
+@keyframes zaned {
+    0% {opacity:0;transform:scale(0.2);}
+    40%, 70% {opacity:1;transform:scale(1);}
+    100% {opacity:0;transform:scale(1.5);}
+}
+.lottery{
+    width: 40%;
+    display: inline-block;
+    margin-left: 3%;
+    height: 40px;
+    background: url(../images/praise.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.zan{
+    width: 42%;
+    display: inline-block;
+    margin-left: -2%;
+    height: 40px;
+    background: url(../images/touzi.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.lun{
+    width: 14%;
+    display: inline-block;
+    height: 43px;
+    background: url(../images/lun.png) 0 0 no-repeat;
+    background-size: 100%;
+    margin-left: -2%;
+}
+.ctrls .input-img{
+    display: inline-block;
+    width: 13%;
+    margin: 5px;
+}
+.ctrls input {
+    width: 60%;
+    height: 60%;
+    padding-left: 17px;
+    background: url(../images/input.png) 0 0 no-repeat;
+    background-size: 100%;
+    color: #000;
+    border: none;
+    z-index: 50;
+    display: inline-block;
+    margin-top: -13%;
+}
+.ctrls input.error {
+	border: 1px solid #f00;
+}
+.ctrls a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 13%;
+    height: 73%;
+    background: url(../images/send.png) 0 0 no-repeat;
+    background-size: 100%;
+    margin-top: -13%;
+    margin-left: 3%;
+}
+.copyright {
+    color: #0092C7;
+    line-height: 13px;
+    height: auto;
+}
+.comments {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+    background-color: rgba(0,0,0,.3);
+}
+.comment_item {
+   border-radius: 2px;
+  padding: 2px 5px 0;
+  margin-right: 150px !important;
+}
+.container1 > div, .container2 > div, .container3 > div {
+  background-color: #FFF;
+}
+.fadein {
+  -webkit-animation-name: fadein_a;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes fadein_a {
+ 0% {
+ opacity:0;
+}
+ 100% {
+ opacity:1;
+}
+}
+.Transparent {
+  background-color: rgba(255,255,255,0.5);
+}
+.fadeout {
+  -webkit-animation-name: fadeout_a;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes fadeout_a {
+ 0% {
+ opacity:1;
+}
+ 100% {
+ opacity:0;
+}
+}
+::-webkit-input-placeholder {
+  color: #b0b0b0;
+}
+#lottery-dialog ::-webkit-input-placeholder {
+  color: #333;
+}
+
+
+@-webkit-keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .persent {
+        width: 45%;
+        margin: 0% auto 0;
+    }
+    .praise-tip{
+        display: block;
+        width: 85%;
+        margin: 0% auto 0;
+    }
+    .index-btn{
+        width: 90%;
+        margin: 1% auto 0;
+    }
+    .zan-per{
+        margin: 1% auto 0;
+    }
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 570px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:3) {
+    .ctrls input {
+        height: 38px;
+    }
+    .ctrls a {
+        height: 43px;
+    }
+}
+
+@media screen
+and (device-width:414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio:3.0){/* ºÊ»›iphone6 plus */
+    /*iPhone 6+ Portrait*/
+    .tab a {
+        line-height: 30px;
+    }
+}

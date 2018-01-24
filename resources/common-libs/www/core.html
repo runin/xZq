@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" > 
+		<title>素材开发文档</title>
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		
+		<link rel="stylesheet" type="text/css" href="./css/SyntaxHighlighter/shCoreDefault.css"/>
+
+
+	</head>
+	<body>
+		<header>
+			<section class="header-content">
+				<a href="./index.html" class="logo">
+					<img src="./images/logo.png" title="新掌趣" alt="新掌趣" />
+				</a>
+			</section>
+		</header>
+		<section class="main">
+			<nav>
+				<ul class="nav-list">
+					<li>
+						<h2>素材基础</h2>
+						<ul>
+							<li><a href="index.html">文档结构</a></li>
+							<li class="active"><a href="core.html">基本功能</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>公共组件</h2>
+						<ul>
+							<li><a href="reserve.html">预约</a></li>
+							<li><a href="subscribe.html">一键关注</a></li>
+							<li><a href="barrage.html">弹幕组件</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>工具方法</h2>
+						<ul>
+							<li><a href="date.html">日期</a></li>
+							<li><a href="string.html">URL处理</a></li>
+							<li><a href="countDown.html">倒计时</a></li>
+							<li><a href="tips.html">Tips(替代alert)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<section class="content-wrapper">
+				<section class="content">
+					<section class="content-header">
+						<h1>基本功能</h1>
+						<p>最后更新时间：2015/5/29 17:00	更新人：陈智博<a class="float-right" href="mailto:bobchen@holdfun.cn">报错</a></p>
+					</section>
+					<section class="content-detail">
+						<p>根据<a href="index.html">文档结构</a>建立工程后，可以轻松地实现基本的功能：</p>
+						<ul class="content-nav">
+							<li><a href="#auth">微信认证</a></li>
+							<li><a href="#getresult">拉取数据</a></li>
+							<li><a href="#log">统计上报</a></li>
+							<li><a href="#share">分享到微信</a></li>
+							<li><a href="#loading">Loading</a></li>
+						</ul>
+						
+						<ul class="content-list">
+							<li id="auth">
+								<h2>微信认证</h2>
+								<p>微信认证是我们在素材中辨识用户(openid)，并获取用户个人信息的方式。功能在authorize_userinfo.js中实现，完整交互可以看<a href="http://mp.weixin.qq.com/wiki/17/c0f37d5704f0b64713d5d2c37b468d75.html" target="_blank">微信接口</a>。</p>
+								<pre class="brush: js;">
+									// 默认认证
+									new Authorize().init();
+
+									// 可配置认证后回跳页面
+									new Authorize({callBackPage:"XXX.html"}).init();
+								</pre>
+							</li>
+
+							<li id="getresult">
+								<h2>拉取数据</h2>
+								<p>素材提交到微信的服务器后(yaotv.qq.com域名下)，拉取我们服务器上数据时存在跨域问题。目前我们统一用jsonp的方式来解决，并封装成getResult方法进行调用。getResult方法定义在core.js中。目前我们已经有一整套后台接口可供调用，可在<a href="http://yao.holdfun.cn/boss/wiki/index" target="_blank">这里查看</a>。</p>
+								<pre class="brush: js;">
+									// 调用示例 - 获取用户基本信息
+									getResult('shaketv/userinfo/base', {
+										yoi : openid
+									}, 'callbackShaketvBaseUserinfoHandler');
+
+									// 回调函数
+									W.callbackShaketvBaseUserinfoHandler = function(data){};
+								</pre>
+							</li>
+
+							<li id="log">
+								<h2>统计上报</h2>
+								<p>统计上报用于统计页面PV以及用户点击操作。功能在core.js中实现。页面PV的统计无须另外写代码，用户点击统计则要在需要统计的标签内加上如下3个属性</p>
+								<pre class="brush: html;">
+									<a
+									data-collect="true" 
+									data-collect-flag="zhimakaimen-index" 
+									data-collect-desc="芝麻开门 进入主页" >确定</a>
+
+									<!-- 为了统计方便，天天淘金公众号拉粉链接要统一成以下写法 -->
+									<a
+									data-collect="true" 
+									data-collect-flag="tttj" 
+									data-collect-desc="天天淘金" ></a>
+								</pre>
+							</li>
+
+							<li id="share">
+								<h2>分享到微信</h2>
+								<p>页面分享到朋友圈的标题、图片和描述默认都是由服务端的业务管理来设置，无须另外写代码，默认分享进入页面都是index.html。如果想在素材中写死分享内容，可按照如下方式调整config.js</p>
+								<pre class="brush: js;">
+									// 写死分享图片。不设置则使用服务端配置，下同
+									var share_img = '';
+
+									var share_title = '';
+
+									var share_desc = '';
+
+									// 设置分享进入页面，不设置则跳入index.html
+									var share_page = ''; 
+
+									// 如果出现一个互动有多个分享页面的情况，请自行修改分享部分代码吧~这里就不做支持了
+								</pre>
+							</li>
+
+							<li id="loading">
+								<h2>Loading</h2>
+								<p>统一的Loading提示</p>
+								<pre class="brush: js;">
+									// 显示Loading
+									showLoading();
+
+									// 隐藏Loading
+									hideLoading();
+
+									// 显示新Loading(模仿微信Loading)
+									// 增加可配提示语,建议最好不要超过5个字
+									showNewLoading($container, tips);
+
+									// 隐藏新Loading
+									hideNewLoading();
+								</pre>
+							</li>
+
+						</ul>
+					</section>
+				</section>
+			</section>
+
+		</section>
+
+		<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shCore.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shBrushXml.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shBrushJScript.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+	</body>
+</html>
+

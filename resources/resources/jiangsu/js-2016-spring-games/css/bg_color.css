@@ -1,0 +1,396 @@
+/*--a--*/
+.main_bg_a{
+	background-image:url(../images/bg_01.jpg);
+}
+.main_bg_a .go-home{
+	background-image:url(../images/gohome/gohome01.png);
+}
+.main_bg_a .tab-top a{
+	background-color:#1378a9;
+	box-shadow:0 0 5px #333;
+	color:#fff;
+}
+.main_bg_a .tab-top a.on{
+	background-color:#3eaee5;
+}
+.main_bg_a .tab-con,
+.main_bg_a .tab-con.tab2{
+	background-color:#3eaee5;
+}
+.main_bg_a .friends-con{
+	background-image:url(../images/icon-avatar.png);
+}
+.main_bg_a .friends-gai{
+	background-image:url(../images/headimg_bg_a01.png);
+}
+.main_bg_a a.swiper-button-prev,
+.main_bg_a a.swiper-button-next{
+	background-image:url(../images/scroll_a_left.png);
+}
+.main_bg_a a.swiper-button-next{
+	background-image:url(../images/scroll_a_right.png);
+}
+.main_bg_a .friends-number{
+	text-shadow:1px 1px 0 #1378a9;
+}
+.main_bg_a .friends-name{
+	color:#1378a9;
+}
+.main_bg_a .friends-lv.lv-a{
+	background-image:url(../images/lv01.png);
+}
+.main_bg_a .friends-lv.lv-b{
+	background-image:url(../images/lv02.png);
+}
+.main_bg_a .friends-lv.lv-c{
+	background-image:url(../images/lv03.png);
+}
+.main_bg_a .friends-lv.lv-d{
+	background-image:url(../images/lv04.png);
+}
+.main_bg_a .news-record,
+.main_bg_a .collect-text{
+	background-color:#ddf3ff;
+}
+.main_bg_a .bg-color span{
+	border:1px rgba(19,120,169,1.0) solid;
+}
+.main_bg_a .bg-color.on span{
+	border:1px rgba(255,255,255,1.0) solid;
+}
+.main_bg_a .bg-color span.bg-a{
+	background-image:url(../images/bg_btn01.png);
+}
+.main_bg_a .bg-color span.bg-b{
+	background-image:url(../images/bg_btn02.png);
+}
+.main_bg_a .bg-color span.bg-c{
+	background-image:url(../images/bg_btn03.png);
+}
+.main_bg_a .bg-color span.bg-d{
+	background-image:url(../images/bg_btn04.png);
+}
+.main_bg_a .working{
+	color:#fff;
+	text-shadow:1px 1px 2px #000;
+}
+.main_bg_a .working p{
+	background-image:url(../images/icon_gold.png);
+}
+.main_bg_a .working-schedule{
+	background-color:#b0def6;
+	box-shadow:0 2px 3px #8db9d0 inset, 1px 1px 3px #333;
+}
+.main_bg_a .working-schedule i{
+	background-image: url(../images/biaoqing/icon_exp_e.png), -webkit-linear-gradient(#0d8ac8, #0072ab);
+}
+.main_bg_a .not-text>p{
+	background-color:#ddf3ff;
+}
+.main_bg_a .not-text a{
+	border:1px #1278a9 solid;
+	background-image: -webkit-linear-gradient(#3caee4, #1278a9);
+}
+
+
+/*--b--*/
+.main_bg_b{
+	background-image:url(../images/bg_03.jpg);
+}
+.main_bg_b .go-home{
+	background-image:url(../images/gohome/gohome04.png);
+}
+.main_bg_b .tab-top a{
+	background-color:#c22c6c;
+	box-shadow:0 0 5px #333;
+	color:#fff;
+}
+.main_bg_b .tab-top a.on{
+	background-color:#ff589f;
+}
+.main_bg_b .tab-con,
+.main_bg_b .tab-con.tab2{
+	background-color:#ff589f;
+}
+.main_bg_b .friends-con{
+	background-image:url(../images/icon-avatar.png);
+}
+.main_bg_b .friends-gai{
+	background-image:url(../images/headimg_bg_c01.png);
+}
+.main_bg_b a.swiper-button-prev,
+.main_bg_b a.swiper-button-next{
+	background-image:url(../images/scroll_c_left.png);
+}
+.main_bg_b a.swiper-button-next{
+	background-image:url(../images/scroll_c_right.png);
+}
+.main_bg_b .friends-number{
+	text-shadow:1px 1px 0 #c22c6c;
+}
+.main_bg_b .friends-name{
+	color:#c22c6c;
+}
+.main_bg_b .friends-lv.lv-a{
+	background-image:url(../images/lv01.png);
+}
+.main_bg_b .friends-lv.lv-b{
+	background-image:url(../images/lv02.png);
+}
+.main_bg_b .friends-lv.lv-c{
+	background-image:url(../images/lv03.png);
+}
+.main_bg_b .friends-lv.lv-d{
+	background-image:url(../images/lv04.png);
+}
+.main_bg_b .news-record,
+.main_bg_b .collect-text{
+	background-color:#ffe8f2;
+}
+.main_bg_b .bg-color span{
+	border:1px #c22c6c solid;
+	/*box-shadow:0 0 2px #1378a9;*/
+}
+.main_bg_b .bg-color.on span{
+	border:1px rgba(255,255,255,1.0) solid;
+}
+.main_bg_b .bg-color span.bg-a{
+	background-image:url(../images/bg_btn01.png);
+}
+.main_bg_b .bg-color span.bg-b{
+	background-image:url(../images/bg_btn02.png);
+}
+.main_bg_b .bg-color span.bg-c{
+	background-image:url(../images/bg_btn03.png);
+}
+.main_bg_b .bg-color span.bg-d{
+	background-image:url(../images/bg_btn04.png);
+}
+.main_bg_b .working{
+	color:#fff;
+	text-shadow:1px 1px 2px #000;
+}
+.main_bg_b .working p{
+	background-image:url(../images/icon_gold.png);
+}
+.main_bg_b .working-schedule{
+	background-color:#ffdded;
+	box-shadow:0 2px 3px #f9b6d5 inset, 1px 1px 3px #333;
+}
+.main_bg_b .working-schedule i{
+	background-image: url(../images/biaoqing/icon_exp_f.png), -webkit-linear-gradient(#e73281, #d01d6b);
+}
+.main_bg_b .not-text>p{
+	background-color:#ffe8f2;
+}
+.main_bg_b .not-text a{
+	border:1px #c22c6c solid;
+	background-image: -webkit-linear-gradient(#fd569c, #c22c6c);
+}
+
+
+/*--c--*/
+.main_bg_c{
+	background-image:url(../images/bg_02.jpg);
+}
+.main_bg_c .go-home{
+	background-image:url(../images/gohome/gohome02.png);
+}
+.main_bg_c .tab-top a{
+	background-color:#169a30;
+	box-shadow:0 0 5px #333;
+	color:#fff;
+}
+.main_bg_c .tab-top a.on{
+	background-color:#3fc75a;
+}
+.main_bg_c .tab-con,
+.main_bg_c .tab-con.tab2{
+	background-color:#3fc75a;
+}
+.main_bg_c .friends-con{
+	background-image:url(../images/icon-avatar.png);
+}
+.main_bg_c .friends-gai{
+	background-image:url(../images/headimg_bg_b01.png);
+}
+.main_bg_c a.swiper-button-prev,
+.main_bg_c a.swiper-button-next{
+	background-image:url(../images/scroll_b_left.png);
+}
+.main_bg_c a.swiper-button-next{
+	background-image:url(../images/scroll_b_right.png);
+}
+.main_bg_c .friends-number{
+	text-shadow:1px 1px 0 #169a30;
+}
+.main_bg_c .friends-name{
+	color:#169a30;
+}
+.main_bg_c .friends-lv.lv-a{
+	background-image:url(../images/lv01.png);
+}
+.main_bg_c .friends-lv.lv-b{
+	background-image:url(../images/lv02.png);
+}
+.main_bg_c .friends-lv.lv-c{
+	background-image:url(../images/lv03.png);
+}
+.main_bg_c .friends-lv.lv-d{
+	background-image:url(../images/lv04.png);
+}
+.main_bg_c .news-record,
+.main_bg_c .collect-text{
+	background-color:#e6ffeb;
+}
+.main_bg_c .bg-color span{
+	border:1px #169a30 solid;
+}
+.main_bg_c .bg-color.on span{
+	border:1px rgba(255,255,255,1.0) solid;
+}
+.main_bg_c .bg-color span.bg-a{
+	background-image:url(../images/bg_btn01.png);
+}
+.main_bg_c .bg-color span.bg-b{
+	background-image:url(../images/bg_btn02.png);
+}
+.main_bg_c .bg-color span.bg-c{
+	background-image:url(../images/bg_btn03.png);
+}
+.main_bg_c .bg-color span.bg-d{
+	background-image:url(../images/bg_btn04.png);
+}
+.main_bg_c .working{
+	color:#fff;
+	text-shadow:1px 1px 2px #000;
+}
+.main_bg_c .working p{
+	background-image:url(../images/icon_gold.png);
+}
+.main_bg_c .working-schedule{
+	background-color:#dafcd5;
+	box-shadow:0 2px 3px #a5ef9b inset, 1px 1px 3px #333;
+}
+.main_bg_c .working-schedule i{
+	background-image: url(../images/biaoqing/icon_exp_g.png), -webkit-linear-gradient(#18a703, #159502);
+}
+.main_bg_c .not-text>p{
+	background-color:#e6ffeb;
+}
+.main_bg_c .not-text a{
+	border:1px #179b31 solid;
+	background-image: -webkit-linear-gradient(#3fc75a, #179b31);
+}
+
+
+/*--d--*/
+.main_bg_d{
+	background-image:url(../images/bg_04.jpg);
+}
+.main_bg_d .go-home{
+	background-image:url(../images/gohome/gohome03.png);
+}
+.main_bg_d .tab-top a{
+	background-color:#b6630d;
+	box-shadow:0 0 5px #333;
+	color:#fff;
+}
+.main_bg_d .tab-top a.on{
+	background-color:#e8a72a;
+}
+.main_bg_d .tab-con,
+.main_bg_d .tab-con.tab2{
+	background-color:#e8a72a;
+}
+.main_bg_d .friends-con{
+	background-image:url(../images/icon-avatar.png);
+}
+.main_bg_d .friends-gai{
+	background-image:url(../images/headimg_bg_d01.png);
+}
+.main_bg_d a.swiper-button-prev,
+.main_bg_d a.swiper-button-next{
+	background-image:url(../images/scroll_d_left.png);
+}
+.main_bg_d a.swiper-button-next{
+	background-image:url(../images/scroll_d_right.png);
+}
+.main_bg_d .friends-number{
+	text-shadow:1px 1px 0 #b6630d;
+}
+.main_bg_d .friends-name{
+	color:#b6630d;
+}
+.main_bg_d .friends-lv.lv-a{
+	background-image:url(../images/lv01.png);
+}
+.main_bg_d .friends-lv.lv-b{
+	background-image:url(../images/lv02.png);
+}
+.main_bg_d .friends-lv.lv-c{
+	background-image:url(../images/lv03.png);
+}
+.main_bg_d .friends-lv.lv-d{
+	background-image:url(../images/lv04.png);
+}
+.main_bg_d .news-record,
+.main_bg_d .collect-text{
+	background-color:#fff4db;
+}
+.main_bg_d .bg-color span{
+	border:1px #b6630d solid;
+}
+.main_bg_d .bg-color.on span{
+	border:1px rgba(255,255,255,1.0) solid;
+}
+.main_bg_d .bg-color span.bg-a{
+	background-image:url(../images/bg_btn01.png);
+}
+.main_bg_d .bg-color span.bg-b{
+	background-image:url(../images/bg_btn02.png);
+}
+.main_bg_d .bg-color span.bg-c{
+	background-image:url(../images/bg_btn03.png);
+}
+.main_bg_d .bg-color span.bg-d{
+	background-image:url(../images/bg_btn04.png);
+}
+.main_bg_d .working{
+	color:#fff;
+	text-shadow:1px 1px 2px #000;
+}
+.main_bg_d .working p{
+	background-image:url(../images/icon_gold.png);
+}
+.main_bg_d .working-schedule{
+	background-color:#ffecc8;
+	box-shadow:0 2px 3px #f6d89f inset, 1px 1px 3px #333;
+}
+.main_bg_d .working-schedule i{
+	background-image: url(../images/biaoqing/icon_exp_h.png), -webkit-linear-gradient(#d78f03, #bd7c00);
+}
+.main_bg_d .not-text>p{
+	background-color:#fff4db;
+}
+.main_bg_d .not-text a{
+	border:1px #b7640d solid;
+	background-image: -webkit-linear-gradient(#e8a72a, #b7640d);
+}
+
+/**---*/
+.friends-con.on .friends-gai{
+	background-image:url(../images/headimg_bg_e01.png);
+}
+.friends-con.on .friends-number{
+	text-shadow:1px 1px 0 #cf0000;
+}
+.friends-con.on .friends-name{
+	color:#cf0000;
+}
+a.swiper-button-prev.swiper-button-disabled{
+	background-image:url(../images/scroll_grey_left.png);
+}
+a.swiper-button-next.swiper-button-disabled{
+	background-image:url(../images/scroll_grey_right.png);
+}

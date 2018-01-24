@@ -1,0 +1,177 @@
+body {
+	overflow: hidden;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.tip{
+    display: block;
+    width: 80%;
+    margin: 20% auto 0;
+}
+.main {
+	margin: 0 auto;
+	color: #fff;
+	overflow: hidden;
+	padding-top: 80px;
+}
+.main a {
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.main .logo {
+    display: block;
+    width: 80%;
+    margin: 5% auto 0;
+}
+.index-btn{
+    margin-bottom: 15%;
+}
+.dst-logo{
+    background: url(../images/logo.png) no-repeat 0 0;
+    background-size: 100% auto;
+    width: 38%;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.lottery{
+    width: 40%;
+    display: inline-block;
+    margin-left: 3%;
+    height: 45px;
+    background: url(../images/lottery.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.zan{
+    width: 40%;
+    display: inline-block;
+    margin-left: -2%;
+    height: 45px;
+    background: url(../images/zan.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.lun{
+    width: 14%;
+    display: inline-block;
+    height: 45px;
+    background: url(../images/lun.png) 0 0 no-repeat;
+    background-size: 100%;
+    margin-left: -2%;
+}
+.tab a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    width: 27%;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    font-size: 13px;
+    background: url(../images/btn-bg.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.record{
+    top: 40px!important;
+}
+.copyright {
+    color: #969696;
+    position: static;
+    height: 30px;
+}
+#div_subscribe_area {
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	position: relative;
+	z-index: 9999;
+}
+.follow-box {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	zoom: 1;
+	clear: both;
+}
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1100px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1200px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .main .logo {
+        width: 65%;
+        margin: 3% auto 0;
+    }
+    .tip {
+        width: 80%;
+        margin: 10% auto 0;
+    }
+    .index-btn {
+        margin-bottom: 10%;
+    }
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 570px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:3) {
+    .index-btn {
+        margin-bottom: 10%;
+    }
+}
+@media screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    /*iPhone 6+ Portrait*/
+
+    .dst-logo{
+        height: 65px;
+    }
+
+    .tab a {
+        line-height: 30px;
+    }
+}

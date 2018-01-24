@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>CCTV8-剧场互动</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+
+<body data-sr="lottery">
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <section class="home-box">
+        <section class="main-top m-t-b">
+            <div class="marquee-content">
+                <div class="marquee hidden" id="marqueen">
+                    <ul></ul>
+                </div>
+            </div>
+            <section class="countdown none">
+                <span class="detail-countdown"></span>
+            </section>
+            <img class="bg-yao yao-top" src="./images/bg-wheel-top.png">
+        </section>
+        <section class="main-foot m-f-b">
+            <img class="bg-yao yao-bottom" src="./images/bg-wheel-bottom.png">
+            <div class="rednum">还剩<span>0</span>个奖品，继续加油!</div>
+            <div class="yao-text">
+                <p class="none textb"><span>啊哦，差一点就抢到了，继续加油</span></p>
+            </div>
+            <a href="javascript:void(0);" class="btn-record none" id="btn-record" data-collect="true" data-collect-flag="record-join" data-collect-desc="中奖纪录-进入-按钮">中奖纪录</a>
+            <a class="link-out none" id="link-out" data-collect="true" data-collect-flag="lottery-link-btn" data-collect-desc="摇奖页-吸粉链接"><p></p></a>
+        </section>
+    </section>
+     <!--<input type="button" class="none" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;">-->
+    <section id="div_subscribe_area" class="div_subscribe_area_class"></section>
+    <div class="page-meun">
+        <a href="javascript:void(0)" class="yaojiang"><img src="./images/tab-check-1.png" alt=""></a>
+        <a href="brandhome.html" class="brandhome" data-collect="true" data-collect-flag="meun-brand" data-collect-desc="菜单-品牌馆"><img src="./images/tab-icon-2.png" alt=""></a>
+        <a href="ttmarket.html" class="ttmarket" data-collect="true" data-collect-flag="meun-ttmarket" data-collect-desc="菜单-天天低价"><img src="./images/tab-icon-3.png" alt=""></a>
+        <a href="opera.html" class="comment" data-collect="true" data-collect-flag="meun-opera" data-collect-desc="菜单-剧集互动"><img src="./images/tab-icon-4.png" alt=""></a>
+    </div>
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/lottery.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=57640683" charset="UTF-8"></script>
+</body>
+
+</html>

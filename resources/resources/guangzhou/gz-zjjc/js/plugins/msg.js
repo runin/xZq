@@ -1,0 +1,10 @@
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/0q.jpg' class='c_head_img_img' /></div>"+"珠江剧场这些电视剧可喜欢看了。");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/1q.jpg' class='c_head_img_img' /></div>"+"好看的剧情好看的演员");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/2q.jpg' class='c_head_img_img' /></div>"+"大家有摇一摇摇到什么奖品吗");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/3q.jpg' class='c_head_img_img' /></div>"+"大家一起来聊聊天吧");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/4q.jpg' class='c_head_img_img' /></div>"+"家家有本难念的经啊， 坏人到处都有啊！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/5q.jpg' class='c_head_img_img' /></div>"+"帅帅帅，你最帅！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/6q.jpg' class='c_head_img_img' /></div>"+"好看好看，还有奖拿！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/7q.jpg' class='c_head_img_img' /></div>"+"好看好看好看~");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/8q.jpg' class='c_head_img_img' /></div>"+"中奖，中奖，求中奖");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/9q.jpg' class='c_head_img_img' /></div>"+"有人抢拍维生素胶囊吗？");

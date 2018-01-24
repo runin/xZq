@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="hahnzhu" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<title>合肥生活频道《年夜饭》</title>
+	<!-- common.css
+    <link rel="stylesheet" href="css/reset.css" />    
+	<link rel="stylesheet" href="css/core.css" /> -->
+	<!--  -->
+	<link rel="stylesheet" href="css/common.min.css" />
+	
+	<!-- index.min.css -->
+    <link rel="stylesheet" href="css/parallax.css">
+	<link rel="stylesheet" href="css/index.css" />
+ 
+
+  	<!-- <link rel="stylesheet" href="css/index.min.css" /> -->
+  	
+	
+</head>
+<body style="background-color:black;">
+	<section class="wrapper">
+		
+		<div class="pages " id="pages">
+			<section class="page" data-id="1" id="page-lottery" data-guid="1" >
+				<div class="lottery-logo"></div>
+				
+				<div class="order-addres" style="width:100%" id="lottery-addres">
+					<div class="order-tip" style="width :90%;height:80%;">
+
+						 <input type="hidden" id="hid_appId" value="">
+						 <input type="hidden" id="hid_key" value="">
+						 <input type="hidden" id="hid_accessToken" value="">
+						 <input type="hidden" id="hid_openid" value="">						
+						 <input type="hidden" id="hid_oid" value="">
+
+						<div style="margin: auto;text-align: center;color: green;font-size: 16px;font-weight: 16px;font-weight: bold;">订单支付</div>
+						<div style="margin: auto;margin-left: 10px;color: green;font-size: 16px;font-weight: 16px;font-weight: bold;">订单信息</div>
+						<div style="margin-left:10px;font-size:14px; line-height:20px;">
+							<p style="float:left;">订单编号:</p>
+							<div style="float:left;margin-left:10px;word-wrap: break-word;width: 72%; " id="order-no">
+							</div>
+						</div>
+
+						
+						<div style="margin-left:10px;font-size:14px; line-height:20px;clear:both">订单时间:<span style="margin-left:10px;" id="order-date"></span></div>
+						<div style="margin-left:10px;font-size:14px; line-height:20px;">
+							<p style="float:left;">商品信息</p>
+							<div style="float: left; margin-left:10px;" id="order-item">
+							</div>
+						</div>
+						<div style="margin: auto;margin-left: 10px;color: green;font-size: 16px;font-weight: 16px;font-weight: bold; clear:both;">支付信息</div>
+						<div style="margin-left:10px;font-size:14px; line-height:20px;margin-left:10px;">支付金额:
+							<span id="totalprice"></span>&nbsp;&nbsp;&nbsp;RMB
+						</div>
+
+						<div class="order-pay-btn" onclick="wxpay(this);" id="order-pay">立即支付</div>
+					</div>
+					</div>
+				</div>
+			</section>  
+		</div>
+	</section>
+	<section class="copyright">
+		  <p>页面由合肥广播电视台提供</p>
+    </section>
+	<!-- -->
+	
+
+
+
+
+<!-- plugins.min.js -->
+<script src="js/config.js"></script>
+<script src="js/zepto.min.js"></script>
+
+<script type="text/javascript" src="js/md5.js"></script>
+<script type="text/javascript" src="js/sha1.js"></script>
+
+<script src="js/weixinapi.js"></script>
+<script src="js/common.js"></script>
+<script src="js/share.js"></script>
+
+
+<script type="text/javascript" src="js/wx_pay_common.js"></script>
+<script type="text/javascript" src="js/check.js"></script>
+<script src="js/index.js"></script>
+<!-- index.min.js-->
+<!-- -->
+<script src="js/index.min.js"></script>
+
+
+</body>
+</html>

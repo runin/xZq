@@ -1,0 +1,121 @@
+
+body {
+	height: auto;
+	min-height: 100%;
+	color: #fff;
+	overflow-x: hidden;
+}
+.main{
+	padding-bottom: 50px;
+}
+.tv-logo{
+	padding: 16px 16px 16px;
+	padding-right: 72%;
+}
+.logo{
+	padding: 0 10% 10px;
+	text-align: left;
+}
+.tv-logo img{
+	width: 100%;
+}
+.logo img{
+	width: 70%;
+}
+
+.form-group {
+    padding: 0 10%;
+    width: 100%;
+    
+}
+.form-group img{
+	display: block;
+	width: 100%;
+}
+.form-item {
+	color: #fff;
+	background:url(../images/bg-center.png)repeat-y;
+    background-size: 100%;
+    padding: 10px 30px;
+}
+.form-item label.title{
+	font-size: 17px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+.form-item p{
+    margin: 20px 0 0;
+    position: relative;
+    text-align: right;
+}
+.form-item p label {
+    display: inline-block;
+    cursor: auto;
+    width: 20%;
+    height: 34px;
+    position: absolute;
+    top:0px;
+    left: 0;
+   
+}
+
+.form-item p.name label{
+	background: url(../images/name-icon.png) no-repeat left center;
+	background-size: 40%;
+}
+.form-item p.phone label{
+	background: url(../images/phone-icon.png) no-repeat left center;
+	background-size: 40%;
+}
+.form-item input {
+	display: inline-block;
+    border-radius: 6px;
+    width: 86%;
+    height: 34px;
+    padding: 0 6px;
+    border: none;
+    background: #cfd1d0;
+}
+
+
+.btn-back-simple{
+	background: url(../images/back.png) no-repeat center;
+	background-size: 26%;
+}
+.btn-submit{
+	width: 70%;
+	border-radius: 30px;
+	background: #762425;
+	border: 2px solid rgba(142,71,63,0.8);
+	margin-top: 20px;
+	line-height: 42px;
+	font-size: 17px;
+	height: 40px;
+	line-height: 36px;
+}
+.warm-tips{
+	padding:10px 12%;
+}
+.warm-tips h2{
+	font-size: 17px;
+	line-height: 24px;
+}
+.warm-tips p{
+	font-size: 12px;
+	padding: 2px 0;
+	line-height: 16px;
+}
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:3) {
+   
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    
+}

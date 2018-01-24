@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>周末购疯狂</title>
+    <!--<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/sign.css" />
+</head>
+
+<body>
+    <div class="chs none">
+        <div class="chs-watch">
+            <div><span></span></div><p>我要当现场观众</p>
+        </div>
+        <div class="chs-join">
+            <div><span></span></div><p>我要参加节目</p>
+        </div>
+        <div class="chs-sign">报名</div>
+    </div>
+    <div class="submit none">
+        <!--<span class="sign-bg" data-collect="true" data-collect-flag="sign-gotoyao" data-collect-desc="去摇一摇"></span>-->
+        <a href="#" class="btn-back"></a>
+        <div class="sign">
+            <div><span>姓名：</span><input type="text" class="name"/></div>
+            <div><span>性别：</span>
+                <div class="boy">
+                    <input class="btn-boy" type="radio" name="sex" value="男"/>男
+                </div>
+                <div class="girl">
+                    <input class="btn-girl" type="radio" name="sex" value="女"/>女
+                </div>
+            </div>
+            <div><span>年龄：</span><input name="age" type="tel" class="age"/></div>
+            <div><span>电话：</span><input type="tel" class="tel"/></div>
+            <div class="chuang"><p>城市：</p><span>陕西：</span><div class="plan"><p>请选择</p>
+                <div class="chkbox">
+                    <p>西安</p>
+                    <p>宝鸡</p>
+                    <p>咸阳</p>
+                    <p>铜川</p>
+                    <p>渭南</p>
+                    <p>延安</p>
+                    <p>榆林</p>
+                    <p>汉中</p>
+                    <p>安康</p>
+                    <p>商洛</p>
+                </div><img src="images/chksign.png" /></div>
+            </div>
+            <a href="#" class="btn-submit" data-collect="true" data-collect-flag="sign-submit" data-collect-desc="提交">提   交</a>
+        </div>
+    </div>
+    <div class="issubmit">
+        <img src="images/ok.png" />
+        <p></p>
+        <div>
+            <a href="#" class="btn-submit" data-collect="true" data-collect-flag="sign-returnyao" data-collect-desc="返回首页">返回首页</a>
+        </div>
+    </div>
+    <div class="follow-box">
+        <p class="copyright"></p>
+    </div>
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/zepto.selector.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+
+<script src="./js/sha1.min.js"></script>
+
+
+<script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<!--<script src="./grunt/js/main.min.js"></script>-->
+
+<script src="./js/app/sign.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

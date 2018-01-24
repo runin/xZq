@@ -1,0 +1,869 @@
+.dialog {
+    position: absolute;
+    color: #fdc728;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.dialog-inner {
+	position: absolute;
+	z-index: 101;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.modal .btn-close {
+  position: absolute;
+  background: url(../images/icon-close.png) no-repeat 3px 3px;
+  background-size: 18px auto;
+  display: block;
+  width: 23px;
+  height: 24px;
+  z-index: 10000;
+}
+
+.modal:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.75);
+}
+
+
+.rank-dialog {
+  padding-top: 18%;
+  color: #d4c7a0;
+  height: 90%;
+  background: url(../images/red-bg.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+.rank-dialog h2 {
+  color: #FFF;
+  background: url(../images/jf-bg.png) no-repeat center center;
+  background-size: 59% auto;
+  text-align: center;
+  font-size: 17px;
+  padding: 4% 0;
+  margin-top: 0px;
+}
+.rank-dialog .list {
+  height: 80%;
+}
+.rank-dialog h3 {
+    text-align: center;
+    margin: 3px auto;
+    font-size: 15px;
+}
+.rank-dialog h3 .jf {
+    margin-right: 20px;
+	
+}
+.rank-dialog .list .content {
+	overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+.rank-dialog .list ul {
+	text-align: center;
+}
+.rank-dialog .list li {
+  margin: 0px 14px;
+  padding: 7px 0%;
+  border-bottom: 1px #977730 dashed;
+}
+.rank-dialog .list span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  margin-left: 7px;
+  text-align: left;
+}
+.rank-dialog .r-avatar {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 100%;
+	border: 2px solid #ffe7a2;
+	overflow: hidden;
+    margin: 2px 0;
+}
+.rank-dialog .r-avatar img {
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+}
+.rank-dialog .r-name {
+    width: 40%;
+    margin: 0 2%;
+}
+
+.rank-dialog .r-rank {
+	width: 18%;
+	text-align: left !important;
+}
+.rule-dialog {
+  color: #f17700;
+  height: 90%;
+  background: url(../images/red-bg.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+.rule-dialog h2 {
+  color: #f17700;
+  background-size: 60% auto;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 21px;
+}
+.rule-dialog .content {
+  padding: 50px 12px 0;
+  height: 86%;
+  width: 94%;
+  left: 4%;
+  margin: 0 auto;
+  text-align: center;
+  color: #652d15;
+}
+.rank-dialog p {
+  text-align: center;
+  font-size: 13px;
+  padding: 0 3%;
+}
+.rule-dialog .rule {
+  font-size: 14px;
+  line-height: 24px;
+  max-height: 60%;
+  overflow-y: auto;
+  color: #fff;
+  margin-top: 15%;
+}
+.rule-dialog p {
+    line-height: 22px;
+	
+}
+.rule-dialog h3 {
+    margin-top: 22px;
+    font-size: 16px;
+}
+#fudai-dialog .btn-close {
+  top: 11% !important;
+  right: 8% !important;
+}
+#fudai-dialog .fudai {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 199;
+}
+#fudai-dialog .fudai .ray-box {
+  position: absolute;
+  width: 70%;
+  height: 100px;
+  left: 15%;
+  top: 10%;
+  z-index: 200;
+}
+#fudai-dialog .fudai .ray-guide {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 10%;
+  opacity: 0;
+  animation: fx-guide 1.8s infinite ease-in-out forwards;
+  -webkit-animation: fx-guide 1.8s infinite ease-in-out forwards;
+}
+.fudai .ray-box .fire {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  left: 5%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  z-index: 201;
+}
+#fudai-dialog .fudai .ray-box .fx-ray {
+  animation: fx-ray .8s ease-out forwards;
+  -webkit-animation: fx-ray .8s ease-out forwards;
+}
+#fudai-dialog .fudai .ray-box .fx-fire {
+  opacity: 1;
+  animation: fx-fire 2.6s ease-out forwards;
+  -webkit-animation: fx-fire 2.6s ease-out forwards;
+}
+@-webkit-keyframes  fx-fire {
+  5% {opacity: 1;-webkit-transform: scale(0);}
+  90% {opacity: 0;-webkit-transform: scale(100);}
+  100% {opacity: 0;}
+}
+@keyframes  fx-fire {
+  5% {opacity: 1;transform: scale(0);}
+  90% {opacity: 0;transform: scale(100);}
+  100% {opacity: 0;}
+}
+@-webkit-keyframes  fx-ray {
+  0% {opacity: 1;-webkit-transform: scale(1);}
+  100% {opacity: 0;-webkit-transform: scale(0);}
+}
+@keyframes  fx-ray {
+  0% {opacity: 1;transform: scale(1);}
+  100% {opacity: 0;transform: scale(0);}
+}
+@-webkit-keyframes  fx-guide {
+  0% {opacity: 0;top: 20%;}
+  30% {opacity: 1;top: 30%;}
+  90% {opacity: 0;top: 70%;}
+  100% {opacity: 0;top: 20%;}
+}
+@keyframes  fx-guide {
+  0% {opacity: 0;top: 20%;}
+  30% {opacity: 1;top: 30%;}
+  90% {opacity: 0;top: 70%;}
+  100% {opacity: 0;top: 20%;}
+}
+#fudai-dialog i {
+  font-style: normal;
+  color: #FFF;
+  width: 74px;
+  height: 74px;
+  line-height: 74px;
+  display: block;
+  background: #ffaa3b;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  margin-left: -37px;
+  border: 2px solid #FFD500;
+}
+#fudai-dialog .fudai-round {
+  width: 80%;
+  margin: 20% auto 0;
+}
+#fudai-dialog .chai {
+  background: url(../images/chai.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 20%;
+  left: 50%;
+  margin-left: -50px;
+}
+#succ-dialog .btn-close {
+  top: 11% !important;
+  right: 8% !important;
+}
+#succ-dialog .succ {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  background: url(../images/redbg.png) no-repeat;
+  background-size: 100% 100%;
+  z-index: 199;
+}
+#succ-dialog i {
+  font-style: normal;
+  color: #FFF;
+  width: 74px;
+  height: 74px;
+  line-height: 74px;
+  display: block;
+  background: #ffaa3b;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  margin-left: -37px;
+  border: 2px solid #FFD500;
+}
+#succ-dialog .succ-round {
+  text-align: center;
+  color: #fdd801;
+  font-size: 18px;
+  margin-top: 31px;
+  font-weight: bold;
+}
+#succ-dialog .chai {
+  background: url(../images/award-succ.png) 0 0 no-repeat;
+  background-size: 150px;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin: 15% 23% 0px;
+}
+
+.dialog-copyright {
+	position: absolute;
+	bottom: 0;
+	left: -5px;
+	right: -5px;
+	font-size: 14px;
+	text-align: center;
+	color: #f00;
+}
+
+.guide-dialog {
+  width: 240px;
+  height: 310px;
+  left: 50%;
+  right: auto;
+  margin-left: -120px;
+  top: 50%;
+  bottom: auto;
+  margin-top: -150px;
+    z-index: 1000;
+    background: url(../images/bg-dialog.png) no-repeat 0 0;
+    background-size: cover;
+}
+.guide-dialog div {
+  height: 69px;
+  color: #de8200;
+  text-align: center;
+  padding-top: 35px;
+  font-size: 17px;
+}
+.guide-dialog .guide-content {
+  height: 100%;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  padding-top: 7px;
+}
+.guide-dialog img {
+  display: block;
+  margin: 12% auto 0;
+}
+.guide-dialog div h1 {
+    font-size: 21px;
+}
+
+.guide-dialog p {
+  border-bottom: 1px solid #fff2b5;
+  height: 33px;
+  line-height: 20px;
+  margin: 10px 20px;
+  font-size: 14px;
+}
+.guide-dialog label {
+	
+    margin-right: 5px;
+}
+.guide-dialog .btn {
+  display: block;
+  margin: 9px auto 0;
+  width: 53%;
+  height: 53px;
+  line-height: 54px;
+  font-size: 15px;
+  background: url(../images/btn.png) no-repeat;
+  background-size: 100% auto;
+}
+
+/** 抽奖  */
+#lottery-dialog {
+  opacity: 0;
+}
+.lottery-dialog {
+  background: url(../images/open-bg.png) top no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  color: #fdc728;
+  z-index: 102;
+  height: 100%;
+  width: 90%;
+}
+.lottery-dialog {
+
+}
+.lottery-dialog .award-none {
+    height: 75%;    margin: 0 4% !important;  position: relative;
+	
+}
+.lottery-dialog .award-none .btn-close {
+  position: static;
+  display: block;
+  background: #ffde00;
+  width: 50%;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 6px;
+  color: #fd3e66;
+  margin: 17% auto 0;
+}
+.lottery-dialog .award-none h5 {
+  color: #ffde00;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 19px;
+}
+.lottery-none .award-win {
+	display: none;
+}
+.lottery-none .award-none {
+    display: block !important;
+    padding-top: 40%;
+}
+.lottery-dialog h2 {
+  text-align: center;
+  color: #FFF;
+  padding: 8% 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.lottery-dialog .content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.lottery-dialog .back, .lottery-dialog .award-win {
+  height: 100%;
+  width: 100%;
+}
+.lottery-dialog .back .award-img {
+}
+.lottery-dialog .content .cover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+.lottery-dialog .content .cover.zshow {
+	opacity: 1;
+}
+.lottery-dialog .content .cover p {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	color: #000;
+	font-size: 14px;
+	text-shadow: 1px 1px 10px #FF9F00;
+}
+.lotteried .lottery-dialog .content .cover,
+.lottery-none .lottery-dialog .content .cover,
+.lotteried .lottery-dialog .content .cover {
+	display: none;
+}
+.lottery-dialog .content .cover .btn-corner {
+    position: absolute;
+	
+    left: 0;
+    bottom: 0;
+    width: 45%;
+    height: 25%;
+    /* background: red; */
+}
+
+.lottery-dialog h3 {
+color: #FFF;
+  text-align: center;
+  padding-top: 13%;
+  font-size: 15px;
+  line-height: 17px;
+}
+.lottery-dialog .award-img {
+  width: 83%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10%;
+}
+/*.lottery-dialog .award-img .prize-img {
+  max-width: 70%;
+  max-height: 100px;
+  vertical-align: middle;
+}*/
+.lottery-dialog .contact {
+  padding: 8% 13% 0;
+}
+#lottery-dialog .lottery-dialog .redcontact {
+  padding: 16% 8% 0;
+  text-align: center;
+}
+#lottery-dialog .lottery-dialog .redcontact .red-img {
+  max-width: 70%;
+}
+#lottery-dialog .lottery-dialog .redcontact .redbtn {
+  position: absolute;
+  background: url(../images/red-btn.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  width: 100px;
+  height: 100px;
+  bottom: 20%;
+  margin: 0 auto;
+  line-height: 100px;
+  left: calc((100% - 100px) / 2);
+  left: -webkit-calc((100% - 100px) / 2);
+}
+.lottery-dialog .contact h4 {
+  color: #caad62;
+  font-size: 13px;
+  text-align: center;
+}
+.lottery-dialog .redcontact h4 {
+  color: #caad62;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10%;
+}
+.lottery-dialog .redcontact h1 {
+  text-align: center;
+  font-size: 40px;
+  display: block;
+  margin: 20px;
+  color: #ffde00;
+}
+.lottery-dialog .redcontact .redbtn {
+  background: url(../images/btn.png) 0 0 no-repeat;
+  background-size: 100%;
+  display: block;
+  margin: 40px auto 0;
+  height: 55px;
+  line-height: 51px;
+}
+
+.lottery-dialog .contact h4.award-tip {
+
+}
+.lottery-dialog .contact h4.awarded-tip {
+    display: none;
+
+}
+.lottery-awarded .contact h4 {
+
+}
+.lottery-awarded .contact h4.award-tip {
+    display: none;
+
+}
+.lottery-awarded .contact h4.awarded-tip {
+    display: block;
+
+}
+#lottery-dialog .contact p {
+     margin-top: 6px;
+  color: #FFF;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 10px auto;
+}
+
+#lottery-dialog .contact input {
+  background: #201e19;
+  border-radius: 4px;
+  height: 30px;
+  padding: 0 6px;
+  width: 100%;
+  outline: 0 none;
+  border: 1px solid #868686;
+  color: #fff;
+}
+
+.lottery-dialog .contact .btn {
+  display: block;
+  height: 54px;
+  line-height: 53px;
+  margin: 0% auto;
+  background: url(../images/btn.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+.lottery-dialog .contact .btn-award {
+  display: block;
+  color: #fff;
+	
+}
+.lottery-dialog .contact .share {
+    text-align: center;
+    font-size: 14px;
+    color: #FFF;
+}
+.lottery-dialog .contact .btn-share {
+    display: none;
+    font-size: 13px;
+    line-height: 13px;
+    color: #c47e88;
+    font-weight: bolder;
+}
+
+.lottery-awarded .contact .btn-award {
+    display: none;
+
+}
+.lottery-awarded .contact .btn-share {
+    display: block;
+    margin-top: 25px;
+}
+
+
+#ddtj {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: #caad62;
+  font-weight: bolder;
+  padding: 3px 0 8px;
+}
+
+.award-dialog .box {
+	height: 48%;
+	position: relative;
+	overflow: hidden;
+}
+.award-dialog .prize {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-prize.png) no-repeat center center;
+    background-size: cover;
+	
+    height: 100%;
+    margin: 0 -10%;
+    text-align: center;
+    padding-top: 10%;  
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+.award-dialog .prize:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.award-dialog .prize img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.award-dialog .prize.p1 img {
+    max-width: 80%;
+}
+
+.award-dialog .ctrl {
+    color: #fff;
+    padding-top: 5%;
+    text-align: center;
+}
+.award-dialog .ctrl h2 {
+    text-align: center;
+    font-size: 16px;
+	margin: 0 6%;
+}
+.award-dialog .content {
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+.award-dialog .content p {
+    font-size: 12px;
+    text-align: left;
+}
+.award-dialog .content input {
+    width: 100%;
+    border: 0 none;
+    background: #fff;
+    height: 36px;
+    font-size: 16px;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    margin-top: 8px;
+    color: #979797;
+    outline: none;
+}
+.award-dialog .ctrl .btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 23px 5px 0 5px;
+    width: 35%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    border-radius: 20px;
+}
+.award-dialog .award-succ {
+	display: none;
+}
+.award-dialog .award-succ.ctrl {
+	
+}
+.award-dialog .award-succ h2 {
+    text-align: left;
+    text-indent: 2em;
+    padding: 0 6%;
+}
+.award-dialog .award-succ h3 {
+    text-align: center;
+    margin-top: 10%;
+    color: #FDC728;
+}
+.award-dialog .award-succ .btn {
+    margin-top: 10px;
+    letter-spacing: 0;
+}
+.award-succ-dialog .prize img {
+	display: none;
+}
+.award-succ-dialog .prize:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-ljsu.png) no-repeat center center;
+	background-size: cover;
+	width: 80%;
+	height: 80%;
+}
+
+.award-succ-dialog .ctrl {
+	display: none;
+}
+.award-succ-dialog .award-succ {
+	display: block;
+}
+.award-succ-dialog .dialog-inner {
+	height: 100%;
+	padding-bottom: 0;
+}
+
+#confirm-dialog {  
+}
+#confirm-dialog:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 10000;
+}
+.confirm-dialog {
+    width: 72%;
+	
+    height: 130px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    position: absolute;  
+    background-size: 260px auto;
+    border-radius: 6px;
+    z-index: 100000;
+    color: #FFF;
+}
+.confirm-dialog .content {
+	
+    margin: 5% 8% 5%;
+    font-size: 16px;
+}
+.confirm-dialog .ctrl {
+    text-align: center;
+	
+    margin-right: -10px;
+}
+.confirm-dialog .ctrl .btn {
+    margin-right: 10px;
+	
+    background: rgba(86, 24, 23, 0.8);
+}
+
+
+.tip-dialog {
+    width: 220px;
+	
+    height: 200px;
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-dialog.png) no-repeat 0 0;
+    background-size: cover;
+    left: 50%;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    bottom: 0;
+}
+.tip-dialog h2 {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-tips.png) no-repeat center center;
+	
+    background-size: 170px auto;
+    height: 80px;
+    margin-top: 35px;
+}
+.tip-dialog .btn {
+    display: block;
+	
+    position: static;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    background: #FF3535;
+    border: 1px solid #fff;
+    margin: 10% auto 0;
+}
+.btn-pack{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	width:140px;
+	background-color:rgba(195,167,116,1);
+	color:white;
+	font-size:18px;
+	line-height:34px;
+	border-radius:20px;
+	border:solid 1px rgba(195,167,116,1);
+	margin-top:20px;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .rank-dialog h3 {
+    margin: 2px auto 4px;
+  }
+  .rank-dialog .list {
+    height: 69%;
+  }
+  .lottery-dialog .award-img img {
+    margin-top: 4%;
+  }
+  #lottery-dialog .contact p {
+    margin: 8px auto;
+  }
+  #fudai-dialog .fudai-round {
+    height: 22%;
+    margin: 14% auto 0;
+  }
+}
+/* Other */
+@media screen
+and (min-device-height : 580px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .rank-dialog .list {
+    height: 74%;
+  }
+}

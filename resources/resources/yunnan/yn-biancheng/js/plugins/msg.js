@@ -1,0 +1,10 @@
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/0q.jpg' class='c_head_img_img' /></div>"+"边城是小说改编的吧");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/1q.jpg' class='c_head_img_img' /></div>"+"我想中奖，还有话费吗？");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/2q.jpg' class='c_head_img_img' /></div>"+"谭凯的演技不错啊，还有华妃娘娘。");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/3q.jpg' class='c_head_img_img' /></div>"+"挺好看的，不错不错。");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/4q.jpg' class='c_head_img_img' /></div>"+"这个女主是蒋欣，华妃娘娘。");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/5q.jpg' class='c_head_img_img' /></div>"+"好看");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/6q.jpg' class='c_head_img_img' /></div>"+"支持~支持~支持!");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/7q.jpg' class='c_head_img_img' /></div>"+"只想中奖！！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/8q.jpg' class='c_head_img_img' /></div>"+"中奖，中奖，求中奖");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/9q.jpg' class='c_head_img_img' /></div>"+"我要中奖我要中奖！");

@@ -1,0 +1,499 @@
+body {
+    background: url("../images/bg-main-min.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    background: rgba(253, 2, 2, 0.2);
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+header #count-user {
+    position: relative;
+    top: 20px;
+    right: 15px;
+    color: white;
+    font-size: 14px;
+    float: right;
+}
+
+header #logo {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    width: 30%;
+}
+
+header .count-down {
+    position: relative;
+    top: 20px;
+    color: white;
+    text-align: center;
+}
+
+header .count-down h1 {
+    font-size: 18px;
+}
+
+header .count-down strong {
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+header .game-on {
+    margin: 10px;
+    padding: 10px 10px;
+    background: rgba(255, 254, 252, 0.4);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+header .game-on .question {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header .game-on .answer {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+header .game-on .answer .answer-item {
+    margin-top: 8px;
+    background: rgba(241, 240, 238, 0.7);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    color: #a10505;
+}
+
+header .game-on .answer .answer-item.select {
+    background: #ffe624;
+}
+
+header .game-on .submit {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px auto 5px;
+    font-size: 14px;
+    background: #be0705;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+header .game-on .vote {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+header .game-on .vote .vote-item {
+    margin-top: 8px;
+    background: rgba(241, 240, 238, 0.7);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    color: #a10505;
+}
+
+header .game-on .vote .vote-item .outer {
+    float: left;
+    width: 75%;
+    height: 8px;
+    background: #c0c0c0;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+header .game-on .vote .vote-item .outer .inner {
+    float: left;
+    height: 8px;
+    background: #ffe624;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+header .game-on .choujiang {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px auto 5px;
+    font-size: 14px;
+    background: #be0705;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+header .game-on .choujiang.invalid {
+    background: lightgrey;
+    color: black;
+}
+
+header .game-over {
+    position: relative;
+    top: 30px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+}
+
+.content .text-group {
+    height: 40px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.content .text-group .img-wrapper {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid white;
+    float: left;
+    z-index: 1;
+}
+
+.content .text-group .img-wrapper img {
+    width: 36px;
+    height: 36px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.content .text-group .text {
+    float: left;
+    position: relative;
+    top: 5px;
+    left: -20px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(74, 1, 1, 0.8);
+    color: white;
+    padding-left: 25px;
+    padding-right: 10px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.content .text-group .text-self {
+    color: #FFFF00;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 75px;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+footer .topic {
+    position: relative;
+    height: 25px;
+    width: 100%;
+    top: 5px;
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+footer .topic a {
+    color: white;
+}
+
+footer .comment {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    bottom: 5px;
+}
+
+footer .comment .input-wrapper {
+    margin-left: 5px;
+    background: url("../images/input-min.png") no-repeat;
+    background-size: 260px 40px;
+    float: left;
+    padding-top: 9px;
+}
+
+footer .comment input {
+    border: none;
+    background: none;
+    height: 31px;
+    line-height: 31px;
+    width: 260px;
+    color: white;
+    padding-left: 5px;
+}
+
+footer .comment .send {
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    width: 45px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    float: right;
+    position: relative;
+    top: 9px;
+}
+
+.noprise, .redpack, .redpack-open, .redpack-over {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.noprise .noprise-bg {
+    background: url("../images/redpack-2-min.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.noprise .close {
+    background: url("../images/close-min.png") no-repeat;
+    background-size: 30px 30px;
+    top: 15px;
+    right: 10px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.noprise .noprise-text {
+    position: relative;
+    text-align: center;
+}
+
+.noprise .noprise-text img {
+    width: 50px;
+    height: 50px;
+}
+
+.noprise .noprise-text .text {
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.noprise .noprise-text .tttj {
+    color: white;
+    font-size: 14px;
+    position: relative;
+    top: 10px;
+    border-bottom: 1px solid white;
+}
+
+.noprise .noprise-text .button {
+    background: #ffa200;
+    margin: 30px auto 0;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    font-size: 18px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.redpack .redpack-bg {
+    background: url("../images/redpack-1-min.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.redpack .redpack-text {
+    position: relative;
+    text-align: center;
+}
+
+.redpack .redpack-text .button {
+    background: #ffa200;
+    margin: 30px auto 0;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    font-size: 18px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.redpack-open .redpack-open-bg {
+    background: url("../images/redpack-2-min.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.redpack-open .close {
+    background: url("../images/close-min.png") no-repeat;
+    background-size: 30px 30px;
+    top: 15px;
+    right: 10px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.redpack-open .redpack-open-title {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    color: #ffff00;;
+}
+
+.redpack-open .redpack-open-text {
+    position: relative;
+    text-align: center;
+}
+
+.redpack-open .redpack-open-text img {
+    width: 70%;
+    height: 60px;
+}
+
+.redpack-open .redpack-open-text .form {
+    position: relative;
+    top: 10px;
+}
+
+.redpack-open .redpack-open-text .form p {
+    color: white;
+    font-size: 14px;
+}
+
+.redpack-open .redpack-open-text .form .input-item {
+    margin-top: 5px;
+    width: 70%;
+    padding-left: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.redpack-open .redpack-open-text .button {
+    background: #ffa200;
+    margin: 20px auto 10px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    font-size: 18px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.redpack-over .redpack-over-bg {
+    background: url("../images/redpack-2-min.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.redpack-over .close {
+    background: url("../images/close-min.png") no-repeat;
+    background-size: 30px 30px;
+    top: 15px;
+    right: 10px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.redpack-over .redpack-over-text {
+    position: relative;
+    text-align: center;
+}
+
+.redpack-over .redpack-over-text .text {
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.redpack-over .redpack-over-text .tttj {
+    color: white;
+    font-size: 14px;
+    position: relative;
+    top: 15px;
+    border-bottom: 1px solid white;
+}
+
+.redpack-over .redpack-over-text .button {
+    background: #ffa200;
+    margin: 40px auto 0;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    font-size: 18px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 0.5s ease 1;
+    animation: fadeIn 0.5s ease 1;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(0.9, 0.9);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+}
+

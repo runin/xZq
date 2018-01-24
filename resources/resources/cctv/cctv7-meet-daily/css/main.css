@@ -1,0 +1,319 @@
+body {
+  background: url(../images/bg.jpg) no-repeat #1f4782;
+  background-size: cover;
+}
+header a {
+  color: #eb0113;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  width: 78px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-weight: bolder;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffa3), color-stop(100%,#e99f0c));
+  background: -webkit-linear-gradient(top, #ffffa3 0%,#e99f0c 100%);
+}
+body.wait {
+  background: url("../images/content-bg.jpg") no-repeat #163262 !important;
+  background-size: cover !important;
+}
+.tvlogo {
+  position: relative;
+  width: 38%;
+  left: 10px;
+  top: 10px;
+}
+.tvlogo img {
+  max-width: 100%;
+}
+.wait .main {
+  display: none;
+}
+.main {
+  display: block;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	clear: both;
+}
+#div_subscribe_area {
+	width: 100%;
+	overflow: hidden;
+}
+.copyright {
+  position: static;
+  font-size: 12px;
+  line-height: 13px;
+  color: #74a1ff;
+  margin-bottom: 5px;
+  opacity: 1;
+}
+.miji {
+  width: 90%;
+  margin: 0 auto 2%;
+  overflow: hidden;
+}
+.miji .index-tit {
+  display: inline-block;
+  width: 78%;
+}
+.miji #btn-rule {
+  display: inline-block;
+  width: 20%;
+  vertical-align: super;
+}
+.miji img {
+  max-width: 100%;
+}
+.countdown-body {
+  width: 88%;
+  margin: 0 auto 10%;
+  color: #FFF;
+  font-size: 13px;
+  overflow: hidden;
+}
+.countdown-body .fl-l {
+  display: inline-block;
+  float: left;
+}
+.countdown-body .fl-r {
+  display: inline-block;
+  float: right;
+}
+.clear {
+  clear: both;
+  overflow: hidden;
+}
+.countdown-body .zzs-logo {
+  width: 20%;
+}
+.countdown-body .zzs-logo img {
+  max-width: 100%;
+}
+.countdown-body .countdown-box {
+  width: 78%;
+}
+.countdown-body .countdown-box p {
+  margin-left: 10px;
+}
+.countdown-body .countdown-box .countdown-time {
+  width: 100%;
+  background: url(../images/time-box.png) no-repeat;
+  background-size: 100% auto;
+  height: 51px;
+  text-align: right;
+  padding-right: 1.5em;
+}
+.countdown-body .countdown-box .countdown-time span {
+  height: 2em;
+  line-height: 2em;
+  color: #229dd1;
+  font-size: 1.7em;
+  margin-left: 2px;
+}
+.countdown-body .countdown-box .countdown-time span.time {
+  font-weight: bolder;
+  color: #fffc00;
+}
+.countdown-body .countdown-box .countdown-tips {
+  font-size: 1em;
+}
+.countdown-body .countdown-copyright {
+  color: #3d76e1;
+  font-size: 12px;
+  text-align: left;
+}
+.btn-goin {
+  display: block;
+  width: 200px;
+  height: 66px;
+  margin: 6% auto 16%;
+  background: url(../images/goin-btn.png) no-repeat;
+  background-size: 100% auto;
+}
+.ad header, .ad .tvlogo, .ad .main, .ad footer {
+  display: none;
+}
+.ad-box {
+  /*display: none;*/
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+}
+.ad .ad-box {
+  display: block;
+  height: 0;
+  transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+}
+.waiting {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+.wait .waiting {
+  display: block;
+}
+.wait .waiting .tit {
+  width: 80%;
+  margin: 10% auto 8%;
+  padding-bottom: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation-duration: 1.3s;
+  -webkit-animation-delay: .3s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-duration: 1.3s;
+  animation-delay: .3s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: visible !important;
+  -webkit-animation-name: flipInY;
+  backface-visibility: visible !important;
+  animation-name: flipInY;
+}
+@-webkit-keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotateY(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        -webkit-transform: perspective(400px) rotateY(-10deg);
+    }
+    
+    70% {
+        -webkit-transform: perspective(400px) rotateY(10deg);
+    }
+    
+    100% {
+        -webkit-transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+.wait .waiting p{
+  font-size: 1em;
+  line-height: 1.4em;
+  color: #fff;
+  margin-top: 10px;
+}
+.wait .waiting .copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  line-height: 13px;
+  color: #3d76e1;
+  margin-bottom: 5px;
+  opacity: 1;
+}
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1100px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1200px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 565px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+  .countdown-body .countdown-box .countdown-time {
+    height: 40px;
+    padding-right: 0.8em;
+  }
+  .countdown-body .countdown-box .countdown-time span {
+    height: 1.8em;
+    line-height: 1.8em;
+    font-size: 1.6em;
+    margin-left: 2px;
+  }
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .miji {
+    margin: 0 auto;
+  }
+  .btn-goin {
+    display: block;
+    width: 200px;
+    height: 66px;
+    margin: 0 auto 6%;
+    background: url(../images/goin-btn.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .countdown-body {
+    margin: 0 auto 3%;
+  }
+  .countdown-body .countdown-box .countdown-time {
+    height: 42px;
+  }
+  .countdown-body .countdown-box .countdown-time span {
+    color: #229dd1;
+    font-size: 19px;
+    margin-left: 2px;
+    }
+    .waiting {
+      width: 85%;
+    }
+    .wait .waiting p {
+        font-size: 1em;
+  line-height: 1.2em;
+    }
+    .wait .waiting .tit {
+      width: 96%;
+  margin: 7% auto 5%;
+    }
+}
+
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (device-aspect-ratio:16/9) and (device-aspect-ratio:16/10) and (device-aspect-ratio:4/3)
+and (-webkit-min-device-pixel-ratio : 0) {
+
+}
+
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+
+}

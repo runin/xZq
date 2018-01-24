@@ -1,0 +1,253 @@
+body,html{
+	height:100%;
+	background-image:url(../images/bg_c.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:top center;
+	overflow:hidden;
+}
+.golden-egg{
+	position:absolute;
+	top:50%;
+	width:100%;
+	height:22%;
+	background-image:url(../images/stage.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:bottom center;
+}
+.eggs{
+	position:absolute;
+	top:-110%;
+	width:100%;
+	height:190%;
+	background-image:url(../images/egg_a.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center right;
+}
+.hammer{
+	position:absolute;
+	top:-120%;
+	right:20px;
+	width:40%;
+	height:74%;
+	background-image:url(../images/hammer.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center center;
+}
+.e-open .eggs{
+	-webkit-animation-name: open;
+	-webkit-animation-duration: 0.3s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes open{
+0% {
+	background-image:url(../images/egg_a.png);
+}
+80% {
+	background-image:url(../images/egg_a.png);
+}
+100% {
+	background-image:url(../images/egg_b.png);
+}
+}
+.e-open .hammer{
+	-webkit-transform: rotate(-30deg);
+}
+.e-open .hammer.cracking{
+	-webkit-animation-name: crack;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes crack{
+0% {
+	-webkit-transform: rotate(0);
+}
+60% {
+	-webkit-transform: rotate(-30deg) translate(-30px,20px);
+}
+100% {
+	-webkit-transform: rotate(-10deg);
+}
+}
+
+.lottery-bg:before{
+	content:"";
+	position:fixed;
+	top:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.7);
+	z-index:2;
+}
+.lottery-box{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:3;
+}
+
+.out{
+	-webkit-animation-name: pout;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes pout{
+0% {
+	-webkit-transform:translatey(-600px);
+}
+60% {
+	-webkit-transform:translatey(50px);
+}
+90% {
+	-webkit-transform:translatey(0);
+}
+}
+.go{
+	-webkit-animation-name: pgo;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes pgo{
+0% {
+	-webkit-transform:translatey(0);
+}
+60% {
+	-webkit-transform:translatey(-30px);
+}
+100% {
+	-webkit-transform:translatey(600px);
+}
+}
+
+.lottery-con{
+	position:absolute;
+	top:10%;
+	left:7%;
+	width:86%;
+	height:80%;
+	padding:8px;
+	border-radius:5px;
+	background-color:#2288d0;
+	background-image:url(../images/lottery_bg_a.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:center;
+}
+a.pop-close{
+	position:absolute;
+	top:-8px;
+	right:-8px;
+	width:32px;
+	height:32px;
+	border-radius:100%;
+	border:1px rgba(255,255,255,0.6) solid;
+	background-color:#0076c9;
+	background-image:url(../images/close.png);
+	background-repeat:no-repeat;
+	background-size:50%;
+	background-position:center;
+}
+.lottery-border{
+	height:100%;
+	border-radius:5px;
+	border:1px rgba(255,255,255,0.6) solid;
+	box-sizing:border-box;
+	background-image:url(../images/lottery_bg_b.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:center;
+}
+.prize-tips{
+	height:20px;
+	margin:8% 0 0;
+	text-align:center;
+	font-size:18px;
+	color:#fff;
+}
+.prize-img{
+	height:22%;
+	margin:10% 0 0;
+	text-align:center;
+	background-image:url(../images/img01.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:top center;
+}
+.personal-info,
+.prize-partake{
+	margin:10% 15px 0;
+}
+.personal-info h3{
+	font-size:14px;
+	color:#fff;
+}
+.prize-partake p{
+	font-size:16px;
+	text-align:center;
+	text-shadow:0 1px 0 #158dca;
+	color:#fff;
+}
+.prize-success p{
+	position:absolute;
+	top:50%;
+	left:10%;
+	width:80%;
+	line-height:20px;
+	margin:-20% 0 0;
+	text-align:center;
+	font-size:24px;
+	text-shadow:0 1px 0 #158dca;
+	color:#fff;
+}
+.ipt-text{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	padding:0 10px;
+	margin:8% 0 0;
+	border-radius:5px;
+	border:none;
+	background:#fff;
+}
+a.btn-a{
+	position:absolute;
+	bottom:35px;
+	left:27%;
+	width:46%;
+	height:38px;
+	line-height:38px;
+	border-radius:5px;
+	background:#003f6b;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+	z-index:4
+}
+@media screen and (min-device-width :300px) and (max-device-width :370px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+.prize-tips{
+	font-size:16px;
+}
+.personal-info h3{
+	font-size:12px;
+}
+.prize-partake p{
+	font-size:14px;
+}
+.ipt-text{
+	height:32px;
+	line-height:32px;
+	margin:5% 0 0;
+}
+}

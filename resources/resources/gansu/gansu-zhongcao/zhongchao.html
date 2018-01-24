@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>中超直播</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+    <!--选择球队-->
+    <section class="page none" id="selectPage">
+        <article class="selectPage_main">
+            <h1 class="selectPage_tip"></h1>
+            <article class="selectItem">
+                <a href="###" class="selectPage_con" id="onteam1">
+                    <span class="selectPage_radius qiud-a"></span><span class="team_name_text" id="team_name_z"></span>
+                </a>
+            </article>
+            <article class="selectItem">
+                <a href="###" class="selectPage_con" id="onteam2">
+                    <span class="selectPage_radius qiud-b"></span><span class="team_name_text" id="team_name_k"></span>
+                </a>
+            </article>
+        </article>
+        <footer class="footer">
+            <p>页面由甘肃卫视提供<br/>由新掌趣科技技术支持 & Powered by holdfun.cn</p>
+        </footer>
+    </section>
+
+    <!--主页-->
+    <section class="page none" id="mainPage">
+        <section class="encounter">
+            <section class="top">
+                <div class="participation">
+                    共有<span class="part_num"></span>人参与</div>
+                <div class="top_log"></div>
+            </section>
+            <section class="middle">
+                <div class="team1">
+                    <div class="team-logo" id="team-logo-z"></div>
+                    <div class="team1_portNo" id="team1-portNo-z"></div>
+                    <div class="team-name" id="team-name-z1"></div>
+                    <span class="cheack-arrow none"></span>
+                </div>
+                <div class="vs">
+                    <span class="vsimg"><img src="images/vs.png" alt="" /></span>
+                    <p class="none" id="p01"><span class="vstext">距离下次助威</span><label id="zwtime"></label></p>
+                    <p class="none" id="p02"><label id="zwtime">比赛已结束</label></p> 
+                </div>
+                <div class="team2">
+                    <div class="team-logo" id="team-logo-k"></div>
+                    <div class="team1_portNo" id="team1-portNo-k"></div>
+                    <div class="team-name" id="team-name-k1"></div>
+                    <span class="cheack-arrow none"></span>
+                </div>
+            </section>
+            <section>
+                <a href="###" class="btn-a none" id="lgzw-a">擂鼓助威</a>
+                <a href="###" class="btn-c" id="lgzw-b">擂鼓助威</a>
+                <a href="###" class="btn-c none" id="lottery-btn-a">抽 奖</a>
+                <a href="###" class="btn-a none" id="lottery-btn-b">抽 奖</a>
+            </section>
+            
+            <section class="comment-box">
+                <div class="comment-count"><span class="yellow" id="personCount"></span> 人参与讨论中</div>
+                <ul class="comment-list" id="sx-ul">
+                    <span id="top-comment"></span>
+                    <span class="nor-comment" id="nor-comment"></span>
+                </ul>
+                <div class="spinner none lodd" id="mallSpinner" >
+                    <div class="spinner-wrapper">
+                      <div class="spinner-container container1">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>
+                        <div class="circle4"></div>
+                      </div>
+                      <div class="spinner-container container2">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>
+                        <div class="circle4"></div>
+                      </div>
+                      <div class="spinner-container container3">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>
+                        <div class="circle4"></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="comment-copyright">页面由央视新闻提供<br/>由新掌趣科技技术支持 & Powered by holdfun.cn</div>
+            </section>
+        </section>
+         <section class="scroll-top none"></section>
+         <section class="comment-input">
+            <div><input name="" type="text" class="text-a" id="comments-info" placeholder="写评论上电视，更有奖品拿哦" /><input name="" type="submit" class="btn-b" id="send" value="发送"/>
+            </div>
+        </section>
+    </section>
+    
+    <!--擂鼓助威-->
+    <section class="lg-cheer none">
+        <div class="cheer-time"><span class="cheer-img"></span><span class="cheer-djs"><em></em><em></em></span><span>秒</span></div>
+        <div class="drum">
+            <em class="drum-start"></em>
+            <em class="drum-logo"></em>
+            <em class="drum-number none">+<label></label></em>
+            <span class="drumclick">
+                <i class="great-left on"></i><i class="great-right"></i>
+            </span>
+            <em class="drum-redio none"><audio preload="auto" id="audio" src="images/audio.mp3"></audio></em>
+        </div>
+    </section>
+
+<script type="text/javascript" src="js/plugins/zepto.min.js"></script>
+<script type="text/javascript" src="js/plugins/zepto.cookie.min.js"></script>
+<script type="text/javascript" src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+<script type="text/javascript" src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+<script type="text/javascript" src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+<script type="text/javascript" src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+<script type="text/javascript" src="js/plugins/md5.js"></script>
+<script type="text/javascript" src="js/plugins/weixinapi.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+
+<script type="text/javascript" src="js/plugins/wx_api_userinfo.js"></script>
+
+<script type="text/javascript" src="js/plugins/common.js"></script>
+
+<script type="text/javascript" src="js/app/zhongchao.js"></script>
+<script type="text/javascript" src="js/app/comments.js"></script>
+
+</body>
+</html>

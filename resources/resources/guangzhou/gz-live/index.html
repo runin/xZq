@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>第一现场</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/index.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+</head>
+<body>
+	<section id="index" class="none">
+		<div class="main" id="main" data-margin="70">
+    		<div class="dst-logo"></div>
+			<input type="hidden" id="noRunShare" value="true">
+			<img class="logo animated" id="logo" src="images/title.png">
+		</div>
+		<div class="follow-box">
+			<a data-collect="true" data-collect-flag="gz-live-index_baoliao-btn" data-collect-desc="首页进入爆料页面" id="comments" class="border apply">进入互动</a>
+			<a href="baoliao.html" data-collect="true" data-collect-flag="gz-live-index_baoliao-btn" data-collect-desc="首页进入爆料页面" class="icon border baoliao">我要报料</a>
+			<a href="photo.html" data-collect="true" data-collect-flag="gz-live-index_photo-btn" data-collect-desc="首页进入美图秀页面" class="icon border photo">我要晒图</a>
+			<a href="http://juanyiyuan2015.yum.com.cn/index?from=singlemessage&isappinstalled=0" data-collect="true" data-collect-flag="gz-live-index_1yuan-btn" data-collect-desc="首页进入我要捐一元页面" class="icon border photo oneyuan none">我要“捐一元”</a>
+			<div class="copyright2">页面由直播广州提供</div>
+			<div class="tab animated none" id="tab">
+				<a href="#" data-collect="true"
+				   data-collect-flag="gz-live-index-jifen-btn"
+				   data-collect-desc="首页进入积分页面" class="jifen" id="jifen">我的积分</a> <span>|</span>
+				<a href="#" data-collect="true"
+					data-collect-flag="gz-live-index-rule-btn"
+					data-collect-desc="首页进入规则页面" id="rule" class="rule">查看规则</a>
+			</div>
+			<div id="div_subscribe_area" class="div_subscribe_area_class"></div>
+		</div>
+	</section>
+	
+	<section id="from" class="from none">
+    	<div class="dst-logo"></div>
+            <img class="from-logo" src="images/home-logo.png" />
+            <div class="tip">
+	            <ul>
+	                <li><i>锁定广州电视台新闻频道</i></li>
+	                <li><i>打开微信，进入摇一摇(电视)</i></li>
+	                <li><i>对着电视摇一摇</i></li>
+	                <li><i>参与互动就有机会赢取超值礼品</i></li>
+	            </ul>
+	            <a id="try" class="btn" data-collect="true"
+	               data-collect-flag="cd-express-go-try"
+	               data-collect-desc="进入互动" >现在就去试试</a>
+            </div>
+               <p id="share-copyright" class="copyright2">页面由直播广州提供</p>
+    </section>
+	<script src="js/config.js"></script>	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/wx_api_userinfo.js"></script>
+	
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script>
+</body>
+</html>

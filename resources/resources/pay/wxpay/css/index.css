@@ -1,0 +1,92 @@
+/*********************** ��ӭҳ ****************************/
+.page {
+	width: 100%;
+	height: 100%;
+}
+
+#page-lottery {
+	background: url(../images/bg-img.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.lottery-logo{
+	
+	background: url(../images/hf-logo.png) no-repeat 0 0;
+	background-size: 120px auto;
+	width: 130px;
+	height: 30px;
+	position: absolute;
+	left: 5px;
+	top: 7px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+/****/
+.order-pay-btn{
+	background-color: rgba(241,196,15,1);
+	border-radius: 30px;
+	width: 60%;
+	height: 30px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	font-size: 14px;
+	line-height: 30px;
+	margin-top:40px;
+
+}
+
+.order-tip{
+	border:3px rgba(123,1,1,1) solid;
+	border-radius: 20px;
+	margin:auto;
+	width:90%;
+	height:10px;
+	background-color:white;
+}
+
+.order-addres {
+	margin: auto;
+	width: 90%;
+	height: 85%;
+	position: relative;
+	top: 12%;
+}
+
+.copyright
+{
+	position:absolute;
+	margin:0 auto;
+	bottom:0%;
+	color:red;
+	z-index:90;
+	line-height:20px;
+	text-align:center;
+	font-size:11px;
+	width:100%;
+}
+
+
+.btn {
+	height: 38px;
+	line-height: 38px;
+	background: #FF3535;
+	font-size: 12px;
+}
+
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	
+	.lottery-adr-btn{
+		bottom: 28px;
+	}
+}

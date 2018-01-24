@@ -1,0 +1,13 @@
+html {
+    background: rgb(73, 199, 73);
+}
+
+.ui-audio {
+	position: absolute;
+	top: -5px;
+	right: 2px;
+	width: 50px;
+	height: 70px;
+	z-index: 200;
+	-webkit-transform: scale(0.5);
+}

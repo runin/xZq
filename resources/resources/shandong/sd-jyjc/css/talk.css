@@ -1,0 +1,280 @@
+body, html
+{
+   width: 100%;
+	background-size: cover;
+	overflow: hidden;
+	background: url(../images/index-bg-talk.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.none
+{
+    display: none;
+}
+*
+{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    outline: 0 none;
+}
+
+.main
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    
+    background-size: cover;
+    overflow: hidden;
+}
+header{
+	height: 70px;
+}
+.ah-tv{
+	width: 40%;
+	float: left;
+	margin-top: 13px;
+	margin-left: 5px;
+}
+.s-logo{
+	float: left;
+	width: 60px;
+	margin-top: 9px;
+	margin-left: 10px;
+}
+.btn-refresh{
+	display: inline-block;
+	/*width: 90px;
+	height: 40px;
+	line-height: 40px;*/
+	width: 100%;
+	text-align: center;
+	color: #000;
+	margin-right:5px ;
+	margin-left:5px ;
+	font-size: 14px;
+	background: url(../images/refresh.png) no-repeat;
+	  background-size: 24%;
+  background-position: -1px 6px;
+    /*padding-left: 6px;*/
+}
+.back-div{
+	float: right;
+	width: 70px;
+	height: 40px;
+	line-height: 40px;
+	background: #e1e0e0;
+	border-radius: 15px;
+	border: 1px solid #003895;
+	margin-top: 13px;
+	
+	  height: 37px;
+  line-height: 37px;
+}
+.back-div1{
+	float: right;
+	width: 90px;
+	height: 40px;
+	line-height: 40px;
+	background: #e1e0e0;
+	border-radius: 15px;
+	border: 1px solid #003895;
+	margin-top: 13px;
+	margin-right: 10px;
+	
+	  height: 37px;
+  line-height: 35px;
+}
+.go_back{
+	
+	display: inline-block;
+	width: 100%;
+	/*width: 70px;
+	height: 40px;
+	line-height: 40px;*/
+	text-align: center;
+	
+	
+	color: #000;
+	margin-right:5px ;
+	margin-left:5px ;
+	font-size: 14px;
+	background: url(../images/back.png) no-repeat;
+	background-size: 35%;
+    background-position: 0px 7px;
+    padding-left: 6px;
+}
+.tvicon
+{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    z-index: 1;
+    width: 50px;
+}
+
+.talk_contain
+{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: White;
+    margin-top: 10px;
+}
+.talk_head
+{
+    color: black;
+}
+.talk_say
+{
+    color: White;
+    padding: 10px;
+    height: 250px;
+    overflow: auto;
+}
+.talk_item
+{
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.talk_head
+{
+    position: relative;
+    overflow: hidden;
+}
+.user_head
+{
+    display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background: url('../images/avatar.jpg') no-repeat center center;
+    background-size: cover;
+}
+.user_name
+{
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    margin-left: 6px;
+    color: #fff;
+}
+.push_time
+{
+    float: right;
+    margin-right: 5px;
+    font-size: 13px;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+}
+.talk_content_div
+{
+    margin: 0 auto;
+    background-color: #ffd045;
+    line-height: 1.5em;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    position: relative;
+    float: left;
+    word-wrap: break-word;
+    width: 100%;
+    max-width: 100%; /*min-width: 150px;*/
+}
+.arrow
+{
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    width: 20px;
+    
+    top: -16px;
+    border:8px solid transparent;
+    display: inline-block;
+	width:0;
+	height: 0;
+	border-bottom: 8px solid #ffd045;
+}
+.send_div
+{
+    position: absolute;
+    bottom: 0px;
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+}
+.send_input
+{
+    width: 62%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    background-color:#ffffff;
+    padding-right: 90px;
+    border: 1px solid #c1c2c5;
+    margin-left: 5%;
+    margin-top: 10px;
+    border-radius: 5px;
+    
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #c1c2c5;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #c1c2c5;
+}
+.talk_content
+{
+    text-align: left;
+    padding: 0px 10px;
+    color: #000;
+    min-height: 24px;
+}
+
+::-webkit-input-placeholder
+{
+    /* WebKit browsers */
+    color: #2D2522;
+}
+:-moz-placeholder
+{
+    /* Mozilla Firefox 4 to 18 */
+    color: #2D2522;
+}
+::-moz-placeholder
+{
+    /* Mozilla Firefox 19+ */
+    color: #2D2522;
+}
+:-ms-input-placeholder
+{
+    /* Internet Explorer 10+ */
+    color: #2D2522;
+}
+.send_btn
+{
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    height: 40px;
+    line-height: 40px;
+    z-index: 9999;
+    background-color: #ffffff;
+    border: 1px solid #c1c2c5;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+    color: #000000;
+}

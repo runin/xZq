@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>海峡卫视</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/quiz.css" />
+	
+</head>
+<body>
+	<div class="main">
+		<section class="quiz none">
+		    <div class="quiz-icon"><img src="images/quiz-icon.png" /></div>
+		    <div class="quiz-info" id="quiz-info">
+		    </div>
+		    <a data-collect="true"
+			data-collect-flag="fj-sea-index-quiz-confirm-btn"
+			data-collect-desc="海峡卫视答题确定按钮" class="back-before" id="quiz-confrim">确&nbsp;&nbsp;&nbsp;定</a>
+			<a data-collect="true"
+			data-collect-flag="fj-sea-quiz-back-index-btn"
+			data-collect-desc="海峡卫视答题返回首页按钮" class="back-index">返回首页</a>
+		</section>
+		<section class="quiz-right none">
+		    <div class="quiz-icon"><img src="images/smile.png" /></div>
+		    <div class="quiz-info">
+		    	<h1>恭喜你！答对了</h1>
+		    	<div class="za">
+			    	<img class="egg" src="images/egg.png" />
+			    	<img class="chui" src="images/chui.png" />
+		    	</div>
+		    </div>
+		</section>
+		<section class="quiz-wrong none">
+		    <div class="quiz-icon"><img src="images/sad.png" /></div>
+		    <div class="quiz-info">
+		    	<img src="images/res-wrong.png" />
+		    </div>
+		    <a data-collect="true"
+					data-collect-flag="fj-sea-quiz-wrong-back-index-btn"
+					data-collect-desc="海峡卫视答题返回首页按钮" class="back-index">返回首页 </a>
+		</section>
+	</div>
+	<div class="copyright">页面由福建综合频道提供Powered by holdfun.cn</div>
+	
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/shake.js"></script> 
+	<script src="./js/plugins/common.js"></script>
+	
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script> 
+	<script src="./js/authorize_userinfo_auto.js"></script>
+	
+    <script src="./js/app/dialog.js"></script>
+	<script src="./js/app/quiz.js"></script>
+
+	
+</body>
+</html>

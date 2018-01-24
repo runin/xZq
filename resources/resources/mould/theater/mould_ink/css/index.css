@@ -1,0 +1,308 @@
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+    background-color: #FFF;
+}
+header {
+	position: relative;
+	width: 100%;
+    padding: 5% 3% 0;
+	/*overflow: hidden;*/
+}
+header .icon-tvlogo {
+    width: 30%;
+    margin: 2% 2%;
+}
+header .btn-box {
+    color: #cc3333;
+    float: right;
+}
+/*header .btn-box a {*/
+    /*display: block;*/
+    /*border: 1px solid #cc3333;*/
+    /*font-size: 13px;*/
+    /*width: 70px;*/
+    /*height: 23px;*/
+    /*line-height: 22px;*/
+    /*font-weight: bolder;*/
+    /*margin-bottom: 5px;*/
+    /*text-align: center;*/
+    /*overflow: hidden;*/
+/*}*/
+header .btn-rule label {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	line-height: 14px;
+	/*border: 1px solid #FFF;*/
+	border-radius: 100%;
+	text-align: center;
+	margin-right: 3px;
+    vertical-align: text-bottom;
+}
+.tv-icon{
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: 10px 0 0 10px;
+    z-index: 2;
+}
+.tv-logo{
+    position: absolute;
+    width: 70%;
+    height: auto;
+    left: 15%;
+    bottom: 0;
+    z-index: 2;
+}
+.container {
+	position: relative;
+	width: 100%;
+    -webkit-animation: zoomIn 2s 2s 1 ease;
+    -webkit-transform-origin: bottom;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: visible;
+}
+.container .icon-logo {
+    width: 90%;
+    margin: 12% auto 0;
+    text-align: center;
+}
+.container .tips {
+    margin: 0 auto;
+    height: 18px;
+    margin-top: 5%;
+}
+.icon-logo-tips3,.icon-logo-tips2{
+    width: 40%;
+    height: auto!important;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bolder;
+	text-align: center;
+    z-index: 9;
+    border: none;
+}
+footer img, footer .qrcode-box {
+    display: block;
+    margin: 0 auto;
+}
+footer .btn-play, footer .btn-net {
+    width: 56%;
+    margin-bottom: 10%;
+}
+.drop{
+    line-height: 16px;
+}
+.btn-play{
+    display: inline-block;
+    width: 50px;
+    height: 120px;
+    background: url("../images/btn-play.png") no-repeat;
+    background-size: 100% 100%;
+    margin: auto auto 20%;
+}
+#btn-reserve{
+    position: absolute;
+    z-index: 50;
+    top: 2%;
+    right: 0;
+    width: 25%;
+    height: 60px;
+    background: url("../images/btn-reserve.png") no-repeat;
+    background-size: 100% auto;
+}
+.btn-rule {
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #d4915f!important;
+    border-bottom: dotted 1px #d4915f;
+    margin-bottom: 20%;
+}
+.show-box{
+    position: relative;
+    margin-top: 20%;
+    z-index: 2;
+    opacity: 0;
+}
+.round-bg{
+    position: relative;
+    /*width: 100px;*/
+    /*height: 240px;*/
+    width: 25%;
+    height: auto;
+    display: inline-block;
+    margin-left: 30%;
+    z-index: 2;
+}
+.ink-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+}
+.ink-box p{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+.camera{
+    position: relative;
+    width: 170px;
+    height: 170px;
+    margin: 30% auto 0;
+}
+.index-in-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.fix-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0;
+}
+.link-ink{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.move-box{
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.index-down-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 140%;
+}
+.flower-1{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    left: 10%;
+    top: 10%;
+    z-index: 3;
+    -webkit-animation:flower1 8s infinite;
+}
+.flower-2{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    left: 50%;
+    top: 30%;
+    z-index: 3;
+    -webkit-animation:flower2 12s infinite;
+}
+.flower-3{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    left: 80%;
+    top: 50%;
+    z-index: 3;
+    -webkit-animation:flower3 10s infinite;
+}
+
+
+footer .qrcode-box {
+    margin-bottom: 6%;
+}
+footer .qrcode-box img {
+    width: 40%;
+    margin-bottom: 3%;
+}
+footer #div_subscribe_area {
+	width: 100%;
+    border: none;
+}
+
+@-webkit-keyframes zoomIn {
+    0% {opacity: 0;-webkit-transform: scale(0);transform: scale(0)}
+    100% {opacity: 1;-webkit-transform: scale(1);transform: scale(1)}
+}
+@keyframes zoomIn {
+    0% {opacity: 0;-webkit-transform: scale(0);transform: scale(0)}
+    100% {opacity: 1;-webkit-transform: scale(1);transform: scale(1)}
+}
+@-webkit-keyframes out-pop {
+    0% {-webkit-transform: translate(0,50px)}
+    35% {-webkit-transform: translate(-200px,25px)}
+    70% {-webkit-transform: translate(0,0)}
+    100% {-webkit-transform: translate(0,0)}
+}
+@-webkit-keyframes in-pop {
+    0% {-webkit-transform: rotate3d(0, 1, 0, 0deg) scale(.6)}
+    60% {-webkit-transform: rotate3d(0, 1, 0, 720deg) scale(1.2)}
+    70%,90% {-webkit-transform: scale(.8)}
+    80% {-webkit-transform: scale(1.2)}
+    100% {-webkit-transform: scale(1)}
+}
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    footer .qrcode-box img {
+        width: 36%;
+        margin-bottom: 3%;
+    }
+    footer .qrcode-box {
+        margin-bottom: 2%;
+    }
+    .container .icon-logo {
+        width: 78%;
+        margin: 8% auto 0;
+    }
+    .container .tips {
+        margin-top: 3%;
+    }
+    footer .btn-play, footer .btn-net {
+        margin-bottom: 6%;
+    }
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .tv-logo{
+        width: 80%;
+        left: 10%;
+    }
+}

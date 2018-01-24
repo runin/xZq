@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>娱乐乐翻天</title>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/answer.css" />
+</head>
+<body>
+	<header class="info ">
+		<div class="back-home" data-collect="true" data-collect-flag="yllft-answer-back-home" data-collect-desc="返回首页按钮"></div>
+		<div class="topic" data-collect-flag="yllft-answer-topic" data-collect-desc="进入话题讨论按钮">话题讨论</div>
+		<span><img src="images/daka.png"><label></label></span>
+		<div class="peo-music">
+			<img class="people" src="">
+		</div>
+		<section class="ui-audio" id="ui-audio" data-collect="true" data-collect-flag="yllft-answer-audio" data-collect-desc="音乐按钮">
+			<div id="coffee-flow" class="coffee-flow">
+				<a href="#" class="audio-icon"></a>
+				<strong class="audio-txt hide">关闭</strong>
+			</div>
+		</section>
+	</header>
+	<div class="hr"></div>
+    <div class="main answer-main">
+		<img class="day-tlt" src="images/day-tlt.png" />
+        <div class="answer-container none">
+			<section class="arrow-box">
+				<!--选择答题 s-->
+				<div class="answer none">
+					<div id="current_box"></div>
+					<a class="sub" id="submitBtn" href="#" data-collect="true" data-collect-flag="yllft-answer-submitBtn" data-collect-desc="提交按钮">提 交</a>
+				</div>
+				<!--选择答题 e-->
+				<!--已经参与调查 s-->
+				<div class="surveyed none">
+					<div id="surveyed"></div>
+					<a href="#" class="new" id="new" data-collect="true"
+					   data-collect-flag="yllft-answer-yao" data-collect-desc="去摇奖页面按钮">去摇奖</a>
+				</div>
+				<!--已经参与调查 e-->
+			</section>
+        </div>
+    </div>
+    <div class="copyright"></div>
+
+	<script src="js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="./js/plugins/coffee.js"></script>
+	<script src="./js/plugins/audio.js"></script>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="js/app/answer.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

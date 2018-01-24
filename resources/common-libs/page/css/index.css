@@ -1,0 +1,12 @@
+.page:nth-child(1) {
+	background-color: #8e44ad;
+}
+.page:nth-child(2) {
+	background-color: green;
+}
+.page:nth-child(3) {
+	background-color: #34495e;
+}
+.page:nth-child(4) {
+	background-color: #e74c3c;
+}

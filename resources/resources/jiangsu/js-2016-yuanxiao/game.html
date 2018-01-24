@@ -1,0 +1,158 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>荔枝元宵包袱铺</title>
+	
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/util.css" />
+	<link rel="stylesheet" href="./css/game.css" />
+	<link rel="stylesheet" href="./css/gameplay.css" />
+	
+</head>
+<body>
+	<section id="container">
+		<section id="stage_loading" class="stage none">
+			<section id="loading_bar" class="none">
+				<div class="sk-cube-grid">
+					<div class="sk-cube sk-cube1"></div>
+					<div class="sk-cube sk-cube2"></div>
+					<div class="sk-cube sk-cube3"></div>
+					<div class="sk-cube sk-cube4"></div>
+					<div class="sk-cube sk-cube5"></div>
+					<div class="sk-cube sk-cube6"></div>
+					<div class="sk-cube sk-cube7"></div>
+					<div class="sk-cube sk-cube8"></div>
+					<div class="sk-cube sk-cube9"></div>
+				</div>
+				<p class="loading-text">游戏努力加载中...</p>
+			</section>
+		</section>
+
+		<section id="stage_index" class="stage none">
+			<section id="play-btn" class="door-wrapper">
+			</section>
+			<section class="door-shan door-left"></section>
+			<section class="door-shan door-right"></section>
+
+			<section class="tangyuan tangyuan1">
+				<img src="./images/icon-yao-tangyuan.png" />
+			</section>
+			<section class="tangyuan tangyuan2">
+				<img src="./images/icon-yao-tangyuan2.png" />
+			</section>
+			<section class="tangyuan tangyuan3">
+				<img src="./images/icon-game-tangyuan4.png" />
+			</section>
+
+			<section id="touch">
+				<img src="./images/icon-push.png" />
+			</section>
+
+			<section class="rule-wrapper">
+			</section>
+
+			<section class="rule-item">
+				<img src="./images/icon-game-rule.png" />
+			</section>
+
+			<footer>
+				页面由江苏卫视提供 & Powered by holdfun.cn
+			</footer>
+
+		</section>
+
+
+        <section class="stage_main none" id="stage_main"></section>
+
+        <section id="stage_record" class="stage none">
+        	<section class="back-btn">
+        	</section>
+        	<ul class="record-list">
+        	</ul>
+        </section>
+
+	</section>
+
+	<section id="win_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="dialog-header">
+				<img src="./images/dialog-top.png" />
+			</section>
+			<section class="dialog-content">
+				<p>你接到了<span id="win_num">0</span>个元宵宝宝</p>
+				<p>30枚元宵币送给你</p>
+				<section class="dialog-btn">
+					<section class="dialog-ok">再玩一次</section>
+					<section class="dialog-back">回去抽奖</section>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<section id="lost_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="dialog-header">
+				<img src="./images/dialog-top.png" />
+			</section>
+			<section class="dialog-content">
+				<p>你接到了<span id="lost_num">0</span>个元宵宝宝</p>
+				<p>接到15个元宵才能获得金币哦</p>
+				<section class="dialog-btn">
+					<section class="dialog-ok">再玩一次</section>
+					<section class="dialog-back">回去抽奖</section>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<section id="error_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="dialog-header">
+				<img src="./images/dialog-top.png" />
+			</section>
+			<section class="dialog-content">
+				<p>你接到了<span id="error_num">0</span>个元宵宝宝</p>
+				<p>继续加油，即可获得金币哦</p>
+				<section class="dialog-btn">
+					<section class="dialog-ok">再玩一次</section>
+					<section class="dialog-back">回去抽奖</section>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<section class="none">
+		<audio preload="auto" id="audio_game" loop="loop" src="./music/game.mp3"></audio>
+	</section>
+
+
+	<script src="./js/config.js"></script>
+	<script src="./js/zepto.min.js"></script>
+	<script src="./js/plugins/shake.js"></script>
+	<script src="./js/plugins/jquery.keyframes.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="http://cdn.holdfun.cn/zhoubian/mc/pixi.js"></script>
+
+	<script src="./js/plugins/core.js"></script>
+	<script src="./js/plugins/authorize_userinfo.js"></script>
+	<script src="./js/plugins/util.js"></script>
+
+	<script src="./js/app/game.js"></script>
+	<script src="./js/app/gameplay.js"></script>
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=54397941" charset="UTF-8"></script>
+	<script type="text/javascript" src="http://pingjs.qq.com/h5/stats.js" name="MTAH5" sid="500002280"></script>
+
+</body>
+</html>

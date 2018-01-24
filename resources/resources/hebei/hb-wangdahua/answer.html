@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>王大花的革命生涯</title>
+	
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	
+	<link rel="stylesheet" href="./css/answer.css" />
+</head>
+<body>
+	
+	<!-- 页面内容 -->
+	<header>
+		<div class="hd-wrapper">
+			<div class="total">目前人数：<span id="total"></span></div>
+			<a class="ranking" id="ranking" data-collect="true" data-collect-flag="hb-wdh-answer-rank" data-collect-desc="答题页面-积分排行按钮">
+				<img src="images/rank.png" border="0">
+			</a>
+			<h2 class="logo"></h2>
+		</div>
+		<div class="qa-wrapper">
+			<div class="wrapper">
+				<div class="c-item question" id="question"></div>
+				<div class="c-item answered none" id="answered">
+					<h3 id="answer-tip">哦漏，答错了，摆好姿势看剧吧！</h3>
+					<div class="timer">
+						<h4>距离下次答题抽奖还有</h4>
+						<h5 class="time-box" id="time-box"></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<article id="article">
+		<!-- 弹幕区域_S -->
+		<div class="comments" id="comments"></div>
+		<!-- 弹幕区域_E -->
+		<div class="ctrls">
+			<p>
+				<input id="input-comment" type="text" placeholder="biu-biu biu~~~" />
+				<a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="hb-wdh-answer-comment" data-collect-desc="答题页面-发表评论按钮">发射</a>
+			</p>
+		</div>
+	</article>
+
+	<!-- 页面内容END -->
+	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/iscroll-lite.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/barrage.js"></script>
+	
+	
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/wx_api_userinfo.js"></script>
+
+	<!-- <script src="./js/data/data.js"></script> -->
+
+	<script src="./js/plugins/lottery.min.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/plugins/msg.js"></script>
+	<script src="./js/app/answer.js"></script>
+	
+</body>
+</html>

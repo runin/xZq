@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>乡里彩虹城里雨</title>
+    <link rel="stylesheet" href="./css/core.css">
+    <link rel="stylesheet" href="./css/util.css">
+    <link rel="stylesheet" href="./css/resize.css">
+    <link rel="stylesheet" href="./css/transform.all.css">
+    <link href="css/lottery.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/yao.css">
+    <link rel="stylesheet" href="./css/rollingrecord.css">
+    <link rel="stylesheet" href="./css/wailian.css">
+    <link rel="stylesheet" href="./css/kaquan.css">
+</head>
+<body>
+    <!---奖品列表---->
+    <section id="dialog5" class="dialog-wrapper none">
+        <section class="img-wrapper wrapper" data-x="45" data-y="78" style="width: 282px;
+            height: 384px;">
+            <img src="./images/prizeList.png" class="prizeListimg">
+            <div class="prizes">
+            </div>
+            <div class="prize_close">
+            </div>
+            <div class="prize_back">
+            </div>
+        </section>
+    </section>
+    <!----现金--->
+    <section id="dialog4" class="dialog-wrapper none">
+        <section class="cash-1-wrapper wrapper" data-x="45" data-y="88" style="width: 282px;
+            height: 354px;">
+            <section class="hongbao">
+                <img class="hongbao-bg" src="./images/getbg.png">
+                <section class="hongbao-title" style="padding: 30px 35px 10px; visibility: hidden;">
+                </section>
+                <section class="hongbao-text">
+                    好棒！再接再厉哦~
+                </section>
+                <section class="hongbao-cash" style="color: rgb(195, 0, 9);">
+                    <img src="#" class="hongbao-img" />
+                    <span class="hongbao-cash-value">0.00</span><span class="hongbao-cash-unit">元</span>
+                </section>
+                <section class="hongbao-click-wrapper">
+                    <a href="javascript:void(0);" class="hongbao-btn font-resize line-height-resize"
+                        style="border-radius: 5px;">领 取</a>
+                </section>
+                <a href="javascript:void(0);" class="hongbao-close"></a>
+            </section>
+        </section>
+    </section>
+    <!---不中奖--->
+    <section id="dialog3" class="dialog-wrapper none">
+        <section class="img-wrapper wrapper" data-x="45" data-y="78" style="width: 282px;
+            height: 384px;">
+            <img src="http://cdn.holdfun.cn/resources/images/clueImg/2015/12/15/2f89246379e040a49488d8456f6daaa1.jpg">
+            <div class="no_close">
+            </div>
+            <div class="no_back">
+            </div>
+        </section>
+    </section>
+    <!---卡卷--->
+    <section id="dialog2" class="dialog-wrapper none">
+        <section class="kaquan-wrapper wrapper" data-x="45" data-y="88" style="width: 282px;
+            height: 354px;">
+            <section class="hongbao">
+                <img class="hongbao-bg" src="./images/getbg.png">
+                <section class="hongbao-title" style="text-align: center; font-size: 18px; padding: 30px 45px 10px;
+                    visibility: hidden;">
+                </section>
+                <section class="hongbao-text">
+                    好棒！再接再厉哦~
+                </section>
+                <section class="hongbao-kaquan hongbao-imgt">
+                    <img src="./images/icon-ticket.png">
+                </section>
+                <a href="javascript:void(0);" class="hongbao-click" percent="true" x-percent="0.24"
+                    y-percent="0.77" w-percent="0.53" h-percent="0.13" style="width: 168.54px; height: 37px;
+                    line-height: 37px; left: 76.32px; top: 217px; border-radius: 5px;">领 取</a><a href="javascript:void(0);"
+                        class="hongbao-close"></a>
+            </section>
+        </section>
+    </section>
+    <!---兑换--->
+    <section id="duihuan" class="dialog-wrapper none">
+        <section class="duihuan-wrapper wrapper" data-x="45" data-y="98" style="width: 282px;
+            height: 384px;">
+            <section class="hongbao">
+                <img class="hongbao-bg" src="./images/getbg_duihuan.png">
+                <section class="hongbao-title" style="text-align: center; font-size: 18px; padding: 30px 45px 10px;
+                    visibility: hidden;">
+                </section>
+                <section class="hongbao-text">
+                    好棒！再接再厉哦~
+                </section>
+                <section class="hongbao-kaquan hongbao-imgt">
+                    <img src="#" alt="">
+                </section>
+                <input class="duihuaninput" placeholder="请填写电话号码" />
+                <a href="javascript:void(0);" class="duihuan-click" data-collect="true" data-collect-flag="duihuan"
+                    data-collect-desc="兑换领取">领 取</a><a href="javascript:void(0);" class="hongbao-close">
+                    </a>
+            </section>
+        </section>
+    </section>
+    <!--外连接--->
+    <section id="dialog" class="dialog-wrapper none ">
+        <section class="wailian-wrapper wrapper" data-x="45" data-y="88" style="width: 282px;
+            height: 354px;">
+            <section class="hongbao">
+                <img class="hongbao-bg" src="./images/getbg.png">
+                <section class="hongbao-title" style="text-align: center; font-size: 18px; padding: 0px;
+                    visibility: hidden;">
+                </section>
+                <section class="hongbao-text">
+                    好棒！再接再厉哦~
+                </section>
+                <section class="hongbao-wailian hongbao-imgt">
+                    <img src="./images/icon-ticket.png">
+                </section>
+                <a href="javascript:void(0);" class="hongbao-click" percent="true" x-percent="0.24"
+                    y-percent="0.77" w-percent="0.53" h-percent="0.13" style="width: 168.54px; height: 37px;
+                    line-height: 37px; left: 76.32px; top: 217px; border-radius: 5px;">领 取</a><a href="javascript:void(0);"
+                        class="hongbao-close"></a>
+            </section>
+        </section>
+    </section>
+    <section class="main">
+        <p class="copyright done">
+            页面由河南卫视提供
+            <br>
+            河南摇电视互动平台技术支持</p>
+        <section class="yao-wrapper wrapper" onwinwailian="H.wailian.show" onwinkaquan="H.kaquan.show"
+            onwinduihuan="H.duihuan.show" onwincash="H.cash.show" onwinnothing="H.dialog.open dialog3"
+            data-x="0" data-y="0" style="width: 371px; height: 602px;">
+            <section id="cover_top" class="cover-wrapper">
+                <img src="images/comeback.png" class="comeback" />
+                <img src="images/slogo.png" class="slogo" />
+                <div class="bar_down none">
+                    <span class="bar_msg">距本轮摇奖结束还有</span> <span class="minute">00</span> 分 <span class="second">
+                        00</span> 秒</div>
+                <!--   <img class="cover-top" src="http://cdn.holdfun.cn/resources/images/clueImg/2015/12/15/f7f5592bdbb14b75b69c4b3e656da968.jpg">-->
+                <img class="cover-top" src="http://cdn.holdfun.cn/resources/images/2015/12/16/43384b7fb9784e8c88c6abdaa7f256e3.jpg">
+            </section>
+            <section id="cover_bottom" class="cover-wrapper">
+                <!--    <img class="cover-bottom" src="http://cdn.holdfun.cn/resources/images/clueImg/2015/12/15/e5ccc04b41c0495ead6859a93b8b1d23.jpg">-->
+                <img class="cover-bottom" src="http://cdn.holdfun.cn/resources/images/2015/12/16/f9a7017c2b2c4bd6b115cbd7d774aea7.jpg">
+                <section id="rollingrecord" class="rollingrecord-wrapper wrapper" data-x="1.1932373046875"
+                    data-y="180" style="width: 370px; height: 50px; visibility: hidden;">
+                    <p>
+                        纵向中奖记录样式...</p>
+                </section>
+                <!----奖品列表----->
+                <a href="#" class="prizeList">奖品列表 </a>
+            </section>
+            <section class="none">
+                <audio preload="auto" id="audio_shake" src="./music/audio-a.mp3">
+                </audio>
+                <audio preload="auto" id="audio_win" src="./music/audio-b.mp3">
+                </audio>
+            </section>
+        </section>
+        <a href="#" class="outer none" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+        </a>
+    </section>
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/core.js"></script>
+    <script src="./js/plugins/authorize_userinfo.js"></script>
+    <script src="./js/plugins/util.js"></script>
+    <script src="./js/diy/event.js"></script>
+    <script src="./js/diy/resize.js"></script>
+    <script src="./js/diy/dialog.js"></script>
+    <script src="./js/app/yao.js"></script>
+    <script src="./js/app/rollingrecord.js"></script>
+    <script src="./js/app/wailian.js"></script>
+    <script src="./js/app/kaquan.js"></script>
+    <script src="./js/app/duihuan.js"></script>
+    <script src="js/app/cash.js" type="text/javascript"></script>
+    <script src="js/app/countDown.js" type="text/javascript"></script>
+    <script src="./js/app/lottery.js"></script>
+</body>
+</html>

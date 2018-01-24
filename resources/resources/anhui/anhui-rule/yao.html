@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>我们的法则</title>
+	<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/yao.css" />
+</head>
+
+<body>
+<!--摇一摇声音-->
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3" style="height: 0px;width: 0px;"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3" style="height: 0px;width: 0px;"></audio><!--中奖声音-->
+<!--摇一摇红包-s-->
+<section class="home-box">
+    <div class="main-top m-t-b">
+	    <div class="marquee hidden" id="marqueen"><ul></ul></div>
+    	<div class="countdown none">
+	    	<div class="tip-box">
+		        <span class="countdown-tip">
+					<img src="images/countDown-tip.png">
+				</span>
+		        <span class="detail-countdown"></span>
+	        </div>
+	    </div>
+	  
+    </div>
+    <div class="main-foot m-f-b">
+	    <!--<input type="button" class="" style="position: absolute;bottom: 50px;z-index: 999999;" id="test" value="test">-->
+		<div class="ddtj hidden">
+			<a class="ddtj-box" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+				<i class="ddtj-before wobble"></i>
+				<p class="ddtj-text"></p>
+			</a>
+		</div>
+	    <a href="#" class="btn-back" id="btn-back" data-collect="true" data-collect-flag="yao-back-btn" data-collect-desc="摇奖页面返回按钮"><img src="images/btn-back.png"></a>
+		<div class="copyright"></div>
+    </div>
+  </div>
+</section>
+<!--摇一摇红包-e-->
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="./js/app/yao.js"></script>
+<script src="./js/app/dialog.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	
+</body>
+</html>

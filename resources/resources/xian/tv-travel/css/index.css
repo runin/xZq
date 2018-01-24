@@ -1,0 +1,90 @@
+body{
+	background-image:url("../images/tv-logo.png"),url("../images/bg.jpg");
+	background-repeat: no-repeat, no-repeat; 
+	background-position:10px 16px,0px 0px; 
+	background-size: 62% auto,100% 100%;
+	text-align: center;
+}
+.main{
+	padding: 60px 0px 40px;
+}
+.main .logo{
+	width: 69%;
+	margin: 0 auto;
+}
+.btn-rule{
+	display: inline-block;
+	position: absolute;
+	top : 0px;
+	right: 8px;
+	width: 80px;
+	height: 30px;
+	background: url(../images/rule-btn.png) no-repeat;
+	background-size: 100%;
+}
+.btn-begin{
+	display: block;
+	width: 100%;
+	background: url(../images/btn-begin.png) no-repeat center;
+	background-size: 68%;
+	margin-top: 40px;
+}
+/*iphone4*/
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	body{
+		background-position:6px 10px,0px 0px; 
+	}
+	.btn-begin{
+		background-size: 60%;
+		margin-top: 0px;
+	}
+	.main{
+		padding: 40px 0px 20px;
+	}
+	.main .logo{
+		width: 64%;
+		margin: 0 auto;
+	}
+}
+
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+@media screen
+and (min-device-width : 360px)
+and (min-device-height : 1100px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
+@media screen
+and (min-device-width : 360px)
+and (min-device-height : 1200px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+/*luo*/
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.btn-begin{
+		margin-top: 10px;
+	}
+}

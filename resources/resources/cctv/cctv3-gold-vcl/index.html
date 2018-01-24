@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>黄金100秒</title>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/swiper.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+	<section class="cover-box">
+		<img class="icon-tvlogo" src="./images/icon-tvlogo.png">
+		<i>跳 过</i>
+		<img class="icon-cover" src="./images/bg-cover.jpg">
+	</section>
+	<section class="swiper-container">
+	    <section class="swiper-wrapper">
+			<section class="swiper-slide swiper-slide1">
+				<section class="content">
+					<img class="icon-tvlogo" src="./images/icon-tvlogo.png">
+					<section class="btn-box">
+						<a href="#" class="reserve none btn" id="btn-reserve" data-collect="true" data-collect-flag="index-go2reserve-btn" data-collect-desc="首页-节目预约按钮">预约节目</a>
+						<a href="#" class="rule btn-rule btn" id="btn-rule" data-collect="true" data-collect-flag="index-go2rule-btn" data-collect-desc="首页-活动规则按钮">活动规则</a>
+					</section>
+					<img class="icon-sponsorlogo" src="./images/icon-sponsorlogo.png">
+					<img class="icon-slogan" src="./images/icon-slogan.png">
+					<img class="icon-logo" src="./images/icon-logo.png">
+				</section>
+				<section class="hammer-box">
+					<img src="./images/icon-arrow.png" id="array" class="resize">
+					<p class="copyright"></p>
+					<section id="div_subscribe_area" class="div_subscribe_area_class"></section>
+				</section>
+			</section>
+			<section class="swiper-slide swiper-slide2">
+				<section class="content">
+		            <section class="countdown none">
+		                <span class="countdown-tip">
+		                	<img src="./images/icon-sponsorlogo.png">
+		                	<label></label>
+		                </span>
+		                <span class="detail-countdown"></span>
+		                <img class="icon-doll" src="./images/icon-doll.png">
+		            </section>
+					<section class="swiper-container-player">
+						<section class="swiper-wrapper"></section>
+						<section class="swiper-button-prev swiper-button-white" data-collect="true" data-collect-flag="swiper-btn-prev" data-collect-desc="投票页-点击左箭头"></section>
+						<section class="swiper-button-next swiper-button-white" data-collect="true" data-collect-flag="swiper-btn-next" data-collect-desc="投票页-点击右箭头"></section>
+				    </section>
+			        <section id="article">
+			            <section class="comments" id="comments"></section>
+			        </section>
+				    <section class="tttj none" id="tttj" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+				        <img class="waggle" src="./images/icon-redbag.png">
+				        <p>更多红包点击这里</p>
+				    </section>
+				</section>
+				<div class="hammer-box">
+			        <section class="ctrls">
+			        	<img class="avatar-comment" src="./images/avatar/default-avatar.jpg">
+			        	<div class="input-box">
+			            	<input id="input-comment" type="text" placeholder="留言15字以内" maxlength="15" />
+			        	</div>
+			            <a href="javascript:void(0);" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="vote-btn-comment" data-collect-desc="投票页-弹幕发射按钮">发射</a>
+			        </section>
+				</div>
+			</section>
+	    </section>
+	</section>
+	<section class="luck-box none">
+		<img class="icon-boxdoll" src="./images/icon-boxdoll.png">
+		<img class="icon-giftbox-before" src="./images/icon-giftbox-before.png">
+		<img class="icon-giftbox-after none" src="./images/icon-giftbox-after.png">
+		<section class="icon-rays" id="icon-rays"></section>
+		<section class="fly-box on">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</section>
+		<section class="fly-box fly-box2 on">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</section>
+	</section>
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/zepto.swiper.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+    <script src="./js/plugins/barrage.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/plugins/msg.js"></script>
+	<script src="./js/app/index.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

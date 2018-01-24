@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>新闻互动</title>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/vote.css" />
+</head>
+<body>
+    <section class="module-con hide" id="J_userControl" data-size="window">
+        <h1>
+            <img class="avatar" src="./images/avatar.jpg">
+            <p>匿名用户</p>
+        </h1>
+        <section class="userWrapper">
+            <a href="javascript:;" class="btn-sign">
+                <i></i>
+                <span>签到</span>
+            </a>
+            <a href="javascript:;" class="btn-coin">
+                <i></i>
+                <span>金币查询中...</span>
+            </a>
+            <a href="javascript:;" class="btn-shop">
+                <i></i>
+                <span>金币商城</span>
+            </a>
+            <a href="javascript:;" class="btn-my">
+                <i></i>
+                <span>我的商品</span>
+            </a>
+        </section>
+    </section>
+    <section class="module-con" id="J_cover" data-size="window" data-width="0">
+        <!-- <section class="module-con touchMe none" id="J_touch" data-size="window"></section> -->
+        <a href="javascrip:;" class="btn-talk off"></a>
+        <section class="module-con touchMe" id="J_voteControl" data-size="window">
+            <h1>
+                <img class="avatar" src="./images/avatar.jpg">
+                <p>匿名用户</p>
+            </h1>
+            <div class="lottery-cd none">
+                <div class="countDown">
+                    <span class="lottery-tip"></span>
+                    <span class="lottery-countdown"></span>
+                </div>
+            </div>
+            <section class="question none" id="question">
+                <dl class="disabled"></dl>
+            </section>
+            <section class="countdown none hide">
+                <span class="countdown-tip"></span>
+                <span class="detail-countdown"></span>
+            </section>
+        </section>
+        <section class="module-con" id="J_biliControl" data-size="window">
+            <section id="article">
+                <section class="comments" id="comments"></section>
+            </section>
+            <section class="ctrls">
+                <img class="avatar-comment" src="./images/avatar.jpg">
+                <input id="input-comment" type="text" placeholder="输入您想要说的话~" maxlength="20" />
+                <a href="javascript:void(0);" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="talk-comment" data-collect-desc="弹幕发送按钮">发&nbsp;送</a>
+            </section>
+        </section>
+        <section class="module-con bgscaleIn animated dark" id="J_background" data-size="window"></section>
+    </section>
+    <footer class="module-con">
+        <section class="copyright"></section>
+    </footer>
+    <section class="debug none"><section></section></section>
+    <section class="module-con bgscaleIn animated" id="J_background" data-size="height"></section>
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/swiper.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/vote.js"></script>
+    <script src="./js/app/time.js"></script>
+    <script src="./js/app/talk.js"></script>
+    <script src="./js/app/msg.js"></script>
+</body>
+</html>

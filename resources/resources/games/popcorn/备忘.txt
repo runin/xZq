@@ -1,0 +1,1 @@
+http://test.holdfun.cn/portal/api/common/test?serviceNo=tv_szws_mcpop&tvStationUuid=e41875a9dfef45adb7281c025197a957&dev=bob

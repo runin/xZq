@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>安徽卫视《超级笑星》</title>
+	
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/video-js.min.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/movie.css" />
+	
+	<script src="./js/wx_api.js"></script>
+</head>
+<body>
+	
+	<div class="main" id="main">
+		<section class="ui-inner-top">
+        	<a class="logo-pg" href="#"></a>
+        	<div class="share-tip">
+        		<div class="content">
+        			<p>点 [发送给朋友]，给好友送欢乐</p>
+	        		<span>发送给朋友</span>
+	        		<span>分享到朋友圈</span>
+        		</div>
+        	</div>
+        </section>
+        
+        <section class="ui-content" id="ui-content">
+        	<h2 class="title">《超级笑星》<span></span></h2>
+        	<p class="desc"></p>
+        	<p class="tips">【建议在wifi情况下观看，壕们，您随意~】</p>
+        	
+        	<div class="cover" id="cover">
+				<video class="video-js vjs-default-skin" controls preload="none" width="100%" height="100%" 
+					data-setup="{}">
+				</video>
+			</div>
+
+			<div class="cw-voted" id="cw-voted">
+				<dl class="vote-result">
+					<dt>用户竞猜结果：</dt>
+					<dd class="clearfix">
+						<label>晋级</label>
+						<div class="cv-progress cv-progress-jj">
+							<p class="pg" data-type="pc"></p>
+						</div>
+						<label class="pgt">0%</label>
+					</dd>
+					<dd class="clearfix">
+						<label>待定</label>
+						<div class="cv-progress cv-progress-dd">
+							<p class="pg" data-type="wc"></p>
+						</div>
+						<label class="pgt">0%</label>
+					</dd>
+					<dd class="clearfix">
+						<label>淘汰</label>
+						<div class="cv-progress cv-progress-tt">
+							<p class="pg" data-type="wdc"></p>
+						</div>
+						<label class="pgt">0%</label>
+					</dd>
+				</dl>
+			</div>
+			<a class="btn-comeon" href="#" data-collect="true" data-collect-flag="ah-movie-toindex" data-collect-desc="安徽视频页面-一起参加">一起来参加吧！</a>
+        </section>
+        
+        <section class="copyright">
+			<p>页面由安徽广播电视台提供</p>
+		</section>
+	</div>
+	
+	<script src="./js/config.js"></script>
+	<script src="./js/zepto.min.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src="./js/data_collect.js"></script>
+	<script src="./js/weixin.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="http://cdn.holdfun.cn/ahtvcomedian/js/video.js"></script>
+	<script src="./js/dialog.js"></script>
+	<script src="./js/movie.js"></script>
+</body>
+</html>

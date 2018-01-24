@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta content="telephone=no" name="format-detection" />
+	<title>第一现场</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/lingjiang_success.css" />
+</head>
+<body>
+	<div class="main">
+		<div class="dst-logo"></div>
+		<div class="lingjiang-info">
+			<h2>个人信息</h2>
+			<i class="gzmark">
+				<img src="images/gzmark.png">
+			</i>
+			<p class="lj-name"></p>
+			<p class="lj-phone">电话：<label class="phone"></label></p>
+			<p class="lj-addr">地址：<label class="address"></label></p>
+		</div>
+		<p class="lingjiang-tip">恭喜您，您的信息已成功提交，稍后为您送上小小心意!</p>
+		<a href="javascript:WeixinJSBridge.call('closeWindow');" data-collect="true"
+			data-collect-flag="gz-live-lingjiang-success-index-btn-close"
+			data-collect-desc="领奖成功关闭页面" class="btn-back">关闭</a>
+	</div>
+	
+	<div class="copyright"></div>
+	
+	<script src="js/config.js"></script>	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common-lj.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/wx_api_userinfo.js"></script>
+
+	<script src="./js/app/lingjiang_success.js"></script>
+</body>
+</html>

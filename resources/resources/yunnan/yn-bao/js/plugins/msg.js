@@ -1,0 +1,10 @@
+window.CACHEMSG.push("剧情扑朔迷离，太棒了。");
+window.CACHEMSG.push("天天追剧我要中iphone6");
+window.CACHEMSG.push("中奖，中奖，求中奖");
+window.CACHEMSG.push("看预告片就好期待了");
+window.CACHEMSG.push("赞赞赞，32个赞！");
+window.CACHEMSG.push("襄阳王好帅啊！！");
+window.CACHEMSG.push("帅惨了！！");
+window.CACHEMSG.push("正气凛然啊，支持！支持！");
+window.CACHEMSG.push("只想中奖！！");
+window.CACHEMSG.push("求中话费！！！");

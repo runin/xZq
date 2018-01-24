@@ -1,0 +1,384 @@
+﻿body
+{
+}
+img
+{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.cover-bottom
+{
+    margin-top: 0px;
+}
+.copyright
+{
+  
+    color: #babcbc;
+    font-size: 12px;
+    line-height: 1.2em;
+   position:fixed;
+   width:100%;
+   
+    
+}
+.comeback
+{
+    width: 112px;
+    height: 33px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.slogo
+{
+    width: 125px;
+    height: 44px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.bar_down
+{
+
+    width: 85%;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-left: -42.5%;
+    color: White;
+    text-align: center;
+    margin-top:20%;
+    background-color:rgba(0,0,0,0.3);
+    border-radius:30px;
+    font-size:15px;
+}
+
+
+@media (max-height:480px)
+{
+  .bar_down
+  {
+       margin-top:17%;
+  }    
+}
+
+
+.bar_down span
+{
+    background: url('../images/sumbg.png') no-repeat center center;
+    background-size: 100% 100%;
+    padding: 4px;
+    color: white;
+}
+.bar_msg
+{
+    background: none !important;
+    color: White !important;
+}
+
+#rollingrecord
+{
+    width: 100% !important;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+    color: White !important;
+    font-size: 14px;
+    z-index:999;
+}
+.lan_item span
+{
+    border-bottom: 1px dotted white !important;
+    padding: 3px 0px;
+}
+
+/******不中奖弹出框*********/
+#dialog3 .img-wrapper
+{
+    position: relative;
+}
+.no_close
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 100%;
+}
+.no_back
+{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+/******中奖框****/
+.wailian-wrapper .hongbao-click,.kaquan-wrapper .hongbao-click,#dialog4 .hongbao-click-wrapper a
+{
+    
+}
+.wailian-wrapper .hongbao-click,.kaquan-wrapper .hongbao-click
+{
+   background-color:Transparent !important;
+}
+
+
+
+.hongbao-text
+{
+    margin-top:40px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: White;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 9999;
+}
+
+.visable
+{
+    visibility: hidden;
+}
+
+.hongbao-cash .hongbao-img
+{
+    display: block;
+    width: 80%;
+    position: relative;
+    z-index: 9999;
+    margin: 0 auto;
+}
+#dialog4 .hongbao-click-wrapper
+{
+    position: absolute;
+    top: 82%;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    line-height:40px;
+    z-index: 9999;
+    text-align: center;
+}
+#dialog4 .hongbao-click-wrapper a
+{
+    width: 110px;
+    height: 40px;
+    line-height:40px !important;
+    display: block;
+    margin: 0 auto;
+}
+
+.outer
+{
+    position: absolute;
+    bottom: 32px;
+    width: 160px;
+    height: 20px;
+    margin-left: -80px;
+    left: 50%;
+    text-align: center;
+    color: gray;
+    text-decoration: underline;
+    
+}
+
+
+.prizeList
+{
+    position: absolute;
+    top: 49%;
+    width: 74px;
+    height: 25px;
+    line-height:25px;
+    left: 50%;
+    margin-left: -37px;
+    text-align: center;
+    color: White;
+    border-bottom:1px solid white;
+}
+
+.lan_item
+{
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 0px 10px;
+}
+
+
+
+#cover_top
+{
+    height: 41.567%;   
+    background: url('../images/top.jpg') no-repeat center center;
+    background-size:100% 100%;
+}
+
+#cover_bottom
+{
+    height:58.433%;
+    background: url('../images/bottom.jpg') no-repeat center center;
+    background-size:100% 100%;
+}
+
+@media (max-height:480px)
+{
+    #cover_top
+    {
+        background-size:100% 100%;
+    }
+
+    #cover_bottom
+    {
+       background-size:100% 100%;
+    }
+}
+.timeicon
+{
+ width:20px; 
+ vertical-align:middle;
+ position:relative;
+ top:-2px;
+    
+}
+
+/*******没有中奖****/
+.noget
+{
+   width:60%;
+   height:30px;
+   line-height:30px;
+   background-color:rgba(0,0,0,0.5);
+   border-radius:20px;
+   position:fixed;
+   top:40%;
+   left:50%;
+   margin-left:-30%;
+   z-index:99999;
+   text-align:center;
+   color:White;  
+}
+.noget_an
+{
+   animation-name:tips;
+   animation-duration:1s;
+   animation-iteration-count:1;
+   animation-timing-function:ease-in; 
+   
+   -webkit-animation-name:tips;
+   -webkit-animation-duration:0.3s;
+   -webkit-animation-iteration-count:1;
+   -webkit-animation-timing-function:ease-in;     
+}
+
+@keyframes tips
+{
+  from
+  {
+    top:20%;
+  }
+  to
+  {
+    top:50%; 
+  }
+}
+.back
+{
+  width:30%;
+   display:block;
+   position:absolute;
+   top:48%;
+   right:-30px;    
+}
+.heat
+{
+    background: url('../images/avatar.jpg') no-repeat center center;
+    background-size:cover;
+}
+ 
+ /*****兑换类型的按钮*****/
+ .duihuan-click
+ {
+    width:200px;
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    margin-left:-100px;  
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    background: url('../images/lingqu.png') no-repeat center center;
+    background-size:contain;
+      
+ }
+ .duihuaninput
+ {
+    width:80%;
+    height:35px;
+    line-height:35px;
+    position:absolute;
+    bottom:75px;
+    border:0px;
+    left:50%;
+    margin-left:-40%;
+    border-radius:5px;
+    padding-left:10px;
+    
+ }
+ /*******实物类型*******/
+ 
+ .shiwu-1-wrapper .hongbao-title
+ {
+   margin-top: 22% !important;
+   padding-top:15px  !important;  
+   padding-bottom:5px !important;
+   font-size:15px !important;
+  
+ }
+ @media (min-height:568px)
+ {
+    .shiwu-1-wrapper .hongbao-title
+    { 
+      margin-top: 27% !important;  
+    }
+ }
+  @media (min-height:736px)
+ {
+    .shiwu-1-wrapper .hongbao-title
+    { 
+      margin-top: 29% !important;  
+    }
+ }
+ .hongbao-shiwu
+ {
+  
+ }
+ .shiwu-1-wrapper .hongbao-input-wrapper
+ {
+   background-color:White !important;
+ }
+ .shiwu-1-wrapper .hongbao-input-wrapper label
+ {
+    color:gray !important;   
+ }
+ .shiwu-1-wrapper .hongbao-input-wrapper .hongbao-input-inner-wrapper input
+ {
+   color:gray !important;     
+ }
+ .shiwu-1-wrapper .hongbao-click
+ {
+   background-color:transparent !important; 
+   height:40px !important; 
+   line-height:40px !important; 
+ }

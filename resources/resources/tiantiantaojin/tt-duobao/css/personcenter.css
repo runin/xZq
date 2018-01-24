@@ -1,0 +1,220 @@
+.head{
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    top: 0;
+}
+.head-l,.head-r,.head-m,.head-a{
+    position: absolute;
+    width: 25%;
+    height: 36px;
+    left: 0;
+    top: 0;
+}
+.head-a>a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 5;
+}
+.head-l>a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 5;
+}
+.head-m>a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 5;
+}
+.head-a{
+    left: 25%;
+    width: 25%;
+    /*border-bottom: 2px solid #f91546;*/
+}
+.head-r{
+    left: 75%;
+    width: 25%;
+    /*border-bottom: 2px solid #f91546;*/
+}
+.head-m{
+    left: 50%;
+    /*border-bottom: 2px solid #f91546;*/
+}
+.head-a>p{
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-left: 1px solid #aaaaaa;
+    font-size: 15px;
+    /*color: #f91546;*/
+}
+.head-r>p{
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-left: 1px solid #aaaaaa;
+    font-size: 15px;
+    color: #f91546;
+}
+.head-m>p{
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-left: 1px solid #aaaaaa;
+    font-size: 15px;
+    /*color: #f91546;*/
+}
+.head-l>p{
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    /*border-right: 2px solid #aaaaaa;*/
+}
+.body{
+    position: absolute;
+    top: 36px;
+    width: 100%;
+    height: -webkit-calc(100% - 36px);
+    background-color: #f8f8f8;
+}
+.center{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #f91546;
+}
+.center>a{
+    position: absolute;
+    height: 100px;
+    right: 0;
+    width: -webkit-calc(100% - 260px);
+
+}
+
+.center>a>p{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    top: 35px;
+    right: 30%;
+    color: white;
+}
+.center>.center-head{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    left: 10px;
+    border: 2px solid darkgray;
+    border-radius: 40px;
+}
+.center-info{
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    top: 20px;
+    left: 80px;
+    color: white;
+}
+.center-info>p{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    top: 0;
+    overflow: hidden;
+}
+.center-info>span{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    top: 30px;
+    font-size: 12px;
+}
+.tocharge{
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 3px;
+    color: #f91546;
+    background-color: white;
+    left: 120px;
+    text-align: center;
+    font-size: 14px;
+    top: 35px;
+    transition: background-color,color .3s;
+    -webkit-transition: background-color,color .3s;
+}
+.tocharge:active{
+    background-color:#f91546;
+    color: white;
+}
+.chklabel{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+}
+.label{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    color: #666666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.label>p{
+    position: absolute;
+    width: 40%;
+    height: 30px;
+    line-height: 30px;
+    left: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+.label>span{
+    position: absolute;
+    width: 40%;
+    height: 30px;
+    line-height: 30px;
+    right: 20px;
+    text-align: right;
+    font-size: 16px;
+}
+.label>a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 5;
+    transition: background-color .3s;
+    -webkit-transition: background-color .3s;
+}
+.label>a:active{
+    background-color:#AAAAAA;
+}

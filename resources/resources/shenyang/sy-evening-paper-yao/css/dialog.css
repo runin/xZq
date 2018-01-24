@@ -1,0 +1,372 @@
+.dialog {
+  position: absolute;
+  color: #D6305A;
+  border-radius: 6px;
+  z-index: 1000;
+  overflow: hidden;
+  background: #F23968;
+}
+.modal .btn-close {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    z-index: 10000;
+}
+.modal:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.75);
+	z-index: 100;
+}
+.modal .btn-close {
+  display: none;
+}
+.fudai {
+  position: absolute;
+  width: 80%;
+  top: -webkit-calc((100% - 260px) / 2);
+  top: calc((100% - 260px) / 2);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1000;
+}
+.fudai img.aureole{
+  width: 260px;
+  height: 260px;
+}
+.aureole-an {
+  -webkit-animation-name:aureole-an;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes aureole-an {
+  0%{
+    -webkit-transform:rotate(0deg);
+  }
+  100%{
+    -webkit-transform:rotate(360deg);
+  }
+}
+.fudai img.lh{
+  position: absolute;
+  top: -webkit-calc((100% - 141px) / 2);
+  top: calc((100% - 141px) / 2);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 170px;
+  height: 141px;
+}
+.cjani2 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  animation: cjaniB 0.5s infinite alternate ease;
+  -webkit-animation: cjaniB 0.5s infinite alternate ease;
+}
+@-webkit-keyframes cjaniB {
+  0% { -webkit-transform: scale(.9); color:#FFE800; }
+  50% { -webkit-transform: scale(1.2); }
+  100% { -webkit-transform: scale(.9); color:#FFE800;  }
+}
+.fudai p {
+  margin: 0 auto 0;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+.lottery-dialog {
+  position: absolute;
+  width: 254px;
+  top: -webkit-calc((100% - 190px) / 2);
+  top: calc((100% - 190px) / 2);
+  left: 0;
+  right: 0;
+  background: #E74951 url(../images/j-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  z-index: 1000;
+  border: 1px solid #FFFC1A;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+@-webkit-keyframes bounceOutUp {
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+.bounceOutUp {
+  -webkit-animation-name: bounceOutUp;
+  animation-name: bounceOutUp;
+}
+.lottery-dialog:before{
+  content: '';
+  display: block;
+  background: url(../images/jTop-bg.png) no-repeat center top;
+  background-size: 300px auto;
+  width: 300px;
+  height: 61px;
+  position: absolute;
+  top: -40px;
+  left: -10%;
+  right: 0;
+  margin: 0 auto;
+}
+.lottery-dialog .award-none:before,.lottery-dialog .award-win:before{
+  content: '';
+  display: block;
+  width: 89px;
+  height: 25px;
+  position: relative;
+  top: -30px;
+  text-align: center;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.lottery-dialog .award-none:before{
+  background: url(../images/not-z.png) no-repeat center top;
+  background-size: 89px auto;
+}
+.lottery-dialog .award-win:before{
+  background: url(../images/zz.png) no-repeat center top;
+  background-size: 89px auto;
+}
+.lottery-dialog .award-win:after{
+  content: '';
+  display: block;
+  background: url(../images/star.png) no-repeat center top;
+  background-size: 252px auto;
+  width: 252px;
+  height: 115px;
+  position: absolute;
+  top: -56px;
+  -webkit-animation-name:fd;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes fd{
+  0%{
+    -webkit-transform: scale(.3);
+  }
+  100%{
+    -webkit-transform: scale(1);
+  }
+}
+.lottery-dialog .award-none {
+    margin: 0 auto!important;
+  text-align: center;
+}
+.lottery-dialog .award-none .btn-close {
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+.lottery-dialog .award-none img {
+  max-width: 60%;
+  margin-top: 10px;
+}
+.lottery-dialog .award-none h5 {
+      color: #A8151D;
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 6% 0 0;
+}
+.lottery-none .award-win {
+  display: none;
+}
+.lottery-none .award-none {
+    display: block !important;
+}
+.lottery-dialog h2 {
+  text-align: center;
+  color: #FFF;
+  padding: 8% 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+.lottery-dialog h3 {
+color: #FFF;
+  text-align: center;
+  padding-top: 13%;
+  font-size: 15px;
+  line-height: 17px;
+}
+.lottery-dialog .award-img {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+.lottery-dialog .award-img img {
+    max-width: 76%;
+}
+.lottery-dialog h4 {
+    color: #FFF;
+    font-size: 12px;
+}
+.lottery-dialog .contact {
+  width: 84%;
+  margin: 3px auto 0;
+}
+.lottery-dialog h5.awardwin-tips {
+  width: 90%;
+  margin: 0 auto 3%;
+  text-align: center;
+  color: #f6ff00;
+  font-size: 16px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lottery-dialog h4.award-tip {
+}
+.lottery-dialog h4.awarded-tip {
+    display: none;
+}
+.lottery-awarded h4 {
+}
+.lottery-awarded h4.award-tip {
+    display: none;
+}
+.lottery-awarded h4.awarded-tip {
+    display: block;
+}
+.lottery-dialog .award-win .btn-close {
+  display: none;
+}
+.lottery-dialog .award-win .btn-award {
+  display: block;
+}
+.lottery-awarded .award-win .btn-close {
+  display: block;
+}
+.lottery-awarded .award-win .btn-award {
+  display: none;
+}
+#lottery-dialog p {
+  margin-top: 6px;
+  color: #FFF;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 6px auto;
+}
+.lottery-awarded .q-mobile {
+  font-size: 17px !important;
+}
+#lottery-dialog input {
+  background: #FFCFD1;
+  border: 0 none;
+  border-radius: 4px;
+  height: 36px;
+  padding: 2px 6px;
+  width: 100%;
+  outline: 0 none;
+  color: #CF7676;
+  line-height: 32px;
+  font-size: 17px;
+}
+input::-webkit-input-placeholder {
+  color: #CF7676;
+}
+.q-mobiled{
+  color: #fff!important;
+  background: transparent!important;
+}
+.q-mobile{
+  color: #CF7676!important;
+}
+.lottery-dialog .btn {
+  background: #FFDA15;
+  position: relative;
+  width: 60%;
+  bottom: 7% !important;
+  left: auto !important;
+  top: auto !important;
+  right: auto !important;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,.2);
+  color: #E74951;
+  border-radius: 28px;
+  margin: 20px auto;
+}
+.lottery-dialog .btn-award {
+    display: block;
+    color: #EA614B;
+}
+.lottery-awarded .btn-award {
+    display: none;
+}

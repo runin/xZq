@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>十八酒坊剧场</title>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/core.css" />
+		<link rel="stylesheet" href="./css/dialog.css" />
+		<link rel="stylesheet" href="./css/yaoyiyao.css" />
+	</head>
+	<body>
+		<audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+		<audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+		<audio preload="auto" id="audio-c" src="images/audio-c.mp3" class="preload"></audio>
+		<img src="images/yao-top.png" class="preload none">
+		<img src="images/yao-top-bg.jpg" class="preload none">
+		<img src="images/yao-bottom.png" class="preload none">
+		<img src="images/yao-bottom-bg.jpg" class="preload none">
+		<img src="images/yao-bg.jpg" class="preload none">
+		
+		
+		<div class="home-box-bg"></div>
+		<section class="home-box">
+			<div class="main-top m-t-b">
+			<header>
+				<a href="#" class="btn btn-rule" id="btn-postCard" data-collect="true" data-collect-flag="tv_hebeitv_world-yao-post" data-collect-desc="摇一摇-活动规则按钮">寄明信片</a>
+				<a href="#" class="btn reserve" id="btn-rank" data-collect="true" data-collect-flag="tv-hebeitv-world-yao-rank" data-collect-desc="摇一摇-节目积分排行">积分排行</a>
+			</header>
+			<div class="spon none"><span>在线人数:</span><span class="num"></span><img class="spon-logo" src="images/sponor.png" /></div>
+				<img class="spon-logo" src="images/spon-logo.png"/>
+				<!-- <a href="#" class="outer" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a> -->
+				<a href="#" class="right-now-talk" data-collect="true" data-collect-flag="right-now-talk" data-collect-desc="马上去吐槽">马上去吐槽</a>
+			</div>
+			<div class="main-foot m-f-b">
+				<div class="marquee hidden">
+					<ul></ul>
+				</div>
+				<div class="content-box">
+					<div class="time-text hidden"><span class="text-tip"></span><span class="downContTime"></span></div>
+				</div>
+				<div class="yao-text">
+					<p>换个姿势继续加油</p>
+				</div>
+				<div class="copyright"></div>
+			</div>
+		</section>
+	<!-- <input type="button"  id="test" value="红包按钮" style="position:absolute;top:30%;z-index:99999;background: red;width: 40px;height: 40px;">-->
+		<script src="js/config.js"></script>
+		<script src="./js/plugins/zepto.min.js"></script>
+		<script src="./js/plugins/zepto.cookie.min.js"></script>
+		<script src="./js/plugins/zepto.fx.min.js"></script>
+		<script src="./js/plugins/sha1.min.js"></script>
+		<script src="./js/plugins/md5.js"></script>
+		<script src="./js/plugins/common.js"></script>
+		<script src="./js/plugins/shake.js"></script>
+		<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+		<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+		<script src="./js/authorize_userinfo.js"></script>
+
+		<script src="./js/app/dialog.js"></script>
+		<script src="./js/app/yaoyiyao.js"></script>
+		<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	</body>
+</html>

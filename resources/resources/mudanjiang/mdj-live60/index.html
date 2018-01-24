@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>直播60分</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+	<section class="main">
+		<nav>
+			<a  class="btn-rule" id="btn-gift" data-collect="true" data-collect-flag="mdj-live60-index-gift-center" data-collect-desc="首页-活动规则按钮">中奖纪录</a>
+			<a  class="btn-rule" id="btn-rule" data-collect="true" data-collect-flag="mdj-live60-index-rule" data-collect-desc="首页-活动规则按钮">活动规则</a>
+		</nav>
+		
+		<div class="index-btn" data-collect="true"
+               data-collect-flag="mdj-live60-index-btn"
+               data-collect-desc="开始抽奖">
+			<div class="lottery none"><img src="./images/lottery.png"></div>
+			<div class="lotteryed none"><img src="./images/lotteryed.png"></div>
+			<div class="countdown none"></div>
+			<div class="count-time none"><p class="time-tips">距离抽奖还有</p><p class="detail-countdown"></p></div>
+		</div>
+	</section>
+	<div class="follow-box">
+		<div class="copyright"></div>
+		<div  id="div_subscribe_area">
+		</div>
+	</div>
+
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/iscroll-lite.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

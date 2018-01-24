@@ -1,0 +1,10 @@
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/0q.jpg' class='c_head_img_img' /></div><div class='comment'>这个节目很有意思啊，好玩有趣有料</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/1q.jpg' class='c_head_img_img' /></div><div class='comment'>看这个节目还能知道一些知识呢，挺好的</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/2q.jpg' class='c_head_img_img' /></div><div class='comment'>大家都在看吗？</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/3q.jpg' class='c_head_img_img' /></div><div class='comment'>一起聊个天呢，节目挺有趣的~</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/4q.jpg' class='c_head_img_img' /></div><div class='comment'>中国面孔挺有意思的，搞得我都想去看看~</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/5q.jpg' class='c_head_img_img' /></div><div class='comment'>这个知识库竟然有一些知识介绍哎~大家快去看</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/6q.jpg' class='c_head_img_img' /></div><div class='comment'>你们都知道这个答题的答案吗？</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/7q.jpg' class='c_head_img_img' /></div><div class='comment'>看知识库就能知道答案的线索呢，快去~</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/8q.jpg' class='c_head_img_img' /></div><div class='comment'>啦啦啦啦，我在这里，你在哪里？</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/9q.jpg' class='c_head_img_img' /></div><div class='comment'>我很喜欢李咏，我是李咏的粉丝~</div></div>");

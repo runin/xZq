@@ -1,0 +1,326 @@
+body{
+    width: 100%;
+    height: 100%;
+    background: url("../images/daily-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+.video-div{
+    /*background: url(../images/head-bg.jpg) 0 0 no-repeat;*/
+    /*background-size: 100% 100%;*/
+    background: black;
+    width: 100%;
+    /*margin: 0 auto 0;*/
+    /*padding: 2%;*/
+}
+.top,.mid,.bot{
+    position: relative;
+    width: 100%;
+    background: url("../images/daily-border.png") no-repeat;
+    background-size: 90% 100%;
+    background-position: 50% 0;
+    padding: 5% 10% 5% 10%;
+    margin-top: 10%;
+}
+.video-div .video{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.play{
+    position: absolute;
+    width: 18%;
+    top: 40%;
+    left: 41%;
+}
+.sec-tips{
+    position: relative;
+    width: 70%;
+    margin-top: -11%;
+    margin-left: -10%;
+}
+.outer{
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    margin: 5% auto 0;
+    background: url("../images/btn-out.png") no-repeat;
+    background-size: 100% 100%;
+}
+.bot>p{
+    position: relative;
+    width: 100%;
+    margin: 5% 0;
+}
+.bot>div>div{
+    position: relative;
+    display: inline-block;
+}
+.linkout{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: -20%;
+    background: url("../images/out-link.png") no-repeat;
+    background-size: 100% 100%;
+}
+.sex{
+    position: relative;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px black solid;
+    text-align: center;
+    outline: none;
+}
+.age{
+    position: relative;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.vote{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4999;
+}
+.black{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.4);
+}
+/*.vote:after{*/
+    /*position: absolute;*/
+    /*width: 140%;*/
+    /*height: 140%;*/
+    /*top: -20%;*/
+    /*left: -20%;*/
+    /*content: '';*/
+    /*background-color: rgba(0,0,0,.4);*/
+    /*z-index: -1;*/
+/*}*/
+.vote-box{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    padding: 7%;
+    background: url("../images/rank-bg.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 5000;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.vote-box-info{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.praise-box{
+    position: relative;
+    width: 100%;
+    margin-top: 2%;
+    height: auto;
+    clear: both;
+}
+.praise-box .tt{
+    position: relative;
+    width: 90%;
+    text-align: center;
+    /*font-size: 18px;*/
+    /*line-height: 22px;*/
+    color: black;
+    margin: auto;
+    /*font-weight: bold;*/
+    word-break: break-all;
+}
+.praise-box>.praise.voteinfo{
+    /*width: 8px;*/
+    /*height: 8px;*/
+    /*border: 1px black solid;*/
+}
+/*.praise-box>.praise:nth-child(4)>.voteinfo{*/
+/*background: url("../images/fm-tt4.png") no-repeat;*/
+/*background-size: 100% 100%;*/
+/*}*/
+.praise{
+    position: relative;
+    width: 100%;
+    margin: 2% auto;
+    font-size: 14px;
+    opacity: 0;
+    float: left;
+}
+.praise>.praise-btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /*background: url("../images/vote-btnlt.png") no-repeat;*/
+    /*background-size: 100% 100%;*/
+    z-index: 5;
+    opacity: 0;
+}
+.praise>.lt,.praise>.ltl{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 25%;
+}
+.praise>.ltl{
+    opacity: 0;
+    z-index: 20;
+}
+.praise-per{
+    position: relative;
+    width: 85%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2%;
+}
+.praise-per>img{
+    position: absolute;
+    right: 5%;
+    top: 0;
+    height: 40%;
+}
+.praise-per>p{
+    width: 70%;
+    word-break: break-all;
+    display: block;
+    /*font-weight: bold;*/
+    color: black;
+    /*text-shadow:#1e1e37 1px 0 0,#1e1e37 0 1px 0,#1e1e37 -1px 0 0,#1e1e37 0 -1px 0;*/
+    /*filter: Glow(Color=#1e1e37, Strength=1);*/
+}
+.praise-per>span{
+    width: auto;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+    /*text-shadow:#1e1e37 1px 0 0,#1e1e37 0 1px 0,#1e1e37 -1px 0 0,#1e1e37 0 -1px 0;*/
+    /*filter: Glow(Color=#1e1e37, Strength=1);*/
+}
+.praise-per>div{
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    margin: 4px 0 0 0;
+    height: 6px;
+    border-radius: 6px;
+    /*border: 1px solid #1e1e37;*/
+    background-color: #c3c3c3;
+    /*background: -webkit-linear-gradient(top, #633a23 0%,#9b6f56 100%);*/
+    /*background: rgb(198,213,0); /!* Old browsers *!/*/
+    /*background: linear-gradient(to bottom,  rgba(255,213,0,1) 0%,rgba(255,252,0,1) 50%,rgba(255,96,1,1) 100%);*/
+
+}
+.praise-per>div>p{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-radius: 6px;
+    background-color: #8e104e;
+    /*background: url("../images/prg-normal.jpg") no-repeat;*/
+    background-size: 100% 100%;
+}
+.lt-box>.ltnum{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #0085bd;
+    opacity: 0;
+}
+.voteinfo{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    margin-left: 2%;
+    background: url("../images/box-def.png") no-repeat;
+    background-size: 100% 100%;
+    /*color: #b45d00;*/
+    z-index: 3;
+}
+.voteinfo>div,.voteinfo>p{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    top: 0;
+}
+.voteinfo>p{
+    top: 30px;
+}
+.praise-bg{
+    position: relative;
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5%;
+    /*background: url("../images/zan-normal.png") no-repeat;*/
+    background-size: 100% 100%;
+}
+.praise-bg p{
+    padding: 8px;
+    word-break: break-all;
+    color: black;
+    /*text-shadow:#1e1e37 1px 0 0,#1e1e37 0 1px 0,#1e1e37 -1px 0 0,#1e1e37 0 -1px 0;*/
+    /*filter: Glow(Color=#1e1e37, Strength=1);*/
+}
+.praised{
+    position: absolute;
+    width: 96%;
+    left: 2%;
+    height: 60%;
+    top: 16%;
+    z-index: 4;
+    display: none;
+}
+
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bolder;
+    text-align: center;
+    z-index: 999999;
+}

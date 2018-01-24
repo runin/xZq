@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>直播60分</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+
+<a href="#" class="none btn-reserve" id="btn-reserve" data-collect="true"
+   data-collect-flag="mdj-live60-index-btn-reserve" data-collect-desc="预约本剧按钮">节目预约</a>
+<header>
+	<img src="images/logo.png" class="logo">
+	<img src="images/index-de.png" class="index-de">
+</header>
+	<div class="main">
+		<div class="none">
+			<img class="none" src="images/bg.jpg" />
+			<img id='ping-img' src="images/pinlun.png" />
+			<img id='baoliao-img' src="images/baoliao.png" />
+			<img id='yanshen-img' src="images/jifen.png" />
+			<img id='toupiao-img' src="images/toupiao.png" />
+		</div>
+
+		<div class="canvas-div zoomIn">
+			<a class="item pinglun" data-collect="true" data-collect-flag="mdj-live60-index-start-btn"
+			   data-collect-desc="进入评论页面"></a>
+			<a class="item baoliao" data-collect="true" data-collect-flag="mdj-live60-index-start-btn"
+			   data-collect-desc="进入爆料页面"></a>
+			<a class="item jifen" data-collect="true" data-collect-flag="mdj-live60-index-start-btn"
+			   data-collect-desc="进入积分商城页面"></a>
+			<a class="item toupiao" data-collect="true" data-collect-flag="mdj-live60-index-start-btn"
+			   data-collect-desc="进入投票页面"></a>
+			<a id="lottery" class="lottery" data-collect="true" data-collect-flag="mdj-live60-index-start-btn"
+		       data-collect-desc="进入抽奖页面" ></a>
+		</div>
+		<div class="box-shaw"></div>
+		<div class="adver none"><img src="" /></div>
+	</div>
+
+	
+	<div class="tab animated none" id="tab">
+		<div class="copyright anima"></div>
+		<div class="tab-div">
+			<a href="#" data-collect="true" data-collect-flag="mdj-live60-index-jifen-btn"
+			   data-collect-desc="进入积分页面" class="gift">中奖记录</a> <span class="">|</span>
+			<a href="#" data-collect="true" data-collect-flag="mdj-live60-index-rule-btn"
+			   data-collect-desc="进入规则页面" class="rule">活动规则</a>
+		</div>
+		<div id="div_subscribe_area" class="div_subscribe_area_class"></div>
+	</div>
+
+	<!--活动规则-->
+	<section class="rule-section none">
+		<div class="rule-first animated">
+			<h2>活动规则</h2>
+			<div class="con"></div>
+			<a class="" id="rule-close"  data-collect="true" data-collect-flag="mdj-live60-index-rule-close"
+			   data-collect-desc="关闭规则页面按钮" >X</a>
+		</div>
+	</section>
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+
+<script src="./js/app/index.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

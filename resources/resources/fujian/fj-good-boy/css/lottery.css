@@ -1,0 +1,172 @@
+html, body {
+    height: 100%;
+    background-color: #fff;
+}
+body{
+    background: url(../images/bg-top.jpg) no-repeat 0 0,
+    url(../images/bg-bottom.jpg) no-repeat 0px bottom;
+    background-size: 100%,100%;
+}
+.main{
+    text-align: center;
+    padding-top : 30px;
+}
+.main .logo{
+    width: 34%;
+}
+.main .lottery-tlt{
+    width: 73%;
+	margin:20px 0 30px 0;
+}
+.lottery {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.lottery .btn-lottery {
+    position: absolute;
+    left: 77px;
+    top: 77px;
+    width: 124px;
+    height: 124px;
+}
+.award{
+	margin-top: 10px;
+}
+.award h2{
+    color: #fff;
+    font-size: 12px;
+
+}
+.award h1{
+    color: #fff;
+    font-size: 15px;
+    margin: 10px auto 24px;
+}
+.award img{
+    width: 60%;
+}
+.award .lottery-btn{
+    background: #DB3774;
+    width: 158px;
+    height: 43px;
+    line-height: 43px;
+    margin: 30px auto 10px;
+}
+.thank{
+    height: 100%;
+    padding: 32% 0 48%;
+    text-align: center;
+}
+.rule .rule-con{
+	width: auto;
+	position: relative;
+	margin: 0 7%;
+}
+.rule .rule-data{
+	height: 78%;
+}
+.thank img{
+    width: 86%;
+}
+.thank .rule-close {
+    top: -10px;
+    right: -10px;
+}
+.thank a.thank-btn{
+    margin: 10px auto;
+    background: #DB3774;
+    width: 78%;
+}
+a.hover{
+	color: #fff;
+}
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1200px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.lottery {
+	    width: 240px;
+	    height: 240px;
+	}
+	.lottery .btn-lottery {
+	    left: 68px;
+	    top: 68px;
+	    width: 104px;
+	    height: 104px;
+	}
+	.main{
+	    padding-top : 10px;
+	}
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.lottery {
+	    width: 200px;
+	    height: 200px;
+	}
+	.lottery .btn-lottery {
+	    left:56px;
+	    top: 56px;
+	    width: 88px;
+	    height: 88px;
+	}
+	.main{
+	    padding-top : 10px;
+	}
+	.main .logo {
+		width: 30%;
+	}
+	.main .lottery-tlt{
+		margin:10px auto;
+	}
+	.award .lottery-btn{
+	    background: #DB3774;
+	    width: 158px;
+	    height: 43px;
+	    line-height: 43px;
+	    margin: 18px auto 0;
+	}
+	.award h1{
+	    margin: 10px auto 10px;
+	}
+	.award img{
+	    width: 50%;
+	}
+	.thank{
+	    height: 100%;
+	    padding: 28% 0 40%;
+	    text-align: center;
+	}
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.lottery {
+	    width: 240px;
+	    height: 240px;
+	}
+	.lottery .btn-lottery {
+	    left: 68px;
+	    top: 68px;
+	    width: 104px;
+	    height: 104px;
+	}
+	.main .lottery-tlt{
+	    width: 73%;
+		margin: 16px auto;
+	}
+}

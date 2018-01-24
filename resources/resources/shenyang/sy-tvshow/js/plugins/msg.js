@@ -1,0 +1,10 @@
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/0q.jpg' class='c_head_img_img' /></div>"+"赞赞赞，32个赞！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/1q.jpg' class='c_head_img_img' /></div>"+"每天都会跟的~~~");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/2q.jpg' class='c_head_img_img' /></div>"+"这个剧还不错呢~");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/3q.jpg' class='c_head_img_img' /></div>"+"期待下一集");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/4q.jpg' class='c_head_img_img' /></div>"+"我想中大奖!!!");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/5q.jpg' class='c_head_img_img' /></div>"+"好看");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/6q.jpg' class='c_head_img_img' /></div>"+"支持~支持~支持!");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/7q.jpg' class='c_head_img_img' /></div>"+"只想中奖！！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/8q.jpg' class='c_head_img_img' /></div>"+"中奖，中奖，求中奖");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/9q.jpg' class='c_head_img_img' /></div>"+"啦啦啦~~~");

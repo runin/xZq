@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" >
+		<title>男生女生向前冲</title>
+		
+		<link rel="stylesheet" href="./css/core.css" />
+		<link rel="stylesheet" href="./css/util.css" />
+
+		<link rel="stylesheet" href="./css/apply.css" />
+	</head>
+
+	<body background="images/bg.jpg">
+		<form action="#" method="post" id="form1">
+		<!--<input type="hidden" id="address" name="address" />-->
+		<div class="forms">
+	 	<div class="sign" id="sign">
+ 			<div class="content">
+ 				<p class="nameSex"></p>
+ 				<p>
+ 					<label for="">姓名</label>
+ 					<input type="text" class="name" id="name" name="name"  placeholder="请输入姓名"/>
+ 				</p>
+ 				<p class="span-check">
+ 					<label for="">性别</label>
+	 				<input type="radio" class="sex on-check-input" id="sex" name="sex" value="1" checked="checked" />
+	 				<a class="on-check"><b class="checked">男</b> </a>
+	 				<input type="radio" class="sex no-check-input" id="sex" name="sex" value="2" /> 
+	 				<a class="no-check"><b>女</b></a>
+	 				<input type="radio" class="sex none" id="sex" name="sex" value="0" />
+	 				<span class="none">未知</span>
+ 				</p>
+	 			<p><label>生肖</label><input type="text" class="zodiac" id="zodiac" name="zodiac" placeholder="请输入生肖" /></p>
+	 			<p><label>年龄</label><input type="tel" class="age" id="age" name="age" placeholder="请输入年龄" /></p>
+	 			<p><label>职业</label><input type="text" class="occup" id="occup" name="profession"  placeholder="请输入职业"/></p>
+	 			</div>
+	 		</div>
+	 			<div class="kong"></div>
+	 			<div class="sign" id="sign">	
+	 				<div class="content">
+	 			<p><label>民族</label><input type="text" class="national" id="national" name="national" placeholder="请输入民族" /></p>
+	 			<p><label>籍贯</label><input type="text" class="native" id="native" name="native" placeholder="请输入籍贯" /></p>
+	 			<div class="city">
+	 				<label class="left">省市</label>
+					<div class="checkoutBorder addAddr">
+						<div class="m10">
+							<select id="cmbProvince" name="province"></select>
+							<select id="cmbCity" name="city"></select>
+						</div>
+					</div>
+					<div class="clear"></div>
+	 			</div>
+	 			<p class="livep"><label>居住时间</label><input type="datetime" class="live" id="live" name="live" placeholder="请输入居住时间" /></p>
+	 			<p><label>最高学历</label><input type="text" class="record" id="record" name="record" placeholder="请输入学历" /></p>
+	 			</div>
+	 			</div>
+	 			<div class="kong"></div>
+	 			<div class="sign" id="sign">	
+	 				<div class="content">
+	 			<p><label>毕业院校</label><input type="text" class="school" id="school" name="school" placeholder="请输入院校" /></p>
+	 			<p><label>专业</label><input type="text" class="major" id="major" name="major" placeholder="请输入专业" /></p>
+	 			<p><label>身高</label><input type="text" class="shengao" id="shengao" name="shengao" placeholder="请输入身高"  /></p>
+	 			<p><label>体重</label><input type="text" class="tizhong" id="tizhong" name="tizhong"  placeholder="请输入体重" /></p>
+	 			<p class="heartP span-check">
+	 				<label>心脏病史</label>
+	 				<input type="radio" class="heart radio heart-check-input" name="identity" value="0" />
+	 				<a class="heart-check"><b>有</b></a>
+	 				<input type="radio"  class="heart radio noheart-check-input" name="identity" value="1" checked="checked" />
+	 				<a class="noheart-check"><b class="checked">无</b></a>
+	 			</p>
+	 			</div>
+	 			</div>
+	 			<div class="kong"></div>
+	 			<div class="sign" id="sign">	
+	 				<div class="content">
+	 			<p class="num">
+	 				<label>身份证号</label>
+	 				<input type="text" class="shenfen" id="shenfen" name="shenfen" placeholder="请输入身份证号"  /></p>
+	 			<p><label>电话号码</label>
+	 				<input type="tel" class="shenfen" id="phone" name="phone" placeholder="请输入电话号码" maxlength="11" /></p>
+	 			
+	 			<p class="heartP span-check">
+	 				<label>婚恋状况</label>
+	 				<input type="radio" class="dating radio dating-check-input" name="marriage" value="0" checked="checked" />
+	 				<a class="dating-check"><b class="checked">单身</b></a>
+	 				<input type="radio"  class="dating radio dating-check2-input" name="marriage" value="1" />
+	 				<a class="dating-check2"><b>热恋</b></a>
+	 				<input type="radio" class="dating radio dating-check3-input"  name="marriage" value="2" />
+	 				<a class="dating-check3"><b>已婚</b></a>
+	 			</p>
+
+
+	 			<p class="firstP span-check">
+	 				<label>首次冲关</label>
+	 				<input type="radio"  class="first radio firstP1-input" name="forTheFirstTime"  value="1" checked="checked" />
+	 				<a class="firstP1"><b class="checked">是</b></a>
+	 				<input type="radio"  class="first radio firstP2-input"  name="forTheFirstTime" value="0" />
+	 				<a class="firstP2"><b>否</b></a></p>
+	 			<p class="finalsP span-check"><label class="finLabel">晋级后是否愿意参加晋级赛、决赛</label></br>
+	 				<span class="finalsPt">
+	 				<label></label>
+	 				<input type="radio"  class="finals radio finalsP1-input" name="promotion" value="1" checked="checked" />
+	 				<a class="finalsP1"><b class="checked">是</b></a>
+	 				<input type="radio"  class="finals radio finalsP2-input" name="promotion" value="0" />
+	 				<a class="finalsP2"><b>否</b></a>
+	 			</p>
+	 			<div class="chanshu">
+	 				<label>自我阐述</label>
+	 				<textarea  class="reason" id="remark" name="remark" placeholder="请输入内容"></textarea></div>
+	 				</div>
+
+			</div>
+	 			<div class="from-foot">
+	 				<h3>我们承诺保证您的信息安全</h3>
+ 					<div class="psubmit"><a href="javascript:void(0)" data-collect="true" data-collect-flag="ah-index-bmtj" data-collect-desc="报名-报名提交" class="submit" id="submit"></a></div>
+ 				</div>
+ 			
+</div>
+
+
+ 		
+ 		</form>
+
+ 		<footer>
+			<p>页面由安徽卫视提供<br />一真科技技术支持&Powered by holdfun.cn</p>
+		</footer>
+
+
+ 		<script src="./js/config.js"></script>
+		<script src="./js/data.js"></script>
+
+		<script src="./js/plugins/zepto.min.js"></script>
+		<script src="./js/plugins/zepto.cookie.min.js"></script>
+		<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+		
+		<script src="./js/plugins/md5.js"></script>
+		<script src="./js/plugins/wx_api_userinfo.js"></script>
+		<script src="./js/plugins/core.js"></script>
+		<script src="./js/plugins/util.js"></script>
+		
+		<script src="./js/plugins/jsAddress.min.js"></script>
+		<script src="./js/app/apply.js"></script>
+ 		
+		<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+		 	
+	</body>
+</html>

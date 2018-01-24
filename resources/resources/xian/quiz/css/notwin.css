@@ -1,0 +1,101 @@
+html {
+	background-color: #936A4C;
+
+}
+body {
+	background: url(http://yao.holdfun.cn/portal/resources/quiz/images/notwin/1.jpg) no-repeat center 0,     
+	url(http://yao.holdfun.cn/portal/resources/quiz/images/notwin/2.jpg) no-repeat center 107px,     
+	url(http://yao.holdfun.cn/portal/resources/quiz/images/notwin/3.jpg) no-repeat center 214px,
+	url(http://yao.holdfun.cn/portal/resources/quiz/images/notwin/4.jpg) no-repeat center 317px,
+	url(http://yao.holdfun.cn/portal/resources/quiz/images/notwin/5.jpg) no-repeat center 422px,
+	url(http://yao.holdfun.cn/portal/resources/quiz/images/notwin/6.jpg) no-repeat center 527px,
+	url(http://yao.holdfun.cn/portal/resources/quiz/images/notwin/7.jpg) no-repeat center 632px,
+	url(http://yao.holdfun.cn/portal/resources/quiz/images/notwin/8.jpg) no-repeat center 739px;
+	background-size: 420px auto;
+	height: 100%;
+    min-height: 500px;
+}
+.main {
+
+	margin: 0 auto;
+
+	zoom:1;
+}
+.tips {
+    text-align: center;
+}
+.tips-icon {
+	margin: 30px auto;
+	width: 81px;
+	height: auto;
+}
+.tips p {
+	color: #e60012;
+	text-align: center;
+}
+.ctrl {
+    text-align: center;
+    margin-top:15px;
+}
+.ctrl .btn {
+	width: 45%;
+	
+}
+.ctrl .btn:first-child{margin-right: 8px;}
+
+.labrreybox{position: relative;width: 320px;text-align:center;height: 268px;margin: 0px auto 9px auto;padding-top: 12px;}
+.labrreybox img {
+}
+.labrreybox .lottery-btn {
+	position: absolute;
+	left: 102px;
+	top: 87px;
+	display: block;
+	width: 116px;
+	height: 116px;
+}
+.hj_box{
+	width: 100%;
+	background: url(http://yao.holdfun.cn/portal/resources/quiz/images/page_bg/2.png) repeat-y center 0;
+				
+	background-size: 310px auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 60px;
+}
+.hj_box:before, .hj_box:after {
+	display: block;
+	content: '';
+	width: 100%;
+	
+}
+.hj_box:before {
+	height: 69px;
+	background: url(http://yao.holdfun.cn/portal/resources/quiz/images/page_bg/1.png) no-repeat center 0;
+	background-size: 310px auto;
+	margin-top: -46px;
+}
+.hj_box:after {
+	height: 49px;
+	background: url(http://yao.holdfun.cn/portal/resources/quiz/images/page_bg/3.png) no-repeat center 0;
+	background-size: 310px auto;
+	margin-bottom: -59px;
+}
+.result_info_1{border-bottom:1px #bf9e7d solid;margin-bottom:3px;padding-bottom: 5px;}
+.result_info_1 em{color:#e60012;line-height: 30px;}
+.result_info_1 .f18{font-size:18px;}
+.hjtext{width:266px;margin:0 auto;padding: 15px 8px 1px;margin-top: -73px;}
+.hjtext .pcf{padding:5px 5px;line-height:24px;}
+.hjtext .pcf input{width:236px;border:1px #bf9e7d solid;background:#c1b093;height:33px;line-height:33px;font-size:16px;text-indent:0.5em;}
+.hide{display:none;}
+/*分享效果*/
+.share_box{width:100%;height:100%;position:fixed; background:url(http://yao.holdfun.cn/portal/resources/quiz/images/sharebg.png) no-repeat right 4px rgba(0,0,0,0.5);z-index:9999999;background-size:320px auto;top:0;}
+.share_box .refresh_btn{width:31px;height:31px; background:url(http://yao.holdfun.cn/portal/resources/quiz/images/ref.png) no-repeat center center;display:block;position:absolute;right:10px;bottom:5px;}
+.share_box .back_btn{position:absolute;left:10px;bottom:5px;border:0;width:31px;height:31px; background:url(http://yao.holdfun.cn/portal/resources/quiz/images/back.png) no-repeat center center;display:block;}
+.btned {
+	width:45%;
+	margin-right:8px;
+}
+.copyright2 {
+    margin-top: 40px;
+}

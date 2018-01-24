@@ -1,0 +1,397 @@
+/*
+
+ */
+*
+{
+	padding:0px;
+	margin:0px;
+}
+body
+{
+  	width: 100%;
+  	height: 100%;
+  	background: url('../images/rockpacket/rockpacket_bg.png') top center;
+  	background-size: cover;
+    -webkit-overflow-scrolling :touch;  
+}
+#pageTop
+{
+  overflow: hidden;
+  -webkit-perspective-origin:50% 50%;
+  -webkit-perspective: 800;
+  perspective: 800;
+  perspective-origin:50% 50%;   
+  height:100px;
+}
+#perspective
+{
+   transform-style:preserve-3d;
+  -webkit-transform-style:preserve-3d;
+}
+/*主题说明*/
+.themtitle
+{
+	position:absolute;
+	top: 24px;
+  left: 30%;
+	background: url('../images/rockpacket/themtitle.png') top center;
+	background-size: 100% 100%;
+	width:135px;
+	height:50px;
+	z-index:3;
+}
+/*活动说明*/
+.pagetitle
+{
+	position: absolute;
+	top:5px;
+	right:5px;
+	width:66px;
+	height:22px;
+	-webkit-border-radius:10px;
+	background:#CA0000;
+	color:#F8EF00;
+	border:1px solid #E58601;
+	font-size: 13px;
+	text-align:center;
+	line-height:22px;
+
+}
+/*==========================主题周围的星星样式start==================== */
+.leftfivestart
+{
+	  position: absolute;
+  	background: url('../images/rockpacket/leftfivestar.png') top center;
+  	width: 50%;
+  	height: 60px;
+  	background-size: 100% 100%;
+  	z-index: 4;
+  	top: 20px;
+  	left: 3%;
+}
+
+.glitterstar
+{
+	  position: absolute;
+  	background: url('../images/rockpacket/glitterstar.png') top center;
+  	width: 25px;
+  	height: 22px;
+  	background-size: 100% 100%;
+  	z-index: 4;
+  	top: 40px;
+  	left: 15%;
+    -webkit-animation:star 2s infinite ease-in;
+    animation:star 2s infinite ease-in;
+    transition:transform  4s ease-in;
+}
+.glitterstar2
+{
+	  position: absolute;
+  	background: url('../images/rockpacket/glitterstar2.png') top center;
+  	width: 18px;
+  	height: 18px;
+  	background-size: 100% 100%;
+  	z-index: 4;
+  	top: 5px;
+  	left: 66%;
+    -webkit-animation:star2 2s infinite ease-in;
+    -animation:star2 2s infinite ease-in;
+    transform-origin:center center;
+}
+.glitterstar3
+{
+	  position: absolute;
+  	background: url('../images/rockpacket/glitterstar3.png') top center;
+  	width: 18px;
+  	height: 18px;
+  	background-size: 100% 100%;
+  	z-index: 4;
+  	top: 70px;
+  	left: 78%;
+     -webkit-animation:star3 2s infinite ease-in;
+    -animation:star3 2s infinite ease-in;
+    transform-origin:center center;
+}
+.fixedstart1
+{
+    position: absolute;
+    background: url('../images/rockpacket/leaf1.png') top center;
+    height: 15px;
+    width: 15px;
+    background-size: 100% 100%;
+    z-index: 4;
+    top: 13px;
+    left: 77%;
+}
+.fixedstart2
+{
+	  position: absolute;
+    background: url('../images/rockpacket/leaf2.png') top center;
+    width: 15px;
+    height: 15px;
+    background-size: 100% 100%;
+    z-index: 4;
+    top: 55px;
+    left: 73%
+}
+.fixedstart3
+{
+	  position: absolute;
+  	background: url('../images/rockpacket/leaf3.png') top center;
+    width: 15px;
+    height: 10px;
+    background-size: 100% 100%;
+    z-index: 4;
+    top: 52px;
+    left: 61%;
+}
+.redstar
+{
+	  position: absolute;
+    background: url('../images/rockpacket/redstar.png') top center;
+    width: 15px;
+    height: 10px;
+    background-size: 100% 100%;
+    z-index: 4;
+    top: 82px;
+    left: 55.3%;
+}
+/*==========================主题周围的星星样式end==================== */
+/*电视大奖*/
+#contentimages
+{
+	  position: relative;
+}
+.image-list
+{
+	height: 100%;
+	width:100%;
+  margin:0 auto;
+
+}
+.image-list  li ul li
+{
+	padding-bottom: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 45%;
+  padding:2%;
+}
+.image-price
+{
+	background: url('../images/rockpacket/prizeimg.png') top center;
+	height:75px;
+	max-width:120px;
+  margin-left:10%;
+  position: relative;
+  z-index:4;
+  background-size: 100% 100%;
+}
+.botoomset
+{
+   content:"";
+   width: 150px;
+   height: 20px; 
+   -webkit-border-radius: 75px / 10px; 
+   background:rgba(168,0,0,1);
+   margin-top:-10px;
+   z-index:2;
+}
+span
+{
+    color:rgba(254,227,227,0.9);
+    font-size: 13px;
+}
+
+/*图片显示层*/
+.content-images
+{
+	height:300px;
+}
+
+
+/*闪烁边框*/
+#contentresult
+{
+	width:100%;
+}
+.glitter-border
+{
+	background: url('../images/rockpacket/glitterborder.png') top center;
+	background-size: 100% 100%;
+	padding: 10px 15px 12px 10px;
+	margin:3px;
+}
+.glitter-borderafter
+{
+  background: url('../images/rockpacket/glitterborderafter.png') top center;
+  background-size: 100% 100%;
+  padding:10px 15px 12px 10px;
+  margin:3px;
+}
+/*内部实现边框*/
+.inner-border
+{
+	border:2px solid #FCFF00;
+	-webkit-box-shadow:inset 1px 1px 1px #881210;
+	box-shadow:inset 1px 1px 1px #881210;
+	height:290px;
+	border-radius: 18px;
+
+  overflow:hidden;
+  margin-left:4px;
+}
+ul.mulitline
+{
+  overflow:hidden;
+  height:100%;
+}
+.mulitline >li
+{
+   border-bottom:1px solid #AF0000;
+   width:100%;
+   height:30px;
+}
+.inner-border ul
+{
+  width:100%;
+}
+.inner-border li
+{
+  list-style-type:none;
+  display:block;
+  color:rgba(254,227,227,0.9);
+  font-size:13px;
+}
+.inline-li li
+{
+  min-width: 65px;
+  padding:8px 0px 5px 10px;
+  display:inline-block;
+  text-align: center;
+} 
+
+/*底部参加奖项*/
+footer
+{
+	position:relative;
+	width:100%;
+
+}
+
+/*底部按钮*/
+footer .particle-active
+{
+	  background-image: url('../images/rockpacket/particlebutton.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 150px;
+    height: 55px;
+    z-index: 3;
+    margin-left: 29%;
+    margin-top: 30px;
+}
+
+/*
+  媒体查询 iphone4
+ */
+@media screen and (max-width: 320px)
+{
+  .fixedstart1
+  {
+    left: 74%!important;
+  }
+  .inline-li li:nth-child(1)
+  {
+    min-width:55px;
+    padding:8px 0px 5px 8px;
+    display:inline-block;
+    font-size:10px;
+    text-align: center;
+  }  
+.inline-li li
+{
+  padding:8px 0px 5px 3px;
+  display:inline-block;
+  font-size:10px;
+  text-align: center;
+} 
+}
+/*
+  媒体查询 iphone6
+ */
+@media screen and (min-width: 375px)
+{
+  .image-list
+  {
+    padding-left:2%!important;
+  }
+}
+/*
+动画效果
+ */
+@-webkit-keyframes star
+{
+  0% {
+        -webkit-transform:translateX(20px ) translateY(-60px) rotate(0deg);
+        transform:translateX(20px)  translateY(-60px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(10px) translateY(50px) rotate(360deg);
+        transform: translateX(10px) translateY(50px) rotate(360deg);
+    }
+}
+@keyframes star2
+{
+  0% {
+        -webkit-transform:translateX(20px ) translateY(-20px) rotate(0deg);
+        transform:translateX(20px)  translateY(-20px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(10px) translateY(80px) rotate(360deg);
+        transform: translateX(10px) translateY(80px) rotate(360deg);
+    }
+}
+@-webkit-keyframes star2 
+{
+   0% {
+        -webkit-transform:translateX(20px ) translateY(-20px) rotate(0deg);
+        transform:translateX(20px)  translateY(-20px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(10px) translateY(80px) rotate(360deg);
+        transform: translateX(10px) translateY(80px) rotate(360deg);
+    }
+}
+
+@keyframes star3
+{
+  0% {
+        -webkit-transform:translateX(20px) translateY(-60px) rotate(0deg);
+        transform:translateX(20px)  translateY(-60px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform:translateX(10px) translateY(50px) rotate(360deg);
+        transform: translateX(10px) translateY(50px) rotate(360deg);
+    }
+  }
+@-webkit-keyframes star3 
+{
+    0% {
+        -webkit-transform:translateX(20px ) translateY(-60px) rotate(0deg);
+        transform:translateX(20px)  translateY(-60px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(30px) translateY(50px) rotate(360deg);
+        transform: translateX(30px) translateY(50px) rotate(360deg);
+    }
+}
+
+
+
+

@@ -1,0 +1,475 @@
+
+/*banner begin*/
+.banner{
+    overflow: hidden;
+}
+.banner .swiper-wrapper{
+    width: 100%;
+}
+.banner .swiper-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.banner .swiper-pagination{
+    position: relative;
+    margin-top: -3em;
+    bottom: 1em!important;
+}
+.banner .swiper-pagination .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #ffffff;
+    opacity: 0.5;
+}
+.banner .swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #ffffff;
+}
+/*banner end*/
+.grey{
+    background-color: #f1f1f1;
+}
+.wrap{
+    overflow: hidden;
+}
+.wrap .title{
+    padding-top: 10%;
+}
+.wrap .case-title{
+    padding-top: 5%!important;
+}
+.wrap .title .text{
+    text-align: center;
+    font-size: 28px;
+    color: #333333;
+}
+.wrap .title .line{
+    width: 80%;
+    margin: -.6em auto 0;
+}
+.wrap .title .line span{
+    display: inline-block;
+}
+.wrap .title .line .grey{
+    height: 1px;
+    width: 40%;
+    background-color: #adadad;
+}
+.wrap .title .line .green{
+    height: 2px;
+    width: 20%;
+    background-color: #1d7c06;
+}
+.wrap .desc{
+    width: 80%;
+    margin: 5% auto 0;
+    font-size: 15px;
+    text-indent: 2em;
+    color: #666666;
+}
+.wrap .list{
+    width: 80%;
+    margin: 10% auto;
+}
+.wrap .list .item{
+    display: inline-block;
+    width: 32%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.wrap .list .item2{
+    display: inline-block;
+    width: 49%;
+    margin: 2% auto;
+    text-align: center;
+}
+.wrap .t2o-list{
+    margin: 3% auto!important;
+}
+.wrap .t2o-title{
+    padding-top: 5%!important;
+}
+.wrap .list .item img{
+    width: 75%;
+    margin: auto;
+}
+.wrap .list .item2 img{
+    width: 50%;
+    margin: auto;
+}
+.bigdata-img{
+    width: 55%!important;
+}
+.wrap .list .item p{
+    font-size: 13px;
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+    color: #666666;
+    height: 2em;
+}
+.wrap .list .item2 p{
+    font-size: 14px;
+    margin-top: 1%;
+    text-align: center;
+    width: 100%;
+    color: #666666;
+}
+.wrap .detail-btn{
+    color: #41a62c;
+    border: 1px solid #41a62c;
+    width: 30%;
+    display: block;
+    text-align: center;
+    line-height: 2.5em;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.wrap .case-btn{
+    color: #41a62c;
+    border: 1px solid #41a62c;
+    width: 70%;
+    text-align: center;
+    line-height: 2.5em;
+    margin: 2% auto 1%;
+    border-radius: 5px;
+    font-size: 15px;
+    display: none;
+}
+.caseSwiper{
+    margin-top: 5%;
+    overflow: hidden;
+}
+.case-img{
+    width: 100%;
+    box-shadow: 0 0 10px #000;
+}
+.case-name{
+    text-align: center;
+    margin-top: 5%;
+    width: 120%;
+    display: none;
+    margin-left: -10%;
+}
+.swiper-slide-active .case-btn{
+    display: block!important;
+}
+.swiper-slide-active .case-name{
+    display: block!important;
+}
+.partner-title{
+    text-align: center;
+    color: #41a62c;
+    margin-top: 2%;
+    font-size: 15px;
+}
+.partner-ul{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.partner-ul li{
+
+}
+.partner-ul li img{
+    width: 24.5%;
+    display: inline-block;
+    margin: 1% 3.7%;
+}
+.partner-swiper-pagination {
+    text-align: center;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    z-index: 10;
+}
+.partner-swiper-pagination .swiper-pagination-bullet {
+    background: #d9d9d9;
+    opacity: .8;
+}
+.partner-swiper-pagination .swiper-pagination-bullet-active {
+    background: #8b8b8b;
+}
+
+.partner{
+    background: url("../img/about-bg.jpg") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.partner .text{
+    color: #fff!important;
+}
+.cont{
+    font-size: 13px;
+    width: 80%;
+    margin: 5% auto;
+    color: #ffffff;
+}
+.cont p{
+    text-indent: 2em;
+}
+.more{
+    width: 25%;
+    display: inline-block;
+    float: right;
+    margin-right: 10%;
+}
+.more img{
+    width: 100%;
+}
+footer{
+    background-color: #2c2a2e;
+    height: 5em;
+    margin-top: -5em;
+}
+footer .phone{
+    color: #d9d9d9;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-top: 3%;
+}
+footer .phone img{
+    vertical-align: middle;
+    width: 5%;
+    margin-left: 2%;
+}
+footer .copyright{
+    color: #676668;
+    text-align: center;
+}
+
+/*dialog begin*/
+.dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+.dialog .close{
+    display: block;
+    position: absolute;
+    right: 6%;
+    top: 6%;
+    width: 6%;
+}
+.dialog .close img{
+    width: 100%;
+}
+.dialog .d-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 3em;
+    background: -webkit-gradient(linear,left top,left bottom,from(#51a044),to(#258210));
+    border:1px solid #125b00;
+    color: #ffffff;
+}
+.dialog .main{
+    display: block;
+    width: 90%;
+    background-color: #ffffff;
+    margin: 7% auto 0;
+    animation: bounceInDown 1s ease-in-out;
+    -webkit-animation: bounceInDown 1s ease-in-out;
+}
+.dialog .info{
+    width: 95%;
+    margin: 1em auto;
+}
+.dialog .info .tip{
+    text-align: center;
+    color: #ff0005;
+}
+.dialog .info .btn{
+    display: block;
+    margin: 0 auto;
+}
+.dialog .info p{
+    display: block;
+    margin: .5em auto;
+}
+.dialog .info p span {
+    color: #666666;
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+    font-size: 13px;
+}
+.dialog .info i{
+    color: red;
+}
+.dialog .info p input{
+    width: 60%;
+    height: 3em;
+    border: 1px solid #b0b0b0;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.dialog .info img{
+    margin: auto;
+    display: block;
+    padding-bottom: 2em;
+    width: 95%;
+}
+
+.btn{
+    display: inline-block;
+    background: -webkit-gradient(linear,left top,left bottom,from(#40a52b),to(#207f09));
+    width: 9em;
+    line-height: 2.5em;
+    text-align: center;
+    border-radius: 13px;
+    vertical-align: middle;
+    font-size: 14px;
+    box-shadow: 1px 2px 6px #000000;
+}
+/*dialog end*/
+
+
+/* iPhone5 */
+@media screen
+and (device-width: 320px)
+and (device-height : 568px){
+    .dialog .d-title{
+        line-height: 2em;
+    }
+    .cont{
+        width: 86%;
+        margin: 3% auto;
+        font-size: 13px;
+        line-height: 1.1em;
+    }
+    .wrap .list {
+        width: 80%;
+        margin: 8% auto;
+    }
+    .wrap .t2o-title {
+        padding-top: 3%!important;
+    }
+}
+
+/* iPhone6 */
+@media screen
+and (device-width : 375px)
+and (device-height : 667px){
+    .wrap .desc {
+        margin: 8% auto 0;
+    }
+    .wrap .list {
+        width: 80%;
+        margin: 10% auto;
+    }
+    .wrap .t2o-title {
+        padding-top: 8%!important;
+    }
+    .wrap .t2o-list {
+        margin: 7% auto!important;
+    }
+    .cont {
+        font-size: 13px;
+        width: 80%;
+        margin: 5% auto;
+    }
+    .wrap .title {
+        padding-top: 12%;
+    }
+    .caseSwiper {
+        margin-top: 10%;
+    }
+}
+/* iPhone6plus*/
+@media screen
+and (device-width : 414px)
+and (device-height : 736px){
+    .cont {
+        font-size: 14px;
+    }
+    .wrap .title {
+        padding-top: 20%;
+    }
+    .wrap .t2o-title {
+        padding-top: 15%!important;
+    }
+    .wrap .t2o-list {
+        margin: 8% auto!important;
+    }
+    .caseSwiper {
+        margin-top: 10%;
+    }
+    .partner .title {
+        padding-top: 10%!important;
+    }
+}
+
+/* shang 华为---适用分辨率在 1280*720 */
+@media screen
+and (device-width : 720px)
+and (device-height : 1280px){
+    .cont{
+        width: 86%;
+        margin: 3% auto;
+        font-size: 13px;
+        line-height: 1.1em;
+    }
+}
+
+/*比如雪玲、李超、尹超手机---适用分辨率在 1920 x 1080 */
+@media screen
+and (device-width : 360px) {
+    .partner-ul li img {
+        margin: 0.5% 3.7%;
+    }
+    .cont{
+        width: 86%;
+        margin: 3% auto;
+        font-size: 13px;
+        line-height: 1.1em;
+    }
+
+}
+/* iPhone4 */
+@media screen
+and (device-width : 320px)
+and (device-height : 480px){
+    .wrap .list .item2 {
+        margin: 1% auto;
+    }
+    .wrap .t2o-list {
+        margin: 2% auto!important;
+    }
+    .dialog .d-title{
+        line-height: 2em;
+    }
+    .dialog .main{
+        margin: 2% auto 0;
+    }
+    .dialog .close{
+        top: 3%;
+    }
+    .cont{
+        width: 86%;
+        margin: 3% auto;
+        font-size: 13px;
+        line-height: 1.0em;
+    }
+    .wrap .t2o-title {
+        padding-top: 3%!important;
+    }
+    .wrap .title {
+        padding-top: 5%;
+    }
+}

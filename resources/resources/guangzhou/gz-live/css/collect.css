@@ -1,0 +1,211 @@
+body {
+	background: #fbd81a url(../images/bg-show-min.jpg) no-repeat center 0;
+	background-size: 100% 100%;
+	font-size: 16px;
+}
+.main {
+	margin: 0 auto;
+	opacity: 0;
+	position: relative;
+	z-index: -1;
+}
+a.back-btn:visited, a.back-btn:active{
+  color: #FFF;
+}
+.form-group {
+    padding: 0 16px;
+    margin-top: 22px;
+}
+.main-title {
+	color: #ff6600;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.sub-title {
+color: #ff6600;
+  font-size: 13px;
+  line-height: 14px;
+  margin: 8px 0 3px;
+	font-weight: 700;
+}
+.countdown-day {
+	color: #ff6600;
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.countdown-day label {
+	font-size: 20px;
+	font-weight: bolder;
+}
+.form-item input {
+    border: 1px solid #e6b300;
+    border-radius: 6px;
+    width: 100%;
+    height: 46px;
+    padding: 0 3px;
+}
+.form-item textarea {
+	border-radius: 5px;
+	width: 100%;
+	height: 130px;
+	padding: 5px;
+	border: 1px solid #e6b300;
+	font-size: 16px;
+	color: #333;
+}
+.form-item .img-ctrl {
+    /* height: 52px; */
+    margin-top: 8px;
+    margin-bottom: 26px;
+}
+.phone-box p {
+	color: #ff6600;
+	font-size: 16px;
+	font-weight: 700;
+}
+.phone-box p.phone-tips {
+	font-size: 13px;
+	line-height: 14px;
+	margin: 6px 0;
+	font-weight: normal;
+}
+.upload-form {
+	display: none;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+}
+.input-file-upload {
+    opacity: 0;
+}
+.icon {
+	display: inline-block;
+	vertical-align: top;
+	width: 52px;
+	height: 52px;
+	line-height: 52px;
+	border-radius: 10px;
+	text-align: center;
+}
+.icon:before {
+	content: '';
+display: inline-block;
+vertical-align: -2px;
+background: url(../images/collect-plus.png) no-repeat 0 0;
+background-size: 28px auto;
+}
+.img-ctrl .btn-preview {
+    border: 1px solid #ED192F;
+}
+.img-ctrl .img-preview {
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #FF8500;
+	border-radius: 10px;
+	text-align: center;
+	width: 52px;
+	height: 52px;
+	line-height: 52px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.img-ctrl .img-preview .close {
+	content: '';
+	display: block;
+	background: url(../images/close.png) no-repeat 0 0;
+	background-size: 18px auto;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: -6px;
+	top: -8px;
+	cursor: pointer;
+}
+.img-ctrl .img-preview .uploading {
+	display: none;
+}
+.img-ctrl .img-preview.loading .uploading {
+	height: 25px;
+	width: 25px;
+	margin: 0px auto;
+	position: relative;
+	-webkit-animation: loading-rotation .6s infinite linear;
+	animation: loading-rotation .6s infinite linear;
+	border-left: 3px solid rgba(255, 153, 163, 0.55);
+	border-right: 3px solid rgba(255, 153, 163, 0.55);
+	border-bottom: 3px solid rgba(255, 153, 163, 0.55);
+	border-top: 3px solid rgba(238,26,46,.85);
+	border-radius: 100%;
+	display: block;      
+	line-height: 0;
+	font-size: 0;
+}
+.img-ctrl .img-preview .lc {
+	position: absolute;
+	left: 13px;
+	top: 13px;
+}
+.img-ctrl .img-preview .ic {
+    display: block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.img-ctrl .btn-preview:before {
+    width: 28px;
+    height: 20px;
+}
+.img-ctrl .img-preview img {
+	vertical-align: -11px;
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%;
+}
+.img-ctrl .btn-upload {
+    border: 2px dotted #ff6600;
+}
+.img-ctrl .btn-upload:before {
+    width: 28px;
+    height: 28px;
+    vertical-align: -7px;
+}
+.btn-back-simple {
+	letter-spacing: 10px;
+}
+.btn-submit {
+    background: #FF6600;
+    display: block;
+    width: 240px;
+    height: 48px;
+    line-height: 48px;
+    margin: 23px auto 0;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.btn-submit:hover {
+	background: #FF6600;
+}
+.copyright {
+	position: relative;
+		
+}
+.preview-box {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	z-index: 9999999;
+	background-size: 320px auto;
+	top: 0;
+	left: 0;
+}
+.loading-btn{
+    background: #ccc;
+    color: #fff;
+}

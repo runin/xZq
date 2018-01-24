@@ -1,0 +1,285 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/bg-lottery-default.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	background-color: #dd3c08;
+	overflow: hidden;
+}
+.main-top marquee {
+	color:#fff;
+	background:rgba(0,0,0,.2);
+	padding:2px 0;
+}
+.main-top marquee span {
+	margin-left:20px;
+}
+.main-top .count {
+	padding-right:20px;
+	font-size:16px;
+	color:#fff;
+	line-height:26px;
+	text-align:left;
+}
+a.hover {
+	color:#fff;
+}
+.nowpv {
+	position: relative;
+    margin: 3% 3% 0;
+    color: #FFF;
+    font-size: 13px;
+}
+.nowpv p {
+	margin-right: 3px;
+}
+.nowpv p, .nowpv label {
+    display: inline-block;
+}
+.content-box {
+	position: absolute;
+	width: 100%;
+	bottom: 20%;
+	text-align: center;
+}
+.countdown {
+	display: block;
+	position: absolute;
+	top: 26%;
+	width: 100%;
+	text-align: center;
+	color: #FFF;
+	font-size: 15px;
+	text-align: center;
+}
+.countdown .countdown-tip {
+	display: block;
+	margin-bottom: 2%;
+}
+.countdown .detail-countdown {
+	position: relative;
+}
+.countdown .detail-countdown p {
+	display: inline-block;
+	font-size: 22px;
+	background: url(../images/bg-time.png) no-repeat center center;
+	background-size: cover;
+	padding: 4px;
+	border-radius: 6px;
+	font-weight: bolder;
+	margin: 0 5px;
+}
+.countdown .detail-countdown p label {
+	font-weight: bolder;
+}
+.countdown .detail-countdown > label {
+	font-size: 15px;
+	display: inline-block;
+}
+.hidden {
+	visibility:hidden;
+}
+.footer-box #ddtj {
+	display: inline-block;
+	padding: 5px 16px;
+	background-color: #ffad0b;
+	color: #FFF;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 0 auto 5%;
+}
+.marquee {
+	display: block;
+	width: 100%;
+	font-size:13px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	overflow:hidden;
+	color: #FFF;
+	background: #ff5e05;
+}
+.marquee .win-name {
+	position: relative;
+	margin-right: 8px;
+}
+.home-box {
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.main-top {
+	position:absolute;
+	top:0;
+	width:100%;
+	height:50%;
+	background: url(../images/bg-lottery-top.jpg) no-repeat bottom center;
+	background-size:cover;
+	box-sizing:border-box;
+}
+.yao .m-t-b {
+	animation-name:mtop;
+	-webkit-animation-name:mtop;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-duration:1.3s;
+	-webkit-animation-duration:1.3s;
+	animation-timing-function:ease;
+	-webkit-animation-timing-function:ease;
+}
+@-webkit-keyframes mtop {
+	0%,90% {-webkit-transform:translateY(0px);}
+	20%,70% {-webkit-transform:translateY(-100px);}
+}
+.main-foot {
+	position:absolute;
+	bottom:1px;
+	width:100%;
+	height:50%;
+	background: url(../images/bg-lottery-bottom.jpg) no-repeat top center;
+	background-size:cover;
+	box-sizing:border-box;
+}
+.yao .m-f-b {
+	animation-name:mfoot;
+	-webkit-animation-name:mfoot;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-duration:1.3s;
+	-webkit-animation-duration:1.3s;
+	animation-timing-function:ease;
+	-webkit-animation-timing-function:ease;
+}
+@-webkit-keyframes mfoot {
+	0%,90% {-webkit-transform:translateY(0px);}
+	20%,70% {-webkit-transform:translateY(100px);}
+}
+.yao-text {
+	position: absolute;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bolder;
+	bottom: 26%;
+	width: 100%;
+	z-index: 20;
+}
+.yao-text p {
+	opacity: 0;
+	position:relative;
+	min-height:30px;
+	font-weight: bolder;
+}
+.yao-text p span {
+	font-weight: bolder;
+}
+.yao-text p:last-child span {
+	position:relative;
+	width:100%;
+	font-weight: bolder;
+}
+.yaonone-text {
+	opacity: 0;
+	animation-name:nonetext;
+	-webkit-animation-name:nonetext;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-duration:.3s;
+	-webkit-animation-duration:.3s;
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	display:block;
+}
+.footer-box {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+}
+.main-top #ddtj {
+	display: none;
+}
+@keyframes nonetext {
+	0% {top:-250px;opacity:0;}
+	100% {top:-35px;opacity:1.0;}
+}
+@-webkit-keyframes nonetext {
+	0% {top:-250px;opacity:0;}
+	100% {top:-35px;opacity:1.0;}
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	.countdown {
+		top: 30%;
+	}
+	.countdown .countdown-tip {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+	.countdown .detail-countdown p {
+		display: inline-block;
+		font-size: 15px;
+		background: transparent;
+		background-size: cover;
+		padding: 0;
+		border-radius: 0;
+		font-weight: normal;
+		margin: 0;
+	}
+	.countdown .detail-countdown p label {
+		font-weight: normal;
+	}
+	.countdown .detail-countdown > label {
+		font-size: 15px;
+		display: inline-block;
+	}
+	.footer-box #ddtj {
+		display: none;
+	}
+	.home-box .main-top #ddtj {
+		position: absolute;
+		display: inline-block;
+		padding: 3px 12px;
+		background-color: #ffad0b;
+		color: #FFF;
+		border-radius: 20px;
+		font-size: 13px;
+		margin: 0;
+		top: -3px;
+		right: 5px;
+	}
+	@keyframes nonetext {
+		0% {top:-250px;opacity:0;}
+		100% {top:0px;opacity:1.0;}
+	}
+	@-webkit-keyframes nonetext {
+		0% {top:-250px;opacity:0;}
+		100% {top:0px;opacity:1.0;}
+	}
+}
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.countdown {
+		top: 23%;
+	}
+	@keyframes nonetext {
+		0% {top:-250px;opacity:0;}
+		100% {top:-20px;opacity:1.0;}
+	}
+	@-webkit-keyframes nonetext {
+		0% {top:-250px;opacity:0;}
+		100% {top:-20px;opacity:1.0;}
+	}
+}

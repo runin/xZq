@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>乡村行</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/yaoyiyao.css" />
+</head>
+
+<body>
+<a class="ddtj none" id="ddtj" href="" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+<!--摇一摇声音-->
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+<div class="bangtuan"> 
+  
+  <!--摇一摇红包-->
+  <section id="yao-redbao" class="page">
+    <div class="yao-redbao"><img src="images/yaoyiyao.png" /></div>
+    <div class="yao-text">
+      <p class="yao-text-default"><span><i>摇</i>动手机，抢乡村行红包</span></p>
+      <p class="none"><span>啊哦，差一点就抢到了，继续加油</span></p>
+    </div>
+    <div class="time-text">距离本次抢红包结束还有 <span class="downContTime"></span></div>
+  </section>
+	
+  <!--中奖-->
+  <section id="yao-gift" class="page none">
+    <!--红包-->
+    <div class="redhongbao none">
+      <div class="gift-hongbao">
+        <img src="images/redbag.png" />
+        <div class="gift-hongbao-box">
+          <div class="gift-hongbao-tips">
+            <img class="gift-hongbao-img" src="">
+          </div>
+          <div class="btn-box-b btn-m btn-hba">
+            <span class="confirm">记得点[领取]哦!</span>
+            <input name="" type="button" class="btn-b" id="btnBoxc" value="领&nbsp;&nbsp;取" data-collect="true" data-collect-flag="tj-walk-yaoyiyao-redpack-btn" data-collect-desc="摇一摇页面-领取红包按钮" />
+          </div>
+        </div>
+        <div class="star1 star">
+          <img src="./images/star1.png">
+        </div>
+        <div class="star2 star">
+          <img src="./images/star2.png">
+        </div>
+      </div>
+    </div>
+    <!--代金券-->
+    <div id="gift-code" class="gift-code none">
+      <div class="gift-code-content">
+        <p class="gift-code-info gift-code-tips"></p>
+        <img class="gift-code-img" src="">
+        <p class="gift-code-info gift-code-code"></p>
+        <p class="gift-code-info gift-code-password"></p>
+        <div class="gift-code-ok-box">
+          <p class="gift-code-info gift-code-reserved"></p>
+          <a href="#" class="btn-ok" id="btn-ok" data-collect="true" data-collect-flag="tj-walk-yaoyiyao-quan-btn" data-collect-desc="摇一摇页面-领取兑换码按钮">确&nbsp;定</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</div>
+  <!-- <a id="redBug" class="none" style="position:fixed;display:block;width:90px;height:38px;line-height:38px;text-align:center;background-color:#FF7E00;color:#FFF;font-size:14px;bottom:10%;border-radius:3px;left:calc((100% - 90px)/2);">红包抽奖</a> -->
+  <footer class="copyright"></footer>
+  
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+  <script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+  <script src="./js/plugins/common.js"></script>
+
+  <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+  <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+  <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+  <script src="./js/authorize_userinfo.js"></script>
+  
+	<script src="./js/shake.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/yaoyiyao.js"></script>
+  <img src="http://cdn.holdfun.cn/lottery/prize/images/2015526/red1.png" class="preload">
+  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

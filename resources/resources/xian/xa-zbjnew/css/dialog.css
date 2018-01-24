@@ -1,0 +1,386 @@
+*{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.modal:before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.75);
+}
+.modal .dialog{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 6px;
+}
+#rule-dialog .btn-close {
+    background: url(../images/icon-close.png) top center no-repeat;
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top:4px;
+    right:4px;
+}
+.modal .rule-dialog {
+    color: #fff;
+    background: #126fcc;
+    /*border:1px solid #fff;*/
+    border-radius: 0px;
+    background: url("../images/rl-bg.png") no-repeat;
+    background-size: 100% 90%;
+    background-position: 0 10%;
+
+}
+.rule-dialog h2 {
+    color: #FFF;
+    height: 32px;
+    line-height: 38px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.rule-dialog .content {
+    position: static;
+    margin: 0 auto;
+    padding: 10% 0 20%;
+    width: 88%;
+    height: 100%;
+}
+.rank-dialog p {
+    text-align: center;
+    font-size: 13px;
+    padding: 0 3%;
+    line-height: 15px;
+    margin-top: 10px;
+}
+.rule-dialog .rule {
+    font-size: 14px;
+    line-height: 24px;
+    max-height: 100%;
+    overflow-y: auto;
+    color: #FFF;
+    margin-top: 0;
+    height: 90%;
+    padding-bottom: 6%;
+}
+.rule-dialog p {
+    line-height: 22px;
+}
+.rule-dialog h3 {
+    margin-top: 22px;
+    font-size: 16px;
+}
+.rule-dialog .content .congrate{
+    color: #fffc00;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 23px;
+}
+.rule-dialog .content .redpack{
+    color: #fffc00;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 23px;
+}
+.rule-dialog .content .redpack span{
+    display: block;
+}
+.rule-dialog .content .redpack .mon{
+    font-size: 50px;
+    margin-top: 11%;
+}
+.rule-dialog .get-btn{
+    display: block;
+    /*background-image: url(../images/get-btn.png);*/
+    background-size: 102px;
+    margin: auto;
+    width: 102px;
+    height: 102px;
+    line-height: 102px;
+    text-align: center;
+    color: #fff;
+    font-size: 23px;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    margin-left: -51px;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.rule-dialog .award{
+    display: block;
+    /*background-image: url(../images/get-btn.png);*/
+    background-size: 102px;
+    margin: auto;
+    width: 102px;
+    height: 102px;
+    line-height: 102px;
+    text-align: center;
+    color: #fff;
+    font-size: 23px;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    margin-left: -51px;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.lihe{
+    margin-top: 20%;
+}
+.lihe .congrate{
+    text-align: center;
+    font-size: 23px;
+    color: #fff80b;
+}
+.lihe .zanzhu{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 14px;
+    height: 60px;
+}
+.lihe .tigong{
+    text-align: center;
+    margin-top: 14px;
+    font-size: 19px;
+    color: #fff80b;
+    padding: 0 20px;
+}
+.award{
+    background: url(../images/thanks-bg.png) no-repeat;
+    background-size: 100% 100%;
+    color: #ad4100;
+}
+.award .tip{
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    overflow: hidden;
+    font-size: 16px;
+    margin-top: 40px;
+    color: #ffffff;
+}
+.award .desc{
+    margin: 6px 20px;
+    text-align: left;
+    height: 28%;
+    color: #fff;
+}
+.award .num{
+    text-align: center;
+    color: #fffc00;
+    margin: 6px auto;
+    font-size: 18px;
+}
+.award .contact{
+    text-align: center;
+    color: #fffc00;
+}
+.award .ipt{
+    width: 84%;
+    text-align: center;
+    margin: 2px auto 0;
+}
+.award .ipt input{
+    width: 100%;
+    border-radius: 5px;
+}
+.award .btn-award{
+    border-radius: 8px;
+    margin-top: 3px;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.award .zanzhu{
+    width: 70%;
+    display: block;
+    margin-top: 3%;
+    margin-left: 15%;
+    border-radius: 7px;
+    /*border: 1px solid;*/
+    height: 80px;
+}
+.award .conb .uname{
+    color: #fff;
+    text-align: left;
+    margin-left: 27px;
+}
+.award .conb .uphone{
+    color: #fff;
+    text-align: left;
+    margin-left: 27px;
+}
+.award .conb .uaddress{
+    color: #fff;
+    text-align: left;
+    margin-left: 27px;
+}
+
+.thanks-dialog{
+    background: url(../images/thanks-bg.png) no-repeat;
+    background-size: 100% 100%;
+    color: #ad4100;
+}
+.thanks-dialog .content .sorry{
+    text-align: center;
+    padding: 2% 8%;
+    color: #fffc00;
+    font-size: 14px;
+    margin-top: 10%;
+    z-index: 5;
+}
+.thanks-dialog .content .zanzhu{
+    width: 60%;
+    display: block;
+    margin: 10% auto 0;
+    height: 50px;
+}
+.thanks-dialog .content .qr{
+    text-align: center;
+}
+.thanks-dialog .content .qr .qrcode{
+    width: 66%;
+}
+.thanks-dialog .content .qr .tip{
+    color: #fffc00;
+    font-size: 13px;
+}
+.close-btn{
+    display: block;
+    background: red;
+    width: 100px;
+    height: 32px;
+    text-align: center;
+    margin: 10px auto 0px;
+    padding-top: 4px;
+    border-radius: 15px;
+    color: #fffc00;
+}
+
+.btn-close {
+    position: absolute;
+    background: url(../images/icon-close.png) no-repeat 3px 3px;
+    background-size: 25px auto;
+    display: block;
+    width: 31px;
+    height: 35px;
+    z-index: 10000;
+}
+
+.confirm-dialog img{
+}
+.confirm-dialog .btn-confirm{
+    display: inline-block;
+    background: url(../images/icon-close.png) top center no-repeat;
+    background-size: 100% 100%;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top:6px;
+    right:6px;
+
+}
+.outer{
+    display: block;
+    font-size: 13px;
+    color: #fffc00;
+    line-height: 20px;
+    margin: 10px auto;
+    text-decoration: underline;
+    text-align: center;
+}
+.outer:hover,.outer:visited{
+    color: #fffc00;
+}
+#btn-justclose{
+    position: absolute;
+    background-color: transparent;!important;
+    width: 26px;
+    height: 26px;
+    right: 5%;
+    top: 0;
+    background: url("../images/btn-cls.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 100;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .rule-dialog .content .redpack {
+        margin-top: 10px!important;
+    }
+    .rule-dialog .content .redpack .mon{
+        margin-top: 5%!important;
+    }
+    .thanks-dialog .content .sorry{
+        margin-top: 2%;
+        text-align: center;
+        padding: 5%;
+        color: #fffc00;
+        font-size: 16px;
+    }
+    .thanks-dialog .content .qr{
+        text-align: center;
+    }
+    .thanks-dialog .content .qr .qrcode{
+        width: 50%;
+    }
+    .lihe{
+        margin-top: 5%!important;
+    }
+    .award{
+        min-height: 80%;
+    }
+    .award .zanzhu{
+        width: 70%;
+        margin-top: 3%!important;
+        margin-left: 15%;
+    }
+    .thanks-dialog .content .zanzhu{
+        margin: 5% auto 0!important;
+    }
+    .award .desc{
+        margin: 4px 20px 16px;
+        height: 20%;
+    }
+    .award .tip{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 40px;
+        color: #fffc00;
+    }
+    .outer {
+        margin: 4px auto
+    }
+}
+
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

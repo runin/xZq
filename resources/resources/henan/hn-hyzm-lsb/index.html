@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>华豫之门</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/yao.css" />
+</head>
+
+<body>
+<!--摇一摇声音-->
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio><!--中奖声音-->
+<img src="images/lottery-bg.jpg" class="none" />
+<!--摇一摇红包-s-->
+<section class="home-box">
+    <div class="main-top m-t-b">
+    	<header>
+    	    <p class="count hidden">参与人数:<span></span></p>
+    		<a class="btn-back none" id="btn-back" data-collect="true" data-collect-flag="yao-btn-back" data-collect-desc="摇奖页面-返回按钮"><img src="images/back-btn.png"></a>
+        </header>
+        <div class="ddtj hidden">
+	        <a class="ddtj-box" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+				<i class="ddtj-before wobble"></i>
+				<p class="ddtj-text">更多惊喜</p>
+		    </a>
+		</div>
+		 <span class="text-tip"><img src="images/text-tip.png"/></span>
+        <div class="countdown none">
+	        <span class="countdown-tip">请稍后</span>
+	        <span class="detail-countdown"></span>
+	    </div>
+    </div>
+    <div class="main-foot m-f-b">
+	    <!--<input type="button" class="" style="position: absolute;bottom: 50px;z-index: 999999;" id="test" value="test">-->
+		<div class="yao-text">
+	        <p class="none textb"><span>啊哦，差一点就抢到了，继续加油</span></p>
+	    </div>
+	    <div class="marquee hidden"><ul></ul></div>
+		<div class="follow-box">
+            <p class="copyright"></p>
+			<div  id="div_subscribe_area" style=""></div>
+        </div>
+    </div>
+  </div>
+</section>
+<!--摇一摇红包-e-->
+
+<img class="none" src="images/e-code.jpg" />
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/zepto.selector.min.js"></script>
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="./js/plugins/md5.js"></script>
+
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/shake.js"></script>
+<script src="./js/plugins/sha1.min.js"></script>
+
+
+<script src="./js/app/yao.js"></script>
+<script src="./js/app/dialog.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	
+</body>
+</html>

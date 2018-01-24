@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/rank.css" />
+</head>
+<body>
+<header>
+    <label id="headimgurl"><img src="images/avatar.png" /></label>
+    <h1 id="nikcName">匿名用户</h1>
+    <div class="self none">
+        <span class="dz-num"></span>
+        <span class="rank-num"></span>
+    </div>
+</header>
+<section class="rank-con none" id="rank-con">
+    <ul></ul>
+</section>
+<footer>
+    <a href="#" data-collect="true" data-collect-flag="rank-btn-sz" data-collect-desc="索赞去按钮" class="btn btn-sz none" id="btn-sz"><img src="images/rank-sz.png" /></a>
+    <div class="copyright"></div>
+</footer>
+
+<section class="sharego mask none" id="sharego">
+    <img src="images/sharego.png" />
+    <div id="unprisefriend">
+        <h1>温馨提示： <br/>以下好友还没为我点赞</h1>
+        <ul></ul>
+    </div>
+</section>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+
+<script src="./js/app/rank.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

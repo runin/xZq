@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>新闻日日睇</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/submit.css" />
+</head>
+<body>
+	<div class="main">
+		<div class="tv-logo">
+			<img src="images/tv-logo.png" />
+		</div>
+		<div class="logo">
+			<img src="images/submi-title.png">
+		</div>
+		<div class="form-group">
+			<img src="images/bg-top.png" />
+			<div class="form-item">
+				<label class="title">报名通道</label>
+				<p class="name">
+					<label></label>
+					<input type="text" id="name" placeholder="名字"/>
+				</p>
+				<p class="phone">
+					<label></label>
+					<input type="number" id="phone" placeholder="电话"/>
+				</p>
+				<a href="#" data-collect="true"
+			data-collect-flag="tv-gznews-dayday-baoliao-submit-btn"
+			data-collect-desc="爆料页面提交线索" class="btn btn-submit" id="btn-submit">提&nbsp;交</a>
+			</div>
+			<img src="images/bg-bottom.png" />
+		</div>
+		<div class="warm-tips">
+			<h2>温馨提示： </h2>
+			<p>1、周六为开奖时间，开奖前一个小时不能报名       抽奖；</p>
+			<p>2、请持续关注广州新闻频道《新闻日日睇》， 开奖结果会在周六晚上节目时间公布，工作人员会电联中奖幸运观众，请耐心等待。</p>
+		</div>
+		<!--<a href="#" data-collect="true"
+			data-collect-flag="tv-gznews-dayday-baoliao-index-btn"
+			data-collect-desc="爆料页面返回首页" class="btn-back-simple"></a>-->
+	</div>
+	
+	<div class="copyright"></div>
+
+	<script src="js/config.js"></script>	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/submit.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

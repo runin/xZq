@@ -1,0 +1,329 @@
+/* 通用弹层样式_S */
+.modal {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.modal:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    z-index:99;
+}
+.modal-vote:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:transparent;
+    z-index:99;
+}
+.modal .dialog {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    margin-bottom: 50px;
+    /*overflow: hidden;*/
+    z-index: 999;
+    background-color: #941300;
+}
+.modal .dialog .btn-dialog-close {
+    /*display: none !important;*/
+    display: inline-block;
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    width: 22px;
+    height: 22px;
+    z-index: 9999999999;
+}
+.modal .dialog .bg-dialog-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal .dialog .bg-dialog-footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.modal .dialog .icon-lotterydoll {
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    top: -125px;
+    margin-left: -50px;
+    z-index: 99;
+}
+.modal .dialog .icon-palm {
+    position: absolute;
+    width: 33px;
+    left: 50%;
+    top: -30px;
+    margin-left: 16px;
+    z-index: 99999;
+}
+.modal .dialog .dialog-content {
+    position: relative;
+    width: 94%;
+    margin: 3% auto;
+    background: url(../images/icon-lotteryrays.png) center center #ed0a15;
+    /*background-size: 100% 100%;*/
+    padding: 5%;
+    overflow: hidden;
+    z-index: 999;
+    text-align: center;
+}
+.modal .dialog .dialog-content .icon-congrats {
+    width: 86%;
+    margin: 0 auto 2%;
+}
+.modal .dialog .dialog-content .award-luckTips {
+    width: 100%;
+    margin: 0 auto 5%;
+    font-size: 16px;
+    line-height: 20px;
+    max-height: 60px;
+    overflow: hidden;
+    text-align: center;
+    color: transparent;
+    padding-bottom: 3%;
+    border-bottom: 1px solid #B00;
+    text-align: center;
+}
+.modal .dialog .dialog-content .award-luckTips img, .modal .dialog .dialog-content .award-img {
+    width: 88%;
+    margin: 0 auto;
+}
+.modal .dialog .dialog-content .award-keyTips {
+    width: 100%;
+    margin: 5% auto 2%;
+    font-size: 13px;
+    line-height: 20px;
+    max-height: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.modal .dialog .dialog-content .input-box {
+    width: 100%;
+    font-size: 15px;
+    color: #FFF;
+}
+.modal .dialog .dialog-content .input-box .label {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.modal .dialog .dialog-content .input-box input {
+    display: inline-block;
+    width: 86%;
+    padding: 3px 8px;
+    line-height: 23px;
+    border: 0 none;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #666;
+    margin: 3px 0;
+    background-color: #EEE;
+}
+.modal .dialog .dialog-content .input-box input::-webkit-input-placeholder {
+    color: #666 !important;
+}
+.modal .dialog .dialog-content .info-box {
+    text-align: left;
+    width: 100%;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFF;
+    margin-top: 6%;
+}
+.modal .dialog .dialog-content .btn-lottery {
+    display: inline-block;
+    margin: 6% auto 0;
+    width: 38%;
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    color: #333;
+    background-color: #ffc636;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #c29011;
+}
+.modal .dialog .dialog-content .btn-lottery-box {
+    width: 100%;
+    margin-top: 6%;
+}
+.modal .dialog .dialog-content .btn-lottery-box .btn-lottery {
+    display: inline-block;
+    margin: 0 6px;
+}
+.modal .dialog .dialog-content .award-img-box {
+    position: relative;
+    width: 100%;
+}
+.modal .dialog .dialog-content .award-img-box .award-img {
+    position: relative;
+    z-index: 2;
+}
+.modal .dialog .dialog-content .award-img-box .icon-paper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation-name: paper;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    z-index: 1;
+}
+.modal .dialog .dialog-content .icon-ok {
+    width: 52%;
+    margin: 0 auto 1%;
+}
+.modal .dialog .dialog-content .qrcode-tips {
+    font-size: 15px !important;
+    color: #FFF !important;
+    font-weight: normal !important;
+    color: #F5F5F5;
+    margin-bottom: 5%;
+}
+.modal .dialog .dialog-content .qrcode-box {
+    position: relative;
+    width: 82%;
+    margin: 0 auto 5%;
+    padding: 0 0 36px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+.modal .dialog .dialog-content .qrcode-box p {
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    left: 0;
+    bottom: 0;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #6b0001;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 6%;
+}
+/* 通用弹层样式_E */
+
+/* 活动规则_S */
+#rule-dialog .dialog {
+    width: 80% !important;
+    height: 66% !important;
+    top: 17% !important;
+    left: 10% !important;
+    min-height: initial !important;
+    margin-bottom: 0 !important;
+    overflow: visible;
+    color: #FFF;
+    background: url(../images/icon-star.png) center center rgba(241,8,43,.6);
+    background-size: 100% auto;
+    border: 1px solid rgba(255,255,255,.6);
+    border-radius: 6px;
+}
+#rule-dialog .dialog .btn-dialog-close {
+    display: block !important;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    z-index: 9999999999;
+    overflow: hidden;
+}
+#rule-dialog .dialog .dialog-content {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 5%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #FFF;
+}
+#rule-dialog .dialog .dialog-content h1 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 26px;
+    padding: 5px 0;
+    border-bottom: 1px solid #FFF;
+}
+#rule-dialog .dialog .dialog-content .rule-content {
+    width: 100%;
+    height: 90%;
+    padding: 5px 0;
+    font-size: 15px;
+    line-height: 22px;
+    overflow: hidden;
+    overflow-y: scroll;
+    word-break: break-all;
+    text-align: left;
+}
+#rule-dialog .dialog .dialog-content .rule-content * {
+    font-size: 14px !important;
+    line-height: 18px !important;
+}
+#share-dialog .dialog .dialog-content .logo{
+    width: 50%;
+    margin: 0 auto;
+}
+#share-dialog .dialog .dialog-content .qrcode{
+    width: 80%;
+    margin: 0 auto;
+}
+#share-dialog .dialog .dialog-content .tip{
+    font-size: 14px;
+}
+#share-dialog .sharelogo{
+    z-index: 999;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#share-dialog .share-title{
+    position: absolute;
+    z-index: 999;
+    top: 15%;
+    margin: 0 auto;
+    width: 100%;
+    color: #FFED00;
+}
+/* 活动规则_E */
+#thanks-dialog .award-thankTips{
+    font-size: 14px;
+    color: #fff400;
+}
+#thanks-dialog .award-qrcode{
+    width: 75%;
+    margin: auto;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    #link-dialog .link-dialog, #wxcard-dialog .wxcard-dialog {
+        /*top: 2.5% !important;*/
+    }
+}

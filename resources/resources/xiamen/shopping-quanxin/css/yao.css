@@ -1,0 +1,271 @@
+body {
+    overflow: hidden;
+    background: url("../images/bg-new-min.png");
+}
+
+.main {
+    position: relative;
+    zoom: 1;
+    width: 100%;
+}
+
+.shake {
+    text-align: center;
+    position: relative;
+}
+
+.shake img {
+    padding-left: 15px;
+    width: 150px;
+}
+
+.shake img.shake {
+    -webkit-animation: shake .8s;
+    animation: shake .8s;
+}
+
+.hongbao, .hongbao-open, .integral, .no-prise {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.hongbao .hongbao-bg {
+    background: url("../images/redpack-min.png") no-repeat;
+    background-size: 288px 385px;
+    width: 288px;
+    height: 385px;
+    position: relative;
+}
+
+.hongbao .hongbao-text {
+    padding-top: 40px;
+}
+
+.hongbao .hongbao-text .click {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    margin: 180px auto 0;
+    text-align: center;
+}
+
+.hongbao-open .hongbao-bg {
+    background: url("../images/redpack-open-min.png") no-repeat;
+    position: relative;
+    height: 100%;
+}
+
+.hongbao-open .hongbao-text {
+    text-align: center;
+    color: gold;
+    padding-top: 160px;
+    font-weightw: 700;
+}
+
+.hongbao-open .hongbao-text #gongxi {
+    font-size: 30px;
+}
+
+.hongbao-open .hongbao-text #award_text {
+    font-size: 28px;
+}
+
+.hongbao-open .hongbao-text #lingqu {
+    font-size: 28px;
+}
+
+.hongbao-open .hongbao-text #tttj {
+    color: white;
+    font-size: 12px;
+    text-decoration: underline;
+    position: relative;
+    top: 20px;
+}
+
+.integral .integral-bg {
+    background: url("../images/redpack-open-min.png") no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+.integral .integral-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: url("../images/icon-close-min.png") no-repeat;
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+}
+
+.integral .integral-text {
+    text-align: center;
+}
+
+.integral .integral-text .text {
+    color: #fffc00;
+    font-size: 30px;
+}
+
+.integral .integral-text .text #integral-value {
+    color: #fffc00;
+    font-size: 24px;
+}
+
+.integral .integral-text .integral-input {
+    width: 50%;
+    height: 40px;
+    margin: 10px auto;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.integral .integral-text .integral-input #integral-mobile {
+    width: 100%;
+    height: 40px;
+    background: #ba2a0e;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.integral .integral-text .integral-button {
+    width: 45%;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto;
+    background: #fed45d;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #d0221a;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.no-prise .noprise-bg {
+    background: url("../images/noprise-1.png") no-repeat;
+    position: relative;
+    height: 100%;
+}
+
+.fadeIn {
+    -webkit-animation: pcon-ing 0.5s ease 1;
+    animation: pcon-ing 0.5s ease 1;
+}
+
+.no-prise .noprise-close {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    background: url("../images/icon-close.png") no-repeat;
+    background-size: cover;
+}
+
+.no-prise .noprise-text {
+    text-align: center;
+    color: white;
+    padding-top: 120px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#count_down {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+    width: 250px;
+    background: url("../images/bg-text-min.png") no-repeat;
+    background-size: 250px 40px;
+    margin: -35px auto 0;
+    height: 40px;
+    line-height: 35px;
+    border-radius: 12px;
+    z-index: 1;
+    position: relative;
+}
+
+.tips {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@-webkit-keyframes shake {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(30deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(30deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate(0px, 0px);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(0px, -20px);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0px, -20px);
+    }
+}
+
+@-webkit-keyframes pcon-ing {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+}

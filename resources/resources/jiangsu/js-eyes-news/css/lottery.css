@@ -1,0 +1,154 @@
+
+.main {
+	margin: 0 auto;
+}
+
+.main .red-env .btn-click{
+	height: 44px;
+	line-height: 44px;
+	margin-top: 45px;
+}
+
+/*card-s*/
+.paint, .cover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+}
+.paint {
+	opacity: 1;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+.paint.zshow {
+	opacity: 1;
+}
+.cover {
+	z-index: 1;
+}
+/*card-e*/
+
+dl dd{
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+dl dd label {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 12px 5px;
+	line-height: 25px;
+}
+dl dd.dded{
+	background: #FD6804;
+	color: #fff;
+}
+dl dt{
+	color: #fff;
+	font-size: 18px;
+	margin: 5px auto 30px;
+	padding-left: 5px;
+}
+.dding{
+	background: #FFFFEB;
+}
+.red-env{
+	margin: 8%;
+	border: 1px solid #fff;
+	border-radius: 15px;
+	padding: 20px;
+	width: 84%;
+	position: absolute;
+}
+.copyright {
+	bottom: -54px;
+}
+.count-down{
+	padding: 18px;
+	background: rgba(0,0,0,0.77);
+	background-size: cover;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	color: #FF0000;
+	overflow: hidden;
+}
+a.btn-back-simple {
+	color: #D42121!important;
+	background: #FFFFEA;
+	text-decoration: none;
+	width: 67%;
+	border-radius: 27px;
+}
+a.btn-back-simple:hover{
+	color: #D42121;
+}
+.item{
+	width: 156px;
+	margin: 25% auto;
+	font-size: 29px;
+	text-align: center;
+}
+.item:before{
+	content: '';
+	display: block;
+	background: url(../images/count_tlt.png);
+	background-size: 158px auto;
+	width: 158px;
+	height: 26px;
+	margin-bottom: 10px;
+}
+.disabled{
+	background: #ccc;
+	color: #fff;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.btn-share{
+		margin:6px auto;
+	}
+	.btn-back-simple{
+		line-height: 43px;
+	}
+	.card-div h2 {
+		margin:15px;
+	}
+	input {
+		height: 30px;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	/*.main {
+		margin: 0 auto;
+		padding-top: 20px;
+     }
+	.main .red-env{
+		width: 250px;
+		height: 316px;
+		background-size: 250px;
+		margin: 30px auto;
+     }
+    .main .red-env-open{
+	   	width: 180px;
+	   	height: 282px;
+		background-size: 170px;
+		margin: 20px auto;
+	 }*/
+
+}

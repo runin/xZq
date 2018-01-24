@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>都市报道</title>
+	
+	 <link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/font.css">
+	<link rel="stylesheet" href="./css/index.css" />
+	<link rel="stylesheet" href="./css/vote.css" />
+	<link rel="stylesheet" href="./css/commentroom.css" />
+	<link rel="stylesheet" href="./css/disclose.css" /> 
+	<!--<link rel="stylesheet" href="./css/style.min.css" />-->
+
+</head>
+<body>
+
+	<section id="page_cover" class="pager none">
+		<section class="container">
+			<section class="index-cover">
+				<img class="transparent" id="cover" src="./images/cover0.jpg" />
+				<img class="cover-bg" src="./images/cover0.jpg" />
+				<section  class="none" id="cover_btn" data-collect="true" data-collect-flag="cover_enter" data-collect-desc="进入互动">进入互动</section>
+				<section id="reserve_btn" class="none" data-collect="true" data-collect-flag="cover_reserve" data-collect-desc="预约下期">预约下期</section>
+			</section>
+		</section>
+		<footer>
+			<section class="index-slogon">
+				<img src="./images/slogon.jpg" />
+			</section>
+			<p>页面由河南都市频道提供 & Powered by holdfun.cn</p>
+		</footer>
+	</section>
+
+	<nav>
+		<section class="logo">
+			<img src="./images/logo.jpg" />
+		</section>
+		<section class="nav">
+			<section id="btn_vote" class="active nav-item" data-collect="true" data-collect-flag="nav_vote" data-collect-desc="今日话题">今日话题</section>
+			<section id="btn_comment" class="nav-item" data-collect="true" data-collect-flag="nav_comment" data-collect-desc="网友评论">网友评论</section>
+			<section id="btn_disclose" class="nav-item" data-collect="true" data-collect-flag="nav_disclose" data-collect-desc="爆料有奖">爆料有奖</section>
+		</section>
+		<section id="btn_back" class="back none" data-collect="true" data-collect-flag="nav_back" data-collect-desc="回到首页">
+			<img src="./images/back.jpg">
+		</section>
+	</nav>
+
+	<section class="pager-wrapper none">
+		<section class="pager-slide">
+			<section id="page_vote" class="pager">
+				<section class="banner">
+					<img id="banner" src="./images/bg-demo.jpg" />
+				</section>
+				<section class="topic">
+					<h1 id="topic"></h1>
+					<p id="topic_tips" class="tips none">&#8595;&nbsp;为您支持的观点点个赞</p>
+				</section>
+				<section id="answer_wrapper" class="opinions">
+				</section>
+				<section class="comment-link">
+					<img src="./images/btn-comment.jpg">
+				</section>
+			</section>
+			
+			<section id="page_comment" class="pager">
+				<section class="comment-banner">
+					<img id="comment_cover" src="./images/bg-demo.jpg" />
+				</section>
+				
+				<section class="commentroom-wrapper wrapper">
+					<section class="commentrooms">
+						<section class="commentrooms-list">
+						</section>
+					</section>		
+					<section class="commentrooms-input-wrapper">
+						<section class="commentrooms-input">
+							<section class="input-wrapper">
+								<input id="commentroom_input" type="text" placeholder="说说你的观点吧." value="" data-collect="true" data-collect-flag="comment_input" data-collect-desc="选中弹幕框" />
+							</section>
+							<a class="ok" id="commentroom_submit" href="javascript:void(0)" data-collect="true" data-collect-flag="comment_submit" data-collect-desc="发送弹幕">BIU</a>
+						</section>
+					</section>
+				</section>
+			</section>
+
+			<section id="page_disclose" class="pager">
+				<section id="news-disclose" class="wrapper discolse-wrapper" >
+				    <form action="#" class="news-form">
+				        <h1 class="news-h1-1">请您写下新闻<span style="color:#f24e38;">线索</span>：</h1>
+				        <textarea class="news-textarea"></textarea>
+				        <section>
+				            <div class="upload-box" id="upload-box">
+				                <a href="javascript:void(0)" class="btn-upload">
+				                	<i class="icon icon-plus-circle"></i>
+				                </a>
+				            </div>
+				        </section>
+				        <h1 class="news-h1-2">请您留下<span style="color:#f24e38;">姓名</span>和<span style="color:#f24e38;">电话</span>：</h1>
+				        <input class="nickname-input" type="text" placeholder="请填写您的姓名" />
+				        <input class="news-input" type="tel" placeholder="请填写您的电话" />
+				        <a href="javascript:void(0)" class="news-submit" data-collect="true" data-collect-flag="disclose_submit" data-collect-desc="提交线索">提交线索</a>
+				    </form>
+				</section>
+				<section class="award-icon">
+					<img src="./images/icon-award.jpg" />
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<script id="tmpl_answer" type="text/html">
+		<section auid="${id}" class="opinion-item" data-collect="true" data-collect-flag="vote_item_tap" data-collect-desc="话题投票">
+			<section class="opinion-avatar">
+				<img src="${avatar}">
+				<span class="tick icon icon-check-circle"></span>
+			</section>
+			<section class="opinion-detail">
+				<h2>${content}</h2>
+				<p class="percent">
+					<span class="icon icon-heart"></span>
+					<span class="sum">0</span>
+					<span class="sum-plus">+1</span>
+					&nbsp;&nbsp;
+					<span class="icon icon-comment"></span>
+					<span class="per">0</span>%</p>
+			</section>
+		</section>
+	</script>
+
+	<script id="tmpl_commentroom" type="text/html">
+		<section class="citem ${praised}">
+			<section class="citem-img">
+				<img onerror="this.src='./images/avatar.jpg'" src="${src}" />
+			</section>
+			<section class="citem-content">
+				<h3>${name}</h3>
+				<p>${content}</p>
+				<a uid="${uid}" href="javascript:void(0);" class="citem-praise ${praised}" data-collect="true" data-collect-flag="comment_praise" data-collect-desc="评论点赞">
+					<span class="pc-btn icon icon-thumbs-o-up"></span>
+					<span class="pc-num">${pc}<span></a>
+			</section>
+		</section>
+	</script>
+
+	<script src="./js/config.js"></script>
+
+	<!--<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/zepto.touch.js"></script>-->
+	<script src="./js/zepto.min.js"></script>
+	
+	<script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	
+	<!--<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/core.js"></script>
+	<script src="./js/plugins/authorize_userinfo.js"></script>
+	<script src="./js/plugins/util.js"></script>
+
+	<script src="./js/app/router.js"></script>
+	<script src="./js/app/index.js"></script>
+	<script src="./js/app/vote.js"></script>
+	<script src="./js/app/commentroom.js"></script>
+	<script src="./js/app/disclose.js"></script>
+	<script src="./js/app/reserve.js"></script>
+	<script src="./js/app/subscribe.js"></script> -->
+
+	<!--<script src="./js/app.min.js"></script>
+
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

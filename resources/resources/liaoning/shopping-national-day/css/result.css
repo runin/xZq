@@ -1,0 +1,117 @@
+.main {
+	min-height: 100vh;
+	background: url(../images/smile.png) no-repeat center 15px;
+	background-size: 85px auto;
+	padding-top: 105px;
+}
+
+h2 {
+	font-size: 22px;
+	color: #f93838;
+	text-align: center;
+}
+
+h2 .icon-sprites {
+	content: '';
+	background-position: 0 -13px;
+	background-size: 55px auto;
+	width: 25px;
+	height: 25px;
+	vertical-align: -5px;
+	margin-right: 5px;
+}
+
+.copyright {
+	color: #555;
+	position: absolute;
+	bottom: 0;
+}
+
+.ui-gm-detail {
+	margin: 20px 10px 0;
+	padding: 12px 0;
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+}
+
+.img-detail {
+	width: 30%;
+	height: 68px;
+	border: 1px solid #eee;
+}
+
+.img-detail:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 99%;
+}
+
+.img-detail img {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.content-detail {
+	margin-left: 30%;
+	margin-top: -68px;
+	min-height: 68px;
+	position: relative;
+	color: #666666;
+}
+
+.content-detail h2 {
+	text-align: left;
+	font-size: 16px;
+	margin-right: 15%;
+	margin-left: 8px;
+	padding-bottom: 25px;
+	color: #666666;
+}
+
+.content-detail span {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -12px;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+}
+
+.content-detail p {
+	position: absolute;
+	bottom: 2px;
+	left: 10px;
+	font-size: 14px;
+	color:#999;
+}
+
+.btn-buyagain {
+	margin-top: 24px;
+	width: 40%;
+	margin-left: 8%;
+	margin-right: 2%;
+}
+
+.btn-share {
+	margin-top: 24px;
+	width: 40%;
+	height: 38px;
+	line-height: 38px;
+}
+
+.tips {
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+}
+
+.tips a {
+	color: #f93838;
+	font-weight: normal;
+}

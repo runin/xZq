@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>活动报名</title>
+	<link rel="stylesheet" href="./css/global.css"></link>
+	<link rel="stylesheet" href="./css/core.css"></link>
+	<link rel="stylesheet" href="./css/style.css"></link>
+	<script src="./js/wx_api.js"></script>
+</head>
+<body class="baseRedColor">
+	<div class="main">
+		<input type="hidden" id="noRunShare" value="true">
+		<div class="banner">
+	        <span class="solgon"></span>
+	        <!--天气 s-->
+	        <div class="weatherbox none" id="weatherbox">
+	        	<img id="w-img" />
+			    <p><span id="w-date">-</span><br /><span id="w-temp">-</span></p>
+	        </div>
+	        <!--天气 e-->
+			<img id="cover" width="100%">
+		</div>
+
+	<a href="#" class="sign" id="sign" data-collect="true" data-collect-flag="tour-signup-now" data-collect-desc="旅游报名-立即签到"><i></i>立即签到  赢取奖品</a>
+
+    <div class="info wihtebg box-orient-h" id="info">
+    	<div class="box-flex ">
+    	 <h2>-</h2>
+    	 <p><em id="w-num">-</em>人想去</p>	
+    	</div>
+        <a href="#" class="wantn" id="wantn" data-collect="true" data-collect-flag="tour-signup-wantgo" data-collect-desc="旅游报名-我想去">我想去</a>
+    </div>
+    <div class="sgn">
+      <h2>报名用户</h2>	
+      <div class="clearfix signed-list">
+			<ul>
+				<li><img src="http://yao.holdfun.cn/portal/resources/portal/images/user/avatar1.png" /></li>
+				<li><img src="http://yao.holdfun.cn/portal/resources/portal/images/user/avatar2.png" /></li>
+				<li><img src="http://yao.holdfun.cn/portal/resources/portal/images/user/avatar3.png" /></li>
+				<li><img src="http://yao.holdfun.cn/portal/resources/portal/images/user/avatar4.png" /></li>
+				<li><img src="http://yao.holdfun.cn/portal/resources/portal/images/user/avatar5.png" /></li>
+			</ul>
+			<span class="count" id="count">+<strong></strong></span>
+		</div>
+    </div>
+		<div class="intro" id="intro">
+			<a href="#" class="btn-signup" id="btn-signup" data-collect="true" data-collect-flag="tour-signup-baoming" data-collect-desc="旅游报名-我要报名">我要报名</a>
+			<div id="intro-content"></div>			
+		</div>
+		
+		<a href="javascript:toUrl('index.html')" class="btn-back" data-collect="true" data-collect-flag="tour-signup-back" data-collect-desc="旅游报名-返回首页">返回</a>
+		
+	</div>
+	
+	<div class="bottom">
+    	<div class="copy-right">页面由西安广播电视台提供</div>
+	</div>
+	
+	<script src="./js/zepto.min.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src="./js/share.js"></script>
+	<script src="./js/data_collect.js"></script>
+	<script src="./js/signup.js"></script>
+</body>
+</html>

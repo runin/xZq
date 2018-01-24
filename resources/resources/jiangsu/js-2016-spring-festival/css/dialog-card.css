@@ -1,0 +1,189 @@
+/*
+ * 视频容器
+ */
+.dialog .card-detail-content{
+	width: 68%;
+	margin: 0 auto;
+	background: rgba(174, 4, 0, 0.8);
+	padding: 4px;
+	position: relative;
+	z-index: 4;
+}
+/*
+ * END OF 视频容器
+ */
+
+/*
+ * 关闭按钮
+ */
+.dialog .btn-close{
+	position: absolute;
+	top: -42px;
+	right: 5px;
+	padding: 10px;
+	z-index: 2;
+}
+.dialog .btn-close img{
+	width: 28px;
+	height: 28px;
+}
+/*
+ * END OF 关闭按钮
+ */
+
+/*
+ * 浮云
+ */
+.dialog .card-background-cloud{
+	width: 100%;
+	position: absolute;
+	bottom: -8px;
+	left: 0px;
+	z-index: 1;
+}
+/*
+ * END OF 浮云
+ */
+
+/*
+ * 彩灯
+ */
+.dialog .card-top-light{
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+}
+.dialog .card-top-light img{
+	width: 65%
+}
+/*
+ * END OF 彩灯
+ */
+
+/*
+ * 文本
+ */
+.dialog .card-text{
+	font-size: 16px;
+	color: white;
+	text-align: center;
+}
+.dialog .card-title{
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+/*
+ * END OF 文本
+ */
+
+/*
+ * 视频部分
+ */
+.dialog .icon-play{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	top: 50%;
+}
+
+.dialog .card-video-wrapper{
+	padding: 2px;
+	background: #fcec85;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+}
+.dialog .card-video-wrapper img{
+	display: block;
+	position: relative;
+}
+
+.dialog .card-video-wrapper .arrow{
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	background-size: contain;
+}
+.dialog .card-video-wrapper .arrow.left-top{
+	background-image: url(../images/icon-arrow-left-top.png);
+	top: 0px;
+	left: 0px;
+}
+.dialog .card-video-wrapper .arrow.right-top{
+	background-image: url(../images/icon-arrow-right-top.png);
+	top: 0px;
+	right: 0px;
+}
+.dialog .card-video-wrapper .arrow.left-bottom{
+	background-image: url(../images/icon-arrow-left-bottom.png);
+	left: 0px;
+	bottom: 0px;
+}
+.dialog .card-video-wrapper .arrow.right-bottom{
+	background-image: url(../images/icon-arrow-right-bottom.png);
+	right: 0px;
+	bottom: 0px;
+}
+
+.video-canvas{
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: rgba(238,0,0,1);
+}
+.video{
+	width: 100%;
+	/*position: absolute;
+	left: -1px;
+	top: -1px;*/
+}
+/*
+ * END OF 视频部分
+ */
+
+
+ /*
+ * 发贺卡分享引导
+ */
+#card_send_guide{
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+}
+
+
+#card_send_guide .cloud-wrapper{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 100%;
+	text-align: right;
+}
+#card_send_guide .cloud-wrapper .cloud img{
+	width: 70%;
+}
+
+#card_send_guide .cloud-wrapper .cloud-text img{
+	width: 20%;
+}
+#card_send_guide .cloud-wrapper.floating{
+	-webkit-animation: cloudFloat 0.3s ease;
+	animation: cloudFloat 0.3s ease;
+}
+#card_send_guide .cloud-wrapper .cloud-text.fadeIn{
+	-webkit-animation: fadeIn 0.3s ease;
+	animation: fadeIn 0.3s ease;
+}
+
+/*
+ * END OF 发贺卡分享引导
+ */

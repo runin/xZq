@@ -1,0 +1,219 @@
+html{
+    height: 100%;
+}
+
+.footer{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #0B0E26;
+    height: 64px;
+    line-height: 64px;
+}
+.footer label{
+    display: inline-block;
+    width: 47px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.footer label span{
+    display: block;
+    border: 1px solid #fff;
+    width: 38px;
+    height: 38px;
+    overflow: hidden;
+    border-radius: 19px;
+    margin: 0 auto;
+}
+.footer input{
+    width: calc(100% - 1505px);
+    width: -webkit-calc(100% - 150px);
+    background: url(../images/input-bg.png) no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    height: 35px;
+    display: inline-block;
+    padding: 0 15px;
+    padding-left: 20px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 13px;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #666666;
+}
+.footer a{
+    display: inline-block;
+    width: 57px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+}
+.footer a span{
+    width: 37px;
+    display: block;
+    color: #442717;
+    text-align: center;
+    background: url(../images/send-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+.talkroom{
+    /*margin-top: 38px;*/
+}
+
+.talkroom .talk-title{
+    background: #fff;
+    border: 5px solid #00a4b4;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 10px;
+}
+.talkroom .talk-title img{
+    display: inline-block;
+    width: 20%;
+    border-radius: 35px;
+    border: 3px solid #d4d4d4;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.talkroom .talk-title .content{
+    display: inline-block;
+    max-width: 70%;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+.talkroom .talk-title .content .per{
+    color: #00464d;
+    font-size: 14px;
+}
+.talkroom .talk-title .content .que{
+    color: #007a86;
+}
+
+
+ .body{
+     width: 90%;
+     margin-left: 5%;
+     float: left;
+     margin-top: 3%;
+     height: 100%;
+     overflow-y: auto;
+}
+.content{
+    width: 100%;
+}
+.content li{
+    margin-bottom: 15px;
+}
+.content li .ron{
+    display: inline-block;
+    width: 75%;
+    margin-left: 2%;
+}
+.content li .ron p{
+
+    color: #fff;
+}
+.content li .ron .tar{
+    width: 100%;
+    text-align: right;
+}
+.content li img{
+    width: 48px;
+    border-radius: 30px;
+    display: inline-block;
+}
+.content li .triangle {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 3%;
+    margin-left: 5px;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-left: none;
+    border-right: 8px solid #F1F1F1;
+}
+.content li .triangle-top{
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 23%;
+    margin-left: -13%;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 8px solid #fff;
+    border-top: none;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.content li .triangle-right{
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: 4%;
+    margin-right: 2%;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-right: none;
+    border-left: 8px solid #84C82D;
+}
+.content li .article {
+    max-width: 85%;
+    display: inline-block;
+    zoom: 1;
+    padding: 5px 10px;
+    background: #F1F1F1;
+    border-radius: 5px;
+    color: #666666;
+    word-break: break-all;
+}
+.content li .article-right {
+    max-width: 85%;
+    display: inline-block;
+    zoom: 1;
+    padding: 5px 10px;
+    background: #84C82D;
+    border-radius: 5px;
+    color: #fff;
+    word-break: break-all;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.mesg-tip{
+    display: block;
+    position: absolute;
+    bottom: 54px;
+    color: #fff;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    z-index: 100;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+
+}

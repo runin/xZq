@@ -1,0 +1,234 @@
+body
+{
+    background-color: White;
+}
+.none
+{
+    display: none;
+}
+
+.myscore
+{
+    padding: 15px 10px;
+}
+.user_img
+{
+    float: left;
+    z-index: 1;
+    position: relative;
+}
+.user_message
+{
+    height: 118px;
+    padding-left: 130px;
+    position: relative;
+    padding-top: 10px;
+    color: #474747;
+}
+#user_name
+{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+#user_score
+{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.bg_gray
+{
+    color: Gray;
+}
+.s_top
+{
+}
+.s_top_tip
+{
+    margin-top: 3px;
+    color: #DADADA;
+    font-size: 14px;
+}
+
+.top_nav
+{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    overflow: hidden;
+    background-color: #FF9800;
+    border-radius: 5px;
+    height: 37px;
+    border-collapse: collapse;
+    border: none;
+}
+.top_tr
+{
+    width: 100%;
+}
+
+.s_shop, .s_present, .s_gainscore
+{
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    background-color: White;
+    color: #494949;
+    border: solid #FF9800 1px;
+}
+.s_shop
+{
+}
+.s_present
+{
+}
+.s_gainscore
+{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 33%;
+}
+.s_select
+{
+    background-color: #FF9800;
+    color: White;
+}
+.c_score
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.s_juan
+{
+    position: relative;
+    overflow: hidden;
+}
+.s_juan_table
+{
+    width: 100%;
+}
+.s_juan_table td
+{
+    text-align: center;
+}
+.j_item
+{
+    display: inline-block;
+    margin: 10px;
+    max-width: 200px;
+}
+
+.j_img_div
+{
+}
+
+.j_score
+{
+    float: left;
+    font-size: 14px;
+    margin-top: 3px;
+}
+.j_btn
+{
+    font-size: 14px;
+    background-color: #6FCB42;
+    float: right;
+    border-radius: 5px;
+    color: White;
+    width: 55px;
+    line-height: 25px;
+    height: 25px;
+    text-align: center;
+}
+.float_right
+{
+    float: right;
+}
+.s_present_detail
+{
+    position: relative;
+}
+.s_pre_item
+{
+    position: relative;
+    height: 100px;
+    border-bottom: 1px solid gray;
+}
+.pre_num
+{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 100%;
+    font-weight: bold;
+    color: White;
+    background-color: #999999;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    text-align: center;
+}
+.pre_img
+{
+    position: absolute;
+    left: 45px;
+    top: 28px;
+    width: 130px;
+}
+.pre_btn
+{
+    position: absolute;
+    right: 10px;
+    top: 42px;
+    background-color: #6FCB42;
+    border-radius: 5px;
+    color: White;
+    width: 70px;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+}
+.s_g_tip
+{
+    font-size: 12px;
+    color: Gray;
+    margin:10px;
+}
+.s_g_item
+{
+ position:relative;
+ margin-top:10px;
+
+}
+.subscribe_img
+{
+  
+}
+.s_g_topic
+{
+  font-size:14px; 
+  margin-top:5px;  
+}
+.play_time
+{
+ font-size:13px;
+ margin-left:4px;
+ margin-top:5px;
+ color:Gray;
+}
+.subscribe_btn
+{
+    position:absolute;
+    bottom:0px;
+    right:2px;
+    background-color: #FF9801;
+    width:80px;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+    color:White;
+    border-radius:5px;
+    
+}

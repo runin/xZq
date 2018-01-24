@@ -1,0 +1,71 @@
+
+.list {
+    padding: 0 10px;
+	
+}
+.list li {
+    border-bottom: 1px solid #9A6E29;
+	font-size: 0;
+}
+.list li:first-child{
+    border-top: 1px solid #9A6E29;
+}
+.list label {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    font-size: 12px;
+    color: #9A6E29;
+    width: 68px;
+}
+.list a {
+    display: -webkit-box;
+	
+    -webkit-box-orient: horizontal;
+    padding: 20px 0 23px 12px;
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+}
+.list a:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 0px;
+	height: 100%;
+}
+.list a i {
+    background: url(../images/wangqi-jian.png) no-repeat;
+    background-size: cover;
+    width: 26px;
+    height: 27px;
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+.list a:hover i {
+	background-position: 0 -32px;
+}
+.list a:hover:after {
+	background-position: -20px 0px;
+}
+.list a strong {
+    display: -webkit-box;
+	
+    font-size: 18px;
+    color: #9A6E29;
+}
+.list .content {
+    border-left: 1px solid #D7C6A9;
+	
+    display: block;
+    padding-left: 9px;
+    padding-right: 105px;
+    margin-left: 10px;
+    width: 100%;
+}
+.list .content span {
+    font-size: 13px;
+	
+    color: #9A6E29;
+    display: -webkit-box;
+}

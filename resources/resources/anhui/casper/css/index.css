@@ -1,0 +1,316 @@
+﻿body, html
+{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+
+.none
+{
+    display: none;
+}
+*
+{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    outline: 0 none;
+}
+
+.main
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url('../images/bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+.tvicon
+{
+    position: absolute;
+    width: 45px;
+    left: 10px;
+    top: 5px;
+}
+.in
+{
+    position: absolute;
+    width: 130px;
+    left: 20%;
+    top: 5px;
+}
+.yao
+{
+    position: absolute;
+    width: 120px;
+    right: 2px;
+    top: 20px;
+}
+.middle
+{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    position:absolute;
+    margin-top: 20px;
+    z-index:2;
+    bottom: 170px;
+  
+}
+
+
+.down_load
+{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    height: 20%;
+    width: 30%;
+}
+.casper_look
+{
+    width: 96%;
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    margin-left: -48%;
+    height: 10%;
+    z-index:99999;
+}
+
+
+footer
+{
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    font-size: 12px;
+    color: #caa672;
+    text-align: center;
+    z-index:99;
+     height:50px;
+}
+.footer_tip
+{
+    position:absolute;
+    top: 10px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    z-index:0;
+    height:50px;
+    margin:auto;
+
+}
+.down_arrow
+{
+  
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  width:40px;
+  margin-left:-20px;
+  
+     
+}
+.down_arrow img
+{
+ display:block;  
+ width:15px;  
+ position:relative;
+ z-index:9;
+ 	-webkit-animation-name: arrow_a;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+.darrow2
+{
+  position:relative;
+  top:-1px;    
+}
+.darrow3
+{
+  position:relative;
+  top:-2px;    
+}
+@-webkit-keyframes arrow_a {
+  0%
+  { 
+    opacity:1; 
+    top:0px;
+  }
+  100%
+  {
+      opacity:0.3;
+      top:10px;
+  }
+}
+
+.up_arrow
+{
+  
+  position:absolute;
+  top:5px;
+  left:50%;
+  width:40px;
+  margin-left:-20px;
+  
+  
+     
+}
+
+
+.up_arrow img
+{
+ display:block;  
+ width:15px;  
+ position:relative;
+ z-index:999;
+ 	-webkit-animation-name: uarrow_a;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+.udarrow2
+{
+  position:relative;
+  top:-1px;    
+}
+
+@-webkit-keyframes uarrow_a {
+  0%
+  { 
+    opacity:1; 
+    top:10px;
+  }
+  100%
+  {
+      opacity:0.3;
+      top:0px;
+  }
+}
+
+
+
+
+
+
+.swiper-container
+{
+    height: 100%;
+    width: 100%;
+    zoom: 1;
+}
+.swiper2
+{
+  height:70%;
+  padding-top:15%;
+}
+.swiper2 .swiper-slide
+{
+  
+  
+
+    border-radius:5px;
+    background: rgba(255, 255, 255, 0.1);
+    
+     
+    height: 100%;
+    opacity: 0.4;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); /* width: 80%; */
+}
+.swiper2  .swiper-slide-visible
+{
+    opacity: 0.5;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.swiper2  .swiper-slide-visible .ui-order-item:before
+{
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    border-radius: 5px;
+}
+.swiper2  .swiper-slide-active .ui-order-item:before
+{
+    display: none;
+}
+.swiper2  .swiper-slide-active
+{
+    top: 0;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.twopic
+{
+ vertical-align:middle;
+ width:260px;   
+ position:absolute;
+ left:50%;
+ top:50%;
+ margin-left:-130px;
+ margin-top:-173px; 
+ position:relative;
+}
+.close
+{
+   width:40px; 
+   position:absolute;
+   top:-15px;
+   right:-15px;   
+}
+
+
+#div_subscribe_area {
+	position:relative;
+	bottom:0;
+	left:0;
+	width:100%;
+	height: 50px;
+	overflow: hidden;
+	z-index:9999999999999;
+
+}
+.casper_bottom_name
+{
+ text-align:center;
+ height:30px;    
+ line-height:30px;
+ color:White;
+ font-size:14px;
+}
+
+.userbg
+{
+   width:90%;
+   height:90%;
+   position:absolute;
+   left:0px;
+   right:0px;
+   top:0px;
+   bottom:0px;
+   margin:auto;    
+}
+.f_bbg
+{
+ position:absolute;
+ bottom:0px;
+ width:100%;
+ z-index:1;    
+}

@@ -1,0 +1,102 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: url(../images/index-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+header .ctrls {
+  width: 95%;
+  margin: 15px auto 0;
+}
+header .ctrls .left {
+  display: inline-block;
+  width: calc(100% - 200px);
+  width: -webkit-calc(100% - 200px);
+}
+header .ctrls .left img.tvlogo {
+  text-align: left;
+  vertical-align: middle;
+  width: 80%;
+}
+header .ctrls .right {
+  display: inline-block;
+  text-align: right;
+  width: 190px;
+}
+header .ctrls .right a {
+  border: 2px solid #FF1DAC;
+  background: transparent;
+  border-radius: inherit;
+  color: #FF1DAC;
+  width: 70px;
+  height: 26px;
+  line-height: 25px;
+  font-size: 15px;
+  display: inline-block;
+  margin: inherit;
+}
+.go {
+  background: url(../images/go-bg.png) no-repeat;
+  background-size: 217px auto;
+  width: 217px;
+  height: 45px;
+  line-height: 46px;
+  color: #1E4747;
+  font-size: 19px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 16%;
+  -webkit-tap-highlight-color: transparent;
+}
+#div_subscribe_area {
+  height: 50px;
+  overflow: hidden;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  max-height: 76px;
+  width: 100%;
+}
+.copyright {
+  position: static;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  header .ctrls .right a {
+    line-height: 22px;
+  }
+  .go {
+    bottom: 22%;
+  }
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+  header .ctrls .right a {
+    line-height: 22px;
+  }
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+  header .ctrls .right a {
+    line-height: 22px;
+  }
+  header .ctrls .left img.tvlogo {
+    width: 70%;
+  }
+}

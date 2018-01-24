@@ -1,0 +1,96 @@
+/*
+* 素材全局样式
+*/
+
+
+.pop-bg:before{
+	content:"";
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.7);
+}
+.pop-box{
+	position:absolute;
+	top:10%;
+	left:10%;
+	width:80%;
+	height:80%;
+	background-image:url(../images/pop_bg.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:center;
+}
+@-webkit-keyframes bounce-in-sides {
+60%, 75%, 90%, from, to {
+	-webkit-animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1);
+	animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+0% {
+	opacity:0;
+	-webkit-transform:translate3d(0, -3000px, 0);
+	transform:translate3d(0, -3000px, 0)
+}
+60% {
+	opacity:1;
+	-webkit-transform:translate3d(0, 25px, 0);
+	transform:translate3d(0, 25px, 0)
+}
+75% {
+	-webkit-transform:translate3d(0, -10px, 0);
+	transform:translate3d(0, -10px, 0)
+}
+90% {
+	-webkit-transform:translate3d(0, 5px, 0);
+	transform:translate3d(0, 5px, 0)
+}
+to {
+	-webkit-transform: none;
+	transform: none
+}
+}
+.bounce-in-sides {
+	-webkit-animation-name: bounce-in-sides;
+	-webkit-animation-duration: 0.7s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bounce-out-down {
+20% {
+	-webkit-transform:translate3d(0, 10px, 0);
+	transform:translate3d(0, 10px, 0)
+}
+40%, 45% {
+	opacity:1;
+	-webkit-transform:translate3d(0, -20px, 0);
+	transform:translate3d(0, -20px, 0)
+}
+to {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 2000px, 0);
+	transform: translate3d(0, 2000px, 0)
+}
+}
+.bounce-out-down {
+	-webkit-animation-name: bounce-out-down;
+	-webkit-animation-duration: 0.7s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+a.pop-close{
+	position:absolute;
+	top:-10px;
+	right:-10px;
+	width:40px;
+	height:40px;
+	background-image:url(../images/pop_close.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	z-index:3
+}

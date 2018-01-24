@@ -1,0 +1,204 @@
+*{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+    height: 100%;
+    background: url("../images/index-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+header {
+  background: rgba(255,86,143,.6);
+  border-bottom: 1px solid #fff;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+}
+header .headimgurl {
+  display: block;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  overflow: hidden;
+  margin: 0 auto 8px;
+}
+.chkbox{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+}
+.chkbox>div{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image:-webkit-linear-gradient(left,#ff5ba9 0%,#ff5ba9 90%,#FF77C4 100%); 
+    text-align: center;
+    line-height: 45px;
+    color: #ffffff;
+}
+.handimg{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    left: 10px;
+    border-radius: 35px;
+}
+.chkbox>.r{
+}
+.chkbox>.l{
+    background-image:-webkit-linear-gradient(left,#C87FB0 0%,#C87FB0 50%,#aa5e85 100%);
+
+}
+.chkbox>img{
+    position: absolute;
+    width: 50%;
+    top: -5px;
+    height: 5px;
+    right: 0;
+}
+.r>img,.l>img{
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    top: 10px;
+}
+.use-infor
+{
+    position: relative;
+    height:24%;
+    width:100%;
+    background: rgba(255,86,143,.6);
+}
+/*.use-infor .user-headimg
+{
+    background-image:url("../images/danmu-head.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height:80px;
+    width:80px;
+    border-radius: 100%;
+    position: absolute;
+    top:calc(50% - 50px);
+    top:-webkit-calc(50% - 50px);
+    left:calc(50% - 40px);
+    left:-webkit-calc(50% - 40px);
+    border:4px solid #fff;
+
+
+}
+.use-infor .user-name
+{
+     position: absolute;
+     text-align: center;
+     width:100%;
+     top:calc(50% + 30px);
+     top:-webkit-calc(50% + 30px);
+     color:#fff;
+}*/
+.rank-tips
+{
+    height:32px;
+    width:100%;
+    line-height: 32px;
+    text-align: center;
+    color:#ff568f;
+}
+.qiandao{
+    position: relative;
+    width: 34%;
+    left: 33%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    /*display: none;*/
+    background-color: #ff568f;
+    color: #fff;
+    background-size: 100% 100%;
+}
+.qian-round
+{
+    position: relative;
+    margin:15% 5% auto 5%;
+}
+.round
+{
+    position: relative;
+    height: 40px;
+    width:90%;
+    border-top:2px solid #ffd1d1;
+    margin-left:5%;
+
+}
+.round1,.round3
+{
+    border-right:2px solid #ffd1d1;
+}
+.round2,.round4
+{
+    border-left:2px solid #ffd1d1;
+}
+.round li
+{
+    position: relative;
+    width:24px;
+    height:24px;
+    border-radius:100%;
+    background: #a5a5a5;
+    border:2px solid #ffffff;
+    display: inline-block;
+    top:-15px;
+    float:left;
+}
+ul li:last-child
+{
+    margin-left:0px;
+    float:right;
+    right:-10px;
+  
+}
+ul li:first-child
+{
+    margin-left:0px;
+    left:-10px;
+    
+}
+.round li:nth-child(2),.round li:nth-child(3),.round li:nth-child(4),.round li:nth-child(5)
+{
+     margin-left: calc(20% - 25px);
+     margin-left: -webkit-calc(20% - 25px);
+     left: -10px;
+}
+.round2 li:first-child,.round4 li:first-child
+{
+    left:-12px;
+}
+
+.round2 li:nth-child(2),.round2 li:nth-child(3),.round2 li:nth-child(4),.round2 li:nth-child(5)
+{
+     margin-left:calc(20% - 25px);
+    margin-left: -webkit-calc(20% - 25px);
+     left: -12px;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+  .qian-round
+  {
+
+    margin: 10% 5% auto 5%;
+  }
+  .round
+  {
+    height:32px;
+  }
+}
+
+

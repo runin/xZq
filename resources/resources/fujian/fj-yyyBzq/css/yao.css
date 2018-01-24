@@ -1,0 +1,160 @@
+body{
+	background-color: #3A2165;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center center;
+	min-height: 100vh;
+	position: relative;
+}
+.marquee{
+	font-size: 13px;
+	height: 8%;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	top: 0;
+	color: #fff;
+}
+.marquee li{
+	font-weight: bold;
+}
+.footer-div{
+	margin: 21vh 15px 0;
+	color: #FAF934;
+	text-shadow: 1px 1px 1px rgba(0,0,0,1);
+}
+.zx-tt{
+	font-size: 12px;
+}
+.count{
+	margin: 5px 0;
+	font-weight: bold;
+}
+.outer{
+	color: #FAF934;
+	text-decoration:  underline;
+	font-weight: bold;
+}
+.countdown{
+	height: 52px;
+	line-height: 52px;
+	border-radius: 3px;
+	font-size: 15px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	text-align: left;
+	font-weight: bold;
+}
+.countdown .detail-countdown{
+	background: url(../images/biao.png) no-repeat;
+	background-size: 52px auto;
+	display: inline-block;
+	padding-left: 8%;
+	padding-top: 6%;
+	margin-left: 2px;
+}
+.countdown .countdown-tip,.loading{
+	font-weight: bold;
+}
+.copyright {
+	position: relative;
+	color: #fff;
+	line-height: 13px;
+	margin-top: 3px;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+header {
+	width: 95%;
+	margin: 2px auto; }
+header .btn {
+	display: inline-block;
+	float: right;
+	width: 66px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px; }
+header .back-btn{
+	width: 65px;
+	height: 30px;
+}
+
+/*yao-s*/
+.home-box {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.main-top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 50%;
+	background-image: url('../images/home_logo_a.jpg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	box-sizing: border-box;
+	-webkit-transition: -webkit-transform .2s ease;
+}
+.main-foot {
+	position: absolute;
+	bottom: 1px;
+	width: 100%;
+	height: 50%;
+	background-image: url('../images/home_logo_b.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	box-sizing: border-box;
+	-webkit-transition: -webkit-transform .2s ease;
+}
+/*yao-e*/
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.copyright {
+		-webkit-transform: scale(.9);
+	}
+	.footer-div {
+		-webkit-transform: scale(.8);
+		margin: 21vh 15px 0 0;
+	}
+	.count {
+		margin: 3px 0;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait){
+	.footer-div {
+		margin: 22vh 15px 0;
+	}
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}

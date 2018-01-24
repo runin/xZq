@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>快乐大赢家</title>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/util.css"/>
+    <link rel="stylesheet" href="./css/resize.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/reserve.css"/>
+    <link rel="stylesheet" href="./css/rule.css"/>
+</head>
+<body>
+    <section id="qrcode" class="dialog-wrapper none">
+        <section class="img-wrapper wrapper" data-x="70" data-y="129" style="width: 212px;
+            height: 206px;">
+            <img src="./images/placeholder.jpg">
+        </section>
+        <section class="img-wrapper wrapper" onitemclick="H.dialog.close qrcode" data-x="247"
+            data-y="83" style="width: 78px; height: 66px;">
+            <img src="./images/placeholder.jpg">
+        </section>
+    </section>
+    <!--活动规则--->
+    <section id="rule" class="none">
+        <section class="dialog-main">
+            <section class="dialog-header">
+                <h2>
+                </h2>
+            </section>
+            <section class="dialog-content">
+            </section>
+            <a class="dialog-close" href="javascript:void(0);"></a>
+        </section>
+    </section>
+    <section class="main" style="background: url(images/bg_a.jpg);">
+        <section class="img-wrapper wrapper" data-x="6" data-y="4" style="width: 110px; height: 44px;">
+            <img src="http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/resources/images/clueImg/2015/09/21/b18f061595584ad78a98c5f2b543fd42.jpg">
+        </section>
+        <section class="img-wrapper wrapper" data-x="19" data-y="69" style="width: 337px;
+            height: 244px;">
+            <img src="http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/resources/images/clueImg/2015/09/21/817bccdad397407a8c5dafb19f733c88.jpg"
+                style="text-align: center;">
+        </section>
+        <section class="a-wrapper wrapper" data-x="81" data-y="177" style="width: 209px;
+            height: 0px;">
+            <a href="javascript:void(0);" style="line-height: 0px; background-size: 100% 100%;
+                background-repeat: no-repeat;">链接内容...</a>
+        </section>
+        <section class="a-wrapper wrapper look_rule"  data-x="83" data-y="60" 
+            style="width: 209px; height: 45px;">
+            <a href="javascript:void(0);" style="text-decoration:underline; font-weight: bold;
+                letter-spacing: 1.5px; line-height: 36px; color: rgb(255, 0, 0); font-size: 18px;
+                text-align: center; background-size: 100% 100%; background-repeat: no-repeat;"
+                class="font-resize line-height-resize">查看活动规则</a>
+        </section>
+        <section class="reserve-wrapper wrapper" data-x="282" data-y="0" style="width: 88px;
+            height: 58px;">
+            <p id="reserve_btn" class="reserve-btn" style="line-height: 58px; text-align: center;
+                border-radius: 5px; font-size: 14px; background-image: url(http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/resources/images/clueImg/2015/09/21/01d156a28a004d438407d3cfc2440424.jpg);
+                background-color: transparent; background-size: 100% 100%; background-repeat: no-repeat;">
+            </p>
+        </section>
+        <section class="img-wrapper wrapper shine" data-x="137" data-y="350" style="width: 100px;
+            height: 100px;" onitemclick="competition.html" data-collect="true" data-collect-flag="winners-competition-btn" data-collect-desc="点赞抽奖">
+            <img src="images/competition.png">
+            <div class="gift-box"></div>
+        </section>
+        <section class="img-wrapper wrapper" data-x="260" data-y="396" style="width: 80px;
+            height: 80px;" onitemclick="apply.html" data-collect="true" data-collect-flag="winners-apply-btn" data-collect-desc="我要报名">
+            <img src="images/sign_up.png">
+        </section>
+        <section class="img-wrapper wrapper" data-x="36" data-y="396" style="width: 80px;
+            height: 80px;" onitemclick="comment.html" data-collect="true" data-collect-flag="winners-comment-btn" data-collect-desc="评论">
+            <img src="http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/resources/images/clueImg/2015/09/21/5dbf9bab6a1a4a4e980640a0f4e4bf37.jpg">
+        </section>
+        <section class="p-wrapper wrapper" data-x="135" data-y="462" style="width: 104px;
+            height: 23px;" onitemclick="competition.html" data-collect="true" data-collect-flag="winners-competition-btn" data-collect-desc="点赞抽奖">
+            <p class="line-height-resize" style="text-align: center; line-height: 19px; color: #7A7977;">
+                点赞抽奖</p>
+        </section>
+        <section class="p-wrapper wrapper" data-x="24" data-y="485" style="width: 108px;
+            height: 26px;" onitemclick="comment.html" data-collect="true" data-collect-flag="winners-comment-btn" data-collect-desc="评论">
+            <p style="text-align: center; color: #7A7977;">
+                弹幕吐槽</p>
+        </section>
+        <section class="p-wrapper wrapper" data-x="252" data-y="485" style="width: 93px;
+            height: 25px;" onitemclick="apply.html" data-collect="true" data-collect-flag="winners-apply-btn" data-collect-desc="我要报名">
+            <p style="text-align: center; color: #7A7977;">
+                我要报名</p>
+        </section>
+        <section class="p-wrapper wrapper" data-x="0" data-y="560" style="width: 370px;
+            height: 37px; color: #12aae3;">
+            <p class="font-resize" style="font-size: 12px; text-align: center;">
+                页面由福建新媒体有限公司提供<br>
+                新掌趣科技技术支持&Powered by holdfun.cn</p>
+        </section>
+        <section class="subscribe-wrapper wrapper" data-x="0" data-y="550" style="width: 371px;
+            height: 52px;">
+            <img src="./images/default-subscribe.jpg">
+        </section>
+    </section>
+    <script  type="text/javascript" src="./js/config.js"></script>
+    <script  type="text/javascript" src="./js/plugins/zepto.min.js"></script>
+    <script  type="text/javascript" src="./js/plugins/zepto.cookie.min.js"></script>
+    <script  type="text/javascript" src="./js/plugins/core.js"></script>
+    <script  type="text/javascript" src="./js/app/reserve.js"></script>
+    <script  type="text/javascript" src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+    <script  type="text/javascript" src="./js/plugins/md5.js"></script>
+    <script  type="text/javascript" src="./js/plugins/util.js"></script>
+    <script  type="text/javascript" src="./js/diy/event.js"></script>
+    <script  type="text/javascript" src="./js/diy/resize.js"></script>
+    <script  type="text/javascript" src="./js/diy/dialog.js"></script>
+    
+    <script  type="text/javascript" src="./js/app/main.js"></script>
+    <script  type="text/javascript" src="./js/app/subscribe.js"></script>
+    <script  type="text/javascript" src="./js/app/rule.js"></script>
+    <script  type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

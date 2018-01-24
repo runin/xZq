@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no" />
+  <title>频道导航</title>
+  <link rel="stylesheet" href="./css/core.css" />
+  <link rel="stylesheet" href="./css/my.css" />
+</head>
+
+<body>
+  <section class="my-box">
+    <div>
+      <div class="top-logo"><span></span></div>
+      <div class="headurl"><span></span></div>
+      <div class="my-name"><span class="icon-bg"><i class="i-name"></i></span>用户名: <label id="nickname"></label> </div>
+      <div class="my-info">
+        <ul id="my-nav">
+          <li name="nav1"><em></em><span class="icon-bg"><i class="i-jp"></i></span>我的奖品: <label id="my-jiangpin">0</label></li>
+          <li name="nav2"><em></em><span class="icon-bg"><i class="i-jf"></i></span>积分: <label id="my-jifen">0</label></li>
+          <li name="nav3"><em></em><span class="icon-bg"><i class="i-ph"></i></span>积分排行: <label id="my-paiheng">0</label></li>
+        </ul>
+      </div>
+      <a href="index.html" class="btn-a">返回</a>
+    </div>
+    
+    <div class="my-jiangpin none" id="nav1">
+      <div class="head-box">
+        <div class="my-head">
+          <div class="scale-box">我的奖品<label id="jiangpin-n">0</label></div>
+        </div>
+      </div>
+      <div class="jiangpin-list"></div>
+      <a href="javascript:void(0)" class="btn-a a-return">返回</a>
+    </div>
+    
+    <div class="my-jifen none" id="nav2">
+      <div class="head-box">
+        <div class="my-head">
+          <div class="scale-box">我的积分<label id="jifen-n">0</label></div>
+        </div>
+      </div>
+      <p class="jf-text">成功参与互动即可获得不同数量的积分，累积积分，可在奖池兑换多种好礼！</p>
+      <a href="javascript:void(0)" class="btn-a a-return">返回</a>
+    </div>
+    
+    <div class="my-paiheng none" id="nav3">
+      <div class="head-box">
+        <div class="my-head">
+          <div class="scale-box">积分排行<br /><span>我的积分<label id="paiheng-n">0</label> 排行<label id="paiheng-h">0</label></span></div>
+          <ul class="paiheng-table-head">
+            <li>昵称</li>
+            <li>积分</li>
+            <li>名次</li>
+          </ul>
+        </div>
+      </div>
+      <div class="paiheng-list"></div>
+      <a href="javascript:void(0)" class="btn-a a-return">返回</a>
+    </div>
+    
+  </section>
+  
+  
+  <script src="js/config.js"></script> 
+  <script src="./js/plugins/zepto.min.js"></script> 
+  <script src="./js/plugins/zepto.touch.js"></script>
+  <script src="./js/plugins/zepto.cookie.min.js"></script> 
+  <script src="./js/plugins/zepto.fx.min.js"></script> 
+  <script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+  <script src="./js/plugins/md5.js"></script> 
+  <script src="./js/plugins/core.js"></script> 
+  <script src="./js/plugins/util.js"></script> 
+  <script src="./js/plugins/authorize_userinfo.js"></script>
+  
+  <script src="./js/app/my.js"></script> 
+  
+</body>
+</html>

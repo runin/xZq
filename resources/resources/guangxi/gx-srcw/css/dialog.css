@@ -1,0 +1,438 @@
+/* 通用弹层样式_S */
+.btn-active:active
+{
+    opacity: 0.5;
+}
+.btn-active
+{
+     opacity: 1;
+    -webkit-transiton:all .5s linear;
+}
+.modal {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.modal:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    z-index:99;
+}
+.modal-vote:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:transparent;
+    z-index:99;
+}
+.modal .flash-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility:hidden;
+}
+.modal .flash-box .icon-flash {
+    width: 100%;
+    height: 50%;
+}
+.modal .dialog {
+    position: absolute;
+    width: 500px;
+    height: 825px;
+    left: calc((100% - 500px)/2);
+    left: -webkit-calc((100% - 500px)/2);
+    top: calc((100% - 825px)/2);
+    top: -webkit-calc((100% - 825px)/2);
+    background: #650101;
+    z-index: 999;
+}
+.modal .dialog .btn-dialog-close {
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    z-index: 9999999999;
+}
+.modal .dialog .hot-b {
+    display: block;
+    position: absolute;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    top: 13%;
+    right: 1%;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAgsSURBVFiFnZbZb1x3Fcc/v3vv7DNexnucZnEcZ7NTN21aaIJooS3hoaqQEA9IvIBUiQf+Ap7KKy8ggQQVLzzyAFVFWxKaNKWi6pqkS5rFdmzHS2J7bN+xPeu99/c7PMydydixk4hzdTTzmzn3nO9Zf0fRRJZlkc1mGRgYwHEcXNflu889x8D+fRQKRXzfT2SzHQccx36yUCgMRaLR7mQiES+XyxXf95dSqdS41vqLfD4/FolESqlUiunp23z08Ue0trVRLpWZmrxFLpdDa92w6/AAEhEQwRjTnkwmf6KUejmRSDxrWao9Ho835CKRSENeRDaMMR+KyBvGmH+ALIvIg8zsDMIYg4hg2/bLqVT6147jPNMMbifFlmVlMpnMGeBMEAS/tG37N4i8IcbsCMJuPiilSCQStLa2IiLxkydPvvb48eO/t217z8OMbwfQtu3ebDb741gslllYWPhQB9rP5/OUSqVNerYFkclkWp5//vk/Dg8P/wqwH8X4ToAAq7e399l0JnNgcnLywtraWuWBIACi0ag6c+bMb48cOfKqiGD+D+Pbgcm2tw/bttNx9erXZ0ul0qbcbAIRi8V44YUXXj19+vRrIqJMcwSUwlI8UkQsS2EptckBI9DX1/uk5/vLU1NTnzR3xyYQR48ePfTKK6+87jhOuzaGhn1LYQFaGxzbRgwIoLZ6DDi2RRAYfN8QcayGjrp8365dozOzc+dyS0tLDdDNSk6cOPGLZDK5V2uDmFp7KgSM4dNrc/zt4jdMzK3gOAqQRhHW0xaxFcVylXc+GufvH1wjly9iW6rR6n6gSaVSfaOjT/w8xKQ2gejr6xscHR39WV2hocbKUlQDzTfTOabu5jn32S1u3l4m4tgINOQijsVGyeNfn0wwNrvC7YU1FleLKHVPBgWeF3BsZOSn/f39Q82RUADHhoe/F4/HewOtQ+S1GGptiEccTgztIp2IUqkGnL80xdjMClHHBoGIbVOs+Jz79BbTd/MoBUf3dXGgv51Am4YuBEQMyUSyZ+jQkRfrWbLCL4mDg4PfqRWQEEYPqWWCwBhGD/by3dG9OLZF2fN59/NJbswsE4s6lMo+5z6eYGrBBQUDu9p56eQA8ViEQG/WV6sPw559e08BSUAcwHIcp7Wlte0whMJs7gAx4AUBTxzsBeCDL25TrHhcvDyNF2im7+aZXHBBFPv72vjBM4PEow6eH7CVFCBGaMm0jsTj8WylUik7AN3dPdm2ttZOI8JO49VooWoMo4O9iAj//WqGih9w8fJULa9Ksbe3jZeePkA8YlH1g/u6p94lRoR0SyaT7ejovDM/P28BxGLRlGPbjnnICDACnu/z5KFdfHv4sdAzhRZDTzbND791gHQ8guebbQE0Ii2CpSzHcZwkYFtATGvjBOZeq+3EIoJSFoVilcXVAgDaCIiiWPGZz23U5EJvt9VB7VMbYxkjUSBiAfba2ppXKBT8erh28sCxLKperTtuzqwAQltLnHjUoVCq8u6lKcZmV4g6Fjvpqs+McrnsFYuFCmCFIPJ513XvgAIRxNzPjgVVP+DC5Skm5lcREfqyGX50+hDPDj+GbVuUKz7vXZ6uAbEt1Da6jAhaBNd1l/Kuuwo4FuADpbt37tzYDr4Atq3wAsPFK7eZmHcRYHdXCy+e3E8y5nBsXyenj+9ptO/7X8wwPr+KY1tsJaMFbSC3tHRVRIqAsQADcP369StVr6q35lMBVc/UFM+tooD+zgwvPV0rwnI1oOoFPD7Qzenje4g6NmXP5+KVGWaW1rEttUlfoDWVSlUmxm9+Gdr26yDUrYmJK3Ozc+O27SBikPCxbcWCu8GN28toY+jrTPPiUwOk4w4VPwAlaDGUPZ+RgS5OjezBtizyG2WW18q1DIePNgGCYmHhztj01OTn1MaGsUMQUWM0xkjy2MjIKa21UqhwstQW4PWSR1s6wfdP7CeTjFD1A1BNjVireHqzaVpTMXraUxza04FlqVqGBfzAEBjhP++d/+v83Oz7QAEo1q9yC4iurCy7/bt3H+vp6d3lBz4K0CLEIg6Du7MM7s4SdSy8QNeugqZxXD8H2tDTnuKx7hZA0EbC3zUGxfj4+FcfXDz/Zx0EOWAd8OogFBDRQaBzuaW1Q4cPn4onEnFjDEqpcLjU3Am0uX+R2EJBYPAD06hxrTWBATe/tnH27Td/566sfBlGoQDoOggTcmx9bW3Ddd3SwaHDT9m24xijsSzr3gX0EAANl8JUBjog0EKxVPbOvf3PP0xOjJ0HXCAPlGHzZqXDc2RpcfGuu7q6sXf/wHA8Fo9qrUPb8sgsRvD8gEBgbWOj8O47b71+7epXbwMrIW+Ejm8CIU0RsRcXF2bm52YXu3p692Xa2lolHDx1SaXuD4kxYIygtcE3QmBgfm529uxbb/5p/OaNs2EEciEAv/7e1m1bA0HIdt51F69f++bratWTVCbTFY8nkoSp0QJGG7QRjBFMuHsYgWoQkMstu5c+/fjChX+/85fc0uIlYDXkRhqas7cdJYAWoAvoAFrasx0HB4eGnt63/8Dhzq7u/kQy2RqNRCOomve+5/nFYjG/spy7Mz01eWNyYuwzd3VlIjS6HKZgHShtNfagMosDKaAN6AyBpR3HaUum0t3pdLoznWnJ2LblBNoEhY319WKh4JZKxaXA91fDkJdD43mgCFS2M/SwWreprWDpJo6F4CT8L0J4/1CbN6XQeKGJS9RSvS09asNFQk5Si5ATnlNNcsUQjAmNVkIO2HlDeGQQzWRRi45NLSLN7wtQpeax5l6/PpT+B8BI/ULuWxA/AAAAAElFTkSuQmCC") no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999999999;
+}
+.modal .dialog .bg-dialog-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal .dialog .bg-dialog-footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.modal .dialog .global-header {
+    position: relative;
+    width: 100%;
+    font-size: 0;
+}
+.modal .dialog .global-header .icon-redbag-gold, .modal .dialog .global-header .icon-redbag-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.modal .dialog .global-header .icon-luckytips {
+    position: absolute;
+    width: 76%;
+    top: 8%;
+    left: 12%;
+}
+.modal .dialog .dialog-content .tlt{
+    margin: -3vh auto 0;
+}
+.modal .dialog .dialog-content{
+    position: absolute;
+    bottom: 1%;
+    width: 99.2%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+.modal .dialog .dialog-content .info-qrcode {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 6px;
+    text-align: center;
+}
+.modal .dialog .dialog-content .icon-congrats {
+    width: 86%;
+    margin: 0 auto 2%;
+}
+.modal .dialog .dialog-content .award-img {
+    width: 98%;
+    margin: 0 auto;
+}
+.modal .dialog .dialog-content .award-nameTips {
+    width: 80%;
+    margin: 0 auto 2%;
+    font-size: 26px;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+.modal .dialog .dialog-content .award-keyTips {
+    width: 100%;
+    margin: 9% auto;
+    font-size: 18px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.modal .dialog .dialog-content .input-box {
+    position: absolute;
+    width: 86%;
+    left: 7%;
+    bottom: 15%;
+    margin: 10px auto 0;
+}
+.modal .dialog .dialog-content .input-box h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin: 3px auto;
+}
+.modal .dialog .dialog-content .input-box .label {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.modal .dialog .dialog-content .input-box p {
+    width: 100%;
+    margin: 6px 0 0;
+}
+.modal .dialog .dialog-content .input-box span {
+    display: inline-block;
+}
+.modal .dialog .dialog-content .input-box input {
+    display: inline-block;
+    width: 89%;
+    padding: 0 22px;
+    line-height: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: #FFF!important;
+    background-color: #C3BEC2;
+    border-radius: 11px;
+    border: none;
+}
+.modal .dialog .dialog-content .input-box input::-webkit-input-placeholder {
+    color: #FFF !important;
+}
+.modal .dialog .dialog-content .info-box {
+    text-align: left;
+    width: 88%;
+    margin: 6% auto 0;
+    font-size: 15px;
+    line-height: 30px;
+    color: #FFF;
+}
+.modal .dialog .btn-lottery {
+    display: block;
+    width: 184px;
+    height: 53px;
+    margin: 0 auto;
+    background: #FFA837;
+    border-radius: 30px;
+    font-size: 24px;
+    line-height: 53px;
+}
+.modal .dialog .btn-lottery-box {
+    position: absolute;
+    bottom: 6%;
+    left: 0;
+    right: 0;
+}
+.modal .dialog .btn-lottery-box .btn-lottery {
+
+}
+.modal .dialog .award-img-box {
+    position: relative;
+    width: 100%;
+}
+.modal .dialog .award-img-box .award-img {
+    position: relative;
+    z-index: 2;
+}
+.modal .dialog .award-img-box .icon-paper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation-name: paper;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    z-index: 1;
+}
+.modal .dialog .dialog-content .icon-ok {
+    width: 52%;
+    margin: 0 auto 1%;
+}
+.modal .dialog .dialog-content .qrcode-tips {
+    font-size: 15px !important;
+    color: #FFF !important;
+    font-weight: normal !important;
+    color: #F5F5F5;
+    margin-bottom: 5%;
+}
+.modal .dialog .dialog-content .qrcode-box {
+    position: relative;
+    width: 82%;
+    margin: 0 auto 5%;
+    padding: 0 0 36px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+.modal .dialog .dialog-content .qrcode-box p {
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    left: 0;
+    bottom: 0;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #6b0001;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 6%;
+}
+.modal .dialog .btn-dialog-close {
+    display: block;
+    position: absolute;
+    top: -16px;
+    right: -8px;
+    width: 45px;
+    height: 45px;
+    background: url(../images/close.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999999999;
+}
+/* 通用弹层样式_E */
+
+/* 活动规则_S */
+#rule-dialog .rule-dialog{
+    position: absolute;
+    left: calc((100% - 481px)/2);
+    left: -webkit-calc((100% - 481px)/2);
+    top: calc((100% - 559px)/2);
+    top: -webkit-calc((100% - 559px)/2);
+    width: 481px;
+    height: 559px;
+    background: inherit;
+}
+#rule-dialog .dialog .dialog-content {
+    padding: 0 5%;
+    margin: 0 auto;
+    background: rgba(113, 0, 0, .5);
+    border: 1px solid #ff2222;
+    border-radius: 15px;
+}
+#rule-dialog .dialog .dialog-content h2 {
+    margin: 9% auto 4%;
+    font-size: 28px;
+    color: #ECD0D0;
+    border-bottom: 1px solid #ECD0D0;
+    padding-bottom: 2vh;
+}
+#rule-dialog .dialog .dialog-content h1 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 26px;
+    padding: 5px 0;
+}
+#rule-dialog .dialog .dialog-content .rule-content {
+    width: 100%;
+    height: 74%;
+    margin-top: 5%;
+    padding: 0 4%;
+    overflow: hidden;
+    overflow-y: scroll;
+    word-break: break-all;
+    text-align: left;
+    color: #ECD0D0;
+    font-size: 26px;
+    line-height: 40px;
+}
+/* 活动规则_E */
+
+/* 实物_S */
+.modal .shiwu-dialog .dialog-content .award-img,.modal .dhm-dialog .dialog-content .award-img,.modal .link-dialog .dialog-content .award-img{
+    height: 80%;
+    width: 86%;
+    position: absolute;
+    top: 16%;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: none;
+}
+.modal .dialog .dialog-content .info-box .info-address label{
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 75%;
+    vertical-align: top;
+}
+/* 实物_E */
+/* 卡劵_E */
+.modal .wxcard-dialog .dialog-content .award-img,.modal .redbag-dialog .dialog-content .award-img{
+
+}
+/* 卡劵_E */
+
+/* 兑奖码_S */
+.modal .dhm-dialog .dialog-content .tel{
+     font-size: 14px;
+     color: #fff;
+    margin: 25px auto 10px;
+ }
+.modal .dhm-dialog .dialog-content .tel .tel-img{
+    display: inline-block;
+    width: 9%;
+    padding-right: 5px;
+ }
+.modal .dhm-dialog .dialog-content h5{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+.modal .dhm-dialog .dialog-content .cc{
+    font-size: 15px;
+    color: #C5092B;
+    background: #E6E6E6;
+    border-radius: 5px;
+    padding: 10px 8px;
+    margin: 15px auto 25px;
+    width: 90%;
+}
+/* 兑奖码_E */
+
+/* 谢谢参与_S */
+.modal .thanks-dialog {
+    position: absolute;
+    width: 441px;
+    height: 613px;
+    left: calc((100% - 441px)/2);
+    left: -webkit-calc((100% - 441px)/2);
+    top: calc((100% - 740px)/2);
+    top: -webkit-calc((100% - 740px)/2);
+    background: url(../images/thanks-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+    z-index: 999;
+}
+.thanks-dialog h2{
+   font-size: 20px;
+    color: #fff;
+    margin-top: 15px;
+}
+.thanks-dialog h3{
+    font-size: 24px;
+    color: #C4C4C4;
+}
+.top-bar
+{
+    margin-top: 14%;
+}
+
+.thanks-dialog .icon-thanks:first-child{
+    position: absolute;
+    top: -324px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.thanks-dialog .icon-thanks{
+    width: 74%;
+    margin: 20% auto 5%;
+}
+
+.modal .thanks-dialog .btn-lottery {
+     background: url(../images/btn-back.png) no-repeat;
+     background-size: 100% 100%;
+ }
+/* 谢谢参与_E */

@@ -1,0 +1,96 @@
+body{
+  background: url(../images/record-bg.jpg) no-repeat;
+  background-size: cover;
+  background-color: #433553;
+}
+.content ul{
+	padding:0;
+}
+.content ul li{
+  list-style: none;
+  background-color: rgba(249,205,203,0.5);
+  margin: 5px 0;
+  padding: 4% 0;
+  height: 45px;
+  position: relative;
+  overflow: auto;
+}
+.content ul li img{
+  float: left;
+  max-height: 100%;
+  max-width: 12%;
+  margin-top: 4%;
+  margin-left: 2%;
+}
+.con{
+  padding-left: 5px;
+  float: left;
+}
+.content ul li .prname{
+  color: #c71817;
+  font-size: 18px;
+  margin: 2px 5px;
+  display: block;
+  position: relative;
+}
+.content ul li .prtime{
+  color: #5e5d5d;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin: 0 6px;
+  float: left;
+}
+.content ul li a{
+  width: 17%;
+  border-radius: 18px;
+  text-align: center;
+  padding: 3px;
+  color: #fff;
+  font-size: 14px;
+  vertical-align: -webkit-baseline-middle;
+  margin-right: 5px;
+  float: right;
+  position: relative;
+  top: 27%;
+}
+.content ul li .accept{
+  background: #c30000;
+}
+.content ul li .noaccept{
+  background: #5e5d5d;
+}
+.back{
+	
+  display: block;
+  background: red;
+  padding: 10px;
+  text-align: center;
+  margin: 5px 100px;
+  border-radius: 20px;
+  color: #fff;
+}
+.norecord{
+  text-align: center;
+  display: block;
+  font-size: 17px;
+}
+.qrcode img{
+  margin: 10px auto;
+}
+.qrsure-btn{
+  width: 60%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 35px;
+  background: #fe0000;
+  font-size: 14px;
+  color: #fff!important;
+  display: block;
+  margin: auto;
+}
+.qrtext{
+  margin: 20px;
+  text-align: center;
+}

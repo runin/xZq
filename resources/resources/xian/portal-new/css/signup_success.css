@@ -1,0 +1,89 @@
+html {
+	background: #F2D0DF;
+}
+.main {
+	margin: 0 auto 50px;
+	overflow-x: hidden;
+	font-size: 15px;
+}
+
+.tips {
+    padding: 35px 0 40px;
+	
+    background: #FFFFF1;
+}
+.tips:before {
+	content: '';
+	background: url(http://yao.holdfun.cn/portal/resources/portal/images/signup/smile.png) no-repeat 0 0;
+	background-size: 76px auto;
+	width: 76px;
+	height: 76px;
+	display: block;
+	margin: 15px 13px 0;
+}
+.tips .content {
+    margin-left: 110px;
+	
+    margin-top: -91px;
+    margin-right: 10px;
+}
+.tips p {
+    line-height: 30px;
+	
+}
+.tips strong {
+    color: #e62129;
+	
+    margin: 0 2px;
+}
+.ctrl {
+    text-align: center;
+	
+    margin-right: -10px;
+}
+.ctrl:before {
+	content: '';
+	background: url(http://yao.holdfun.cn/portal/resources/portal/images/signup/icon_bg.jpg) repeat-x 0 0;
+	background-size: 10px auto;
+	height: 5px;
+	display: block;
+}
+.ctrl a {
+    display: inline-block;
+	
+    vertical-align: middle;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    background: #E3467E;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.ctrl a:hover {
+    background: #D02763;
+	
+    color: #fff;
+}
+.ctrl .btn-backto {
+	
+}
+.ctrl .btn-share {
+    color: #E3467E;
+	
+    background: 0 none;
+    border: 1px solid #E3467E;
+    height: 43px;
+    line-height: 43px;
+    width: 148px;
+}
+.ctrl .btn-share:hover {
+    border: 0 none;
+	
+    height: 45px;
+    line-height: 45px;
+    width: 150px;
+}

@@ -1,0 +1,197 @@
+﻿body, html
+{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+
+.none
+{
+    display: none;
+}
+*
+{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    outline: 0 none;
+}
+
+.main
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url('../images/indexbg.jpg') no-repeat center center; 
+    background-size: cover;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+.icons
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 65%;
+}
+.participate
+{
+    width: 45%;
+    max-width: 200px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 65%;
+    margin: auto;
+}
+.close_rule
+{
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 25px;
+}
+.rule_centent
+{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height:85%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    word-wrap: break-word;
+    color:Gray;
+    overflow:auto;
+    padding:5px;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    font-size: 12px;
+    color: #caa672;
+    text-align: center;
+    z-index: 99;
+    height: 50px;
+}
+.footer_tip
+{
+    position:absolute;
+    top: 10px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    z-index:0;
+    height:50px;
+    margin:auto;
+
+}
+#div_subscribe_area {
+	position:relative;
+	bottom:0;
+	left:0;
+	width:100%;
+	height: 50px;
+	overflow: hidden;
+	z-index:9999999999999;
+
+}
+.rightpart
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 66px;
+}
+
+
+.pre_btn, .rule
+{
+    display: block;
+    float: left;
+    padding: 0px 8px;
+    border-radius: 20px;
+    background-color: Black;
+    color: #BCB9AD;
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.rule
+{
+    margin-top: 5px;
+}
+.middle_tip
+{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity:0;
+     
+}
+.middle_div
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    margin-left: -40%;
+    margin-top: -50%;
+}
+
+
+.guidance
+{
+    width: 100%;
+}
+.close
+{
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    width: 30px;
+}
+.sureBtn
+{
+    display: block;
+    position: absolute;
+    bottom: 11%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    left: 50%;
+    width: 140px;
+    margin-left: -70px;
+}
+.footer_tip
+{
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+    z-index: 0;
+    height: 30px;
+    margin: auto;
+    color: Black;
+}
+#div_subscribe_area
+{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    z-index: 9999999;
+}

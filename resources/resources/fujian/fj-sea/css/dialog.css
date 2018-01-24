@@ -1,0 +1,302 @@
+.modal {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/yao-bg.jpg) no-repeat;
+	background-size: 100% 100% ;
+	z-index: 100;
+	color: #fff370;
+	text-align: right;
+}
+.modal-rul{
+	background: none;
+}
+.modal .dialog{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow-y: auto;
+}
+.modal .btn-close{
+    position: absolute;
+    top: 10px;
+    right: 16px;
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: url(../images/icon-close.png) no-repeat;
+	background-size:26px ;
+}
+
+.not-lott,.lott{
+	width: 100%;
+	height: 100%;	
+}
+.goods{
+	text-align: center;
+}
+.goods .gift{
+	padding: 18% 16%;
+}
+.goods .gift img{
+	width: 100%;
+}
+.gift-text{ 
+	padding:10% 15% 0;
+	font-size: 14px;
+	text-align: center;
+}
+.gift-touch{ 
+	overflow: hidden;
+	text-align: center;
+	color: #fff;
+}
+.gift-text h2{
+	font-size: 14px;
+	color: #fff;
+	font-weight: normal;
+	text-align: left;
+}
+.gift-touch li{ 
+	padding-left: 20%;
+	color: #fff;
+	margin-top: 10px;
+	position: relative;
+}
+.gift-touch li span{ 
+	display: inline-block;
+	width: 20%;
+	text-align: left;
+	font-size: 14px;
+	line-height: 30px;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	
+}
+.text-a{ 
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding: 0px;
+	border: 1px #ccc solid;
+	border-radius: 3px;
+	text-indent: 5px;
+	margin-left: -10px;
+}
+input.btn-a{ 
+    display: inline-block;
+	width: 40%; 
+	height: 40px;
+	border-radius: 20px;
+	background: transparent;
+	border: 1px solid #fff;
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+	outline:none;
+	margin-top: 10px;
+}
+.gift-hongbao{
+	position: relative;
+	padding: 20% 20%;
+	text-align: center;
+}
+.gift-hongbao img{
+	width: 100%;
+}
+.btn-box-b{
+	padding:10% 15%;
+	text-align: center;
+}
+.btn-box-b .confirm{
+  display: block;
+  margin: 10px auto;
+  color: #f39003;
+}
+.gift-hongbao span{
+	position: absolute;
+	top: 35%;
+	left: 0;
+	width: 100%;
+	text-shadow:3px 0 0 #e02e2e;
+	text-align: center;
+	font-size: 18px;
+	color: #fffda6;
+}
+.gift-hongbao span label{
+	font-size: 26px;
+}
+.btn-b{ 
+	width: 35%; 
+	height: 35px;
+	border-radius: 5px;
+	border: none;
+	background: #da2323;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	outline:none;
+}
+
+.not-lott {
+	text-align: center;
+	color: #fff;
+}
+.not-lott .nothing{
+	width: 50%;
+    text-align: center;
+    padding: 16% 0;
+    margin: 0 auto;
+}
+.not-lott .gift-text{
+	  padding: 10% 12% 0; 
+}
+.not-lott .gift-text img{
+	width: 100%;
+}
+.not-lott .gift-text h1{
+	font-size: 14px;
+	line-height: 36px;
+}
+
+.rule-dialog {
+	background: url(../images/intro-bg.png)no-repeat;
+	background-size: 100% 100%;
+    color: #000000;
+    height: 90%;
+    text-align: left;
+    overflow: hidden;
+}
+.rule-dialog h2{
+	padding:0 6%;
+	height: 50px;
+	line-height: 50px;
+	border-bottom:2px solid  #818181;
+	font-weight: bold;
+	font-size: 15px;
+}
+.rule-dialog .rule-con{
+	padding:4% 6%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	word-wrap: break-word;
+	font-size:12px ;
+}
+
+.dialog-copyright {
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+    right: 5px;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    height: 60px;
+    background: url(../images/dialog-copyright.png) no-repeat center;
+    background-size: 80%;
+}
+
+
+
+/*加载按钮 -s*/
+.loader{
+    margin: 0 auto;
+    width: 72px;
+}
+.loader span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background: #F26C0D;
+    border-radius: 50px;
+    margin: 0 2px;
+    -webkit-animation: loader 1s infinite alternate;
+    -moz-animation: loader 1s infinite alternate;
+}
+.loader span:nth-of-type(2) {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+.loader span:nth-of-type(3) {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+}
+.loader span:nth-of-type(4) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+.loader span:nth-of-type(5) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+}
+@-webkit-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+@-moz-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+.none{
+	display: none;
+}
+.hidden{
+	visibility: hidden;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.goods .gift {
+	  padding: 14% 16%;
+	}
+	.gift-text {
+	  padding: 2% 15% 0;
+	  font-size: 14px;
+	  text-align: center;
+	}
+	
+}
+/*iphone5*/
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+ 	
+}
+/*dai*/
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.gift-text {
+	  padding: 9% 15% 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

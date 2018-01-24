@@ -1,0 +1,11 @@
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/0.jpg'></div>" + "中国好舌头，好有口福呀，我也要呲");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/1.jpg'></div>" + "华少把中国系列承包了吗");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/2.jpg'></div>" + "多么有使命感的节目，挺！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/3.jpg'></div>" + "油花四溅、口水直流啊～～～");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/5.jpg'></div>" + "吃吃吃 买买买->老板内心os");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/6.jpg'></div>" + "看饿了央视负责吗");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/7.jpg'></div>" + "好复杂的做法");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/8.jpg'></div>" + "这节目看完，我精神一晚上。");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/7.jpg'></div>" + "一说到美食，都好活跃啊，吃货果然多。");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/11.jpg'></div>" + "画面太美，而我只能默默吃方便面充饥");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/12.jpg'></div>" + "深夜食堂真人秀么");

@@ -1,0 +1,125 @@
+惊喜连连公共TA用QQ:3217156826 key:holdfun.cn
+世锦赛公共TA用  QQ:3322686023 key:holdfun.cn
+
+摇号：440301bob
+
+查询用户总积分排行：http://yao.holdfun.cn/boss/wiki/30ad752d4ff742c885cad6ef57692cfd
+
+针对新授权增加了一个方法delQueStr可以用已经存在的方法代替
+add_param(href, 'openid', null, true);
+
+w.openid = 'oioBhs12ArToqLr8V_IE9ZSx4jpY';
+
+
+前端开发实习生要求：
+
+
+技能要求
+1、热衷于互联网，对新奇事物充满好奇心
+2、对HTML、CSS、JS有系统认识，有搭建网站经验者优先
+3、扎实的计算机基础知识，如计算机网络、数据库、操作系统等
+4、对Photoshop有一定了解，掌握简单切图技能
+
+
+testzqtv.mysql.rds.aliyuncs.com
+tv_test
+tv_test
+
+http://test.holdfun.cn/portal/api/common/test?serviceNo=tv_szws_street&tvStationUuid=e41875a9dfef45adb7281c025197a957&dev=tv_szws_street
+
+http://101.200.130.169/portal/api/common/friend?roi=500&foi=400
+
+
+
+喜乐街 cctv/joy-street
+暑期我最乐 fujian/fj-summer-holidays
+芝麻开门  jiangsu/js-zhimakaimen
+
+虎妈猫爸 szws/szws-parents
+云南卫视首页 yunnan/yn-firstpage
+农业全天互动 cctv7/cctv-agriculture
+
+
+微信公众号：
+登录地址：mp.weixin.qq.com
+新掌趣账号/密码：xzq.service@holdfun.cn/holdfun2014 
+微信支付商户号（接口文档中的商户号MCHID）：10030897 
+商户平台登录帐号： 10030897@10030897 
+商户平台登录密码： FPaQSbE1br 
+
+
+ali:
+
+holdfun2014
+xzq2014205
+电商：
+rdsjy6xgm2ga581ubo2s.mysql.rds.aliyuncs.com:3306
+tv/zq_2014_tv
+
+@Raul 二维码地址：http://cdn.holdfun.cn/mpAccount/resources/pages/5fa343ffe2d740dbb204904d3fac172c/index.html
+
+
+hunan
+hunany
+
+182.92.185.131
+root/2014Zq205
+
+C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseSVN\bin;D:\Program Files\nodejs\;C:\Python27\;
+
+python sqlmap.py -u "http://test.holdfun.cn/eportal/api/buyer/shopitem/search?W.callbackItemSearchHandler=jQuery111303159555345773697_1442232700715&keyword=io&su=6236bebfdd234a6096bd7bb3231c9f8b&pa=1&ps=10&_=1442232700716" -f --banner --dbs --users
+
+
+
+1、core.js中函数详解
+2、toUrl
+
+192.168.0.185
+
+/alidata/server/tomcat/webapps/ROOT
+易供服务器ip: 121.40.87.76     账号/密码：root/Gse22671991
+
+
+w.userUuid = 'ac13cddb37624a248d359a96d51e54c9';
+
+w.codeUserUuid = '65bc9f61b1d7ca024c1b8a95af150187';
+
+
+公众号平台：123.57.5.157/mpAccount/
+
+趣淘
+shangcheng@holdfun.cn
+holdfun2014
+
+svn
+svn://svn.holdfun.cn/yaotv/trunk/
+endless-walt2015
+
+
+<div class="form-item" id="videoUrlId">
+	<label class="label-txt">视频地址：</label>
+	<input type="text" class="input-txt" maxlength="255" name="videoUrl" id="videoUrl" placeHolder="请输入视频url地址" value="https://v.qq.com/iframe/player.html?vid=p0144vda8ze&auto=0"/>
+	<span id="imgsTemp3"></span>
+	<span class="span-tip" >注： 不同组合视频请替换vid即可</span>
+	<label class="error" style="display: none;" for="videoUrl"></label>
+</div>
+
+030800106340580
+
+济源旧：0ebbd61d3ad301908be34c39241fde60
+
+3014352596@qq.com
+Jiyuan666
+
+
+统计分析：
+GA：holdfun2014@gmail.com / holdfun2014205
+TA: 248747210@qq.com
+CNZZ: holdfun2014@gmail.com / holdfun2014205
+
+
+制作好的贺卡：334d93cc85c04813bcceddf31d9ebaf5；
+
+江苏后台
+18951680035@189.cn
+12was!@#

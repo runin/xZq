@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>超级旅行团</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/talk.css" />
+	
+</head>
+<body class="now">
+	<header class="preme">
+        <a href="index.html" class="back-btn" data-collect="true" data-collect-flag="ly-tour-talk-back" data-collect-desc="聊天室页-返回首页按钮"></a>
+	</header>
+
+    <section class="talkroom" id="talkroom">
+        <div class="talk-title">
+            <img id="title-img" src="images/head.jpg">
+            <div class="content">
+                <p id="title-per" class="per"></p>
+                <p id="title-que" class="que"></p>
+            </div>
+        </div>
+    </section>
+    <div id="body" class="body">
+        <ul id="comment_list" class="content">
+        </ul>
+    </div>
+    <p class="mesg-tip" id="mesg-tip">有新消息，点击查看</p>
+	<footer class="footer">
+			<input id="input_text" type="text" placeholder="说说您的看法" />
+			<a id="input_submit" data-collect="true" data-collect-flag="ly-tour-talk-submit" data-collect-desc="聊天室页-评论发送按钮">
+				发送
+			</a>
+	</footer>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/scrollTo.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="./js/app/talk.js"></script>
+	
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

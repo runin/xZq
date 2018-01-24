@@ -1,0 +1,39 @@
+body {
+	background: url(../images/bg-body.jpg) repeat-y center 0;
+	background-size: cover;
+}
+.main {
+	margin: 0 auto;
+	padding-top: 70px;
+}
+.lingjiang-info {
+	text-align: center;
+	font-size: 24px;
+	color: #FF1127;
+	margin: 50px 0;
+}
+p.lingjiang-tip {
+	font-size: 16px;
+	padding: 0 50px 40px;
+	line-height: 23px;
+	text-align: center;
+}
+p.lingjiang-tip:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/smile.png) no-repeat 0 0;
+	background-size: 22px auto;
+	width: 22px;
+	height: 22px;
+	margin: -1px 0 0 6px;
+}
+.dst-logo{
+	background: url(../images/logo.png) no-repeat 0 0;
+	background-size: 58px auto;
+	width: 68px;
+	height: 58px;
+	position: absolute;
+	top: 10px;
+	left: 6px;
+}

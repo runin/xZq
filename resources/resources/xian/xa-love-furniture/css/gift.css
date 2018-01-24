@@ -1,0 +1,172 @@
+html{
+	height: 100%;
+}
+body{
+	background: url(../images/gift-top.png) no-repeat 0 0,
+	url(../images/gift-body.jpg) repeat-y 0 0;
+	background-size: 100%;
+	max-height: 100%;
+}
+.main {
+	margin: 25% auto 0;
+	font-size: 15px;
+	padding-bottom: 30px;
+}
+/*.gift-timeline {
+    position: relative;
+	
+    padding-left: 28px;
+}
+.gift-timeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 5px;
+	background: #074183;
+}
+.gift-timeline li {
+    padding-left: 27px;
+	
+    margin-top: 17px;
+    position: relative;
+}
+.gift-timeline li:last-child:before {
+	content: '';
+	display: block;
+	width: 5px;
+	height: 100%;
+	background: #074183;
+	position: absolute;
+	left: 0;
+	top: 0;
+}*/
+.gift-time {
+    color: #FA0000;
+    padding-top: 5px;
+}
+.gift-icon {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #527297;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    background: #fff;
+}
+.gift-icon.gift-selected:before {
+	content: '';
+	background: url(../images/confir.png) no-repeat;
+	background-size: 20px auto;
+	width: 20px;
+	height: 77px;
+	display: block;
+	margin-left: 0px;
+	margin-top: 5px;
+}
+.gift-content {
+
+	border-radius: 8px;
+	padding: 4px 14px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.gift-content img{
+	width: 94%;
+	display: block;
+	margin: 0 auto;
+}
+.gift-content h2 {
+    color: #000;
+    border-bottom: 1px solid #E7E7E7;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+.gift-content p {
+    color: #888888;
+	
+    line-height: 24px;
+}
+p.gift-name{
+	line-height: 30px;
+	color: #000;
+	border-bottom: 1px solid #dadada;
+	margin-bottom: 10px;
+}
+.btn-loadmore{
+    background: #D2CCC7;
+}
+.no-record{
+	line-height: 200px;
+	text-align: center;
+	font-size: 18px;
+}
+.btn-red {
+	width: 60%;
+	margin: 10px auto 0;
+	background: #f9e249;
+	border-radius: 6px;
+	height: 36px;
+	line-height: 36px;
+	color: #8f010f;
+	font-size: 15px;
+	box-shadow: 1px 6px 2px #db9a00;
+}
+.spinner{
+	position: relative;
+	margin: 0 auto;
+}
+.copyright {
+	padding: 20px;
+	height: inherit;
+}
+.copyright p{
+	line-height: 20px;
+}
+h1{
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	margin: 50px auto 30px;
+}
+.confirm{
+	padding: 30px 0;
+	border-top: 1px solid #517fc9;
+	border-bottom: 1px solid #517fc9;
+	margin: 20px auto;
+	text-align: center;
+	width: 208px;
+}
+.confirm-copyright{
+	position: absolute;
+	bottom: 7px;
+}
+.confirm-btn{
+	width: 50%;
+	margin-top: 40px;
+}
+.code {
+	width: 45%;
+	margin: 25px auto 0;
+	display: block;
+}
+.code-red{
+	font-size: 12px;
+	font-weight: bold;
+	color: red;
+	text-align: center;
+}
+footer{
+	background: url(../images/gift-bottom.png) no-repeat;
+	background-size: cover;
+	padding-top: 6px;
+}
+footer .btn-red{
+	width: 30%;
+}
+footer.position{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no" />
+<title>CCTV7乡约</title>
+<link rel="stylesheet" href="css/yaoyiyao.css" />
+</head>
+
+<body>
+<!--摇一摇声音-->
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio>
+<audio preload="auto" id="audio-c" src="images/audio-c.mp3"></audio>
+<div class="bangtuan">
+  <!--摇一摇红包-->
+  <section id="yao-redbao" class="page">
+    <div class="yao-redbao">
+      <p class="yao-tips none"><span>哎呀，就差一点点啦!</span></p>
+      <img src="images/yaoyiyao.png" /></div>
+    <div class="yao-text">
+      <p><span>活动活动 再摇一次</span></p>
+    </div>
+    <div class="countdown-body clear">
+      <div class="zzs-logo fl-l">
+        <img src="images/zzs-logo.png" border="0">
+      </div>
+      <div class="countdown-box fl-r">
+        <p class="countdown-tips">提醒您，距离本轮摇红包结束还有</p>
+        <div class="countdown-time"></div>
+        <p class="countdown-copyright clear">本活动由深圳爱维艾夫医院管理有限公司提供红包赞助</p>
+      </div>
+      <img src="images/getred-btn.png" border="0" style="height:0 !important;width:0 !important;opacity:0 !important;">
+    </div>
+    <!-- <a id="red" style="display:block;width:80px;height:35px;line-height:35px;text-align:center;font-size:18px;background:red;color:#FFF;">red</a> -->
+  </section>
+	
+  <!--中奖-->
+  <section id="yao-gift" class="page none"> 
+    <!--ITV-->
+    <div class="itv none">
+      <div class="gift"><img  /></div>
+      <p class="gift-text"></p>
+    </div>
+    <!--流量包-->
+    <div class="liuliang none">
+      <div class="flow"><img  /></div>
+      <p class="gift-text"></p>
+    </div>
+    <!--红包-->
+    <div class="redhongbao none">
+        
+      <div class="gift-hongbao">
+      <p class="hongbao-tips"></p>
+      <img class="redbag-mask" />
+      <img class="redbag-cover" src="images/red-color.png" />
+      </div>
+        <p class="zzs-tips">本活动由深圳爱维艾夫医院管理有限公司提供红包赞助</p>
+      <div class="btn-box-b btn-m">
+        <a class="btn-b" id="btnBoxc" value="确 认" data-collect="true" data-collect-flag="fj-gift-redpack-sbt" data-collect-desc="领取红包" ></a>
+      </div>
+    </div>
+    
+    <!--填写-->
+    <section id="gift-form" class="none">
+      <ul class="gift-touch">
+        <li class="title">请填写您的手机号，以便顺利领奖</li>
+        <li><span>姓名</span>
+          <input name="" type="text" id="textname" class="text-a" placeholder="请填写真实姓名" />
+        </li>
+        <li><span>电话</span>
+          <input name="" type="number" id="textphone" class="text-a" placeholder="请填写真实电话号码" />
+        </li>
+        <li class="address"><span>地址</span>
+          <input name="" type="text" id="textaddress" class="text-a" placeholder="请如实填写收货地址" />
+        </li>
+      </ul>
+      <div class="btn-box-a">
+        <input name="" type="button" class="btn-a" id="btnBoxa" value="预 览" data-collect="true"
+	       data-collect-flag="fj-gift-sbt"
+	       data-collect-desc="提交领奖" />
+      </div>
+    </section>
+    
+    <!--确认-->
+    <section id="gift-qr" class="none">
+      <ul class="gift-touch">
+        <li>姓名：
+          <label id="touchName"></label>
+        </li>
+        <li>电话：
+          <label id="touchPhone"></label>
+        </li>
+        <li id="qrAddress">地址：
+          <label id="touchAddress"></label>
+        </li>
+      </ul>
+      <div class="btn-box-a">
+        <input name="" type="button" class="btn-a" id="btnBoxb" value="确 定" data-collect="true"
+	       data-collect-flag="fj-gift-sbt"
+	       data-collect-desc="提交领奖" />
+      </div>
+    </section>
+  </section>
+  
+</div>
+  <!--copyright-->
+  <footer class="copyright"></footer>
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="http://yaotv.qq.com/c/=/shake_tv/include/js/jsapi_authorize.js,/shake_tv/include/js/jsapi_subscribe.js,/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	<script src="./js/shake.js"></script>
+	<script src="js/app/yaoyiyao.js"></script>
+</body>
+</html>

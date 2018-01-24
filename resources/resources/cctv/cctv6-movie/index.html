@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>快乐英语电影季</title>
+	<link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+    <img src="images/b1.jpg" class="preload">
+    <img src="images/b2.jpg" class="preload">
+    <img src="images/f2.png" class="preload">
+    <img src="images/f3.png" class="preload">
+    <img src="images/f4.png" class="preload">
+    <img src="images/f5.png" class="preload">
+	<header>
+		<img class="tv" src="./images/tv.png">
+		<a href="javascript:void(0);" class="none" id="btn-reserve" data-collect="true" data-collect-flag="btn-reserve" data-collect-desc="预约按钮">预约下集</a>
+		<a href="javascript:void(0);" id="btn-rule" data-collect="true" data-collect-flag="btn-rule" data-collect-desc="规则按钮">活动规则</a>
+	</header>
+	<section class="container">
+		<img class="mask2" src="./images/mask2.png">
+		<img class="logo" src="./images/logo.png">
+		<a href="javascript:void(0);" id="btn-go" data-collect="true" data-collect-flag="btn-go" data-collect-desc="进入互动">进入互动</a>
+	</section>
+	<footer>
+		<p class="copyright"></p>
+		<section id="div_subscribe_area" class="div_subscribe_area_class preload"></section>
+	</footer>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script>
+</body>
+</html>

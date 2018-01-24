@@ -1,0 +1,179 @@
+
+body{
+    background: #AB0617 url(../images/bg-body.jpg) no-repeat;
+    background-size: cover;
+}
+.main {
+	margin: 0 auto;
+	/*padding: 10px 0px 0px;*/
+	color: #fff;
+}
+.sign-logo{
+	margin: 4% auto 0;
+	width: 90%!important;
+	display: block;
+}
+.sign-logo-div{
+	height: 23%;
+}
+.lottery {
+    position: relative;
+	width: 90%;
+	height: 58%;
+    margin: 0px auto;
+    overflow: hidden;
+	/*background: url(../images/fudai.png) no-repeat;
+	background-size: cover;*/
+}
+.btn-lottery {
+    position: absolute;
+    left: 95px;
+    top: 93px;
+    width: 66px;
+    height: 66px;
+}
+.btn-img{
+	position: absolute;
+    top: -16px;
+}
+.box {
+    margin: 0 40px;
+    padding-bottom: 10px;
+	
+}
+.box h2 {
+	/*margin: 6px 0px 0px;*/
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+.box h3 {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.box label{
+	display: inline-block;
+	width: 18%;
+	line-height: 30px;
+	vertical-align: -4px;
+	font-size: 12px;
+    color: #fff;
+}
+.box input {
+    margin-top: 4px;
+    width: 74%;
+    height: 30px;
+    border: 1px solid #CCCCCC;
+    padding: 0 2px;
+    font-size: 12px;
+	color: #000;
+}
+.group-btn{
+	width: 100%;
+	text-align: center;
+}
+.btn-red {
+	display: inline-block;
+	width: 60%;
+	margin:4px auto 0;
+	background: #f9e249;
+	border-radius: 6px;
+	height: 32px;
+	line-height: 32px;
+	color: #8f010f;
+	font-size: 15px;
+	box-shadow: 1px 6px 2px #db9a00;
+}
+.address{
+	display: inline-block;
+	color: #fff;
+	width: auto;
+	line-height: 36px;
+	font-size: 12px;
+}
+
+.win_prize_tip{
+    color: #3e3e3e;
+    font-size: 12px;
+}
+
+.loading-btn{
+    background: #ccc;
+    color: #fff;
+    
+}
+
+.show{
+    display: block!important;
+}
+
+.thank{
+    text-align: center;
+}
+.btn-back-simple{
+	color: #fff;
+	text-decoration: underline;
+}
+.reposit{
+    background: #B82A3A url(../images/award-body.jpg) no-repeat;
+    background-size: 100%;
+}
+img.two{
+    padding: 5px 0!important;
+}
+.box-phone{
+    min-height: 89%;
+    margin: 0!important;
+    position: absolute;
+    top: 11%;
+    padding-bottom: inherit;
+}
+.box-phone .top{
+    height: 45%;
+}
+.box-phone .fudai{
+    text-align: center;
+    margin-bottom: -22%;
+    position: relative;
+    z-index: -1;
+}
+.box-phone .fudai img{
+    width: 85%;
+}
+.box-phone .text{
+    background: url("../images/award-bg.png") no-repeat;
+    background-size: 100%;
+    padding: 39% 0 0 0;
+    /*margin-top: -6px;*/
+    height: 55%;
+}
+.award-div{
+    /*position: relative;
+    top: -67px;*/
+}
+.award-div-con{
+    padding: 0 12%;
+    margin-bottom: 20px;
+}
+.award-div img{
+    margin: 0 -12%;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.award-div p div{
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.copyright {
+    position: absolute;
+    bottom: 0;
+    height: 26px;
+    line-height: 12px;
+}
+.nei-lottery{
+    position: inherit;
+}

@@ -1,0 +1,113 @@
+/*********************** ��ӭҳ ****************************/
+.page {
+	width: 100%;
+	height: 100%;
+}
+
+#page-1 {
+	background: url(http://cdn.holdfun.cn/ahtv/images/bg-card.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.index-logo{
+	background: url(http://cdn.holdfun.cn/ahtv/images/max_logo.png) no-repeat center 0;
+	background-size: contain;
+	width: 70%;
+	height: 35%;
+	margin: 0 auto;
+	position:relative;
+	top:20px;
+}
+.index-list{
+	height:100%;
+	width: 100%;
+	position:relative;
+	top:8%;
+
+}
+.index-star{
+	background: url(http://cdn.holdfun.cn/ahtv/images/stars.png) no-repeat center 0;
+	background-size: cover;
+	width: 100%;
+	height: 23%;
+
+}
+.index-mes{
+	background: url(http://cdn.holdfun.cn/ahtv/images/message.jpg) no-repeat center 0;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 20%;
+}
+
+.lottery-guide-top{
+		background: url(../images/ah_tishi.png) no-repeat center 0;
+		background-color:red;
+		background-size: contain;
+		width: 100%;
+		height: 60px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+}
+.copyright
+{
+position:absolute;
+margin:0 auto;
+bottom:0%;
+color:#e0140b;
+z-index:90;
+line-height:20px;
+text-align:center;
+font-size:11px;
+width:100%;
+}
+
+.btn {
+	height: 38px;
+	line-height: 38px;
+	background: #FF3535;
+	font-size: 12px;
+}
+
+
+@-webkit-keyframes 'drawcurtain' {
+		 0% {
+			width:100%;
+		 }
+		 20%{
+			 width:80%;
+		 }
+		 40% {
+			width:60%;
+		 }
+		 60% {
+			width:40%;
+		 }
+		 80%{
+			 width:20%;
+			}
+		 100% {
+			width:0%;
+		 }
+}
+
+@-webkit-keyframes 'clickcurtain' {
+		 0% {
+			bottom:9%;
+		 }
+		 20%{
+			 bottom:7%;
+		 }
+		 40% {
+			bottom:8%;
+		 }
+		 60% {
+			bottom:5%;
+		 }
+		 80%{
+			 bottom:7%;
+			}
+		 100% {
+			bottom:4%;
+		 }
+}
+

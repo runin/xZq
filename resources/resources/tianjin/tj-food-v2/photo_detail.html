@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>食全食美</title>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/photo_detail.css" />
+</head>
+<body data-share="share" id="share">
+	<div class="main">
+		<a href="photo.html" class="back-btn none">点此返回</a>
+		<div class="banner">
+			<div class="topic-head">
+				<img src="./images/wait.png" border="0">
+				<div class="topic-title">
+					<div class="topic-name"></div>
+					<div class="topic-desc"></div>
+					<div class="topic-day">离图片征集结束还有<label>0</label>天</div>
+				</div>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="card"></div>
+			<div class="comments">
+				<p class="com-head"><label>0</label>人发表评论</p>
+				<div class="list"><ul></ul></div>
+				<a class="gotop none"></a>
+			</div>
+		</div>
+	</div>
+	<div class="submit">
+        <input type="text" id="comments-info" placeholder="发表你的评论...">
+        <input type="submit" id="send" value="发送" data-collect="true" data-collect-flag="gz-live-comments-send" data-collect-desc="发送">
+	</div>
+	<a href="javascript:;" class="btn-goback" id="btn-goback"><img src="./images/btn-back.png"></a>
+	
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/xss.min.js"></script>
+	<script src="./js/plugins/swiper.min.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="./js/app/photo_detail.js"></script>
+</body>
+</html>

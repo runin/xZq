@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>超级旅行团</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/qiandao.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+
+</head>
+<body id="bd">
+<a href="" id="mao"></a>
+<div class="run-bg none">
+    <div class="fadeInLeft">
+        <img class="run-air fadeOutLeft" src="images/run-air.png">
+        <img class="run-car" src="images/run-car.png">
+    </div>
+</div>
+<div class="bg">
+        <section class="bg1">
+            <a href="index.html" data-collect="true" data-collect-flag="ly-tour-qiandao-back" data-collect-desc="签到页-返回首页按钮" class="back-btn">返回首页</a>
+            <a href="postcard.html" class="post-btn" data-collect="true" data-collect-flag="ly-tour-qiandao-postcard" data-collect-desc="签到页-去寄明信片按钮">去寄明信片</a>
+            <a class="ddtj none" id="ddtj" href="" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+            <img src="images/bg1.jpg">
+            <img class="view" src="images/view/view1.png">
+            <img class="car" src="images/car.png">
+            <a href="talk.html" class="zhouyi-btn none"></a>
+        </section>
+
+        <section class="bg2">
+            <img src="images/bg2.jpg" id="bg2" >
+            <img class="view" src="">
+            <img class="flag bounceInDown none" src="images/flag.png">
+            <img class="car none" src="images/car.png">
+            <span class="qiandao gray" data-collect="true" data-collect-flag="ly-tour-qiandao-sign2" data-collect-desc="签到页-周二签到按钮">周二签到</span>
+            <span class="content rollIn-left none"></span>
+        </section>
+
+        <section class="bg3">
+            <img src="images/bg3.jpg" id="bg3" >
+            <img class="view" src="">
+            <img class="flag bounceInDown none" src="images/flag.png">
+            <img class="car none" src="images/car.png">
+            <span class="qiandao gray" data-collect="true" data-collect-flag="ly-tour-qiandao-sign3" data-collect-desc="签到页-周三签到按钮">周三签到</span>
+            <span class="content rollIn-right none"></span>
+        </section>
+
+        <section class="bg4">
+            <img src="images/bg4.jpg" id="bg4">
+            <img class="view" src="">
+            <img class="flag bounceInDown none" src="images/flag.png">
+            <img class="car none" src="images/car.png">
+            <span class="qiandao gray"  data-collect="true" data-collect-flag="ly-tour-qiandao-sign4" data-collect-desc="签到页-周四签到按钮">周四签到</span>
+            <span class="content rollIn-left none"></span>
+        </section>
+        <section class="bg5">
+            <img src="images/bg5.jpg" id="bg5" >
+            <img class="view" src="">
+            <img class="flag bounceInDown none" src="images/flag.png" >
+            <img class="car none" src="images/car.png">
+            <span class="qiandao gray" data-collect="true" data-collect-flag="ly-tour-qiandao-sign5" data-collect-desc="签到页-周五签到按钮">周五签到</span>
+            <span class="content rollIn-right none"></span>
+        </section>
+        <section class="bg6">
+            <img src="images/bg6.jpg" id="bg6" >
+            <img class="view" src="">
+            <img class="flag bounceInDown none" src="images/flag.png">
+            <img class="car none" src="images/car.png">
+            <span class="qiandao gray " data-collect="true" data-collect-flag="ly-tour-qiandao-sign6" data-collect-desc="签到页-周六签到按钮">周六签到</span>
+            <span class="content rollIn-left none"></span>
+        </section>
+        <section class="bg7">
+            <img src="images/bg7.jpg" id="bg7" >
+            <img class="view" src="">
+            <img class="flag bounceInDown none" src="images/flag.png">
+            <img class="car none" src="images/car.png">
+            <span class="qiandao gray" data-collect="true" data-collect-flag="ly-tour-qiandao-sign7" data-collect-desc="签到页-周日签到按钮">周日签到</span>
+            <span class="content rollIn-right none"></span>
+        </section>
+        <div class="bottom-btn">
+            <a href="question.html"  data-collect="true" data-collect-flag="ly-tour-qiandao-question" data-collect-desc="签到页-测试题按钮" >贴心小测试</a>
+            <a href="line.html"  data-collect="true" data-collect-flag="ly-tour-qiandao-line" data-collect-desc="签到页-线路按钮" >本期线路一睹为快</a>
+        </div>
+        <p class="copyright"></p>
+    </div>
+	
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+    <script src="js/app/dialog.js"></script>
+    <script src="js/app/qiandao.js"></script>
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

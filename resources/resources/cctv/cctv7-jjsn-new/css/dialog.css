@@ -1,0 +1,110 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+  z-index: 100;
+  overflow: hidden;
+}
+.modal .btn-close {
+	 position: absolute;
+    background: #02588e url(../images/close-icon.png) center no-repeat;
+	background-size:40% auto;
+    display: block;
+    width: 32px;
+    height: 32px;
+    z-index: 10000;
+    top:  0px;
+    right: 0px;
+    border-radius: 50%;
+}
+.dialog {
+  position: absolute;
+  color: #D6305A;
+  border-radius: 6px;
+  z-index: 1000;
+  overflow: hidden;
+}
+.dialog-assist{
+	width: 100%;
+	height: 100%;
+}
+.rule-dialog .dialog-assist{
+	background:#02588e;
+}
+.rule-dialog {
+	position: absolute;
+	color:#fff;
+	width: 90%;
+	height: 76%;
+	left: 5%;
+	top:12%;
+	padding: 16px;
+}
+
+.rule-dialog h1 {
+	color:#FFF;
+	padding-bottom: 30px;
+	text-align:center;
+	font-size:17px;
+	width: 100%;
+	text-shadow:2px 2px 4px #000000;
+	letter-spacing: 2px;
+	padding-bottom: 8px;
+	position: relative;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.rule-dialog .content {
+	position:static;
+	margin:0 auto;
+	padding:10% 0% 4%;
+	width:88%;
+	height:100%;
+}
+.rule-dialog .rule {
+	font-size:14px;
+	line-height:24px;
+	height:80%;
+	overflow-y:auto;
+	color:#FFF;
+	padding: 0 2%;
+	margin-top: 6%;
+	
+}
+.rule-dialog p {
+	line-height:16px;
+}
+
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 550px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+
+
+
+/*dai*/
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait)
+{
+
+}

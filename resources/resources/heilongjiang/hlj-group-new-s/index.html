@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>欢乐英雄转</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/index.css?V=1.3" />
+</head>
+
+<body>
+<!--摇一摇声音-->
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio>
+<audio preload="auto" id="audio-c" src="images/audio-c.mp3"></audio>
+
+<!--摇一摇红包-s-->
+<section class="home-box">
+  <div id="yao-redbao" class="page">
+    <div class="main-top m-t-b">
+      <div class="fjtv-logo zoomIn">
+        <img src="images/logo.png" />
+        <h1>唱响黑土 转遍龙江</h1>
+        <a href="#" class="outer none" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+      </div>
+    </div>
+    <div class="main-foot m-f-b">
+      <input type="button" class="none" id="test" value="test">
+      <div class="yao-text">
+        <p class="texta"><span>抢红包 抢大奖 和家人一起摇一摇</span></p>
+        <p class="none textb"><span>啊哦，差一点就抢到了，继续加油</span></p>
+      </div>
+      <div class="countdown none">
+        距离本次抢红包结束还有<span class="detail-countdown"></span>
+      </div>
+    </div>
+  </div>
+</section>
+<!--摇一摇红包-e-->
+
+<!--中奖-s-->
+<section id="yao-gift" class="page ">
+  <!--红包-s-->
+  <div class="redhongbao none" id="red-pack">
+    <div class="gift-hongbao">
+      <img src="" />
+    </div>
+    <div class="btn-box-b btn-m">
+      <a name="" type="button" class="btn-b" id="btnBoxc" data-collect="true"
+             data-collect-flag="hlj-hreo-index-redpack-btn"
+             data-collect-desc="欢乐英雄转领红包">确 认</a>
+    </div>
+  </div>
+  <!--红包-e-->
+
+  <!--积分-s-->
+  <div class="redhongbao none" id="jf">
+    <div class="gift-hongbao">
+      <img src="" />
+    </div>
+    <div class="btn-box-b btn-m">
+      <h2>请填写您的手机号，以便顺利领奖</h2>
+      <div class="name-div"><label>姓名</label><input type="text" class="name" placeholder="请填写真实姓名"/></div>
+      <div class="mobile-div"><label>电话</label><input type="text" class="mobile" placeholder="请填写真实电话号码"/></div>
+      <a name="" type="button" class="btn-b" id="btn-jf" data-collect="true"
+             data-collect-flag="hlj-hreo-index_redpack-btn"
+             data-collect-desc="欢乐英雄转领红包">确 认</a>
+      <a name="" type="button" class="btn-b none" id="btn-back" data-collect="true"
+             data-collect-flag="hlj-hreo-index_redpack-btn"
+             data-collect-desc="欢乐英雄转返回按钮">返 回</a>
+    </div>
+  </div>
+  <!--积分-e-->
+
+</section>
+<!--中奖-e-->
+
+<!--活动规则-s-->
+<section class="rule-section none">
+  <div class="bounceInDown">
+    <a class="close rule-close" data-collect="true"
+       data-collect-flag="hlj-hreo-index-rule-btn"
+       data-collect-desc="活动规则-关闭按钮"></a>
+    <div class="con">
+      <h2>活动规则</h2>
+      <div class="con-htm"></div>
+    </div>
+  </div>
+</section>
+<!--活动规则-e-->
+
+<div class="footer animated none" id="tab">
+  <div class="copyright anima"></div>
+  <div class="tab">
+    <a href="#" data-collect="true"
+       data-collect-flag="hlj-hreo-index-jifen-btn"
+       data-collect-desc="欢乐英雄转首页进入积分页面" class="jifen" id="jifen">积分商城</a>
+    <span class=""></span>
+    <a href="#" data-collect="true"
+       data-collect-flag="hlj-hreo-index-rule-btn"
+       data-collect-desc="欢乐英雄转首页进入规则页面" class="rule">活动规则</a>
+  </div>
+</div>
+
+
+<script src="js/config.js"></script>
+
+<!--<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/shake.js"></script>-->
+
+<script src="./js/common.min.js"></script>
+<script src="./js/shake.min.js"></script>
+
+
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="js/app/dialog.js"></script>
+<script src="js/app/index.js"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	
+</body>
+</html>

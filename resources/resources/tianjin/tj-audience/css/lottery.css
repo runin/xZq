@@ -1,0 +1,336 @@
+body{
+    background-image: url('../images/bg_05.jpg');
+    background-color: #281a31;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.main-lottery{
+    position: absolute;
+    top: 21%;
+    left: 6%;
+    width: 88%;
+    height: 58%;
+    background-image: url('../images/lottery_img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.main-lottery span{
+    position: absolute;
+    top: 45%;
+    display: block;
+    height: 25px;
+    width: 100%;
+    margin: -12px 0 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.main-lottery span a{
+    display: inline-block;
+    border-bottom: 1px #fbf3a7 solid;
+    font-size: 18px;
+    color: #fbf3a7;
+}
+.lottery-pop:before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 9;
+}
+.bags-bg{ 
+    position: fixed; 
+    top: 0; 
+    left: 3%;
+    width: 94%;
+    height: 90%;
+    background-image: url('../images/bags_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 9;
+    -webkit-animation-name: pcon-ing;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes pcon-ing{
+    0% 
+    {
+        -webkit-transform:scale(1,1);
+    }
+    50% {
+        -webkit-transform:scale(0.9,0.9);
+    }
+    100% {
+        -webkit-transform:scale(1,1);
+    }
+}
+.red-envelope{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 500px;
+    margin: -250px 0 0 -175px;
+    text-align: center;
+}
+.red-envelope ul{ 
+    height: 110px;
+    margin: 255px 0 0;
+}
+.red-envelope li{ 
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    background-image: url('../images/red_envelope_a.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.red-envelope li.on{ 
+    background-image: url('../images/red_envelope_b.png');
+}
+.lottery-btn{ 
+    position: relative;
+    height: 9%;
+    margin: 8% auto 0;
+    text-align: center;
+    z-index: 9;
+}
+.lottery-btn-a,
+a.btn-a,
+.btn-a,
+.btn-b{
+    display: inline-block; 
+    width: 32%; 
+    height: 36px;
+    line-height: 32px;
+    margin: 15px 0 0;
+    border-radius: 5px;
+    box-shadow: 0 -4px 0 #db9a00 inset, 0 2px 4px #871f2b;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#fdf681), to(#f5cb08));
+    text-align: center;
+	font-size:15px;
+    font-weight: bold;
+    color: #8f010f;
+}
+.lottery-btn-a.none,
+.btn-a.none,
+a.btn-a.none,
+.btn-b.none{
+    display: none;
+}
+/*
+.share-bt{ 
+    position: absolute;
+    top: 2%;
+    left: 15%;
+    width: 70%;
+    height: 5%;
+    background-image: url('../images/share_by.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 9;
+}
+*/
+.winning-bg{ 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 210px;
+    /*
+    background-image: url('../images/winning_bg.png');
+    */
+    background: #b72a3b;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    color: #fff; 
+    z-index: 9;
+}
+.winning-title{
+    position: relative;
+	width:80%;
+    line-height:25px;
+    margin: -30px auto 0;
+    text-align: center;
+    font-size: 18px;
+    z-index: 9;
+}
+.winning-tips{
+    height: 20px;
+    margin: 10px 15% 0;
+    font-size: 14px;
+}
+.winning-input{ 
+    position: relative;
+    height: 30px;
+    padding: 0 0 0 50px;
+    margin: 5px 15% 0;
+    font-size: 14px;
+}
+.winning-input span{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 30px;
+    line-height: 28px;
+}
+.text-a{ 
+    width: 100%; 
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #831e2a, 0 1px 2px #ccc inset;
+    background: #fff;
+    text-indent: 5px;
+}
+.winning-btn{ 
+    height: 36px; 
+    margin: 25px 0 0;
+    text-align: center;
+}
+.btn-a{
+    width: 40%;
+    margin: 0; 
+}
+.attention{ 
+    line-height: 20px;
+    margin: 20px 0 0;
+    text-align: center; 
+    font-size: 12px;
+    color: #cb767e;
+}
+.winning-top{ 
+    position: absolute;
+    top: -120px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: url('../images/winning_bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+.winning-coupons{ 
+    position: absolute;
+    top: -180px;
+    left: 13%;
+    width: 74%;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    z-index: 2;
+}
+.confirmed{
+    margin: 20px 0 0;
+}
+.confirmed-info{
+    height: 30px;
+    margin: 0 25%;
+    font-size: 16px;
+    text-shadow:0 1px 2px #73000e;
+}
+.ts-check{
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 14px;
+}
+.credentials-munber{ 
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    padding: 20px;
+    font-size: 26px;
+    color: #f8db34;
+}
+.error{ 
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: 70%;
+    height:290px;
+    margin: -140px 0 0;
+    text-align: center;
+    z-index: 9;
+    -webkit-animation-name: pcon-ing;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+}
+.error-img{ 
+    height:80%;
+    background-image: url('../images/winning_none.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+.btn-b{
+    width: 60%; 
+    margin: 20px 0 0;
+}
+.close-a,
+.close-b{ 
+    position: absolute;
+    top: -150px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url('../images/close.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.close-b{ 
+    top: -5px;
+    right: 0;
+}
+
+@media screen and (min-device-width :320px) and (max-device-width :349px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+    .red-envelope{ 
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 430px;
+        margin: -215px 0 0 -150px;
+    }
+    .red-envelope ul{ 
+        height: 85px;
+        margin: 220px 0 0;
+    }
+    .red-envelope li{ 
+        width: 26%;
+    }
+}
+@media screen and (max-device-height :480px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+    .winning-top{ 
+        top: -120px;
+        height: 120px;
+    }
+    .winning-coupons{ 
+        top: -170px;
+        height: 120px;
+    }
+    .winning-title{
+        line-height:22px;
+        font-size: 16px;
+    }
+    .winning-bg{ 
+        height: 200px;
+    }
+}
+
+
+
+

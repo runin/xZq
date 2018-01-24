@@ -1,0 +1,73 @@
+body{
+    background: url(../images/pin-bg.jpg) no-repeat;
+    background-size: cover;
+}
+header{
+    height: 19vh;
+}
+header .top{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 15px;
+}
+header .top img {
+    width: 27%;
+    margin: 0 auto 5px;
+}
+header a.back{
+    display: block;
+    width: 62px;
+    height: 20px;
+    line-height: 20px;
+    background: #FFD666;
+    border-radius: 6px;
+    color: #BA0000;
+    text-align: center;
+    position: absolute;
+    right: 19px;
+    top: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+header .top h1 {
+    color: #FFF6BD;
+    font-size: 12px;
+    text-align: center;
+    width: 67%;
+    margin: 0 auto;
+    line-height: 15px;
+}
+.main{
+    height: 69vh;
+}
+ul{
+    width: 93%;
+    margin: 0 auto;
+}
+ul li{
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    margin-bottom: 20px;
+}
+ul li div img{
+    margin: 0 auto;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
+}
+a:hover{
+    color: #FCE865;
+}
+@media screen and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    ul {
+        width: 80%;;
+    }
+    ul li {
+        margin-bottom: 10px;
+    }
+}

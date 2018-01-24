@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>直播60分</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/yao.css" />
+</head>
+
+<body class="">
+<!--摇一摇声音-->
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio>
+
+<!--摇一摇红包-s-->
+<section class="home-box">
+    <div id="yao-redbao">
+        <div class="main-top m-t-b">
+            <div class="fjtv-logo zoomIn">
+                <img src="images/index-de.png" />
+                <div class="adver none"><img src="" /></div>
+                <a href="#" class="outer none" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+            </div>
+        </div>
+        <div class="main-foot m-f-b">
+            <input type="button" class="none" id="test" value="test">
+            <div class="yao-text">
+                <p class="texta"><span>抢红包 抢大奖 和家人一起摇一摇</span></p>
+                <p class="none textb"><span>啊哦，差一点就抢到了，继续加油</span></p>
+            </div>
+            <div class="countdown none">
+                距离本次抢红包结束还有<span class="detail-countdown"></span>
+            </div>
+            <a href="#" data-collect="true"
+               data-collect-flag="mdj-live60-yao-btn-back"
+               data-collect-desc="爆料页面提交线索" class="back-home">返回首页</a>
+        </div>
+    </div>
+</section>
+<!--摇一摇红包-e-->
+
+<!--中奖-s-->
+<section id="yao-gift" class="page">
+    <!--红包-s-->
+    <div class="zj-items none" id="red-pack">
+        <div class="gift-hongbao">
+            <img class="pi" src="" />
+            <span class="djm none"><!--兑奖码：58965745896--></span>
+            <h3><!--本次红包由可口可乐公司提供--></h3>
+            <div class="adver none"><img src="" /></div>
+        </div>
+        <div class="btn-box-b btn-m">
+            <a class="btn btn-b btn-back none" id="btn-back" data-collect="true" data-collect-flag="mdj-live60-yao-btn-back"
+               data-collect-desc="欢乐英雄转领红包">返 回</a>
+            <a class="btn btn-b " id="btnBoxc" data-collect="true" data-collect-flag="mdj-live60-yao-btnBoxc"
+               data-collect-desc="欢乐英雄转领红包">领 取</a>
+        </div>
+    </div>
+    <!--红包-e-->
+
+    <!--积分-s-->
+    <div class="zj-items none" id="jf">
+        <div class="gift-hongbao">
+            <img class="pi" src="" />
+            <h3><!--本次红包由可口可乐公司提供--></h3>
+            <div class="adver none"><img src="" /></div>
+        </div>
+        <div class="btn-box-b btn-f">
+            <h2>请填写您的手机号，以便顺利领奖</h2>
+            <input type="text" class="name" placeholder="姓名"/>
+            <input type="tel" class="mobile" placeholder="手机号码"/>
+
+            <a class="btn-c" id="btn-jf" data-collect="true" data-collect-flag="mdj-live60-yao-redpack-btn"
+               data-collect-desc="领红包">确 定</a>
+            <a class="btn-c btn-back none" data-collect="true" data-collect-flag="mdj-live60-yao-btn-back"
+               data-collect-desc="返回按钮">返 回</a>
+        </div>
+    </div>
+    <!--积分-e-->
+
+</section>
+<!--中奖-e-->
+
+<div class="footer animated">
+    <div class="copyright anima"></div>
+</div>
+
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/shake.min.js"></script>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+
+<script src="js/app/yao.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+</head>
+<body>
+    <audio preload="auto" style="width:0;height:0;position:absolute;top:-1500%;" id="audio-add"><source src="images/add.mp3" type="audio/mpeg" /></audio>
+    <audio preload="auto" style="width:0;height:0;position:absolute;top:-1500%;" id="audio-send"><source src="images/send.mp3" type="audio/mpeg" /></audio>
+    <audio preload="auto" style="width:0;height:0;position:absolute;top:-1500%;" id="audio-recive"><source src="images/recive.mp3" type="audio/mpeg" /></audio>
+    <div class="page page1">
+        <section id="add">
+            <button>添加到通讯录</button>
+        </section>
+    </div>
+    <div class="page page2">
+        <section id="apply">
+            <p>我是<span></span></p>
+            <button>发送</button>
+        </section>
+    </div>
+    <div class="page page3">
+        <section id="chat">
+            <div class="scroll">
+                <div class="time">你已加李宇春为朋友，现在可以聊天了。</div>
+                <ul class="list">
+                    <li class="animated fadeIn">
+                        <img src="images/head-liyuchun.jpg" class="head">
+                        <div class="detail">
+                            <p><span></span>，好久不见。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg"></div>
+        </section>
+    </div>
+    <div class="ime">
+        <img src="images/ime.png">
+        <div class="select select1">
+            <p data="最喜欢我的哪一首歌呢？">一直喜欢听你的歌。</p>
+        </div>
+        <div class="select select2">
+            <p data="秒针转动，滴答滴答;很适合下雨天的一首歌">下个路口见</p>
+            <p data="万岁少女露出虎牙;西门少年野生野长 哈哈">西门少年</p>
+            <p data="你是说“和我一样”这首歌？;还是喜欢的和我一样？">和你一样</p>
+        </div>
+        <div class="select select3">
+            <p>一定的！</p>
+        </div>
+    </div>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <!-- <script src="./js/authorize_userinfo.js"></script> -->
+    <script src="./js/authorize_userinfo_fandom.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="./js/app/index.js"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

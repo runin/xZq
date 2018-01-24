@@ -1,0 +1,148 @@
+html{
+	height: 100%;
+}
+body{
+	background:#051932 url(../images/bg.jpg) no-repeat;
+	background-size: 100%;
+}
+.main {
+	margin: 0 auto;
+	font-size: 15px;
+	padding-bottom: 30px;
+}
+.gift-timeline {
+    position: relative;
+	
+    padding-left: 28px;
+}
+/*.gift-timeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 5px;
+	background: #074183;
+}*/
+.gift-timeline li {
+    padding-left: 27px;
+	
+    margin-top: 17px;
+    position: relative;
+}
+/*.gift-timeline li:last-child:before {
+	content: '';
+	display: block;
+	width: 5px;
+	height: 100%;
+	background: #074183;
+	position: absolute;
+	left: 0;
+	top: 0;
+}*/
+.gift-time {
+    color: #FA0000;
+    padding-top: 5px;
+}
+.gift-icon {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #527297;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    background: #fff;
+}
+.gift-icon.gift-selected:before {
+	content: '';
+	background: url(../images/confir.png) no-repeat;
+	background-size: 20px auto;
+	width: 20px;
+	height: 77px;
+	display: block;
+	margin-left: 0px;
+	margin-top: 5px;
+}
+.gift-content {
+   
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.gift-content img{
+	width: 94%;
+}
+.gift-content h2 {
+    color: #000;
+    border-bottom: 1px solid #E7E7E7;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+.gift-content p {
+    color: #888888;
+	
+    line-height: 24px;
+}
+p.gift-name{
+	line-height: 30px;
+	color: #000;
+	border-bottom: 1px solid #dadada;
+	margin-bottom: 10px;
+}
+.btn-loadmore{
+    background: #D2CCC7;
+}
+.no-record{
+	line-height: 200px;
+	text-align: center;
+	font-size: 18px;
+}
+.btn-red {
+	width: 60%;
+	margin: 10px auto 0;
+	background: #f9e249;
+	border-radius: 6px;
+	height: 36px;
+	line-height: 36px;
+	color: #8f010f;
+	font-size: 15px;
+	box-shadow: 1px 6px 2px #db9a00;
+}
+.spinner{
+	position: relative;
+	margin: 0 auto;
+}
+.copyright {
+	margin-top: 50px;
+}
+.copyright p{
+	line-height: 20px;
+}
+.list h2{
+	color: #fff;
+	margin: 20px auto 10px;
+	text-align: center;
+}
+h1{
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	margin: 50px auto 30px;
+}
+.confirm{
+	padding: 30px 0;
+	border-top: 1px solid #517fc9;
+	border-bottom: 1px solid #517fc9;
+	margin: 20px auto;
+	text-align: center;
+	width: 208px;
+}
+.confirm-copyright{
+	position: absolute;
+	bottom: 7px;
+}
+.confirm-btn{
+	width: 50%;
+	margin-top: 40px;
+}

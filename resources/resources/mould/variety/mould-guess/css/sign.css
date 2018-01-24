@@ -1,0 +1,151 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg.jpg) no-repeat center;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+.scroll{
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.sign-box{
+	padding: 14% 3% 50px;
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	position: relative;
+	padding-bottom:50px ;
+}
+.sign-box .sign-title{
+	color: #af9130;
+	font-size: 15px;
+	text-align: center;
+}
+.sign-box ul{
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding-top: 2%;
+}
+.sign-box ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.sign-box ul li{
+	display: inline-block;
+	padding: 3%;
+	float: left;
+}
+.sign-box ul li .sign-item{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ffcb5c;
+	border-radius: 4px;
+	position: relative;
+}
+.sign-box ul li .missed::before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(201,201,201,0.6);
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.sign-box ul li .signed::before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(144,96,21,0.6);
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.sign-item .item-img{
+	display: inline-block;
+	width: 100%;
+	height: 80%;
+	padding: 10% 22%;
+}
+.sign-item .item-img img{
+	display: inline-block;
+	width: 100%;
+}
+.sign-item .item-text{
+	display: inline-block;
+	width: 100%;
+	color: #ffffff;
+	font-size: 13px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 4px 0;
+}
+.back{
+	display: block;
+	width: 40%;
+	margin: 20px auto 0;
+}
+.back img{
+	display: block;
+}
+.copyright{
+	position: absolute;
+	bottom: 0;
+	opacity: 0.6;
+}
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+	50% {
+		-webkit-transform: scale3d(1.15, 1.15, 1.15);
+		transform: scale3d(1.15, 1.15, 1.15)
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+
+@keyframes pulse {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+	50% {
+		-webkit-transform: scale3d(1.15, 1.15, 1.15);
+		transform: scale3d(1.15, 1.15, 1.15)
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+
+.requesting {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1;
+}

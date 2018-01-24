@@ -1,0 +1,99 @@
+body {
+   background: #660000 url(../images/index-bg.jpg) no-repeat;
+   background-size: 100% 100%;
+   overflow: hidden;
+ }
+.go {
+    display: block;
+    margin: 45% auto 0;
+    left: 0;
+    right: 0;
+    width: 150px;
+    line-height: 40px;
+    height: 80px;
+    background: url(../images/go.png) no-repeat;
+    background-size: 100% auto;
+    color: #eecaa0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.rubberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes rubberBand {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#div_subscribe_area {
+  height: 50px;
+  overflow:hidden;
+    opacity: 1;
+    z-index: 1000;
+}
+@media screen and (device-width : 320px)
+and (device-height : 480px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+/* iPhone5 */
+@media screen and (device-height : 320px)
+and (device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone6 */
+@media screen and (device-width : 375px)
+and (device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone6plus */
+@media screen and (device-width : 414px)
+and (device-width : 736px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}

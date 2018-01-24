@@ -1,0 +1,280 @@
+footer {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: url(../images/index-bg.jpg) no-repeat top center;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+header
+{
+    position: relative;
+}
+.marquee {
+    position: absolute;
+    height: 21px;
+    line-height: 21px;
+    width: 100%;
+    text-align: center;
+    color:rgba(252,237,218,1);
+    overflow: hidden;
+    bottom: 60px;
+    font-size: 14px;
+}
+.marquee:after
+{   
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    /* width: 1px; */
+    border-bottom: 1px dashed rgba(252,237,218,0.8);
+    top: 20px;
+    left: 10%;
+
+}
+.tv-logo {
+    display: inline-block;
+    width: 80px;
+    margin: 10px;
+}
+
+.pingan-logo {
+    display: inline-block;
+    width: 90px;
+    margin-top: 10px;
+}
+
+.record-btn {
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 5px;
+    width: 54%;
+    z-index: 1;
+    background: url(../images/tv-logo.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.yao-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bottom-box {
+    position: absolute;
+    bottom: -4px;
+    z-index: 1;
+}
+
+.yao-red {
+    position: absolute;
+    bottom: 118px;
+    text-align: center;
+    z-index: 2;
+    width:100%;
+}
+
+.yao-red img {
+    position: relative;
+    width: 50%;
+}
+
+.info-box {
+    position: absolute;
+    top: 28px;
+    color: #333333;
+    font-size: 16px;
+    width: 100%;
+    z-index: 2;
+}
+
+.weizhongjang {
+    position: relative;
+    margin: 22% auto;
+    text-align: center;
+    color: #fff;
+}
+
+.yao-cool-tips span {
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+.countdown {
+    position: relative;
+    font-size: 12px;
+    line-height: 34px;
+    z-index: 2;
+    margin: -20px auto;
+    width: 90%;
+    height: 34px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.countdown-tip {
+    z-index: 2;
+    margin-left: -10px;
+    color: rgba(255,255,255,0.8);
+}
+.countdown .detail-countdown {
+    z-index: 2;
+    /*background-size: 30px auto;*/
+    display: inline-block;
+    font-weight: bolder;
+}
+.detail-countdown label{
+    color: #fec836;
+    font-weight: bolder;
+    border-right:none;
+    padding: 0px 1px;
+    border-top: 1px solid #706e6f;
+    background-image: -webkit-linear-gradient(-90deg, #353334, #290b0b);
+}
+.countdown-bg
+{
+    margin-top: 10px;
+    width:100%;
+    background-image: url("../images/countdown-bg.png");
+    height:60px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    line-height: 60px;
+
+}
+
+/*摇奖页面震动*/
+.shaking img {
+    animation-name: shaking;
+    -webkit-animation-name: shaking;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-duration: 1.6s;
+    -webkit-animation-duration: 1.6s;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+
+
+/*摇奖动画*/
+
+@keyframes shaking {
+    0%{-webkit-transform:rotate(0deg);-webkit-transform-origin:center center;}
+    15%{-webkit-transform:rotate(-60deg);-webkit-transform-origin:center center;}
+    30%{-webkit-transform:rotate(50deg);-webkit-transform-origin:center center;}
+    45%{-webkit-transform:rotate(-30deg);-webkit-transform-origin:center center;}
+    60%{-webkit-transform:rotate(12deg);-webkit-transform-origin:center center;}
+    75%{-webkit-transform:rotate(-6deg);-webkit-transform-origin:center center;}
+    100%{-webkit-transform:rotate(0deg);-webkit-transform-origin:center center;}
+}
+
+@-webkit-keyframes shaking {
+    0%{-webkit-transform:rotate(0deg);-webkit-transform-origin:center center;}
+    15%{-webkit-transform:rotate(-60deg);-webkit-transform-origin:center center;}
+    30%{-webkit-transform:rotate(50deg);-webkit-transform-origin:center center;}
+    45%{-webkit-transform:rotate(-30deg);-webkit-transform-origin:center center;}
+    60%{-webkit-transform:rotate(12deg);-webkit-transform-origin:center center;}
+    75%{-webkit-transform:rotate(-6deg);-webkit-transform-origin:center center;}
+    100%{-webkit-transform:rotate(0deg);-webkit-transform-origin:center center;}
+}
+
+
+/* iPhone4 */
+
+@media screen and (min-device-width: 320px) and (max-device-height: 500px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+
+.none-tips {
+    opacity: 0;
+    animation-name: nonetips;
+    -webkit-animation-name: nonetips;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes nonetips {
+    0% {
+        transform: translate(-10px, 0px);
+        opacity: 0;
+    }
+    20% {
+        transform: translate(10px, 0px);
+        opacity: 1;
+    }
+    40% {
+        transform: translate(-10px, 0px);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(10px, 0px);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-10px, 0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes nonetips {
+    0% {
+        -webkit-transform: translate(-10px, 0px);
+        opacity: 0;
+    }
+    20% {
+        -webkit-transform: translate(10px, 0px);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translate(-10px, 0px);
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: translate(10px, 0px);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(-10px, 0px);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (min-device-height: 500px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* luo */
+
+@media screen and (min-device-width: 1000px) and (min-device-height: 1000px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}

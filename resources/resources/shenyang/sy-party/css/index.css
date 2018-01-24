@@ -1,0 +1,60 @@
+body {
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: 360px auto;
+	min-height: 480px;
+	overflow: hidden !important;
+}
+
+.main {
+	margin: 0 auto;
+	color: #fff;
+	overflow: hidden;
+    text-align: center;
+}
+.main a {
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+    position: absolute;
+    right: 0;
+    top: 13%;
+}
+.main img{
+    width: 100%;
+    margin-top: 70%;
+}
+.main .border {
+	background: url(../images/lottery.png) no-repeat;
+	background-size: auto 64px;
+	width: 141px;
+	height: 64px;
+}
+.main .apply{
+	margin-top: 80px;
+	background: url(../images/apply.png) no-repeat;
+	background-size: auto 64px;
+	width: 195px;
+	height: 64px;
+}
+.copyright {
+	bottom: 7px;
+}
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .main img{
+        width: 63%;
+    }
+
+}
+
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+    .main img{
+        width: 83%;
+    }
+}
+

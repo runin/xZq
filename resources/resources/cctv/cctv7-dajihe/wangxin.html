@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>乡村大集合</title>
+		
+		<link rel="stylesheet" href="./css/core.css">
+		<link rel="stylesheet" href="./css/util.css">
+		<link rel="stylesheet" href="./css/wangxin.css" />
+
+	</head>
+	<body>
+		<div class="header">
+			<p></p>
+		</div>
+		<div class="warpper">
+			<div class="red-box">
+				<span></span>
+			</div>
+			<p class="red-phone"><label></label><span></span></p>
+			<a href="javascript:void(0);" class="btn-submit" data-collect="true" data-collect-flag="wangxin-submit" data-collect-desc="天天淘金-领取按钮">打开天天摇APP即可使用</a>
+		</div>
+		
+		<script src="./js/config.js"></script>
+
+		<script src="./js/plugins/zepto.min.js"></script>
+		<script src="./js/plugins/zepto.cookie.min.js"></script>
+		<script src="./js/plugins/zepto.fx.min.js"></script>
+		
+		<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+		
+		<script src="./js/plugins/md5.js"></script>
+		<script src="./js/plugins/core.js"></script>
+		<script src="./js/plugins/authorize_userinfo.js"></script>
+		<script src="./js/plugins/util.js"></script>
+
+		<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+		<script>
+			$(function(){
+				var ph = getQueryString("ph");
+				var pv = getQueryString("pv");
+				var ru = getQueryString("ru");
+				var type =getQueryString("tp");
+				if(!ph || !pv ){
+					alert('数据异常');
+					window.location.href="yao.html"
+				}else{
+					
+					$(".red-box span").text(pv);
+					$(".red-phone span").text(ph);
+					var title = type==1?"天天摇":"茶泡泡";
+					var mes = type==1?"打开天天摇APP即可使用":"打开茶泡泡";
+					var lab = type==1?"红包已放置账户:":"茶币已放置账户:";
+					$(".header p").text(title);
+					$(".btn-submit").text(mes);
+					$(".red-phone label").text(lab)
+					if(type==2){//茶泡泡
+						
+						$(".header").css("background-image","url(./images/success-header-tea.jpg)");
+						$("body").css("background-color","#f4ba3c");
+						$(".warpper").css("background-color","#e2a014");
+						$(".red-box").css("background-image","url(./images/success-score-tea.png)");
+						$(".red-phone span").css("color","#D7301E");
+						$(".btn-submit").css({"background-color":"#D7301E","color":"white"});
+
+					}
+					$(".btn-submit").click(function(){
+						if(type==1){//天天摇
+							window.location.href ="http://a.app.qq.com/o/simple.jsp?pkgname=com.integralmall";
+						}else{//茶泡泡
+							window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.tea.activity";		
+						}
+					});
+				}
+				
+			})
+			</script>
+	</body>
+</html>

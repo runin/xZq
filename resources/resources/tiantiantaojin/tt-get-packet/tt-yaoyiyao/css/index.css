@@ -1,0 +1,437 @@
+*
+{
+	padding:0px;
+	margin:0px;
+}
+li
+{
+    list-style-type:none;
+}
+body
+{
+  	width: 100%;
+  	height: 100%;
+  	background: url('../images/index-bg.jpg') top center;
+  	background-size: cover;
+    -webkit-overflow-scrolling :touch;  
+}
+
+p.index-title
+{
+  position:absolute;
+  text-align: center;
+  width:100%;
+  color:#fff;
+  top:15px;
+  font-size:20px;
+  -webkit-text-shadow:inset 1px 1px 1px #721A26;
+  text-shadow:inset 1px 1px 1px #721A26;
+
+}
+
+.yao-prize
+{
+  position:absolute;
+  height: 80%;
+  width: 100%;
+  text-align: center;
+}
+
+/*---------中间动画页面start----------*/
+.yellow-left
+{
+  position: absolute;
+  left: 25%;
+  background: url('../images/bondfix.png') top center;
+  background-size: 100% 100%;
+  width: 40px;
+  height: 70px;
+  top: 6%;
+}
+.squre-bottom
+{
+  position: absolute;
+  bottom: 10%;
+  left: 0px;
+  background: url('../images/red-leaf.png') top center;
+  background-size: 100% 100%;
+  width: 70px;
+  height: 50px;
+  -webkit-animation:redleaf 6s infinite linear;
+  animation:redleaf 6s infinite linear;
+}
+.money-right
+{
+  position: absolute;
+  right: 2%;
+  background: url('../images/money.png') top center;
+  background-size: 100% 100%;
+  width: 80px;
+  height: 80px;
+  bottom: -28px;
+}
+.green-right
+{
+  position: absolute;
+  right: 5%;
+  background: url('../images/bluerightfix.png') top center;
+  background-size: 100% 100%;
+  width: 80px;
+  height: 60px;
+  top: 5%;
+}
+.green-mid
+{
+  position: absolute;
+  top: 30%;
+  background: url('../images/bottomfix.png') top center;
+  background-size: 100% 100%;
+  width: 51px;
+  height: 39px;
+  left: 0px;
+}
+.top-line
+{
+  position: absolute;
+  top: 8%;
+  background: url('../images/top-line.png') top center;
+  background-size: 100% 100%;
+  width: 180px;
+  height: 80px;
+  right: 40px;
+}
+/*---------中间动画页面end----------*/
+
+/*---------中间摇奖页面start----------*/
+.yao-prize .mid-round
+{
+  width:100%;
+  position: absolute;
+  z-index: 1;
+  height: 60%;
+  top:18%;
+}
+.mid-round .watch
+{
+  position: absolute;
+  left: 18%;
+  top: 20%;
+  width: 28%;
+}
+.mid-round .shose
+{
+  position: absolute;
+  right: 17%;
+  top: 6%;
+  width: 23%;
+}
+.mid-round .shirt
+{
+  position: absolute;
+  right: 2%;
+  bottom: 14%;
+  width: 23%;
+}
+.mid-round .bag
+{
+  position: absolute;
+  left: 0%;
+  bottom: 16%;
+  width: 23%;
+}
+.mid-round div.img-round
+{
+  position: relative;
+  left:10px;
+  background: url('../images/round.png') top center no-repeat;
+  background-size:100% 100%; 
+}
+.img-round .yaoyiyao
+{
+  width: 68%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18%;
+}
+.rock-begin
+{
+  width:70%;
+  position: relative;
+  margin-top: -50px;
+  
+}
+/*---------中间摇奖页面end----------*/
+.user-formation
+{
+  position: relative;
+  color: #fff;
+  margin-top: -10px;
+}
+.img-pocket
+{
+  background: url(../images/bottom-packet.png) top center;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index:101;
+  bottom: 0px;
+  width:100%;
+  height: 20%;
+}
+
+.img-pocket .btn-rule
+{
+  position: absolute;
+  text-align: center;
+  top:45%;
+  height:20px;
+  width:88px;
+  color: #fff;
+  border-radius: 10px;
+  background: #B72A3B;
+  line-height: 20px;
+}
+.btn-information
+{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+footer
+{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1;
+}
+/*规则弹出层效果*/
+ .rule-top-ease
+ {
+    -webkit-animation:ruletopease 1.5s ease-out;
+    animation:ruletopease 1.5s ease-out;
+ }
+
+ @-webkit-keyframes  ruletopease
+ {
+    0% 
+    {
+      -webkit-transform:translateY(0);
+    }
+    20% 
+    {
+      -webkit-transform:translateY(30px);
+    }
+    100% 
+    {
+      -webkit-transform:translateY(-1000px);
+    }
+ }
+ @keyframes  ruletopease
+ {
+    0% 
+    {
+      transform:translateY(0);
+    }
+    20% 
+    {
+      transform:translateY(30px);
+    }
+    100% 
+    {
+      transform:translateY(-1000px);
+    }
+ }
+@keyframes redleaf
+{
+  0% 
+  {
+    opacity: 1;
+    transform:translate3D(0,-500%,0);
+  }
+ 
+  100% 
+  {
+    opacity: 0;
+    transform:translate3D(0,100%,0);
+  }
+}
+@-webkit-keyframes redleaf
+{
+  0% 
+  {
+    opacity: 1;
+    -webkit-transform:translate3D(0,-500%,0);
+  }
+ 
+  100% 
+  {
+    opacity: 0;
+    -webkit-transform:translate3D(0,100%,0);
+  }
+}
+ .popturn
+ { 
+    -webkit-animation:money 5s ease-in-out;
+    animation:money 5s ease-in-out;
+}
+.buttonScale
+{
+  -webkit-animation:buttonScale 2s linear;
+  animation:buttonScale 2s linear;
+}
+@keyframes money
+{
+  0% 
+  {
+    transform:translate3D(0,0,0);
+  }
+  30% 
+  {
+     transform:translate3D(0,-40px,0) rotateY(0deg);
+  }
+  40% 
+  {
+     transform:translate3D(0,-30px,0) rotateY(360deg);
+  }
+  60% 
+  {
+     transform:translate3D(0,-80px,0) rotateY(360deg);
+  }
+  70% 
+  {
+     transform:translate3D(0,-70px,0) rotateY(0deg);
+  }
+  90% 
+  {
+     transform:translate3D(0,-150px,0);
+  }
+  100% 
+  {
+    transform:translate3D(0,0,0);
+  }
+}
+@-webkit-keyframes money
+{
+   0% 
+  {
+    -webkit-transform:translate3D(0,0,0);
+  }
+  30% 
+  {
+    -webkit-transform:translate3D(0,-40px,0) rotateY(0deg);
+  }
+  40% 
+  {
+    -webkit-transform:translate3D(0,-30px,0) rotateY(360deg);
+  }
+  60% 
+  {
+    -webkit-transform:translate3D(0,-80px,0) rotateY(360deg);
+  }
+  70% 
+  {
+    -webkit-transform:translate3D(0,-70px,0) rotateY(0deg);
+  }
+  90% 
+  {
+    -webkit-transform:translate3D(0,-150px,0);
+  }
+  100% 
+  {
+    -webkit-transform:translate3D(0,0,0);
+  }
+}
+
+@keyframes buttonScale
+{
+  0% 
+  {
+    transform:scale(1);
+  }
+  50% 
+  {
+    transform:scale(0.5);
+  }
+  100% 
+  {
+    transform:scale(1);
+  }
+}
+@-webkit-keyframes buttonScale
+{
+  0% 
+  {
+    -webkit-transform:scale(1);
+  }
+  50% 
+  {
+    -webkit-transform:scale(0.5);
+  }
+  100% 
+  {
+    -webkit-transform:scale(1);
+  }
+}
+@media screen
+and (min-width : 320px)
+and (max-height: 480px)
+{
+  .user-formation
+  {
+    font-size: 10px!important;
+    color: blue;
+    margin-top: -10px;
+  }
+  .btn-rockcontinue
+  {
+    margin-top:2%;
+  }
+}
+/* iPhone5 */
+@media screen
+and (min-width: 320px)
+and (min-height: 550px) 
+and (max-height: 568px) 
+{
+   .user-formation
+    {
+      font-size: 13px!important;
+      margin-top: -10px;
+    }
+    .btn-rockcontinue
+    {
+      margin-top:2%;
+    }
+}
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-height: 480px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+{
+  .user-formation
+  {
+    font-size: 10px!important;
+    color: blue;
+    margin-top: -10px;
+  }
+  .btn-rockcontinue
+  {
+    margin-top:2%;
+  }
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 550px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+   .user-formation
+    {
+      font-size: 10px!important;
+      color: blue;
+      margin-top: -10px;
+    }
+}

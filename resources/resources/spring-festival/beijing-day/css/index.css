@@ -1,0 +1,107 @@
+html {
+    height: 100%;
+	
+    background: #000;
+    background-repeat: no-repeat;  background-position: 0 0;  background-size: cover;
+}
+
+body {
+    height: 100%;
+	
+}
+
+header {
+	
+}
+.logo-gala {
+    background: url(../images/spring.png) no-repeat center top;
+	
+    background-size: contain;
+    height: 30%;
+    margin-top: 20%;
+}
+.presenters {
+    height: 32%;
+	
+    background: url(../images/presenters.png) no-repeat center 0;
+    background-size: contain;
+    margin-top: 2%;
+    position: relative;
+}
+.presenters:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 70%;
+	background: url(../images/line.png) no-repeat center bottom;
+	background-size: 100%;
+	z-index: 1;
+}
+
+section {
+	
+}
+.btn-rule {
+    margin: 8px auto 0;
+    display: block;
+    width: 20%;
+    text-decoration: underline;
+    text-align: center;
+    color: #ffd74d;
+    font-size: 14px;
+}
+.btn-join {
+    margin: -10px auto 0;
+	
+    display: block;
+    width: 42%;
+    height: 40px;
+    line-height: 40px;
+    background: #c00000;
+    color: #ffd74d;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+}
+footer.copyright {
+    position: absolute;
+	
+    left: 0;
+    right: 0;
+    bottom: 5px;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.logo-gala {
+		
+		
+	    margin-top: 10%;
+	}
+	.presenters {
+    	height: 30%;
+	
+	}
+	.btn-join {
+	    height: 30px;
+		
+		
+	    line-height: 30px;
+	    font-size: 14px;
+	    margin-top: -5px;
+	}
+	.btn-rule {
+	
+	}
+	footer {
+	
+	}
+}

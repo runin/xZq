@@ -1,0 +1,166 @@
+.modal {
+    opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	color: #FFF;
+	text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.modal:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    z-index:99;
+}
+.modal .dialog {
+    position: absolute;
+	width: 80%;
+	height: auto;
+    z-index: 999;
+}
+.modal .dialog .btn-dialog-close {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background: url(../images/btn-close.png) no-repeat;
+	background-size: 35px;
+	z-index: 9999999999;
+}
+.modal .dialog .dialog-content {
+    width: 280px;
+    height: 287px;
+    background: url(../images/bg-dialog-body.jpg) no-repeat;
+    background-size: 280px auto;
+    border: 1px solid #E654DA;
+    border-radius: 4px;
+}
+.modal .dialog.shiwu-dialog{
+    color: #BA50B1;
+}
+.modal .dialog .dialog-content .icon-congrats{
+    width: 76%;
+    margin: -19px auto 2%;
+}
+.modal .dialog .dialog-content .commint-before h2.tt,
+.modal .dialog .dialog-content .commint-after h2.tt,
+.modal .dialog .dialog-content .thank-after h2.tt{
+    font-size: 18px;
+    color: #BA50B1;
+    margin-top: 10px;
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.modal .dialog .dialog-content .commint-before a.btn-items,
+.modal .dialog .dialog-content .commint-after a.btn-items,
+.modal .dialog .dialog-content .thank-after a.btn-items{
+    font-size: 18px;
+    background: #F786EE;
+    color: #fff;
+    display: block;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+.modal .dialog .dialog-content .commint-before img.pi,
+.modal .dialog .dialog-content .commint-after img.pi,
+.modal .dialog .dialog-content .thank-after img.pi{
+    width: 82%;
+    margin: 20px auto 30px;
+    max-height: 89px;
+}
+.modal .dialog .dialog-content .btn-lottery {
+    display: inline-block;
+    margin: 13% auto 0;
+    width: 56%;
+}
+.modal .dialog .dialog-content .commint-before,
+.modal .dialog .dialog-content .commint-after,
+.modal .dialog .dialog-content .thank-after{
+    width: 90%;
+    margin: 0 auto;
+}
+.modal .dialog .dialog-content .commint-after{
+    font-size: 15px;
+}
+.modal .dialog .dialog-content .commint-after img.pi {
+    margin: 7px auto;
+}
+.modal .dialog .dialog-content .thank-after img.pi {
+    width: 40%;
+    margin: 9px auto 18px;
+    max-height: 130px;
+}
+.modal .dialog .dialog-content .commint-after h2.tt {
+    margin-top: 7px;
+}
+.modal .dialog .dialog-content .commint-after h4.aw {
+    margin: 10px auto;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+#rule-dialog .dialog-content h1{
+    color: #BA50B1;
+    font-size: 18px;
+    border-bottom: 1px solid #BA50B1;
+    height: 50px;
+    line-height: 58px;
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+}
+#rule-dialog .dialog-content .icon-rule {
+    width: 40%;
+    margin: 0 auto 3%;
+}
+#rule-dialog .dialog-content .rule-content {
+    display: block;
+    height: 220px;
+    margin-bottom: 2%;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+#rule-dialog .dialog-content .rule-content * {
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFF;
+    text-align: left;
+}
+#link-dialog .dialog-content .award-img {
+    width: 92%;
+    margin: 0 auto;
+}
+#shiwu-dialog .dialog-content .award-img {
+    width: 33%;
+    margin: 0 auto;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}

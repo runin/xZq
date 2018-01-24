@@ -1,0 +1,41 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.main {
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+h2 {
+    text-align: center;
+	font-weight: bold;
+    color: #ff0000;
+    font-size: 20px;
+}
+h2:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icons.png) no-repeat -58px 0;
+	background-size: 169px auto;
+	width: 38px;
+	height: 38px;
+	margin-right: 10px;
+}
+p {
+    padding: 0 50px;
+	margin-left: 15px;
+    font-size: 14px;
+    margin-top: 28px;
+    line-height: 25px;
+    color: #ff0000;
+    text-align: center;
+}
+.btn-back {
+	background: #ff00000;
+}

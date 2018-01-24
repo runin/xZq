@@ -1,0 +1,237 @@
+a,a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.main {
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-size: 15px;
+	padding-bottom: 80px;
+}
+.cover {
+    min-height: 180px;
+	
+}
+.cover img {
+	max-height: 100%;
+	max-width: 100%;
+}
+.info {
+    
+	
+    padding: 12px 18px 12px;
+}
+.info h2 {
+    margin-bottom: 8px;
+	
+}
+.info .jf {
+    color: #999;
+	
+    margin-right: 10px;
+}
+.info .jf strong {
+    color: #f00;
+	
+    margin-right: 3px;
+}
+.info .price {
+    color: #999;
+	
+    font-size: 12px;
+    text-decoration: line-through;
+}
+.info .kc {
+	font-size: 12px;
+	margin-left: 10px;
+	color: #999;
+}
+.info .price strong {
+	
+}
+.detail-list {
+    color: #666666;
+	
+}
+.detail-list li {
+    padding: 10px;
+	
+    line-height: 24px;
+}
+.ctrl {
+    background: #E4E6E6;
+	
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 0px;
+}
+.ctrl .btn-minus, 
+.ctrl .btn-plus,
+.ctrl.block .btn-close i {
+	background: url(http://yao.holdfun.cn/portal/resources/portal/images/icons.png?20140905) no-repeat -84px -76px;
+	background-size: 218px auto;
+    display: inline-block;
+	vertical-align: -3px;	
+}
+.ctrl .btn-minus, 
+.ctrl .btn-plus {
+    font-size: 25px;
+	width: 11px;
+	height: 11px;
+    color: #000;
+	padding: 2px 4px;
+	margin: 0 6px;
+}
+.ctrl .btn-plus {
+    background-position: -99px -76px;
+}
+.ctrl .btn-minus:hover {
+    background-position: -129px -76px;
+}
+
+.ctrl .btn-plus:hover {
+    background-position: -114px -76px;
+}
+.ctrl .btn {
+    display: inline-block;
+	
+    vertical-align: middle;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #DF3131;
+    border-radius: 5px;
+    margin: 15px auto 0;
+}
+.ctrl .btn:hover {
+	background: #D61212;
+}
+.ctrl p, 
+.ctrl .btn-exchangenow,
+.ctrl.block .btn-exchange {
+	display: none;
+}
+.ctrl.block {
+	padding: 0px;
+}
+.ctrl.block .btn-close {
+    padding: 5px 8px;
+	
+    float: left;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+}
+.ctrl.block .btn-close i {
+	width: 16px;
+	height: 15px;
+	background-position: -52px -75px;
+}
+.ctrl.block p {
+	display: block;
+	line-height: 40px;
+}
+.ctrl.block .btn-exchangenow {
+	display: inline-block;
+}
+
+.ctrl .mobile {
+    width: 120px;
+	
+    padding: 2px;
+    border: 0 none;
+}
+.ctrl .amount {
+    width: 50px;
+	
+    padding: 2px;
+    text-align: center;
+    border: 0 none;
+    vertical-align: -1px;
+}
+.nav {
+    background: #fff;
+    position: relative;
+    height: 42px;
+}
+.nav:before {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	top: 6px;
+	background: #E7E7E7;
+}
+.nav li {
+    width: 50%;
+	
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #F1F1F1;
+    border-bottom: 1px solid #F1F1F1;
+}
+.nav a {
+    display: block;
+	
+    color: #000;
+}
+.nav a.curr, .nav a:hover {
+	
+    color: #f9ab05;
+}
+
+/*加载按钮 -s*/
+.loader span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background: #D61212;
+    border-radius: 50px;
+    margin: 0 2px;
+    -webkit-animation: loader 1s infinite alternate;
+    -moz-animation: loader 1s infinite alternate;
+}
+.loader span:nth-of-type(2) {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+.loader span:nth-of-type(3) {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+}
+.loader span:nth-of-type(4) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+.loader span:nth-of-type(5) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+}
+@-webkit-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+@-moz-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+/*加载按钮 -e*/

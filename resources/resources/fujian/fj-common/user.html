@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <!-- <link rel="stylesheet" href="css/common/reset.css" />
+    <link rel="stylesheet" href="css/common/core.css" />-->
+    <link rel="stylesheet" href="css/common.min.css" />
+
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="./css/user.css">
+</head>
+<body data-type="user">
+<header>
+    <div>
+        <p class="headimgurl" id="headimgurl">
+            <img src="images/avatar.png">
+        </p>
+        <p class="info">
+            <span class="nickname" id="nickname">匿名用户</span>
+            <span class="rank" id="rk"></span>
+        </p>
+    </div>
+    <div>
+        <a href="#" class="modification" id="modification" data-collect="true"
+           data-collect-flag="fj-common-user-modification" data-collect-desc="修改个人信息按钮">修改个人信息</a>
+        <p class="ji-value" id="ji-value"><img class="money" src="images/money.png" /><span>积分 </span><label></label></p>
+    </div>
+</header>
+<nav>
+    <div>
+        <a class="self-award" id="self-award" data-collect="true"
+           data-collect-flag="fj-common-user-self-award" data-collect-desc="我的奖品按钮">
+            <img src="images/gift.png"><label>我的奖品</label>
+        </a>
+    </div>
+    <div>
+        <a class="rank" id="rank" data-collect="true"
+           data-collect-flag="fj-common-user-rank" data-collect-desc="积分排行按钮">
+            <img src="images/money.png"><label>积分排行</label>
+        </a>
+    </div>
+</nav>
+<section class="content">
+    <div class="item my-award" id="my-award"><ul></ul></div>
+    <div class="item my-rank none" id="my-rank"><ul></ul></div>
+</section>
+
+<footer>
+    <a href="#" class="back-btn" id="back-btn" data-collect="true"
+       data-collect-flag="fj-common-user-back" data-collect-desc="返回按钮"><img src="images/user-back.png" /></a>
+
+    <div class="copyright"></div>
+</footer>
+
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="js/config.js"></script>
+
+<!--<script src="js/plugins/zepto.min.js"></script>
+	<script src="js/plugins/zepto.cookie.min.js"></script>
+	<script src="js/plugins/zepto.selector.min.js"></script>
+	<script src="js/plugins/zepto.fx.min.js"></script>
+	<script src="js/plugins/touch.js"></script>
+	<script src="js/plugins/md5.js"></script>-->
+<script src="js/zepto.base.min.js"></script>
+
+<script src="./js/authorize_userinfo.js"></script>
+<script src="js/common.js"></script>
+
+<script src="js/app/dialog.js"></script>
+<script src="js/app/user.js"></script>
+
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

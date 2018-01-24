@@ -1,0 +1,173 @@
+html {
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow:hidden;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+
+.swiper-pagination-bullet {
+	background: url(../images/icon-black.png) no-repeat;
+	background-size: 100% 100%;
+}
+.swiper-pagination-bullet-active {
+	background: url(../images/icon-white.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.swiper-container {
+	width: 100%;
+	margin: 0 auto 20px;
+}
+
+#J_goodShow {
+	width: 100%;
+	background: #FFF;
+	padding: 10px 0 16px;
+	overflow: hidden;
+	box-shadow: 0 3px 3px rgba(0,0,0,.2);
+}
+#J_goodShow h1 {
+	width: 100%;
+	padding: 0 16px;
+	margin: 6px auto;
+	font-size: 16px;
+	line-height: 22px;
+	word-break: break-all;
+}
+#J_goodShow p {
+	width: 100%;
+	padding: 0 16px;
+	margin: 3px auto;
+	font-size: 15px;
+	line-height: 20px;
+}
+#J_goodShow p:after {
+	content: '';
+	position: relative;
+	display: inline-block;
+	margin-left: 3px;
+	width: 24px;
+	height: 20px;
+	top: 3px;
+	background: url(../images/icon-coin.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+#J_detailShow {
+	width: 100%;
+	margin: 8px auto 100px;
+	padding: 10px 16px;
+	background: #FFF;
+	box-shadow: 0 3px 3px rgba(0,0,0,.2);
+}
+
+
+.btn {
+	display: block;
+	width: 72%;
+	height: 36px;
+	margin: 0 auto 10px;
+	line-height: 36px;
+	color: #FFF;
+	font-size: 18px;
+	background: #ff7a11;
+	border-radius: 5px;
+}
+.btn-noCoin {
+	background: #7f7f7f !important;
+}
+.copyright {
+	color: #333;
+}
+
+#good-dialog .dialog-content {
+	width: 80%;
+	margin: 0 auto;
+	padding: 7% 3% 2%;
+	background: #F5F5F5;
+	border-radius: 5px;
+	color: #333;
+}
+#good-dialog .dialog-body {
+	margin-bottom: 15%;
+	padding: 0;
+}
+#good-dialog h5 {
+	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+	color: #999;
+	margin-bottom: 10%;
+}
+#good-dialog .input-box {
+	width: 93%;
+	color: #333;
+}
+#good-dialog .input-box span {
+	margin-right: 5px;
+}
+#good-dialog input {
+	padding: 3px 5px;
+	color: #333;
+	background: #FFF;
+	border-radius: 3px;
+	border: 1px solid rgba(0,0,0,.2);
+}
+#good-dialog .btn-dialog-close {
+	display: block !important;
+	width: 22px;
+	height: 22px;
+	right: 11%;
+	top: 1.3%;
+}
+#good-dialog .dialog-content .input-box p {
+	text-align: left;
+	line-height: 20px;
+	word-break: break-all;
+}
+#good-dialog .dialog-content .input-box p label {
+}
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:570px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone6 */
+@media screen
+and (min-device-width:360px)
+and (max-device-width:667px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone6plus */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+
+/* HUAWEI H6 */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>天视观众节</title>
+<link rel="stylesheet" href="./css/comm.css" />
+<link rel="stylesheet" href="./css/bese.css" />
+<link rel="stylesheet" href="./css/star.css" />
+</head>
+
+<body>
+<div id="boxheight">
+	<section class="main-star none">
+		<div class="participant"><span></span></div>
+		<div class="advertising-a"></div>
+		<div class="star-con">
+		  <ul id="star-list">
+		  </ul>
+		</div>
+		<section class="star-btn"><a href="###" id="btn-sendcard" data-collect="true" data-collect-flag="gj-audience-send" data-collect-desc="制作邀请卡">制作邀请卡</a></section>
+	</section>
+
+	<section class="main-card none">
+	  <div class="mystar">
+	  	<p>我和 <label id="mystar-name"></label> 在天津</p>
+	  	<p>电视观众节现场，</p>
+	  	<p>邀请你一起来来来~ </p>
+	  </div>
+
+	  <div class="star-audio">
+	  	<span class="star-img" id="make-starimg"><img src="" /></span>
+	  	<div class="star-voice" id="make-card">
+	  		<h3></h3>
+	  		<div class="voice-con"><audio preload="auto" class="none" id="audio-a" src=""></audio><i class="talking"></i><span id="timelong"></span></div>
+	  	</div>
+	  </div>
+	  <div class="star-audio">
+	  	<span class="star-img" id="get-myimg"><img src="" /></span>
+	  	<div class="star-voice" id="get-myname">
+	  		<h3></h3>
+	  		<div class="voice-my none">
+	  			<i class="voice-my-i" id="myaudeo"></i>
+	  			<div class="voice-my-form" id="on-audeo"><span>我也来说说</span></div>
+	  		</div>
+	  		<div class="text-my none">
+	  			<i class="text-my-i" id="mytext"></i>
+	  			<div class="voice-my-form">
+	  				<input name="" type="text" class="my-said" id="input-text" placeholder="我也来唠叨唠叨" />
+	  			</div>
+	  		</div>
+
+	  		<div class="voice-con none" id="user-said"><i class="talking"></i><span id="timehow"></span></div>
+	  		<div class="my-text none" id="user-text">
+	  			<div></div>
+	  		</div>
+	  	</div>
+	  </div>
+	  <section class="star-btn" id="btn-scon"><a href="###" id="btn-submit">提交邀请卡</a></section>
+	  <section class="success-text none">制作成功！<br />发送给朋友 继续抽奖！</p></section>
+      <!--
+      <section class="star-btn none" id="btn-cdj"><a href="lottery.html" id="btn-submit">抽大奖</a></section>
+      -->
+	  <section class="star-btn none" id="btn-zhk"><a href="lottery.html" id="btn-submit">一起来抽奖吧</a></section>
+	</section>
+
+	<section class="cloud">
+		<div class="cloud-c"></div>
+		<div class="cloud-d"></div>
+		<div class="cloud-b"></div>
+	</section>
+	<section class="footer">页面由天津广播电视台提供 <br />新掌趣科技技术支持&Powered by holdfun.cn</section>
+</div>
+    <section class="backhome"></section>
+
+    <script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/plugins/zepto.min.js"></script>
+	<script type="text/javascript" src="js/plugins/zepto.cookie.min.js"></script>
+    <script type="text/javascript" src="js/plugins.min.js"></script>
+
+	<script type="text/javascript" src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+	<script type="text/javascript" src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script type="text/javascript" src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script type="text/javascript" src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+
+	<script type="text/javascript" src="js/plugins/md5.js"></script>
+	
+	<script type="text/javascript" src="js/plugins/wx_api_userinfo.js"></script>
+
+	<script type="text/javascript" src="js/plugins/common.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+	
+    <script type="text/javascript" src="js/app/star.js"></script>
+
+
+</body>
+</html>

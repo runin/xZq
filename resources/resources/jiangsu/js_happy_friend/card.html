@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>幸福剧场</title>
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/card.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+</head>
+<body>
+    <img class="preload" src="./images/reserve-default.png">
+    <img class="preload" src="./images/icon-xxx.jpg">
+    <img class="preload" src="./images/icon-xcard.jpg">
+    <section class="bg"></section>
+    <section class="info off none">
+        <img class="tips-rule" src="./images/tips-rule.png">
+        <i></i>
+    </section>
+    <section class="marqueen hidden" id="marqueen"><ul></ul></section>
+    <img class="icon-reserve" src="./images/icon-card.png">
+    <section class="main">
+        <p class="card-info hide">该套卡牌已有<label>0</label>人集齐</p>
+        <section class="swiper-control">
+            <section class="swiper-container">
+                <section class="swiper-wrapper"></section>
+                <!-- <section class="swiper-pagination"></section> -->
+                <section class="swiper-button-next swiper-button-white"></section>
+                <section class="swiper-button-prev swiper-button-white"></section>
+            </section>
+        </section>
+        <section class="link-container none">
+            <section class="love none" id="tips-send">
+                <h2>轻轻一点送卡片&nbsp;剧集好礼掉下来</h2>
+            </section>
+            <section class="love none" id="tips-nobody">
+                <h2>好朋友还没有聚齐哦，在朋友圈找找他们吧</h2>
+            </section>
+        </section>
+        <section class="lottery-container none">
+            <p>您已兑换过该剧大奖，不能重复兑换</p>
+        </section>
+        <a href="javascript:;" class="btn-award none" data-collect="true" data-collect-flag="btn-award" data-collect-desc="按钮-马上领奖"><p><i></i><img src="./images/btn-award.png"></p></a>
+    </section>
+    <section class="solo">
+        <p class="nickname hide">好友：<label>幸福剧场观众</label></p>
+        <p class="solo-tips">在江苏卫视幸福剧场向您<span class="solo-get">索要了</span><span class="solo-send">赠送了</span>这张卡牌</p>
+        <section class="solo-wrapper">
+            <section class="solo-box">
+                <img class="solo-cover" src="./images/icon-xcard.jpg">
+                <img class="solo-img" src="./images/reserve-default.png">
+                <h5 class="tips-getNum">这张卡牌，您当前一共有<label></label></h5>
+                <h5 class="tips-noget"><p>你还没有拿到这张卡牌</p><p>暂时无法赠送哦</p></h5>
+                <h5 class="tips-send"></h5>
+                <h5 class="tips-nosend"><p>手慢了，卡牌已被抢走</p><p>参与互动自食其力吧</p></h5>
+            </section>
+        </section>
+        <section class="btn-box">
+            <a href="javascript:;" class="btn-yes" data-collect="true" data-collect-flag="btn-yes" data-collect-desc="按钮-大方赠送"><img src="./images/btn-yes.png"></a>
+            <a href="javascript:;" class="btn-no" data-collect="true" data-collect-flag="btn-no" data-collect-desc="按钮-残忍拒绝"><img src="./images/btn-no.png"></a>
+            <a href="javascript:;" class="btn-collect" data-collect="true" data-collect-flag="btn-collect" data-collect-desc="按钮-先去囤卡"><img src="./images/btn-collect.png"></a>
+            <a href="javascript:;" class="btn-come" data-collect="true" data-collect-flag="btn-come" data-collect-desc="按钮-马上领取"><img src="./images/btn-come.png"></a>
+            <a href="javascript:;" class="btn-play" data-collect="true" data-collect-flag="btn-play" data-collect-desc="按钮-马上去玩"><img src="./images/btn-play.png"></a>
+        </section>
+    </section>
+    <section class="pop-dialog" id="share">
+        <section class="film-wrapper">
+            <img class="roll roll1" src="./images/icon-cameraRoll.png">
+            <img class="roll roll2" src="./images/icon-cameraRoll.png">
+            <img class="icon-camera" src="./images/icon-camera.png">
+            <img class="icon-flash" src="./images/icon-flash.png">
+            <img class="tips-get" src="./images/tips-get.png">
+            <img class="tips-send" src="./images/tips-send.png">
+        </section>
+    </section>
+    <section class="pop-dialog none" id="kiss">
+        <section class="solo-wrapper">
+            <section class="solo-box">
+                <img class="solo-img" src="./images/icon-xxx.jpg">
+                <a href="javascript:;" class="btn-go" data-collect="true" data-collect-flag="btn-go" data-collect-desc="按钮-马上进入剧场"><img src="./images/btn-go.png"></a>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <section class="copyright">页面由江苏卫视提供<br>新掌趣科技技术支持 & Powered by holdfun.cn</section>
+        <section class="btn nav nav-card" id="nav">
+            <a id="btn-answer" data-collect="true" data-collect-flag="btn-answer" data-collect-desc="答题按钮"></a>
+            <a class="active" id="btn-card" data-collect="true" data-collect-flag="btn-card" data-collect-desc="集卡按钮"></a>
+            <a id="btn-shop" data-collect="true" data-collect-flag="btn-shop" data-collect-desc="商城按钮"></a>
+        </section>
+    </footer>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/xss.min.js"></script>
+    <script src="./js/plugins/swiper.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="./js/app/card.js"></script>
+    <script src="./js/app/dialog.js"></script>
+</body>
+</html>

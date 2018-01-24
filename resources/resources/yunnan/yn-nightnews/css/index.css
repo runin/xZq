@@ -1,0 +1,116 @@
+html {
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow:hidden;
+    overflow-y: scroll;
+}
+.modal {
+    position: fixed !important;
+}
+header {
+	position: relative;
+	width: 100%;
+	margin: 4% auto 5%;
+	padding: 0 3%;
+}
+.icon-tvlogo {
+	display: inline-block;
+	width: 45%;
+	margin-top: 1.5%;
+}
+.btn-rule {
+	display: block;
+	width: 25%;
+	float: right;
+}
+
+#J_slogan {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+#J_slogan img {
+	margin: 0 auto 3%;
+}
+#J_slogan img:nth-child(1) {
+	-webkit-animation-delay: .6s;
+	animation-delay: .6s;
+	margin: 16% auto 5%;
+}
+#J_slogan img:nth-child(2) {
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+	width: 65%;
+	margin-bottom: 26%;
+}
+
+#J_background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	z-index: -1;
+}
+.btn-a {
+	display: block;
+	margin: 0 auto 5%;
+	width: 56%;
+	height: 42px;
+	line-height: 40px;
+	font-size: 19px;
+	border-radius: 50px;
+	-webkit-animation-delay: 1.8s;
+	animation-delay: 1.8s;
+}
+
+/* iPhone4 */
+@media screen
+and (device-width:320px)
+and (device-height:480px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	#J_slogan {
+	    width: 92% !important;
+	}
+	#J_slogan img:nth-child(2) {
+		width: 65%;
+		margin-bottom: 16%;
+	}
+}
+
+/* iPhone5 */
+@media screen
+and (device-width:320px)
+and (device-height:568px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone6 */
+@media screen
+and (min-device-width:360px)
+and (max-device-width:667px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone6plus */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+
+/* HUAWEI H6 */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+}

@@ -1,0 +1,392 @@
+html{
+    height: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg.jpg) center center;
+  background-size: cover;
+}
+.time-text{
+	width: 100%;
+	background: #144f9a;
+	height: 28px;
+	line-height: 28px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	
+}
+.count{
+	width: 50%;
+	height: 36px;
+	background: url(../images/count-bg.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 34px;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	padding-right:5% ;
+}
+.ddtj{
+    display: inline-block;
+    color: #144f9a;
+    font-size: 14px;
+    text-decoration: underline;
+    line-height: 26px;
+    padding: 0 4px;
+
+}
+.ddtj-before{
+    background: url(../images/redenve.png) 0 0 no-repeat;
+    background-size: 20px;
+    height: 26px;
+    width: 20px;
+    display: inline-block;
+    float: left;
+}
+.ddtj-div{
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 34px;
+}
+.footer{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    float: left;
+}
+.footer .cor{
+	height: 50px;
+	position: relative;
+	padding: 0 6px;
+}
+.footer .cor .input_head{
+	position: absolute;
+	left: ;
+	display: block;
+	width: 42px;
+	height: 42px;
+	border-radius:50%;
+	padding: 3px;
+	border: 1px solid #000;
+	background-color: #83adc6;
+}
+.footer .cor .input_head img{
+	border-radius:50%;
+	width: 100%;
+}
+.footer input{
+    width: 76%;
+    margin-left: 10px;
+    background: #b4f8ff;
+    border: none;
+    height: 42px;
+    display: inline-block;
+    float: left;
+    padding-left: 40px;
+    background: url(../images/input-bg.png) no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+.footer a#input_submit{
+    display: inline-block;
+    width: 17%;
+    height: 35px;
+    position: relative;
+    float: left;
+    line-height: 33px;
+    padding-left: 6px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    color: #fff;
+}
+.talkroom{
+    margin-top: 38px;
+}
+
+.talkroom .talk-title{
+    background: #fff;
+    border: 5px solid #00a4b4;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 10px;
+}
+.talkroom .talk-title img{
+    display: inline-block;
+    width: 20%;
+    border-radius: 35px;
+    border: 3px solid #d4d4d4;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.talkroom .talk-title .content{
+    display: inline-block;
+    max-width: 70%;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+.talkroom .talk-title .content .per{
+    color: #00464d;
+    font-size: 14px;
+}
+.talkroom .talk-title .content .que{
+    color: #007a86;
+}
+
+
+ .body{
+     width: 90%;
+     height: 71%;
+     overflow-y: auto;
+     position: relative;
+     margin: 4% auto;
+     padding: 0% 6% 3%;
+}
+.content{
+    width: 100%;
+    overflow-y: auto;
+    padding: 10px 0 30px;
+}
+.content li{
+    margin-bottom: 15px;
+}
+.content li .ron{
+    display: inline-block;
+    width: 75%;
+    margin-left: 2%;
+}
+.content li .ron p{
+	width: 100%;
+	font-size: 12px;
+    color: #fff;
+    padding:4px 4px 4px 6px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.content li .ron .tar{
+    width: 100%;
+    text-align: right;
+}
+.content li img{
+    width: 50px;
+    border-radius: 30px;
+    display: inline-block;
+}
+.content li .triangle {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 2%;
+    margin-left: 5px;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-left: none;
+    border-right: 8px solid #fff;
+    margin-right: -1px;
+}
+.content li .triangle-top{
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 23%;
+    margin-left: -13%;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 8px solid #fff;
+    border-top: none;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.content li .triangle-right{
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: 4%;
+    margin-right: 2%;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-right: none;
+    border-left: 8px solid #8dd609;
+}
+.content li .article {
+    max-width: 85%;
+    display: inline-block;
+    zoom: 1;
+    padding: 5px 10px;
+    background: #fff;
+    border-radius: 5px;
+    color: #000;
+    word-break: break-all;
+    font-size: 13px;
+}
+.content li .article-right {
+    max-width: 85%;
+    display: inline-block;
+    zoom: 1;
+    padding: 5px 10px;
+    background: #8dd609;
+    border-radius: 5px;
+    color: #fff;
+    word-break: break-all;
+}
+.content li::after{
+	content: "";
+	display: block;
+	width: 0px;
+	height: 0px;
+	clear: both;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.mr{
+	margin-right: 2%;
+}
+.pr{
+	padding-right: 2%;
+}
+.mesg-tip{
+    display:block;
+    position: absolute;
+    bottom:140px;
+    right: 10px;
+    color: #000;
+    background: rgba(255,255,255,.9);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    font-size: 12px;
+    border-radius: 4px;
+    width: 50%;
+    padding: 6px 6px;
+}
+@-webkit-keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}
+.nav-bottom{
+	background: url(../images/nav-bottom.png) no-repeat center;
+	background-size: 100%;
+	background-position: 0 100%;
+	padding-top: 4px;
+	text-align: center;
+}
+.nav-bottom a{
+	display: inline-block;
+	width: 49%;
+	height: 100%;
+	
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .body {
+        height: 68%;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>宝贝大赢家</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/reset.css" />
+<!--<link rel="stylesheet" href="./css/dialog.css" />-->
+<link rel="stylesheet" href="./css/olddialog.css" />
+<link rel="stylesheet" href="./css/yao.css" />
+</head>
+
+<body>
+    <!--摇一摇声音-->
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio><!--中奖声音-->
+
+    <!--摇一摇红包-s-->
+    <div class="home-box-bg"></div>
+    <section class="home-box">
+        <div id="yao-redbao" class="page">
+            <div class="main-top m-t-b">
+
+                <div class="marquee none"><ul></ul></div>
+                <a href="#" class="yao-back" data-collect="true" data-collect-flag="tv-fujian-barrage-back-index" data-collect-desc="福建-弹幕-返回-首页按钮">
+                    <img src="./images/back-btn.png" class="yao-back-btn">
+                </a>
+
+                <div class="info-box">
+                    <p class="count"></p>
+                </div>
+
+                <div class="countdown ">
+                    <span class="countdown-tip"></span>
+                    <span class="detail-countdown"></span>
+                    <div class="yao-hand">
+                        <img src="./images/yao-hand.png" class="hand-style wobble">
+                    </div>
+                </div>
+                <div class="tttj none" id="tttj" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+                    <img class="waggle" src="./images/icon-redbag.png">
+                    <p></p>
+                </div>
+            </div>
+            <div class="main-foot m-f-b">
+                <div class="yao-text">
+                    <p class="none textb"><span>啊哦，差一点就抢到了，继续加油</span></p>
+                </div>
+                <a href="#" class="btn-rule" id="btn-rule" data-collect="true"
+                   data-collect-flag="index-rule" data-collect-desc="首页-活动规则按钮">查看活动规则>></a>
+                <!--<div class="yao-rule">查看活动规则>></div>-->
+                <div class="footer">
+                    <div class="copyright"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--活动规则-s-->
+    <section class="rule-section none">
+        <div class="rule-div">
+            <a class="close rule-close" data-collect="true"
+               data-collect-flag="hlj-hreo-index-rule-btn"
+               data-collect-desc="活动规则-关闭按钮">
+                <p></p>
+            </a>
+            <div class="con">
+                <h2>活动规则</h2>
+                <div class="con-htm"></div>
+            </div>
+        </div>
+    </section>
+<!--活动规则-e-->
+<!--摇一摇红包-e-->
+ <!--<div class="test" id="test" >test</div>-->
+<script src="js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/zepto.selector.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/sha1.min.js"></script>
+
+<script src="./js/plugins/shake.min.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="./js/app/yao.js"></script>
+<script src="./js/app/olddialog.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>喜乐街</title>
+	
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/util.css" />
+	<link rel="stylesheet" href="./css/zuji.css" />
+</head>
+<body>
+	<section class="main">
+		<header>
+			<a id="appointment" href="javascript:void(0);" class="reserve none" data-collect="true" data-collect-flag="joy-street-appointment" data-collect-desc="喜乐街 预约">节目预约</a>
+			<section class="countdown" data-collect="true" data-collect-flag="joy-street-zujiViewToIndex" data-collect-desc="喜乐街 足迹浏览进入摇红包页">距离抢红包还有0分钟</section>
+			<a href="javascript:void(0);" class="rule" id="rule" data-collect="true" data-collect-flag="joy-street-rule" data-collect-desc="喜乐街 活动详情">活动详情</a>
+		</header>
+		<section class="main-content">
+			<ul class="view-list">
+			</ul>
+			<footer>
+				本页面由喜乐街在CCTV1授权下提供<br />新掌趣科技技术支持&Powered by holdfun.cn
+				<div id="div_subscribe_area" class="div_subscribe_area_class"></div>
+			</footer>
+
+			<section class="nav-wrapepr">
+				<section class="nav">
+					<a href="javascript:void(0);" class="nav-make" data-collect="true" data-collect-flag="joy-street-zuji-tab-make" data-collect-desc="喜乐街 选取制作"><i class="icon icon-make"></i>选取制作</a>
+					<a href="javascript:void(0);" class="nav-view" data-collect="true" data-collect-flag="joy-street-zuji-tab-view" data-collect-desc="喜乐街 看作品"><i class="icon icon-view"></i> 看作品</a>
+				</section>
+			</section>
+			
+		</section>
+	</section>
+
+	<section class="dialog-wrapper none">
+		<section id="guize" class="dialog">
+			<section class="dialog-content">
+				<section class="tab-wrapper">
+					<section class="tab">
+						<a id="tab_rule" class="active" href="javascript:void(0)" data-collect="true" data-collect-flag="joy-street-tab-rule" data-collect-desc="喜乐街 活动规则">活动规则</a>
+						<a id="tab_score" href="javascript:void(0)" data-collect="true" data-collect-flag="joy-street-tab-score" data-collect-desc="喜乐街 本期积分">本期积分</a>
+						<a id="tab_all_score" href="javascript:void(0)" data-collect="true" data-collect-flag="joy-street-tab-all-score" data-collect-desc="喜乐街 累积积分">累积积分</a>
+						<a id="tab_ticket" href="javascript:void(0)" data-collect="true" data-collect-flag="joy-street-tab-ticket" data-collect-desc="喜乐街 代金券">代金券</a>
+					</section>
+				</section>
+				<section class="separator">
+					<a id="info" class="none" href="javascript:void(0)" data-collect="true" data-collect-flag="joy-street-info" data-collect-desc="喜乐街 完善个人资料">完善个人资料</a>
+					<a id="tttj" class="none" href="javascript:void(0)" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+					<section class="info-wrapper none">
+						<section class="top-border"></section>
+						<section class="info-input-wrapper">
+							<input id="token" name="token" type="hidden" />
+							<section class="input-wrapper">
+								<label for="name">姓名</label>
+								<input id="name" name="name" type="text" placeholder="请填写姓名" />
+							</section>
+							<section class="input-wrapper">
+								<label for="add">地址</label>
+								<input id="add" name="add" type="text" placeholder="请填写地址" />
+							</section>
+							<section class="input-wrapper">
+								<label for="tel">手机</label>
+								<input id="tel" name="add" type="tel" placeholder="请填写手机" />
+							</section>
+							<section class="submit-wrapper">
+								<a id="info_submit" href="javascript:void(0);" data-collect="true" data-collect-flag="joy-street-info-submit" data-collect-desc="喜乐街 完善个人资料提交">提 交</a>
+							</section>
+						</section>
+						<section class="bottom-border"></section>
+					</section>
+				</section>
+				<section id="content_rule" class="rule tab-content">
+				</section>
+				<section id="content_score" class="score none tab-content">
+					<section class="my-score">
+						<p class="detail"></p>
+						<ul class="rank-list">
+						</ul>
+					</section>
+				</section>
+
+				<section id="content_ticket" class="none tab-content">
+					<section class="my-ticket">
+						<p class="detail"></p>
+						<ul class="rank-list">
+						</ul>
+					</section>
+				</section>
+
+			</section>
+			<section class="dialog-bg">
+				<section class="dialog-top"></section>
+				<section class="dialog-center"></section>
+				<section class="dialog-bottom"></section>
+			</section>
+			<a class="dialog-close" href="javascript:void(0);" data-collect="true" data-collect-flag="joy-street-tab-rule-close" data-collect-desc="喜乐街 关闭活动规则"></a>
+		</section>
+	</section>
+
+	<section id="slide" class="slide-wrapper none">
+		<img class="slide" src="./images/icon-slide.png" />
+	</section>
+
+	<script src="./js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/core.js"></script>
+	<script src="./js/plugins/authorize_userinfo.js"></script>
+	<script src="./js/plugins/util.js"></script>
+	<!--<script src="./js/plugins/plugins.min.js"></script>-->
+	
+	<script src="./js/app/router.js"></script>
+	<script src="./js/app/zuji-view.js"></script>
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

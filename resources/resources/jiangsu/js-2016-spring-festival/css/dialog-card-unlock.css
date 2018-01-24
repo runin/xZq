@@ -1,0 +1,98 @@
+#card_unlock_dialog{
+	background: rgba(0, 0, 0, 0.75);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	z-index: 1;
+}
+#card_unlock_dialog .dialog{
+	width: 100%;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/01/957pprijv1qnhi/images/bg-card-small.png) no-repeat top;
+	background-size: contain;
+	position: relative;
+}
+
+#card_unlock_dialog .card-video-wrapper{
+	position: relative;
+	z-index: 2;
+}
+#card_unlock_dialog .card-video-wrapper .locking{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+#card_unlock_dialog .card-video-wrapper img{
+	display: block;
+	position: relative;
+}
+#card_unlock_dialog .card-video-wrapper .arrow{
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	background-size: contain;
+}
+
+#card_unlock_dialog .card-get-gift{
+	position: absolute;
+	right: 10px;
+	bottom: -50px;
+	z-index: 1;
+	width: 35px;
+}
+#card_unlock_dialog .card-get-btn{
+	left: 0px;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	z-index: 4;
+}
+#card_unlock_dialog .card-get-btn img{
+	height: 100%;
+}
+
+/*
+ * 解锁分享引导
+ */
+#card_unlock_guide{
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+}
+#card_unlock_guide .cloud-wrapper{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 100%;
+	text-align: right;
+}
+#card_unlock_guide .cloud-wrapper .cloud img{
+	width: 70%;
+}
+#card_unlock_guide .cloud-wrapper .cloud-text img{
+	width: 30%;
+	margin-right: 10px;
+}
+#card_unlock_guide .cloud-wrapper.floating{
+	-webkit-animation: cloudFloat 0.3s ease;
+	animation: cloudFloat 0.3s ease;
+}
+#card_unlock_guide .cloud-wrapper .cloud-text.fadeIn{
+	-webkit-animation: fadeIn 0.3s ease;
+	animation: fadeIn 0.3s ease;
+}
+/*
+ * END OF 解锁分享引导
+ */

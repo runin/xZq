@@ -1,0 +1,161 @@
+body {
+   background: #f8f8f9;
+}
+.main {
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-size: 15px;
+}
+.gift-timeline {
+    position: relative;
+
+    padding-left: 28px;
+}
+.no-content {
+	line-height: 300px;
+	color: #8C592E;
+  	text-shadow: 0 1px 1px #FBFFC3;
+  	text-align: center;
+  	font-size: 16px;
+}
+.gift-timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: #9A6E29;
+}
+.gift-timeline li {
+    padding-left: 27px;
+
+    margin-top: 17px;
+    position: relative;
+}
+.gift-timeline li:last-child:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gift-time {
+    color: #8C592E;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.gift-icon {
+    width: 26px;
+
+    height: 26px;
+    border: 2px solid #9A6E29;
+    border-radius: 50%;
+    position: absolute;
+    left: -11px;
+    background: #fff;
+}
+.gift-icon:before {
+    content: '';
+    background: url(../images/gift-icon.png) no-repeat;
+    background-size: 15px auto;
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+.gift-content {
+    background: #ec921e;
+
+    border-radius: 8px 0 0 8px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.gift-content h2 {
+    color: #FFf;
+
+    border-bottom: 1px solid #FFf;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+.gift-content p {
+    color: #fff;
+
+    line-height: 24px;
+}
+a.btn-back {
+    display: block;
+    color: #8C592E;
+    text-shadow: 0 1px 1px #FBFFC3;
+    margin: 40px auto;
+    background: #ffc12d;
+}
+a.btn-back:hover {
+	background: #ffc12d;
+    color: #8C592E;
+    text-shadow: 0 1px 1px #FBFFC3;
+}
+.btn-loadmore{
+    background: #D2CCC7;
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1100px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1200px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.no-content {
+  		line-height: 200px;
+  	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 570px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:3) {
+
+
+}

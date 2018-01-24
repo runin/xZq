@@ -1,0 +1,315 @@
+
+.modal {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 100;
+	color: #fff370;
+	text-align: right;
+	overflow-y: auto
+}
+.modal .dialog{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow-y: auto;
+}
+.modal .btn-close{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../images/close.png) no-repeat;
+	background-size:30px ;
+}
+
+.gift-box{
+	width: 100%;
+	height: 100%;
+	background: url(../images/gift.png) no-repeat center bottom;
+	background-size: 90% auto ;
+	position:relative;
+	text-align: center;
+	
+}
+.gift-box .btn-open{
+	display: inline-block;
+	width:50%;
+	height: 38px;
+	line-height: 38px;
+	background-color: #ffe327;
+	color: #ff2240;
+	box-shadow: 0px 4px 4px #e29500;
+	border-radius: 6px ;
+	position:absolute ;
+	bottom: 50px;
+	left: 0px;
+	margin: 0 25%;
+	letter-spacing: 4px;
+	font-weight: bold;
+	
+	
+}
+.not-lott,.lott{
+	width: 100%;
+	height: 100%;
+	background: url(../images/lott-bg.png) no-repeat center bottom;
+	background-size: 90% 100% ;
+}
+.lott h1{
+	text-align: center;
+	font-size: 18px;
+	line-height: 120px;
+	color: #ffea01;
+}
+.area{
+	width: 74%;
+	height: 68%;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 20px;
+	margin: 0 13%;
+	text-align: center;
+}
+.lott .goods img{
+	display: inline-block;
+	width : 60%;
+	margin: 0 auto;
+}
+.lott .goods h2{
+	font-size: 13px;
+	color: #fff;
+	text-align: left;
+}
+.lott .btn{
+	display: block;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 6px;
+	margin-top: 10px;
+	font-size: 18px;
+	letter-spacing: 6px;
+	
+}
+
+input {
+    display: block;
+    width: 100%;
+    border: 0 none;
+    border: 1px solid #D3D3D3;
+    height: 30px;
+    font-size: 12px;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    margin: 0px auto 8px;
+    color: #979797;
+    outline: none;
+    background: #FFFFEF;
+}
+.lott .quan{
+	padding: 16% 0px;
+}
+.lott .quan img{
+	width: 100%;
+	max-height: 100%;
+}
+.lott .quan .btn{
+	margin-top: 60px;
+}
+
+.not-lott {
+	padding: 50% 0px 0px;
+	text-align: center;
+	color: #fff;
+}
+.not-lott .area{
+	bottom :0px;
+}
+.not-lott .area img{
+	width :50px;
+	height: 50px;
+}
+.not-lott .area h1{
+	font-size: 20px;
+	line-height: 36px;
+}
+.not-lott .btn{
+	font-size: 17px;
+	width: 90%;
+	padding: 0 20px;
+	border-radius: 6px;
+	margin-top: 60px;
+}
+.rule-dialog{
+	background: #aacc33;
+	background-size: 100% 100%;
+	color: #fff;
+	border-radius: 6px;
+	
+}
+.rule-dialog .btn-close{
+	position: absolute;
+    top: 6px;
+    right: 6px;
+	width: 18px;
+	height: 18px;
+	background: url(../images/icon-close.png) no-repeat;
+	background-size:18px ;
+}
+.rule-dialog h2{
+	padding-top: 20px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+
+}
+.rule-dialog .content{
+	padding: 10px 20px;	
+	text-align: left;
+	font-size: 14px;
+}
+.rule-dialog .rule-con{
+	height: 100%;
+	word-wrap: break-word;
+	overflow: auto;
+}
+.dialog-copyright {
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+    right: 5px;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    height: 60px;
+    background: url(../images/dialog-copyright.png) no-repeat center;
+    background-size: 80%;
+}
+
+
+
+/*加载按钮 -s*/
+.loader{
+    margin: 0 auto;
+    width: 72px;
+}
+.loader span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background: #F26C0D;
+    border-radius: 50px;
+    margin: 0 2px;
+    -webkit-animation: loader 1s infinite alternate;
+    -moz-animation: loader 1s infinite alternate;
+}
+.loader span:nth-of-type(2) {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+.loader span:nth-of-type(3) {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+}
+.loader span:nth-of-type(4) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+.loader span:nth-of-type(5) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+}
+@-webkit-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+@-moz-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.rule-dialog h2 {
+		padding-top: 30px;
+		line-height: 20px;
+	}
+	.lott{
+		padding-top: 0px;
+    }
+    .lott .quan {
+	  padding: 8% 0px;
+	}
+	.lott .quan .btn {
+	  margin-top: :;0px;
+	}
+    .not-lott{
+    	padding-top: 20%;
+    }
+    .modal .btn-close{
+	    top: 0px;
+	    right: 10px;
+	}
+	.gift-box{
+		background-size: 90% 100% ;
+	}
+	.rule-dialog .btn-close{
+	    top: 10px;
+	    right: 10px;
+	}
+	input {
+	    margin: 0px auto 4px;
+	}
+	.lott .goods img{
+		width : 50%;
+	}
+	.lott .btn{
+		margin-top: 4px;	
+	}
+	
+}
+/*iphone5*/
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

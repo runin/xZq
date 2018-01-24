@@ -1,0 +1,279 @@
+html,body{
+	height: 100%;
+}
+.main {
+	height: 100%;
+	position: relative;
+}
+section{
+	height: 100%;
+	padding: 20px 0px;
+	
+}
+#index{
+	background: url(../images/bg-body.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.rule{
+	background: rgba(255,255,255,0.5);
+	color: #000000;
+	padding:4px 6px;
+	font-size: 10px;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+.logo{
+	width: 270px;
+	display: block;
+	margin: 0 auto;
+}
+.try{
+	
+	background-color: #ed0000;
+}
+.btn-group{
+	margin-top: 40px;
+}
+.btn-group .btn{
+	width: 80%;
+}
+.go{
+	margin-top: 10px;
+	border: 1px solid #89aca9;
+	background:rgba(206,204,199,0);
+	color: #bf0567;
+	
+}
+.box-gradient{
+	background: -webkit-linear-gradient(top bottom, rgba(200,199,193,0.8) 0%, rgba(255,255,255,0.2) 70%);
+	background: linear-gradient(to bottom, rgba(200,199,193,0.8) 0%, rgba(255,255,255,0.2) 70%);
+	 background:-moz-linear-gradient(left,rgba(200,199,193,0.8) 0%, rgba(255,255,255,0.2) 70%);
+}
+.card{
+	display: block;
+	background: url(../images/card.png) no-repeat;
+	background-size:88px auto;
+	height: 69px;
+	width: 88px;
+	margin:0 auto;
+	font-size: 12px;
+	color:#fff;
+}
+.my-card{
+	text-align: center;
+	padding-top: 2px;
+}
+.card p{
+	margin: 20px 0 0 38px;
+	text-align: center;
+	width: 15px;
+}
+.not-started{
+	color: #ff0000;;
+	font-size:14px;
+	text-align: center;
+	margin: 10px 0;
+}
+.not-started h1{
+	width: 100px;
+	margin: 0 auto;
+}
+.not-started p{
+	width: 135px;
+	margin: 5px auto 0;
+}
+.not-started label{
+	display: inline-block;
+}
+.not-started label.dian{
+	width: 13px;
+	height: 32px;
+	line-height: 32px;
+	text-align: left;
+}
+.juli{
+	font-size: 12px;
+	color: #fff;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.canyu{
+	margin: 45px auto 0;
+	text-align: center;
+}
+
+
+.from-logo{
+	width: 245px;
+	margin: 0 auto;
+	display: block;
+}
+.from ul{
+	font-size: 12px;
+	color: #ed0000;
+	width: 90%;
+	display: block;
+	margin: 20px auto 0;
+}
+.from ul li{
+	border-bottom: 1px solid rgba(191,191,191,0.6);
+	line-height: 20px;
+	padding-left: 10px;
+}
+.from ul li:last-child{
+	border-bottom:none;
+}
+
+
+.from ul li i{
+	display: inline-block;
+	margin: 10px auto;
+	width: 90%;
+}
+.from a{
+	margin: 10px auto;
+}
+.from.rotate{
+	-webkit-animation-name: rota;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes rota {
+	from{
+		-webkit-transform: rotateZ(0deg) scale(1,1);
+		transform: rotateZ(0deg) scale(1,1);
+	}
+	to{
+		-webkit-transform: rotateZ(360deg) scale(0.5,0.5);
+		transform: rotateZ(360deg) scale(0.5,0.5);
+		opacity: 0;
+	}
+}
+a.my-zhidao{
+	color: #fff;
+	font-size: 18px;
+	background: #ff0000;
+}
+.title{
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+	margin: 20px auto;
+	line-height: 30px;
+}
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.logo,.from-logo{
+		width: 200px!important;
+	}
+	.home-top {
+		margin: 5px 20px 0!important;
+	}
+	.btn {
+		width: 70%!important;
+		height: 32px!important;
+		line-height: 32px!important;
+		
+	}
+	.main .btn-begin {
+		width: 90px!important;
+		height: 90px!important;
+		font-size: 26px!important;
+		padding: 22px 0 0!important;
+	}
+	.dialog-copyright {
+		bottom: 0px!important;
+		-webkit-transform: scale(0.9) !important;
+	}
+	.dialog-copyright .my-zhidao{
+		margin-bottom: 20px;
+	}
+	.from ul{
+		width: 98%;
+		margin-top: 0px;
+	}
+	.btn-group{
+		margin-top: 10px;
+	}
+	section{
+		padding: 10px 0px;
+    }
+}
+
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.logo{
+		width: 230px;
+	}
+	.home-top {
+		margin: 10px 20px 5px;
+	}
+	.lottery-dialog .dialog-copyright {
+		bottom: 10px;
+	}
+	.btn-group{
+		margin-top: 10px;
+	}
+	section{
+		padding: 20px 0px 10px;
+    }
+}
+
+@media screen
+and (min-device-width : 360px)
+and (min-device-height : 1100px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.main .btn-begin {
+		width: 120px;
+		height: 120px;
+		font-size: 32px;
+		padding: 32px 0 0;
+		margin-top: 0px;
+	}
+}
+@media screen
+and (min-device-width : 360px)
+and (min-device-height : 1200px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.main .btn-begin {
+		width: 138px;
+		height: 138px;
+		font-size: 38px;
+		padding: 38px 0 0;
+		margin-top: 10px;
+	}
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.main .btn-begin {
+		width: 120px;
+		height: 120px;
+		font-size: 32px;
+		padding: 32px 0 0;
+		margin-top: 0px;
+	}
+	.btn-group{
+		margin-top: 30px;
+	}
+}
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.home-top {
+		margin: 5px 20px 1px;
+	}
+}

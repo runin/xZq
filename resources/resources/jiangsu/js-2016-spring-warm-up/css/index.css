@@ -1,0 +1,1330 @@
+html,body {
+	height: 100%;
+}
+body {
+	line-height:1.5;
+	font-size:12px;
+	
+	color:#fff;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	background: #a00b11;
+}
+.wrap {
+	position:relative;
+	color:#fff;
+	height: 100%;
+	overflow: hidden;
+}
+.hide {
+	display: none;
+}
+.box-half img{
+	width: 100%;
+	height: 100%;
+}
+.arrow{
+	position: absolute;
+	width: 10%;
+	height: 100%;
+	background: url(../images/arrow.png) no-repeat center bottom;
+	background-position: auto 100%;
+	bottom: 8px;
+	left: 45%;
+}
+.swiper-slide-active .arrow{
+	-webkit-animation: arrowmove 2s 3s ease both infinite;
+}
+/*é¡µé¢åŠ è½½æç¤º*/
+	.mod_loading {
+	position:absolute;
+	height:100%;
+	left:0;
+	top:0;
+	width:100%;
+	z-index:100;
+	background-color:#b9ccd5;
+	display:-webkit-box;
+	-webkit-box-align:center;
+}
+.mod_loading .content {
+	text-align:center;
+	-webkit-box-flex:1;
+	margin:0 80px;
+}
+.mod_loading .content .progress {
+	height:13px;
+	padding:2px;
+	-webkit-border-radius:17px;
+	border-radius:17px;
+	background-color:#242a39;
+}
+.mod_loading .content .progress span {
+	display:block;
+	height:13px;
+	-webkit-border-radius:13px;
+	border-radius:13px;
+	background-color:#65cfd5;
+}
+.mod_loading .content p {
+	line-height:34px;
+	color:#5f696a;
+}
+/*æ»‘å—*/
+	.slider {
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	margin-left: -18px;
+	left: 50%;
+	bottom: 10px;
+	z-index: 9999;
+}
+.slider span {
+	position: absolute;
+	width: 24px;
+	height: 35px;
+	left: 50%;
+	top: 50%;
+	margin: -17px 0 0 -12px;
+	background-position: -158px -46px;
+	-webkit-animation: slide_up 2s infinite ease-out;
+}
+.item, .item .box {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.video-box{
+	position: absolute;
+	width: 92%;
+	left: 4%;
+	background: #eb6100;
+	padding: 3px;
+	box-shadow: 0px 0px 15px #190606;
+}
+.video-box img{
+	display: block;
+}
+.video-box .main-video{
+	margin-bottom: 3px;
+}
+.tab-video{
+	overflow: hidden;
+}
+.tab-video .tab-video-item{
+	width: 50%;
+	float: left;
+	padding-left: 2px;
+}
+.tab-video .tab-video-item:first-child{
+	padding-left: 0px;
+	padding-right: 2px;
+}
+.tab-video .tab-video-item.active img{
+	border: 1px solid #ffcf53;
+}
+
+
+.flower{
+	position: absolute;
+	width: 92%;
+	text-align: center;
+	left: 4%;
+}
+.flower img{
+	max-height: 100%;
+}
+
+
+.tips-box{
+	position: absolute;
+	font-size: 16px;
+	color: #ffa963;
+	text-align: center;
+	width: 100%;
+}
+.tips-box p{
+	width: 230px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ffa963;
+}
+
+.btn-box{
+	position: absolute;
+	width: 92%;
+	left: 4%;
+}
+.btn-box .btn-item{
+	width: 50%;
+	float: left;
+}
+.btn-box .btn-item a{
+	display: block;
+	font-size: 18px;
+	color: white;
+	background: #eb6100;
+	text-align: center;
+	margin: 0 3px;
+	border-radius: 3px;
+	box-shadow: 0px 2px 4px #5D1B1B;
+	line-height: 40px;
+}
+
+.btn-box.one .btn-item{
+	width: 100%;
+}
+
+.logo{
+	position: absolute;
+	width: 14%;
+	left: 2%;
+	top: 2%;
+}
+.list{
+	position: absolute;
+	width: 14%;
+	right: 2%;
+	top: 14%;
+	z-index: 2;
+}
+
+@media screen and (max-height:500px){
+	.list{
+		top: 5%;
+	}
+}
+
+#share_dialog{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background: rgba(0,0,0, 0.8);
+}
+#share_dialog img{
+	position: absolute;
+	width: 28%;
+	right: 2%;
+	top: 2%;
+}
+
+#main_video{
+	background: url(../images/cover1.jpg);
+	display: block;
+}
+
+@-webkit-keyframes slide_up {
+	0%,30% {
+	opacity: 0;
+	-webkit-transform: translate3d(0,10px,0);
+}
+60% {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+}
+100% {
+	opacity: 0;
+	-webkit-transform: translate3d(0,-8px,0);
+}
+}
+
+.item-11 {
+	background: #e05365;
+	background: url(../images/bg.jpg);
+	background-size: cover;
+}
+
+/*common*/
+	.mod_container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -36px;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	-webkit-backface-visibility:hidden;
+	z-index: 2;
+}
+.sprite_global {
+	
+	background-repeat: no-repeat;
+}
+.item .sprite {
+	background-repeat: no-repeat;
+	-webkit-transform: translate3d(0, 200px, 0);
+	opacity: 0;
+}
+.item .text_2 {
+	margin: 10px 20px 20px;
+}
+.item .scene {
+	margin: 10px auto;
+}
+.item.play .sprite {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+.item.play .text_1 {
+	-webkit-transition: all 1s ease-out;
+}
+.item.play .text_2 {
+	-webkit-transition: all 1s .3s ease-out;
+}
+.item.play .scene {
+	-webkit-transition: all 1s .6s ease-out;
+}
+.btn_play, .btn_pause {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 34px;
+	height: 34px;
+	z-index: 100;
+}
+.btn_play {
+	background-position: -107px -51px;
+}
+.btn_pause {
+	background-position: -60px -51px;
+}
+.btn_play i, .btn_pause i {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 14px;
+	height: 30px;
+	margin: -22px 0 0 -7px;
+	background-position: -4px 0;
+}
+.btn_play i {
+	-webkit-animation: play_sate 4s infinite;
+}
+/* item-1*/
+.item-1{
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdpik53pxy3/p1-bg.jpg) no-repeat center;
+}
+.item-1 .p1-bottom{
+	position: absolute;
+	width: 100%;
+	height: 34%;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdpik53pxy3/p1-bottom.png) no-repeat center;
+	background-size: 100% 100%;
+	bottom: 0px;
+}
+.item-1 .p1-star1{
+	position: absolute;
+	width: 50%;
+	height: 42%;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdrik53uijt/p1-star1.png) no-repeat center;
+	background-size: 100% 100%;
+	bottom: 21%;
+	left: 25%;
+}
+.item-1 .p1-star2{
+	position: absolute;
+	width: 72%;
+	height: 44%;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdrik53uijt/p1-star-left.png) no-repeat center;
+	background-size: 100% 100%;
+	bottom: 16%;
+	left: -12%;
+}
+.item-1 .p1-star3{
+	position: absolute;
+	width: 50%;
+	height: 37%;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdrik53uijt/p1-star-left-top.png) no-repeat center;
+	background-size: 100% 100%;
+	bottom: 40%;
+	left: -7%;
+}
+.item-1 .p1-star4{
+	position: absolute;
+	width: 48%;
+	height: 36%;
+	background: url(.http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdrik53uijt/p1-star-right.png) no-repeat center;
+	background-size: 100% 100%;
+	bottom: 10%;
+	right: -7%;
+}
+.item-1 .p1-star5{
+	position: absolute;
+	width: 58%;
+	height:50%;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdrik53uijt/p1-star-right-middle.png) no-repeat center;
+	background-size: 100% 100%;
+	bottom: 11%;
+	right: -17%;
+}
+.item-1 .p1-star6{
+	position: absolute;
+	width: 35%;
+	height:31%;
+	background: url(../images/p1-star-right-top.png) no-repeat center;
+	background-size: 100% 100%;
+	bottom: 42%;
+	right: -3%;
+}
+
+.item-1 .p1-logo{
+	position: absolute;
+	width: 16%;
+	height:10%;
+	background: url(../images/logo.png) no-repeat center;
+	background-size: contain;
+	top: 1%;
+	left: 3%;
+}
+.item-1.swiper-slide-active .p1-star1{
+	-webkit-animation: float-up 2.8s 0s ease both;
+}
+.item-1.swiper-slide-active .p1-star2{
+	-webkit-animation: float-left 2s 0.2s ease-out both;
+}
+.item-1.swiper-slide-active .p1-star3{
+	-webkit-animation: float-left 2.3s 0.4s ease-out both;
+}
+.item-1.swiper-slide-active .p1-star4{
+	-webkit-animation: float-right 2s 0.6s ease-out both;
+}
+.item-1.swiper-slide-active .p1-star5{
+	-webkit-animation: float-right 2.3s 0.8s ease-out both;
+}
+.item-1.swiper-slide-active .p1-star6{
+	-webkit-animation: float-right 2.4s 0.9s ease-out both;
+}
+
+/* item-2*/
+.item-2 .box-half-top{
+	width: 100%;
+	height: 46%;
+}
+.item-2 .box-half-bottom{
+	width: 100%;
+	height: 54%;
+}
+.item-2 .p2-slogon{
+    position: absolute;
+    width: 35%;
+    height: 24%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdqik53shzc/slogon.png) no-repeat bottom center;
+    background-size: 100%;
+    bottom: 7%;
+    left: 36%;
+}
+.item-2 .p2-chun-left{
+    position: absolute;
+    width: 36%;
+    height: 58%;
+    background: url(../images/p2-chun-left.png) no-repeat bottom center;
+    background-size: 100% 100%;
+    bottom: 1%;
+    left: 1%;
+}
+.item-2 .p2-chun-right{
+    position: absolute;
+    width: 26%;
+    height: 51%;
+    background: url(../images/p2-chun-right.png) no-repeat bottom center;
+    background-size: 100% 100%;
+    bottom: 5%;
+    right: 3%;
+}
+.item-2.swiper-slide-active .p2-chun-left{
+	-webkit-animation: chun-open 1.3s 2s ease both;
+}
+.item-2.swiper-slide-active .p2-chun-right{
+	-webkit-animation: chun-open 1.3s 0s ease both;
+}
+/* item-3*/
+.item-3{
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdrik53uijt/p3-bg.jpg) no-repeat center;
+}
+.item-3 .p3-logo{
+	position: absolute;
+	width: 16%;
+	height:10%;
+	background: url(../images/logo.png) no-repeat center;
+	background-size: contain;
+	top: 1%;
+	left: 3%;
+}
+
+.item-3 .p3-slogon{
+	position: absolute;
+    width: 24%;
+    height: 24%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdqik53shzc/slogon.png) no-repeat bottom center;
+    background-size: 100%;
+    bottom: 6%;
+    right: 3%;
+}
+.item-3 .p3-time{
+    position: absolute;
+    width: 28%;
+    height: 10%;
+    background: url(../images/icon-time.png) no-repeat center;
+    background-size: 100% 100%;
+    bottom: 3%;
+    left: 3%;
+}
+.item-3 .p3-title{
+	position: absolute;
+	width: 62%;
+	height:21%;
+	background: url(../images/p3-slogon.png) no-repeat center;
+	background-size: 100% 100%;
+	top: 15%;
+	left: 20%;
+}
+.item-3 .p3-girls{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdrik53uijt/p3-girls.png) top center no-repeat;
+    top: 35%;
+    background-size: 110%;
+}
+.item-3 .p3-niaoshu{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdqik53shzc/p3-niaoshu.png) bottom center no-repeat;
+    background-size: 100%;
+    bottom: 0%;
+    left: 5%;
+}
+
+.item-3.swiper-slide-active .p3-girls{
+	
+}
+.item-3.swiper-slide-active .p3-niaoshu{
+	-webkit-animation: float-up 0.2s 1.5s ease-in-out both;
+}
+/* item-4*/
+.item-4{
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdqik53shzc/p4-bg.jpg) no-repeat center;
+}
+.item-4 .p4-logo{
+	position: absolute;
+	width: 16%;
+	height:10%;
+	background: url(../images/logo.png) no-repeat center;
+	background-size: contain;
+	top: 1%;
+	left: 3%;
+}
+
+.item-4 .p4-slogon{
+    position: absolute;
+    width: 35%;
+    height: 24%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdqik53shzc/slogon.png) no-repeat bottom center;
+    background-size: 100%;
+    bottom: 3%;
+    left: 32%;
+}
+.item-4 .p4-time{
+    position: absolute;
+    width: 24%;
+    height: 10%;
+    background: url(../images/icon-time.png) no-repeat center;
+    background-size: 100%;
+    bottom: 45%;
+    left: 6%;
+}
+.item-4 .p4-title{
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdrik53uijt/p4-slogon.png) no-repeat center;
+    background-size: contain;
+    bottom: 45%;
+    left: 5%;
+}
+.item-4 .p4-team{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdsik54p8oi/p4-team.png) bottom center no-repeat;
+    bottom: 0%;
+    background-size: 100%;
+}
+.item-4 .p4-ball1{
+    position: absolute;
+    width: 24%;
+    height: 10%;
+    background: url(../images/p4-ball1.png) bottom center no-repeat;
+    bottom: 2%;
+    left: 10%;
+    background-size: 100% 100%;
+}
+.item-4 .p4-ball2{
+    position: absolute;
+    width: 43%;
+    height: 24%;
+    background: url(../images/p4-ball2.png) bottom center no-repeat;
+    bottom: -3%;
+    right: -13%;
+    background-size: 100% 100%;
+}
+.item-4 .p4-ball3{
+    position: absolute;
+    width: 33%;
+    height: 24%;
+    background: url(../images/p4-ball2.png) bottom center no-repeat;
+    bottom: 60%;
+    right: -20%;
+    background-size: contain;
+}
+
+.item-4.swiper-slide-active .p4-ball1{
+	-webkit-animation: ball-fly1 2.2s 0.5s cubic-bezier(0,1.18,.34,.87) both;
+}
+.item-4.swiper-slide-active .p4-ball2{
+	-webkit-animation: ball-fly2 2s 1s cubic-bezier(0,1.18,.34,.87) both;
+}
+.item-4.swiper-slide-active .p4-ball3{
+	-webkit-animation: ball-fly2 3s 1.5s cubic-bezier(0,1.18,.34,.87) both;
+}
+
+
+.item-4.play i:nth-child(1) {
+	-webkit-animation: music_1 1.5s 1.6s ease-in infinite;
+}
+.item-4.play i:nth-child(2) {
+	-webkit-animation: music_2 1.5s 2s ease-in infinite;
+}
+.item-4.play i:nth-child(3) {
+	-webkit-animation: music_3 1.5s 1.8s ease-out infinite;
+}
+.item-4.play .desk {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transition: all .6s 1.6s ease-out;
+}
+/* item-5*/
+.item-5{
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdsik54p8oi/p5-bg.jpg) no-repeat center;
+}
+.item-5 .p5-logo{
+	position: absolute;
+	width: 16%;
+	height:10%;
+	background: url(../images/logo.png) no-repeat center;
+	background-size: contain;
+	top: 1%;
+	left: 3%;
+}
+
+.item-5 .p5-slogon{
+    position: absolute;
+    background: url(../images/p5-slogon.png) no-repeat left;
+    top: 2%;
+    left: 10%;
+}
+.item-5 .p5-time{
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    background: url(../images/icon-time.png) no-repeat center;
+    background-size: 100%;
+    bottom: 1%;
+    left: 14%;
+}
+.item-5 .p5-title{
+    position: absolute;
+    width: 26%;
+    height: 24%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdqik53shzc/slogon.png) no-repeat bottom center;
+    background-size: 100%;
+    bottom: 13%;
+    left: 16%;
+
+}
+.item-5 .p5-team{
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdrik53uijt/p5-team.png) bottom center no-repeat;
+    bottom: 0%;
+    background-size: 100%;
+    left: -10%;
+}
+.item-5.swiper-slide-active .p5-slogon{
+	-webkit-animation: writing 4.2s 1s cubic-bezier(0,1.18,.34,.87) both;
+}
+
+.item-5.play .icon_zone {
+	opacity: 1;
+	-webkit-transform: perspective(400px) rotateY(360deg);
+	-webkit-transition: all .7s 1.6s ease;
+}
+.item-5.play i:nth-child(2) {
+	-webkit-animation: music_4 1.3s 1.2s ease-out infinite;
+}
+.item-5.play i:nth-child(3) {
+	-webkit-animation: music_5 1.3s 1.6s ease-out infinite;
+}
+.item-5.play i:nth-child(4) {
+	-webkit-animation: music_6 1.3s 2s ease-out infinite;
+}
+/* item-6*/
+.item-6{
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdpik53pxy3/p6-bg.jpg) no-repeat center;
+}
+.item-6 .p6-logo{
+	position: absolute;
+	width: 16%;
+	height:10%;
+	background: url(../images/logo.png) no-repeat center;
+	background-size: contain;
+	top: 1%;
+	left: 3%;
+}
+
+.item-6 .p6-slogon{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    background: url(../images/p6-slogon.png) no-repeat bottom center;
+    background-size: contain;
+    bottom: 5%;
+    left: 25%;
+}
+.item-6 .p6-time{
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    background: url(../images/icon-time.png) no-repeat center;
+    background-size: 100%;
+    bottom: 1%;
+    left: 14%;
+}
+.item-6 .p6-title{
+    position: absolute;
+    width: 90%;
+    height: 24%;
+    background: url(../images/p6-title.png) no-repeat top center;
+    background-size: 100%;
+    top: 5%;
+    left: 5%;
+}
+.item-6 .p6-team{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdsik54p8oi/p6-team.png) bottom center no-repeat;
+    bottom: 14%;
+    background-size: 100%;
+    left: 15%;
+}
+.item-6 .p6-team-dark{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background: url(../images/p6-team-dark.png) bottom center no-repeat;
+    bottom: 14%;
+    background-size: 100%;
+    left: 15%;
+}
+.item-6 .p6-light-left{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/light-left.png) bottom center no-repeat;
+    top: 0%;
+    left: 0%;
+    background-size: 100% 100%;
+}
+.item-6 .p6-light-right{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/light-right.png) bottom center no-repeat;
+    right: 0%;
+    top: 0%;
+    background-size: 100% 100%;
+}
+.item-6.swiper-slide-active .p6-light-left{
+	-webkit-animation: blink .8s 0s linear both infinite;
+}
+.item-6.swiper-slide-active .p6-light-right{
+	-webkit-animation: blink .8s 0.4s linear both infinite;
+}
+.item-6.swiper-slide-active .p6-team-dark{
+	-webkit-animation: fadeOut 0.6s 2s linear both;
+}
+/* item-7*/
+.item-7 .p7-1{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdpik53pxy3/p7-bg.jpg) bottom center no-repeat;
+    left: 0%;
+    top: 0%;
+    background-size: 100% 100%;
+}
+.item-7 .p7-1 .p7-1-left{
+    position: absolute;
+    width: 75%;
+    height: 61%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdrik53uijt/p7-lyn.png) bottom center no-repeat;
+    left: 0%;
+    top: 30%;
+    background-size: 100% 100%;
+}
+.item-7 .p7-1 .p7-1-right{
+	position: absolute;
+    width: 64%;
+    height: 63%;
+    background: url(../images/p7-wzl.png) bottom center no-repeat;
+    right: -3%;
+    top: 10%;
+    background-size: 100% 100%;
+}
+
+.item-7 .p7-2{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdpik53pxy3/p7-bg2.jpg) bottom center no-repeat;
+    left: 0%;
+    top: 0%;
+    background-size: 100% 100%;
+}
+.item-7 .p7-2 .p7-2-left{
+    position: absolute;
+    width: 57%;
+    height: 62%;
+    background: url(../images/p7-left.png) bottom center no-repeat;
+    left: -2%;
+    top: 18%;
+    background-size: 100% 100%;
+}
+.item-7 .p7-2 .p7-2-right{
+    position: absolute;
+    width: 53%;
+    height: 69%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdsik54p8oi/p7-right.png) bottom center no-repeat;
+    right: 0%;
+    top: 28%;
+    background-size: 100% 100%;
+}
+
+.item-7.swiper-slide-active .p7-1-left{
+	-webkit-animation: float-left 0.6s 0.2s ease-in-out both;
+}
+.item-7.swiper-slide-active .p7-1-right{
+	-webkit-animation: float-right 0.6s 0.6s ease-in-out both;
+}
+.item-7.swiper-slide-active .p7-2-left{
+	-webkit-animation: micro_fade_down 0.6s 0.2s ease-in-out both;	
+}
+.item-7.swiper-slide-active .p7-2-right{
+	-webkit-animation: micro_fade_down 0.6s 0.6s ease-in-out both;	
+}
+
+
+/* item-8*/
+.item-8{
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdpik53pxy3/p8-bg.jpg) no-repeat center;
+}
+.item-8 .p8-top{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdqik53shzc/p8-top.png) no-repeat top center;
+	background-size: contain;
+	top: 0%;
+	left: 0%;
+}
+
+.item-8 .p8-bottom{
+    position: absolute;
+	width: 100%;
+	height:100%;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdsik54p8oi/p8-bottom.png) no-repeat bottom center;
+	background-size: contain;
+	bottom: 0%;
+	left: 0%;
+}
+
+.item-8 .p8-slogon{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdqik53shzc/slogon.png) no-repeat top center;
+    background-size: contain;
+    top: 35%;
+    left: 15%;
+}
+.item-8 .p8-logo{
+	position: absolute;
+	width: 16%;
+	height:10%;
+	background: url(../images/logo.png) no-repeat center;
+	background-size: contain;
+	top: 1%;
+	left: 3%;
+}
+.item-8.swiper-slide-active .p8-slogon{
+	-webkit-animation: float-up 2s 0s ease both;
+}
+
+
+.item-9 .p9-top{
+	width: 100%;
+	height:58%;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdqik53shzc/p9-top.jpg) no-repeat top center;
+	background-size: 100% 100%;
+	top: 0%;
+	left: 0%;
+}
+
+.item-9 .p9-bottom{
+	width: 100%;
+	height:42%;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdrik53uijt/p9-bottom.jpg) no-repeat bottom center;
+	background-size: 100% 100%;
+	bottom: 0%;
+	left: 0%;
+}
+
+.item-9 .p9-slogon{
+    position: absolute;
+
+    width: 70%;
+    height: 70%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdqik53shzc/slogon.png) no-repeat top center;
+    background-size: contain;
+    top: 35%;
+    left: 15%;
+}
+
+
+
+.item-10{
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdpik53pxy3/p10-bg.jpg) no-repeat center;
+}
+.item-10 .p10-logo{
+	position: absolute;
+	width: 16%;
+	height:10%;
+	background: url(../images/logo.png) no-repeat center;
+	background-size: contain;
+	top: 1%;
+	left: 3%;
+}
+
+.item-10 .p10-2016{
+    position: absolute;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdrik53uijt/p10-2016.png) no-repeat top center;
+    background-size: 100% auto;
+    width: 75%;
+    height: 100%;
+    top: 4%;
+    left: 12.5%;
+}
+.item-10 .p10-team{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqdpik53pxy3/p10-team.png) top center no-repeat;
+    top: 29%;
+    background-size: 100% auto;
+    left: 0%;
+}
+
+.item-10 .p10-girl{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: url(../images/p10-girls.png) bottom center no-repeat;
+    bottom: -2%;
+    background-size: 100%;
+    left: 5%;
+}
+.item-10.swiper-slide-active .p10-2016{
+	-webkit-animation: float-up 0.6s 0.2s ease-in-out both;
+}
+.item-10.swiper-slide-active .p10-team{
+	-webkit-animation: float-up 0.6s 0.4s ease-in-out both;
+}
+.item-10.swiper-slide-active .p10-girl{
+	-webkit-animation: float-up 0.6s 0.6s ease-in-out both;
+}
+
+
+
+
+
+
+@-webkit-keyframes play_sate {
+	0% {
+	-webkit-transform: perspective(400px) rotateY(0);
+}
+100% {
+	-webkit-transform: perspective(400px) rotateY(360deg);
+}
+}
+@-webkit-keyframes micro_fade_down {
+	0% {
+	opacity:0;
+	-webkit-transform:translate3d(0,-30px,0);
+}
+100% {
+	opacity:1;
+	-webkit-transform:translate3d(0,0,0);
+}
+}
+@-webkit-keyframes music_1 {
+	0% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+50% {
+	opacity: 1;
+}
+100% {
+	opacity: 0;
+	-webkit-transform: translate3d(-50px, -50px, 0);
+}
+}
+@-webkit-keyframes music_2 {
+	0% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+50% {
+	opacity: 1;
+}
+100% {
+	opacity: 0;
+	-webkit-transform: translate3d(40px, -10px, 0);
+}
+}
+@-webkit-keyframes music_3 {
+	0% {
+	opacity: 0;
+	-webkit-transform: rotate(0) translate3d(0, 0, 0);
+}
+50% {
+	opacity: 1;
+}
+100% {
+	opacity: 0;
+	-webkit-transform: rotate(-45deg) translate3d(65px, -36px, 0);
+}
+}
+@-webkit-keyframes music_4 {
+	0% {
+	opacity: 0;
+	-webkit-transform: rotate(0) translate3d(0, 0, 0);
+}
+50% {
+	opacity: 1;
+}
+100% {
+	opacity: 0;
+	-webkit-transform: rotate(15deg) translate3d(10px, -80px, 0);
+}
+}
+@-webkit-keyframes music_5 {
+	0% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+50% {
+	opacity: 1;
+}
+100% {
+	opacity: 0;
+	-webkit-transform: translate3d(-10px, -50px, 0);
+}
+}
+@-webkit-keyframes music_6 {
+	0% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+50% {
+	opacity: 1;
+}
+100% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, -30px, 0);
+}
+}
+@-webkit-keyframes ScalingLeft {
+	0% {
+	opacity:0;
+	-webkit-transform:translate(-100%,100%) scale(6);
+}
+100% {
+	opacity:0.99;
+	-webkit-transform:translate(0,0)scale(1);
+}
+}
+@-webkit-keyframes ScalingRight {
+	0% {
+	opacity:0;
+	-webkit-transform:translate(100%,-100%) scale(6);
+}
+100% {
+	opacity:0.99;
+	-webkit-transform:translate(0,0)scale(1);
+}
+}
+@-webkit-keyframes bounce {
+	0%,20%,50%,80%,100% {
+	-webkit-transform:translateY(0)
+}
+40% {
+	-webkit-transform:translateY(-10px)
+}
+60% {
+	-webkit-transform:translateY(-5px)
+}
+}
+
+@-webkit-keyframes float-up{
+	0% {
+	opacity:0;
+	-webkit-transform:translate3d(0,30px,0);
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+	}
+}
+@-webkit-keyframes float-left{
+	0% {
+	opacity:0;
+	-webkit-transform:translate3d(50px,0,0);
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+	}
+}
+@-webkit-keyframes float-right{
+	0% {
+	opacity:0;
+	-webkit-transform:translate3d(-50px,0,0);
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+	}
+}
+@-webkit-keyframes scale-in{
+	0% {
+	opacity:0;
+	-webkit-transform:scale(0.8);
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:scale(1);
+	}
+}
+
+@-webkit-keyframes ball-fly1{
+	0% {
+	opacity:0;
+	-webkit-transform:translate3d(70px,-30px,0);
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+	}
+}
+@-webkit-keyframes ball-fly2{
+	0% {
+	opacity:0;
+	-webkit-transform:translate3d(50px,-20px,0);
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+	}
+}
+@-webkit-keyframes writing{
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 50%;
+	}
+}
+@-webkit-keyframes blink{
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@-webkit-keyframes fadeOut{
+	0% {
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@-webkit-keyframes fadeIn{
+	100% {
+		opacity: 1;
+	}
+	0%{
+		opacity: 0;
+	}
+}
+@-webkit-keyframes chun-open{
+	0% {
+		opacity:0;
+		-webkit-transform:scaleY(0);
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:scaleY(1);
+	}
+}
+@-webkit-keyframes arrowmove{
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0px,20px,0);
+	}
+	80%{
+		opacity:1;
+		-webkit-transform:translate3d(0px,0px,0);
+	}
+	100%{
+		opacity:0;
+		-webkit-transform:translate3d(0px,0px,0);
+	}
+}
+
+/*music*/
+.u-globalAudio{
+	position:absolute;
+	top:20px;
+	right:20px;
+	width:25px;
+	height:25px;
+	border-radius:100%;
+	z-index:99999;
+}
+.u-globalAudio-f{
+	height:100%;
+	background-image:url(../images/icon-audio.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+	z-index:99999;
+}
+.u-globalAudio-f.music{
+	-webkit-animation-name:music;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-duration: 1.0s;
+	-webkit-animation-timing-function:ease-in;
+}
+@-webkit-keyframes music{
+0% {
+	-moz-transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+}
+25% {
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+}
+50% {
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+}
+75% {
+	-moz-transform:rotate(270deg);
+	-webkit-transform:rotate(270deg);
+}
+100% {
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+}
+}
+.coffee-steam-box{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.coffee-steam-box span{
+	position:absolute;
+	top:0;
+	left:0;
+	width:16px;
+	height:16px;
+	background-image:url(../images/icon-musical-note.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+	opacity:0.0;	
+}
+.coffee-steam-box span:nth-child(1){
+	-webkit-animation-delay:0.1s;
+	-webkit-animation-name:meteor-a;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-timing-function:ease-in;
+}
+.coffee-steam-box span:nth-child(2){
+	-webkit-animation-delay:0.8s;
+	-webkit-animation-name:meteor-b;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-timing-function:ease-in;
+}
+.coffee-steam-box span:nth-child(3){
+	-webkit-animation-delay:1.5s;
+	-webkit-animation-name:meteor-c;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-timing-function:ease-in;
+}
+@-webkit-keyframes meteor-a{
+from {
+	opacity:0.0;
+	-webkit-transform:rotate(0deg);
+}
+to {
+	opacity:1;
+	-webkit-transform:translate3d(0, -50px, 0);
+}
+}
+@-webkit-keyframes meteor-b{
+from {
+	opacity:0.0;
+	-webkit-transform:rotate(-50deg);
+}
+to {
+	opacity:1;
+	-webkit-transform:translate3d(0, -50px, 0);
+}
+}
+@-webkit-keyframes meteor-c{
+from {
+	opacity:0.0;
+	-webkit-transform:rotate(-90deg);
+}
+to {
+	opacity:1;
+	-webkit-transform:translate3d(0, -50px, 0);
+}
+}

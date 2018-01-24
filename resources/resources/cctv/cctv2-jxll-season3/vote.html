@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>CCTV财经频道惊喜连连</title>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/swiper.css" />
+	<link rel="stylesheet" href="./css/vote.css" />
+	<link rel="stylesheet" href="./css/over.css" />
+	<link rel="stylesheet" href="./css/lottery.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/plugins/modernizr-custom.js"></script>
+</head>
+<body data-sr="vote">
+	<section class="page" id="vote">
+		<a class="icon-glqf" data-collect="true" data-collect-flag="vote-glqf-btn" data-collect-desc="投票页-国立汽服按钮" href="http://mp.weixin.qq.com/s?__biz=MzIwODQ5NzY2NQ==&mid=2247483922&idx=4&sn=4b3e33688a72919959974f0b90fbbbae&chksm=97037f7ca074f66a69f0ee557a77b07cc08d4f93e4e5aaf8df6235f256061781b92f4d5e9e2e&scene=0#wechat_redirect"><img src="images/vote-icon-glqf.png"></a>
+		<a class="icon-cjl" data-collect="true" data-collect-flag="vote-cjl-btn" data-collect-desc="投票页-长颈鹿按钮" href="http://d.jitech.cn/d/d.html"><img src="images/vote-icon-cjl.gif"></a>
+		<a class="icon-jd" data-collect="true" data-collect-flag="vote-jd-btn" data-collect-desc="投票页-京东按钮" href="http://wqs.jd.com/smartstore/index.shtml?pass_utm=1&resourceType=M_APP_SAOMA&resourceValue=M_APP_QUYU_ua-446-7935&provinceId=1&cityId=72&countryId=4137&cu=true&utm_source=kong&utm_medium=unionxingxiao&utm_campaign=t_1000070694_ua-446-7935&utm_term=2cb2058654d34a07a202c88c8a35e3f2&abt=3&PTAG=17060.29.2"><img src="images/vote-icon-jd.jpg"></a>
+		<a class="icon-card" href="card.html" data-collect="true" data-collect-flag="vote-card-btn" data-collect-desc="投票页-卡包按钮">
+			<img src="images/vote-icon-card.png">
+			<img class="light1" src="images/icon-over-light.png">
+			<img class="light2" src="images/icon-over-light.png">
+			<img class="light3" src="images/icon-over-light.png">
+		</a>
+		<div class="lottery-cd none vote-cd">
+			<img class="lottery-zz" src="./images/countdown-tip.png">
+			<fieldset class="lottery-countdown-field">
+				<legend class="lottery-tip"></legend>
+				<span class="lottery-countdown"></span>
+			</fieldset>
+		</div>
+		<section class="main">
+			<div id="mainContainer">
+			</div>
+		</section>
+		<div class="controls none">
+			<button class="button button--sonar button--reject" data-stack="stack_iman" data-collect="true" data-collect-flag="vote-reject-btn" data-collect-desc="投票页-不喜欢按钮"><i class="fa fa-times"></i></button>
+			<button class="button button--sonar button--accept" data-stack="stack_iman" data-collect="true" data-collect-flag="vote-like-btn" data-collect-desc="投票页-喜欢按钮"><i class="fa fa-check"></i></button>
+		</div>
+		<div id="div_subscribe_area" class="div_subscribe_area_class">
+		</div>
+	</section>
+	<section class="page" id="lottery">
+		<audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+		<audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+		<section class="home-box">
+			<div class="main-top m-t-b">
+				<div class="lottery-cd none">
+					<img class="lottery-zz" src="./images/countdown-tip.png">
+					<fieldset class="lottery-countdown-field">
+						<legend class="lottery-tip"></legend>
+						<span class="lottery-countdown"></span>
+					</fieldset>
+				</div>
+				<p class="thanks-tips">姿势摆的好，就能中大奖</p>
+				<a class="icon-red none" data-collect="true" data-collect-flag="lottery-tttj-btn" data-collect-desc="摇奖页-吸粉链接"><img src="images/icon-red.png"></a>
+				<a class="icon-yao-cheats" data-collect="true" data-collect-flag="lottery-yao-cheats" data-collect-desc="摇奖页-摇奖秘籍" href="http://statics.holdfun.cn/photo/jingxilianlian/index.html"><img src="images/icon-yao-cheats.png"></a>
+				<img class="bg-yao yao-top" src="./images/bg-lottery-yao-top.png">
+			</div>
+			<div class="main-foot m-f-b">
+				<img class="bg-yao yao-bottom" src="./images/bg-lottery-yao-bottom.png">
+				<section class="marquee none"><ul></ul></section>
+				<div class="footer">
+					<div class="copyright"></div>
+				</div>
+			</div>
+			 <!--<input type="button" class="none" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;">-->
+		</section>
+	</section>
+	<section class="page" id="over">
+		<a class="icon-card" href="card.html" data-collect="true" data-collect-flag="over-card-btn" data-collect-desc="结束页-卡包按钮">
+			<img src="images/vote-icon-card.png">
+			<img class="light1" src="images/icon-over-light.png">
+			<img class="light2" src="images/icon-over-light.png">
+			<img class="light3" src="images/icon-over-light.png">
+		</a>
+		<a class="icon-red none" data-collect-flag="over-tttj-btn" data-collect-desc="结束页-吸粉链接"><img src="images/icon-red.png"></a>
+		<header>
+			<i class="tvlogo"><img src="./images/icon-tvlogo.png"></i>
+		</header>
+		<!--<div class="icon-nextgift">-->
+			<!--<img class="over-tips" src="./images/icon-overtips.png">-->
+			<!--<img src="images/icon-over-light.png" class="over-light1">-->
+			<!--<img src="images/icon-over-light.png" class="over-light2">-->
+			<!--<img src="images/icon-over-light.png" class="over-light3">-->
+		<!--</div>-->
+		<!--<div class="over-cards">-->
+			<!--<ul id="stack_over" class="stack stack&#45;&#45;iman">-->
+			<!--</ul>-->
+		<!--</div>-->
+		<img src="images/index-title.png" class="index-title">
+		<img src="images/index-logo.png" class="index-logo">
+		<img src="images/index-light.png" class="index-light">
+		<img src="images/icon-next.png" class="index-next">
+		<img src="images/index-main.png" class="index-main">
+		<img src="images/index-car1.png" class="index-car1">
+		<img src="images/index-car2.png" class="index-car2">
+	</section>
+	<footer>
+		<div class="copyright"></div>
+	</footer>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="js/plugins/dynamics.min.js"></script>
+	<script src="js/plugins/main.js"></script>
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/vote.js"></script>
+	<script src="./js/app/lottery.js"></script>
+	<script src="./js/app/over.js"></script>
+	<script src="./js/app/com.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=59061277" charset="UTF-8"></script>
+</body>
+</html>

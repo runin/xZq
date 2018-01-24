@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/food.css" />
+</head>
+<body>
+<header>
+    <img class="food-logo" src="images/food-logo.png" />
+    <img class="jc" id="jc" src="images/food-jc.png" />
+    <img class="hand" src="images/hand.png">
+    <label class="countdown none" id="lottery-countdown" >
+        <label id="go-lottery"></label>
+        <span class="countdown-tip"></span>
+        <span class="detail-countdown"></span>
+    </label>
+</header>
+<section id="center" class="center">
+    <section id="food-swiper" class="swiper-control">
+        <section class="swiper-container">
+            <section class="swiper-wrapper"></section>
+            <!-- <section class="swiper-pagination"></section> -->
+            <section class="swiper-button-next swiper-button-white"></section>
+            <section class="swiper-button-prev swiper-button-white"></section>
+        </section>
+    </section>
+    <section class="splendid none" id="splendid">
+        <a href="#" class="btn-close" id="btn-close" data-collect="true" data-collect-flag="food-btn-close" data-collect-desc="关闭视频按钮"><img src="images/food-close.png" /></a>
+        <section class="splendid-con">
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper"></div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper"></div>
+            </div>
+        </section>
+    </section>
+</section>
+<footer>
+    <img src="images/food-bottom.png" />
+</footer>
+<div class="copyright"></div>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/swiper.min.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+
+<script src="./js/app/food.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

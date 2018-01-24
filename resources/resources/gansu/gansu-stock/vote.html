@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<title>甘肃卫视《交易日》</title>
+		<!-- 
+	    <link rel="stylesheet" href="css/reset.css" />    
+		<link rel="stylesheet" href="css/core.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		 -->
+		<link rel="stylesheet" href="css/app.min.css" />    
+		<link rel="stylesheet" href="css/vote.css" />
+		<script src="./js/wx_api.js"></script>
+	</head>
+	<body>
+		<section class="wrapper">
+			
+			<header>
+				<img alt="交易日" src="./images/logo.png">
+			</header>
+			
+			<section class="body" style="display:none">
+				<section class="compare-wrapper">
+					<section class="compare-item">
+						<p id="num_up" class="compare-item-num orange">0</p>
+						<section class="compare-item-column">
+							<img alt="看涨" width="64" height="250" src="./images/bg-vote-percent.png">
+							<section class="compare-item-bar-wrapper">
+								<section class="compare-item-bar-inner-wrapper">
+									<section id="bar_up" class="compare-item-bar"></section>
+								</section>
+							</section>
+						</section>
+						<section>
+							<img alt="看涨" width="64" src="./images/icon-look-up.png">
+						</section>
+					</section>
+					<section class="compare-item vs">
+						<img alt="vs" src="./images/icon-vs.png">
+					</section>
+					<section class="compare-item">
+						<p id="num_down" class="compare-item-num green">0</p>
+						<section class="compare-item-column">
+							<img alt="看跌" width="64" height="250" src="./images/bg-vote-percent.png">
+							<section class="compare-item-bar-wrapper">
+								<section class="compare-item-bar-inner-wrapper">
+									<section id="bar_down" class="compare-item-bar"></section>
+								</section>
+							</section>
+						</section>
+						<section>
+							<img alt="看跌" width="64" src="./images/icon-look-down.png">
+						</section>
+					</section>
+					
+		
+				</section>
+				<section class="lottery-btn-wrapper">
+					<p id="lottery_remark" style="display:none">活动还未开始哦</p>
+					<a id="lottery_btn" href="javascript:void(0);" data-collect="true" data-collect-flag="trading-day-vote-to-lottery" data-collect-desc="甘肃卫视投票-前往抽奖">
+						<img alt="" src="http://cdn.holdfun.cn/gansutv/tradingday/images/btn-go-lottery.png">
+					</a>
+					
+				</section>
+			</section>
+			
+			<footer style="display:none">
+				<p>本页面由甘肃卫视提供</p>
+			</footer>
+		</section>
+	
+		
+		 
+		<script src="./js/plugins/zepto.min.js"></script>
+		<script src="./js/plugins/zepto.cookie.min.js"></script>
+		
+		<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	
+		<script src="./js/config.js"></script>
+		<script src="./js/wx_api.js"></script>
+		
+		<script src="./js/plugins/md5.js"></script>
+		<script src="./js/plugins/common.js"></script>
+		<script src="./js/plugins/data_collect.js"></script>
+		<script src="./js/plugins/weixinapi.js"></script>
+		<script src="./js/plugins/share.js"></script>
+		
+		<!--<script src="./js/plugins.min.js"></script>-->
+		<script src="./js/app/vote.js"></script>
+	</body>
+</html>

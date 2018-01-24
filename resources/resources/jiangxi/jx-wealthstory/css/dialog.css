@@ -1,0 +1,754 @@
+.dialog {
+    position: absolute;
+    color: #fdc728;
+    border-radius: 6px;
+    z-index: 1000;
+    background: url(../images/rule.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.dialog-res {
+    position: absolute;
+    color: #fdc728;
+    border-radius: 6px;
+    z-index: 1000;
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg.jpg) no-repeat 0 0;  background-size: cover;
+    overflow: hidden;
+}
+.dialog-inner {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.modal-guide {
+	height: auto !important;
+}
+.modal .btn-close {
+    position: absolute;
+    background: url(../images/icon-close.png) no-repeat 3px 3px;
+    background-size: 30px auto;
+    display: block;
+    width: 35px;
+    height: 35px;
+    z-index: 10000;
+}
+
+.modal {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 100;
+}
+.otherCon{
+	padding: 0px 30px;
+}
+
+.others{
+    color:rgba(202,209,225,1);
+}
+.contact .others
+{
+    font-size: 14px;
+}
+.others:first-child{
+	border-bottom: 1px solid #3c86bb;
+}
+.position
+{
+    text-align: center;
+}
+.others label{
+	font-weight: bold;
+	font-size: 16px;
+	display: block;
+	line-height: 20px;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 255, 255, 1)), to(rgba(42, 91, 143, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.others p{
+	padding-left: 24px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+}
+.others p.phone{
+	background: url(../images/phone.png) no-repeat center left;
+	background-size: 20px ;
+	
+}
+.others  p.addr{
+	background: url(../images/addr.png) no-repeat center left;
+	background-size: 20px ;
+	line-height: 20px;
+	padding: 3px 0 3px 24px;
+    height:20px;
+    width:100%;
+    word-wrap: break-word;
+}
+.awded{
+  margin: 5px 12%;
+  color: rgba(202,209,225,1);
+  font-size: 16px;
+}
+.awded p
+{
+    margin:5px auto;
+}
+.awded .uphone
+{
+    margin-bottom: 15px;
+}
+.lottery-dialog .award-win .other .btn-back{
+	margin: 0 auto;
+}
+.rank-dialog {
+    color: #FFF;
+
+}
+.rank-dialog h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 21px;
+  margin: 24px 0;
+}
+.rank-dialog .list {
+    height: 80%;
+  overflow: auto;
+    
+}
+.rank-dialog .border {
+    margin: 0 5%;
+
+}
+.rank-dialog .list ul {
+  text-align: left;
+  overflow: auto;
+}
+.rank-dialog .list li {
+  padding: 2% 0 3%;
+  border-bottom: 1px dashed #374355;
+  line-height: 0px;
+  float: left;
+  width: 100%;
+}
+.rank-dialog .list li .jf{
+}
+.rank-dialog .list li .norank{
+	text-align: center;
+  width: 100%;
+  margin: 0;
+  font-size: 15px;
+}
+.rank-dialog .list li .rk{
+}
+.rank-dialog .list li span {
+  display: inline-block;
+  font-size: 14px;
+  text-align: left;
+  vertical-align: middle;
+  color: #FFF;
+  border-radius: 0px;
+  height: 47px;
+  line-height: 47px;
+  margin-left: 10%;
+}
+.rank-dialog .list li img {
+  width: 20%;
+  margin-left: 8%;
+  float: left;
+  border: #fff 1px solid;
+  border-radius: 25px;
+}
+
+.rule-dialog {
+    background: url(../images/rule.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    padding-top: 5%;
+    color: #fff;
+    height: 90%;
+    width: 290px!important;
+    height: 388px!important;
+    left: 0!important;
+    right: 0!important;
+    top: 50%!important;
+    margin-top: -194px!important;
+    margin: 0 auto;
+    text-align: center;
+}
+.rule-dialog h2 {
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    margin: 3% 6% 0;
+    font-size: 18px;
+    text-align: center;
+}
+.rule-dialog .content {
+	
+    margin: 3% 6% 5px;
+    height: 70%;
+    text-align: justify;
+}
+.rule-dialog .rule {
+    font-size: 14px;
+    line-height: 24px;
+    max-height: 100%;  overflow-y: auto;
+    margin-top: 4%;
+}
+.rule-dialog p {
+    line-height: 22px;
+	color: #FFF;
+}
+.rule-dialog h3 {
+    margin-top: 22px;
+	
+    font-size: 16px;
+}
+.rule-dialog .btn{
+	width: 60%;
+	background: #dab866;
+    margin:auto auto;
+}
+.dialog-copyright {
+	position: absolute;
+	bottom: 0;
+	left: -5px;
+	right: -5px;
+	font-size: 14px;
+	text-align: center;
+	color: #f00;
+}
+
+.guide-dialog {
+    width: 240px;
+
+    height: 329px;
+    left: 50%;
+    right: auto;
+    margin-left: -120px;
+    top: 50%;
+    bottom: auto;
+    margin-top: -150px;
+    background: #F4F4E5;
+    color: #561817;
+}
+.guide-dialog h2 {
+    background: url(../images/share-tlt.png) no-repeat 0 center;
+    background-size: cover;
+    height: 60px;
+    border-radius: 5px 5px 0 0;
+    color: #561817;
+    text-align: center;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+.guide-dialog h2 strong {
+    display: block;
+   
+    margin-top: 2px;
+    font-size: 18px;
+}
+
+.guide-dialog p {
+    font-style: italic;
+    border-bottom: 1px solid #DBDBD3;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 15px;
+    font-size: 13px;
+}
+.guide-dialog label {
+	
+    margin-right: 5px;
+}
+.guide-dialog label img{
+    width: 7%;
+}
+.guide-dialog p:nth-child(2) label img{
+    width: 6%;
+}
+.guide-dialog .btn {
+    display: block;
+	
+    margin: 16px auto 0;
+    width: 70%;
+    height: 48px;
+    line-height: 48px;
+    background: #A81B95;
+}
+
+/** 抽奖  */
+.lottery-dialog {
+	width: 100%;
+	height: 100%;
+}
+.lottery-dialog {
+
+}
+.lottery-dialog .award-none {
+    height: 100%;
+    position: relative;
+    text-align: center;
+	
+}
+.lottery-dialog .award-none .btn{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+}
+
+.lottery-dialog .award-none img{
+    width: 84px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+.lottery-dialog .award-none .btn-close {
+    position: static;
+	
+    display: block;
+    background: rgba(86, 24,23,0.8);
+    width: 50%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+    margin: 10% auto 0;
+}
+.lottery-dialog .award-none h5 {
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 35px;
+}
+.lottery-dialog .award-win{
+	padding-top: 14px;
+    height: 100%;
+}
+.lottery-none .award-win {
+	display: none;
+}
+.lottery-none .award-none {
+    display: block !important;
+    padding-top: 40%;
+}
+.lottery-dialog .award-win .btn-back {
+  /* margin-top: 10px;*/
+   background: #dab866;
+   position: absolute;
+   bottom:10%;
+   left:50%;
+   width:160px;
+   margin-left:-80px;
+}
+
+.lottery-dialog .content {
+  height: 100%;
+  position: relative;
+}
+.lottery-dialog .back {
+    height: 100%;
+}
+
+.lottery-dialog h3 {
+    color: #d4b466;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+.lottery-dialog .award-img {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 1% 6%;
+	overflow: hidden;
+}
+.lottery-dialog .award-img img {
+	max-height: 100%;
+	vertical-align: top;
+}
+.lottery-dialog .contact {
+
+    padding: 2% 6%;
+}
+.lottery-dialog .contact h4 {
+    color: #fff;
+    text-align: left;
+    font-size: 14px;
+}
+.others span
+{
+    color:#C7AD69;
+}
+.lottery-dialog .contact h4.award-tip,.lottery-dialog .contact h4 {
+
+}
+.lottery-dialog .contact h4.awarded-tip {
+    display: none;
+
+}
+
+.lottery-awarded .contact h4 {
+
+}
+.lottery-awarded .contact h4.award-tip {
+    display: none;
+
+}
+.lottery-awarded .contact h4.awarded-tip {
+    display: block;
+
+}
+.lottery-dialog .contact p {
+    margin-top: 6px;
+
+}
+.lottery-dialog .contact input {
+    border: 1px solid #94989d;
+    border-radius: 4px;
+    height: 38px;
+    padding: 0 6px;
+    width: 100%;
+    outline: 0 none;
+    background: rgba(0,0,0,.2);
+    color: #FFF;
+    font-size: 12px;
+}
+
+.lottery-dialog .contact .btn,.lottery-dialog .award-none .btn{
+    width: 160px;
+ /*   height: 46px;
+    line-height: 46px;*/
+    font-size: 18px;
+    color: #FFF;
+    background: #dab866 ;
+    background-size: 100% 100%;
+    position: absolute;
+    left:50%;
+    margin-left:-80px;
+    bottom: 10%;
+}
+.lottery-dialog .contact .btn-award {
+    display: block;
+	
+}
+.lottery-dialog .contact .btn-share {
+    display: none;
+}
+
+.lottery-awarded .contact .btn-award {
+    display: none;
+
+}
+.lottery-awarded .contact .btn-share {
+    display: block;
+}
+.lottery-awarded .contact .yaoqing{
+    margin-top: 20px;
+    font-size: 12px;
+    color: #D4B466;
+    text-align: center;
+}
+
+
+
+.award-dialog .box {
+	height: 48%;
+	position: relative;
+	overflow: hidden;
+}
+.award-dialog .prize {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-prize.png) no-repeat center center;
+    background-size: cover;
+	
+    height: 100%;
+    margin: 0 -10%;
+    text-align: center;
+    padding-top: 10%;  
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+.award-dialog .prize:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.award-dialog .prize img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.award-dialog .prize.p1 img {
+    max-width: 80%;
+}
+
+.award-dialog .ctrl {
+    color: #fff;
+    padding-top: 5%;
+    text-align: center;
+}
+.award-dialog .ctrl h2 {
+    text-align: center;
+    font-size: 16px;
+	margin: 0 6%;
+}
+.award-dialog .content {
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+.award-dialog .content p {
+    font-size: 12px;
+    text-align: left;
+}
+.award-dialog .content input {
+    width: 100%;
+    border: 0 none;
+    background: #fff;
+    height: 36px;
+    font-size: 16px;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    margin-top: 8px;
+    color: #979797;
+    outline: none;
+}
+.award-dialog .ctrl .btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 23px 5px 0 5px;
+    width: 35%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    border-radius: 20px;
+}
+.award-dialog .award-succ {
+	display: none;
+}
+.award-dialog .award-succ.ctrl {
+	
+}
+.award-dialog .award-succ h2 {
+    text-align: left;
+    text-indent: 2em;
+    padding: 0 6%;
+}
+.award-dialog .award-succ h3 {
+    text-align: center;
+    margin-top: 10%;
+    color: #FDC728;
+}
+.award-dialog .award-succ .btn {
+    margin-top: 10px;
+    letter-spacing: 0;
+}
+.award-succ-dialog .prize img {
+	display: none;
+}
+.award-succ-dialog .prize:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-ljsu.png) no-repeat center center;
+	background-size: cover;
+	width: 80%;
+	height: 80%;
+}
+
+.award-succ-dialog .ctrl {
+	display: none;
+}
+.award-succ-dialog .award-succ {
+	display: block;
+}
+.award-succ-dialog .dialog-inner {
+	height: 100%;
+	padding-bottom: 0;
+}
+
+#confirm-dialog {  
+}
+#confirm-dialog:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 10000;
+}
+.confirm-dialog {
+    width: 72%;
+	
+    height: 130px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    position: absolute;  
+    background-size: 260px auto;
+    border-radius: 6px;
+    z-index: 100000;
+    color: #561817;
+}
+.confirm-dialog .content {
+	
+    margin: 5% 8% 5%;
+    font-size: 16px;
+}
+.confirm-dialog .ctrl {
+    text-align: center;
+	
+    margin-right: -10px;
+}
+.confirm-dialog .ctrl .btn {
+    margin-right: 10px;
+	
+    background: rgba(86, 24, 23, 0.8);
+}
+
+
+.tip-dialog {
+    width: 220px;
+	
+    height: 200px;
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-dialog.jpg) no-repeat 0 0;
+    background-size: cover;
+    left: 50%;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    bottom: 0;
+}
+.tip-dialog h2 {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-tips.png) no-repeat center center;
+	
+    background-size: 170px auto;
+    height: 80px;
+    margin-top: 35px;
+}
+.tip-dialog .btn {
+    display: block;
+	
+    position: static;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    background: #FF3535;
+    border: 1px solid #fff;
+    margin: 10% auto 0;
+}
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.result-dialog .img {
+		height: 18%;
+		background-size: 30%;
+		margin-top: 3%;
+	}
+    .awded {
+        margin: 5px 18%;
+        color: rgba(202,209,225,1);
+        font-size: 16px;
+    }
+    .lottery-dialog h3
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+	.result-dialog li h4 {
+		font-size: 24px;
+	}
+	.award-dialog .box {
+		height: 45%;
+	}
+	.award-dialog .content input {
+	    height: 25px;  margin-top: 6px;
+	}
+	.award-dialog .ctrl .btn {
+	    height: 30px;
+	    line-height: 30px;
+	    font-size: 14px;
+	    margin-top: 2%;
+	}
+	.lottery-dialog h2 {
+		font-size: 14px;
+		padding: 3% 0;
+	}
+	.lottery-dialog .contact input {
+   		height: 34px;
+	}
+	.lottery-dialog .award-img {
+    	height: 26%;
+	}
+    .lottery-dialog .contact p
+    {
+        margin:4px auto;
+    }
+	.lottery-dialog .award-img img {
+		max-height:  100%;
+	}
+	.lottery-dialog .contact .btn {
+	    height: 38px;
+	    line-height: 38px;
+	    font-size: 14px;
+    }
+    .lottery-dialog .award-none .btn{
+  	    bottom: 10px;
+    }
+    .lottery-dialog .award-win{
+	    padding-top: 6px;
+    }
+    .others p{
+		line-height: 20px;
+
+	}
+    .awded p
+    {
+        font-size: 14px;
+    }
+	.lottery-dialog .award-win .btn-back{
+		margin-top: 0px;
+        bottom:5%;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .lottery-dialog .award-win .btn-back{
+        bottom:5%;
+    }
+}

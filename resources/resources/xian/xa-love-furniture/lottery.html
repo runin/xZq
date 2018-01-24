@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>爱尚家居</title>
+    <!--<link rel="stylesheet" href="./css/cssreset-min.css" />-->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+   <!-- <link rel="stylesheet" href="./css/index.css" />-->
+</head>
+<body>
+
+<div class="sign" id="sign">
+    <div class="sign-logo-div"><img class="sign-logo" src="images/lottery-logo.png" /></div>
+    <div class="lottery"  id="btn-lottery"><img src="images/fudai.png"></div>
+    <div class="box box-phone none" id="box-phone">
+        <div class="top">
+            <p class="fudai"></p>
+            <!--<img src="images/award-bg.png">-->
+        </div>
+        <div class="text">
+            <div class="award-div">
+
+                <div class="award-div-con">
+                    <h2>
+                        <span class="prize"></span>
+                    </h2>
+                    <h3>请填写您的联系方式，以便顺利领奖</h3>
+                    <p>
+                        <!--<label>姓名:</label><input type="text" name="phone" maxlength="11" min="11" id="name" />-->
+                        <label>电话:</label><input type="number" name="phone" maxlength="11" min="11" id="phone"/>
+                        <span id="win_prize_tip" class="win_prize_tip"></span>
+
+                    </p>
+                    <div class="group-btn">
+                        <a href="#" data-collect="true"
+                           data-collect-flag="xa-love-furniture-lottery-submit-btn"
+                           data-collect-desc="抽奖页面领奖" class="btn-red btn-submit"
+                           id="btn-submit">立即领奖</a>
+                        <span class="address none address-info">领奖地址:</span>
+                        <a href="#" data-collect="true"
+                           data-collect-flag="xa-love-furniture-lottery-view-btn"
+                           data-collect-desc="查看领奖地址" class="btn-red btn-submit address-info none"
+                           id="btn-address">点击查看</a>
+                    </div>
+                </div>
+                <div class="nei-lottery copyright"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="fir-lottery copyright"></div>
+    <!--谢谢参与-->
+    <section class="box thank none" id="thank">
+        很遗憾未中奖,感谢您的参与！
+        <a
+                data-collect="true"
+                data-collect-flag="xa-love-furniture-lottery-index-btn"
+                data-collect-desc="抽奖页面返回首页" class="btn-back-simple">返回首页</a>
+    </section>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+<script src="./js/wx_api_base.js"></script>
+
+<script src="./js/app/lottery.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" > 
+		<title>素材开发文档</title>
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		
+		<link rel="stylesheet" type="text/css" href="./css/SyntaxHighlighter/shCoreDefault.css"/>
+
+
+	</head>
+	<body>
+		<header>
+			<section class="header-content">
+				<a href="./index.html" class="logo">
+					<img src="./images/logo.png" title="新掌趣" alt="新掌趣" />
+				</a>
+			</section>
+		</header>
+		<section class="main">
+			<nav>
+				<ul class="nav-list">
+					<li>
+						<h2>素材基础</h2>
+						<ul>
+							<li><a href="index.html">文档结构</a></li>
+							<li><a href="core.html">基本功能</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>公共组件</h2>
+						<ul>
+							<li><a href="reserve.html">预约</a></li>
+							<li><a href="subscribe.html">一键关注</a></li>
+							<li><a href="barrage.html">弹幕组件</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>工具方法</h2>
+						<ul>
+							<li class="active"><a href="date.html">日期</a></li>
+							<li><a href="string.html">URL处理</a></li>
+							<li><a href="countDown.html">倒计时</a></li>
+							<li><a href="tips.html">Tips(替代alert)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<section class="content-wrapper">
+				<section class="content">
+					<section class="content-header">
+						<h1>日期</h1>
+						<p>最后更新时间：2015/6/2 13:00	更新人：陈智博<a class="float-right" href="mailto:bobchen@holdfun.cn">报错</a></p>
+					</section>
+					<section class="content-detail">
+						
+						<pre class="brush: js;">
+							/*
+							* 字符串 -> Date对象
+							*/
+							var str2date = function (str) {
+							    str = str.replace(/-/g, '/');
+							    return new Date(str);
+							};
+
+							/*
+							* 字符串 -> 毫秒数
+							*/
+							var timestamp = function (str) {
+							    return str2date(str).getTime();
+							};
+
+							/*
+							* Date对象 -> 字符串
+							* 
+							* @param format 例:yyyy年MM月dd日 hh:mm:ss
+							*/
+							var dateformat = function (date, format) {
+							    var z = {
+							        M: date.getMonth() + 1,
+							        d: date.getDate(),
+							        h: date.getHours(),
+							        m: date.getMinutes(),
+							        s: date.getSeconds()
+							    };
+							    format = format.replace(/(M+|d+|h+|m+|s+)/g, function (v) {
+							        return ((v.length > 1 ? "0" : "") + eval('z.' + v.slice(-1))).slice(-2);
+							    });
+							    return format.replace(/(y+)/g, function (v) {
+							        return date.getFullYear().toString().slice(-v.length)
+							    });
+							}
+						</pre>
+
+					</section>
+
+				</section>
+			</section>
+
+		</section>
+
+		<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shCore.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shBrushXml.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shBrushJScript.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+	</body>
+</html>
+

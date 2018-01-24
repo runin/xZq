@@ -1,0 +1,195 @@
+﻿body, html
+{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+
+.none
+{
+    display: none;
+}
+*
+{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    outline: 0 none;
+}
+
+.main
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url('../images/dbg.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+.tvicon
+{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    z-index: 1;
+    width: 50px;
+}
+.refresh
+{
+  position: absolute;
+  top: 20px;
+  right: 90px;
+  z-index: 1;
+  width: 115px;
+}
+.go_back
+{
+    position: absolute;
+    top: 15px;
+    right: 3px;
+    z-index: 1;
+    width: 80px;
+}
+.talk_contain
+{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: White;
+    margin-top: 80px;
+}
+.talk_head
+{
+    color: red;
+}
+.talk_say
+{
+    color: White;
+    padding: 10px;
+    height: 250px;
+    overflow: auto;
+}
+.talk_item
+{
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.talk_head
+{
+    position: relative;
+    overflow: hidden;
+}
+.user_head
+{
+    display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background: url('../images/avatar.jpg') no-repeat center center;
+    background-size: cover;
+}
+.user_name
+{
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    margin-left: 6px;
+    color: White;
+}
+.push_time
+{
+    float: right;
+    margin-right: 5px;
+    font-size: 13px;
+    color: #7B7A7A;
+    height: 35px;
+    line-height: 35px;
+}
+.talk_content_div
+{
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.3);
+    line-height: 1.5em;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #302924;
+    margin-top: 10px;
+    position: relative;
+    float: left;
+    word-wrap: break-word;
+    max-width: 100%; /*min-width: 150px;*/
+}
+.arrow
+{
+    position: absolute;
+    left: 15px;
+    top: -11px;
+    width: 20px;
+}
+.send_div
+{
+    position: absolute;
+    bottom: 3px;
+    background-color: #E0D6CE;
+    width: 96%;
+    height: 45px;
+    width: 94%;
+    left: 50%;
+    margin-left: -47%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
+    -webkit-box-shadow: inset 0 0 10px #302924;
+}
+.send_input
+{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background-color: Transparent;
+    padding-left: 10px;
+    color: #2D2522;
+    padding-right: 90px;
+}
+.talk_content
+{
+    text-align: left;
+    padding: 0px 10px;
+    min-width:40px;
+    min-height:24px;
+}
+
+::-webkit-input-placeholder
+{
+    /* WebKit browsers */
+    color: #2D2522;
+}
+:-moz-placeholder
+{
+    /* Mozilla Firefox 4 to 18 */
+    color: #2D2522;
+}
+::-moz-placeholder
+{
+    /* Mozilla Firefox 19+ */
+    color: #2D2522;
+}
+:-ms-input-placeholder
+{
+    /* Internet Explorer 10+ */
+    color: #2D2522;
+}
+.send_btn
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 47px;
+    z-index: 9999;
+}

@@ -1,0 +1,601 @@
+*{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html{
+    height: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+  /*background: url(../images/talk-bg.jpg) no-repeat;*/
+  /*background-size: 100% auto;*/
+    /*background-position: 0 0;*/
+    /*background-attachment: fixed;*/
+    overflow: hidden;
+}
+.talkbg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: url("../images/index-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.imgbg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+.back-btn{
+    display: block;
+    background: url(../images/talk-back.png) 0 0 no-repeat;
+    background-size: 100%;
+    width: 20%;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.chkbox{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    z-index: 1300;
+}
+.chkbox>div{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: #652d15;
+    text-align: center;
+    line-height: 45px;
+    color: #ffffff;
+}
+.handimg{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    left: 10px;
+    border-radius: 35px;
+}
+.chkbox>.r{
+    /*text-align: center;*/
+    background-color: #d3b466;
+    border-top: 1px solid #652d15;
+}
+.chkbox>.l{
+}
+.chkbox>img{
+    position: absolute;
+    width: 50%;
+    top: -5px;
+    height: 5px;
+    left: 0;
+}
+.r>img,.l>img{
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    top: 10px;
+}
+
+.footer{
+    display: block;
+    position: fixed;
+    width: 100%;
+    /*background: #d3b466;*/
+    height: 45px;
+    padding-top: 5px;
+    float: left;
+    top: 45%;
+    z-index: 1200;
+}
+.footer input{
+    width: 70%;
+    margin-left: 6%;
+    background: url("../images/talk-input-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    color: #640e0a;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 2px;
+    display: inline-block;
+    float: left;
+    padding-left: 5px;
+}
+.footer a{
+    display: inline-block;
+    /*background: #00a4b4;*/
+    width: 80px;
+    margin-left: 0;
+    bottom: 0;
+    height: 45px;
+    position:absolute;
+    right: 1%;
+    line-height: 33px;
+    padding-left: 0;
+    /*border-bottom-right-radius: 7px;*/
+    /*border-top-right-radius: 7px;*/
+    /*color: #fff;*/
+}
+.footer a>img{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 100%;
+}
+.up{
+    z-index: 5;
+}
+.up:active{
+    opacity: 0;
+}
+.talkroom{
+    margin-top: 38px;
+}
+
+.talkroom .talk-title{
+    background: #fff;
+    border: 5px solid #00a4b4;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 10px;
+}
+.talkroom .talk-title img{
+    display: inline-block;
+    width: 20%;
+    border-radius: 35px;
+    border: 3px solid #d4d4d4;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.talkroom .talk-title .content{
+    display: inline-block;
+    max-width: 70%;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+.talkroom .talk-title .content .per{
+    color: #00464d;
+    font-size: 14px;
+}
+.talkroom .talk-title .content .que{
+    color: #007a86;
+}
+
+
+.body{
+    position: absolute;
+    bottom: 55px;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+    /*margin-left: 5%;*/
+    /*float: left;*/
+    /*border: 1px solid #00aff0;*/
+    /*margin-top: 3%;*/
+    height: 35%;
+    overflow-y: auto;
+    z-index: 1000;
+}
+.content{
+    width: 100%;
+}
+.content li{
+    margin-bottom: 15px;
+}
+.content li .ron{
+    display: inline-block;
+    width: 80%;
+    margin-left: 2%;
+}
+.content li .ron p{
+
+    color: #fff;
+}
+.content li .ron .tar{
+    width: 100%;
+    text-align: right;
+}
+.content li img{
+    width: 50px;
+    border-radius: 30px;
+    border: 2px solid #919191;
+    display: inline-block;
+}
+.content li .triangle {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 3%;
+    margin-left: 5px;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-left: none;
+    border-right: 8px solid #d6be9a;
+}
+.content li .triangle-top{
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 23%;
+    margin-left: -13%;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 8px solid #fff;
+    border-top: none;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.content li .triangle-right{
+    position: relative;
+    float: right;
+    margin-top: 3%;
+    margin-right: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-right: none;
+    border-left: 8px solid rgba(105,13,14,1);
+    z-index: 5;
+}
+.content li .triangle-right2{
+    position: relative;
+    float: right;
+    margin-top: 3%;
+    margin-right: -9px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-right: none;
+    border-left: 8px solid #d6be9a;
+}
+.content li .article {
+    max-width: 85%;
+    display: inline-block;
+    zoom: 1;
+    padding: 5px 10px;
+    background: #d6be9a;
+    border-radius: 5px;
+    color: #000000;
+    word-break: break-all;
+}
+.content li .article-right {
+    max-width: 85%;
+    display: inline-block;
+    zoom: 1;
+    padding: 5px 10px;
+    /*background: #a44e44;*/
+    margin-right: -1px;
+    /*background: -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(255,255,255,.1) 40%,rgba(0,0,0,.4) 100%);*/
+    background: -webkit-linear-gradient(top, rgba(122,41,33,.7) 0%,rgba(103,14,9,.8) 60%,rgba(64,10,10,1) 100%);
+    border-radius: 5px;
+    border: 1px solid #d6be9a;
+    color: #fff;
+    word-break: break-all;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.mesg-tip{
+    display: block;
+    position: absolute;
+    bottom: 55px;
+    color: #000000;
+    /*background: rgba(0,0,0,.7);*/
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 80px;
+    right: 5%;
+    height: 36px;
+    line-height: 36px;
+    /*background: url("../images/talk-havenew.png") no-repeat;*/
+    /*background-size: 100% 100%;*/
+    text-align: center;
+    opacity: 0;
+    z-index: 1600;
+}
+.queshow{
+    position: fixed;
+    width: 100%;
+    top: 68px;
+    height: 100px;
+    z-index: 50;
+    /*background-color: #00aff0;*/
+}
+.queshow>img{
+    width: 100%;
+}
+.queshow>.queshow-que{
+    position: absolute;
+    top: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #652d15;
+    width: 40%;
+    left: 30%;
+    overflow-x: hidden;
+}
+.queshow>.goque{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    top: 20px;
+    right: 10%;
+    display: none;
+    color: #f5f5f5;
+    background-color: #652d15;
+}
+.linkout{
+    position: absolute;
+    height: 26px;
+    top: 60px;
+    right: 40px;
+    z-index: 1290;
+    width: 20px;
+    background: url("../images/linkout.png") no-repeat;
+    background-size: 100% 100%;
+}
+.countdown {
+    position: relative;
+    width: 100%;
+    /*height: 30px;*/
+    margin: 5% 0 0;
+    background: url("../images/que-lot-bg.png") no-repeat;
+    background-size: 100% 100%;
+    /*background-color: #600709;*/
+    border-radius: 24px;
+    padding: 2% 0 5% 0;
+    text-align: center;
+    z-index: 50;
+}
+.countdown * {
+    font-size: 15px;
+    font-weight: bolder;
+    color: #d7c39e;
+}
+.countdown .countdown-tip {
+    display: inline-block;
+    margin: 8px auto 8px;
+}
+.countdown .detail-countdown, .countdown .detail-countdown * {
+    font-size: 17px;
+    font-weight: normal;
+}
+.countdown .detail-countdown label {
+    display: inline-block;
+    margin: 0 3px 0 6px;
+    width: 24px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #fec836;
+    background-color: #292020;
+    border-radius: 5px;
+    box-shadow: 1px 0px 0px #5b5b5a inset, -1px 0px 0px #2b0c0d inset, 0px 1px 0px #5b5b5a inset, 0px -1px 0px #2b0c0d inset !important;
+}
+.bottom{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+}
+.btn-talk{
+    position: absolute;
+    width: 33%;
+    left: 33%;
+    height: 50px;
+    background: url("../images/com-talk2.png") no-repeat;
+    background-size: 100% 100%;
+}
+.btn-tg{
+    position: absolute;
+    width: 33%;
+    left: 66%;
+    height: 50px;
+    background: url("../images/com-tg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.btn-person{
+    position: absolute;
+    width: 33%;
+    left: 0;
+    height: 50px;
+    background: url("../images/com-person.png") no-repeat;
+    background-size: 100% 100%;
+}
+.info-box {
+    position: relative;
+    width: 100%;
+    z-index: 99;
+    text-align: center;
+    margin-top: 6px;
+    height: 20px;
+}
+.info-box img{
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    clear: both;
+    vertical-align: top;
+}
+.info-box .getRed-num {
+    /*float: left;*/
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    color: #640e0a;
+    font-weight: bold;
+    clear: both;
+}
+.info-box .getRed-num label{
+    /*background: url("../images/num-bg.png") no-repeat;*/
+    /*background-size: 100% 100%;*/
+    /*padding: 2px 30px 4px 30px;*/
+}
+.round-bg{
+    position: absolute;
+    width: 80%;
+    height: 30%;
+    left: 10%;
+    bottom: 57%;
+    /*background: url("../images/tv-info.png") no-repeat;*/
+    /*background-size: 100% 100%;*/
+}
+
+.tiger{
+    position: absolute;
+    width: 86%;
+    left: 6%;
+    height: 72%;
+    background: url("../images/tg.png") no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+}
+.tg-lt1,.tg-lt2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.tg-lt2{
+    z-index: 2;
+}
+.btn-start{
+    position: absolute;
+    width: 40%;
+    height: 40px;
+    left: 30%;
+    top: 74%;
+    background: url("../images/btn-start.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 10;
+}
+.btn-test_win{
+    position: absolute;
+    width: 40%;
+    height: 40px;
+    left: -10%;
+    top: 20%;
+    background: url("../images/btn-start.png") no-repeat;
+    background-size: 100% 100%;
+}
+.btn-test_lose{
+    position: absolute;
+    width: 40%;
+    height: 40px;
+    left: 70%;
+    top: 20%;
+    background: url("../images/btn-start.png") no-repeat;
+    background-size: 100% 100%;
+}
+.tiger-fun{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: 29%;
+    top: 37%;
+    overflow: hidden;
+    /*opacity: 0;*/
+}
+.tiger-fun>div img{
+    position: relative;
+    width: 100%;
+    height: 25%;
+}
+.col1-bot,.col2-bot,.col3-bot{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    z-index: 8;
+}
+.col2-bot{
+    left: 34%;
+}
+.col3-bot{
+    left: 70%;
+}
+.col1,.col2,.col3{
+    position: absolute;
+    width: 30%;
+    height: 400%;
+    bottom: 0;
+    z-index: 5;
+}
+.col1{
+    /*-webkit-animation: tiger 3s;*/
+    /*-webkit-animation-timing-function: linear;*/
+}
+.col2{
+    left: 34%;
+    /*-webkit-animation: tiger 2.2s;*/
+    /*-webkit-animation-timing-function: linear;*/
+}
+.col3{
+    left: 70%;
+    /*-webkit-animation: tiger 1.5s;*/
+    /*-webkit-animation-timing-function: linear;*/
+}
+
+.marquee {
+    position: absolute;
+    width: 80%;
+    margin: auto;
+    top: 85%;
+    left: 10%;
+    height: 30px;
+    line-height: 30px;
+    /*background-color: #cc0033;*/
+    /*border-bottom: dotted 1px #f6ebce;*/
+    color: #76190a;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    clear: both;
+}
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    /*.body {*/
+        /*height: 50%;*/
+        /*z-index: 1000;*/
+    /*}*/
+    .mesg-tip{
+        z-index: 1600;
+    }
+}
+

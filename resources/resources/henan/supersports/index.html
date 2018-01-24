@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=640, user-scalable=no">
+	<script src="./js/plugins/zepto.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">$(function () {var DEFAULT_WIDTH = 640,ua = navigator.userAgent.toLowerCase(),deviceWidth = window.screen.width,devicePixelRatio = window.devicePixelRatio || 1,targetDensitydpi;if(ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4){targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');}});</script><style type="text/css">.none{display:none !important;}</style>
+	<title></title>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+    <p class="jt none" data-collect="true" data-collect-flag="jt" data-collect-desc="跳过按钮"><label></label>跳过</p>
+	<section class="logo"><img src="./images/logo.png"></section>
+	<section class="jb">
+		<img src="./images/jb.png">
+		<div class="fly left"></div>
+		<div class="fly right"></div>
+	</section>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/jssdk.js"></script>
+	<script src="./js/app/index.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=50083626" charset="UTF-8"></script>
+</body>
+</html>

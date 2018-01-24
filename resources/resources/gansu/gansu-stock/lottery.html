@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<title>甘肃卫视《交易日》</title>
+	    <!-- 
+	    <link rel="stylesheet" href="css/reset.css" />    
+		<link rel="stylesheet" href="css/core.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		 -->
+		<link rel="stylesheet" href="css/app.min.css" /> 
+		<link rel="stylesheet" href="css/lottery.css" />
+		<script src="./js/wx_api.js"></script>
+	</head>
+	<body>
+		<section id="user_dialog" class="dialog-wrapper" style="display:none;">
+			<section class="dialog">
+				<h2>请您填写以下信息</h2>
+				<h2>即可领取奖品：</h2>
+				<section class="dialog-form-wrapper">
+					<section class="dialog-form-left">
+						<label>姓&nbsp;&nbsp;&nbsp;名：</label>
+						<label>手机号：</label>
+						<label>地&nbsp;&nbsp;&nbsp;址：</label>
+					</section>
+					<section class="dialog-form-right">
+						<form id="dialog_form">
+							<input type="text" name="rl" maxlength="20">
+							<input type="number" name="ph" maxlength="11">
+							<input type="text" name="ad" maxlength="60">
+						</form>
+					</section>
+					
+				</section>
+				<section class="dialog-submit-wrapper">
+					<section class="dialog-submit-inner-wrapper">
+						<a id="dialog_submit_btn" class="dialog-submit-btn" href="javascript:void(0)"
+							data-collect="true" data-collect-flag="trading-day-lottery-success-submit" data-collect-desc="甘肃卫视抽奖页-资料提交">
+							<img alt="提交" src="./images/btn-submit.png">
+						</a>
+					</section>
+				</section>
+				<a id="dialog_close_btn" class="dialog-close-btn" data-collect="true" data-collect-flag="trading-day-lottery-success-close" data-collect-desc="甘肃卫视抽奖页-资料层关闭">
+					X
+				</a>
+			</section>
+			<section class="dialog-bg"></section>
+		</section>
+	
+		<section class="wrapper">
+			<header>
+				<img alt="交易日" src="./images/logo.png">
+			</header>
+			<section class="body" style="display:none">
+				<section id="lottery_page" class="page" style="display:none">
+					<section class="slogon">
+					<!--	<img alt="抽奖赢红酒 好运转不停" src="http://cdn.holdfun.cn/gansutv/tradingday/images/slogon-lottery.png" />-->
+
+                    	<img alt="抽奖赢红酒 好运转不停" src="images/slogon-lottery.png" />
+
+
+					</section>
+					<section class="btn-wrapper">
+						<a id="lottery_btn" class="main-btn" data-collect="true" data-collect-flag="trading-day-lottery-btn" data-collect-desc="甘肃卫视抽奖页-立即抽奖">
+							<img alt="立即抽奖" src="http://cdn.holdfun.cn/gansutv/tradingday/images/btn-lottery.png" />
+						</a>
+					</section>
+					<section class="bg">
+						<img alt="" src="http://cdn.holdfun.cn/gansutv/tradingday/images/bg-lottery.png" />
+					</section>
+				</section>
+				
+				<section id="success_page" class="page" style="display:none">
+					<section class="slogon">
+					<!--	<img alt="抽中红酒一瓶哦" src="http://cdn.holdfun.cn/gansutv/tradingday/images/slogon-success.png" />-->
+                    <img alt="抽中红酒一瓶哦" src="images/slogon-success.png" />
+                <div  id="slogon-success-p"> <div id="slogon-success-tip"> 哇！恭喜您抽中达奇鸡尾酒！</div></div>
+					</section>
+					<section class="btn-wrapper">
+						<a id="success_btn" class="main-btn" data-collect="true" data-collect-flag="trading-day-lottery-success-btn" data-collect-desc="甘肃卫视抽奖页-领取奖品">
+							<img alt="领取奖品" src="./images/btn-success.png" />
+						</a>
+					</section>
+					<section class="bg" style="display:none">
+						<img alt="" src="http://cdn.holdfun.cn/gansutv/tradingday/images/icon-success.png" />
+					</section>
+				</section>
+				
+				<section id="fail_page" class="page" style="display:none">
+					<section class="slogon">
+						<img alt="很遗憾 未抽中" src="http://cdn.holdfun.cn/gansutv/tradingday/images/slogon-fail.png" />
+					</section>
+					<section class="bg">
+						<img alt="" src="http://cdn.holdfun.cn/gansutv/tradingday/images/bg-fail.png" />
+					</section>
+				</section>
+		
+			</section>
+			<footer style="display:none">
+				<p>本页面由甘肃卫视提供</p>
+			</footer>
+		</section>
+		
+		<script src="./js/plugins/zepto.min.js"></script>
+		<script src="./js/plugins/zepto.cookie.min.js"></script>
+		
+		<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	
+		<script src="./js/config.js"></script>
+		<script src="./js/wx_api.js"></script>
+		
+		<script src="./js/plugins/md5.js"></script>
+		<script src="./js/plugins/common.js"></script>
+		<script src="./js/plugins/data_collect.js"></script>
+		<script src="./js/plugins/weixinapi.js"></script>
+		<script src="./js/plugins/share.js"></script>
+		
+		<!-- <script src="./js/plugins.min.js"></script>-->
+		<script src="./js/app/lottery.js"></script>
+	</body>
+</html>

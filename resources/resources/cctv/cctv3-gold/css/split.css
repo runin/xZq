@@ -1,0 +1,212 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.top{
+	background-color: #ca000c;
+	height: 65%;
+}
+.top .back{
+	background: url(../images/back.png) 0 0 no-repeat;
+	background-size: 100%;
+	width: 20%;
+	height: 38px;
+	position: absolute;
+	top: 3px;
+	right: 6px;
+}
+.top .jmy{
+	width: 100%;
+}
+.top .head{
+	display: block;
+	width: 25%;
+	margin: 5% auto 0;
+	border-radius: 45px;
+}
+.top .username{
+	color: #fff;
+	text-align: center;
+}
+.top .rednum{
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10%;
+}
+.top .mop .chai{
+	background: url(../images/lingqu.png) 0 0 no-repeat;
+	background-size: 100%;
+	width: 25%;
+	height: 100%;
+	display: inline-block;
+}
+.top .mop .rednum{
+	display: inline-block;
+	margin-left: 16%;
+	vertical-align: middle;
+	margin-top: -8% !important;
+	padding-top: 0% !important;
+}
+.top .rednum span{
+	font-size: 35px;
+	color: #fff600;
+}
+.top .redleft{
+	display: block;
+	border: dotted 1px #fff600;
+	width: 85%;
+	margin: 8% auto 0;
+	text-align: center;
+	padding: 2% 0;
+	color: #fff600;
+}
+.copyright{
+	color:#777777;
+}
+
+.middle{
+
+}
+.middle .title{
+	text-align: center;
+	margin: 2% auto;
+}
+.middle .title hr{
+	width: 20%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.middle .title p{
+	display: inline-block;
+	vertical-align: middle;
+}
+.middle ul{
+	width: 90%;
+	margin: 0 auto;
+}
+.middle ul li{
+	border-bottom: 1px solid #8c8c8c;
+}
+.middle ul li:last-child{
+	border-bottom: none;
+}
+.middle ul li img{
+	display: inline-block;
+	width: 20%;
+	border-radius: 36px;
+	margin: 2%;
+	border: 1px solid;
+}
+.middle ul li .username{
+	display: inline-block;
+	position: absolute;
+	color: #707070;
+	margin-top: 5%;
+	font-size: 17px;
+}
+.middle ul li .desc{
+	display: inline-block;
+	position: absolute;
+	margin-top: 13%;
+	color: #a7a7a7;
+	font-size: 14px;
+}
+.middle ul li .redenv{
+	display: inline-block;
+	position: absolute;
+	right: 5%;
+	margin-top: 8%;
+	font-size: 14px;
+}
+.middle ul li .redenv span{
+	color: #ca000c;
+}
+.middle ul li .no{
+	text-align: center;
+	margin: 5% auto;
+	color: #707070;
+}
+.content{
+	height: 70%;
+	position: absolute;
+	top: 13%;
+	width: 100%;
+}
+.mark{
+	margin-top: -12%;
+}
+#mop{
+	height: 17%;
+}
+.bg1{
+	margin-top: 15%;
+	width: 30%;
+	opacity: .4;
+	transform: rotateZ(-28deg);
+}
+.bg2{
+	margin-top: 0%;
+	width: 13%;
+	opacity: .4;
+	margin-left: 20%;
+}
+.bg3{
+	margin-top: -30%;
+	width: 30%;
+	opacity: .4;
+	margin-left: 67%;
+	transform: rotateZ(-28deg);
+}
+.bg4{
+	margin-top: 12%;
+	width: 13%;
+	opacity: .4;
+	margin-left: 77%;
+}
+.bg5{
+	margin-top: 0%;
+	width: 30%;
+	opacity: .4;
+	transform: rotateZ(-28deg);
+}
+.bg6{
+	margin-top: -5%;
+	width: 30%;
+	opacity: .4;
+	margin-left: 65%;
+	transform: rotateZ(-28deg);
+}
+
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+	.top {
+		background-color: #ca000c;
+		height: 66%;
+	}
+	.top .mop .chai {
+		width: 25%;
+		height: 118%;
+		display: inline-block;
+	}
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.top {
+		background-color: #ca000c;
+		height: 75%;
+	}
+
+	.top .mop .chai {
+		width: 25%;
+		height: 118%;
+		display: inline-block;
+	}
+}

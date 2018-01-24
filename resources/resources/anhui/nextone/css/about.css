@@ -1,0 +1,57 @@
+.main {
+	background: #3F0804 url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-about.jpg) no-repeat center  top;
+	background-size: 360px auto;
+	min-height: 100vh;
+	padding-top: 306px;
+}
+.ui-content {
+    color: #fff;
+	
+    margin: 2px 6%;
+    min-height: 80px;
+}
+.ui-content.border:after {
+	margin-top: 2px;
+}
+.ui-content p {
+    line-height: 24px;
+	
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.ui-content h3 {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.ui-movies {
+    padding: 13px 17px 40px;
+    min-height: 100px;
+    color: #fff;
+    background-image: -webkit-linear-gradient(bottom right, #3C1213 0%, #421111 100%);   
+    background-image: linear-gradient(to top left, #3C1213 0%, #421111 100%);
+}
+.ui-movies h2 {
+    color: #ffe032;
+}
+
+.um-ctrl {
+    text-align: center;
+	
+    margin-top: 19px;
+}
+.um-ctrl p {
+	
+}
+.um-ctrl p a {
+    color: #ffe032;
+    text-decoration: underline;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.um-ctrl .um-tips {
+    color: #f2831a;
+    font-size: 16px;
+}
+

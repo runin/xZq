@@ -1,0 +1,222 @@
+body {
+	width: 100%;
+	background: url(../images/bg_index.jpg) no-repeat bottom center;
+	background-size: cover;
+	overflow: hidden;
+}
+#btn-rule {
+
+	width: 60px;
+	height: 60px;
+	background-size: 100% 100%;
+	z-index: 9999;
+	display: inline-block;
+	float: right;
+	  margin-right: 5px;
+  margin-top: 5px;
+}
+.tvlogo {
+  position: absolute;
+  width: 56%;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+.btn-reserve{
+	width: 60px;
+	height: 60px;
+	background-size: 100% 100%;
+	z-index: 9999;
+	display: inline-block;
+	float: right;
+	  margin-right: 5px;
+  margin-top: 5px;
+}
+.index-btn-join {
+	background: url(../images/index-btn-join.png) no-repeat;
+	top: 28px;
+	width: 100px;
+	height: 100px;
+	background-size: 100%;
+	margin: auto;
+	
+	position: absolute;
+	bottom:50px;
+	z-index: 100;
+	left:50%;
+	margin-left:-50px;
+	top:auto;
+}
+.index-btn{
+/*	background: url(../images/click.png) no-repeat;*/
+	background-position: center;
+	background-size: 100%;
+	width: 80%;
+/*	height: 50px;*/
+	line-height: 50px;
+	text-align: center;
+	margin-left:10%;
+	display: inline-block;
+	font-size: 15px;
+}
+.jiat{
+	position: absolute;
+	width: 100%;
+	top: 9%;
+	z-index: 1;
+}
+.index-btn-ClassRoom{
+	position: absolute;
+	bottom: 18%;
+	z-index: 7;
+	-webkit-animation:fadeInRightBig 1.5s .2s ease both;
+	
+}
+.index-btn-ClassRoom span{
+	background: url(../images/classroom.png) no-repeat;
+	background-position: 10% 80%;
+	background-size: 20%;
+	display: inline-block;
+	height: 40px;
+	padding-left: 40px;
+}
+.index-btn-redBox{
+	position: absolute;
+	bottom: 11%;
+	z-index: 7;
+/*	-webkit-animation:fadeInRightBig 1.8s .2s ease both;*/
+}
+.index-btn-redBox span{
+	background: url(../images/wallet.png) no-repeat;
+	background-position: 10% 80%;
+	background-size: 20%;
+	display: inline-block;
+	height: 40px;
+	padding-left: 40px;
+}
+.header{
+	z-index: 99999;
+}
+.index-logo-haiw {
+  /* background: url(../images/jiating.png) no-repeat; */
+  width: 100%;
+  /* height: 45%; */
+  position: absolute;
+  top: 14%;
+  /* left: 5%; */
+  z-index: 6;
+  -webkit-animation: fadeInRightBig 1s .2s ease both;
+}
+.index-logo-yy {
+	background: url(../images/index-logo-yy.png) no-repeat !important;
+	background-size: 95% !important;
+}
+@-webkit-keyframes fadeInRightBig{
+	0%{opacity:0;
+	-webkit-transform:translateX(1000px)}
+	100%{opacity:1;
+	-webkit-transform:translateX(0)}
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	z-index: 5;
+}
+footer #div_subscribe_area {
+	width: 100%;
+	overflow: hidden;
+}
+footer .copyright {
+	position: static;
+	margin-bottom: 3px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 13px;
+	color: #000;
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width:320px)
+and (min-device-height:500px)
+and (max-device-height:570px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+.rule-box span {
+  font-size: 10px !important;
+}
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	.rule-con {
+  overflow-y: auto;
+  height: 302px;
+}
+	.index-logo-haiw {
+	  top: 10%;
+	}
+	.index-btn{
+		width: 60%;
+		margin-left: 20%;
+		  bottom: 4%;
+	}
+	.index-btn-ClassRoom span,.index-btn-redBox span{
+		background-size: 15%;
+		background-position: 10% 73%;
+		padding-left: 30px;
+	}
+	.btn-reserve{
+  width: 40px;
+  height: 40px;
+	}
+	.index-logo-yy {
+		background: url(../images/index-logo-yy.png) no-repeat !important;
+		background-size: 80% !important;
+		background-position: center !important;
+		position: absolute;
+		top: 15%;
+	}
+	#btn-rule {
+  width: 40px;
+  height: 40px;
+}
+}
+/* luo */
+@media screen
+and (min-width:400px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	.index-btn{
+		height: 60px;
+		line-height: 60px;
+	}
+	.index-btn-ClassRoom span,.index-btn-redBox span{
+		height: 47px;
+	}
+	.btn-reserve{
+		bottom: 9%;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width:320px)
+and (min-device-height:500px)
+and (max-device-height:570px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+/* iPhone6 */
+@media screen
+and (min-device-width:375px)
+and (min-device-height:667px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}

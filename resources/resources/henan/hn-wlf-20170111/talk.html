@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=640, user-scalable=no">
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">$(function () {var DEFAULT_WIDTH = 640,ua = navigator.userAgent.toLowerCase(),deviceWidth = window.screen.width,devicePixelRatio = window.devicePixelRatio || 1,targetDensitydpi;if(ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4){targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');}});</script>
+    <title></title>
+    <link rel="stylesheet" href="css/common.min.css" />
+	<link rel="stylesheet" href="css/talk.css" />
+</head>
+<body data-type="talk">
+    <section class="body"><img id="pen" /></section>
+        <section class="countdown none" id="vote-countdown" >
+            <span class="countdown-tip"></span>
+            <span class="detail-countdown"></span>
+        </section>
+    <div class="none" id="vote-lottery-countdown">
+        <section class="countdown none" id="lottery-countdown">
+            <span class="countdown-tip"></span>
+            <span class="detail-countdown"></span>
+        </section>
+    </div>
+    <div class="go-yao none" id="go-lottery">
+        <img src="images/hand.png" />
+    </div>
+	<article id="article">
+        <div class="comments" id="comments"></div>
+    </article>
+
+    <footer class="footer">
+        <input id="input-comment" type="text" placeholder="说说你的看法吧......" />
+        <a id="btn-comment" data-collect="true" data-collect-flag="talk-submit" data-collect-desc="聊天室页-评论发送按钮">发送</a>
+    </footer>
+    <div id="div_subscribe_area" style="display: none;"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/authorize_userinfo.js"></script>
+    <script src="js/plugins/common.js"></script>
+    <script src="js/plugins/barrage.js"></script>
+    <script src="js/plugins/msg.js"></script>
+
+    <script src="js/app/jssdk.js"></script>
+    <script src="js/app/lottery.js"></script>
+    <script src="js/app/talk.js"></script>
+
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=56058409" charset="UTF-8"></script>
+</body>
+</html>

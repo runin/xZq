@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>暑期我最乐</title>
+	
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/util.css" />
+	<link rel="stylesheet" href="./css/vote.css" />
+</head>
+<body>
+	<section class="main">
+		<section class="img-wrapper">
+			<section id="item_0" class="img-item" data-collect="true" data-collect-flag="fj-summer-vote-0" data-collect-desc="投票-投图一一票">
+				<section class="img-item-wrapper">
+					<img src="./images/placeholder.jpg" />
+					<h1 class="name-0"></h1>
+					<section class="click-tips">投票</section>
+				</section>
+			</section>
+
+			<section id="item_1" class="img-item" data-collect="true" data-collect-flag="fj-summer-vote-1" data-collect-desc="投票-投图二一票">
+				<section class="img-item-wrapper">
+					<img src="./images/placeholder.jpg" />
+					<h1 class="name-1"></h1>
+					<section class="click-tips">投票</section>
+				</section>
+			</section>
+		</section>
+
+		<section class="vote-wrapper none">
+			<section class="vote-item">
+				<h2 class="name-0"></h2>
+				<section class="vote-percent">
+					<section id="bar_0" class="vote-percent-content"></section>
+				</section>
+			</section>
+			<section class="vote-item">
+				<h2 class="name-1"></h2>
+				<section class="vote-percent">
+					<section id="bar_1" class="vote-percent-content"></section>
+				</section>
+			</section>
+		</section>
+
+		<section class="btn-wrapper">
+			<p id="vote-tips" class='none'>点击图片进行投票，投票后即可参与抽奖！</p>
+			<a data-collect="true" data-collect-flag="fj-summer-vote-luck" data-collect-desc="投票-立即抽奖" id="luck" class='none' href="javascript:void(0);">立即抽奖</a>
+			<p id="voted-tips" class='none'>您已经抽过奖了，明天可以再次抽奖哦！</p>
+            <p id="vote-downCount" class='none'></p>
+		</section>
+
+		<footer>
+			页面由福建广电新媒体有限公司提供<br />新掌趣科技技术支持&Powered by holdfun.cn
+		</footer>
+	</section>
+
+	<section id="ticket" class="hongbao-wrapper none">
+		<section class="hongbao">
+			<section class="hongbao-title">
+				<p></p>
+			</section>
+			<section class="hongbao-ticket">
+				<img src="./images/placeholder.jpg" />
+			</section>
+			<section class="hongbao-ticket-input">
+				<p class="tips">请填写您的联系方式以便顺利领奖</p>
+				<section class="input-wrapper">
+					<input id="name" type="text" placeholder="请填写姓名" />
+				</section>
+				<section class="input-wrapper">
+					<input id="tel" type="tel" placeholder="请填写手机" />
+				</section>
+				<section class="input-wrapper">
+					<input id="add" type="text" placeholder="请填写收货地址" />
+				</section>
+			</section>
+			<section class="hongbao-click-wrapper">
+				<a id="hongbao_ok" href="javascript:void(0);" class="hongbao-click" data-collect="true" data-collect-flag="fj-summer-vote-ticket-ok" data-collect-desc="投票-获奖-提交" >提 交</a>
+			</section>
+			<a href="javascript:void(0);" class="hongbao-close" data-collect="true" data-collect-flag="fj-summer-vote-close-ticket" data-collect-desc="投票-获奖-关闭获奖框"></a>
+		</section>
+	</section>
+
+	<section id="ticket_confirm" class="hongbao-wrapper none">
+		<section class="hongbao">
+			<section class="hongbao-title">
+				<p>获奖确认</p>
+			</section>
+			<section class="hongbao-ticket">
+				<img src="./images/placeholder.jpg" />
+			</section>
+			<section class="hongbao-ticket-input">
+				<p class="tips">请确认您的联系方式：</p>
+				<section class="input-wrapper">
+					<p id="name_confirm"></p>
+				</section>
+				<section class="input-wrapper">
+					<p id="tel_confirm"></p>
+				</section>
+				<section class="input-wrapper">
+					<p id="add_confirm"></p>
+				</section>
+			</section>
+			<section class="hongbao-click-wrapper">
+				<a id="hongbao_submit" href="javascript:void(0);" class="hongbao-click" data-collect="true" data-collect-flag="fj-summer-vote-confirm-ok" data-collect-desc="投票-确认-确定" >确 定</a>
+				<a id="hongbao_back" href="javascript:void(0);" class="hongbao-click" data-collect="true" data-collect-flag="fj-summer-vote-confirm-back" data-collect-desc="投票-确认-修改" >修 改</a>
+			</section>
+			<a href="javascript:void(0);" class="hongbao-close" data-collect="true" data-collect-flag="fj-summer-vote-close-confirm" data-collect-desc="投票-确认-关闭确认框"></a>
+		</section>
+	</section>
+
+	<section id="ticket_fail" class="hongbao-wrapper none">
+		<section class="hongbao">
+			<section class="fail-detail">
+				<section class="fail-icon">
+					<img src="./images/icon-fail.png" />
+				</section>
+				<p class="fail-text">运气不太好，没有中奖</p>
+				<p class="fail-text">别灰心，去摇奖试试</p>
+			</section>
+			<section class="hongbao-click-wrapper">
+				<a id="fail_back" href="javascript:void(0);" class="hongbao-click"  data-collect="true" data-collect-flag="fj-summer-vote-fail-ok" data-collect-desc="投票-未获奖-返回">返 回</a>
+			</section>
+			<a href="javascript:void(0);" class="hongbao-close" data-collect="true" data-collect-flag="fj-summer-vote-close-fail" data-collect-desc="投票-未获奖-关闭未获奖框"></a>
+		</section>
+	</section>
+
+	<section class='none'>
+		<audio preload="auto" id="audio_win" src="./music/audio-b.mp3"></audio>
+	</section>
+
+	<script src="./js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/authorize_userinfo.js"></script>
+	<script src="./js/plugins/core.js"></script>
+	<script src="./js/plugins/util.js"></script>
+    <script src="js/app/countDown.js" type="text/javascript"></script>
+	<script src="./js/app/vote.js"></script>
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

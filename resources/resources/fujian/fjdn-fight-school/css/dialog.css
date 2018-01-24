@@ -1,0 +1,915 @@
+.dialog {
+    position: absolute;
+    color: #FFF;
+    border-radius: 6px;
+    z-index: 1000;
+    background: url(../images/hbrule.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+/*.dialog .border:before {
+	content: '';
+	display: block;
+	width: 110%;
+	height: 2px;
+	margin: 0 -5%;
+	background-image: -webkit-linear-gradient(left, transparent 0%, #561817 40%, #561817 60%, transparent 100%);
+	background-image: linear-gradient(to right, transparent 0%, #561817 40%, #561817 60%, transparent 100%);
+}*/
+.dialog-res {
+    position: absolute;
+    color: #fdc728;
+    border-radius: 6px;
+    z-index: 1000;
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg.jpg) no-repeat 0 0;  background-size: cover;
+    overflow: hidden;
+}
+.dialog-inner {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.modal-guide {
+	height: auto !important;
+}
+.modal .btn-close {
+    position: absolute;
+    background: url(../images/icon-close.png) no-repeat 0px 3px;
+    background-size: 32px auto;
+    display: block;
+    width: 32px;
+    height: 32px;
+    z-index: 10000;
+}
+
+.modal:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 100;
+}
+
+
+.rank-dialog {
+    color: #D4C7A0;
+
+}
+.rank-dialog h2 {
+    position: absolute;
+    width: 48%;
+    color: #FFF;
+    text-indent: -9999%;
+    text-align: center;
+    font-size: 20px;
+    padding: 6% 0;
+    background: url(../images/hbrank-tlt.png) no-repeat;
+    background-size: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -20px;
+}
+.rank-dialog .infor{
+    color: #fff;
+    font-size: 12px;
+    -webkit-transform: scale(0.9);
+    display: block;
+    position: relative;
+    top: 37px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #B9A25D;
+}
+.rank-dialog .list {
+    height: 80%;
+
+}
+.rank-dialog .border {
+    margin: 0 5%;
+
+}
+.rank-dialog .list h3 {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #B9A25D;
+    text-align: center;
+}
+.rank-dialog .list h3 .jf {
+    margin-right: 40px;
+
+}
+.rank-dialog .list .content {
+	overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+	margin-top: 17%;
+}
+.rank-dialog .list ul {
+    padding: 0 10% 0;
+	text-align: center;
+}
+.rank-dialog .list li {
+   padding: 2% 0 3%;
+  border-bottom: 1px dashed #374355;
+}
+.rank-dialog .list span {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+    border-radius: 0px;
+}
+.rank-dialog .r-avatar {
+    width: 26%;
+    text-align: center !important;
+    border-radius: 100%;
+	overflow: hidden;
+    text-align: left;
+}
+.rank-dialog .r-avatar img {
+    border-radius: 100%;
+    margin-top: 14px;
+}
+.rank-dialog .r-name {
+    width: 30%;
+    text-align: right;
+}
+
+.rank-dialog .r-rank {
+	width: 44%;
+    vertical-align: text-bottom !important;
+    text-align: right;
+}
+
+.rank-dialog .r-rank .jf-num {
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+.rule-dialog {
+    background: url(../images/rule-bg.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    color: #fff;
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0;
+    bottom: auto !important;
+}
+.rule-dialog .btn-back {
+    display: block;
+    width: 20%;
+    margin: 3% auto 0;
+}
+#rule-dialog .btn-close{
+    display: none;
+}
+.rule-dialog h2{
+    text-align: center;
+    width: 80%;
+    margin: 13% auto 0;
+}
+.rule-dialog h2 img{
+    width: 45%;
+}
+.rule-dialog .content {
+    margin: 3% 6% 0;
+    height: 56%;
+}
+.rule-dialog .rule {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+    max-height: 100%;  overflow-y: auto;
+    color: #694b28;
+    margin-top: 3%;
+}
+.rule-dialog p {
+    line-height: 22px;
+    font-size: 14px;
+	color: #694b28;
+    padding: 6px 0;
+}
+.rule-dialog h3 {
+    margin-top: 22px;
+
+    font-size: 16px;
+}
+.dialog-copyright {
+	position: absolute;
+	bottom: 0;
+	left: -5px;
+	right: -5px;
+	font-size: 14px;
+	text-align: center;
+	color: #f00;
+}
+
+.guide-dialog {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: auto;
+    top: 50%;
+    bottom: auto;
+    background: url(../images/rule-bg.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.guide-dialog h2 img {
+    width: 52%;
+    margin: 8% auto 0;
+}
+.guide-dialog .tips-share {
+    width: 73%;
+    margin: 3% auto 2%;
+}
+.guide-dialog p {
+    font-style: italic;
+    border-bottom: 1px solid #DBDBD3;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 15px;
+    font-size: 13px;
+}
+.guide-dialog label {
+
+    margin-right: 5px;
+}
+.guide-dialog label img{
+    width: 7%;
+}
+.guide-dialog p:nth-child(2) label img{
+    width: 6%;
+}
+.guide-dialog .btn {
+    display: block;
+    width: 36%;
+    margin: 3% auto 0;
+}
+
+/** 抽奖  */
+.lottery-dialog {
+	width: 100%;
+	height: 100%;
+}
+.lottery-dialog {
+
+}
+.lottery-dialog .award-none {
+    height: 100%;    margin: 0 4% !important;  position: relative;
+    text-align: center;
+
+}
+.lottery-dialog .award-none .btn{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+}
+
+.lottery-dialog .award-none img{
+    width: 84px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+.lottery-dialog .award-none .btn-close {
+    position: static;
+
+    display: block;
+    background: rgba(86, 24,23,0.8);
+    width: 50%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+    margin: 10% auto 0;
+}
+.lottery-dialog .award-none h5 {
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 35px;
+}
+.lottery-dialog .award-win{
+    height: 100%;
+}
+.lottery-none .award-win {
+	display: none;
+}
+.lottery-none .award-none {
+    display: block !important;
+    padding-top: 40%;
+}
+.lottery-dialog .award-win .btn-back {
+   margin-top: 20px;
+}
+
+.lottery-dialog .content {
+  padding-top: 10%;
+  height: 100%;
+  position: relative;
+}
+.lottery-dialog .back {
+    height: 100%;
+}
+
+.lottery-dialog h3 {
+    color: #D4B466;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+}
+.lottery-dialog .duihuan{
+
+}
+.lottery-dialog .duihuan span{
+    color: #9c9b9a;
+}
+.lottery-dialog .cont-tip{
+    text-align: center;
+    font-size: 12px;
+}
+.lottery-dialog .award-img {
+    width: 100%;
+    height: 26%;
+    margin: 14px auto 0px;
+    text-align: center;
+    padding: 0% 6%;
+	overflow: hidden;
+}
+.lottery-dialog .award-img img {
+	/*width: 100%;*/
+	max-height: 120px;
+	vertical-align: top;
+}
+.lottery-dialog .contact {
+
+    padding: 2% 6%;
+}
+.lottery-dialog .contact h4 {
+    color: #9C9B9A;
+    text-align: center;
+    font-size: 12px;
+}
+
+.lottery-dialog .contact h4.award-tip,.lottery-dialog .contact h4 {
+
+}
+.lottery-dialog .contact h4.awarded-tip {
+    display: none;
+
+}
+
+.lottery-awarded .contact h4 {
+
+}
+.lottery-awarded .contact h4.awarded-tip {
+    display: block;
+
+}
+.lottery-dialog .contact p {
+    margin-top: 6px;
+    text-align: center;
+}
+.lottery-dialog .contact input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    height: 38px;
+    padding: 0 6px;
+    width: 92%;
+    outline: 0 none;
+    background: transparent;
+    color: #FFF;
+    font-size: 12px;
+}
+.lott .code-info {
+    width: 96%;
+    height: 38px;
+    line-height: 38px;
+    background: #e6e6e6;
+    color: #c5092b;
+    font-weight: bolder;
+    font-size: 16px;
+    border-radius: 6px;
+    margin: 8px auto;
+}
+.lott .code-info span {
+    font-weight: bolder;
+}
+.lottery-dialog .contact .btn,.lottery-dialog .award-none .btn{
+    width: 57%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    color: #F9CC5D;
+    margin: 3% auto;
+    background-size: 100% 100%;
+}
+.lottery-dialog .contact .btn-award {
+    display: block;
+
+}
+.lottery-dialog .contact .btn-share {
+    display: none;
+}
+
+.lottery-awarded .contact .btn-award {
+    display: none;
+
+}
+.lottery-awarded .contact .btn-share {
+    display: block;
+}
+
+
+
+.award-dialog .box {
+	height: 48%;
+	position: relative;
+	overflow: hidden;
+}
+.award-dialog .prize {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-prize.png) no-repeat center center;
+    background-size: cover;
+
+    height: 100%;
+    margin: 0 -10%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+.award-dialog .prize:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.award-dialog .prize img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+#lott-code .btn-back, #lott-code-complex .btn-back, #lott-quan .btn-back {
+    display: inline-block;
+    margin: 3% 5px 0;
+}
+.award-dialog .prize.p1 img {
+    max-width: 80%;
+}
+
+.award-dialog .ctrl {
+    color: #fff;
+    padding-top: 5%;
+    text-align: center;
+}
+.award-dialog .ctrl h2 {
+    text-align: center;
+    font-size: 16px;
+	margin: 0 6%;
+}
+.award-dialog .content {
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+.award-dialog .content p {
+    font-size: 12px;
+    text-align: left;
+}
+.award-dialog .content input {
+    width: 100%;
+    border: 0 none;
+    background: #fff;
+    height: 36px;
+    font-size: 16px;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    margin-top: 8px;
+    color: #979797;
+    outline: none;
+}
+.award-dialog .ctrl .btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 23px 5px 0 5px;
+    width: 35%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    border-radius: 20px;
+}
+.award-dialog .award-succ {
+	display: none;
+}
+.award-dialog .award-succ.ctrl {
+
+}
+.award-dialog .award-succ h2 {
+    text-align: left;
+    text-indent: 2em;
+    padding: 0 6%;
+}
+.award-dialog .award-succ h3 {
+    text-align: center;
+    margin-top: 10%;
+    color: #FDC728;
+}
+.award-dialog .award-succ .btn {
+    margin-top: 10px;
+    letter-spacing: 0;
+}
+.award-succ-dialog .prize img {
+	display: none;
+}
+.award-succ-dialog .prize:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-ljsu.png) no-repeat center center;
+	background-size: cover;
+	width: 80%;
+	height: 80%;
+}
+
+.award-succ-dialog .ctrl {
+	display: none;
+}
+.award-succ-dialog .award-succ {
+	display: block;
+}
+.award-succ-dialog .dialog-inner {
+	height: 100%;
+	padding-bottom: 0;
+}
+
+#confirm-dialog {
+}
+#confirm-dialog:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 10000;
+}
+.confirm-dialog {
+    width: 72%;
+
+    height: 130px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    position: absolute;
+    background-size: 260px auto;
+    border-radius: 6px;
+    z-index: 100000;
+    color: #561817;
+}
+.confirm-dialog .content {
+
+    margin: 5% 8% 5%;
+    font-size: 16px;
+}
+.confirm-dialog .ctrl {
+    text-align: center;
+
+    margin-right: -10px;
+}
+.confirm-dialog .ctrl .btn {
+    margin-right: 10px;
+
+    background: rgba(86, 24, 23, 0.8);
+}
+
+
+.tip-dialog {
+    width: 220px;
+
+    height: 200px;
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-dialog.jpg) no-repeat 0 0;
+    background-size: cover;
+    left: 50%;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    bottom: 0;
+}
+.tip-dialog h2 {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-tips.png) no-repeat center center;
+
+    background-size: 170px auto;
+    height: 80px;
+    margin-top: 35px;
+}
+.tip-dialog .btn {
+    display: block;
+
+    position: static;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    background: #FF3535;
+    border: 1px solid #fff;
+    margin: 10% auto 0;
+}
+.not-zhong{
+    position: absolute;
+    z-index: 1000;
+    top: 22%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.lottery-btn{
+    display: block;
+    margin: 0 auto;
+}
+#lottery-dialog .dialog {
+    background: url(../images/lottery-bg.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.lott {
+    width: 92%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 13%;
+    overflow: hidden;
+    text-align: center;
+}
+.lott .win-img-box {
+    width: 100%;
+    background: url(../images/icon-award-bg.png) no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+}
+.lott .win-img-box .win-img {
+    width: 86%;
+    margin: 7% auto 5%;
+}
+.lott .win-tips {
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 5px auto 10px;
+}
+.lott .win-info, .lott .win-care {
+    font-size: 13px;
+    text-align: center;
+    margin: 3px auto;
+}
+.lott .input-box {
+    margin-bottom: 10px;
+}
+.lott .input-box input {
+    height: 26px;
+    line-height: 26px;
+    border-radius: 3px;
+    outline: none;
+}
+.lott .input-box span {
+    margin-right: 5px;
+}
+.lott .input-box label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.lott .btn-award, .lott .btn-back {
+    display: block;
+    width: 40%;
+    margin: 6% auto 0;
+}
+.lottery-redbag .dialog {
+    position: relative !important;
+    background: url(../images/bg-redbag.jpg) no-repeat center center !important;
+    background-size: cover !important;
+    width: 80% !important;
+    height: 70% !important;
+    top: 15% !important;
+    bottom: 15% !important;
+    left: 10% !important;
+    right: 10% !important;
+}
+.lottery-redbag .dialog .btn-close {
+    display: none;
+}
+.lottery-redbag .dialog #lott-redbag {
+    width: 100%;
+    padding-top: 16%;
+}
+.lottery-redbag .dialog #lott-redbag .redbag-tips {
+    width: 100%;
+}
+.lottery-redbag .dialog #lott-redbag .win-img {
+    width: 56%;
+    margin: 8% auto 0;
+}
+.lottery-redbag .dialog #lott-redbag #btn-get-redbag {
+    display: block;
+    width: 42%;
+    position: absolute;
+    bottom: 5%;
+    left: 29%;
+    z-index: 99999999;
+}
+/*input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}*/
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.result-dialog .img {
+		height: 18%;
+		background-size: 30%;
+		margin-top: 3%;
+	}
+	.result-dialog li h4 {
+		font-size: 24px;
+	}
+	.award-dialog .box {
+		height: 45%;
+	}
+	.award-dialog .content input {
+	    height: 25px;  margin-top: 6px;
+	}
+	.award-dialog .ctrl .btn {
+	    height: 30px;
+	    line-height: 30px;
+	    font-size: 14px;
+	    margin-top: 2%;
+	}
+	.lottery-dialog h2 {
+		font-size: 14px;
+		padding: 3% 0;
+	}
+	.lottery-dialog .contact input {
+   		height: 26px;
+	}
+	.lottery-dialog .award-img {
+    	height: 90px;
+	}
+	.lottery-dialog .award-img img {
+		max-height: 90px;
+	}
+	.lottery-dialog .contact .btn {
+	    height: 35px;
+	    line-height: 35px;
+	    font-size: 14px;
+    }
+    .lottery-dialog .award-none .btn{
+            bottom: 10px;
+    }
+    .rank-dialog .list .content {
+        margin-top: 16%;
+    }
+    .rank-dialog .list{
+        height: 77%;
+    }
+    .lottery-dialog .content {
+        padding-top: 6%;
+    }
+    .lottery-dialog .contact {
+        padding: 1% 6%;
+    }
+    .lottery-redbag .dialog #lott-redbag .win-img {
+        width: 42%;
+        margin: 6% auto 0;
+    }
+    .lottery-redbag .dialog #lott-redbag {
+        width: 100%;
+        padding-top: 10%;
+    }
+}
+@media screen and (min-device-width:1000px) and (min-device-height:1000px)  {
+    .rank-dialog .list li {
+        padding: 0 0 3%;
+    }
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+.star-list{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
+
+}
+.star-tr{
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	clear:both;
+	padding-top:10px;
+}
+.star-td{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	width:25%;
+	float:left;
+}
+.star-heard{
+	margin-left: auto;
+	margin-right: auto;
+	border:solid 2px white;
+	background: url(http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/ahtvcomedian/20141116/xs-wl.png) no-repeat center 0;
+	background-size:contain;
+	border-radius:200px;
+	width:50px;
+	height:50px;
+	margin-bottom: 5px;
+	background-color: rgba(110,67,46,1);
+
+}
+.star-heard img{
+	width: 40px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	bottom: -59%;
+	right: -10px;
+}
+
+.star-heard-audio{
+	margin-left: auto;
+	margin-right: auto;
+	border:solid 2px white;
+	background-color:white;
+	border-radius:200px;
+	width:50px;
+	height:50px;
+
+}
+
+.star-name{
+	color:orange;
+	font-size:12px;
+	margin-top:-2px;
+}
+.star-mes{
+	color:yellow;
+	font-size:12px;
+	margin-top:-2px;
+}
+
+.star-turn{
+	margin-top:100px;
+	background:url(../images/up_page.png)no-repeat center 0;
+	background-size:contain;
+	margin-left: auto;
+	margin-right: auto;
+	clear:both;
+	width:30px;
+	height:30px;
+}
+.btn-pack{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	width:140px;
+	background-color:rgba(195,167,116,1);
+	color:white;
+	font-size:18px;
+	line-height:34px;
+	border-radius:20px;
+	border:solid 1px rgba(195,167,116,1);
+	margin-top:20px;
+}

@@ -1,0 +1,319 @@
+body,html{
+	height:100%;
+	overflow:hidden;
+}
+.cover-bg{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url('../images/cover_bg.jpg');
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size:100% 100%;
+}
+.cover-bg a{
+	position:absolute;
+	bottom:25%;
+	left:25%;
+	width:50%;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-radius:5px;
+	background-image:-webkit-linear-gradient(#e99f1f, #ea772d);
+	text-shadow:1px 1px 0 #e97428;
+	color:#fff;
+}
+.footer{
+	position:absolute;
+	bottom:5px;
+	width:100%;
+	line-height:16px;
+	text-align:center;
+	font-size:12px;
+	color:#666;
+}
+.games-again{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#7dd3c8;
+	background-image:url('../images/bg_01.jpg');
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	background-size:contain;
+}
+a.rule-btn{
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:17%;
+	height:10%;
+	background-image:url('../images/icon-rule.png');
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size:contain;
+}
+a.play-btn{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:100px;
+	height:100px;
+	margin:-50px 0 0 -50px;
+	background-image:url('../images/play_01.png');
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size:contain;
+}
+a.play-btn.not{
+	background-image:url('../images/play_02.png');
+}
+.corn-con{
+	position:absolute;
+	bottom:35%;
+	width:100%;
+	height:4%;
+	text-align:center;
+}
+.corn-con span{
+	display:inline-block;
+	width:30px;
+	height:100%;
+	margin:0 3px;
+	background-image:url('../images/corn_01.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+}
+.corn-con span.not{
+	background-image:url('../images/corn_02.png');
+}
+.pop-bg:before{
+	content:"";
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.8);
+}
+.rule-con{
+	position:absolute;
+	top:15%;
+	left:10%;
+	width:80%;
+	height:70%;
+	padding:25px 15px 15px;
+	box-sizing:border-box;
+	border-radius:10px;
+	background-color:#ecca6e;
+	color:#3a68b8;
+}
+a.rule-close{
+	position:absolute;
+	top:-10px;
+	right:-10px;
+	width:30px;
+	height:30px;
+	background-image:url('../images/icon-close.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+}
+.rule-text{
+	height:100%;
+	line-height:20px;
+	overflow:hidden;
+	overflow-y:auto;
+}
+.rule-img{
+	margin:15px;
+}
+.lottery-text{
+	position:absolute;
+	top:22%;
+	left:15%;
+	width:70%;
+	line-height:26px;
+	text-align:center;
+	font-size:18px;
+	color:#ffe167;
+}
+.lottery-img{
+	position:absolute;
+	top:35%;
+	width:100%;
+	height:15%;
+	background-image:url('../images/card.png');
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size:contain;
+}
+.lottery-ewm,
+.lottery-cut{
+	position:absolute;
+	top:52%;
+	left:15%;
+	width:70%;
+	line-height:26px;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+}
+.lottery-cut{
+	left:0;
+	width:100%;
+	margin:30px 0 0;
+	font-size:14px;
+}
+a.again-btn{
+	position:absolute;
+	top:65%;
+	left:50%;
+	width:100px;
+	height:100px;
+	margin:0 0 0 -50px;
+	background-image:url('../images/again_btn.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+}
+
+/* iPhone4 */
+@media screen and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+a.play-btn{
+	top:43%;
+	width:90px;
+	height:90px;
+	margin:-40px 0 0 -45px;
+}
+.corn-con{
+	bottom:40%;
+}
+.lottery-text{
+	line-height:22px;
+	font-size:16px;
+}
+}
+
+/* iPhone5 */
+@media screen and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+a.play-btn{
+	top:48%;
+	width:90px;
+	height:90px;
+	margin:-45px 0 0 -45px;
+}
+.lottery-text{
+	line-height:22px;
+	font-size:16px;
+}
+
+}
+
+/* iPhone6 */
+@media screen and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+/* huawei honor-6 */
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+
+
+}
+
+/*
+	loading
+*/
+
+#stage_loading{
+	background: #0b0e1b;
+	text-align: center;
+}
+#stage_loading .loading-text{
+	font-size: 14px;
+	padding-top: 10px;
+}
+#stage_loading #loading_bar{
+	position: relative;
+	color: white;
+}
+.sk-cube-grid {
+  width: 50px;
+  height: 50px;
+  margin: 0px auto;
+}
+
+.sk-cube-grid .sk-cube{
+  width: 33%;
+  height: 33%;
+  background-color: #272e4e;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+/*
+	END OF loading
+*/

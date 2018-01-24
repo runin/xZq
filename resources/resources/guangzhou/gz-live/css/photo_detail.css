@@ -1,0 +1,513 @@
+* {
+	-webkit-box-sizing: border-box;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: transparent;
+}
+body {
+	overflow: hidden;
+	min-width: 320px;
+	background: #f7f7f7;
+}
+a.back-btn:visited, a.back-btn:active{
+	color: #FFF;
+}
+.clearfix {
+	clear: both;
+}
+.fl-l {
+	float: left;
+}
+.fl-r {
+	float: right;
+}
+.main {
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	opacity: 0;
+	z-index: -1;
+}
+.back-btn {
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #fdc70f;
+	text-align: center;
+	color: #FFF;
+}
+.banner, .tabs {
+	width: 100%;
+	background: #FFF;
+	overflow: hidden;
+}
+.banner .topic-head {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	color: #FFF;
+	font-size: 16px;
+}
+.banner .topic-head:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.6, transparent), color-stop(1, rgba(0,0,0,.5)));
+	z-index: 9;
+}
+.banner .topic-head img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.banner .topic-head .topic-title {
+	position: absolute;
+	left: 5%;
+	bottom: 8%;
+	z-index: 99;
+	width: 90%;
+}
+.banner .topic-head .topic-title .icon {
+	vertical-align: middle;
+	display: inline-block;
+	width: 23px;
+	height: 18px;
+	background: url("../images/showimgs.png") 0 -96px no-repeat;
+	background-size: 116px auto;
+}
+.banner .topic-head .topic-title .topic-name {
+	margin-bottom: 10px;
+	font-size: 30px;
+	line-height: 1;
+	color: #ffdd02;
+	font-weight: bolder;
+}
+.banner .topic-desc, .banner .topic-day {
+	margin-top: 3px;
+	line-height: 16px;
+	font-size: 15px;
+	text-shadow: 0 0 3px rgba(0,0,0,.3);
+	font-weight: bolder;
+}
+.banner .topic-desc, .banner .topic-day label {
+	font-size: 18px;
+	font-weight: bolder;
+	margin: 0 3px;
+}
+.tabs ul {
+	width: 90%;
+	margin: 10px auto;
+	font-size: 0;
+	color: #000000;
+	text-align: center;
+	list-style: none;
+	word-space: no-wrap;
+}
+.tabs ul li {
+	display: inline-block;
+	width: 49%;
+	height: 45px;
+	line-height: 45px;
+	border: 1px solid #d4d4d4;
+	border-left: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: center;
+	font-size: 16px;
+	overflow: hidden;
+}
+.tabs ul li a {
+	display: block;
+	color: #AAA;
+	height: 45px;
+	line-height: 45px;
+}
+.tabs ul li:first-child {
+	border-left: 1px solid #d4d4d4;
+	border-radius: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.tabs ul li.active a {
+	background-color: #fcc70f;
+	color: #FFF;
+}
+.cards {
+	background-color: #f7f7f7;
+}
+.cards .card {
+	background-color: #FFF;
+	padding: 10px 0 0;
+	margin-bottom: 25px;
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.1);
+	font-size: 16px;
+	color: #666;
+}
+.cards .card .info {
+	width: 90%;
+	margin: 0 auto 10px;
+	height: 55px;
+	position: relative;
+}
+.cards .card .info .left, .cards .card .info .right {
+	display: block;
+	float: left;
+}
+.cards .card .nhead {
+	position: relative;
+	width: 49px;
+	height: 49px;
+	border-radius: 33px;
+	border: 2px solid #d5d5d5;
+	-webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+	overflow: hidden;
+}
+.cards .events {
+	width: 100%;
+	height: 50px;
+	padding: 10px 0;
+	overflow: hidden;
+	font-size: 13px;
+}
+.cards .events div {
+	width: 49%;
+	text-align: center;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+}
+.cards .events .sharebtn {
+	border-right: 1px solid #BFBFBF;
+}
+.cards .events img, .cards .events span {
+	font-size: 12px;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: text-bottom;
+}
+.cards .events img {
+	height: 25px;
+	line-height: 25px;
+	vertical-align: text-bottom;
+	margin-right: 5px;
+}
+.cards .events .zanbtn i {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url("../images/zan.png") no-repeat;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: .3s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;
+	animation-duration: 1s;
+	animation-delay: .3s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+.cards .events .zanbtn i.false {
+	background-position: 0 0 !important;
+}
+.cards .events .zanbtn i.true {
+	background-position: 0 -30px !important;
+	-webkit-animation-name: bounce;
+	animation-name: bounce;
+}
+.cards .card .info .left {
+	margin-top: 3px;
+}
+.cards .card .info .zanbtn {
+	float: right;
+	margin-top: 12px;
+}
+.cards .card .info .zanbtn .icon {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url("../images/zan.png") no-repeat;
+	background-position: 0 0;
+}
+
+.cards .card .info .zanbtn .icon, .cards .card .info .zanbtn .number {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: text-bottom;
+}
+.cards .zanbtn i {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url("../images/zan.png") no-repeat;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: .3s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;
+	animation-duration: 1s;
+	animation-delay: .3s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+.cards .zanbtn i.false {
+	background-position: 0 0 !important;
+}
+.cards .zanbtn i.true {
+	background-position: 0 -30px !important;
+	-webkit-animation-name: bounce;
+	animation-name: bounce;
+}
+.cards .card .info .rank {
+	position: absolute;
+	width: 105px;
+	height: 43px;
+	top: 6px;
+	right: 10px;
+}
+.cards .card .info .nhead img {
+	height: 49px;
+	width: 49px;
+}
+.cards .card .info .ranknum {
+	position: absolute;
+	right: 3px;
+	bottom: 15px;
+	font-size: 17px;
+	color: #000;
+	font-weight: bolder;
+}
+.cards .card .info .right {
+	height: 55px;
+	line-height: 55px;
+	font-size: 16px;
+	color: #000;
+	margin-left: 6px;
+}
+.cards .card .images {
+	width: 100%;
+	margin-top: 10px;
+}
+.cards .card .images img {
+	width: 100%;
+	height: auto;
+}
+.cards .card .text {
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px 0 15px;
+	line-height: 18px;
+}
+.cards .card .commonts {
+	width: 100%;
+	font-size: 13px;
+	background-color: #EEE;
+	padding: 5px 0;
+}
+.cards .card .commonts ul, .cards .card .commonts li {
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+}
+.cards .card .commonts li {
+	width: 90%;
+	margin: 0 auto;
+}
+.cards .card .commonts .nhead, .cards .card .commonts li img {
+	width: 30px;
+	height: 30px;
+}
+.cards .card .commonts .nhead {
+	margin-right: 5px;
+}
+.cards .card .commonts li span {
+	height: 30px;
+	line-height: 30px;
+}
+.cards .events {
+	width: 100%;
+	height: 50px;
+	padding: 10px 0;
+	overflow: hidden;
+	font-size: 13px;
+}
+.cards .events div {
+	width: 49%;
+	text-align: center;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+}
+.cards .events .sharebtn {
+	border-right: 1px solid #BFBFBF;
+}
+.cards .more {
+	width: 100%;
+	height: 60px;
+	background-color: #FFF;
+	overflow: hidden;
+}
+.cards .more a {
+	width: 60%;
+	margin: 11px auto;
+	font-size: 13px;
+	display: block;
+	/* margin-top: 10px; */
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #ebebeb;
+	background-color: #fafafa;
+	color: #848484;
+	border-radius: 3px;
+	text-align: center;
+}
+.main .show {
+	position: fixed;
+	bottom: 15px;
+	left: 50%;
+	z-index: 10;
+	margin-left: -50px;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: url("../images/show-btn.png") no-repeat;
+	background-size: 100px 100px;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform 0.2s ease-in-out;
+}
+.submit {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #f7f7f7;
+	height: 65px;
+	line-height: 50px;
+	z-index: 9999;
+	padding: 9px 5%;
+}
+.submit input[type='text'] {
+	color: #000;
+	font-size: 16px;
+	background: #FFF;
+	outline: 0 none;
+	border: 1px solid #c5c5c5;
+	padding: 8px;
+	border-radius: 5px;
+	width: 81%;
+	height: 47px;
+	display: inline-block;
+}
+.submit input[type='submit'] {
+	outline: 0 none;
+	background: #fcc70f;
+	color: #FFF;
+	font-size: 18px;
+	width: 19%;
+	height: 47px;
+	line-height: 47px;
+	display: inline-block;
+	margin-left: -12px;
+	border-radius: 5px;
+	border: 1px solid #c5c5c5;
+	border-left: 0 none;
+}
+.cards .comments {
+	width: 100%;
+	padding-left: 5%;
+	padding-bottom: 65px;
+	position: relative;
+}
+.cards .comments .gotop {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	background: url(../images/gotop-btn.png) no-repeat;
+	background-size: 100% 100%;
+	bottom: 80px;
+	right: 25px;
+	z-index: 999;
+}
+.cards .comments .com-head:before {
+	content: '';
+	display: inline-block;
+	background: url(../images/talk.png) no-repeat;
+	background-size: 25px;
+	width: 25px;
+	height: 23px;
+	position: relative;
+	top: 7px;
+	margin-right: 10px;
+}
+.com-head label {
+	font-weight: bold;
+	color: #FF0000;
+}
+.comments .com-head {
+	margin-bottom: 10px;
+}
+.comments > div {
+	max-height: 260px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.comments ul {
+	overflow: auto;
+}
+.comments ul li {
+	position: relative;
+	width: 98%;
+	float: right;
+	padding: 0 0 3%;
+	overflow: hidden;
+}
+.comments ul li img {
+	height: 40px;
+	width: 40px;
+	border-radius: 33px;
+}
+.comments ul li .detailhead {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 33px;
+	border: 2px solid #d5d5d5;
+	-webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+	overflow: hidden;
+}
+.comments ul li .comment {
+	margin-left: 48px;
+	border-bottom: 1px solid #c5c5c5;
+	padding-bottom: 3px;
+	color: #585858;
+}
+.comments ul li .comment .name {
+	font-size: 17px;
+	margin-bottom: 3px;
+}
+.comments ul li .comment .content {
+	font-size: 14px;
+}
+.checktalk {
+	font-size: 12px;
+	margin-left: 3px;
+	color: #8b8b8b;
+}
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+	40% {-webkit-transform: translateY(-15px);}
+	60% {-webkit-transform: translateY(-10px);}
+}
+@keyframes bounce {
+	0%, 15%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-15px);}
+	60% {transform: translateY(-10px);}
+}

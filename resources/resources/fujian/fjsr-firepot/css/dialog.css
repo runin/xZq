@@ -1,0 +1,523 @@
+/* 通用弹层样式_S */
+.modal {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.modal:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    z-index:99;
+}
+.modal-vote:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:transparent;
+    z-index:99;
+}
+.modal .flash-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility:hidden;
+}
+.modal .flash-box .icon-flash {
+    width: 100%;
+    height: 50%;
+}
+.modal .dialog {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    margin-bottom: 50px;
+    /*overflow: hidden;*/
+    z-index: 999;
+}
+.modal .dialog .btn-dialog-close {
+    display: none !important;
+    display: inline-block;
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    width: 22px;
+    height: 22px;
+    background: url(../images/btn-close.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999999999;
+}
+.modal .dialog .bg-dialog-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal .dialog .bg-dialog-footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.modal .dialog .global-header {
+    position: relative;
+    width: 100%;
+    font-size: 0;
+}
+.modal .dialog .global-header .icon-redbag-gold, .modal .dialog .global-header .icon-redbag-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.modal .dialog .global-header .icon-luckytips {
+    position: absolute;
+    width: 82%;
+    top: 8%;
+    left: 12%;
+}
+.modal .dialog .global-header .icon-lottery-yhlogo {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 9999;
+    left: 50%;
+    margin-left: -40px;
+    bottom: -30px;
+    background-color: #ab1921;
+    border-radius: 100%;
+    padding: 6px;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+.modal .dialog .dialog-content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    z-index: 999;
+    text-align: center;
+    border-radius: 6px;
+    /*background-color: #993333;*/
+    /*border: 3px solid #ff9900;*/
+}
+.modal .dialog .dialog-content .info-qrcode {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 6px;
+    text-align: center;
+}
+.modal .dialog .dialog-content .icon-congrats {
+    width: 86%;
+    margin: 0 auto 2%;
+}
+.modal .dialog .dialog-content .award-luckTips {
+    width: 92%;
+    margin: 5px auto 1%;
+    font-size: 16px;
+    overflow: hidden;
+    text-align: center;
+}
+.modal .dialog .dialog-content .award-luckTips img, .modal .dialog .dialog-content .award-img {
+    width: 100%;
+    margin: 0 auto 5%;
+    /*border: 3px solid #993333;*/
+}
+.modal .dialog .dialog-content .award-luckTips img, .modal .dialog .dialog-content .award-mid-img {
+    width: 80%;
+    margin: 0 auto 2%;
+    /*border: 3px solid #993333;*/
+}
+.modal .dialog .dialog-content .award-nameTips {
+    width: 80%;
+    margin: 0 auto 2%;
+    font-size: 26px;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+.modal .dialog .dialog-content .award-keyTips {
+    width: 100%;
+    margin: 1% auto;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 20px;
+    overflow: hidden;
+    word-break: break-all;
+    text-align: center;
+    color: white;
+    height: 40px;
+}
+.modal .dialog .dialog-content .award-normalTips {
+    width: 100%;
+    margin: 1% auto;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: bolder;
+    overflow: hidden;
+    word-break: break-all;
+    text-align: center;
+}
+.modal .dialog .dialog-content .input-box {
+    width: 100%;
+    font-size: 15px;
+    color: #FFF;
+    margin: 8% auto 5%;
+}
+.modal .dialog .dialog-content .input-box .label {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.modal .dialog .dialog-content .input-box p {
+    width: 100%;
+    margin: 6px 0 0;
+}
+.modal .dialog .dialog-content .input-box span {
+    display: inline-block;
+}
+.modal .dialog .dialog-content .input-box input {
+    display: inline-block;
+    width: 88%;
+    padding: 3px 8px;
+    line-height: 30px;
+    border: 0 none;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #666;
+    background-color: #FBFBFB;
+    margin: 3px auto;
+}
+.modal .dialog .dialog-content .input-box input::-webkit-input-placeholder {
+    color: #666 !important;
+}
+.modal .dialog .dialog-content .info-box {
+    text-align: left;
+    width: 88%;
+    margin: 6% auto 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFF;
+}
+.modal .dialog .dialog-content .btn-lottery {
+    position: relative;
+    display: inline-block;
+    margin: auto auto;
+    width: 230px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 40px;
+    color: #FFF;
+    background: -webkit-linear-gradient(top, #e3839f 0%, #d12f60 10%,#d12f60 90%,#8c2040 100%);
+    /*background-color: #ffe27b;*/
+    /*border-radius: 3px;*/
+    /*box-shadow: 0 2px 3px #7f0203;*/
+    border-radius: 8px;
+    /*background-color: #ffab3b;*/
+    top: -15px;
+    z-index: 999999999;
+}
+.modal .dialog .dialog-content .btn-lottery-box {
+    width: 100%;
+}
+.modal .dialog .dialog-content .btn-lottery-box .btn-lottery {
+    display: inline-block;
+    margin: 20px 6px;
+}
+.modal .dialog .dialog-content .award-img-box {
+    position: relative;
+    width: 100%;
+}
+.modal .dialog .dialog-content .award-img-box .award-img {
+    position: relative;
+    z-index: 2;
+}
+.modal .dialog .dialog-content .award-img-box .icon-paper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation-name: paper;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    z-index: 1;
+}
+.modal .dialog .dialog-content .icon-ok {
+    width: 52%;
+    margin: 0 auto 1%;
+}
+.modal .dialog .dialog-content .qrcode-tips {
+    font-size: 15px !important;
+    color: #FFF !important;
+    font-weight: normal !important;
+    color: #F5F5F5;
+    margin-bottom: 5%;
+}
+.modal .dialog .dialog-content .qrcode-box {
+    position: relative;
+    width: 82%;
+    margin: 0 auto 5%;
+    padding: 0 0 36px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+.modal .dialog .dialog-content .qrcode-box p {
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    left: 0;
+    bottom: 0;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #6b0001;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 6%;
+}
+.modal .dialog .dialog-content .dialog-body {
+    width: 100%;
+    padding: 6% 5% 5%;
+    /*background-color: #cc3333;*/
+}
+.modal .dialog .dialog-content .dialog-body h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #000000;
+    /*text-shadow: 1px 0px 0px #993333, -1px 0px 0px #993333, 0px 1px 0px #993333, 0px -1px 0px #993333 !important;*/
+    margin: 3% auto;
+}
+.modal .dialog .dialog-content .dialog-body h6 {
+    font-size: 22px;
+    margin: 3% auto 6%;
+}
+.modal .dialog .dialog-content .dialog-body h6 label {
+    font-family: "AOVELSANS";
+    font-size: 90px;
+    margin-right: 5px;
+    font-weight: bolder;
+}
+.modal .dialog .dialog-content .dialog-body h6, .modal .dialog .dialog-content .dialog-body h6 label {
+    color: #FFF;
+    text-shadow: 1px 0px 0px #993333, -1px 0px 0px #993333, 0px 1px 0px #993333, 0px -1px 0px #993333 !important;
+}
+.modal .dialog .dialog-content .dialog-body .code-box {
+    width: 100%;
+    overflow: hidden;
+}
+.modal .dialog .dialog-content .dialog-body .code-box p {
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 3px auto;
+    word-break: break-all;
+}
+.modal .dialog .dialog-content .dialog-body .icon-openluck {
+    position: absolute;
+    width: 80%;
+    top: -52px;
+    left: 10%;
+}
+.modal .dialog .dialog-content .dialog-body .icon-sponsorlogo {
+    width: 40%;
+    margin: 3% auto;
+}
+.modal .dialog .dialog-content .dialog-body .sponsor-tips {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bolder;
+    /*color: #ff9999;*/
+}
+.modal .dialog .dialog-content .dialog-footer {
+    width: 100%;
+    height: 100px;
+    /*background: url(../images/bg-openluck.png) no-repeat top center #993333;*/
+    background-size: 100% auto;
+}
+.lot-in-bg{
+    background: url("../images/lot-in-bg.png") no-repeat;
+    background-size: 90% 100%;
+    background-position: 50% 0;
+    padding-bottom: 5%;
+}
+.lot-in-bg>p{
+    margin-bottom: 5px;
+    height: 20px;
+}
+.lot-in-bg>p>input{
+    border: none;
+    /*border-radius: 5px;*/
+    font-size: 14px;
+    height: 20px;
+    width: 80%;
+}
+#openLuck-dialog .dialog .dialog-content .dialog-body {
+    padding: 25% 5% 35%;
+}
+.modal-flag .dialog .btn-dialog-close {
+    display: block !important;
+    position: absolute;
+    top: -50px;
+    right: -10px;
+    width: 28px;
+    height: 28px;
+    background: url(../images/btn-close.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999999999;
+}
+.modal-flag .dialog .dialog-content {
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg-rule.png) no-repeat center center;
+    background-size: 100% 100%;
+    border: 0 none;
+    padding: 15% 5% 8%;
+    margin: 0 auto;
+    color: #FFF;
+}
+.modal-flag .dialog .dialog-content .icon-flag {
+    position: absolute;
+    width: 80%;
+    top: -52px;
+    left: 10%;
+}
+.modal-flag .dialog .dialog-content .btn {
+    background: #fff;
+    display: inline-block;
+    padding: 2.5% 8%;
+    line-height: 100%;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    border: 3px solid #ffcc00;
+    color: #cc0033;
+    margin: 16% auto 12%;
+}
+.modal-flag .dialog .dialog-content .userinfo-keyTips {
+    color: #ff9999;
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: center;
+}
+/* 通用弹层样式_E */
+
+/* 活动规则_S */
+#rule-dialog .dialog {
+    width: 80% !important;
+    height: 66% !important;
+    top: 18% !important;
+    left: 10% !important;
+    min-height: initial !important;
+    margin-bottom: 0 !important;
+    overflow: visible;
+    color: #FFF;
+    border-radius: 6px;
+}
+#rule-dialog .dialog .dialog-content .rule-content {
+    width: 100%;
+    height: 88%;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    word-break: break-all;
+    text-align: left;
+}
+#rule-dialog .dialog .dialog-content .rule-content * {
+    color: #FFF !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+
+#redbag-dialog .dialog-content{
+    /*background: url("../images/red-lot-bg.jpg") no-repeat;*/
+    /*background-size: 100% 100%;*/
+    background-color: white;
+}
+#redbag-dialog .dialog-content .award-keyTips{
+    color: #000000;
+}
+#redbag-dialog .dialog-content .dialog-body{
+    padding: 0;
+}
+#redbag-dialog .dialog-content .dialog-footer{
+    height: auto;
+}
+#link-dialog .dialog-content{
+    /*background: url("../images/red-lot-bg.jpg") no-repeat;*/
+    /*background-size: 100% 100%;*/
+    background-color: white;
+}
+#link-dialog .dialog-content .dialog-footer{
+    height: auto;
+}
+#link-dialog .dialog-content .award-keyTips{
+    color: #000000;
+}
+#link-dialog .dialog-content .btn-lottery-box .btn-lottery{
+    margin: 10% auto;
+}
+#link-dialog .dialog-content .dialog-body{
+    padding: 0;
+}
+#wxcard-dialog .dialog-content{
+    /*background: url("../images/red-lot-bg.jpg") no-repeat;*/
+    /*background-size: 100% 100%;*/
+    background-color: white;
+}
+#wxcard-dialog .dialog-content .award-keyTips{
+    color: #000000;
+}
+#wxcard-dialog .dialog-content .dialog-footer{
+    height: auto;
+}
+#wxcard-dialog .dialog-content .btn-lottery-box .btn-lottery{
+    margin: 10% auto;
+}
+#wxcard-dialog .dialog-content .dialog-body{
+    padding: 0;
+}
+/* 活动规则_E */
+
+/* 爆料成功_S */
+#clueSuccess-dialog .dialog .dialog-content .clueSuccess-content {
+    font-size: 23px;
+    line-height: 38px;
+    padding: 22% 6% 38%;
+    font-weight: bolder;
+}
+/* 爆料成功_E */
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .modal .dialog {
+        top: 5% !important;
+    }
+    #openLuck-dialog .dialog {
+        top: 15% !important;
+    }
+    #openLuck-dialog .dialog .dialog-content .dialog-body {
+        padding: 18% 5% 22%;
+    }
+}

@@ -1,0 +1,256 @@
+
+.btn-join{
+	width: 20%;
+	position: absolute;
+	top: 30px;
+	right: 0px;
+}
+.btn-join span{
+	display: block;
+	color: #ffd055;
+	font-size: 12px;
+}
+.btn-join img{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+.marquee {
+	color: #fff;
+	font-size: 13px;
+	background: rgba(0,51,120,0.7);
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	overflow: hidden;
+	top: 0;
+}
+.marquee ul li span{
+	display: inline-block;
+	padding-left: 30px;
+	background: url(../images/gift.png) no-repeat left;
+	background-size: 20px;
+	height: 26px;
+	line-height: 26px;
+	overflow: hidden;
+	 white-space:nowrap;
+	 text-overflow: ellipsis;
+}
+
+.countdown{ 
+	margin-top: 10px;
+	color:#fff;
+	text-align: center;
+	font-size: 16px;
+	border-radius:20px ;
+	background: url(../images/time-bg.png) no-repeat center;
+	background-size: 120% 100%;
+	padding: 2px 0;
+	
+}
+.main-top .content-box{
+	top: 40px;
+}
+.tip-box{
+	width: 100%;
+	position: absolute;
+	bottom: 50px;
+}
+.countdown .countdown-tip,.text-tip{
+	color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 28px;
+}
+.text-tip{
+	font-size: 22px;
+    display: inline-block;
+	position: relative;
+    text-align:center;
+    -webkit-background-clip: text;    /*按文字裁剪*/        
+    -webkit-text-fill-color: transparent;    /*文字的颜色使用背景色*/    
+    background-color: #eab137;    /*设置一个背景色*/        
+    background-image: -webkit-linear-gradient(0deg, rgba(234, 177, 55, 0.6) 20%, #fff 40%, rgba(234, 177, 55, 0.6) 100%);        /*设置渐变的背景，按对角线渐变*/
+    background-blend-mode: hard-light;    /*设置背景为混合模式下的强光模式*/
+    background-size: 200%;
+	-webkit-animation: shine 4s infinite ease-in;    /*给背景添加动画改变位置*/
+	-webkit-animation-delay:1s;
+	vertical-align: text-top;
+	color: #fff;
+	font-weight: 700;
+	font-family: "宋体";
+}
+@-webkit-keyframes shine {
+    0% {background-position: 130%;}
+    100% {background-position: -50%;}
+}
+.detail-countdown{
+	display:inline-block;
+	height:36px;
+	line-height: 36px;
+	color: #fff;
+	padding: 0px 14px 0 0px;
+	border-radius:16px ;
+}
+
+.detail-countdown label{
+	padding: 1px 2px;
+	border: 1px solid rgba(255,255,255,0.4);
+	background: #000;
+	border: 1px solid #000;
+    border-top: 1px solid #706e6f;
+    border-left: 1px solid #675151;
+    border-radius: 2px;
+    box-shadow: 2px 2px 1px rgba(0,0,0,.3);
+    background-image: -webkit-linear-gradient(-90deg, #353334, #290b0b);
+	color: #fde4aa;
+	margin: 0 2px;
+}
+.red{
+	position: absolute;
+	width: 86%;
+	margin-top: auto;
+	z-index: 500;
+}
+.count{
+	font-size: 12px;
+	color: #feca45;
+	text-align: left;
+	padding: 0 4%;
+	position: absolute;
+	top: 12%;
+}
+/*yao-s*/
+.home-box {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	background-color:#010624 ;
+	background-image:url(../images/logo.png), url(../images/yao-bg.jpg);
+	background-size:30% auto, 100%;
+	background-position: 4% 6%,top center;
+	background-repeat: no-repeat,no-repeat;
+}
+.ping{
+	width: 32%;
+	margin: 6% auto 0;
+}
+.ping img{
+	display: block;
+}
+/*yao-e*/
+@-webkit-keyframes shake {
+	0%, 100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+}
+
+@keyframes shake {
+	0%, 100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+}
+.shake {
+	-webkit-animation-name: shake;
+	animation-name: shake;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.ddtj{
+	margin-top: 20%;
+}
+/*活动规则-e*/
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.ddtj {
+		margin-top: 16%;
+	}
+	.ping {
+	    width: 26%;
+	    margin: 2% auto 0;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+.ddtj {
+	margin-top: 18%;
+}
+.ping {
+    width: 30%;
+    margin: 4% auto 0;
+}
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait){
+.fudai {
+    top: 78%;
+}
+.ddtj {
+    margin-top: 18%;
+}
+.ping {
+    width: 28%;
+    margin: 3% auto 0;
+}
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+.ping {
+    margin: 6% auto 0;
+}
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+.ddtj {
+    margin-top: 15%;
+}
+.ping {
+    margin: 4% auto 0;
+}
+}

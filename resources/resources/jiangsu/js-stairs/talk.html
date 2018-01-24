@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>爱的阶梯</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/talk.css" />
+	
+</head>
+<body class="now">
+	<img src="images/banner.jpg" class="banner">
+	<img src="images/icon-tvlogo.png" class="logo">
+	<div class="lottery-cd none">
+		<div class="countDown">
+			<span class="lottery-tip"></span>
+			<span class="lottery-countdown"></span>
+		</div>
+	</div>
+	<section class="shake-wrapper none">
+		<p><img class="waggle" src="./images/icon-shake.png"><span>摇奖进行中</span></p>
+		<a href="javascript:void(0);" class="btn-go2l"  data-collect="true" data-collect-flag="talk-comment" data-collect-desc="聊天室去摇奖按钮">
+			<img src="./images/btn-golottery.png">
+		</a>
+	</section>
+    <div id="body" class="body">
+        <ul id="comment_list" class="content">
+        </ul>
+    </div>
+    <p class="mesg-tip" id="mesg-tip">有新消息，点击查看</p>
+	<footer class="ctrls">
+		<img class="avatar-comment" src="./images/avatar-default.png">
+		<div class="input-box">
+			<input id="input-comment" type="text" placeholder="大家各抒己见吧……" maxlength="20" />
+		</div>
+		<a href="javascript:void(0);" class="btn-comment" id="input_submit" data-collect="true" data-collect-flag="talk-comment" data-collect-desc="弹幕发送按钮">发送</a>
+	</footer>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/scrollTo.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="./js/app/talk.js"></script>
+	<script src="./js/app/count.js"></script>
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

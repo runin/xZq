@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<title>新闻辩论赛 我有我观点</title>
+	    
+	    <link rel="stylesheet" href="css/reset.css" />    
+		<link rel="stylesheet" href="css/core.css" />
+		<!-- <link rel="stylesheet" href="css/app.min.css" /> -->
+		
+		<link rel="stylesheet" href="css/index.css" />
+		
+	</head>
+	<body>
+		<section id="cover" class="wrapper none">
+			<section class="cover-header">
+				<img class="cover-logo-left" alt="" src="./images/logo-anhui.png">
+				<img class="cover-logo-right" alt="" src="./images/logo-ad.png">
+			</section>
+			<section class="cover-title">
+				<img alt="新闻辩论赛 我有我观点" src="./images/slogon-logo-main.png">
+			</section>
+			<section class="cover-btn">
+				<a id="btn_enter" class="none" href="javascript:void(0);" data-collect="true" data-collect-flag="news-debate-cover-enter" data-collect-desc="辩论赛-点击进入">
+					<p class="cover-btn-jinru">进入</p>
+					<p class="cover-btn-enter">ENTER</p>
+				</a>
+			</section>
+		</section>
+	
+		<section id="main" class="wrapper none">
+			<section class="personal-center-wrapper">
+				<a id="zhanji_open" class="personal-center-zhanji" href="javascript:void(0)"  data-collect="true" data-collect-flag="news-debate-zhanji-open" data-collect-desc="辩论赛-查看我的战绩">
+					<section class="avatar">
+						<img alt="我的战绩" src="./images/avatar-default.png">
+					</section>
+					<span>我的战绩</span>
+					<section id="zhanji_red_dot" class="red-dot none"></section>
+				</a>
+				<a id="share_open" class="share-btn" href="javascript:void(0)"  data-collect="true" data-collect-flag="news-debate-index-share" data-collect-desc="辩论赛-首页分享">
+					快来支持我
+				</a>
+			</section>
+			
+			
+			<section class="topic-wrapper">
+				<section id="countDown" class="topic-count-down">
+				</section>
+				<section class="topic-detail">
+					<img id="topic_detail" >
+				</section>
+			</section>
+			
+			<section class="point-wrapper">
+				<section id="point_win" class="point-win none">
+					<img id="point_win0" class="none" alt="红方胜出" src="./images/icon-win-red.png">
+					<img id="point_win1" class="none" alt="蓝方胜出" src="./images/icon-win-blue.png">
+					<img class="none" puid="C0" alt="平局" src="./images/icon-win-draw.png">
+				</section>
+				
+				<img class="border-shadow" alt="" src="./images/shadow-top.png" />
+				<section class="point-inner-wrapper">
+				
+					<section class="point-btns-wrapper">
+						<section id="point0" name="红方" color="b90214" class="point-left">
+							<section class="point-btn-wrapper">
+								<a class="point-btn" href="javascript:void(0);"  data-collect="true" data-collect-flag="news-debate-support-red" data-collect-desc="辩论赛-支持红方">
+			 					</a>
+			 					<img class="point-support-icon" alt="" src="./images/icon-supported.png">
+							</section>
+							<p class="point-slogon"></p>
+						</section>
+						<section class="point-vs">
+							<img alt="vs" src="./images/icon-vs.png">
+						</section>
+						<section id="point1" name="蓝方" color="1c7dff" class="point-right">
+							<section class="point-btn-wrapper">
+								<a class="point-btn" href="javascript:void(0);"  data-collect="true" data-collect-flag="news-debate-support-blue" data-collect-desc="辩论赛-支持蓝方">
+								</a>
+								<img class="point-support-icon" alt="" src="./images/icon-supported.png">
+							</section>
+							<p  class="point-slogon"></p>
+						</section>
+					</section>
+					
+					
+					<section id="percent" class="point-percent-wrapper none">
+						<section class="point-percent-left point-percent">
+							<img alt="" src="./images/icon-red-team.png">
+							<p id="num0">0</p>
+						</section>
+						<section class="point-percent-bar">
+							<section id="bar0" class="bar-left"></section>
+							<section id="bar1" class="bar-right"></section>
+						</section>
+						<section class="point-percent-right point-percent">
+							<img alt="" src="./images/icon-blue-team.png">
+							<p id="num1">0</p>
+						</section>
+					</section>
+					
+				
+				</section>
+				
+				<img class="border-shadow" alt="" src="./images/shadow-bottom.png" />
+			</section>
+			
+			<section class="comment-wrapper">
+				<a href="./comment.html"  class="comment-header"  data-collect="true" data-collect-flag="news-debate-view-comment" data-collect-desc="辩论赛-进入聊天室">
+					<h2 id="comment_count">0人激烈辩论中</h2>
+					<section class="comment-link">
+						<img alt="" src="./images/icon-comment.png">
+						<span>&rsaquo;</span>
+						<section id="comment_red_dot" class="red-dot none"></section>
+					</section>
+				</a>
+				<section class="comment-list-wrapper">
+					<ul id="comment_list" class="comment-list">
+					</ul>
+				</section>
+				
+			</section>
+			<section id="zhanji_dialog" class="dialog none">
+				<section class="zhanji">
+					<img class="zhanji-logo" alt="战绩榜" src="./images/icon-zhanji.png">
+					<img class="border-shadow" alt="" src="./images/shadow-bottom.png" />
+					<section class="zhanji-lottery">
+						<img class="zhanji-status" alt="胜" src="./images/icon-sheng.png">
+						<p id="lottery-tips">您一共还有0次抽奖机会</p>
+						<a id="lottery-btn" class="lottery-btn none" href="./lottery.html" data-collect="true" data-collect-flag="news-debate-lottery" data-collect-desc="辩论赛-立即抽奖">
+							立即抽奖
+						</a>
+					</section>
+					
+					<img class="border-shadow" alt="" src="./images/shadow-top.png" />
+					<section class="zhanji-history">
+						<section class="zhanji-history-item border">
+							<p id="debate_win" class="num">0</p>
+							<p class="text">我猜对</p>
+						</section>
+						<section class="zhanji-history-item border">
+							<p id="debate_join" class="num">0</p>
+							<p class="text">我参与</p>
+						</section>
+						<section class="zhanji-history-item">
+							<p id="debate_percent" class="num">0%</p>
+							<p class="text">胜率</p>
+						</section>
+					</section>
+					<img class="border-shadow" alt="" src="./images/shadow-bottom.png" />
+					
+					<section class="zhanji-compare">
+						<p id="debate_score" class="score">您现在的积分为0分</p>
+						<p id="debate_rank" class="compare"></p>
+					</section>
+				</section>
+				<a id="zhanji_close" class="zhanji-close" data-collect="true" data-collect-flag="news-debate-zhanji-close" data-collect-desc="辩论赛-关闭战绩">X</a>
+				<section class="dialog-bg"></section>
+			</section>
+			<p class="tv-tips">页面由XX电视台提供</p>
+			<footer>
+				<p id="submit_tips" class="submit-tips">
+					发表成功！审核通过后就能看到您的评论啦
+				</p>
+				<p class="input-shadow"></p>
+				<section class="input-box-wrapper">
+					<section class="input-box">
+						<input id="input_text" type="text" placeholder="说说您支持的观点吧" />
+					</section>
+					<a id="input_submit" class="input-submit" href="javascript:void(0);"  data-collect="true" data-collect-flag="news-debate-index-comment-submit" data-collect-desc="辩论赛-首页发送">
+						发送
+					</a>
+				</section>
+			</footer>
+
+		</section>
+
+		<section id="share_wrapper" class="share-wrapper none">
+			<img alt="分享到朋友圈" src="./images/icon-share.png">
+			<section class="share-wrapper-bg"></section>
+		</section>
+		
+		<!-- <script src="./js/data.js"></script>	-->
+
+		<script src="./js/plugins/zepto.min.js"></script>
+		<script src="./js/plugins/zepto.cookie.min.js"></script>
+		<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+		<script src="./js/config.js"></script>		
+		<script src="./js/wx_api.js"></script>
+		
+		<script src="./js/plugins/md5.js"></script>
+		<script src="./js/plugins/common.js"></script>
+		<script src="./js/plugins/data_collect.js"></script>
+		<script src="./js/plugins/weixinapi.js"></script>
+		<script src="./js/plugins/share.js"></script>
+		
+		<!-- <script src="./js/plugins.min.js"></script>-->
+		<script src="js/app/index.js"></script>
+	</body>
+</html>

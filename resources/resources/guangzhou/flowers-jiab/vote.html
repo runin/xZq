@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>美在花城</title>
+	
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/idangerous.swiper.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/vote.css" />
+	
+	<script src="./js/wx_api.js"></script>
+</head>
+<body>
+	
+	<div class="main main-jiab" id="main">
+		<div class="logo"></div>
+		<a class="rule-tv" href="#">投票规则</a>
+		<p class="rule-jiab">每位嘉宾只能投一票</p>
+		
+		<div class="swiper-container" id="swiper-container">
+			<div class="swiper-wrapper clearfix" id="swiper-wrapper">
+				
+				<div class="swiper-slide" id="flower1" data-index="1">
+					<div class="ui-player-item">
+						<div class="detail-cover">
+							<img src="http://cdn.holdfun.cn/gztv/images/flowers/flower01.jpg">
+						</div>
+						<div class="detail-info">
+							<label>1</label>
+							<span>范欣欣</span>
+							<p>您已投票给她 </p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" id="flower2" data-index="2">
+					<div class="ui-player-item">
+						<div class="detail-cover">
+							<img src="http://cdn.holdfun.cn/gztv/images/flowers/flower02.jpg">
+						</div>
+						<div class="detail-info">
+							<label>2</label>
+							<span>杜瑞雪</span>
+							<p>您已投票给她 </p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" id="flower3" data-index="3">	
+					<div class="ui-player-item">
+						<div class="detail-cover">
+							<img src="http://cdn.holdfun.cn/gztv/images/flowers/flower03.jpg">
+						</div>
+						<div class="detail-info">
+							<label>3</label>
+							<span>陈榆</span>
+							<p>您已投票给她 </p>
+						</div>
+					</div>
+				</div>
+					
+				<div class="swiper-slide" id="flower4" data-index="4">
+					<div class="ui-player-item">
+						<div class="detail-cover">
+							<img src="http://cdn.holdfun.cn/gztv/images/flowers/flower04.jpg">
+						</div>
+						<div class="detail-info">
+							<label>4</label>
+							<span>潘嘉欣</span>
+							<p>您已投票给她 </p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" id="flower5" data-index="5">
+					<div class="ui-player-item">
+						<div class="detail-cover">
+							<img src="http://cdn.holdfun.cn/gztv/images/flowers/flower05.jpg">
+						</div>
+						<div class="detail-info">
+							<label>5</label>
+							<span>郭鑫蕊</span>
+							<p>您已投票给她 </p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" id="flower6" data-index="6">
+					<div class="ui-player-item">
+						<div class="detail-cover">
+							<img src="http://cdn.holdfun.cn/gztv/images/flowers/flower06.jpg">
+						</div>
+						<div class="detail-info">
+							<label>6</label>
+							<span>刘媛</span>
+							<p>您已投票给她 </p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" id="flower7" data-index="7">
+					<div class="ui-player-item">
+						<div class="detail-cover">
+							<img src="http://cdn.holdfun.cn/gztv/images/flowers/flower07.jpg">
+						</div>
+						<div class="detail-info">
+							<label>7</label>
+							<span>游佳佳</span>
+							<p>您已投票给她 </p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" id="flower8" data-index="8">
+					<div class="ui-player-item">
+						<div class="detail-cover">
+							<img src="http://cdn.holdfun.cn/gztv/images/flowers/flower08.jpg">
+						</div>
+						<div class="detail-info">
+							<label>8</label>
+							<span>陈曦万里</span>
+							<p>您已投票给她 </p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" id="flower9" data-index="9">
+					<div class="ui-player-item">
+						<div class="detail-cover">
+							<img src="http://cdn.holdfun.cn/gztv/images/flowers/flower09.jpg">
+						</div>
+						<div class="detail-info">
+							<label>9</label>
+							<span>詹月</span>
+							<p>您已投票给她 </p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" id="flower10" data-index="10">
+					<div class="ui-player-item">
+						<div class="detail-cover">
+							<img src="http://cdn.holdfun.cn/gztv/images/flowers/flower10.jpg">
+						</div>
+						<div class="detail-info">
+							<label>10</label>
+							<span>丛愉雁</span>
+							<p>您已投票给她 </p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" id="flower11" data-index="11">
+					<div class="ui-player-item">
+						<div class="detail-cover">
+							<img src="http://cdn.holdfun.cn/gztv/images/flowers/flower11.jpg">
+						</div>
+						<div class="detail-info">
+							<label>11</label>
+							<span>孙博聪</span>
+							<p>您已投票给她 </p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" id="flower12" data-index="12">
+					<div class="ui-player-item">
+						<div class="detail-cover">
+							<img src="http://cdn.holdfun.cn/gztv/images/flowers/flower12.jpg">
+						</div>
+						<div class="detail-info">
+							<label>12</label>
+							<span>谷金桥</span>
+							<p>您已投票给她 </p>
+						</div>
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
+
+		<div class="ctrl">
+			<a href="#" class="btn btn-vote none" id="btn-vote">确定投她</a>
+		</div>
+		
+	</div>
+
+	<script src="./js/zepto.min.js"></script>
+	<script src="./js/zepto.cookie.min.js"></script>
+	<script src="./js/idangerous.swiper.js"></script>
+	<script src="./js/weixin.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src="./js/dialog.js"></script>
+	<script src="./js/vote.js"></script>
+</body>
+</html>

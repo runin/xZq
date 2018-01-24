@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	font-size:14px;
+	background:#ceeced;
+	background-size:cover;
+	font-size:14px;
+	color:#333;
+}
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 { 
+	font-family: 'Microsoft YaHei','微软雅黑' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+ul, ol, li, p, span, div, h1, h2, h3, h4, h5, h6, input, form, textarea, button, a, em, select, table, tr, th, td{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a:link,a:visited,a:hover{
+	color:#333;
+	text-decoration:none;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"]{
+	appearance: none;
+	-webkit-appearance: none;
+}
+.jsbox{
+	position:relative;
+	padding:0 0 65px;
+}
+.top-logo img{
+	width:100%;
+}
+.js-rules{
+	margin:5% 3% 0;
+	padding:20px 15px 25px;
+	border-radius:10px;
+	background:url(../images/bg-whtie.png);
+}
+.js-rulesimg{
+	width:22%;
+}
+.procedures{
+	margin:3% auto;
+	text-align:center;
+}
+.js-rulesimg img,
+.procedures img{
+	max-width:100%;
+}
+.rules-list li{
+	line-height:22px;
+    font-size:12px;
+	color:#454545;
+}
+.copyright{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	line-height:18px;
+	margin:25px 0 10px;
+	text-align:center;
+	font-size:12px;
+	color:#999;
+}

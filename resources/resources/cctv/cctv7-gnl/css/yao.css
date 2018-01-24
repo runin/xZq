@@ -1,0 +1,284 @@
+
+.btn-join{
+	width: 20%;
+	position: absolute;
+	top: 6px;
+	right: 0px;
+}
+.btn-join span{
+	display: block;
+	color: #fff;
+	font-size: 12px;
+	background: url(../images/btn-bg.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 2px 4px;
+}
+.btn-join img{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+.marquee {
+	color: #fff;
+	font-size: 13px;
+	background-color: rgba(143,0,32,0.9);
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	overflow: hidden;
+	top: 0;
+	background-image: url(../images/border-left.png),url(../images/border-right.png);
+	background-position: left,right;
+	background-size: 12%,12%;
+	background-repeat: no-repeat,no-repeat;
+	position: absolute;
+	width: 100%;
+}
+.marquee ul li span{
+	display: inline-block;
+	padding-left: 30px;
+	background: url(../images/gift.png) no-repeat left;
+	background-size: 20px;
+	height: 26px;
+	line-height: 26px;
+	overflow: hidden;
+	 white-space:nowrap;
+	 text-overflow: ellipsis;
+}
+
+.countdown{ 
+	margin-top: 10px;
+	line-height: 36px;
+	color: #db0101;
+	text-align: center;
+	font-size: 16px;
+	background: url(../images/time-bg.jpg) no-repeat center;
+	background-size: 100% 100%;
+	padding: 2px 8px;
+	display: inline-block;
+	
+}
+.tip-box{
+	width: 100%;
+	position: absolute;
+	bottom: 80px;
+	text-align: center;
+}
+.countdown .countdown-tip{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 28px;
+}
+.detail-countdown{
+	display:inline-block;
+	height:36px;
+	border-radius:16px ;
+}
+.red{
+	position: absolute;
+	width: 86%;
+	margin-top: auto;
+	z-index: 500;
+}
+.count{
+	font-size: 12px;
+	color: #feca45;
+	text-align: left;
+	padding: 0 4%;
+	position: absolute;
+	top: 12%;
+}
+/*yao-s*/
+.home-box {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	background-color:#8a0021 ;
+	background-image:url(../images/bg.jpg);
+	background-size:100% 100%;
+	background-position:top center;
+	background-repeat:no-repeat;
+	padding-top: 36%;
+}
+.yao-box{
+	width: 82%;
+	margin: 0 auto;
+	background: url(../images/yao-box-bg.png) no-repeat left;
+	background-size: 100%;
+	padding:12% 15% 16%;
+}
+.ping img{
+	display: block;
+}
+.yao-text{
+	width: 100%;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	position: absolute;
+	top: 90px;
+
+}
+.yao-text p{
+	position:relative;
+	min-height: 30px;
+	color: #fff;
+}
+.yao-text p.texta span{
+	color: white;
+	font-weight: bold;
+	font-size: 17px;
+}
+.yao-text p:last-child span{
+	position:relative;
+	width:100%;
+}
+.yaonone-text{
+	animation-name:nonetext;
+	-webkit-animation-name:nonetext;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-duration:0.5s;
+	-webkit-animation-duration:0.5s;
+	animation-delay:0.1s;
+	-webkit-animation-delay:0.1s;
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	display: block;
+}
+@keyframes nonetext{
+	0%{
+		top:-200px;
+		opacity:0;
+	}
+	100%{
+		top:0;
+		opacity:1.0;
+	}
+}
+@-webkit-keyframes nonetext{
+	0%{
+		top:-200px;
+		opacity:0;
+	}
+	100%{
+		top:0;
+		opacity:1.0;
+	}
+}
+/*yao-e*/
+@-webkit-keyframes shake {
+	0%, 100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+}
+
+@keyframes shake {
+	0%, 100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+}
+.shake {
+	-webkit-animation-name: shake;
+	animation-name: shake;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.ddtj{
+	text-align: left;
+	position: absolute;
+	margin: 0 auto;
+	top: 30px;
+	left: 10px;
+}
+/*活动规则-e*/
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+.tip-box {
+    bottom: 60px;
+}
+.yao-text {
+    top: 60px;
+}
+.yao-box {
+    width: 66%;
+}
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+.tip-box {
+    bottom: 70px;
+}
+.yao-text {
+    top: 80px;
+}
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait){
+.tip-box {
+    bottom: 60px;
+}
+.yao-text {
+    top: 80px;
+}
+.yao-box {
+    width: 72%;
+}
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}

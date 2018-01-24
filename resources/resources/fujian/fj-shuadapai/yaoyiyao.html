@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>谁来耍大牌</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/yaoyiyao.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+</head>
+
+<body>
+  <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+  <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+  <section class="bangtuan">
+      <a class="ddtj none" id="ddtj" href="" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+    <img class="title bounceInDown" src="images/title.png">
+    <div id="yao-redbao" class="page" >
+      <div class="yao-redbao">
+          <img src="images/nm.png" class="nm">
+          <img class="yao" src="images/icon-yao.png" />
+          <img src="images/dz.png" class="dz">
+      </div>
+        <input type="button" id="test" class="none" value="test">
+      <div class="yao-text">
+        <p class="yao-text-default"><span>跟着我的节奏&nbsp;<i>摇</i>&nbsp;起来</span></p>
+        <p class="yao-cool-tips none"><span>差一点就抢到了，继续加油~</span></p>
+      </div>
+        <div class="time-text none">距本轮结束还有 <span class="downContTime"></span></div>
+        <a class="btn-rule" id="btn-rule">活动规则</a>
+    </div>
+    <div id="yao-red" class="yao-red none">
+        <img class="red-img" src="" data-collect="true" data-collect-flag="fjqy-shuadapai-yao-red" data-collect-desc="摇奖页-红包领取按钮">
+        <p class="red-tip">记得点[领取]噢！</p>
+        <a class="red-award" id="red-award" data-collect="true" data-collect-flag="fjqy-shuadapai-yao-red" data-collect-desc="摇奖页-红包领取按钮">领取</a>
+    </div>
+    <div id="yao-gift" class="yao-gift none">
+        <img class="gift-img" src="">
+        <p class="con-tip"></p>
+        <p class="ple-tip">请填写您的手机号，以便顺利领奖</p>
+        <p class="inp">姓名<input class="name" placeholder="请填写真实姓名"></p>
+        <p class="inp">手机<input class="phone" type="number" placeholder="请填写真实手机号码"></p>
+        <p class="inp">地址<input class="address" placeholder="请填写真实收货地址"></p>
+        <a id="gift-award" class="gift-award" data-collect="true" data-collect-flag="fjqy-shuadapai-yao-award" data-collect-desc="摇奖页-提交信息按钮">提交</a>
+        <a id="gift-sure" class="gift-award none" data-collect="true" data-collect-flag="fjqy-shuadapai-yao-sure" data-collect-desc="摇奖页-确定按钮">确定</a>
+    </div>
+    
+  </section>
+  <footer>
+    <div class="copyright"></div>
+  </footer>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+  <script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+  <script src="./js/plugins/common.js"></script>
+  <script src="./js/plugins/shake.js"></script>
+
+  <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+  <script src="./js/authorize_userinfo.js"></script>
+  
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/yaoyiyao.js"></script>
+
+  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

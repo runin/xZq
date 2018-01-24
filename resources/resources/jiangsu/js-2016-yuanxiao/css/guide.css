@@ -1,0 +1,16 @@
+.guide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background: rgba(0,0,0,0.8);
+	z-index: 1;
+}
+.guide .icon{
+	position: absolute;
+}
+.guide .tips{
+	width: 100%;
+	position: absolute;
+}

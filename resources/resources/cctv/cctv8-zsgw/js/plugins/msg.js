@@ -1,0 +1,10 @@
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/avatar/0.jpg' class='c_head_img_img' /></div><div class='comment'>统一绿茶，亲近自然</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/avatar/1.jpg' class='c_head_img_img' /></div><div class='comment'>统一绿茶，新鲜速递丛林惊喜</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/avatar/2.jpg' class='c_head_img_img' /></div><div class='comment'>统一绿茶，一口就能任性丛林游</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/avatar/3.jpg' class='c_head_img_img' /></div><div class='comment'>体贴的丛林后勤小队长，致敬！</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/avatar/1.jpg' class='c_head_img_img' /></div><div class='comment'>后勤小队长统一绿茶带我去浪荡丛林咯~</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/avatar/5.jpg' class='c_head_img_img' /></div><div class='comment'>统一绿茶，一口就能抢鲜赢奖品~~~</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/avatar/2.jpg' class='c_head_img_img' /></div><div class='comment'>哈哈哈</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/avatar/3.jpg' class='c_head_img_img' /></div><div class='comment'>我要中大奖</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/avatar/4.jpg' class='c_head_img_img' /></div><div class='comment'>红包红包快到我碗里来</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/avatar/5.jpg' class='c_head_img_img' /></div><div class='comment'>哈哈哈中到红包啦~~再来</div></div>");

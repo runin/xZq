@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>黄金线路</title>
+	
+	<link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+ 
+
+</head>
+<body>
+	
+	<div class="main" id="main">
+        <section id="index" class="none">
+            <div class="home-top">
+                <a href="javascript:toUrl('index.html');"><img src="images/logo.png" /></a>
+            </div>
+            <img id="logo" class="logo" src="images/home-logo.png" />
+            <h1 class="online">在线人数：<span id="user-count">0</span></h1>
+
+              <!--活动未开始-->
+            <div id="lottery-time" class="not-started">
+                <span class="count-des"></span>
+                <span id="detail-countdown" class="detail-countdown"></span>
+            </div>
+
+            <!--开始抽奖-->
+            <a id="lottery" class="btn btn-begin" data-collect="true"
+               data-collect-flag="cd-gold-index-lottery-btn"
+               data-collect-desc="开始抽奖" >抽奖</a>
+
+          
+
+            <!--首页-->
+               <a id="activity" class="btn vote canyu zhufu" data-collect="true"
+               data-collect-flag="cd-gold-index-go-btn"
+               data-collect-desc="进入互动" >我要报名</a>
+
+            <label class="rule btn-rule" data-collect="true"
+                   data-collect-flag="cd-gold-index-rule-btn"
+                   data-collect-desc="活动规则按钮" >活动规则</label>
+            <a class="ddtj none" id="ddtj" href="" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+            <p class="copyright">页面由成都电视台提供<br />新掌趣科技技术支持&Powered by holdfun.cn</p>
+        </section>
+
+        <section id="from" class="from none">
+            <img class="from-logo" src="images/home-logo2.png" />
+            <ul>
+                <li><i>每晚20:30点锁定成都二套《黄金线路》</i></li>
+                <li><i>打开微信，进入摇一摇(电视)</i></li>
+                <li><i>对着电视摇一摇</i></li>
+                <li><i>参与话题互动还有机会摇大奖</i></li>
+            </ul>
+            <a id="try" class="btn try" data-collect="true"
+               data-collect-flag="cd-gold-index-go-try"
+               data-collect-desc="进入互动" >等下就去试试</a>
+               <p id="share-copyright" class="copyright">页面由成都电视台提供<br />新掌趣科技技术支持&Powered by holdfun.cn</p>
+        </section>
+
+        <section class="apply none" id="apply">
+            <img src="images/apply-bg.jpg" class="none">
+            <div class="apply-con">
+                <a class="apply-close back-apply" data-collect="true" data-collect-flag="cd-gold-index-applay-close" data-collect-desc="报名关闭按钮"></a>
+                <img class="apply-title" src="images/apply.png">
+                <p><label>姓名：</label><input class="name" type="text"></p>
+                <p><label>电话：</label><input class="mobile" type="number"></p>
+                <p><label>邮箱：</label><input class="email" type="email"></p>
+                <p><label></label><a class="btn apply-tijao" data-collect="true" data-collect-flag="cd-gold-index-applay-close" data-collect-desc="报名关闭按钮">提交</a></p>
+            </div>
+        </section>
+
+	</div>
+	
+	<script src="js/config.js"></script>
+	
+    <script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+	<script src="./js/plugins/data_collect.js"></script>
+
+	<script src="js/app/dialog.js"></script>
+	<script src="js/app/lottery.js"></script>
+	
+    <script src="js/app/index.js"></script>
+</body>
+</html>

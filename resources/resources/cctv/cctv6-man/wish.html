@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+	<title>男人的情怀电影季</title>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/wish.css" />
+</head>
+<body>
+<section class="content">
+	<section class="home-box">
+		 <a href="#" class="btn-join yaoyiyao" id="btn-yao" data-collect="true" data-collect-flag="wish-yao-btn" data-collect-desc="祝福-进入摇奖按钮"><img src="images/btn-icon.png"><span>点我去摇奖</span></a>
+		<div class="shake-content">
+			<div class="video-div">
+				<video x-webkit-airplay="true" webkit-playsinline="true" class="video" id="video" preload="none" poster="./images/bg-poster-default.jpg">
+				<source src="http://cdn.holdfun.cn/resources/services/tv_cctv6_man/yanghe.webm" type="video/webm" />
+				<source src="http://cdn.holdfun.cn/resources/services/tv_cctv6_man/yanghe.mp4" type="video/mp4" />
+				您的浏览器不支持视频
+				</video>
+				<img class="play" src="images/icon-play.png">
+			</div>
+		</div>
+		<div class="wish-box">
+			<img class="yun" src="images/yun.png" />
+			<div class="ctrls">
+				<label><img class="head_img" src="images/danmu-head.jpg" /></label>
+				<div class="talk-dialog">
+					<textarea id="input-comment" placeholder="写下你的新年愿望~"></textarea>
+				</div>
+			</div>
+			<a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="comment-send-btn" data-collect-desc="发表评论按钮"><img src="images/btn-bg.png"/></a>
+		</div>
+		<div class="copyright"></div>
+	</section>
+</section>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+	<script src="./js/plugins/shake.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="./js/app/wish.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

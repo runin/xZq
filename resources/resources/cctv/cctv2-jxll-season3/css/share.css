@@ -1,0 +1,198 @@
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	background: url(../images/bg-index.jpg) no-repeat bottom center ;
+	background-size: cover;
+	overflow: hidden;
+}
+header{
+
+}
+header .icon-toyota{
+	display: block;
+	width: 50%;
+	margin: 3% auto;
+}
+header .card-tips{
+	position: relative;
+	width: 75%;
+	margin: auto;
+}
+header .card-tips .icon-tips{
+	display: block;
+	width: 100%;
+}
+header .card-tips .card-light1{
+	display: block;
+	position: absolute;
+	width: 15%;
+	top: -18px;
+	left: -5%;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+header .card-tips .card-light2{
+	display: block;
+	position: absolute;
+	width: 18%;
+	top: -10px;
+	left: 47%;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-delay: .8s;
+	animation-delay: .8s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+header .card-tips .card-light3{
+	display: block;
+	position: absolute;
+	width: 15%;
+	top: -10px;
+	right: -2%;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-delay: 1.4s;
+	animation-delay: 1.4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+header .card-back-btn{
+	display: block;
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	color: #fff;
+	width: 60px;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.3)));
+	text-align: center;
+	border-radius: 15px;
+	line-height: 25px;
+	font-size: 15px;
+	border: 1px solid #555568;
+}
+header .card-rule-btn{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 21%;
+}
+header .share-tips{
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	margin: 2% auto;
+}
+.icon-qss{
+	display: block;
+	position: absolute;
+	width: 44%;
+	bottom: 5px;
+	left: 28%;
+	z-index: -1;
+}
+.card-container{
+	position: relative;
+	width: 67%;
+	margin: auto;
+}
+.card-btn{
+	position: relative;
+	display: block;
+	width: 50%;
+	margin: 1% auto 0;
+	background: url(../images/btn-bg.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 45px;
+	color: #431406;
+	letter-spacing: 2px;
+}
+.share-demand-btn{
+	margin: 1% auto 0;
+	text-align: center;
+}
+.share-demand-btn .send-btn{
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	margin: auto 2%;
+	background: url(../images/btn-bg.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 45px;
+	color: #431406;
+	letter-spacing: 2px;
+}
+.share-demand-btn .reject-btn{
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	margin: auto 2%;
+	background: url(../images/btn-bg-blue.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.share-send-btn{
+	margin: 1% auto 0;
+	text-align: center;
+}
+.share-send-btn .accept-btn{
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	margin: auto 2%;
+	background: url(../images/btn-bg.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 45px;
+	color: #431406;
+	letter-spacing: 2px;
+}
+.share-send-btn .cancel-btn{
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	margin: auto 2%;
+	background: url(../images/btn-bg-blue.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.card-state-tip{
+	display: block;
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+}
+.card-state-tip span{
+	color: #dab866;
+	font-size: 18px;
+	font-weight: bold;
+}

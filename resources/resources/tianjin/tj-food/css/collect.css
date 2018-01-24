@@ -1,0 +1,264 @@
+html {
+	height: 100%;
+}
+body {
+	width:100%;
+	min-height:100%;
+	background:url(../images/bg.jpg) no-repeat bottom center #f6efda fixed;
+	background-size:cover;
+	overflow:hidden;
+	position: relative;
+}
+.main {
+	margin:0 auto;
+	opacity:0;
+	position:relative;
+	z-index:-1;
+	width: 100%;
+}
+.countdown-day {
+	display: none;
+}
+a.back-btn:visited,a.back-btn:active {
+	color:#FFF;
+}
+.form-group {
+	padding:6% 16px 10%;
+	margin-top:22px;
+}
+.main-title {
+	color:#c34e00;
+	font-size:26px;
+	font-weight: bolder;
+}
+.sub-title {
+	color:#c34e00;
+	font-size:16px;
+	line-height:18px;
+	margin:10px 0 15px;
+	font-weight:700;
+}
+.countdown-day {
+	color:#c34e00;
+	font-size:16px;
+	font-weight:700;
+	margin-bottom:10px;
+}
+.form-item input {
+	border:1px solid #e6b300;
+	border-radius:6px;
+	width:100%;
+	height:36px;
+	line-height: 24px;
+	padding:5px 8px;
+}
+.form-item textarea {
+	border-radius:5px;
+	width:100%;
+	height:120px;
+	padding:5px;
+	border:1px solid #e6b300;
+	font-size:14px;
+	color:#222;
+}
+.form-item .img-ctrl {
+    margin-top:8px;
+	margin-bottom:10px;
+}
+.phone-box p {
+	color:#c34e00;
+	font-size:16px;
+	font-weight:700;
+	margin-bottom: 3px;
+}
+.phone-box p.phone-tips {
+	font-size:13px;
+	line-height:14px;
+	margin:6px 0;
+	font-weight:normal;
+}
+.upload-form {
+	display:none;
+	height:0;
+	opacity:0;
+	position:absolute;
+	top:0;
+}
+.input-file-upload {
+	opacity:0;
+}
+.icon {
+	display:inline-block;
+	vertical-align:top;
+	width:52px;
+	height:52px;
+	line-height:52px;
+	border-radius:10px;
+	text-align:center;
+}
+.icon:before {
+	content:'';
+	display:inline-block;
+	vertical-align:-2px;
+	background:url(../images/icon-plus.png) no-repeat 0 0;
+	background-size:28px auto;
+}
+.img-ctrl .btn-preview {
+	border:1px solid #ED192F;
+}
+.img-ctrl .img-preview {
+	display:inline-block;
+	vertical-align:middle;
+	border:1px solid #FF8500;
+	border-radius:10px;
+	text-align:center;
+	width:52px;
+	height:52px;
+	line-height:52px;
+	margin-right:10px;
+	margin-bottom:10px;
+	position:relative;
+}
+.img-ctrl .img-preview .close {
+	content:'';
+	display:block;
+	background:url(../images/icon-close.png) no-repeat 0 0;
+	background-size:18px auto;
+	width:18px;
+	height:18px;
+	position:absolute;
+	right:-6px;
+	top:-8px;
+	cursor:pointer;
+}
+.img-ctrl .img-preview .uploading {
+	display:none;
+}
+.img-ctrl .img-preview.loading .uploading {
+	height:25px;
+	width:25px;
+	margin:0px auto;
+	position:relative;
+	-webkit-animation:loading-rotation .6s infinite linear;
+	animation:loading-rotation .6s infinite linear;
+	border-left:3px solid rgba(255,153,163,0.55);
+	border-right:3px solid rgba(255,153,163,0.55);
+	border-bottom:3px solid rgba(255,153,163,0.55);
+	border-top:3px solid rgba(238,26,46,.85);
+	border-radius:100%;
+	display:block;
+	line-height:0;
+	font-size:0;
+}
+.img-ctrl .img-preview .lc {
+	position:absolute;
+	left:13px;
+	top:13px;
+}
+.img-ctrl .img-preview .ic {
+	display:block;
+	width:50px;
+	height:50px;
+	overflow:hidden;
+	border-radius:10px;
+}
+.img-ctrl .btn-preview:before {
+	width:28px;
+	height:20px;
+}
+.img-ctrl .img-preview img {
+	vertical-align:-11px;
+	display:inline-block;
+	max-width:100%;
+	max-height:100%;
+}
+.img-ctrl .btn-upload {
+	border:2px dotted #c34e00;
+}
+.img-ctrl .btn-upload:before {
+	width:28px;
+	height:28px;
+	vertical-align:-7px;
+}
+.btn-back-simple {
+	display: block;
+	width: 100%;
+	text-align: center;
+	letter-spacing:10px;
+	font-size: 18px;
+	margin: 8px auto 16px;
+	color: #ff6600;
+	font-weight: bolder;
+}
+.btn-submit {
+	background:#ff6600;
+	display:block;
+	width:62%;
+	height:40px;
+	line-height:40px;
+	margin:23px auto 0;
+	border-radius:22px;
+	text-align:center;
+	font-size:18px;
+	color:#fff;
+}
+.preview-box {
+	width:100%;
+	height:100%;
+	position:fixed;
+	background:rgba(0,0,0,0.8);
+	z-index:9999999;
+	background-size:320px auto;
+	top:0;
+	left:0;
+}
+.loading-btn {
+	background:#ccc;
+	color:#fff;
+}
+.copyright {
+	position: absolute;
+	bottom: 3px;
+}
+.trim {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.trim span, .trim img {
+    display: block;
+}
+.trim .icon-leaf1 {
+    position: absolute;
+    width: 36%;
+    right: 0;
+    top: -11%;
+}
+.trim .icon-chili {
+    position: absolute;
+    width: 10%;
+    top: 15%;
+    right: 3%;
+}
+.trim .icon-leaf4-1 {
+    position: absolute;
+    width: 6%;
+    bottom: 25%;
+    left: 0;
+}
+.trim .icon-leaf4-2 {
+    position: absolute;
+    width: 4%;
+    bottom: 16%;
+    right: 12%;
+    opacity: .5;
+}
+.trim .icon-leaf4-3 {
+    position: absolute;
+    width: 10%;
+    bottom: 1%;
+    left: 8%;
+}

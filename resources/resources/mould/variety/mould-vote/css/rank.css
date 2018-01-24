@@ -1,0 +1,101 @@
+body{
+	background: url("../images/rank-bg.jpg") 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+.opacity0{
+    opacity: 0!important;
+}
+.top3{
+    width: 95%;
+    margin: 5% auto;
+}
+.top3 div{
+    display: inline-block;
+    width: 32%;
+}
+.no1{
+    margin: 0 5.5%;
+}
+.no2{
+    width: 27%!important;
+}
+.no3{
+    width: 27%!important;
+}
+.top3 div .head{
+    width: 70%;
+    display: block;
+    margin: 0 auto -15px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+}
+.top3 div .rank{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.top3 div .name{
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.top3 div .num{
+    color: #ffffc1;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 5%;
+}
+.top3 div .num:before{
+    content: "";
+    background: url("../images/icon-red.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+}
+ul{
+    border-top: 2px solid #8b8263;
+}
+ul li{
+    padding: 3% 0;
+    border-bottom: 1px solid #3d291c;
+}
+ul li .rk{
+    color: #ebd096;
+    display: inline-block;
+    margin-left: 5%;
+    font-size: 18px;
+}
+ul li .hd{
+    display: inline-block;
+    width: 15%;
+    border-radius: 31px;
+    vertical-align: middle;
+    margin-left: 4%;
+}
+ul li .na{
+    color: #fff;
+    font-size: 17px;
+    margin-left: 4%;
+    display: inline-block;
+    width: 30%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+ul li .nm{
+    color: #d6d6a3;
+    margin-left: 10%;
+    display: inline-block;
+    width: 23%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+ul li .nm:after{
+    content: "";
+    background: url("../images/icon-red.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+    margin-left: 5px;
+}

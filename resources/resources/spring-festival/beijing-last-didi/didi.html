@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>和美北京中国梦</title>
+	
+	<!-- common.min.css
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" /> -->
+	<!--  -->
+	<link rel="stylesheet" href="./css/common.min.css" />
+	
+	<!-- star.min.css
+	<link rel="stylesheet" href="./css/star.css" /> -->
+	<!--  -->
+	<link rel="stylesheet" href="./css/star.min.css" />
+</head>
+<body>
+	
+	<!-- 页面内容 -->
+	<header class="hidden">
+		<div class="logo"></div>
+	</header>
+	
+	<section class="share none" id="share">
+		<div class="tip-share"><span>发送给好友</span></div>	
+	</section>
+	
+	<section class="didi-box hidden" id="didi-box">
+		<div class="didi-hb">
+			<div class="tip-didi">
+				<h2>我是滴滴：<br />恭喜您抢到滴滴打车券！金额随机，5元10元靠人品。</h2>
+			</div>
+			
+			<div class="didi-award" id="didi-award">
+				<div class="award-inner">
+					<div class="num"><strong id="award-num"></strong></div>
+					<div class="info">
+						<label>手机号码：</label>
+						<div class="text">
+							<input type="text" class="mobile" id="mobile" />
+						</div>
+						<p class="confirm none" id="tip-confirm">打车券已放入账号：<span class="mobile-text"></span><br />24小时内到账，请登录滴滴客户端查看</p>
+					</div>
+					<div class="ctrl">
+						<a href="#" class="btn-award" id="btn-award">领 取</a>
+						<a href="#" class="btn-card">发贺卡送福包</a>
+						<a href="#" class="btn-download">下载滴滴打车</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="didi-none">
+			<div class="tip-didi">
+				<h2>我是滴滴：<br />很遗憾，这次您未抢到打车券！</h2>
+			</div>
+			
+			<div class="didi-award" id="didi-award">
+				<div class="award-inner">
+					<h3>不要气馁啊，再接再励！</h3>
+					<div class="ctrl">
+						<a href="#" class="btn-card">发贺卡送福包</a>
+						<a href="#" class="btn-download">下载滴滴打车</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="copyright hidden">页面由BTV文艺频道和BTV北京卫视提供<br />新掌趣科技制作 powered by holdfun.cn</footer>
+	<!-- 页面内容END -->
+	
+	<!-- plugins.min.js
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.longpress.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script> -->
+	<!--  -->
+	<script src="./js/plugins.min.js"></script>
+	
+	<script src="http://yaotv.qq.com/c/=/shake_tv/include/js/jsapi_authorize.js,/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	
+	<!-- test/data.js
+	<script src="./js/test/data.js"></script> -->
+	
+	<!-- didi.min.js
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/didi.js"></script> -->
+	<!--  -->
+	<script src="./js/didi.min.js"></script>
+</body>
+</html>

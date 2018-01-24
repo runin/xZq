@@ -1,0 +1,177 @@
+header
+{
+	position: relative;
+	height:50px;
+	width: 100%;
+	background:#c53336;
+  padding:0px 20px;
+
+}
+.user-information
+{
+	height:100%;
+	width:100%;
+	position: relative;
+}
+.user-information li
+{
+	display: inline-block;
+	text-align: left;
+	color:#fff;
+	vertical-align: middle;
+	font-size: 16px;
+}
+.user-information li:nth-child(1)
+{
+	width:25%;
+	height:100%;
+}
+.user-information li:nth-child(2)
+{
+	width:30%;
+}
+
+.user-information li .head-img
+{
+	height:40px;
+	width:40px;
+	border-radius: 100%;
+  background-position:top center; 
+  background-repeat:no-repeat;
+	position: relative;
+  background-size: 100% 100%;
+	top:5px;
+}
+
+.user-information i 
+{
+    width: 32px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    float:left;
+    z-index: 2;
+    top:2px;  
+}
+li .money-market-icon
+{
+    background-image:url('../images/money-icon.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#money-amount
+{
+	  vertical-align: middle;
+}
+
+/*第二部分*/
+h2
+{
+	  padding-left:10px;
+	  padding-top:5px;
+}
+.top-image-nav
+{
+    width: 100%;
+    height: 120px;
+    position: relative;
+    margin-top: 2px;
+    clear:both;
+}
+
+.img-nav
+{
+    height: 100%;
+    width: calc(50% - 15px);
+    width: -webkit-calc(50% - 15px);
+    position: relative;
+    float:left;
+}
+.top-image-nav2>p
+{
+	  margin:0px 0px 5%;
+    max-height: calc(100% - 50px);
+    overflow: auto;
+}
+
+.top-image-nav1
+{
+    margin-left:10px;
+    /*background-image: url(../images/market-top-img.jpg);*/
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.top-image-nav2
+{
+ 	  margin-left: 10px;
+}
+
+.hot-label
+{
+    position: absolute;
+    top:-40px;
+    left:-40px;
+    width:80px;
+    height:80px;
+    background: red;
+    border-radius: 100%;
+    text-align: right;
+    vertical-align: bottom;
+    color:#fff;
+    line-height: 120px;
+}
+.hot-label>p
+{
+    position: absolute;
+    right: 12px;
+    bottom: -38px;
+}
+.gold-deduct
+{
+    width:140px;
+    height:34px;
+    border-radius: 5px;
+    background: #c53336;
+    line-height: 34px;
+    color:#fff;
+    position: absolute;
+    margin:5px auto;
+    display: block;
+    text-align:center;
+    bottom:0px;
+}
+.market-image-list
+{
+	  overflow: auto;
+}
+.image-list li
+{
+	padding:3px 0px 0px;
+	border-bottom: 1px solid #c0bfbf;
+    position: relative;
+}
+li .ex-change-prize
+{
+    position: absolute;
+    width: 38%;
+    height: 28px;
+  /*  border-left: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    border-right: 1px solid rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(0,0,0,1);*/
+    background: #c53336;
+    bottom: 18px;
+    left: 15%;
+    text-align: center;
+    color:#fff;
+    line-height: 28px;
+    border-radius: 5px;
+
+}
+.coupon
+{
+	  max-height: 100px;
+}

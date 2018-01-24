@@ -1,0 +1,57 @@
+@import url(dialog.css);
+	/*selectarea*/
+	.ui-scroller {
+	position: relative;
+	height: 120px;
+	width: 100%;
+	min-width: 260px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.ui-scroller>div {
+	width: 100%;
+	display: inline-block;
+	position:relative;
+	height:120px;
+	overflow: hidden;
+	box-sizing:border-box;
+}
+.ui-scroller dl {
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	top:30px;
+}
+.ui-scroller dd {
+	padding:0;
+	margin:0;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	width:100%;
+	height: 40px;
+	line-height: 40px;
+}
+.ui-scroller dd.focus {
+	font-size: 18px;
+	}
+.ui-scroller {
+	-webkit-mask: -webkit-gradient(linear,0% 30%,-4% 100%,from(rgba(222,187,71,1)),to(rgba(36,142,36,0)));
+}
+.ui-scroller-mask {
+	-webkit-mask: -webkit-gradient(linear,0% 30%,0% 0%,from(rgba(222,187,71,1)),to(rgba(36,142,36,0)));
+}
+.ui-scroller p {
+	position: absolute;
+	top:40px;
+	height:40px;
+	width: 100%;
+	margin: 0;
+	z-index: -1;
+	border:1px solid #e2e2e2;
+	border-left:none;
+	border-right:none;
+	/*z-index:100;*/
+}
+.ui-scroller .ui-dialog-action {
+	margin-top: 10px;
+}

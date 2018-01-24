@@ -1,0 +1,14 @@
+body {
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: 360px auto;
+	min-height: 480px;
+	overflow: hidden !important;
+}
+
+.main {
+	margin: 0 auto;
+	padding: 108px 0 0;
+	color: #fff;
+	overflow: hidden;
+}

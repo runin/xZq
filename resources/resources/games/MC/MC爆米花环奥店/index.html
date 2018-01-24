@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" >
+	<title>MC影院</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/core.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+	<section id="container">
+		<section id="stage_loading" class="stage none">
+			<section id="loading_bar" class="none">
+				<div class="sk-cube-grid">
+					<div class="sk-cube sk-cube1"></div>
+					<div class="sk-cube sk-cube2"></div>
+					<div class="sk-cube sk-cube3"></div>
+					<div class="sk-cube sk-cube4"></div>
+					<div class="sk-cube sk-cube5"></div>
+					<div class="sk-cube sk-cube6"></div>
+					<div class="sk-cube sk-cube7"></div>
+					<div class="sk-cube sk-cube8"></div>
+					<div class="sk-cube sk-cube9"></div>
+				</div>
+				<p class="loading-text">游戏努力加载中...</p>
+			</section>
+		</section>
+
+		<section id="stage_index" class="stage none">
+			<section class="rule stage-item" data-src="./images/icon-rule.png" data-width="111" data-height="102" data-top="30" data-left="15"></section>
+			<section class="stage-item" data-src="./images/icon-pop.png" data-width="431" data-height="260" data-top="82" data-left="103"></section>
+			<section class="play-btn index-btn stage-item disabled" data-width="130" data-height="130" data-top="386" data-left="170">
+				<img src="./images/icon-play-disabled.png">
+			</section>
+			<section class="rank-btn index-btn stage-item" data-width="130" data-height="130" data-top="386" data-left="340">
+				<img src="./images/icon-rank.png">
+			</section>
+
+			<section class="crop stage-item" data-src="./images/icon-corn-disabled.png" data-width="41" data-height="41" data-top="575" data-left="183"></section>
+			<section class="crop stage-item" data-src="./images/icon-corn-disabled.png" data-width="41" data-height="41" data-top="575" data-left="239"></section>
+			<section class="crop stage-item" data-src="./images/icon-corn-disabled.png" data-width="41" data-height="41" data-top="575" data-left="295"></section>
+			<section class="crop stage-item" data-src="./images/icon-corn-disabled.png" data-width="41" data-height="41" data-top="575" data-left="351"></section>
+			<section class="crop stage-item" data-src="./images/icon-corn-disabled.png" data-width="41" data-height="41" data-top="575" data-left="407"></section>
+
+			<a class="record-btn" href="javascript:void(0);">中奖纪录</a>
+			<footer>Powered by holdfun.cn</footer>
+		</section>
+
+
+        <section class="stage_main none" id="stage_main"></section>
+
+        <section id="stage_record" class="stage none">
+        	<section class="back-btn">
+        	</section>
+        	<ul class="record-list">
+        	</ul>
+        </section>
+
+	</section>
+
+	<section class="crop-animate-wrapper">
+		
+	</section>
+
+	<section id="rule_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="content"></section>
+			<section class="rule-image">
+				<img src="./images/icon-rule-image.png" />
+			</section>
+			<section class="icon-close"></section>
+		</section>
+	</section>
+
+	<section id="rank_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="rank-self">
+				<section class="rank-self-avatar">
+					<img src="./images/icon-avatar.png"  onerror="this.src='./images/icon-avatar.png'">
+				</section>
+				<section class="rank-self-detail">
+					<h2></h2>
+					<p class="detail-score">我的积分：0</p>
+					<p class="detail-rank">我的排名：100+</p>
+					<p class="rank-userinfo-btn">
+						<a href="javascript:void(0);">完善领奖信息</a>
+					</p>
+				</section>
+			</section>
+			<section class="rank-list">
+				<ul>
+				</ul>
+			</section>
+			<section class="icon-close"></section>
+		</section>
+	</section>
+
+	<section id="info_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="info-tips">
+				为方便您领取奖品<br />请认真填写联系方式
+			</section>
+			<input type="hidden" id="token" name="token" >
+			<section class="info-input-wrapper">
+				<label for="name">姓名：</label>
+				<section class="input-wrapper">
+					<input id="name" name="name" type="text" />
+				</section>
+			</section>
+			<section class="info-input-wrapper">
+				<label for="tel">电话：</label>
+				<section class="input-wrapper">
+					<input id="tel" name="tel" type="tel" />
+				</section>
+			</section>
+			<a id="submit" class="info-submit" href="javascript:void(0)">确定</a>
+			<section class="icon-close"></section>
+		</section>
+	</section>
+
+	<section id="win_dialog" class="dialog-wrapper none">
+		<section class="award-tips stage-item" data-width="640" data-height="170" data-top="166" data-left="0">
+			<p class="tt"></p>
+			<p class="pd"></p>
+		</section>
+		<section class="ticket stage-item" data-src="./images/icon-ticket.png" data-width="440" data-height="189" data-top="366" data-left="91">
+			兑换码：
+		</section>
+		<section class="ticket-tips stage-item" data-width="640" data-height="40" data-top="570" data-left="0">
+			（请截图并妥善保存兑换码在影院领取）
+		</section>
+		<section class="again stage-item" data-src="./images/btn-again.png" data-width="212" data-height="140" data-top="627" data-left="207"></section>
+	</section>
+
+	<section id="lost_dialog" class="dialog-wrapper none">
+		<section class="lost-content stage-item" data-width="640" data-height="330" data-top="200" data-left="0">
+			<p>这点够吃吗？</p>
+			<p>世界上最难过的事就是，</p>
+			<p>电影还没完，</p>
+			<p>爆米花吃完了！</p>
+		</section>
+		<section class="again stage-item" data-src="./images/btn-again.png" data-width="212" data-height="140" data-top="545" data-left="207"></section>
+	</section>
+
+	<section id="error_dialog" class="dialog-wrapper none">
+		<section class="error-content stage-item" data-width="640" data-height="330" data-top="200" data-left="0">
+			<p>接到了爆米花<span class="last-scroe">0</span>分！</p>
+			<p>传说中，</p>
+			<p>累积接到最多爆米花的勇者，</p>
+			<p>会有意外惊喜哦</p>
+		</section>
+		<section class="again stage-item" data-src="./images/btn-again.png" data-width="212" data-height="140" data-top="545" data-left="207"></section>
+	</section>
+
+	<section class='none'>
+		<audio preload="auto" id="bgm" src="./music/bgm.mp3" loop></audio>
+	</section>
+
+
+	<script src="./js/config.js"></script>
+
+	<!--<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.touch.js"></script>
+	<script src="./js/plugins/zepto.fx.js"></script>-->
+	<script src="./js/plugins/zepto.all.js"></script>
+
+	<script src="http://cdn.holdfun.cn/zhoubian/mc/pixi.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+	<script src="./js/plugins/core.js"></script>
+	<script src="./js/plugins/authorize_userinfo.js"></script>
+	<script src="./js/game.js"></script>
+	<script src="./js/index.js"></script>
+	<!--<script src="./js/game.min.js"></script>-->
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=50694779" charset="UTF-8"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+
+</body>
+</html>

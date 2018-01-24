@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <!-- <link rel="stylesheet" href="css/common/reset.css" />
+    <link rel="stylesheet" href="css/common/core.css" />-->
+    <link rel="stylesheet" href="css/common.min.css" />
+
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/answer.css">
+</head>
+<body data-type="answer">
+<section class="count-out">
+    <div class="count hidden">参与人数：<label></label></div>
+</section>
+
+<section class="answer">
+    <section class="tlt">
+        <h1 class="none" id="tlt"></h1>
+        <section class="countdown none" id="vote-countdown">
+            <span class="countdown-tip"></span>
+            <span class="detail-countdown"></span>
+        </section>
+    </section>
+
+    <section class="energy">
+        <div class="energy-top">
+            <img class="gift" id="gift" src="images/gift.png" />
+            <div class="progress">
+                <label class="after"></label>
+                <div class="progress-bar" id="progress-bar" style="height:10%"></div>
+            </div>
+        </div>
+        <label class="none" id="lottery-answerPage"></label>
+    </section>
+
+    <section class="item none">
+        <div class="tv-img">
+            <img src="images/old-tv-1.jpg" /><img src="images/old-tv-2.jpg" />
+            <div><img id="img" src="" /></div>
+        </div>
+    </section>
+
+    <section class="spell none">
+        <div class="answer-box"></div>
+        <dl></dl>
+        <a id="ddtj" class="ddtj visibility wobble"  data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+            <img src="images/redenve.png" /></i>
+        </a>
+    </section>
+</section>
+
+
+<footer class="ctrls">
+    <div>
+        <label><img class="head_img" src="images/avatar.png" /></label>
+        <input id="input-comment" type="text" placeholder="输入您想要说的话~" />
+        <a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="hn-party-comment-send-btn" data-collect-desc="发表评论按钮"><img src="images/fs.jpg"></a>
+    </div>
+</footer>
+
+<div id="marqueen"><ul></ul></div>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="js/config.js"></script>
+
+<!--<script src="js/plugins/zepto.min.js"></script>
+	<script src="js/plugins/zepto.cookie.min.js"></script>
+	<script src="js/plugins/zepto.selector.min.js"></script>
+	<script src="js/plugins/zepto.fx.min.js"></script>
+	<script src="js/plugins/touch.js"></script>
+	<script src="js/plugins/md5.js"></script>-->
+<script src="js/zepto.base.min.js"></script>
+<script src="js/marqueen.js"></script>
+
+<script src="js/authorize_userinfo.js"></script>
+<script src="js/common.js"></script>
+
+<script src="js/app/dialog.js"></script>
+<script src="js/app/lottery.js"></script>
+<script src="js/app/comment.js"></script>
+<script src="js/app/answer.js"></script>
+
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

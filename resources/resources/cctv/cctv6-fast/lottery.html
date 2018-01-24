@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>速度与激情电影季</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+    <img class="preload" src="./images/btn-getluck.png">
+    <img class="preload" src="./images/bg-dialog-header.png">
+    <img class="preload" src="./images/bg-dialog-body.png">
+    <img class="preload" src="./images/bg-dialog-footer.png">
+    <header>
+        <div class="award-list"><ul></ul></div>
+        <div class="slogan-box">
+            <img class="icon-slogan" src="./images/icon-slogan.png">
+        </div>
+        <div class="countdown none">
+            <span class="countdown-tip"></span>
+            <span class="detail-countdown"></span>
+        </div>
+    </header>
+    <section class="wheel-box">
+        <img class="icon-wheel" src="./images/bg-wheel.png">
+        <!--<img class="btn-wheel" id="btn-wheel" src="images/btn-wheel.png">-->
+        <a href="#" class="icon-start" id="icon-start" data-collect="true" data-collect-flag="lottery-btn-wheel" data-collect-desc="摇奖页-抽奖按钮"><img class="btn-wheel" id="btn-wheel" src="./images/lottery_btn.png" alt="点我抽奖"></a>
+    </section>
+    <section class="tttj none" id="tttj" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+        <img class="waggle" src="./images/icon-redbag.png">
+        <p>更多红包点击这里</p>
+    </section>
+    <footer>
+        <div class="info-box">
+            <p class="count none">剩余奖品：<label>0</label>个</p>
+            <a href="#" class="btn-rule" id="btn-rule" data-collect="true" data-collect-flag="lottery-btn-rule" data-collect-desc="摇奖页-活动规则按钮">活动规则</a>
+        </div>
+        <div class="copyright"><p class='tv'>本页面由CCTV-6提供</p><p class='xzq'>新掌趣科技技术支持&Powered by holdfun.cn</p></div>
+    </footer>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.selector.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/zepto.rotate.min.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+    
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/lottery.js"></script>
+
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=50922772" charset="UTF-8"></script>
+</body>
+</html>

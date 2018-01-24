@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>黄金100秒</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+<section class="swiper-container">
+    <section class="swiper-wrapper">
+        <section class="swiper-slide swiper-slide2" id="shake-box">
+            <section class="showOver none">
+                <img class="icon-end" src="./images/icon-end.png">
+                <section class="qr-box">
+                    <p>获取下期摇奖信息尽在</p>
+                    <p>梦金园官方微信</p>
+                    <img class="icon-qrcode" src="./images/icon-qrcode.png">
+                    <i class="line"></i>
+                </section>
+                <section class="hammer-box">
+                    <section class="tttj none" id="tttj" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+                        <p>更多红包点击这里</p>
+                    </section>
+                    <p class="copyright"></p>
+                </section>
+            </section>
+            <section class="home-box">
+                <section class="main-top m-t-b">
+                    <section class="header-box">
+                        <section class="logo-box">
+                            <img src="./images/icon-tvlogo.png">
+                            <i></i>
+                            <img src="./images/icon-sponsorlogo.png">
+                        </section>
+                        <section class="count hidden"><h5>当前参与人数</h5><label></label></section>
+                    </section>
+                    <section class="product-box-pull on" data-collect="true" data-collect-flag="index-giftPull" data-collect-desc="首页-打开商品列表">
+                        <i></i>
+                        <img class="icon-clicktips flash" src="./images/icon-clicktips.png">
+                    </section>
+                    <section class="product-box">
+                        <section class="detail-box">
+                            <ul>
+                                <li class="product-url"><img src="./images/product-img1.png" onerror="$(this).remove()"><a href="http://wq.jd.com/item/view?sku=1597964947&bid=undefined#main" data-collect="true" data-collect-flag="index-detail" data-collect-desc="首页-查看详情">查看详情</a></li>
+                                <li class="product-url"><img src="./images/product-img2.png" onerror="$(this).remove()"><a href="http://wq.jd.com/mshop/gethomepage?venderid=119471&PTAG=17048.1.1" data-collect="true" data-collect-flag="index-detail" data-collect-desc="首页-查看详情">查看详情</a></li>
+                                <li class="product-url"><img src="./images/product-img3.png" onerror="$(this).remove()"><a href="http://wq.jd.com/item/view?sku=1650425198&bid=undefined#main" data-collect="true" data-collect-flag="index-detail" data-collect-desc="首页-查看详情">查看详情</a></li>
+                            </ul>
+                        </section>
+                        <a class="btn-pack" href="javascript:void(0);" data-collect="true" data-collect-flag="index-giftPack" data-collect-desc="首页-收起商品列表"></a>
+                    </section>
+                    <img class="icon-lotterytip" src="./images/icon-lotterytip.png">
+                    <p class="thanks-tips"></p>
+                    <img class="bg-yao yao-top" src="./images/bg-wheel-top.png">
+                </section>
+                <section class="main-foot m-f-b">
+                    <img class="bg-yao yao-bottom" src="./images/bg-wheel-bottom.png">
+                    <img class="comments-btn" id="comments-btn" src="images/comments.png" data-collect="true" data-collect-flag="index-comments-open" data-collect-desc="首页-打开评论">
+                    <section class="footer">
+                        <img class="icon-countdowntips none" src="./images/icon-countdowntips.png">
+                        <section class="countdown none">
+                            <span class="countdown-tip"></span>
+                            <span class="detail-countdown"></span>
+                        </section>
+                        <div class="marquee hidden">
+                            <ul></ul>
+                        </div>
+                        <section class="copyright"></section>
+                    </section>
+                </section>
+                <section id="comments" class="comments none">
+                    <a class="comments-close" id="comments-close" data-collect="true" data-collect-flag="index-comments-close" data-collect-desc="首页-关闭评论">关闭</a>
+                    <ul id="comment_list">
+                    </ul>
+                    <a class="msg-tip" id="msg-tip">您有新消息&nbsp;|&nbsp;x</a>
+                    <div class="bottom">
+                        <input type="text" id="comments-input" class="comments-input" placeholder="说点什么吧~">
+                        <a class="comments-send" id="comments-send" data-collect="true" data-collect-flag="index-comments-send" data-collect-desc="首页-发送评论"></a>
+                    </div>
+                </section>
+            </section>
+            <!--<input type="button" class="none" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;">-->
+        </section>
+    </section>
+</section>
+<script src="./js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/sha1.min.js"></script>
+<script src="./js/plugins/shake.js"></script>
+<script src="./js/plugins/scrollTo.js"></script>
+<script src="./js/plugins/common.js"></script>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="./js/app/lottery.js"></script>
+<script src="./js/app/dialog.js"></script>
+
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=52438717" charset="UTF-8"></script>
+</body>
+</html>

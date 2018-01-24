@@ -1,0 +1,79 @@
+body{
+    background:#c8ebec url(../images/bg2.jpg) no-repeat;
+    background-size: 100%;
+}
+.main{
+	padding: 50% 30px 40px;
+}
+.h2-tlt{
+	font-size: 16px;
+	color: #2b6db8;
+	line-height: 20px ;
+	font-weight: 900;
+}
+.support, .not-support{
+    font-size: 18px;
+    width: 100%;
+}
+.support{
+    margin: 13px auto;
+    display: -webkit-box;
+    background: #ffffff;
+    line-height: 40px;
+    border-radius: 6px;
+    padding:0 16px;
+    color: #acacab;
+
+}
+.btn{
+	margin-top :10px;
+}
+.selected{
+	background: #479cf9;
+	color: #ffffff;
+}
+.progress{
+    color: #fff;
+    font-size: 12px;
+}
+.progress p{
+    width: 100%; 
+    margin: 5px auto 5px;
+    line-height: 26px;
+}
+.progress p:first-child{
+    margin: 13px auto 5px;
+}
+.progress p label{
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    color: #2b6db8;
+    font-size: 14px;
+}
+.progress p .lv{
+    color: #D45252;
+}
+.progress p i{
+    display: inline-block;
+    width: 100%;
+    background: rgba(0,0,0,0.45);
+    height: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset,0px -1px 1px rgba(0,0,0,0.3) inset;
+}
+.progress p i span{
+    background: #FAA105;
+    width: 0%;
+    border-radius: 10px;
+    display: inline-block;
+    height: 7px;
+    float: left;
+    margin: 2px;
+    -webkit-transition: width 1s ease-out .2s;
+}
+.tips{
+	line-height: 40px;
+	text-align: center;
+}
+

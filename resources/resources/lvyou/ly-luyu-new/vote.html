@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>鲁豫有约</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/core.css" />
+        <link rel="stylesheet" href="css/vote.css">
+        <link rel="stylesheet" href="css/dialog.css">
+    </head>
+    <body>
+        <img class="preload" src="./images/A-p.png">
+        <img class="preload" src="./images/B-p.png">
+        <img class="preload" src="./images/C-p.png">
+        <img class="preload" src="./images/zan-pick.png">
+        <div class="head">
+            <div class="countdown none">
+                <img class="shake" src="images/shake-hand.png" />
+                <span class="countdown-tip"></span>
+                <span class="detail-countdown"></span>
+                <div class="bak"></div>
+            </div>
+        </div>
+        <div class="praise-box">
+            <p class="tt"></p>
+        </div>
+        <div class="hot-head">
+            <img class="hot-logo" src="images/hot-logo-bottom.png" />
+            <div class="tt-numb none">
+                <img src="images/hot-numb.png" />
+                <p></p>
+            </div>
+        </div>
+        <div class="hot-body">
+            <ul id="hot-ul" class="sx-ul">
+                <span id="top-comment"></span>
+            </ul>
+        </div>
+        <div class="jump">
+            <a href="javascript:void(0);" class="btn-tocomment" data-collect="true" data-collect-flag="btn-tocomment" data-collect-desc="进入评论页">查看更多</a>
+            <p class="arr"></p>
+        </div>
+        <footer>
+            <input type="text" id="comments-info" maxlength="60" placeholder="说说你的观点吧"/>
+            <input type="submit" id="send" value="" data-collect="true" data-collect-flag="answer-send" data-collect-desc="评论发送按钮" />
+        </footer>
+
+        <script src="js/config.js"></script>
+        <script src="./js/plugins/zepto.min.js"></script>
+        <script src="./js/plugins/scrollTo.js"></script>
+        <script src="./js/plugins/common.js"></script>
+
+        <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+        <script src="./js/authorize_userinfo.js"></script>
+        <script src="./js/app/vote.js"></script>
+        <script src="./js/app/dialog.js"></script>
+        <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+    </body>
+</html>

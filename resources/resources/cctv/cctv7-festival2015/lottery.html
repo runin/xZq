@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>乡村大世界</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <section class="home-box">
+        <section class="main-top m-t-b">
+            <section class="marquee hidden"><ul></ul></section>
+            <section class="fail-tips none">
+                <p>跟着我的节奏<i>摇</i>起来</p>
+            </section>
+            <section class="countdown none">
+                <span class="countdown-tip"></span>
+                <span class="detail-countdown"></span>
+            </section>
+            <img class="bg-yao yao-top" src="./images/bg-wheel-top.png">
+        </section>
+        <section class="main-foot m-f-b">
+            <img class="bg-yao yao-bottom" src="./images/bg-wheel-bottom.png">
+            <section class="footer">
+                <p class="thanks-tips"></p>
+                <a href="javascript:void(0);" class="btn btn-go2headline" id="btn-go2headline" data-collect="true" data-collect-flag="index-go2headline" data-collect-desc="进入我要上头条按钮">
+                    <img class="btn-headline" src="./images/btn-headline.png">
+                </a>
+                <section class="copyright">页面由CCTV7农业节目提供<br>新掌趣科技技术支持&Powered by holdfun.cn</section>
+            </section>
+        </section>
+    </section>
+    <!-- <input type="button" class="none" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;"> -->
+
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.selector.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/sha1.min.js"></script>
+    <script src="./js/plugins/shake.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/lottery.js"></script>
+
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=50347729" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+	background: #BFEDFA url(../images/common-bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.main {
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+h2 {
+    text-align: center;
+	
+    color: #0688CC;
+    font-size: 20px;
+}
+h2:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/dui.png) no-repeat;
+	background-size: contain;
+	width: 38px;
+	height: 38px;
+	margin-right: 10px;
+}
+.main p {
+    padding: 0 50px;
+	margin-left: 15px;
+    font-size: 14px;
+    margin-top: 28px;
+    line-height: 25px;
+    color: #0688CC;
+}
+.jf-tip {
+	line-height: 25px;
+	margin-top: 3px;
+}

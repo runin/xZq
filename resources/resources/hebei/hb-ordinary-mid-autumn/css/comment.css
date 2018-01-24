@@ -1,0 +1,200 @@
+html
+{
+  height:100%;
+  width:100%;
+}
+
+body
+{
+  background-image: url(../images/comment-bg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.time-text
+{
+  position: relative;
+  /*background-image:url(../images/comment-ctime-bg.png);*/
+  background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#C59F64), to(#885F3A));
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height:34px;
+  float:right;
+  min-width: 36%;
+  color:#ffecc5;
+  text-align: left;
+  line-height: 34px;
+  font-size: 14px;
+}
+.time-text span
+{
+  display: inline-block;
+}
+.text-tip
+{
+  padding:0px 5px 0px 50px;
+  display: block;
+}
+.hand-icon
+{
+  height:32px;
+  width:32px;
+  background:url(../images/handicon.png) no-repeat top center;
+  background-size:100% 100%;
+  display:inline-block; 
+  position: absolute;
+  left:10px;
+}
+.spon{
+  text-align: right;
+  position: absolute;
+  top:0px;
+  right: 24px;
+  width: 100%;
+  z-index: 1;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 0;
+}
+.spon img{
+  display: inline-block;
+  width: 40%;
+  margin-left: 4px;
+}
+.spon-logo{
+  display: block;
+  width: 100%;
+}
+.outer{
+  display: block;
+  font-size: 15px;
+  text-decoration: underline;
+  color: #ffecc5;
+  width:100%;
+  text-align: center;
+  height:30px;
+  line-height: 30px;
+}
+.outer:hover,.outer:visited{
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+article {
+    position: relative;
+    overflow: hidden;
+    clear:both;
+}
+
+article .ctrls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    border-top: 1px solid rgba(250,250,250,0.5);
+}
+.ctrls p {
+	  position: relative;
+    margin: 0px 70px 6px 10px;
+}
+.ctrls p input {
+    width: 97%;
+    height: 48px;
+    border: 1px solid #D1C8B9;
+    border-radius: 5px;
+    padding: 0 5px;
+    background: #d4bd98;
+    color: #fff;
+    outline: none;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    opacity: 0.8;
+}
+.ctrls p input.error {
+	border: 1px solid #f00;
+}
+.ctrls p a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  height: 48px;
+  line-height: 48px;
+  background: url(../images/btn-danmu.png) no-repeat;
+  background-size:100% 100%;
+  border: 1px solid #D1C8B9;
+  border-left: none;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  right: -60px;
+  top: 0px;
+}
+.me {
+  border: 2px solid #FFF;
+  border-radius: 30px !important;
+  height: 36px!important;
+}
+.comments {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.c_topic {
+  color: White;
+  word-wrap: break-word;
+  padding: 5px 5px;
+  padding-left: 10px;
+  min-height: 28px;
+}
+.me .c_head_img {
+  top: 2px;
+  left: 8px;
+  font-size: 16px!important;
+}
+.c_head_img {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+  overflow: hidden;
+  margin-right: 5px; 
+  float: left;
+}
+.c_head_img_img {
+  width: 28px;
+  margin-right: 4px;
+}
+.comment_item {
+   border-radius: 2px;
+  padding: 2px 5px 0;
+  margin-right: 150px !important;
+}
+
+input::-webkit-input-placeholder { 
+    color:#fff!important;
+}
+input[placeholder], [placeholder], *[placeholder] {
+   color:#fff!important;
+}
+
+.wobble{
+-webkit-animation:wobble 1s .2s ease infinite both;
+-moz-animation:wobble 1s .2s ease infinite both ;
+}
+@-webkit-keyframes wobble{
+0%{-webkit-transform:translateX(0%)}
+15%{-webkit-transform:translateX(-25%) rotate(-5deg)}
+30%{-webkit-transform:translateX(20%) rotate(3deg)}
+45%{-webkit-transform:translateX(-15%) rotate(-3deg)}
+60%{-webkit-transform:translateX(10%) rotate(2deg)}
+75%{-webkit-transform:translateX(-5%) rotate(-1deg)}
+100%{-webkit-transform:translateX(0%)}
+}

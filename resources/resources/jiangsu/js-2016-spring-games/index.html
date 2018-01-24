@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>包袱铺的小萌宠</title>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/idangerous.swiper.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <section class="pop-zezhao"></section>
+  <section class="btn-box"><a href="javascript:void(0)" class="btn-a-0" data-collect="true" data-collect-flag="btn-a" data-collect-desc="灰色"></a><a href="javascript:void(0)" class="btn-a-1" data-collect="true" data-collect-flag="btn-b" data-collect-desc="红色"></a><a href="javascript:void(0)" class="btn-a-2" data-collect="true" data-collect-flag="btn-c" data-collect-desc="紫色"></a><a href="javascript:void(0)" class="btn-a-3" data-collect="true" data-collect-flag="btn-d" data-collect-desc="绿色"></a></section>
+  <section class="btn-text"><span>灰色</span><span>红色</span><span>紫色</span><span>绿色</span></section>
+  <section class="plase-select">请选择您要领取的宠物蛋</section>
+  <section class="info-scroll rollingrecord-wrapper"></section>
+  <section class="rotate-box">
+    <div id="showcase" class="noselect">
+        <img class="cloud9-item" data-id="id1" src="images/t_yuan_c.png" alt="t_yuan_c">
+        <img class="cloud9-item" data-id="id0" src="images/t_yuan_d.png" alt="t_yuan_d">
+        <img class="cloud9-item" data-id="id2" src="images/t_yuan_a.png" alt="t_yuan_a">
+        <img class="cloud9-item" data-id="id3" src="images/t_yuan_b.png" alt="t_yuan_b">
+    </div>
+  </section>
+  
+  <!--js-->
+  <script src="js/config.js" type="text/javascript"></script>
+  <script src="js/plugins/zepto.min.js"></script> 
+  <script src="js/plugins/core.js" type="text/javascript"></script> 
+  <script src="js/plugins/util.js" type="text/javascript"></script> 
+  <script src="js/plugins/zepto.cookie.min.js" type="text/javascript"></script>
+  
+  <script src="js/plugins/zepto.fx.min.js" type="text/javascript"></script> 
+  <script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script> 
+  <script src="js/plugins/md5.js" type="text/javascript"></script> 
+  <script src="js/plugins/authorize_userinfo.js" type="text/javascript"></script> 
+  <script src="js/app/index.js"></script>
+  <script src="js/app/rollingrecord.js"></script>
+  <script src="js/app/jquery.reflection.js"></script>
+  <script src="js/app/jquery.cloud9carousel.js"></script>
+  
+  <script>
+    $(function() {
+      var height = $(window).height();
+      var width = $(window).width();
+      var yOriginRatio = 0 / 1009;
+      var yRadiusRatio = 50 / 640;
+      var xRadiusRatio = 210 / 640;
+
+	  var bh = $(".rotate-box").height();
+	  $(".noselect").css("height",bh);
+      var showcase = $("#showcase"), title = $('#item-title');
+      showcase.Cloud9Carousel( {
+        yOrigin: yOriginRatio * height,
+        yRadius: yRadiusRatio * width / 2,
+        xRadius: xRadiusRatio * width,
+        
+        buttonLeft: $("#nav > .left"),
+        buttonRight: $("#nav > .right"),
+        autoPlay: 1,
+        bringToFront: true,
+        onRendered: rendered,
+        onLoaded: function() {
+          showcase.css( 'visibility', 'visible' );
+          //showcase.css( 'display', 'none' );
+          //showcase.fadeIn( 1000 )
+        }
+      })
+
+      function rendered( carousel ) {
+		
+        title.text( carousel.nearestItem().element.alt );
+        var c = Math.cos((carousel.floatIndex() % 1) * 2 * Math.PI);
+        title.css('opacity', 0.5 + (0.5 * c))
+      }
+    })
+  </script>
+  <script src="https://tajs.qq.com/stats?sId=45330147"></script>
+  
+</body>
+</html>

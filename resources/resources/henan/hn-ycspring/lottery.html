@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>永城春晚</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <header>
+        <section class="marquee none"><ul></ul></section>
+        <section class="info-box">
+            <p class="getRed-num none">已拆红包数：<label></label></p>
+            <section class="btn-box">
+                <a href="javascript:void(0);" class="btn-info" id="btn-info" data-collect="true" data-collect-flag="lottery-go2info" data-collect-desc="个人中心按钮">个人中心</a>
+                <a href="javascript:void(0);" class="btn-back" id="btn-back" data-collect="true" data-collect-flag="lottery-go2back" data-collect-desc="返回按钮">返&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;回</a>
+            </section>
+        </section>
+    </header>
+    <section class="container">
+        <img class="icon-lottery-wheel" src="./images/icon-lottery-wheel.png">
+        <p class="thanks-tips"></p>
+        <a class="linkout none" id="linkout" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+    </section>
+    <footer>
+        <section class="countdown none">
+            <span class="countdown-tip"></span>
+            <span class="detail-countdown"></span>
+        </section>
+        <a href="javascript:void(0);" class="btn-rule" id="btn-rule" data-collect="true" data-collect-flag="lottery-go2rule" data-collect-desc="活动规则按钮">活动规则</a>
+        <section class="copyright" style="color:#999;"></section>
+    </footer>
+    <!--<input type="button" class="" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;">-->
+
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.selector.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/sha1.min.js"></script>
+    <script src="./js/plugins/shake.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <!--<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>-->
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/lottery.js"></script>
+
+    <!--<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>-->
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

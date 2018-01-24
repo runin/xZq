@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>乡村行</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+	<img src="./images/countdown-bg.png" class="preload">
+	<header>
+		<a href="#" class="rule btn-rule none" style="top:35px;" id="btn-reserve" data-collect="true" data-collect-flag="tj-walk-index-reserved" data-collect-desc="首页-节目预约按钮">节目预约</a>
+		<span class="tvlogo"></span>
+	</header>
+	<section class="main">
+		<img class="logo" src="images/logo.png" />
+		<div class="countdown none">
+			<p class="lottery-info">距离抽奖开始还有</p>
+			<div class="detail-countdown"></div>
+		</div>
+	</section>
+	<img src="./images/paper-back.png" class="preload">
+	<img src="./images/paper-word.png" class="preload">
+	<section class="paper-box none">
+		<div class="paper-mask"></div>
+		<div class="paper-word"></div>
+		<div class="paper-cover"></div>
+		<div class="paper-back"></div>
+	</section>
+	<section class="act-info"></section>
+	<footer>
+		<div class="copyright"></div>
+		<div class="tab" id="tab">
+			<a href="#" data-collect="true" data-collect-flag="tj-walk-index-go2record-btn" data-collect-desc="首页-点击中奖记录按钮" class="btn-go2record" id="btn-go2record">中奖记录</a>
+			<span>|</span>
+			<a href="#" data-collect="true" data-collect-flag="tj-walk-index-go2rule-btn" data-collect-desc="首页-点击领奖规则弹层按钮" id="btn-rule" class="btn-rule">领奖规则</a>
+		</div>
+		<div id="div_subscribe_area" class="div_subscribe_area_class"></div>
+	</footer>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+  	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/zepto.touch.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script>
+	<img src="./images/paper-mask.png" class="preload">
+	<img src="./images/paper-cover.png" class="preload">
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

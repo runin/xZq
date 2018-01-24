@@ -1,0 +1,96 @@
+html{
+    height: 100%
+}
+body{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background: url(../images/record-bg.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.icon-logo{
+    position: absolute;
+    display: block;
+    width: 45%;
+    top: 10px;
+    left: 10px;
+}
+.icon-main{
+    display: block;
+    margin: 35% auto 0;
+    width: 95%;
+}
+.icon-link{
+    width: 82%;
+    display: block;
+    margin: 20px auto 0;
+}
+.btn-index{
+    display: block;
+    width: 50%;
+    margin: 20% auto 0;
+}
+.copyright {
+    color: #969eb5;
+    position: static;
+    height: 30px;
+}
+#div_subscribe_area {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    z-index: 9999;
+}
+.bottom-box {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    zoom: 1;
+    clear: both;
+}
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}

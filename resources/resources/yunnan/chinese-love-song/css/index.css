@@ -1,0 +1,123 @@
+body {
+   background: #660000 url(../images/index-bg.jpg) no-repeat;
+   background-size: 100% 100%;
+   overflow: hidden;
+ }
+.logo{
+    width: 11%;
+    margin: 3%;
+}
+.go {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 20vh;
+  left: 0;
+  right: 0;
+  width: 173px;
+  line-height: 50px;
+  height: 50px;
+  background: url(../images/button1.png) no-repeat;
+  background-size: 100% auto;
+  color: #FFF;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.rubberBand {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+}
+@-webkit-keyframes rubberBand {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#div_subscribe_area {
+  height: 50px;
+  overflow:hidden;
+    opacity: 1;
+    z-index: 1000;
+}
+@media screen and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* iPhone5 */
+@media screen and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone6 */
+@media screen and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* luo */
+@media screen and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .tlt {
+        width: 72%;
+    }
+}
+/* mi2*/
+@media screen and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone6plus */
+@media screen and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}

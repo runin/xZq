@@ -1,0 +1,299 @@
+body {
+	background-size: cover;
+}
+
+.main {
+	margin: 0 auto;
+	padding: 20px 0px 0;
+	color: #fff;
+	overflow: hidden;
+}
+.lottery {
+    position: relative;
+	
+    width: 296px;
+    height: 296px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.btn-lottery {
+    position: absolute;
+	
+    left: 84px;
+    top: 84px;
+    width: 128px;
+    height: 128px;
+}
+.box {
+	
+}
+.box h1{
+    font-size:32px;
+    text-align:center;
+
+    margin-top: 20px;
+}
+.box h2 {
+    color: #fff;
+	margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+.box h3 {
+    color: #000;
+    margin: 22px 15px auto;
+    font-size: 12px;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+.box .p-text {
+	margin: 0 auto;
+}
+.box input {
+    margin-top: 6px;
+	font-size:12px;
+    width: 80%;
+    height: 38px;
+    border: 1px solid #CCCCCC;
+    padding: 0 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.p-text{
+    background: url(../images/aw.png) no-repeat;
+    background-size: 290px auto;
+    width: 290px;
+    height:190px;
+    text-align: center;
+}
+.btn-red {
+	margin: 15px auto 0;
+    background: #3F3F3F;
+}
+.win_prize_tip{
+    color: #3e3e3e;
+    font-size: 12px;
+}
+
+.loading-btn{
+    background: #ccc;
+    color: #fff;
+}
+
+.lott-tlt{
+    color:#fff;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+.gx{
+    font-size: 32px;
+}
+.try{
+    font-size: 16px;
+}
+.top{
+    background: url(../images/top.png) no-repeat top center;
+    background-size:cover;
+    height: 22px;
+    position:absolute;
+    top:0;
+    min-width: 320px;
+}
+.entity-img{
+    width: 160px;
+    margin:0 auto;
+}
+.bg-chang{
+    background: #F1C40F;
+    color:#000;
+}
+
+.shengxiao h1,.error h1{
+     font-size: 20px;
+     text-align: center;
+    margin-bottom:5px ;
+ }
+.shengxiao h2{
+    font-size: 16px;
+    text-align: center;
+}
+.shengxiao h3,.shengxiao h4{
+    font-size: 12px;
+    text-align: center;
+}
+.card-bg{
+    background: url(../images/card-bg.png) no-repeat;
+    background-size: 295px auto;
+    width: 295px;
+    height:190px;
+    margin: 15px auto;
+    text-align: center;
+}
+.card-bg img{
+    width: 125px;
+    margin-top: 20px;
+}
+.card-bg p{
+    font-size: 12px;
+    color:#3F3F3F;
+    margin-top: 5px;
+}
+.detail-countdown{
+    text-align: center;
+    margin: 10px auto;
+    font-size:12px;
+}
+.detail-countdown label{
+    display: inline-block;
+    background:rgba(0,0,0,0.3);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width:23px;
+    height:32px;
+    line-height: 32px;
+    text-align:center;
+    margin: 0 2px;
+}
+.detail-countdown label.dian{
+    background:rgba(0,0,0,0);
+}
+.song{
+    margin-top: 10px;
+}
+.card{
+    display: block;
+    background: url(../images/card.png) no-repeat;
+    background-size:88px auto;
+    height: 69px;
+    width: 88px;
+    margin:0 auto;
+    font-size: 12px;
+    color:#fff;
+}
+.my-card{
+    text-align: center;
+    padding-top: 2px;
+}
+.card p{
+    margin: 20px 0 0 38px;
+    text-align: center;
+    width: 15px;
+}
+.error-img{
+    background:url("../images/error.png") no-repeat;
+    background-size: 58px auto;
+    width: 58px;
+    height:57px;
+    margin: 0 auto 8px;
+}
+.error h2{
+    font-size: 16px;
+    text-align:center;
+    margin: 2px auto 40px;
+}
+.error h3{
+    text-align:center;
+}
+.error h4{
+    font-size: 12px;
+    text-align:center;
+    margin: 30px auto 15px;
+}
+.vote{
+    color:#8E271E;
+    background:#fff;
+}
+.back{
+    margin-top: 10px;
+}
+.huodong{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .entity-img {
+        width: 95px;
+    }
+    .box h1 {
+         margin-top: 17px;
+        font-size: 20px;
+    }
+    .box h3 {
+        margin-top: 0px;
+    }
+    .card-bg {
+        background: url(../images/card-bg.png) no-repeat;
+        background-size: 220px auto;
+        width: 220px;
+        height: 142px;
+        margin: 0 auto!important;
+    }
+    .card-bg img {
+        width: 90px;
+        margin-top: 14px;
+    }
+    .lott-tlt {
+        margin: 10px 0 10px!important;
+    }
+    .copyright-logo {
+        display: none;
+    }
+    .btn,.btn-red {
+        width: 280px;
+        height: 35px;
+        line-height: 34px;
+    }
+    .btn-red {
+        margin-top: 20px;
+    }
+    .zhufu{
+        margin-top: 5px;
+    }
+    .detail-countdown{
+        margin: 3px auto;
+    }
+}
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .main {
+       padding: 3px 0 0 ;
+    }
+    .lott-tlt {
+        margin: 20px 0 20px;
+    }
+    .card-bg {
+        margin: 10px auto;
+    }
+    .box h3 {
+        margin-top: 5px;
+    }
+    .btn,.btn-red {
+        width: 280px;
+        height: 35px;
+        line-height: 34px;
+    }
+    .btn-red {
+        margin-top: 20px;
+    }
+    .zhufu{
+        margin-top: 5px;
+    }
+}
+@media screen
+and (min-device-width : 320px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .zhufu {
+        margin: 17px auto 20px;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>健康新7点</title>
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/util.css" />
+<link rel="stylesheet" href="./css/talking.css" />
+</head>
+
+<body>
+<section class="lottery-box">
+  <section class="header">
+    <div class="down-time">
+      <div class="none" id="start-cj">距摇奖开始还有<span class="red" id="downTime"></span></div>
+      <div class="none" id="end-cj">今天摇奖已结束~</div>
+    </div>
+    <div class="main-t-tips hidden" id="fhjp-tips">上一轮奖品已抽完，下一轮有更多惊喜</div>
+    <div class="rule-btn" id="rule-btn" data-collect="true" data-collect-flag="jiangkang-tl-rule" data-collect-desc="参与谈论-活动规则">活动规则</div>
+    <a href="profile.html" class="partake-btn" data-collect="true" data-collect-flag="jiangkang-ny-bqjb" data-collect-desc="内面-本期嘉宾">本期嘉宾</a>
+    <div class="problem-title"><span>本期问题：</span><label id="title-text"></label></div>
+  </section>
+  
+  <section class="comment">
+    <p class="deal none">亲，快来抢沙发~</p>
+    <ul class="comment-list"></ul>
+  </section>
+  
+  <section class="comment-input">
+    <div>
+      <input name="" type="text" class="text-a" id="comments-info" placeholder="说说您的观点吧" /><input name="" type="submit" class="btn-a" id="send" value="发送" data-collect="true" data-collect-flag="jiangkang-send" data-collect-desc="发送" />
+    </div>
+  </section>
+</section>
+
+<script src="./js/config.js"></script> 
+<script src="./js/plugins/zepto.min.js"></script> 
+<script src="./js/plugins/zepto.cookie.min.js"></script> 
+<script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script> 
+<script src="./js/plugins/md5.js"></script> 
+<script src="./js/plugins/core.js"></script> 
+<script src="./js/plugins/authorize_userinfo.js"></script> 
+<script src="./js/plugins/util.js"></script> 
+
+<script src="./js/app/countDown.js"></script> 
+<script src="./js/app/barrage.js"></script> 
+<script src="./js/app/talking.js"></script> 
+<script src="./js/app/talk.js"></script> 
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>城市三级联动</title>
+	<script src="zepto.min.js"></script>
+	<script src="citys.js"></script>
+</head>
+<body>
+	<div class="citys">
+		<select name="province"></select>
+		<select name="city"></select>
+		<select name="area"></select>
+	</div>
+	<script type="text/javascript">
+		// $('.citys').citys({});
+		// $('.citys').citys({required: 'false', onChange: function(data){}});
+		$('.citys').citys({
+			province: '陕西',
+			city: '西安',
+			area: '雁塔'
+		});
+	</script>
+</body>
+</html>
+
+<script type="text/javascript">
+	// attachEvent(detachEvent)方法只支持IE浏览器，addEventListner(removeEventListener)方法支持FF等浏览器。
+	// addEventListener方法中最后一个参数是Boolean类型，false代表支持浏览器事件捕获功能，true代表支持浏览事件冒泡功能。
+	// 事件捕获阶段：事件从最上一级标签开始往下查找，直到捕获到事件目标(target)。
+	// 事件冒泡阶段：事件从事件目标(target)开始，往上冒泡直到页面的最上一级标签，沿着文档逐层向上冒泡，直到document为止。
+	// W3C模型，任何事件发生时，先从顶层开始进行事件捕获，直到事件触发到达了事件源元素。然后，再从事件源往上进行事件冒泡，直到到达document。
+	function addEvent(obj, eventName, func) {
+		if (obj.addEventListner) {
+			obj.addEventListner(eventName, func, false);
+		} else if (obj.attachEvent) {
+			obj.attachEvent('on' + eventName, func);
+		}
+	}
+</script>

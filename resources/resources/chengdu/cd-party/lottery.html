@@ -1,0 +1,112 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no" />
+<title>成都二套跨年晚会</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/lottery.css" />
+<script src="./js/wx_api.js"></script>
+</head>
+
+<body>
+	<div class="main">
+		<!--转盘-->
+		<section id="lottery" class="none">
+			<div class="lott-tlt">
+				<h1 class="gx">恭喜您答对了</h1>
+				<h2 class="try">快来试试手气抽奖吧！</h2>
+			</div>
+			<div class="lottery ">
+				<img src="http://cdn.holdfun.cn/resources/services/cd2-party/party-lottery.png" class="img-bg" id="img_lottery_bg" />
+				<a href="#" data-collect="true" data-collect-flag="cd-party-lottery"
+					 data-collect-desc="成都跨年晚会抽奖页面抽奖" class="btn-lottery" id="btn-lottery">
+				<img src="images/lottery_btn.png" class="btn-img" />
+			</a>
+			</div>
+			<p class="huodong">活动详询：微信搜索“CDTV2”公众号</p>
+		</section>
+		<!--实物-->
+		<section class="box box-phone none" id="box-phone">
+			<p class="top"></p>
+			<h1 class="gx">运气太好了</h1>
+			<h2>
+				恭喜您，获得<span class="prize"></span>
+			</h2>
+			<p class="entity-img"></p>
+
+			<div class="p-text">
+				<h3 id="tshiyu">奖品需自提，请填写联系方式作为领奖凭证</h3>
+				<input type="text" id="s-name" class="name" placeholder="姓名" />
+				<input type="number" name="phone" maxlength="11" min="11" id="phone" placeholder="联系电话： 例：13888888888">
+				<span id="win_prize_tip" class="win_prize_tip"></span>
+				<a name="anchor"></a>
+				<a data-collect="true"
+				 data-collect-flag="cd-party-lottery-submit-btn"
+				 data-collect-desc="确认领奖及分享按钮" class="btn-red btn-submit"
+				 id="btn-submit">确认领奖</a>
+			</div>
+			<a id="zhufu" class="btn zhufu none" href="javascript:toUrl('send.html');" data-collect="true"
+			   data-collect-flag="cd-party-lottery-entity-zhufu-btn"
+			   data-collect-desc="中实物页我要送祝福按钮" >送祝福赢猪牛羊大奖</a>
+		</section>
+		<!--生肖卡-->
+		<section id="shengxiao" class="shengxiao none">
+			<h1 class="">恭喜您获得生肖卡一张！</h1>
+			<h2>集齐12生肖即可获得iphone6 Plus一部</h2>
+			<div class="card-bg"></div>
+			<h3>距下次有奖竞猜还剩</h3>
+			<p id="detail-countdown" class="detail-countdown"></p>
+			<h4>闲着也是闲着，现在就去给亲朋好友送祝福吧</h4>
+			<a class="btn zhufu song" href="javascript:toUrl('send.html');" data-collect="true"
+			   data-collect-flag="cd-party-lottery--shengxiao-zhufu-btn"
+			   data-collect-desc="中生肖卡页送祝福按钮" >送祝福赢猪牛羊大奖</a>
+			<a class="card" href="javascript:toUrl('card.html');" data-collect="true"
+			   data-collect-flag="cd-party-lottery-card-btn"
+			   data-collect-desc="我的卡包按钮" >
+				<div class="my-card">我的卡包</div>
+				<p>-</p>
+			</a>
+		</section>
+		<!--答错了-->
+		<section id="error" class="error none">
+			<p class="error-img"></p>
+			<h1>很遗憾，答错了</h1>
+			<h2>不要灰心，一会再来试试吧</h2>
+			<h3 id="juli-next">距离下次竞猜还剩</h3>
+			<p id="error-detail-countdown" class="detail-countdown"></p>
+			<h4>闲着也是闲着，去给亲朋好友送祝福吧！</h4>
+			<a class="btn vote" href="javascript:toUrl('send.html');" data-collect="true"
+			   data-collect-flag="cd-party-lottery-error-zhufu-btn"
+			   data-collect-desc="我要送祝福按钮" >送祝福赢猪牛羊大奖</a>
+			<a class="btn zhufu back" href="javascript:toUrl('index.html');" data-collect="true"
+			   data-collect-flag="cd-party-lottery-btn"
+			   data-collect-desc="返回首页" >返回首页</a>
+		</section>
+	</div>
+	<div class="copyright">
+		<img id="copyright-logo" class="copyright-logo" src="images/logo.png" />
+		此页面由成都电视台提供
+	</div>
+
+	<script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.min.js"></script>
+    <script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.cookie.min.js"></script>
+	<script language="javascript" type="text/javascript">
+		document.write("<script src=\"http://cdn.holdfun.cn/resources/services/cd2-party/quizinfo.js?"+new Date().getTime()+"\"><\/script>");
+		document.write("<script src=\"http://cdn.holdfun.cn/resources/services/cd2-party/prize.js?"+new Date().getTime()+"\"><\/script>");
+	</script>
+	<script src="./js/jQueryRotate.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src="./js/share.js"></script>
+	<script src="./js/data_collect.js"></script>
+	<script src="./js/lottery.js"></script>
+
+</body>
+</html>

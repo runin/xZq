@@ -1,0 +1,59 @@
+.main {
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-size: 15px;
+}
+.cover {
+    height: 208px;
+	
+}
+.cover img {
+	height: 208px;
+}
+.tips {
+    color: #F02342;
+	
+    font-size: 18px;
+    line-height: 33px;
+    padding: 12px 30px 10px;
+}
+.detail {
+    padding: 0px 30px 15px;
+    line-height: 26px;
+    color: #333333;
+}
+.ctrl {
+    border-top: 1px solid #E5E5E5;
+	
+    padding-top: 22px;
+    text-align: center;
+    margin: 0 9px 20px;
+}
+.ctrl .btn {
+	display: inline-block;
+	vertical-align: middle;
+
+	background: #2B96DE;
+	border-radius: 5px;
+	width: 140px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	margin-right: 10px;
+}
+.ctrl .btn-view {
+	
+}
+.ctrl .btn-share {
+    margin-right: 0;
+	
+    background: #fff;
+    border: 1px solid #2B96DE;
+    color: #2B96DE;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+}

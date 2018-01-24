@@ -1,0 +1,314 @@
+footer {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+/*二维码弹层start*/
+.pop_qcode
+{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height:100%;
+  background:rgba(4,7,10,0.6);
+}
+.pop_qcode .qcode-content
+{
+  position:relative;
+  height:50%;
+  width:80%;
+  color: #fff;
+  margin:25% auto;
+  text-align: center;
+  word-wrap: break-word;
+}
+.pop_qcode .qcode-bg
+{
+  position:relative;
+  width:100%;
+  margin-top:15px;
+  max-height: 260px;
+  height:100%;
+  background: url('../images/qcode-bg.png') top center no-repeat;
+  background-size: 100% 100%;
+}
+.qc-close
+{
+    position: absolute;
+    background: url(../images/qc-close.png) no-repeat top center;
+    background-size: 30px auto;
+    display: block;
+    width: 35px;
+    height: 35px;
+    z-index: 10000;
+    right:-16px;
+    top:-13px;
+}
+.qcode-bg>img
+{
+  margin-top:20px;
+  width:180px;
+}
+.pop_qcode .qt-rule
+{
+  color:#fff;
+}
+
+/*二维码弹层end*/
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-size:100% 100%;
+  overflow: hidden;
+}
+.fail-bg
+{
+  position: absolute;
+  z-index: 0;
+  top:31%;
+  height:220px;
+  width:100%;
+  background: url(../images/bg-lottery-thank.jpg) no-repeat center center;
+  background-size:100% 100%; 
+}
+.yao-cool-tips
+{
+   color:rgba(67,75,86,1);
+   font-size: 18px;
+}
+.back-index
+{
+  position:absolute; 
+  display: inline-block;
+  top:28px;
+  right:10px;
+  color: #664c24;
+  background: -webkit-linear-gradient(top,#F8EFDA 0%,#B9965D 100%);
+  padding: 2px 10px;
+  border-radius: 7px;
+  font-size: 15px;
+  margin:0px;
+  box-shadow:-1px 0 3px #A98C63, 
+    1px 0 3px #A97E4F, 
+    0 2px 4px #413117; 
+}
+.yao-bg
+{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.main-top {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top:1px;
+  background: url(../images/main-top.jpg) no-repeat bottom center;
+  background-size: cover;
+  box-sizing: border-box;
+  z-index: 1;
+  -webkit-transition: -webkit-transform .2s ease;
+}
+.main-foot {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 50%;
+  background: url(../images/main-foot.jpg) no-repeat top center;
+  background-size: cover;
+  box-sizing: border-box;
+  z-index: 1;
+  -webkit-transition: -webkit-transform .2s ease;
+}
+.marquee {
+  
+  font-size: 13px;
+  background: rgba(147,112,62,.6);
+  height: 8%;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  overflow: hidden;
+  top: 0;
+}
+.marquee ul li
+{
+  color: rgba(255,255,255,0.8);
+}
+.info-box
+{
+    position: absolute;
+    top:28px;
+    color:#fff;
+    font-size: 20px;
+}
+.weizhongjang
+{
+    position: relative;
+    margin:20% auto;
+    text-align: center;
+}
+.countdown {
+    max-width: 85%;
+    width: auto;
+    height: 50px;
+    margin: 15% auto 10%;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #FFF;
+    padding: 6px;
+    line-height: 38px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.5);
+}
+/*.countdown .detail-countdown label {
+    color: #fff;
+    font-weight: bolder;
+    padding: 2px 3px;
+    background:#F037F3;
+}*/
+.countdown .detail-countdown .none {
+    display: none;
+}
+.detail-countdown span
+{
+    height:60px;
+    width: 60px;
+    color: #fec836;
+    font-weight: bolder;
+    margin: 0 1px;
+    padding: 2px 3px;
+    border: 1px solid #000;
+    border-top: 1px solid #706e6f;
+    border-left: 1px solid #675151;
+    border-radius: 2px;
+    box-shadow: 2px 2px 1px rgba(0,0,0,.3);
+    background-image: -webkit-linear-gradient(-90deg, #353334, #290b0b);
+}
+
+.test
+{
+    height:90px;
+    width:28px;
+    background:-webkit-linear-gradient(top, #1582F9 0%,#0C3D9A 100%);
+    color:#fff;
+    float:left;
+    text-align: center;
+    left:10px;  
+    position: relative;
+    top:20%;
+}
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .countdown{
+        margin:0% auto;
+        line-height: 26px;
+        font-size: 14px;
+    }
+  .info-box
+    {
+      font-size: 16px;
+  }
+  .yao-cool-tips
+  {
+    font-size: 15px;
+  }
+  .btn-back {
+    width: 36%;
+    margin: 0 auto 2%;
+  }
+    .fail-bg
+    {
+      top:26%;
+    }
+  .prize-show
+  {
+    top:-40px;
+  }
+  .qcode-bg>img
+  {
+    width:140px;
+  }
+  .pop_qcode .qcode-content
+  {
+      margin:20% auto;
+  }
+
+}
+
+.none-tips {
+  opacity: 0;
+  animation-name:nonetips;
+  -webkit-animation-name:nonetips;
+  animation-iteration-count:1;
+  -webkit-animation-iteration-count:1;
+  animation-duration:0.5s;
+  -webkit-animation-duration:0.5s;
+  animation-delay:0.1s;
+  -webkit-animation-delay:0.1s;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode:forwards;
+  display:block;
+}
+
+@keyframes nonetips {
+  0% {transform: translate(-10px,0px);opacity: 0;}
+  20% {transform: translate(10px,0px);opacity: 1;}
+  40% {transform: translate(-10px,0px);opacity: 1;}
+  60% {transform: translate(10px,0px);opacity: 1;}
+  80% {transform: translate(-10px,0px);opacity: 1;}
+  100% {transform: translate(0px,0px);opacity: 1;}
+}
+@-webkit-keyframes nonetips {
+  0% {-webkit-transform: translate(-10px,0px);opacity: 0;}
+  20% {-webkit-transform: translate(10px,0px);opacity: 1;}
+  40% {-webkit-transform: translate(-10px,0px);opacity: 1;}
+  60% {-webkit-transform: translate(10px,0px);opacity: 1;}
+  80% {-webkit-transform: translate(-10px,0px);opacity: 1;}
+  100% {-webkit-transform: translate(0px,0px);opacity: 1;}
+}
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .fail-bg
+  {
+    top:28.4%;
+  }
+}
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+.fail-bg
+  {
+    top:30%;
+  }
+  .yao-cool-tips
+  {
+    margin-bottom: 4%;
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>音乐时间</title>
+</head>
+<body>
+	<audio controls preload="auto" id="music">
+		<source src="love.mp3 "type="audio/mp3"/> <!-- OK -->
+		<source src="love.ogg "type="audio/ogg"/> <!-- OK -->
+		<source src="love.aac "type="audio/aac"/> <!-- 不支持播放 -->
+		<source src="love.wav" type="audio/x-wav"/> <!-- OK -->
+		<source src="love.wma" type="audio/wma"/> <!-- 不支持播放 -->
+	</audio>
+	<p id="info"></p>
+	<script>
+		window.onload = function(){
+			var info = document.getElementById('info');
+			var audio = document.getElementById('music');
+			function clock() {
+				info.innerHTML = '播放总时长：' + audio.duration + '<br> 当前播放进度：' + parseInt(audio.currentTime);
+			};
+			setInterval(clock, 500);
+		}
+	</script>
+</body>
+</html>

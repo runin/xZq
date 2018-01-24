@@ -1,0 +1,301 @@
+﻿body
+{
+}
+img
+{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.cover-bottom
+{
+    margin-top: 0px;
+}
+.copyright
+{
+    z-index: 99;
+    color: White;
+}
+.comeback
+{
+    width: 112px;
+    height: 33px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.slogo
+{
+    width: 125px;
+    height: 44px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.bar_down
+{
+    background: url('../images/bar_down.png') no-repeat center center;
+    background-size: 100% 100%;
+    width: 85%;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-left: -42.5%;
+    color: White;
+    text-align: center;
+}
+.bar_down span
+{
+    background: url('../images/sumbg.png') no-repeat center center;
+    background-size: 100% 100%;
+    padding: 4px;
+    color: #fec836;
+}
+.bar_msg
+{
+    background: none !important;
+    color: White !important;
+}
+
+#rollingrecord
+{
+    width: 270px !important;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+    left: 50% !important;
+    margin-left: -135px !important;
+    border-radius: 30px;
+    color: White !important;
+    font-size: 14px;
+}
+.lan_item span
+{
+    border-bottom: 1px dotted white !important;
+    padding: 3px 0px;
+}
+
+/******不中奖弹出框*********/
+#dialog3 .img-wrapper
+{
+    position: relative;
+}
+.no_close
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 100%;
+}
+.no_back
+{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+/******中奖框****/
+.wailian-wrapper .hongbao-click,.kaquan-wrapper .hongbao-click,#dialog4 .hongbao-click-wrapper a
+{
+    background-color: transparent !important;
+    border-radius: 30px !important;
+    background-color: #FAE764 !important;
+    color: #D92F3F !important;
+    font-weight: bold !important;
+    font-size:16px !important;
+     box-shadow:3px 3px 5px gray;
+}
+.hongbao-text
+{
+    margin-top:10px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: White;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 9999;
+}
+@media (min-height:736px)
+{
+    .hongbao-text
+    {
+     margin-top:30px;    
+    }
+}
+.visable
+{
+    visibility: hidden;
+}
+
+.hongbao-cash .hongbao-img
+{
+    display: block;
+    width: 80%;
+    position: relative;
+    z-index: 9999;
+    margin: 0 auto;
+}
+#dialog4 .hongbao-click-wrapper
+{
+    position: absolute;
+    top: 78%;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    line-height:40px;
+    z-index: 9999;
+    text-align: center;
+}
+#dialog4 .hongbao-click-wrapper a
+{
+    width: 110px;
+    height: 40px;
+    line-height:40px !important;
+    display: block;
+    margin: 0 auto;
+}
+
+.outer
+{
+    position: absolute;
+    bottom: 50px;
+    width: 160px;
+    height: 40px;
+    margin-left: -80px;
+    left: 50%;
+    text-align: center;
+    color: White;
+    text-decoration: underline;
+}
+
+
+.prizeList
+{
+    position: absolute;
+    top: 49%;
+    width: 100px;
+    height: 30px;
+    left: 50%;
+    margin-left: -50px;
+    text-align: center;
+    color: White;
+    text-decoration: underline;
+}
+
+.lan_item
+{
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 0px 10px;
+}
+
+
+/*******奖品列表*********/
+
+#dialog5
+{
+    overflow: hidden;
+}
+
+.prizeListimg
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.prizes
+{
+    width: 80%;
+    height: 150px;
+    overflow: auto;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9999;
+    margin-top: 80px;
+    height: 200px;
+}
+.prize
+{
+    border-top: 1px solid white;
+}
+
+.prize + .prize
+{
+    margin-top: 10px;
+}
+
+
+.prize h2
+{
+    text-align: center;
+    color: White;
+    height: 25px;
+    line-height: 25px;
+}
+.prizeImg
+{
+    width: 100%;
+    height: 90px;
+    background: url('../images/bg-jifen.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.prize_close
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+.hongbao-title
+{
+    height: 70px;
+}
+ /*****兑换类型的按钮*****/
+ .duihuan-click
+ {
+    width:120px;
+    position:absolute;
+    bottom:40px;
+    left:50%;
+    margin-left:-60px;  
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    background-color:#FAE866 !important;
+    border-radius:20px;
+    color:#D83040 !important;
+   
+    
+      
+ }
+ .duihuaninput
+ {
+    width:80%;
+    height:35px;
+    line-height:35px;
+    position:absolute;
+    bottom:100px;
+    border:0px;
+    left:50%;
+    margin-left:-40%;
+    border-radius:5px;
+    padding-left:10px;
+    
+ }

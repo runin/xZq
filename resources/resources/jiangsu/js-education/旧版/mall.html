@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>江苏教育</title>
+	
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/mall.css" />
+
+</head>
+<body>
+	<section class="progressive-logo"></section>
+	<section class="progressive-list">
+		<ul class="mall-list" id="progressive">
+		</ul>
+		<a href="javascript:void(0);" class="more none">查看更多</a>
+	</section>
+	<section class="progressive-foot">
+		<section class="progressive-btns">
+			<section class="progressive-btns-wrapper">
+				<a href="index.html" class="btn-a">返 回</a>
+				<a href="order.html" class="btn-a">兑换纪录</a>
+			</section>
+		</section>
+	</section>
+
+	<footer class="copyright none"></footer>
+
+	<script id="tmpl_list" type="text/html">
+		<li>
+			<a href="${link}"></a>
+			<div class="p-img">
+				<img alt="${name}" title="${name}" src="${img}" />
+			</div>
+			<div class="p-box">
+				<h2>${name}</h2>
+				<p>兑换福荔币：<label>${jifen}</label><em class="price">¥${price}</em></p>
+			</div>
+		</li>
+	</script>
+
+	<script src="js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+
+	<script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/core.js"></script>
+	<script src="./js/plugins/authorize_userinfo.js"></script>
+	<script src="./js/plugins/util.js"></script>
+
+	<script src="./js/app/mall.js"></script>
+
+
+	<!-- <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"> -->
+</body>
+</html>

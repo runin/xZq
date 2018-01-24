@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>暑期我最乐</title>
+	
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/util.css" />
+	<link rel="stylesheet" href="./css/yao.css" />
+</head>
+<body>
+	<section class="main none">
+		<section id="cover_top" class="cover-top">
+			<p id="luck_tips">抢红包 抢大奖 和家人一起摇一摇</p>
+			<a href="javascript:void(0);" class="none" id='tttj' data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金" ></a>
+		</section>
+		<section id="cover_bottom" class="cover-bottom">
+			<section class="tips-container">
+				<p class="tips-hongbao"></p>
+				<p class="tips-chance countdown"></p>
+			</section>
+			<footer>
+				页面由福建广电新媒体有限公司提供<br />新掌趣科技技术支持&Powered by holdfun.cn
+			</footer>
+		</section>
+	</section>
+
+	<section id="ticket" class="hongbao-wrapper none">
+		<section class="hongbao">
+			<section class="hongbao-title">
+				<p></p>
+			</section>
+			<section class="hongbao-ticket">
+				<img src="./images/placeholder.jpg" />
+			</section>
+			<section class="hongbao-ticket-input">
+				<p class="tips">请填写您的联系方式以便顺利领奖</p>
+				<section class="input-wrapper">
+					<input id="name" type="text" placeholder="请填写姓名" />
+				</section>
+				<section class="input-wrapper">
+					<input id="tel" type="tel" placeholder="请填写手机" />
+				</section>
+				<section class="input-wrapper">
+					<input id="add" type="text" placeholder="请填写收货地址" />
+				</section>
+			</section>
+			<section class="hongbao-click-wrapper">
+				<a id="hongbao_ok" href="javascript:void(0);" class="hongbao-click"  data-collect="true" data-collect-flag="fj-summer-yao-ticket-ok" data-collect-desc="摇一摇-领奖-提交" >提 交</a>
+			</section>
+			<a href="javascript:void(0);" class="hongbao-close"  data-collect="true" data-collect-flag="fj-summer-yao-ticket-close" data-collect-desc="摇一摇-领奖-关闭"></a>
+		</section>
+	</section>
+
+	<section id="ticket_confirm" class="hongbao-wrapper none">
+		<section class="hongbao">
+			<section class="hongbao-title">
+				<p>获奖确认</p>
+			</section>
+			<section class="hongbao-ticket">
+				<img src="./images/placeholder.jpg" />
+			</section>
+			<section class="hongbao-ticket-input">
+				<p class="tips">请确认您的联系方式：</p>
+				<section class="input-wrapper">
+					<p id="name_confirm"></p>
+				</section>
+				<section class="input-wrapper">
+					<p id="tel_confirm"></p>
+				</section>
+				<section class="input-wrapper">
+					<p id="add_confirm"></p>
+				</section>
+			</section>
+			<section class="hongbao-click-wrapper">
+				<a id="hongbao_submit" href="javascript:void(0);" class="hongbao-click"  data-collect="true" data-collect-flag="fj-summer-yao-confirm-ok" data-collect-desc="摇一摇-确认-确定" >确 定</a>
+				<a id="hongbao_back" href="javascript:void(0);" class="hongbao-click" data-collect="true" data-collect-flag="fj-summer-yao-confirm-back" data-collect-desc="摇一摇-确认-修改" >修 改</a>
+			</section>
+			<a href="javascript:void(0);" class="hongbao-close" data-collect="true" data-collect-flag="fj-summer-yao-confirm-close" data-collect-desc="摇一摇-确认-关闭"></a>
+		</section>
+	</section>
+
+	<section id="hongbao" class="hongbao-wrapper none">
+		<section class="hongbao">
+			<section class="hongbao-title">
+				<p>恭喜您获得现金红包一个</p>
+			</section>
+
+			<section class="hongbao-cash"><span>0.00</span>元</section>
+			
+			<section class="hongbao-click-wrapper">
+				<a href="javascript:void(0)" class="hongbao-click" data-collect="true" data-collect-flag="fj-summer-hongbao-click" data-collect-desc="摇一摇-现金-领取现金">领取现金</a>
+			</section>
+			<a href="javascript:void(0);" class="hongbao-close" data-collect="true" data-collect-flag="fj-summer-hongbao-close" data-collect-desc="摇一摇-现金-关闭"></a>
+		</section>
+	</section>
+
+	<section id="hongbao_rp" class="hongbao-wrapper none">
+		<section class="hongbao">
+			<section class="hongbao-title">
+				<p>恭喜您</p>
+			</section>
+			<section class="hongbao-cash">
+				<p>现金已领取</p>
+			</section>
+			<section class="hongbao-click-wrapper">
+				<a href="javascript:void(0)" class="hongbao-click">确定</a>
+			</section>
+			<a href="javascript:void(0);" class="hongbao-close" data-collect="true" data-collect-flag="fj-summer-hongbao-close" data-collect-desc="摇一摇-现金-关闭"></a>
+		</section>
+	</section>
+
+	<section class='none'>
+		<audio preload="auto" id="audio_shake" src="./music/audio-a.mp3"></audio>
+		<audio preload="auto" id="audio_win" src="./music/audio-b.mp3"></audio>
+	</section>
+
+	<script src="./js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/authorize_userinfo.js"></script>
+	<script src="./js/plugins/core.js"></script>
+	<script src="./js/plugins/util.js"></script>
+	
+	<script src="./js/plugins/shake.js"></script>
+	<script src="./js/app/router.js"></script>
+	<script src="./js/app/yao.js"></script>
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

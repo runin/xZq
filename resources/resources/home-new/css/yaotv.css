@@ -1,0 +1,332 @@
+body{
+    background-color: #f1f1f1;
+}
+.sense-line{
+    width: 86%;
+}
+.bg-white{
+    background-color: #ffffff!important;
+}
+.yaotv-title{
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    margin: 40px auto 0;
+}
+.yaotv-title img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.yaotv-title .type{
+    display: inline-block;
+    margin-left: 30px;
+    color: #605e62;
+    vertical-align: middle;
+}
+.yaotv-title .type .title{
+    font-size: 24px;
+    color: #000;
+}
+.yaotv-title .type .sense{
+    border: 1px solid #dfdfdf;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: inline-block;
+    color: #000;
+}
+.yaotv-title .user-num{
+    display: inline-block;
+    margin-left: 50%;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 16px;
+}
+.yaotv-title .user-num .num{
+    color: #349e22;
+    font-size: 27px;
+}
+.yaotv-title .user-num .plus{
+    font-size: 22px;
+    padding-left: 5px;
+    display: inline-block;
+}
+.desc{
+    margin: 40px auto 0;
+    padding-bottom: 40px;
+}
+.desc-title{
+    font-size: 23px;
+    margin-bottom: 30px;
+    color: #666;
+}
+.desc-content{
+    color: #000;
+    font-size: 14px;
+    text-indent: 2em;
+}
+.yaotv-situation{
+    position: relative;
+}
+.yaotv-situation .banner{
+    width: 100%;
+}
+.yaotv-situation .hand{
+    position: absolute;
+    bottom: 0;
+    width: 51%;
+    left: 40%;
+}
+#yaotv-activity .left-img{
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+#yaotv-activity .right-text{
+    display: inline-block;
+    width: 49%;
+    margin-left: 5%;
+}
+#yaotv-activity .right-text .title{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+#yaotv-activity .right-text .content{
+    margin-bottom: 40px;
+    color: #666;
+}
+.right-triangle{
+    border-bottom: 200px solid #fff;
+    position: absolute;
+    bottom: 0;
+    border-left: 98.9vw solid Transparent;
+}
+.example{
+    margin-top: 5%;
+}
+.example .left-text{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+}
+.example .left-text .title{
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: 100;
+}
+.example .left-text .content{
+    font-size: 15px;
+    color: #767474;
+}
+.example .left-text .function{
+    display: inline-block;
+    margin-top: 20px;
+}
+.example .left-text .function img{
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+.example .left-text .function p{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.example .right-img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 55%;
+}
+.example .right-text {
+    width: 35%!important;
+    margin-left: 5%!important;
+}
+.horizontal-line{
+    display: inline-block;
+    width: 1px;
+    height: 100px;
+    background-color: #dbd7d7;
+    margin: auto 10px;
+}
+.rotate-line{
+    width: 99vw;
+    height: 1px;
+    background-color: #f1f1f1;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+}
+.rotate-line-left{
+    width: 99vw;
+    height: 1px;
+    background-color: #f1f1f1;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+}
+.left-triangle{
+    border-bottom: 200px solid #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    border-right: 98.9vw solid Transparent;
+}
+.last-example{
+    margin-bottom: 150px;
+}
+
+.cooperate .swiper-container {
+    width: 100%;
+    padding: 100px 0;
+    margin-bottom: 65px;
+}
+.cooperate .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.cooperate .swiper-button-next,.cooperate .swiper-container-rtl .swiper-button-prev {
+    background-image: url(../img/yaotv/arrow.png);
+    right: 0px;
+    left: auto;
+}
+.cooperate .swiper-button-prev,.cooperate .swiper-container-rtl .swiper-button-next {
+    background-image: url(../img/yaotv/arrow.png);
+    -webkit-transform: rotateY(180deg);
+    left: 0px;
+    right: auto;
+}
+.cooperate .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #51A044;
+}
+.cooperate .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+}
+.cooperate h1{
+    font-size: 24px;
+    color: #666;
+}
+.cooperate ul{
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+}
+.cooperate ul li{
+    width: 250px;
+    text-align: center;
+}
+.cooperate ul li div{
+    position: relative;
+    height: 135px;
+}
+.cooperate ul li div p:first-child, .cooperate ul li div p:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.cooperate ul li div h3{
+    font-size: 16px;
+    color: #666;
+}
+
+.user h1{
+    font-size: 24px;
+    color: #666;
+    margin: 55px 0;
+}
+.user ul{
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.user ul li div.normal, .user ul li div.hover{
+    width: 335px;
+}
+.user ul li div img{
+    border-bottom: 3px solid #51A044;
+}
+.user ul li div h3{
+    width: 333px;
+    height: 63px;
+    line-height: 63px;
+    color: #333333;
+    font-size: 20px;
+    border: 1px solid #CCCCCC;
+    border-top: none;
+    margin-top: -3px;
+    text-align: center;
+}
+.user ul li div.hover h3{
+    color: #51A044;
+    height: 93px;
+    line-height: 93px;
+    box-shadow: 1px 4px 15px 5px rgba(0,0,0, .1);
+}
+.user ul li div.hover div{
+    width: 335px;
+    height: 178px;
+    position: relative;
+}
+.user ul li div.hover div:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+}
+.user ul li div.hover img.add{
+    position: absolute;
+    left: 150px;
+    top: 70px;
+    border: none;
+}
+.user ul li div.hover a.more{
+    position: absolute;
+    left: 143px;
+    top: 120px;
+    border: none;
+    text-decoration: underline;
+}
+
+.product h1{
+    font-size: 24px;
+    color: #666;
+    margin: 50px 0 55px;
+}
+.product ul{
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    padding-bottom: 50px;
+}
+.product ul li div img{
+    border-bottom: 3px solid #51A044;
+}
+.product ul li div h3{
+    width: 333px;
+    height: 63px;
+    line-height: 63px;
+    color: #333333;
+    font-size: 20px;
+    border: 1px solid #CCCCCC;
+    border-top: none;
+    margin-top: -3px;
+    text-align: center;
+}
+.product ul li:last-child div h3{
+    border: 1px solid #CCCCCC;
+    border-top: none;
+    border-left: none;
+}

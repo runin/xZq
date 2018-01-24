@@ -1,0 +1,438 @@
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.dialog {
+	position:absolute;
+	color:#D6305A;
+	/*border-radius:6px;*/
+	z-index:1000;
+    background: url(../images/red-bg.png) repeat-y;
+    /*background: url("../images/red-lot-bg.jpg") no-repeat;*/
+    background-size: 100% 100%;
+}
+.dialog:before, .dialog:after{
+    content: '';
+    display: block;
+    /*background: url(../images/dialog-bottom.png) no-repeat;*/
+    background-size: 100%;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+}
+.dialog:before{
+    -webkit-transform: rotate(180deg);
+    top: -26px;
+}
+.dialog:after{
+    bottom: -26px;
+}
+.dialog-inner {
+	position:absolute;
+	z-index:1;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	width:100%;
+	height:100%;
+	-webkit-transform:translateZ(0);
+	transform:translateZ(0);
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	user-select:none;
+	-webkit-text-size-adjust:none;
+	text-size-adjust:none;
+}
+.modal .btn-close {
+	position:absolute;
+    background:url(../images/icon-close.png) top center no-repeat;
+    background-size:100% auto;
+    width:28px;
+    height:28px;
+    right: 5px!important;
+    top: 5px!important;
+	z-index:10000;
+}
+.modal:before {
+	content:'';
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.7);
+	z-index:100;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+.dialog .btn{
+    height: 35px;
+    line-height: 30px;
+    /*color: white;*/
+    text-align: center;
+    /*border: 2px solid #C79021;*/
+    /*box-shadow: 0 0 0 3px #fff;*/
+    border-radius: 3px;
+    /*background-color: #0f7a77;*/
+    width: 120px;
+}
+#rule-dialog .btn-close {
+	background:url(../images/bac.png) top center no-repeat;
+	background-size:100% auto;
+	width:100px;
+	height:26px;
+    right: 80px!important;
+    top: 340px!important;
+    bottom: 10px!important;
+}
+.rule-dialog {
+	color:#2b6a56;
+    /*background: rgba(28,141,180,.6)!important;*/
+    background: url("../images/vote-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    font-weight: bold;
+}
+.rule-dialog img{
+    width: 75%;
+    display: block;
+    margin: 15px auto;
+}
+.rule-dialog img.rule-bottom{
+    -webkit-transform: rotate(180deg);
+}
+.rule-dialog .btn{
+    /*height: 30px;
+    line-height: 28px;
+    color: #996633;
+    border: 2px solid #996633;
+    box-shadow: 0 0 0 3px #fff;
+    width: 130px;*/
+}
+.rule-dialog .rulehd{
+    position: static;
+    margin:10% auto;
+    width:100%;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    /*border-bottom: 1px solid #165a76;*/
+    /*font-weight: bold;*/
+    background: url("../images/rule-bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.nompi{
+    width: 50px;
+    margin-left: -webkit-calc(50% - 60px);
+    margin-top: 2%;
+    opacity: 0;
+}
+.rule-dialog .content {
+	position:static;
+	margin:2% auto;
+	width:80%;
+	height:240px;
+}
+.rule-dialog .rule {
+	font-size:14px;
+	line-height:24px;
+	max-height:100%;
+	overflow-y:hidden;
+	color:#2b6a56;
+	margin-top:0;
+    font-weight: bold;
+}
+.rule-dialog .rule>span{
+    font-weight: bold;
+}
+.rule-dialog p {
+	line-height:22px;
+}
+.rule-dialog h3 {
+	margin-top:22px;
+	font-size:16px;
+}
+.qrbox {
+	display:none;
+}
+.qr .qrbox {
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,.6);
+	z-index:999;
+}
+.qr .btn-close {
+	display:block !important;
+}
+.qr .qrbox img {
+	position:absolute;
+	width:70%;
+	height:auto;
+	top:30%;
+	left:15%;
+	z-index:1000;
+}
+#success-dialog i {
+	width:60%;
+	margin:13% auto 0;
+}
+#success-dialog p {
+	text-align:center;
+	margin:65% auto 0;
+	color:#ffea00;
+	font-size:15px;
+}
+
+.dialog-copyright {
+	position:absolute;
+	bottom:0;
+	left:-5px;
+	right:-5px;
+	font-size:14px;
+	text-align:center;
+	color:#f00;
+}
+
+
+.lottery-dialog {
+    /*width: 285px!important;
+    height: 390px!important;*/
+}
+.lottery-dialog .btn{
+    margin: 8px auto 0;
+}
+.lottery-dialog .award-win .btn-back {
+    margin-top: 20px;
+}
+.lottery-dialog .award-red{
+    position: relative;
+    height: 98%;
+}
+.lottery-dialog .award-red div.open h2,.lottery-dialog .award-red div.lq h2,.lottery-dialog .award-card h2{
+    color: #996633;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 41px;
+    font-weight: bold;
+}
+.lottery-dialog .award-red div.lq h2 {
+    margin: 10px 6% 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.lottery-dialog .award-card h2{
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+.lottery-dialog .award-red img.pi,.lottery-dialog .award-card img.pi{
+    padding-top: 10px;
+    display: block;
+    margin: 2% auto 0;
+    width: 84%;
+    max-width: 240px;
+    max-height: 230px;
+}
+.lottery-dialog .award-card a.btn,.lottery-dialog .award-red a.btn{
+    margin-top: 30px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight: normal;
+}
+.btn-award{
+    margin-top: 60px!important;
+    background: url("../images/btn-award.png") no-repeat;
+    background-size: 100% 100%;
+}
+.lottery-dialog .award-red img.img-red{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.lottery-dialog .content {
+    padding-top: 5px;
+    height: 100%;
+    position: relative;
+}
+.lottery-dialog .back {
+    height: 100%;
+}
+
+.lottery-dialog .award-win h2{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    /*line-height: 20px;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    margin: 6px 15px 0;
+    word-break: break-all;
+}
+.lottery-dialog .award-win img.pi {
+    width: 91%;
+    /*height: 30%;*/
+    margin: 15% auto 0px;
+    text-align: center;
+    padding: 0% 6%;
+    overflow: hidden;
+    display: block;
+    max-height: 243px;
+}
+.lottery-dialog .award-code img.er-tlt{
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+.lottery-dialog .award-code img.pi{
+    width: 86%;
+    display: block;
+    margin: 40px auto 0;
+}
+.lottery-dialog .contact {
+    padding: 5px 10%;
+}
+.lottery-dialog .contact h4 {
+    color: white;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.lottery-dialog .contact h4.awarded-tip {
+    display: none;
+
+}
+
+.lottery-awarded .contact h4.awarded-tip {
+    display: block;
+
+}
+.lottery-dialog .contact p {
+    margin-top: 4px;
+
+}
+.lottery-dialog .contact input {
+    border: 0;
+    border-bottom: 1px solid #9f491a;
+    /*border-radius: 6px;*/
+    height: 28px;
+    padding: 0 6px;
+    width: 100%;
+    outline: none;
+    background: transparent;
+    /*color: #005e69;*/
+    font-size: 15px;
+    color: #9f491a;
+}
+.lottery-dialog .contact input.disabled {
+    background: transparent;
+    border: none;
+    -webkit-text-fill-color:#9f491a;
+    -webkit-opacity:1;
+    color:white;
+    font-weight: bold;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #996633;
+}
+
+.lottery-dialog .contact .btn-award {
+    display: block;
+
+}
+.lottery-dialog .contact .btn-share {
+    display: none;
+}
+
+.lottery-awarded .contact .btn-award {
+    display: none;
+
+}
+.lottery-awarded .contact .btn-share {
+    background: url("../images/bac.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 30%;
+    display: block;
+}
+
+.thanks-dialog {
+    width: 260px;
+    height: 315px;
+}
+.thanks-dialog img{
+    width: 80%;
+    display: block;
+    margin: 10px auto 35px;
+    max-height: 208px;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .card-dialog .award-tip{
+        margin-top: 1%;
+    }
+    .card-dialog .btn-card-award{
+        margin: 1% auto;
+    }
+    .lottery-dialog .award-win .contact .btn-award {
+        margin: 20px auto;
+    }
+    /*.lottery-awarded .contact .btn-share {*/
+        /*margin: 20px auto;*/
+    /*}*/
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .card-dialog .award-tip{
+        margin-top: 10%;
+    }
+    .lottery-dialog .award-win .contact .qrcode{
+        width: 85%;
+    }
+    .lottery-dialog .award-win .contact .btn-award {
+        margin: 20px auto;
+    }
+    /*.lottery-awarded .contact .btn-share {*/
+        /*margin: 20px auto;*/
+    /*}*/
+    /*.lottery-dialog .award-win .contact .award-tip{
+        margin-top: 27%;
+    }*/
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}

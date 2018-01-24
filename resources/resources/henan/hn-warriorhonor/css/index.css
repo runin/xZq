@@ -1,0 +1,137 @@
+body {
+   background: #660000 url(../images/index-bg.jpg) no-repeat;
+   background-size: 100% 100%;
+   overflow: hidden;
+ }
+.logo{
+    width: 26%;
+    margin: 3%;
+}
+.tlt{
+    width: 81%;
+    display: block;
+    margin: 0 auto;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    -webkit-animation-name: fly;
+    animation-name: fly;
+}
+@-webkit-keyframes fly {
+    0% {
+        transform: scale(.3) translate(154%, -162%);
+        -webkit-transform: scale(.3) translate(154%, -162%);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+        -webkit-transform: scale(1) translate(0, 0);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 1;
+    }
+}
+.go {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  right: 0;
+    width: 150px;
+    height: 80px;
+  background: url(../images/button1.png) no-repeat;
+  background-size: 100% auto;
+    /*-webkit-animation-name: ya;*/
+    /*-webkit-animation-duration: .5s;*/
+    /*-webkit-animation-iteration-count: infinite;*/
+    /*-webkit-animation-timing-function: steps(1);*/
+    /*-webkit-backface-visibility:hidden;*/
+}
+.ad{
+    position: relative;
+    width: auto;
+    height: 50px;
+    margin: auto;
+}
+@-webkit-keyframes ya {
+    0% {
+        background-image: url(../images/button1.png);
+    }
+    50% {
+        background-image: url(../images/button2.png);
+    }
+    100% {
+        background-image: url(../images/button3.png);
+    }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  max-height: 76px;
+  width: 100%; }
+#div_subscribe_area {
+  height: 50px;
+  overflow:hidden;
+}
+@media screen and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .tlt {
+        width: 58%;
+    }
+
+}
+/* iPhone5 */
+@media screen and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .tlt {
+        width: 77%;
+    }
+    .go {
+        bottom: 50px;
+    }
+}
+/* iPhone6 */
+@media screen and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* luo */
+@media screen and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .tlt {
+        width: 72%;
+    }
+    .go {
+        bottom: 80px;
+    }
+}
+/* mi2*/
+@media screen and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone6plus */
+@media screen and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}

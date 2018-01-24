@@ -1,0 +1,364 @@
+html,body{height: 100%;}
+body{
+	background: #ebe4d8 url(../images/bg.jpg) no-repeat  ;
+	background-size: 100%;
+}
+.nav{
+    position: relative;
+  
+}
+.btn{
+	width: 80%;
+	height: 50px;
+	line-height: 50px;
+	color: #ffffff;
+	background: #f9048d;
+    box-shadow: 0 1px 2px rgba(173, 173, 173, 0.2) inset,0px -2px 2px rgba(255, 255, 255, 0.2) inset;
+}
+
+.fix{
+    position: fixed;
+    z-index: 2;
+    background: #8a004d;
+    padding-bottom: 10px;
+}
+.laywer{
+    color: #ff0000;
+    font-size: 16px;
+    margin: 0px 30px;
+    padding: 10px 0px 10px;
+    border-bottom: 1px solid #b4a89f;
+}
+.laywer i{
+	display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.lottery-time i{
+    background: url(../images/lh-w.png) no-repeat; 
+     background-size: 24px auto;
+    vertical-align: text-bottom;
+}
+.lottery-time a, .news-tip a, .detail-countdown {
+    color: #da2323;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+.detail-countdown label {
+    font-weight: bold;
+}
+.lottery-time a, .detail-countdown {
+    font-size: 17px;
+}
+.news-tip i{
+    background: url(../images/news.png) no-repeat;
+    background-size: 30px;
+}
+i.lottery-timed{
+    background: url(../images/lh-w.png) no-repeat;
+    background-size: 23px;
+}
+.lottery-time h1{
+    display: inline-block;
+}
+.lottery-time .detail-countdown{
+    display: inline-block;
+}
+.gues-top h2{
+    color: #F1E309;
+    font-size: 15px;
+    font-weight: bold;
+}
+.arrow-box {
+    position: relative;
+    background: transparent;
+    border: 1px solid #ffffff;
+    padding: 9px;
+    border-radius: 8px;
+    color: #eb0000;
+    line-height: 21px;
+    margin: 6px 30px 10px;
+}
+.arrow-box:before {
+    top: 0;
+    left: -60px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #ffffff;
+    border-width: 8px;
+    margin-left: 80px;
+    margin-top: -16px;
+}
+
+.arrow-box:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-bottom-color: #e7d1c2;
+    border-width: 7px;
+    top: 0;
+    left: -60px;
+    margin-left: 81px;
+    margin-top: -14px;
+}
+.arrow-box h2 {
+    font-weight: bold;
+}
+.tilt{
+    background: url(../images/day.png) no-repeat;
+    background-size:130px;
+    height: 26px;
+    margin: 6px 30px;
+}
+.com-head:before{
+    display: inline-block;
+    content: '';
+    background: url(../images/info.png) no-repeat;
+    background-size: 25px;
+    width: 25px;
+    height: 23px;
+    position: relative;
+    top: 7px;
+    margin-right: 10px;
+}
+.com-head{
+    margin: 17px 15px 10px;
+    color: #eb0000;
+    font-size:15px;
+}
+.com-head label{
+    color: #eb0000;
+}
+.all{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.support, .not-support{
+    font-size: 16px;
+    /*width: 200px;*/
+}
+.support{
+	width: 70%;
+    margin: 8px auto;
+    display: -webkit-box;
+    border-radius: 60px;
+    height: 40px;
+}
+.support i.hand{
+    display: block;
+    background: url(../images/z.png) no-repeat right center;
+    background-size: 16px;
+    width: 40px;
+    height: 40px;
+}
+.support label{
+    display: block;
+    width: 82%;
+    text-align: left;
+    overflow: hidden;
+    line-height: 40px;
+}
+.support label.chan-width{
+	display: block;
+    width: 100%;
+    text-align: center;
+  
+}
+#sup{
+	/*padding: 16px 0 0;*/
+}
+.progress{
+    color: #da2323;
+    font-size: 13px;
+}
+.progress p{
+    padding: 6px 30px 6px;
+    
+}
+.progress p label{
+    font-size: 14px;
+    color: #666;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    word-wrap: break-word; 
+    line-height: 20px;
+}
+.progress p .lv{
+    width: 15%;
+}
+.progress p i{
+    display: inline-block;
+    width: 85%;
+    background: #dcdcdc;
+    height: 15px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(81, 81, 81, 0.3) inset,0px -1px 1px rgba(255, 255, 255, 0.3) inset;
+    vertical-align: bottom;
+
+}
+.progress p i span{
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f02e25), color-stop(100%,#fcb050)) !important;
+    width: 0%;
+    border-radius: 3px;
+    display: inline-block;
+    height: 15px;
+    float: left;
+    -webkit-transition: all 1s ease-out .2s;
+}
+.swing{
+    -webkit-animation: swin 0.5s 0.1s linear infinite forwards;
+    animation: swin 0.5s 0.1s linear infinite forwards;
+}
+@-webkit-keyframes swin {
+    25% { -webkit-transform: rotate(10deg); }
+    75% { -webkit-transform: rotate(-10deg); }
+}
+.title{
+    background: rgba(255,255,255,0.45);
+    margin: 10px 20px;
+    padding: 10px;
+    text-align: center;
+}
+.title img{
+	width: 150px;
+	margin: 8px auto;
+}
+article{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+    background: url(../images/con-bg.jpg) no-repeat;
+    background-size:100% 100% ;
+}
+.ctrls{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	height: 50px;
+	background: rgba(0,0,0,0.4);
+}
+.ctrls p {
+	position: relative;
+    margin: 6px 70px 6px 10px;
+}
+.ctrls p input {
+    width: 100%;
+    height: 36px;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 6px;
+    padding: 0 6px;
+    background: rgba(87,82,76,.8);
+    color: #fff;
+    outline: none;
+}
+.ctrls p input.error {
+	border: 1px solid #FF7171;
+}
+.ctrls a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 54px;
+    height: 38px;
+    line-height: 36px;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    right: -60px;
+    top: -1px;
+    background: rgba(150,154,143,.8);
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.tilt {
+	    background-size: 110px;
+	    height: 22px;
+	 }
+	.laywer {
+	    padding: 6px 0px 6px; 
+	 }
+	.arrow-box{
+		padding: 4px 6px;
+	    margin: 6px 30px;
+	 }
+	.support {
+	    margin: 6px auto;
+	    height: 34px;
+	 }
+	 .support label{
+	    line-height: 34px;
+	 }
+	.support i.hand{
+	    height: 34px;
+	    background-size: 26px!important;
+	 }
+	.progress p {
+	    padding: 2px 30px 2px;
+	 }
+	.ctrls{
+		height: 42px;
+		background: rgba(0,0,0,0.4);
+	 }
+	.ctrls p input {
+	    height: 32px;
+	    padding: 0 6px;
+	 }
+	.ctrls a {
+	    height: 34px;
+	    line-height: 30px;
+	 }
+	.ctrls p {
+        margin: 5px 70px 5px 10px;
+     }
+     .laywer i {
+	     width: 22px;
+	     height: 26px;
+	}
+	i.lottery-timed {
+	  background: url(../images/lh-w.png) no-repeat;
+	  background-size: 22px;
+	}
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.laywer {
+	    padding: 16px 0px 16px;
+	}
+	.tilt {
+	    background-size: 150px;
+	    height: 34px;
+	    margin: 10px 30px;
+	}
+	.support label {
+	    line-height: 46px;
+	}
+	.support {
+		height: 46px;
+		margin: 12px auto;
+	}
+	.arrow-box{
+		margin: 6px 30px 16px;
+	}
+}

@@ -1,0 +1,128 @@
+
+body
+{
+
+  	background:url("../images/index-bg.jpg") top center no-repeat;
+  	background-size:cover;
+    height:100%;
+/*    overflow: hidden;*/
+
+}
+html
+{
+    height:100%;
+    width:100%;
+    /*overflow: hidden;*/
+}
+/*头部开始*/
+header
+{
+    position: relative;
+    width:100%;
+    text-align: center;
+}  
+header .theme-title
+{
+  max-width: 100%;
+  margin-top:1%;
+}
+
+div.index-rechange
+{
+  margin-top:5%;
+  position: relative;
+  text-align: center;
+}
+.index-join
+{
+  position: relative;
+  width:100%;
+  text-align: center;
+  display: block;
+}
+
+.join-img
+{
+  max-width: 40%;
+}
+.use-information 
+{
+  position:relative; 
+  text-align: center;
+  margin-top: 5%;
+  width: 100%;
+}
+.use-information img
+{
+  position:relative; 
+  max-width: 90%
+}
+
+.rotate-Out
+{
+   -webkit-animation:rotateOut 1s ease both;
+   animation:rotateOut 1s  ease both;
+}
+@-webkit-keyframes rotateOut
+{
+  0%{
+    -webkit-transform:rotate(0);
+    transform:rotate(0);
+    opacity:1;
+    }
+  100%{
+    -webkit-transform:rotate(-360deg);
+    transform:rotate(-360deg);
+      opacity:0;
+  }
+}
+/*中间导航和信息一览end*/
+
+
+/*适配*/
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 480px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+ 
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+  .record-content
+  {
+      margin-top: 0px;  
+  }
+  .record-content .record-infor
+  {
+      max-height: 186px;
+  }
+  header .title-img
+  {
+    max-width:54%;
+    margin-top: 10px;
+  }
+  .command-input
+  {
+   margin-top: 1%; 
+  }
+  .botton-ok
+  {
+    margin-top:-20px auto;
+  }
+}
+
+
+

@@ -1,0 +1,235 @@
+body {
+    overflow: hidden;
+	
+	
+}
+
+header {
+    background: #1c1313;
+	
+    position: relative;
+    z-index: 100;
+}
+header:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 60px;
+	background: url(../images/bg-answer.png) no-repeat center bottom;
+	background-size: cover;
+	z-index: -1;
+}
+header .total {
+    position: absolute;
+	
+    left: 8px;
+    top: 8px;
+    color: #fff;
+    font-size: 14px;
+}
+header .btn-rule {
+	position: absolute;
+	left: 100px;
+	top: 32px;
+	border: 1px solid #8e8886;
+	color: #8e8886;
+	border-radius: 20px;
+	font-size: 12px;
+	padding: 0px 5px;
+}
+header .ranking {
+    position: absolute;
+	
+    right: 5px;
+    top: 5px;
+    border: 1px solid #8e8886;
+    border-radius: 20px;
+    text-align: center;
+    color: #8e8886;
+    padding: 1px 10px 2px;
+}
+.ranking span {
+    font-size: 14px;
+	
+    display: inline-block;
+    vertical-align: top;
+    height: 14px;
+}
+.ranking p {
+    font-size: 12px;
+	
+    margin-top: -6px;
+}
+header h2 {
+	
+    height: 25px;
+    background: url(../images/logo.png) no-repeat 0 0;
+    background-size: 78px auto;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    width: 80px;
+}
+header .hd-wrapper {
+    height: 30%;
+	
+}
+header .qa-wrapper {
+    height: 70%;
+    text-align: center;
+}
+header .qa-wrapper:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 1%;
+}
+header .qa-wrapper .wrapper {
+    width: 96%;
+	
+    display: inline-block;
+    vertical-align: middle;
+}
+.qa-wrapper .c-item {
+	
+}
+.qa-wrapper .question {
+	
+}
+
+.qa-wrapper .question dt {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.qa-wrapper .question ul {
+  
+}
+.qa-wrapper .question li {
+    text-align: center;
+	
+}
+.qa-wrapper .question dd {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+.qa-wrapper .question dd a {
+    display: block;
+	
+    background: #ffcd02;
+    color: #3b0505;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px  15px;
+}
+.qa-wrapper .answered {
+    color: #fff;
+	
+    text-align: center;
+    position: relative;
+}
+.qa-wrapper .answered h3 {
+    font-size: 18px;
+	
+    margin-bottom: 8px;
+    display: none;
+}
+.qa-wrapper .answered.error h3 {
+	display: block;
+}
+.qa-wrapper .answered .btn-reserve {
+	display: none;
+	background: #ffcd02;
+	color: #3b0505;
+	text-align: center;
+	border-radius: 20px;
+	padding: 2px 15px;
+	width: 40%;
+	margin: 10px auto 0;
+}
+.qa-wrapper .answered .reserved .btn-reserve {
+	display: block;
+}
+.qa-wrapper .answered h5 {
+    margin-top: 2%;
+	
+    font-size: 22px;
+    font-weight: bold;
+}
+.qa-wrapper .answered h5 span {
+    display: inline-block;
+	
+    vertical-align: middle;
+    background: #000;
+    width: 34px;
+    border-radius: 5px;
+}
+.qa-wrapper .answered h5 i {
+    display: inline-block;
+	
+    vertical-align: middle;
+    font-style: normal;
+    width: 10px;
+    text-align: center;
+}
+article {
+    background-image: url(../images/comment-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+    background-size: cover;
+    position: relative;
+}
+article .comments {
+	
+}
+article .ctrls {
+    position: absolute;
+	
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    border-top: 1px solid rgba(255,255,255,0.8);
+    background: rgba(0,0,0,0.2);
+}
+.ctrls p {
+	
+    margin: 6px 60px 0 10px;
+}
+.ctrls p input {
+    width: 100%;
+	
+    height: 33px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 0 5px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+.ctrls p input.error {
+	border: 1px solid #f00;
+}
+.ctrls a {
+    display: inline-block;
+	
+    vertical-align: middle;
+    width: 44px;
+    height: 33px;
+    line-height: 33px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid #fff;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    right: 12px;
+    bottom: 10px;
+}

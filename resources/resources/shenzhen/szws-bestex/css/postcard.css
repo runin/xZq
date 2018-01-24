@@ -1,0 +1,53 @@
+.back-btn{
+    display: block;
+    width: 27%;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    border: 2px solid #007d8a;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 25px;
+    color: #007d8a;
+    font-size: 14px;
+}
+
+.body{
+    margin-top: 40px;
+}
+.body .content li{
+    position: relative;
+    margin-bottom: 15px;
+}
+.body .content li .ron{
+    margin-top: -50%;
+    margin-left: 53%;
+    position: absolute;
+}
+.body .content li .ron input{
+    display: inline-block;
+    width: 45%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid;
+    background: transparent;
+}
+.body .content li .ron textarea{
+    width: 85%;
+    margin: 10px auto;
+    background: transparent;
+    border: 1px dotted;
+    border-radius: 5px;
+    color: #000;
+    -webkit-appearance: none;
+}
+.body .content li .ron .from{
+    text-align: right;
+    margin-right: 10px;
+}
+.border-no{
+    border: none!important;
+}

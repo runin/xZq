@@ -1,0 +1,179 @@
+*
+{
+	  padding:0px;
+	  margin:0px;
+}
+li
+{
+    list-style-type:none;
+}
+body
+{
+
+  	background-color:#EEEEEE;
+  	background-size:100% 100%;
+    height:100%;
+    overflow: hidden;
+    font-size: 14px;
+}
+html
+{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+/*头部开始*/
+header
+{
+    position: relative;
+    width:100%;
+}  
+
+/*中间导航和信息一览end*/
+
+/*悬浮导航栏处start*/
+.fix-tab-div
+{
+    position: fixed;
+    bottom:0px;
+    height:48px;
+    width:100%;
+    background: #4C4F53;
+    z-index:2;
+}
+.fix-tab-div a
+{
+    float:left;
+    width:33%;
+    text-align: center;
+    border-left: 1px solid #000;
+    color:#eeeeee;
+    position: relative;
+    line-height: 26px;
+    font-size: 14px;
+}
+.fix-tab-div i
+{
+    width:32px;
+    height:25px;
+    display: block;
+    position:relative;
+    margin:0 auto;
+    text-align: center;
+    z-index: 2;
+}
+
+.icon-bg
+{
+    background-image:url('../images/icon-bg.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width:90px;
+    height:34px;
+    top:-5px;
+    z-index: 1;
+    left:50%;
+    margin-left: -45px;
+}
+.task-icon
+{
+    background-image:url('../images/task-icon.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.money-market-icon
+{
+    background-image:url('../images/money-icon.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.user-icon
+{
+    background-image:url('../images/user-icon.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+/*悬浮导航栏处start*/
+*:focus {outline: none;}
+
+/*下拉菜单start*/
+
+/*下拉菜单end*/
+
+.parallax-arrow {
+  -webkit-animation:varrow 1500ms 300ms ease infinite;
+  animation:varrow 1500ms 300ms ease infinite
+}
+@-webkit-keyframes varrow {
+  from {
+  opacity:0;
+  -webkit-transform:translate3d(-50%, 10px, 0);
+  transform:translate3d(-50%, 10px, 0)
+}
+to {
+  opacity:1;
+  -webkit-transform:translate3d(-50%, 0, 0);
+  transform:translate3d(-50%, 0, 0)
+}
+}@keyframes varrow {
+  from {
+  opacity:0;
+  -webkit-transform:translate3d(-50%, 10px, 0);
+  transform:translate3d(-50%, 10px, 0)
+}
+to {
+  opacity:1;
+  -webkit-transform:translate3d(-50%, 0, 0);
+  transform:translate3d(-50%, 0, 0)
+}
+/*适配*/
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 480px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+ 
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+  .record-content
+  {
+      margin-top: 0px;  
+  }
+  .record-content .record-infor
+  {
+      max-height: 186px;
+  }
+  header .title-img
+  {
+    max-width:54%;
+    margin-top: 10px;
+  }
+  .command-input
+  {
+   margin-top: 1%; 
+  }
+  .botton-ok
+  {
+    margin-top:-20px auto;
+  }
+}
+
+
+

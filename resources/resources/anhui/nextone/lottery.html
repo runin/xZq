@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>安徽卫视《超级笑星》</title>
+	
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/lottery.css" />
+	
+	<script src="./js/wx_api.js"></script>
+</head>
+<body>
+	
+	<div class="main" id="main">
+		<section class="modal" id="lottery-dialog">
+			<a href="#" class="btn-close" data-collect="true" data-collect-flag="ah-lotterydialog-closebtn" data-collect-desc="抽奖弹层-关闭按钮"></a>
+			<div class="dialog lottery-dialog relocated">
+				<div class="hammer">
+					<p>举起你的双手，让我们一起摇摆吧！</p>
+					<a href="#" class="btn-hammer" data-collect="true" data-collect-flag="ah-lotterydialog-hammerbtn" data-collect-desc="抽奖弹层-锤子砸奖"></a>
+				</div>
+				<div class="ctrl">
+					<p>你还有<strong class="s-lc"></strong>次抽奖机会</p>			
+				</div>
+				<div class="light"></div>
+			</div>
+		</section>
+
+		<section class="modal none" id="award-dialog">
+			<a href="#" class="btn-close" data-collect="true" data-collect-flag="ah-awarddialog-closebtn" data-collect-desc="领奖弹层-关闭按钮"></a>
+			<div class="dialog award-dialog relocated">
+				<div class="box">
+					<div class="prize"></div>
+				</div>
+				<div class="ctrl">
+					<h2>运气太好了，您获得<strong class="s-award"></strong></h2>
+					<div class="content">
+						<p>请填写您的姓名及联系方式，以便顺利领奖</p>
+						<input type="text" class="name" placeholder="姓名" />
+						<input type="number" class="mobile" placeholder="手机号码" />
+						<input type="text" class="address" placeholder="地址" />
+					</div>
+					<a href="javascript:toUrl('index.html');" class="btn btn-back" data-collect="true" data-collect-flag="ah-awarddialog-back" data-collect-desc="领奖弹层-返回竞猜页">返回竞猜页</a>
+					<a href="#" class="btn btn-award" data-collect="true" data-collect-flag="ah-awarddialog-awardbtn" data-collect-desc="领奖弹层-领奖按钮">确定</a>
+				</div>
+				
+				<div class="ctrl award-succ">
+					<h2>实物奖品将会由工作人员联系您进行发放，积分奖品则会继续累积。</h2>
+					<h3>您还有<strong class="s-lc"></strong>次抽奖机会</h3>
+					<a href="javascript:toUrl('index.html');" class="btn btn-back" data-collect="true" data-collect-flag="ah-awarddialog-backbtn" data-collect-desc="领奖弹层-返回竞猜页">返回竞猜页</a>
+					<a href="#" class="btn btn-again" data-collect="true" data-collect-flag="ah-awarddialog-againbtn" data-collect-desc="领奖弹层-再来一次">再来一次</a>
+				</div>
+			</div>
+		</section>
+		
+		<section class="copyright">
+			<p>页面由安徽广播电视台提供</p>
+		</section>
+	</div>
+	
+	<script src="./js/config.js"></script>
+	<script src="./js/zepto.min.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src="./js/data_collect.js"></script>
+	<script src="./js/weixin.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/shake.js"></script>
+	<script src="./js/dialog.js"></script>
+	<script src="./js/lottery.js"></script>
+</body>
+</html>

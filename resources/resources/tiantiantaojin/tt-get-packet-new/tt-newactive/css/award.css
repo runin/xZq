@@ -1,0 +1,74 @@
+*
+{
+	padding:0px;
+	margin:0px;
+}
+
+body
+{
+  	width: 100%;
+  	height: 100%;
+    -webkit-overflow-scrolling :touch;  
+}
+footer
+{
+	position: absolute;
+	bottom: 16%;
+	width:100%;
+}
+/*领取按钮*/
+.botton-ok
+{
+    margin:0 auto;
+    position: relative;
+    text-align: center;
+    height:40px;
+    width:160px;
+    line-height: 40px;
+    background: #4397DF;
+    border-radius:40px;
+    color:#fff; 
+}
+
+
+.btn-scale
+{
+  animation:btnscale .5s ease-out;
+  -webkit-animation:btnscale .5s ease-out;
+}
+@keyframes btnscale
+{
+  20%,40%,60%,80%
+  {
+    transform:scale(0.8);
+    background:red;
+  }
+  10%,30%,50%,70%,90%
+  {
+    transform:scale(0.6);
+    background:yellow;
+  }
+  0%,100%
+  {
+    transform:scale(1);
+    background: #4397DF;
+  }
+}
+@-webkit-keyframes btnscale
+{
+   20%,40%,60%,80%
+  {
+    -webkit-transform:scale(0.8);
+     background:red;
+  }
+  10%,30%,50%,70%,90%
+  {
+    -webkit-transform:scale(0.6);
+    background:yellow;
+  }
+  0%,100%
+  {
+    -webkit-transform:scale(1);
+    background: #4397DF;
+  }
+}

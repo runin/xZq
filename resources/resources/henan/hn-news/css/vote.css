@@ -1,0 +1,163 @@
+#page_vote{
+	background-color: #e6e6e6;
+	margin-top: 40px;
+}
+
+/*
+ *	导航
+ */
+nav{
+	background: #e6e6e6;
+	height: 40px;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+}
+nav .logo{
+	float: left;
+	width: 10%;
+	padding-top: 4px;
+}
+nav .nav{
+	float: left;
+	width: 80%;
+	overflow: hidden;
+}
+nav .back{
+	float: left;
+	width: 10%;
+	padding-top: 4px;
+}
+nav .back img,
+nav .logo img{
+	height: 32px;
+}
+nav .nav .nav-item{
+	width: 33%;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+	color: #858385;
+	-webkit-transition: -webkit-transform 0.3s 0s ease;
+	transition: transform 0.3s 0s ease;
+}
+nav .nav .nav-item.active{
+	-webkit-transform: scale(1.4);
+	transform: scale(1.4);
+	color: #f2472e;
+}
+/*
+ *	END OF 导航
+ */
+
+/*
+ *	投票部分
+ */
+.topic h1{
+	font-size: 20px;
+	color: #443e3e;
+	text-align: center;
+	font-weight: bold;
+	margin: 15px auto 15px;
+	width: 70%;
+}
+.topic .tips{
+	font-size: 12px;
+	color: #f2472e;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.opinion-item{
+	overflow: hidden;
+	width: 70%;
+	margin: 8px auto 8px;
+}
+.opinion-item .opinion-avatar{
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+	position:relative;
+}
+.opinion-item .opinion-avatar img{
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.opinion-item .opinion-avatar .tick{
+	position: absolute;
+	top: 0px;
+	right: -5px;
+	font-size: 14px;
+	color: #f24e38;
+	display: none;
+}
+.opinion-item.voted .opinion-avatar .tick{
+	display: block;
+}
+.opinion-item .opinion-detail{
+	margin-left: 58px;
+	padding-top: 3px;
+}
+.opinion-item .opinion-detail h2{
+	font-size: 14px;
+	color: #443e3e;
+}
+.opinion-item .opinion-detail .percent{
+	font-size: 12px;
+	color: #939393;
+	padding-top: 3px;
+}
+
+.opinion-item .opinion-detail .percent .icon{
+	position: relative;
+	top: 1px;
+}
+.opinion-item .opinion-detail .percent .sum-plus{
+	color: transparent;
+	
+	position: relative;
+}
+.opinion-item .opinion-detail .percent .sum-plus.show{
+	-webkit-animation: sumUp 2s linear;
+	animation: sumUp 2s linear;
+}
+.comment-link{
+	text-align: center;
+	padding-top: 30px;
+}
+.comment-link img{
+	width: 25%;
+}
+@-webkit-keyframes sumUp{
+	0%{
+		color: transparent;
+	}
+	30%{
+		color: #f2472e;
+	}
+	70%{
+		color: #f2472e;
+	}
+	100%{
+		color: transparent;
+	}
+}
+@keyframes sumUp{
+	0%{
+		color: transparent;
+	}
+	30%{
+		color: #f2472e;
+	}
+	70%{
+		color: #f2472e;
+	}
+	100%{
+		color: transparent;
+	}
+}
+/*
+ *	END OF 投票部分
+ */

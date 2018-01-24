@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no" />
+  <title>频道导航</title>
+  <link rel="stylesheet" href="./css/core.css" />
+  <link rel="stylesheet" href="./css/idangerous.swiper.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/barrage.css" />
+</head>
+
+<body>
+<div class="main-box">
+  <section class="bg-blur">
+    <section height="100%" width="100%" id="canvas"></section>
+    <section height="100%" width="100%" id="canvas-show">
+      <img id="srcimg" src="" />
+    </section>
+  </section>
+
+  <section class="top-logo"><span id="head_logo"></span></section>
+  <!--广告滑屏-->
+  <section class="main-swiper">
+    <div class="swiper-box">
+      <div class="swiper-container">
+        <div class="swiper-wrapper" id="swiper-data"></div>
+      </div>
+    </div>
+  </section>
+  <div class="pagination none"></div>
+  
+  <!--nav-->
+  <section class="nav-box nav-down">
+    <div class="nav-arrow"><span></span></div>
+    <div class="nav-con">
+      <a href="javascript:void(0)" class="a-dm none" id="comment-btn"></a>
+      <a href="javascript:void(0)" class="a-qd none" id="signgl-btn"></a>
+      <a href="javascript:void(0)" class="a-jm none" id="program-btn"></a>
+      <a href="javascript:void(0)" class="a-my" id="my-btn"></a>
+    </div>
+  </section>
+  
+  <!--评论弹幕-->
+  <section class="pop-box none">
+    <div class="comment-box in-up">
+      <div class="comments"> </div>
+      <div class="comment-form"> <a href="javascript:void(0);" class="gohome"></a>
+        <input name="ipt-text" type="text" class="comment-input" id="comment-input-text" placeholder="说说你的看法吧~" />
+        <input name="ipt-btn" type="button" id="send" class="comment-btn" data-collect="true" data-collect-flag="btn-comment" data-collect-desc="说说你的看法吧" />
+      </div>
+    </div>
+  </section>
+</div>
+  
+  <script src="js/config.js"></script> 
+  <script src="./js/plugins/zepto.min.js"></script> 
+  <script src="./js/plugins/zepto.touch.js"></script>
+  <script src="./js/plugins/zepto.cookie.min.js"></script> 
+  <script src="./js/plugins/zepto.fx.min.js"></script> 
+  <script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script> 
+  <script src="./js/plugins/md5.js"></script> 
+  <script src="./js/plugins/core.js"></script> 
+  <script src="./js/plugins/util.js"></script> 
+  <script src="./js/plugins/authorize_userinfo.js"></script>
+  
+  <script src="./js/app/countDown.js"></script> 
+  <script src="./js/app/idangerous.swiper-2.0.min.js"></script>
+  <script src="./js/app/index.js"></script> 
+  <script src="./js/app/nav.js"></script>
+  <script src="./js/app/sign.js"></script>
+  
+  <script src="./js/app/zepto.barrage.js"></script>
+  <script src="./js/app/barrage.js"></script> 
+  <script type="text/html" id="tmpl_barrage">
+      <section class="bitem">
+            <section class="bitem-img">
+                <img tmpl-attr="src" tmpl-name="src" onerror="this.src='./images/avatar.jpg'" src="${src}" />
+            </section>
+            <section class="bitem-content">
+                <p tmpl-attr="html" tmpl-name="content">${content}</p>
+            </section>
+        </section>
+  </script>  
+  
+</body>
+</html>

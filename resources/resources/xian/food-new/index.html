@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>咥遍西安</title>
+	  
+	<link rel="stylesheet" href="./css/normalize.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/parallax.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+	
+	<!-- 压缩合并 -->
+	<!--
+	<link rel="stylesheet" href="./css/index.min.css" />
+	-->
+	<script src="./js/wx_api.js"></script>
+</head>
+<body>
+	<section class="ui-alert">
+        <div class="alert-loading animated zlow">
+            <div class="cycle-wrap">
+                <span class="cycle cycle-1"></span>
+                <span class="cycle cycle-2"></span>
+                <span class="cycle cycle-3"></span>
+                <span class="cycle cycle-4"></span>
+            </div>
+            <div class="line-wrap">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </div>
+        </div>
+    </section>
+    
+	<section class="ui-audio none" data-src='./files/night.mp3'>
+        <div id="coffee-flow" class="btn-audio">
+        	<a href="#" class="audio-icon"></a>
+            <strong class="audio-txt hide">关闭</strong>
+        </div>
+    </section>
+	<section class="copyright">
+		<p>页面由西安广播电视台提供</p>
+	</section>
+	
+	<section class="wrapper">
+		<div class="wrapper-front" id="wrapper-front"></div>
+		
+		<div class="wrapper-back none" id="wrapper-back">
+			<div class="pages" id="pages">
+				<!-- 封面 -->
+				<div class="page cover" id="cover">
+				   	<div class="content">
+				   		<div class="content-container"></div>
+				   	</div>
+				   	<div class="wan">
+						<img src="http://yao.holdfun.cn/portal/resources/food/images/wan.png" />			   	
+				   	</div>
+				</div>
+			
+				<!-- 左右滑动Demo -->
+				<div class="page page-swipe">
+					<div class="swipe-wrapper">
+				   		<div id="swipe" class="swipe">
+							<div class="swipe-wrap">
+								<div class="green">莲湖区丰镐东路195号</div>
+								<div class="blue">029-12345678</div>
+							</div>
+						</div>
+				   	</div>
+			   	</div>
+				
+				<!-- 注册页面 -->
+				<div class="page sign" id="sign">
+					<div class="sign-form">
+						<h1>
+							<label>我要报名</label>
+							<a href="#" class="btn-rule">点击查看报名规则</a>
+						</h1>
+						<p class="item-txt"><input type="text" id="s-name" class="name" placeholder="姓名" /></p>
+						<p class="item-txt"><input type="number" id="s-mobile" class="mobile" placeholder="手机" /></p>
+						<p class="item-ctrl"><a href="#" class="btn btn-sign" id="btn-sign">立即报名</a></p>
+					</div>
+					
+					<div class="bd-map sign-map" data-mapindex="197170" data-detal="{'sign_name':'','contact_tel':'029-84245525','address':'莲湖区陕西省西安市莲湖区丰镐东路195号（西安饭庄对面）'}" data-longitude="108.905298" data-latitude="34.265336">
+						<h1>
+							<label>店铺地址</label>
+							<a href="#">点我查看地图</a>
+						</h1>
+						<address>
+							<img src="./images/map.jpg">
+							<span id="addr"></span>
+						</address>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</section>
+	
+	<!-- 弹层 - 规则-->
+	<div class="sign-dialog sign-rule none" id="sign-rule">
+		<div class="sd-head">
+			<h2>报名规则</h2>
+			<a href="#" class="btn-closedlg"></a>
+		</div>
+		<div class="sd-body">
+			
+		</div>
+	</div>
+	
+	<!-- 弹层-抽奖 -->
+	<div class="sign-dialog sign-lottery none" id="sign-lottery">
+		<div class="sd-head">
+			<h2>报名有奖</h2>
+			<p>恭喜您成功报名，您获得一次抽奖机会，快来试试运气！</p>
+			<a href="#" class="btn-closedlg"></a>
+		</div>
+		<div class="sd-body">
+			<div class="lottery-item lottery-container" id="lottery-container"></div>
+			
+			<div class="lottery-item lottery-result none" id="lottery-result">
+				<div class="result-img" id="result-img"></div>
+				<div class="result-tip" id="result-tip">
+					<h3></h3>
+					<div class="tip-win none">
+						<p id="mobile-label"></p>
+						<p class="item-bg"><input type="number" id="a-mobile" class="mobile" placeholder="手机" /></p>
+						<a href="#" class="btn btn-award" id="btn-award">确定</a>
+					</div>
+					<div class="tip-fail none">
+						<a href="#" class="btn btn-share">让小伙伴也来试试运气</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="lottery-item lottery-share none" id="lottery-share">
+				<div class="result-tip" id="share-tip">
+					<h3></h3>
+					<div class="share-content" id="share-content"></div>
+					<a href="#" class="btn btn-share">让小伙伴也来试试运气</a>
+				</div>
+			</div>
+		</div>
+		<div class="sd-foot">
+			<p>本活动最终解释权归《西安看天下》《乐在西安》栏目所有</p>
+		</div>
+	</div>
+    
+    <div class="bdmap bigopen" id="bdmaps">
+        <!--地图插件元素-->
+        <div class='bk'></div>
+    </div>
+    
+     
+	<script src="./js/zepto.min.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src="./js/share.js"></script>
+	<script src="./js/data_collect.js"></script>
+	<script src="./js/parallax.js"></script>
+	<script src="./js/coffee.js"></script>
+	<script src="./js/lottery.js"></script>
+	<script src="./js/map.js"></script>
+	<script src="./js/swipe.js"></script>
+	<script src="./js/index.js"></script>
+	
+	<!-- 合并压缩 -->
+	<!--
+	<script src="./js/index.min.js"></script>
+	-->
+</body>
+</html>

@@ -1,0 +1,57 @@
+body{
+	background-color: #fff;
+	background-image: none;
+}
+.main {
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-size: 15px;
+}
+.cover {
+    height: 208px;	
+}
+.cover img {
+	width: 100%;
+	height: 208px;
+}
+.tips {
+    color: #F02342;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 10px 30px ;
+}
+.detail {
+    padding: 0px 30px 15px;
+    line-height: 26px;
+    color: #333333;
+}
+
+ .btn {
+	display: inline-block;
+	vertical-align: middle;
+    width: 60%;
+	margin: 10px auto 0;
+	background: #E7141A;
+	border-radius: 5px;
+	width: 140px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.copyright{
+	margin-top: 10px;
+	position: relative;
+}
+.btn-group{
+	border-top: 1px solid #E5E5E5;
+	padding-top: 22px;
+	text-align: center;
+	margin: 0 9px 20px;
+}
+.copyright {
+	color: #CCCCCC;
+}

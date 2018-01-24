@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<title></title>
+
+	<!--<link rel="stylesheet" href="./css/normalize.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/parallax.css" />
+	<link rel="stylesheet" href="./css/lottery.css" />
+	<link rel="stylesheet" href="./css/index.css" />-->
+	<link rel="stylesheet" href="./css/index.min.css" />
+	<script src="./js/wx_api.js"></script>
+</head>
+<body>
+<div id="loading">
+</div>
+<section class="ui-audio none" data-src=''>
+	<div id="coffee-flow" class="btn-audio" data-collect="true" data-collect-flag="ad-question-audio" data-collect-desc="音乐开关按钮">
+		<a href="#" class="audio-icon"></a>
+		<strong class="audio-txt hide">关闭</strong>
+	</div>
+</section>
+<section class="copyright">
+	<p>页面由西安广播电视台提供</p>
+</section>
+
+<section class="wrapper">
+	<div class="wrapper-front" id="wrapper-front">
+        <div class="start"></div>
+	</div>
+
+	<div class="wrapper wrapper-back none" id="wrapper-back">
+		<div class="pages" id="pages">
+			<!-- 封面 -->
+			<div class="page cover" id="cover">
+				<!--<div class="meteor"></div>-->
+				<div class="content">
+					<div class="content-container" id="question"></div>
+					<span class="parallax-first none" id="parallax-first"></span>
+				</div>
+			</div>
+
+			<!-- 横向广告page -->
+			<div class="page page-swipe page-firs none" id="cross">
+				<div class="swipe-wrapper">
+					<div id="swipe" class="swipe">
+						<div class="swipe-wrap" id="swipe-wrap"></div>
+					</div><div class ="shishi">继续浏览，惊喜在最后等着你</div>
+				</div>
+			</div>
+
+			<!-- 报名页面 -->
+			<div class="page sign page-firs" id="sign">
+				<div class="dialog lottery-dialog" id="lottery-dialog">
+					<div class="hammer">
+						<p class="juqi">举起你的双手，让我们一起摇摆吧！</p>
+						<a href="#" class="btn-hammer" data-collect="true" data-collect-flag="ad-question-ah-lotterydialog-hammerbtn" data-collect-desc="抽奖弹层-锤子砸奖"></a>
+					</div>
+					<div class="ctrl none">
+						<p>你还有<strong class="s-lc"></strong>次抽奖机会</p>
+					</div>
+					<div class="light"></div>
+				</div>
+
+				<div class="logo none"></div>
+				<div class="invite-befor none">
+					<!--填写page-->
+					<div class="sign-form none" id="lottery-result">
+
+						<div class="result-img" id="result-img">
+							<p class="snjz">获得价值</p>
+							<p class="title-top">-</p>
+							<p class="title-bot"><span id="title-brand">-</span><br/><span id="title-name">-</span></p>
+						</div>
+						<p class="item-txt"><label>姓名 : </label> <input type="text" id="s-name" class="name" /></p>
+						<p class="item-txt"><label>手机 : </label> <input type="number" id="a-mobile" class="mobile" /></p>
+						<p class="item-ctrl"><a href="#" class="btn btn-sign" id="btn-award" data-collect="true" data-collect-flag="ad-question-btn-award" data-collect-desc="确定领奖按钮">立即领奖</a></p>
+					</div>
+				</div>
+
+				<!--获奖页-->
+				<div class="invite none" id="invite">
+					<!-- <div>
+                        <span class="left-paper"></span>
+                        <span class="right-paper"></span>
+                        <span class="left-paper1"></span>
+                        <span class="right-paper1"></span>
+                        <span class="left-paper2"></span>
+                        <span class="right-paper2"></span>
+                        <span class="left-paper3"></span>
+                        <span class="right-paper3"></span>
+                        <span class="left-paper4"></span>
+                        <span class="right-paper4"></span>
+                    </div>-->
+					<div class="result-img">
+						<p class="gxn">恭喜您</p>
+						<div class="hd-jz"><p class="hude">获<br/>得</p> <p class="result-jz">-</p></div>
+						<p class="lvj"><label class="prize-brand">-</label><br/><label class="hude prize-name">-</label></p>
+						<p class="tuhao">-</p>
+					</div>
+					<p class="uname"><label>姓名 : </label> <span class="house-username"></span></p>
+					<p class="uname"><label>手机 : </label> <span class="house-mibile"></span></p>
+					<div class="bd-map house-map uname" data-mapindex="197170" data-detal="" data-longitude="108.905298" data-latitude="34.265336">
+						<label>领奖地址 : </label><a href="#" data-collect="true" data-collect-flag="ad-question-map" data-collect-desc="点击查看领奖地址">点击查看</a>
+					</div>
+					<div class="house-result">
+						<p class="house-tel">
+							<a href="tel:029-88756666" class="btn open-ctrl tel-ctrl" data-collect="true" data-collect-flag="ad-question-tel-ctrl" data-collect-desc="拨打客服电话">
+
+							</a>
+						</p>
+						<p class="invite-gm"><a href="#" class="btn btn-share" data-collect="true" data-collect-flag="ad-question-invite-gm" data-collect-desc="告诉小伙伴">告诉小伙伴</a></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<div class="bdmap bigopen" id="bdmaps">
+	<!--地图插件元素-->
+	<div class='bk'></div>
+</div>
+
+
+<!--<script src="./js/zepto.min.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/md5.js"></script>
+<script src="./js/share.js"></script>
+<script src="./js/data_collect.js"></script>
+<script src="./js/parallax.js"></script>
+<script src="./js/coffee.js"></script>
+<script src="./js/map.js"></script>
+<script src="./js/swipe.js"></script>
+<script src="./js/shake.js"></script>
+<script src="./js/index.js"></script>-->
+
+<script src="./js/config.js"></script>
+<script src="./js/index.min.js"></script>
+</body>
+</html>

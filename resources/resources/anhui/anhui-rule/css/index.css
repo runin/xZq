@@ -1,0 +1,130 @@
+body{
+    background: url("../images/index-bg.jpg") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.index-logo{
+    width: 40%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+.index-main{
+    position: absolute;
+    display: block;
+    top: 10%;
+    z-index: 9999;
+    width: 90%;
+    left: 5%;
+}
+.btn-join{
+    display: block;
+    width: 30%;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
+.btn-join img{
+    display: block;
+}
+.follow-box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.copyright {
+    position: relative;
+    font-size: 12px;
+    height: 28px;
+    line-height: 13px;
+    opacity: 0.6;
+    margin: 20px auto 0;
+    color: #7b916f;
+    text-align: center;
+}
+#div_subscribe_area {
+    height:50px;
+    overflow:hidden;
+}
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    50% {
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+        transform: scale3d(1.2, 1.2, 1.2)
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    50% {
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+        transform: scale3d(1.2, 1.2, 1.2)
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.requesting {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .index-main{
+        width: 80%;
+        left: 10%;
+    }
+    .btn-join{
+        top: 55%;
+    }
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .index-main{
+        width: 90%;
+        left: 5%;
+    }
+    .btn-join{
+        top: 58%;
+    }
+}
+/* april */
+@media screen and (device-width : 360px) {
+    .index-main{
+        width: 80%;
+        left: 10%;
+    }
+    .btn-join{
+        top: 58%;
+        width: 26%;
+        left: 38%;
+    }
+}

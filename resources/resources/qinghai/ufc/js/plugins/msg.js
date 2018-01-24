@@ -1,0 +1,11 @@
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/0q.jpg' class='c_head_img_img' /></div><div class='comment'>怎么说呢，我只能说，中国在崛起</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/1q.jpg' class='c_head_img_img' /></div><div class='comment'>赞赞赞，32个赞！</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/2q.jpg' class='c_head_img_img' /></div><div class='comment'>以后肯定会前途无量啊</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/3q.jpg' class='c_head_img_img' /></div><div class='comment'>怎么还没中奖呢，怎么还没中奖呢</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/4q.jpg' class='c_head_img_img' /></div><div class='comment'>只想中奖！！</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/5q.jpg' class='c_head_img_img' /></div><div class='comment'>支持！支持！</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/6q.jpg' class='c_head_img_img' /></div><div class='comment'>两个字。震撼</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/7q.jpg' class='c_head_img_img' /></div><div class='comment'>太精彩了，画面太美，不敢看</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/8q.jpg' class='c_head_img_img' /></div><div class='comment'>太劲爆了</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/9q.jpg' class='c_head_img_img' /></div><div class='comment'>摇一摇加油</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/7q.jpg' class='c_head_img_img' /></div><div class='comment'>激动啊</div></div>");

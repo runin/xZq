@@ -1,0 +1,323 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	font-size:14px;
+	background:#fff;
+	background-attachment:fixed;
+	background-size:cover;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	font-size:14px;
+	color:#333;
+}
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 { 
+	font-family: 'Microsoft YaHei','微软雅黑' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+ul, ol, li, p, span, div, h1, h2, h3, h4, h5, h6, input, form, textarea, button, a, em, select, table, tr, th, td{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a,img,input{
+	outline:none;
+	-webkit-outline:none;
+	border: none;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"]{
+	appearance: none;
+	-webkit-appearance: none;
+}
+a:link,
+a:visited,
+a:hover{
+	color:#ffba36;
+	text-decoration:none;
+}
+.head{
+	position:relative;
+	margin:5% 0 0;
+}
+.cctv-logo{
+	position:absolute;
+	top:5px;
+	right:30px;
+	width:11%;
+}
+.head img,
+.cctv-logo img{
+	width:100%;
+}
+.number{
+	width:82%;
+	height:30px;
+	line-height:30px;
+	margin:-15px auto 0;
+	padding:0 5px;
+	background:#5ec7da;
+	border-radius:30px;
+	text-align:center;
+	font-size:13px;
+	color:#fff;
+}
+.way{
+	margin:10px 0 0;
+	text-align:center;
+	font-size:18px;
+	color:#5ec7da;
+}
+.redio-video{
+	margin:20px 0 0;
+	text-align:center;
+	overflow:hidden;
+}
+.redio,
+.video{
+	display:inline-block;
+	width:32%;
+	margin:0 5%;
+	border:none;
+	outline:none;
+	-webkit-outline:none;
+	color:#666;
+}
+.redio img,
+.video img{
+	width:100%;
+}
+.v-text{
+	padding:30px 20px 50px;
+	margin:20px 0 0;
+	border-top:1px #5ec7da dashed;
+	line-height:25px;
+	text-align:center;
+	color:#8d8d8d;
+}
+.popbox:before,
+.popvideo:before{
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+}
+.pop-con{
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	width: 70%;
+	height: 80%;
+	border-radius: 6px;
+	background: #f2f2f2;
+	z-index: 99;
+}
+.pop-redio{
+	position: fixed;
+	top: 50%;
+	left: 15%;
+	width: 70%;
+	height: 300px;
+	margin: -150px 0 0;
+	border-radius: 6px;
+	background: #f2f2f2;
+	z-index: 99;
+}
+.redio-ing{
+	height: 150px;
+	margin: 20% 0 0;
+	text-align: center;
+}
+.redio-ing span{
+	display: inline-block;
+	width: 45%;
+	height: 75%;
+	margin: 10px 0 0;
+	background: url(../images/radio-d.png) no-repeat center center;
+	background-size: contain;
+}
+.redio-ing span.recording{
+	animation-name: radioing;
+	-webkit-animation-name: radioing;
+    animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes radioing{
+	0%{
+		background: url(../images/radio-a.png) no-repeat center center;
+		background-size: contain;
+	}
+	20%{
+		background: url(../images/radio-b.png) no-repeat center center;
+		background-size: contain;
+	}
+	60%{
+		background: url(../images/radio-c.png) no-repeat center center;
+		background-size: contain;
+	}
+	80%{
+		background: url(../images/radio-d.png) no-repeat center center;
+		background-size: contain;
+	}
+	100%{
+		background: url(../images/radio-a.png) no-repeat center center;
+		background-size: contain;
+	}
+}
+@-webkit-keyframes radioing{
+	0%{
+		background: url(../images/radio-a.png) no-repeat center center;
+		background-size: contain;
+	}
+	20%{
+		background: url(../images/radio-b.png) no-repeat center center;
+		background-size: contain;
+	}
+	60%{
+		background: url(../images/radio-c.png) no-repeat center center;
+		background-size: contain;
+	}
+	80%{
+		background: url(../images/radio-d.png) no-repeat center center;
+		background-size: contain;
+	}
+	100%{
+		background: url(../images/radio-a.png) no-repeat center center;
+		background-size: contain;
+	}
+}
+
+.popbtn{
+	height: 40px;
+	text-align: center;
+}
+a.btn-a{
+	display: inline-block;
+	width: 40%;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 2%;
+	border-radius: 35px 0 0 35px;
+	background:#53bfd3;
+	text-align: center;
+	color: #fff; 
+}
+a.btn-a.nonebtn{
+	background:#bdbdbd;
+	color: #fff; 
+}
+
+a.btn-a.none{
+	display: none;
+}
+.popbtn a:nth-child(4),
+.popbtn a:last-child{
+	border-radius: 0 35px 35px 0;
+}
+.pop-close{
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	width: 25px;
+	height: 25px;
+	background: url(../images/icon-close.png) no-repeat center center;
+	background-size: contain;
+}
+.uploading{ 
+	height: 20px;
+	padding: 0 0 20px; 
+	text-align: center;
+	color: #666;
+}
+.uploadvedio{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	margin: -15px 0 0 -50px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+}
+.popsuccess{ 
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	height: 40px;
+	line-height: 20px;
+	padding: 5px 10px;
+	margin: -25px 0 0 -85px;
+	text-align: center;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	display: none;
+}
+.popsuccess.show{
+	display: block;
+	animation-name: success;
+	-webkit-animation-name: success;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	
+}
+@keyframes success{
+	0%{
+		opacity: 1.0;
+		display: block;
+	}
+	100%{
+		opacity: 0;
+		display: none;
+	}
+}
+@-webkit-keyframes success{
+	0%{
+		opacity: 1.0;
+		display: block;
+	}
+	100%{
+		opacity: 0;
+		display: none;
+	}
+}
+.footer{
+	padding:10px 0;
+	background:#e8e8e8;
+	text-align:center;
+	color:#ababab;
+}
+.guanzhu{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px
+}
+.none{
+	display:none;
+}
+
+
+
+
+
+

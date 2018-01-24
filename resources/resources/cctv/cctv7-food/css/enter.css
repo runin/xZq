@@ -1,0 +1,145 @@
+.main{
+	text-align: right;
+}
+header{
+	padding: 20px 16px;
+	height: 90px;
+}
+header .reserve{
+	 width: 50px;
+	 height: 80px;
+	 background: url(../images/reserve.png) no-repeat center;
+	 background-size: 100%;
+	 position: absolute;
+	 top :20px;
+	 right : 20px
+}
+header span{
+	display: inline-block;
+	width: 94px;
+	height: 22px;
+	border-right: 1px solid #fff;
+	background: url(../images/tv_logo.png) no-repeat center;
+	background-size: 84px;
+	position: relative;
+}
+header span::after{
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 26px;
+	position: absolute;
+	right: -38px;
+	top:-2px;
+	background: url(../images/act_logo.png) no-repeat;
+	background-size: 100%;
+
+}
+.logo{
+	display: inline-block;
+	width: 95%;
+	margin-left: 5%;
+}
+.index-btn{
+	width: 100%;
+	padding: 10px 0px;
+	position: relative;
+	background: url(../images/flower.png) no-repeat center bottom;
+	background-size: 90%;
+}
+.index-btn p{
+	font-size: 16px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: -14px;
+}
+.detail-countdown{
+	display: block;
+	width: 100%;
+	height: 90px;
+	line-height: 90px;
+	background: url(../images/act_btn.png) no-repeat center;
+	background-size: 68%;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff600;
+}
+.detail-countdown label.dian{
+	font-size: 20px;
+	padding: 0px 4px;
+	color: #fff;
+}
+.btn-rule{
+	position: absolute;
+	top:-30px;
+	right: 18px;
+	width: 70px;
+	height: 78px;
+	background: url(../images/rule.png) no-repeat;
+	background-size: 100%;
+	animation: swing 1s 0.5s linear 2 forwards;
+	-webkit-animation: swing 1s 0.5s linear 2 forwards;
+}
+@-webkit-keyframes swing{
+	5%{
+		-webkit-transform: rotate(20deg);
+	}
+	25%{ 
+		-webkit-transform: rotate(-20deg);
+	}
+	45%{
+		-webkit-transform: rotate(20deg);
+	}
+	75%{ 
+		-webkit-transform: rotate(-20deg);
+	}
+}
+@keyframes swing{
+	5%{
+		transform: rotate(20deg);
+	}
+	25%{ 
+		transform: rotate(-20deg);
+	}
+	45%{
+		transform: rotate(20deg);
+	}
+	75%{ 
+		transform: rotate(-20deg);
+	}
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	header {
+	    padding: 10px 16px 0px;
+	    height: 70px;
+	}
+	.logo {
+	    display: inline-block;
+	    margin-top: -20px;
+	}
+	.detail-countdown {
+	    height: 80px;
+	    line-height: 80px;
+	    background-size: 60%;
+	    font-size: 20px;
+	}
+	.index-btn{
+		padding: 0px;
+	}
+	header .reserve{
+		top:10px;
+		right: 10px;
+	}
+	.btn-rule{
+		width: 56px;
+		height: 62px;
+	}
+
+}

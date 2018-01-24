@@ -1,0 +1,47 @@
+body{
+    background: #520000 url(../images/vote-bg.jpg) no-repeat center top;
+    background-size: cover;
+    min-height: 100%;
+    width: 100vmin;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
+}
+.back-btn {
+    color: #fff!important;
+    display: block;
+    background: url(../images/ad3.png) no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 28px;
+    line-height: 34px;
+    text-align: left;
+    padding-left: 10px;
+    margin: 5%;
+    font-size: 13px;
+}
+.deta{
+    margin: 20px 5% 50px;
+}
+.label-img{
+    display: inline-block;
+    background: url(../images/ren-bg1.png) no-repeat;
+    background-size: contain;
+    height: 100%;
+    padding: 3px;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: -webkit-baseline-middle;
+}
+.label-img img {
+    border-radius: 100%;
+}
+.na{
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+}
+.in{
+    margin-top: 30px;
+}

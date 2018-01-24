@@ -1,0 +1,119 @@
+#over {
+	width: 100%;
+	overflow: hidden;
+	min-height: 100%;
+	background: url(../images/bg-index.jpg) no-repeat #150931;
+	background-size: 100% 100%;
+}
+#over img {
+	display: block;
+}
+#over .icon-nextgift {
+	margin: 8vh auto;
+	position: relative;
+	text-align: center;
+}
+#over .icon-nextgift:after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: -5vh;
+	content: '下期奖品抢先看';
+	clear: both;
+	color: #d0d0d0;
+	letter-spacing: 3px;
+	font-size: 24px;
+}
+#over .icon-nextgift .over-tips{
+	display: block;
+	margin: 0 auto;
+}
+#over .icon-nextgift .over-light1{
+	display: block;
+	position: absolute;
+	width: 10%;
+	top: -15px;
+	left: 26%;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+#over .icon-nextgift .over-light2{
+	display: block;
+	position: absolute;
+	width: 10%;
+	top: -7px;
+	left: 49%;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-delay: .8s;
+	animation-delay: .8s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+#over .icon-nextgift .over-light3{
+	display: block;
+	position: absolute;
+	width: 10%;
+	top: 0px;
+	left: 67%;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+#over .icon-surprise{
+	position: absolute;
+	width: 22%;
+	top: 0;
+	left: 0;
+}
+#over .over-cards{
+	display: block;
+	margin-top: 10vh;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+}
+.icon-red{
+	display: block;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 25%;
+	-webkit-animation-name: tada;
+	animation-name: tada;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+/* iPhone4 */
+@media screen
+ and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}

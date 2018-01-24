@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=640, user-scalable=no">
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">
+        var DEFAULT_WIDTH = 640, ua = navigator.userAgent.toLowerCase(), deviceWidth = window.screen.width, devicePixelRatio = window.devicePixelRatio || 1, targetDensitydpi;
+        if (ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android") + 8)) < 4) {
+            targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;
+            $('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');
+        }
+    </script>
+    <title></title>
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+<section class="recommend none" id="recommend">
+    <!-- Swiper -->
+    <div class="outer none">
+        <div class="swiper-container">
+            <div class="swiper-wrapper"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+<section class="programlist" id="programlist">
+    <img src="images/list-icon.jpg" />
+    <div id="wrapper">
+        <ul id="scroller" data-collect="true" data-collect-flag="index-programlist" data-collect-desc="节目单列表"></ul>
+    </div>
+</section>
+
+<!--<div class="copyright"></div>-->
+<footer class="program">
+    <div id="tj" data-collect="true" data-collect-flag="index-jctj" data-collect-desc="精彩推荐">精彩推荐</div>
+    <div id="list" data-collect="true" data-collect-flag="index-list" data-collect-desc="节目单">节目单</div>
+</footer>
+
+<section class="countdown none" id="lottery-countdown">
+    <span class="countdown-tip"></span>
+    <span class="detail-countdown"></span>
+</section>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+<script src="js/config.js"></script>
+<script src="js/authorize_userinfo.js"></script>
+<script src="js/plugins/swiper.min.js"></script>
+<script src="js/plugins/scroller-touch.js"></script>
+<script src="js/plugins/common.js"></script>
+
+<script src="js/app/jssdk.js"></script>
+<script src="js/app/index.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

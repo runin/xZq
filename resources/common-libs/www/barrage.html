@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" > 
+		<title>素材开发文档</title>
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		
+		<link rel="stylesheet" type="text/css" href="./css/SyntaxHighlighter/shCoreDefault.css"/>
+		<style type="text/css">
+		.barrage-content{
+			border: 1px solid #ddd;
+			width: 100%;
+			height: 400px;
+			position: relative;
+			overflow: hidden;
+			background: #fefefe url('./images/lei.jpg') no-repeat center;
+		}
+		</style>
+
+
+	</head>
+	<body>
+		<header>
+			<section class="header-content">
+				<a href="./index.html" class="logo">
+					<img src="./images/logo.png" title="新掌趣" alt="新掌趣" />
+				</a>
+			</section>
+		</header>
+		<section class="main">
+			<nav>
+				<ul class="nav-list">
+					<li>
+						<h2>素材基础</h2>
+						<ul>
+							<li><a href="index.html">文档结构</a></li>
+							<li><a href="core.html">基本功能</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>公共组件</h2>
+						<ul>
+							<li><a href="reserve.html">预约</a></li>
+							<li><a href="subscribe.html">一键关注</a></li>
+							<li class="active"><a href="barrage.html">弹幕组件</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>工具方法</h2>
+						<ul>
+							<li><a href="date.html">日期</a></li>
+							<li><a href="string.html">URL处理</a></li>
+							<li><a href="countDown.html">倒计时</a></li>
+							<li><a href="tips.html">Tips(替代alert)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<section class="content-wrapper">
+				<section class="content">
+					<section class="content-header">
+						<h1>弹幕组件</h1>
+						<p>最后更新时间：2015/6/2 16:00	更新人：陈智博<a class="float-right" href="mailto:bobchen@holdfun.cn">报错</a></p>
+					</section>
+					<section class="content-detail">
+						<section class="barrage-content">
+
+						</section>
+						<pre class="brush: js;">
+						/**
+						*	JQuery-plus barrage
+						*		opt.fontSize	Array&lt;Int&gt;
+						*		opt.fontColor	Array&lt;String&gt;
+						*		opt.padding		int		(default 10)
+						*		opt.heightOffset	int	(default 10)
+						*		opt.leftRange	int 	(default 50)
+						*		opt.heightPre		int (default 80)
+						*		opt.speed		int		(default 100px/s)
+						*
+						*	Example:
+						*		var barrage = $(selector).barrage() ;
+						*		barrage.appendMsg("Hello word!");
+						*	
+						*	tips :
+						*		setTimeout(function(){
+						*			barrage.appendMsg("Hello word!");
+						*		},257);	
+						*
+						*
+						*/
+						; (function () {
+						    window.appendMsgTimer = 100; //评论插入时间
+						    window.maxCache = 50; //最大评论数
+						    window.maxMsgLength = 15; //评论出现的最多条数
+						    window.CACHESEND = [];
+						    window.CACHEMSG = [];
+						    window.CACHEMSGINDEX = 0;
+
+						    $.fn.barrage = function (opts) {
+						        var setting = {
+						            fontSize: [16, 18, 24],
+						            fontColor: ["FFFFFF", "6FC3EF", "DE0E4E"],
+						            padding: 10,
+						            heightOffset: 10,
+						            itemHeight: 26,
+						            leftRange: 40,
+						            maxLeftWidth: 2000,
+						            heightPre: 80,
+						            speed: 80
+						        };
+
+						        setting = $.extend({}, setting, opts);
+						        
+						        var that = this,
+									msgPre = "msg-index",
+									leftWidth = width = that.width(),
+									startHeight = height = that.height(),
+									msgIndex = 0,
+									fontSizeLen = setting.fontSize.length,
+									fontColorLen = setting.fontColor.length;
+
+						        
+
+						        this.getLastLeft = function () {
+						            var $msg = $("#" + msgPre + msgIndex);
+
+						            if ($msg.length != 0) {
+						                $msg.removeAttr("id");
+						                var lastWidth = $msg.offset().left + $msg.width();
+						                return (lastWidth > 0 && lastWidth < width) ? null : lastWidth;
+						            }
+						            return null;
+						        };
+
+						        this.appendMsg = function (msg) {
+						            if (!msg) {
+						                return;
+						            }
+						            var leftWidth = this.getLastLeft() || width,
+								    $msgDiv = $("&lt;div&gt;").attr("id", msgPre + msgIndex);
+						            $msgDiv.addClass("comment_item");
+
+						            if (leftWidth > setting.maxLeftWidth) {
+						                leftWidth = leftWidth % setting.maxLeftWidth + width;
+						            }
+
+						            $msgDiv.html(msg);
+
+						            $msgDiv.css({
+						                "white-space": "nowrap",
+						                "position": "absolute",
+						                "display": "block",
+						                "-webkit-transform": "translateX(" + (leftWidth + 40) + "px)",
+						                "top": (height - startHeight + setting.itemHeight) + "px",
+						                "height": setting.itemHeight + "px",
+						                "line-height": setting.itemHeight + "px",
+						                "fontSize": this.randSize() + "px",
+						                "color": "#" + this.randColor()
+						            });
+
+						            startHeight = startHeight - setting.itemHeight - setting.heightOffset;
+						            msgIndex++;
+						            if (startHeight <= setting.heightPre) {
+						                startHeight = height;
+						                msgIndex = 0;
+						            }
+
+						            $msgDiv.appendTo(this);
+						            var msgWidth = $msgDiv.width();
+
+
+						            var that = this;
+						            var dtime = that.duration(msgWidth + leftWidth);
+						            var sid = "s_" + msgPre + msgIndex + parseInt(Math.random() * 1000);
+						            var className = "pass_barrage" + msgIndex + parseInt(Math.random() * 1000);
+						            var style = $('<style style="display:none" id=' + sid + '></style>');
+						            var arr = [];
+						            arr.push("." + className + " {");
+						            arr.push("-webkit-animation-name: " + className + "_a;");
+						            arr.push("-webkit-animation-duration: " + (dtime / 1000) + "s;");
+						            arr.push("-webkit-animation-timing-function: " + (parseInt(Math.random() * 10) % 2 == 0 ? "linear" : "ease") + ";");
+						            arr.push("-webkit-animation-iteration-count: 1;");
+						            arr.push("}");
+						            arr.push(" @-webkit-keyframes " + className + "_a {");
+						            arr.push(" 100% {");
+						            arr.push(" -webkit-transform:translateX(" + (0 - msgWidth) + "px);");
+						            arr.push(" }");
+						            arr.push("}");
+						            style[0].innerHTML = arr.join("");
+						            $("head").append(style);
+						            $msgDiv.addClass(className);
+
+						            (function (m, t, s) {
+						                setTimeout(function () {
+						                    m.hide();
+						                    m.remove();
+						                    s.remove();
+						                }, t);
+						            })($msgDiv, dtime, style);
+
+						        };
+
+						        this.randSize = function () {
+						            return setting.fontSize[Math.floor(Math.random() * fontSizeLen)];
+						        };
+
+						        this.randColor = function () {
+						            return setting.fontColor[Math.floor(Math.random() * fontColorLen)];
+						        };
+
+						        this.duration = function (distance) {
+						            return distance / setting.speed * 1000;
+						        };
+
+						        this.pushMsg = function (msg) {
+						            if (window.CACHESEND.length < window.maxCache) {
+						                window.CACHESEND.push(msg);
+						            } else {
+						                window.CACHESEND[Math.floor(Math.random() * 1000) % window.maxCache] = msg;
+						            }
+
+						            if (window.CACHEMSG.length < window.maxCache) {
+						                window.CACHEMSG.push(msg);
+						            } else {
+						                window.CACHEMSG[Math.floor(Math.random() * 1000) % window.maxCache] = msg;
+						            }
+						        };
+
+						        this.start = function (startType) {
+						            $.appendMsg4Cache();
+
+						            if (startType != 0) {
+						                $.appendMsg4Data();
+						            }
+						        };
+						        return this;
+						    };
+
+						    $.appendMsg4Cache = function () {
+						        setTimeout(function () {
+						            if (window.CACHESEND.length > 0 && barrage.find("div").length < window.maxMsgLength) {
+						                barrage.appendMsg(window.CACHESEND.pop());
+						            }
+						            $.appendMsg4Cache();
+						        }, window.appendMsgTimer);
+						    };
+
+						    $.appendMsg4Data = function () {
+						        setTimeout(function () {
+						            var cacheLen = window.CACHEMSG.length;
+						            window.CACHEMSGINDEX = window.CACHEMSGINDEX % cacheLen;
+
+						            if (barrage.find("div").length < Math.min(cacheLen, window.maxMsgLength)) {
+						                window.CACHESEND.push(window.CACHEMSG[window.CACHEMSGINDEX++]);
+						            }
+						            $.appendMsg4Data();
+
+						        }, 70);
+						    };
+
+						})();
+						</pre>
+
+					</section>
+
+				</section>
+			</section>
+
+		</section>
+
+		<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shCore.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shBrushXml.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shBrushJScript.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+		<script type="text/javascript" src="./js/barrage.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			var barrage = $('.barrage-content').barrage({ fontColor: ["FFFFFF"] });
+			var barrageArray = [
+				'23333333333333333333',
+				'放我出去！！！！',
+				'一天不听浑身难受',
+				'完全停不下来',
+				'举起双手嗨起来',
+				'我是美军',
+				'qq音乐上有',
+				'你还好吗',
+				'我选择死亡',
+				'洗脑洗脑洗洗脑',
+				'我唯一能听懂的英文歌',
+				'每天唱三遍',
+				'我靠我听了半个小时',
+				'魔性',
+				'受不鸟了',
+				'尿了',
+				'出不去了',
+				'我已经报警了',
+			];
+			for(var i in barrageArray){
+				var ba = barrageArray[i];
+				setTimeout(function(){
+					var key = Math.floor(Math.random() * (barrageArray.length + 1));
+					barrage.appendMsg(barrageArray[key]);
+				}, 500 * i + Math.random() * 50 );	
+			}
+		});
+		</script>
+	</body>
+</html>
+

@@ -1,0 +1,43 @@
+body {
+	background-size: cover;
+}
+
+.main {
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+h2 {
+    text-align: center;
+	display: block;
+    color: #fff;
+    font-size: 15px;
+	margin-bottom: 70px;
+}
+h2 label{
+	font-size: 25px;
+	margin: 16px auto 0;
+	display: block;
+}
+h2:before {
+	content: '';
+	display: block;
+	vertical-align: middle;
+	background: url(../images/smile.png) no-repeat;
+	background-size: 63px auto;
+	width: 63px;
+	height: 62px;
+	margin: 0 auto;
+}
+p {
+    padding: 0 50px;
+	margin-left: 15px;
+    font-size: 14px;
+    margin-top: 28px;
+    line-height: 25px;
+    color: #333333;
+}
+.jf-tip {
+	line-height: 25px;
+	margin-top: 3px;
+}

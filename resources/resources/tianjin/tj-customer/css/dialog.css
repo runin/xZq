@@ -1,0 +1,364 @@
+
+.modal {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 100;
+}
+.dialog {
+    position: absolute;
+    color: #fdc728;
+    border-radius: 6px;
+    z-index: 1000;
+    background: #fcfdef;
+    overflow: hidden;
+}
+.modal-guide {
+	height: auto !important;
+}
+.modal .btn-close {
+    position: absolute;
+    background: url(../images/icon-close.png) no-repeat 3px 3px;
+    background-size: 22px auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    z-index: 10000;
+}
+
+.lottery-close{
+    top: -15px!important;
+    right:-15px!important;
+}
+
+.lottery-dialog{
+    overflow: inherit;
+}
+
+.rule-dialog {
+	
+    padding-top: 10%;
+    color: #333333;
+    height: 90%;
+}
+.rule-dialog h2 {
+    height: 32px;
+    margin: 0 6%;
+}
+.rule-dialog .content {
+	overflow-y: scroll;
+    margin: 0% 6% 0;
+    height: 64%;
+}
+.rule-dialog .rule {
+    padding: 6% 0;
+	
+    font-size: 14px;
+    line-height: 24px;
+    max-height: 100%;
+	min-height: 100%;
+    overflow-y: auto;
+}
+.back{
+	margin-top: 4px;
+}
+
+.rule-dialog p {
+	
+}
+.rule-dialog h3 {
+    margin-top: 22px;
+	
+    font-size: 16px;
+}
+.rule li{
+    font-size:12px;
+    border-top: 1px solid #999999;
+    padding-top: 10px;
+    margin-bottom:10px;
+}
+.rule li span{
+    color: #333333;
+    margin: 5px 5px 0;
+    line-height: 16px;
+}
+
+.rule li i{
+    display: inline-block;
+    margin-top: 4px;
+    font-style: normal;
+    width: 28px;
+    height:28px;
+    border-radius:14px;
+    -webkit-border-radius:14px;
+    background:#CE0A09;
+    color:#fff;
+    text-align:center;
+    line-height: 28px;
+}
+.rule li label{
+    color: #999999;
+    float:right;
+    margin-top: 5px;
+}
+.card-page{
+	width: 100%;
+	height: 100%;
+	padding: 20px 0;
+	background: #effdfd;
+	border-radius: 6px;
+}
+.card-page h1,.card-page h2{
+    text-align: center;
+    font-size: 18px;
+    color: #d5120c;
+    border-radius: 6px;
+}
+.card{
+	width: 90%;
+	height: 70%;
+	margin:10px auto 0;
+	position: relative;
+}
+.back{
+	margin-top: 80px;
+}
+/*.record-con:before,.record-con:after{
+    content: '';
+    border-top:none;
+}*/
+.dialog-copyright {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    font-size: 10px;
+    text-align: center;
+    color: #000000;
+}
+.dialog-copyright a.link{
+	color: #655b5b;
+	text-decoration: underline;
+	font-size: 14px;
+}
+.my-zhidao{
+	margin-bottom: 10px;
+}
+/** 上传次数超过*/
+.over-dialog {
+	color: #fdc728;
+}
+.over-upload img{
+    margin: 10px auto;
+    display: block;
+}
+.over-upload h1{
+    font-size: 18px;
+	color: #666666;
+	text-align: center;
+	margin: 20px auto;
+	width: 213px;
+}
+
+/** 抽奖  */
+.lottery-dialog {
+	color: #fdc728;
+}
+
+.btn{
+	width: 70%;
+	color: #fff;
+}
+.btn-share{
+    display:block;
+    width:70%;
+    height:40px;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+    margin: 27px auto 10px;
+}
+.da-tips{
+    text-align: center;
+}
+
+.da-tips p{
+    color: #655b5b;
+    font-size: 12px;
+    text-align: center;
+}
+.da-tips a{
+    margin-top: 20px;
+    display: inline-block;
+}
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.lott,.not-lott{
+	 width: 80%;
+     padding:10px 0;
+     text-align: center;
+     margin: 0 auto;
+}
+.lott img{
+    margin:0 auto 1px;
+    width: 100%;
+
+}
+.not-lott h1{
+	font-size: 18px;
+    color: #666666;
+    text-align: center;
+    margin-top: 30px;
+}
+.not-lott h2 {
+    font-size: 14px;
+    color: #666666;
+    margin: 30px auto;
+    text-align: center;
+}
+.lott h1{
+    font-size: 12px;
+    color: #d51212;
+    text-align: center;
+    padding: 10px 0 ;
+    background: #fde7c4;
+    border-radius: 6px;
+    margin: 12px 0px;
+    line-height: 16px;
+    font-weight: bold;
+}
+.lott h1 span{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.lott h2{
+    color: #E7141A;
+	font-size: 15px;
+	text-align: center;
+	
+}
+.lott span{
+	text-align: left;
+	display: block;
+	color: #000;
+	font-size: 12px;
+}
+span.share{
+	font-size: 14px;
+	text-align: center;
+	color: #ee0707;
+}
+.bth-aw{
+    margin-top: 30px;
+   
+}
+
+input {
+    display: block;
+    width: 100%;
+    border: 0 none;
+    border: 1px solid #D3D3D3;
+    height: 30px;
+    font-size: 12px;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    margin: 8px auto 5px;
+    color: #979797;
+    outline: none;
+    background: #FFFFEF;
+}
+/*.rule-dialog h2.record-h2{
+    background: url(../images/win.png) no-repeat center top;
+    background-size: 130px auto;
+    height: 32px;
+}*/
+
+
+.lott-back{
+	margin-top: 20px;
+	color: #fff;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .lott h2 {
+        margin: 0 auto;
+        line-height: 16px;
+    }
+    input {
+        margin: 2px auto;
+    }
+    /*.da-tips a{
+        font-size: 12px;
+    }*/
+    .not-lott img{
+        margin: 8px auto 8px;
+    }
+    .rule li span{
+        margin: 5px 0 0 4px;
+    }
+    .not-lott h2 {
+    	margin: 20px auto;
+    }
+}
+
+/*加载按钮 -s*/
+.loader{
+    margin: 0 auto;
+    width: 72px;
+}
+.loader span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background: #F26C0D;
+    border-radius: 50px;
+    margin: 0 2px;
+    -webkit-animation: loader 1s infinite alternate;
+    -moz-animation: loader 1s infinite alternate;
+}
+.loader span:nth-of-type(2) {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+.loader span:nth-of-type(3) {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+}
+.loader span:nth-of-type(4) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+.loader span:nth-of-type(5) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+}
+@-webkit-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+@-moz-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+/*加载按钮 -e*/

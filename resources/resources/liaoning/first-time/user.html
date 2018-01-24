@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>第一时间</title>
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/user.css" />
+</head>
+<body>
+<nav class="nav-header">
+    <p><i><img src="images/avatar.jpg" /></i></p>
+    <p><span class="nickname"></span></p>
+    <label></label>
+</nav>
+<div class="user-top">
+    <h2 class="none"></h2>
+</div>
+
+<!--个人中心-s-->
+<section id="user" class="user animated zoomIn ">
+    <ul>
+        <li>
+            <div class="qdyl"><img src="images/user-qdyl.png" /> </div>
+            <div class="jfcj"><img src="images/user-jfcj.png" /> </div>
+        </li>
+        <li>
+            <div class="wdlp"><img src="images/user-wdlp.png" /> </div>
+            <div class="jfhl"><img src="images/user-jfhl.png" /> </div>
+        </li>
+    </ul>
+    <img class="back" data-collect="true" data-collect-flag="first-time-user-back" data-collect-desc="个人中心返回按钮" src="images/user-back.png" />
+</section>
+<!--个人中心-e-->
+
+<!--积分抽奖-s-->
+<section id="jfcj" class="jfcj none">
+    <div class="wrap">
+        <div class="content-center">
+            <ul class="prize clearfix" id="prizes">
+                <li class="prizebg items active" data-id="1">
+                    <img src="images/jfcj-mrtu.png">
+                </li>
+                <li class="prizebg items" data-id="2">
+                    <img src="images/jfcj-mrtu.png">
+                </li>
+                <li class="prizebg items" data-id="3">
+                    <img src="images/jfcj-mrtu.png">
+                </li>
+                <li class="prizebg items" data-id="0">
+                    <img src="images/jfcj-mrtu.png">
+                </li>
+                <li class="btn-lottery items" id="btn-lottery">
+                    <img class="cjani2" data-collect="true" data-collect-flag="first-time-user-lottery" data-collect-desc="积分抽奖按钮" src="images/lottery.png">
+                </li>
+                <li class="prizebg items" data-id="4">
+                    <img src="images/jfcj-mrtu.png">
+                </li>
+                <li class="prizebg items" data-id="7">
+                    <img src="images/jfcj-mrtu.png">
+                </li>
+                <li class="prizebg items" data-id="6">
+                    <img src="images/jfcj-mrtu.png">
+                </li>
+                <li class="prizebg items" data-id="5">
+                    <img src="images/jfcj-mrtu.png">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a href="#" class="jfcj-close btn" data-collect="true" data-collect-flag="first-time-user-back" data-collect-desc="返回按钮">返 回</a>
+</section>
+<!--积分抽奖-e-->
+
+<!--积分抽奖--中奖-s-->
+<section id="jfzj" class="jfzj none">
+    <div class="jfzj-body animated">
+        <img class="top" src="images/jfcj-top.png" />
+        <div class="jfzj-top">
+            <img class="pi" src="" />
+            <div class="jfzj-bottom">
+                <img src="images/jfcj-center.jpg" />
+                <div id="jf" class="jf none">
+                    <a href="#" class="zj-close btn" data-collect="true" data-collect-flag="first-time-user-back" data-collect-desc="继续加油按钮"><img src="images/jxcj.png"></a>
+                    <h2>快去给小伙伴分享你的喜悦吧！</h2>
+                </div>
+                <div id="sw" class="sw none">
+                    <h4>请填写您的正确信息，以便顺利领奖</h4>
+                    <p><label class="nl">姓 名:</label><input class="name" type="text"></p>
+                    <p><label class="ml">电 话:</label><input class="mobile" type="rel"></p>
+                    <p><label class="al">地 址:</label><input class="address" type="text"></p>
+
+                    <a href="#" class="confirm btn " data-collect="true" data-collect-flag="first-time-user-confirm" data-collect-desc="确定按钮">确 定</a>
+                    <a href="#" class="zj-close btn none" data-collect="true" data-collect-flag="first-time-user-back" data-collect-desc="返回按钮">返 回</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--积分抽奖--中奖-e-->
+
+<div class="copyright"></div>
+
+<script src="js/config.js"></script>
+
+<!--<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>-->
+
+<script src="./js/common.min.js"></script>
+
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="./js/app/user.js"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

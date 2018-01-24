@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>湖南经视</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="css/upload.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--首页-->
+    <section id="firstPage" class="page">
+        <div class="preBtn none">
+            预约节目</div>
+        <img class="firstPage-tip" src="images/firstPage-tip.png" alt="首页提示" />
+        <div class="golotteryBtn">
+            <span>我要抽奖</span>
+        </div>
+        <div class="firstPage-btn">
+            <img src="images/say.png" class="firstPage-btn-img" />
+            <span>新闻爆料</span>
+        </div>
+        <a href="javascript:void(0)" class="firstPage-rule" data-collect="true" data-collect-flag="hn-js-firstPage-rule"
+            data-collect-desc="活动规则">活动规则</a>
+        <footer class="footer">
+            <p class="footer_tip">
+                页面由湖南经视提供<br />
+                掌动优视制作 & Powered by holdfun.cn</p>
+            <div id="div_subscribe_area" class="div_subscribe_area_class">
+            </div>
+        </footer>
+    </section>
+    <!--新闻爆料-->
+    <section id="news-disclose" class="page none">
+        <img src="images/news-disclose-top.jpg" class="news-disclose-top" alt="" />
+        <img src="images/news-disclose-tip.png" class="news-disclose-tip none" alt="" />
+        <form action="#" class="news-form">
+        <h1>
+            请您写下新闻线索</h1>
+        <textarea class="news-textarea"></textarea>
+        <section class="wrapper">
+            <div class="upload-box" id="upload-box">
+                <a href="#" class="icon btn-upload"></a>
+            </div>
+        </section>
+        <h1 class="news-h1-2">
+            请您留下电话号码(必须为湖南本省移动卡号码)</h1>
+        <input class="news-input" />
+        <a href="javascript:void(0)" class="news-submit" data-collect="true" data-collect-flag="hn-js-news-submit"
+            data-collect-desc="提交线索">提交线索</a> <a href="javascript:void(0)" class="news-black"
+                data-collect="true" data-collect-flag="hn-js-news-black" data-collect-desc="返回首页">
+                返回首页</a>
+        </form>
+        <footer class="footer1">
+            <p>
+                页面由湖南经视提供<br />
+                掌动优视制作 & Powered by holdfun.cn</p>
+        </footer>
+    </section>
+    <!--新闻爆料成功-->
+    <section id="news-disclose-success" class="page none">
+        <p class="news-p1">
+            <img src="images/arrow.png" alt="" class="news-disclose-arrow" />
+            感谢您提供的新闻线索
+        </p>
+        <p class="news-p2">
+            我们将尽快处理您提供的珍贵线索，一经采用，就有奖励。
+        </p>
+        <a href="javascript:void(0)" class="disclose-black" data-collect="true" data-collect-flag="hn-js-disclose-black"
+            data-collect-desc="返回首页">返回首页</a>
+        <footer class="footer1">
+            <p>
+                页面由湖南经视提供<br />
+                掌动优视制作 & Powered by holdfun.cn</p>
+        </footer>
+    </section>
+    <!--抽奖-->
+    <section id="Lottery" class="page none">
+        <!--抽奖-->
+        <section class="Lottery-do">
+            <p class="news-p1 Lottery-tip">
+                <img src="images/arrow.png" alt="" class="news-disclose-arrow" />
+                感谢您提供的新闻线索,现在您有<span id="lotteryCount">0</span>次的抽奖机会
+            </p>
+            <p class="not_start_tip none">
+               抱歉,抽奖还没有开始哦</p>
+
+            <p class="downCountNum none"></p>
+            <div class="container">
+              <div class="container_layer none"></div>
+                <canvas id="canvas" width="270px" height="270px">
+                </canvas>
+                <a href="#" class="lottery-btn" id="lottery-btn">
+                    <img src="./images/lottery_btn.png" class="img-btn lottery_btn_img" alt="" id="lottery_btn">
+                </a>
+            </div>
+        </section>
+        <!--中奖-->
+        <section class="Lottery-success none">
+            <!--中奖填写资料-->
+            <section class="Lottery-success-fillout none">
+                <h1 class="fillout">
+                    恭喜您获得100元话费!</h1>
+                <form action="#">
+                <h1 class="fillout-input-tip">
+                    手机号码是领奖的唯一凭证，请正确填写<br />
+                    (必须为湖南本省移动卡号码)
+                </h1>
+                <input class="fillout-input" />
+                <a href="javascript:void(0)" class="fillout-submit" data-collect="true" data-collect-flag="hn-js-fillout-submit"
+                    data-collect-desc="确认领奖">确认领奖</a>
+                </form>
+            </section>
+            <!--填写资料后-->
+            <section class="Lottery-success-tip">
+                <h1 class="fillout">
+                    恭喜您，获得<span id="success_award">0</span>一台</h1>
+                <p class="fillout-input-tip" style="text-align: center">
+                    您的获奖手机号码为：<span id="success-tip-phone"></span>，我们将稍后联系您</p>
+                <a data-collect="true" data-collect-flag="tttj" id="tttj" class="none" data-collect-desc="天天淘金">
+                    更多奖品</a>
+            </section>
+        </section>
+        <!--不中奖-->
+        <section class="Lottery-success-no">
+            <h1 class="fillout">
+                很遗憾，您没有中奖。</h1>
+            <p class="Lottery-success-tip">
+        </section>
+        <footer class="footer1">
+            <p>
+                页面由湖南经视提供<br />
+                掌动优视制作 & Powered by holdfun.cn</p>
+        </footer>
+    </section>
+
+    <div class="downDiv none"></div>
+
+    <script src="js/zepto.min.js" type="text/javascript"></script>
+    <script src="js/zepto.cookie.min.js" type="text/javascript"></script>
+    <script src="js/zepto.rotate.js" type="text/javascript"></script>
+    <script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js" type="text/javascript"></script>
+    <script src="js/md5.js" type="text/javascript"></script>
+    <script src="js/config.js" type="text/javascript"></script>
+    <script src="js/authorize_userinfo.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/dialog.js" type="text/javascript"></script>
+    <script src="js/lottery.js" type="text/javascript"></script>
+    <script src="js/upload.js" type="text/javascript"></script>
+    <script src="js/countDown.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

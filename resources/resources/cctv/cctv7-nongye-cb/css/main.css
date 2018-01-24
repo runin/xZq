@@ -1,0 +1,110 @@
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	background: url(../images/bg.png) no-repeat bottom center #97bd2c;
+	background-size: cover;
+}
+header {
+	position: relative;
+	width: 100%;
+}
+header .tvlogo {
+	position: absolute;
+	width: 26%;
+	top: 8px;
+	left: 8px;
+}
+header .btn-box {
+	position: absolute;
+	width: 26%;
+	top: 8px;
+	right: 8px;
+}
+header .btn-box a {
+	display: block;
+	margin-bottom: 5px;
+}
+.main {
+	width: 92%;
+	margin: 32% auto 0;
+}
+.cloud {
+	width: 100%;
+	height: 100%;
+}
+.cloud img {
+	position: absolute;
+	display: block;
+}
+.cloud .icon-cloud-left {
+	width: 11%;
+	top: 10%;
+	left: 15%;
+    animation:shake 60s linear infinite;
+    -webkit-animation:shake 60s linear infinite;
+}
+.cloud .icon-cloud-right {
+	width: 26%;
+	top: 13%;
+	right: 6%;
+    animation:shake 120s linear infinite;
+    -webkit-animation:shake 120s linear infinite;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+footer .join-box {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20%;
+}
+footer .join-box .icon-car {
+	position: absolute;
+	width: 33%;
+	bottom: 32%;
+	left: 13%;
+}
+footer .join-box .icon-flower {
+	position: absolute;
+	bottom: -5px;
+	right: 18%;
+}
+footer .join-box .icon-playguide {
+	position: absolute;
+	width: 42%;
+	left: 29%;
+	bottom: -80%;
+}
+footer #div_subscribe_area {
+	width: 100%;
+	overflow: hidden;
+}
+@keyframes shake { 
+    0%{transform:translateX(0);}
+    10%,30%,50%,70%,90%{transform:translateX(-60px);}
+    20%,40%,60%,80%{-transform:translateX(100px);}
+    100%{transform:translateX(0);}
+}
+@-webkit-keyframes shake {
+    0%{-webkit-transform:translateX(0);}
+    10%,30%,50%,70%,90%{-webkit-transform:translateX(-60px);}
+    20%,40%,60%,80%{-webkit-transform:translateX(100px);}
+    100%{-webkit-transform:translateX(0);}
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+.main {
+	margin: 22% auto 0;
+}
+footer .join-box {
+	margin-bottom: 12%;
+}
+}

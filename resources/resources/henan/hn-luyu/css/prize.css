@@ -1,0 +1,139 @@
+
+.prize{
+    width: 100%;
+	height: 100%;
+	overflow-y: auto;
+
+}
+.prize section{
+	width: 100%;
+	min-height: 100%;
+	padding-top: 70px;
+	background:#0c1438 url(../images/bg.jpg) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.prize-per{
+	
+}
+.prize-per img{
+	width: 24%;
+	display: block;
+	margin: 0 auto 10px;
+	border-radius: 100%;
+	
+}
+.prize-per span{
+	display: block;
+	padding: 0 5%;
+	color: #fff;
+	text-align: center;
+	
+} 
+.info-box{
+	padding: 4% 10%;
+}
+.info-box p {
+   margin-top: 6px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    border-radius: 6px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.info-box input {
+    height: 36px;
+    padding: 2px 10px;
+    width: 78%;
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: #fff;
+}
+.btn-edit{
+	display: block;
+	letter-spacing: 6px;
+	font-size: 20px;
+	margin: 0 auto;
+	border-radius: 4px;
+	width: 44%;
+	height: 40px;
+	line-height: 36px;
+	background: url(../images/btn-bg.png) no-repeat center;
+	background-size: 100% 100%;
+	color: #164491;
+	text-align: center;
+	font-size: 19px;
+	
+}
+.prize-list{
+    padding: 80px 20px;
+    color: #fff;
+    background:#0c1438 url(../images/line.png) no-repeat center;
+    background-position-y:16px;
+    background-size: 80%;
+}
+.prize-list li{
+	  display: block;
+	  width: 100%;
+    border-bottom: 1px dotted #959faa;
+    
+}
+.prize-item{
+	width: 100%;
+	padding: 10px 0;
+	position: relative;
+}
+.prize-item label{
+	width: 50px;
+	height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+.prize-item img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+   
+   
+}
+.prize-item div{
+    width: 80%;
+    display: block;
+    font-size: 14px;
+    position: absolute;
+    bottom: 12px;
+    left: 20%;
+}
+.prize-item div p{
+		line-height: 24px;
+		height: 24px;
+		overflow: hidden;
+}
+.prize-item div{
+    vertical-align: bottom;
+}
+
+.prize-item div p:nth-child(1){
+   font-size: 13px;
+}
+.prize-item div p:nth-child(2){
+  font-size: 12px;
+}
+.prize-item div p:nth-child(2) span{
+	display: inline-block;
+	padding-right: 14px;
+}
+
+.no-prize{
+	padding: 20px 0;
+	color:rgba(207,207,207,0.7);
+	font-size: 22px;
+	text-align: center;
+}

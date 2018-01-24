@@ -1,0 +1,50 @@
+body{
+    background: #F9F9F9;
+}
+header{
+    text-align: center;
+    background: #FF9307;
+}
+header img{
+    padding: 12px 0 10px;
+}
+section ul li{
+    margin: 6px  12px 0;
+    margin: 6px 0 0;
+    background-color: #fff;
+    padding: 6px 12px;
+    box-shadow: 5px 3px 1px -2px #ccc;
+}
+section ul li span:first-child{
+    width: 65%;
+    font-size: 15px;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 8px;
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+ }
+section ul li span:last-child{
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+    margin-left: 8%;
+}
+.btn-back{
+    width: 40%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+}
+.btn-back:hover{
+    color: #fff;
+}
+ul{
+    min-height: 280px;
+}
+.copyright{
+    position: relative;
+}

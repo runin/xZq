@@ -1,0 +1,160 @@
+body {
+  background: url(../images/pin-bg.jpg) no-repeat;
+  background-size: cover;
+  -webkit-overflow-scrolling: touch;
+}
+header{
+  height: 17vh;
+}
+header .top{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 20px;
+}
+header .top img {
+  width: 48%;
+  margin: 0 auto;
+}
+header .top h1 {
+  color: #FFF6BD;
+  font-size: 12px;
+  text-align: center;
+}
+.main{
+  width: 90%;
+  height: 70vh;
+  max-height: 70vh;
+  margin: -10px auto;
+  background: url(../images/pin-con.png) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+ul {
+  overflow-y: scroll;
+  height: 90%;
+  width: 80%;
+  margin: 7% auto;
+}
+ul li {
+  color: #AE1B30;
+  margin: 0 0 1px;
+  padding: 5px;
+  background: rgba(177,86,37, .24);
+}
+ul li label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+ul li div {
+  display: inline-block;
+  font-size: 13px;
+  color: #F20000;
+  width: calc(100% - 120px);
+  width: -webkit-calc(100% - 120px);
+  vertical-align: middle;
+}
+ul li div p:first-child{
+  text-overflow: ellipsis;
+  display : -webkit-inline-box;
+  -webkit-line-clamp : 2;
+  -webkit-box-orient : vertical;
+  overflow : hidden;
+}ul li div p:first-child:before{
+  content: "名称：";
+  display: inline-block;
+}
+ul li div p:last-child:before{
+  content: "票数：";
+  display: inline-block;
+}
+ul li .dz {
+  display: inline-block;
+  width: 53px;
+  margin-top: 18px;
+  float: right;
+  position: relative;
+}
+ul li .dz.zan:before{
+  content: "+1";
+  display: block;
+  color: #FFF;
+  position: absolute;
+  font-weight: bold;
+  top: -22px;
+  left: 12px;
+  -webkit-animation-name:zan;
+  -webkit-animation-duration: .8s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes zan {
+  from {
+    opacity:0;
+    -webkit-transform:scale(0.5);
+    transform:scale(0.5);
+  }
+  to {
+    opacity:1;
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+  }
+}
+.copyright {
+  color: #FFF6BD;
+  position: absolute;
+  bottom: 0;
+}
+.back-btn{
+  width: 150px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  display: block;
+  background: url(../images/pin-back.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  bottom: 35px;
+  right: 0;
+  margin: 0 auto;
+  color: #FCE865;
+  font-size: 15px;
+}
+a:hover{
+  color: #FCE865;
+}
+.ss{
+  -webkit-animation: ss;
+  -webkit-transition-timing-function: ease-in;
+  -webkit-animation-delay: .3s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-transform-origin: top;
+  opacity: 0;
+}
+@-webkit-keyframes ss {
+  from {
+    -webkit-transform: scaleY(0.2);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scaleY(1);
+    opacity: 1;
+  }
+}
+@media screen and (min-device-width: 320px) and (max-device-height: 500px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .main {
+    height: 60vh;
+    max-height: 60vh;
+  }
+}

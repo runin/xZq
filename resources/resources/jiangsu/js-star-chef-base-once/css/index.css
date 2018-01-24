@@ -1,0 +1,155 @@
+body{
+    background-color: #37AAC7;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.logo-left{
+    width: 39px;
+    float: left;
+    margin: 7px 0 0 24px;
+}
+.logo-right{
+    width: 72px;
+    float: right;
+    margin: 7px 24px 0 0;
+}
+.cloud-left{
+    clear: both;
+    width: 106px;
+    float: left;
+    margin: 5px 0 0 33px;
+    -webkit-animation: cloud 10s linear 0s infinite alternate;
+}
+@-webkit-keyframes  cloud{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(80%);
+    }
+}
+.cloud-right{
+    clear: both;
+    width: 54px;
+    float: right;
+    margin: -10px 9px 0 33px;
+    animation: cloud1 8s linear 0s infinite alternate;
+    -webkit-animation: cloud1 8s linear 0s infinite alternate;
+}
+@-webkit-keyframes cloud1{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+.big-logo{
+    width: 91%;
+    margin: 0 auto;
+    -webkit-animation: bigLogo 1.5s ease-out 0s;
+}
+@-webkit-keyframes bigLogo{
+    from{
+        opacity: 0.5;
+        transform: scale(.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.btn-go{
+    display: block;
+    background: #0F728B;
+    width: 215px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30px;
+    color: #FFF!important;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    margin: 10% auto;
+}
+
+.rubberBand {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+}
+@-webkit-keyframes rubberBand {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* iPhone4 */
+@media screen and (device-width : 320px)
+and (device-height : 480px){
+    .big-logo {
+        width: 75%;
+    }
+}
+
+/* iPhone5 */
+@media screen and (device-width: 320px)
+and (device-height : 568px){
+}
+
+/* iPhone6 */
+@media screen and (device-width : 375px)
+and (device-height : 667px){
+}
+
+/* iPhone6plus*/
+@media screen and (device-width : 414px)
+and (device-height : 736px){
+}
+
+/* shang 华为---适用分辨率在 1280*720 */
+@media screen and (device-width : 720px)
+and (device-height : 1280px){}
+
+/*比如雪玲、李超、尹超手机---适用分辨率在 1920 x 1080 */
+@media screen and (device-width : 360px) {
+
+}

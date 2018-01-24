@@ -1,0 +1,308 @@
+/*公共样式S*/
+.modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	z-index: 9999;
+	overflow: hidden;
+}
+.modal .btn-close {
+	position: absolute;
+	background: url(../images/close-icon.png) center no-repeat;
+	background-size: 100% auto;
+	display: block;
+	width: 35px;
+	height: 35px;
+	z-index: 10000;
+	top: -10px;
+	right: -10px;
+}
+.dialog {
+	position: absolute;
+	padding: 2%;
+	z-index: 1000;
+	background: url("../images/dia-bg.png") 0 0 no-repeat;
+	background-size: 100% 100%;
+
+}
+.dialog-assist {
+	width: 100%;
+	background-color: #143b0e;
+	border-radius: 5px;
+	height: 100%;
+}
+.dialog-assist::before{
+	content: '';
+	background: url("../images/icon-leaf.png") 0 0 no-repeat;
+	background-size: 100% 100%;
+	width: 60%;
+	height: 65px;
+	display: block;
+	position: absolute;
+	top: -7%;
+	left: -10%;
+}
+.dialog-assist .congra-img{
+	display: block;
+	width: 70%;
+	height: auto;
+	margin: auto;
+	position: relative;
+	z-index: 9999;
+}
+.dialog .btn-dia {
+	display: block;
+	width: 46%;
+	height: 35px;
+	line-height: 35px;
+	margin: 6px auto 0;
+	text-align: center;
+	position: absolute;
+	bottom: 4%;
+	left: 27%;
+	border-radius: 25px;
+	color: #ffffff;
+	letter-spacing: 3px;
+	z-index: 9999;
+	font-size: 15px;
+	background: #ff6541;
+}
+.dialog .btn-dia img{
+	display: inline-block;
+	width: auto;
+	height: 100%;
+}
+/*公共样式E*/
+.dialog-assist img{
+	display: block;
+	width: 100%;
+}
+
+/*谢谢参与弹层S*/
+.thank-dialog {
+	position: absolute;
+	color: #fff;
+	width: 70%;
+	height: 50%;
+	left: 15%;
+	top: 25%;
+}
+.thank-dialog .dialog-assist img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+.thank-dialog .dialog-assist .btn-dia{
+	width: 50%;
+	border-radius:0px;
+	background: #472a00;
+	color: #fff;
+	letter-spacing: 4px;
+	left: 25%;
+	font-weight: 500;
+
+}
+@-webkit-keyframes shine {
+	0% {background-position: 130%;}
+	100% {background-position: -50%;}
+}
+
+/*谢谢参与弹层E*/
+/*规则弹层S*/
+#rule-dialog .dialog-assist{
+	height: 84%;
+	width: 100%;
+	overflow: hidden;
+}
+#rule-dialog .rule-content{
+	width: 100%;
+	height: 100%;
+	background: url(../images/rule-bg.jpg) no-repeat center;
+	background-size: 100% 100%;
+	overflow: hidden;
+	padding: 6% 6% 8%;
+}
+#rule-dialog .rule{
+	width: 100%;
+	height: 100%;
+	color: #b29a7e;
+	overflow-y: auto;
+}
+/*规则弹层E*/
+/*中奖弹层S*/
+.lott-title{
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 0 14px;
+}
+
+.dialog-assist .award-img {
+	width: 90%;
+	height: 85%;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	margin: auto;
+	padding-top: 2%;
+}
+.dialog-assist .award-img img {
+	display: block;
+	height: 100%;
+
+}
+.dialog-assist .contact {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	padding: 5%;
+	padding-bottom: 48px;
+	z-index: 9999;
+	text-align: center;
+
+}
+.dialog-assist .code{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 28%;
+	z-index: 9999;
+	text-align: center;
+	color: #ff262f;
+	font-size: 19px;
+}
+.dialog-assist .contact h4{
+	color: #fff;
+	font-size: 13px;
+	text-align: center;
+}
+.dialog-assist .contact p {
+	width: 100%;
+	color: #fff;
+	font-size: 15px;
+	line-height: 18px;
+	border-radius: 6px;
+	margin: 4px auto;
+	text-align: left;
+}
+.dialog-assist .contact input {
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	padding: 2px 10px;
+	color: #000;
+	border: none;
+	outline: none;
+	background: #fff;
+	font-size: 14px;
+	border-radius: 4px;
+	-webkit-appearance: none;
+	-webkit-text-fill-color: #000;
+}
+.lottery-dialog .contact input:disabled {
+	background: rgba(255,255,255,0.4);
+	color: #000;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #4e4e4e;
+}
+/*中奖弹层E*/
+.dispshow {
+	-webkit-animation-name: dispshow;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-fill-mode: both;
+	-webkit-backface-visibility:hidden;
+}
+.disphide {
+	-webkit-animation-name: disphide;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-fill-mode: both;
+	-webkit-backface-visibility:hidden;
+
+}
+@-webkit-keyframes dispshow {
+	0% {opacity: 1; -webkit-transform: scale(1,0.01)}
+	100% {opacity: 1; -webkit-transform: scale(1)}
+}
+@-webkit-keyframes disphide {
+	0% {opacity: 1; -webkit-transform: scale(1)}
+	100% {opacity: 1; -webkit-transform: scale(1,0.01)}
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.dialog .btn-dia {
+		height: 32px;
+		line-height: 30px;
+		margin: 4px auto 0;
+	}
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+/* huawei honor-6 */
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.dialog {
+		padding: 5% 5% 0;
+	}
+	.lottery-assist .contact {
+		bottom: 36px;
+		padding: 0 10px;
+	}
+	.lottery-assist .contact input {
+		height: 28px;
+	}
+	.lottery-assist .contact p {
+		margin: 2px auto;
+	}
+	.dialog .btn-dia {
+		height: 32px;
+		line-height: 30px;
+		margin: 4px auto 0;
+	}
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.dialog .btn-dia {
+		height: 32px;
+		line-height: 30px;
+		margin: 4px auto 0;
+	}
+}
+@-webkit-keyframes toggle {
+	0% {
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}

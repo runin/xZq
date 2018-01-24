@@ -1,0 +1,14 @@
+.main {
+    background: #C7EAEC url(../images/bg.jpg) no-repeat center 0;
+    background-size: cover;
+}
+h3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 23%;
+    text-align: left;
+    font-size: 18px;
+    margin: auto 40px;
+    color: #576B95;
+}

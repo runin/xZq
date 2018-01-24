@@ -1,0 +1,210 @@
+body{
+    background-image: url(../images/barrage-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.question{
+    background: url(../images/question-bg.png) repeat-y 0 0;
+    background-size: 100%;
+    position: relative;
+    width: 90%;
+    margin: 10% auto 6%;
+    padding: 2% 5%;
+}
+.question:before{
+    content: '';
+    background: url("../images/question-top.png") 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -12px;
+    height: 15px;
+    width: 100%;
+    left: 0%;
+}
+.question:after{
+    content: '';
+    background: url("../images/question-top.png") 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: -12px;
+    height: 15px;
+    width: 100%;
+    left: 0;
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+.question .icon-question{
+    width: 20%;
+    display: block;
+}
+.question .title{
+    color: #b4621b;
+    line-height: 2em;
+    text-align: left;
+}
+.question .answer{
+
+}
+.question .answer li{
+    background-color: #823c00;
+    display: block;
+    margin: 5px 0;
+    color: #d29e72;
+    font-size: 14px;
+    position: relative;
+    line-height: 2.2em;
+}
+.question .answer li .content{
+    position: relative;
+    text-align: center;
+}
+.question .answer li .vote-num{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background: #806752;
+}
+
+article .comments {
+    position: relative;
+}
+.ctrls p {
+    width: 100%;
+    padding: 7px 0;
+    position: relative;
+    margin: 0 auto;
+}
+
+.ctrls p input {
+    width: 78%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    padding: 0 5px;
+    background: transparent;
+    color: #E5F8BA;
+    outline: none;
+    border: 1px solid #9c4802;
+}
+.c_head_img {
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    overflow: hidden;
+    float: left;
+    margin-right: 5px;
+    margin-left: 1px;
+}
+
+.c_head_img_img {
+    width: 28px;
+    margin-right: 4px;
+}
+.comment {
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2px;
+    margin-left: 30px;
+    padding: 0px 6px;
+}
+.comment_item{
+    background: rgba(148,80,36,.6);
+    border-radius: 20px;
+}
+.me-cor{
+    border: 1px solid #8c64c1;
+    border-radius: 30px !important;
+    height: 28px!important;
+    line-height: 26px!important;
+}
+input::-webkit-input-placeholder {
+    color:#d29e72!important;
+    font-size: 14px;
+}
+input[placeholder], [placeholder], *[placeholder] {
+    color:#d29e72!important;
+    font-size: 14px;
+}
+.ctrls{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.ctrls p input.error {
+    border: 1px solid #f00;
+}
+.ctrls p a {
+    clear: both;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #9c4802;
+    border-radius: 5px;
+    text-align: center;
+    color: #d29e72;
+}
+.funnyshow {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    left: 5px;
+}
+.funnyshow img {
+    width: 80px !important;
+    height: auto !important;
+    border-radius: inherit!important;
+}
+.copyright {
+    color: #0092C7;
+    line-height: 13px;
+    height: auto;
+}
+.me {
+    border: 2px solid #e26b05;
+    border-radius: 30px !important;
+}
+.countdown {
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    background: url("../images/count-bg.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    padding: 3% 1% 2% 15%;
+    display: block;
+    width: 54%;
+    position: absolute;
+    top: 1%;
+    right: 7%;
+    z-index: 9;
+
+}
+.countdown span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.2em;
+}
+.countdown .detail-countdown{
+    font-size: 16px;
+}
+.btn-movie{
+    display: inline-block;
+    width: 49%;
+    height: 45px;
+    background: url("../images/btn-movie.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.btn-lottery{
+    display: inline-block;
+    width: 49.5%;
+    height: 45px;
+    background: url("../images/btn-yao.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}

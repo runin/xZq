@@ -1,0 +1,132 @@
+body {
+  background: url(../images/page2.jpg) no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.btn {
+  background: #FF9100;
+  border-radius: 21px;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+section.deta {
+  margin: 30px 15px;
+}
+.progress {
+  display: inline-block;
+  width: 80%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 1px 7px rgba(168, 158, 76, 0.91), 0 1px rgba(99, 97, 71, 0.73);
+  box-shadow: 0 1px 7px rgba(168, 158, 76, 0.91), 0 1px rgba(99, 97, 71, 0.73);
+  background: -webkit-linear-gradient(top, #020202 1%, #4d4d4d 100%, #7c7c7c 100%);
+  background: linear-gradient(to bottom, #020202 1%, #4d4d4d 100%, #7c7c7c 100%);
+}
+.progress-bar {
+  position: relative;
+  height: 16px;
+  border-radius: 20px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+.progress-bar:before, .progress-bar:after {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.progress-bar:before {
+  bottom: 0;
+  background: url("../images/stripes.png") 0 0 repeat;
+  border-radius: 4px 4px 0 0;
+}
+.progress-bar:after {
+  z-index: 2;
+  bottom: 45%;
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+}
+.progress > .progress-bar {
+  /*width: 25%;
+  background-color: #f27011;*/
+}
+.pren {
+  display: inline-block;
+  color: #fff;
+  text-align: right;
+  width: 19%;
+  font-size: 13px;
+}
+.jdt {
+  margin: 20px auto;
+}
+.hand{
+  width: 15%;
+  display: block;
+  margin: 10px auto 15px;
+}
+.hand.waggle{
+  box-sizing: border-box;
+  vertical-align: middle;
+  -webkit-animation: 3s waggle;
+  animation: 3s waggle;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: -1;
+  animation-delay: -1;
+}
+@-webkit-keyframes waggle {
+  0%, 7% {
+    transform: rotateZ(0);
+    -webkit-transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+    -webkit-transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+    -webkit-transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+    -webkit-transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+    -webkit-transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+    -webkit-transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+    -webkit-transform: rotateZ(0);
+  }
+}
+.in{
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+.bc-bb{
+  background: #ffd95c;
+  background: -webkit-linear-gradient(top,  #ffd95c 51%,#ffd95c 56%,#d95114 100%);
+  background: linear-gradient(to bottom,  #ffd95c 51%,#ffd95c 56%,#d95114 100%);
+}

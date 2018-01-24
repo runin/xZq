@@ -1,0 +1,742 @@
+.modal:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 100;
+}
+.dialog {
+    position: absolute;
+    color: #fdc728;
+    border-radius: 6px;
+    z-index: 1000;
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-result.jpg) no-repeat 0 0;  background-size: cover;
+    overflow: hidden;
+}
+.dialog-res {
+    position: absolute;
+    color: #fdc728;
+    border-radius: 6px;
+    z-index: 1000;
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg.jpg) no-repeat 0 0;  background-size: cover;
+    overflow: hidden;
+}
+.dialog-inner {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	padding-bottom: 70%;
+}
+.modal-guide {
+	height: auto !important;
+}
+.modal .btn-close {
+    position: absolute;
+    background: url(../images/icon-close.png) no-repeat 3px 3px;
+    background-size: 22px auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    z-index: 10000;
+}
+
+.result-dialog {
+    padding: 7% 5% 10%;
+}
+.result-dialog h2 {
+    background: url(../images/icon-zjb.png) no-repeat center top;
+    background-size: 98px auto;
+    min-height: 30px;
+    padding-bottom: 16%;
+}
+.result-dialog .tip {
+    position: relative;
+    margin-top: 6%;
+}
+.result-dialog .title-border {
+    background-image: -webkit-linear-gradient(right, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.2) 20%,rgba(0,0,0,0.25) 40%,rgba(0,0,0,0.25) 60%,rgba(0,0,0,0.2) 80%,rgba(0,0,0,0.1) 100%);   
+    background-image: linear-gradient(to left,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.2) 20%,rgba(0,0,0,0.25) 40%,rgba(0,0,0,0.25) 60%,rgba(0,0,0,0.2) 80%,rgba(0,0,0,0.1) 100%);
+    height: 2px;
+    border-radius: 100%;
+}
+.result-dialog .tip.border:before {
+	margin-bottom: 8px;
+}
+.result-dialog .tip.border:after {
+    margin-top: 5px;
+}
+.result-dialog .img {
+    display: block;
+    text-align: center;
+	background: url(../images/icon-qi.png) no-repeat center center;
+    background-size: 40% auto;
+    height: 24%;
+    margin: 6% auto 0;
+}
+.result-dialog .tip .content {
+	
+    color: #000;
+    min-height: 54px;
+    text-align: center;
+    margin-top: -5%;
+}
+.result-dialog .tip h3 {
+    font-size: 16px;
+	
+    color: #fff;
+}
+.result-dialog .tip p {
+    font-size: 12px;
+	
+    color: #ffe032;
+    line-height: 22px;
+}
+.result-dialog .tip a {
+	
+    width: 34%;
+    height: 33px;
+    line-height: 33px;
+    background: #DF8900;
+    display: block;
+    margin: 5px auto 5px;
+}
+.result-dialog .list {
+	
+    margin-top: 5px;
+}
+.result-dialog ul {
+    margin-top: 10px;
+	
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 10px -5%;
+}
+.result-dialog li {
+    display: inline-block;
+	
+    vertical-align: middle;
+    width: 32%;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.result-dialog li:before {
+	/* content: ''; */
+	display: inline-block;
+	vertical-align: middle;
+}
+.result-dialog li:nth-child(2) {
+    border-left: 1px solid rgba(124,0,0,0.8);
+	
+    border-right: 1px solid rgba(124,0,0,0.8);
+    /* width: 103px; */
+}
+.result-dialog li p {
+	
+    font-size: 15px;
+}
+.result-dialog li h4 {
+    /* margin-top: 2px; */
+	
+    font-size: 26px;
+    line-height: 36px;
+}
+.result-dialog .jifen {
+    margin-top: 2%;
+	
+    font-size: 20px;
+    color: #fff;
+}
+.result-dialog .jf {
+	
+}
+.result-dialog .db {
+    font-size: 16px;
+	
+    margin-top: 4px;
+}
+
+
+.rule-dialog {
+	
+    padding-top: 10%;
+    color: #fff;
+    height: 90%;
+}
+.rule-dialog h2 {
+    background: url(../images/icon-rule.png) no-repeat center top;
+	
+    background-size: 130px auto;
+    height: 32px;
+}
+.rule-dialog .content {
+	
+    margin: 8% 6% 0;
+    height: 70%;
+}
+.rule-dialog .rule {
+    padding: 6% 0;
+	
+    font-size: 14px;
+    line-height: 24px;
+    max-height: 100%;  overflow-y: auto;
+}
+.rule-dialog p {
+	
+}
+.rule-dialog h3 {
+    margin-top: 22px;
+	
+    font-size: 16px;
+}
+.dialog-copyright {
+    position: absolute;
+	
+    bottom: 0px;
+    left: -5px;
+    right: -5px;
+    font-size: 12px;
+    transform: scale(0.7);
+    text-align: center;
+    color: #fff;
+}
+
+.guide-dialog {
+    width: 240px;
+	
+    height: 300px;
+    left: 50%;
+    right: auto;
+    margin-left: -120px;
+    top: 50%;
+    bottom: auto;
+    margin-top: -150px;
+    background: #F4F4E5;
+}
+.guide-dialog h2 {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-topbar.jpg) no-repeat 0 0;
+	
+    background-size: cover;
+    height: 60px;
+    border-radius: 5px 5px 0 0;
+}
+.guide-dialog p {
+    color: #333;
+	
+    font-style: italic;
+    border-bottom: 1px solid #DBDBD3;
+    height: 52px;
+    line-height: 52px;
+    margin: 0 15px;
+    font-size: 14px;
+}
+.guide-dialog label {
+    color: #f11500;
+	
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.guide-dialog .btn {
+    display: block;
+	
+    margin: 16px auto 0;
+    width: 70%;
+    height: 48px;
+    line-height: 48px;
+}
+
+/** 抽奖  */
+.lottery-dialog {
+	background: #BC0C0C url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-cj.jpg) no-repeat center 0;
+    
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	color: #fdc728;
+}
+.lottery-dialog .hammer {
+	margin-top: 35%;
+    
+	height: 53%;
+}
+.lottery-dialog .btn-hammer {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-hammer.png) no-repeat 0 0;
+	
+    background-size: 112px auto;
+    display: block;
+    width: 115px;
+    height: 158px;
+    margin-left: 52%;  
+    margin-top: 8px;
+}
+
+.broken .lottery-dialog .hammer:before {
+	content: '';
+	display: block;
+	background: url(../images/icon-feng.png) no-repeat 0 0;
+	background-size: 80px auto;
+	width: 26%;
+	height: 24%;
+	position: absolute;
+	left: 36%;
+	top: 42%;
+}
+.lottery-dialog .btn-hammer.animated {
+	-webkit-animation-name: broken;
+    -webkit-animation-duration: 800ms;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes broken {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(-42deg);
+		transform: rotate(-42deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}		
+}
+
+.lottery-dialog p {
+    text-align: center;
+	
+}
+.lottery-dialog .ctrl {
+    position: absolute;
+	
+    left: 0;
+    right: 0;
+    bottom: 1%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.lottery-dialog .list {
+	
+    height: 60px;
+    overflow: hidden;
+    padding: 0 5%;
+}
+.lottery-dialog .list li {
+    height: 20px;
+	
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.lottery-dialog .list span {
+    display: inline-block;
+	
+    vertical-align: middle;
+    text-align: left;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
+.lottery-dialog .list .label-name {
+    width: 18%;
+	
+}
+.lottery-dialog .list .label-mobile {
+    width: 35%;
+	
+}
+.lottery-dialog .list .label-gift {
+    width: 40%;
+	
+}
+
+.lottery-dialog .ctrl .btn-again {
+    width: 40vw;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.lottery-dialog .light {
+	display: none;
+	background: rgba(255,250,166,0.58);
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+	margin-left: -5px;
+	right: 0;
+	top: 50%;
+	margin-top: -10px;
+	bottom: 0;
+    border-radius: 100%;
+    z-index: 10;
+    -webkit-box-shadow: 0px 0px 140px rgba(255,250,166,1), 0px 0px 140px rgba(255,250,166,1),0px 0px 150px rgba(255,250,166,0.9),0px 0px 160px rgba(255,250,166,0.9),0px 0px 170px rgba(255,250,166,0.8),0px 0px 180px rgba(255,250,166,0.8),0px 0px 190px rgba(255,250,166,0.7),0px 0px 200px rgba(255,250,166,0.7),0px 0px 210px rgba(255,250,166,0.6),0px 0px 220px rgba(255,250,166,0.6),0px 0px 230px rgba(255,250,166,0.5);
+	box-shadow: 0px 0px 140px rgba(255,250,166,1), 0px 0px 140px rgba(255,250,166,1),0px 0px 150px rgba(255,250,166,0.9),0px 0px 160px rgba(255,250,166,0.9),0px 0px 170px rgba(255,250,166,0.8),0px 0px 180px rgba(255,250,166,0.8),0px 0px 190px rgba(255,250,166,0.7),0px 0px 200px rgba(255,250,166,0.7),0px 0px 210px rgba(255,250,166,0.6),0px 0px 220px rgba(255,250,166,0.6),0px 0px 230px rgba(255,250,166,0.5);
+}
+
+.animated .lottery-dialog .light {
+	display: block;
+	-webkit-animation-name:boune;
+    -webkit-animation-duration: 700ms;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-iteration-count:1;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes boune {
+	0% {
+		-webkit-transform: scale(1);
+		opacity: 0.1;
+	}
+	50% {
+		-webkit-transform: scale(50);
+		opacity: 0.5;
+		background: rgba(255,250,166,0.8);
+	}
+	100% {
+		-webkit-transform: scale(100);	
+		opacity: 1;
+		background: rgba(255,250,166,1);
+	}		
+}
+
+.award-dialog .box {
+	height: 48%;
+	position: relative;
+	overflow: hidden;
+}
+.award-dialog .prize {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-prize.png) no-repeat center center;
+    background-size: cover;
+	
+    height: 100%;
+    margin: 0 -10%;
+    text-align: center;
+    padding-top: 10%;  
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+.award-dialog .prize:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.award-dialog .prize img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.award-dialog .prize.p1 img {
+    max-width: 80%;
+}
+
+.award-dialog .ctrl {
+    color: #fff;
+    padding-top: 5%;
+    text-align: center;
+}
+.award-dialog .ctrl h2 {
+    text-align: center;
+    font-size: 16px;
+	margin: 0 6%;
+}
+.award-dialog .content {
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+.award-dialog .content p {
+    font-size: 12px;
+    text-align: left;
+}
+.award-dialog .content input {
+    width: 100%;
+    border: 0 none;
+    background: #fff;
+    height: 36px;
+    font-size: 16px;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    margin-top: 8px;
+    color: #979797;
+    outline: none;
+}
+.award-dialog .ctrl .btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 23px 5px 0 5px;
+    width: 35%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    border-radius: 20px;
+}
+.award-dialog .award-succ {
+	display: none;
+}
+.award-dialog .award-succ.ctrl {
+	
+}
+.award-dialog .award-succ h2 {
+    text-align: left;
+    text-indent: 2em;
+    padding: 0 6%;
+}
+.award-dialog .award-succ h3 {
+    text-align: center;
+    margin-top: 10%;
+    color: #FDC728;
+}
+.award-dialog .award-succ .btn {
+    margin-top: 10px;
+    letter-spacing: 0;
+}
+.award-succ-dialog .prize img {
+	display: none;
+}
+.award-succ-dialog .prize:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-ljsu.png) no-repeat center center;
+	background-size: cover;
+	width: 80%;
+	height: 80%;
+}
+
+.award-succ-dialog .ctrl {
+	display: none;
+}
+.award-succ-dialog .award-succ {
+	display: block;
+}
+.award-succ-dialog .dialog-inner {
+	height: 100%;
+	padding-bottom: 0;
+}
+
+#confirm-dialog {  
+}
+#confirm-dialog:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 10000;
+}
+.confirm-dialog {
+    width: 72%;
+	
+    height: 130px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    position: absolute;
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-dialog.jpg) no-repeat center 0;  
+    background-size: 260px auto;
+    border-radius: 6px;
+    z-index: 100000;
+}
+.confirm-dialog .content {
+	
+    margin: 5% 8% 5%;
+    font-size: 16px;
+}
+.confirm-dialog .ctrl {
+    text-align: center;
+	
+    margin-right: -10px;
+}
+.confirm-dialog .ctrl .btn {
+    margin-right: 10px;
+	
+    border: 1px solid #fff;
+}
+
+
+.tip-dialog {
+    width: 220px;
+	
+    height: 200px;
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-dialog.jpg) no-repeat 0 0;
+    background-size: cover;
+    left: 50%;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    bottom: 0;
+}
+.tip-dialog h2 {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-tips.png) no-repeat center center;
+	
+    background-size: 170px auto;
+    height: 80px;
+    margin-top: 35px;
+}
+.tip-dialog .btn {
+    display: block;
+	
+    position: static;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    background: #FF3535;
+    border: 1px solid #fff;
+    margin: 10% auto 0;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.result-dialog .img {
+		height: 18%;
+		background-size: 30%;
+		margin-top: 3%;
+	}
+	.result-dialog li h4 {
+		font-size: 24px;
+	}
+	.award-dialog .box {
+		height: 45%;
+	}
+	.award-dialog .content input {
+	    height: 25px;  margin-top: 6px;
+	}
+	.award-dialog .ctrl .btn {
+	    height: 30px;
+	    line-height: 30px;
+	    font-size: 14px;
+	    margin-top: 2%;
+	}
+	
+	.lottery-dialog .hammer {
+		margin-top: 34%;
+	}
+	.lottery-dialog .btn-hammer {
+    	background-size: 90px auto;
+	
+	}
+	.broken .lottery-dialog .hammer:before {
+    top: 46%;
+		
+	}
+}
+
+.star-list{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
+	
+}
+.star-tr{
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	clear:both;
+	padding-top:10px;
+}
+.star-td{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	width:25%;
+	float:left;
+}
+.star-heard{
+	margin-left: auto;
+	margin-right: auto;
+	border:solid 2px white;
+	background: url(http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/ahtvcomedian/20141116/xs-wl.png) no-repeat center 0;
+	background-size:contain;
+	border-radius:200px;
+	width:50px;
+	height:50px;
+	margin-bottom: 5px;
+	background-color: rgba(110,67,46,1);
+
+}
+.star-heard img{
+	width: 40px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	bottom: -59%;
+	right: -10px;
+}
+
+.star-heard-audio{
+	margin-left: auto;
+	margin-right: auto;
+	border:solid 2px white;
+	background-color:white;
+	border-radius:200px;
+	width:50px;
+	height:50px;
+
+}
+
+.star-name{
+	color:orange;
+	font-size:12px;
+	margin-top:-2px;
+}
+.star-mes{
+	color:yellow;
+	font-size:12px;
+	margin-top:-2px;
+}
+
+.star-turn{
+	margin-top:100px;
+	background:url(../images/up_page.png)no-repeat center 0;
+	background-size:contain;
+	margin-left: auto;
+	margin-right: auto;
+	clear:both;
+	width:30px;
+	height:30px;
+}
+.btn-pack{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	width:140px;
+	background-color:rgba(195,167,116,1);
+	color:white;
+	font-size:18px;
+	line-height:34px;
+	border-radius:20px;
+	border:solid 1px rgba(195,167,116,1);
+	margin-top:20px;
+}

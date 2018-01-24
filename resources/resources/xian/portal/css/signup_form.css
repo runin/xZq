@@ -1,0 +1,43 @@
+html {
+	background: #F6FAFB;
+}
+.main {
+	margin: 0 auto 50px;
+	overflow-x: hidden;
+	font-size: 15px;
+	padding-top: 20px;
+}
+
+.form-item {
+    margin-left: 10px;
+	
+    margin-right: 10px;
+}
+.form-item h2 {
+    padding: 12px 4px;
+	
+}
+.form-item input {
+    background: #E4E3E3;
+	
+    border: 1px solid #C2C5C6;
+    width: 100%;
+    height: 38px;
+    border-radius: 2px;
+    display: block;
+}
+.btn-submit-signup {
+    background: #DF3131;
+	
+    border-radius: 5px;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: 17px 10px;
+    color: #fff;
+    font-size: 18px;
+}
+.btn-submit-signup:hover {
+	background: #D61212;
+}

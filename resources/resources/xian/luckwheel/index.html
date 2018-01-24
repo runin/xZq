@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no" />
+        <title>西安直播间-幸运抽大奖</title>
+        <script src="js/wx_api.js"></script>
+        <link href="css/global.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body style="background: #FFF7DF;">
+        <div class="lottery-wrapper">
+            <p class="lottery-title">感谢您参与抽奖，<br />马上进入抽奖环节，100%中奖哦</p>
+            <p><img src="images/lottery_tips.png" class="lottery-tips"/></p>
+            <div class="lottery-container">
+                <img src="images/lottery_tips_bg.png" class="img-tips-bg" />
+                <img src="http://yao.holdfun.cn:8080/portal/resources/luckwheel/images/lottery_bg.png" class="img-bg" />
+                <a class="lottery-btn" id="lottery-btn">
+                    <img src="images/lottery_btn.png" class="img-btn" />
+                </a>
+                <img src="images/lottery_gift.png" class="img-gift" />
+            </div>
+        </div>
+        <div class="mod_box cjbox none" id="win-info">
+            <h2>恭喜您，获得<span id="prize"></span></h2>
+            <h3>请输入您的手机号</h3>
+            <p><input type="number" name="phone" maxlength="11" min="11" id="phone"><span>（以便我们通知您领奖）</span></p>
+            <a href="javascript:submitAward();" class="send_btn" id="btn-submit">确认领奖</a>
+        </div>
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="js/jquery/jQueryRotateCompressed.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

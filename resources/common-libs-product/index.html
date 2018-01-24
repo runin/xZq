@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>新掌趣前端公共组件库</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./emulator/css/emulator.min.css" />
+</head>
+<body>
+    <form class="controls">
+		<ul>
+			<li>
+				<label for="scale_selector">组件:</label>
+				<select id="module_selector" name="module">
+					<option value="./template/index.html" title="目录：libs/template">空白模板页面</option>
+					<option value="./jsapi-voice/index.html" title="目录：libs/jsapi">微信语音</option>
+					<option value="./page/index.html" title="目录：libs/page">滑动翻页</option>
+					<option value="./audio/index.html" title="目录：libs/audio">声音组件</option>
+					<option value="./tvideo/index.html" title="目录：libs/tvideo">腾讯视频</option>
+					<option value="./countdown/index.html" title="目录：libs/countdown">倒计时</option>
+					<option value="./share/index.html" title="目录：libs/share">分享到微信</option>
+					<option value="./upload/index.html" title="目录：libs/upload">图片上传</option>
+					<option value="./follow/index.html" title="目录：libs/follow">关注公众号</option>
+					<option value="./weixin-info/index.html" title="目录：libs/weixin-info">获取微信昵称、头像</option>
+					<option value="./map/index.html" title="目录：libs/map">地图</option>
+					<option value="./card/index.html" title="目录：libs/card">刮刮卡</option>
+					<option value="./lottery/index.html" title="目录：libs/lottery">抽奖转盘</option>
+					<option value="./egg/index.html" title="目录：libs/egg">砸蛋</option>
+				</select>
+			</li>
+	        <li>
+	          	<label for="scale_selector">缩放：</label>
+				<select id="scale_selector" name="scale">
+					<option value="3">300%</option>
+					<option value="2">200%</option>
+					<option value="1.5">150%</option>
+					<option value="1.25">125%</option>
+					<option value="1" selected="selected">100%</option>
+					<option value="0.75">75%</option>
+					<option value="0.667">66.7%</option>
+					<option value="0.5">50%</option>
+					<option value="0.333">33.3%</option>
+					<option value="0.25">25%</option>
+				</select>
+	        </li>
+	        <li>
+				<input type="checkbox" id="scrolling_toggle" name="scrolling" />
+				<label for="scrolling_toggle">滚动条</label>
+	        </li>
+      	</ul>
+	</form>
+    <article class="emulator">
+		<div id="device" class="device apple_iphone_5s">
+			<div class="display portrait">
+				<iframe class="viewport"></iframe>
+			</div>
+		</div>
+	</article>
+	
+	<script type="text/javascript" src="./emulator/js/emulator.min.js"></script>
+</body>
+</html>

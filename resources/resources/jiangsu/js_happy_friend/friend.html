@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>幸福剧场</title>
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/friend.css" />
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body>
+    <header class="friend-head">
+        <img src="images/user-friend-top.jpg" />
+        <div class="personal-info">
+            <span class="nikcName" id="nikcName">爱国画家联展</span>
+            <span class="headImg"><img  id="headimgurl" src="images/avatar.png" /></span>
+        </div>
+    </header>
+    <section class="friend">
+        <div class="scroll">
+            <section class="main">
+                <section class="friend-content none"></section>
+            </section>
+        </div>
+        <section class="showImg none">
+            <div class="load-bg none"><span></span></div>
+        </section>
+        <div class="ctrls none">
+            <p><input id="input-comment" type="text" placeholder="说说你的看法吧~" /><a href="#" class="btn-comment" id="btn-send" data-collect="true" data-collect-flag="everyWeek-comment-send-btn" data-collect-desc="朋友圈页-发表评论按钮">发送</a></p>
+        </div>
+    </section>
+    <footer>
+        <section class="btn nav nav-card" id="nav">
+            <a id="btn-answer" data-collect="true" data-collect-flag="btn-answer" data-collect-desc="答题按钮"></a>
+            <a class="active" id="btn-card" data-collect="true" data-collect-flag="btn-card" data-collect-desc="集卡按钮"></a>
+            <a id="btn-shop" data-collect="true" data-collect-flag="btn-shop" data-collect-desc="商城按钮"></a>
+        </section>
+    </footer>
+
+    <section class="guides"></section>
+
+    <script src="./js/config.js"></script>
+    <script type="text/javascript">
+        var sharePage = 'friend.html';
+    </script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/xss.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+    <script src="./js/plugins/scrollTo.js"></script>
+    <script src="./js/plugins/swiper.min.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="./js/app/friend.js"></script>
+</body>
+</html>

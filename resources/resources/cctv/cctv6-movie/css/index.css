@@ -1,0 +1,148 @@
+@-webkit-keyframes fuckdown {
+    0% {
+        -webkit-transform: translate3d(0,-300%,0);
+        transform: translate3d(0,-300%,0);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+@keyframes fuckdown {
+    0% {
+        -webkit-transform: translate3d(0,-300%,0);
+        transform: translate3d(0,-300%,0);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fucktt {
+    0% { opacity: 1; box-shadow:0 1px 2px rgba(255,255,255,0.1);}
+    100% { opacity: 1; border:1px solid rgba(255,255,255,1); box-shadow:0 1px 30px rgba(255,255,255,1);}
+}
+@keyframes fucktt {
+    0% { opacity: 1; box-shadow:0 1px 2px rgba(255,255,255,0.1);}
+    100% { opacity: 1; border:1px solid rgba(255,255,255,1); box-shadow:0 1px 30px rgba(255,255,255,1);}
+}
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+    background: rgb(234, 93, 38);
+	// background: url(../images/bg.jpg) no-repeat top center #FFF;
+	// background-size: 100% 100%;
+}
+header {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 10px 0;
+    overflow: hidden;
+    z-index: 99;
+}
+header .tv {
+    display: block;
+    width: 26%;
+    float: left;
+}
+header #btn-rule, header #btn-reserve {
+    display: inline-block;
+    float: right;
+    font-size: 13px;
+    color: #FFF;
+    padding: 3px 12px;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    margin-left: 8px;
+}
+.container {
+    width: 100%;
+    text-align: center; 
+    margin: 0 auto;
+}
+.container .mask2 {
+    position: relative;
+    width: 200px;
+    margin: 15px auto 20px;
+    -webkit-mask-image: url(../images/mask.png) 220px;
+    -webkit-animation: fuckdown 1s 1s 1 ease;
+    -webkit-transform-origin: center center;
+    -webkit-animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: 3
+}
+.container .logo {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    -webkit-animation: fuckdown 1s 1.5s 1 ease;
+    -webkit-transform-origin: center center;
+    -webkit-animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: 2;
+}
+#btn-go {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    border: 1px solid #FFF;
+    padding: 7px 36px;
+    border-radius: 50px;
+    box-shadow: 0 0 7px rgba(255,255,255,.7);
+    margin: 30px auto 0;
+    -webkit-animation: fuckdown 1s 2s 1 ease, fucktt 2s 2.8s infinite alternate;
+    -webkit-transform-origin: center center;
+    -webkit-animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: 5;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (-webkit-min-device-pixel-ratio:2) {
+    .container .mask2 {
+        width: 150px;
+        margin: 0px auto 20px;
+    }
+}
+
+/* iPhone5 */
+@media screen
+and (device-width:320px)
+and (device-height:568px)
+and (-webkit-min-device-pixel-ratio:2) {
+    .container .mask2 {
+        width: 180px;
+        margin: 0px auto 20px;
+    }
+}
+
+/* iPhone6plus */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 736px)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .container .mask2 {
+        width: 260px;
+        margin: 30px auto 20px;
+    }
+}

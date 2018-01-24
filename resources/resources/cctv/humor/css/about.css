@@ -1,0 +1,240 @@
+.main {
+	background: #380001 url(../images/bg-about.jpg) no-repeat center  top;
+	background-size: 360px auto;
+}
+.ui-rule {
+    color: #fff;
+	
+    margin: 2px 6%;
+    min-height: 80px;
+}
+.ui-rule.border:after {
+	margin-top: 2px;
+}
+.ui-rule p {
+    line-height: 24px;
+	
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.ui-rule h3 {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+
+.ui-content {
+    padding: 25% 12px 10%;
+	
+    color: #fff;
+}
+.ui-content h2 {
+    margin: 0 -6px 5px;
+	
+    font-size: 18px;
+    min-height: 24px;
+}
+.ui-content h2 span {
+    font-size: 12px;
+	
+    margin-left: 4px;
+    color: #fff;
+}
+.ui-content p {
+    font-size: 15px;
+	
+}
+.ui-content p.tips {
+    margin-top: 10px;
+	
+    margin-bottom: -4px;
+    font-size: 12px;
+    color: #FEC000;
+    text-align: center;
+}
+.cover {
+    background-size: cover;
+    height: 215px;
+    margin-top: 9px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.cover:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background-size: 70px auto;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -35px;
+	margin-top: -35px;
+}
+.cover img {
+    position: absolute;
+	
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 0;
+}
+.cover iframe {
+    width: 100%;
+	
+    height: 100%;
+    z-index: 1111;
+    position: relative;
+}
+.btn-player {
+	background: url(../images/icon-player.png) no-repeat 0 0;
+	background-size: 68px auto;
+	display: inline-block;
+	vertical-align: middle;
+	width: 68px;
+	height: 68px;
+	margin: 0 auto;
+	z-index: 111;
+	position: relative;
+}
+
+.btn-comeon {
+    display: block;
+	
+    margin: 10px auto 10px;
+    width: 55%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #FF3535;
+    border-radius: 50px;
+    color: #fff;
+}
+
+
+
+.ui-movies {
+    padding: 13px 17px 40px;
+    min-height: 100px;
+    color: #fff;
+    background-image: -webkit-linear-gradient(bottom right, #3C1213 0%, #421111 100%);   
+    background-image: linear-gradient(to top left, #3C1213 0%, #421111 100%);
+}
+.ui-movies h2 {
+    color: #ffe032;
+}
+
+.um-ctrl {
+    text-align: center;
+	
+    margin-top: 19px;
+}
+.um-ctrl p {
+	
+}
+.um-ctrl p a {
+    color: #ffe032;
+    text-decoration: underline;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.um-ctrl .um-tips {
+    color: #f2831a;
+    font-size: 16px;
+}
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.cw-vote .cw-btns {
+    	padding-top: 0;
+	}
+	.cw-vote .cw-btns a {
+    	transform: scale(0.8);
+	}
+	.cw-vote .cw-btns .btn-daiding {
+		background-position: -58px 0px;
+	}
+	.cw-vote .cw-btns .btn-taotai {
+		background-position: -117px 0;
+	}
+	.cwr-ctrl .tips {
+    	margin-top: 5px;
+	}
+	.movie .cover {
+		height: 55px;
+		width: 32%;
+		background-size: 70px auto;
+	}
+	.tips span {
+		font-size: 14px;
+	}
+	.ctrl .btn {
+		height: 25px;
+		line-height: 25px;
+		font-size: 14px;
+		margin-top: -15px;
+	}
+	.movie .cover:after {
+		width: 35px;
+		height: 35px;
+		background-size: 35px auto;
+	}
+	.movie .content {
+		height: 55px;
+		margin-top: -55px;
+		margin-left: 32%;
+	}
+	.movie h3 {
+		font-size: 14px;
+	}
+	.movie p {
+		font-size: 12px;
+		margin-top: 0;
+	}
+	.movie a {
+		bottom: -1px;
+	}
+	dl.vote-result {
+		padding: 2% 10%;
+	}
+	.vote-result dt {
+		margin-bottom: 0;
+	}
+	.vote-result dd {
+		height: 20px;
+	}
+	.cwr-ctrl {
+		padding-top: 0;
+	}
+	.result-dialog ul {
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	.result-dialog .jifen {
+		margin-top: 0%;
+	
+		font-size: 16px;
+	}
+	.result-dialog .db {
+	    font-size: 14px;
+	    margin-top: 0;
+	}
+	.result-dialog h2 {
+		margin-bottom: 10px;
+	}
+	.share-tip p {
+		font-size: 12px;
+	}
+}

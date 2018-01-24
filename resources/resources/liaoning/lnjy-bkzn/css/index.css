@@ -1,0 +1,104 @@
+body {
+	width: 100%;
+	background: url(../images/bg.jpg) no-repeat bottom center;
+	background-size: cover;
+	overflow: hidden;
+}
+.tvlogo {
+	position: absolute;
+	width: 40%;
+	top: 12px;
+	left: 8px;
+	z-index: 0;
+}
+.container {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 6%;
+}
+.logo {
+	width: 90%;
+	margin: 13% auto 3%;
+}
+.shake {
+	position: relative;
+	width: 62%;
+	margin: 0 auto;
+}
+.shake .btn-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.shake .btn-box a {
+	display: block;
+	text-align: center;
+	color: #FFF;
+	font-size: 15px;
+	text-decoration: underline;
+	margin-bottom: 5%;
+}
+.shake .btn-box .btn-join {
+	width: 68%;
+	margin: 12% auto 8%;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	z-index: 1000;
+}
+footer #btn-join {
+	width: 70%;
+	height: 80px;
+	line-height: 80px;
+	margin: 0 auto 2%;
+	background: url(../images/join.png) no-repeat;
+	background-size: 100% auto;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #e0707a;
+}
+footer #div_subscribe_area {
+	width: 100%;
+	overflow: hidden;
+}
+footer .copyright {
+	position: static;
+	margin-bottom: 3px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 13px;
+	color: #FFF;
+	opacity: 1;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	.shake {
+		position: relative;
+		width: 55%;
+		margin: 0 auto;
+	}
+	.logo {
+		width: 82%;
+		margin: 10% auto 3%;
+	}
+}
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation:portrait) {
+	.rule-con {
+		height: 60%;
+	}
+}

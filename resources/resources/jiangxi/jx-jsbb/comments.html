@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>经视播报</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="css/comments.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+</head>
+<body>
+<div class="main" id="main">
+    <section class="nav">
+       <a class="back-index" href="gift.html" data-collect="true"
+       data-collect-flag="gz-live-comments-top-back"
+       data-collect-desc="返回置顶"></a>
+       <div class="vote-area">
+	      <h2></h2>
+	      <!--支持-->
+       	  <div id="sup" class="support none"></div>
+       	  <!--支持率-->
+	      <div id="progress" class="progress none"></div>
+       </div>
+    </section>
+    <div class="com-head">
+    	<h3>看看大家的评论</h3>
+    	<span id="com-topic"></span>
+    </div>
+    <ul id="sx-ul">
+    	<span id="top-comment"></span>
+    	<span class="nor-comment" id="nor-comment"></span>
+    </ul>
+    <div class="spinner none lodd" id="mallSpinner" >
+			<div class="spinner-wrapper">
+				<div class="spinner-container container1">
+					<div class="circle1"></div>
+					<div class="circle2"></div>
+					<div class="circle3"></div>
+					<div class="circle4"></div>
+				</div>
+				<div class="spinner-container container2">
+					<div class="circle1"></div>
+					<div class="circle2"></div>
+					<div class="circle3"></div>
+					<div class="circle4"></div>
+				</div>
+				<div class="spinner-container container3">
+					<div class="circle1"></div>
+					<div class="circle2"></div>
+					<div class="circle3"></div>
+					<div class="circle4"></div>
+				</div>
+			</div>
+	</div>
+    <footer>
+        <input type="text" id="comments-info"  placeholder="发表您的精彩评论吧"/>
+        <button type="submit" id="send" value="发送" data-collect="true"
+               data-collect-flag="jx-jsbb-comments-send"
+               data-collect-desc="发送">发送</button>
+    </footer>
+    <a class="top-back none" data-collect="true"
+       data-collect-flag="jx-jsbb-comments-top-back"
+       data-collect-desc="返回置顶"><label>返回</label></a>
+</div>
+
+	<script src="js/config.js"></script>	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	
+	
+	<script src="js/app/dialog.js"></script>
+	<script src="js/app/comments.js"></script>
+	
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

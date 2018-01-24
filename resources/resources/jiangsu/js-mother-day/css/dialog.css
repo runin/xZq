@@ -1,0 +1,229 @@
+
+.modal {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(97,11,38,0.5);
+	z-index: 100;
+	color: #fff370;
+	text-align: left;
+}
+.modal .dialog{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.dialog .btn-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/close.png) no-repeat;
+	background-size:16px ;
+}
+.modal-guide{
+	background: url(../images/guide-bg.jpg) no-repeat center;
+	background-size: 100% 100%;
+	
+}
+.guide-dialog{
+	background: url(../images/guide-tip.png) no-repeat center;
+	background-size:100% 100%;
+	padding: 26px;
+	font-size: 15px;
+	color: #fff;
+}
+.guide-dialog p{
+	margin: 10px;
+}
+.guide-dialog .btn-try{
+	width: 66%;
+	background: #ffebb0;
+	color: #fd1566;
+	font-size: 17px;
+	margin-top: 20px;
+}
+.rule-dialog{
+	background: url(../images/rule_bg.png) no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+	
+}
+.rule-dialog h2{
+	padding-top: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+.rule-dialog .content{
+	padding: 10px 20px;	
+	text-align: left;
+	font-size: 14px;
+}
+.rule-dialog .rule-con{
+	height: 100%;
+	overflow: auto;
+}
+.lottery-dialog{
+	background: url(../images/rule_bg.png) no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+	text-align: center;
+}
+.not-lott{
+	padding-top: 30px;
+	width: 100%;
+	height: 100%;
+	
+	font-size: 16px;
+}
+.lott h1,.not-lott h1{
+	font-size: 22px;
+	line-height: 28px;
+}
+.not-lott img{
+	width: 34%;
+	margin: 20px;
+}
+.lott{
+	padding: 20px 0px;
+}
+.lott h2{
+	font-size: 13px;
+}
+.lott img{
+	width: 90%;
+	margin: 20px auto 10px;
+}
+.lott .btn{
+	display: block;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+	border-radius: 8px;
+	background: #fff;
+	color: #ff3168;
+}
+
+/*加载按钮 -s*/
+.loader{
+    margin: 0 auto;
+    width: 72px;
+}
+.loader span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background: #F26C0D;
+    border-radius: 50px;
+    margin: 0 2px;
+    -webkit-animation: loader 1s infinite alternate;
+    -moz-animation: loader 1s infinite alternate;
+}
+.loader span:nth-of-type(2) {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+.loader span:nth-of-type(3) {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+}
+.loader span:nth-of-type(4) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+.loader span:nth-of-type(5) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+}
+@-webkit-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+@-moz-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	
+    .guide-dialog{
+		padding:36px 20px 0px!important;
+	}
+	.lott{
+		padding: 10px 0px;
+	}
+	.lott img{
+		width: 78%;
+		margin: 10px auto 0px;
+	}
+	.lott .btn{
+		height: 36px;
+		line-height: 36px;
+	}
+	.not-lott img{
+		margin: 10px;
+	}
+	.not-lott{
+	    padding-top: 18px;
+    }
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	
+	.lott img{
+		margin: 10px auto 6px;
+	}
+}
+
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.lott img{
+		margin: 10px auto 6px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

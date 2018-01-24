@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>帮帮团</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/baoliao.css" />
+</head>
+<body>
+	<div class="main">
+		<div class="logo box-shadow box-radius"></div>
+		<div class="form-group">
+			<div class="form-title"></div>
+			<div class="form-item">
+				<label>请填写曝料内容：</label>
+				<textarea class="content" id="content" placeholder="10-200字以内"></textarea>
+				<div class="img-ctrl" id="img-ctrl">
+					<!-- <a href="#" class="icon btn-preview" id="btn-preview"></a> -->
+					<a href="#" class="icon btn-upload" id="btn-upload" data-collect="true" data-collect-flag="fj-group-baoliao-upload-btn" data-collect-desc="曝料页面 上传图片按钮"></a>
+				</div>
+				<form id="upload-form" class="upload-form" enctype="multipart/form-data" method="post" action="http://test.holdfun.cn/portal/fileupload/image">
+				    <input type="file" class="input-file-upload" id="input-file-upload" onchange="fileSelected();" accept="image/*" capture>
+				</form>
+			</div>
+			<div class="form-item">
+				<label>请您留下联系电话：</label>
+				<input type="number" id="phone" class="phone" />
+			</div>
+			<a href="#" data-collect="true"
+			data-collect-flag="fj-group-baoliao-submit-btn"
+			data-collect-desc="曝料页面提交线索" class="btn btn-submit" id="btn-submit">提交线索</a>
+		</div>
+		<a href="#" data-collect="true"
+			data-collect-flag="fj-group-baoliao_index-btn"
+			data-collect-desc="曝料页面返回首页" class="btn-back-simple">返回首页</a>
+	</div>
+	
+	<div class="copyright">页面由福建综合频道提供Powered by holdfun.cn</div>
+	
+	<script src="js/config.js"></script>
+<!-- 打素材时如下代码请删掉 -->
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+<!-- 压缩后的plugins.min.js -->
+<!-- <script src="./js/plugins/plugins.min.js"></script> -->
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	
+<!-- 打素材时如下代码请删掉 -->
+	<script src="./js/app/baoliao.js"></script>
+<!-- 压缩后的index.min.js -->
+<!-- 	<script src="./js/app/baoliao.min.js"></script> -->
+
+	
+</body>
+</html>

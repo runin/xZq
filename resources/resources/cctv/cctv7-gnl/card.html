@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>过年了</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/make.css">
+</head>
+<body class="error">
+<section class="card-section">
+	<div class="card">
+		<img id="hk" src="images/card/hk1.jpg" />
+	    <section id="card-img" class="card-img">
+	    	<img class="card-bg" src="images/card-bg.png" />
+	    	<div class="upload-box">
+		        <img class="push_img" src="images/default-head.png" alt="" />
+	        </div>
+	    </section>
+	    <section class="card-dia">
+	    	<div class="dia">
+	    		<label class="head_img"><img src="images/default-head.png""/></label>
+	    		<div class="card-word  info-box word-wrapper none">
+	    			<textarea class="zfy" placeholder="快输入您的祝福吧~"></textarea>
+	    		</div>
+	    		<section class="card-voice info-box voice-show none">
+			    	<a href="javascript:void(0);" id="btn-play" class="btn-play">
+						<span class="icon-sound"></span>
+						<span class="timer"></span>
+						<span class="focus"></span>
+					</a>
+			    </section>
+	    	</div>
+			<a class="btn none" id="ok" data-collect="true"
+			   data-collect-flag="make-ok" data-collect-desc="进入分享页" >送给她/他</a>
+			<a class="btn none" id="wyzhk" data-collect="true"
+			   data-collect-flag="make-wyzhk" data-collect-desc="返回贺卡模板页" >生成专属祝福</a>
+		</section>
+		<div class="copyright"></div>
+	</div>
+</section>
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.selector.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/weixinapi.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/sha1.min.js"></script>
+
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo_share.js"></script>
+<script src="js/app/voice.js"></script>
+<script src="js/app/dialog.js"></script>
+<script src="js/app/card.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

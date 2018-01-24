@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" > 
+		<title>素材开发文档</title>
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		
+		<link rel="stylesheet" type="text/css" href="./css/SyntaxHighlighter/shCoreDefault.css"/>
+
+
+	</head>
+	<body>
+		<header>
+			<section class="header-content">
+				<a href="./index.html" class="logo">
+					<img src="./images/logo.png" title="新掌趣" alt="新掌趣" />
+				</a>
+			</section>
+		</header>
+		<section class="main">
+			<nav>
+				<ul class="nav-list">
+					<li>
+						<h2>素材基础</h2>
+						<ul>
+							<li><a href="index.html">文档结构</a></li>
+							<li><a href="core.html">基本功能</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>公共组件</h2>
+						<ul>
+							<li><a href="reserve.html">预约</a></li>
+							<li><a href="subscribe.html">一键关注</a></li>
+							<li><a href="barrage.html">弹幕组件</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>工具方法</h2>
+						<ul>
+							<li><a href="date.html">日期</a></li>
+							<li><a href="string.html">URL处理</a></li>
+							<li class="active"><a href="countDown.html">倒计时</a></li>
+							<li><a href="tips.html">Tips(替代alert)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<section class="content-wrapper">
+				<section class="content">
+					<section class="content-header">
+						<h1>倒计时</h1>
+						<p>最后更新时间：2015/7/8 15:00	更新人：陈智博<a class="float-right" href="mailto:bobchen@holdfun.cn">报错</a></p>
+					</section>
+					<section class="content-detail">
+						
+						<pre class="brush: js;">
+// 第一种
+(function($) {
+	$.fn.progress = function(options) {
+		var defaultVal = { 
+			// 存放结束时间
+			eAttr : 'data-etime',
+			sAttr : 'data-stime', // 存放开始时间
+			stpl : '%H%:%M%:%S%', // 还有...开始
+			wTime : 500, // 以500毫秒为单位进行演算
+			cTime : new Date().getTime(),
+			callback: null
+		};
+		var s = $.extend(defaultVal, options);
+		window.progressTimeInterval = 0;
+		var vthis = $(this);
+		var width = $(window).width();
+		var runTime = function() {
+			s.cTime += s.wTime;
+			vthis.each(function() {
+				var nthis = $(this);
+				var sorgT = parseInt(nthis.attr(s.sAttr));
+				var eorgT = parseInt(nthis.attr(s.eAttr));
+				var porgT = parseInt(nthis.attr(s.pAttr));
+				var sT = isNaN(sorgT) ? 0 : sorgT - s.cTime;
+				var eT = isNaN(eorgT) ? 0 : eorgT - s.cTime;
+				var showTime = function(rT, showTpl) {
+					var s_ = Math.round((rT % 60000) / s.wTime);
+					s_ = dateNum(Math.min(Math.floor(s_ / 1000 * s.wTime), 59));
+					var m_ = dateNum(Math.floor((rT % 3600000) / 60000));
+					var h_ = dateNum(Math.floor((rT % 86400000) / 3600000));
+					var d_ = dateNum(Math.floor(rT / 86400000));
+					nthis.attr('data-timestr', showTpl.replace(/%S%/, s_).replace(/%M%/, m_).replace(/%H%/, h_).replace(/%D%/, d_));
+				};
+				
+				var state = 0;
+				if (sT > 0) {// 即将开始
+					state = 1;
+					showTime(sT, s.stpl);
+				} else if (eT > 0) {//正在进行
+					state = 2;
+					if (eT > 0 && eT <= answer_delaytimer_zone) {
+						H.answer.LIMITTIMEFALSE_CLS = false;
+					} else {
+						H.answer.LIMITTIMEFALSE_CLS = true;
+					}
+				} else {// 比赛结束
+					state = 3;
+				}
+				s.callback && s.callback(state);
+			});
+		};
+		
+		runTime();
+		window.progressTimeInterval = setInterval(function() {
+			runTime();
+		}, s.wTime);
+	};
+})(Zepto);
+
+// 第二种
+(function($) {
+    $.fn.countdown = function(options) {
+        $.fn.countdown.defaultVal = {
+            eAttr : 'data-etime',
+            sAttr : 'data-stime', // 存放开始时间
+            sysTime : new Date().getTime(),	// 当前服务器时间，默认为客户端时间
+            wTime : 500, 		  // 以500毫秒为单位递增
+            stpl : '%H%:%M%:%S%', // 还有...开始
+            etpl : '%H%:%M%:%S%', // 还有...结束
+            otpl : '已结束', 		  // 结束显示的文本模版
+            callback: function() {}
+        };
+        var opts = $.extend({}, $.fn.countdown.defaultVal, options),
+            vthis = $(this),
+            serverTime = opts.sysTime;
+
+        var runTime = function(time) {
+            serverTime += time ? time : 0;	// 服务器时间
+            vthis.each(function() {
+                var nthis = $(this),
+                    state = 1,
+                    sorgT = parseInt(nthis.attr(opts.sAttr)),
+                    eorgT = parseInt(nthis.attr(opts.eAttr)),
+                    sT = isNaN(sorgT) ? 0 : sorgT - serverTime,
+                    eT = isNaN(eorgT) ? 0 : eorgT - serverTime;
+
+                var showTime = function(rT, showTpl) {
+                    var s_ = Math.round((rT % 60000) / opts.wTime);
+                    s_ = dateNum(Math.min(Math.floor(s_ / 1000 * opts.wTime), 59));
+                    var m_ = dateNum(Math.floor((rT % 3600000) / 60000));
+                    var h_ = dateNum(Math.floor((rT % 86400000) / 3600000));
+                    var d_ = dateNum(Math.floor(rT / 86400000));
+                    nthis.html(showTpl.replace(/%S%/, s_).replace(/%M%/, m_).replace(/%H%/, h_).replace(/%D%/, d_));
+                };
+
+                if (sT > 0) {
+                    // 还未开始
+                    state = 1;
+                    showTime(sT, opts.stpl);
+                } else if (eT > 0) {
+                    // 即将结束
+                    state = 2;
+                    showTime(eT, opts.etpl);
+                } else {
+                    // 已结束
+                    state = 3;
+                    nthis.html(opts.otpl);
+                }
+                opts.callback && opts.callback(state);
+            });
+        };
+
+        runTime();
+        setInterval(function() {
+            runTime(opts.wTime);
+        }, opts.wTime);
+    };
+})(Zepto);
+						</pre>
+
+					</section>
+
+				</section>
+			</section>
+
+		</section>
+
+		<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shCore.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shBrushXml.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shBrushJScript.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+	</body>
+</html>
+

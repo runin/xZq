@@ -1,0 +1,342 @@
+body {
+	background-size: 360px auto;
+	padding-bottom: 15px;
+}
+a,a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.main {
+	margin: 0 auto;
+	max-width: 360px;
+	padding: 155px 0 0;
+	color: #fff;
+	/* background: rgba(105, 184, 201, 0.2); */
+	overflow-x: hidden;
+}
+
+.weather {
+    margin: 0 auto 42px;
+    text-align: right;
+    height: 45px;
+    color: #fff;
+    position: relative;
+}
+.weather img {
+    max-width: 55px;  
+    max-height: 45px;
+	
+    position: absolute;
+    top: 0;
+    right: 76px;
+}
+.weather .date {
+	font-size: 14px;
+}
+.weather .temp {
+	font-size: 18px;
+}
+.weather p {
+    padding-right: 145px;
+    line-height: 24px;
+}
+
+.user-info {
+    font-size: 15px;
+}
+.user-info a {
+	display: block;
+	padding: 12px 0px 10px 12px;
+	height: 38px;
+	line-height: 38px;
+	position: relative;
+	border-bottom: 1px solid #f04040;
+}
+.user-info a:before {
+	content: '';
+	background: url(http://yao.holdfun.cn/portal/resources/portal/images/icons.png) no-repeat -80px -1px;
+	background-size: 240px auto;
+	width: 38px;
+	height: 38px;
+	float: left;
+	margin-right: 15px;
+	margin-top: 0px;
+}
+
+.user-info strong {
+    margin-right: 20px;
+}
+.user-info label, .user-info span {
+	cursor: pointer;
+}
+.user-info .unread {
+    background: #FFD211;
+	
+    border-radius: 10px;
+    font-size: 12px;
+    position: absolute;
+    left: 36px;
+    top: 5px;
+    height: 13px;
+    width: 13px;
+    line-height: 12px;
+}
+.user-info .jifen-exchange {
+	color: #ff0;
+	float: right;
+	margin-right: 45px;
+}
+.main-item {
+	font-size: 15px;
+	position: relative;
+	border-bottom: 1px solid #F04040;
+	cursor: pointer;
+}
+.main-item.hover {
+	background-color: #DB3535;
+}
+.main-item .item-content.scale {
+    -webkit-animation-name: vertical-scale;
+    -webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+}
+.main-item .item-content:before,
+.main-item:after,
+.user-info a:after {
+	content: '';
+	float: left;
+	display: block;
+	background: url(http://yao.holdfun.cn/portal/resources/portal/images/icons2.png) no-repeat 0 0;
+	background-size: 170px auto;
+}
+.main-item:after,
+.user-info a:after  {
+	float: right;
+	width: 10px;
+	height: 20px;
+	background-position: 0px -46px;
+	margin-right: 12px;
+	margin-top: -73px;
+}
+.user-info a:after {
+    margin-top: 0;
+	
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.main-item p {
+    margin-left: 70px;
+    color: #ecebeb;
+    font-size: 12px;
+    line-height: 25px;
+}
+.main-item p.large {
+    font-size: 18px;
+	
+}
+.main-item .to-menu {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+.now-playing .item-content {
+    padding: 42px 12px 36px;
+	
+}
+.now-playing .item-content:before {
+	width: 54px;
+	height: 40px;
+	margin-top: 5px;
+}
+
+.yao .item-content {
+    min-height: 60px;
+	
+    padding: 38px 12px 30px;
+}
+.yao .item-content:before {
+	width: 55px;
+	height: 60px;
+	background-position: -112px 0px;
+	margin-top: -4px;
+}
+.yao p.large {
+    font-size: 24px;
+	
+    color: #f0ff08;
+    margin-bottom: 5px;
+}
+
+.event .item-content {
+	padding: 28px 12px 25px;
+}
+.event .item-content:before {
+	content: '';
+	display: none;
+}
+.event .item-content img {
+	max-width: 55px;
+	margin-top: 10px;
+	float: left;
+	display: block;
+}
+
+.event:after {
+    margin-top: -73px;
+	
+}
+.event p.large {
+    line-height: 25px;
+	
+}
+
+h2.label-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 16px 0 13px 4px;
+}
+
+.hudong {
+    margin-bottom: 20px;
+}
+.hudong li {
+    margin-bottom: 10px;
+    position: relative;
+    height: 80px;
+    padding-top: 8px;
+}
+.hudong li:before {
+	content: '';
+	display: block;
+	width: 91px;
+	height: 88px;
+	float: left;
+	margin-right: 10px;
+	margin-top: -8px;
+}
+.hudong li.hd-yao:before {
+	background: url(http://yao.holdfun.cn/portal/resources/portal/images/main/jm_2.png) no-repeat 0 0;
+	background-size: 91px 88px;
+}
+.hudong li.hd-tp:before {
+	background: url(http://yao.holdfun.cn/portal/resources/portal/images/main/jm_1.png) no-repeat 0 0;
+	background-size: 91px 88px;
+}
+.hudong li .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.hudong li p {
+    color: #ecebeb;
+    font-size: 15px;
+}
+.hudong li p.jm {
+	font-size: 12px;
+}
+.hudong li span.tip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.23);
+    line-height: 20px;
+    font-size: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #fff;
+    text-align: center;
+}
+.hudong li p.strong {
+    color: #fff;
+    font-size: 20px;
+    line-height: 32px;
+}
+.hudong li p.yellow {
+	color: #ffff00;
+}
+.hudong li.hd-tp p.strong {
+	font-size: 18px;
+	line-height: 42px;
+}
+.jiemu {
+    margin-bottom: -10px;
+    padding: 0 10px;
+}
+.jiemu ul {
+    margin-right: -18px;
+	
+}
+.jiemu li {
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    max-height: 150px;
+}
+
+.jiemu li img {
+    max-width: 100%;
+    max-height: 123px;
+}
+.jiemu li:first-child img {
+    max-height: 285px;
+	
+}
+.jiemu li a.img {
+	display: block;
+	overflow: hidden;
+}
+.jiemu li a.title {
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #797878;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    top: -25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+.jiemu li p {
+    margin-top: -24px;
+    height: 22px;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+@-webkit-keyframes vertical-scale {
+	0% {
+    	-webkit-transform: rotateX(0deg);
+    }
+    18% {
+    	-webkit-transform: rotateX(360deg);
+    }
+    100% {
+    	-webkit-transform: rotateX(360deg);
+    }
+}
+
+.weather-animation {
+    -webkit-animation-name:weather-ani;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-iteration-count:1;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: both;
+}
+       
+@-webkit-keyframes weather-ani{
+    0%, 20%{-webkit-transform: scale(0);}
+    100% {-webkit-transform: scale(1);}
+}

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>新闻眼</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+	<div class="main" id="main">
+		
+		<div id="answer" class="red-env content-items">
+			<dl></dl>
+			<a href="#" data-collect="true"
+				   data-collect-flag="js-eyes-news-index-jifen-btn"
+				   data-collect-desc="新闻眼日常版答题提交" class="btn-back btn-click" id="btn-click">提 交</a>
+			<div class="copyright"></div>
+		</div>
+		<section id="count-down" class="count-down content-items none">
+			<div class="red-env-open">
+				<section id="wrapper">
+					<div class="item">
+						<div class="countdown" data-stime="" data-etime=""></div>
+					</div>
+				</section>
+			</div>
+			<a href="index.html" data-collect="true"
+			data-collect-flag="js-eyes-news-baoliao_index-btn"
+			data-collect-desc="爆料页面返回首页" class="btn-back-simple">返回</a>
+		</section>
+
+	</div>
+
+
+
+	<script src="js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<!-- plugins.min.js
+        <script src="./js/plugins.min.js"></script>-->
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+
+
+	<!-- index.min.js-->
+	<script src="js/plugins/lottery.min.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/lottery.js"></script>
+	<!--<script src="./js/app/quizinfo.js"></script> 测试数据-->
+
+	<!--<script src="./js/answer.min.js"></script>-->
+
+</body>
+</html>

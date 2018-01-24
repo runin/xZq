@@ -1,0 +1,443 @@
+.dialog {
+	position:absolute;
+	color:#D6305A;
+	border-radius:6px;
+	z-index:1000;
+	overflow:hidden;
+}
+.dialog-inner {
+	position:absolute;
+	z-index:1;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	width:100%;
+	height:100%;
+	-webkit-transform:translateZ(0);
+	transform:translateZ(0);
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	user-select:none;
+	-webkit-text-size-adjust:none;
+	text-size-adjust:none;
+}
+.modal{
+	position: absolute;
+	top:0px;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+}
+.btn-close {
+	position:absolute;
+	background:#fff url(../images/index-rule-close.png) no-repeat center;
+	background-size:50% auto;
+	display:block;
+	width:28px;
+	height:28px;
+	z-index:10000;
+	border-radius: 50%;
+	right: 6%;
+	top:6%;
+}
+.back .btn-close{
+	right: 6%;
+	top:2%;
+}
+.btn-red{
+	display: inline-block;
+	padding: 6px 20px;
+	background:#b00000;
+	border-radius: 6px;
+	font-size: 18px;
+	color: rgba(255,186,19,0.8);
+}
+
+.modal:before {
+	content:'';
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.6);
+	z-index:100;
+}
+
+#rule-dialog .btn-close {
+	background:url(../images/index-rule-close.png)  center no-repeat;
+	background-size:100% auto;
+	width:20px;
+	height:20px;
+	right: 14px!important;
+  	top: 14px!important;
+}
+.rule-dialog {
+	color:#c97600;
+	height: 70%!important;
+	top:15%!important;	
+}
+.rule-dialog h2 {
+	display: block;
+	height:52px;
+	line-height:32px;
+	text-align:center;
+	font-size:17px;
+	padding-top: 20px;
+}
+.rule-dialog .content {
+	position:relative;
+	margin:0 auto;
+	background:url(../images/index-rule.png) top center no-repeat;
+	background-size:100% 100%;
+	height: 100%;
+	width: 100%;
+}
+
+.rule-dialog .rule {
+	height: 80%;
+	font-size:14px;
+	line-height:24px;
+	overflow-y:auto;
+	margin-top:0;
+	padding:0 20px ;
+	word-wrap: break-word;
+}
+.rule-dialog p {
+	line-height:22px;
+}
+
+
+#fudai-dialog .btn-close{
+	display:none;
+}
+#fudai-dialog i {
+	position: absolute;
+	display: block;
+	width: 110px;
+	height: 110px;
+	line-height: 110px;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 100%;
+	background-color: #ffaa3b;
+	font-style: normal;
+	margin: 90% auto 0;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.3);
+	bottom: 18%;
+	left: 50%;
+	margin-left: -55px;
+}
+#fudai-dialog .fudai {
+	position:absolute;
+	top:9%;
+	left:5%;
+	width:90%;
+	height:82%;
+	padding:10% 6% 0;
+	z-index:199;
+	text-align:center;
+	border-radius:8px;
+}
+#fudai-dialog .fudai p {
+	color: #ffe613;
+	font-size: 15px;
+	text-align: center;
+	width: 100%;
+}
+#fudai-dialog .fudai-box{
+	height: 84%;
+	padding-top: 20%;
+	background:url(../images/redbag.jpg) no-repeat;
+	background-size:100% 100%;
+	border-radius: 8px;
+	position: relative;
+}
+#fudai-dialog .fudai p.fudai-tip{
+	position: absolute;
+	width: 80%;
+	height: 36px;
+	line-height: 36px;
+	bottom: 30px;
+	background: #d32825;
+	color: rgba(255,255,255,0.7);
+	font-size: 16px;
+	left: 10%;
+	border-radius: 6px;
+	
+}
+#fudai-dialog .fudai-round {
+	position:absolute;
+	top:30%;
+	left:0%;
+	width:100%;
+	height:40%;
+	background:url(../images/shine.png) no-repeat;
+	background-size:100% auto;
+	z-index:100;
+	-webkit-animation-name:fudai-zoom;
+	animation-name:fudai-zoom;
+	-webkit-animation-delay:0.5s;
+	animation-delay:0.5s;
+	-webkit-animation-duration:1s;
+	animation-duration:1s;
+	-webkit-animation-fill-mode:both;
+	animation-fill-mode:both;
+}
+#guide-dialog {
+	overflow: hidden;
+}
+#guide-dialog:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.8);
+	z-index: 100;
+}
+.guide-dialog {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: transparent;
+}
+.guide-dialog .content {
+	position: absolute;
+	width: 86%;
+	height: 40%;
+	top: 20%;
+	left: 7%;
+	border-radius: 6px;
+	border: 8px solid #ff7200;
+	background: #ffffee url(../images/bulider.png)no-repeat bottom center;
+	background-size: 100%;
+}
+.guide-dialog .tips {
+	width: 100%;
+	height: 100%;
+	padding: 20px 20px 30px;
+}
+.guide-dialog .tips p {
+	color: #d15e01;
+	font-size: 13px;
+	line-height: 38px;
+	border-bottom: 1px solid #494949;
+}
+#guide-dialog a {
+	position: absolute;
+	width: 50%;
+	bottom: 20%;
+	left: 25%;
+}
+@-webkit-keyframes fudai-zoom {
+	0% {
+	opacity:0.4;
+	-webkit-transform:scale(0);
+}
+100% {
+	opacity:1;
+	-webkit-transform:scale(1);
+}
+}@keyframes fudai-zoom {
+	0% {
+	opacity:0.4;
+	transform:scale(0);
+}
+100% {
+	opacity:1;
+	transform:scale(1);
+}
+}
+
+.wrong-dialog{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+	padding:50% 0 30%;
+}
+
+.wrong-dialog .wrong{
+	width: 86%;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+.wrong-dialog .wrong-box{
+	width: 100%;
+	height: 76%;
+	margin: 0 auto;
+	background: url(../images/wrong-bg.png)no-repeat;
+	background-size:100% 100%;
+	padding: 16% 8% 5%;
+	position: relative;
+	
+}
+.wrong-dialog .wrong-box h1{
+	font-size: 20px;
+	color: #ffea00;
+}
+.wrong-dialog .wrong-box p{
+	font-size: 12px;
+	height: 50px;
+	line-height: 30px;
+	color: #ffd0cf;
+	padding: 10px 0px ;
+	text-align: center;
+}
+.wrong-dialog .wrong-box .btn-goOn{
+	margin-top: 30px;
+}
+.lottery-dialog .content {
+	width:100%;
+	height:100%;
+	border-radius:6px;
+	position:relative;
+}
+.lottery-dialog .back {
+	height:100%;
+	width:90%;
+	margin:0 auto;
+	background: url(../images/redbag.jpg) no-repeat ;
+	background-size: 100%;
+	border:1px solid #fff608;
+	border-radius: 6px;
+	padding: 10% 0;
+	text-align: center;
+}
+.back h1 {
+	color:#fff608;
+	font-size:20px;
+	text-align:center;
+}
+
+.back p {
+	color:rgba(255,255,255,0.8);
+	font-size:12px;
+	text-align: center;
+}
+.modal .btn-close {
+	background:transparent url(../images/close-btn.png) no-repeat center;
+	background-size:60% auto ;
+
+}
+.award-none .sad-box{
+	width: 40%;
+	padding: 16px;
+	background: #fff113;
+	border-radius: 50%;
+	text-align: center;
+	margin: 16px auto 26px;
+}
+.award-none .sad-box img{
+	display: block;
+	width: 100%;
+}
+.award-win .award-img{
+	padding: 20px;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.award-win .btn-red{
+	width: 46%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	
+  	.guide-dialog .content {
+		height: 46%;
+		top:20%;
+	}
+	.guide-dialog .tips {
+		padding: 14px;
+	}
+	#guide-dialog a {
+	  bottom: 10%;
+	}
+	.rule-dialog .rule {
+	  height: 74%;
+	}
+	.lottery-dialog .back{
+		height: 100%;
+		padding: 5% 0;
+	}
+	.award-win .award-img{
+		width: 46%;
+		padding: 10px;
+	}
+	.award-none .sad-box{
+		margin: 10px auto 16px;
+	}
+	.wrong-dialog .wrong-box {
+		height: 130%;
+		margin-top: -20%;
+	}
+	
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.wrong-dialog .wrong-box .btn-goOn {
+	    margin-top: 20px;
+	}
+}
+/* huawei honor-6 */
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.wrong-dialog .wrong-box{
+		height: 86%;
+		
+	}
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.wrong-dialog .wrong-box {
+	  padding: 22% 8% 5%;
+	}
+	.award-none .sad-box{
+		margin: 40px auto 56px;
+	}
+}

@@ -1,0 +1,408 @@
+body {
+	background: url("../images/content-bg.jpg") no-repeat #163262;
+	background-size: cover;
+  color: #FFF;
+}
+img {
+  max-width: 100%;
+}
+header {
+  display: block;
+  width: 100%;
+  /*margin: 0 auto 12%;*/
+  overflow: auto;
+}
+header .host-box {
+  width: 56%;
+  float: right;
+}
+header .host-box .heart-beat {
+  position: relative;
+  margin-top: 20px;
+  left: -10px;
+}
+header .host-box img {
+  display: inline-block;
+  width: 88%;
+  max-width: 80%;
+}
+header .host-box .heart-beat .heart {
+  width: 30px;
+  height: 30px;
+  background: url(../images/love.png) no-repeat;
+  background-size: 100% 100%;
+  animation: pound .5s infinite alternate;
+  -webkit-animation: pound .5s infinite alternate;
+}
+/*header .host-box .heart-beat:before {
+  content: '';
+  display: inline-block;
+  background: url(../images/love.png) no-repeat;
+  background-size: 100% 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -2px;
+  left: -25px;
+  animation: pound .5s infinite alternate;
+  -webkit-animation: pound .5s infinite alternate;
+}*/
+@keyframes pound {
+    50% { transform: scale(1.4); }
+}
+@-webkit-keyframes pound {
+    50% { -webkit-transform: scale(1.4); }
+}
+header .host-box .host-name {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 10px 0 3px;
+    text-shadow: 0 0 2px rgba(0,0,0,.8);
+}
+header .host-box .host-intro {
+  width: 96%;
+  font-size: 14px;
+  line-height: 16px;
+    text-shadow: 0 0 2px rgba(0,0,0,.8);
+}
+header .host-box .host-intro span {
+    text-shadow: 0 0 2px rgba(0,0,0,.8);
+}
+header:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 46%;
+  height: 250px;
+  z-index: -1;
+  /*left: -16px;*/
+}
+.main {
+  display: block;
+  text-align: center;
+}
+.main .round1-tit {
+  display: none;
+  width: 80%;
+  margin-bottom: 8px;
+}
+.main .guest-box {
+  text-align: left;
+}
+.main .guest-box ul {
+  margin-left: 6px;
+}
+.main .guest-box ul li {
+  position: relative;
+  float: left;
+  width: 31%;
+  height: 220px;
+  margin: 0 3px;
+  background: url(../images/guest.png) no-repeat center center;
+  background-size: cover;
+  border: 2px solid #FFF;
+  border-image: url(../images/border-bg.jpg) 3 round round;
+  border-radius: 6px;
+}
+.main .guest-box ul li.guest-broke {
+  background: url(../images/guest-broke.png) no-repeat center center;
+  background-size: cover;
+}
+.main .guest-box ul li.guest-broke .guest-content, .main .guest-box ul li.guest-broke .lovebox_open {
+  display: none;
+}
+.main .guest-box ul li .guest-content {
+  position: absolute;
+  width: 100%;
+  background: rgba(0,0,0,.5);
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  font-size: 12px;
+}
+.main .guest-box ul li .guest-content p {
+  padding: 3px;
+  word-break: break-word;
+}
+.main .guest-box ul li .guest-content p span {
+  font-size: 14px;
+  font-weight: bolder;
+}
+  
+.guest-intro * {
+  font-size: 12px !important;
+}
+.main .guest-box ul li .guest-content p:first-child {
+  margin-top: 3px;
+  padding-bottom: 0;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+#div_subscribe_area {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+.copyright {
+  position: static;
+  font-size: 12px;
+  height: 26px;
+  line-height: 13px;
+  color: #74a1ff;
+  opacity: 1;
+}
+.lovebox {
+  position: absolute;
+  display: block;
+  width: 74%;
+  height: 40%;
+  top: 38%;
+  left: 13%;
+}
+.lovebox {
+  background: url(../images/lovebox-open.png) no-repeat;
+  background-size: 100% auto;
+}
+.type2 .lovebox, .type2 p {
+  display: none !important;
+}
+.type2 .tongji-count, .type2 .tongji-count p {
+  display: block !important;
+}
+.guest-box .lovebox_close {
+  background: url(../images/lovebox-close.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.round2 .lovebox {
+  background: url(../images/lovebox-close.png) no-repeat;
+  background-size: 100% auto;
+}
+.round2 .guest-box .lovebox_close {
+  background: url(../images/lovebox-open.png) no-repeat;
+  background-size: 100% auto;
+}
+.lovein_btn {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 24%;
+  background: url(../images/round2-in-btn.png) no-repeat center center;
+  background-size: 100% auto;
+  top: -28%;
+  left: -4px;
+}
+.type2 .lovein_btn {
+  background: url(../images/round2-out-btn.png) no-repeat center center;
+  background-size: 100% auto;
+}
+.guest-box .loveout_btn {
+  background: url(../images/round2-out-btn.png) no-repeat center center;
+  background-size: 100% auto;
+}
+.round1 .main .round1-tit {
+  display: inline-block;
+}
+.round1 .main .lovein_btn {
+  display: none;
+}
+.round2 .main .round1-tit {
+  display: none;
+}
+.round2 .main .guest-box ul {
+  padding-top: 12%;
+}
+.round2 .main .lovein_btn {
+  display: block;
+}
+
+.result .main, .result header {
+  display: none;
+}
+.result .resulting {
+  display: block;
+}
+.resulting {
+  display: none;
+  text-align: center;
+}
+.resulting .circle-text {
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  bottom: 35%;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.resulting .round1-tit {
+  width: 80%;
+  margin-bottom: 8px;
+}
+.resulting .guest-box {
+  text-align: left;
+}
+.resulting .guest-box ul {
+  overflow: hidden;
+  margin-left: 6px;
+  padding: 6% 0 45%;
+}
+.resulting .guest-box ul li {
+  position: relative;
+  float: left;
+  width: 31%;
+  height: 260px;
+  margin: 0 3px;
+  background: url(../images/guest.png) no-repeat center center;
+  background-size: cover;
+  border: 2px solid #FFF;
+  border-image: url(../images/border-bg.jpg) 3 round round;
+  border-radius: 6px;
+}
+.resulting .guest-box ul li.guest-broke {
+  background: url(../images/guest-broke.png) no-repeat center center;
+  background-size: cover;
+}
+.resulting .guest-box ul li.guest-broke .guest-content, .resulting .guest-box ul li.guest-broke .lovebox_open {
+  display: none;
+}
+.resulting .guest-box ul li .guest-content {
+  position: absolute;
+  width: 100%;
+  background: rgba(0,0,0,.5);
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  font-size: 12px;
+}
+.resulting .guest-box ul li .guest-content p {
+  padding: 3px;
+  word-wrap: break-word;
+}
+.resulting .guest-box ul li .guest-content p span {
+  font-size: 14px;
+  font-weight: bolder;
+}
+.resulting .guest-box ul li .guest-content p:first-child {
+  margin-top: 3px;
+  padding-bottom: 0;
+}
+.resulting #gored-btn {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  height: 50px;
+  background: url(../images/gored-btn.png) no-repeat;
+  background-size: 100% auto;
+}
+.resulting .guest-box ul li .tongji {
+  width: 100%;
+  position: relative;
+  bottom: -110%;
+  left: 0;
+  text-align: center;
+}
+.resulting .guest-box ul li .tongji img {
+  max-width: 70%;
+}
+.resulting .guest-box ul li .tongji .tongji-100 {
+  position: relative;
+  bottom: 53%;
+  color: #000;
+  z-index: 999;
+  font-size: 15px;
+  font-weight: bolder;
+  width: 85px;
+  height: 85px;
+}
+.resulting .guest-box ul li .tongji .tongji-count {
+  font-size: 18px;
+  color: #FFF;
+}
+.zzs-copyright {
+  font-size: 12px;
+  line-height: 13px;
+  color: #74a1ff;
+  margin-bottom: 2px;
+}
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1100px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1200px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 570px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  header {
+    margin: 0 auto;
+  }
+  .lovebox {
+    width: 68%;
+    left: 16%;
+  }
+  header .host-box .host-name {
+    margin: 5px 0 3px;
+  }
+  .resulting .guest-box ul li {
+    height: 200px !important;
+  }
+  .resulting #gored-btn {
+    margin: 0 auto;
+  }
+  .resulting .guest-box ul {
+      padding: 3% 0 38%;
+  }
+  .resulting .guest-box ul li .tongji {
+      bottom: -106%;
+  }
+}
+
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (device-aspect-ratio:16/9) and (device-aspect-ratio:16/10) and (device-aspect-ratio:4/3)
+and (-webkit-min-device-pixel-ratio : 0) {
+
+}
+
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+
+}

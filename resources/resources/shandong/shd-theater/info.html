@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>爱家剧场</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/core.css" />
+		<link rel="stylesheet" href="./css/dialog.css" />
+		<link rel="stylesheet" href="./css/info.css" />
+	</head>
+	<body>
+		<section class="countdown none">
+			<span class="countdown-tip"></span>
+			<span class="detail-countdown"></span>
+		</section>
+		<img class="shk-hd" src="./images/shk-hd.png" />
+		<section class="info-box none">
+			<img src="images/pv-head2.png" />
+			<p class="getRed-num">当前在线人数：<label></label></p>
+		</section>
+		<header>
+			<img class="avatar" src="./images/avatar.png">
+			<p class="nickname"></p>
+			<span class="gold-numb"></span>
+			<span class="gold-rank"></span>
+		</header>
+		<div class="rk info-data">
+			<div class="rk-s"><span>我的积分</span><p>0</p></div>
+			<div class="rk-g"><span>今日获得</span><p>0</p></div>
+			<div class="rk-r"><span>今日排行</span><p>0</p></div>
+		</div>
+		<div class="lt info-data">
+			<div class="lt-red"><span>微信红包</span><a id="4" data-collect="true" data-collect-flag="info-detail" data-collect-desc="查看微信红包">0</a></div>
+			<div class="lt-lot"><span>实物</span><a id="1" data-collect="true" data-collect-flag="info-detail" data-collect-desc="查看实物">0</a></div>
+			<div class="lt-card"><span>优惠券</span><a id="7" data-collect="true" data-collect-flag="info-detail" data-collect-desc="查看优惠券">0</a></div>
+		</div>
+		<div class="bottom">
+			<a class="btn-talk" data-collect="true" data-collect-flag="to-talk" data-collect-desc="个人中心-聊天室按钮"></a>
+			<a class="btn-person"></a>
+			<a class="btn-tg" data-collect="true" data-collect-flag="to-tiger" data-collect-desc="个人中心-老虎机按钮"></a>
+		</div>
+
+		<script src="./js/config.js"></script>
+		<script src="./js/plugins/zepto.min.js"></script>
+		<script src="./js/plugins/common.js"></script>
+
+		<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+		<script src="./js/authorize_userinfo.js"></script>
+		
+		<script src="./js/app/dialog.js"></script>
+		<script src="./js/app/info.js"></script>
+		<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	</body>
+</html>

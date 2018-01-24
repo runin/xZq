@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>财富故事</title>
+
+ <link rel="stylesheet" href="./css/reset.css" /> 
+ <link rel="stylesheet" href="./css/core.css" /> 
+ <link rel="stylesheet" href="./css/dialog.css" />
+ <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+	<div class="main-cont">
+		<div class="tvlogo"></div>
+		<a class="rule-bts"  data-collect-flag="hlj-consume-index-rule-btn"  data-collect-desc="首页进入规则页面" id="btn-rule">活动规则</a>
+		<div class="main" id="main">
+			<div class="home-logo">
+				<div class="logo">
+				</div>
+				<div class="index-btn">
+					<a href="#" data-collect="true"
+					   data-collect-flag="hlj-consume-index-vote-btn"
+					   data-collect-desc="进入投票页面" class="btn-begin" id="btn-begin"><img src="./images/index-tip.png" class="index-tip"></a>
+				</div>
+			</div>
+		</div>
+		<div class="follow-box">
+			<div class="showtime">首播时间：<br/>周一至周五19：00时--19:20时</div>
+			<div class="copyright"></div>
+			<div id="div_subscribe_area" class="div_subscribe_area_class"></div>
+		</div>
+	</div>
+
+	<script src="js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js?v=4"></script>
+
+	
+</body>
+</html>

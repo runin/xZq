@@ -1,0 +1,333 @@
+body,
+html {
+    background-image: url(../images/hongbao_bg03.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.headurl {
+    width: 80px;
+    height: 80px;
+    margin: 8% auto 0;
+    border-radius: 100%;
+    background-image: url(../images/icon-avatar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.who-hongbao {
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.who-hongbao p {
+    line-height: 20px;
+}
+
+.who-hongbao h2 {
+    line-height: 20px;
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #999;
+}
+
+.who-hongbao h3 {
+    line-height: 40px;
+    margin: 20px 0 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.who-hongbao h3>label {
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-size: 40px;
+}
+
+.who-hongbao h4 {
+    line-height: 20px;
+    text-align: center;
+    color: #566ca2;
+}
+
+a.btn-a {
+    display: block;
+    width: 55%;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto 0;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #e86960;
+    color: #fedbbb;
+}
+
+.open-time {
+    height: 45px;
+    line-height: 45px;
+    margin: 15px 0 0;
+    padding: 0 15px;
+    border-top: 1px #c0c0c0 solid;
+    border-bottom: 1px #c0c0c0 solid;
+    background-color: #faf6f3;
+    color: #a4a4a4;
+}
+
+.friends-list {
+    margin: 10px 0 0 15px;
+    overflow: hidden;
+}
+
+.friends-list li {
+    position: relative;
+    min-height: 50px;
+    padding: 10px 60px 10px 70px;
+    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+    overflow: hidden;
+    box-sizing: initial
+}
+
+.friends-list li i {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-image: url(../images/icon-avatar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.friends-list li>h2 {
+    line-height: 20px;
+}
+
+.friends-list li>p {
+    line-height: 20px;
+    margin: 5px 0 0;
+    color: #999;
+}
+
+.friends-list li>span {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0;
+    background-image: url(../images/icon_dui.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+/* iPhone4 */
+
+@media screen and (min-device-width:320px) and (max-device-height:500px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio:2) {
+    .headurl {
+        width: 70px;
+        height: 70px;
+    }
+    .who-hongbao p {
+        line-height: 18px;
+        font-size: 14px;
+    }
+    .who-hongbao h2 {
+        line-height: 18px;
+        font-size: 16px;
+    }
+    .who-hongbao h3 {
+        line-height: 36px;
+        font-size: 14px
+    }
+    .who-hongbao h3>label {
+        font-size: 36px;
+    }
+    .who-hongbao h4 {
+        line-height: 18px;
+        font-size: 14px
+    }
+    a.btn-a {
+        height: 36px;
+        line-height: 36px;
+        font-size: 15px
+    }
+    .friends-list li {
+        min-height: 45px;
+        padding: 10px 60px 10px 65px;
+    }
+    .friends-list li i {
+        width: 45px;
+        height: 45px;
+    }
+    .friends-list li>h2 {
+        line-height: 18px;
+        font-size: 15px;
+    }
+    .friends-list li>p {
+        line-height: 18px;
+        font-size: 15px;
+    }
+    .friends-list li>span {
+        width: 25px;
+        height: 25px;
+        margin: -12px 0 0;
+    }
+}
+
+
+/* iPhone5 */
+
+@media screen and (min-device-width: 320px) and (min-device-height: 500px) and (max-device-height: 570px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .headurl {
+        width: 70px;
+        height: 70px;
+    }
+    .who-hongbao p {
+        line-height: 18px;
+        font-size: 14px;
+    }
+    .who-hongbao h2 {
+        line-height: 18px;
+        font-size: 16px;
+    }
+    .who-hongbao h3 {
+        line-height: 36px;
+        font-size: 14px
+    }
+    .who-hongbao h3>label {
+        font-size: 36px;
+    }
+    .who-hongbao h4 {
+        line-height: 18px;
+        font-size: 14px
+    }
+    a.btn-a {
+        height: 36px;
+        line-height: 36px;
+        font-size: 15px
+    }
+    .friends-list li {
+        min-height: 45px;
+        padding: 10px 60px 10px 65px;
+    }
+    .friends-list li i {
+        width: 45px;
+        height: 45px;
+    }
+    .friends-list li>h2 {
+        line-height: 18px;
+        font-size: 15px;
+    }
+    .friends-list li>p {
+        line-height: 18px;
+        font-size: 15px;
+    }
+    .friends-list li>span {
+        width: 25px;
+        height: 25px;
+        margin: -12px 0 0;
+    }
+}
+
+
+/* iPhone6 */
+
+@media screen and (min-device-width: 360px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* huawei honor-6 */
+
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+    .headurl {
+        width: 70px;
+        height: 70px;
+    }
+    .who-hongbao p {
+        line-height: 18px;
+        font-size: 14px;
+    }
+    .who-hongbao h2 {
+        line-height: 18px;
+        font-size: 16px;
+    }
+    .who-hongbao h3 {
+        line-height: 36px;
+        font-size: 14px
+    }
+    .who-hongbao h3>label {
+        font-size: 36px;
+    }
+    .who-hongbao h4 {
+        line-height: 18px;
+        font-size: 14px
+    }
+    a.btn-a {
+        height: 36px;
+        line-height: 36px;
+        font-size: 15px
+    }
+    .friends-list li {
+        min-height: 45px;
+        padding: 10px 60px 10px 65px;
+    }
+    .friends-list li i {
+        width: 45px;
+        height: 45px;
+    }
+    .friends-list li>h2 {
+        line-height: 18px;
+        font-size: 15px;
+    }
+    .friends-list li>p {
+        line-height: 18px;
+        font-size: 15px;
+    }
+    .friends-list li>span {
+        width: 25px;
+        height: 25px;
+        margin: -12px 0 0;
+    }
+}
+
+.over {
+    color: black !important;
+}
+
+.theBest {
+    display: block;
+    float: right;
+    color: #F2CEA5;
+}
+
+#qrcodediv:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#qrcodediv .qrcode-middle {
+    width: 180px;
+    min-height: 180px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -80px;
+    margin-top: -80px;
+    z-index: 99999;
+    text-align: center;
+}
+
+#qrcodediv p {
+    color: white;
+    font-size: 14px;
+}

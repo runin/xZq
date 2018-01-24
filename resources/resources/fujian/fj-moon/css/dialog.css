@@ -1,0 +1,446 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  z-index: 9999;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.modal .btn-close {
+	position: absolute;
+    background:url(../images/close-icon.png) center no-repeat;
+	background-size:40% auto;
+    display: block;
+    width: 35px;
+    height: 35px;
+    z-index: 10000;
+    top:0px;
+    right:0px;
+	border-radius: 50%;
+}
+.dialog {
+  position: absolute;
+  color: #D6305A;
+  border-radius: 6px;
+  z-index: 1000;
+  overflow: hidden;
+
+}
+.dialog-assist{
+	width: 100%;
+	border-radius: 6px;
+	position: relative;	
+	border: 1px solid #c8a75d;
+	border-top: 0px;
+	padding-top: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	margin-top: -2px;
+}
+
+.rule-dialog {
+	position: absolute;
+	color:#fff;
+	width: 84%;
+	height: 70%;
+	left: 8%;
+	top:15%;
+	border: 1px solid #c8a75d;
+	border-radius: 6px;
+}
+.rule-dialog .dialog-assist{
+	border:none
+	background : rgba(87,59,6,0.8);
+	padding: 8% 4%;
+	margin: 0;
+}
+.rule-dialog h1 {
+	color:#fff;
+	text-align:center;
+	font-size:16px;
+	width: 100%;
+	padding-bottom:  10px;
+	margin: 0 auto;
+	border-bottom: 1px solid #c8a75d;
+}
+.rule-dialog .content {
+	position:static;
+	margin:0 auto;
+	width:88%;
+	overflow: hidden;
+	padding: 6% 0 0;
+}
+.rule-dialog .rule {
+	height: 100%;
+	font-size:14px;
+	line-height:24px;
+	overflow-y:auto;
+	color:#FFF;
+}
+.rule-dialog p {
+	line-height:16px;
+}
+.btn-know{
+	display: block;
+	width: 60%;
+	height: 32px;
+	line-height: 32px;
+	color: #8f010f;
+	margin: 14px auto 0;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fdf47b), to(#f5cd0c)); 
+	text-align: center;
+	box-shadow: 0 4px 0px #db9a00;  
+	border-radius: 6px;
+	letter-spacing: 4px;
+}
+.thank-dialog .btn-close,.rule-dialog .btn-close{
+	border-radius: 50%;
+	top: 6px;
+	right: 6px;
+}
+.thank-dialog {
+	position: absolute;
+	color:#fff;
+	width: 82%;
+	height: 66%;
+	left: 9%;
+	top : 17%;
+	padding: 9% 0% 0;
+}
+.thank-dialog h1 {
+	text-align:center;
+	width: 100%;
+}
+.thank-dialog h1 img{
+	display: block;
+	width: 100%;
+}
+@-webkit-keyframes shine {
+    0% {background-position: 130%;}
+    100% {background-position: -50%;}
+}
+.thank-dialog .dialog-assist{
+	padding-bottom: 20px ;
+}
+.thank-dialog .dialog-assist img{
+	display: block;
+	width: 74%;
+	margin: 0 auto 6px;
+}
+.thank-dialog p{
+	color: #c8a75d;
+	font-size: 12px;
+	text-align: center;
+}
+.thank-dialog .btn-close{
+	top: -10px;
+    right: -10px;
+}
+.thank-dialog .btn-crm {
+	display: block;
+	color: #fff;
+	width: 50%;
+	height: 36px;
+	line-height: 34px;
+	margin: 10px auto 0;
+	text-align: center;
+	border: 1px solid #c8a75d;
+	border-radius: 16px;
+}
+.lottery-dialog{
+	overflow: hidden;
+}
+.lottery-dialog .dialog-assist{
+	 padding: 6% 6% 6%;
+	height: auto;
+}
+.lott-title{
+	width: 100%;
+	margin: 0px auto;
+}
+.lott-title img{
+	display: block;
+}
+.lottery-dialog .award-img {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+}
+.lottery-dialog .award-img img {
+   display: block;
+   
+}
+.lottery-dialog .award-info{
+	width: 100%;
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+}
+.lottery-dialog .contact {
+  width: 100%;
+  text-align: center;
+  padding: 6px;
+}
+.lottery-dialog .contact h4{
+	color: #fff;
+	font-size: 11px;
+	text-align: left;
+}
+.lottery-dialog .contact p {
+	width: 100%;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    border-radius: 6px;
+    margin: 4px auto;
+    text-align: left;
+}
+
+.lottery-dialog .contact input {
+	display: inline-block;
+	width: 100%;
+    height: 30px;
+    padding: 2px 10px;
+    color: #4e4e4e;
+    border: none;
+    outline: none;
+    background:#f3f0df;
+    background-size: 100% 100%;
+    font-size: 14px;
+    border-radius: 4px; 
+    border:1px solid #d0ccbc;
+    -webkit-appearance: none;
+    -webkit-text-fill-color:#000;
+    -webkit-opacity:1;
+}
+.lottery-dialog .btn{
+	display: block;
+	width: 60%;
+	letter-spacing: 2px;
+	font-size: 14px;
+	border-radius: 16px;
+	color: #fff;
+	background: #fe952a;
+	text-align: center;
+	padding: 8px 24px;
+	margin: 0px auto;
+}
+.lottery-dialog .contact input:disabled {
+    background:#f3f0df;
+    color: #4e4e4e;
+}
+ 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #4e4e4e;
+}
+.rank-dialog {
+	position: absolute;
+	color:#fff;
+	width: 260px;
+	height: 70%;
+	left: calc((100% - 260px)/2);
+	left: -webkit-calc((100% - 260px)/2);
+	top : 15%;
+	z-index: 99999;
+	
+}
+.rank-dialog .dialog-assist{
+	width: 100%;
+	height: 90%;
+	padding-top: 0;
+}
+.rank-dialog .rank-title{
+	text-align:center;
+	width: 100%;
+}
+.rank-dialog .rank-title img{
+	display: block;
+	width: 100%;
+}
+.rank-dialog h2 {
+	color: #FFF;
+	text-align: center;
+	font-size: 22px;
+	padding: 2% 0;
+	margin-top: 15px;
+}
+.rank-dialog .list {
+	width: 100%;
+	height: 100%;
+	padding: 4% 0;
+}
+
+.rank-dialog h3 {
+	text-align: center;
+	margin: 3px auto;
+	color: #ffffff;
+}
+.rank-dialog h3 .jf {
+	margin-right: 20px;
+
+}
+.rank-dialog .list .content {
+	width: 100% ;
+	height: calc(100% - 70px);
+	height: -webkit-calc(100% - 70px);
+	margin-top: 10px;
+	overflow-y: auto;
+
+}
+.rank-dialog  .btn-close{
+	background: url(../images/rank-close.png) no-repeat center;
+  	background-size: 40% auto;
+  	top: -10px;	
+}
+.rank-dialog .list ul {
+	width: 100%;
+	text-align: center;
+}
+.rank-dialog .list .self{
+	width: 90%;
+	border-bottom: 1px solid #e9d29e;
+	margin: 0 5%;
+	padding-bottom: 6px;
+}
+.rank-dialog .list li ,.rank-dialog .list .self{
+	color: #ebc979;
+}
+.rank-dialog .list span ,.rank-dialog .list .self span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	text-align: right;
+}
+.rank-dialog .list .self .r-avatar{
+	width: 50px;
+	height: 50px;
+}
+.rank-dialog .r-avatar {
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 100%;
+	border: 2px solid #cdae99;
+	overflow: hidden;
+	margin: 2px 0;
+}
+.rank-dialog .r-avatar img {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+}
+.rank-dialog .r-name {
+	width: 30%;
+	margin: 0 2%;
+}
+
+.rank-dialog .r-rank {
+	width: 38%;
+	text-align: left !important;
+	padding-left: 6px;
+	overflow: hidden;
+ 	white-space:nowrap;
+ 	text-overflow: ellipsis;
+}
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+.dialog {
+  padding: 5% 3% 0;
+}
+.lottery-dialog .btn {
+    padding: 4px 20px;
+}
+.lottery-dialog .contact {
+    padding:4px 6px;
+}
+.dialog-assist .contact input {
+	height: 26px;
+	line-height: 26px;
+}
+.dialog-assist .contact p {
+	margin: 2px auto;
+}
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+@media screen and (device-width : 360px) {
+	.dialog {
+	    padding: 5% 6% 0;
+	}
+	.dialog-assist .contact {
+	  padding: 4px 10px;
+	}
+	.dialog-assist .contact input {
+	    height: 26px;
+	    line-height: 26px;
+	}
+	.dialog-assist .contact p {
+	    margin: 2px auto;
+	}
+	.lottery-dialog .btn {
+	    padding: 6px 20px;
+	}
+}
+
+/* huawei honor-6 */
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.dialog {
+	    padding: 5% 6% 0;
+	}
+	.dialog-assist .contact {
+	  padding: 0 10px;
+	}
+	.dialog-assist .contact input {
+	    height: 24px;
+	    line-height: 24px;
+	}
+	.dialog-assist .contact p {
+	    margin: 2px auto;
+	}
+
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+@-webkit-keyframes toggle {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}

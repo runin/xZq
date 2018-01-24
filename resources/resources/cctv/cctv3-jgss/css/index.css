@@ -1,0 +1,276 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+    background: url(../images/bg.jpg) 0 0 no-repeat #EEE56A;
+    background-size: 100% 100%;
+}
+.icon-tvlogo{
+    position: absolute;
+    width: 40%;
+    top: 2%;
+    left: 2%;
+}
+.btn-reserve{
+    background: url(../images/icon-btn-bg.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    width: 10%;
+    padding-left: 3.5%;
+    padding-right: 3%;
+    padding-top: 8%;
+    padding-bottom: 3%;
+    font-size: 10px;
+    color: #e4d0a8!important;
+    line-height: 13px;
+    font-weight: bolder;
+}
+.container {
+	position: relative;
+	width: 100%;
+}
+.container img {
+	display: block;
+	margin: 0 auto;
+}
+.container .icon-slogan {
+    width: 90%;
+    margin: 10% auto 0;
+    -webkit-animation: zoomInDown 1.5s 0.5s 1 ease;
+    -webkit-transform-origin: top;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: visible;
+}
+.container .icon-logo {
+    position: relative;
+    width: 88%;
+    margin: 30% auto 0%;
+    -webkit-animation: zoomIn 2s 1.5s 1 ease;
+    -webkit-transform-origin: bottom;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: visible;
+}
+.btn-rule{
+    display: block;
+    width: 24%;
+    margin: 3% auto 0;
+}
+.btn-go2lottery {
+    position: relative;
+    display: block;
+    width: 50%;
+    margin: 7% auto 0%;
+ }
+.btn-go2lottery img {
+    position: relative;
+    z-index: 1;
+}
+.btn-go2lottery .btn-go {
+    border-radius: 20px;
+}
+.btn-go2lottery .icon-light-top {
+    position: absolute;
+    width: 60%;
+    top: -51%;
+    right: 0;
+    z-index: 9;
+    -webkit-animation: cross-light-top 4s 0.1s infinite ease-in-out;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: visible;
+}
+.btn-go2lottery .icon-light-bottom {
+    position: absolute;
+    width: 60%;
+    bottom: -35%;
+    left: 0;
+    -webkit-animation: cross-light-bottom 4s 0.1s infinite ease-in-out;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: visible;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	z-index: 999999999;
+}
+
+footer #div_subscribe_area {
+	width: 100%;
+}
+
+@-webkit-keyframes cross-light-bottom {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.2) translateX(0);
+    }
+    30% {
+        opacity: 1;
+        -webkit-transform: scale(1.2) translateX(50px);
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: scale(1) translateX(80px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(.2) translateX(0);
+    }
+}
+@-webkit-keyframes cross-light-top {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.2) translateX(0);
+    }
+    30% {
+        opacity: 1;
+        -webkit-transform: scale(1.2) translateX(-50px);
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: scale(1) translateX(-80px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(.2) translateX(0);
+    }
+}
+@-webkit-keyframes zoomInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0);
+        transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0);
+        -webkit-animation-timing-function: cubic-bezier(0.55,.055,.675,.19);
+        animation-timing-function: cubic-bezier(0.55,.055,.675,.19)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+        transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+        -webkit-animation-timing-function: cubic-bezier(0.175,.885,.32,1);
+        animation-timing-function: cubic-bezier(0.175,.885,.32,1)
+    }
+}
+@keyframes zoomInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0);
+        transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0);
+        -webkit-animation-timing-function: cubic-bezier(0.55,.055,.675,.19);
+        animation-timing-function: cubic-bezier(0.55,.055,.675,.19)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+        transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+        -webkit-animation-timing-function: cubic-bezier(0.175,.885,.32,1);
+        animation-timing-function: cubic-bezier(0.175,.885,.32,1)
+    }
+}
+@-webkit-keyframes shine {
+    from {background-position: 150%;}
+    to {background-position: -50%;}
+}
+@-webkit-keyframes hue {
+	from {-webkit-filter: hue-rotate(0deg);}
+	to {-webkit-filter: hue-rotate(-360deg);}
+}
+@keyframes flip {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0,1,0,-360deg);
+        transform: perspective(400px) rotate3d(0,1,0,-360deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+    5% {
+        -webkit-transform: perspective(400px) translate3d(0,0,100px) rotate3d(0,1,0,-190deg);
+        transform: perspective(400px) translate3d(0,0,100px) rotate3d(0,1,0,-190deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+    10% {
+        -webkit-transform: perspective(400px) translate3d(0,0,100px) rotate3d(0,1,0,-170deg);
+        transform: perspective(400px) translate3d(0,0,100px) rotate3d(0,1,0,-170deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    13% {
+        -webkit-transform: perspective(400px) scale3d(.9,.9,.9);
+        transform: perspective(400px) scale3d(.9,.9,.9);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    20% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+}
+@-webkit-keyframes flip {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0,1,0,-360deg);
+        transform: perspective(400px) rotate3d(0,1,0,-360deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+    5% {
+        -webkit-transform: perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-190deg);
+        transform: perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-190deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+    10% {
+        -webkit-transform: perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-170deg);
+        transform: perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-170deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    13% {
+        -webkit-transform: perspective(400px) scale3d(.9,.9,.9);
+        transform: perspective(400px) scale3d(.9,.9,.9);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    20% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+}
+::-webkit-input-placeholder {
+    color: #FFF;
+}
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .btn-go2lottery {
+        width: 48%;
+        margin: 0 auto 2%;
+    }
+}
+
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+}

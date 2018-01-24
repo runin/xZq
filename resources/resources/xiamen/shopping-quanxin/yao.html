@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>全心购物</title>
+
+    <link rel="stylesheet" href="./css/core.css"/>
+    <link rel="stylesheet" href="./css/util.css"/>
+    <link rel="stylesheet" href="./css/yao.css"/>
+    <link rel="stylesheet" href="./css/Leaves.css"/>
+
+</head>
+<body>
+
+<section class="hongbao none">
+    <section class="hongbao-bg">
+        <section class="hongbao-text">
+            <section id="open-redpack" data-collect="true" data-collect-flag="shopping-quanxin-yao-hongbao-open"
+                     data-collect-desc="全心购物 抽中红包-打开"><p class='click'>点击拆红包</p></section>
+        </section>
+    </section>
+</section>
+
+<section class="hongbao-open none">
+    <section class="hongbao-bg" data-collect="true" data-collect-flag="shopping-quanxin-yao-hongbao-close"
+             data-collect-desc="全心购物 领取红包-关闭">
+        <section class="hongbao-text">
+            <p id='gongxi'>恭喜您~</p>
+
+            <p id='award_text'></p>
+
+            <p id='lingqu'>已领取</p>
+
+            <a id="tttj" class="none" href="javascript:void(0)" data-collect="true" data-collect-flag="tttj"
+               data-collect-desc="天天淘金"></a>
+        </section>
+    </section>
+</section>
+
+<section class="integral none">
+    <section class="integral-bg">
+        <a href="javascript:void(0);" class="integral-close" data-collect="true" data-collect-flag="shopping-quanxin-yao-integral-close"
+           data-collect-desc="全心购物 中积分-关闭"></a>
+        <section class="integral-text">
+            <section class="text">
+                恭喜您~<br/>
+                <span id="integral-value">获得1000积分</span>
+            </section>
+            <section class="integral-input">
+                <input type="text" id="integral-mobile" placeholder="请输入电话号码" maxlength="11"/>
+            </section>
+            <section class="integral-button" data-collect="true" data-collect-flag="shopping-quanxin-yao-integral-get"
+                     data-collect-desc="全心购物 中积分-领取">
+                立即领取
+            </section>
+        </section>
+    </section>
+</section>
+
+<section class="no-prise none">
+    <section class="noprise-bg" data-collect="true" data-collect-flag="shopping-quanxin-yao-noprise-close"
+             data-collect-desc="全心购物 未中奖-关闭">
+        <!--<a href="javascript:void(0);" class="noprise-close" data-collect="true" data-collect-flag="shopping-quanxin-yao-noprise-close"
+           data-collect-desc="全心购物 未中奖-关闭"></a>
+        <section class="noprise-text">
+            <p id='text-again'>换个姿势，再来一次~</p>
+        </section>-->
+    </section>
+</section>
+
+<section class="main">
+    <section class="shake none">
+        <img src="./images/shake-new-min.png"/>
+    </section>
+    <section id="count_down">距本轮结束还有00:00:00</section>
+    <p class="tips">拿起手机摇一摇<br/>领取现金红包！</p>
+</section>
+
+<section class='none'>
+    <audio preload="auto" id="audio_shake" src="./music/audio-a.mp3"></audio>
+    <audio preload="auto" id="audio_win" src="./music/audio-b.mp3"></audio>
+</section>
+
+
+<script src="./js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/authorize_userinfo.js"></script>
+<script src="./js/plugins/core.js"></script>
+<script src="./js/plugins/util.js"></script>
+
+<script src="./js/plugins/shake.js"></script>
+<script src="./js/app/yao.js?v=36"></script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no" />
+<title>幸运抽大奖！</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/lottery.css" />
+<script src="./js/wx_api.js"></script>
+</head>
+
+<body>
+	<div class="main">
+		<div class="lottery">
+			<img
+				src="http://yao.holdfun.cn/portal/resources/news/images/blank.gif"
+				class="img-bg" id="img_lottery_bg" /> <a href="#" data-collect="true"
+				data-collect-flag="news-lottery-lottery-btn"
+				data-collect-desc="新闻调查抽奖页面抽奖" class="btn-lottery" id="btn-lottery">
+				<img
+				src="images/lottery_btn.png"
+				class="btn-img" />
+			</a>
+		</div>
+		<div class="box box-phone none" id="box-phone">
+			<h2>
+				恭喜您，获得<span class="prize"></span>
+			</h2>
+			<h3>手机号码是领奖的唯一凭证，请正确填写</h3>
+			<p>
+				<input type="number" name="phone" maxlength="11" min="11" id="phone">
+				<span id="win_prize_tip" class="win_prize_tip"></span>
+			</p>
+			<a name="anchor"></a> <a href="#" data-collect="true"
+				data-collect-flag="news-lottery-submit-btn"
+				data-collect-desc="新闻调查抽奖页面领奖" class="btn-red btn-submit"
+				id="btn-submit">确认领奖</a>
+		</div>
+
+		<div class="box box-tip none" id="box-tip">
+			<h2>
+				恭喜您，获得<span class="prize"></span>
+			</h2>
+			<h3>
+				您的获奖手机为：<span id="phone-num"></span> <font id="prize_link_tip"></font>
+			</h3>
+            <p class="address">领奖地址：<label class="data-ad"></label></p>
+            <p class="address">咨询电话：<label class="data-ct"></label></p>
+            <p class="address">领奖说明：<label class="data-tp"></label></p>
+			<a href="javascript:share();" data-collect="true"
+				data-collect-flag="news-lottery_share-btn"
+				data-collect-desc="新闻调查抽奖页面分享" class="btn-red btn-share">分享</a> <a
+				href="javascript:toUrl('index.html');" data-collect="true"
+				data-collect-flag="news-lottery_index-btn"
+				data-collect-desc="新闻调查抽奖页面返回首页" class="btn-back-simple">返回首页</a>
+		</div>
+	</div>
+	<div class="copyright hidden">页面由陕西广播电视台提供</div>
+
+	<script src="./js/zepto.min.js"></script>
+	<script src="./js/jQueryRotate.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src="./js/share.js"></script>
+	<script src="./js/data_collect.js"></script>
+	<script src="./js/lottery.js"></script>
+
+</body>
+</html>

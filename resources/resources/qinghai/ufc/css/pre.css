@@ -1,0 +1,92 @@
+html{
+	height: 100%;
+}
+body
+{ 
+  height: 100%;
+  background-image: url(../images/page2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow:hidden ;
+}
+.pre{
+	width: 100%;
+	height: 100%;
+	padding: 14% 0 0;
+	position: relative;
+}
+.prv-box{
+	padding: 2% 4%;
+}
+.prv-box img{
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+}
+.pre-tip{
+	color: #fff;
+	font-size: 13px;
+	text-align: center;
+	margin-top: 30px;
+}
+.follow-box{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+.copyright {
+	font-size: 12px;
+	height: 28px;
+	line-height: 13px;
+	opacity: 0.6;
+	margin: 0 auto 3px;
+	position: relative;
+}
+.discribe{
+	color: #fff;
+	margin-top: 20px;
+    padding: 2% 4%;
+    font-size: 13px;
+    height: 26%;
+    overflow-y: auto;
+}
+#div_subscribe_area {
+	height:50px;
+	overflow:hidden;
+}
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait){
+.discribe{
+    height: 22%;
+}
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+.pre{
+	padding: 5% 0 0;
+}
+.pre-tip{
+	margin-top: 6px;
+}
+.discribe{
+    height: 22%;
+     margin-top: 2%;
+}
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+.discribe{
+    height: 22%;
+    margin-top: 1%;
+}
+}

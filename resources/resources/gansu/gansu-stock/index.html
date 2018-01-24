@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<title>甘肃卫视《交易日》</title>
+	    <!-- 
+	    <link rel="stylesheet" href="css/reset.css" />    
+		<link rel="stylesheet" href="css/core.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		 -->
+		<link rel="stylesheet" href="css/app.min.css" /> 
+		<link rel="stylesheet" href="css/index.css" />
+		
+	</head>
+	<body>
+		<section class="wrapper">
+			
+			<header>
+				<img alt="交易日" src="./images/logo.png">
+			</header>
+			
+			<section class="body" style="display:none">
+				<img class="slogon" alt="看涨还是看跌" src="http://cdn.holdfun.cn/gansutv/tradingday/images/slogon.png">
+				<section class="vote-wrapper">
+					<section class="vote-inner-wrapper">
+						<section class="vote-item">
+							<img class="vote-item-icon" alt="看涨" src="./images/icon-up.png">
+							<a id="btn_up" class="vote-item-btn" href="javascript:void(0);" data-collect="true" data-collect-flag="trading-day-index-btn-up" data-collect-desc="甘肃卫视首页-看涨" >
+								<img alt="看涨" src="./images/btn-up.png">
+							</a>
+						</section>
+						
+						<section class="vote-item">
+							<img class="vote-item-icon" alt="看跌" src="./images/icon-down.png">
+							<a id="btn_down" class="vote-item-btn" href="javascript:void(0);" data-collect="true" data-collect-flag="trading-day-index-btn-down" data-collect-desc="甘肃卫视首页-看跌" >
+								<img alt="看跌" src="./images/btn-down.png">
+							</a>
+						</section>
+					</section>
+				</section>
+			</section>
+			
+			<footer style="display:none">
+				<p>本页面由甘肃卫视提供</p>
+			</footer>
+		</section>
+
+		<script src="./js/plugins/zepto.min.js"></script>
+		<script src="./js/plugins/zepto.cookie.min.js"></script>
+		
+		<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	
+		<script src="./js/config.js"></script>
+		<script src="./js/wx_api.js"></script>
+		
+	<!--	<script src="./js/plugins/md5.js"></script>
+		<script src="./js/plugins/common.js"></script>
+		<script src="./js/plugins/data_collect.js"></script>
+		<script src="./js/plugins/weixinapi.js"></script>
+		<script src="./js/plugins/share.js"></script>-->
+
+        <script src="js/plugins.min.js" type="text/javascript"></script>
+		
+		<script src="js/app/index.js"></script>
+	</body>
+</html>

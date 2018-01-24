@@ -1,0 +1,74 @@
+a:link, a:visited {
+    color: #FFF;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background: url(../images/bg-detail.png) no-repeat bottom center #f6efda fixed;
+    background-size: cover;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: 100px;
+}
+.detail-box {
+    width: 100%;
+}
+.detail-box img {
+    display: block;
+    box-shadow: 0 2px 2px rgba(0,0,0,.5);
+}
+.detail-box .content-box {
+    width: 100%;
+    padding: 5%;
+    color: #ab3000 !important;
+    font-size: 15px !important;
+    word-break: break-all;
+}
+.detail-box .content-box .food-name {
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 22px;
+    margin-bottom: 6px;
+}
+.detail-box .content-box .intro-box p, .detail-box .content-box .intro-box span {
+    color: #ab3000 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+}
+footer {
+	position: absolute;
+    width: 100%;
+    left: 0;
+	bottom: 0;
+    z-index: 50;
+}
+footer .btn-go2wall {
+    display: block;
+    margin: 0 auto 10px;
+    width: 33%;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background-color: #ff7e00;
+    border-radius: 32px;
+}
+footer .copyright {
+    width: 100%;
+    height: 26px;
+    line-height: 13px;
+	color: #843501;
+    margin-bottom: 5px;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+/* huawei honor-6 */
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px) {
+}

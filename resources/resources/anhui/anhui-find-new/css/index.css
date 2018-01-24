@@ -1,0 +1,82 @@
+body {
+	background: url("../images/index-bg.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+header a {
+	color: #F5E703;
+	display: block;
+	border: 1px solid #F5E703;
+	font-size: 12px;
+	text-align: center;
+	width: 64px;
+	height: 22px;
+	line-height: 22px;
+	border-radius: 20px;
+	margin: 6px auto 0;
+	position: absolute;
+	right: 9px;
+	top: 9px;
+}
+.main{
+	padding-top: 30px;
+}
+.logo{
+	width: 78%;
+	margin: 0 auto;
+	display: block;
+}
+.main p{
+	background: url(../images/tv-tips.png) no-repeat center top;
+	background-size: 100% ;
+	font-size: 15px;
+	color: #fff;
+	margin: 0 10%;
+	padding-top: 50px;
+}
+.main a{
+	margin-top: 30px;
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+  
+	
+	
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.main{
+		padding-top: 10px;
+	}
+	.main p{
+		padding-top: 34px;
+	}
+	.main a{
+		margin-top: 20px;
+	}
+	.ctrls {
+	   width: 90%;
+	   height: 70%;
+	   border-radius: 6px;
+	}
+	.page-inner{
+		  width: 72%;
+		  padding: 3% 3%;
+	}
+}

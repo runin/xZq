@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>梦想盛典</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+    <img class="preload" src="./images/icon-thanks.png">
+    <img class="preload" src="./images/icon-luckmonkey.png">
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <section class="home-box">
+        <section class="main-top m-t-b">
+            <section class="header">
+                <img class="icon-mjy" src="./images/icon-mjy.png">
+                <a href="javascript:void(0);" class="btn-vote" id="btn-vote" data-collect="true" data-collect-flag="btn-lottery2vote" data-collect-desc="去点赞按钮"><img src="./images/btn-goldjump.png"><p>去点赞</p></a>
+            </section>
+            <section class="fail-tips none">
+                <p>继续<i>摇</i> 大奖还有很多</p>
+            </section>
+            <section class="countdown none">
+                <img src="./images/icon-goldneck.png">
+                <section class="countdown-wrapper">
+                    <span class="countdown-tip"></span>
+                    <span class="detail-countdown"></span>
+                </section>
+            </section>
+            <p class="thanks-tips"></p>
+            <img class="bg-yao yao-top" src="./images/bg-wheel-top.png">
+        </section>
+        <section class="main-foot m-f-b">
+            <img class="bg-yao yao-bottom" src="./images/bg-wheel-bottom.png">
+            <section class="footer">
+                <section class="marquee none" id="marquee">
+                    <section class="marquee-wrapper">
+                        <section class="inMar inMar1">
+                            <section class="mar-div mar-div1"></section>
+                        </section>
+                    </section>
+                    <section class="marquee-wrapper">
+                        <section class="inMar inMar2">
+                            <section class="mar-div mar-div2"></section>
+                        </section>
+                    </section>
+                </section>
+                <section class="copyright">页面由CCTV1提供<br>新掌趣科技技术支持&Powered by holdfun.cn</section>
+            </section>
+        </section>
+        <a href="javascript:void(0);" class="btn-wall" id="btn-wall" data-collect="true" data-collect-flag="btn-wall" data-collect-desc="官方商城按钮"><img src="./images/icon-goldmall.png"><p>官方商城</p></a>
+        <section class="roll">
+            <img class="icon-goldroll" src="./images/icon-goldroll.png">
+            <img class="icon-goldrollin" src="./images/icon-goldrollin.png">
+        </section>
+    </section>
+    <section class="showover">
+        <img class="icon-overcover" src="./images/icon-overcover.png">
+        <img class="icon-goldmonkey" src="./images/icon-goldmonkey.png">
+            <section class="footer">
+                <section class="copyright">页面由CCTV1提供<br>新掌趣科技技术支持&Powered by holdfun.cn</section>
+            </section>
+    </section>
+    <!-- <input type="button" class="none" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;"> -->
+
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/lottery.js"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

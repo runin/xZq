@@ -1,0 +1,130 @@
+body {
+    width: 100%;
+    background: url(../images/index-bg.jpg) no-repeat;
+    background-size: 100% auto;
+    overflow: hidden;
+    opacity: 0;
+}
+header {
+    width: 100%;
+    position: relative;
+    z-index: 99;
+}
+header .tvlogo {
+    position: absolute;
+    width: 25%;
+    top: 12px;
+    left: 13px;
+    z-index: 1;
+}
+@-webkit-keyframes spin {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+.theme{
+    width: 90%;
+    margin: 60px 5% 30px;
+}
+.zoom-in {
+    -webkit-animation-name: zoom-in;
+    animation-name: zoom-in;
+    -webkit-animation-duration: .5s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes zoom-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+.content h1{
+    margin: 0 15%;
+    width: 70%;
+}
+.content h1 label{
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    position: relative;
+    top: 8px;
+    text-align: center;
+    display: block;
+}
+.content h1:before{
+    content: '';
+    display: block;
+    width: 70%;
+    height: 40px;
+    background: #009DCA;
+    border-radius: 8px;
+    -webkit-transform: skew(-20deg);
+    position: absolute;
+}
+.content ul{
+    margin: 35px auto 50px;
+}
+.content ul li{
+    font-size: 13px;
+    color: #FFF;
+    line-height: 20px;
+    background: rgba(0, 157, 202, .57);
+    border-radius: 5px;
+    padding: 10px 10px;
+    width: 90%;
+    margin: 8px 5%;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    max-height: 84px;
+    width: 100%;
+}
+#div_subscribe_area {
+    display: none;
+}
+.copyright {
+    padding: 5px 0 3px;
+    height: auto;
+    position: static;
+    margin-bottom: 0;
+}
+/* iPhone4 */
+@media screen and (device-width : 320px)
+and (device-height : 480px){
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone6 */
+@media screen
+and (device-width : 375px)
+and (device-height : 667px){
+}
+/* iPhone6+ */
+@media screen
+and (device-width : 414px)
+and (device-height : 736px){
+}
+
+@media screen and (device-width : 360px) {
+}

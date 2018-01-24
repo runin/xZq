@@ -1,0 +1,65 @@
+body {
+	background: url(../images/bg-body.jpg) repeat-y center 0;
+	background-size: cover;
+}
+.main {
+	margin: 0 auto;
+	padding-top: 70px;
+}
+p {
+    padding: 0 20px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333333;
+}
+.lingjiang-info {
+	text-align: center;
+}
+.lingjiang-info p {
+	font-size: 30px;
+	color: #FF1127;
+	line-height: 35px;
+}
+.dst-logo{
+	background: url(../images/logo.png) no-repeat 0 0;
+	background-size: 58px auto;
+	width: 68px;
+	height: 58px;
+	position: absolute;
+	top: 10px;
+	left: 6px;
+}
+.lingjiang-form {
+	width: 100%;
+	margin: 20px 0; 
+}
+.lingjiang-form p span {
+	font-family: Arial;
+	margin-left: 3px;
+	font-size: 12px;
+}
+.lingjiang-form input {
+	height: 34px;
+	line-height: 34px;
+	border-radius: 5px;
+	border: 0 none;
+	color: #333;
+	padding-left: 8px;
+	width: -webkit-calc(100% - 70px);
+	-webkit-box-sizing: border-box;
+}
+.form-item {
+	padding: 0 20px;
+	margin: 10px 0;
+	font-size: 16px;
+}
+.form-item label {
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+	width: 60px;
+	text-align: right;
+}
+.form-item span {
+	color: #FF1127;
+}

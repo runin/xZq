@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=640, user-scalable=no">
+	<script src="./js/plugins/zepto.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">$(function () {var DEFAULT_WIDTH = 640,ua = navigator.userAgent.toLowerCase(),deviceWidth = window.screen.width,devicePixelRatio = window.devicePixelRatio || 1,targetDensitydpi;if(ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4){targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');}});</script><style type="text/css">.none{display:none !important;}.knone{opacity:0;pointer-events:none;}</style>
+	<title></title>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/card.css" />
+</head>
+<body class="noRecord">
+	<section id="record-dialog" class="dialog none"><section class="record-container"><section class="icon-record"></section></section><p>录音还剩<label class="left-time"></label>秒</p></section>
+	<section class="wrap">
+	    <div class="swiper-container swiper-container-video">
+	        <div class="swiper-wrapper"></div>
+	        <div class="swiper-button-next swiper-button-white"></div>
+	        <div class="swiper-button-prev swiper-button-white"></div>
+	    </div>
+	</section>
+	<footer>
+		<div class="card">
+    		<div class="boxavatar">
+				<img class="avatar" src="./images/avatar.png">
+				<p>在输入框中编辑您的祝福语！送出您的祝福吧~</p>
+    		</div>
+    		<div class="boxinfo">
+    			<div class="box word-wrapper">
+    				<input id="btn-word" class="btn-word" type="text" maxlength="100" placeholder="点击填写祝福">
+    				<a href="javascript:void(0);" id="switch-voice" class="switch-voice"><svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74px" height="64px"><path fill-rule="evenodd"  fill="rgb(224, 72, 56)" d="M0.920,40.159 L0.920,58.864 C0.920,58.864 2.257,63.995 8.252,63.995 L68.558,63.995 C68.558,63.995 73.992,63.129 73.992,54.599 L73.992,5.098 C73.992,5.098 72.926,-0.000 67.958,-0.000 L7.995,-0.000 C7.995,-0.000 0.915,0.747 0.915,6.463 L0.905,23.268 "/><path fill-rule="evenodd"  fill="rgb(255, 252, 225)" d="M40.011,45.527 L40.011,51.636 L47.788,51.636 C50.014,53.261 47.788,56.000 47.788,56.000 L27.049,56.000 C24.757,53.573 27.049,51.636 27.049,51.636 L34.826,51.636 L34.826,45.527 C20.013,43.729 21.000,27.200 21.000,27.200 C23.482,25.051 25.321,27.200 25.321,27.200 C24.403,42.796 37.419,42.036 37.419,42.036 C50.549,40.955 49.516,27.200 49.516,27.200 C51.255,25.517 52.973,27.200 52.973,27.200 C53.647,42.885 40.011,45.527 40.011,45.527 ZM36.986,38.545 C32.453,38.545 28.777,34.870 28.777,30.336 L28.777,16.209 C28.777,11.675 32.453,8.000 36.986,8.000 C41.520,8.000 45.196,11.675 45.196,16.209 L45.196,30.336 C45.196,34.870 41.520,38.545 36.986,38.545 Z"/></svg></a>
+    			</div>
+    			<div class="box voice-wrapper none">
+    				<a href="javascript:void(0);" id="btn-voice" class="btn-voice">长按此处录制语音</a>
+    				<div class="voice-show voice-review none">
+	    				<a href="javascript:void(0);" id="btn-play" class="btn-play">
+							<span class="icon-sound"></span>
+							<span class="timer"></span>
+						</a>
+						<a class="btn-reset" href="javascript:void(0);">点此重新录制</a>
+	    			</div>
+    				<a href="javascript:void(0);" id="switch-word" class="switch-word"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74px" height="64px"><path fill-rule="evenodd"  fill="rgb(224, 72, 56)" d="M0.920,40.159 L0.920,58.864 C0.920,58.864 2.257,63.995 8.252,63.995 L68.558,63.995 C68.558,63.995 73.992,63.129 73.992,54.599 L73.992,5.098 C73.992,5.098 72.926,-0.000 67.958,-0.000 L7.995,-0.000 C7.995,-0.000 0.915,0.747 0.915,6.463 L0.905,23.268 "/><path fill-rule="evenodd"  fill="rgb(255, 252, 225)" d="M10.024,49.000 L10.024,42.000 L65.003,42.000 L65.003,49.000 L10.024,49.000 ZM50.009,36.000 L50.009,29.000 L58.006,29.000 L58.006,16.000 L65.003,16.000 L65.003,29.000 L65.003,36.000 L58.006,36.000 L50.009,36.000 ZM42.012,16.000 L49.009,16.000 L49.009,23.000 L42.012,23.000 L42.012,16.000 ZM34.015,29.000 L41.013,29.000 L41.013,36.000 L34.015,36.000 L34.015,29.000 ZM26.018,16.000 L33.016,16.000 L33.016,23.000 L26.018,23.000 L26.018,16.000 ZM10.024,29.000 L25.019,29.000 L25.019,36.000 L10.024,36.000 L10.024,29.000 ZM10.024,16.000 L17.022,16.000 L17.022,23.000 L10.024,23.000 L10.024,16.000 Z"/></svg></a>
+    			</div>
+    		</div>
+
+		    <a class="btn btn-send" href="javascript:void(0);" data-collect="true" data-collect-flag="btn-send" data-collect-desc="送祝福给好友按钮"><img src="./images/btn-send.png"></a>
+		    <p>送好友祝福，即可参与摇奖哦。</p>
+		</div>
+		<div class="cardmask"></div>
+	</footer>
+
+	<section class="share knone">
+		<img src="./images/share.png">
+        <div class="swiper-container swiper-container-ad"><div class="swiper-wrapper"></div></div>
+	</section>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/swiper.min.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/jssdk.js"></script>
+	<script src="./js/app/card.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=50083626" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.kaquan-wrapper{
+ 	overflow: hidden;
+ }
+ .kaquan-wrapper .hongbao-kaquan{
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.kaquan-wrapper .hongbao-kaquan img{
+	max-width: 100%;
+ 	max-height: 100%;
+ }
+
+.kaquan-wrapper .hongbao-click{
+ 	display: block;
+ 	width: 52%;
+ 	line-height: 40px;
+ 	color: white;
+ 	font-size: 14px;
+ 	text-align: center;
+ 	margin:  0 auto;
+ 	background: #ff9313;
+ }

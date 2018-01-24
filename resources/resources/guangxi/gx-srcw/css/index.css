@@ -1,0 +1,110 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.logo-left{
+    position: absolute;
+    top: 2.9vh;
+    left: 2.8vw;
+}
+.rule{
+    position: absolute;
+    top: 2vh;
+    right: 4.1vw;
+}
+.items{
+    position: absolute;
+    top: 17vh;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.zoomIn{
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+.copyright {
+    position: static;
+    margin-top: 10.5vh;
+}
+.go img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 26px;
+}
+.rubberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes rubberBand {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#div_subscribe_area {
+    height: 50px;
+    overflow:hidden;
+    opacity: 1;
+    z-index: 1000;
+}

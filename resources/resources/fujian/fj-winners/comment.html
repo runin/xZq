@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>快乐大赢家</title>
+	
+	<link rel="stylesheet" href="./css/core.css">
+	<link rel="stylesheet" href="./css/util.css">
+	<link rel="stylesheet" href="./css/resize.css">
+    <link rel="stylesheet" href="./css/barrage.css">
+    <link rel="stylesheet" href="./css/comment.css">
+</head>
+<body>
+
+<section class="main" style="background: url(http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/resources/images/clueImg/2015/09/21/9337b0d2afff47f9804ad5c59d4c5c70.jpg);">
+<section class="barrage-wrapper wrapper" data-x="0" data-y="234" style="width: 371px; height: 368px;">
+	<section class="comments">
+		
+	</section>		
+	<section class="comment-input-wrapper">
+		<section class="comment-input">
+			<section class="input-wrapper" style="background-color: rgb(115, 165, 247);">
+                <img class="headimg" src="./images/avatar.jpg" />
+                <img class="input-arrow" src="./images/send_input.png" />
+				<input id="input" type="text" placeholder="biu biu biu biu~~" value="输入内容示例">
+			</section>
+			<a class="ok" id="submit" href="javascript:void(0)"></a>
+		</section>
+	</section>
+</section>
+<section class="img-wrapper wrapper" onitemclick="index.html" data-x="41.44719752156766" data-y="149.0000023038961" style="width: 71px; height: 77px;">
+	<img src="http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/resources/images/clueImg/2015/09/21/4666854133f64d259aad8fe9460ad73a.jpg">
+</section>
+<section class="img-wrapper wrapper" data-x="146.9747427135569" data-y="142.4747427135569" style="width: 75px; height: 84px;">
+	<img src="http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/resources/images/clueImg/2015/09/21/ae726d8cf84a4bed87c5a889c599ee77.jpg">
+</section>
+<section class="img-wrapper wrapper" data-x="240" data-y="126" style="width: 80px; height: 100px;">
+	<img src="http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/resources/images/clueImg/2015/09/21/78c0f100b86144c099fdfc55e48bdc65.jpg">
+</section>
+<section class="a-wrapper wrapper" data-x="285.828125" data-y="3" style="width: 81px; height: 32px;" onitemclick="main.html">
+	<a href="javascript:void(0);" style="line-height: 30px; color: rgb(255, 255, 255); border-radius: 5px; font-size: 14px; background-color:#0284E2; background-size: 100% 100%; background-repeat: no-repeat;" data-href="main.html" class="line-height-resize font-resize">返回</a>
+</section>
+
+
+<section class="img-wrapper wrapper" data-x="75" data-y="50" style="width: 50px; height: 20px;">
+    <div class="people_name">毛毛 </div>
+</section>
+
+<section class="img-wrapper wrapper" data-x="170" data-y="50" style="width: 50px; height: 20px;">
+    <div class="people_name">邹荃 </div>
+</section>
+
+<section class="img-wrapper wrapper" data-x="280" data-y="50" style="width: 50px; height: 20px;">
+    <div class="people_name">林珊 </div>
+</section>
+
+
+
+<section class="img-wrapper wrapper" data-x="45" data-y="73" style="width: 83px; height: 83px;">
+	<img src="http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/resources/images/clueImg/2015/09/21/0ebd5712fdd7437c88ae7fa306de7304.jpg" class="people_hear" >
+</section>
+<section class="img-wrapper wrapper" data-x="144" data-y="68" style="width: 85px; height: 79px;">
+	<img src="http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/resources/images/clueImg/2015/09/21/a2ac11c889004b60a89ec6a5c2890def.jpg" class="people_hear">
+</section>
+<section class="img-wrapper wrapper" data-x="252" data-y="66" style="width: 68px; height: 81px;">
+	<img src="http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/resources/images/clueImg/2015/09/21/00530a20ab534dfd830c290919196ce2.jpg" class="people_hear">
+</section>
+</section>
+
+	<script src="./js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/core.js"></script>
+    <script src="js/plugins/authorize_userinfo.js" type="text/javascript"></script>
+	<script src="./js/plugins/util.js"></script>
+	<script src="./js/diy/event.js"></script>
+	<script src="./js/diy/resize.js"></script>
+	<script src="./js/diy/dialog.js"></script>
+	
+	<script src="./js/app/comment.js"></script>
+
+	<!-- <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"> -->
+
+<script type="text/html" id="tmpl_barrage">
+			<section class="bitem">
+				<section class="bitem-img">
+					<img tmpl-attr="src" tmpl-name="src" onerror="this.src='./images/avatar.jpg'" src="${src}">
+				</section>
+				<section class="bitem-content">
+					<p tmpl-attr="html" tmpl-name="content">${content}</p>
+				</section>
+			</section>
+		</script>
+
+<script src="./js/app/barrage.js"></script>
+</body>
+</html>

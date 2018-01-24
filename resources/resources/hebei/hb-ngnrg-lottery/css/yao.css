@@ -1,0 +1,424 @@
+body{
+	background-color: #000;
+	background-image: url(../images/yao-center.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center center;
+	min-height: 100vh;
+	width: 100vmin;
+	position: relative;
+}
+.yao-tlt{
+	margin: 10px 20px 0;
+	width: 28%;
+	display: block;
+	position: relative;
+}
+.zx-tt{
+	position: absolute;
+	top: 75px;
+	/*left: 80px;*/
+	left: 80px;
+	text-align: left;
+	width: 100%;
+	color: white;
+	font-size: 16px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,1);
+	z-index: 3;
+}
+.marquee {
+	color: #fff;
+	font-size: 13px;
+	background: #de1cc5;
+	height: 20px;
+	/*height: 20px;*/
+	line-height: 20px;
+	text-align: center;
+	overflow: hidden;
+	top: 0;
+}
+.count{
+	/*color: #FFE700;
+	font-size: 12px;*/
+}
+.ad{
+	width: 63%;
+	margin: 12px auto 0;
+	display: block;
+}
+.gototc{
+	width: 30%;
+	margin: 12px auto 0;
+	display: block;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.outer{
+	color: #fff;
+	/*font-size: 12px;*/
+	text-decoration:  underline;
+}
+.countdown{
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	/*margin: 20% 50% 2%;*/
+	/*border-radius: 3px;*/
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+	/*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);*/
+	z-index: 2;
+}
+.countdown-tip{
+	z-index: 2;
+}
+.countdown .detail-countdown{
+	/*background: url(../images/biao.png) no-repeat;*/
+	background-size: 30px auto;
+	display: inline-block;
+	padding-left: 1%;
+	/*padding-top: 6%;*/
+	color: white;
+	z-index: 2;
+}
+.countdown .detail-countdown label {
+	/*color: #fec836;*/
+	font-weight: bolder;
+	/*margin: 0 1px;*/
+	/*padding: 2px 3px;*/
+	/*border: 1px solid #000;*/
+	/*border-top: 1px solid #706e6f;*/
+	/*border-left: 1px solid #675151;*/
+	border-radius: 2px;
+	/*box-shadow: 2px 2px 1px rgba(0,0,0,.3);*/
+	/*background-image: -webkit-linear-gradient(-90deg, #353334, #290b0b);*/
+	/*background-color: #201e1e;*/
+	color: #f5f5f5;
+}
+.bak{
+	position: absolute;
+	top: 0;
+	left: 15%;
+	width: 70%;
+	height: 30px;
+	border-radius: 15px;
+	background-color: #ff14e1;
+	opacity: 1;
+	z-index: -1;
+}
+.copyright {
+	position: relative;
+	color: #fff;
+	line-height: 13px;
+	margin-top: 3px;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+header {
+	writing-mode: lr-tb;
+	writing-mode: tb-rl;
+	width: 20px;
+	letter-spacing: 1em;
+	display: inline-block;
+	word-break: break-all;
+	font-size: 12px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	float: right;
+}
+/*header div.ctrls a {*/
+	/*display: block;*/
+	/*border: 1px solid #fff;*/
+	/*padding: 5px 3px;*/
+	/*background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0d3d9b), color-stop(100%, #1581f9));*/
+	/* Chrome,Safari4+ */
+	/*background: -webkit-linear-gradient(45deg, #0d3d9b 0%, #1581f9 100%);*/
+	/* Chrome10+,Safari5.1+ */
+	/*background: linear-gradient(45deg, #0d3d9b 0%, #1581f9 100%);*/
+	/* W3C */
+	/*color: #fff;*/
+/*}*/
+/*.ctrls a{*/
+	/*display: block;*/
+	/*position: absolute;*/
+	/*right: 10px;*/
+	/*top: 10px;*/
+	/*width: 26%;*/
+	/*background: url(../images/integral-btn.png) no-repeat;*/
+	/*background-size: 100% 100%;*/
+	/*height: 27px;*/
+/*}*/
+header div.ctrls a#btn-reserve {
+	border-top: none;
+	display: block;
+}
+.red{
+	position: absolute;
+	width: 86%;
+	margin-top: auto;
+	z-index: 500;
+}
+/*yao-s*/
+.home-box {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.main-top {
+	position: absolute;
+	top: 1px;
+	width: 100%;
+	height: 50%;
+	background-image: url('../images/home_logo_a.jpg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	box-sizing: border-box;
+	-webkit-transition: -webkit-transform .2s ease;
+}
+.tobm{
+	position: absolute;
+	width: 100px;
+	height: 28px;
+	line-height: 28px;
+	top: 30px;
+	right: 5px;
+	font-size: 16px;
+	text-align: center;
+	box-shadow: 0 0 3px 3px #c20ada;
+	border: 1px solid #f5f5f5;
+	border-radius: 15px;
+	color: #f5f5f5;
+	z-index: 5;
+}
+.backtomain{
+	position: absolute;
+	width: 70px;
+	height: 30px;
+	top: 28px;
+	background: url("../images/backtomain.png") no-repeat;
+	background-size: 100% 100%;
+	z-index: 10;
+}
+.main-foot {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50%;
+	background-image: url('../images/home_logo_b.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	box-sizing: border-box;
+	-webkit-transition: -webkit-transform .2s ease;
+}
+.leftlot{
+	position: absolute;
+	width: 80%;
+	left: 10%;
+	height: 30px;
+	line-height: 30px;
+	bottom: 25%;
+	color: #f5f5f5;
+	text-align: center;
+	opacity: 0;
+}
+.yao-text{
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	margin-top: 40%;
+}
+.yao-text p{
+	position:relative;
+	min-height: 30px;
+	color: white;
+}
+.yao-text p.texta span{
+	color: white;
+	font-weight: bold;
+	font-size: 17px;
+}
+.yao-text p:last-child span{
+	position:relative;
+	width:100%;
+}
+.yaonone-text{
+	animation-name:nonetext;
+	-webkit-animation-name:nonetext;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-duration:0.5s;
+	-webkit-animation-duration:0.5s;
+	animation-delay:0.1s;
+	-webkit-animation-delay:0.1s;
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	display: block;
+}
+#test{
+	/*visibility: hidden;*/
+}
+@keyframes nonetext{
+	0%{
+		top:-300px;
+		opacity:0;
+	}
+	100%{
+		top:0;
+		opacity:1.0;
+	}
+}
+@-webkit-keyframes nonetext{
+	0%{
+		top:-300px;
+		opacity:0;
+	}
+	100%{
+		top:0;
+		opacity:1.0;
+	}
+}
+/*yao-e*/
+@-webkit-keyframes shake {
+	0%, 100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+}
+
+@keyframes shake {
+	0%, 100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+}
+.shake {
+	-webkit-animation-name: shake;
+	animation-name: shake;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+/*活动规则-e*/
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.yao-text {
+		margin-top: 22%;
+		font-size: 14px;
+		line-height: 23px;
+	}
+	.tobm{
+		width: 86px;
+	}
+	.zx-tt {
+		position: absolute;
+		top: 37px;
+		-webkit-transform: scale(.8);
+		left: 50px;
+	}
+	.countdown {
+		top: 31%;
+	}
+	.yao-text p {
+		position: relative;
+		min-height: inherit;
+	}
+	.copyright {
+		line-height: 10px;
+		-webkit-transform: scale(.9);
+	}
+	.ad{
+		margin: 0 auto;
+		width: 50%;
+	}
+	.yao-text{
+		margin-top: 36%;
+	}
+	.gototc{
+		margin: 0 auto;
+	}
+	.yao-tlt {
+		width: 28%;
+	}
+	.rule-section {
+		padding: 30% 21%;
+	}
+	.rule-section div div.con {
+		padding-top: 0;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.zx-tt {
+		top: 65px;
+	}
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait){
+	/*.yao-text {*/
+		/*margin: 28vh auto 0;*/
+	/*}*/
+	.ad {
+		margin: 8px auto 0;
+	}
+	.gototc{
+		margin: 8px auto 0;
+	}
+	.zx-tt{
+		top: 22%;
+	}
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	/*.yao-text {*/
+		/*margin-top: 22%;*/
+	/*}*/
+}

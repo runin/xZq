@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=640, user-scalable=no">
+	<script src="./js/plugins/zepto.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">$(function () {var DEFAULT_WIDTH = 640,ua = navigator.userAgent.toLowerCase(),deviceWidth = window.screen.width,devicePixelRatio = window.devicePixelRatio || 1,targetDensitydpi;if(ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4){targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');}});</script><style type="text/css">.none{display:none !important;}</style>
+	<title></title>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/card.css" />
+</head>
+<body>
+	<section class="wrap">
+	    <div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide swiper-slide-active"></div>
+	        </div>
+	    </div>
+	</section>
+	<footer>
+		<div class="card">
+    		<div class="boxavatar">
+				<img class="avatar" src="./images/avatar.png">
+				<h1 style="padding-top: 1.2vh;">&nbsp;</h1>
+				<p style="padding-top: .3vh;">给您送了一份新年祝福！</p>
+    		</div>
+    		<div class="boxinfo" style="padding: 3vh 0 4vh;">
+    			<div class="box voice-show none">
+    				<a href="javascript:void(0);" id="btn-play" class="btn-play">
+						<span class="icon-sound"></span>
+						<span class="timer"></span>
+						<span class="dot"></span>
+					</a>
+    			</div>
+    			<div class="box word-show none" style="max-height: 22vh;overflow: hidden;overflow-y: scroll;">
+    				<p></p>
+    			</div>
+    		</div>
+
+		    <a class="btn btn-join" style="margin: 4vh auto 0;" href="javascript:void(0);" data-collect="true" data-collect-flag="btn-join" data-collect-desc="分享页-我也要制作"><img src="./images/btn-join.png"></a>
+		</div>
+		<div class="cardmask"></div>
+	</footer>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/swiper.min.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/jssdk.js"></script>
+	<script src="./js/app/share.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=50083626" charset="UTF-8"></script>
+</body>
+</html>

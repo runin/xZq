@@ -1,0 +1,177 @@
+.main{
+	width: auto;
+	padding-bottom :40px;
+	text-align: center;
+}
+
+header{
+	height: 108px;
+	padding: 20px 0px 60px;
+}
+header .tips{
+	width: auto;
+	border:1px solid #000;
+	border-radius: 20px;
+	height: 28px;
+	font-size: 13px;
+	padding: 0px 20px;
+	display: inline-block;
+}
+header .tips span{
+	display: inline-block;
+	line-height: 28px;
+}
+.answer{
+	background: url(../images/answer_bg.png)no-repeat center;
+	background-size: 94% 100%;
+	padding-top: 30%;
+	color: #0e3e09;
+	font-size: 14px;
+}
+.answer h1{
+	font-size: 16px;
+	line-height: 100px;
+}
+.sup{
+	width: 100%;
+}
+.sup p{
+	width: 76%;
+	margin: 0 auto;
+	text-align: left;
+}
+.select{
+	text-align: center;
+	padding: 20px 0px;
+}
+.select .btn{
+	width: 25%;
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	background: #f74683;
+	border-radius: 6px;
+	margin: 0 20px;
+}
+.result{
+	margin-top: -50px;
+}
+.result h2{
+	font-size: 13px;
+	color: #f74683;
+	padding: 2px 30px;
+}
+.progress{
+	margin: 10px 9%;
+	position: relative;
+	text-align: left;
+}
+.rate{
+	display: inline-block;
+	width: 40%;
+}
+.rate #tj{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.rate span{
+	display: inline-block;
+	width: 100%;
+	height: 120px;
+	border-radius: 50%;
+	background: #fff;
+}
+.progress ul{
+	position: absolute;
+	right : 0px;
+	display: inline-block;
+	width: 55%;
+	height: 100px;;
+    padding: 40px 0px 40px 4px;
+    font-size: 13px;
+    color: #218418;
+ }  
+ .progress ul li{
+ 	padding: 4px 0px;
+ } 
+.progress ul li i{
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: #834e47;
+	border-radius: 50%;
+	margin-right: 4px;
+	vertical-align: 2px;
+} 
+ .progress ul li i.right{
+ 	background: #ff5691;
+ }  
+.progress ul li label{
+	color: #f74683;
+}    
+.shop{
+	width: 100%;
+	position: relative;
+}
+.shop img{
+	width: 100%;
+}  
+.shop .btn{
+	position: absolute;
+	bottom: 20%;
+	right:10px;
+	background: #ff4c15;
+	color: #fff;
+	font-size: 13px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	line-height: 15px;
+	padding: 16px 0px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}   
+/*iphone4*/
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	header{
+		height: 88px;
+		padding: 20px 0px 40px;
+	}
+	.result{
+		margin-top: -30px;
+	}
+	.progress ul{
+		height: 100px;;
+	    padding: 30px 0px 30px 0px;
+    }
+}   
+/*iphone5*/
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+   .progress ul{
+		height: 100px;;
+	    padding: 30px 0px 30px 0px;
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

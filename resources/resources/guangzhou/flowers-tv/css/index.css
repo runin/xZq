@@ -1,0 +1,213 @@
+.main {
+	position: relative;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+}
+
+.logo {
+    background: url(http://cdn.holdfun.cn/gztv/images/logo.png) no-repeat center 0;
+	
+    background-size: contain;
+    height: 16%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12px;
+}
+.btn-follow {
+    background: rgba(199,73,176,0.2);
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: #cba4c9;
+    font-size: 12px;
+    border-radius: 100%;
+    text-align: center;
+    display: none !important;
+}
+.btn-follow:before {
+	content: '';
+	display: block;
+	height: 7px;
+}
+
+.ctrl-flower {
+	text-align: center;
+	margin-top: 5%;
+}
+.ctrl-flower .btn {
+    background: rgba(223,94,176,0.3);
+	
+}
+.rule-tv {
+	position: absolute;
+	bottom: 25px;
+	text-decoration: underline;
+	color: #d769c8;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 12px;
+	outline: 0 none;
+}
+.rule-jiab, .main-jiab .rule-tv {
+	display: none;	
+}
+.main-jiab .rule-jiab {
+	display: block;
+	position: absolute;
+	bottom: 5px;
+	color: #982d89;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+.ui-player-item {
+	width: 85%;
+	height: 100%;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	background: rgba(223,94,176,0.3);
+	margin: 0 auto;
+}
+
+.ui-player-item .detail-cover {
+	max-width: 100%;
+	height: 82%;
+	vertical-align: top;
+	overflow: hidden;
+}
+.ui-player-item .detail-cover img {
+	max-width: 90%;
+	margin: 5%;
+}
+
+.ui-player-item .detail-time {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0px;
+	border-radius: 5px 5px 0 0;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	height: 34px;
+	line-height: 34px;
+}
+
+.ui-player-item .detail-time:before {
+	content: '';
+	display: inline-block;
+	vertical-align: top;
+	background: url(../images/icons.png) no-repeat -64px 0px;
+	background-size: 86px auto;
+	width: 22px;
+	height: 22px;
+	margin: 6px 6px 0 8px;
+}
+
+.ui-player-item .detail-time strong {
+	font-weight: normal;
+	font-size: 14px;
+	color: #f93838;
+	margin-left: 6px;
+}
+
+.ui-player-item .detail-info {
+	color: #fff;
+	height: 18%;
+	min-height: 50px;
+	position: relative;
+}
+
+.detail-info label {
+	display: inline-block;
+	vertical-align: middle;
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	background: rgba(199,73,176,0.5);
+	border-radius: 100%;
+	margin: 5px 10px 0 10px;
+	text-align: center;
+}
+.detail-info span {
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #f2d1f0;
+}
+.detail-info p {
+	display: none;
+    position: absolute;
+    
+	bottom: 2px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #d769c8;
+}
+.detail-info.selected {
+	position: relative;
+}
+.detail-info.selected p {
+	display: block;
+}
+
+.swiper-container {
+	margin-top: 32%;
+	height: 52%;
+}
+.swiper-wrapper {
+	height: 100%;
+}
+
+.swiper-slide {
+	height: 100%;
+	opacity: 0.4;
+	-webkit-transition: 300ms;
+	transition: 300ms;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+.swiper-slide-visible {
+	opacity: 0.5;
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.swiper-slide-active {
+	top: 0;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.swiper-container {
+    	height: 55%;
+	}
+	.ui-player-item .detail-cover {
+ 	   height: 80%;
+	}
+	.ui-player-item .detail-info {
+    	height: 20%;
+	}
+}

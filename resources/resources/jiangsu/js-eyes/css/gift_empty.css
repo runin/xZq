@@ -1,0 +1,51 @@
+body{
+	background-image: url(../images/mall-title.png),url(../images/bg-bottom.png),url(../images/bg-g.jpg);
+	background-position: top,bottom,top;
+	background-size:100%,100%,cover;
+	background-repeat:no-repeat,no-repeat,no-repeat ;
+}
+a,a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.main {
+	
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-size: 15px;
+	text-align: center;
+}
+.tips {
+    font-size: 17px;
+	
+    color: #E7141A;
+    line-height: 34px;
+    margin-top: 30px;
+}
+.cover {
+    margin-top: 30px;
+	
+}
+.cover img {
+    width: 270px;
+	
+}
+.btn {
+    width: 70%;
+    height: 38px;
+    line-height: 38px;
+    display: block;
+    color: #fff;
+    letter-spacing: 5px;
+    margin:10px auto 50px;
+}
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+	   .cover img {
+	       width: 200px;
+	   }
+}

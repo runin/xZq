@@ -1,0 +1,152 @@
+body {
+  background: #4F96EA url(../images/qd-bg.jpg) no-repeat bottom center;
+  background-size: 100% auto;
+  width: 100%;
+  min-height: 100vh;
+}
+body.qd-sc {
+  background: #4F96EA url(../images/qd-cg.jpg) no-repeat bottom center;
+  background-size: 100% auto;
+}
+header {
+  width: 87%;
+  margin: 20px auto 0;
+  padding: 8px 16% 3px;
+  display: block;
+  background: url(../images/qd-top.png) no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  font-size: 18px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+.bottom {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+}
+.bottom a.qd-btn,.bottom a.back-btn {
+  background: url(../images/qd-btn.png) no-repeat;
+  background-size: contain;
+  text-align: center;
+  height: 46px;
+  line-height: 46px;
+  color: #087AE4;
+  font-weight: bold;
+}
+.bottom div {
+  margin-top: 35px;
+}
+.bottom div:before {
+  content:'';
+  display: block;
+  border-bottom: 2px solid #195592;
+  margin-top: 10px;
+  position: relative;
+  top: 9px;
+  z-index: -1;
+}
+.bottom div span {
+  display: inline-block;
+  width: calc(100% / 8);
+  width: -webkit-calc(100% / 8);
+  text-align: center;
+}
+.bottom div span i {
+  display: inline-block;
+  background: #fff;
+  border: 2px solid #195592;
+  box-shadow: 1px 3px 19px #195592;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  border-radius: 100%;
+}
+.bottom div span i.actived:before {
+  content:'';
+  display: block;
+  background: url(../images/qd-succ.png) no-repeat;
+  background-size: 24px auto;
+  width: 24px;
+  height: 22px;
+  margin: -29px auto 10px;
+  margin-left: -4px;
+}
+.bottom div span i.actived:after {
+  content:'';
+  display: block;
+  background: #195592;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  margin: 3px auto 0;
+}
+.copyright {
+  color: #fff;
+}
+section.jfzj {
+  content:'';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+section.jfzj .jfzj-body {
+  width: 87%;
+  margin: 0 auto;
+  position: relative;
+}
+section.jfzj .jfzj-body .jfzj-top {
+  background: #DB4642;
+  padding-top: 10px;
+  margin-top: -10px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+section.jfzj .jfzj-body .jfzj-top img.pi {
+  width: 85%;
+  display: block;
+  margin: 0 auto 20px;
+  max-height: 80px;
+}
+section.jfzj .jfzj-body .jfzj-top .jfzj-bottom {
+  background: #B43230;
+  margin-top: -10px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding-bottom: 1px;
+}
+section.jfzj .jfzj-body .jfzj-top .jfzj-bottom .jf a.btn {
+  margin: 0 auto 10px;
+}
+section.jfzj .jfzj-body .jfzj-top .jfzj-bottom .jf a.btn img {
+  width: 60%;
+}
+section.jfzj a.btn {
+  background: url(../images/btn-bg.jpg) no-repeat;
+  background-size: 145px auto;
+  height: 42px;
+  line-height: 42px;
+  color: #D83040;
+  font-size: 18px;
+}
+section.jfzj a.btn.confirm {
+  line-height: 42px;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  body, body.qd-sc {
+    background-position-y: -30px;
+  }
+}

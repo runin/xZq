@@ -1,0 +1,89 @@
+body{
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    min-height: 100%;
+    width: 100%;
+}
+header {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 70px;
+}
+header .ctrls {
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-animation-delay: 2s;
+}
+header .ctrls a {
+    color: #fff;
+    display: block;
+    border: 1px solid #fff;
+    font-size: 12px;
+    text-align: center;
+    width: 64px;
+    height: 23px;
+    line-height: 22px;
+    border-radius: 3px;
+    margin: 6px auto 0;
+}
+.go{
+    background: url(../images/go.jpg) no-repeat;
+    background-size: 170px auto;
+    width: 170px;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    border-radius: 9px;
+    margin: 0 auto;
+}
+.animated {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.zoom-in {
+    -webkit-animation-name: zoom-in;
+    animation-name: zoom-in;
+}
+@-webkit-keyframes zoom-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .go{
+        bottom: 60px;
+    }
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 550px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}

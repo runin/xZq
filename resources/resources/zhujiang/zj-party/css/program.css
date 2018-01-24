@@ -1,0 +1,64 @@
+body {
+  background: #FEEED8 url(../images/sharego-bg.jpg) no-repeat;
+  background-size: cover;
+  -webkit-overflow-scrolling: touch;
+}
+header img:last-child {
+  width: 8%;
+  position: absolute;
+  right: 8%;
+  top: 0;
+}
+ul {
+  width: 80%;
+  margin: 20px auto 50px;
+  position: relative;
+}
+ul:before {
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 8px;
+  width: 1px;
+  left: 20px;
+  background: #C0B9AF;
+  z-index: -1;
+}
+ul li {
+  color: #AE1B30;
+  margin-top: -4px;
+  margin: 0 0 20px;
+}
+ul li p {
+  display: inline-block;
+}
+ul li p label {
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1.5px solid #AE1B30;
+  font-size: 23px;
+  vertical-align: middle;
+  background-color: #FEEED8;
+}
+ul li section {
+  width: calc(100% - 55px);
+  width: -webkit-calc(100% - 55px);
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: top;
+  margin-top: 7px;
+}
+ul li section .kc {
+  font-size: 15px;
+}
+ul li section .byz {
+  font-size: 12px;
+}
+.copyright {
+  color: #AE1B30;
+  position: absolute;
+  bottom: 0;
+}

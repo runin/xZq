@@ -1,0 +1,196 @@
+body{
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat bottom center #124234;
+    background-size: cover;
+    overflow: hidden;
+}
+.gift-box {
+    padding: 6% 5% 0;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+}
+.gift-box li {
+    margin-bottom: 5%;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.gift-box li img {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    float: left;
+    margin-right: 8px;
+}
+.gift-box li .gift-content {
+    position: relative;
+    border-radius: 3px;
+    background: url(../images/record-bg.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.gift-box li .gift-content-blue {
+    background: url(../images/record-bg-blue.png) 0 0 no-repeat!important;
+    background-size: 100% 100%!important;
+}
+.gift-box li .gift-content-blue .gift-name .pwd label{
+    color: #4260b4!important;
+}
+.gift-box li .gift-content .code .pwd {
+    display: inline-block;
+    width: calc(100% - 68px);
+    width: -webkit-calc(100% - 68px);
+    margin-top: 5px;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #FFF;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    word-break: break-all;
+}
+.gift-box li .gift-content .gift-name {
+    position: relative;
+    overflow: hidden;
+    padding: 3%;
+}
+.gift-box li .gift-content .gift-name .pwd label{
+    color: #FFAE00;
+    background-color: #fff;
+    text-shadow: none;
+    border-radius: 3px;
+}
+.gift-box li .gift-content .gift-name p {
+    display: inline-block;
+    width: calc(100% - 68px);
+    width: -webkit-calc(100% - 68px);
+    margin-top: 10px;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #FFF;
+    text-shadow: 2px 1px 2px rgba(0,0,0,.5);
+    word-break: break-all;
+}
+.gift-box li .gift-content .code p {
+    margin-top: 3px !important;
+}
+.gift-box .quan .gift-content .gift-name i {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: url(../images/icon-gift-quan.png) no-repeat;
+    background-size: cover;
+    top: -10px;
+    right: -10px;
+}
+.gift-box .good .gift-content .gift-name i {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: url(../images/icon-gift-good.png) no-repeat;
+    background-size: cover;
+    top: -10px;
+    right: -10px;
+}
+.gift-box li .gift-code {
+    padding: 5px 3% 0;
+    height: 36px;
+    line-height: 31px;
+    overflow: hidden;
+    text-align: center;
+    color: #ff9b25;
+}
+.gift-box li .gift-code p, .gift-box li .gift-code label {
+    font-size: 15px;
+    color: #000;
+    text-align: right;
+}
+.gift-box .empty {
+    margin-top: 50%;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: bolder;
+    text-align: center;
+}
+footer {
+	position: absolute;
+    width: 100%;
+    left: 0;
+	bottom: 0;
+    overflow: hidden;
+    z-index: 50;
+}
+footer .btn-go2index {
+    display: block;
+    margin: 0 auto 3%;
+    width: 120px;
+    height: 45px;
+}
+footer .icon-ruler {
+    position: absolute;
+    width: 33%;
+    top: -96%;
+    right: 2%;
+}
+footer .btn-go2record {
+    display: block;
+    width: 33%;
+    margin: 0 auto 2%;
+}
+footer .join-box {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 12%;
+}
+footer .join-box .join {
+    width: 62%;
+    margin: 0 auto;
+    z-index: 1;
+}
+footer .join-box .chalk {
+    position: absolute;
+    top: -3%;
+    height: 100%;
+    right: 70%;
+    max-width: none;
+    z-index: 2;
+}
+footer .join-box .honor {
+    width: 66%;
+    position: absolute;
+    top: 0;
+    left: 17%;
+    opacity: 0;
+    z-index: 0;
+}
+footer .footer-box {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+footer .footer-box img {
+    display: block;
+}
+footer .footer-box .copyright{
+    position: relative;
+    width: 100%;
+    line-height: 13px;
+    bottom: 0px;
+    left: 0;
+	color: #915e19;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+/* huawei honor-6 */
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px) {
+}

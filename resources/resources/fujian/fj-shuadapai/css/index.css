@@ -1,0 +1,327 @@
+html {
+  height: 100%;
+}
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+	background: url(../images/bg.jpg) no-repeat bottom center #000;
+	background-size: cover;
+  overflow: hidden;
+}
+header {
+  position: relative;
+  width: 100%;
+  z-index: 8;
+}
+header a {
+    position: absolute;
+    display: block;
+    width: 22%;
+    top: 8px;
+    right: 8px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 15px;
+}
+.gray{
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#303030), to(#131313))!important;
+}
+.btn-reserve{
+    top: 36px;
+}
+.main{
+  padding-top: 10%;
+}
+.main .logo{
+  max-width: 45%;
+  margin: 0 auto;
+  display: block;
+}
+.main .per1{
+    width: 35%;
+    display: inline-block;
+    margin-left: 15%;
+    margin-top: 10%;
+    position: absolute;
+}
+.main .per2{
+    width: 30%;
+    display: inline-block;
+    margin-left: 54%;
+    margin-top: 20%;
+    position: absolute;
+}
+footer .countdown {
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    background: #da2323;
+    margin: 3% auto;
+    border-radius: 5px;
+    height: 25px;
+    line-height: 25px;
+}
+footer .countdown .countdown-tip, footer .countdown .detail-countdown {
+  display: inline-block;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+  left: 0;
+  text-align: center;
+  z-index: 50;
+}
+footer .btn-join {
+    display: block;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#b90b21), to(#380205));
+    width: 40%;
+    height: 45px;
+    margin: 0 auto;
+    line-height: 42px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+}
+footer #div_subscribe_area {
+    overflow:hidden;
+}
+.shake {
+    -webkit-animation-name: shake;
+    -webkit-backface-visibility:hidden;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:ease;
+    -webkit-animation-fill-mode:both;
+    animation-name: shake
+    backface-visibility:hidden;
+    animation-duration:1s;
+    animation-timing-function:ease;
+    animation-fill-mode:both;
+}
+@-webkit-keyframes shake {
+    0%,100% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+    10%,30%,50%,70%,90% {
+        -webkit-transform: translate3d(-10px,0,0);
+        transform: translate3d(-10px,0,0);
+    }
+    20%,40%,60%,80% {
+        -webkit-transform: translate3d(10px,0,0);
+        transform: translate3d(10px,0,0);
+    }
+}
+
+@keyframes shake {
+    0%,100% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+    10%,30%,50%,70%,90% {
+        -webkit-transform: translate3d(-10px,0,0);
+        transform: translate3d(-10px,0,0);
+    }
+    20%,40%,60%,80% {
+        -webkit-transform: translate3d(10px,0,0);
+        transform: translate3d(10px,0,0);
+    }
+}
+
+@-webkit-keyframes zoomInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+        transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+        transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+
+@keyframes zoomInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+        transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+        transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+
+.zoomInLeft {
+    -webkit-animation-name: zoomInLeft;
+    animation-name: zoomInLeft;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+        transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+        transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+
+@keyframes zoomInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+        transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+        transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+
+.zoomInRight {
+    -webkit-animation-name: zoomInRight;
+    animation-name: zoomInRight;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInUp {
+    0% {opacity:0;-webkit-transform:translateY(2000px);}
+    60% {opacity:1;-webkit-transform:translateY(-5px);}
+    80% {-webkit-transform:translateY(15px);}
+    100% {-webkit-transform:translateY(0);}
+}
+@keyframes bounceInUp {
+    0% {opacity:0;transform:translateY(2000px);}
+    60% {opacity:1;transform:translateY(-5px);}
+    80% {transform:translateY(15px);}
+    100% {transform:translateY(0);}
+}
+.bounceInUp {
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .main{
+        padding-top: 5%;
+    }
+    .main .logo{
+        max-width: 35%;
+    }
+    .main .per1{
+        width: 30%;
+        display: inline-block;
+        margin-left: 19%;
+        margin-top: 5%;
+        position: absolute;
+    }
+    .main .per2{
+        width: 25%;
+        display: inline-block;
+        margin-left: 54%;
+        margin-top: 10%;
+        position: absolute;
+    }
+}
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .main{
+        padding-top: 5%;
+    }
+    .main .logo{
+        max-width: 40%;
+    }
+    .main .per1{
+        width: 30%;
+        display: inline-block;
+        margin-left: 19%;
+        margin-top: 5%;
+        position: absolute;
+    }
+    .main .per2{
+        width: 25%;
+        display: inline-block;
+        margin-left: 54%;
+        margin-top: 10%;
+        position: absolute;
+    }
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .main{
+        padding-top: 10%;
+    }
+    .main .logo{
+        max-width: 45%;
+    }
+    .main .per1{
+        width: 46%;
+        display: inline-block;
+        margin-left: 12%;
+        margin-top: 10%;
+        position: absolute;
+    }
+    .main .per2{
+        width: 40%;
+        display: inline-block;
+        margin-left: 54%;
+        margin-top: 25%;
+        position: absolute;
+    }
+}

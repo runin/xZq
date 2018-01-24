@@ -1,0 +1,185 @@
+body
+{
+	background: #F8F8F9;
+}
+.txt-red
+{
+    color:#f91546;
+}
+.calcu-method
+{
+	position:relative;
+	background: #f91546;
+	padding: 15px 10px;
+	color: #fff;
+}
+.calcu-method p:nth-child(1)
+{
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.calcu-method p:nth-child(2)
+{
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.data-A,.data-B
+{
+   background: #fff;
+   border-bottom:1px solid #c2c2c2;
+}
+
+.calcu-a-tips,.calcu-b-tips
+{
+	padding:10px;
+	line-height: 20px;
+    background: #fff;
+    position: relative;
+}
+.lottery-editor
+{
+    font-size: 14px;
+}
+.last-user-list
+{
+	overflow: hidden;
+	font-size: 12px;
+	border:1px solid #c2c2c2;
+	padding-left: 10px;
+	width: 100%;
+	background: #f8f8f8;
+}
+
+.last-user-list th {
+    background: #f8f8f8;
+    text-align: left;
+    text-indent: 5px;
+    padding: 2px;
+    border-bottom: 1px solid #d5d5d5;
+}
+.last-user-list td
+{
+
+    line-height: 22px;
+    text-indent: 5px;
+    padding: 2px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+/*箭头开始*/
+.ico-arrow-transfer:before {
+    left: 0;
+    top: 2px;
+    border-top: 2px solid #db3625;
+    width: 5px;
+    height: 0;
+}
+.ico-arrow-transfer:before, .ico-arrow-transfer:after {
+    content: "";
+    position: absolute;
+    display: block;
+}
+.ico-arrow-transfer {
+    width: 10px;
+    height: 6px;
+    position: relative;
+    background: none;
+}
+.ico {
+    display: inline-block;
+    vertical-align: middle;
+}
+.ico-arrow-transfer:after {
+    top: 1px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-width: 4px;
+    border-top: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #db3625;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+.calcu-btn
+{
+	position: absolute;
+    right: 15px;
+    bottom: 10px;
+    color: #0079fe;
+    display: block;
+    font-size: 12px;
+}
+
+.ico-sortArrow {
+    width: 8px;
+    height: 11px;
+    position: relative;
+    background: none;
+}
+.ico-sortArrow-down:before
+{
+	top: 6px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+.ico-sortArrow:before {
+	content: "";
+    width: 0;
+    height: 0;
+    border-width: 4px;
+    border-top: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+.ico-sortArrow:after {
+	content: "";
+    width: 0;
+    height: 7px;
+    top: 0;
+    left: 3px;
+    border-left: 2px solid #9a9a9a;
+}
+
+.ico-sortArrow:before {
+    width: 0;
+    height: 0;
+    border-width: 4px;
+    border-top: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+.ico-sortArrow:before, .ico-sortArrow:after {
+    content: "";
+    position: absolute;
+    display: block;
+}
+.ico-sortArrow-gray:before {
+    border-bottom-color: #0079fe;
+}
+.ico-sortArrow-gray:after {
+    border-color: #0079fe;
+}
+
+.ico-sortArrow-up:after {
+    top: 4px;
+}
+
+/*箭头结束*/
+
+.goUserPage
+{
+	color:#999999;
+}
+
+
+.data-result
+{
+   margin-top: 5%;
+   background: #fff;
+   padding: 15px 10px;
+   border: 1px solid #c2c2c2;
+}

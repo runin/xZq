@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <title>全频道</title>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/idangerous.swiper.css" />
+    <link rel="stylesheet" href="./css/comment.css" />
+</head>
+
+<body>
+    <section class="bg-box">
+        <div class="bg-border">
+            <header class="hd-wrapper">
+                <div class="countdown none">
+                    <span class="countdown-tip">倒计时</span>
+                    <span class="detail-countdown"></span>
+                </div>
+            </header>
+            <article id="article">
+                <div class="comments" id="comments"></div>
+                <div class="ctrls">
+                    <p>
+                        <input id="input-comment" type="text" placeholder="说说你的看法吧~~" />
+                        <a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="comment-comment-btn" data-collect-desc="comment-发表评论按钮">发送</a>
+                    </p>
+                </div>
+            </article>
+            <div class="foot-btn">
+                <a href="javascript:void(0)" class="f-btn btn_dm" id="tvList-btn" data-name="推荐节目" data-collect="true" data-collect-flag="menu-tvList-btn" data-collect-desc="推荐节目"></a>
+                <a href="javascript:void(0)" class="f-btn btn_qd selected" id="comment-btn" data-name="弹幕摇奖" data-collect="true" data-collect-flag="menu-comment-btn" data-collect-desc="弹幕摇奖"></a>
+            </div>
+        </div>
+    </section>
+    <script src="js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.touch.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/barrage.js"></script>
+    <script src="./js/plugins/msg.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/common.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="./js/app/idangerous.swiper-2.0.min.js"></script>
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/app/comment.js"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+
+</html>

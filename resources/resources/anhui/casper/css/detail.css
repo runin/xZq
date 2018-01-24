@@ -1,0 +1,105 @@
+﻿body, html
+{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+
+.none
+{
+    display: none;
+}
+*
+{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    outline: 0 none;
+}
+
+.main-detail
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url('../images/dbg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.tvicon-detail
+{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    z-index: 1;
+    width: 50px;
+}
+.swiper_div
+{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.bshadow
+{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    height: 20px;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.main_bottom
+{
+    height: 50%;
+    padding: 10px;
+    padding-bottom: 55px;
+    color: White;
+}
+.main_bottom h2
+{
+    background: url('../images/bookicon.png') no-repeat 0px center;
+    background-size: contain;
+    height: 20px;
+    margin-top: 10px;
+    color: White;
+    text-indent: 25px;
+    font-size: 18px;
+}
+.main_contain
+{
+    font-size: 13px;
+    padding-top: 10px;
+    line-height: 1.5em;
+    color: #B19B8D;
+    overflow: auto;
+    height: 54%;
+}
+.topic_div
+{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    margin-left: -45%;
+    bottom: 5px;
+}
+.topic_btn
+{
+    width: 50%;
+   /* box-shadow: 2px 2px 5px gray;*/
+    float: right;
+}
+.topic_btn2
+{
+    width: 50%;
+     /* box-shadow: 2px 2px 5px gray;*/
+    float: left;
+}

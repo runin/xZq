@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>播视堂</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/answer.css" />
+</head>
+<body>
+    <header>
+        <img class="icon-topic-logo" src="./images/icon-topic-logo.png">
+    </header>
+    <section class="answer-box">
+        <section class="icon-arrow"><i></i><em></em></section>
+        <section class="time-box none"></section>
+        <div class="answer-container none">
+            <section class="arrow-box">
+                <div class="answer none">
+                    <div id="current_box"></div>
+                    <a class="sub" id="submitBtn" href="javascript:void(0);" data-collect="true" data-collect-flag="answer-submitBtn" data-collect-desc="答题提交按钮">提 交</a>
+                </div>
+                <div class="surveyed none">
+                    <div id="surveyed"></div>
+                    <div class="btn-box">
+                        <a href="javascript:void(0);" class="baoliao none" id="baoliao" data-collect="true" data-collect-flag="answer-go2clue" data-collect-desc="民意发声按钮">民意发声</a>
+                        <section class="countdown" data-collect="true" data-collect-flag="answer-go2lottery" data-collect-desc="点我摇奖按钮">
+                            <i></i>
+                            <span class="detail-countdown"></span>
+                            <span class="countdown-tip">点我摇奖</span>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <p class="topic-voice">我们的话题，需要听见的你声音</p>
+    <ul id="sx-ul" class="sx-ul">
+    	<span id="top-comment"></span>
+    	<span class="nor-comment" id="nor-comment"></span>
+    </ul>
+    <footer>
+        <input type="text" id="comments-info" maxlength="60" placeholder="说说你的观点吧"/>
+        <input type="submit" id="send" value="发送" data-collect="true" data-collect-flag="answer-send" data-collect-desc="评论发送按钮" />
+    </footer>
+    <section class="copyright none" style="color:#333;"></section>
+    <a class="top-back none" data-collect="true" data-collect-flag="answer-topback" data-collect-desc="返回顶部按钮"><label>顶部</label></a>
+    <section class="bg"></section>
+
+	<script src="js/config.js"></script>	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+    <!--<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>-->
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+	
+    <script src="./js/app/dialog.js"></script>
+	<script src="js/app/answer.js"></script>
+    
+    <!--<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>-->
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

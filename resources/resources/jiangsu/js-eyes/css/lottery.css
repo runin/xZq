@@ -1,0 +1,142 @@
+
+.main {
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.main .tip {
+	color: #E7141A;
+	margin-left: 74px;
+	text-align: center;
+}
+.main .tip h1{
+	font-size: 22px;
+	margin: 5px auto;
+}
+.main .tip h2{
+	margin: 5px auto;
+	width: 160px;
+	font-size: 12px;
+}
+
+.main .red-env{
+	width: 260px;
+	height: 329px;
+	background-image: url(../images/lottery-env.png);
+	background-repeat: no-repeat;
+	background-size: 260px;
+	margin: 30px auto 0;
+}
+.main .red-env span{
+	display: block;
+	color: #FFFF00;
+	font-size: 5px;
+	position: absolute;
+	transform: scale(0.8);
+	right: 0;
+	bottom: 34%;
+	text-align: center;
+	
+}
+
+.main .red-env .btn-click{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	background-image: url(../images/lottery-click.png);
+	background-repeat: no-repeat;
+	background-size: 70px;
+	margin: 20px 133px;
+}
+
+.main .red-env-open{
+	width: 190px;
+	height: 298px;
+	background-image: url(../images/lottery-open.png);
+	background-repeat: no-repeat;
+	background-size: 190px;
+	margin: 18px auto;
+	color: #FFFF00;
+}
+
+.main .red-env-open .con{
+	width: 127px;
+	text-align: center;
+	margin: 10px auto;
+	padding-top: 80px;
+}
+
+.main .red-env-open span{
+	color: #FFFF00;
+	font-size: 5px;
+	position: absolute;
+	transform: scale(0.8);
+}
+
+.main .red-env-open h1{
+	font-size: 22px;
+}
+
+.main .red-env-open h2{
+	font-size: 12px;
+}
+
+.copyright {
+	color: #E7141A;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	main .red-env{
+		width: 234px;
+		height: 296px;
+		background-size: 234px;
+		margin: 20px auto;
+     }
+    .main .red-env-open{
+	   	width: 170px;
+	   	height: 266px;
+		background-size: 170px;
+		margin: 10px auto;
+	 }
+     
+    .main .red-env .btn-click{
+		margin: 20px 117px;
+    }
+   
+	.btn-share{
+		margin:6px auto;
+	}
+	.btn-back-simple{
+		line-height: 16px;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.main {
+		margin: 0 auto;
+		padding-top: 20px;
+     }
+	.main .red-env{
+		width: 250px;
+		height: 316px;
+		background-size: 250px;
+		margin: 30px auto;
+     }
+    .main .red-env-open{
+	   	width: 180px;
+	   	height: 282px;
+		background-size: 170px;
+		margin: 20px auto;
+	 }
+
+}

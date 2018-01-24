@@ -1,0 +1,107 @@
+.barrage-wrapper{
+	background: rgba(0,0,0,0.4);
+	position: relative;
+}
+.comment-input-wrapper{
+	width: 100%;
+	bottom: 0px;
+}
+.comment-input{
+	position: relative;
+	height: 45px;
+}
+.comment-input .input-wrapper{
+	border: 1px solid #FE5400;
+	margin-right: 70px;
+	margin-left: 8px;
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 5px #180803;
+}
+.comment-input .input-wrapper input{
+	width: 100%;
+	border: none;
+	background: none;
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	color: #fff;
+	padding: 0 5px;
+}
+.comment-input .ok{
+	font-size: 14px;
+	display: block;
+	position: absolute;
+	right: 8px;
+	top: 0px;
+	display: block;
+	line-height: 28px;
+	height: 32px;
+	width: 55px;
+	border: 1px solid #FE5400;
+	color: #FE5400;
+	background: #371D15;
+	text-align: center;
+	border-radius: 5px;
+}
+
+
+.comments{
+	overflow: hidden;
+	position: relative;
+}
+
+.comment-topic{
+	position: relative;
+}
+.comment-topic a{
+	line-height: 30px;
+	height: 30px;
+	padding: 4px 8px 4px 63px;
+	color: #fe5400;
+	font-size: 12px;
+}
+.topic-img{
+	position: absolute;
+	left: 8px;
+	top: -10px;
+	width: 50px;
+}
+.bitem{
+	overflow: hidden;
+	float: left;
+}
+.bitem .bitem-img{
+	float: left;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	background-color: #ffa20c;
+	padding: 2px;
+	position: relative;
+	z-index: 2;
+}
+.bitem .bitem-img img{
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.bitem .bitem-content{
+	color: white;
+	line-height: 34px;
+	background: rgba(0,0,0,0.5);
+	position: relative;
+	margin-left: 25px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding-left: 25px;
+	padding-right: 10px;
+	z-index: 1;
+}
+
+.bitem.new .bitem-content{
+	color: #fe014f;
+}
+
+
+

@@ -1,0 +1,327 @@
+html {
+    background: #000 url(../images/bg-simple.jpg) no-repeat 0 0;  
+    background-size: cover;
+	
+    /* height: 100%; */
+}
+
+body { 
+	-webkit-touch-callout: none !important;
+}
+a { 
+	-webkit-user-select: none !important;
+}
+::-webkit-input-placeholder {
+    color: #ffd74d;
+}
+.share:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 100;
+}
+
+.tip-share {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    z-index: 101;
+}
+
+.tip-share span {
+	position: relative;
+	display: block;
+	width: 80px;
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #ffd74d;
+	border-radius: 8px;
+	color: #ffd74d;
+	text-align: center;
+	font-size: 14px;
+}
+.tip-share span:after,
+.tip-share span:before {
+	content: '';
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #ffd74d;
+	border-width: 8px;
+	margin-left: 11px;
+	transform: scale3d(0.8,1,1);
+}
+.tip-share span:before {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #000;
+	border-width: 6px;
+	margin-left: 13px;
+	z-index: 1;
+}
+.wrapper {
+    margin: 3% 3% 0;
+    background: #c00000;
+	position: relative;
+}
+.wrapper.speaking:before {
+	content: '';
+	display: block;
+	position: absolute;
+	background: #fff url(../images/icon-microphone.png) no-repeat center center;
+	background-size: 90px auto;
+	width: 114px;
+	height: 114px;
+	left: 50%;
+	top: 50%;
+	margin-left: -57px;
+	margin-top: -57px;
+	z-index: 10;
+}
+.cover img {
+    vertical-align: top;
+}
+.wrapper .content {
+    padding-bottom: 10%;
+}
+
+.content .star {
+    padding: 4% 2% 0;
+}
+.content .avatar {
+    width: 54px;
+
+    height: 54px;
+    border: 2px solid #cc9966;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.content .avatar img {
+    width: 100%;
+
+    height: 100%;
+    vertical-align: top;
+}
+.content .bless {
+    height: 60px;
+
+    margin-left: 66px;
+    margin-top: -54px;
+}
+
+.content .bless h3 {
+    color: #ffd74d;
+
+    font-size: 14px;
+    height: 20px;
+}
+.content .bless .voice {
+    height: 38px;
+    border-radius: 20px;
+    text-align: right;
+    line-height: 50px;
+    padding-right: 15px;
+    color: #fff;
+    background: #de8712;
+}
+.content .bless .voice .icon-voice {
+	content: '';
+	display: block;
+	width: 15px;
+	height: 25px;
+	position: absolute;
+	left: 12px;
+	top: 7px;
+	background: url(../images/v3.png) no-repeat center center;  
+	background-size: 15px auto;
+}
+.content .bless .voice.scale .icon-voice {
+	background-image: url(../images/v3.png);
+	-webkit-animation-name: voice-playing;
+    -webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	border-radius: 100%;
+}
+
+.content .me {
+    padding: 5% 2% 0;
+}
+
+.content .me .wish,
+.view-card .me .ctrl,
+.me.text .voice,
+.view-card .me .wish,
+.view-card .ctrl-box .tips,
+.content .me.voice .ctrl,
+.content .me.voice .wish {
+	display: none;
+}
+.content .me.voice .voice {
+	display: block !important;
+}
+.view-card .content .bless .voice.loading:before {
+	height: 25px;
+    
+	width: 25px;
+    margin: 0px auto;
+    
+    -webkit-animation: rotation .6s infinite linear;
+    animation: rotation .6s infinite linear;
+    
+	border-left: 2px solid rgba(0,174,239,.15);
+    
+	border-right: 2px solid rgba(0,174,239,.15);
+    
+	border-bottom: 2px solid rgba(0,174,239,.15);
+    
+	border-top: 2px solid rgba(0,174,239,.8);
+    border-radius: 100%;
+	background: none;
+}
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(359deg);}
+}
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+}
+
+.content .me .btn-type {
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: #de8712;
+    border-radius: 100%;
+    padding: 2px;
+}
+.content .me .btn-type span {
+    border: 1px solid #fff;
+
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 100%;
+    background: url(../images/keyboard.png) no-repeat center center;
+    background-size: 24px auto;
+}
+.content .me .words {
+    margin-left: 45px;
+	
+    margin-top: -38px;
+    background: #de8712;
+    border-radius: 20px;
+    height: 40px;
+    padding: 3px;
+}
+.content .me .text .btn-voice {
+	display: none;
+}
+.content .me .text input {
+	display: block;
+	width: 100%;
+	border-radius: 20px;
+	outline: 0 none;
+	height: 34px;
+	border: 1px solid #fff;
+	background: transparent;
+	color: #fff;
+	padding: 0 4px;
+	font-size: 14px;
+}
+.content .me .text span {
+	background: url(../images/v3.png) no-repeat center center;
+	background-size: 15px auto;
+}
+.content .me .btn-voice {
+    border: 1px solid #fff;
+
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.content .me input {
+    display: none;
+
+}
+.ctrl-box .tips {
+    color: #ffd74d;
+	
+    text-align: center;
+    font-size: 14px;
+    margin-top: 4%;
+}
+
+.view-card .ctrl-box .tips,
+.view-card .ctrl-box .btn-sendcard,
+.ctrl-box .btn-opendidi {
+	display: none;
+}
+.view-card .ctrl-box .btn-opendidi {
+	display: inline-block;
+	vertical-align: middle;
+	color: #ffd74d;  
+	background: #c00000;  
+	height: 34px;  
+	line-height: 34px;      
+	width: 50%;  
+	border-radius: 20px;  
+	text-align: center;  
+	font-size: 16px;
+	margin-left: 2%;
+}
+.view-card .ctrl-box {
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.btn-sendcard {
+    color: #ffd74d;
+	
+    background: #c00000;
+    height: 34px;
+    line-height: 34px;
+    margin: 15px auto 20px;
+    display: block;
+    width: 42%;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.view-card .me.text .wish {
+	display: block !important;
+	height: 60px;
+	background: #de8712;
+	border-radius: 12px;
+	color: #fff;
+	font-size: 12px;
+	padding: 4px 8px;
+}
+.view-card .arrow-left.wish:after {
+    margin-right: -3px;
+	
+}
+.view-card .me .wish-txt {
+	overflow-y: auto;
+	height: 100%;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 14px;
+}

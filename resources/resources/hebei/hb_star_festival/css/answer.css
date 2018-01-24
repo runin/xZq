@@ -1,0 +1,353 @@
+body{
+    background: #0A0816 url(../images/answer-bg.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+label.icon{
+	vertical-align: middle;
+}
+.ui-audio {
+    width: 105px;
+    height: 28px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.ui-audio label{
+    position: absolute;
+    right: 4px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #666666;
+}
+.nav {
+    position: relative;
+    height: 50px;
+    padding-top: 20px;
+}
+.nav:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 32px;
+    background: rgba(168, 148, 148, 0.21);
+}
+.nav li {
+    width: 50%;
+
+    height: 42px;
+    line-height: 42px;
+    float: left;
+}
+.nav li:first-child{
+    text-align: right;
+    padding-right: 20px;
+}
+.nav li:last-child{
+    text-align: left;
+    padding-left: 20px;
+}
+.nav a {
+    display: block;
+
+    color: #fff;
+}
+.nav a.curr, .nav a:hover {
+    color: #f9ab05;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255,244,125, 1)), to(rgba(255,182,14, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.wrapper .cs{
+    opacity: 0;
+}
+.wrapper .key span{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+.wrapper dl{
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+}
+.wrapper dl dd{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+article{
+	position: relative;
+}
+article .comments {
+
+}
+.ctrls {
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    border-top: 1px solid rgba(255,255,255,0.8);
+    background: rgba(0,0,0,0.2);
+}
+.ctrls p {
+
+    margin: 8px 60px 0 8px;
+}
+.ctrls p input {
+    width: 100%;
+    height: 33px;
+    border: none;
+    border-radius: 4px;
+    padding: 0 3px;
+    background: url(../images/ctrl-bg.png) no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    outline: none;
+}
+.ctrls p input.error {
+    border: 1px solid #f00;
+}
+.ctrls a {
+    display: inline-block;
+
+    vertical-align: middle;
+    width: 44px;
+    height: 33px;
+    line-height: 33px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid #fff;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    right: 12px;
+    bottom: 10px;
+}
+header{
+    background: rgba(255, 255, 255, 0.2);
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    vertical-align: middle;
+    padding: 0 14px;
+    width: 100%;
+}
+header .icon{
+    display: inline-block;
+    border: 5px solid rgba(91, 126, 198, 0.55);
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+header .jifen-btn,.wrapper .jifen-btn{
+    display: inline-block;
+    background: url(../images/jifen-btn.png) no-repeat;
+    background-size: 60px auto;
+    width: 60px;
+    height: 53px;
+    z-index: 100;
+    float: right;
+}
+.wrapper .jifen-btn{
+    float: none;
+    position: absolute;
+    right: 8px;
+    top: 15px;
+}
+.xq {
+    width: 100%;
+    padding: 0 10%;
+}
+.xq #guess-img {
+    font-size: 14px;
+}
+.xq #guess-img h1 {
+  color: #FFF;
+  width: 90%;
+  margin: 5% auto 5%;
+  text-align: center;
+  font-size: 16px;
+}
+.xq #guess-img .detail-list {
+    width: 100%;
+    padding: 0 10%;
+}
+.xq #guess-img .answer-box {
+    width: 223px;
+    height: 223px;
+    background: url(../images/img-border.png) no-repeat;
+    padding: 2%;
+    background-size: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+.xq .key {
+    width: 100%;
+    padding: 4% 0 2%;
+    text-align: center;
+    border-bottom: 1px solid #F5F5F5;
+}
+.xq dl {
+    width: 100%;
+    padding-top: 2%;
+    margin: 0 auto;
+    text-align: center;
+}
+.xq .error{
+    color: #f9ab05;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255,244,125, 1)), to(rgba(255,182,14, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+}
+.xq .key span.selected {
+    background: url(../images/answer-btn.png) no-repeat;
+    background-size: 100%;
+}
+.xq .key span.select {
+    background: url(../images/answer-no-btn.png) no-repeat;
+    background-size: 100%;
+}
+.xq dl dd {
+    background: url(../images/answer-btn.png) no-repeat;
+    background-size: 100%;
+}
+.xq .key span, .xq dl dd {
+    display: inline-block;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin: 4px;
+    vertical-align: middle;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.xq .key span {
+    margin: 4px 8px;
+    font-size: 16px;
+    color: #c00101;
+    line-height: 32px;
+    font-weight: bolder;
+}
+.xq .countdown {
+    width: 100%;
+    text-align: center;
+    padding-top: 20%;
+    color: #FFF;
+}
+.xq .countdown .state2 {
+    font-size: 16px;
+    color: #FFF;
+}
+.xq .time-box {
+    padding-top: 6%;
+}
+.xq .time-box span {
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+.xq .time-box .time {
+    width: 25%;
+    background: url(../images/countdown-bg.png) no-repeat;
+    background-size: 100%;
+    color: #000;
+}
+.xq .time-box .dot {
+    font-size: 32px;
+    color: #FFF;
+    vertical-align: top;
+}
+.xq .jifen-see-btn {
+    display: block;
+    width: 80%;
+    height: 110px;
+    background: url(../images/rank-btn.png) no-repeat;
+    background-size: 100%;
+    margin: 30% auto 0;
+    text-align: center;
+}
+.lottery-bingo-btn {
+  position: absolute;
+  display: block;
+  width: 92%;
+  height: 50%;
+  margin: 0 auto;
+  background: url(../images/good.png) no-repeat;
+  background-size: 100% auto;
+  z-index: 101;
+  top: 25%;
+  left: 4%;
+}
+.answer-outer {
+    float: right;
+    color: #D4B466;
+    text-decoration: underline;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-transform: scale(.9);
+    display: inline-block;
+    width: 117px;
+}
+.answer-outer1{
+    font-size: 12px;
+    color: #D4B466;
+    text-decoration: underline;
+    margin-top: 29px;
+    line-height: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.nav {
+	    padding-top: 10px;
+	}
+	.xq #guess-img .answer-box {
+	    width: 140px;
+	    height: 140px;
+	}
+	.xq #guess-img h1{
+		margin: 3% auto 3%;
+	}
+	
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.xq #guess-img .answer-box {
+	    width: 180px;
+	    height: 180px;
+	}
+}

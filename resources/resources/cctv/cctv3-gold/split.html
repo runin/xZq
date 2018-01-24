@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>黄金100秒</title>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/split.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+</head>
+<body>
+	<div class="top">
+		<a class="back" id="back" data-collect="true" data-collect-flag="split-btn-back" data-collect-desc="裂变-返回按钮"></a>
+		<img class="jmy" src="images/jmy.png">
+		<div class="mark">
+			<img class="bg1" src="images/icon-sponsorlogo.png">
+			<img class="bg2" src="images/icon-lotterydoll.png">
+			<img class="bg3" src="images/icon-sponsorlogo.png">
+			<img class="bg4" src="images/icon-lotterydoll.png">
+			<img class="bg5" src="images/icon-sponsorlogo.png">
+			<img class="bg6" src="images/icon-sponsorlogo.png">
+		</div>
+		<div class="content">
+			<img class="head" src="images/avatar.jpg">
+			<p class="username">匿名用户</p>
+			<div id="mop">
+				<p class="rednum none">领到了<span>1</span>个奖品</p>
+				<a class="chai none" id="chai" data-collect="true" data-collect-flag="split-btn-chai" data-collect-desc="裂变-拆开按钮"></a>
+			</div>
+			<p class="redleft none">剩余<span id="redleft">0</span>个奖品</p>
+		</div>
+	</div>
+	<div class="middle">
+		<div class="title">
+			<hr>
+			<p>看看朋友们的手气如何</p>
+			<hr>
+		</div>
+		<ul id="record">
+			<li>
+				<p class="no">还没有人中奖哦~</p>
+			</li>
+		</ul>
+	</div>
+	<p class="copyright"></p>
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo4split.js"></script>
+
+	<script src="./js/app/dialog4split.js"></script>
+	<script src="./js/app/split.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=52438717" charset="UTF-8"></script>
+</body>
+</html>

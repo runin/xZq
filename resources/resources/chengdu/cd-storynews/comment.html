@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>新闻故事汇</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="css/comment.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <!--<img src="./images/ad-logo.jpg" onclick="window.location.href='http://m.flyco.com'" data-collect="true" data-collect-flag="yaoyiyao-feikelink" data-collect-desc="摇一摇-头部商城链接">-->
+        <!--<div class="tttj none" id="tttj" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">-->
+            <!--<img class="wobble" src="./images/icon-redbag.png" >-->
+            <!--<span></span>-->
+        <!--</div>-->
+        <div class="btn">
+            <a class="btn-list" id="list" data-collect="true" data-collect-flag="lottery-list" data-collect-desc="摇奖页面-中奖纪录">中奖记录</a>
+            <a class="btn-rule" id="rule-dialog" data-collect="true" data-collect-flag="lottery-rule" data-collect-desc="摇奖页面-活动规则">活动规则</a>
+        </div>
+    </header>
+
+    <article id="article">
+        <div class="comments" id="comments"></div>
+        <div class="ctrls">
+            <p>
+                <input id="input-comment" type="text" placeholder="说说你的看法吧~~" />
+                <a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="answer-comment" data-collect-desc="答题页面-发表评论按钮"></a>
+            </p>
+        </div>
+    </article>
+    <div class="footer-nav">
+        <div class="nav-left btn-nav">摇奖<img src="images/icon-left.png"></div>
+        <div class="nav-right focus btn-nav">说两句<img src="images/icon-right.png"></div>
+    </div>
+    <!--<div class="footer">-->
+        <!--<p class="copyright"></p>-->
+        <!--<div id="div_subscribe_area" class="div_subscribe_area_class"></div>-->
+    <!--</div>-->
+
+    <script src="js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/iscroll-lite.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="./js/plugins/common.js"></script>
+    <script src="./js/plugins/barrage.js"></script>
+    <script src="./js/plugins/msg.js"></script>
+
+    <script src="./js/plugins/zepto.selector.min.js"></script>
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+
+    <script src="./js/app/comment.js"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

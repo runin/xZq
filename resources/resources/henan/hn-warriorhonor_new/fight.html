@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>勇士的荣耀</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <!-- <link rel="stylesheet" href="css/common/reset.css" />
+    <link rel="stylesheet" href="css/common/core.css" />
+    -->
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/fight.css" />
+</head>
+    <audio preload="auto" id="audio-success" src="images/audio-success.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-failed" src="images/audio-failed.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-bond" src="images/audio-bond.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-countdown" src="images/audio-countdown.mp3" class="preload"></audio>
+    <section class="main">
+        <section class="headimg-wrap">
+            <div class="headimg-box">
+                <div class="player-headimg lf-select">
+                    <img src="" alt=""></div>
+                <p class="player-name lf-player-name"></p>
+            </div>
+            <div class="headimg-box">
+                <div class="player-headimg rf-random flash">
+                    <img src="./images/headimg-default.png" alt=""></div>
+                <p class="player-name rt-player-name">正在匹配</p>
+            </div>
+        </section>
+        <section class="select-player-wrap">
+            <section class="content-box">
+                <div class="select-player-img">
+                    <img src="./images/2s-bg.png" alt="" class="select-bg-img">
+                    <div class="select-player-box">
+                        <img src="" alt=""></div>
+                    <div class="star-box none lf-star-box"> <i class="icon-star icon-star1 none"></i> <i class="icon-star icon-star2 none"></i>
+                        <i class="icon-star icon-star3 none"></i>
+                    </div>
+                    <div class="final-img left-final-img none fladeshow">
+                        <img src="./images/win-bg.png" alt=""></div>
+                </div>
+                <div class="pk-bar lf-player-bar none">
+                    <p class="bar">
+                        <span class="num-bar">
+                            <i class="color"></i>
+                        </span>
+                    </p>
+                    <span class="blood-num">100</span>
+                </div>
+            </section>
+            <section class="content-box">
+                <div class="random-player-img">
+                    <img src="./images/1s-bg.png" alt="" class="random-bg-img flash">
+                    <div class="random-player-box">
+                        <img src="./images/random-player.png" alt=""></div>
+                    <div class="star-box none rt-star-box">
+                        <i class="icon-star icon-star1 none"></i>
+                        <i class="icon-star icon-star2 none"></i>
+                        <i class="icon-star icon-star3 none"></i>
+                    </div>
+                    <div class="final-img right-final-img none fladeshow">
+                        <img src="./images/win-bg.png" alt=""></div>
+                </div>
+                <div class="pk-bar rt-player-bar none">
+                    <p class="bar">
+                        <span class="num-bar">
+                            <i class="color"></i>
+                        </span>
+                    </p>
+                    <span class="blood-num">100</span>
+                </div>
+            </section>
+            <div class="vs-img flyin fire-vs">
+                <img src="./images/vote1.png" alt=""></div>
+            <div class="vs-img fire-lf none">
+                <img src="./images/fire-lf.png" alt=""></div>
+            <div class="vs-img fire-rt none">
+                <img src="./images/fire-rt.png" alt=""></div>
+            <div class="vs-img fire-miss-lf none">
+                <img src="./images/fire-miss.png" alt=""></div>
+             <div class="vs-img fire-miss-rt none">
+                <img src="./images/fire-miss.png" alt=""></div>
+        </section>
+        <div class="wait-countDown hidden">
+            <img src="./images/fight-numb-bg.png" alt="">
+            <div class="num-down">3</div>
+        </div>
+        <section class="pk-context none">
+            <!--    <p>
+            你向对方使出了一招大鹏展翅，对方受到了10点伤害
+            <i class="icon-weapon icon-weapon1"></i>
+        </p>
+        <p>你向对方使出了一招大鹏展翅，对方受到了10点伤害</p>
+        <p>你向对方使出了一招大鹏展翅，对方受到了10点伤害</p>
+        <p>你向对方使出了一招大鹏展翅，对方受到了10点伤害</p>
+        <p>你向对方使出了一招大鹏展翅，对方受到了10点伤害</p>
+        -->
+    </section>
+    <section class="failed-warning none">
+        你的卡牌战力不足
+        <br>快去解锁新的吧</section>
+</section>
+ <a class="fight none btn-active" data-collect="true" data-collect-flag="fight-agin" data-collect-desc="对战-再来一局"><img src="./images/btn-agin.jpg"></a>
+<footer>
+    <div class="copyright"></div>
+</footer>
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="js/config.js"></script>
+<script src="js/zepto.base.min.js"></script>
+<script src="js/sha1.min.js"></script>
+<script src="js/zepto.picLazyLoad.min.js"></script>
+<script src="js/wx_api_userinfo.js"></script>
+<script src="js/plugins/zepto.selector.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/plugins/scrollTo.js"></script>
+<script src="js/app/dialog.js"></script>
+<script src="js/app/lottery.js"></script>
+<script src="js/app/word.js"></script>
+<script src="js/app/fight.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=56058409" charset="UTF-8"></script>
+</body>
+
+</html>

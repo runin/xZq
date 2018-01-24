@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>新闻眼</title>
+<!-- 如下代码请在打素材时删掉，包括此注释  -->
+ <link rel="stylesheet" href="./css/reset.css" /> 
+ <link rel="stylesheet" href="./css/core.css" /> 
+ <link rel="stylesheet" href="./css/dialog.css" /> 
+ <link rel="stylesheet" href="./css/index.css" /> 
+<!--  压缩后的文件 -->
+<!-- <link rel="stylesheet" href="./css/index.min.css" /> -->
+</head>
+<body>
+	<div class="main" id="main" data-margin="70">
+		<input type="hidden" id="noRunShare" value="true">
+		<div class="home-logo">
+			<img class="logo" id="logo" src="images/bg-index.png"/>
+			<a href="#" data-collect="true"
+				data-collect-flag="js-eyes-index_start-btn"
+				data-collect-desc="新闻眼首页进入参与页面" class="btn-back" id="btn-begin">我要参与</a>
+		</div>	
+		<div class="tab" id="tab">
+			<a href="#" data-collect="true"
+				   data-collect-flag="js-eyes-jifen-btn"
+				   data-collect-desc="新闻眼首页进入积分页面" class="jifen" id="jifen">积分商城</a> <span>|</span>
+			<a href="#" data-collect="true"
+					data-collect-flag="js-eyes-index-rule-btn"
+					data-collect-desc="新闻眼首页进入规则页面" class="rule" id="rule">活动规则</a>
+		</div>
+	</div>
+	<div class="copyright">
+			<p>页面由江苏广电总台新闻中心提供 </p>  
+			<p>Powered by holdfun.cn</p>
+	</div>
+	
+	
+	
+	<script src="js/config.js"></script>
+<!-- 打素材时如下代码请删掉 -->
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+<!-- 压缩后的plugins.min.js -->
+<!-- <script src="./js/plugins/plugins.min.js"></script> -->
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	
+<!-- 打素材时如下代码请删掉 -->
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script>
+<!-- 压缩后的index.min.js -->
+<!-- 	<script src="./js/app/index.min.js"></script> -->
+	
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>中外名人</title>
+
+    <link rel="stylesheet" href="./css/core.css">
+    <link rel="stylesheet" href="./css/util.css">
+    <link rel="stylesheet" href="./css/resize.css">
+</head>
+<body>
+
+<section style="background: url('./images/bg-rank-min.jpg') no-repeat;background-size:100% 100%;width: 100%;height: 100vh;">
+    <section style="height: 24%;text-align: center;">
+        <section
+                style="height: 80px;position: relative;top: 20%;margin: 0 auto;">
+            <img src="./images/rank-title-min.png" style="height: 80px;"/>
+        </section>
+    </section>
+    <section style="position: absolute;top: 24%;bottom: 6%;width: 100%;overflow-x: hidden;overflow-y: auto;padding: 15px 0;">
+        <table style="width: 90%;margin: 0 auto;color: white;text-align: center;vertical-align: middle;">
+            <thead>
+            <tr style="border-bottom: 1px solid white;">
+                <th style="padding-bottom: 10px;padding-left:15px;text-align:left;" width="40%">昵称</th>
+                <th style="padding-bottom: 10px;" width="30%">摇奖频次</th>
+                <th style="padding-bottom: 10px;" width="30%">名次</th>
+            </tr>
+            </thead>
+            <tbody id="rank-content">
+            <!-- <tr style="border-bottom: 1px solid white;">
+                <td style="padding: 10px;">
+                    <section style="position: relative;margin: 0 auto;display: inline-block;width: 130px;">
+                        <section style="background-color: white;width: 50px;height: 50px;padding: 2px;border-radius: 100%;">
+                            <img src="./images/avatar.jpg" style="width: 46px;height: 46px;border-radius: 100%;"/>
+                        </section>
+                        <span style="position: absolute;left: 50px;top: 15px;width: 80px;">风生水起</span>
+                    </section>
+                </td>
+                <td style="padding: 10px;line-height: 50px;">56</td>
+                <td style="padding: 10px;line-height: 50px;">1</td>
+            </tr> -->
+            </tbody>
+        </table>
+    </section>
+    <section style="width: 100%;bottom: 0;position: absolute;left: 0;">
+        <p style="text-align: center; font-size: 14px; color: rgb(242, 232, 238);">页面由中外名人提供<br>
+            新掌趣科技技术支持&Prowered by holdfun.cn</p>
+    </section>
+</section>
+
+<script src="./js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+
+<!--<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>-->
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/corebk.js"></script>
+<!--<script src="./js/plugins/authorize_userinfo.js"></script>-->
+<script src="./js/plugins/util.js"></script>
+<script src="./js/diy/event.js"></script>
+<script src="./js/diy/resize.js"></script>
+<script src="./js/diy/dialog.js"></script>
+
+<script src="./js/app/rank.js"></script>
+
+<!-- <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"> -->
+
+</body>
+</html>

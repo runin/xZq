@@ -1,0 +1,64 @@
+body {
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: 360px auto;
+	min-height: 550px;
+	cursor: pointer;
+}
+.main {
+	/* min-height: 500px !important; */
+}
+.interact-wrapper {
+	padding-top: 206px;
+	margin: 0 auto;
+	height: 34px;
+	line-height: 34px;
+	overflow: hidden;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+}
+.interact-wrapper .digit {
+    display: inline-block;
+	
+    vertical-align: middle;
+    background: url(http://yao.holdfun.cn/portal/resources/portal/images/index/num_bg.png) no-repeat 0 0;
+    background-size: 22px auto;
+    width: 22px;
+    height: 34px;
+    line-height: 34px;
+    margin-right: 2px;
+    font-size: 24px;
+}
+.interact-wrapper .odometer-digit {
+	height: 37px;
+	width: 22px;
+	text-align: center;
+	line-height: 34px;
+	font-size: 24px;
+    background: url(http://yao.holdfun.cn/portal/resources/portal/images/index/num_bg.png) no-repeat 0 0;
+	background-size: 22px auto;
+	margin-right: 2px;
+}
+.needle {
+	background: url(http://yao.holdfun.cn/portal/resources/portal/images/needle.png) no-repeat 5px 0;
+	background-size: 132px auto;
+	margin: 60px auto 0;
+	width: 140px;
+	height: 3px;
+    border-radius: 20px;
+}
+.needle.move {
+	-webkit-animation-name:needle-move;
+    -webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes needle-move {
+	0%   {margin-top: 50px; opacity: 1;}
+	70%  {opacity: 1;}
+	100% {margin-top: 195px; opacity: 0;}
+}

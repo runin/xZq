@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>全心购物</title>
+
+    <link rel="stylesheet" href="./css/core.css"/>
+    <link rel="stylesheet" href="./css/util.css"/>
+    <link rel="stylesheet" href="./css/idangerous.swiper.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+
+</head>
+<body>
+
+<div class="main">
+    <ul class="tab">
+        <li><a data-collect="true" data-collect-flag="shopping-quanxin-index" data-collect-desc="全心购物 当前节目" href="index.html">当前节目</a></li>
+        <li class="active"><a href="javascript:void(0);">节目单</a></li>
+        <li><a href="myorder.html" data-collect="true" data-collect-flag="shopping-quanxin-myorder" data-collect-desc="全心购物 我的订单">我的订单</a></li>
+    </ul>
+    <div class="swiper-container" id="swiper-container">
+        <div class="swiper-wrapper" id="swiper-wrapper"></div>
+    </div>
+    <a class="all-link" href="all.html">查看全部节目单</a>
+
+    <a id="tttj" class="none" href="javascript:void(0)" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+
+    <p class="copyright">
+        页面由厦门电视台全心购物频道提供
+        <br/>
+        新掌趣科技技术支持&Powered by holdfun.cn
+    </p>
+</div>
+
+
+<script src="./js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/authorize_userinfo.js"></script>
+<script src="./js/plugins/core.js"></script>
+<script src="./js/plugins/util.js"></script>
+
+<script src="./js/plugins/idangerous.swiper.js"></script>
+<script src="./js/app/index.js"></script>
+<script type="text/javascript">
+    $(function () {
+        H.forenotice.init();
+    });
+</script>
+</body>
+</html>

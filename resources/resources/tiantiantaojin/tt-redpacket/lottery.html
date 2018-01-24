@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>准点抢红包</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/common.min.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+
+<body data-sr="lottery">
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+<section class="home-box">
+    <div class="marquee-content">
+        <div class="marquee hidden" id="marqueen">
+            <ul></ul>
+        </div>
+    </div>
+    <a class="link-out none" id="link-out" data-collect="true" data-collect-flag="lottery-link-btn" data-collect-desc="摇奖页-吸粉链接"><p></p></a>
+    <p class="thanks-tips">别灰心，继续加油！</p>
+    <img src="images/yao.png" class="yao-img">
+    <section class="countdown none">
+        <p class="countdown-tip"></p>
+        <span class="detail-countdown"></span>
+    </section>
+</section>
+<!--<input type="button" class="" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;">-->
+<script src="./js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/app/dialog.js"></script>
+<script src="./js/app/lottery.js"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=57640683" charset="UTF-8"></script>
+</body>
+
+</html>

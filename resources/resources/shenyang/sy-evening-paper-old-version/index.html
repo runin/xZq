@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>沈视晚报</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+<img class="none" src="images/bg.jpg" />
+	<div class="main" data-margin="70">
+		<div class="none">
+			<img id='ping-img' src="images/ping-befor.png" />
+			<img id='baoliao-img' src="images/baoliao-left.png" />
+			<img id='yanshen-img' src="images/yanshen-befor.png" />
+			<img id='toupiao-img' src="images/toupiao-befor.png" />
+		</div>
+
+		<div class="canvas-div zoomIn">
+			<canvas id="pinglun-cxt" width="105px" height="105px"
+					data-collect="true"
+					data-collect-flag="sy-evening-paper-index-pinglun-btn"
+					data-collect-desc="新闻调查首页进入评论页面" ></canvas>
+			<canvas id="baoliao-cxt" width="105px" height="105px"
+					data-collect="true"
+					data-collect-flag="sy-evening-paper-index-baoliao-btn"
+					data-collect-desc="新闻调查首页进入爆料页面" ></canvas>
+			<canvas id="yanshen-cxt" width="105px" height="105px"
+					data-collect="true"
+					data-collect-flag="sy-evening-paper-index-yanshen-btn"
+					data-collect-desc="新闻调查首页进入新闻延伸页面" ></canvas>
+			<canvas id="toupiao-cxt" width="105px" height="105px"
+					data-collect="true"
+					data-collect-flag="sy-evening-paper-index-start-btn"
+					data-collect-desc="新闻调查首页进入投票页面" ></canvas>
+		</div>
+
+
+	</div>
+
+	
+	<div class="tab animated none" id="tab">
+		<div class="copyright anima"></div>
+		<div class="tab-div">
+			<a href="#" data-collect="true"
+			   data-collect-flag="sy-evening-paper-index-jifen-btn"
+			   data-collect-desc="新闻调查首页进入积分页面" class="jifen" id="jifen">积分商城</a> <span class="none">|</span>
+			<a href="#" data-collect="true"
+			   data-collect-flag="sy-evening-paper-index-history-btn"
+			   data-collect-desc="新闻调查首页进入往期页面" id="apply" class="diaocha none">我要报名</a> <span class="awardline none">|</span>
+			<a href="#" data-collect="true"
+			   data-collect-flag="sy-evening-paper-index-award-btn"
+			   data-collect-desc="新闻调查首页抽奖按钮" id="award" class="choujiang none">幸运摇奖</a> <span>|</span>
+			<a href="#" data-collect="true"
+			   data-collect-flag="sy-evening-paper-index-rule-btn"
+			   data-collect-desc="新闻调查首页进入规则页面" class="rule">活动规则</a>
+		</div>
+	</div>
+
+	<!--通告-->
+	<section class="record-section none">
+		<div>
+			<h2></h2>
+			<div class="con-record"></div>
+			<a class="btn" id="record-close">我知道了</a>
+		</div>
+	</section>
+	<!--活动规则-->
+	<section class="rule-section none">
+		<div>
+			<h2>活动规则</h2>
+			<div class="con"></div>
+			<a class="btn" id="rule-close">确 定</a>
+		</div><img class="none" src="images/rule-bg.png" />
+	</section>
+	
+<div class="none">
+	<img src="images/star.png"/>
+	<img src="images/aureole.png"/>
+	<img src="images/j-bg.jpg"/>
+	<img src="images/jTop-bg.png"/>
+	<img src="images/lihe.png"/>
+	<img src="images/not-tsy.png"/>
+	<img src="images/not-z.png"/>
+	<img src="images/zz.png"/>
+</div>
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/hidpi_canvas.min.js"></script>
+
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/wx_api_userinfo.js"></script>
+
+<script src="./js/app/dialog.js"></script>
+<script src="./js/app/index.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

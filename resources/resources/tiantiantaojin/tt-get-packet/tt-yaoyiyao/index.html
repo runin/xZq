@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" http-equiv="content-type" content="text/html" />
+    <meta http-equiv="Pragram" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width,user-scalable=no">
+    <title>动手摇一摇</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/dialog.css" rel="stylesheet" type="text/css" />
+    <link href="css/pop.css" rel="stylesheet" type="text/css" />
+    <link href="css/core.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <audio preload="auto" id="audio-a" src="auto/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="auto/audio-b.mp3" class="preload"></audio>
+     <section class="content">
+
+        <p class="index-title">你今天<span>有10</span>次摇一摇的机会</p>
+
+        <div class="yao-prize">
+            <!-- 动画效果start -->
+            <span class="yellow-left"></span>
+            <span class="top-line"></span>
+            <span class="green-right"></span>
+            <span class="green-mid"></span>
+            <span class="money-right"></span>
+            <span class="squre-bottom"></span>
+            <!-- 动画效果end -->
+            <div class="mid-round">
+                <div class="img-round"><img src="./images/hand.png" class="yaoyiyao"> </div>
+                <img class="watch" src="./images/watch.png">
+                <img class="shose" src="./images/shose.png">
+                <img class="shirt" src="./images/t-shirt.png">
+                <img class="bag" src="./images/bag.png">  
+                <img src="./images/rock-begin.png" class="rock-begin"> 
+                <p class="user-formation"><a class="btn-information" data-collect="true" data-collect-flag="index-userformation" data-collect-desc="首页-个人信息点击">快去个人中心<br>查看你的战绩</a></p> 
+            </div>
+        </div>
+
+        <div class="img-pocket">
+            <a href="#" class="btn-rule" id="btn-rule" data-collect="true" data-collect-flag="index-rule" data-collect-desc="首页-活动规则按钮">活动规则</a>
+        </div>
+    </section>
+    <!--参与-->
+    <footer>
+        <p class="copyright"></p>
+        <div id="div_subscribe_area" class="div_subscribe_area_class"></div>
+    </footer>
+</body>
+</html>
+
+<script src="js/plugins/zepto.min.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.cookie.min.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.selector.min.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.fx.min.js" type="text/javascript"></script>
+<script src="js/plugins/shake.js" type="text/javascript"></script>
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js" type="text/javascript"></script>
+
+<script src="js/weixinapi.js" type="text/javascript"></script>
+<script src="js/config.js" type="text/javascript"></script>
+<script src="js/plugins/md5.js" type="text/javascript"></script>
+
+<script src="js/authorize_userinfo.js" type="text/javascript"></script>
+<script src="js/plugins/common.js" type="text/javascript"></script>
+<script src="js/app/dialog.js" type="text/javascript"></script>
+<script src="js/app/index.js" type="text/javascript"></script>
+<script src="js/app/yaoyiyao.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>

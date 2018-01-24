@@ -1,0 +1,99 @@
+.main{
+	width: 100%;
+	height: 0px;
+	overflow-y:scroll;
+}
+
+.ask-list{
+	padding: 8px 8px 0 8px;
+    min-height: 80vh;
+}
+.ask-list li{
+	overflow: hidden;
+	border-bottom: 1px dotted #ddd;
+	padding: 10px 0;
+}
+.ask-list li .avatar{
+	float: left;
+}
+.ask-list li .avatar img{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+}
+.ask-list li .detail{
+	margin-left: 70px;
+}
+.ask-list li .detail h2{
+	color: rgb(97, 183, 255);
+	font-size: 16px;
+}
+.ask-list li .detail p{
+	font-size: 14px;
+	color: #333;
+	margin-top: 5px;
+}
+
+.ask-list li .detail .time{
+	float: right;
+	font-size: 12px;
+	color: #ddd;
+}
+.copyright{
+	position: inherit;
+	margin: 10px 0;
+}
+.empty{
+	color: #ddd;
+	font-size: 14px;
+	text-align: center;
+}
+
+
+.input-wrapper{
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	background: white;
+	padding: 8px 10px 10px;
+	border-top: 1px solid #ddd;
+	width: 100%;
+}
+
+.input-wrapper .input-border{
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	line-height: 24px;
+	margin-right: 60px;
+}
+.input-wrapper .input-border input{
+	border: none;
+	line-height: 28px;
+	height: 28px;
+	padding: 3px 5px;
+	width: 100%;
+}
+
+.input-wrapper .submit{
+	display: block;
+	line-height: 30px;
+	height: 30px;
+	width: 50px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	color: #888;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	text-align: center;
+	font-size: 14px;
+}
+.more a{
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+	width: 100%;
+	display: block;
+	border-bottom: 1px dotted #ddd;
+	padding: 10px 0;
+}

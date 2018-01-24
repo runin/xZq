@@ -1,0 +1,275 @@
+body{
+    background:#EFEFEF;
+    position: relative;
+    height: 100%;
+}
+.recommend{
+    width: 100vw;
+    height: 100vh;
+    background:url("../images/left-bottom.jpg") left bottom no-repeat,
+    url("../images/right-top.jpg") right top no-repeat, #EFEFEF;
+    position: relative;
+    padding-top: 13vh;
+}
+.programlist{
+    width: 100vw;
+    height: 100vh;
+    background:url("../images/left-bottom.jpg") left bottom no-repeat,
+    url("../images/list-top.jpg") right top no-repeat, #EFEFEF;
+    position: absolute;
+    top: 0;
+}
+.outer{
+    width: 468px;
+    height: 662px;
+    margin: 0 auto;
+    box-shadow: -1px -2px 16px 10px rgba(0,0,0, .1);
+    -webkit-box-shadow: -1px -2px 16px 10px rgba(0,0,0, .1);
+    border-radius: 25px;
+    background: #FFFFFF;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    border: 4px solid #FF0007;
+    padding: 20px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev, .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    background: rgba(0,0,0, .48) url(../images/icon-arrow.png) center no-repeat;
+    background-size: 17px 21px;
+    width: 27px;
+    height: 51px;
+    line-height: 51px;
+    padding: 15px 5px;
+    right: 25px;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    -webkit-transform: rotate(-180deg);
+    left: 25px;
+}
+.swiper-slide img{
+    border: 4px solid #000;
+    border-radius: 25px;
+    position: relative;
+}
+.swiper-slide  .desc{
+    background: rgba(0,0,0, .5);
+    padding: 15px;
+    position: absolute;
+    bottom: 9px;
+    width: -webkit-calc(100% - 35px);
+    width: calc(100% - 35px);
+    height: 100px;
+    left: 2px;
+    color: #FFF;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 20px;
+}
+.swiper-slide .desc label{
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.swiper-slide .desc div{
+    text-overflow: ellipsis;
+    display : -webkit-inline-box;
+    -webkit-line-clamp : 2;
+    -webkit-box-orient : vertical;
+    overflow : hidden;
+    line-height: 35px;
+}
+footer{
+    display: -webkit-box;
+    background: #E1E1E1;
+    font-size: 20px;
+    -webkit-box-orient: horizontal;
+    height: 110px;
+    line-height: 140px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer div{
+    -webkit-box-flex: 1;
+    text-align: center;
+}
+footer div:first-child{
+    color: #B80005;
+    border-top: 3px solid #E5151A;
+}
+footer div:last-child{
+    color: #878787;
+    border-top: 3px solid #878787;
+}
+footer div:before{
+    content: '';
+    display: block;
+    position: absolute;
+}
+footer div:first-child:before{
+    background: url(../images/icon-tj.png) no-repeat;
+    background-size: 100% 100%;
+    width: 35px;
+    height: 33px;
+    top: 15%;
+    left: 45%;
+}
+footer div:last-child:before{
+    background: url(../images/icon-program.png) no-repeat;
+    background-size: 100% 100%;
+    width: 36px;
+    height: 36px;
+    top: 15%;
+    left: 45%;
+}
+footer.program div:first-child{
+    color: #878787;
+    border-top: 3px solid #878787;
+}
+footer.program div:last-child{
+    color: #B80005;
+    border-top: 3px solid #E5151A;
+}
+footer.program div:first-child:before{
+    background: url(../images/icon-ntj.png) no-repeat;
+    background-size: 100% 100%;
+}
+footer.program div:last-child:before{
+    background: url(../images/icon-xzprogram.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.programlist img{
+    margin: 20px;
+}
+ul li{
+    -webkit-box-orient: horizontal;
+    display: -webkit-box;
+    font-size: 26px;
+    color: #333333;
+    margin: 0 25px;
+    line-height: 60px;
+}
+ul li div:first-child{
+    width: 420px;
+}
+ul li div:last-child{
+    width: -webkit-calc(100% - 420px);
+    width: calc(100% - 420px);
+    text-align: center;
+}
+
+
+.countdown {
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #BD2121;
+    z-index: 98;
+    margin-top: 12vh;
+    width: 100%;
+    clear: both;
+    top: 0;
+    opacity: 0;
+}
+.countdown .detail-countdown{
+    display: inline-block;
+    margin: auto;
+}
+.countdown .detail-countdown .fetal-H{
+    background: -webkit-linear-gradient(top, #2e2a29 0%,#210001 100%);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 3px;
+    /*padding: 3px 3px 2px 3px;*/
+    border-top: 1px #484849 solid;
+    border-left: 1px #484849 solid;
+    color: #FBECCF;
+    font-family: 'DIGI';
+    font-size: 30px;
+    box-shadow: inset 1px 0 1px #5a5a5b,inset 0 1px 1px #5a5a5b;
+}
+.countdown .detail-countdown label {
+}
+.countdown * {
+    /*text-shadow: 2px 2px 1px rgba(0,0,0,.5) !important;*/
+}
+
+.current{
+    background: red;
+    color: #FFF;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 5px;
+}
+#wrapper {
+    /*overflow: hidden;
+    height: 69vh;*/
+    overflow: hidden;
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    top: 185px;
+}
+.copyright{
+    color: #101010;
+    font-size: 20px;
+    line-height: 30px;
+}
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+    margin: 0 20px;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait) {
+    .recommend {
+        padding-top: 5vh;
+    }
+}

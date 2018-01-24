@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>茗天闪亮</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/answer.css" />
+</head>
+<body>
+	<header>
+		<div class="hd-wrapper">
+			<div class="total">目前人数：<span id="total">0</span></div>
+			<a class="ranking" id="ranking" data-collect="true" data-collect-flag="szws-shining-answer-rank" data-collect-desc="答题页面-积分排行按钮">
+				<img src="images/rank.png" border="0">
+			</a>
+			<h2 class="logo"></h2>
+			<a class="ddtj none" id="ddtj" href="" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+		</div>
+		<div class="qa-wrapper">
+			<div class="wrapper">
+				<div class="c-item question" id="question"></div>
+				<div class="c-item answered none" id="answered">
+					<h3 id="answer-tip">答错喽，喝杯茶休息一下吧！</h3>
+					<div class="timer">
+						<h4>距下轮答题开始还有</h4>
+						<span class="time-box" id="time-box"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<article id="article">
+		<div class="comments" id="comments"></div>
+		<div class="ctrls">
+			<div class="funny-box">
+				<img class="funny1" src="./images/funny/funny1.png" data-item="/:funny1" border="0">
+				<img class="funny2" src="./images/funny/funny2.png" data-item="/:funny2" border="0">
+				<img class="funny3" src="./images/funny/funny3.png" data-item="/:funny3" border="0">
+			</div>
+			<p>
+				<input id="input-comment" type="text" placeholder="说说你的观点吧" />
+				<a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="szws-shining-answer-comment" data-collect-desc="答题页面-发表评论按钮">发射</a>
+			</p>
+		</div>
+	</article>
+	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/iscroll-lite.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/barrage.js"></script>
+	
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/plugins/lottery.min.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/plugins/msg.js"></script>
+	<script src="./js/app/answer.js"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+	<img src="images/redbg.png" style="width:0 !important;height:0 !important;opacity:0 !important;">
+	<img src="images/award-succ.png" style="width:0 !important;height:0 !important;opacity:0 !important;">
+	<img src="images/chai.png" style="width:0 !important;height:0 !important;opacity:0 !important;">
+	<img src="images/redbag-top.png" style="width:0 !important;height:0 !important;opacity:0 !important;">
+	<img src="images/redbag-bottom.png" style="width:0 !important;height:0 !important;opacity:0 !important;">
+</body>
+</html>

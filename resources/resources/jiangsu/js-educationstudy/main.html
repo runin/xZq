@@ -1,0 +1,87 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>教育新闻</title>
+    <link rel="stylesheet" type="text/css" href="./css/core.css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="rule none">
+    </div>
+    <div class="contain">
+        <div class="top">
+            <img src="images/todayTip.png" class="todayTip" alt="今日话题" />
+            <img src="images/back.png" class="back" alt="返回" />
+        </div>
+        <nav class="none">
+            <ul>
+                <li class="nav_topic active">话题评论</li>
+                <li class="nav_lottery">答题抽奖</li>
+            </ul>
+        </nav>
+        <div class="main">
+            <div id="comment" class="tab_pane fade in active_tab">
+                <div class="topic">
+                </div>
+                <div class="comment_total">
+                    <img src="images/bom.png" alt="" class="bom" /><span class="comment_count">0 </span>
+                    参与评论
+                </div>
+                <section class="comment_contain">
+                </section>
+            </div>
+            <div id="lottery" class="tab_pane fade ">
+                <div class="question_div">
+                    <h1 class="question none">
+                    </h1>
+                    <div class="answer none">
+                    </div>
+                    <div class="answer_percent none">
+                    </div>
+                    <!---未开始---->
+                    <div class="nostart ">
+                        敬请期待
+                    </div>
+                    <!----答完题之后显示百分比的时候显示下次倒计时的时间---->
+                    <div class="start_count none">
+                    </div>
+                    <div class="count_end none">
+                        <img src="images/end_text.png" class="end_text" />
+                        <div class="tip_msg_down">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+        <footer>
+            <div class="send_div">
+                <input class="send_input" placeholder="说说您的观点吧" />
+            </div>
+            <div class="send_btn">
+                发送
+            </div>
+        </footer>
+    <img src="images/answerError.png" class="none" />
+    <img src="images/answerRight.png" class="none" />
+    <img src="images/lottry.png" class="none" />
+    <img src="images/answerRight.png" class="none" />
+    <img src="images/question_bg.png" class="none" />
+    <img src="images/rule_bg.png" class="none" />
+    <script src="js/plugins/zepto.min.js" type="text/javascript"></script>
+    <script src="js/plugins/zepto.cookie.min.js" type="text/javascript"></script>
+    <script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/config.js" type="text/javascript"></script>
+    <script src="js/plugins/authorize_userinfo.js" type="text/javascript"></script>
+    <script src="js/plugins/core.js" type="text/javascript"></script>
+    <script src="js/app/countDown.js" type="text/javascript"></script>
+    <script src="js/app/main.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

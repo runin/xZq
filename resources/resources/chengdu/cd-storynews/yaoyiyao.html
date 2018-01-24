@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <title>新闻故事汇</title>
+        <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/core.css" />
+        <link rel="stylesheet" href="./css/dialog.css" />
+        <link rel="stylesheet" href="./css/yiyao.css" />
+    </head>
+    <body>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <!-- 摇奖页面 -->
+    <section class="yao-bg">
+        <div class="main-top m-t-b">
+            <div class="top-btn">
+                <div class="btn">
+                    <a class="btn-list" id="list" data-collect="true" data-collect-flag="lottery-list" data-collect-desc="摇奖页面-中奖纪录">中奖记录</a>
+                    <a class="btn-rule" id="rule-dialog" data-collect="true" data-collect-flag="lottery-rule" data-collect-desc="摇奖页面-活动规则">活动规则</a>
+                </div>
+                <div class="tttj none" id="tttj" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+                    <img class="wobble" src="./images/icon-redbag.png" >
+                    <span></span>
+                </div>
+            </div>
+            <div class="countdown1 none">
+                <span class="detail-countdown1"> </span>
+            </div>
+        </div>
+        <!-- 轮播中奖纪录 -->
+        <div class="main-foot m-f-b">
+            <!-- 中奖提示语 -->
+            <div class="weizhongjang">
+                <p class="yao-cool-tips none"><span>差一点就抢到了，继续加油~</span></p>
+            </div>
+            <div class="marquee-box">
+                <img src="./images/icon-scroll.png" class="icon-scroll none">
+                <div class="marquee none">
+                    <ul></ul>
+                </div>
+            </div>
+            <!-- 倒计时 -->
+            <div class="countdown none button-highlight">
+                <img src="./images/yao-hand.png" class="yao-hand">
+                <span class="countdown-tip"></span>
+                <span class="detail-countdown"> </span>
+            </div>
+        </div>
+    </section>
+    <!--<div class="test" id="test"></div>-->
+    <footer>
+        <!-- 摇奖提示语 -->
+
+        <p class="copyright"></p>
+    </footer>
+    <div class="fail-bg">
+    </div>
+
+    <!--<div class="footer-nav">-->
+        <!--<div class="nav-left focus btn-nav">摇奖<img src="images/icon-left.png"></div>-->
+        <!--<div class="nav-right btn-nav">说两句<img src="images/icon-right.png"></div>-->
+    <!--</div>-->
+
+<script src="./js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/shake.js"></script>
+<script src="./js/plugins/zepto.selector.min.js"></script>
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/app/dialog.js"></script>
+<script src="./js/plugins/sha1.min.js"></script>
+<script src="./js/app/yaoyiyao.js"></script>
+<!-- <script src="./js/app/timebuycheck.js"></script> -->
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

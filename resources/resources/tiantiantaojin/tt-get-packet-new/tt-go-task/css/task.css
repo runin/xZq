@@ -1,0 +1,420 @@
+*
+{
+	padding:0px;
+	margin:0px;
+}
+li
+{
+    list-style-type:none;
+}
+body
+{
+
+  	background-color:#EEEEEE;
+  	background-size:100% 100%;
+    height:100%;
+    overflow: hidden;
+    font-size: 14px;
+}
+html
+{
+  height:100%;
+  width:100%;
+  overflow: hidden;
+}
+/*头部开始*/
+header
+{
+  position: relative;
+  width:100%;
+}
+header .taotao-img
+{
+  position: relative;
+  max-width:30%;
+  margin-top:5px;
+  margin-left:0px;
+  display: block;
+}
+header .arrow
+{
+    position: absolute;
+    left: 50%;
+    width: 32px;
+    height: 15px;
+    top: 2px;
+    margin-left: -16px;
+
+}
+marquee
+{
+  position: absolute;
+  width:56%;
+  top:2px;
+  height:20px;
+  left:35%;
+  line-height: 20px;
+  font-size: 16px;
+
+}
+.top-image-nav
+{
+  width: 100%;
+  height: 180px;
+  position: relative;
+  margin-top: 5px;
+}
+
+.img-nav
+{
+  display: inline-block;
+  height: 100%;
+  width: calc(50% - 15px);
+  width: -webkit-calc(50% - 15px);
+  position: relative;
+  overflow: hidden;
+}
+.top-image-nav1
+{
+  margin-left:10px;
+  background: url(../images/top-img.jpg) no-repeat top center;
+  background-size: 100% 100%;
+}
+.top-image-nav2
+{
+  margin-left:5px;
+  background: url(../images/top-img.jpg) no-repeat top center;
+  background-size: 100% 100%;
+}
+.hot-label
+{
+  position: absolute;
+  top:-40px;
+  left:-40px;
+  width:80px;
+  height:80px;
+  background: red;
+  border-radius: 100%;
+  text-align: right;
+  vertical-align: bottom;
+  color:#fff;
+  line-height: 120px;
+}
+.hot-label p
+{
+    position: absolute;
+    right: 12px;
+    bottom: -38px;
+}
+/*头部结束*/
+/*中间导航和信息一览start*/
+.tab-div
+{
+  display: block;
+  background: #fff;
+  height:44px;
+  width:100%;
+  line-height: 42px;
+  font-size: 16px;
+  margin-top: 5px;
+  border-top:1px solid #d6d5d5;
+  border-bottom:1px solid #d6d5d5;;
+}
+.tab-div a
+{
+  width:48%;
+  text-align: center;
+  float:left;
+  color:#b3b3b3;
+  position: relative;
+
+}
+.icon-ctrl
+{
+    line-height: 2px;
+    display: inline-block;
+    height: 24px;
+    background-image:url('../images/index-grey-arrow.png');
+    background-size: 100% 100%;
+    color: #b3b3b3;
+    width: 30px;
+    top:6px;
+    position: relative;
+}
+.icon-space
+{
+    line-height: 2px;
+    display: inline-block;
+    height: 24px;
+    width: 30px;
+    position: relative;
+}
+.click-style
+{
+  color:#c53336!important;
+}
+
+.click-style .icon-ctrl
+{
+    width: 30px!important;
+    height: 24px!important;
+    background-image:url('../images/index-chose-arrow.png');
+    margin-left: 0px!important;
+    color: #666666!important;
+    top:6px;
+}
+
+.mid-line
+{
+  float:left;
+}
+.result-list
+{
+  background-color:#EEEEEE;
+  overflow-y:scroll;
+  padding-top: 5px;
+  z-index:1;
+  position: relative;
+  clear:both;
+}
+.result-list ul li
+{
+  height:84px;
+  display: block;
+  padding:2px 0px;
+  border-bottom: 1px solid #eee;
+}
+.result-list img
+{
+  height: 60px;
+  width: 60px;
+  margin-top:10px;
+}
+.result-list ul li div:first-child
+{
+  width: calc(62% - 0px);
+  width: -webkit-calc(62% - 0px);
+  background: #fff;
+  float:left;
+  height:100%;
+  padding-left:10px;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.app-name
+{
+  display: inline-block;
+  position: absolute;
+  top:10px;
+  font-size: 16px;
+  margin-left:10px;
+  white-space: normal;
+}
+.app-tips
+{
+  display: inline-block;
+  position: absolute;
+  bottom:10px;
+  margin-left:10px;
+  font-size: 14px;
+  color:#999999;
+  white-space: normal;
+}
+
+.result-list ul li div:last-child
+{
+  width: 38%;
+  background: #fff;
+  float:left;
+  height:100%;
+  text-align: center;
+  position: relative;
+}
+.gold-icon
+{
+    background: url(../images/money-packet-icon.png) no-repeat;
+    height: 16px;
+    width: 22px;
+    background-size: 100% 100%;
+    display: inline-block;
+    position: relative;
+    float:right;
+    right:5px;
+}
+.gold-infor
+{
+    display: inline-block;
+    position: relative;
+    margin-left: 1px;
+    right: 10px;
+    float: right;
+}
+.result-list div p
+{
+  position: relative;
+  top:10px;
+}
+.result-list div a
+{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    width: 70%;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 4px;
+    
+}
+/*按钮的颜色*/
+.task-had
+{
+  color:#fff;
+  background:#4C4F53;
+}
+.task-not
+{
+  background: #c53336;
+  color: #ffffff;
+}
+/*中间导航和信息一览end*/
+
+/*悬浮导航栏处start*/
+.fix-tab-div
+{
+  position: fixed;
+  bottom:0px;
+  height:48px;
+  width:100%;
+  background: #4C4F53;
+  z-index:2;
+}
+.fix-tab-div a
+{
+  float:left;
+  width:33%;
+  text-align: center;
+  border-left: 1px solid #000;
+  color:#eeeeee;
+  position: relative;
+  line-height: 26px;
+  font-size: 14px;
+}
+.fix-tab-div i
+{
+  width:32px;
+  height:25px;
+  display: block;
+  position:relative;
+  margin:0 auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.icon-bg
+{
+  background-image:url('../images/icon-bg.png');
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width:90px;
+  height:34px;
+  top:-5px;
+  z-index: 1;
+  left:50%;
+  margin-left: -45px;
+}
+.task-icon
+{
+  background-image:url('../images/task-icon.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.money-market-icon
+{
+  background-image:url('../images/money-icon.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.user-icon
+{
+  background-image:url('../images/user-icon.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+/*悬浮导航栏处start*/
+*:focus {outline: none;}
+.tag-bg
+{
+  width:100%;
+  height:120px;
+  position:absolute;
+  background-color:#ffffff;
+  color:#777777;
+  z-index:4;
+  padding:2px 10px 6px;
+}
+.tag-bg p
+{
+  height:38px;
+  line-height: 38px;
+  border-bottom: 1px solid #c4c3c3;
+}
+/*下拉菜单start*/
+
+/*下拉菜单end*/
+
+
+/*适配*/
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 480px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+ 
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+  .record-content
+  {
+      margin-top: 0px;  
+  }
+  .record-content .record-infor
+  {
+      max-height: 186px;
+  }
+  header .title-img
+  {
+    max-width:54%;
+    margin-top: 10px;
+  }
+  .command-input
+  {
+   margin-top: 1%; 
+  }
+  .botton-ok
+  {
+    margin-top:-20px auto;
+  }
+}
+
+
+

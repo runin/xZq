@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>看今天</title>
+	<link rel="stylesheet" href="./css/reset.css"></link>
+	<link rel="stylesheet" href="./css/core.css"></link>
+	<link rel="stylesheet" href="./css/style.css"></link>
+</head>
+<body class="baseRedColor">
+	<div class="main">
+		<input type="hidden" id="noRunShare" value="true">
+		<div class="banner">
+	        <span class="solgon"></span>
+			<img id="cover" width="100%">
+			<div class="info box-orient-h" id="info">
+				<div class="box-flex ">
+					<h2>-</h2>
+					<p><em id="w-num">-</em>人想去</p>
+				</div>
+				<a href="#" class="wantn" id="wantn" data-collect="true" data-collect-flag="sy-look-today-signup-wantgo" data-collect-desc="旅游报名-我想去">我想去</a>
+			</div>
+		</div>
+
+
+    <div class="sgn">
+      <h2>报名用户</h2>	
+      <div class="clearfix signed-list">
+			<ul>
+				<li><img src="images/avatar1.png" /></li>
+				<li><img src="images/avatar2.png" /></li>
+				<li><img src="images/avatar3.png" /></li>
+				<li><img src="images/avatar4.png" /></li>
+				<li><img src="images/avatar5.png" /></li>
+			</ul>
+			<span class="count" id="count">+<strong></strong></span>
+		</div>
+    </div>
+		<div class="intro" id="intro">
+			<a href="#" class="btn-signup" id="btn-signup" data-collect="true" data-collect-flag="sy-cks-signup-baoming" data-collect-desc="旅游报名-我要报名">我要报名</a>
+			<div id="intro-content"></div>			
+		</div>
+		
+		<a href="index.html" class="btn-back" data-collect="true" data-collect-flag="sy-cks-signup-back" data-collect-desc="旅游报名-返回首页">返回</a>
+		
+	</div>
+	
+	<div class="bottom">
+    	<div class="copy-right copyright">页面由沈阳广播电视台·新闻频道提供</div>
+	</div>
+
+	<script src="js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/wx_api_userinfo.js"></script>
+
+	<script src="./js/app/signup.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

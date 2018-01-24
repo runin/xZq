@@ -1,0 +1,314 @@
+body{
+	background: url(../images/bg-lottery.jpg) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.main{
+    text-align: center;
+    padding-top : 40px;
+
+}
+header{
+	height: 90px;
+	position: absolute;
+	top :0px;
+	right: 10px;
+}
+header nav{
+	width :80px;
+	height: 50px;
+	padding-top: 24px;
+	background: url(../images/pocket.png) no-repeat center;
+	background-size: 100%;
+	float: right;
+	margin-top: -2px;
+}
+header nav .hd-btn{
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+}
+.main .tlt{
+	width: 90%;
+	margin: 0px auto 10px;
+}
+.main .count{
+	padding-left: 20px;
+	font-size: 13px;
+	color: #ff007e;
+	line-height: 26px;
+	text-align: left;
+}
+
+.main .detail-countdown,.main .lottery-tip{
+   display: inline-block;
+   color: #9b2652;
+   font-size: 15px;
+   font-weight: bold;
+   margin: 10px 0;
+}
+.lottery .card-box{
+	width: 80%;
+	height: 160px;
+	background: url(../images/paint.png)no-repeat;
+	background-size: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+.lottery .card{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	background: url(../images/card.png)no-repeat;
+	background-size: 100%;
+}
+.lottery .card-box .spinner{
+	position: absolute;
+	top:50%!important;
+	left: 50%!important;
+	margin-top: -25px!important;
+	margin-left: -25px!important;
+}
+.lottery .card-box .spinner .spinner-wrapper {
+    width: 40px!important;
+	height: 40px!important;
+}
+.card-laywer{
+	width: 100%;
+	height: 100%;
+	background: url(../images/lottery-btn.png)no-repeat;
+	background-size: 100%;
+}
+#lottery-mask{
+	position: absolute!important;
+	width: 200px!important;
+	height: 110px!important;
+	max-height: 120px!important;
+	left: 50%!important;
+	top:50%!important;
+	margin-left: -100px!important;
+	margin-top: -50px!important;
+}
+.lottery-end img{
+	margin: 10px 21%;
+	width :58%;
+}
+.lottery-end span{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	color: #bb6a7f;
+}
+ul{
+	padding-top: 40px;
+    margin: 15px 15px 0px;
+    background: url(../images/comment-tlt.png) no-repeat center top;
+    background-size:80% ;
+    color: #ff6c93;
+}
+ul li{
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    padding: 10px 0;
+}
+ul .nor-comment{
+    display: block;
+    padding-bottom: 60px;
+}
+
+ul li label.headImg{
+	 display: inline-block; 
+	 width: 20%; 
+	 border: 1px solid #d4dad8;
+     margin-right: 4px;
+     border-radius: 50%;
+     overflow: hidden;
+}
+ul li label.headImg img{
+	 width: 100%; 
+	 min-height: 100%;
+}
+ul li label.zan{
+    display: inline-block;
+    background: url(../images/z.png) no-repeat left 7px;
+    background-size: 20px;
+    width: 18%;
+    vertical-align: top;
+    height: 60px;
+    line-height: 60px;
+}
+ul li label.z-ed{
+    background: url(../images/z-ed.png) no-repeat left 7px;
+    background-size: 20px;
+}
+ul li div{
+	display: inline-block;
+    width: 60%;
+    height: 100%;
+    font-size: 15px;
+    vertical-align: top;
+    text-align: left;
+    padding: 6px;
+}
+ul li div p{
+	font-size: 14px;
+}
+ul li div p span{
+	font-size: 12px;
+}
+
+.all{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    z-index: 1;
+    padding: 0 20px;
+}
+footer #comments-info{
+    display: inline-block;
+    width: 80%;
+    color: #497190;
+    font-size: 12px;
+    background: rgba(252,221,226,1);
+    border: none;
+    padding: 6px;
+    height: 40px;
+    margin: 4px 0px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+   
+}
+footer #send{
+    background: #f38fab;
+    color: #fff;
+    border:none;
+    font-size: 17px;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    display: inline-block;
+    margin-left: -6px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+}
+.top-back{
+    position: fixed;
+    width: 45px;
+    height: 50px;
+    background: rgba(244,143,170,0.8);
+    bottom: 60px;
+    right: 10px;
+    z-index: 2;
+    color: #fff;
+    font-size: 14px;
+    
+}
+.top-back:before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-bottom-color: #fff;
+    border-width:10px;
+    position: relative;
+    top: -5px;
+    left: 12px;
+}
+.top-back:after{
+    content: '';
+    display: block;
+    width: 9px;
+    height: 14px;
+    background: #fff;
+    position: absolute;
+    top: 15px;
+    left: 17px;
+}
+.top-back label{
+    display: block;
+    margin: 10px auto 0px;
+    color: #fff;
+}
+
+.lodd{
+    position:absolute;
+    left: 50%;
+    margin-left: -12px;
+    bottom: 60px;
+
+}
+.spinner.lodd .spinner-wrapper {
+    width: 25px;
+    height: 25px;
+}
+.lodd .container1 > div,.lodd .container2 > div,.lodd .container3 > div {
+    width: 6px;
+    height: 6px;
+    background-color: #f99fbd;
+}
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1200px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+
+}
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 375px)
+and (min-device-height : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

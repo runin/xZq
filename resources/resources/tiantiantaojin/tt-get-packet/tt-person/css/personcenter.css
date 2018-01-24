@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+    background-color: #ffffff;
+}
+.hicon{
+    position: absolute;
+    left: 8%;
+    z-index: 28;
+    border-radius: 8px;
+}
+.nickname{
+    position: absolute;
+    font-size: 18px;
+    color: #ffffff;
+    z-index: 28;
+}
+.hand{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: url("../personimg/personcenter-hand.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.myrank{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 50;
+    text-align: center;
+    top: 25%;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    /*background-color: #0092C7;*/
+}
+.bottom{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+}
+.pc-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+.pc-mgd,.pc-gmi,.pc-mine{
+    position: absolute;
+    width: 20%;
+    height: 11%;
+    left: 8%;
+    top: 44%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.pc-gmi{
+    left: 39%;
+    top: 27%;
+}
+.pc-mine{
+    left: 73%;
+    top: 39%;
+}
+.pc-pice1,.pc-pice2,.pc-pice3,.pc-pice4,.pc-pice5{
+    position: absolute;
+    width: 10%;
+    height: 7%;
+    left: 27%;
+    top: 10%;
+    animation: picedown 7s;
+    -webkit-animation: picedown 7s;
+    z-index: 30;
+}
+.pc-pice2{
+    width: 8%;
+    height: 6%;
+    left: 20%;
+    top: 65%;
+    animation: picedown 6s;
+    -webkit-animation: picedown 6s;
+}
+.pc-pice3{
+    width: 7%;
+    height: 5%;
+    left: 60%;
+    top: 65%;
+    animation: picedown 5s;
+    -webkit-animation: picedown 5s;
+}
+.pc-pice4{
+    width: 5%;
+    height: 3%;
+    left: 75%;
+    top: 52%;
+    animation: picedown 4.2s;
+    -webkit-animation: picedown 4.2s;
+}
+.pc-pice5{
+    width: 6%;
+    height: 4%;
+    left: 80%;
+    top: 60%;
+    animation: picedown 3s;
+    -webkit-animation: picedown 3s;
+}
+.black{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.9;
+    display: none;
+    z-index: 30;
+}
+.gdmissi{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: url("../personimg/personcenter-goldmission.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: none;
+    z-index: 40;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*.gdmissi div{*/
+    /*position: absolute;*/
+    /*width: 60%;*/
+    /*left: 20%;*/
+    /*height: 37%;*/
+    /*top: 25%;*/
+    /*font-size: 18px;*/
+    /*overflow-y: scroll;*/
+    /*background-color: #0092C7;*/
+/*}*/
+/*.gdcls{*/
+    /*position: absolute;*/
+    /*z-index: 45;*/
+    /*right: 8%;*/
+    /*top: 8%;*/
+    /*width: 10%;*/
+    /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+/*}*/
+
+/*animate*/
+
+
+@keyframes picedown
+{
+    0%   {  opacity: 0}
+    20%  {  opacity: 1}
+    80%  {  opacity: 0.6}
+    100% {  top: 90% ;  opacity: 0}
+}
+@-webkit-keyframes picedown /* Safari 和 Chrome */
+{
+    0%   {  opacity: 0}
+    20%  {  opacity: 1}
+    80%  {  opacity: 0.6}
+    100% {  top: 90% ;  opacity: 0}
+}
+
+@keyframes flyover
+{
+    0%   {}
+    100% {bottom: 100%}
+}
+@-webkit-keyframes flyover /* Safari 和 Chrome */
+{
+    0%   {}
+    100% {bottom: 100%}
+}
+
+@-webkit-keyframes toggle {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}

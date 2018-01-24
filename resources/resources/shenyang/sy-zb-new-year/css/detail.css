@@ -1,0 +1,40 @@
+body{
+    background: #fff;
+    position: relative;
+}
+header{
+    background: #1D85CC;
+}
+header h1{
+    color: #fff;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+}
+section{
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    font-size: 12px;
+    margin-top: 15px;
+    padding-bottom: 80px;
+}
+.back-home{
+    background: #1D85CC;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+}
+.copyright{
+    position: absolute;
+}

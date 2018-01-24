@@ -1,0 +1,103 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: url(../images/bg.jpg) no-repeat center center #FFF;
+	background-size: auto 100%;
+    font-size: 0;
+}
+header {
+	position: relative;
+	width: 100%;
+    z-index: 99;
+}
+header .icon-vivologo {
+    display: block;
+    width: 22%;
+    margin-left: 3%;
+}
+header .btn-rule {
+    position: absolute;
+    width: 19%;
+    top: 2px;
+    right: 2px;
+    z-index: 999;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.container .icon-slogan {
+    width: 76%;
+    margin: -5% auto 0;
+}
+.container .icon-vivoX6 {
+    position: relative;
+    width: 86%;
+    margin: -5% auto 0;
+    left: 2%;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	z-index: 99999;
+}
+footer .btn-go2play {
+    position: relative;
+    display: block;
+    width: 90px;
+    margin: 0 auto 5%;
+    text-align: center;
+}
+footer .btn-go2play .icon-shine {
+    position: absolute;
+    z-index: 99;
+    -webkit-animation: shine 2.6s 0s infinite ease-in-out;
+    -webkit-transform-origin: bottom;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes shine {
+    0% {-webkit-transform: translateY(5px);opacity: 0;}
+    26% {opacity: 1;}
+    52% {opacity: 1;}
+    70% {-webkit-transform: translateY(38px);opacity: 0;}
+    100% {-webkit-transform: translateY(5px);opacity: 0;}
+}
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .container .icon-slogan {
+        width: 72%;
+        margin: -16% auto 0;
+    }
+    .container .icon-vivoX6 {
+        position: relative;
+        width: 76%;
+        margin: -3% auto 0;
+        left: 2%;
+    }
+    footer .btn-go2play {
+        display: block;
+        width: 26%;
+        margin: 0 auto 5%;
+    }
+}
+
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+    .container .icon-slogan {
+        margin: -8% auto 0;
+    }
+    .container .icon-vivoX6 {
+        width: 82%;
+    }
+}

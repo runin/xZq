@@ -1,0 +1,365 @@
+html {
+	height: 100%;
+}
+body {
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: top center;  
+	background-size: cover;
+	background-color: #000;
+}
+body:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../images/flash.gif) no-repeat top center;
+	background-size: cover;
+}
+header {
+  position: absolute;
+  right: 4px;
+  top: 8px;
+  width: 110px;
+  z-index: 1;
+}
+header .ctrls {
+  position: relative;
+  text-align: center;
+  -webkit-animation-delay: 2s;
+}
+header .ctrls:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: transparent;
+	border-bottom-color: rgba(86, 24, 23, 0.8);
+	border-width: 5px;
+	margin-left: 7px;
+}
+header .ctrls a {
+  color: #fff;
+  display: block;
+  text-align: center;
+  width: 106px;
+  height: 28px;
+  margin: 6px auto 0;
+}
+#btn-rule {
+	background: url(../images/btn-rule.png) no-repeat;
+	background-size: 100% auto;
+}
+#btn-reserve {
+	background: url(../images/btn-reserve.png) no-repeat;
+	background-size: 100% auto;
+}
+#div_subscribe_area {
+	height: 50px;
+	overflow: hidden;
+}
+.tvlogo {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 14%;
+  z-index: 99;
+}
+.content {
+	position: absolute;
+	width: 100%;
+	z-index: 4;
+	bottom: 0;
+}
+.content .logo {
+	position: absolute;
+	/*top: -200px;*/
+	bottom: 42%;
+    width: 100%;
+    margin: 0 auto;
+    z-index: -1;
+}
+.content .logo img {
+	width: 100%;
+}
+
+.content .avatars {
+	
+}
+
+
+.content .avatars h2 {
+    text-align: center;
+	
+    font-size: 14px;
+    color: #561817;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+
+.content .avatars ul {
+    text-align: center;
+	
+    margin-top: 5%;
+}
+
+.content .avatars li {
+    display: inline-block;
+	
+    vertical-align: middle;
+    width: 60px;
+    text-align: center;
+}
+
+.content .avatars span {
+    display: block;
+    border-radius: 100%;
+	border: 2px solid #b8978b;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+}
+
+.content .avatars span img {
+    width: 100%;
+	height: 100%;
+    border-radius: 100%;
+    vertical-align: top;
+}
+
+.content .avatars p {
+    color: #561817;
+	
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.content article {
+  color: #d8d8d8;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+}
+.btn-join {
+  width: 80%;
+  height: 86px;
+  display: block;
+  margin: 0 auto;
+  background: url(../images/btn-join.png) no-repeat;
+  background-size: 100% auto;
+}
+.btn-join:active {
+	color: #fff;
+}
+.btn-join.disabled {
+	/*background: rgba(86,24,23,0.5);*/
+}
+.animated {
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay:.5s;
+			animation-delay:.5s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+.fade-in-up {
+  -webkit-animation-name: zoom-in;
+          animation-name: zoom-in;
+}
+.copyright {
+	height: 26px;
+	line-height: 12px;
+	color: #888;
+	opacity: 1;
+	margin-top: 16px;
+}
+.content .btn-box {
+	  width: 34%;
+  margin: 2% auto 0;
+}
+.content .btn-box a {
+	display: inline-block;
+}
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.wave {
+	position: absolute;
+	z-index: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
+}
+.wave .in {
+	background: url(../images/wave-in.png) no-repeat center bottom;
+	height: 60%;
+	background-size: 122% auto;
+	z-index: 3;
+	-webkit-animation: wave-in 3s linear alternate infinite;
+}
+.wave .mid {
+	background: url(../images/wave-mid.png) no-repeat center bottom;
+	height: 80%;
+	background-size: 122% auto;
+	z-index: 2;
+	-webkit-animation: wave-out 3s linear alternate infinite;
+	left: -44%;
+}
+.wave .out {
+	background: url(../images/wave-out.png) no-repeat center bottom;
+	height: 100%;
+	background-size: 122% auto;
+	z-index: 1;
+	-webkit-animation: wave-in 3s linear alternate infinite;
+}
+.wave div {
+	width: 150%;
+	position: absolute;
+	bottom: 0;
+	left: 0%;
+}
+@-webkit-keyframes wave-in {
+	0% {
+		left: -12%;
+	}
+	100% {
+		left: -32%;
+	}
+}
+@-webkit-keyframes wave-out {
+	0% {
+		left: -32%;
+	}
+	100% {
+		left: -12%;
+	}
+}
+@-webkit-keyframes fade-in-up {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: translate3d(0, 100%, 0);
+	          transform: translate3d(0, 100%, 0);
+	}
+	100% {
+	  opacity: 1;
+	  -webkit-transform: none;
+	          transform: none;
+	}
+}
+
+@keyframes fade-in-up {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: translate3d(0, 100%, 0);
+	          transform: translate3d(0, 100%, 0);
+	}
+	100% {
+	  opacity: 1;
+	  -webkit-transform: none;
+	          transform: none;
+	}
+}
+
+.zoom-in {
+  -webkit-animation-name: zoom-in;
+          animation-name: zoom-in;
+}
+
+@-webkit-keyframes zoom-in {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: scale3d(.3, .3, .3);
+	          transform: scale3d(.3, .3, .3);
+	}
+	
+	50% {
+	  opacity: 1;
+	}
+}
+
+@keyframes zoom-in {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: scale3d(.3, .3, .3);
+	          transform: scale3d(.3, .3, .3);
+	}
+	50% {
+	  opacity: 1;
+	}
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1100px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1200px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 550px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.btn-join {
+		height: 100px;
+	}
+}
+
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (device-aspect-ratio:16/9) and (device-aspect-ratio:16/10) and (device-aspect-ratio:4/3)
+and (-webkit-min-device-pixel-ratio : 0) {
+	.btn-join {
+		height: 112px;
+	}
+}
+
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.btn-join {
+		height: 112px;
+	}
+}
+
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 Plus */
+		.btn-join {
+		height: 112px;
+	}
+
+}

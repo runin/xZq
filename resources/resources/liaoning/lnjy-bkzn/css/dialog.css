@@ -1,0 +1,483 @@
+.modal {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	color: #333;
+	text-align: center;
+}
+.modal .dialog{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.modal .btn-close{
+	position: absolute;
+	top: 9%;
+	right: 2%;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+#not-lott .happyjs {
+	width: 100%;
+	position: relative;
+}
+#not-lott .happyjs p {
+	position: absolute;
+	color: #f42a58;
+	width: 74%;
+	left: 13%;
+	top: 50%;
+	text-align: left;
+	font-size: 14px;
+	font-weight: bolder;
+	background: rgba(255,255,255,.6);
+	padding: 2%;
+}
+.not-lott {
+	text-align: center;
+}
+.not-lott p span{
+	display: inline-block;
+	width: 80px;
+	height: 23px;
+	line-height: 23px;
+	vertical-align: top;
+	font-weight: bolder;
+	font-size: 18px;
+}
+.success .input-box {
+	margin: 5px auto 0 !important;
+}
+.success .input-box-address {
+	margin: 8px auto 0 !important;
+}
+.success label {
+	position: static !important;
+	width: 80% !important;
+	text-align: left !important;
+	height: auto !important;
+	line-height: normal !important;
+	vertical-align: middle !important;
+}
+.success .input-box label:before {
+	width: 17px !important;
+	height: 17px !important;
+	background-size: 17px auto !important;
+	margin-top: 0 !important;
+}
+.success .input-box .input-name:before {
+	width: 17px !important;
+	height: 17px !important;
+	margin-top: 0 !important;
+}
+.lott .input-box {
+	position: relative;
+	width: 80%;
+	margin: 0 auto 5px;
+	text-align: left
+}
+.lott .win-pen {
+	position: absolute;
+	z-index: 100;
+	width: 30%;
+	right: 0;
+	top: 3%;
+}
+.lott .input-box span {
+	display: inline-block;
+	font-size: 15px;
+	line-height: 32px;
+	margin-right: 10px;
+	color: #FFF;
+}
+.lott .input-box input {
+	display: inline-block;
+	width: calc(100% - 45px);
+	width: -webkit-calc(100% - 45px);
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #BDBDBD;
+	box-shadow: 0 0 5px rgba(0,0,0,.2) inset;
+}
+.lott .input-box label {
+	display: inline-block;
+	font-size: 13px;
+	color: #FFF;
+	word-break: break-all;
+	line-height: 25px !important;
+}
+.lott .input-box label img {
+	width: 20px;
+	height: 20px;
+	margin-top: 6px;
+}
+.success .input-box label img {
+	width: 16px !important;
+	height: 16px !important;
+	margin-top: 0 !important;
+}
+#lott .input-box label i {
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 36px;
+	line-height: 34px;
+	font-style: normal;
+	top: 0;
+	left: 20px;
+}
+#lott-code .input-box input {
+	display: inline-block;
+	width: calc(100% - 45px);
+	width: -webkit-calc(100% - 45px);
+	height: 32px;
+	line-height: 22px;
+	border: 1px solid #BDBDBD;
+	box-shadow: 0 0 5px rgba(0,0,0,.2) inset;
+	padding: 5px 10px;
+}
+#lott-code .tip-info{
+	color: #666666;
+	font-size: 17px;
+}
+#lott-code .code-info{
+	display: inline-block;
+	background: #e6e6e6;
+	margin: 2% auto;
+	padding: 2% 6%;
+	color: #023f29;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+#lott-code .code-info #d-code {
+	font-weight: bolder;
+}
+.success .input-box label i {
+	position: static !important;
+	display: inline-block !important;
+	font-style: normal !important;
+	height: auto !important;
+	line-height: normal !important;
+}
+#guide-dialog {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/guide.jpg) no-repeat center center;
+	background-size: cover;
+}
+#not-lott img {
+	max-width: 78%;
+}
+#not-lott p img {
+	margin: 5px auto 0;
+	max-width: 65%;
+}
+#not-lott .lottery-close {
+	margin-top: 8px;
+	display: block;
+}
+#not-lott #notips {
+	margin-top: 30px;
+}
+#not-lott .lottery-close img {
+	max-width: 46%;
+}
+.notips p {
+	display: none !important;
+}
+.tips p {
+	display: block !important;
+}
+.tips .lottery-close {
+	margin-top: 8px !important;
+}
+.notips .lottery-close {
+	margin-top: 30px !important;
+}
+.lott{
+	padding-top: 6%;
+	width: 100%;
+	height: 100%;
+}
+.lott .win-img {
+	position: relative;
+	width: 88%;
+	margin: 4% auto 6%;
+	border-radius: 18px;
+	z-index: 11;
+}
+.lott .load-img {
+	position: absolute;
+	width: 88%;
+	margin: 2% auto 6%;
+	border-radius: 18px;
+	background: url(../images/load.png) no-repeat center center;
+	background-size: cover;
+	top: 4%;
+	left: 6%;
+	z-index: 10;
+}
+.lott h1{
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+}
+.lott p{
+	font-size: 12px;
+	text-align: center;
+	color: #FFF;
+}
+.lott span, .lott label {
+	line-height: normal !important;
+}
+.lott .share-img {
+	width: 42%;
+	margin: 4% auto 0;
+	-webkit-animation: tada 2s linear infinite;
+	-webkit-animation-delay:.2s;
+	animation: tada 2s linear infinite;
+	animation-delay:.2s;
+}
+.lott p.win-info {
+	margin: 0 auto 2%;
+}
+.lott p.win-tips {
+	margin: 0 auto 5px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bolder;
+}
+.lott p span{
+	display: inline-block;
+	height: 23px;
+	vertical-align:top;
+}
+.lott p img{
+	width: 200px;
+}
+.lott .btn-award{
+	display: block;
+	width: 28%;
+	margin: 10px auto 0;
+}
+.lott .btn-back{
+	display: block;
+	width: 28%;
+	margin: 10px auto 0;
+	height: auto;
+	line-height: normal;
+	background: transparent;
+}
+.lott label.ad{
+	display: inline-block;
+	width: 72px; 
+	height: 72px;
+	border-radius: 50%;
+	border:2px solid #ffda2f;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	top:30%;
+	margin-left: -36px;
+	margin-top: -36px;
+	overflow: hidden;
+}
+.lott label.ad img{
+	width: 100%;
+	height: 100%;
+}
+#lottery-dialog, #rule-dialog {
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg.jpg) no-repeat top center;
+	background-size: cover;
+	z-index: 999;
+}
+#lottery-dialog .btn-close {
+	display: none;
+}
+.lott .win-img-box {
+	position: relative;
+	width: 72%;
+	margin: 0 auto;
+	padding-bottom: 2%;
+}
+.lott .win-img-box .win-img-cover {
+	position: absolute;
+	width: 100%;
+	background: url(../images/photo.png) no-repeat;
+	background-size: 100% auto;
+	margin: 0 auto;
+	z-index: 99;
+	top: 0;
+	left: 0;
+}
+.lottery-no:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.6);
+}
+#rule-dialog {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/rule-bg.jpg) no-repeat bottom center;
+	background-size: cover;
+}
+.lottery-no .btn-close {
+	display: none !important;
+}
+.lottery-no .dialog {
+	background: transparent !important;
+}
+#lottery-dialog .dialog, #rule-dialog .dialog {
+	width: 90%;
+	height: 80%;
+	z-index: 9999;
+}
+.rule-box {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.rule-box .back {
+	display: block;
+	width: 40%;
+	margin: 0 auto;
+}
+.rule-box img {
+	width: 72%;
+	margin: 15% auto 0;
+	text-align: center;
+}
+.rule-con {
+	word-break: break-word;
+	color: #694b28;
+	margin-top: 12%;
+	padding: 0 10%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 66%;
+	text-align: left;
+	font-size: 14px;
+}
+#lott-code .win-img {
+	max-width: 88%;
+	margin: 4% auto 6%;
+	border-radius: 18px;
+}
+.input-address img, .input-address i {
+	vertical-align: top !important;
+}
+/*加载按钮 -s*/
+.loader{
+	margin: 0 auto;
+	width: 72px;
+}
+.loader span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	background: #F26C0D;
+	border-radius: 50px;
+	margin: 0 2px;
+	-webkit-animation: loader 1s infinite alternate;
+	-moz-animation: loader 1s infinite alternate;
+}
+.loader span:nth-of-type(2) {
+	-webkit-animation-delay: 0.2s;
+	-moz-animation-delay: 0.2s;
+}
+.loader span:nth-of-type(3) {
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
+}
+.loader span:nth-of-type(4) {
+	-webkit-animation-delay: 0.6s;
+	-moz-animation-delay: 0.6s;
+}
+.loader span:nth-of-type(5) {
+	-webkit-animation-delay: 0.8s;
+	-moz-animation-delay: 0.8s;
+}
+.modal .copyright {
+	font-size: 13px;
+}
+@-webkit-keyframes loader {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.1;
+	}
+}
+@keyframes loader {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.1;
+	}
+}
+@-webkit-keyframes tada {
+	0% {-webkit-transform: scale(1);}	
+	6%, 12% {-webkit-transform: scale(0.9) rotate(-3deg);}
+	18%, 30%, 42%, 54% {-webkit-transform: scale(1.1) rotate(3deg);}
+	24%, 36%, 48% {-webkit-transform: scale(1.1) rotate(-3deg);}
+	60% {-webkit-transform: scale(1) rotate(0);}
+	100% {-webkit-transform: scale(1) rotate(0);}
+}
+@keyframes tada {
+	0% {transform: scale(1);}	
+	6%, 12% {transform: scale(0.9) rotate(-3deg);}
+	18%, 30%, 42%, 54% {transform: scale(1.1) rotate(3deg);}
+	24%, 36%, 48% {transform: scale(1.1) rotate(-3deg);}
+	60% {transform: scale(1) rotate(0);}
+	100% {transform: scale(1) rotate(0);}
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	#not-lott img {
+		max-width: 100%;
+	}
+	#not-lott p img {
+		margin: 5px auto 8px;
+		max-width: 80%;
+	}
+	#not-lott .lottery-close img {
+		max-width: 60%;
+	}
+	#not-lott {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.rule-con {
+		height: 53%;
+	}
+	.lott .btn-award, .lott .btn-back {
+		width: 22%;
+		margin: 8px auto 0;
+	}
+}

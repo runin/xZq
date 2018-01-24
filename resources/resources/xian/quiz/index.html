@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js/wx_api.js"></script>
+    <title>这里是西安</title>
+    <link rel="stylesheet" href="css/cssreset-min.css"></link>
+    <link rel="stylesheet" href="css/core.css"></link>
+    <link rel="stylesheet" href="css/index.css"></link>
+
+</head>
+<body>
+<input type="hidden" id="noRunShare" value="true">
+<div class="main">
+    <div class="video-wrapper">
+        <p>《这里是西安》，用新鲜的视角讲述西安鲜为人知的前世今生，打造一张全新的西安文化名片。</p>
+    </div>
+    <!--加载 s-->
+    <div class="spinner none" id="quiz-loading">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+    <!--加载 e-->
+    <div class="rule none">
+        <div class="rule-content">
+            <div class="user-info" >
+                <a href="#" data-collect="true" data-collect-flag="quiz-index-jf" data-collect-desc="进入我的积分"><p>我的积分：<span id="jf_val">-</span>分</p></a>
+            </div>
+            <div class="right">已累计答对<span id="quizOkCount">-</span>题</div>
+            <div class="ctrl">
+                <a id="toQuiz_btn" href="javascript:void(0);" class="btn as-now-btn"
+                   data-collect="true" data-collect-flag="quiz-toQuiz-btn"
+                   data-collect-desc="立即答题">立即答题</a>
+            </div>
+            <h3>活动规则：</h3>
+            <p class="action-rule"></p>
+        </div>
+    </div>
+</div>
+<div class="copyright2">页面由西安广播电视台提供</div>
+
+<script src="http://yao.holdfun.cn/portal/resources/common/js/jquery.js"></script>
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/md5.js"></script>
+<script src="js/share.js"></script>
+<script src="js/data_collect.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

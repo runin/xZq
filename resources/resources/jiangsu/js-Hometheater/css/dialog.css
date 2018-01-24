@@ -1,0 +1,940 @@
+.modal {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	color: #333;
+	text-align: center;
+}
+.modal .dialog{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-animation-name: pcon-ing;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+    border-radius: 5px;
+	background: #e8edf7;
+	z-index: 100;
+}
+.modal:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 100;
+}
+@-webkit-keyframes pcon-ing {
+ 0% {
+ -webkit-transform:scale(1, 1);
+}
+ 50% {
+ -webkit-transform:scale(0.9, 0.9);
+}
+ 100% {
+ -webkit-transform:scale(1, 1);
+}
+}
+.modal .btn-close{
+      position: absolute;
+    top: 0% ;
+    right: 0% !important;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/close.png) no-repeat;
+    background-size: contain;
+    z-index: 9999999;
+}
+.btn-close{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  display: inline-block;
+  width: 30px;
+    height: 30px;
+    background: url(../images/close.png) no-repeat;
+    background-size: contain;
+    z-index: 9999999;
+}
+.open-rptip-dialog1 {
+  position: absolute;
+  color: #fdc728;
+  z-index: 1000;
+  overflow: hidden;
+  background: #ffe080;
+  padding-top: 8%;
+  color: #fff;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* background: url(../images/open-tip-dialog.png) no-repeat center center !important; */
+  background-size: 100% 100% !important;
+  background-color: transparent !important;
+}
+.btn-close1{
+	  position: absolute;
+  top: 14%;
+  left: 77%;
+  width: 30px;
+}
+.btn-close2{
+	  position: absolute;
+  top: -4%;
+  left: 77%;
+  width: 30px;
+}
+.btn-close3{
+	  position: absolute;
+  top: 2%;
+  left: 77%;
+  width: 30px;
+}
+
+.open-cdd {
+    color: #422d0b;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 16px;
+    line-height: 22px;
+}
+.open-cdd span{
+	color: red;
+    font-size: 22px;
+}
+.cdd-dialog-cont {
+      transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.cdd-dialog-div {
+        margin-top: 15%;
+}
+.cddphone{
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  border-radius: 10px;
+  width: 218px;
+}
+.cdd-btn-submit{
+	  text-align: center;
+  background: -moz-linear-gradient(top, #ffe89c 0%, #ffd05a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffe89c), color-stop(100%,#ffd05a));
+  background: -webkit-linear-gradient(top, #ffe89c 0%,#ffd05a 100%);
+  background: -o-linear-gradient(top, #ffe89c 0%,#ffd05a 100%);
+  background: -ms-linear-gradient(top, #ffe89c 0%,#ffd05a 100%);
+  background: linear-gradient(to bottom, #ffe89c 0%,#ffd05a 100%);
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  margin: 5% auto 0px;
+  border-radius: 5px;
+  margin: 10% auto 0;
+  color: #432D0C;
+  font-weight: bold;
+  font-size: 17px;
+  display: inline-block;
+  width: 70%;
+  height: 50px;
+  line-height: 50px;
+	  background-color: #fdc728;
+}
+
+/*娲诲姩瑙勫垯*/
+.rule-dialog h1{
+	font-size: 19px;
+	background: #a42421;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 8px 8px 0px 0px;
+}
+.rule-box {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	background: url(../images/rule-d.png) repeat-x;
+	background-size: 6%;
+}
+.rule-box span{
+  /* background: #000; */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  /* display: inline-block; */
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 5px;
+}
+.rule-con {
+	word-break: break-word;
+	color: #000 ;
+	margin-top: 5%;
+	padding: 0 5%;
+	overflow: scroll;
+	text-align: left;
+	line-height: 25px;
+	font-size: 14px;
+}
+
+
+
+
+.share-con {
+   word-break: break-word;
+    color: #000;
+    margin-top: 3%;
+    padding: 0 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: left;
+    width: 80%;
+    height: 63%;
+    background-color: rgba(204,209,220,1);
+    border-radius: 10px;
+}
+.share-con {
+    word-break: break-word;
+    color: #000;
+    margin-top: 10%;
+    padding: 0 5%;
+    overflow: scroll;
+    text-align: left;
+    line-height: 25px;
+    font-size: 14px;
+    border: 0;
+}
+.share-topic-btn{
+	width: 80%;
+    margin: 6% auto;
+    background-color: rgba(164,36,33,1);
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+#guide-dialog .guide-dialog {
+	border-radius: 5px;
+	background: #e8edf7;
+}
+.guide-img{
+	  width: 60%;
+	  height: 23%;
+  margin-top: 6%;
+  margin-left: 20%;
+}
+
+.guide-list{
+	width: 90%;
+	height: 30%;
+	margin-top: 25%;
+  	margin-left: 10%;
+	
+}
+.guide-list ul li{
+	text-align:left;
+	line-height: 30px;
+	font-size: 14px;
+}
+.guide-list ul li label{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #000;
+	display: inline-block;
+	color: #fff;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 20px;
+}
+.guide-dialog h1{
+	font-size: 19px;
+	background: #a42421;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 8px 8px 0px 0px;
+}
+
+.guide_btn {
+  position: absolute;
+  right: 20%;
+  top: 85%;
+  height: 40px;
+  line-height: 40px;
+  z-index: 9999;
+  background-color: #a42421;
+  border: 1px solid #c1c2c5;
+  border-radius: 5px;
+  width: 60%;
+  text-align: center;
+  color:#ffffff;
+}
+#not-lott .happyjs {
+	width: 100%;
+	position: relative;
+}
+#not-lott .happyjs p {
+	position: absolute;
+	color: rgba(255,220,0,1);
+	width: 88%;
+	left: 13%;
+	top: 50%;
+	text-align: left;
+	font-size: 14px;
+	font-weight: bolder;
+	padding: 2%;
+	  font-size: 16px;
+}
+.not-lott {
+	position: relative;
+	text-align: center;
+}
+.not-lott .host-sound-icon {
+	position: absolute;
+	top: 28%;
+	left: 20%;
+	width: 63px;
+	height: 57px;
+	background: url(../images/sound.png) no-repeat;
+	background-position: -126px 0;
+}
+.not-lott .ani-sound {
+	-webkit-animation-name: sound;
+	-webkit-animation-duration: 1200ms;
+	-webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function:step-start;
+	animation-name: sound;
+	animation-duration: 1200ms;
+	animation-iteration-count: infinite;
+    animation-timing-function:step-start;
+}
+.not-lott p span{
+	display: inline-block;
+	width: 80px;
+	height: 23px;
+	line-height: 23px;
+	font-weight: bolder;
+	font-size: 18px;
+}
+.success .input-box {
+	margin: 5px auto 0 !important;
+}
+.success .input-box-address {
+	margin: 8px auto 0 !important;
+}
+.success label {
+	position: static !important;
+	width: 80% !important;
+	text-align: left !important;
+	height: auto !important;
+	line-height: normal !important;
+	vertical-align: middle !important;
+}
+.success .input-box label:before {
+	width: 17px !important;
+	height: 17px !important;
+	background-size: 17px auto !important;
+	margin-top: 0 !important;
+}
+.success .input-box .input-name:before {
+	width: 17px !important;
+	height: 17px !important;
+	margin-top: 0 !important;
+}
+#rptip-dialog11{
+	height: 100% !important;
+	top: 0px !important;
+	bottom: 0px !important;
+	
+}
+#btn-close11{
+	position: absolute;
+  top: -5%;
+  right: -5%;
+  width: 30px;
+}
+#lott .input-box {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	color:white;
+}
+
+#lott .input-box span {
+	display: inline-block;
+	width: 70%;
+	word-break: break-word;
+	margin-left: 5px;
+}
+#lott .input-box input {
+	display: block;
+	width: 90%;
+	margin: 5px auto;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #BDBDBD;
+	border-radius: 32px;
+	box-shadow: 0 0 5px rgba(0,0,0,.2) inset;
+	padding-left: 70px;
+	font-size: 14px;
+}
+#lott .input-box label {
+	position: absolute;
+	top: 0;
+	left: 25px;
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	vertical-align: top;
+	font-size: 13px;
+	color: #757575;
+}
+#lott .input-box label img {
+	width: 20px;
+	height: 20px;
+	margin-top: 6px;
+}
+.success .input-box label img {
+	width: 16px !important;
+	height: 16px !important;
+	margin-top: 0 !important;
+}
+#lott .input-box label i {
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 36px;
+	line-height: 34px;
+	font-style: normal;
+	top: 0;
+	left: 23px;
+}
+#lott-code .input-box {
+    position: relative;
+    width: 80%;
+    margin: 8% auto;
+}
+#lott-code .input-box span {
+    display: inline-block;
+    word-break: break-word;
+    width: 70%;
+}
+#lott-code .input-box input {
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #BDBDBD;
+    border-radius: 32px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2) inset;
+    padding-left: 65px;
+}
+#lott-code .input-box label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    /*vertical-align: top;*/
+    font-size: 13px;
+}
+#lott-code .input-box label img {
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+}
+#lott-code .input-box label i {
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 36px;
+    line-height: 34px;
+    font-style: normal;
+    top: 0;
+    left: 20px;
+}
+#lott-code .code-box .tip-info{
+    color: #666666;
+    font-size: 17px;
+}
+#lott-code .code-box .code-info{
+    display: block;
+    background: #e6e6e6;
+    margin: 5% 10%;
+    padding: 5%;
+    color: #c5092b;
+    font-size: 18px;
+    font-weight: bold;
+}
+.success .input-box label i {
+	position: static !important;
+	display: inline-block !important;
+	font-style: normal !important;
+	height: auto !important;
+	line-height: normal !important;
+}
+#guide-dialog:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.6);
+}
+#guide-dialog .guide-dialog {
+	border-radius: 5px;
+}
+#not-lott img {
+	max-width: 78%;
+	margin-top: 35px;
+}
+#not-lott p img {
+	margin: 5px auto 0;
+	max-width: 65%;
+}
+#not-lott .lottery-close {
+	margin-top: 8px;
+	display: block;
+}
+#not-lott #notips {
+	margin-top: -12%;
+}
+#not-lott .lottery-close img {
+	max-width: 46%;
+}
+.notips p {
+	display: none !important;
+}
+.tips p {
+	display: block !important;
+}
+.tips .lottery-close {
+	margin-top: 8px !important;
+}
+.notips .lottery-close {
+	margin-top: 30px !important;
+}
+.lott{
+	width: 100%;
+	height: 100%;
+	
+}
+.lott .win-img {
+	max-width: 80%;
+	margin: 3% auto;
+	  max-height: 106px;
+}
+.lott h1{
+	height: 50px;
+	line-height: 50px;
+	background: #a42421;
+	color: #fff;
+	border-radius: 5px 5px 0px 0px;
+}
+.lott .lott-tip{
+	height: 15px;
+	background: url(../images/rule-d.png) repeat-x;
+	width: 100%;
+	background-size: 6%;
+}
+.award-title{
+	background: url(../images/lottery.png) no-repeat;
+	background-position: 5%;
+  	background-size: 24%;
+  	padding-left: 20%;
+  	height: 80px;
+  	line-height: 80px;
+  	margin-top: 15%;
+  	font-size: 15px;
+}
+.award-title p{
+	padding-top: 16%;
+	width: 92%;
+	padding-left: 5%;
+}
+.award-title span{
+	color: red;
+}
+
+.back{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translate(0,-50%);
+	width: 100%;
+}
+.lott p{
+	font-size: 13px;
+	text-align: center;
+	color: #000;
+}
+.lott p.win-tips {
+	font-size: 15px;
+	font-weight: bolder;
+}
+.lott p span{
+	display: inline-block;
+	height: 23px;
+	vertical-align:top;
+}
+.lott p img{
+	width: 200px;
+}
+.lott .btn-award{
+	display: block;
+	width: 60%;
+	height: 32px;
+	line-height: 30px;
+	margin: 10px auto 0;
+	background-color: #a42421;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+	color: #fff;
+}
+.lott .btn-back{
+	display: block;
+	width: 60%;
+	height: 32px;
+	line-height: 30px;
+	margin: 10px auto 0;
+	background-color: #a42421;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+	color: #fff;
+}
+.lott label.ad{
+	display: inline-block;
+	width: 72px; 
+	height: 72px;
+	border-radius: 50%;
+	border:2px solid #ffda2f;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	top:30%;
+	margin-left: -36px;
+	margin-top: -36px;
+	overflow: hidden;
+}
+.lott label.ad img{
+	width: 100%;
+	height: 100%;
+}
+#lottery-dialog, #rule-dialog {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: 999;
+}
+.lottery-no:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.6);
+}
+.lottery-no .btn-close {
+	display: none !important;
+}
+.lottery-no .dialog {
+	background: transparent !important;
+}
+
+.rule-box {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.rule-box img {
+	width: 72%;
+	margin: 15% auto 0;
+	text-align: center;
+}
+.rule-con {
+	word-break: break-word;
+	color: #000;
+	margin-top: 3%;
+	padding: 0 5%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	text-align: left;
+}
+#lott-code .win-img {
+	max-width: 80%;
+  margin: 5% auto 3%;
+}
+.input-address img, .input-address i {
+	vertical-align: top !important;
+}
+/*鍔犺浇鎸夐挳 -s*/
+.loader{
+    margin: 0 auto;
+    width: 72px;
+}
+.loader span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background: #F26C0D;
+    border-radius: 50px;
+    margin: 0 2px;
+    -webkit-animation: loader 1s infinite alternate;
+    -moz-animation: loader 1s infinite alternate;
+}
+.loader span:nth-of-type(2) {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+.loader span:nth-of-type(3) {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+}
+.loader span:nth-of-type(4) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+.loader span:nth-of-type(5) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+}
+#rptip_1{
+background: url(../images/open-tip-dialog.png) no-repeat center center !important;	
+}
+#rptip_close{
+	top: 10% !important;
+}
+.open-rptip-dialog {
+  position: absolute;
+  color: #fdc728;
+  z-index: 1000;
+  overflow: hidden;
+  background: #ffe080;
+  padding-top: 15%;
+  color: #fff;
+  padding-left: 10%;
+  padding-right: 10%;
+/*  background: url(../images/open-tip-dialog.png) no-repeat center center !important;*/
+  background-size: 100% 100% !important;
+  background-color: transparent !important;
+  
+}
+.open-money{
+  
+  color: #422d0b;
+  text-align: center;
+  margin-top: 25%;
+  font-size: 20px;
+  line-height: 22px;
+}
+.rp-content{
+	  padding-bottom: 3%;
+  margin-top: 30%;
+  text-align: center;
+    position: relative;
+    height: 75%;
+    margin: 0;	
+}
+.hongbaoBg {
+  display: inline-block;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.hongbaoBg b {
+  font-size: 50px;
+  top: 50px;
+  color: #ffe698;
+  position: relative;
+  font-weight: bold;
+}
+.submitBtn{
+	  text-align: center;
+/*  background: -moz-linear-gradient(top, #ffe89c 0%, #ffd05a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffe89c), color-stop(100%,#ffd05a));
+  background: -webkit-linear-gradient(top, #ffe89c 0%,#ffd05a 100%);
+  background: -o-linear-gradient(top, #ffe89c 0%,#ffd05a 100%);
+  background: -ms-linear-gradient(top, #ffe89c 0%,#ffd05a 100%);
+  background: linear-gradient(to bottom, #ffe89c 0%,#ffd05a 100%);*/
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  margin: 5% auto 0px;
+  border-radius: 5px;
+  margin: 10% auto 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 17px;
+  display: inline-block;
+	margin-top: 15%;
+  width: 70%;
+  height: 50px;
+  line-height: 50px;
+	  background-color: #d62b1f;
+}
+
+.modal .copyright {
+	font-size: 13px;
+}
+.modal .lotterys-close {
+position: absolute;
+    top: -3%;
+    right: -3%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/close.png) no-repeat;
+    background-size: contain;
+    z-index: 9999999;
+}
+.succ-receive {
+  margin-top: 25%;
+  text-align: center;
+  color: #422d0b;
+}
+
+.rptip-award {
+  background-color: #fdc728;
+  color: #422d0b;
+  border: 0;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  bottom: 30px;
+  border-radius: 100px;
+  display: block;
+  padding: 5px 18px;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+}
+
+
+.lottery-no .lotterys-close {
+	display: none;
+}
+@-webkit-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+@-moz-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+@-webkit-keyframes sound {
+    0%, 100% {
+        background-position: 0 0;
+    }
+    35% {
+        background-position: -63px 0;
+    }
+    70% {
+        background-position: -126px 0;
+    }
+}
+@-moz-keyframes sound {
+    0%, 100% {
+        background-position: 0 0;
+    }
+    35% {
+        background-position: -63px 0;
+    }
+    70% {
+        background-position: -126px 0;
+    }
+}
+
+
+
+
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	#not-lott img {
+		max-width: 100%;
+	}
+	#not-lott p img {
+		margin: 5px auto 8px;
+		max-width: 80%;
+	}
+	#not-lott .lottery-close img {
+		max-width: 60%;
+	}
+	#not-lott {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.not-lott .host-sound-icon {
+		top: 28%;
+		left: 10%;
+	}
+	.award-title{
+		background-size: 20%;
+		height: 50px;
+		line-height: 50px;
+		margin-top: 18%;
+	}
+	.award-title p{
+		padding-top: 10%;
+	}
+	.lott .win-img{
+		max-height: 80px;
+		margin: 1% auto;
+	}
+	#lott .input-box input,#lott .input-box label{
+		height: 30px;
+		line-height: 30px;
+	}
+	#rptip_img{
+		width: 80%;
+		margin-left: 10%;
+		margin-top: 5%;
+	}
+	.open-rptip-dialog {
+  padding-top: 5%;
+}
+.open-rptip-dialog1 {
+  padding-top: 2%;
+
+}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>央视新闻频道春节说吧</title>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+	<header>
+		<img class="icon-tvlogo" src="./images/icon-tvlogo.png">
+	</header>
+	<section class="container">
+		<img class="icon-slogan" src="./images/icon-slogan.png">
+		<img class="icon-booth" src="./images/icon-booth.png">
+	</section>
+	<section class="timetips none"><p></p></section>
+	<section class="overlay none">
+		<section class="result">
+			<img class="icon-luckbar luckbar-l" src="./images/icon-luckbar.png">
+			<img class="icon-luckpaper none" src="./images/icon-luckpaper.png">
+			<img class="icon-luckbar luckbar-r" src="./images/icon-luckbar.png">
+		</section>
+	</section>
+	<footer>
+		<section class="btn-box">
+			<section class="record-box">
+				<section class="btn-record">
+					<p></p>
+					<span class="normal"></span>
+					<span class="light"></span>
+					<span class="light light2"></span>
+				</section>
+				<p class="tip-on">长按此处录制语音</p>
+				<p class="tip-off none">松手将停止录音</p>
+			</section>
+			<section class="info-box none">
+				<section class="avatar-box box-l">
+					<img class="cover" src="./images/icon-roll.png">
+					<img class="avatar" src="./images/avatar.jpg">
+				</section>
+				<section class="voice-box box-r">
+					<p class="nickname">匿名用户</p>
+					<a href="javascript:void(0);" class="btn-play">
+						<span class="icon-sound"></span>
+						<span class="timer"></span>
+					</a>
+					<a href="javascript:void(0);" class="btn-again"><img src="./images/icon-mic.png"><span>重新录制</span></a>
+				</section>
+				<a href="javascript:void(0);" class="btn-submit"><img src="./images/btn-submit.png"></a>
+			</section>
+		</section>
+		<p class="copyright">页面由央视新闻提供</p>
+	</footer>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/wx_api_userinfo.js"></script>
+	<!--<script src="./js/authorize_userinfo.js"></script>-->
+
+	<script src="./js/app/index.js"></script>
+</body>
+</html>

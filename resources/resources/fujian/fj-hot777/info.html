@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>热线777</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/core.css" />
+		<link rel="stylesheet" href="./css/info.css" />
+	</head>
+	<body>
+		<header>
+			<img class="avatar" src="./images/avatar.png">
+			<p class="nickname"></p>
+			<img class="gold-icon" src="images/icon-goldcoin.png" />
+			<span class="gold-numb"></span>
+		</header>
+		<div class="info">
+			<p>填信息&nbsp赢金币</p>
+			<div class="info-body">
+				<div>
+					<span>姓名：</span>
+					<input class="infoName" placeholder="">
+				</div>
+				<div>
+					<span>电话：</span>
+					<input class="infoTel" placeholder="">
+				</div>
+				<div>
+					<span>地址：</span>
+					<input class="infoAdds" placeholder="">
+				</div>
+			</div>
+			<a href="#" class="info-sure" data-collect="true"
+			   data-collect-flag="info-sure" data-collect-desc="个人信息-修改按钮">确&nbsp定</a>
+		</div>
+		<section class="tab-box">
+			<div class="info-btn"><img src="images/btn-arrow-down.png" /></div>
+			<a href="javascript:void(0);" class="btn-record active" id="btn-record"><img src="images/icon-giftbox.png" /><p>我的奖品</p></a>
+			<a href="javascript:void(0);" class="btn-rank" id="btn-rank"><img src="images/icon-coin.png" /><p>金币排行榜</p></a>
+		</section>
+		<section class="content content-record">
+			<ul></ul>
+		</section>
+		<section class="content content-rank none">
+			<ul></ul>
+		</section>
+		<footer>
+			<div class="copyright">页面由福建新媒体有限公司提供<br>新掌趣科技技术支持&Powered by holdfun.cn</div>
+		</footer>
+		<section class="bg"></section>
+		<script src="./js/config.js"></script>
+		<script src="./js/plugins/zepto.min.js"></script>
+		<script src="./js/plugins/zepto.fx.min.js"></script>
+		<script src="./js/plugins/zepto.cookie.min.js"></script>
+		<script src="./js/plugins/md5.js"></script>
+		<script src="./js/plugins/common.js"></script>
+
+		<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+		<script src="./js/authorize_userinfo.js"></script>
+		
+		<script src="./js/app/info.js"></script>
+		<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	</body>
+</html>

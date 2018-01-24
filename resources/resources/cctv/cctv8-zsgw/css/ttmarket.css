@@ -1,0 +1,275 @@
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #fff no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide a
+{
+    display: block;
+}
+.goods-list {
+    padding: 10px 10px 60px 10px;
+    overflow: auto;
+}
+
+.top-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.top-box img {
+    position: relative;
+    display: inline-block;
+}
+
+.main-content {
+    background: #f5f5f5;
+}
+
+.meun-box {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+    border-top: 1px solid #cdc4c5;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #D5D5D3;
+}
+
+.meun-box a {
+    width: 25%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    position: relative;
+    background:-webkit-gradient(linear, left top, left bottom, from(#F4F4F4), to(#AFAFAF));;
+    float: left;
+    color: #5b5b5b;
+    box-sizing: border-box;
+    border-right: 2px groove #f6f6f4;
+    transition: all 0.4s linear;
+}
+i
+{
+    font-style: normal;
+}
+
+.meun-box a:active {
+    color: #1684a5;
+}
+a.check > i {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    width: 96%;
+    height: 36px;
+    /*background: #fff;*/
+    left: 2%;
+    overflow: hidden;
+    background:radial-gradient(circle closest-corner at 50% 6px, rgba(213,213,211,0) 0%, rgba(213,213,211,0) 90%, rgba(255,255,255,0.7) 100%);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: #1684a5;
+}
+.meun-box a:active > i {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    width: 96%;
+    height: 36px;
+    /*background: #fff;*/
+    left: 2%;
+    overflow: hidden;
+    background:radial-gradient(circle closest-corner at 50% 6px, rgba(213,213,211,0) 0%, rgba(213,213,211,0) 90%, rgba(255,255,255,0.7) 100%);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.goods-list {
+    margin-top: 10px;
+}
+ul li {
+    position: relative;
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+ul li:nth-child(even) {
+    padding-left: 4px;
+}
+ul li:nth-child(odd) {
+    padding-right: 4px;
+}
+li a {
+    position: relative;
+    width: 100%;
+    display: block;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.32)
+}
+.countdown
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 6px 14px;
+    border-radius: 14px;
+    background: #bc0022;
+    color: #fff;
+    font-size: 16px;
+    z-index: 99;
+    border: 1px solid #fff000;
+}
+.yao-hand
+{
+    position: absolute;
+    left: -20px;
+    top: 0px;
+    display: block;
+    height: 30px;
+    width: 36px;
+    background: url("../images/home-yao.png") top center no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 通用弹层样式_S */
+.modal {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.modal:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+.modal .dialog {
+    position: absolute;
+    width: 288px;
+    height: 288px;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    margin-left: -144px;
+    margin-top: -144px;
+    background: url(../images/pop-yao.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 4.5%;
+}
+.dialog-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.pop-tab-box {
+    position: absolute;
+    bottom: 10px;
+    padding: 0px 6%;
+    width: 100%;
+}
+.pop-tab-box a {
+    display: inline-block;
+    width: 44%;
+    padding: 6px 14px;
+    margin: 0px 2%;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.countdown-pop {
+    margin-top: 4%;
+}
+.countdown-pop .countdown-tip {
+    font-size: 16px;
+    padding-bottom: 6px;
+}
+.btn-dialog-close {
+    background: #cfbb94;
+    color: #8a0532;
+}
+.countdown-pop .detail-countdown1 {
+    position: relative;
+    margin-left: 4%;
+    height: 60px;
+    background: #B21F4D;
+    width: 92%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.18);
+    line-height: 40px;
+}
+.countdown-pop .detail-countdown1 label {
+    height: 100%;
+    padding: 0px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    background: #F3F3F3;
+    margin: 0px 4px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #000000;
+}
+.btn-dialog-lottery {
+    background: #ffb629;
+    color: #9b2d31;
+}
+.small-tip {
+    font-size: 14px;
+    margin-top: 5px;
+}
+.page-meun
+{
+    position: fixed;
+    bottom: -2px;
+    left:0px;
+    padding-top: 15px;
+    background: rgba(201,0,14,0.84);
+    box-shadow: inset 0px 1px 1px 1.2px rgba(255,255,255,0.21);
+}
+.page-meun a:after
+{
+    content: "";
+    position: absolute;
+    right: -1px;
+    height: 80%;
+    border-right: 1px solid #fff;
+    top: 2px;
+}
+.page-meun a
+{
+    width: 25%;
+    display: inline-block;
+    position: relative;
+    float: left;
+    color: #5b5b5b;
+    box-sizing: border-box;
+}
+@media screen and (device-width:320px) {
+    .icon-logo:nth-child(1) {
+        width: 33%!important;
+    }
+    
+    .countdown {
+        padding: 4px 12px;
+    }
+    
+    .yao-hand {
+        top: 0px;
+    }
+}
+@media screen and (min-device-width: 1000px) and (min-device-height: 1000px) {}

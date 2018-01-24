@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" >
+	<title>我们的法则</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/core.css">
+	<link rel="stylesheet" type="text/css" href="./css/game.css">
+</head>
+<body>
+	<section id="container">
+		<section id="stage_loading" class="stage none">
+			<section id="loading_bar" class="none">
+				<div class="sk-cube-grid">
+					<div class="sk-cube sk-cube1"></div>
+					<div class="sk-cube sk-cube2"></div>
+					<div class="sk-cube sk-cube3"></div>
+					<div class="sk-cube sk-cube4"></div>
+					<div class="sk-cube sk-cube5"></div>
+					<div class="sk-cube sk-cube6"></div>
+					<div class="sk-cube sk-cube7"></div>
+					<div class="sk-cube sk-cube8"></div>
+					<div class="sk-cube sk-cube9"></div>
+				</div>
+				<p class="loading-text">游戏努力加载中...</p>
+			</section>
+		</section>
+
+		<section id="stage_index" class="stage_index none">
+			<a href="#" class="btn-danmu" id="btn-danmu" data-collect="true"
+	   			data-collect-flag="game-to-danmu-btn" data-collect-desc="游戏页面进入弹幕按钮"><img src="images/game/danmu-btn.png"></a>
+			<section class="stage-container">
+				<section class="play-btn index-btn stage-item" data-collect="true"
+	   			data-collect-flag="game-start" data-collect-desc="开始游戏按钮"></section>
+				<section class="stage-pop" ><img src="./images/game/icon-pop.png"></section>
+			</section>
+		</section>
+		
+        <section class="stage_main none" id="stage_main"></section>
+
+	</section>
+
+	<section class="crop-animate-wrapper">
+	</section>
+
+	<section id="rule_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="content"></section>
+			<section class="rule-image">
+				<img src="" />
+			</section>
+			<section class="icon-close"></section>
+		</section>
+	</section>
+
+	
+	<!-- 游戏结束弹层_S -->
+	<section id="score_dialog" class="dialog-wrapper none">
+		<section class="score-content lottery-box-triangle">
+			<a href="javascript:void(0)" class="btn-close" data-collect="true" data-collect-flag="game-scores-less-close-btn" data-collect-desc="分数不够弹层关闭按钮"></a>
+			<p id="score" class="score">250分</p>
+			<div class="tip-img"><img src="images/game/dia-tip.png"></div>
+			<a class="btn-dia btn-again"  href="javascript:void(0)" data-collect="true" data-collect-flag="game-scores-again-btn" data-collect-desc="再玩一次按钮">
+				再玩一次
+			</a>
+			<a class="btn-dia btn-share"  href="javascript:void(0)" data-collect="true" data-collect-flag="game-scores-share-btn" data-collect-desc="分享按钮">
+				拉帮结派
+			</a>
+		</section>
+	</section>
+	<!-- 游戏结束弹层_E -->
+	<!-- 分享弹层_S -->
+	<section id="share_dialog" class="dialog-wrapper none">
+		<section class="share-content">
+			<div class="icon-share"><img src="images/game/icon-share.png"></div>
+		</section>
+	</section>
+	<!-- 分享弹层_E -->
+	<section class='none'>
+		<audio preload="auto" id="bgm" src="./music/bgm.mp3" loop="loop"></audio>
+	</section>
+
+
+	<script src="./js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+
+	<script src="http://cdn.holdfun.cn/zhoubian/mc/pixi.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/app/game.catch.js"></script>
+	<script src="./js/app/game.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

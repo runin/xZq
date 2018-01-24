@@ -1,0 +1,10 @@
+window.CACHEMSG.push("<img src='./images/danmu_head.png' />"+"明星同乐会接地气，好看");
+window.CACHEMSG.push("<img src='./images/danmu_head.png' />"+"觉得这个节目很好看啊");
+window.CACHEMSG.push("<img src='./images/danmu_head.png' />"+"每周四晚上准时守候在电视机前参与互动");
+window.CACHEMSG.push("<img src='./images/danmu_head.png' />"+"喜欢这个节目里的嘉宾，真实");
+window.CACHEMSG.push("<img src='./images/danmu_head.png' />"+"哈哈哈，主持人真的很搞笑");
+window.CACHEMSG.push("<img src='./images/danmu_head.png' />"+"我中奖啦我中奖啦我中奖啦，耶耶耶");
+window.CACHEMSG.push("<img src='./images/danmu_head.png' />"+"我在《明星同乐会》，你在哪里嘞~");
+window.CACHEMSG.push("<img src='./images/danmu_head.png' />"+"老朋友的感情最真实");
+window.CACHEMSG.push("<img src='./images/danmu_head.png' />"+"每次看到嘉宾和朋友深情拥抱的时候都觉得无比感动");
+window.CACHEMSG.push("<img src='./images/danmu_head.png' />"+"感觉明星大方、不做作、真诚才是最重要的");

@@ -1,0 +1,47 @@
+body{
+	background:#c8ebec url(../images/bg1.jpg) no-repeat;
+	background-size: 100%;
+}
+.main{
+	padding: 50% 0 40px;
+}
+.logo{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+.btn-group{
+	margin-top: 20px;
+	padding: 20px 0px 0px;
+	text-align: center;
+}
+.btn-back{
+	background-color: #479cf9;
+}
+
+.rule{
+	line-height: 40px;
+	color: #479cf9;
+	text-decoration: underline;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.main{
+		padding: 44% 0 40px;
+    }
+  .btn-group{
+	  	margin-top :0px;
+		padding: 10px 0px 0px;
+   }
+  .rule{
+		line-height: 20px;
+  } 
+  .btn-back{
+  	height: 40px;
+  	line-height: 40px;
+  }
+}

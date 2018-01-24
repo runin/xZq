@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>说天下</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/join.css" />
+
+</head>
+<body>
+	<section>
+		 <div class="tv-logo"><img src="images/tv-logo.png"/></div>
+        <div class="title-logo"><img src="images/blank.png"/></div>
+        <section class="nav-header">
+        	<a data-collect="true"
+				data-collect-flag="tv-lntv-talkshow-history-btn"
+				data-collect-desc="首页进入历史上的今天页面" class="btn-join btn-history"><i><img src="images/history-btn.png" /></i>历史上的今天</a>
+			<a data-collect="true"
+			   data-collect-flag="tv-lntv-talkshow-weather-btn"
+			   data-collect-desc="首页进入气象贴士页面" class="btn-join btn-weather "><i><img src="images/weather-btn.png" /></i>气象贴士</a>
+			<a data-collect="true"
+			   data-collect-flag="tv-lntv-talkshow-user-btn"
+			   data-collect-desc="首页进入个人中心页面" class="btn-join btn-person "><i><img src="images/person-btn.png" /></i>我的</a>
+        </section>
+        <a data-collect="true"
+			   data-collect-flag="tv-lntv-talkshow-pass-btn"
+			   data-collect-desc="首页进入通关页面"  class="btn btn-stage"><img src="images/stage-btn.png" /></a>
+       <div class="follow-box">
+			<div class="copyright"></div>
+			<div id="div_subscribe_area" class="div_subscribe_area_class"></div>
+		</div>
+	</section>
+	<script src="js/config.js"></script>	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/join.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

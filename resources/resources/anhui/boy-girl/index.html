@@ -1,0 +1,313 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" >
+	<title>男生女生向前冲</title>
+	
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/util.css" />
+	<link rel="stylesheet" href="./css/dice.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+	<section class="content">
+		<header>
+			<section class="header-wrapper">
+				<section class="logo">
+					<img src="./images/an-tv-logo.png">
+				</section>
+				<section class="title">
+					<img src="./images/logo.png">
+				</section>
+				<section class="start">
+					<a id="start" class="gray" href="javascript:void(0);">开始闯关</a>
+					<p id="index_count_down" class="count-down">距离下一轮开始还有<span>00:00</span></p>
+				</section>
+				<a href="javascript:void(0);" id="tttj" class="tttj none" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">更多红包</a> 
+			</section>
+		</header>
+
+		<section class="game none">
+			<section id="player" class="user hide">
+				<section class="avatar-wrapper">
+					<section class="myAvatar-wrapper">
+						<img class="myAvatar" src="./images/avatar.jpg">
+					</section>
+					<section class="bottom-circle">
+					</section>
+				</section>
+			</section>
+
+			<section class="obstacle-wrapper">
+				<img class="obstacle run1" src="./images/icon-o9.png" width="77" style="left:10px;top:90px;" />
+				<img class="obstacle" src="./images/icon-o8.png" width="150" style="left:115px;top:130px;" />
+				<img class="obstacle run2" src="./images/icon-o7.png" width="79" style="left:120px;top:390px;" />
+				<img class="obstacle" src="./images/icon-o1.png" width="114" style="left:120px;top:625px;" />
+				<img class="obstacle" src="./images/icon-o5.png" width="154" style="left:100px;top:850px;" />
+				<img class="obstacle run1" src="./images/icon-o7.png" width="79" style="left:20px;top:1050px;" />
+			</section>
+
+			<section class="ending-wrapper">
+				<section class="ending">
+					<section class="ending-border"></section>
+					<p id="award_tips" class="award-success">到达终点，抽取大奖！</p>
+					<a id="award" class="btn-award gray" href="javascript:void(0)">领 大 奖</a>
+				</section>
+			</section>
+		</section>
+
+		<footer>
+			<p>页面由安徽卫视提供<br />一真科技技术支持&Powered by holdfun.cn</p>
+		</footer>
+	</section>
+
+	<section class="nav">
+		<section class="nav-item">
+			<a id="toComment" href="./comment.html">
+				<img src="./images/icon-comment.png">
+				<p>参与讨论</p>
+			</a>
+		</section>
+		<section class="nav-item">
+			<a id="toApply" href="javascript:void(0);">
+				<img src="./images/icon-apply.png">
+				<p>我要报名</p>
+			</a>
+		</section>
+		<!--<section class="nav-item">
+			<a id="toScore" href="javascript:void(0);">
+				<img src="./images/icon-score.png">
+				<p>我的积分</p>
+			</a>
+		</section>-->
+		<!--<section class="nav-item">
+			<a id="toApp" href="http://huodong.mobilem.360.cn/html/nsnsxqc/150521.html?360appstore=1">
+				<img src="./images/icon-app.png">
+				<p>同名手游</p>
+			</a>
+		</section>-->
+	</section>
+
+	<section id="lost_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="lost">
+				<p class="tips">哎呀！落水了<br />别气馁继续加油哦！</p>
+				<a class="big-btn" href="javascript:void(0)">从头再来</a>
+			</section>
+			<section class="dialog-bottom"></section>
+			<section class="dialog-close"></section>
+		</section>
+	</section>
+
+	<section id="rp_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="lost">
+				<p class="tips">红包领取成功！</p>
+				<a class="big-btn" href="javascript:void(0)">确定</a>
+			</section>
+			<section class="dialog-bottom"></section>
+			<section class="dialog-close"></section>
+		</section>
+	</section>
+	
+	<section id="toApply_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="apply">
+				<h1>我要报名</h1>
+				<section class="form-wrapper">
+					<section class="form-item-wrapper">
+						<label>姓名：</label>
+						<section class="input-wrapper">
+							<input id type="text" />
+						</section>
+					</section>
+					<section class="form-item-wrapper">
+						<label>电话：</label>
+						<section class="input-wrapper">
+							<input type="tel" />
+						</section>
+					</section>
+					<section class="form-item-wrapper">
+						<label>地址：</label>
+						<section class="input-wrapper">
+							<input type="text" />
+						</section>
+					</section>
+				</section>
+				<a id="apply_submit" class="big-btn" href="javascript:void(0)">我要报名</a>
+			</section>
+			<section class="dialog-bottom"></section>
+			<section class="dialog-close"></section>
+		</section>
+	</section>
+
+	<section id="toScore_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="score">
+				<h1>积分排行榜</h1>
+				
+				<section class="my-score">
+					<section class="avatar">
+						<img class="myAvatar" src="./images/avatar.jpg">
+					</section>
+					<section class="score-detail">
+						<p>积分值：<span class="myScore">-</span> 排名：<span class="myRank">-</span></p>
+					</section>
+				</section>
+				<ul class="score-list">
+				</ul>
+			</section>
+			<section class="dialog-bottom"></section>
+			<section class="dialog-close"></section>
+		</section>
+	</section>
+
+	
+
+
+
+     <section id="success_dialog" class="dialog-wrapper none noClose">
+		<section class="full_dialog">
+		    <section class="success-header">
+		    	<img src="./images/success-header.jpg">
+		    	<h2>天天摇</h2>
+		    </section>
+		    <section class="success-body">
+		    	<section class="score">
+		    	</section>
+		    	<section class="success-tips">
+		    		<p>摇金币已放置账户<span class="success_tips_mobile"></span></p>
+		    	</section>
+		    	<a class="success-submit" href="javascript:void(0);">打开天天摇APP即可使用</a>
+		    </section>
+		</section>
+	</section>
+
+    
+    
+
+	<section id="cash_hongbao_dialog" class="dialog-wrapper none noClose">
+		<section class="hongbao-bg"></section>
+		<section class="dialog">
+			<section class="hongbao">
+				<img src="./images/hongbao.png" height="450" />
+				<section class="hongbao-close"></section>
+				<section class="hongbao-tips">
+					<p class="tips">恭喜您获得<span class="tips-name"></span></p>
+					<section class="hongbao-tips-cash">
+						<p></p>
+					</section>
+					
+					<p class="click">点击领取</p>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<section id="dui_hongbao_dialog" class="dialog-wrapper none noClose">
+		<section class="hongbao-bg"></section>
+		<section class="dialog">
+			<section class="hongbao">
+				<img src="./images/hongbao.png" height="450" class="hongbao-img" />
+				<section class="hongbao-close"></section>
+				<section class="hongbao-tips">
+					<p class="tips">恭喜您获得<span class="tips-name"></span></p>
+					<section class="hongbao-tips-img">
+						<img src="./images/chediandian.png">
+					</section>
+					
+					<section class="hongbao-tel-input">
+						<input type="tel" class="hongbao_tel" placeholder="请输入手机号" />
+					</section>
+					<a href="javascript:void(0);" class="click hongbao_submit">确定领取</a>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<section id="tttj_hongbao_dialog" class="dialog-wrapper none noClose">
+		<section class="hongbao-bg"></section>
+		<section class="dialog">
+			<section class="hongbao">
+				<img src="./images/hongbao.png" height="450" class="hongbao-img" />
+				<section class="hongbao-close"></section>
+				<section class="hongbao-tips">
+					<p class="tips">恭喜您获得<span class="tips-name"></span></p>
+					<section class="hongbao-tips-img">
+						<img src="./images/title-tttj.png">
+					</section>
+					<section class="hongbao-tel-input">
+						<input type="tel" class="hongbao_tel" placeholder="请输入手机号" />
+					</section>
+					<section class="hongbao-tttj-img">
+						<img src="">
+					</section>
+					<a href="javascript:void(0);" class="click hongbao_submit">确定领取</a>
+				</section>
+			</section>
+		</section>
+	</section>
+
+
+
+
+	<section id="s321_dialog" class="dialog-wrapper noClose none">
+		<section class="dialog">
+			<section class="s321">
+				<img id="s3" class='none' src="./images/icon-3.png">
+				<img id="s2" class='none' src="./images/icon-2.png">
+				<img id="s1" class='none' src="./images/icon-1.png">
+				<img id="sgo" style="width:230px;left:-40px;max-width:none;" class='none' src="./images/icon-go.png">
+			</section>
+		</section>
+	</section>
+
+
+	<section id="dice" class="none">
+		<section class="dice dice-6 ">
+			<section class="f f-1">前进</section>
+			<section class="f f-2">后退</section>
+			<section class="f f-3">落水</section>
+			<section class="f f-4">前进</section>
+			<section class="f f-5"><span>抽奖</span></section>
+			<section class="f f-6"><span>落水</span></section>
+		</section>
+	</section>
+
+
+
+	<section id="hand_tips" class="none">
+		<img src="./images/icon-hand.png">
+	</section>
+
+
+	<p id="fixed_count_down" class="count-down none">距离下一轮开始还有<span>00:00</span></p>
+
+
+	<audio id="bgm" src="./music/bg.mp3" loop='loop' preload="preload" ></audio>
+	<audio id="dice_bgm" src="./music/dice.mp3" preload="preload" ></audio>
+
+
+	<script src="./js/config.js"></script>
+	<script src="./js/data.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/wx_api_userinfo.js"></script>
+	<script src="./js/plugins/core.js"></script>
+	<script src="./js/plugins/util.js"></script>
+	
+	<script src="./js/plugins/shake.js"></script>
+	<script src="./js/app/index.js"></script>
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

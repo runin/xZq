@@ -1,0 +1,954 @@
+html {
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow:hidden;
+    overflow-y: scroll;
+}
+.pop-dialog {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: 999;
+}
+.pop-dialog:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.7);
+    z-index:8;
+}
+#share {
+    display: none;
+}
+.show {
+    position: relative;
+    -webkit-animation: show .6s 0s 1 ease-out;
+    -webkit-animation-fill-mode: forwards;
+    z-index: 1;
+}
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:url(../images/bg-ans.jpg) no-repeat #FFF8F2;
+    background-size:100% 100%;
+    z-index: 0;
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    -webkit-animation: bgscaleIn 10s 0s 1 linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.icon-reserve {
+    position: relative;
+    width: 78%;
+    margin: 10% auto -2%;
+    z-index: 9;
+}
+.main, .solo {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 50px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99;
+}
+.main .card-info {
+    font-size: 15px;
+    color: #000;
+    text-shadow: 0 0 6px rgba(255,255,190,.8);
+}
+.main .card-info label {
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 4px;
+    color: #eee9da;
+    text-shadow: 0 0 5px rgba(0,0,0,.6);
+}
+.color .main .card-info label {
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFF), to(#ded4b6));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.swiper-control {
+    position: relative;
+    width: 67%;
+    margin: 0 auto;
+    overflow: initial;
+    opacity: 0;
+    z-index: 3;
+}
+.swiper-control .swiper-container {
+    overflow: initial;
+}
+.swiper-control .swiper-pagination-bullet-active, .swiper-control .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    background: url(../images/icon-dot.png) no-repeat transparent;
+    background-size: 100% 100%;
+}
+.swiper-control .swiper-slide {
+    position: relative;
+    background: url(../images/icon-window.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 15px 18px;
+}
+.swiper-control .swiper-slide .image-wrapper {
+    position: relative;
+    box-shadow: 0 0 13px rgba(0,0,0,.5);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 99;
+}
+.swiper-control .swiper-slide .image-wrapper > img {
+    pointer-events: none;
+}
+.swiper-control .swiper-slide .image-wrapper p {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -300px;
+    top: 0;
+    background-image: -moz-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+    background-image: -webkit-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+    transform: skewx(-32deg);
+    -webkit-transform: skewx(-32deg);
+    opacity: .8;
+    /*z-index: 99;*/
+    pointer-events: none;
+}
+.swiper-control .swiper-slide.boom .image-wrapper p {
+    display: block;
+    -webkit-animation: shineFlash .7s 0s 1 linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.swiper-control .swiper-slide .image-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/icon-line.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 99;
+    pointer-events: none;
+}
+.swiper-control .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-control .swiper-pagination-custom, .swiper-control .swiper-pagination-fraction {
+    bottom: 16px;
+    left: 0;
+    width: 100%;
+}
+.swiper-control .swiper-button-next, .swiper-control .swiper-container-rtl .swiper-button-prev {
+    right: -42px;
+}
+.swiper-control .swiper-button-prev, .swiper-control .swiper-container-rtl .swiper-button-next {
+    left: -42px;
+}
+.swiper-control .swiper-button-next, .swiper-control .swiper-button-prev {
+    width: 38px;
+    height: 70%;
+    top: 0;
+    margin-top: 15%;
+    -webkit-background-size: 20px 32px;
+    background-size: 20px 32px;
+    opacity: 0;
+}
+.reserve-tips {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    left: 0;
+    bottom: -80px;
+    font-size: 15px;
+    opacity: 0;
+}
+.reserve-tips, .reserve-tips * {
+    text-shadow: 0 0 6px rgba(0,0,0,.3);
+}
+.reserve-tips .reserved-num {
+    margin-left: 5px;
+}
+.x-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.had .x-wrapper {
+    display: none;
+}
+.dot {
+    display: none;
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 100%;
+    background-color: red;
+    color: #FFF;
+    font-size: 20px;
+    overflow: hidden;
+    top: -2px;
+    right: -2px;
+    z-index: 999999;
+}
+.had .dot {
+    display: block;
+}
+.image-wrapper .btn-get, .image-wrapper .btn-send {
+    position: absolute;
+    width: 56%;
+    left: 22%;
+    bottom: 5%;
+    z-index: 999999;
+}
+.image-wrapper .btn-send {
+    display: none;
+}
+.had .image-wrapper .btn-send {
+    display: block;
+}
+.link-container, .lottery-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 14px;
+}
+.lottery-container p {
+    color: #2B1100;
+    font-weight: 300;
+    width: 90%;
+    margin: 4% auto 0;
+    font-size: 17px;
+    line-height: 24px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 1);
+}
+.link-container h2 {
+    color: #2B1100;
+    font-weight: 300;
+    width: 93%;
+    font-size: 17px;
+    line-height: 24px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 1);
+}
+.link-container h2 {
+    margin: 4% auto 2%;
+}
+#tips-nobody h2 {
+    margin: 4% auto 2%;
+}
+.link-container > p {
+    margin-bottom: 3px;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+.link-container .icon-split {
+    width: 90%;
+    margin: 0 auto;
+}
+.link-container .link-wrapper {
+    width: 100%;
+    margin: 0 auto 3px;
+    text-align: left;
+    font-size: 0;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.link-container .link-wrapper .link {
+    min-width: 100%;
+    text-align: center;
+}
+.link-container .link-wrapper a {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    margin: 4px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid #9b845b;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+.link-container .link-wrapper a img {
+    width: 52px;
+    height: 52px;
+}
+.link-container .link-wrapper a:first-child {
+    margin-left: 8px;
+}
+.link-container .link-wrapper a:last-child {
+    margin-right: 8px;
+}
+.link-container .link-wrapper a p {
+    position: absolute;
+    font-size: 13px;
+    width: 48px;
+    height: 18px;
+    text-align: center;
+    left: 0;
+    bottom: 3px;
+    text-shadow: 0 0 6px rgba(0,0,0,.5);
+    white-space:nowrap;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    color: #FFF;
+    text-shadow: 1px 1px 0 #554134,-1px -1px 0 #554134; 
+}
+.btn-award {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 5% auto 3%;
+    -webkit-animation: scaleIn .5s 0s 1 linear;
+    -webkit-transform-origin: center;
+    -webkit-animation-fill-mode: forwards;
+}
+.btn-award p {
+    position: relative;
+    overflow: hidden;
+    width: 38%;
+    margin: 0 auto;
+}
+.btn-award:after {
+    content: '请中奖用户于5月30日前完成兑奖';
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 2px;
+}
+.btn-award i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -300px;
+    top: 0;
+    background-image: -moz-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+    background-image: -webkit-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+    transform: skewx(-25deg);
+    -webkit-transform: skewx(-25deg);
+    -webkit-animation: shineFlash .7s .6s infinite linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.film-wrapper {
+    position: absolute;
+    width: 120px;
+    height: 112px;
+    top: 35px;
+    right: 160px;
+    z-index: 99;
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+}
+.film-wrapper .icon-camera {
+    position: relative;
+    max-width: initial;
+    width: 138px;
+    height: 129px;
+    z-index: 5;
+}
+.film-wrapper .roll1 {
+    position: absolute;
+    width: 59px;
+    top: 19px;
+    left: 0;
+    -webkit-animation: roll 10s 0s infinite linear;
+    -webkit-animation-fill-mode: forwards;
+    z-index: 6;
+}
+.film-wrapper .roll2 {
+    position: absolute;
+    width: 53px;
+    top: 0px;
+    right: 11px;
+    -webkit-animation: roll 6s 0s infinite linear;
+    -webkit-animation-fill-mode: forwards;
+    z-index: 6;
+}
+.film-wrapper .icon-flash {
+    position: absolute;
+    max-width: initial;
+    width: 260px;
+    height: 212px;
+    top: -120px;
+    right: -260px;
+    -webkit-animation: flash 1s 0s infinite linear;
+    -webkit-animation-fill-mode: forwards;
+    z-index: 3;
+}
+.film-wrapper .tips-get, .film-wrapper .tips-send {
+    display: none;
+    position: absolute;
+    max-width: initial;
+    width: 165px;
+    top: -44px;
+    left: 159px;
+}
+.share-get, .share-get .tips-get, .share-send, .share-send .tips-send {
+    display: block !important;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height: 110px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: -webkit-gradient(linear, center top, center bottom, from(rgba(242,237,232,1)), to(rgba(211,202,178,1)));
+    z-index: 999;
+}
+.info img {
+    display: inline-block;
+    max-width: 90%;
+    max-height: 76px;
+}
+.info.on {
+    display: block;
+    -webkit-animation: infoOn .3s 0s 1 linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.info.off {
+    display: block;
+    -webkit-animation: infoOFF .2s 0s 1 linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.info i {
+    position: absolute;
+    display: inline-block;
+    width: 38px;
+    height: 60px;
+    bottom: -60px;
+    right: 0;
+}
+.info.off i {
+    background: url(../images/btn-ruleOFF.png) no-repeat;
+    background-size: 100% 100%;
+}
+.info.on i {
+    background: url(../images/btn-ruleON.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.solo {
+    display: none;
+    width: 100%;
+    margin: -3% auto 0;
+    font-size: 0;
+}
+.solo .nickname {
+    width: 70%;
+    margin: 5px auto 3px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #eee9da;
+    text-shadow: 0 0 6px rgba(0,0,0,.6);
+    white-space:nowrap;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+}
+.solo .nickname label {
+    text-shadow: 0 0 6px rgba(0,0,0,.6);
+    font-weight: bold;
+}
+.solo .solo-tips {
+    display: none;
+    font-size: 14px;
+    text-shadow: 0 0 8px rgba(255,255,190,.8);
+}
+.solo-wrapper {
+    position: relative;
+    width: 68%;
+    margin: 0 auto;
+    z-index: 99;
+    padding: 17px 18px 18px;
+    background: url(../images/icon-window.png) no-repeat;
+    background-size: 100% 100%;
+}
+.solo-box {
+    position: relative;
+}
+.solo-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/icon-line.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 99;
+    pointer-events: none;
+}
+.btn-box {
+    width: 92%;
+    margin: 1% auto 3%;
+    font-size: 0;
+}
+.btn-box a {
+    display: inline-block;
+    width: 38%;
+    margin: 5px 2%;
+}
+.solo-wrapper h5 {
+    position: absolute;
+    width: 96%;
+    bottom: 6%;
+    left: 4%;
+    font-size: 15px;
+    color: #000;
+    z-index: 9999;
+    text-shadow: 0 0 6px rgba(255,255,190,.8);
+    text-align: center;
+}
+.solo-wrapper h5 p {
+    line-height: 20px;
+}
+.solo-wrapper h5 label {
+    margin-left: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #eee9da;
+    text-shadow: 0 0 5px rgba(0,0,0,.6);
+}
+.solo-wrapper .tips-getNum {
+    bottom: 12%;
+    color: #eee9da;
+    text-shadow: 0 0 5px rgba(0,0,0,.6);
+    text-align: center;
+    font-size: 14px;
+}
+.solo-cover {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.copyright {
+    display: none;
+    opacity: .8;
+}
+.get .solo, .noget .solo, .send .solo, .nosend .solo, .get .copyright, .noget .copyright, .send .copyright, .nosend .copyright {
+    display: block;
+}
+.get .info, .noget .info, .send .info, .nosend .info, .get footer .btn, .noget footer .btn, .send footer .btn, .nosend footer .btn {
+    display: none;
+}
+.get .main, .noget .main, .send .main, .nosend .main {
+    position: absolute;
+    top: -1000%;
+    opacity: 0;
+}
+.get .solo-cover, .send .solo-cover {
+    display: none;
+}
+.noget .solo-cover, .nosend .solo-cover {
+    display: block;
+}
+.noget #kiss .solo-img, .nosend #kiss .solo-img {
+    opacity: 1;
+}
+.noget .solo-img, .nosend .solo-img {
+    opacity: 0;
+}
+.solo span, .solo h5, .solo a {
+    display: none;
+}
+.get .solo-tips, .get .solo-get, .get .tips-getNum, .get .btn-yes, .get .btn-no {
+    display: inline-block;
+}
+.noget .solo-tips, .noget .solo-get, .noget .tips-noget, .noget .btn-collect {
+    display: inline-block;
+}
+.send .solo-tips, .send .solo-send, .send .tips-send, .send .btn-come {
+    display: inline-block;
+}
+.nosend .solo-tips, .nosend .solo-send, .nosend .tips-nosend, .nosend .btn-play {
+    display: inline-block;
+}
+
+#kiss .solo-wrapper {
+    position: absolute;
+    width: 82%;
+    left: 9%;
+    top: 12%;
+}
+#kiss .btn-go {
+    display: block;
+    position: absolute;
+    width: 66%;
+    left: 17%;
+    bottom: 6%;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center; 
+    z-index: 99;
+    font-size: 0;
+}
+/*footer .btn {
+    display: inline-block;
+    width: 50%;
+}*/
+
+
+.marqueen {
+    color: #fff;
+    font-size: 13px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+}
+.marqueen ul{
+    width: 100%;
+    overflow:hidden;
+    zoom:1;
+    text-align: center;
+    height: 26px;
+}
+.marqueen ul li{
+    display: inline-block;
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    text-align:center;
+    padding: 0 10px;
+
+}
+.marqueen ul li span{
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    padding-left: 30px;
+    position: relative;
+}
+.marqueen ul li span label{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    border: 1px solid #d99f3e;
+    
+}
+.marqueen ul li span label img{
+    display: inline-block;
+    width: 100%;
+    border-radius: 12px;
+}
+.marqueen ul li ::after{
+    content: ""
+    width:0;
+    height: 0;
+    clear: both;
+}
+
+link-wrapper::-webkit-scrollbar {
+    width: 0 !important;
+} /* 这是针对缺省样式 (必须的) */
+link-wrapper::-webkit-scrollbar-track {
+    background-color: transparent !important;
+} /* 滚动条的滑轨背景颜色 */
+link-wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent !important; 
+} /* 滑块颜色 */
+link-wrapper::-webkit-scrollbar-button {
+    background-color: transparent !important;
+} /* 滑轨两头的监听按钮颜色 */
+link-wrapper::-webkit-scrollbar-corner {
+    background-color: transparent !important;
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+
+::-webkit-scrollbar {
+    width: 0 !important;
+} /* 这是针对缺省样式 (必须的) */
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
+} /* 滚动条的滑轨背景颜色 */
+::-webkit-scrollbar-thumb {
+    background-color: transparent !important; 
+} /* 滑块颜色 */
+::-webkit-scrollbar-button {
+    background-color: transparent !important;
+} /* 滑轨两头的监听按钮颜色 */
+::-webkit-scrollbar-corner {
+    background-color: transparent !important;
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+
+
+@-webkit-keyframes scaleIn {
+    0% {-webkit-transform: scale(1.3);transform: scale(1.3);}
+    100% {-webkit-transform: scale(1);transform: scale(1);}
+}
+@keyframes scaleIn {
+    0% {-webkit-transform: scale(1.3);transform: scale(1.3);}
+    100% {-webkit-transform: scale(1);transform: scale(1);}
+}
+
+@-webkit-keyframes bgscaleIn {
+    0% {-webkit-transform: scale(1.6);transform: scale(1.6);}
+    100% {-webkit-transform: scale(1.1);transform: scale(1.1);}
+}
+@keyframes bgscaleIn {
+    0% {-webkit-transform: scale(1.6);transform: scale(1.6);}
+    100% {-webkit-transform: scale(1.1);transform: scale(1.1);}
+}
+
+@-webkit-keyframes shineFlash {
+    /*0% {left: -300px;}*/
+    /*100% {left: 300px;}*/
+    0% {-webkit-transform: translateX(-300px) skewx(-32deg);transform: translateX(-300px) skewx(-32deg);}
+    100% {-webkit-transform: translateX(600px) skewx(-32deg);transform: translateX(600px) skewx(-32deg);}
+}
+@keyframes shineFlash {
+    /*0% {left: -300px;}*/
+    /*100% {left: 300px;}*/
+    0% {-webkit-transform: translateX(-300px) skewx(-32deg);transform: translateX(-300px) skewx(-32deg);}
+    100% {-webkit-transform: translateX(600px) skewx(-32deg);transform: translateX(600px) skewx(-32deg);}
+}
+
+@-webkit-keyframes show {
+    0% {-webkit-transform: translateY(-50px) scale(1);transform: translateY(-50px) scale(1);}
+    100% {-webkit-transform: translateY(0) scale(1);transform: translateY(0) scale(1);}
+}
+@keyframes show {
+    0% {-webkit-transform: translateY(-50px) scale(1);transform: translateY(-50px) scale(1);}
+    100% {-webkit-transform: translateY(0) scale(1);transform: translateY(0) scale(1);}
+}
+
+@-webkit-keyframes hide {
+    0% {display: block;position: relative;top: 0;-webkit-transform: translateY(0);transform: translateY(0);opacity: 1;}
+    80% {display: block;position: relative;top: 0;-webkit-transform: translateY(-200px);transform: translateY(-200px);opacity: 0;}
+    100% {display: none;position: absolute;top: -1000%;}
+}
+@keyframes hide {
+    0% {display: block;position: relative;top: 0;-webkit-transform: translateY(0);transform: translateY(0);opacity: 1;}
+    80% {display: block;position: relative;top: 0;-webkit-transform: translateY(-200px);transform: translateY(-200px);opacity: 0;}
+    100% {display: none;position: absolute;top: -1000%;}
+}
+
+@-webkit-keyframes roll {
+    from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@keyframes roll {
+    from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+@-webkit-keyframes flash {
+    0% {opacity: .3;}
+    20% {opacity: .3;}
+    30% {opacity: .5;}
+    50% {opacity: .4;}
+    70% {opacity: .4;}
+    90% {opacity: .5;}
+    100% {opacity: .3;}
+}
+@keyframes flash {
+    0% {opacity: .3;}
+    20% {opacity: .3;}
+    30% {opacity: .5;}
+    50% {opacity: .4;}
+    70% {opacity: .4;}
+    90% {opacity: .5;}
+    100% {opacity: .3;}
+}
+
+@-webkit-keyframes infoOn {
+    0% {-webkit-transform: translateY(-110px);transform: translateY(-110px);}
+    100% {-webkit-transform: translateY(0);transform: translateY(0);}
+}
+@keyframes infoOn {
+    0% {-webkit-transform: translateY(-110px);transform: translateY(-110px);}
+    100% {-webkit-transform: translateY(0);transform: translateY(0);}
+}
+
+@-webkit-keyframes infoOFF {
+    0% {-webkit-transform: translateY(0);transform: translateY(0);}
+    100% {-webkit-transform: translateY(-110px);transform: translateY(-110px);}
+}
+@keyframes infoOFF {
+    0% {-webkit-transform: translateY(0);transform: translateY(0);}
+    100% {-webkit-transform: translateY(-110px);transform: translateY(-110px);}
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .icon-reserve {
+        width: 70%;
+    }
+    .swiper-control {
+        width: 60%;
+    }
+    .link-container h2 {
+        margin: 8% auto 2%;
+    }
+    #tips-nobody h2 {
+        margin: 8% auto 2%;
+    }
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:570px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .info i {
+        position: absolute;
+        display: inline-block;
+        width: 34px;
+        height: 50px;
+        bottom: -50px;
+        right: 3px;
+    }
+    .swiper-control {
+        width: 66%;
+    }
+    .solo-wrapper {
+        width: 68%;
+    }
+    .link-container .link-wrapper {
+        margin: 0 auto;
+    }
+    #tips-nobody h2 {
+        width: 76%;
+        margin: 4% auto 2%;
+    }
+    .link-container h2 {
+        margin: 8% auto 2%;
+    }
+}
+
+/* iPhone6 */
+@media screen
+and (min-device-width:375px)
+and (max-device-width:667px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .film-wrapper {
+        width: 120px;
+        height: 112px;
+        top: 50px;
+        right: 222px;
+        -webkit-transform: scale(1);
+    }
+    .swiper-control {
+        width: 70%;
+    }
+    .link-container h2 {
+        margin: 8% auto 2%;
+    }
+    #tips-nobody h2 {
+        margin: 8% auto 2%;
+    }
+    .icon-reserve {
+        margin: 10% auto -2%;
+    }
+}
+
+/* iPhone6plus */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .swiper-control {
+        width: 73%;
+    }
+    .info i {
+        position: absolute;
+        display: inline-block;
+        width: 42px;
+        height: 65px;
+        bottom: -65px;
+        right: 5px;
+    }
+    .link-container h2 {
+        margin: 8% auto 2%;
+    }
+    #tips-nobody h2 {
+        margin: 8% auto 2%;
+    }
+    .icon-reserve {
+        margin: 10% auto -2%;
+    }
+}
+
+/* HUAWEI H6 */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+    .icon-reserve {
+        margin: 10% auto -2%;
+        width: 78%;
+    }
+    .swiper-control {
+        width: 62%;
+    }
+    .link-container h2 {
+        width: 86%;
+        font-size: 16px;
+        margin: 4% auto 2%;
+    }
+    #tips-nobody h2 {
+        margin: 4% auto 2%;
+    }
+    .solo-wrapper {
+        width: 62%;
+    }
+    .info i {
+        position: absolute;
+        display: inline-block;
+        width: 34px;
+        height: 53px;
+        bottom: -53px;
+        right: 3px;
+    }
+}

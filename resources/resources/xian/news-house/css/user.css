@@ -1,0 +1,122 @@
+html {
+	background: #EEEEEE;
+}
+a,a:hover {
+	text-decoration: none;
+}
+.main {
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-size: 15px;
+}
+.avatar {
+    background: -webkit-linear-gradient(top left, #F75B47 0%, #D54F3E 100%);
+	
+    text-align: center;
+    height: 122px;
+    padding-top: 11px;
+}
+.avatar .avatar-wrapper {
+	width: 80px;
+    height: 80px;
+	margin: 0 auto;
+}
+.avatar img {
+    max-width: 100%;
+}
+.avatar p {
+    color: #fff;
+	
+    margin-top: 8px;
+}
+.list a {
+    height: 45px;  line-height: 45px;
+	
+    color: #000000;
+    display: block;
+    padding: 0 10px;
+}
+.list a:hover {
+	background: #f2f1f1;
+}
+.list a:before, .list a.nav:after {
+	content: '';
+	display: inline-block;
+	vertical-align: -5px;
+	background: url(http://yao.holdfun.cn/portal/resources/news/images/icons.png) no-repeat 0 0;
+	background-size: 218px auto;
+	width: 24px;
+	height: 24px;
+	margin-right: 12px;
+}
+.list a.ph:before {
+    background-position: -192px -52px;
+	
+}
+.list a.jf:before {
+    background-position: -114px -52px;
+	
+}
+.list a.lp:before {
+    background-position: -140px -52px;
+	
+}
+.list a.hg {
+	position: relative;
+}
+.list a.hg:before {
+    background-position: -166px -52px;
+}
+.list a.hg i {
+	display: block;
+	background: url(http://yao.holdfun.cn/portal/resources/news/images/user/icon_hot.png) no-repeat 0 0;
+	background-size: 42px auto;
+	width: 42px;
+	height: 22px;
+	position: absolute;
+	left: 114px;
+	top: 4px;
+}
+.list a.jm:before {
+    background-position: -88px -52px;
+	
+}
+.list a.nav:after {
+    background-position: -208px 9px;
+	
+    width: 12px;
+    height: 23px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 0;
+}
+.list a.ph strong {
+    color: #3cc5d5;
+	
+}
+.list a.jf strong {
+    color: #ff9900;
+	
+}
+.list a.lp strong {
+    color: #f65a68;
+	
+}
+.list a.nav {
+	
+}
+.list ul>li {
+    border-top: 1px solid #E2DFDF;
+	
+    border-bottom: 1px solid #E2DFDF;
+    margin-top: 11px;
+    background: #fff;
+}
+.list ol>li {
+    padding: 0;
+	
+}
+.list ol>li.border {
+	
+    border-bottom: 1px solid #E8E5E5;
+}

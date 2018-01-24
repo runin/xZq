@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>食全食美</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/core.css" />
+		<link rel="stylesheet" href="./css/show.css" />
+	</head>
+	<body>
+		<img class="preload" id="preload" src="./images/show-btn.png">
+		<img class="preload" id="preload" src="./images/zan.png">
+		<div class="main">
+			<a class="back-btn" href="#" data-collect="true" data-collect-flag="tj-food-show-go2index-btn" data-collect-desc="美图秀首页-点击返回首页按钮">点此返回首页</a>
+			<div class="banner">
+				<div class="topic-head">
+					<img src="./images/wait.png" border="0">
+					<div class="topic-title">
+						<i class="icon"></i>
+						<span>本期话题</span>
+						<div class="topic-name"></div>
+					</div>
+				</div>
+				<div class="topic-content">
+					<div class="topic-desc"></div>
+					<div class="topic-info clearfix">
+						<span class="count-day">离图片征集结束还有<label>0</label>天</span>
+						<span class="fl-r count-total"><label>0</label>人参加</span>
+					</div>
+				</div>
+			</div>
+			<div class="tabs">
+				<ul>
+					<li class="active">
+						<a>本期晒图</a>
+					</li>
+					<li>
+						<a href="#" class="preshow" data-collect="true" data-collect-flag="tj-food-show-preshow-btn" data-collect-desc="美图秀首页-点击往期回顾按钮">往期回顾</a>
+					</li>
+				</ul>
+			</div>
+			<div class="cards"></div>
+			<div class="more hasmore" data-collect="true" data-collect-flag="tj-food-show-more-btn" data-collect-desc="美图秀首页-点击加载更多按钮">
+				<a>点击加载更多</a>
+			</div>
+			<a class="show bounceInUp" href="#" data-collect="true" data-collect-flag="tj-food-show-shareshow-btn" data-collect-desc="美图秀首页-点击我要晒图按钮"></a>
+		</div>
+		
+		<script src="./js/config.js"></script>
+
+		<script src="./js/plugins/zepto.min.js"></script>
+		<script src="./js/plugins/zepto.cookie.min.js"></script>
+		<script src="./js/plugins/zepto.fx.min.js"></script>
+		<script src="./js/plugins/zepto.selector.min.js"></script>
+		<script src="./js/plugins/md5.js"></script>
+		<script src="./js/plugins/common.js"></script>
+
+		<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+		<script src="./js/authorize_userinfo.js"></script>
+		
+		<script src="./js/app/show.js"></script>
+		<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	</body>
+</html>

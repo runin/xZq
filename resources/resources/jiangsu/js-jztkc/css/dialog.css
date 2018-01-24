@@ -1,0 +1,422 @@
+.modal {
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	color: #FFF;
+	text-align: center;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.modal:after {
+	content:'';
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.7);
+	z-index:99;
+}
+.modal-vote:after {
+	content:'';
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:transparent;
+	z-index:99;
+}
+.modal .flash-box {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	-webkit-animation-name: bounceIn;
+	-webkit-animation-duration: .3s;
+	-webkit-animation-fill-mode: both;
+	-webkit-backface-visibility:hidden;
+}
+.modal .flash-box .icon-flash {
+	width: 100%;
+	height: 50%;
+}
+.award-img-tip{
+	max-width: 120%;
+	width: 90%;
+	margin: 0 auto 0;
+}
+.modal .dialog {
+	position: absolute;
+	width: 80%;
+	height: auto;
+	margin-bottom: 50px;
+	z-index: 999;
+}
+.modal .dialog .btn-dialog-close {
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	right: -5px;
+	width: 30px;
+	height: 100px;
+	background: url(../images/btn-close.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 9999;
+}
+.modal .dialog .bg-dialog-header {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.modal .dialog .bg-dialog-footer {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.modal .dialog .global-header {
+	position: relative;
+	width: 100%;
+	font-size: 0;
+}
+.modal .dialog .global-header .icon-redbag-gold, .modal .dialog .global-header .icon-redbag-prev {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.modal .dialog .global-header .icon-luckytips {
+	position: absolute;
+	width: 82%;
+	top: 8%;
+	left: 12%;
+}
+.modal .dialog .global-header .icon-lottery-yhlogo {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	z-index: 9999;
+	left: 50%;
+	margin-left: -40px;
+	bottom: -30px;
+	background-color: #ab1921;
+	border-radius: 100%;
+	padding: 6px;
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+.modal .dialog .dialog-content {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 999;
+	text-align: center;
+	border-radius: 6px;
+	background: url("../images/rank-bg.png") no-repeat;
+	background-size: 100% 100%;
+}
+.modal .dialog .dialog-content .info-qrcode {
+	font-size: 13px;
+	line-height: 16px;
+	margin-top: 6px;
+	text-align: center;
+}
+.modal .dialog .dialog-content .icon-congrats {
+	width: 86%;
+	margin: 0 auto 2%;
+}
+.modal .dialog .dialog-content .award-luckTips {
+	width: 92%;
+	margin: 5px auto 1%;
+	font-size: 16px;
+	overflow: hidden;
+	text-align: center;
+}
+.modal .dialog .dialog-content .award-luckTips img, .modal .dialog .dialog-content .award-img {
+	width: 100%;
+	margin: auto;
+}
+.modal .dialog .dialog-content .award-nameTips {
+	width: 80%;
+	margin: 0 auto 2%;
+	font-size: 26px;
+	line-height: 30px;
+	overflow: hidden;
+	text-align: center;
+}
+.modal .dialog .dialog-content .award-keyTips {
+	width: 100%;
+	margin: 8% auto 2% auto;
+	font-size: 16px;
+	line-height: 20px;
+	overflow: hidden;
+	word-break: break-all;
+	text-align: center;
+	color: #d7c39e;
+}
+.modal .dialog .dialog-content .award-normalTips {
+	width: 100%;
+	margin: 3% auto;
+	font-size: 14px;
+	line-height: 20px;
+	overflow: hidden;
+	word-break: break-all;
+	text-align: center;
+}
+.modal .dialog .dialog-content .input-box {
+	width: 100%;
+	font-size: 15px;
+	color: #FFF;
+	margin: 8% auto 5%;
+}
+.modal .dialog .dialog-content .input-box .label {
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.modal .dialog-content .input-box p {
+	width: 100%;
+	margin: 6px 0 0;
+}
+.modal .dialog-content .btn{
+	position: relative;
+	display: inline-block;
+	color: white;
+	padding: 10px 30px;
+	margin: 4% auto;
+	background: url("../images/que-answer-bg.png") no-repeat;
+	background-size: 100% 100%;
+}
+.modal .dialog-content .input-box span {
+	display: inline-block;
+}
+.modal .dialog-content .input-box input {
+	display: inline-block;
+	width: 88%;
+	padding: 3px 8px;
+	line-height: 30px;
+	border: 0 none;
+	border-radius: 3px;
+	font-size: 15px;
+	color: #FFF;
+	margin: 3px auto;
+}
+.modal .dialog-content .input-box input::-webkit-input-placeholder{
+	color: white;
+}
+.award-bottom-bg-fake{
+	width: 100%;
+	margin: auto;
+	opacity: 0;
+}
+.award-bottom-bg{
+	position: absolute;
+	max-width: 120%;
+	width: 20%;
+	bottom: 0;
+	right: 0;
+}
+.modal .dialog .dialog-content .input-box input::-webkit-input-placeholder {
+	color: white !important;
+}
+.modal .dialog .dialog-content .info-box {
+	text-align: left;
+	width: 88%;
+	margin: 6% auto 0;
+	font-size: 13px;
+	line-height: 18px;
+	color: #FFF;
+}
+.modal .dialog .dialog-content .btn-lottery {
+	position: relative;
+	display: inline-block;
+	width: 140px;
+	height: 50px;
+	background: url("../images/award-btn.png") no-repeat;
+	background-size: 100% 100%;
+	z-index: 99999;
+	color: #000;
+}
+.modal .dialog .dialog-content .btn-lottery-box {
+	width: 100%;
+}
+.modal .dialog .dialog-content .award-img-box {
+	position: relative;
+	width: 100%;
+}
+.modal .dialog .dialog-content .award-img-box .award-img {
+	position: relative;
+	z-index: 2;
+}
+.modal .dialog .dialog-content .award-img-box .icon-paper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation-name: paper;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	z-index: 1;
+}
+.modal .dialog .dialog-content .icon-ok {
+	width: 52%;
+	margin: 0 auto 1%;
+}
+.modal .dialog .dialog-content .qrcode-tips {
+	font-size: 15px !important;
+	color: #FFF !important;
+	font-weight: normal !important;
+	color: #F5F5F5;
+	margin-bottom: 5%;
+}
+.modal .dialog .dialog-content .qrcode-box {
+	position: relative;
+	width: 82%;
+	margin: 0 auto 5%;
+	padding: 0 0 36px;
+	background-color: #FFF;
+	overflow: hidden;
+}
+.modal .dialog .dialog-content .qrcode-box p {
+	position: absolute;
+	width: 100%;
+	height: 36px;
+	left: 0;
+	bottom: 0;
+	font-size: 13px;
+	font-weight: bolder;
+	color: #6b0001;
+	overflow: hidden;
+	text-align: center;
+	padding: 0 6%;
+}
+.modal .dialog .dialog-content .dialog-body {
+	width: 90%;
+	padding: 8% 5%;
+	margin: auto;
+}
+.modal .dialog .dialog-content .dialog-body h3 {
+	font-size: 22px;
+	font-weight: bolder;
+	color: #FFF;
+	text-shadow: 1px 0px 0px #993333, -1px 0px 0px #993333, 0px 1px 0px #993333, 0px -1px 0px #993333 !important;
+	margin: 3% auto;
+}
+.modal .dialog .dialog-content .dialog-body h6 {
+	font-size: 22px;
+	margin: 3% auto 6%;
+}
+.modal .dialog .dialog-content .dialog-body h6 label {
+	font-family: "AOVELSANS";
+	/*font-size: 90px;*/
+	margin-right: 5px;
+	font-weight: bolder;
+}
+.modal .dialog .dialog-content .dialog-body h6, .modal .dialog .dialog-content .dialog-body h6 label {
+	color: #FFF;
+	text-shadow: 1px 0px 0px #993333, -1px 0px 0px #993333, 0px 1px 0px #993333, 0px -1px 0px #993333 !important;
+}
+.modal .dialog .dialog-content .dialog-body .code-box {
+	width: 100%;
+	overflow: hidden;
+}
+.modal .dialog .dialog-content .dialog-body .code-box p {
+	font-weight: bolder;
+	font-size: 18px;
+	line-height: 20px;
+	margin: 3px auto;
+	word-break: break-all;
+}
+.modal .dialog .dialog-content .dialog-body .icon-openluck {
+	position: absolute;
+	width: 80%;
+	top: -52px;
+	left: 10%;
+}
+.modal .dialog .dialog-content .dialog-body .icon-sponsorlogo {
+	width: 40%;
+	margin: 3% auto;
+}
+.modal .dialog .dialog-content .dialog-body .sponsor-tips {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: bolder;
+	color: #ff9999;
+}
+.modal .dialog .dialog-content .dialog-footer {
+	width: 80%;
+	position: absolute;
+	bottom: 10%;
+}
+.btn-lottery-box>p{
+	margin-bottom: 5px;
+}
+.btn-lottery-box>p>input{
+	border: none;
+	border-radius: 2px;
+	height: 30px;
+	width: 80%;
+	background-color: #c8c8c8;
+	padding: 0 5px;
+}
+#openLuck-dialog .dialog .dialog-content .dialog-body {
+	padding: 25% 5% 35%;
+}
+.modal-flag .dialog .btn-dialog-close {
+	display: block !important;
+	position: absolute;
+	top: -14px;
+	right: 0;
+	width: 28px;
+	height: 28px;
+	background: url(../images/btn-close.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 9999;
+}
+.modal-flag .dialog .dialog-content .icon-flag {
+	position: relative;
+	width: 100%;
+	margin: auto;
+}
+.modal-flag .dialog .dialog-content .btn {
+	background: #fff;
+	display: inline-block;
+	padding: 2.5% 8%;
+	line-height: 100%;
+	border-radius: 22px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bolder;
+	border: 3px solid #ffcc00;
+	color: #cc0033;
+	margin: 16% auto 12%;
+}
+.modal-flag .dialog .dialog-content .userinfo-keyTips {
+	color: #ff9999;
+	font-size: 14px;
+	font-weight: bolder;
+	text-align: center;
+}
+/* 通用弹层样式_E */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.modal .dialog-content .btn{
+		margin: 0 auto;
+	}
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}

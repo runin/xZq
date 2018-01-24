@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>我要报名</title>
+	<link rel="stylesheet" href="./css/cssreset-min.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/signup_form.css" />
+	<script src="./js/wx_api.js"></script>
+	<script>
+		hideWeiXinShareMenuItem();
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="form-item">
+			<h2>姓名：</h2>
+			<input type="text" id="name" />
+		</div>
+		<div class="form-item">
+			<h2>手机：</h2>
+			<input type="number" id="mobile" />
+		</div>
+		<div class="form-item">
+			<h2>身份证：</h2>
+			<input type="text" id="card" />
+		</div>
+		<a href="#" class="btn-submit-signup" id="btn-submit-signup" data-collect="true" data-collect-flag="portal-signup-form-submit" data-collect-desc="首页报名 立即报名">立即报名</a>
+	</div>
+	<div class="copyright copyright2">页面由西安广播电视台提供</div>
+	
+	<script src="./js/jquery/jquery-1.7.2.min.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src="./js/share.js"></script>
+	<script src="./js/data_collect.js"></script>
+	<script src="./js/signup_form.js"></script>
+</body>
+</html>

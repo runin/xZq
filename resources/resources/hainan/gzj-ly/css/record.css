@@ -1,0 +1,109 @@
+body {
+    background: #0E1633 url(../images/record-bg.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.main {
+    margin: 0 auto;
+    font-size: 15px;
+}
+.tips{
+    margin: 40px auto;
+    text-align: center;
+    color: #0688CC;
+    font-size: 14px;
+}
+
+.list{
+    background: url(../images/rule-bg.png) no-repeat;
+    background-size: 100% 100%;
+    height: 80vh;
+    width: 94%;
+    margin: 20px auto 15px;
+    padding-top: 2%;
+}
+.list .re-top{
+    width: 30%;
+    margin: 26px auto 15px;
+    display: block;
+}
+.list .tlt{
+    color: rgba(235,222,168, 1);
+    -webkit-column-count: 2;
+    border-bottom: 1px solid #7C745C;
+    border-top: 2px solid #B9A25D;
+    padding: 10px 0;
+    padding-bottom: 4px;
+    width: 80%;
+    margin: 0 auto;
+}
+.list .tlt label{
+    display: block;
+    text-align: center;
+}
+ul{
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    height: 70%;
+    overflow-y: scroll;
+}
+ul li{
+    border-bottom: 1px dashed #CAAC63;
+    padding: 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul li span{
+    display: inline-block;
+    width: 34%;
+    text-align: center;
+}
+ul li span img{
+    width: 80%;
+    vertical-align: middle;
+}
+ul li label{
+    display: inline-block;
+    width: calc(100% - 38%);
+    width: -webkit-calc(100% - 38%);
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: text-top;
+}
+.back {
+    width: 145px;
+    height: 52px;
+    line-height: 52px;
+    background: url(../images/btn.png) no-repeat;
+    background-size: 145px auto;
+    font-size: 16px;
+    text-shadow: rgba(0,0,0,.5) 1px 0 0,rgba(0,0,0,.5) 0 1px 0,rgba(0,0,0,.5) -1px 0 0,rgba(0,0,0,.5) 0 -1px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6%;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .list {
+        margin: 5px auto 15px;
+    }
+    ul {
+        height: 65%;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>活动报名</title>
+    <link rel="stylesheet" href="./css/reset.css"></link>
+	<link rel="stylesheet" href="./css/core.css"></link>
+	<link rel="stylesheet" href="./css/style.css"></link>
+</head>
+<body class="form-bg">
+	<div class="main">
+		<input type="hidden" id="noRunShare" value="true">
+		<div class="form-item">
+			<h2>*姓名：</h2>
+			<input type="text" id="name" />
+		</div>
+		<div class="form-item">
+			<h2>*手机：</h2>
+			<input type="number" id="mobile" />
+		</div>
+		<div class="form-item">
+			<h2>身份证：</h2>
+			<input type="number" id="card_no" />
+		</div>
+		
+		<a href="#" class="btn-submit-signup" id="btn-submit-signup" data-collect="true" data-collect-flag="sy-evening-paper-signup-form-submit" data-collect-desc="旅游报名-立即报名">立即报名</a>
+	</div>
+	
+	<div class="bottom">
+    	<div class="copy-right copyright">页面由沈阳广播电视台·新闻频道提供</div>
+	</div>
+
+	<script src="js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/wx_api_userinfo.js"></script>
+
+	<script src="./js/app/signup_form.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

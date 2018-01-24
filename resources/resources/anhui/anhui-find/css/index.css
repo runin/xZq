@@ -1,0 +1,32 @@
+body {
+	background: url("../images/index-bg.jpg") no-repeat;
+	background-size: cover;
+}
+header a {
+	color: #F5E703;
+	display: block;
+	border: 1px solid #F5E703;
+	font-size: 12px;
+	text-align: center;
+	width: 64px;
+	height: 22px;
+	line-height: 22px;
+	border-radius: 20px;
+	margin: 6px auto 0;
+	position: absolute;
+	right: 9px;
+	top: 9px;
+}
+.logo{
+	width: 255px;
+	margin: 0 auto;
+	display: block;
+}
+.main p{
+	font-size: 15px;
+	color: #fff;
+	margin: 0 10%;
+}
+.main a{
+	margin-top: 20px;
+}

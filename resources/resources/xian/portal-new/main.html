@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>西安广播电视台</title>
+	<link rel="stylesheet" href="./css/cssreset-min.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+	<div class="main">
+		<div id="weather" class="weather hidden">
+			<p class="date">-</p>
+			<p class="temp">-</p>
+			<img src="" />
+		</div>
+		<div class="user-info">
+			<a href="#" class="hidden none" id="info-wrapper" data-collect="true" data-collect-flag="portal-main-money-rank" data-collect-desc="首页金币、排行榜">
+				<span class="unread none"></span>
+				<label>我的积分：</label><strong class="credits">-</strong>
+				<span class="jifen-exchange">积分换礼</span>
+			</a>
+		</div>
+		<div id="guide" class="none main-item now-playing" data-url="menu.html" data-collect="true" data-collect-flag="portal-main-guide-view" data-collect-desc="首页节目导视">
+			<div class="item-content" id="guide-content">
+				<p class="large">正在播出：<span class="now">-</span></p>
+				<p>即将播出：<span class="later">-</span></p>
+			</div>
+		</div>
+		
+		<div id="yao" class="main-item yao none" data-collect="true" data-collect-flag="portal-main-hudong" data-collect-desc="首页互动推荐">
+			<div class="item-content" id="yao-content">
+				<p class="large time">-</p>
+				<p class="title">有奖互动 <label></label>：<span></span></p>
+			</div>
+		</div>
+		
+		<div class="acts none" id="acts">
+			
+		</div>
+		
+		<div class="jiemu none">
+			<h2 class="label-title">栏目推荐</h2>
+			<ul id="jiemu">
+			</ul>
+		</div>
+	</div>
+	<div class="copyright hidden">页面由西安广播电视台提供</div>
+	
+    <script src="js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/common.js"></script>
+    <script src="js/plugins/fastclick.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/main.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

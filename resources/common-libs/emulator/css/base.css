@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------
+// Reset Browser Presets
+//--------------------------------------------------------------------------*/
+body, fieldset, input, select, ul, ol { margin: 0; border: 0; padding: 0; }
+input, select                         { background: none; font-family: inherit; font-size: inherit; }
+ul, ol                                { list-style-type: none; }
+table                                 { border-spacing: 0; }
+a:focus, input:focus, select:focus    { outline: none; /* suppress chrome's input highlighting */ }
+
+/*----------------------------------------------------------------------------
+// Add HTML5 Compatibility For Older Browsers
+//--------------------------------------------------------------------------*/
+header, nav, article, section, footer { display: block; }
+
+/*----------------------------------------------------------------------------
+// Use border-box Layout Model
+//--------------------------------------------------------------------------*/
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/*----------------------------------------------------------------------------
+// Common
+//--------------------------------------------------------------------------*/
+body
+{
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.0em; }
+
+a                { text-decoration: none; color: #2170F5; }
+a:hover, a:focus { text-decoration: underline; }
+
+/*----------------------------------------------------------------------------
+// Header
+//--------------------------------------------------------------------------*/
+header
+{
+	border-bottom: solid 1px #AAAAAA;
+	background-color: #F0F0F0;
+	background: linear-gradient(to bottom, #F9F9F9, #E3E3E3);
+	padding: 0.6rem 10%;
+}
+
+header .brand_name
+{
+	display: inline-block;
+	vertical-align: middle;
+	height: 1.8rem;
+	padding-top: 0.4rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: #555555;
+}
+
+header .brand_name:hover, header .brand_name:focus { color: #333333; }
+
+/*----------------------------------------------------------------------------
+// Navigation
+//--------------------------------------------------------------------------*/
+nav
+{
+	padding: 1rem 10%;
+	border-bottom: solid 1px #DDDDDD;
+	font-size: 0.8rem;
+}
+
+nav > ul { overflow: hidden; } /* Autoclear floating child elements. */
+
+nav > ul > li
+{
+	float: left;
+	margin-right: 1.2rem;
+}
+
+/*----------------------------------------------------------------------------
+// Documentation
+//--------------------------------------------------------------------------*/
+.documentation
+{
+	margin: 3rem 10%;
+	max-width: 80em;
+	padding-left: 2rem;
+}
+
+.documentation:not(:first-of-type) { border-top: solid 1px #DDDDDD; }
+
+.documentation > h1 { margin-top: 3rem; }
+
+.documentation ul > li
+{
+	margin: 0.5em 0 0.5em 2.5em;
+	list-style-type: disc;
+}
+
+.documentation cite {	font-style:italic; }
+
+.documentation footer 
+{
+	margin-top: 2em;
+	border-top: solid 1px #DDDDDD;
+	font-size: 0.8em;
+}
+
+/*----------------------------------------------------------------------------
+// Devicelist
+//--------------------------------------------------------------------------*/
+.devicelist tr:nth-child(even)     { background-color: #F8F8F8; }
+.devicelist tr:nth-child(odd)      { background-color: #FFFFFF; }
+.devicelist th, .devicelist td     { padding: 0.5rem; }
+.devicelist th                     { padding-top: 2rem; }
+.devicelist th:first-of-type       { text-align: left; font-size: 1.3rem; }
+.devicelist td:not(:first-of-type) { text-align: right; }
+
+/*----------------------------------------------------------------------------
+// Footer
+//--------------------------------------------------------------------------*/
+body > footer
+{
+	border-top: solid 1px #DDDDDD;
+	background: linear-gradient(to bottom, #F5F5F5, #FFFFFF);
+	padding: 2rem 10% 4rem 10%;
+}
+
+body > footer .brand_name
+{
+	display: inline-block;
+	margin-bottom: 1em;
+	font-weight: bold;
+	color: #333333;
+}
+
+body > footer > ul { overflow: hidden; } /* Autoclear floating child elements. */
+
+body > footer > ul > li
+{
+	float: left;
+	margin-right: 1.5em;
+}

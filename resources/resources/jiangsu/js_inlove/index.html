@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=640, user-scalable=no">
+	<title>我们相爱吧</title>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script type="text/javascript">$(function () {var DEFAULT_WIDTH = 640,ua = navigator.userAgent.toLowerCase(),deviceWidth = window.screen.width,devicePixelRatio = window.devicePixelRatio || 1,targetDensitydpi;if(ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4){targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');}});</script>
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<img src="images/tv.png" class="tv pa">
+		<div class="logo pa"><img src="images/logo.png"></div>
+		<img src="images/slogan.png" class="slogan pa">
+		<a href="main.html" class="btn-go db pa">进入互动</a>
+		<p class="copyright"></p>
+	</div>
+	<div class="bg bg1 pa"></div>
+	<style type="text/css">body {overflow: hidden;width:100vw;height:100vh;}.wrap{position:absolute;top:0;left:0;width:100vw;height:100vh;}</style>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script type="text/javascript">
+		$('body').touchend(function(){
+			toUrl('main.html');
+		});
+	</script>
+</body>
+</html>

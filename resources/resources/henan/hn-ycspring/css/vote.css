@@ -1,0 +1,420 @@
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body{
+    height: auto;
+    min-height: 100%;
+    background: url("../images/vote-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.main-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/vote-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.countdown{
+    position: absolute;
+    top: 10px;
+    width: 30%;
+    height: 33px;
+    /*line-height: 26px;*/
+    /*margin: 20% 50% 2%;*/
+    /*border-radius: 3px;*/
+    text-align: center;
+    font-size: 15px;
+    left: 35%;
+    color: #0085bd;
+    /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);*/
+    z-index: 2;
+}
+.countdown-tip{
+    z-index: 2;
+}
+.countdown .detail-countdown{
+    /*background: url(../images/biao.png) no-repeat;*/
+    background-size: 30px auto;
+    display: inline-block;
+    padding-left: 1%;
+    /*padding-top: 6%;*/
+    margin-left: 1px;
+    color: #0085bd;
+    z-index: 2;
+}
+.countdown .detail-countdown label {
+    /*color: #fec836;*/
+    font-weight: bolder;
+    /*margin: 0 1px;*/
+    /*padding: 2px 3px;*/
+    /*border: 1px solid #000;*/
+    /*border-top: 1px solid #706e6f;*/
+    /*border-left: 1px solid #675151;*/
+    /*border-radius: 2px;*/
+    /*box-shadow: 2px 2px 1px rgba(0,0,0,.3);*/
+    /*background-image: -webkit-linear-gradient(-90deg, #353334, #290b0b);*/
+    /*background-color: #201e1e;*/
+    /*color: #fec836;*/
+}
+.bak{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 26px;
+    border-radius: 5px;
+    /*background-color: #a0effc;*/
+    /*opacity: 1;*/
+    background: url("../images/vote-btn.png") no-repeat;
+    /*background-position: 50% 50%;*/
+    background-size: 100% 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.zx-tt{
+    position: absolute;
+    top: 72px;
+    left: 10px;
+    color: #0085bd;
+    font-size: 16px;
+    /*text-shadow: 1px 1px 1px rgba(0,0,0,1);*/
+}
+.count{
+    /*color: #FFE700;
+    font-size: 12px;*/
+}
+#tttj {
+    position: absolute;
+    top: 72px;
+    right: 10px;
+    position: absolute;
+    right: 5%;
+    display: inline-block;
+    z-index: 9;
+    text-align: center;
+}
+#tttj img {
+    display: inline-block;
+    width: 24px;
+    margin: 0 auto;
+}
+#tttj p {
+    display: inline-block;
+    color: #b73c3a;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.head{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    float: left;
+    /*background-color: #23b8f7;*/
+}
+.voteinfo{
+    position: relative;
+    width: 50%;
+    height: 30px;
+    left: 5%;
+    color: #000000;
+    z-index: 3;
+    float: left;
+}
+.voteinfo>div,.voteinfo>p{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    top: 0;
+}
+.voteinfo>p{
+    /*top: 30px;*/
+}
+.shake{
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    left: 12%;
+    z-index: 50;
+    /*-webkit-animation:picshake 3s infinite linear;*/
+}
+.zan-bg{
+    position: absolute;
+    width: 96%;
+    left: 2%;
+    height: 60%;
+    top: 16%;
+    background: url("../images/zan-bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.zand{
+    position: absolute;
+    width: 96%;
+    left: 2%;
+    height: 60%;
+    top: 16%;
+    z-index: 4;
+    display: none;
+}
+.baby{
+    position: absolute;
+    height: 60%;
+    width: 80%;
+    top: 13%;
+    left: 10%;
+    /*left: 50px;*/
+    opacity: 0;
+}
+.talk-box{
+    z-index: 2;
+}
+.zan-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -90%;
+    overflow-y: scroll;
+    background-color: rgba(0,0,0,.2);
+    z-index: 3;
+}
+.touch{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+}
+/*.zan-box>.zan:nth-child(2)>.voteinfo{*/
+    /*background: url("../images/fm-tt2.png") no-repeat;*/
+    /*background-size: 100% 100%;*/
+/*}*/
+/*.zan-box>.zan:nth-child(3)>.voteinfo{*/
+    /*background: url("../images/fm-tt3.png") no-repeat;*/
+    /*background-size: 100% 100%;*/
+/*}*/
+/*.zan-box>.zan:nth-child(4)>.voteinfo{*/
+    /*background: url("../images/fm-tt4.png") no-repeat;*/
+    /*background-size: 100% 100%;*/
+/*}*/
+.zan{
+    position: relative;
+    width: 90%;
+    height: 30px;
+    opacity: 0;
+    /*float: left;*/
+    background-color: rgba(0,0,0,.4);
+    margin: 5% auto;
+}
+.zan>.vote-name{
+    position: relative;
+    width: 50%;
+    float: left;
+}
+.zan>.zan-btn{
+    position: relative;
+    width: 20%;
+    height: 30%;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    /*background: url("../images/vote-btnlt.png") no-repeat;*/
+    /*background-size: 100% 100%;*/
+    z-index: 5;
+    opacity: 0;
+    float: left;
+}
+.zan>.lt,.zan>.ltl{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 25%;
+}
+.zan>.ltl{
+    opacity: 0;
+    z-index: 20;
+}
+.zan-per{
+    position: absolute;
+    width: 20%;
+    height: 30px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+}
+.zan-per>img{
+    position: absolute;
+    right: 5%;
+    top: 0;
+    height: 40%;
+}
+.zan-per>span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #772d21;
+    top: 0;
+    left: 0;
+}
+.zan-per>div{
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 6px;
+    top: 50%;
+    border-radius: 3px;
+    border: 1px solid #732b20;
+    background: -webkit-linear-gradient(top, #633a23 0%,#9b6f56 100%);
+}
+.zan-per>div>p{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-radius: 3px;
+    background-color: #ffee7e;
+}
+.lt-box>.ltnum{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #0085bd;
+    opacity: 0;
+}
+.vote-dialog{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: 60%;
+    top: 20%;
+    z-index: 90;
+    background: url("../images/vote-dialog.png") no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+.vote-dialog>.close{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    right: -15%;
+    top: -15%;
+}
+.vote-dialog>img{
+    position: absolute;
+    height: 60%;
+    top: 20%;
+    left: 35%;
+}
+.vote-dialog>.vote-dialog-btn{
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #0086be;
+    color: white;
+    border-radius: 5px;
+}
+.black{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 80;
+    display: none;
+}
+
+.lt-box{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.copyright{
+    color: white;
+}
+.follow-box {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 26px;
+    zoom: 1;
+    clear: both;
+}
+.waggle {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  -webkit-animation: 3s waggle;
+  animation: 3s waggle;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: -1;
+  animation-delay: -1;
+}
+@-webkit-keyframes waggle {
+0%, 7% {
+    transform: rotateZ(0);
+    -webkit-transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+    -webkit-transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+    -webkit-transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+    -webkit-transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+    -webkit-transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+    -webkit-transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+    -webkit-transform: rotateZ(0);
+  }
+}
+@-webkit-keyframes picshake {
+    0%{
+
+    }
+    20% {
+        -webkit-transform: rotate(45deg);
+    }
+    10%,30% {
+        -webkit-transform: rotate(-45deg);
+    }
+    40%{
+        -webkit-transform: rotate(0deg);
+    }
+}
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2)
+{
+    /*.baby{*/
+        /*height: 40%;*/
+    /*}*/
+}

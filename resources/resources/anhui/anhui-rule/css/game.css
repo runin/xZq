@@ -1,0 +1,340 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background: #0b0e1b;
+	width: 100%;
+	height: 100%;
+}
+/*game  loading S*/
+#stage_loading{
+	background: #0b0e1b;
+	text-align: center;
+}
+#stage_loading .loading-text{
+	font-size: 14px;
+	padding-top: 10px;
+}
+#stage_loading #loading_bar{
+	position: relative;
+	color: white;
+}
+/*game  loading E*/
+
+/*game  start S*/
+#container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#container img{
+	width: 100%;
+	display: block;
+}
+.btn-danmu{
+	display: block;
+	width: 30%;
+	position: absolute;
+	right: 6px;
+	top: 0px;
+}
+
+.stage_index{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(../images/game/bg-index.jpg) no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+.stage_index .rule{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	text-align: center;
+	width: 32%;
+}
+.stage_index .rule img{
+	text-align: center;
+	height: 120px;
+}
+.stage-container{
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 14px;
+}
+.stage-container .index-btn{
+	display: block;
+	width: 80px;
+	height: 80px;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+	background: rgba(81,162,23,0.6);
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+}
+/*.stage-container .index-btn img{
+	display: block;
+	width: 100%;
+}*/
+.stage-container .index-btn::before{
+	content: "";
+	display: block;
+	width: 64px;
+	height: 64px;
+	background: #51a217;
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+}
+.stage-container .index-btn::after{
+	content: "";
+	display: block;
+	width: 0px;
+	height: 0px;
+	border: 20px solid transparent;
+	border-right: 30px solid transparent;
+	border-left: 30px solid transparent;
+	border-left-color:#fff;
+	position: absolute;
+	left: 29px;
+	top: 20px;
+}
+.stage-container .stage-pop{
+	padding: 16% 12% 0;
+}
+.stage-container .stage-pop img{
+	display: block;
+	width: 100%;
+}
+/*game  start E*/
+
+
+/*game dialog S*/
+.dialog-wrapper{
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.score-content {
+	width: 80%;
+	height: auto;
+	font-size: 20px;
+    line-height: 32px;
+	color: #ffe167;
+	text-align: center;
+	position: absolute;
+	top:25%;
+	left: 10%;
+	padding: 20px 0;
+	overflow: hidden;
+	background-color:#3f8515 ;
+	border-radius: 6px;
+}
+.lottery-box-triangle::before{
+	content: "";
+	position: absolute;
+	top:0px;
+	right: -74px;
+	border-bottom: 54px solid #e4ffd4;
+	border-top: 54px solid transparent;
+	border-right: 74px solid transparent;
+	border-left: 74px solid transparent;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.score-content p{
+	color: #fff;
+	font-size: 20px;
+}
+.score-content p.score{
+	font-size: 35px;
+	padding: 20px 10px 26px;
+	background: url(../images/game/score-bg.png) no-repeat center;
+	background-size: 54%;
+}
+.score-content .tip-img{
+	width: 100%;
+	padding: 8% 10% 14%;
+}
+.btn-close{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	top:8px;
+	right: 8px;
+	display: block;
+	background: url(../images/game/btn-close.png) no-repeat center;
+	background-size: 80%;
+	z-index: 999999;
+}
+.btn-dia{
+	width: 36%;
+	background: #bed000;
+	display: inline-block;
+	margin: 0 4%;
+	padding: 2px 14px;
+	font-size: 15px;
+	color: #0f5e08;
+	border-radius: 6px;
+}
+.share-content{
+	width: 100%;
+	height: 100%;
+	background: url(../images/game/share-bg.jpg) no-repeat;
+	background-size:cover ;
+	background-position: center top;
+	position: relative;
+}
+.share-content .icon-share{
+	display: block;
+	width: 30%;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+@-webkit-keyframes bounceInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 700px, 0);
+		transform: translate3d(-3000px, 700px, 0)
+	}
+	90% {
+		-webkit-transform: translate3d(0px, 0, 0);
+		transform: translate3d(0px, 0, 0)
+	}
+	100% {
+		-webkit-transform: none;
+		transform: none
+	}
+}
+
+@-webkit-keyframes bounceInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 700px, 0);
+		transform: translate3d(-3000px, 700px, 0)
+	}
+	90% {
+		-webkit-transform: translate3d(0px, 0, 0);
+		transform: translate3d(0px, 0, 0)
+	}
+	100% {
+		-webkit-transform: none;
+		transform: none
+	}
+}
+
+.bounceInLeft {
+	-webkit-animation-name: bounceInLeft;
+	animation-name: bounceInLeft;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+/*game dialog E*/
+
+footer{
+	position: absolute;
+	bottom: 0px;
+	font-size: 12px;
+	text-align: center;
+	width: 100%;
+	color: #4B4B4B;
+}
+
+
+/*
+	玉米动画
+*/
+.crop-animate-wrapper{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.crop-animate-wrapper .crop{
+	-webkit-transition: -webkit-transform 1s ease;
+	transition: transform 1s ease;
+}
+/*
+	END OF 玉米动画
+*/
+
+
+/*
+	loading
+*/
+.sk-cube-grid {
+  width: 50px;
+  height: 50px;
+  margin: 0px auto;
+}
+
+.sk-cube-grid .sk-cube{
+  width: 33%;
+  height: 33%;
+  background-color: #272e4e;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+/*
+	END OF loading
+*/

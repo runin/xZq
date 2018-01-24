@@ -1,0 +1,660 @@
+.dialog {
+    position: absolute;
+    color: #fdc728;
+    border-radius: 6px;
+    z-index: 1000;
+    background: url(../images/bg-dialog.jpg) no-repeat 0 0;  background-size: cover;
+    overflow: hidden;
+}
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.dialog-inner {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.modal .btn-close {
+    position: absolute;
+    background: url(../images/btn-close.png) no-repeat 3px 3px;
+    background-size: 22px auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    z-index: 10000;
+}
+.modal:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.75);
+	z-index: 100;
+}
+.rule-dialog {
+    color: #fff;
+    height: 90%;
+}
+.rule-dialog .rule-content {
+  margin: 45px auto 20px;
+  width: 90%;
+  height: calc(100% - 65px);
+  height: -webkit-calc(100% - 65px);
+  overflow-y: auto; 
+}
+#fudai-dialog .btn-close {
+  display: none;
+}
+#fudai-dialog .fudai {
+  position: absolute;
+  left: 10%;
+  bottom: 12%;
+  width: 80%;
+  height: 68%;
+  text-align: center;
+  background: url(../images/bg-gift.png) no-repeat;
+  background-size: 100% 100%;
+  z-index: 199;
+}
+#fudai-dialog .fudai p {
+  position: absolute;
+  width: 100%;
+  top: -10%;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #fff43e;
+}
+#fudai-dialog .fudai i {
+  position: absolute;
+  font-style: normal;
+}
+#fudai-dialog .fudai .btn-ball {
+  width: 120px;
+  height: 116px;
+  background: url(../images/mark-gift.png) no-repeat;
+  background-size: 100% 100%;
+  top: 20%;
+  left: calc((100% - 120px) / 2);
+  left: -webkit-calc((100% - 120px) / 2);
+}
+#fudai-dialog .fudai .btn-open {
+  width: 60%;
+  height: 42px;
+  line-height: 42px;
+  background-color: #fd8107;
+  color: #FFF;
+  font-size: 17px;
+  font-weight: bolder;
+  text-align: center;
+  bottom: 12%;
+  border-radius: 3px;
+  left: calc((100% - 60%) / 2);
+  left: -webkit-calc((100% - 60%) / 2);
+}
+#guide-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: url(../images/bg-guide.png) no-repeat center center;
+  background-size: cover;
+}
+#guide-dialog:before {
+  content: '';
+  display: block;
+  background-color: transparent;
+}
+#lottery-dialog > a.btn-close {
+  width: 26px;
+  height: 26px;
+  background: url(../images/btn-red-close.png) no-repeat;
+  background-size: 100% 100%;
+}
+#lottery-dialog .back h5 {
+  position: absolute;
+  text-align: center;
+  color: #FFF;
+  top: 12%;
+  left: 7%;
+  font-size: 15px;
+  line-height: 20px;
+  width: 86%;
+}
+.lottery-dialog {
+	width: 100%;
+	height: 100%;
+  background: url(../images/bg-redbg.png) no-repeat;
+  background-size: 100% 100%;
+}
+.lottery-none .lottery-dialog {
+  background: url(../images/bg-none-redbg.png) no-repeat;
+  background-size: 100% 100%;
+}
+.lottery-dialog {
+
+}
+.lottery-dialog .award-none {
+    height: 75%;    margin: 0 4% !important;  position: relative;
+	
+}
+.lottery-dialog .award-none .btn-close {
+    position: static;
+	
+    display: block;
+    background: #ec7220;
+    width: 50%;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 38px;
+    color: #fff;
+    margin: 60% auto 0;
+}
+.lottery-dialog .award-none h5 {
+    color: #FFF;
+	
+    text-align: center;
+}
+.lottery-none .award-win {
+	display: none;
+}
+.lottery-none .award-none {
+    display: block !important;
+    padding-top: 40%;
+}
+.lottery-dialog h2 {
+  text-align: center;
+  color: #FFF;
+  padding: 8% 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.lottery-dialog .content {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  position: relative;
+}
+.lottery-dialog .back, .lottery-dialog .award-win {
+  height: 100%;
+  width: 100%;
+}
+.lottery-dialog .content .cover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+.lottery-dialog .content .cover.zshow {
+	opacity: 1;
+}
+.lottery-dialog .content .cover p {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	color: #000;
+	font-size: 14px;
+	text-shadow: 1px 1px 10px #FF9F00;
+}
+.lotteried .lottery-dialog .content .cover,
+.lottery-none .lottery-dialog .content .cover,
+.lotteried .lottery-dialog .content .cover {
+	display: none;
+}
+.lottery-dialog .content .cover .btn-corner {
+    position: absolute;
+	
+    left: 0;
+    bottom: 0;
+    width: 45%;
+    height: 25%;
+    /* background: red; */
+}
+
+.lottery-dialog h3 {
+color: #FFF;
+  text-align: center;
+  padding-top: 13%;
+  font-size: 15px;
+  line-height: 17px;
+}
+.lottery-dialog .award-img {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2% 0;
+  overflow: hidden;
+}
+.lottery-dialog .award-img img {
+  max-width: 90%;
+  vertical-align: top;
+}
+.lottery-dialog .contact {
+  padding: 6%;
+  position: absolute;
+  width: 96%;
+  max-height: 80%;
+  bottom: 0;
+  left: 2%;
+  z-index: 999999;
+}
+.lottery-awarded .contact {
+  bottom: 6%;
+}
+.lottery-dialog .contact h4 {
+    color: #FFF;
+    font-size: 12px;
+}
+
+.lottery-dialog .contact h4.award-tip {
+
+}
+.lottery-dialog .contact h4.awarded-tip {
+    display: none;
+
+}
+.lottery-awarded .contact h4 {
+
+}
+.lottery-awarded .contact h4.award-tip {
+    display: none;
+
+}
+.lottery-awarded .contact h4.awarded-tip {
+    display: block;
+
+}
+#lottery-dialog .contact p {
+  color: #FFF;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 12px auto;
+}
+
+#lottery-dialog .contact input {
+    background: #fff;
+    border: 0 none;
+    border-radius: 4px;
+    height: 30px;
+    padding: 0 6px;
+    width: 100%;
+    outline: 0 none;
+}
+
+.lottery-dialog .contact .btn {
+  display: block;
+  width: 60%;
+  height: 38px;
+  line-height: 38px;
+  margin: 4% auto;
+  background: #ffc000;
+  border-radius: 3px;
+  color: #FFF;
+  font-size: 16px;
+}
+.lottery-dialog .contact .btn-award {
+    display: block;
+    color: #FFF;
+	
+}
+.lottery-dialog .contact .share {
+    text-align: center;
+    font-size: 14px;
+    color: #FFF;
+}
+.lottery-dialog .contact .btn-share {
+    display: none;
+    font-size: 13px;
+    line-height: 13px;
+    color: #c47e88;
+    font-weight: bolder;
+}
+
+.lottery-awarded .contact .btn-award {
+    display: none;
+
+}
+.lottery-awarded .contact .btn-share {
+  display: block;
+  width: 80%;
+  margin: 25px auto 0;
+  text-align: center;
+  height: 38px;
+  line-height: 38px;
+  background-color: #9e0836;
+  color: #FFF;
+  border-radius: 3px;
+}
+
+.award-dialog .box {
+	height: 48%;
+	position: relative;
+	overflow: hidden;
+}
+.award-dialog .prize {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-prize.png) no-repeat center center;
+    background-size: cover;
+	
+    height: 100%;
+    margin: 0 -10%;
+    text-align: center;
+    padding-top: 10%;  
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+.award-dialog .prize:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.award-dialog .prize img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.award-dialog .prize.p1 img {
+    max-width: 80%;
+}
+
+.award-dialog .ctrl {
+    color: #fff;
+    padding-top: 5%;
+    text-align: center;
+}
+.award-dialog .ctrl h2 {
+    text-align: center;
+    font-size: 16px;
+	margin: 0 6%;
+}
+.award-dialog .content {
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+.award-dialog .content p {
+    font-size: 12px;
+    text-align: left;
+}
+.award-dialog .content input {
+    width: 100%;
+    border: 0 none;
+    background: #fff;
+    height: 36px;
+    font-size: 16px;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    margin-top: 8px;
+    color: #979797;
+    outline: none;
+}
+.award-dialog .ctrl .btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 23px 5px 0 5px;
+    width: 35%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    border-radius: 20px;
+}
+.award-dialog .award-succ {
+	display: none;
+}
+.award-dialog .award-succ.ctrl {
+	
+}
+.award-dialog .award-succ h2 {
+    text-align: left;
+    text-indent: 2em;
+    padding: 0 6%;
+}
+.award-dialog .award-succ h3 {
+    text-align: center;
+    margin-top: 10%;
+    color: #FDC728;
+}
+.award-dialog .award-succ .btn {
+    margin-top: 10px;
+    letter-spacing: 0;
+}
+.award-succ-dialog .prize img {
+	display: none;
+}
+.award-succ-dialog .prize:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-ljsu.png) no-repeat center center;
+	background-size: cover;
+	width: 80%;
+	height: 80%;
+}
+
+.award-succ-dialog .ctrl {
+	display: none;
+}
+.award-succ-dialog .award-succ {
+	display: block;
+}
+.award-succ-dialog .dialog-inner {
+	height: 100%;
+	padding-bottom: 0;
+}
+
+#confirm-dialog {  
+}
+#confirm-dialog:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 10000;
+}
+.confirm-dialog {
+    width: 72%;
+	
+    height: 130px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    position: absolute;  
+    background-size: 260px auto;
+    border-radius: 6px;
+    z-index: 100000;
+    color: #FFF;
+}
+.confirm-dialog .content {
+	
+    margin: 5% 8% 5%;
+    font-size: 16px;
+}
+.confirm-dialog .ctrl {
+    text-align: center;
+	
+    margin-right: -10px;
+}
+.confirm-dialog .ctrl .btn {
+    margin-right: 10px;
+	
+    background: rgba(86, 24, 23, 0.8);
+}
+
+
+.tip-dialog {
+    width: 220px;
+	
+    height: 200px;
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-dialog.jpg) no-repeat 0 0;
+    background-size: cover;
+    left: 50%;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    bottom: 0;
+}
+.tip-dialog h2 {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-tips.png) no-repeat center center;
+	
+    background-size: 170px auto;
+    height: 80px;
+    margin-top: 35px;
+}
+.tip-dialog .btn {
+    display: block;
+	
+    position: static;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    background: #FF3535;
+    border: 1px solid #fff;
+    margin: 10% auto 0;
+}
+.btn-pack{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	width:140px;
+	background-color:rgba(195,167,116,1);
+	color:white;
+	font-size:18px;
+	line-height:34px;
+	border-radius:20px;
+	border:solid 1px rgba(195,167,116,1);
+	margin-top:20px;
+}
+.animate {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        -webkit-transform: perspective(400px) rotateX(-10deg);
+    }
+    
+    70% {
+        -webkit-transform: perspective(400px) rotateX(10deg);
+    }
+    
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        transform: perspective(400px) rotateX(-10deg);
+    }
+    
+    70% {
+        transform: perspective(400px) rotateX(10deg);
+    }
+    
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes flipOutX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+  100% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+}
+@keyframes flipOutX {
+    0% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+  100% {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+}
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  backface-visibility: visible !important;
+  animation-name: flipInX;
+}
+.flipOutX {
+  -webkit-backface-visibility: visible !important;
+  -webkit-animation-name: flipOutX;
+  backface-visibility: visible !important;
+  animation-name: flipOutX;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .rank-dialog h3 {
+    margin: 2px auto 4px;
+  }
+  .rank-dialog .list {
+    height: 69%;
+  }
+  .lottery-dialog .award-img img {
+    margin-top: 8%;
+  }
+  #lottery-dialog .contact p {
+    margin: 8px auto;
+  }
+}
+/* Other */
+@media screen
+and (min-device-height : 620px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .lottery-dialog .contact {
+    bottom: 3%;
+  }
+  .lottery-awarded .contact {
+    bottom: 8%;
+  }
+}

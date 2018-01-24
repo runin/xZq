@@ -1,0 +1,178 @@
+
+html{
+	height: 100%
+}
+body{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background: url(../images/bg.jpg) no-repeat bottom center #f6efda fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.gift-url a {
+    display: inline-block;
+    color: #cb1228 !important;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-top: 5px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #cb1228;
+}
+.content {
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 6% 0 0 10%;
+    color: #cc7800;
+    padding-bottom: 80px;
+}
+.content ul, .content ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.content ul {
+    border-left: 4px solid #c60008;
+    padding-left: 8%;
+}
+.content ul li {
+    position: relative;
+    padding-bottom: 8%;
+}
+.content ul li .gift-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: calc(-8% - 19px);
+    left: -webkit-calc(-8% - 19px);
+    background-color: #FFF;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid #c60008;
+}
+.content ul li .gift-icon:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    left: 3px;
+    background: url(../images/gift-icon.png) no-repeat;
+    background-size: cover;
+}
+.content ul li .gift-time {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+    height: 32px;
+    line-height: 32px;
+}
+.content ul li .gift-content {
+    position: relative;
+    background: #FFF;
+    color: #d10b1a;
+    font-size: 14px;
+    padding: 3% 5%;
+    font-weight: bolder;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.content ul li .gift-content .gift-name, .content ul li .gift-content .gift-code, .content ul li .gift-content .gift-password {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 3px 0;
+    border-bottom: 1px solid #fae7d5;
+}
+.content ul li .gift-content label {
+    word-break: break-all;
+    font-weight: bolder;
+}
+.content ul li .gift-content p:last-child {
+    border-bottom: 0 none;
+}
+.empty {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    margin: 40% auto;
+    padding-right: 10%;
+}
+.trim {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.trim span, .trim img {
+    display: block;
+}
+.trim .icon-leaf4-1 {
+    position: absolute;
+    width: 6%;
+    bottom: 25%;
+    left: 0;
+}
+.trim .icon-leaf4-2 {
+    position: absolute;
+    width: 4%;
+    bottom: 16%;
+    right: 12%;
+    opacity: .5;
+}
+.trim .icon-leaf4-3 {
+    position: absolute;
+    width: 10%;
+    bottom: 1%;
+    left: 8%;
+}
+footer {
+	position: absolute;
+    width: 100%;
+    left: 0;
+	bottom: 0;
+    z-index: 50;
+}
+.btn-go2index {
+    display: block;
+    margin: 10px auto 20px;
+    width: 33%;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background-color: #ffffeb;
+    border-radius: 32px;
+    font-size: 15px;
+    color: #cb1228;
+}
+a:link, a:visited, a:hover, a:active {
+    color: #cb1228;
+}
+footer .copyright {
+    width: 100%;
+    height: 26px;
+    line-height: 13px;
+	color: #fff;
+    margin-bottom: 5px;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
+/* huawei honor-6 */
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px) {
+}

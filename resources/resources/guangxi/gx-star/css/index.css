@@ -1,0 +1,144 @@
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	width: 100%;
+	margin:0 auto;
+	overflow:hidden;
+	background: url(../images/index-bg.jpg) no-repeat top center;
+	background-size: cover;
+}
+header {
+	position:absolute;
+	top:0px;
+	left:0;
+	width:100%;
+	z-index: 1;
+}
+header .ctrls {
+	position:absolute;
+	text-align:right;
+	-webkit-animation-delay:2s;
+	width:32%;
+	right:0px;
+	top:0px;
+	border-radius:3px;
+}
+header .ctrls a{
+	display: block;
+	width: 100%;
+}
+header .ctrls a img{
+	display: block;
+	width: 100%;
+}
+header .ctrls .btn-reserve{
+	padding-left: 30px;
+}
+header .tvlogo {
+	display:block;
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:28%;
+	height:50px;
+	z-index:99;
+	background:url(../images/tvlogo.png) no-repeat;
+	background-size:100% auto;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: 0px;
+    left: 0;
+    overflow: hidden;
+    height: 38%;
+}
+footer .join-box {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    /*-webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+    -webkit-animation-delay: 3.2s;
+    animation-delay: 3.2s;*/
+}
+footer .join-box a {
+	display: inline-block;
+	width: 46%;
+}
+footer .join-box  .join-title{
+	display: block;
+	width: 75%;
+	margin: 20px auto;
+}
+footer .follow-box{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+footer .copyright {
+	font-size: 12px;
+	height: 28px;
+	line-height: 13px;
+	color: #fff;
+	opacity: 0.6;
+	margin: 0 auto 3px;
+}
+footer #div_subscribe_area {
+	height:50px;
+	overflow:hidden;
+}
+
+
+/* iPhone4 */
+@media screen and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	footer .join-box .join-title {
+	    width: 60%;
+	    margin: 10px auto;
+	}
+	footer .join-box a {
+	    width: 40%;
+	}
+	.rule-dialog .rule {
+	    height: 74%;
+	}
+	.rule-dialog .content {
+	    padding: 8% 6% 4%;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 550px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.rule-dialog .rule {
+	    height: 78%;
+	}
+	footer .join-box .join-title {
+	    margin: 6px auto 20px;
+	}
+ }
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .rule-dialog .rule {
+	    height: 78%;
+	}
+	footer .join-box .join-title {
+	    width: 70%;
+	    margin: 16px auto;
+
+	}
+}

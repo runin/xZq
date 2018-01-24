@@ -1,0 +1,227 @@
+
+.dm-section{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+    overflow-y: hidden;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+	position: relative;
+}
+.danmu-bg{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+article {
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 999999;
+}
+.cor-assist{
+	   width: 96%;
+	   border-radius: 50%;
+	   margin: 0 auto;   
+}
+.comments{
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: -30px auto 0;
+}
+.ctrls{
+	height: 53px;
+    background: #C91E18;
+}
+.ctrls p {
+    position: relative;
+    padding: 10px 0;
+    text-align: left;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 36px;
+}
+
+.ctrls p label{
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+    border-radius:100%;
+    float: left;
+    overflow: hidden;
+}
+.ctrls p .head_img{
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: block;
+}
+.ctrls p input {
+  display: inline-block;
+  width: 85%;
+  height: 34px;
+  border: none;
+  padding: 0 6px 0 8px;
+  background:transparent;
+  color: #fff;
+  outline: none;
+  border-radius: 4px ;
+  border-bottom-left-radius: none;
+  border-top-left-radius: none;
+    background: #885D5D;
+}
+
+.ctrls a {
+    display: inline-block;
+    vertical-align: middle;
+    /* width: 60px; */
+    height: 32px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    border-radius: 16px;
+}
+.c_head_img {
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+  overflow: hidden;
+  float: left;
+  margin-right: 5px; 
+  margin-left: 1px;
+
+}
+
+.c_head_img_img {
+  width: 28px;
+  margin-right: 4px;
+}
+.comment {
+   height: 28px;
+   line-height: 28px;
+   border-radius: 2px;
+   margin-left: 30px;
+   padding: 0px 6px;
+}
+
+/*.me-cor{
+	border: 1px solid #C91E18;
+	border-radius: 30px !important;
+	height: 28px!important;
+    line-height: 26px!important;
+}*/
+.me{
+    border: 1px solid red!important;
+    white-space: nowrap;
+    position: absolute;
+    display: block;
+    border-radius: 26px;
+    padding-right: 10px;
+}
+.me:after{
+    display: block;
+    content: '';
+    background: url(../images/dm-q.png) no-repeat;
+    background-size: contain;
+    width: 43px;
+    height: 33px;
+    position: absolute;
+    right: -19px;
+    top: -14px;
+}
+.count{
+	width: 100%;
+	color: #416c99;
+	position: absolute;
+	bottom: 0px;
+	background: #092152;
+	text-align: center;
+	padding: 6px;
+	font-size: 12px;
+}
+.count span label{
+	display: inline-block;
+	width: 24px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color: #000;
+	background: url(../images/num-bg.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 0 2px;
+	text-align: center;
+	font-weight: bold;
+}
+.body-vote input::-webkit-input-placeholder {
+    color:#fff!important;
+    font-size: 12px;
+}
+input[placeholder], [placeholder], *[placeholder] {
+   color:#fff!important;
+   font-size: 12px;
+}
+
+.wobble{
+-webkit-animation:wobble 1s .2s ease infinite both;
+-moz-animation:wobble 1s .2s ease infinite both ;
+}
+@-webkit-keyframes wobble{
+0%{-webkit-transform:translateX(0%)}
+15%{-webkit-transform:translateX(-25%) rotate(-5deg)}
+30%{-webkit-transform:translateX(20%) rotate(3deg)}
+45%{-webkit-transform:translateX(-15%) rotate(-3deg)}
+60%{-webkit-transform:translateX(10%) rotate(2deg)}
+75%{-webkit-transform:translateX(-5%) rotate(-1deg)}
+100%{-webkit-transform:translateX(0%)}
+}
+/* iPhone4 */
+@media screen and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+/* iPhone5 */
+@media screen and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone6 */
+@media screen and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+ 
+}
+/* huawei honor-6 */
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.ad-detail .detail-box {
+    top: 21%;
+    height: 56%;
+
+  }
+}
+
+/* mi2*/
+@media screen and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}

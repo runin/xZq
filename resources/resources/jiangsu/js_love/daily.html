@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>情感剧场</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/swiper.3.1.7.min.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/daily.css" />
+</head>
+<body>
+    <div class="main">
+        <section class="top">
+            <img class="sec-tips" src="images/daily-top-bd.png" />
+            <div class="video-div">
+                <!--<video x-webkit-airplay="true" webkit-playsinline="yes" class="video" id="video" preload="auto"-->
+                       <!--data-collect="true" data-collect-flag="index-vedio-play-btn" data-collect-desc="视频播放按钮">-->
+                    <!--<source src="" type="video/mp4" />-->
+                    <!--&lt;!&ndash;<source src="http://cdn.holdfun.cn/upload/video/vedio.mp4" type="video/mp4" />&ndash;&gt;-->
+                    <!--您的浏览器不支持视频-->
+                <!--</video>-->
+                <!--<a href="#" class="play" data-collect="true" data-collect-flag="index-vedio-play-btn" data-collect-desc="视频播放按钮">-->
+                    <!--<img src="images/icon-play.png" />-->
+                <!--</a>-->
+                <!--<img class="pack" src="images/icon-gold-pack.png">-->
+            </div>
+        </section>
+        <section class="mid">
+            <img class="sec-tips" src="images/daily-mid-bd.png" />
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!--<img class="swiper-slide" src="" />-->
+                </div>
+                <!--<div class="swiper-pagination"></div>-->
+                <div class="swiper-button-next"></div> <!-- 白色 -->
+                <div class="swiper-button-prev"></div> <!-- 黑色 -->
+            </div>
+        </section>
+        <section class="bot none">
+            <a class="linkout hidden" id="linkout" data-collect="true" data-collect-flag="ninja" data-collect-desc="外链地址"></a>
+            <img class="sec-tips" src="images/daily-bot-bd.png" />
+            <div>
+                <div>
+                    性别:<select class="sex">
+                    <option value ="1">男</option>
+                    <option value ="2">女</option>
+                </select>
+                </div>
+                <div>
+                    年龄:<input class="age" type="number" placeholder=""/>
+                </div>
+            </div>
+            <a href="#" class="outer" data-collect="true" data-collect-flag="outer" data-collect-desc="外链按钮"></a>
+        </section>
+        <footer>
+            <section class="copyright" style="color:#999;"></section>
+        </footer>
+    </div>
+    <section class="vote none">
+        <div class="black"></div>
+        <div class="vote-box">
+            <div class="vote-box-info">
+                <div class="praise-box">
+                    <p class="tt"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="./js/plugins/swiper.3.1.7.jquery.min.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/daily.js"></script>
+
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

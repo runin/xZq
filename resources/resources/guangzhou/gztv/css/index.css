@@ -1,0 +1,200 @@
+.main-index {
+    text-align: center;
+	
+    padding-top: 40%;
+}
+.logo {
+    font-size: 26px;
+	
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.logo:before {
+	content: '';	
+	background: url(../images/logo.png) no-repeat 0 0;
+	background-size: 36px auto;
+	width: 36px;
+	height: 32px;
+	display: inline-block;
+	vertical-align: -7px;
+	font-size: 0;
+	margin-right: 6px;
+}
+
+.main-index .welcome {
+    font-size: 26px;
+	
+    font-weight: bold;
+    color: #d83148;
+    margin: 9% 4%;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+/** 签到成功页 */
+.main-sign {
+    text-align: center;
+	
+    padding-top: 24%;
+}
+.main-sign .slogon {
+    background: url(../images/slogon.png) no-repeat center 0;
+    background-size: 86% auto;
+    height: 50px;
+}
+.main-sign .logo {
+    font-size: 24px;
+	
+    margin-top: 9%;
+}
+.main-sign .welcome {
+    font-size: 18px;
+	
+    font-weight: bold;
+    margin-top: 4%;
+}
+.main-sign .tip {
+    margin-top: 31%;
+	
+    font-size: 26px;
+    color: #ee1a2e;
+}
+.main-sign .tip:before {
+	content: '';
+	background: url(../images/icon-right.png) no-repeat 0 0;
+	background-size: 36px auto;
+	width: 38px;
+	height: 38px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+
+/** 答题页  */
+.answer {
+    margin: 6%;
+	
+    padding: 10% 6%;
+    border: 1px solid rgba(203,0,102, 0.44);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    border-radius: 6px;
+    background: rgba(194,213, 234, 0.5);
+}
+.answer h2 {
+    font-size: 20px;
+	
+    color: #000000;
+}
+.answer h2 strong {
+	font-size: 24px;
+	font-weight: normal;
+	color: #cc3333;
+	margin: 0 4px;
+}
+.answer ul {
+    margin-top: 15%;
+	
+    margin-bottom: 25%;
+}
+.answer li {
+    margin-bottom: 14px;
+	
+}
+.answer li a {
+    display: block;
+	
+    height: 46px;
+    line-height: 46px;
+    border-radius: 8px;
+    background: rgba(204,170,198,0.7);
+    color: #333333;
+    padding: 0 5%;
+    font-size: 16px;
+}
+.answer li a.selected {
+    background: #D73449;
+	
+    color: #fff;
+}
+.answer .btn-submit {
+    display: block;
+	
+    width: 88%;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 auto;
+    background: #D73449;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 4px;
+}
+.answer .btn-submit.disabled {
+	background: rgba(204,170,198,0.7);
+}
+
+/** 答题结果页面 */
+.main-success {
+    text-align: center;
+	
+    padding-top: 44%;
+}
+.main-success h2 {
+    font-size: 18px;
+	
+    color: #ee1a2e;
+    letter-spacing: 2px;
+}
+.main-success h2:before {
+	content: '';
+	background: url(../images/icon-right.png) no-repeat 0 0;
+	background-size: 36px auto;
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	vertical-align: -10px;
+	margin-right: 10px;
+}
+.main-success.fail h2:before {
+	background: url(../images/icon-smile.png) no-repeat 0 0;
+	background-size: 36px auto;
+}
+.main-success p {
+    font-size: 14px;
+	
+    color: #333333;
+    margin-top: 4%;
+}
+
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-width : 359px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.main-sign .welcome {
+		font-size: 16px;
+		margin-top: 5%;
+	}
+	.main-index .welcome {
+		font-size: 24px;
+	}
+}
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.answer ul {
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+	.answer li a, .answer .btn-submit {
+		height: 40px;
+		line-height: 40px;
+	}
+}

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="author" content="" />
+        <meta name="viewport"  content="width=device-width; initial-scale=1;  minimum-scale=0.5; maximum-scale=1.0;user-scalable=no;" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="MobileOptimized" content=""/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>西安看天下-自拍达人评选</title>
+        <script src="js/wx_api.js"></script>
+        <link href="css/global.css" rel="stylesheet" type="text/css">
+        <link href="css/core.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body class="">
+    	<input type="hidden" id="noRunShare" value="true">
+    	<div class="main">
+	        <!--活动说明详细页 s-->
+	        <div class="mod_box none" id="share-ticket">
+	            <div class="vote_div">
+	                <p><img src="" width="100%" id="bigPhoto"></p>
+	                <dl class="babyinfo box-orient-h">
+	                    <dt>名称：</dt>
+	                    <dd class="box-flex"><em id="name"></em></dd>
+	                </dl>
+	                <!-- <dl class="babyinfo box-orient-h">
+	                    <dt>介绍：</dt>
+	                    <dd class="box-flex" id="introduction"></dd>
+	                </dl> -->
+	            </div>
+	            <!--活动说明详细页 e-->
+	            <h5 class="num">当前票数：<span id="ticket"></span></h5>
+	            <div class="lasttime"><i></i>投票截止时间：<em id="voteEnd"></em></div>
+	            <div class="sharebtnbox box-orient-h">
+	            	<a href="javascript:voteBaby();" class="box-flex tpbtn" id="btn-vote-ticket" data-collect="true" data-collect-flag="baby-vote-btn" data-collect-desc="投上一票"><i></i>投上一票</a>
+	            	<a class="box-flex sharebtn" id="btn-share" data-collect="true" data-collect-flag="baby-vote-canvassing-btn" data-collect-desc="好友拉票"><i></i>好友拉票</a>
+	            </div>
+	         	<a href="javascript:toUrl('index.html');" class="backbtn" data-collect="true" data-collect-flag="baby-vote-back-index-btn" data-collect-desc="更多自拍">更多自拍照</a>
+	        </div>
+	    </div>
+        <div class="bottom">
+	    	<div class="copy-right">页面由西安广播电视台提供</div>
+		</div>
+        <script src="http://yao.holdfun.cn/portal/resources/common/js/jquery.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/md5.js"></script>
+        <script src="js/share.js"></script>
+        <script src="js/vote.js"></script>
+        <script src="js/data_collect.js"></script>
+    </body>
+</html>

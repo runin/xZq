@@ -1,0 +1,413 @@
+html {
+	/*height: initial;*/
+	height: 100%;
+	background-color: #040032;
+}
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	background: url(../images/bg-vote-top.jpg) no-repeat top center #040032;
+	background-size: 100% auto;
+}
+body:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	background: url(../images/bg-vote-bottom.jpg) no-repeat bottom center;
+	background-size: 100% auto;
+	z-index: 0;
+}
+.care-box {
+	position: relative;
+	float: right;
+	padding-top: 3%;
+	margin-right: 5%;
+	text-align: center;
+	z-index: 9;
+}
+.care-box .icon-carelogo {
+	width: 148px;
+}
+.care-box .btn {
+	display: inline-block;
+	margin: 5% auto 0;
+	padding: 3px 10px;
+	border-radius: 20px;
+	border: 2px solid #9c7516;
+	color: #e50d40;
+	font-size: 15px;
+	font-weight: bolder;
+	background-image: -webkit-linear-gradient(-90deg, #f7db75, #d0a92f);
+}
+header {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	text-align: center;
+	overflow: hidden;
+	z-index: 9;
+}
+header .zzs-box {
+	display: inline-block;
+	margin: 5% auto 0;
+	clear: both;
+}
+header .zzs-box .icon-zan-box {
+	display: block;
+	height: 35px;
+	float: left;
+}
+header .zzs-box > img {
+	display: inline-block;
+	border: 0 none;
+}
+header .icon-zan {
+	position: relative;
+	height: 25px;
+	top: 8px;
+}
+header .guest-box {
+	width: 80%;
+	margin: 0 auto;
+}
+header .icon-zhekou {
+	width: 68%;
+	margin: 0 auto 5%;
+}
+header .countdown {
+	width: 85%;
+	height: 50px;
+	margin: 0 auto 2%;
+	background: url(../images/bg-countdown.png) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	color: #FFF;
+	padding: 6px;
+	line-height: 38px;
+	font-size: 15px;
+	font-weight: bolder;
+	text-shadow: 2px 2px 1px rgba(0,0,0,.5);
+}
+header .countdown * {
+	font-size: 15px !important;
+	font-weight: bolder !important;
+}
+header .countdown .detail-countdown label {
+	color: #fec836;
+	font-weight: bolder;
+	margin: 0 3px 0 0;
+	padding: 2px 3px;
+	border: 1px solid #000;
+	border-top: 1px solid #706e6f;
+	border-left: 1px solid #675151;
+	border-radius: 2px;
+	box-shadow: 2px 2px 1px rgba(0,0,0,.3);
+	background-image: -webkit-linear-gradient(-90deg, #353334, #290b0b);
+}
+header .countdown .detail-countdown .none {
+	display: none;
+}
+header .luck-box {
+	display: block;
+	font-size: 15px;
+	height: 35px;
+	font-weight: bolder;
+	color: #FFF;
+	float: left;
+}
+header .luck-box .btn-gift {
+	height: 28px;
+    margin-left: 5px;
+}
+header .luck-box .luckLottery-time {
+	position: relative;
+    top: -3px;
+}
+header .luck-box .luckLottery-btn {
+	position: relative;
+    top: 5px;
+}
+header .luck-box .luckLottery-time img {
+	display: inline-block;
+	height: 38px;
+	vertical-align: bottom;
+}
+header .luck-box .luckLottery-time p {
+    display: inline-block;
+    height: 33px;
+    line-height: 34px;
+    padding: 0 3px;
+    font-size: 22px;
+    font-weight: bolder;
+    background: url(../images/bg-lotteryTime.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 3px;
+}
+.main {
+	position: relative;
+	width: 98%;
+	margin: 5% auto 15%;
+	text-align: center;
+	opacity: 0;
+	z-index: 9;
+}
+.main .support-box {
+	display: block;
+	margin: 3% 0 0;
+	width: 100%;
+	font-size: 13px;
+	color: #FFF;
+	line-height: 16px;
+	height: 16px;
+	text-align: center;
+	overflow: hidden;
+}
+.main .btn {
+	display: inline-block;
+	margin: 3% 3px;
+	padding: 4px 22px;
+	border-radius: 20px;
+	border: 2px solid #9c7516;
+	color: #a90029;
+	font-size: 15px;
+	font-weight: bolder;
+	background-image: -webkit-linear-gradient(-90deg, #f7db75, #d0a92f);
+}
+.voted .main {
+	padding: 3% 0;
+}
+.main ul {
+	/*overflow: hidden;*/
+	font-size: 13px;
+	color: #FFF;
+}
+.main ul li {
+	width: 31.2%;
+	float: left;
+	margin: 0 1% 5%;
+	text-align: center;
+	background: transparent;
+}
+.voted .main ul li {
+	position: relative;
+	opacity: 1;
+/*	-webkit-animation-name: door;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-fill-mode: both;
+	-webkit-backface-visibility:hidden;*/
+}
+/*.voted .main ul li:nth-child(1) {
+	-webkit-animation-delay: .5s;
+}
+.voted .main ul li:nth-child(2) {
+	-webkit-animation-delay: 1s;
+}
+.voted .main ul li:nth-child(3) {
+	-webkit-animation-delay: 1.5s;
+}
+.voted .main ul li:nth-child(4) {
+	-webkit-animation-delay: 2s;
+}
+.voted .main ul li:nth-child(5) {
+	-webkit-animation-delay: 2.5s;
+}
+.voted .main ul li:nth-child(6) {
+	-webkit-animation-delay: 3s;
+}
+.voted .main ul li:nth-child(7) {
+	-webkit-animation-delay: 3.5s;
+}
+.voted .main ul li:nth-child(8) {
+	-webkit-animation-delay: 4s;
+}
+.voted .main ul li:nth-child(9) {
+	-webkit-animation-delay: 4.5s;
+}*/
+@-webkit-keyframes door {
+	0% {
+		-webkit-transform: rotateX(90deg) translateY(180px) scale(.5,.5);
+        -webkit-transform-origin: bottom center;
+	}
+	100% {
+		-webkit-transform: rotateX(0deg) translateY(0px) scale(1,1);
+        -webkit-transform-origin: bottom center;
+	}
+}
+.main ul li .vote-img-box {
+	position: relative;
+	width: 100%;
+	background: url(../images/load-small.png) no-repeat transparent;
+	background-size: cover;
+	border: 0;
+}
+.main ul li .vote-img-box img {
+	border: 0 !important;
+	background: transparent !important;
+}
+.main ul li .vote-img-box .vote-preload {
+	max-width: 100%;
+}
+/*.main ul li .before, .main ul li .after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}*/
+.main ul li .before, .main ul li .hot-box, .main ul li .btn-vote {
+	display: block;
+}
+.main ul li .after, .main ul li .price-box {
+	display: none;
+}
+.voted .icon-guest, .voted .icon-zhekou, .voted .main ul li .before, .voted .main ul li .btn-vote {
+	display: none;
+}
+.voted .main ul li .after, .voted .main ul li .price-box {
+	display: block;
+}
+.main ul li .hot-box {
+	display: block;
+	margin: -25% auto 3%;
+	opacity: 0;
+}
+.voted .main ul li .hot-box {
+	display: block;
+	margin: 5% auto;
+}
+.main ul li .hot-box img {
+	display: inline-block;
+	height: 22px;
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}
+.main ul li .hot-box span {
+	display: inline-block;
+	line-height: 22px;
+	font-size: 15px;
+}
+.main ul li .price-box {
+	width: 82%;
+	height: 36px;
+	margin: 2% auto 0;
+	font-size: 12px;
+	text-align: left;
+	overflow: hidden;
+}
+.main ul li .price-box * {
+	font-size: 12px !important;
+	text-align: left !important;
+}
+.main ul li .price-box p label {
+	text-align: right;
+	float: right;
+}
+.main ul li .price-box p:first-child label {
+	text-decoration: line-through;
+}
+.main ul li .price-box p:last-child {
+	color: #fdcd08;
+}
+.main ul li .btn-vote {
+	display: inline-block;
+	width: 88%;
+	margin: 3% auto;
+	padding: 4px 0;
+	border-radius: 20px;
+	border: 2px solid #9c7516;
+	color: #e50d40;
+	background-image: -webkit-linear-gradient(-90deg, #f7db75, #d0a92f);
+}
+.main ul li .vote-ok {
+	border: 2px solid #737373;
+	color: #939393;
+	background-image: -webkit-linear-gradient(-90deg, #E7E7E7, #BDBDBD);
+}
+.detail-box {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.75);
+	z-index: 99;
+	color: #FFF;
+	opacity: 0;
+	overflow: hidden;
+	z-index: 999;
+}
+.detail-box > div {
+    position: absolute;
+    padding: 0 8% 0 10%;
+    width: 86%;
+    max-height: 60%;
+    top: 20%;
+    left: 7%;
+    background: url(../images/lottery-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.detail-box .btn-detail-close {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	top: -8px;
+	right: -8px;
+}
+.detail-box .detail-content {
+	width: 100%;
+	max-height: 92%;
+	margin: 10% auto 11%;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.detail-box .detail-content h1, .detail-box .detail-content h1 * {
+	text-align: center;
+	font-size: 20px;
+	line-height: 25px;
+	max-height: 78px;
+	font-weight: bolder;
+	margin: 8% auto 5%;
+	text-shadow: 0 0 12px #FF00E3;
+}
+.detail-box .detail-content .main-content {
+	margin-bottom: 8%;
+}
+.detail-box .detail-content .main-content, .detail-box .detail-content .main-content * {
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFF;
+    word-break: break-all;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: 9;
+}
+@keyframes shake { 
+    0%{transform:translateX(0);}
+    10%,30%,50%,70%,90%{transform:translateX(-60px);}
+    20%,40%,60%,80%{-transform:translateX(100px);}
+    100%{transform:translateX(0);}
+}
+@-webkit-keyframes shake {
+    0%{-webkit-transform:translateX(0);}
+    10%,30%,50%,70%,90%{-webkit-transform:translateX(-60px);}
+    20%,40%,60%,80%{-webkit-transform:translateX(100px);}
+    100%{-webkit-transform:translateX(0);}
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}

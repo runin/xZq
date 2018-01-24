@@ -1,0 +1,231 @@
+body{
+	position: relative;
+}
+.cover{
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24fhrcyiktg69bg/bg-cover.jpg) no-repeat top;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 10;
+}
+.cover .cover-title{
+	position: absolute;
+	width: 94%;
+	top: 15%;
+	left: 3%;
+}
+
+.cover .cover-btn{
+	position: absolute;
+	height: 8%;
+	width: 42%;
+	background: url(../images/btn-main.png) no-repeat top;
+	background-size: 100% 100%;
+	bottom: 14%;
+	left: 29%;
+	text-align: center;
+	color: #8b0000;
+	font-size: 18px;
+	font-weight: bold;
+}
+.cover .cover-tips{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 60%;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+
+
+.door{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 10;
+    transition: all 1s linear;
+}
+.door .bg,
+.cover .bg{
+    background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24fhrcyiktg69bg/bg-cover.jpg) no-repeat top;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 0;
+}
+.door .door-title{
+	position: absolute;
+	width: 50%;
+	top: 2%;
+	left: 25%;
+}
+.door .door-kuang{
+	position: absolute;
+	height: 91%;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24fhrcyiktg69bg/icon-door-outside.png) no-repeat bottom;
+	background-size: 100% 100%;
+	z-index: 2;
+}
+.door .door-shan{
+	position: absolute;
+	width: 40%;
+	height: 63%;
+	bottom: 0;
+	z-index: 1;
+	transition: all 1s;
+}
+.door .door-kuang-bg{
+	position: absolute;
+	
+	width: 100%;
+	height: 65%;
+	left: 0;
+	bottom: 0;
+}
+.door .left-door{
+	left: 10%;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24fhrcyiktg69bg/icon-door-left.png) no-repeat bottom;
+	background-size: 100% 100%;
+}
+.door .right-door{
+	right: 10%;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24fhrcyiktg69bg/icon-door-right.png) no-repeat bottom;
+	background-size: 100% 100%;
+}
+
+.door .door-cloud{
+	position: absolute;
+	bottom: 0px;
+	left:100%;
+	width: 150%;
+	z-index: 2;
+}
+.door .door-cloud .tc{
+	position: relative;
+	z-index: 2;
+}
+.door .door-cloud .t1{
+	position: absolute;
+	width: 10%;
+	right: 10%;
+	top: 5%;
+}
+.door .door-cloud .t2{
+	position: absolute;
+	width: 10%;
+	right: 78%;
+	bottom: 28%;
+}
+
+.door.moving .bg,
+.cover.moving .bg{
+	
+}
+.door.moving .door-cloud{
+	-webkit-animation: leftSlow 15s 0s linear infinite;
+	animation: leftSlow 15s 0s linear infinite;
+}	
+.door.open .right-door{
+    transform: scaleX(0.7) skewY(10deg);
+    transform-origin: 98% 50%;
+    box-shadow: inset 0px 0px 1000px rgba(0,0,0,0.4);
+}
+.door.open .left-door{
+    transform: scaleX(0.7) skewY(-10deg);;
+    transform-origin: 2% 50%;
+    box-shadow: inset 0px 0px 1000px rgba(0,0,0,0.4);
+}
+.door.big{
+	transform: scale(1.4);
+    transform-origin: 50% 85%;
+}
+.door.fadeOut{
+	opacity: 0;
+	transform: scale(3.0);
+}
+.door #touch{
+    position: absolute;
+    width: 12%;
+    top: 70%;
+    left: 47%;
+    z-index: 1;
+    -webkit-animation: touch 4s 0s ease infinite;
+	animation: touch 4s 0s ease infinite;
+}
+
+.cover-content{
+	width: 100%;
+	height: 100%;
+	-webkit-transform:scale(0.7);
+    transform:scale(0.7);
+
+    -webkit-transition: all 0.5s ;
+    transition: all 0.5s;
+}
+
+.cover-content.scaleIn{
+	-webkit-transform:scale(1);
+    transform:scale(1);
+}
+
+@-webkit-keyframes topSlow{
+  100%{
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+  }
+  0% {
+    -webkit-transform:translate3d(0, 50%, 0);
+    transform:translate3d(0, 50%, 0);
+  }
+}
+
+@-webkit-keyframes leftSlow{
+  100%{
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+  }
+  0% {
+    -webkit-transform:translate3d(-200%,0, 0);
+    transform:translate3d(-200%,0, 0);
+  }
+}
+
+@-webkit-keyframes touch{
+  100%{
+  	opacity: 0;
+    -webkit-transform:scale(0.8);
+    transform:scale(0.8);
+  }
+  70%{
+  	opacity: 1;
+  	-webkit-transform:scale(0.8);
+    transform:scale(0.8);
+  }
+  30%{
+  	opacity: 1;
+  	-webkit-transform:scale(1.0);
+    transform:scale(1.0);
+  }
+  0% {
+  	opacity: 0;
+    -webkit-transform:scale(1.0);
+    transform:scale(1.0);
+  }
+}

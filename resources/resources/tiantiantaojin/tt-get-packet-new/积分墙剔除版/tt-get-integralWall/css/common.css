@@ -1,0 +1,66 @@
+/*悬浮导航栏处start*/
+.fix-tab-div
+{
+    position: fixed;
+    bottom:0px;
+    height:48px;
+    width:100%;
+    background: #4C4F53;
+    z-index:2;
+}
+.fix-tab-div a
+{
+    float:left;
+    width:50%;
+    text-align: center;
+    border-left: 1px solid #000;
+    color:#eeeeee;
+    position: relative;
+    line-height: 26px;
+    font-size: 14px;
+}
+.fix-tab-div i
+{
+    width:32px;
+    height:25px;
+    display: block;
+    position:relative;
+    margin:0 auto;
+    text-align: center;
+    z-index: 2;
+}
+
+.icon-bg
+{
+    background-image:url('../images/icon-bg.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width:90px;
+    height:34px;
+    top:-5px;
+    z-index: 1;
+    left:50%;
+    margin-left: -45px;
+}
+.task-icon
+{
+    background-image:url('../images/task-icon.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.money-market-icon
+{
+    background-image:url('../images/money-icon.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.user-icon
+{
+    background-image:url('../images/user-icon.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}

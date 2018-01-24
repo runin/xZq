@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>时尚我最懂</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/talk.css" />
+	
+</head>
+<body class="now">
+	<header class="preme">
+		<div class="time">
+			<div class="time-box" id="time-box">《时尚我最懂》<br>每周四晚22:20等你来</div>
+		</div>
+		<div class="content">
+			<span class="transparent">有<label>0</label>人正在发言</span>
+			<a href="#" class="go-back" data-collect="true" data-collect-flag="yn-fashion-talk-gobackindex" data-collect-desc="聊天室-返回首页按钮">
+				<img src="./images/btn-talk-back.png">
+			</a>
+		</div>
+		<div class="main">
+			<ul></ul>
+		</div>
+		<div class="redline"></div>
+	</header>
+	<section class="talkroom" id="talkroom">
+		<div class="body">
+			<ul id="comment_list" class="comment-list transparent"></ul>
+		</div>
+		<div class="tips-info"></div>
+	</section>
+	<section class="safe preme">
+		<img src="./images/tips-img-talk.png">
+	</section>
+	<section class="redball preme">
+		<img src="./images/redball.png">
+	</section>
+	<section class="redball redline preme"></section>
+	<footer class="footer preme">
+		<section class="input-box-wrapper over">
+			<section class="input-box">
+				<input id="input_text" type="text" placeholder="说说您支持的观点吧" />
+			</section>
+			<a id="input_submit" class="input-submit" data-collect="true" data-collect-flag="yn-fashion-talk-submit" data-collect-desc="聊天页-评论发送按钮">
+				发送
+			</a>
+		</section>
+	</footer>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="./js/app/talk.js"></script>
+	
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+	background: url(../images/bg-show-min.jpg) repeat-y center 0 #fbd81a;
+	background-size: cover;
+}
+.main {
+  margin: 0 auto;
+  padding-top: 35%;
+  width: 80%;
+}
+h2 {
+  text-align: center;
+  color: #FF6600;
+  font-size: 20px;
+  font-weight: bold;
+}
+h2:before {
+	content: '';
+display: inline-block;
+vertical-align: middle;
+background: url(../images/smile2.png) no-repeat 0 0;
+background-size: 37px auto;
+width: 38px;
+height: 38px;
+margin-right: 10px;
+}
+p {
+  font-size: 16px;
+  margin-top: 28px;
+  line-height: 25px;
+  color: #ff6600;
+  text-align: left;
+}
+.jf-tip {
+	line-height: 25px;
+	margin-top: 3px;
+}
+.dst-logo{
+background: url(../images/logo.png) no-repeat 0 0;
+background-size: 58px auto;
+width: 68px;
+height: 58px;
+position: absolute;
+top: 10px;
+left: 6px;
+}
+.btn-back {
+	letter-spacing: 10px;
+	margin: 35% auto 0;
+}
+a.back-btn:visited, a.back-btn:active{
+  color: #FFF;
+}

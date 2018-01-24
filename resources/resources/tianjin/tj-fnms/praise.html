@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>非你莫属</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/praise.css" />
+</head>
+<body>
+	<header>
+		<div class="tttj none">
+			<img class="red wobble" src="images/redenve.png">
+			<p class="tip">更多红包<br />点击这里</p>
+		</div>
+		<div class="tab" id="tab">
+			<a data-collect="true"
+			   data-collect-flag="praise-rule-btn"
+			   data-collect-desc="活动规则" id="rule" class="rule">活动规则</a>
+			<a data-collect="true"
+			   data-collect-flag="praise-lottery-btn"
+			   data-collect-desc="返回摇奖" class="record" id="lottery">返回摇奖</a>
+		</div>
+		<p class="shouyi">目前收益：</p>
+		<img class="persent" src="images/percent.png">
+		<p class="zan-per">目前点赞人数：<span id="praise-num">0</span>位</p>
+		<div class="index-btn">
+			<i id="plus"></i>
+			<a data-collect="true"
+			   data-collect-flag="praise-praise-btn"
+			   data-collect-desc="我要点赞" id="praise" class="lottery"></a>
+			<img src="images/lun.png" class="lun">
+			<a data-collect="true"
+			   data-collect-flag="praise-touzi-btn"
+			   data-collect-desc="我要投资" id="touzi" class="zan"></a>
+		</div>
+		<img class="praise-tip" src="images/praise-tip.png">
+	</header>
+	<article id="article">
+		<div class="comments" id="comments"></div>
+	</article>
+	<div class="ctrls">
+		<img class="input-img" src="images/yuanbao.png">
+		<input id="input-comment" type="text" placeholder="亲，说说你的感受吧..." />
+		<a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="praise-send-btn" data-collect-desc="发表评论按钮"></a>
+	</div>
+	
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/barrage.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/plugins/msg_vote.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/praise.js"></script>
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

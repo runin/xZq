@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>耍大牌</title>
+	
+	<!-- app.min.css -->
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/parallax.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+	<!-- <link rel="stylesheet" href="./css/app.min.css" /> -->
+
+</head>
+<body>
+	
+	<div class="main none" id="main">
+        <div class="ui-logo ui-logo-tv"></div>
+        <div class="ui-logo ui-logo-qg"></div>
+        <div class="ui-jifen none" id="ui-jifen"><!--我的积分：<strong>0</strong>--></div>
+        <a class="ddtj none" id="ddtj" href="" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+
+		<section class="copyright">
+			<p>页面由江苏电视台提供<br /> 新掌趣科技制作 & Powered by holdfun.cn</p>
+		</section>
+		
+		<section class="wrapper">
+		    <div class="pages" id="pages">
+		        <!-- 第一屏 -->
+		        <div class="page">
+			        <section class="ui-audio">
+				        <div id="coffee-flow" class="btn-audio">
+				        	<a href="#" class="audio-icon" data-collect="true" data-collect-flag="js-sdp-audiobtn" data-collect-desc="江苏首页-音乐按钮"></a>
+				            <strong class="audio-txt hide">关闭</strong>
+				        </div>
+				    </section>
+		        </div>
+		    </div>
+		</section>
+	</div>
+
+	<section id="from" class="from none">
+		<div class="ui-logo ui-logo-tv"></div>
+		<div class="from-contant">
+			<p class="home-logo"></p>
+			<div class="from-con">
+				<ul>
+					<li><i>锁定江苏体育休闲频道《耍大牌》</i></li>
+					<li><i>打开微信，进入摇一摇(电视)</i></li>
+					<li><i>对着电视摇一摇</i></li>
+					<li><i>参与互动就有机会赢取超值礼品</i></li>
+				</ul>
+				<div class="try-div">
+					<a id="try" class="btn-lott try" data-collect="true"
+						data-collect-flag="js-sdp-go-try"
+						data-collect-desc="进入互动" >现在就去试试</a></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- plugins.min.js -->
+        <script src="./js/plugins/zepto.min.js"></script>
+        <script src="./js/plugins/zepto.cookie.min.js"></script>
+        <script src="./js/plugins/md5.js"></script>
+        <script src="./js/plugins/weixinapi.js"></script>
+        <script src="./js/plugins/common.js"></script>
+        <script src="./js/plugins/parallax.js"></script>
+		<script src="./js/plugins/audio.js"></script>
+	<!--  -->
+	<!--<script src="./js/plugins.min.js"></script>-->
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+
+
+	<!-- index.min.js -->
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script>
+	<!-- <script src="./js/index.min.js"></script> -->
+
+	
+</body>
+</html>

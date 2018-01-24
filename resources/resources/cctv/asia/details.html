@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>亚洲新未来－迈向命运共同</title>
+<link rel="stylesheet" href="css/index.css" />
+<script src="js/app/iermu.js"></script>
+</head>
+
+<body>
+<div class="main-box"> 
+  <section class="video-con none"><p id="player-container"></p></section>
+  <section class="data-time"><span id="detailstime"></span></section>
+  <section class="con-list">
+    <div class="live-con">
+      <span class="live-time"><label id="timeslot"></label><em class="live-now none"><i></i> 耳目直播</em></span>
+      <h3 id="details-title"></h3>
+      <p id="details-con"></p>
+    </div>
+  </section>
+  <section class="comment">
+    <span>我说两句</span>
+    <textarea class="textarea mt10" id="textarea-con" placeholder="请表达您的观点，我们将会在节目中展现。"></textarea>
+    <input name="" type="button" value="提交" class="btn-a" id="discuss-btn" />
+    <input name="" type="button" value="正在提交中..." class="btn-a none" id="discuss-loading" />
+    <p><a href="###" id="gohome">返回首页</a></p>
+  </section>
+  <footer class="footer">页面由央视新闻提供<br/>新掌趣科技制作 & powered by holdfun.cn</footer>
+</div>
+<script src="js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script> 
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/weixinapi.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/share.js"></script>
+
+<script src="http://yaotv.qq.com/c/=/shake_tv/include/js/jsapi_authorize.js,/shake_tv/include/js/jsapi_subscribe.js"></script>
+<script src="./js/wx_api_base.js"></script>
+<script src="./js/shake.js"></script> 
+<script src="js/app/dialog.js"></script> 
+
+<script>
+
+var iermu = new Iermu();
+var opt = {
+	"container": "player-container",
+	"shareid": "21e5d23908824e025e1d61539f54abd1",
+	"uk": "3541479930"
+};
+iermu.init(opt);
+</script>
+<script src="js/app/boao.js"></script> 
+</body>
+</html>

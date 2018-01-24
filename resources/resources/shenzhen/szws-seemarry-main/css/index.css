@@ -1,0 +1,719 @@
+body, html
+{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.none
+{
+    display: none;
+}
+
+#firstPage
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url('../images/f_bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+*
+{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    outline: 0 none;
+}
+.f_log
+{
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.f_right
+{
+    position: absolute;
+    right: 10px;
+    width: 96px;
+    height: 81px; /* background: url('../images/f_right.png') no-repeat center center;     background-size: cover;*/
+    color: White;
+    text-align: center;
+}
+.f_order
+{
+    margin: 0 auto;
+    width: 80px;
+    height: 25px;
+    border-radius: 30px;
+    border: 1px solid White;
+    line-height: 25px;
+    margin-top: 13px;
+}
+.f_rule
+{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80px;
+    height: 25px;
+    border-radius: 30px;
+    border: 1px solid White;
+    line-height: 25px;
+}
+
+
+
+.f_operation
+{
+    margin: 0 auto;
+    position: absolute;
+    top: 72%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+}
+@media screen and (max-height:480px)
+{
+.f_operation
+{
+    margin: 0 auto;
+    position: absolute;
+    top: 72%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+}
+}
+
+@media screen and (max-height:568px)
+{
+.f_operation
+{
+    margin: 0 auto;
+    position: absolute;
+    top: 72%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+}
+}
+
+
+.f_getBonus
+{
+    width: 49%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    line-height: 50px;
+    background: url('../images/f_getBonus.png') no-repeat center center;
+    background-size: contain;
+}
+.f_getBonus2
+{
+    width: 125px;
+    left: 50%;
+    margin-left: -63px;
+}
+
+
+
+
+.tv_same
+{
+    width: 49%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    line-height: 50px;
+    background: url('../images/tv_same.png') no-repeat center center;
+    background-size: contain;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+}
+.bottom_tip
+{
+    width: 250px;
+    position: relative;
+}
+#commentPage
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url('../images/c_bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+.c_left
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: White;
+    border-radius: 30px;
+}
+.c_tv_same
+{
+    background-color: #D50545;
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+}
+.part_in_no
+{
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+.c_right
+{
+    position: absolute;
+    right: 10px;
+    color: White;
+    border-radius: 30px;
+}
+.c_count_down
+{
+    position: relative;
+}
+.c_count_down img
+{
+    width: 60px;
+}
+.a_end img
+{
+    width: 60px;
+}
+.c_grab img
+{
+    width: 60px;
+}
+.c_down_no
+{
+    position: absolute;
+    top: 45px;
+    width: 60px;
+    color: White;
+    text-align: center;
+    font-size: 14px;
+}
+.c_sendDiv
+{
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    background: url('../images/c_sendDiv.png') no-repeat center center;
+    background-size: cover;
+}
+.c_con
+{
+    height: 100%;
+    margin-right: 90px;
+    position: relative;
+}
+.c_input_div
+{
+    position: absolute;
+    background: url('../images/c_input_div.png') no-repeat center center;
+    background-size: 100% 100%;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.c_input
+{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    height: 38px;
+    line-height: 38px;
+    background-color: Transparent;
+    padding-left: 20px;
+    padding-right: 10px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    outline: 0 none;
+    color: White;
+}
+.b_img_btn
+{
+    position: absolute;
+    bottom: 26px;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 30px;
+    left: 50%;
+    margin-left: -60px; /*background-color:Blue;*/
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+}
+#send
+{
+    display: block;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: White;
+    background: url('../images/send.png') no-repeat center center;
+    background-size: contain;
+}
+.comments
+{
+    position: absolute;
+    bottom: 60px;
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+}
+.win
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+}
+.c_modal
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: Black;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+.c_modal_t
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: Black;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+.c_contain
+{
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 280px;
+    height: 409px;
+    z-index: 999999;
+}
+.get_bonus
+{
+    width: 100%;
+    height: 100%;
+    background: url('../images/get_bonus.png') no-repeat center center;
+    background-size: cover;
+}
+.get_bonus_a
+{
+    display: block;
+    position: absolute;
+    left: 90px;
+    bottom: 70px; /* background-color: Blue;*/
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+.get_juan
+{
+    width: 100%;
+    height: 100%;
+    background: url('../images/get_juan.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.get_juan_success
+{
+    width: 100%;
+    height: 100%;
+    background: url('../images/get_juan_success.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.get_juan_a
+{
+    display: block;
+    position: absolute;
+    left: 90px;
+    bottom: 70px; /* background-color: Blue;*/
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.get_money
+{
+    width: 100%;
+    height: 100%;
+    background: url('../images/get_money.png') no-repeat center center;
+    background-size: cover;
+}
+.get_money_a
+{
+    display: block;
+    position: absolute;
+    left: 90px;
+    bottom: 70px; /* background-color: Blue;*/
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.get_success
+{
+    width: 100%;
+    height: 100%;
+    background: url('../images/get_success.png') no-repeat center center;
+    background-size: cover;
+}
+.get_success2
+{
+    width: 100%;
+    height: 100%;
+    background: url('../images/get_success2.png') no-repeat center center;
+    background-size: cover;
+}
+.get_success_a
+{
+    display: block;
+    position: absolute;
+    left: 90px;
+    bottom: 70px; /* background-color: Blue;*/
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+.get_juan_success_a
+{
+    display: block;
+    position: absolute;
+    left: 90px;
+    bottom: 70px; /* background-color: Blue;*/
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+
+.no_get_bonus
+{
+    width: 100%;
+    height: 100%;
+    background: url('../images/no_get_bonus.png') no-repeat center center;
+    background-size: cover;
+}
+.no_get_bonus2
+{
+    width: 100%;
+    height: 100%;
+    background: url('../images/no_get_bonus2.png') no-repeat center center;
+    background-size: cover;
+}
+.no_get_bonus_a
+{
+    display: block;
+    position: absolute;
+    left: 90px;
+    bottom: 70px; /* background-color: Blue;*/
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+.c_close
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    background: url('../images/c_close.png') no-repeat center center;
+    background-size: cover;
+}
+.c_money
+{
+    position: absolute;
+    top: 140px;
+    text-align: center;
+    width: 100%;
+    color: #FFCCCC;
+}
+.c_money_no
+{
+    font-size: 30px;
+}
+.c_money_unit
+{
+    font-size: 15px;
+}
+
+.public_no
+{
+    position: absolute;
+    top: 110px;
+    height: 30px;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.public_no_juan
+{
+    position: absolute;
+    top: 110px;
+    height: 30px;
+    width:200px;
+    left:50%;
+    margin-left:-100px;
+}
+
+.two_code
+{
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 80%;
+    z-index: 9999999999;
+}
+.t_two_code
+{
+    margin: auto;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 999999;
+    width: 35px;
+}
+.juan_img
+{
+    width: 150px;
+    margin-top: 125px;
+    height: 70px;
+}
+.c_phone
+{
+    background-color: #E6BAB4;
+    border: 0px;
+    height: 30px;
+    margin-top: 2px;
+    width: 150px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.c_head_img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 2px solid White;
+    position: absolute;
+    left: -45px;
+    top: -7px;
+}
+.c_head_img_img
+{
+    width: 40px;
+}
+#buyPage
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url('../images/buyPage.jpg') no-repeat center center;
+    background-size: cover;
+}
+.b_Swiper_Con
+{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    height: 50%;
+}
+
+
+
+.swiper_div
+{
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    height: 400px;
+}
+
+@media screen and (max-height:480px)
+{
+    .swiper_div
+    {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        height: 400px;
+    }
+}
+@media screen and (min-height:667px)
+{
+    .swiper_div
+    {
+        position: absolute;
+        width: 100%;
+        bottom: 70px;
+        height: 400px;
+    }
+}
+.swiper-container
+{
+    height: 100vh;
+    width: 100vw;
+    zoom: 1;
+}
+.swiper-slide
+{
+    height: 100%;
+    opacity: 0.4;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    -webkit-transform: scale(0);
+    transform: scale(0); /* width: 80%; */
+}
+.swiper-slide-visible
+{
+    opacity: 0.5;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.swiper-slide-visible .ui-order-item:before
+{
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    border-radius: 5px;
+}
+.swiper-slide-active .ui-order-item:before
+{
+    display: none;
+}
+.swiper-slide-active
+{
+    top: 0;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.b_swiper_bg
+{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px 12px;
+    padding-bottom: 12px;
+    position: relative;
+    width: 232px;
+}
+.a_end
+{
+    color: White;
+    height: 50px;
+    line-height: 50px;
+   font-size:15px;
+}
+.up_no_get_bonus2,.up_no_get_bonus
+{
+  margin: auto;
+  display:block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 80%;
+  z-index: 9999999999;    
+   height:205px;
+}
+#div_subscribe_area {
+	height: 50px;
+	overflow: hidden;
+	position:relative;
+	z-index:9999999999999;
+}
+
+
+.a_run
+{
+ position:relative;
+-webkit-animation:c_run 5s;
+-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes c_run
+{
+from {transform:translateX(0px);}
+to {transform:translateX(1000px);}
+}

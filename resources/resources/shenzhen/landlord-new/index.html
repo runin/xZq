@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>我来斗地主</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/index.css" /> 
+</head>
+
+<body>
+	<div class="main" id="main">
+		<header>
+	        <div class="ui-logo ui-logo-tv"></div>
+	        <div class="ui-logo ui-logo-qg"></div>
+	        <div class="ui-jifen" id="ui-jifen">我的积分：<strong id="integral">0</strong></div>
+	        <span id="detail-countdown" class="detail-countdown none"></span>
+        </header>
+        
+        <!-- 首页图片-->
+		<section class="wrapper">
+		    <div class="pages" id="pages">
+		    </div>
+		</section>
+		
+	<!-- 题目-->
+		<section class="test-content none" id="answer-content">
+			<h1 class="test-logo"></h1>
+			<div class="test-items" id="answer-items">
+			 </div>
+			<a href="#" class="btn-submit" id="submit-answer" data-collect="true" data-collect-flag="landlord-new-submit-btn" data-collect-desc="斗地主首页-答案提交按钮">提交</a>
+
+		</section>
+        
+		<!--答题结果-->
+		<section class="test-content none" id="percent-content">
+			<h1 class="test-logo"></h1>
+		      <div class="test-result" id="answer-result">
+		    </div>
+		    <a href="#" class="btn-submit border"  id="reward">抽奖</a>
+			<p class="award-num" id="num-tip">您有<span id="prize-num">3次</span>抽奖机会</p>
+		</section>
+		<div class="cwr-ctrl ctrl">
+			<a href="#" class="btn-rule" data-collect="true" data-collect-flag="landlord-new-index-rulebtn" data-collect-desc="斗地主首页-规则弹层按钮">活动规则</a>
+			<a href="#" class="btn-result" id="btn-ontv" data-collect="true" data-collect-flag="landlord-new-index-ontv-btn" data-collect-desc="斗地主首页-我要上电视按钮">我要上电视</a>
+		</div>
+	</div>
+	<section class="copyright"></section>
+
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	
+    <script src="https://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="https://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script> 
+	
+	
+</body>
+</html>

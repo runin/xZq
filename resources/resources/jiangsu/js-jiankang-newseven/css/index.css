@@ -1,0 +1,133 @@
+body,html{
+	height:100%;
+	background-color:#d7f5fd;
+	background-image:url(../images/bg_b.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:top center;
+	overflow:hidden;
+}
+.main-con{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+}
+.dt-logo{
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:64%;
+	height:5%;
+	background-image:url(../images/dt_logo.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center left;
+}
+.main-rule-btn{
+	position:absolute;
+	top:10px;
+	right:5px;
+	width:26%;
+	height:30px;
+	line-height:30px;
+	border-radius:15px;
+	background:-webkit-linear-gradient(left, #82d604 50%, #07c4fa 50%);
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	z-index:3;
+}
+.main-logo{
+	width:76%;
+	height:26%;
+	margin:30% auto 0;
+	background-image:url(../images/main_logo.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:top center;
+}
+.main-time{
+	width:78%;
+	height:50px;
+	line-height:50px;
+	margin:5% auto 0;
+	padding:0 0 0 10px;
+	box-sizing:content-box;
+	background-image:url(../images/clock_bg.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:top center;
+	text-align:center;
+	font-size:16px;
+	color:#229dd1;
+}
+.main-time span{
+	margin:0 2px 0 0;
+	font-size:18px;
+	font-weight:bold;
+	color:#fffc00;
+}
+.main-t-tips{
+	line-height:20px;
+	padding:8px 0 0;
+	text-align:center;
+	font-size:14px;
+	color:#0066cc;
+}
+.main-t-tips.hidden{
+	visibility:hidden;
+}
+.main-btn-a,
+.main-btn-b{
+	display:block;
+	width:55%;
+	height:7%;
+	border-radius:20px;
+	margin:6% auto 0;
+	background-color:#ebcd01;
+	background-image:url(../images/guest_btn.png);
+	background-repeat:no-repeat;
+	background-size:40%;
+	background-position:center;
+}
+.main-btn-b{
+	margin:5% auto 0;
+	background-color:#05b8e4;
+	background-image:url(../images/talk_btn.png);
+}
+a.partake-btn{
+	position:absolute;
+	top:45px;
+	right:5px;
+	width:26%;
+	height:30px;
+	line-height:30px;
+	border-radius:15px;
+	background:-webkit-linear-gradient(left, #ebcd01 50%, #82d604 50%);
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	z-index:2;
+}
+.main-ewm{
+	position:absolute;
+	top:10%;
+	left:30px;
+	width:23%;
+}
+.main-ewm img{
+	width:100%;
+}
+@media screen and (min-device-height :480px) and (max-device-height :500px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+.main-logo{
+	margin:28% auto 0;
+}
+.main-btn-a{
+	margin:5% auto 0;
+}
+.main-btn-a,
+.main-btn-b{
+	height:7%;
+}
+}

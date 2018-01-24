@@ -1,0 +1,107 @@
+body{
+    background: url(../images/card_bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.card-top{
+    width: 195px;
+    margin: 30px auto 20px;
+    display: block;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
+}
+
+.swiper-container {
+    overflow: inherit!important;
+}
+.swiper-wrapper{
+    width: 88%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 14px;
+
+    /* Center slide text vertically */
+    text-align: center;
+    font-size: 14px;
+    /*display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;*/
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+
+}
+.swiper-container-horizontal>.swiper-pagination {
+    bottom: -17px;
+}
+.swiper-slide ul{
+    width: 100%;
+    clear: both;
+}
+.swiper-slide ul li{
+    background: url(../images/pack-bg.png) no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin:15px 2%;
+}
+.swiper-slide ul li.selected {
+    -webkit-animation-name: horizontal-scale;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes horizontal-scale {
+    0% {
+        -webkit-transform: rotateY(0deg);
+    }
+    18% {
+        -webkit-transform: rotateY(360deg);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+    }
+}
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+.swiper-slide .headimg{
+    display: block;
+    border-radius: 10px;
+}
+.swiper-slide .headout{
+    width: 79%;
+    margin: 11% auto 0;
+    height: 72%;
+}
+.swiper-slide .name{
+    display: block;
+    color: #FFF;
+    font-size: 12px;
+    width: 89%;
+    margin: 7% auto 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -webkit-transform: scale(.8);
+    vertical-align: top;
+    background: url("../images/card-name.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 5px 0;
+}
+@media screen and (device-width : 414px)
+and (device-height : 736px) {
+    .swiper-slide .headout {
+        height: 75%;
+    }
+}

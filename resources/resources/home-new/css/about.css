@@ -1,0 +1,142 @@
+body{
+    background-color: #f1f1f1;
+}
+/*zqhd begin*/
+.about-banner img{
+    width: 100%;
+    min-width: 1000px;
+}
+.zqhd-line{
+    width:76%;
+}
+.about-content{
+    margin-top: 3em;
+}
+.about-content .about-img{
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
+}
+.about-content .right-content{
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+    margin-left: 3em;
+    margin-bottom: 4em;
+}
+.about-content .right-content .p1{
+    color: #333333;
+    font-size: 25px;
+    line-height: 1.3em;
+}
+.about-content .right-content .p2{
+    color: #41a62c;
+    font-size: 30px;
+    line-height: 1.3em;
+}
+.about-content .right-content .p3{
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.6em;
+    padding-left: 1px;
+}
+.about-content .right-content .p4{
+    display: block;
+    margin-top: 2em;
+    text-indent: 2em;
+    color: #666666;
+    line-height: 2em;
+}
+/*zqhd end*/
+/*contact begin*/
+.contact-line{
+    width: 76%;
+}
+.bg-white{
+    background-color: #ffffff!important;
+}
+.contact-content{
+    margin-left: 1.2em;
+}
+.contact-content .lx{
+    display: inline-block;
+    width: 46%;
+    margin: 5em 0 3em 3em;
+}
+.contact-content .lx .left{
+    display: inline-block;
+    width: 85%;
+    vertical-align: middle;
+}
+.contact-content .lx .p1{
+    display: inline-block;
+    background: url("../img/ad-bg.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    padding-top: 1.3em;
+    padding-bottom: 3em;
+    padding-left: 1.1em;
+    padding-right: 1em;
+    font-size: 14px;
+    color: #ffffff;
+    vertical-align: middle;
+}
+.contact-content .lx .p2{
+    display: inline-block;
+    padding-left: 2em;
+    color: #41a62c;
+    font-size: 14px;
+    width: 85%;
+}
+.contact-content .lx .p3{
+    display: inline-block;
+    padding-left: 2em;
+    color: #41a62c;
+    font-size: 14px;
+}
+/*contact end*/
+/*zp begin*/
+.zp-line{
+    width: 53%;
+}
+.zp-mail{
+    display: inline-block;
+    font-size: 16px;
+    color: #41a62c;
+    vertical-align: middle;
+}
+.zp-mail:before{
+    content: "";
+    background: url("../img/icon-mail.jpg") 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 3em;
+    height: 2em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5em;
+    margin-left: .5em;
+}
+.zp-content{
+
+}
+.zp-content .zp{
+    display: inline-block;
+    width: 43%;
+    margin: 5em 2em 0em 3em;
+    color: #666666;
+    float: left;
+}
+.zp-content .zp:last-child{
+    margin-bottom: 7em;
+}
+.zp-content .zp img {
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+.zp-content .zp .z-title{
+    font-size: 14px;
+    font-weight: bold;
+}
+.zp-sj{
+    margin-bottom: 2em;
+}

@@ -1,0 +1,20 @@
+﻿.rollingrecord-wrapper{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+    height: 32px;
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    word-wrap: break-word;
+    z-index: 1;
+}
+
+.lan_item{
+	line-height: 32px;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+    background: rgba(0,0,0,0.4);
+}

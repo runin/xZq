@@ -1,0 +1,258 @@
+body{
+    background: url(../images/vote-info-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.back-btn {
+    background: url(../images/ck.png) no-repeat;
+    background-size: cover;
+    width: 62px;
+    height: 25px;
+    display: block;
+    margin: 10px;
+    float: right;
+}
+.form{
+    width: 93%;
+    margin: 50px auto 0;
+}
+.hj-input{
+    background: url(../images/bw-hj.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 8% 12%;
+    padding-bottom: 5%;
+}
+.hj-input h2{
+    font-size: 17px;
+    color: #602905;
+    margin-bottom: 9px;
+}
+.hj-input div{
+    background: rgba(211,175,135, .22);
+    border: 1px solid #76492C;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+}
+.hj-input div label{
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+}
+.hj-input div img{
+    height: 20px;
+    vertical-align: middle;
+}
+.hj-input div input{
+    display: inline-block;
+    background: transparent;
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+
+}
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+.upload-box{
+    width: 94%;
+    margin: 0 auto;
+}
+.upload-box h2{
+    font-size: 17px;
+    color: #602905;
+    font-weight: bold;
+    margin: 15px auto 10px;
+}
+.upload-box h2 label{
+    /*font-size: 15px;
+    font-weight: 100;*/
+}
+textarea{
+    border: 1px solid #602905;
+    border-radius: 10px;
+    background: transparent;
+    background: rgba(5, 69, 136, .15);
+    font-size: 12px;
+    color: #602905;
+    padding: 10px;
+    width: 94%;
+    margin: 0 auto;
+    display: block;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+
+}
+textarea::-webkit-input-placeholder {
+    color:  #602905;
+}
+.btn-submit{
+    display: block;
+    margin-bottom: 35px;
+}
+.btn-submit img{
+    display: block;
+    width: 116px;
+    margin: 10px  auto;
+}
+h3{
+    font-size: 12px;
+    color: #602905;
+    width: 94%;
+    margin: 5px auto;
+    text-align: center;
+}
+.not-start{
+    clear: both;
+    font-size: 19px;
+    color: #602905;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    margin-top: 43vh;
+    width: 90%;
+
+}
+.copyright {
+    color: #205C9C;
+}
+/*上传-S*/
+.upload-box form {
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    top: -100px;
+}
+.upload-box form input {
+    opacity: 0;
+}
+.upload-box .icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    border-radius: 10px;
+    text-align: center;
+}
+.upload-box .icon:before {
+    content: '';
+    display: inline-block;
+    vertical-align: -2px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/add.png) no-repeat 0 0;
+    background-size: cover;
+}
+
+.upload-box .img-preview {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #602905;
+    border-radius: 10px;
+    text-align: center;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.upload-box .img-preview .close {
+    content: '';
+    display: block;
+    background: url(http://yao.holdfun.cn/portal/resources/news/images/close.png) no-repeat 0 0;
+    background-size: 18px auto;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: -6px;
+    top: -8px;
+    cursor: pointer;
+}
+.upload-box .img-preview .uploading {
+    display: none;
+}
+.upload-box .img-preview.loading .uploading {
+    height: 25px;
+    width: 25px;
+    margin: 0px auto;
+    position: relative;
+    -webkit-animation: loading-rotation .6s infinite linear;
+    animation: loading-rotation .6s infinite linear;
+    border-left: 3px solid rgba(255, 153, 163, 0.55);
+    border-right: 3px solid rgba(255, 153, 163, 0.55);
+    border-bottom: 3px solid rgba(255, 153, 163, 0.55);
+    border-top: 3px solid rgba(238,26,46,.85);
+    border-radius: 100%;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+}
+.upload-box .img-preview .lc {
+    position: absolute;
+    left: 13px;
+    top: 13px;
+}
+.upload-box .img-preview .ic {
+    display: block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.upload-box .img-preview img {
+    vertical-align: -11px;
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+}
+.upload-box .btn-upload {
+    border: 2px dotted #602905;
+
+    margin-bottom: 10px;
+}
+/*.upload-box .btn-upload:before {
+    width: 28px;
+
+    height: 28px;
+    background-position: -79px 0px;
+    vertical-align: -7px;
+}*/
+
+.preview-box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999999;
+    background-size: 320px auto;
+    top: 0;
+    left: 0;
+}
+@-webkit-keyframes loading-rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(359deg);}
+}
+@keyframes loading-rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+}
+
+/*上传-E*/
+/*
+@media screen and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .form {
+        margin: 40px auto 0;
+    }
+}*/

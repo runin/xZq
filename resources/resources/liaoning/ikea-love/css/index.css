@@ -1,0 +1,159 @@
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+html,button,input,select,textarea {
+	color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+	margin: 0;
+}
+
+a {
+	color: #00e;
+}
+
+a:visited {
+	color: #551a8b;
+}
+
+a:hover {
+	color: #06e;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+	resize: vertical;
+}
+
+.wrapper {
+	background-color: #FFFFFF;
+	overflow: hidden;
+	height: 100%;
+}
+
+.banner {
+	background: url(../images/yj_bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.jp1 {
+	left: 15%;
+	position: absolute;
+	top: 47%;
+	width: 19%;
+}
+
+.jp1 li {
+	list-style: none outside none;
+}
+
+.jp2 {
+	left: 42%;
+	position: absolute;
+	top: 43%;
+	width: 19%;
+}
+
+.jp2 li {
+	list-style: none outside none;
+}
+
+.jp3 {
+	left: 69%;
+	position: absolute;
+	top: 47%;
+	width: 19%;
+}
+
+.jp3 li {
+	list-style: none outside none;
+}
+
+.wycj {
+	bottom: 4.6em;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+
+.hdgz {
+	bottom: 2.9em;
+	position: absolute;
+	width: 100%;
+}
+
+.jt {
+	bottom: 5em;
+	position: absolute;
+	left: 13%;
+}
+
+.jt li {
+	list-style: none outside none;
+}
+
+.jt li img {
+	width: 50%
+}
+
+.wycj li {
+	list-style: none outside none;
+}
+
+.hdgz li {
+	list-style: none outside none;
+}
+
+.sctck {
+	padding: 4px 10px;
+	margin: 10px;
+	position: fixed;
+	text-align: center;
+	top: 5%;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 10px #202020;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 24px;
+}
+.copyright {
+	font-size: 10px;
+	bottom: 5px;
+	width: 100%;
+	color: #fff;
+	height: 20px;
+	line-height: 20px;
+	opacity: 0.6;
+	text-align: center;
+	position: absolute;
+}

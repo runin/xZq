@@ -1,0 +1,113 @@
+body {
+  background: url(../images/answer-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.back-btn {
+  background: url(../images/ad3.png) no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 28px;
+  line-height: 34px;
+  text-align: left;
+  padding-left: 10px;
+  margin: 10px;
+}
+.countdown {
+  margin: 0 auto;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+  height: 33px;
+  line-height: 33px;
+  border-radius: 3px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  background: url(../images/djs-bg.png) no-repeat;
+  background-size: 100% 100%;
+  width: 80%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 14%;
+}
+.question {
+  background: url(../images/dt-bg.png) no-repeat;
+  background-size: 100% 100%;
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 35%;
+  left: 0;
+  right: 0;
+}
+.question dl {
+  height: calc(300px - 80px);
+  height: -webkit-calc(300px - 80px);
+  width: 85%;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+.question dl dt {
+  font-weight: bold;
+  line-height: 20px;
+}
+.question dl dd {
+  font-weight: bold;
+  margin: 20px auto 20px 10px;
+  line-height: 20px;
+}
+.question dl dd.selected::before {
+  background: url(../images/seled.png) no-repeat;
+  background-size: 13px auto;
+}
+.question dl dd::before {
+  content:'';
+  display: inline-block;
+  background: url(../images/def.png) no-repeat;
+  background-size: 13px auto;
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+}
+.question .confirm {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 37px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.question .confirm.disabled {
+  color: #E5DDDD;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+  .countdown {
+    top: 10%;
+  }
+  .question {
+    top: 20%;
+  }
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+  .question {
+    top: 30%;
+  }
+}

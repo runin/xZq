@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffffff;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    /*height: 100%;*/
+    top: 0;
+    left: 0;
+    background: url("../personimg/personluck2-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.inp1,.inp2,.inp3{
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    left: 33%;
+    top: 55.5%;
+    border: 0;
+    /*background-color: #00aff0;*/
+    outline: none;
+    background-color: #ffffff;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.inp1{
+    left: 39%;
+    width: 40%;
+    top: 49%;
+}
+.inp3{
+    top: 62.5%;
+}
+.butt{
+    position: absolute;
+    width: 34%;
+    height: 12%;
+    bottom: 5%;
+    left: 33%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.load{
+    position: absolute;
+    width: 60%;
+    bottom: 20%;
+    left: 20%;
+    font-size: 30px;
+    opacity: 0.8;
+    text-align: center;
+}
+.butf{
+    position: absolute;
+    width: 34%;
+    height: 12%;
+    bottom: 5%;
+    left: 33%;
+    display: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.p1,.p2,.p3{
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    top: 0;
+    left: 10%;
+    animation: picedown 4.2s;
+    -webkit-animation: picedown 4.2s;
+}
+.p2{
+    width: 10%;
+    height: 8%;
+    top: 8%;
+    left: 18%;
+    animation: picedown 2.8s;
+    -webkit-animation: picedown 2.8s;
+}
+.p3{
+    width: 8%;
+    height: 6%;
+    top: 12%;
+    left: 75%;
+    animation: picedown 3s;
+    -webkit-animation: picedown 3s;
+}
+
+
+@keyframes picedown
+{
+    0%   {  opacity: 0}
+    20%  {  opacity: 1}
+    80%  {  opacity: 0.6}
+    100% {  top: 25% ;  opacity: 0}
+}
+@-webkit-keyframes picedown /* Safari 和 Chrome */
+{
+    0%   {  opacity: 0}
+    20%  {  opacity: 1}
+    80%  {  opacity: 0.6}
+    100% {  top: 25% ;  opacity: 0}
+}
+

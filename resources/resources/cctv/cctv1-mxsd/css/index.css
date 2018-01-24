@@ -1,0 +1,221 @@
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../images/bg.jpg) no-repeat center center #CC0500;
+    background-size: 100% 100%;
+}
+header {
+    position: relative;
+    width: 100%;
+    z-index: 9;
+}
+header .icon-tvlogo {
+    position: absolute;
+    width: 48%;
+    top: 6px;
+    left: 6px;
+}
+header .btn-rule {
+    position: absolute;
+    display: block;
+    width: 20%;
+    top: -6px;
+    right: -3%;
+    -webkit-animation: swing 6s 0s infinite ease;
+    animation: swing 6s 0s infinite ease;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+}
+.showover {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.off .showover {
+    -webkit-animation: fadeInDown 2s 0s 1 ease;
+    -webkit-animation-fill-mode: forwards;
+}
+.icon-goldmonkey {
+    display: block;
+    position: absolute;
+    width: 38%;
+    bottom: -16%;
+    right: 2%;
+    opacity: 0;
+    -webkit-animation: lightSpeedIn 0.8s 1.6s 1 ease, lottery-move 2s 2.4s infinite ease-in-out;
+    -webkit-transform-origin: bottom;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes fadeInDown {
+    0% {opacity: 0.6;-webkit-transform: translate3d(0, -100%, 0);transform: translate3d(0, -100%, 0);}
+    100% {opacity: 1;-webkit-transform: none;transform: none;}
+}
+
+@keyframes fadeInDown {
+    0% {opacity: 0.6;-webkit-transform: translate3d(0, -100%, 0);transform: translate3d(0, -100%, 0);}
+    100% {opacity: 1;-webkit-transform: none;transform: none;}
+}
+@-webkit-keyframes showoverDown {
+    0% {-webkit-transform: translateY(-300%);transform: translateY(-300%);}
+    100% {-webkit-transform: translateY(0%);transform: translateY(0%);}
+}
+@keyframes showoverDown {
+    0% {-webkit-transform: translateY(-300%);transform: translateY(-300%);}
+    100% {-webkit-transform: translateY(0%);transform: translateY(0%);}
+}
+@-webkit-keyframes lightSpeedIn {
+    0% {-webkit-transform: translateX(100%) skewX(-30deg);transform: translateX(100%) skewX(-30deg);opacity: 0}
+    60% {-webkit-transform: translateX(-20%) skewX(30deg);transform: translateX(-20%) skewX(30deg);opacity: 1}
+    80% {-webkit-transform: translateX(0%) skewX(-15deg);transform: translateX(0%) skewX(-15deg);opacity: 1}
+    100% {-webkit-transform: translateX(0%) skewX(0deg);transform: translateX(0%) skewX(0deg);opacity: 1}
+}
+@keyframes lightSpeedIn {
+    0% {-webkit-transform: translateX(100%) skewX(-30deg);-ms-transform: translateX(100%) skewX(-30deg);transform: translateX(100%) skewX(-30deg);opacity: 0}
+    60% {-webkit-transform: translateX(-20%) skewX(30deg);-ms-transform: translateX(-20%) skewX(30deg);transform: translateX(-20%) skewX(30deg);opacity: 1}
+    80% {-webkit-transform: translateX(0%) skewX(-15deg);-ms-transform: translateX(0%) skewX(-15deg);transform: translateX(0%) skewX(-15deg);opacity: 1}
+    100% {-webkit-transform: translateX(0%) skewX(0deg);-ms-transform: translateX(0%) skewX(0deg);transform: translateX(0%) skewX(0deg);opacity: 1}
+}
+@keyframes lottery-move {
+    0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);} 
+    15% { -webkit-transform: rotate(-15deg);transform: rotate(-15deg);}
+    30% { -webkit-transform: rotate(15deg);transform: rotate(15deg);}
+    45% { -webkit-transform: rotate(-15deg);transform: rotate(-15deg);}
+    60% { -webkit-transform: rotate(15deg);transform: rotate(15deg);}
+    75% { -webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    100% { -webkit-transform: rotate(0deg);transform: rotate(0deg);}
+}
+@-webkit-keyframes lottery-move {
+    0% { -webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    15% { -webkit-transform: rotate(-15deg);transform: rotate(-15deg);}
+    30% { -webkit-transform: rotate(15deg);transform: rotate(15deg);}
+    45% { -webkit-transform: rotate(-15deg);transform: rotate(-15deg);}
+    60% { -webkit-transform: rotate(15deg);transform: rotate(15deg);}
+    75% { -webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    100% { -webkit-transform: rotate(0deg);transform: rotate(0deg);}
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+.container img {
+    display: block;
+    margin: 0 auto;
+}
+.container .icon-logo {
+    position: relative;
+    width: 98%;
+    margin: 23% auto 0;
+    -webkit-animation: zoomIn 1.5s .5s 1 ease;
+    -webkit-transform-origin: bottom;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: visible;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9;
+}
+footer .btn {
+    position: relative;
+    display: block;
+    width: 56%;
+    margin: 0 auto 5%;
+}
+footer .btn img {
+    position: relative;
+    z-index: 1;
+}
+footer .btn .icon-light {
+    position: absolute;
+    width: 50%;
+    top: -33%;
+    left: 0;
+    -webkit-animation: cross-light 5s 0.5s infinite ease-in-out;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: visible;
+}
+footer #div_subscribe_area {
+    width: 100%;
+}
+
+.on header, .on .container, .on footer .btn-go, .off .showover {
+    display: block !important;
+}
+.off header, .off .container, .off footer .btn-go, .on .showover {
+    display: none !important;
+}
+
+@-webkit-keyframes over {
+    0% {-webkit-transform: translateY(-500%);transform: translateY(-500%);}
+    100% {-webkit-transform: translateY(0%);transform: translateY(0%);}
+}
+@keyframes over {
+    0% {-webkit-transform: translateY(-500%);transform: translateY(-500%);}
+    100% {-webkit-transform: translateY(0%);transform: translateY(0%);}
+}
+@-webkit-keyframes cross-light {
+    0% {opacity: 0;-webkit-transform: scale(.2) translateX(0);transform: scale(.2) translateX(0);}
+    30% {opacity: 1;-webkit-transform: scale(1.2) translateX(60px);transform: scale(1.2) translateX(60px);}
+    60% {opacity: 0;-webkit-transform: scale(1) translateX(90px);transform: scale(1) translateX(90px);}
+    100% {opacity: 0;-webkit-transform: scale(.2) translateX(0);transform: scale(.2) translateX(0);}
+}
+@keyframes cross-light {
+    0% {opacity: 0;-webkit-transform: scale(.2) translateX(0);transform: scale(.2) translateX(0);}
+    30% {opacity: 1;-webkit-transform: scale(1.2) translateX(60px);transform: scale(1.2) translateX(60px);}
+    60% {opacity: 0;-webkit-transform: scale(1) translateX(90px);transform: scale(1) translateX(90px);}
+    100% {opacity: 0;-webkit-transform: scale(.2) translateX(0);transform: scale(.2) translateX(0);}
+}
+@-webkit-keyframes zoomIn {
+    0% {opacity: 0;-webkit-transform: scale(0);transform: scale(0)}
+    100% {opacity: 1;-webkit-transform: scale(1);transform: scale(1)}
+}
+@keyframes zoomIn {
+    0% {opacity: 0;-webkit-transform: scale(0);transform: scale(0)}
+    100% {opacity: 1;-webkit-transform: scale(1);transform: scale(1)}
+}
+::-webkit-input-placeholder {
+    color: #FFF;
+}
+@-webkit-keyframes swing {
+    10% {-webkit-transform: rotate3d(0, 0, 1, 15deg);transform: rotate3d(0, 0, 1, 15deg);}
+    20% {-webkit-transform: rotate3d(0, 0, 1, -10deg);transform: rotate3d(0, 0, 1, -10deg);}
+    30% {-webkit-transform: rotate3d(0, 0, 1, 5deg);transform: rotate3d(0, 0, 1, 5deg);}
+    40% {-webkit-transform: rotate3d(0, 0, 1, -5deg);transform: rotate3d(0, 0, 1, -5deg);}
+    60%,100% {-webkit-transform: rotate3d(0, 0, 1, 0deg);transform: rotate3d(0, 0, 1, 0deg);}
+}
+
+@keyframes swing {
+    10% {-webkit-transform: rotate3d(0, 0, 1, 15deg);transform: rotate3d(0, 0, 1, 15deg);}
+    20% {-webkit-transform: rotate3d(0, 0, 1, -10deg);transform: rotate3d(0, 0, 1, -10deg);}
+    30% {-webkit-transform: rotate3d(0, 0, 1, 5deg);transform: rotate3d(0, 0, 1, 5deg);}
+    40% {-webkit-transform: rotate3d(0, 0, 1, -5deg);transform: rotate3d(0, 0, 1, -5deg);}
+    60%,100% {-webkit-transform: rotate3d(0, 0, 1, 0deg);transform: rotate3d(0, 0, 1, 0deg);}
+}
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .container .icon-logo {
+        width: 75%;
+        margin: 18% auto 0;
+    }
+}
+
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+    .container .icon-logo {
+        width: 88%;
+        margin: 20% auto 0;
+    }
+}

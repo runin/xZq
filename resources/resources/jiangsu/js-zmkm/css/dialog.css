@@ -1,0 +1,621 @@
+/* 通用弹层样式_S */
+.modal {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.modal:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.75);
+    z-index:99;
+}
+.modal .flash-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility:hidden;
+}
+.modal .flash-box .icon-flash {
+    width: 100%;
+    height: 50%;
+}
+.modal .dialog {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    z-index: 999;
+}
+.modal .dialog .btn-dialog-close {
+    display: block;
+    position: absolute;
+    top: -60px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon-close.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999999999;
+}
+.modal .dialog .bg-dialog-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal .dialog .bg-dialog-footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.modal .dialog .global-header {
+    position: relative;
+    width: 100%;
+    font-size: 0;
+}
+.modal .dialog .global-header .icon-redbag-gold, .modal .dialog .global-header .icon-redbag-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.modal .dialog .global-header .icon-luckytips {
+    position: absolute;
+    width: 76%;
+    top: 8%;
+    left: 12%;
+}
+.modal .dialog .dialog-content {
+    border: 2px solid #FFF;
+    box-shadow: inset 0 0 15px 5px #840680,0 0 15px 5px #840680;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 999;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+}
+.modal .dialog .dialog-content .tlt img{
+    width: 150px;
+    margin: 0 10px;
+}
+.modal .dialog .dialog-content .info-qrcode {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 6px;
+    text-align: center;
+}
+.modal .dialog .dialog-content .icon-congrats {
+    width: 86%;
+    margin: 0 auto 2%;
+}
+.modal .dialog .dialog-content .award-luckTips {
+    width: 92%;
+    margin: -9% auto 6%;
+    font-size: 16px;
+    text-align: center;
+}
+.modal .dialog .dialog-content .award-luckTips img{
+    width: 73%;
+    margin: -15px auto 10px;
+}
+.modal .dialog .dialog-content .award-img {
+    width: 90%;
+    margin: 7px auto 0;
+}
+.modal .dialog .dialog-content .footer{
+    width: 100%;
+    position: absolute;
+    bottom: 14%;
+}
+.modal .dialog .dialog-content .award-nameTips {
+    width: 80%;
+    margin: 0 auto 2%;
+    font-size: 26px;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+.modal .dialog .dialog-content .award-keyTips {
+    width: 100%;
+    margin: 9% auto;
+    font-size: 18px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+.modal .dialog .dialog-content .input-box {
+    width: 100%;
+    font-size: 15px;
+    color: #FFF;
+    margin: 5px auto 3px;
+}
+.modal .dialog .dialog-content .input-box h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin: 3px auto;
+}
+.modal .dialog .dialog-content .input-box .label {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.modal .dialog .dialog-content .input-box p {
+    /*display: inline-block;*/
+    color: #9B6115;
+    text-shadow: #FFF 1px 0 0,#FFF 0 1px 0,#FFF -1px 0 0,#FFF 0 -1px 0;
+    -webkit-text-shadow:#FFF 1px 0 0,#FFF 0 1px 0,#FFF -1px 0 0,#FFF 0 -1px 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+.modal .dialog .dialog-content .input-box span {
+    display: inline-block;
+}
+.modal .dialog .dialog-content .input-box input {
+    display: inline-block;
+    width: 86%;
+    padding: 6px 8px;
+    border: 0 none;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #666666!important;
+    background: #FFF;
+    background-size: 100% 100%;
+    margin-bottom: 5px;
+    vertical-align: baseline;
+}
+.modal .dialog .dialog-content .input-box input::-webkit-input-placeholder {
+    color: #666 !important;
+}
+.modal .dialog .dialog-content .info-box {
+    text-align: left;
+    width: 88%;
+    margin: 6% auto 0;
+    font-size: 15px;
+    line-height: 30px;
+    color: #FFF;
+}
+.modal .dialog .dialog-content .btn-lottery {
+    display: inline-block;
+    margin: 0 6px;
+    background: #EA8A00;
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+.modal .dialog .dialog-content .btn-lottery-box {
+    width: 100%;
+    position: absolute;
+    bottom: 6%;
+}
+.modal .dialog .dialog-content .award-img-box {
+    position: relative;
+    width: 100%;
+}
+.modal .dialog .dialog-content .award-img-box .award-img {
+    position: relative;
+    z-index: 2;
+}
+.modal .dialog .dialog-content .award-img-box .icon-paper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation-name: paper;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    z-index: 1;
+}
+.modal .dialog .dialog-content .icon-ok {
+    width: 52%;
+    margin: 0 auto 1%;
+}
+.modal .dialog .dialog-content .qrcode-tips {
+    font-size: 15px !important;
+    color: #FFF !important;
+    font-weight: normal !important;
+    color: #F5F5F5;
+    margin-bottom: 5%;
+}
+.modal .dialog .dialog-content .qrcode-box {
+    position: relative;
+    width: 82%;
+    margin: 0 auto 5%;
+    padding: 0 0 36px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+.modal .dialog .dialog-content .qrcode-box p {
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    left: 0;
+    bottom: 0;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #6b0001;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 6%;
+}
+/* 通用弹层样式_E */
+
+/* 活动规则_S */
+#rule-dialog .dialog .dialog-content {
+    padding: 0 5%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #FFF;
+    height: 100%;
+    border: 2px solid #fff;
+    box-shadow: inset 0 0 15px 5px #840680,0 0 15px 5px #840680;
+}
+#rule-dialog .dialog .btn-dialog-close {
+    background: url(../images/close.png) no-repeat;
+    background-size: 100% 100%;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+}
+#rule-dialog .dialog .dialog-content .icon-rule {
+    width: 40%;
+    margin: 10% auto 5%;
+}
+#rule-dialog .dialog .dialog-content h2 {
+    width: 100%;
+    font-size: 25px;
+    line-height: 26px;
+    padding: 25px 0 0;
+    color: #fff;
+    text-shadow: 0px 0px 5px #840680;
+}
+#rule-dialog .dialog .dialog-content .rule-content {
+    width: 100%;
+    height: 79%;
+    margin-top: 5%;
+    padding: 0 4%;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    word-break: break-all;
+    text-align: left;
+}
+#rule-dialog .dialog .dialog-content .rule-content * {
+    color: #FFF !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+/* 活动规则_E */
+
+/* 实物_S */
+.modal .dialog .dialog-content .info-box .info-address label{
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 75%;
+    vertical-align: top;
+}
+/* 实物_E */
+
+/* 卡劵_E */
+/* 卡劵_E */
+
+/* 兑奖码_S */
+.modal .dhm-dialog .dialog-content .cc{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 17%;
+    color: #fff;
+    font-size: 14px;
+}
+.modal .dhm-dialog .dialog-content label{
+
+}
+.modal .dhm-dialog .dialog-content .cc span{
+
+}
+/* 兑奖码_E */
+
+/*积分_S*/
+#jf-dialog .dialog-content h1 {
+    margin: 95px auto 5px!important;
+}
+/*积分_E*/
+
+
+/* 谢谢参与_S */
+.thanks-dialog h2{
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10%;
+    text-shadow: 0px 2px 3px #ac08a3;
+}
+.thanks-dialog h3{
+    font-size: 12px;
+    color: #C8A75D;
+}
+.thanks-dialog img{
+    width: 90%;
+    display: block;
+    margin: 12px auto;
+}
+/*.thanks-dialog .tlt img{
+    width: 150px;
+    margin: 0 10px;
+}*/
+.modal .thanks-dialog .btn-dialog-close {
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: -9px;
+    width: 30px;
+    height: 29px;
+    background: url(../images/close.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999999999;
+}
+.modal .thanks-dialog .continue-btn {
+    display: block;
+    border: 2px solid #fff;
+    width: 50%;
+    margin: 13% auto 0;
+    line-height: 33px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 15px 5px #840680,0 0 15px 5px #840680;
+}
+.modal .thanks-dialog h1 {
+    font-size: 20px;
+    display: block;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    margin-top: 7%;
+    color: #fff;
+    text-shadow: 0px 2px 3px #ac08a3;
+}
+/* 谢谢参与_E */
+
+/*投票——s*/
+.modal-vote{
+    opacity: 1!important;
+}
+.vote-dialog{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    z-index: 999;
+    background: rgba(180,43,186,.6);
+    left: 10%;
+    top: 20%;
+    border: 2px solid #fff;
+    box-shadow: inset 0 0 15px 5px #840680,0 0 15px 5px #840680;
+    border-radius: 10px;
+}
+.vote-dialog p{
+    line-height: 100px;
+}
+.vote-dialog .btns{
+
+}
+.vote-dialog .btns a{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    background: linear-gradient(to bottom,#fc91f5,#ae16a5);
+    margin: 0 3% 15%;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+/*投票——e*/
+/*投票抽奖——s*/
+.modal-lottery{
+    opacity: 1!important;
+}
+.lottery-dialog{
+    width: 100%!important;
+    height: 100%!important;
+}
+.lottery-dialog p{
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 25%;
+    font-size: 20px;
+}
+.lottery-dialog .vote-tip{
+    display: block;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 15%;
+}
+.lottery-dialog .vote-box{
+    display: block;
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    top: 38%;
+    z-index: 9;
+}
+.lottery-dialog .vote-li{
+    display: block;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 30%;
+}
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+/*投票抽奖——e*/

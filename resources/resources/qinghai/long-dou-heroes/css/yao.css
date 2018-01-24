@@ -1,0 +1,428 @@
+body{
+	background-color: #000;
+	background-image: url(../images/yao-center.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center center;
+	min-height: 100vh;
+	width: 100vmin;
+	/* display: block; */
+}
+.outer{
+	color: #FDCB2C;
+	float: right;
+	width: 30%;
+}
+.marquee {
+	color: #fff;
+	font-size: 13px;
+	background: #3B3B3B;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	overflow: hidden;
+}
+.main-top .count {
+	/* padding-right: 20px; */
+	font-size: 12px;
+	color: #fff;
+	line-height: 26px;
+	text-align: left;
+	margin: 13px;
+}
+.countdown{
+	height: 25px;
+	line-height: 25px;
+	margin: 1% 18% 2%;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+}
+.copyright {
+	position: relative;
+	color: #fff;
+	line-height: 13px;
+	margin-top: 3px;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.footer a.back-home{
+	background: url(../images/back.png) no-repeat;
+	background-size: cover;
+	height: 33px;
+	width: 110px;
+	display: block;
+	margin: 23px auto 0;
+}
+
+/*中奖-s*/
+.yao-gift{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	background: rgba(0,0,0,.7);
+	/* z-index: 1; */
+}
+.yao-gift div.lh-bg{
+	background: url(../images/gift-bg.png) no-repeat;
+	background-size: cover;
+	width: 260px;
+	height: 260px;
+	position: relative;
+	margin: 0 auto;
+}
+.yao-gift div.lh-info{
+	background: url(../images/info-bg.png) no-repeat;
+	background-size: cover;
+	width: 290px;
+	height: 389px;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 27px;
+}
+.yao-gift div.lh-info .btn-close{
+    position: absolute;
+	
+    top: -14px;
+    right: 1px;
+}
+
+.yao-gift div.lh-info h2{
+	color: #FFB400;
+	font-size: 20px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 260px;
+	display: block;
+	margin: 0 auto;
+}
+.yao-gift div.lh-info .gift-hongbao{
+	width: 211px;
+	margin: 10px auto;
+}
+.yao-gift div.lh-info .btn-box-b{
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+	padding: 0 17px;
+}
+.yao-gift div.lh-info .btn-box-b h3{
+	color: #fff;
+	font-size: 12px;
+	margin-bottom: 6px;
+}
+.yao-gift div.lh-info .btn-box-b input{
+	width: 100%;
+	height: 31px;
+	background: #fff;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	font-size: 12px;
+	padding-left: 10px;
+}
+.yao-gift div.lh-info .btn-box-b input.ded,input:disabled{
+	background: transparent;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	-webkit-opacity: 1;
+}
+.yao-gift div.lh-info .btn-box-b .btn-b{
+	display: block;
+	background: #FF7800;
+	width: 95px;
+	height: 29px;
+	line-height: 29px;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 5px;
+	margin: 12px auto;
+}
+.yao-gift div.lh-bg:before{
+	content: '';
+	display: block;
+	background: url(../images/lh-top.png) no-repeat;
+	background-size: cover;
+	width: 253px;
+	height: 75px;
+	position: relative;
+	top: -32px;
+	z-index: 1;
+}
+.btn-close{
+	display: block;
+	background: #E27000;
+	width: 30px;
+	height: 30px;
+	line-height: 26px;
+	text-align: center;
+	border-radius: 100%;
+	position: absolute;
+	right: 7px;
+	top: 34px;
+	z-index: 2;
+	/* pointer-events: all; */
+}
+a.btn-close img{
+    width: 50%;
+    vertical-align: middle;
+}
+.yao-gift div.lh-bg img.img-lh{
+    width: 90%;
+    position: relative;
+    top: -42px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.yao-gift div.lh-bg img.scale{
+	-webkit-animation-delay: 500ms;
+	-webkit-animation-duration: .3s;
+	animation-duration: .3s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: scale;
+	animation-name: scale;
+}
+@-webkit-keyframes scale {
+	0% {
+		-webkit-transform: scale(.3);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+.yao-gift div.lh-bg label.ts{
+	font-size: 15px;
+	color: #fff;
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+}
+.yao-gift div.swing:before{
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-transform-origin: top center;
+	transform-origin: top center;
+	-webkit-animation-name: swing;
+	animation-name: swing;
+}
+@-webkit-keyframes swing {
+	20% {
+		-webkit-transform: rotate3d(0, 0, 1, 15deg);
+		transform: rotate3d(0, 0, 1, 15deg);
+	}
+
+	40% {
+		-webkit-transform: rotate3d(0, 0, 1, -10deg);
+		transform: rotate3d(0, 0, 1, -10deg);
+	}
+
+	60% {
+		-webkit-transform: rotate3d(0, 0, 1, 5deg);
+		transform: rotate3d(0, 0, 1, 5deg);
+	}
+
+	80% {
+		-webkit-transform: rotate3d(0, 0, 1, -5deg);
+		transform: rotate3d(0, 0, 1, -5deg);
+	}
+
+	100% {
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+}
+/*中奖-e*/
+
+/*yao-s*/
+.home-box {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.main-top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 50vh;
+	background-image: url('../images/home_logo_a.jpg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	box-sizing: border-box;
+}
+.yao .m-t-b {
+	animation-name: mtop;
+	-webkit-animation-name: mtop;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes mtop {
+	0%, 90% {
+		-webkit-transform: translateY(0px);
+	}
+	50%, 30% {
+		-webkit-transform: translateY(-100px);
+	}
+}
+.main-foot {
+	position: absolute;
+	bottom: 1px;
+	width: 100%;
+	height: 50vh;
+	background-image: url('../images/home_logo_b.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	box-sizing: border-box;
+}
+.yao .m-f-b {
+	animation-name: mfoot;
+	-webkit-animation-name: mfoot;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes mfoot {
+	0%, 90% {
+		-webkit-transform: translateY(0px);
+	}
+	30%, 50% {
+		-webkit-transform: translateY(100px);
+	}
+}
+.yao-text{
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	margin: 27vh auto 0;
+}
+.yao-text p{
+	position:relative;
+	min-height: 30px;
+	color: #FEE567;
+}
+.yao-text p.texta span{
+	color: #DA2323;
+	font-weight: bold;
+	font-size: 17px;
+}
+.yao-text p:last-child span{
+	position:relative;
+	width:100%;
+}
+.yaonone-text{
+	animation-name:nonetext;
+	-webkit-animation-name:nonetext;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-duration:0.5s;
+	-webkit-animation-duration:0.5s;
+	animation-delay:0.1s;
+	-webkit-animation-delay:0.1s;
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	display: block;
+}
+@keyframes nonetext{
+	0%{
+		top:-300px;
+		opacity:0;
+	}
+	100%{
+		top:0;
+		opacity:1.0;
+	}
+}
+@-webkit-keyframes nonetext{
+	0%{
+		top:-300px;
+		opacity:0;
+	}
+	100%{
+		top:0;
+		opacity:1.0;
+	}
+}
+/*yao-e*/
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.yao-gift div.lh-info {
+		width: 250px;
+		height: 335px;
+	}
+	.yao-gift div.lh-info {
+		padding-top: 12px;
+	}
+	.yao-gift div.lh-info .btn-box-b .btn-b {
+		margin: 5px auto;
+	}
+	.countdown {
+		line-height: 8px;
+		margin: 0 18% 2%;
+		font-size: 12px;
+	}
+	.copyright {
+		line-height: 11px;
+		-webkit-transform: scale(.8);
+	}
+	.footer a.back-home {
+		height: 30px;
+		width: 100px;
+	}
+	.yao-text {
+		font-size: 14px;
+		line-height: 25px;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.yao-text {
+		margin: 25vh auto 0;
+	}
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait){
+
+}

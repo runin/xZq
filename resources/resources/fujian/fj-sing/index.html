@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>唱吧唱吧</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+	
+</head>
+<body>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+	<section class="container">
+		<a href="#" data-collect="true" class="index-join"
+			   data-collect-flag="fj-sing-rule"
+			   data-collect-desc="福建-唱吧-首页-互动" id="index-join">
+		</a>
+	   	<div class="countdown none" id="index-time">
+				<span class="countdown-tip"></span>
+				<span class="detail-countdown"></span>
+		</div>
+	</section>
+
+	<footer>
+		<p class="copyright"></p>
+		<div id="div_subscribe_area" class="div_subscribe_area_class"></div>
+		<div class="tab-div bounceInUp">
+			<a href="#" data-collect="true" class="btn-rule"
+			   data-collect-flag="fj-sing-rule"
+			   data-collect-desc="福建-唱吧-首页-活动规则" id="btn-rule">查看活动规则</a>
+			<a href="#" data-collect="true" class="index-record"
+			   data-collect-flag="fj-sing-index-prize-record"
+			   data-collect-desc="福建-唱吧-首页-中奖纪录" id="index-record">查看中奖纪录</a>
+		</div>
+	</footer>
+	<section class="modal none" id="yaoyiyao">
+		<div class="yaoyiyao-dialog">
+		<a href="#" class="btn-close" data-collect="true" data-collect-flag="tv-fj-sing-dialog-yaoyiyao-close-btn" data-collect-desc="摇一摇弹层-关闭按钮" id="yao-close"></a>	
+		<a href="#" class="ddtj" id="ddtj" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+	    <div class="yao-content">
+				<img src="./images/yao-bg.png" class="yao-bg">
+	       	</div>
+	       <p class="countdown">
+		            <span class="countdown-tip"> </span> 
+		            <span class="detail-countdown"> </span>  
+           	</p>
+	       <p class="yao-cool-tips none"><span>姿势不对，再来一次</span></p>
+		</div>
+		<a href="#" class="back-index" data-collect="true" data-collect-flag="tv-fj-sing-dialog-yaoyiyao-back-index" data-collect-desc="摇一摇弹层-返回首页" id="yao-back-index">返回首页</a>	
+	</section>
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/plugins/common.js"></script>
+    <script src="./js/plugins/shake.js"></script>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script>
+	<script src="./js/app/lottery.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

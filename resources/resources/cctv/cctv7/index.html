@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>美丽乡村过大年</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+    <div class="main" data-margin="0">
+        <section class="cover">
+  <header class="head-logo"><span class="cctv-logo"></span><a href="javascript:void(0);" id="btn-reserve" class="appointment none">预约节目</a></header>
+  <section class="holiday-partake">
+    <div class="holiday-logo"></div>
+    <div class="partake-btn">
+      <a href="javascript:void(0);" class="get-involved none" id="stat-btn" >活动没开始</a>
+      <a href="#" class="btn-rule">活动规则</a></div>
+  </section>
+    </div>
+    <!--活动参加方式-->
+    <section class="modal" style="display: none;">
+    <div class="activities">
+    <img src="images/activities-title.jpg" />
+    <section class="activities-con">
+      <ul>
+        <li>1.打开电视收看CCTV7美丽乡村过大年</li>
+        <li>2.打开微信进入"发现"打开“摇一摇”</li>
+        <li>3.选择“电视”，对着电视摇一摇</li>
+        <li>即有丰厚互动大奖等着</li>
+      </ul>
+    </section>
+    <a href="lottery.html" class="activities-btn">马上就去</a>
+  </div>
+    </section>
+    <!--安全页-->
+    <section class="modal" style="display: none;">
+    <div class="safety">
+    <p class="safety-text">摇得很辛苦吧，您小歇一 会儿，和家人一起聊聊家常， 看看美丽乡村过大年吧！</p>
+    <a href="lottery.html" class="activities-btn">马上就去</a>
+   </div>
+    </section>
+  <section class="main-contain">
+
+    <header class="head-logo"><span class="cctv-logo"></span>
+
+    </header>
+  <!--打开摇宝箱-->
+  <section class="magic-box-p" id="magic-box">
+   <a href="javascript:void(0);" id="my-award" class="appointment none">我的奖品</a>
+    <div class="magic-box-title"></div>
+    <a href="###" class="click-open">点击开启</a>
+    <div class="magic-box"><em></em><i></i><i></i><i></i></div>
+    <p class="provide">奖品由湖南欧林雅服饰提供</p>
+  </section>
+  <!--中奖-->
+  <section class="trophy" id="trophy-box">
+    <div class="trophy-con">
+      <p class="prosit-trophy">恭喜您！获得由“湖南欧林雅 服饰”提供的<span class="trophy-award"></span>奖品</p>
+      <p class="trophy-img" id="trophyimg"></p>
+      <p class="spend-psw"></p>
+      <ul class="trophy-form">
+        <li><label>领奖姓名：</label><span><input name="" type="text" class="text-a" id="text-name" /></span></li>
+        <li><label>手机号码：</label><span><input name="" type="tel" class="text-a" id="text-hpone" /></span></li>
+        <li class="p-address"><label>邮寄地址：</label><span><input name="" type="text" class="text-a" id="text-address" /></span></li>
+      </ul>
+    </div>
+    <a href="javascript:void(0)" class="btn-receive">立即领取</a>
+      <section class="copyright-receive">
+      <p>页面由CCTV7提供 & 新掌趣科技制作<br /> powered by holdfun.cn</p>
+  </section>
+  </section>
+  <!--未中奖-->
+  <section class="trophy" id="none-winners">
+    <div class="trophy-con">
+      <p class="prosit-trophy">很遗憾这次没中奖。</p>
+      <p class="thanks"> <img src="images/2015happy.png" alt="happy new year" /></p>
+      <p class="prosit-trophy-b">3分钟之后还有机会，iPhone6大奖等你拿。</p>
+     
+    </div>
+    <a href="javascript:void(0)" class="btn-receive-black">返回</a>
+  </section>
+  <!--下次摇宝箱-->
+  <section class="magic-box-p magic-next" id="magic-countdown">
+    <a href="javascript:void(0);" id="my-award2" class="appointment none">我的奖品</a>
+    <div class="remind">湖南欧林雅服饰提醒您</div>
+    <p class="distance-time">距离下次摇宝箱还有</p>
+    <!--时间-->
+    <div class="countdown"></div>
+    <p class="prize-description">每期有两部iPhone 6大奖，还有最高300元话费充值卡等你拿</p>
+  
+  </section>
+
+</section>
+
+
+    <section class="copyright">
+     <p>页面由CCTV7提供 & 新掌趣科技制作<br /> powered by holdfun.cn</p>
+    </section>
+
+    <section id="share_wrapper" class="share-wrapper none">
+      <img alt="分享到朋友圈" src="./images/icon-share.png">
+      <section class="share-wrapper-bg"></section>
+   </section>
+    </div>
+
+    <script src="js/zepto.min.js" type="text/javascript"></script>
+    <script src="js/zepto.cookie.min.js" type="text/javascript"></script>
+    <script src="js/md5.js" type="text/javascript"></script>
+    <script src="js/weixinapi.js" type="text/javascript"></script>
+    <script src="js/config.js" type="text/javascript"></script>
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+    <script src="http://yaotv.qq.com/c/=/shake_tv/include/js/jsapi_authorize.js,/shake_tv/include/js/jsapi_subscribe.js"></script>
+     <script src="js/wx_api_base.js" type="text/javascript"></script>
+     <script src="js/common.js" type="text/javascript"></script>
+     <script src="js/share.js" type="text/javascript"></script>
+
+     <script src="js/dialog.js" type="text/javascript"></script>
+     <script src="js/countdown/countdown.min.js" type="text/javascript"></script>
+     <script src="js/index.js" type="text/javascript"></script>
+ 
+
+</body>
+</html>

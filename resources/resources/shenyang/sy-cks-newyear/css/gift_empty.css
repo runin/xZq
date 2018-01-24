@@ -1,0 +1,40 @@
+body {
+	background: #EDEDED;
+}
+a,a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.main {
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-size: 15px;
+	text-align: center;
+}
+.tips {
+    font-size: 17px;
+	
+    color: #FA8F1B;
+    line-height: 34px;
+    margin-top: 30px;
+}
+.cover {
+    margin-top: 40px;
+	
+}
+.cover img {
+    width: 270px;
+	
+}
+.btn {
+    border: 1px solid #FA8F1B;
+	
+    border-radius: 5px;
+    width: 130px;
+    height: 38px;
+    line-height: 38px;
+    display: block;
+    margin: 33px auto;
+    color: #fff;
+    letter-spacing: 5px;
+}

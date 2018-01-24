@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" viewBox="0 0 752 1588" xml:lang="en" prefix="dcterms: http://purl.org/dc/terms/" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title property="dcterms:title">Apple iPhone 5s Portrait Template</title>
+  <desc property="dcterms:description">The outline of an Apple iPhone 5s device in portrait-orientation.</desc>
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+      
+    </rdf:RDF>
+  </metadata>
+  <defs>
+    <linearGradient id="fill_gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#333333"/>
+      <stop offset="1" stop-color="#111111"/>
+    </linearGradient>
+    <linearGradient id="stroke_gradient" x1="5%" y1="5%" x2="95%" y2="95%">
+			<stop offset="0%" stop-color="#999999"/>
+			<stop offset="5%" stop-color="#666666"/>
+			<stop offset="100%" stop-color="#555555"/>
+    </linearGradient>
+    <linearGradient id="text_gradient" x1="15%" y1="15%" x2="85%" y2="85%">
+      <stop offset="0%" stop-color="#999999"/>
+      <stop offset="40%" stop-color="#CCCCCC"/>
+      <stop offset="50%" stop-color="#EEEEEE"/>
+      <stop offset="60%" stop-color="#CCCCCC"/>
+      <stop offset="100%" stop-color="#999999"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="740" height="1576" rx="104" ry="104" fill="url(#fill_gradient)" stroke="url(#stroke_gradient)" stroke-width="12"/>
+  <rect x="48" y="218" width="656" height="1152" fill="#000000"/>
+  <a xlink:href="http://www.holdfun.cn">
+    <text x="376" y="1478" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="bold" fill="url(#text_gradient)" stroke="#CCCCCC" stroke-opacity="0.2">www.holdfun.cn</text>
+  </a>
+</svg>

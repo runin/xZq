@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+	background: #45aca9 url(../images/bg.jpg) no-repeat top center;
+	background-size: cover;
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  overflow: auto;
+}
+header a {
+  color: #FFF;
+  display: block;
+  border: 1px solid #FFF;
+  font-size: 13px;
+  text-align: center;
+  width: 72px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 20px;
+  margin: 6px auto 0;
+  position: absolute;
+  right: 16px;
+  top: 9px;
+}
+header .tvlogo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 26%;
+  height: 50px;
+  background: url(../images/tvlogo.png) no-repeat;
+  background-size: 100% auto;
+}
+.main{
+  padding-top: 28%;
+}
+.main .logo{
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+.lottery-info {
+  font-size: 16px;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 4px;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	clear: both;
+  text-align: center;
+}
+footer .copyright {
+  font-size: 12px;
+  line-height: 13px;
+	position: static;
+	color: #FFF;
+  opacity: 1;
+  margin-bottom: 3px;
+  text-shadow: 0 0 2px rgba(0,0,0,.6);
+}
+.main .countdown {
+    width: 100%;
+    text-align: center;
+    padding-top: 6%;
+    color: #FFF;
+}
+.main .countdown .state2 {
+    font-size: 16px;
+    color: #FFF;
+}
+.main .time-box {
+    width: 80%;
+    margin: 0 auto;
+}
+.main .time-box span {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.4);
+}
+.main .time-box .time {
+    width: 25%;
+    background: url(../images/countdown-bg.png) no-repeat;
+    background-size: 100%;
+    color: #000;
+}
+.main .time-box .dot {
+  color: #FFF;
+  vertical-align: top;
+}
+.paper-box {
+  position: absolute;
+  width: 100%;
+  height: 140px;
+  bottom: 25%;
+  left: 0;
+  overflow-x: hidden;
+}
+.paper-box .paper-mask {
+  position:absolute;
+  width:100%;
+  height:140px;
+  top:0;
+  left:10%;
+  background:url(../images/paper-mask.png) no-repeat;
+  background-size:100% auto;
+  z-index: 10;
+}
+.paper-box .paper-mask:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  width: 20%;
+  height: 50%;
+  background: url(../images/car.png) no-repeat;
+  background-size: 100% auto;
+}
+.paper-box .paper-word {
+  position:absolute;
+  width:100%;
+  height:140px;
+  top:0;
+  left:0;
+  background:url(../images/paper-word.png) no-repeat;
+  background-size:100% auto;
+  z-index: 9;
+}
+.paper-box .paper-cover {
+  position:absolute;
+  width:100%;
+  height:140px;
+  top:0;
+  left:10%;
+  background:url(../images/paper-cover.png) no-repeat;
+  background-size:100% auto;
+  z-index: 8;
+}
+.paper-box .paper-back {position:absolute;
+  width:100%;
+  height:140px;
+  overflow:hidden;
+  background:url(../images/paper-back.png) no-repeat;
+  background-size:100% auto;
+  top:0;
+  left:0;
+  line-height:50px;
+  text-align:center;
+}
+.container1 > div, .container2 > div, .container3 > div {
+  background-color: #FFF;
+}
+.act-info {
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  font-size: 22px;
+  text-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+footer {
+  position: absolute;
+    width: 100%;
+    left: 0;
+  bottom: 0;
+    z-index: 50;
+}
+footer img {
+    display: block;
+}
+footer .tab {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background-color: #61941b;
+}
+footer .tab a, footer .tab a:visited, footer .tab span {
+    display: inline-block;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 32px;
+}
+footer .tab a:first-child {
+    width: 49%;
+    float: left;
+}
+footer .tab a:last-child {
+    width: 49%;
+    float: right;
+}
+footer #div_subscribe_area {
+    overflow:hidden;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .main{
+    padding-top: 20%;
+  }
+  .paper-box {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    bottom: 28%;
+    left: 0;
+    overflow-x: hidden;
+  }
+}

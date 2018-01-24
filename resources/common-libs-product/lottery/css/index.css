@@ -1,0 +1,23 @@
+.container {
+	position: relative;
+	text-align: center;
+	margin-top: 20px;
+}
+.container canvas {
+    width: 270px;
+    height: 270px;
+}
+.container .lottery-btn {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -59px;
+	margin-top: -59px;
+	display: block;
+	width: 118px;
+	height: 118px;
+}
+.lottery-btn img {
+	width: 117px;
+	height: 117px;
+}

@@ -1,0 +1,62 @@
+body {
+  background: url(../images/index-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.logo{
+  margin: 2% 3% 5px;
+  width: 32%;
+}
+.go {
+  width: 39%;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 28%;
+  left: 0;
+  right: 0;
+}
+.plane{
+  width: 100px;
+  display: block;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  max-height: 76px;
+  width: 100%; }
+#div_subscribe_area {
+  height: 50px;
+  overflow:hidden;
+}
+.opacity{
+  -webkit-animation: opacity;
+  -webkit-transition-timing-function: ease-in;
+  -webkit-animation-delay: .8s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  opacity: 0;
+}
+@-webkit-keyframes opacity{
+  10%{
+    opacity: .1;
+  }
+  30%{
+    opacity: .3;
+  }
+  50%{
+    opacity: .5;
+  }
+  70%{
+    opacity: .7;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}

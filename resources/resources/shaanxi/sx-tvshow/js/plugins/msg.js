@@ -1,0 +1,11 @@
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/0q.jpg' class='c_head_img_img' /></div><div class='comment'>这个演员太逗了，赞赞赞</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/1q.jpg' class='c_head_img_img' /></div><div class='comment'>赞赞赞，32个赞！</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/2q.jpg' class='c_head_img_img' /></div><div class='comment'>陕西卫视的电视剧太棒了</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/3q.jpg' class='c_head_img_img' /></div><div class='comment'>怎么还没中奖呢，怎么还没中奖呢</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/4q.jpg' class='c_head_img_img' /></div><div class='comment'>节目好好看啊~~</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/5q.jpg' class='c_head_img_img' /></div><div class='comment'>感觉比央视的还好看</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/6q.jpg' class='c_head_img_img' /></div><div class='comment'>演员们都太有才了</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/7q.jpg' class='c_head_img_img' /></div><div class='comment'>导演好厉害</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/8q.jpg' class='c_head_img_img' /></div><div class='comment'>真的好棒</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/9q.jpg' class='c_head_img_img' /></div><div class='comment'>摇一摇加油</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/7q.jpg' class='c_head_img_img' /></div><div class='comment'>激动啊</div></div>");

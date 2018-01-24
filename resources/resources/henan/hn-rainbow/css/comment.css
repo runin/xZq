@@ -1,0 +1,248 @@
+﻿
+.main
+{
+    overflow: hidden;
+}
+
+.copyright
+{
+    color: White;
+    font-size: 14px;
+    line-height: 1.2em;
+    z-index:9;
+}
+.barrage-wrapper
+{
+    background-color: transparent;
+}
+.comments
+{
+    overflow: hidden;
+      z-index:99;
+}
+.send_comment
+{
+    width: 90%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px;
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-top: 30%;
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+@media (max-height:480px)
+{
+    .send_comment
+    {
+        margin-top: 25%;
+    }
+}
+
+
+.send_comment
+{
+    padding: 2px;
+}
+
+.send_hear
+{
+    width: 45px;
+    height: 45px;
+    background: url('../images/avatar.jpg') no-repeat center center;
+    background-size: contain;
+    border-radius: 100%;
+    float: left;
+}
+.send_btn
+{
+    float: right;
+    width: 80px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50px;
+    background-color: #0189EC;
+    color: White;
+    text-align: center;
+    position: relative;
+    z-index: 9999;
+}
+.send_textdiv
+{
+    display: block;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 45px;
+    padding-right: 80px;
+    border-radius: 45px;
+}
+
+.send_textdiv input
+{
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    margin: 0px;
+    display: block;
+    padding-left: 5px;
+    background-color: transparent;
+    color: White;
+}
+
+
+
+/*******评论******/
+.bitem
+{
+    border: 1px solid white;
+    border-radius: 45px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.bitem .bitem-img
+{
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+}
+.bitem .bitem-content
+{
+    background-color: transparent;
+    line-height: 40px;
+    margin-top: 0px;
+}
+.bitem .bitem-img
+{
+    padding: 0px;
+}
+
+/******倒计时******/
+.downcount
+{
+    min-width: 150px;
+    max-width: 160px;
+    height: 34px;
+    background: url('../images/dbg.png') no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: White;
+}
+.downcount img
+{
+    display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 3px;
+    margin-bottom: 2px;
+    margin-right: 3px;
+    overflow: hidden;
+    margin-top: 2px;
+}
+
+.downcount span
+{
+    display: inline-block;
+    float: left;
+    background: url('../images/sumbg.png') no-repeat center center;
+    background-size: 100% 100%;
+    min-width: 25px;
+    max-width: 42px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 4px;
+    line-height: 25px;
+    padding: 0 2px;
+    text-align: center;
+    color: #fec836;
+    overflow: hidden;
+}
+
+.downcount span + span
+{
+    margin-left: 2px;
+}
+.downcount > span:nth-child(1)
+{
+    background: none;
+    color: White;
+}
+
+.downcount > span:nth-child(3)
+{
+    background: none;
+    color: White;
+}
+.downcount > span:nth-child(5)
+{
+    background: none;
+    color: White;
+}
+.gotolottery
+{
+    width: 112px;
+    height: 33px;
+    background: url('../images/gotolottery.png') no-repeat center center;
+    background-size: contain;
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+.play_game
+{
+    width: 112px;
+    height: 33px;
+    background: url('../images/playgame.png') no-repeat center center;
+    background-size: contain;
+    position:absolute;
+    top:50px;
+    right:10px;
+    text-align:center;
+    line-height:33px;
+}
+@media (max-height:480px)
+{
+  .play_game
+  {
+      top:45px;  
+  }  
+}
+
+.yaoimg
+{
+ width:32px;  
+ margin-left:2px;  
+ -webkit-animation: turn 0.5s infinite ease-in;
+  animation: turn 0.5s infinite ease-in;
+   
+}
+
+@-webkit-keyframes turn{
+  0%{
+     -webkit-transform:rotate(0deg);
+  }
+ 25%{
+    -webkit-transform:rotate(20deg);
+  }
+  50%{
+     -webkit-transform:rotate(30deg);
+  }
+  75%{
+    -webkit-transform:rotate(20deg);
+  }
+  100%{
+   -webkit-transform:rotate(0deg);
+  } 
+}

@@ -1,0 +1,66 @@
+body {
+    background: url(../images/user-bg.jpg) repeat-y center 0;
+    background-size: cover;
+}
+.main {
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-size: 15px;
+}
+.cover {
+    height: 208px;
+    text-align: center;
+}
+.cover img {
+    height: 208px;
+}
+.tips {
+    color: #fff;
+
+    font-size: 18px;
+    line-height: 33px;
+    padding: 12px 30px 10px;
+}
+.detail {
+    padding: 0px 30px 15px;
+    line-height: 26px;
+    color: #fff;
+}
+.ctrl {
+    border-top: 1px solid #E5E5E5;
+
+    padding-top: 22px;
+    text-align: center;
+    margin: 0 9px 20px;
+}
+.ctrl .btn {
+    display: inline-block;
+    vertical-align: middle;
+
+    background: #AD0067;
+    border-radius: 5px;
+    width: 140px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.ctrl .btn-view {
+
+}
+.ctrl .btn-share {
+    margin-right: 0;
+
+    background: #fff;
+    border: 1px solid #FE9307;
+    color: #FE9307;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+}
+.copyright{
+    position: relative;
+}

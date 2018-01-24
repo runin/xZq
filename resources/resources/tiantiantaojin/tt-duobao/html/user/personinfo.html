@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8" http-equiv="content-type" content="text/html" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Pragram" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="stylesheet" href="../../css/core.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/personinfo.css" />
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+    <title>个人资料</title>
+</head>
+<body>
+    <div class="info-info">
+        <div class="label head">
+            <p>头像</p>
+            <img src="" />
+        </div>
+        <div class="label ID">
+            <p>ID</p>
+            <span></span>
+        </div>
+        <div class="label nick">
+            <p>昵称</p>
+            <span></span>
+        </div>
+        <div class="label phone">
+            <p>手机号码</p>
+            <!--<span>12311111111</span>-->
+            <a href="#" class="addph" data-collect="true"
+               data-collect-flag="info-phone" data-collect-desc="个人信息-填写手机号">点击填写</a>
+        </div>
+        <div class="label address">
+            <p>我的收货地址</p>
+            <span>></span>
+            <a href="#" class="addadds" data-collect="true"
+               data-collect-flag="info-phone" data-collect-desc="个人信息-填写手机号"></a>
+        </div>
+        <div class="info-phone">
+            <div class="phone-head">
+                <a href="#" class="phone-cancel" data-collect="true"
+                   data-collect-flag="info-phone-cancel" data-collect-desc="个人信息-填写手机号">取消</a>
+                <p>修改手机号码</p>
+                <a href="#" class="phone-save" data-collect="true"
+                   data-collect-flag="info-phone-save" data-collect-desc="个人信息-填写手机号">保存</a>
+            </div>
+            <div class="phone-info">
+                <div class="phone-number">
+                    <p>手机号码</p>
+                    <input class="phone-number-input" placeholder="请输入手机号码"/>
+                </div>
+                <!--<div class="phone-chknumber">-->
+                    <!--<p>验证码</p>-->
+                    <!--<input class="phone-chknumber-input" placeholder="请输入验证码"/>-->
+                    <!--<a href="#" class="phone-chknumber-btn" data-collect="true"-->
+                       <!--data-collect-flag="info-phone-chknumber" data-collect-desc="个人信息-填写手机号">获取验证码</a>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn-backtohome" data-collect="true"
+       data-collect-flag="btn-backtohome" data-collect-desc="按钮-回到个人中心"></a>
+
+    <script src="../../js/config.js" type="text/javascript"></script>
+    <script src="../../js/plugins/zepto.min.js" type="text/javascript"></script>
+    <script src="../../js/plugins/zepto.cookie.min.js" type="text/javascript"></script>
+    <script src="../../js/plugins/zepto.selector.min.js" type="text/javascript"></script>
+    <script src="../../js/plugins/zepto.touch.js" type="text/javascript"></script>
+    <script src="../../js/plugins/zepto.fx.min.js" type="text/javascript"></script>
+
+    <script src="../../js/plugins/md5.js" type="text/javascript"></script>
+    <script src="../../js/plugins/core.js" type="text/javascript"></script>
+    <script src="../../js/plugins/sha1.min.js" type="text/javascript"></script>
+    <script src="../../js/jssdk.js" type="text/javascript"></script>
+    <script src="../../js/authorize_userinfo.js" type="text/javascript"></script>
+    <script src="../../js/app/personinfo.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

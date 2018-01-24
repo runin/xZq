@@ -1,0 +1,55 @@
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	width: 125px;
+	height: 34px;
+	line-height: 34px;
+	border-radius: 38px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+}
+.btn.btn-disabled {
+	background: #787878;
+}
+
+.main {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	overflow: hidden;
+}
+.main * {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.copyright {
+	font-size: 12px;
+	width: 100%;
+	line-height: 20px;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	z-index: 0;
+	color: #999;
+}
+
+.arrow-box {
+	position: relative;
+}
+.arrow-box:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(149, 88, 43, 0);
+	border-right-color: #95582B;
+	border-width: 8px;
+	margin-top: -8px;
+}

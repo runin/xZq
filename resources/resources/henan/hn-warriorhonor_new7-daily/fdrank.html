@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>勇士的荣耀</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/fdrank.css" />
+</head>
+<body class="body-vote">
+    <header>
+        <div class="headimg-box">
+            <div class="player-headimg">
+                <img src="./images/avatar.png" />
+            </div>
+            <div class="player-info">
+                <p class="player-name"></p>
+                <div class="ft-gold">
+                    <div><img src="images/winnumb-bg.png" /><p class="ft-win">0胜</p></div>
+                    <div><img src="images/losenumb-bg.png" /><p class="ft-lose">0负</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-box">
+            <div class="ft-gold">
+                <div><img src="images/battle-gold.png" /><p>战斗币</p></div>
+                <span class="gold">0</span>
+            </div>
+            <!--<a id="info" class="info" data-collect="true" data-collect-flag="info" data-collect-desc="填写资料"></a>-->
+            <span>第100+名</span>
+        </div>
+    </header>
+    <section class="switch">
+        <div class="switch-btn-box">
+            <a class="rank-all" data-collect="true" data-collect-flag="rank-all" data-collect-desc="排行总榜">
+                <img src="images/fd-icon-m.png" />战绩排行</a>
+            <a class="my-card" data-collect="true" data-collect-flag="lock-card" data-collect-desc="未解锁卡牌">
+                <img src="images/fd-icon-l.png" />好友排行</a>
+            <a class="lock-card" data-collect="true" data-collect-flag="lock-card" data-collect-desc="未解锁卡牌">
+                <img src="images/fd-icon-r.png" />个人战报</a>
+        </div>
+        <p class="switch-bottom">爬榜送官方周边啦,详情点此查看</p>
+    </section>
+    <div class="body">
+        <div class="body-rankall">
+            <div class="body-rankall-body"></div>
+            <a class="open-fillinfo" data-collect="true" data-collect-flag="open-fillinfo" data-collect-desc="填写信息按钮">填写信息</a>
+        </div>
+        <div class="body-my-card none"></div>
+        <div class="body-lock-card none">
+            <!--<div class="rank">-->
+                <!--<div class="head">-->
+                    <!--<img src="./images/icon-win.png" />-->
+                <!--</div>-->
+                <!--<div class="rank-self-time"><p>22:45:41</p></div>-->
+                <!--<div class="rank-self-vs"><p>Doldrums VS 薛小天使</p></div>-->
+                <!--<div class="rank-share" data-fn="薛小天使" data-win="1"><img src="images/icon-share.png" /></div>-->
+            <!--</div>-->
+            <!--<div class="rank">-->
+                <!--<div class="head">-->
+                    <!--<img src="./images/icon-lose.png" />-->
+                <!--</div>-->
+                <!--<div class="rank-self-time"><p>22:45:41</p></div>-->
+                <!--<div class="rank-self-vs"><p>Doldrums VS 薛小天使</p></div>-->
+                <!--<div class="rank-share" data-fn="薛小天使" data-win="0"><img src="images/icon-share.png" /></div>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <section class="share none">
+        <img src="images/for-win.png" />
+        <p></p>
+    </section>
+    <section class="user-info none">
+        <div class="user-info-box">
+            <p>请准确填写信息<br/>以便工作人员联系</p>
+            <input class="user-name" type="text" placeholder="姓名" maxlength="20" />
+            <input class="user-tel" type="tel" placeholder="电话" maxlength="11" />
+            <input class="user-addr" type="text" placeholder="地址" maxlength="60" />
+            <a id="info-text" class="info-text" data-collect="true" data-collect-flag="info-text" data-collect-desc="提交资料">提&nbsp&nbsp交</a>
+        </div>
+    </section>
+    <section class="gift-info none">
+        <div class="gift-info-box">
+            <p></p>
+        </div>
+    </section>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="js/config.js"></script>
+
+    <script src="js/zepto.base.min.js"></script>
+
+    <script src="js/sha1.min.js"></script>
+    <script src="js/zepto.picLazyLoad.min.js"></script>
+    <!--<script src="js/wx_api_userinfo.js"></script>-->
+    <script src="js/authorize_userinfo.js"></script>
+
+    <!--<script src="js/common.js"></script>-->
+    <script src="js/common_old.js"></script>
+
+    <script src="js/app/dialog.js"></script>
+    <script src="js/app/fdrank.js"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=56058409" charset="UTF-8"></script>
+</body>
+</html>

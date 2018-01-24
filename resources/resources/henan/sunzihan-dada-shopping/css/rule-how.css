@@ -1,0 +1,33 @@
+body {
+  background: #F4F4F4; }
+
+.btn {
+  display: block;
+  height: 37px;
+  line-height: 37px;
+  background: #FF9B33;
+  color: #FFF;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.btn-back {
+  width: 45%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+  margin: 0 auto;
+}
+
+.items {
+  margin: 40px 15px;
+}
+.items h1 {
+  font-size: 17px;
+  color: #333333;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}

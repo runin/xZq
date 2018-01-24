@@ -1,0 +1,196 @@
+.bg
+{
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+.page
+{
+    display: none;
+}
+.slogon
+{
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 20px;
+    position: relative;
+}
+.btn-wrapper
+{
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    width: 100%;
+}
+.main-btn
+{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+#success_page .btn-wrapper
+{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+#success_page .main-btn
+{
+    width: 55%;
+    margin: 0 auto;
+    display: block;
+}
+#success_page .slogon
+{
+    width: 90%;
+}
+#success_page .bg
+{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 5%;
+    display: none;
+}
+
+#fail_page .slogon
+{
+    width: 90%;
+}
+
+.dialog-wrapper
+{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+}
+.dialog-wrapper .dialog-bg
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background: black;
+    opacity: 0.6;
+}
+.dialog
+{
+    position: relative;
+    z-index: 102;
+    width: 80%;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(bottom, #eb6b0d, #f28d0a);
+    border: 1px solid #f66005;
+    border-radius: 5px;
+    top: 10%;
+    padding-top: 20px;
+}
+.dialog h2
+{
+    font-size: 18px;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.dialog .dialog-form-wrapper
+{
+    overflow: hidden;
+    width: 90%;
+    margin: 20px auto 0;
+}
+.dialog .dialog-form-wrapper .dialog-form-left
+{
+    float: left;
+    width: 70px;
+}
+.dialog .dialog-form-wrapper .dialog-form-left label
+{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.dialog .dialog-form-wrapper .dialog-form-right
+{
+    margin-left: 70px;
+}
+.dialog .dialog-form-wrapper .dialog-form-right input
+{
+    height: 30px;
+    padding: 2px 5px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #eb6c0d;
+    width: 100%;
+    color: #272727;
+    font-size: 14px;
+}
+.dialog .dialog-submit-wrapper
+{
+    border-top: 1px solid #f7910d;
+}
+.dialog .dialog-submit-inner-wrapper
+{
+    padding: 20px 0;
+    border-top: 1px solid #f26708;
+}
+.dialog .dialog-submit-btn
+{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.dialog .dialog-submit-btn:hover
+{
+    opacity: 0.6;
+}
+.dialog .dialog-close-btn
+{
+    width: 38px;
+    height: 38px;
+    background: #282828;
+    color: white;
+    text-align: center;
+    line-height: 38px;
+    font-size: 24px;
+    position: absolute;
+    top: -39px;
+    right: 1px;
+    font-family: Helvetica,Arial,Verdana;
+}
+.dialog .dialog-close-btn:hover
+{
+    background: #3C3C3C;
+}
+#slogon-success-p
+{
+    width: 280px;
+    line-height: 1.5em;
+    position: absolute;
+    left: 50%;
+    margin-left: -140px;
+    top: 30%;
+}
+#slogon-success-tip
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    line-height: 1.5em;
+    vertical-align: middle;
+    text-align: center;
+    color: #ff7f03;
+    font-size: 25px;
+}

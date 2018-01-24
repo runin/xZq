@@ -1,0 +1,211 @@
+body {
+	overflow: hidden;
+}
+.main {
+	margin: 0 auto;
+	color: #fff;
+	overflow: hidden;
+	padding-top: 80px;
+}
+.main a {
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.main .logo {
+    display: block;
+    width: 80%;
+    margin: 5% auto 5%;
+}
+.dst-logo{
+    background: url(../images/logo.png) no-repeat 0 0;
+    background-size: 100% auto;
+    width: 23%;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.apply{
+    background: url(../images/activity.png) 0 0 no-repeat;
+    background-size: 100%;
+    width: 45%;
+    height: 150px;
+    display: block;
+    margin: 25% auto 0;
+}
+.tip{
+    display: block;
+    width: 80%;
+    margin: 3% auto;
+}
+.tab {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(3,19,64,.8);
+    border-top: 1px solid #4a84ff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform-style: preserve-3d !important;
+    -webkit-backface-visibility: hidden;
+}
+.tab a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #0166da;
+    text-align: center;
+    height: 100%;
+    line-height: 25px;
+    -webkit-backface-visibility: hidden;
+    width: 49%;
+    border-right: 1px solid #4a84ff;
+}
+.record{
+    border-right: none!important;
+}
+.copyright {
+    color: #969eb5;
+    position: static;
+    height: 30px;
+}
+#div_subscribe_area {
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	position: relative;
+	z-index: 9999;
+}
+
+.copyright2 {
+	font-size: 10px;
+	/*position: absolute;*/
+	position: relative;
+	color: #cc9900;
+	height: 20px;
+	line-height: 20px;
+	/*一键关注调整*/
+	/*bottom: 86px;*/
+	text-align: center;
+	clear: both;
+	width: 100%;
+}
+.follow-box {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	zoom: 1;
+	clear: both;
+}
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1100px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1200px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .main .logo {
+        width: 70%;
+        margin: 2% auto 2%;
+    }
+    .apply {
+        width: 35%;
+        height: 100px;
+        display: block;
+    }
+    .tip{
+        display: block;
+        width: 80%;
+        margin: 3% auto;
+    }
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 570px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .apply{
+        width: 45%;
+        height: 160px;
+    }
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:3) {
+}

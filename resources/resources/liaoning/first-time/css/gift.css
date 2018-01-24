@@ -1,0 +1,62 @@
+body {
+    background: url("../images/user-top.jpg") no-repeat 0 0,url("../images/new-bottom.jpg") no-repeat 0px bottom, #F8F8F8 repeat-y 0 0;
+    background-size: contain;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.main {
+    margin: 35px auto 50px;
+    font-size: 15px;
+}
+.gift-timeline {
+    width: 88%;
+    margin: 0 auto;
+}
+.gift-timeline li {
+    margin-top: 17px;
+    background: #fff;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    position: relative;
+}
+li h2{
+    border-radius: 8px 0 0 8px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    background: url(../images/gift-bg.jpg) no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 23%;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+}
+li h3 {
+    color: #525252;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+}
+.btn-loadmore{
+    background: #D2CCC7;
+}
+a.btn-back{
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+    left: 0;
+    color: #fff;
+}
+a:hover{
+    color: #fff;
+}
+.copyright{
+    color: #fff;
+}

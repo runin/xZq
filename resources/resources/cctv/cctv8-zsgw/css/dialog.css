@@ -1,0 +1,273 @@
+/* 通用弹层样式_S */
+.modal {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.modal:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    z-index:99;
+}
+.modal .dialog {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    margin-bottom: 50px;
+    z-index: 999;
+    background: url(../images/dialog-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.modal .dialog .btn-dialog-close {
+    display: inline-block;
+    position: absolute;
+    top: -1%;
+    right: -3%;
+    width: 40px;
+    height: 40px;
+    background: url(../images/btn-close.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999999999;
+}
+.modal .dialog .dialog-content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 999;
+    text-align: center;
+    padding: 6%;
+}
+.modal .dialog .dialog-content .icon-congrats {
+    margin: 0 auto 2%;
+    text-align: center;
+    color: #fcff00;
+    display: block;
+}
+.modal .dialog .dialog-content .award-luckTips {
+    width: 92%;
+    margin: 5px auto 1%;
+    font-size: 16px;
+    overflow: hidden;
+    text-align: center;
+}
+.modal .dialog .dialog-content .award-luckTips img, .modal .dialog .dialog-content .award-img {
+    margin: 0 auto;
+}
+.modal .dialog .dialog-content .award-nameTips {
+    width: 80%;
+    margin: 0 auto 2%;
+    font-size: 26px;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+.modal .dialog .dialog-content .award-keyTips {
+    width: 100%;
+    margin: 0 auto 2%;
+    font-size: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+.modal .dialog .dialog-content .input-box {
+    width: 80%;
+    font-size: 15px;
+    color: #FFF;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+.modal .dialog .dialog-content .input-box .label {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.modal .dialog .dialog-content .input-box p {
+    width: 100%;
+}
+.modal .dialog .dialog-content .input-box span {
+    display: inline-block;
+}
+.modal .dialog .dialog-content .input-box input {
+    display: inline-block;
+    width: 80%;
+    padding: 3px 8px;
+    line-height: 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ffdfa5;
+    background-color: transparent;
+    border: .5px solid #ffdfa5;
+}
+.modal .dialog .dialog-content .input-box input::-webkit-input-placeholder {
+    color: #666 !important;
+}
+.modal .dialog .dialog-content .info-box {
+    text-align: left;
+    width: 80%;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FBD873;
+    position: absolute;
+    bottom: 6%;
+    left: 10%;
+}
+.modal .dialog .btn-lottery {
+    display: block;
+    margin: 3% auto 0;
+    width: 50%;
+    font-size: 17px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: #ff950c;
+    box-shadow: 0 2px 3px #560203;
+    border-radius: 50px;
+    text-align: center;
+}
+.modal .dialog .dialog-content .btn-lottery-box {
+    width: 100%;
+    margin-top: 6%;
+}
+.modal .dialog .dialog-content .btn-lottery-box .btn-lottery {
+    display: inline-block;
+    margin: 0 6px;
+}
+.modal .dialog .dialog-content .award-img-box {
+    position: relative;
+    width: 100%;
+}
+.modal .dialog .dialog-content .award-img-box .award-img {
+    position: relative;
+    z-index: 2;
+}
+.modal .dialog .dialog-content .award-img-box .icon-paper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation-name: paper;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    z-index: 1;
+}
+.modal .dialog .dialog-content .icon-ok {
+    width: 52%;
+    margin: 0 auto 1%;
+}
+.modal .dialog .dialog-content .qrcode-tips {
+    font-size: 15px !important;
+    color: #FFF !important;
+    font-weight: normal !important;
+    color: #F5F5F5;
+    margin-bottom: 5%;
+}
+.modal .dialog .dialog-content .qrcode-box {
+    position: relative;
+    width: 82%;
+    margin: 0 auto 5%;
+    padding: 0 0 36px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+.modal .dialog .dialog-content .qrcode-box p {
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    left: 0;
+    bottom: 0;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #6b0001;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 6%;
+}
+/* 通用弹层样式_E */
+.shiwu-dialog .dialog-content .input-box {
+    bottom: 6%!important;
+}
+
+/* 活动规则_S */
+#rule-dialog .dialog {
+    width: 80% !important;
+    height: 55% !important;
+    top: 20% !important;
+    left: 10% !important;
+    min-height: initial !important;
+    margin-bottom: 0 !important;
+    overflow: visible;
+    color: #FFF;
+    border-radius: 6px;
+}
+#rule-dialog .dialog .btn-dialog-close {
+    display: block !important;
+    position: relative;
+    display: inline-block;
+    width: 35%;
+    height: 30px;
+    line-height: 30px;
+    background: #e7ca74;
+    margin: 2% auto;
+    border-radius: 20px;
+    color: #ab1921;
+    box-shadow: 0 0 5px #000;
+}
+#rule-dialog .dialog .dialog-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #FFF;
+}
+#rule-dialog .dialog .dialog-content .icon-rule {
+    width: 50%;
+    margin: 0 auto;
+}
+#rule-dialog .dialog .dialog-content .rule-content {
+    width: 100%;
+    height: 70%;
+    margin-top: 5%;
+    padding: 0 4%;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    word-break: break-all;
+    text-align: left;
+}
+#rule-dialog .dialog .dialog-content .rule-content * {
+    color: #FFF !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+/* 活动规则_E */
+.modal .dialog .dialog-content .input-box input::-webkit-input-placeholder {
+    color: #ffdfa5!important;
+}
+.thanks-dialog{
+    background: none!important;
+}
+.thanks-dialog .dialog-content{
+    padding: 5%!important;
+}
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}

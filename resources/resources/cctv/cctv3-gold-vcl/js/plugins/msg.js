@@ -1,0 +1,11 @@
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/0.jpg'></div>" + "我也要去参加！！！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/1.jpg'></div>" + "我家也用多力");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/2.jpg'></div>" + "刷新美食菜单啊！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/3.jpg'></div>" + "“好吃就把菜给买下”吃货的最高境界！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/5.jpg'></div>" + "厨师不易做");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/6.jpg'></div>" + "央视这次放大招了，安利《中国味道》");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/7.jpg'></div>" + "好复杂的做法");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/8.jpg'></div>" + "爱我中华，吃货都是一家");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/7.jpg'></div>" + "传家美食鉴证实录啊");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/11.jpg'></div>" + "人品爆发了，摇一次就摇到了，么么哒~");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/12.jpg'></div>" + "我的口水可以用一个成语来形容---口若悬河");

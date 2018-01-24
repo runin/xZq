@@ -1,0 +1,177 @@
+html {
+	height: 100%;
+}
+body {
+	margin: 0 auto;
+	padding: 0;
+  background: url(../images/bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+header {
+  position: absolute;
+  right: 0px;
+  top: 8px;
+  width: 22%;
+  z-index: 1;
+  background: #ef942e;
+  margin-right: 3px;
+  border-radius: 9px;
+}
+header:before {
+  top: 0;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: inherit;
+  pointer-events: none;
+  border-bottom-color: #ef942e;
+  border-width: 7px;
+  margin-left: 44px;
+  margin-top: -13px;
+}
+header a{
+  display: block;
+  width: 65px;
+  margin: 3px auto;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-size: 11px;
+  line-height: 18px;
+  border: solid 1px;
+  border-radius: 15px;
+}
+.tvlogo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: auto;
+  width: 60%;
+  z-index: 4;
+}
+.tvlogo span:first-child{
+	display: inline-block;
+	width: 45%;
+	padding-right: 5%;
+	border-right: 1px solid #bf8800;
+	vertical-align: top;
+	
+}
+.tvlogo span:last-child{
+	display: inline-block;
+	width: 50%;
+}
+.word {
+  width: 100%;
+}
+.tvlogo img, .word img {
+  max-width: 100%;
+}
+section {
+  display: inline-block;
+	position: absolute;
+	width: 100%;
+	z-index: 4;
+	bottom: 0;
+}
+
+article {
+  color: #d8d8d8;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+}
+.btn-join {
+  width: 60%;
+  height: 65px;
+  display: block;
+  margin: 16px auto 0;
+  background: url(../images/btn-join.png) no-repeat;
+  background-size: 100% auto;
+}
+.copyright {
+  height: 30px;
+  line-height: 13px;
+  color: #e0e0e0;
+  opacity: 1;
+  margin-top: 10px;
+}
+.btn-box {
+	  width: 34%;
+  margin: 2% auto 0;
+}
+.btn-box a {
+	display: inline-block;
+}
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+#div_subscribe_area {
+	height: 50px;
+	overflow: hidden;
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1100px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1200px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 550px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (device-aspect-ratio:16/9) and (device-aspect-ratio:16/10) and (device-aspect-ratio:4/3)
+and (-webkit-min-device-pixel-ratio : 0) {
+}
+
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.tvlogo {
+	  width: 50%;
+	  z-index: 4;
+	  top:4px;
+	}
+}

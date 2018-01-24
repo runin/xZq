@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=640, user-scalable=no">
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var DEFAULT_WIDTH = 640, // 页面的默认宽度
+                    ua = navigator.userAgent.toLowerCase(), // 根据 user agent 的信息获取浏览器信息
+                    deviceWidth = window.screen.width, // 设备的宽度
+                    devicePixelRatio = window.devicePixelRatio || 1, // 物理像素和设备独立像素的比例，默认为1
+                    targetDensitydpi;
+            // Android4.0以下手机不支持viewport的width，需要设置target-densitydpi
+            if (ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4) {
+                targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;
+                $('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');
+            }
+        });
+    </script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="css/common.min.css" />
+
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/lottery.css" />
+</head>
+<body>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <div class="without-container">
+        <div class="without">
+            <img class="ping-bg" src="images/ping-bg.png">
+            <img class="ping" src="images/ping.png" />
+        </div>
+    </div>
+
+    <header>
+            <section class="header">
+                <div class="tvlogo">
+                    <img src="./images/logo.png">
+                </div>
+                <a class="ctrls" id="back" data-collect="true" data-collect-flag="lottery-rule" data-collect-desc="摇奖页-返回首页按钮">返回首页 </a>
+            </section>
+            <p class="thanks-tips">太遗憾了</p>
+            <!--<img class="ping" src="images/ping.png" />-->
+        </header>
+        <section class="footer">
+            <section id="marquee" class="marquee hidden"><ul></ul></section>
+            <section class="countdown none" id="lottery-countdown">
+                <span class="countdown-tip"></span>
+                <span class="detail-countdown"></span>
+            </section>
+            <section class="fail-tips none">
+                <p>跟着我的节奏<i>摇</i>起来</p>
+            </section>
+        </section>
+        <div class="copyright"></div>
+    <!--<input type="button" class="" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;">-->
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/lottery.js"></script>
+
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+html {
+	background-color: #936A4C;
+}
+body {
+	background: url(../images/index/1.jpg) no-repeat center 0,
+	url(../images/index/2.jpg) no-repeat center 85px,
+	url(../images/index/3.jpg) no-repeat center 170px,
+	url(../images/index/4.jpg) no-repeat center 265px,
+	url(../images/index/5.jpg) no-repeat center 360px,
+	url(../images/index/6.jpg) no-repeat center 454px,
+	url(../images/index/7.jpg) no-repeat center 557px,
+	url(../images/index/8.jpg) no-repeat center 664px,
+	url(../images/index/9.jpg) no-repeat center 759px,
+	url(../images/index/10.jpg) no-repeat center 900px;
+	background-size: 420px auto;
+}
+.main {
+	margin: 0 auto;
+	min-height: 310px;
+	padding-top: 212px;
+	padding-bottom: 10px;
+}
+.as-banner {
+	width: 100%;
+	height: 228px;
+	overflow: hidden;
+}
+.as-banner img {
+	width: 100%;
+	max-width: 100%;
+}
+.as-content {
+	position: relative;
+	top: 22px;
+	width: 320px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+.as-answer {
+	background: url(http://yao.holdfun.cn/portal/resources/quiz/images/as_title.png) no-repeat center 40px;
+	background-size: 142px auto;
+}
+
+.as-answer li {
+	margin-bottom: 13px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.as-answer li a {
+	background: #BE8148;
+	color: #f4ddb7;
+	display: inline-block;
+	width: 100%;
+	font-size: 15px;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 6px 12px;
+}
+.as-answer li a.checked {
+	background: #85582E;
+}
+
+.as-answer li a:before {
+	content: '';
+	display: inline-block;
+	vertical-align: -1px;
+	width: 13px;
+	height: 13px;
+	background: url(http://yao.holdfun.cn/portal/resources/quiz/images/icons_item.png) no-repeat 0px -16px;
+	background-size: 50px auto;
+	margin-right: 10px;
+}
+.as-answer li a:hover:before, .as-answer li a.checked:before {
+	background-position: -14px -16px;
+}
+.as-answer .answer-multi li a:before {
+	width: 13px;
+	height: 13px;
+	background-position: 0px 0px;
+}
+.as-answer .answer-multi li a.checked:before {
+	margin-right: 5px;
+	width: 18px;
+	background-position: -20px 0px;
+}
+.as-box {
+	width: 310px;
+	height: 60px;
+	margin: -46px auto 0 auto;
+	background: url(http://yao.holdfun.cn/portal/resources/quiz/images/paper_top.png) no-repeat 0 0,     
+				url(http://yao.holdfun.cn/portal/resources/quiz/images/paper_bottom.png) no-repeat 0px bottom,     
+				url(http://yao.holdfun.cn/portal/resources/quiz/images/paper_bg.png) repeat-y 0 0;
+	background-size: 310px auto;
+}
+
+.as-btn {
+	margin: 20px auto;
+	width: 100%;
+	height: 45px;
+	display: block;
+	letter-spacing: 1px;
+}
+.as-answer {
+	padding: 65px 24px 18px 25px;
+}
+.as-answer h3 {
+	position: relative;
+	font-size: 15px;
+	color: #ac651a;
+	margin-top: 8px;
+	margin-bottom: 14px;
+	word-wrap: break-word;
+	word-break: break-all;
+	border: 2px solid #AA6520;
+	border-radius: 15px;
+	padding: 10px;
+}
+.as-answer h3 span {
+	position: absolute;
+	border: 2px solid #aa6520;
+	border-radius: 100px 100px 0 0;
+	left: 105px;
+	top: -29px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 1px;
+	border-bottom-color: #E8D39A;
+}
+.as-answer h3 strong {
+	font-size: 18px;
+}

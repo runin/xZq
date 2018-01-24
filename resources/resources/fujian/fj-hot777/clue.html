@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+	<title>热线777</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/clue.css" />
+</head>
+<body>
+	<header>
+		<img class="icon-tvlogo" src="./images/icon-tvlogo.png">
+		<section class="btn-box">
+			<a href="javascript:void(0);" class="btn-back" id="btn-back" data-collect="true" data-collect-flag="clue-go2back" data-collect-desc="返回按钮">返&nbsp;&nbsp;&nbsp;回</a>
+		</section>
+	</header>
+	<section class="container">
+		<section class="clue-title">
+			<section class="hot-zone">
+				<p class="zone-answer" data-collect="true" data-collect-flag="clue-go2ask" data-collect-desc="选项卡-爆料按钮"></p>
+				<p class="zone-ask" data-collect="true" data-collect-flag="clue-go2answer" data-collect-desc="选项卡-提问按钮"></p>
+			</section>
+			<img class="answer active" src="./images/icon-baoliao1.png">
+			<img class="ask" src="./images/icon-baoliao2.png">
+		</section>
+		<section class="form-group">
+			<section class="form-item">
+				<section class="content-box">
+					<div class="icon-arrow"><i></i><em></em></div>
+					<textarea class="content" id="content" placeholder=""></textarea>
+				</section>
+				<section class="img-ctrl" id="img-ctrl">
+					<!-- <a href="javascript:void(0);" class="icon btn-preview" id="btn-preview"></a> -->
+					<a href="javascript:void(0);" class="icon btn-upload" id="btn-upload"></a>
+				</section>
+				<form id="upload-form" class="upload-form preload" enctype="multipart/form-data" method="post" action="http://test.holdfun.cn/portal/fileupload/image"><input type="file" class="input-file-upload" id="input-file-upload" onchange="H.clue.fileSelected();" accept="image/*" capture></form>
+			</section>
+			<a href="javascript:void(0);" class="btn btn-submit" id="btn-submit" data-collect="true" data-collect-flag="clue-submit" data-collect-desc="提交爆料按钮">提&nbsp;&nbsp;&nbsp;交</a>
+		</section>
+        <section class="countdown" data-collect="true" data-collect-flag="clue-go2lottery" data-collect-desc="点我摇奖按钮">
+        	<i></i>
+            <span class="detail-countdown"></span>
+            <span class="countdown-tip">点我摇奖</span>
+        </section>
+	</section>
+	
+	<footer>
+		<section class="copyright">页面由福建新媒体有限公司提供<br>新掌趣科技技术支持&Powered by holdfun.cn</section>
+	</footer>
+	<section class="bg"></section>
+
+	<script src="./js/config.js"></script>	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/clue.js"></script>
+
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

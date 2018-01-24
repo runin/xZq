@@ -1,0 +1,51 @@
+/*********************** 濉啓淇℃伅椤�****************************/
+.award-message{		
+	border-radius:10px;
+	margin:auto auto;
+	background-color:rgba(228,0,18,1);
+	position:relative;
+	z-index:900;
+	width:90%;
+	top:4%;
+	text-align:center;
+}
+.award-close{
+	background: url(../images/ah_ward_close.png) no-repeat center 0;
+	background-size:cover;
+	position:absolute;
+	width:30px;
+	height:30px;
+	z-index:950;
+}
+.award-prompt{
+	clear:both;			
+	font-size:12px;
+	width:70%;
+	text-align:left;
+	margin:0 auto;
+	color:#FFF;
+	padding-top:30px;
+}
+.award-personinfo{
+	line-height:36px;
+	
+}
+.award-personinfo input{
+	width:70%;
+	height:28px;
+	padding-left:5px;
+	border-radius:6px;
+	font-size:14px;
+	border:0px;
+}
+.award-confirm{
+	border:0;
+	background-color:red;
+	margin:0 auto;
+	width:150px;
+	border-radius:20px;
+	font-size:14px;
+	color:white;
+	margin-top:20px;
+	line-height:34px;
+}

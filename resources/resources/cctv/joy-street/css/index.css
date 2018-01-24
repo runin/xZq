@@ -1,0 +1,262 @@
+/*
+ *	封面
+ */
+.main{
+	background: url('../images/bg-hide-default.jpg') no-repeat;
+	background-size: contain;
+}
+.cover-top{
+	width: 100%;
+	background: url('../images/bg-cover-top.jpg') no-repeat;
+	position: relative;
+	-webkit-transition: -webkit-transform .2s ease;
+	transition: transform .2s ease;
+	border-bottom: 0px #ff8103 solid;
+
+}
+.cover-bottom{
+	width: 100%;
+	background: url('../images/bg-cover-bottom.jpg') no-repeat;
+	position: relative;
+	-webkit-transition: -webkit-transform .2s ease;
+	transition: transform .2s ease;
+	border-top: 0px #ff8103 solid;
+
+}
+
+
+
+.tips-container{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	text-align: center;
+}
+.tips-container .tips-hongbao{
+	display: inline;
+	font-size: 16px;
+	color: white;
+	background: #ff5400;
+	line-height: 24px;
+	padding: 3px 12px;
+	border-radius: 16px;
+	box-shadow: 2px 2px 2px #4c1e00;
+}
+.tips-container .tips-chance{
+	font-size: 12px;
+	color: white;
+	margin-top: 10px;
+	text-shadow:1px 1px 2px #000;
+}
+
+footer{
+	color: #ff5400;
+	font-size: 10px;
+	position: absolute;
+	bottom: 5px;
+	text-align: center;
+	width: 100%;
+	text-shadow:1px 1px 1px #000;
+}
+
+
+/*
+ *	END OF 封面
+ */
+
+
+/*
+ *	红包
+ */
+.hongbao-wrapper{
+	background: rgba(0,0,0,0.75);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+.hongbao{
+	height: 0px;
+	background: url("../images/bg-hongbao.png") no-repeat;
+	background-size: contain;
+	margin: 0 5%;
+	position: relative;
+}
+
+.hongbao-title{
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.hongbao-slogon{
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.hongbao-click{
+	font-size: 18px;
+	color: white;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 0px;
+	top: 0px;
+}
+
+.hongbao-click-wrapper{
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+.hongbao-click-wrapper .hongbao-click{
+	width: 40%;
+	margin: 0 auto;
+	position: static;
+	display: block;
+	height: 100px;
+	line-height: 100px;
+}
+
+.hongbao-close{
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 48px;
+	height: 48px;
+	background: none;
+}
+.hongbao-num{
+	color:#ffcccc;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 50px;
+}
+.hongbao-num span{
+	font-size: 30px;
+}
+
+.hongbao-success{
+	overflow: hidden;
+	width: 150px;
+	margin:0 auto;
+	padding-top: 60px;
+}
+.hongbao-success h2{
+	display: inline-block;
+	font-size: 18px;
+	line-height: 44px;
+	color: white;
+	float: left;
+}
+.hongbao-success img{
+	width: 44px;
+	height: 44px;
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+
+.hongbao-link{
+	text-align: center;
+	padding: 20px;
+}
+.hongbao-link a{
+	color: #ff9933;
+	font-size: 14px;
+}
+/*
+ *	END OF红包
+ */
+
+/*
+ *	积分红包
+ */
+.hongbao-jifen{
+	margin: 15px 10%;
+}
+.input-wrapper{
+	background: #e6bab4;
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	line-height: 22px;
+}
+.input-wrapper input{
+	background: none;
+	border: none;
+	width: 100%;
+	color: #be4d3d;
+	font-size: 12px;
+	line-height: 22px;
+	font-size: 14px;
+	padding: 0 5px;
+	margin-top: -1px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #DD897D;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #DD897D;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #DD897D;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #DD897D;
+}
+/*
+ *	END OF 积分红包
+ */
+
+ /*
+ *	优惠券红包
+ */
+.hongbao-ticket{
+	margin: 35px 20% 5px;
+}
+.hongbao-ticket-cc{
+	background: #e6bab4;
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	line-height: 22px;
+}
+.hongbao-ticket-cc #code{
+	background: none;
+	border: none;
+	width: 100%;
+	color: #be4d3d;
+	font-size: 12px;
+	line-height: 26px;
+	font-size: 14px;
+	padding: 0 5px;
+	text-align: center;
+}
+/*
+ *	END OF 优惠券红包
+ */
+
+/*
+ *	二维码
+ */
+#qrcode{
+	height: auto;
+	margin: 10vh 10% 0; 
+}
+.qrcode-wrapper{
+	width: 100%;
+}
+#qrcode .dialog-close{
+	top: -15px;
+	right: -15px;
+}
+
+/*
+ *	END OF 二维码
+ */
+ 

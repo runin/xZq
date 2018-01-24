@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+     <meta http-equiv="Pragram" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>全频道</title>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/yaoyiyao.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<audio preload="auto" id="audio-a" src="music/audio-a.mp3" class="preload"></audio>
+<audio preload="auto" id="audio-b" src="music/audio-b.mp3" class="preload"></audio>
+
+<body>
+    <section class="bg-box">
+        <div class="bg-border">
+            <i class="lf-dingzi dingzi"></i>
+            <i class="rt-dingzi dingzi"></i>
+            <div class="marquee none">
+                <ul></ul>
+            </div>
+            <i class="bell none list-decorate"><img src="./images/bell.png"></i>
+            <hr class="line-hr none list-decorate">
+             <div class="tttj none" id="tttj" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+                <img class="wobble wobble" src="./images/icon-redbag.png">
+                <span></span>
+            </div>
+            <div class="foot-btn">
+                <a href="javascript:void(0)" class="f-btn btn_dm" id="tvList-btn" data-name="推荐节目" data-collect="true" data-collect-flag="menu-tvList-btn" data-collect-desc="推荐节目"></a>
+                <a href="javascript:void(0)" class="f-btn btn_qd selected" id="comment-btn" data-name="弹幕摇奖" data-collect="true" data-collect-flag="menu-comment-btn" data-collect-desc="弹幕摇奖"></a>
+            </div>
+        </div>
+    </section>
+    <section class="yao-bg">
+        <div class="main-top m-t-b">
+
+            <div class="weizhongjang">
+                <p class="yao-cool-tips none"><span>太遗憾了，没中奖，继续加油~</span></p>
+            </div>
+        </div>
+        <div class="main-foot m-f-b">
+            <div class="countdown none">
+                <p><span class="countdown-tip"></span><span class="detail-countdown"></span></p>
+            </div>
+        </div>
+        <div class="fail-bg">
+        </div>
+    </section>
+
+    <script src="js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.touch.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/zepto.selector.min.js"></script>
+    <script src="./js/plugins/sha1.min.js"></script>
+    <script src="./js/plugins/shake.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/common.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/yaoyiyao.js"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>海峡卫视</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/photo.css" />
+</head>
+<body data-attr="share">
+	<div class="main">
+		<div class="photoBox none">
+			<header class="logo"><img src="images/photo-head.png"/></header>
+			<div class="form-item">
+				<i class="close none"  data-collect="true" data-collect-flag="fj-sea-upImg-remove-btn" data-collect-desc="我要合照页面 删除上传的图片按钮" data-stoppropagation="true"></i>
+				<a href="#" class="icon btn-upload requesting" id="btn-upload" data-collect="true" data-collect-flag="fj-sea-photo-upload-btn" data-collect-desc="我要合照页面 上传图片按钮"></a>
+				<div class="star-photo">
+					<img class="star" id="star" src="" />
+					<div class="img-ctrl" id="img-ctrl"></div>
+				</div>
+				<form id="upload-form" class="upload-form none" enctype="multipart/form-data" method="post" action="http://test.holdfun.cn/portal/fileupload/image">
+					<input type="file" class="input-file-upload" id="input-file-upload" onchange="fileSelected();" accept="image/*" capture>
+				</form>
+			</div>
+			<a href="#" data-collect="true"
+				data-collect-flag="fj-sea-photoed-submit-btn"
+				data-collect-desc="我要合照页面提交照片" class="btn-submit" id="btn-submit">确认</a>
+		</div>
+		<div class="photoedBox none">
+			<header class="share"><img src="images/share.png"/></header>
+			<div class="photoed-info">
+				<i class="close-photo"  data-collect="true" data-collect-flag="fj-sea-photoed-back-remove-img-btn" data-collect-desc="我要合照 删除上传的图片按钮" data-stoppropagation="true"></i>
+				<div class="form-item">
+					<div class="mix-info">
+						<canvas class="none" id="mix-photo" width="300" height="300"></canvas>
+						<img class="final-photo" src="" />
+					</div>
+					<div class="person-info">
+						<label>
+							<i><img src="" /></i>
+							<span></span>
+						</label>
+						<label id="vote" data-collect="true" data-collect-flag="fj-sea-vote-submit-btn" data-collect-desc="合照投票">0</label>
+					</div>
+				</div>
+			</div>
+			<a href="#" data-collect="true"
+				data-collect-flag="fj-sea-tophoto-back-btn"
+				data-collect-desc="返回重新合照" class="btn-submit" id="btn-refresh">我要合照</a>
+		</div>
+		
+	
+		<a href="#" data-collect="true"
+				data-collect-flag="fj-sea-photo-back-index-btn"
+				data-collect-desc="合照页面返回首页" class="back-index">返回首页</a>
+    </div>
+	
+	<div class="copyright none"></div>
+	
+	<script src="js/config.js"></script>
+<!-- 打素材时如下代码请删掉 -->
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script> 
+	<script src="./js/authorize_userinfo_set.js"></script>
+	
+    <script src="js/app/hammer.min.js" type="text/javascript"></script>
+    <script src="./js/app/photo.js"></script>
+
+
+	
+</body>
+</html>

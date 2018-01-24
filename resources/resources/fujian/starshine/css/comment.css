@@ -1,0 +1,550 @@
+html{
+	height: 100%;
+}
+body
+{ 
+  height: 100%;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.scroll{
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+	position: relative;
+}
+header{
+	position: relative;
+	padding: 10px 14px;
+	text-align: center;
+}
+.btn-jump{
+	display: block;
+	width: 20%;
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	z-index: 3;
+	border: 1px solid #E9D29E;
+	border-radius: 5px;
+	color: #E9D29E;
+	font-size: 12px;
+	height: 23px;
+	line-height: 23px;
+	background: #402F18;
+}
+header .sign-info{
+	width: 100%;
+	position: relative;
+	height: 70px;
+	padding:0 0 20px;
+	text-align: left;
+	
+}
+header .sign-info label{
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #967730;
+	border-radius: 100%;
+	float: left;
+	
+}
+header .sign-info label img{
+	display : block ;
+	border-radius: 100%;
+	
+}
+header .sign-info .sign-detail{
+	display : block ;
+	height: 60px;
+	padding: 0px 20px 0 10px;
+	float: left;
+	position: relative;
+	
+}
+header .sign-info .sign-detail span{
+	display: block;
+	color: #e9d29e;
+	width: 100%;
+	font-size: 12px;
+	height: 24px;
+	line-height:24px;
+	
+
+}
+header .sign-info .sign-detail span.nikcName{
+	overflow: hidden;
+ 	white-space:nowrap;
+ 	text-overflow: ellipsis;
+}
+header .sign-info .sign-detail span.jfNum{
+	display: inline-block;
+	width: auto;
+	padding: 0 0px;
+}
+
+header .sign-info .btn-sign{
+	color: #e9d29e;
+	font-size: 14px;
+	padding:4px 8px;
+	border: 1px solid #e9d29e;
+	border-radius: 6px;
+	position: absolute;
+	bottom: 30px;
+}
+header .sign-info .signed{
+	color : #493710;
+	background: #645f55;
+	border: 1px solid #8c6a1d;
+}
+.danmu-bg{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+.cor-assist{
+	width: 100%;
+	margin: 0 auto;
+	border-top: 1px solid #c3984e;
+	border-bottom: 1px solid #c3984e;  
+	position: relative;
+}
+
+.comment-assist{
+	padding-top: 26px;
+	background: rgba(0,0,0,0.7);
+}
+.cor-count{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	color: #ebc979;
+	font-size: 12px;
+	text-align: center;
+	height: 26px;
+	line-height: 26px;
+}
+.comments{
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	
+	width: 100%;
+	height: 100%;
+
+}
+.baping{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	padding-top: 26px;
+	z-index: 99999;
+}
+.ba{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.otherBa{
+	z-index: 100;
+}
+.meBa{
+	z-index: 101;
+}
+.bacor{
+	display: block;
+	text-align: center;
+	margin-top: 14px;
+}
+.bacor .cor{
+	text-align: center;
+	display:inline-block ;
+	white-space:nowrap;
+	border-radius :26px;
+	border:1px solid #66ff00;
+	color: #66ff00;
+	font-size: 18px;
+	background: rgba(0,0,0,0.5);
+}
+.meBa .bacor .cor{
+	border:1px solid #ff22b4;
+	color: #ff22b4;
+}          
+
+.c_head_img {
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+  overflow: hidden;
+  float: left;
+  margin-right: 5px; 
+  margin-left: 1px;
+
+}
+
+.c_head_img_img {
+  width: 28px;
+  margin-right: 4px;
+}
+.comment {
+   height: 28px;
+   line-height: 28px;
+   border-radius: 2px;
+   margin-left: 30px;
+   padding: 0px 6px;
+}
+
+.me-cor{
+	border-radius: 30px !important;
+	height: 28px!important;
+    line-height: 26px!important;
+}
+article {
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0px;
+    z-index: 999999;
+}
+.ctrls {
+	position: relative;
+    text-align: center;  
+    width: 100%;
+    padding: 0px 52px 0px 90px;
+    height: 36px;
+}
+.ctrls p{
+	width: 61%;
+	height: 14px;
+	position: absolute;
+	bottom: 0;
+	left: 90px;
+	border: 1px solid #ebc88a;
+	border-top: none;
+	
+}
+.ctrls p input {
+  display: block;
+  width: 90%;
+  height: 28px;
+  border: none;
+  background:transparent;
+  color: #fff;
+  outline: none;
+  border-radius: 0px ;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  
+}
+.ctrls .off-on {
+  display: block;
+  vertical-align: middle;
+  width: 56px;
+  height: 30px;
+  line-height: 30px;
+  background: #87571a;
+  text-align: center;
+  color: #ebdabc;
+  font-size: 14px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  box-shadow: 14px 0 2px rgba(87,74,65,1) ;
+}
+.ctrls .on{
+	left: 24px;
+	box-shadow: -14px 0 2px rgba(235,218,188,1) ;
+}
+.ctrls .btn-comment {
+  display: block;
+  width: 36px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+}
+
+.dia-tip{
+	display: inline-block;
+	padding: 4px 6px;
+	background: rgba(151,134,115,0.7);
+	position: absolute;
+	left: 50px;
+	top: -20px;
+	z-index: 3;
+	color: #ebdabc;
+	border-radius: 4px;
+	font-size: 12px;
+	opacity: 0;
+	
+}
+.dia-tip::before{
+	content: "";
+	display: inline-block;
+	border:8px solid transparent;
+	border-top-color:rgba(151,134,115,0.7);
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: 100%;
+	left: 14%;
+	
+	
+}
+.count{
+	width: 100%;
+	color: #416c99;
+	position: absolute;
+	bottom: 0px;
+	background: #092152;
+	text-align: center;
+	padding: 6px;
+	font-size: 12px;
+}
+.count span label{
+	display: inline-block;
+	width: 24px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color: #000;
+	background: url(../images/num-bg.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 0 2px;
+	text-align: center;
+	font-weight: bold;
+}
+.jf-tip{
+    padding: 20px 26px!important;
+    background-color: rgba(122, 98, 71, 0.5)!important;
+    border: 1px solid #f6c758;
+    border-radius: 6px!important;
+}
+.tips span{
+	font-size: 16px;
+	background: url(../images/zuan.png) no-repeat left center;
+	background-size: 24px;
+	color: #ffce7d;
+	padding: 14px 0 14px 30px;
+}
+input::-webkit-input-placeholder { 
+    color:#fff!important;
+    font-size: 12px;
+}
+input[placeholder], [placeholder], *[placeholder] {
+   color:#fff!important;
+   font-size: 12px;
+}
+
+.wobble{
+-webkit-animation:wobble 1s .2s ease infinite both;
+-moz-animation:wobble 1s .2s ease infinite both ;
+}
+@-webkit-keyframes bounceIn {
+	0%,
+	100%,
+	50% {
+		-webkit-animation-timing-function: cubic-bezier(0.215, .61, .355, 1);
+		animation-timing-function: cubic-bezier(0.215, .61, .355, 1)
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3)
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: scale3d(1.2, 1.2, 1.2);
+		transform: scale3d(1.2, 1.2, 1.2)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+
+@keyframes bounceIn {
+	0%,
+	50%,
+	100% {
+		-webkit-animation-timing-function: cubic-bezier(0.215, .61, .355, 1);
+		animation-timing-function: cubic-bezier(0.215, .61, .355, 1)
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3)
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: scale3d(1.2, 1.2, 1.2);
+		transform: scale3d(1.2, 1.2, 1.2)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+
+.bounceIn {
+	-webkit-animation-name: bounceIn;
+	animation-name: bounceIn;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0)
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translate3d(-5px, 0, 0);
+		transform: translate3d(-5px, 0, 0)
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translate3d(5px, 0, 0);
+		transform: translate3d(5px, 0, 0)
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0)
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translate3d(-5px, 0, 0);
+		transform: translate3d(-5px, 0, 0)
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translate3d(5px, 0, 0);
+		transform: translate3d(5px, 0, 0)
+	}
+}
+
+.shake {
+	-webkit-animation-name: shake;
+	animation-name: shake;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes jftip {
+	0%{
+		-webkit-transform: translate3d(60px, 20px, 0);
+		transform: translate3d(60px, 20px, 0);
+		opacity: 1;
+	}
+	50%{
+		-webkit-transform: translate3d(10px, 10px, 0);
+		transform: translate3d(10px, 10px, 0);
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform: translate3d(2px, 50px, 0);
+		transform: translate3d(2px, 50px, 0);
+		opacity: 0;
+	}
+	
+}
+
+@keyframes jftip {
+	0%{
+		-webkit-transform: translate3d(60px, 10px, 0);
+		transform: translate3d(60px, 10px, 0);
+		opacity: 1;
+	}
+	50%{
+		-webkit-transform: translate3d(10px, 5px, 0);
+		transform: translate3d(10px, 5px, 0);
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform: translate3d(2px, 50px, 0);
+		transform: translate3d(2px, 50px, 0);
+		opacity: 0;
+	}
+}
+@-webkit-keyframes wobble{
+0%{-webkit-transform:translateX(0%)}
+15%{-webkit-transform:translateX(-25%) rotate(-5deg)}
+30%{-webkit-transform:translateX(20%) rotate(3deg)}
+45%{-webkit-transform:translateX(-15%) rotate(-3deg)}
+60%{-webkit-transform:translateX(10%) rotate(2deg)}
+75%{-webkit-transform:translateX(-5%) rotate(-1deg)}
+100%{-webkit-transform:translateX(0%)}
+}
+/* iPhone4 */
+@media screen and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	.ctrls p {
+	    width: 54%;
+	}
+}
+/* iPhone5 */
+@media screen and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.ctrls p {
+	    width: 54%;
+	}
+}
+/* iPhone6 */
+@media screen and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+ 
+}
+/* huawei honor-6 */
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+
+}
+
+/* mi2*/
+@media screen and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}

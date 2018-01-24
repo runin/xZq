@@ -1,0 +1,146 @@
+﻿
+.main
+{
+    overflow: hidden;
+}
+.onlinemen
+{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: White;
+    background-color: rgba(0,0,0,0.5);
+}
+.gotoyao
+{
+    display: block;
+    position: fixed;
+    right: -20px;
+    top: 55px;
+    width: 120px;
+}
+.barrage-wrapper
+{
+    background-color: transparent;
+}
+.comment-input-wrapper
+{
+    height: 60px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.7);
+    position: relative;
+}
+.heat
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 1px solid white;
+    margin-top: 8px;
+    margin-left: 5px;
+    background: url('../images/avatar.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.inputdiv
+{
+    height: 33px;
+    margin-left: 60px;
+    margin-right: 50px;
+    margin-top: 14px;
+}
+
+.inputdiv input
+{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    background: url('../images/inputbg.png') no-repeat center center;
+    background-size: 100% 100%;
+    background-clip: padding-box;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+.sendbtn
+{
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    background-color: Red;
+    background: url('../images/send.png') no-repeat center center;
+    background-size: contain;
+}
+
+
+/***倒计时**/
+.downcount
+{
+    display: block;
+    position: fixed;
+    right: 5px;
+    top: 55px;
+    font-size: 13px;
+    line-height: 20px;
+    color: White;
+    padding-right: 5px;
+}
+.downcount img
+{
+    width: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+    left: -4px;
+}
+.downcount span
+{
+    color: #C9DA78;
+}
+
+/*******评论******/
+.bitem
+{
+    border: 1px solid white;
+    border-radius: 45px;
+    background-color: rgba(0,0,0,0.3);
+    position:relative;
+    overflow:visible;
+    z-index:999999;
+}
+
+.bitem .bitem-img
+{
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+}
+.bitem .bitem-content
+{
+    background-color: transparent;
+    line-height: 40px;
+    margin-top: 0px;
+}
+.bitem .bitem-img
+{
+    padding: 0px;
+}
+.Leaf
+{  display:block;
+   position:absolute;
+   top:-10px;
+   right:-25px; 
+   width:30px; 
+   z-index:9999;  
+}
+
+
+
+

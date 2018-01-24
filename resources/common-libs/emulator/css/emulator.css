@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------
+// Controls
+//--------------------------------------------------------------------------*/
+.controls
+{
+	border-bottom: solid 1px #AAAAAA;
+	background-color: #F0F0F0;
+	background: linear-gradient(to bottom, #F9F9F9, #E3E3E3);
+}
+
+.controls > ul { overflow: hidden; } /* Autoclear floating child elements. */
+
+.controls > ul > li
+{
+	float: left;
+	border-right: solid 1px #DDDDDD;
+	padding: 0.6rem;
+}
+
+.controls div { display: inline; }
+
+.controls a
+{
+	text-decoration: none;
+	color: #555555;
+}
+
+.controls a:hover, .controls a:focus { color: #333333; }
+
+.controls .list_icon
+{
+	display: inline-block;
+	vertical-align: middle;
+	max-height: 1.8rem;
+}
+
+.controls .list_icon svg
+{
+	height: 1.8rem;
+  width: 1.8rem;
+}
+
+.controls .brand_name, .controls label, .controls span
+{
+	display: inline-block;
+	vertical-align: middle;
+	height: 1.8rem;
+	padding: 0.3rem 0;
+}
+
+.controls .brand_name
+{
+	margin-right: 0.4rem;
+	font-weight: bold;
+}
+
+.controls input[type="text"], .controls select
+{
+	display: inline-block;
+	vertical-align: middle;
+	height: 1.8rem;
+	border: solid 1px #CCCCCC;
+	padding: 0.2rem;
+	background-color: #FFFFFF;
+}
+
+.controls input[type="text"]:hover, .controls select:hover,
+.controls input[type="text"]:focus, .controls select:focus  { border: 1px solid #5D99FF; }
+
+.controls input[type="checkbox"]
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.controls input[type="checkbox"]:focus,
+.controls input[type="checkbox"]:hover  { outline: 1px solid #5D99FF; outline-offset:-1px; }
+
+.controls input[type="submit"]
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 0.4rem;
+	min-width: 5rem;
+	height: 1.8rem;
+	border: 1px solid #2170F5;
+  border-radius: 0.2rem;
+	background-color: #4887F6;
+	background: linear-gradient(to bottom, #5D99FF, #337BF4);
+	line-height: 1.8rem;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.controls input[type="submit"]:focus,
+.controls input[type="submit"]:hover  { border: 1px solid #003CA0; }
+
+.controls .hidden, .controls input[type="text"].hidden { display: none; }
+
+/*----------------------------------------------------------------------------
+// Emulator
+//--------------------------------------------------------------------------*/
+.emulator                 { margin: 3rem 0; }
+.emulator h1, .emulator p { text-align: center; }
+
+.emulator h2, .emulator table
+{
+	margin-left: 10%;
+  margin-right: 10%;
+	max-width: 80em;
+	padding-left: 2rem;
+}
+
+.emulator h2                 { margin-top: 4em; }
+.emulator tr:nth-child(even) { background-color: #FFFFFF; }
+.emulator tr:nth-child(odd)  { background-color: #F8F8F8; }
+.emulator td                 { padding: 0.5em; }
+
+/*----------------------------------------------------------------------------
+// Device
+//--------------------------------------------------------------------------*/
+.device { margin: 2em auto; }
+
+.device > .display > .viewport
+{
+	position: relative;
+	border: 0;
+	background-color: #ffffff;
+}

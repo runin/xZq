@@ -1,0 +1,131 @@
+.main{
+	background: white;
+	color: #626262;
+}
+footer{
+	color: #ddd;
+	font-size: 10px;
+	text-align: center;
+	width: 100%;
+	padding: 10px 0 5px;
+}
+/*
+ *	头条文本页
+ */
+.toutiao-header{
+	padding: 12px;
+	border-bottom: 1px solid #D8D8D8;
+}
+.toutiao-header h1{
+	font-size: 18px;
+	color: #000;
+	font-weight: bold;
+}
+.toutiao-header label{
+	font-size: 12px;
+}
+.toutiao-detail{
+	padding: 12px;
+}
+.toutiao-detail .content{
+	font-size: 14px;
+	line-height: 21px;
+	margin-top: 12px;
+}
+.toutiao-detail .content p{
+	padding: 5px 0;
+}
+
+.toutiao-detail .tips{
+	color: #fe5400;
+	font-size: 14px;
+}
+#img{
+	width: 100%;
+}
+
+.submit-btn{
+	display: block;
+	line-height: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	background: #fe5400;
+	width: 150px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*
+ *	END OF 头条文本页
+ */
+
+/*
+ *	头条弹出层
+ */
+.toutiao-dialog-wrapper{
+	background: rgba(245, 233, 215, 0.82);
+	width: 100%;
+	height: 0px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+.toutiao-dialog{
+	background: url("../images/bg-toutiao.jpg") no-repeat;
+	background-size: cover;
+	margin: 0 5%;
+	margin-top: 30px;
+	overflow: hidden;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+}
+.toutiao-dialog .logo{
+	width: 55%;
+	margin: 0 auto;
+	position: relative;
+	top: -20px;
+}
+.toutiao-dialog h1{
+	font-size: 18px;
+	text-align: center;
+	line-height: 36px;
+	color: black;
+}
+.toutiao-dialog .input-wrapper{
+	margin-top: 20px;
+	width: 90%;
+	border: 1px solid #ddd;
+	border-radius:5px;
+	padding: 0 5px;
+	background: white;
+	margin: 0 auto;
+}
+.toutiao-dialog .input-wrapper input{
+	width: 100%;
+	background: none;
+	border: none;
+	line-height: 30px;
+	color: #333;
+	font-size: 14px;
+}
+.submit{
+	margin: 30px auto;
+}
+.toutiao-dialog .dialog-close{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 15px;
+	right: 5px;
+	background: url("../images/icon-close.png") no-repeat;
+	background-size: cover;
+}
+
+/*
+ *	END OF 头条弹出层
+ */

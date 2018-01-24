@@ -1,0 +1,132 @@
+html {
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow:hidden;
+    overflow-y: scroll;
+}
+
+#J_signBox {
+	position: relative;
+	width: 100%;
+	margin: 13% auto 120px;
+	color: #FFF;
+	text-align: center;
+}
+#J_signBox h1 {
+	font-size: 18px;
+	margin-bottom: 8%;
+}
+#J_signBox h1 p {
+	margin-top: 5px;
+	font-size: 14px;
+	color: #D0D0D0;
+}
+
+.sign-wrapper {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 0;
+	opacity: 0;
+}
+.sign-wrapper a {
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	height: 110px;
+	margin: 0 1% 10px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 2px solid #3971a8;
+	background: #33587f;
+	vertical-align: bottom;
+}
+.sign-wrapper a.active {
+	border: 2px solid #98ccff;
+	background: #6d94bd;
+}
+.sign-wrapper a.active i {
+	font-size: 20px;
+}
+.sign-wrapper a i {
+	display: block;
+	height: 90px;
+	line-height: 80px;
+	font-size: 50px;
+	font-style: normal;
+}
+.sign-wrapper a p {
+	position: absolute;
+	font-size: 15px;
+	width: 100%;
+	text-align: center;
+	bottom: 10px;
+}
+.sign-wrapper .sign-off {
+	border: 2px solid #E2E2E2;
+	background: #B3B3B3;
+}
+
+#J_background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../images/bg-i.jpg) no-repeat;
+	background-size: 100% 100%;
+	z-index: -1;
+}
+
+.btn-back {
+	display: block;
+	width: 46%;
+	height: 42px;
+	margin: 0 auto 10px;
+	line-height: 42px;
+	color: #FFF;
+	font-size: 18px;
+	background: #48719f;
+	border-radius: 50px;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:570px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone6 */
+@media screen
+and (min-device-width:360px)
+and (max-device-width:667px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone6plus */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+
+/* HUAWEI H6 */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+}

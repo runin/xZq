@@ -1,0 +1,287 @@
+﻿body {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background: url(../images/comment.jpg) top center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.heart{
+    -webkit-animation-name: 'spaceboots';
+    -webkit-animation-duration: 900ms;
+    -webkit-transform-origin:70% 70%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spaceboots {
+    0% { -webkit-transform: scale(1); }
+    30% { -webkit-transform: scale(1); }
+    40% { -webkit-transform: scale(1.05); }
+    50% { -webkit-transform: scale(1); }
+    60% { -webkit-transform: scale(1); }
+    70% { -webkit-transform: scale(1.03); }
+    80% { -webkit-transform: scale(1); }
+    100% { -webkit-transform: scale(1); }
+
+}
+.heartpop {
+    -webkit-animation-name: heartpop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes heartpop {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5, 1.5)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1)
+    }
+}
+
+.tvlogo
+{
+    display: block;
+    background: url(../images/tvlogo.png) top center no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    height: 66px;
+    width: 68px;
+    top: 10px;
+    left: 1px;
+}
+.info-box
+{
+  position: relative;
+  top: 80px;
+  margin-left:10px;
+  color: #fff
+}
+/*倒计时*/
+.countdown
+{
+    margin-bottom:10px;
+    position: relative;
+    float:right;
+    padding:0px 14px;
+    border-radius: 40px;
+    line-height: 34px;
+    border:1px solid #009afc;
+}
+.countdown-tip {
+    z-index: 2;
+    color: #fff;
+    margin-left: 2px;
+}
+
+.countdown .detail-countdown {
+    z-index: 2;
+    /*background-size: 30px auto;*/
+    display: inline-block;
+    font-weight: bolder;
+    color: #fff;
+}
+.countdown .yao-hand {
+    position: relative;
+    width: 35px;
+    border-radius: 100%;
+    margin-left: -2px;
+    float: left;
+    vertical-align: middle;
+}
+.wrap-game
+{
+  position: relative;
+  float:right;
+  color: #f082aa;
+  clear: both;
+  right: 10px;
+}
+.wrap-game .game-join
+{
+    position: relative;
+    width: 50px;
+    float: left;
+}
+/*弹幕样式start*/
+.comments {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+/*  background:rgba(103,99,94,.5);*/
+}
+article {
+    position: relative;
+}
+article:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  /*background: -webkit-gradient(linear, left top, right top, from(rgba(250,250,250,0.1)), color-stop(0.5, rgba(250,250,250,1)), to(rgba(250,250,250,0.2)));*/
+}
+article .ctrls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    border-top: 1px solid rgba(117,87,160,0.6);
+    background: rgba(117,87,160,0.3);
+}
+.ctrls p {
+     position: relative;
+    margin: 20px 70px 6px 6px;
+}
+.ctrls p input {
+    width: 100%;
+    height: 24px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-top:none;
+    padding: 0 10px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 16px;
+}
+.ctrls p input.error {
+    border: 1px solid #f00;
+}
+.ctrls a {
+ display: inline-block;
+    vertical-align: middle;
+    width: 46px;
+    height: 46px;
+    line-height: 42px;
+    background: url(../images/vote-fs.png) no-repeat;
+    background-size: 100% 100%;
+    border-left: none;
+    border-radius: 9px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    right: -60px;
+    top: -15px;
+}
+.copyright {
+    color: rgba(255,255,255,0.6);
+    line-height: 13px;
+    height: auto;
+}
+.c_topic {
+  color: White;
+  word-wrap: break-word;
+  padding: 5px 5px;
+  padding-left: 10px;
+  min-height: 28px;
+}
+.me {
+  border: 2px solid red!important;
+  border-radius: 30px !important;
+  /*height: 36px!important;*/
+}
+.me .c_head_img {
+  top: 2px;
+  left: 8px;
+  font-size: 16px!important;
+}
+.c_head_img {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+  overflow: hidden;
+  margin-right: 5px; 
+  float: left;
+}
+.c_head_img_img {
+  width: 28px;
+  margin-right: 4px;
+}
+.comment_item {
+  border-radius: 2px;
+  padding: 4px 6px 4px 2px;
+  overflow: hidden;
+  border-radius: 20px;
+  border:2px solid #fff;
+}
+.footer
+{
+    position: absolute;
+    bottom: 2px;
+    text-align: center;
+    width: 100%;
+
+}
+/*一键关注*/
+#div_subscribe_area {
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 222;
+    width: 100%;
+    bottom: 0px;
+}
+input[placeholder], [placeholder], *[placeholder] {
+   color:#fff !important;
+}
+input::-webkit-input-placeholder { 
+    color:#fff !important;
+}
+/*弹幕样式end*/
+/*倒计时红包动画*/
+
+.wobble {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    -webkit-animation: 3s waggle;
+    animation: 3s waggle;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-delay: -1;
+    animation-delay: -1;
+}
+
+@-webkit-keyframes waggle {
+    0%, 7% {
+        transform: rotateZ(0);
+        -webkit-transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+        -webkit-transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+        -webkit-transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+        -webkit-transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+        -webkit-transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+        -webkit-transform: rotateZ(0);
+    }
+}

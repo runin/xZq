@@ -1,0 +1,232 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0 auto;
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: cover;
+}
+.info{
+	height: 100%;
+}
+header{
+	padding: 10px 20px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+}
+.publish-btn{
+	display: inline-block;
+	background-color: #d197bd ;
+	border: 1px solid #73305a;
+	width: 40%;
+	height: 34px;
+	line-height: 34px;
+	text-shadow: 1px 1px 1px #000000;
+	text-align: center;
+	
+}
+.publish-btn i{
+	display: inline-block;
+	width: 20px;
+    height: 24px;
+	background:  url(../images/icons.png) no-repeat center;
+	background-position: -14px 0px ;
+	background-size: 220px;
+	vertical-align: middle;
+}
+.publish{
+	background: none;
+	border:none;
+}
+section.wrapper{
+	width: 100%;
+	height: 70%;
+	margin: 0 auto;
+}
+section.info-detail{
+	width: 78%;
+	height: 70%;
+	padding: 5% 5%;
+	border-radius: 6px;
+	background: rgba(255,255,255,0.2);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.page{
+}
+.page-inner{
+	overflow: hidden;
+	width: 76%;
+	margin: 0 auto;
+	padding: 5% 5%;
+	height: 90%;
+	border-radius: 6px;
+	background: rgba(255,255,255,0.2)
+}
+.ctrls {
+	height: 80%;
+	border-radius : 6px;
+	position: relative;	
+}
+.namebox{
+	padding: 10px 0px;
+}
+.infobox{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,0.3);
+	border-radius:0px 0px  6px 6px ;
+	padding: 6px 0;
+}
+.infobox h1{
+	color: #fff600;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0 8px;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 255, 255, 1)), to(rgba(255, 246, 0, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.infobox span.title{
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	padding: 0 8px;
+}	
+.givebox {
+	display: inline-block;
+	width: 60%;
+	
+}
+.votebox{
+	display: inline-block;
+	width: 40%;
+}
+.givebox span{
+	display: inline-block;
+	width: 100%;
+	color: #ffff00;
+	font-size: 16px;
+}
+.votebox span{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.votebox .vote{
+	font-size: 16px;
+	height: 30px;
+	vertical-align: bottom;
+	background: url(../images/love.png) no-repeat center;
+	background-size: 30px;
+	color: #ffff00;
+}
+.votebox .voted{
+	background: url(../images/love-ed.png) no-repeat center;
+	background-size: 30px;
+}
+
+.votebox span:last-child{
+	font-size: 10px;
+	color: #d2d2d2;
+	
+}
+.givebox span:last-child{
+	font-size: 10px;
+	color: #fff;
+	
+}
+.givebox span:last-child label{
+	color: #ffff00;
+}
+.help-btn{
+	margin: 20px auto;
+}
+
+.person-info{
+	height: 82%;
+	overflow: auto;
+	color: #fff;
+}
+.info-box p{
+	margin: 0;
+	line-height: 24px;
+	font-size: 14px;
+}
+.back-info{
+	text-align: left;
+	padding:4px 0 14px;
+}
+.back-info .btn{
+	height : 26px;
+	line-height: 26px;
+	width: auto;
+	padding: 0 8px;
+	font-size: 12px;
+	text-align: center;
+	border-radius: 16px;
+	letter-spacing: 4px;
+	background: rgba(93,131,213,0.2);
+	border: 1px solid rgba(21,43,81,0.8);
+	
+}
+.back-info .btn i{
+	width: 14px;
+	height: 18px;
+	background-size: 160px;
+	background-position: 0px 0px;
+	
+}
+.info-detail{
+	position: absolute;
+	top :14%;
+	left: 50%;
+	margin-left: -44%;
+}
+.more{
+	display: inline-block;
+	position: absolute;
+	bottom: 80px;
+	right: 10px;
+	height: 30px;
+	width: 30px;
+	background: url(../images/arrow-down.png);
+	background-size: cover;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	
+	header{
+		padding: 10px;	
+	}
+	.help-btn{
+		margin: 2px auto;
+		height: 40px;
+		line-height: 40px;
+	}
+	.namebox{
+		padding:4px 0;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+  	header {
+  		padding: 10px 20px;
+  	}	
+	.help-btn{
+		margin: 4px auto;
+	}
+	
+}

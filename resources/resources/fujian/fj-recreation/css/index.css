@@ -1,0 +1,198 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../images/index-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    opacity: 0;
+}
+header {
+    width: 100%;
+    position: relative;
+    z-index: 99;
+}
+header .ctrls {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    text-align: center;
+    -webkit-animation-delay: 2s;
+}
+header .ctrls a {
+    color: #FFF;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    width: 68px;
+    height: 29px;
+    line-height: 28px;
+    background: url(../images/btn-bg.png)center no-repeat;
+    background-size: cover;
+}
+.fadeInDown {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+header .ctrls a:last-child {
+    margin-top: 5px;
+}
+header .tvlogo {
+    position: absolute;
+    width: 32%;
+    top: 12px;
+    left: 13px;
+    z-index: 1;
+}
+.zoom-in {
+    -webkit-animation-name: zoom-in;
+    animation-name: zoom-in;
+}
+.logo {
+    width: 96%;
+    position: absolute;
+    left: 2%;
+    top: 20%;
+    z-index: 2;
+    -webkit-animation: spin 1s linear;
+}
+@-webkit-keyframes zoom-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+.btn-go{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 62%;
+    bottom: 16%;
+    margin: 0 auto;
+}
+.rubberBand {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+}
+@-webkit-keyframes rubberBand {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    max-height: 84px;
+    width: 100%;
+}
+#div_subscribe_area {
+    height: 50px;
+    overflow:hidden;
+}
+.copyright {
+    padding: 5px 0 3px;
+    height: auto;
+    position: static;
+    margin-bottom: 0;
+}
+/* iPhone4 */
+@media screen and (device-width : 320px)
+and (device-height : 480px){
+    .btn-go{
+        bottom: 20%;
+    }
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .btn-go{
+        bottom: 18%;
+    }
+}
+/* iPhone6 */
+@media screen
+and (device-width : 375px)
+and (device-height : 667px){
+}
+/* iPhone6+ */
+@media screen
+and (device-width : 414px)
+and (device-height : 736px){
+}
+
+@media screen and (device-width : 360px) {
+}

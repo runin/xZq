@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/parallax.min.css">
+	<link rel="stylesheet" href="./css/parallax-animation.min.css">
+    <script src="./js/wx_api.js"></script>
+    
+</head>
+<body>
+<div class="wrapper">
+	<div class="pages">
+<img id="load-img" style="display: none;" />
+		<!-- 第一屏 -->
+		<section class="page  bd-height wrpp sect1">
+			<div class="div-img">
+                <img class="logo"/>
+                <h1 class="dianzhao"></h1>
+            </div>
+            <div class="wan">
+            </div>
+            <footer class="u-arrow">
+                <div class="upBtn none"></div>
+                <div class="loading-btn"></div>
+                <div class="copyright">页面由西安广播电视台提供</div>
+            </footer>
+		</section>
+
+		<!-- 第四屏 -->
+		<section id="sign-section" class="page bd-height other-wrp none">
+			<div class="div-img">
+                <div class="sign">
+                    <p class="sign-title">
+                        <label class="my-sign">我要报名</label>
+                        <label class="check-rule" data-collect="true" data-collect-flag="food-rule" data-collect-desc="查看报名规则">点击查看报名规则</label>
+                    </p>
+                    <p class="name"><input id="name" type="text" placeholder="姓名"></p>
+                    <p class="name"><input id="phone" class="phone" type="number" maxlength="11" placeholder="手机"></p>
+                    <p class="apply-btn" id="sign-loading">
+                        <a type="button" id="btn-sign" class="btn-sign" data-collect="true" data-collect-flag="food-sign" data-collect-desc="我要报名">立即报名</a>
+                    </p>
+                    <footer class="sign-footer">
+                        <div class="copyright">页面由西安广播电视台提供</div>
+                    </footer>
+                </div>
+                <div class="bottom-bg">
+                    <label class="add">店铺地址</label>
+                    <label class="look" data-collect="true" data-collect-flag="food-add" data-collect-desc="查看地址">点击查看地址</label>
+                    <label id="map" class="map">
+                        <i class="zhe-zhao" id="addressStr">
+                        </i>
+                        <img />
+                    </label>
+                </div>
+                <div  id="tan-rule" class="terms none">
+                    <i class="close" data-collect="true" data-collect-flag="food-close" data-collect-desc="弹层报名规则关闭按钮"></i>
+                    <h1>报名规则</h1>
+                    <div class="articles" id="rule-content">
+                    </div>
+                </div>
+
+                <div class="terms apply none">
+                    <i class="close" data-collect="true" data-collect-flag="food-close-apply" data-collect-desc="弹层刮奖关闭按钮"></i>
+                    <div class="apply-title">
+                        <h1>报名有奖</h1>
+                        <p class="regis">恭喜您成功报名，您获得一次刮奖机会，快来试试运气！</p>
+                    </div>
+                    <div class="entity">
+                        <div id="lottery-container"></div>
+                       <!--实物-->
+                        <div id="entity-laye" class="none">
+
+                            <div class="des">
+
+                                <!--实物抽奖前-->
+                                <div id="entity-prev">
+                                    <img id="entity-img">
+                                    <div class="entity-pre">
+                                        <h1 class="entity-luck">-</h1>
+                                        <p id="entity-tip">-</p>
+                                        <p class="name"><input id="entity-phone" class="phone" type="number" maxlength="11" placeholder="手机"></p>
+                                        <p class="apply-btn" id="entity-loading">
+                                            <a type="button" id="entity-award" name="entity" class="btn-sign award" data-collect="true" data-collect-flag="food-phone-entity" data-collect-desc="确认实物手机号">确 定</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--实物抽奖后-->
+                                <div id="entity-contact"  class="contact entity-pre none">
+                                    <h1 class="entity-luck">-</h1>
+                                    <p id="entity-prizeTip"></p>
+                                    <p>
+                                        <label id="entity-conStr" class="tel-label">联系电话：</label>
+                                        <label id="entity-conTel" class="tel">13572002071（高女士）15991852135（王先生）</label>
+                                    </p>
+
+                                    <p class="apply-btn">
+                                        <a href="javascript:share();" type="button" class="btn-sign" data-collect="true" data-collect-flag="food-share-entity" data-collect-desc="分享抽到实物">让小伙伴来试试运气</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--积分-->
+                        <div id="jf-laye" class="none">
+                            <img id="jf-img">
+                            <div class="des">
+                                <h1 id="jf-luck">-</h1>
+                                <!--积分抽奖前-->
+                                <div id="jf-prev" class="">
+                                    <p id="jf-tip"></p>
+                                    <p class="name"><input id="jf-phone" class="phone" type="number" maxlength="11" placeholder="手机"></p>
+                                    <p class="apply-btn" id="jf-loading">
+                                        <a type="button" name="jf" id="jf-award" class="btn-sign award" data-collect="true" data-collect-flag="food-phone-integral" data-collect-desc="确认积分手机号">确 定</a>
+                                    </p>
+                                </div>
+                                <!--积分抽奖后-->
+                                <div id="jf-contact" class="contact none">
+                                   <p id="jf-prizeTip"></p>
+                                    <p class="apply-btn">
+                                        <a href="javascript:share();" type="button" class="btn-sign" data-collect="true" data-collect-flag="food-share-integral" data-collect-desc="分享抽到积分">让小伙伴来试试运气</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--没有中奖-->
+                        <div id="no-laye" class="none">
+                            <img id="no-img">
+                            <div class="des">
+                                <h1 id="no-luck">-</h1>
+                                <p class="apply-btn">
+                                    <a href="javascript:share();" type="button" class="btn-sign" data-collect="true" data-collect-flag="food-share-nocard" data-collect-desc="没有抽到奖">让小伙伴来试试运气</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer id="sign-copyright">本活动最终解释权归《西安看天下》《乐在西安》栏目所有</footer>
+                </div>
+
+            </div><!--
+            <footer class="sign-footer">
+                <div class="copyright">页面由西安广播电视台提供</div>
+            </footer>-->
+		</section>
+
+	</div>
+</div>
+
+
+<script src="./js/zepto.min.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/md5.js"></script>
+<script src="./js/share.js"></script>
+<script src="./js/data_collect.js"></script>
+<script src="js/parallax.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/lottery.js"></script>
+<script src="./js/signup.js"></script>
+</body>
+</html>
+
+
+

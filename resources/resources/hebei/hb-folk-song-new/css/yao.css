@@ -1,0 +1,182 @@
+body{
+	background-color: #000;
+	background-image: url(../images/yao-center.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center center;
+	min-height: 100%;
+	width: 100%;
+}
+.yao-tlt{
+	margin: 6% auto 0;
+	width: 90%;
+	display: block;
+}
+.ad{
+	width: 165px;
+	height: 46px;
+	float: right;
+	margin-right: 5%;
+	margin-top: 10px;
+}
+.outer{
+	color: #FDCB2C;
+	top: 22%;
+	right: 10%;
+	position: absolute;
+	font-size: 12px;
+	text-decoration:  underline;
+}
+.countdown{
+	height: 52px;
+	line-height: 52px;
+	margin: 0 18% 2%;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+}
+.countdown .detail-countdown{
+	background: url(../images/biao.png) no-repeat;
+	background-size: 52px auto;
+	display: inline-block;
+	padding-left: 6%;
+	padding-top: 6%;
+	margin-left: 2px;
+}
+.copyright {
+	position: relative;
+	color: #fff;
+	line-height: 13px;
+	margin-top: 3px;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/*yao-s*/
+.home-box {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.main-top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 50%;
+	background-image: url('../images/home_logo_a.jpg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	box-sizing: border-box;
+}
+.yao .m-t-b {
+	animation-name: mtop;
+	-webkit-animation-name: mtop;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes mtop {
+	0%, 90% {
+		-webkit-transform: translateY(0px);
+	}
+	50%, 30% {
+		-webkit-transform: translateY(-100px);
+	}
+}
+.main-foot {
+	position: absolute;
+	bottom: 1px;
+	width: 100%;
+	height: 50%;
+	background-image: url('../images/home_logo_b.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	box-sizing: border-box;
+}
+.yao .m-f-b {
+	animation-name: mfoot;
+	-webkit-animation-name: mfoot;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes mfoot {
+	0%, 90% {
+		-webkit-transform: translateY(0px);
+	}
+	30%, 50% {
+		-webkit-transform: translateY(100px);
+	}
+}
+.yao-text{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 120px;
+	line-height: 120px;
+	top: 38%;
+	left: 0;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	margin: 0 auto;
+	background: rgba(0,0,0,.6);
+	z-index: 999;
+	overflow: hidden;
+	color: #F1DD77;
+	font-weight: bolder;
+	text-shadow:0 0 6px #000;
+	-webkit-transform:scale(0);
+}
+/*yao-e*/
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.countdown{
+		-webkit-transform: scale(.8);
+		margin: 0 18% 2%;
+	}
+	.dialog-body img {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.yao-text {
+		top: 35%;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.yao-text {
+		/* margin: 25% auto 0; */
+	}
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait){
+
+}

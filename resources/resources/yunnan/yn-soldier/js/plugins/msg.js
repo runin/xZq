@@ -1,0 +1,10 @@
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/0q.jpg' class='c_head_img_img' /></div>"+"期待已久的士兵突击终于来了");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/1q.jpg' class='c_head_img_img' /></div>"+"演员都很卖力，真人秀节目还不错！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/2q.jpg' class='c_head_img_img' /></div>"+"挺好看的，还能摇到红包呢！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/3q.jpg' class='c_head_img_img' /></div>"+"真人秀萌萌哒，都是真汉子。");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/4q.jpg' class='c_head_img_img' /></div>"+"我摇到现金红包了，你们呢？");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/5q.jpg' class='c_head_img_img' /></div>"+"大家都在吗？有没有看勇者奇兵啊");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/6q.jpg' class='c_head_img_img' /></div>"+"好看好看，还有奖拿！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/7q.jpg' class='c_head_img_img' /></div>"+"只想中奖！！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/8q.jpg' class='c_head_img_img' /></div>"+"中奖，中奖，求中奖");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/head/9q.jpg' class='c_head_img_img' /></div>"+"我要中奖我要中奖！");

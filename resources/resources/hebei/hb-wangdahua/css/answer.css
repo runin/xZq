@@ -1,0 +1,285 @@
+body {
+    overflow: hidden;
+    margin: 0 auto;
+    background: url(../images/answer-bg.jpg) no-repeat;
+  background-position: top center;  
+  background-size: cover;
+  background-color: #000;
+}
+header {
+    position: relative;
+    overflow: hidden;
+}
+header:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/content-shadow.png) no-repeat bottom;
+  background-size: cover;
+  z-index: -1;
+}
+header .total {
+    position: absolute;
+	
+    left: 8px;
+    top: 8px;
+    color: #878787;
+    font-size: 14px;
+}
+header .btn-rule {
+	position: absolute;
+	left: 100px;
+	top: 32px;
+	border: 1px solid #8e8886;
+	color: #8e8886;
+	border-radius: 20px;
+	font-size: 12px;
+	padding: 0px 5px;
+}
+header .ranking {
+    display: block;
+      position: absolute;
+  right: 5px;
+  top: 8px;
+  border-radius: 20px;
+  text-align: center;
+  color: #8e8886;
+}
+header .ranking img {
+    width: 60%;
+}
+.ranking span {
+    font-size: 14px;
+	
+    display: inline-block;
+    vertical-align: top;
+    height: 14px;
+}
+.ranking p {
+    font-size: 12px;
+	
+    margin-top: -6px;
+}
+header h2 {
+  height: 40px;
+  background: url(../images/logos.png) no-repeat 0 0;
+  background-size: 110px auto;
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  width: 110px;
+}
+header .hd-wrapper {
+      height: 30%;
+  margin-bottom: 6%;
+}
+header .qa-wrapper {
+    height: 60%;
+    text-align: center;
+}
+/*header .qa-wrapper:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 1%;
+}*/
+header .qa-wrapper .wrapper {
+    width: 96%;
+	
+    display: inline-block;
+    vertical-align: middle;
+}
+.qa-wrapper .c-item {
+	
+}
+.qa-wrapper .question {
+	
+}
+.timer .wait-next {
+    display: block;
+  font-size: 15px;
+}
+.qa-wrapper .question dt {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.qa-wrapper .question ul {
+  
+}
+.qa-wrapper .question li {
+    text-align: center;
+	
+}
+.qa-wrapper .question dd {
+    display: inline-block;
+    vertical-align: middle;
+}
+.qa-wrapper .question dd a {
+  display: block;
+  background: #9a0000;
+  color: #FFF;
+  text-align: center;
+  border-radius: 20px;
+  padding: 6px 21px;
+  margin: 10px 5px 0;
+}
+.qa-wrapper .answered {
+    color: #fff;
+	
+    text-align: center;
+    position: relative;
+}
+.qa-wrapper .answered .timer {
+    margin-top: 8%;
+}
+.qa-wrapper .answered .timer h4 {
+  font-size: 15px;
+  -webkit-mask:-webkit-gradient(linear,0% 0%,0% 100%,from(rgba(255,255,255,0.8)),to(rgba(210,210,210,1)));
+}
+.qa-wrapper .answered h3 {
+    font-size: 20px;
+	
+    margin-bottom: 8px;
+    display: none;
+}
+.qa-wrapper .answered.error h3 {
+	display: block;
+}
+.qa-wrapper .answered .btn-reserve {
+	display: none;
+	background: #ffcd02;
+	color: #3b0505;
+	text-align: center;
+	border-radius: 20px;
+	padding: 2px 15px;
+	width: 40%;
+	margin: 10px auto 0;
+}
+.qa-wrapper .answered .reserved .btn-reserve {
+	display: block;
+}
+.qa-wrapper .answered h5 {
+    margin-top: 2%;
+    font-size: 26px;
+    font-weight: bold;
+}
+.qa-wrapper .answered h5 span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 34px;
+    border-radius: 5px;
+}
+.qa-wrapper .answered h5 i {
+    display: inline-block;
+	
+    vertical-align: middle;
+    font-style: normal;
+    width: 10px;
+    text-align: center;
+}
+article {
+    background-image: url(../images/comment-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+article:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/danmu-shadow.png) no-repeat rgba(0,0,0,.5) top;
+  background-size: cover;
+}
+article .comments {
+	position: relative;
+}
+article .ctrls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    background: rgba(0,0,0,0.2);
+}
+.ctrls p {
+	position: relative;
+    margin: 6px 70px 6px 10px;
+}
+.ctrls p input {
+width: 100%;
+  height: 38px;
+  border: 1px solid rgba(255,255,255,.5);
+  border-radius: 5px;
+  padding: 0 5px;
+  background: rgba(115,2,0,.3);
+  color: #fff;
+  outline: none;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.ctrls p input.error {
+	border: 1px solid #f00;
+}
+.ctrls a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 38px;
+  line-height: 38px;
+  background: url(../images/btn-danmu.png) no-repeat;
+  background-size: 60px auto;
+  border: 1px solid rgba(255,255,255,.5);
+  border-left: none;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  right: -60px;
+  top: 0px;
+}
+.copyright {
+    color: #0092C7;
+    line-height: 13px;
+    height: auto;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .qa-wrapper .answered .timer {
+    margin-top: 2%;
+  }
+  .qa-wrapper .answered h5 {
+    margin-top: 0;
+  }
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 570px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+  .qa-wrapper .answered .timer {
+    margin-top: 2%;
+  }
+  .qa-wrapper .answered h5 {
+    margin-top: 0;
+  }
+}

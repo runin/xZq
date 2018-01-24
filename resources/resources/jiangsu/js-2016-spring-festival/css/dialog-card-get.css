@@ -1,0 +1,45 @@
+#card_get_dialog{
+	background: rgba(0, 0, 0, 0.75);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	z-index: 1;
+}
+#card_get_dialog .dialog{
+	width: 100%;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/01/957pprijv1qnhi/images/bg-card-small.png) no-repeat top;
+	background-size: contain;
+	position: relative;
+}
+#card_get_dialog .card-get-gift{
+	position: absolute;
+	right: 10px;
+	bottom: -50px;
+	z-index: 1;
+	width: 35px;
+	display: none;
+}
+#card_get_dialog .card-get-btn{
+	left: 0px;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	z-index: 4;
+}
+#card_get_dialog .card-get-btn img{
+	height: 100%;
+}
+#card_get_dialog .card-text{
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	margin: 8px auto 0px;
+	width: 68%;
+}

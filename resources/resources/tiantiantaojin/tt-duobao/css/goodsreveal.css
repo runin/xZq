@@ -1,0 +1,139 @@
+header
+{
+	z-index: 2;
+	top:0px;
+	position: fixed;
+	height:36px;
+	line-height: 36px;
+	text-align:center;
+	width: 100%;
+	background: #F8F8F9;
+	border-bottom: 1px solid #e8e8e8;
+	letter-spacing: 2px;
+}
+.goods-list
+{
+	margin-top: 35px;
+    overflow: hidden;
+}
+.goods-list>ul
+{
+    overflow: hidden;
+    border-bottom: 1px solid #dedede;
+}
+.goods-list>ul>li {
+    float: left;
+    width: 50%;
+}
+
+.tt-goods
+{
+	padding: 8px 6px 5px 6px;
+	border: 1px solid #dedede;
+    position: relative;
+    overflow: hidden;
+    margin: 0 -1px -1px;
+    z-index: 1;
+    background: #fff;
+    border-bottom:none;
+}
+.tt-goods-img{
+    overflow: hidden;
+	position: relative;
+    margin: 0 auto 7px;
+    max-width: 160px;
+    height:120px;
+    text-align: center;
+}
+.tt-goods-img img
+{
+    display: block;
+}
+.result
+{
+	height:88px;
+    overflow: hidden;
+}
+.tt-goods-infor p,.result p
+{
+	margin-top: 5px;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.countdown
+{
+	position: relative;
+	color:#f91546;
+    height: 88px;
+    padding-top:18px;
+}
+/*倒计时*/
+.ico-countdown
+{
+    position: relative;
+    font-size: 12px;
+}
+.ico-countdown i
+{
+	display:inline-block;
+	position: relative;
+	width: 16px;
+	height:16px;
+    border-radius: 100%;
+    overflow: hidden;
+    background: #f91546;
+    margin-right: 10px;
+    
+    vertical-align: middle;
+	/*background: url("../images/countdown-icon.png") top center no-repeat;*/
+}
+.detail-countdown
+{
+    font-size: 36px;
+    padding: 2px;
+}
+.ico-countdown i:after
+{
+    position:absolute;
+    content: "";
+    height:10px;
+    width:10px;
+    border:1px solid #ffffff;
+    top:-1px;
+    right:-1px;
+
+}
+/*专区图片*/
+.ico-label {
+    top:0px;
+    left:0px;
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    z-index: 1;
+   
+}
+.ico-special
+{
+   background-position: -70px -85px;
+}
+.timeing
+{   
+    position: absolute;
+    top:0px;
+    right:0px;
+    z-index:1;
+    width: 35px;
+    height: 35px;
+    background-position: -35px -105px;
+}
+.timeover{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    background-position: 0px -105px;
+}

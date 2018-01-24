@@ -1,0 +1,355 @@
+@media only screen and (min-width: 640px) {
+	html,
+	img {
+		font-size: 200px
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 640px) {
+	html,
+	img {
+		font-size: 150px
+	}
+}
+@media only screen and (min-width: 400px) and (max-width: 480px) {
+	html,
+	img {
+		font-size: 125px
+	}
+}
+@media only screen and (min-width: 360px) and (max-width: 400px) {
+	html,
+	img {
+		font-size: 112px
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+	html,
+	img {
+		font-size: 100px
+	}
+}
+@media only screen and (max-width: 320px) {
+	html,
+	img {
+		font-size: 86px
+	}
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+body{
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg-photo.jpg) no-repeat;
+	background-size: 100% 100%;	
+	font-size: .15em;
+	line-height: 1.5;
+	overflow-x:hidden;
+}
+.main {
+	height: 100%;
+	margin: 0 auto;
+	overflow-y: auto;
+}
+
+.tips{
+	display: inline-block;
+	position: absolute;
+	background: rgba(0,0,0,0);
+	color: #fff;
+	padding: 4px 10px;
+	border-radius: 30px;
+	font-size: 13px;
+	text-align: center;
+	top:40%;
+	left: 50%;
+	margin-left: -0.5rem;
+	animation: jump 0.5s 0.1s linear 1 forwards;
+	-webkit-animation: jump 0.5s 0.1s linear 1 forwards;
+	overflow: hidden;
+	z-index: 1005;
+		
+}
+@-webkit-keyframes jump{
+	0%{
+		-webkit-transform: translateY(0.03rem);
+		background: rgba(0,0,0,0.5);
+	}
+	100%{ 
+		-webkit-transform: translateY(-0.03remrem);
+		background: rgba(0,0,0,0.9);
+	}
+}
+@keyframes jump{
+	0%{
+		-webkit-transform: translateY(0.03rem);
+		background: rgba(0,0,0,0.5);
+	}
+	100%{ 
+		-webkit-transform: translateY(-0.03rem);
+		background: rgba(0,0,0,0.9);
+	}
+}
+header.nav{
+ 	text-align: left;
+ 	padding: 3% ;
+ 	line-height: 0;
+}  
+header.nav img {
+	width :36%;
+}
+.icon {
+	display: block;
+	position: absolute;
+	top:1.3rem;
+	left: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	background:rgba(255,255,255,0.8) url(../images/cam.png) no-repeat center;
+	background-size: 70%;
+	border: 4px solid #8a8986;
+	border-radius:50%;
+	z-index: 99;
+	
+}
+.form-item{
+	  width: 2.8rem;
+	  height: 3.8rem;
+	  background: #eeeeee url(../images/pho-bg.jpg) no-repeat;
+	  background-size: 100% 100%;
+	  margin: 0 auto .1rem;
+	  padding: .1rem;
+	  overflow: hidden;
+	  position: relative;
+	  transform: rotate(-1deg);
+}
+.mix-info, .star-photo {
+	  width: 2.6rem;
+	  height: 3.2rem;
+	  position: relative;
+	  background: url(../images/photo-bg.jpg) repeat-y;
+	  background-size: 100% auto;
+	  overflow: hidden;
+	  border:2px solid #a4a4a3;
+	
+}
+.star-photo img.star{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 3;
+}
+.close-photo {
+	display: block;
+	background:#7e0005 url(../images/close.png) no-repeat center;
+	background-size: 0.1rem;
+	width: 0.36rem;
+	height:0.22rem;
+	position: absolute;
+	left: 0rem;
+	top: -0.16rem;
+	cursor: pointer;
+	border-top-right-radius:0.05rem ;
+	border-bottom-right-radius:0.05rem ;
+	z-index: 1003;
+}
+.photoed{
+	background: #eeeeee url(../images/pho-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.img-ctrl{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	
+}
+.photoBox,.photoedBox{
+	width: 100%;
+	position: relative;
+
+}
+.photoedBox{
+	padding-top: 64px;
+}
+.person-info,.photoBox-info{
+	width: 100%;
+	height: .5rem;
+	position: relative;
+	transform: rotate(1deg);
+	position: absolute;
+	bottom:0;
+}
+.photoBox-info img{
+	margin-left: 0.2rem;
+	width: 80%;
+	margin-top: -0.07rem;
+}
+/*.person-info label:first-child{
+	display: inline-block;
+	width: 1.4rem;
+	height:0.6rem ;
+	padding: 0.05rem;
+	font-size:0.12rem;
+}
+
+.person-info label img{
+	width: 0.5rem;
+	border-radius: 50%;
+}
+.person-info label span{
+	display: inline-block;
+	width: 0.7rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	border-radius: 50%;
+	float:right ;
+	text-align: left;
+	
+}
+.person-info label:last-child{
+	position: absolute;
+	right: 0rem;
+	bottom: 0.05rem;
+	padding:0.02rem 0.06rem 0.02rem  0.24rem ;
+	font-size:0.12rem;
+	border :1px solid #aeaeae;
+	border-radius: 0.1rem;
+	color: #aeaeae;
+	background: url(../images/love.png)no-repeat center left;
+	background-size: 0.14rem;
+	background-position:0.06rem ;
+	
+}
+.person-info label.voted{
+	color: #000;
+}*/
+.btn-submit{
+	display: inline-block;
+	width: 1.1rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	text-align: center;
+	color: #fff;
+	
+}
+.submit{
+ 	background: url(../images/crm-btn.png) no-repeat bottom;
+	background-size: 100% auto;
+	margin-right: 0.17rem;
+}
+.rephoto{
+	background: url(../images/re-pho.png) no-repeat bottom;
+	background-size: 100% auto;
+	margin-left: 0.17rem;
+}
+
+.mix-info   img{
+	width: :;;
+}
+.btn-refresh{
+	position: absolute;
+	width: 100%;
+	height: 0.5rem;
+	display: block;
+	background: url(../images/photo-try.png) no-repeat bottom center;
+	background-size: 1.4rem auto;
+	margin: 0 auto;
+	bottom:-0.1rem;	
+}
+.self-rephoto{
+	background: url(../images/return.png) no-repeat bottom center;
+	background-size: 1.4rem auto;
+}
+.returnphoto{
+	background: url(../images/return.png) no-repeat bottom;
+	background-size: 1.4rem auto;
+}
+.photo-btn{
+	position: absolute;
+	width: 100%;
+	bottom:-0.1rem;	
+	left: 50%;
+	margin-left: -1.3rem;
+	transform: rotate(1deg);
+}
+.result-main .photoedBox{
+	background: url(../images/share.png) no-repeat top center;
+	background-size: 2.8rem auto;
+	background-position-y:6px;
+}
+
+
+@-webkit-keyframes spin{
+	0%{
+		-webkit-transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1) skew(0deg, 0deg);
+	}
+	100%{ 
+		-webkit-transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(180deg) rotateZ(0deg) scale3d(1, 1, 1) skew(0deg, 0deg);
+	}
+}
+@keyframes spin{
+	0%{
+		transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1) skew(0deg, 0deg);
+	}
+	100%{ 
+		transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(180deg) rotateZ(0deg) scale3d(1, 1, 1) skew(0deg, 0deg);
+	}
+}
+/*self*/
+@media screen and (min-device-width:320px) and (min-device-height:860px) {
+	.btn-submit{
+		  line-height: 0.45rem;
+	}
+	.close-photo {
+		  background-size: 0.12rem;
+		  width: 0.44rem;
+		  height: 0.24rem;
+	 }
+}
+/*dai*/
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.btn-submit{
+		  line-height: 0.44rem;
+	}
+	.close-photo {
+		  background-size: 0.12rem;
+		  width: 0.44rem;
+		  height: 0.24rem;
+	 }
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	
+}
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.photoedBox {
+	  padding-top: 44px;
+	}
+	.main{
+		padding-bottom: 30px;
+	}
+}
+.ic
+{
+ position:absolute;
+ left:0px;
+ top:0px;
+ z-index:999999;    
+}

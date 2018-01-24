@@ -1,0 +1,81 @@
+html {
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow:hidden;
+    overflow-y: scroll;
+}
+
+#J_background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	z-index: -1;
+}
+.icon-slogan {
+	position: absolute;
+	width: 30%;
+	top: 12%;
+	left: 35%;
+}
+.btn-a {
+	display: block;
+	margin: 0 auto 8%;
+	width: 45%;
+	height: 42px;
+	line-height: 40px;
+	font-size: 19px;
+	border: 1px solid rgba(255,255,255,.6);
+	border-radius: 50px;
+	background: rgba(0,0,0,.1);
+}
+.btn-a:hover {
+	background: rgba(0,0,0,.3);
+}
+
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:570px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone6 */
+@media screen
+and (min-device-width:360px)
+and (max-device-width:667px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone6plus */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+
+/* HUAWEI H6 */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+}

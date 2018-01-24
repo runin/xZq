@@ -1,0 +1,11 @@
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/0.jpg'></div>" + "这节目不错！~");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/1.jpg'></div>" + "奖品挺多呀！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/2.jpg'></div>" + "中了洋河的奖品，哦也");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/3.jpg'></div>" + "洋河蓝色经典不错哦");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/5.jpg'></div>" + "叮咯咙咚呛，我要中大奖！");
+// window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/6.jpg'></div>" + "");
+// window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/7.jpg'></div>" + "");
+// window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/8.jpg'></div>" + "");
+// window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/7.jpg'></div>" + "");
+// window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/11.jpg'></div>" + "");
+// window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/12.jpg'></div>" + "");

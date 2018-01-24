@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>央视新闻频道春节说吧</title>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+	<header>
+		<img class="icon-tvlogo" src="./images/icon-tvlogo.png">
+	</header>
+	<footer>
+		<section class="room-box">
+			<section class="container">
+				<img class="icon-slogan" src="./images/icon-slogan.png">
+			</section>
+			<section class="redio-video">
+				<div class="redio" id="sredio">
+					<img src="images/radio.png" />
+				</div>
+			</section>
+			<img class="icon-room" src="./images/icon-room.png">
+		</section>
+		<p class="copyright">页面由央视新闻提供</p>
+	</footer>
+	<section class="popbox none" id="popradio">
+		<div class="pop-redio">
+			<a href="javascript:void(0);" class="pop-close" id="popclose"></a>
+			<div class="redio-ing">
+				<span id="anredio"></span>
+			</div>
+			<div class="uploading">
+				<span id="lying" class="none">正在录音中...</span>
+				<span id="upling" class="none">上传中...</span>
+			</div>
+			<div class="popbtn">
+				<a href="javascript:void(0);" class="btn-a" id="startbtn">开始录音</a>
+				<a href="javascript:void(0);" class="btn-a none" id="stopbtn">停止录音</a>
+				<a href="javascript:void(0);" class="btn-a none" id="shitingbtn">试听</a>
+				<a href="javascript:void(0);" class="btn-a nonebtn">提交</a>
+				<a href="javascript:void(0);" class="btn-a none" id="keepbtn">提交</a>
+			</div>
+		</div>
+	</section>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/index.js"></script>
+</body>
+</html>

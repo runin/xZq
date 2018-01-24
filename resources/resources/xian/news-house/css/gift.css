@@ -1,0 +1,89 @@
+html {
+	background: #EDEDED;
+}
+.main {
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-size: 15px;
+}
+.gift-timeline {
+    position: relative;
+	
+    padding-left: 28px;
+}
+.gift-timeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 5px;
+	background: #FAAAB1;
+}
+.gift-timeline li {
+    padding-left: 27px;
+	
+    margin-top: 17px;
+    position: relative;
+}
+.gift-timeline li:last-child:before {
+	content: '';
+	display: block;
+	width: 5px;
+	height: 100%;
+	background: #EDEDED;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.gift-time {
+    color: #f65a68;
+    padding-top: 5px;
+}
+.gift-icon {
+    width: 26px;
+	
+    height: 26px;
+    border: 2px solid #FAAAB1;
+    border-radius: 50%;
+    position: absolute;
+    left: -12px;
+    background: #fff;
+}
+.gift-icon:before {
+	content: '';
+	
+	background: url(http://yao.holdfun.cn/portal/resources/news/images/icons-add.png) no-repeat -70px -73px;
+	background-size: 218px auto;
+	width: 11px;
+	height: 14px;
+	display: block;
+	margin-left: 7px;
+	margin-top: 5px;
+}
+.gift-content {
+    background: #fff;
+	
+    border-radius: 8px 0 0 8px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.gift-content h2 {
+    color: #000;
+	
+    border-bottom: 1px solid #E7E7E7;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+.gift-content p {
+    color: #888888;
+	
+    line-height: 24px;
+}
+.btn-back {
+	margin-top: 30px;
+}
+.btn-loadmore{
+    background: #D2CCC7;
+}

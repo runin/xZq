@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no" />
+<title>鲁豫有约</title>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/activity.css" />
+</head>
+<body>
+	<audio preload="auto" id="audio" src="images/ding.mp3"></audio>
+	<header>
+		<a class="btn btn-rule" id="btn-rule" data-collect="true" data-collect-flag="activity-rule-btn" data-collect-desc="抢屏页面活动规则按钮">活动规则</a>
+		<a class="btn btn-person" id="btn-person" data-collect="true" data-collect-flag="activity-personal-center-btn" data-collect-desc="抢屏页面个人中心按钮">个人中心</a>
+	</header>
+	<section class="sec">
+		<div class="sec-a">
+			<img src="images/act-a.jpg"> 
+		   	<div class="time-box">
+		   		<div class="time"><span class="time-tip">请稍候</span><span class="downContTime"></span></div>
+		   	</div>
+		   	<div class="ddtj none">
+			   	<a class="ddtj-box" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+					<i class="ddtj-before wobble"></i>
+					<p class="ddtj-text"></p>
+				</a>
+			</div>
+		</div>
+		<div class="sec-b">
+			<img src="images/act-b.jpg"> 
+			<div class="screen"> 
+				<div class="screen1 none">
+					<img src="images/logo.png" />
+					<a class="btn-click" id="btn-click" data-collect="true" data-collect-flag="activity-click-btn" data-collect-desc="抢屏页面拼命点我按钮"><img src="images/click-btn.png" /><div class="hand click"> <img src="images/hand.png" /></div></a>
+					<p class="click-tip">拼命点我哦，倒计时出现点我次数越多，上屏的机会就越大</p>
+				</div>
+				<div class="screen2 none">
+					<label class="none">
+						<img src="images/danmu-head.jpg" />
+						<span></span>
+				   </label>
+					<p class="none"></p>
+				</div>
+			</div>
+			<div class="screen-side"> 
+				<span id="countTime"></span>
+			</div>
+		</div>
+		<div class="turn-box">
+			<a href="#" class="btn-speak" id="btn-speak" data-collect="true" data-collect-flag="yao-btn-speak" data-collect-desc="摇一摇页面-跳转我要发言按钮">去弹幕</a>
+		</div>
+		<!--<a id="back-btn" class="current-btn back-btn scale" href="comment.html" data-collect="true" data-collect-flag="activity-to-comment-btn" data-collect-desc="抢屏页面去评论按钮"><img src="images/info.png"></a>-->
+		 <p class="count hidden">截至目前，在线人数有<span></span>人</p>
+	</section>
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/activity.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

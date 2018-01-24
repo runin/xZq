@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>沈视早报</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+<header class= "marquee">
+	<div><ul></ul></div>
+</header>
+	<div class="main" data-margin="70">
+		<input type="hidden" id="noRunShare" value="true"> <a
+			class="logo animated" id="logo"></a> <a
+			href="#" data-collect="true"
+			data-collect-flag="sy-news-index_start-btn"
+			data-collect-desc="新闻调查首页进入调查页面" class="btn-begin" id="btn-begin">开始</a>
+
+		<a href="javascript:toUrl('baoliao.html');" data-collect="true"
+			data-collect-flag="sy-news-index_baoliao-btn"
+			data-collect-desc="新闻调查首页进入爆料页面" class="icon border baoliao"> 我要爆料</a>
+
+		<a data-collect="true"
+		   data-collect-flag="sy-news-index_baoliao-btn"
+		   data-collect-desc="新闻调查首页进入爆料页面" id="comments" class="icon border apply">话题评论</a>
+			
+	</div>
+	<div class="copyright">页面由沈阳广播电视台·新闻频道提供</div>
+	
+	<div class="tab animated none" id="tab">
+		<a href="#" data-collect="true"
+		   data-collect-flag="news-index-jifen-btn"
+		   data-collect-desc="新闻调查首页进入积分页面" class="jifen" id="jifen">积分商城</a> <span class="none">|</span>
+		<a href="#" data-collect="true"
+			data-collect-flag="sy-news-index-history-btn"
+			data-collect-desc="新闻调查首页进入往期页面" id="apply" class="diaocha none">我要报名</a> <span class="awardline none">|</span>
+		<a href="#" data-collect="true"
+			data-collect-flag="sy-news-index-award-btn"
+			data-collect-desc="新闻调查首页抽奖按钮" id="award" class="choujiang none">幸运摇奖</a> <span>|</span>
+		<a href="javascript:toUrl('rule.html');" data-collect="true"
+			data-collect-flag="sy-news-index-rule-btn"
+			data-collect-desc="新闻调查首页进入规则页面" class="rule">查看规则</a>
+	</div>
+
+	<!--活动规则-->
+	<section class="rule-section none">
+		<div>
+			<h2></h2>
+			<div class="con"></div>
+			<a class="btn" id="rule-close">我知道了</a>
+		</div>
+	</section>
+
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/data_collect.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+	<script src="./js/wx_api_userinfo.js"></script>
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+	<img src="./images/redbg.png" style="width:0 !important;height:0 !important;opacity:0 !important;">
+	<img src="./images/icon_nofun.png" style="width:0 !important;height:0 !important;opacity:0 !important;">
+</body>
+</html>

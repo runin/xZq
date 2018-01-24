@@ -1,0 +1,144 @@
+*{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    width: 100%;
+    height: 100%;
+    background: url("../images/vote-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.submit{
+    position: absolute;
+    top: 100px;
+    width: 80%;
+    height: 260px;
+    left: 10%;
+    opacity: 0;
+}
+.submit>.btn-back{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: 30px;
+    background: url("../images/back.png") no-repeat;
+    background-size: 100% 100%;
+}
+.submit>.btn-submit{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    bottom: -60px;
+    background: url("../images/submit.png") no-repeat;
+    background-size: 100% 100%;
+}
+.sign{
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    top: 20px;
+}
+.sign>div{
+    width: 100%;
+    height: 40px;
+}
+.sign>div>span{
+    position: absolute;
+    width: 24%;
+    height: 26px;
+    line-height: 26px;
+    text-align: right;
+    color: white;
+}
+.sign>div>input{
+    position: absolute;
+    width: 60%;
+    left: 25%;
+    height: 26px;
+    /*top: 7px;*/
+    vertical-align: middle;
+    border-radius: 4px;
+    outline: none;
+}
+.chuang>p{
+    position: absolute;
+    width: 45%;
+    text-align: center;
+    color: white;
+}
+.plan{
+    position: absolute;
+    width: 48%;
+    right: 15%;
+    height: 26px;
+    line-height: 26px;
+    text-align: left;
+    border-radius: 4px;
+    background-color: white;
+}
+.plan>img{
+    position: absolute;
+    width: 16px;
+    height: 26px;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #7d0000;
+    z-index: 5;
+}
+.chkbox{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    border-radius: 4px;
+    background-color: white;
+    top: 26px;
+    height: 0;
+    overflow-y: scroll;
+    z-index: 50;
+    /*height: 50px;*/
+}
+.chkbox p{
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+.issubmit{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    top: 40%;
+}
+.issubmit>img{
+    position: absolute;
+    width: 30px;
+    left: 10%;
+}
+.issubmit>div{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background: url("../images/btn-back.png") no-repeat;
+    background-size: 100% 100%;
+    top: 40%;
+    display: none;
+}
+.sign-bg{
+    position: absolute;
+    background-color: #c418d6;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.footer{
+    position: absolute;
+    /*bottom: 0;*/
+    left: 0;
+    right: 0;
+}

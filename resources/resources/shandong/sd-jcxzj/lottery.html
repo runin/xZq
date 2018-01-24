@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>梦金园金彩浙江行</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+    <img class="preload" src="./images/bg-dialog.png">
+    <img class="preload" src="./images/icon-gift.png">
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <header>
+        <section class="marquee hide"><ul></ul></section>
+    </header>
+    <section class="container">
+        <p class="thanks-tips"></p>
+        <div class="over none">抽奖活动即将开始,请等待主持人提示噢!</div>
+        <img class="icon-lottery-wheel" src="./images/icon-wheel.png">
+        <p class="qrcode-tips none">长按识别关注，更多惊喜内容等着你！</p>
+    </section>
+    <section class="countdown none">
+        <img src="images/shake-hand.png" />
+        <span class="countdown-tip"></span>
+        <span class="detail-countdown"></span>
+    </section>
+    <p class="mjy hide">本活动奖品由梦金园提供</p>
+    <footer>
+        <!--<img class="icon-box" src="./images/icon-box.png">-->
+        <section class="copyright">页面由山东生活频道提供<br>新掌趣科技技术支持 & Powered by holdfun.cn</section>
+    </footer>
+    <!--<img class="shine" src="./images/icon-coin.png">-->
+    <!-- <input type="button" class="none" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;"> -->
+
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/lottery.js"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

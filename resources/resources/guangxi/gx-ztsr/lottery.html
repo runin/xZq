@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>少儿春晚</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <header>
+        <img class="icon-tvlogo" src="./images/icon-tvlogo.png">
+        <div class="footer">
+            <section class="countdown none">
+                <span class="countdown-tip"></span>
+                <span class="detail-countdown"></span>
+            </section>
+        </div>
+    </header>
+    <section class="container">
+        <img class="icon-lottery-wheel" src="./images/icon-lottery-wheel.png">
+        <section class="marquee none"><ul></ul></section>
+        <p class="thanks-tips"></p>
+        <a class="linkout none" id="linkout" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+        <p class="linktext none"></p>
+    </section>
+    <!--<input type="button" class="" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;">-->
+    <footer>
+        <section class="copyright" style="color:#999;"></section>
+    </footer>
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.selector.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/sha1.min.js"></script>
+    <script src="./js/plugins/shake.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/lottery.js"></script>
+
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

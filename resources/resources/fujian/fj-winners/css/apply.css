@@ -1,0 +1,165 @@
+﻿body, html
+{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul, li
+{
+    padding: 0px;
+    margin: 0px;
+}
+.none
+{
+    display: none;
+}
+.main
+{
+    height: 100%;
+    width: 100%;
+    background: url("../images/bg_b.jpg") center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.come_backs
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 90px;
+    height: 32px;
+    text-align: center;
+    background-color: #0085E2;
+    color: White;
+    line-height: 32px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.apply-form
+{
+ 
+    margin: auto;
+    margin-top:30%;
+    width: 90%;
+    height: 300px;
+    background-color: #3AABF7;
+    color: White;
+    border-radius: 5px;
+    padding: 15px 15px;
+    z-index:99999;
+     box-shadow: inset 0 0 1px 1px #ccc;
+}
+@media (max-height:480px)
+{
+     .apply-form
+    {
+        margin-top:18%;  
+    }
+}
+
+.apply-form ul
+{
+    width: 100%;
+}
+
+
+.apply-form li
+{
+    margin-top: +15px;
+}
+.apply-form li:first-child
+{
+    margin-top: 0px;
+}
+
+.apply-form li span:first-child
+{
+    width: 25%;
+    text-align: right;
+}
+.apply-form li span:last-child
+{
+    width: 65%;
+}
+.apply-form span
+{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+.apply-form input[ type="text"]
+{
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 5px;
+}
+.apply-form input[ type="radio"]
+{
+    vertical-align: middle;
+}
+.submit
+{
+    width: 170px;
+    height: 50px;
+    background: url("../images/submit.png") center center;
+    background-size: contain;
+    border: 0px;
+}
+.li_submit
+{
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+footer
+{
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #339BDC;
+    z-index:9;
+    margin-top:130px;
+}
+@media (max-height:480px)
+{
+  footer
+  {
+     margin-top:90px;   
+  }    
+}
+.submit_success
+{
+    height: 100%;
+    width: 100%;
+    background: url("../images/bg_a.jpg") center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.submit_success_middle
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    text-align: center;
+}
+.apply_tip
+{
+    width: 100%;
+}
+.apply_back
+{
+    margin-top: 100px;
+    width: 160px;
+}

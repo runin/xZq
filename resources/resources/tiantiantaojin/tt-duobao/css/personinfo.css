@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.info-info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    background-color: white;
+}
+.info-phone{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    z-index: 10;
+}
+.label{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #b4b4b4;
+}
+.head div{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+}
+.label p{
+    position: absolute;
+    width: 30%;
+    height: 60px;
+    left: 10px;
+    text-align: left;
+}
+.label span{
+    position: absolute;
+    width: 60%;
+    height: 60px;
+    right: 10px;
+    text-align: right;
+    overflow-x: hidden;
+}
+.label a{
+    position: absolute;
+    width: 60%;
+    height: 60px;
+    right: 10px;
+    text-align: right;
+    overflow-x: hidden;
+    color: #f91546;
+}
+.head>img{
+    position: absolute;
+    height: 50px;
+    right: 20px;
+    top: 5px;
+    border-radius: 4px;
+}
+.address>a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+}
+.phone-head{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: #f2f2f2;
+    box-shadow: 0 3px 3px #d3d3d3;
+    z-index: 4;
+}
+.phone-cancel,.phone-save{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    top: 0;
+    color: #f91546;
+}
+.phone-save{
+    right: 0;
+}
+.phone-head>p{
+    position: absolute;
+    width: -webkit-calc(100% - 100px);
+    left: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.phone-info{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    height: -webkit-calc(100% - 50px);
+    background-color: white;
+}
+.phone-number,.phone-chknumber{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #666666;
+}
+.phone-number p{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.phone-chknumber p{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.phone-number input{
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    top: 5px;
+    left: 100px;
+    border: #ffffff;
+    outline: none;
+}
+.phone-chknumber input{
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    top: 5px;
+    left: 100px;
+    border: #ffffff;
+    outline: none;
+}
+.phone-chknumber a{
+    position: absolute;
+    height: 50px;
+    right: 0;
+}
+.phone-chknumber-btn{
+    position: absolute;
+    width: 80px;
+    height: 30px!important;
+    line-height: 30px!important;
+    text-align: center;
+    top: 10px!important;
+    right: 5%!important;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #666666;
+    color: white;
+    background-color: #f91546;
+    z-index: 5;
+}
+.address{
+    transition: background-color .3s;
+    -webkit-transition: background-color .3s;
+}
+.address:active{
+    background-color:#AAAAAA;
+}
+
+@-webkit-keyframes popup {
+    0%{
+        opacity: 0;
+        -webkit-transform: scale(0.8,0.8)
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1,1)
+    }
+}
+
+@-webkit-keyframes popdown {
+    0%{
+        opacity: 1;
+        -webkit-transform: scale(1,1)
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: scale(0.8,0.8)
+    }
+}

@@ -1,0 +1,620 @@
+body {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+.swiper-container {
+	width: 100%;
+    height: 100%;
+    background: #22292c;
+}  
+.swiper-container .swiper-wrapper .swiper-slide{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+.swiper-slide1 .cover-box, .swiper-slide1 .cover-box .cover { 
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.swiper-slide1 .cover-box .cover, .swiper-slide1 .cover-box .tips, .swiper-slide1 .cover-box .sponsor-logo, .swiper-slide1 .cover-box .cover .slogan {
+	opacity: 0;
+}
+.swiper-slide1 .cover-box .tips {
+	position: absolute;
+	padding: 2% 0 0;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #FFF;
+	z-index: 999;
+}
+.swiper-slide1 .cover-box .sponsor-logo {
+	position: absolute;
+	top: 46%;
+	left: 3%;
+	width: 30%;
+	z-index: 999;
+}
+.swiper-slide1 .cover-box .cover .slogan {
+	position: absolute;
+	width: 60%;
+	top: 8%;
+	left: 20%;
+}
+.swiper-slide1 .cover-box .cover {
+	opacity: 0;
+	-webkit-transform: scale(1,1);
+	-webkit-transition: transform 1s;
+}
+.swiper-slide1 .cover-box .cover1 {
+	background: url(../images/bg-cover1.jpg) no-repeat center center;
+	background-size: cover;
+	z-index: 1;
+}
+.swiper-slide1 .cover-box .cover2 {
+	background: url(../images/bg-cover2.jpg) no-repeat center center;
+	background-size: cover;
+	z-index: 2;
+}
+.swiper-slide1 .cover-box .cover3 {
+	background: url(../images/bg-cover3.jpg) no-repeat center center;
+	background-size: cover;
+	z-index: 3;
+}
+.swiper-slide1 .cover-box .cover4 {
+	background: url(../images/bg-cover4.jpg) no-repeat center center;
+	background-size: cover;
+	z-index: 4;
+}
+.swiper-slide1 .cover-box .cover5 {
+	background: url(../images/bg-cover5.jpg) no-repeat center center;
+	background-size: cover;
+	z-index: 5;
+}
+.swiper-slide1 .cover-box .cover6 {
+	background: url(../images/bg-cover6.jpg) no-repeat center center;
+	background-size: cover;
+	z-index: 6;
+}
+.swiper-slide1 .cover-box .cover7 {
+	background: url(../images/bg-cover7.jpg) no-repeat center center;
+	background-size: cover;
+	z-index: 7;
+}
+.swiper-slide1 .cover-box .cover8 {
+	background: url(../images/bg-cover8.jpg) no-repeat center center;
+	background-size: cover;
+	z-index: 8;
+}
+.swiper-slide1 .cover-box .cover9 {
+	background: url(../images/bg-cover9.jpg) no-repeat center center;
+	background-size: cover;
+	z-index: 9;
+}
+.swiper-slide2 {
+	background: url(../images/bg-rule.jpg) no-repeat center center;
+	background-size: cover;
+	z-index: 1;
+}
+.swiper-slide2 .rule {
+	position: absolute;
+	width: 80%;
+	top: 6%;
+	left: 10%;
+	z-index: 1;
+}
+.swiper-slide3 {
+	background: url(../images/bg-cd.jpg) no-repeat top center;
+	background-size: cover;
+	z-index: 1;
+}
+.swiper-slide3 .join-pv {
+	width: 100%;
+	font-size: 13px;
+	color: #FFF;
+	text-align: center;
+	padding: 5% 0 0;
+}
+.swiper-slide3 .icon-voice {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	left: 50%;
+	bottom: 78%;
+	background: url(../images/icon-voice.png) no-repeat;
+	background-position: -140px 0;
+	-webkit-transform: scale(0.7,0.7);
+}
+.swiper-slide3 .icon-voice-play {
+	-webkit-animation: voice 2s infinite step-start;
+	animation: voice 2s infinite step-start;
+}
+.swiper-slide4 {
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg-lottery-default.jpg) no-repeat center center #0e1821;
+    background-size: 100% auto;
+    color: #FFF;
+}
+.swiper-slide4 .sponsor-logo {
+	position: absolute;
+	width: 28%;
+	top: 2%;
+	right: 2%;
+}
+.swiper-slide4 .main-top {
+    position:absolute;
+    top:1px;
+    width:100%;
+    height:50%;
+    background: url(../images/bg-lottery-top.jpg) no-repeat bottom center;
+    background-size:cover;
+    box-sizing:border-box;
+    text-align: center;
+    z-index: 1;
+    -webkit-transition: -webkit-transform .2s ease;
+}
+.swiper-slide4 .main-foot {
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    height:50%;
+    background: url(../images/bg-lottery-bottom.jpg) no-repeat top center;
+    background-size:cover;
+    box-sizing:border-box;
+    text-align: center;
+    z-index: 1;
+    -webkit-transition: -webkit-transform .2s ease;
+}
+.swiper-slide4 .countdown {
+	position: relative;
+	display: inline-block;
+	padding: 6px 20px;
+    border: 1px solid rgba(255,255,255,.4);
+    text-align: center;
+    font-size: 14px;
+    border-radius: 32px;
+    box-shadow: 0 0 6px #b94500;
+    z-index: 999999;
+    margin: 0 auto 6%;
+}
+.swiper-slide4 .countdown * {
+	color: #FFF;
+	display: inline-block;
+	font-size: 14px;
+}
+.swiper-slide4 .bg-yao {
+    display: block;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    opacity: 1;
+}
+.swiper-slide4 .yao-top {
+    bottom: 0;
+}
+.swiper-slide4 .yao-bottom {
+    top: 0;
+}
+.swiper-slide4 .info-box {
+	margin-top: 12%;
+	color: #FFF;
+	font-size: 15px;
+	line-height: 20px;
+}
+.swiper-slide4 .info-box * {
+	font-weight: bolder;
+}
+.swiper-slide4 .info-box .tips-prizename {
+	color: #FFF;
+	-webkit-transition: all .8s ease;
+	opacity: 1;
+}
+/*.swiper-slide4 .info-box .tips-leftredbag {
+	opacity: 0;
+}*/
+.swiper-slide4 .info-box .tips-prizename-out {
+	color: #CD7641;
+	/*color: #9E9E9E;*/
+	-webkit-transition: all .8s ease;
+	opacity: 1;
+}
+.swiper-slide4 .info-box .icon-waityao {
+	width: 30%;
+	margin: 3% auto 0;
+}
+.swiper-slide4 .tips-prizeuser {
+	color: #FFF;
+	font-size: 14px;
+	width: 100%;
+	margin: 0 auto 5%;
+	line-height: 26px;
+	height: 26px;
+	overflow: hidden;
+	text-align: center;
+	padding: 0 2%;
+}
+.swiper-slide4 .tips-prizeuser * {
+	font-weight: bolder;
+}
+.swiper-slide4 .tips-prizeuser li {
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.hammer-box {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	z-index: 999999999;
+}
+.hammer-box #array {
+	position: relative;
+	width: 26px;
+	height: 18px;
+	left: 50%;
+	margin-left: -13px;
+	margin-bottom: 10px;
+	-webkit-animation: start 2s infinite ease-in-out;
+	animation: start 2s infinite ease-in-out;
+	z-index:999;
+}
+.hammer-box #div_subscribe_area {
+	width: 100%;
+	overflow: hidden;
+}
+.dialog img {
+	display: block;
+}
+#lottery-dialog .dialog .strick-box {
+	position: absolute;
+	width: 82%;
+	left: 9%;
+}
+.dialog .strick-box {
+	position: absolute;
+	width: 76%;
+	left: 12%;
+}
+.dialog .strick-box .box {
+	width: 100%;
+	overflow: hidden;
+	background: url(../images/icon-dialog-body.png) repeat-y;
+	background-size: 100% auto;
+	padding: 3%;
+	overflow: hidden;
+}
+.modal {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.8);
+	z-index: 99999999;
+	color: #FFF;
+	text-align: center;
+}
+.modal .dialog {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    z-index: 999999;
+}
+.modal .btn-close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	background: url(../images/icon-close.png) no-repeat;
+	background-size:38px;
+	z-index: 9999999999;
+}
+#Redlottery-dialog .strick-box {
+	top: 22%;
+}
+.lottery-dialog {
+	width: 100%;
+	height: 100%;
+}
+#Entlottery-dialog .lottery-dialog .lott-box {
+    width: 90%;
+    height: 53%;
+    margin: 12% auto 0;
+    color: #333;
+    font-size: 15px;
+    line-height: 20px;
+}
+.lottery-dialog .lott-box {
+	color: #333;
+	font-size: 15px;
+}
+.lottery-dialog .lott-box .award-tips {
+	width: 95%;
+	margin: 3% auto;
+}
+.lottery-dialog .lott-box .award-img{
+    width: 82%;
+    margin: 3% auto;
+}
+.lottery-dialog .lott-box .award-luck{
+    color: #c9caca;
+    font-size: 18px;
+    line-height: 28px;
+    display: block;
+    font-weight: bolder;
+}
+.tips .lott-box .award-luck {
+	display: block !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    margin-bottom: 5% !important;
+}
+.lottery-dialog .lott-box .award-luckEt {
+    color: #fff;
+    font-size: 15px;
+}
+.lottery-dialog #not-lott .ltp {
+	font-size: 15px;
+	color: #FFF;
+}
+.lottery-dialog .lott-box .inp .ple{
+    color: #fff;
+    display: block;
+    width: 95%;
+    text-align: center;
+    margin: 2% auto;
+    font-size: 12px;
+}
+.lottery-dialog .lott-box .inp{
+    color: #fff;
+}
+.lottery-dialog .lott-box .inp p{
+    color: #fff;
+    display: block;
+    margin: 5% auto;
+}
+.lottery-dialog .lott-box .inp p input{
+    width: 75%;
+    border: 0 none;
+    border-radius: 3px;
+    padding: 4px 10px;
+}
+.lottery-dialog .lott-box .code .ple{
+    color: #fff;
+    font-size: 12px;
+}
+.lottery-dialog .lott-box .code .cd{
+    color: #c5092b;
+    display: block;
+    margin: 3% auto;
+    background: #fff;
+    height: 28px;
+    line-height: 28px;
+    width: 90%;
+    border-radius: 5px;
+}
+.lottery-dialog .lott-box .result .ple{
+    color: #fff;
+    font-size: 12px;
+}
+.lottery-dialog .lott-box .result .cd{
+    color: #fff;
+    display: block;
+    margin: 3% auto;
+    height: 22px;
+    line-height: 22px;
+    width: 90%;
+}
+.lottery-dialog .lott-box .code .prize-desc{
+    background: none;
+    color: #B6B4B4;
+    font-size: 12px;
+    line-height: 15px;
+    height: auto;
+}
+.redlottery-dialog .award-lpt {
+    color: #c9caca;
+    font-size: 18px;
+    line-height: 28px;
+    display: block;
+    font-weight: bolder;
+}
+.tips .award-lpt {
+	display: block !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    margin-bottom: 5% !important;
+}
+.redlottery-dialog .award-logo{
+    display: block;
+    width: 35%;
+    margin: 8% auto 0;
+}
+.redlottery-dialog .award-img{
+    display: block;
+    width: 90%;
+    margin: 5% auto 0;
+}
+.redlottery-dialog .lottery-btn, .dialog .btn {
+    display: block;
+    background: #9d3d00;
+    width: 46%;
+    margin: 18% auto 0;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    color: #c9caca;
+    font-size: 16px;
+}
+#lottery-dialog .lottery-link {
+	display: inline-block;
+	margin: 10% auto 0;
+	border: 1px solid #f4bb2c;
+	border-radius: 3px;
+	background-color: #682901;
+	color: #FFF;
+	font-size: 12px;
+	padding: 5px 12px;
+	max-width: 90%;
+	word-break: break-all;
+}
+#lottery-dialog .dialog .btn {
+    margin: 10% auto 0;
+}
+.redlottery-dialog .award-ly{
+    display: block;
+    margin-top: 5%;
+    color: #fff;
+    font-size: 12px;
+    padding: 0px 10px;
+}
+.thanks-dialog .thanks-box {
+    position: relative;
+    width: 92%;
+    margin: 36% auto 0;
+    display: block;
+}
+.thanks-dialog .thanks-box .thanks-close {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 10%;
+	right: -2%;
+}
+#Entlottery-dialog {
+    overflow-y: scroll;
+}
+#Entlottery-dialog #ent-result .lottery-btn {
+    display: inline-block;
+    width: 40%;
+    margin: 5% 5px;
+}
+.swiper-slide .rule {
+	position: relative;
+	-webkit-transition: all 1.5s;
+	-webkit-transform: rotateY(-180deg) rotateZ(-90deg) scale(0,0);
+	-webkit-transform-origin:bottom center;
+	opacity: 0;
+	z-index: 9;
+}
+.swiper-slide-active .rule {
+	-webkit-transform: rotateY(0deg) rotateZ(0deg) scale(1,1);
+	-webkit-transform-origin:center center;
+	opacity: 1;
+	z-index: 10;
+}
+.wx-username {
+	padding: 0 3px;
+}
+.shine {
+	overflow: visible !important;
+}
+.shine li {
+	color: #FFF;
+	text-shadow: 0 0 6px #FF2700;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.lottery-dialog .lott-box .award-img {
+		width: 70%;
+		margin: 2% auto;
+	}
+	.lottery-dialog .lott-box .inp p {
+		margin: 2% auto;
+	}
+	#lottery-dialog .dialog .btn {
+		margin: 6% auto 0;
+	}
+	#lottery-dialog .lottery-link {
+		margin: 6% auto 0;
+	}
+	.swiper-slide1 .cover-box .cover .slogan {
+		position: absolute;
+		width: 46%;
+		top: 10%;
+		left: 27%;
+	}
+	#Redlottery-dialog .strick-box {
+		top: 16%;
+	}
+	.swiper-slide4 .info-box {
+		margin-top: 6%;
+	}
+	.swiper-slide2 .rule {
+		position: absolute;
+		width: 68%;
+		top: 3%;
+		left: 16%;
+		z-index: 1;
+	}
+	.swiper-slide3 .icon-voice {
+		bottom: 76%;
+		-webkit-transform: scale(0.6,0.6);
+	}
+	.swiper-slide4 .info-box .icon-waityao {
+		width: 28%;
+		margin: 2% auto 0;
+	}
+	.swiper-slide4 .bg-yao {
+		width: 66%;
+		left: 17%;
+		opacity: 1;
+	}
+	.swiper-slide4 .tips-prizeuser {
+		font-size: 13px;
+		margin-bottom: 4%;
+	}
+	.swiper-slide4 .countdown {
+		padding: 5px 18px;
+		margin: 0 auto 3%;
+	}
+	.thanks-dialog .thanks-box {
+	    width: 92%;
+	    margin: 23% auto 0;
+	}
+}
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+	.swiper-slide1 .cover-box .cover .slogan {
+		position: absolute;
+		width: 56%;
+		top: 8%;
+		left: 22%;
+	}
+	.swiper-slide2 .rule {
+		position: absolute;
+		width: 76%;
+		top: 3%;
+		left: 12%;
+		z-index: 1;
+	}
+	.swiper-slide4 .bg-yao {
+		display: block;
+		position: absolute;
+		width: 76%;
+		left: 12%;
+		opacity: 1;
+	}
+	.swiper-slide4 .info-box .icon-waityao {
+		width: 32%;
+		margin: 2% auto 0;
+	}
+}

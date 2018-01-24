@@ -1,0 +1,91 @@
+body{
+	background-image: url(../images/bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.header .tv-logo{
+	position: absolute;
+	width: 25%;
+}
+.header .btn-rule{
+	 display: block;
+	 position: absolute;
+	 right: 1%;
+	 width: 25%;
+	 background: #6b979c;
+	 color: #fff;
+	 border: 2px solid #353a3f;
+	 text-align: center;
+	 line-height: 30px;
+	 top: 5px;
+	 border-top-left-radius: 25px;
+	 border-bottom-right-radius: 25px;
+	font-size: 14px;
+}
+.header .btn-reserve{
+	display: block;
+	position: absolute;
+	right: 27%;
+	width: 25%;
+	background: #6b979c;
+	color: #fff;
+	border: 2px solid #353a3f;
+	text-align: center;
+	line-height: 30px;
+	top: 5px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	font-size: 14px;
+}
+.title{
+	margin: -20% auto 0;
+}
+.roll{
+	margin-top: -5%;
+}
+.t20{
+	margin: 0 auto;
+}
+.btn-block{
+	margin-bottom: 10%;
+}
+.btn-block a{
+	display: block;
+	margin: 3% auto 0;
+	background: url(../images/btn-bg.png) 0 0 no-repeat;
+	background-size: 100%;
+	width: 40%;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 25px;
+	font-size: 23px;
+	color: #4e0000;
+}
+.copyright {
+	position: static;
+	bottom: 0;
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+footer #div_subscribe_area {
+	width: 100%;
+	overflow: hidden;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.btn-block{
+		margin-bottom: 0%;
+	}
+	.btn-block a{
+		margin: 1% auto 0;
+	}
+}

@@ -1,0 +1,333 @@
+/*
+ * reset以及core.js中基本样式
+ *
+ * @version v1.0
+ * @author bobchen
+ * 请勿修改此文件
+ */
+
+/*
+  HTML5 Reset :: style.css
+  ----------------------------------------------------------
+  We have learned much from/been inspired by/taken code where offered from:
+  
+  Eric Meyer          :: http://meyerweb.com
+  HTML5 Doctor        :: http://html5doctor.com
+  and the HTML5 Boilerplate :: http://html5boilerplate.com
+  
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+
+/* Handle box-sizing while better addressing child elements: 
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted. 
+  don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+input[type=file], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover 
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+
+/*
+  core.css
+  ----------------------------------------------------------
+  公共基础样式
+  
+-------------------------------------------------------------------------------*/
+
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 { 
+  font-family: 'Microsoft YaHei','宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  outline:none;
+  -webkit-appearance: none
+}
+body {
+  overflow: hidden;
+}
+a,a:focus {
+  outline: 0 none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.ellipsis {
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.noscroll {
+  overflow: hidden !important;
+}
+.none {
+  display: none !important;
+}
+.none {
+  display: none;
+}
+.hidden {
+  visibility: hidden !important;
+}
+.hide {
+  opacity: 0 !important;
+}
+.zlow {
+  z-index: -1 !important;
+}
+.main *{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.qy-loading{
+  position:fixed;
+  z-index:999999;
+  width:146px;
+  overflow:hidden;
+  min-height:146px;
+  left:50%;
+  top: calc((100% - 146px)/2);
+  top: -webkit-calc((100% - 146px)/2);
+  margin-left:-73px;
+  color:#686868;
+  font-family:"Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","黑体",Arial,sans-serif;
+  font-size:14px;
+  line-height:19.6px;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+  border-radius: 12px;
+}
+
+.qy-loading .qy-loading-tips{
+  color: #fff;
+  font-size: 16px;
+  padding: 0 5px 5px;
+}
+.qy-loading .qy-loading-logo{
+  height:0;
+  padding-top:55.3px;
+  width:55.3px;
+  margin:30px auto 25px;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAMAAADUbMsyAAABfVBMVEVMaXHt7e3o6Ojy8vLh4eH8/Pzp6enn5+fn5+fg4ODp6enw8PDk5OTl5eX7+/v9/f3o6Ojz8/P6+vrh4eH7+/vs7Ozt7e3h4eHu7u7z8/P8/Pz+/v79/f3e3t78/Pz9/f3v7+/j4+Pn5+fl5eX6+vr+/v7l5eXn5+fu7u7g4ODe3t7k5OTl5eXg4ODz8/Po6Ojj4+Pf39/g4ODh4eH////7+/v7+/v+/v77+/v7+/vl5eXv7+/7+/v4+Pjj4+P+/v7m5ub19fX5+fnq6urz8/Pj4+Pv7+/////+/v709PTx8fHz8/Pe3t7d3d3h4eHj4+P6+vr6+vr////9/f3+/v7+/v7////39/fn5+fp6en////6+vrd3d3f39/g4ODe3t7i4uLh4eHl5eXj4+Pk5OTm5ubn5+fo6Ojp6end3d36+vrs7Ozu7u7+/v7z8/Px8fH9/f37+/v09PT39/fq6urv7+/5+fn4+Pj29vb19fX8/Pz////w8PDr6+vy8vJWIffgAAAAXXRSTlMADAIelaMJARYVBgMclRWLlRA+uLqVI2gnozNqUc527bjWLn05WEo7zqJ0qeuxMJzn4lnCR9bcy63rhKSCwo7gUnW1q7839++EmeZZ1/b9r/nOl/n35pTz/fv1lEXRCgs3AAADJklEQVR4XqzUa2uCYBjG8duJGRmK0qIyaoxivepV7cAWrRgdAXYebN/AzjufP/saRF128vHp+QeBqD+UCyTvQnIiaTeMS8Owsxk5QJtmFm7rX+7ulaTOD+p2GSwsnZJ5QNU66K1rv6D5FLcKNz2v6lk/qlpI91i6zm6xkvrBkLVyjI2Uhn4y2B415QstmiymlvaFXlksqPXpL5sFjfhEGyzLL9xVjChKpLgSNVhmGk1zlOT0w6FK0eThaFknDDMdTa49TGgL5xLVJWiWYSbnvxOTlqY/OAslGGZyHEWilZnVefPc9J7pKE9ry6Tn0AvVE9XIo0Dk1Z1Nm6cac6hOAqq8uSqRiFJuNCMENZ6wfVWEqZZcqEUiku7QLJKQMu9YTAxaRTMuxgx+YCExaBNNS4ypP0JxEtMZmH1NjGn1IVmMGUKzLerlf2c1iagSh/J8ZhvMFhHVBlCYz4yioZE2wAJ8poSGSdI3VCO+VETCFMTDHHHWAiRK8gu0w2vmANl1m8e85g4gexTtQvwmIHskdyD+dwckT+Hxf3fy63BvtA1IjMwOVOM3Z8kU6mABAWaQ6PkHCvOaYIzNHJqnAsy/VuzgNWEYiuP4M0pjawcbBeulgBaUVkXVm4AMxJtu1w22WZ3b3H3/P1Mt+ktqa1vzPeblfcg5O3P8B01zmvdg7MwmmlumxCxvsVlOE4idyV/RnCoxqfeDFfKZIOzNlmC6SkzjG3sp5DJB2JvUFtCeErP2JdTIYd7B/sHkfcHsaApMaq6FLJ7dhPWjyToi6iow5YeubQUmr2/E7Kwm7IYmVTdSLr/ZpMmn1LORxSzB5sk0+jLaadxqUjGI5CX9CUgmrJ1NGgbR3BhVLwU8jUmT4ELtRvSPpWUFQUqTWauLdR9NjcK04jC8JZlwH02qjFZxPQ1Gbc+qw0miiaj1kTrJhIlOQsxTbxIfqzKx5vI9VZIJk6hJ+ly9ScxWZWJ6V5WJ1ZzllSQTJg8UV7WbxfRholF8BXsQK/Z9EjLPI4eSKw+t32iObXKSmg3C4cKkqzGz5XvO4rgw9/w3s0IXM7RDjFLHucE4pesfIL24AR5xswMAAAAASUVORK5CYII=);
+  background-size:55.3px;
+  background-repeat:no-repeat;
+  position: relative;
+}
+.qy-loading .qy-logo-1{
+  position: absolute;
+  width: 14px;
+  height: 15.3px;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAXCAMAAADTAfSvAAAAeFBMVEVMaXH5+fn4+Pj29vb6+vr4+Pj8/Pzy8vL29vb4+Pj39/f39/f29vb6+vr09PT6+vrz8/P4+Pjz8/P5+fnz8/P19fX39/f6+vr5+fn6+vrx8fH7+/v09PT7+/v4+Pj29vb7+/v5+fn6+vr09PTy8vL8/Pz19fXz8/MKhrUdAAAAHnRSTlMAIhGPGgP8CgEuZr4H7X43DYPu1aC1TvNezqvasm8TQCtkAAAAj0lEQVR4XmXP1w6DMAyGUTMCpECgdK8MRvv+b1iJH1G7HN99kiWbhFzRVlrvt1Fn0xT9xybz3j+UjNrPXiJGoYeUxfjSL27FGtUhrK5rTcKPjQkay5WIVe2EM/ads2zcbn7UCYhUymhw/1s44d7nwHUVvhoETTPz4Y6IxShqi6pHzhAkorYEHY93WuScIvgCrvAg93kfHEsAAAAASUVORK5CYII=);
+  left: 1px ;
+  top: 6px;
+  -webkit-animation: logo1 1s infinite ease-in;
+  animation: logo1 1s infinite ease-in;
+  background-size: 14px 15.3px;
+}
+.qy-loading .qy-logo-2{
+  position: absolute;
+  width: 15.3px;
+  height: 20.7px;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAfCAMAAAA7p6b/AAAAmVBMVEVMaXH5+fn5+fn5+fn39/f5+fn6+vr19fX09PT39/f09PT39/fz8/P5+fn8/Pz29vb4+Pj29vb7+/v4+Pj19fX09PTy8vL29vb7+/v29vb8/Pz7+/vy8vL29vb19fX7+/v19fX8/Pz7+/v09PT7+/v09PT5+fn6+vr7+/v8/Pz39/fz8/Py8vL5+fn19fX4+Pjx8fH09PT6+vpDG3FrAAAAKHRSTlMA3E/rHARBAQkH7gwaJBHz0G/UU6P4QCH5ZKj1i87ALky5mi97gsM4IYqD1wAAALVJREFUeF5lz1USwzAMRVEHHWgahDJDuLD/xbWW8iP5fp7RvBkJveU5ooDlTZtJTZ1N+8/UNoxGtfUpH1cNdiPsNnMXh/AXG11y/ZzZsgnXI7IREvasEUp8wvKBnHmClL4gK6RsI3c2ZZl0EP/fRC4YO/Gkij3m6wly+XkJvBesE55H3A3gA2f7A12534EDyVgGvSrVZnpowT0HDgSvGFQ7zrIEr7iHA6TN12/I516hC570IM4/VRoiMDoQsIoAAAAASUVORK5CYII=);
+  left: -6.5px ;
+  top: 0.5px;
+  -webkit-animation: logo2 1s infinite ease-in;
+  animation: logo2 1s infinite ease-in;
+  background-size: 15.3px 20.7px;
+}
+
+@-webkit-keyframes logo1{
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  } 
+}
+
+@-webkit-keyframes logo2{
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  } 
+}
+
+@keyframes logo1{
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  } 
+}
+
+@keyframes logo2{
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  } 
+}
+.transparent{
+  opacity: 0;
+}
+
+/****清除浮动****/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.red{
+  color: #ff626d;
+}

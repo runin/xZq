@@ -1,0 +1,33 @@
+body{
+    background: #A89E9A url("../images/detail-bg.jpg") no-repeat;
+    background-size: cover;
+}
+.back-home{
+    float: right;
+    background: url(../images/back-bg.png) no-repeat;
+    background-size: cover;
+    width: 89px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+header h1{
+    color: #8C592E;
+    font-size: 15px;
+    padding-top: 40px;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+}
+section{
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    font-size: 12px;
+    margin-top: 15px;
+}
+.copyright {
+    position: relative;
+}

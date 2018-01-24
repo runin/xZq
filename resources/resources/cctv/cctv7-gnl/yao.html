@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>过年了</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/yao.css" />
+</head>
+
+<body>
+<!--摇一摇声音-->
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio><!--中奖声音-->
+<section class="home-box">
+	<div class="marquee hidden"><ul></ul></div>
+	<a href="#" class="btn-join yaoyiyao" id="btn-join" data-collect="true" data-collect-flag="index-join-btn" data-collect-desc="首页-进入心愿页按钮"><img src="images/btn-icon.png"><span>去拜年</span></a>
+	<div class="ddtj hidden">
+		<a class="ddtj-box" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+			<i class="ddtj-before wobble"></i>
+			<p class="ddtj-text">更多红包点击这里</p>
+		</a>
+	</div>
+	<div class="tip-box">
+		<div class="countdown none">
+			<span class="countdown-tip"></span>
+			<span class="detail-countdown"></span>
+		</div>
+	</div>
+	<div class="yao-text">
+        <p class="none textb"><span>啊哦，差一点就抢到了，继续加油</span></p>
+    </div>
+	<div class="yao-box"><img class="yao-img" src="images/yao.png"></div>
+	<!--<input type="button" class="test" id="test" value="test" style="z-index: 99999;position: absolute;">-->
+	<div class="copyright"></div>
+</section>	
+<!--摇一摇红包-e-->
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/zepto.selector.min.js"></script>
+<script src="./js/plugins/weixinapi.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/shake.js"></script>
+<script src="./js/plugins/sha1.min.js"></script>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="./js/app/yao.js"></script>
+<script src="./js/app/dialog.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	
+</body>
+</html>

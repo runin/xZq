@@ -1,0 +1,96 @@
+body {
+  background: #F4F4F4;
+}
+.btn {
+  display: block;
+  height: 37px;
+  line-height: 37px;
+  background: #FF9B33;
+  color: #FFF;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 25px;
+}
+.btn-back {
+  width: 45%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+  margin: 0 auto;
+}
+.empty {
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 40vh auto;
+  width: 100%;
+  text-align: center;
+}
+.empty a {
+  color: #FF7A22;
+  text-decoration: underline;
+}
+.empty a:hover {
+  color: #FF7A22;
+}
+.gift-timeline {
+  margin: 40px auto 100px;
+}
+.gift-timeline li {
+  margin-bottom: 12px;
+}
+.gift-timeline li:nth-child(odd) div.items {
+  background: url(../images/record2.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.gift-timeline li:nth-child(even) div.items {
+  background: url(../images/record1.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.gift-timeline li div {
+  width: 90%;
+  margin: 0 auto;
+}
+.gift-timeline li div.items {
+  padding: 10px 0 10px 10px;
+  color: #FFF;
+  font-size: 15px;
+}
+.gift-timeline li div.items img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  vertical-align: top;
+}
+.gift-timeline li div.items label {
+  display: inline-block;
+  line-height: 50px;
+  width: 53%;
+  margin-left: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.gift-timeline li div.items span {
+  display: inline-block;
+  line-height: 50px;
+  width: 20%;
+  float: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.gift-timeline li div:last-child {
+  text-align: right;
+  margin: 6px 10px 0 0;
+}
+.gift-timeline li .data {
+  color: #525252;
+  font-size: 12px;
+}

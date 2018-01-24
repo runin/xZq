@@ -1,0 +1,100 @@
+body
+{
+  background: #F8F8F9;
+}
+
+.success-tips
+{
+  text-align: center;
+  text-align: center;
+  padding: 0px 20px ;
+  overflow: hidden;
+  border-bottom: 1px solid #c2c2c2;
+  background:#fff url("../images/success-bg.png") top center no-repeat;
+  background-size: 100% 100%;
+  min-height: 140px;
+
+}
+
+.success-tips p
+{
+  margin-bottom: 5px;
+}
+.success-tips .tt-link-tips,.success-tips .tt-phone-tips
+{
+  margin:8% 0px;
+}
+
+.success-tab a
+{
+  width:40%;
+  padding: 8px 0px;
+  border-radius: 5px;
+  margin-bottom:8%;
+}
+
+.success-tab .duobao-continue
+{
+  background-color: #f91546;
+  color:#fff;
+  font-size: 16px;
+  float:left;
+}
+
+.success-tab .view-record
+{
+  background-color: #e2e2e2;
+  color:#555555;
+  font-size: 16px;
+  float:right;
+}
+
+
+/*用户参与信息开始*/
+.prize-infor,.back-infor,.error-infor
+{
+  padding: 0px 20px ;
+  margin: 5% 0px;
+  font-size: 13px;
+  color:#666666;
+}
+.txt-red
+{
+    color:#f91546;
+}
+.prizelist
+{
+  width:100%;
+  padding: 10px;
+  background-color: #fff;
+  margin: 5% 0px;
+  border:1px solid #c2c2c2;
+  max-height: 300px;
+  overflow: auto;
+}
+.goods-rp
+{
+    overflow: hidden;
+    color:#999999;
+    font-size:13px;
+    margin-bottom: 5px;
+}
+.left-rp
+{
+    float: left;
+    line-height: 18px;
+    color:#333333;
+    font-size: 15px;
+}
+
+.right-rp
+{
+    float: right;
+    border: 0;
+    text-align: right;
+}
+.num-list li
+{
+  display: inline-block;
+  margin:2px;
+}

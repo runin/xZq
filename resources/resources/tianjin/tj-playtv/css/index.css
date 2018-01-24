@@ -1,0 +1,121 @@
+body{
+	height: 100%;
+}
+.main{
+	padding: 30% 0 30px;
+	margin: 0 auto;
+	position: relative;
+	background-image:url("../images/tv-logo.png"),url("../images/mark.png");
+	background-repeat:no-repeat,no-repeat; 
+	background-position:4% 18px,96% 4%; 
+	background-size:28% auto,20%,auto;
+}
+.logo{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+.nav{
+    padding-top: 20px;
+}
+
+#lottery-tip{
+	position: absolute;
+	top: 10px;
+	text-align: center;
+	width: 100%;
+	background: url(../images/tip-bg.png) no-repeat;
+	background-size: 100%;
+	padding: 4px 0px;
+}
+#lottery-tip span{
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+}
+.lottery-time .detail-countdown{
+    display: inline-block;
+}
+.lottery-btn{
+	width: 50%;
+	background: #0b75d1;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 8px;
+	position: relative;
+}
+.lottery-btn:before{
+	border-radius: 8px;
+	content: "立即抽奖";
+	width: 90%;
+	position: absolute;
+	left: 5%;
+	height: 40px;
+	line-height: 40px;
+	background: #ffc000;
+	box-shadow: 0px 6px 6px #ef7423;
+	
+}
+.tab{
+	width: 70%;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 auto;
+}
+.tab a{
+	display: inline-block;
+	width: 48%;
+	text-align: center;
+	color: #d93772;
+	font-size: 16px;
+	text-decoration: underline;
+}
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+}
+.copyright{
+	position: static;
+}
+#div_subscribe_area{
+	height: 50px;
+}
+.page-b{
+	height: 100%;
+	padding: 30% 0 30px;
+	background:url("../images/tv-logo.png") no-repeat,url("../images/mark.png") no-repeat, url(../images/bg.jpg) no-repeat;
+	background-size: 28% auto,20%,auto,100% 100%;
+	background-position:4% 18px,96% 4%,0 0; 
+}
+.page-b .tab{
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -35%;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.main{
+		padding: 20% 0 30px;
+		background-size: 16% auto,22% auto;
+		background-position:96% 0px,4% 6px; 
+	}
+   .nav .lottery-btn{ 
+   	    width: 60%;
+   		height: 40px;
+   		line-height: 40px;
+   }
+ 	.page-b{
+		padding: 20% 0 30px;
+	}
+   .page-b .tab{
+		  bottom: 30px;
+	}
+}
+
+

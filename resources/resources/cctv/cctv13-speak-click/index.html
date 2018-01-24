@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no"/>  
+	<title>央视新闻频道春节说吧</title>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body class="error">
+	<audio preload="auto" id="audio-a" src="" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="" class="preload"></audio>
+	<section id="index-dialog" class="dialog">
+		<section class="icon-tvlogo"><img src="./images/icon-tvlogo.png"></section>
+		<section class="container">
+			<img class="icon-logo" src="./images/icon-logo.png">
+			<section class="booth-wrapper">
+				<img class="icon-booth" src="./images/icon-booth.png">
+				<img class="icon-shadow" src="./images/icon-shadow.png">
+			</section>
+			<a href="javascript:void(0);" class="btn-go" id="btn-go">去祝福</a>
+		</section>
+		<section class="footer">
+			<p class="copyright">页面由央视新闻提供</p>
+		</section>
+		<img class="bigknot" src="./images/icon-bigknot.png">
+		<img class="flower" src="./images/icon-flower.png">
+	</section>
+
+	<section id="choice-dialog" class="pop-dialog none">
+		<section class="choice-wrapper">
+			<img src="./images/icon-who.png">
+			<a href="javascript:void(0);" class="btn-choice choice-family" data-type="0">家&nbsp;人</a>
+			<a href="javascript:void(0);" class="btn-choice choice-friend" data-type="1">朋&nbsp;友</a>
+			<a href="javascript:void(0);" class="btn-choice choice-colleague" data-type="2">同&nbsp;事</a>
+		</section>
+	</section>
+
+	<section id="card-dialog" class="dialog none">
+		<section class="card-wrapper">
+		    <section class="swiper-container">
+		        <section class="swiper-wrapper">
+		            <section id="swiper0" class="swiper-slide" data-hostID="0" data-starNo="0" data-name="白岩松" data-avatar="./images/host/host0.jpg"><img src="./images/host/host0.jpg"></section>
+		            <section id="swiper1" class="swiper-slide" data-hostID="1" data-starNo="1" data-name="张泉灵" data-avatar="./images/host/host1.jpg"><img src="./images/host/host1.jpg"></section>
+		            <section id="swiper2" class="swiper-slide" data-hostID="2" data-starNo="U">
+		            	<section></section>
+		            	<img class="upload-img" src="./images/host/host-default.png">
+		            	<section id="btn-upload" class="btn-upload">
+		            		<img src="./images/icon-camera.png">
+		            		<p>上传照片</p>
+		            	</section>
+						<form id="upload-form" class="upload-form preload" enctype="multipart/form-data" method="post" action="https://yaotv.holdfun.cn/portal/api/fileupload/oss">
+							<input type="file" class="input-file-upload" id="input-file-upload" onchange="H.upload.init();" accept="image/*" capture>
+						</form>
+		            </section>
+		        </section>
+		        <section class="swiper-button-next"></section>
+		        <section class="swiper-button-prev"></section>
+		    </section>
+		    <section class="card-container">
+		    	<section class="edit-container">
+		    		<section class="avatar-wrapper">
+						<img class="cover" src="./images/icon-cover.png">
+						<img class="host-avatar" src="./images/icon-tvlogo.png">
+		    		</section>
+		    		<section class="info-wrapper">
+		    			<p class="host-name">主持人</p>
+		    			<section class="info-box word-wrapper">
+		    				<input id="btn-word" class="btn-word" type="text" maxlength="60" placeholder="点击编辑祝福">
+		    				<!-- <textarea id="btn-word" class="btn-word" type="text" placeholder="点击编辑祝福" onpropertychange="this.style.height=this.scrollHeight + 'px'" oninput="this.style.height=this.scrollHeight + 'px'"></textarea> -->
+		    				<a href="javascript:void(0);" id="switch-voice" class="switch-voice"><img src="./images/btn-voice.png"></a>
+		    			</section>
+		    			<section class="info-box voice-wrapper none">
+		    				<a href="javascript:void(0);" id="btn-voice" class="btn-voice">点击此处录制语音</a>
+		    				<a href="javascript:void(0);" id="switch-word" class="switch-word"><img src="./images/btn-word.png"></a>
+		    			</section>
+		    			<section class="info-box voice-show none">
+		    				<a href="javascript:void(0);" id="btn-play" class="btn-play">
+								<span class="icon-sound"></span>
+								<span class="timer">60''</span>
+								<span class="focus none"></span>
+							</a>
+		    			</section>
+		    			<section class="info-box word-show none">
+		    				<p></p>
+		    			</section>
+		    		</section>
+		    	</section>
+		    	<img class="icon-monkey" src="./images/icon-monkey.png">
+		    	<img class="icon-boat" src="./images/icon-boat.png">
+				<a href="javascript:void(0);" id="btn-submit" class="btn-info btn-submit">送出你的思念</a>
+				<a href="javascript:void(0);" id="btn-go" class="btn-info btn-go none">去祝福</a>
+				<a href="javascript:void(0);" id="btn-again" class="btn-info btn-again none">再做一个</a>
+		    </section>
+			<section class="timetips none"><p></p></section>
+		</section>
+	</section>
+
+	<section id="share-dialog" class="pop-dialog none">
+		<section class="share-wrapper">
+			<img class="fly" src="./images/icon-shareFly.png">
+			<img class="send" src="./images/icon-share.png">
+			<img class="friend" src="./images/icon-shareFriend.png">
+		</section>
+	</section>
+
+	<section id="unpack-dialog" class="dialog none">
+		<section class="lock-wrapper">
+			<section class="icon-tvlogo"><img src="./images/icon-tvlogo.png"></section>
+			<img class="knot" src="./images/icon-knot.png">
+			<section class="container">
+		    	<section class="card-tips">
+		    		<section class="avatar-wrapper">
+						<img class="cover" src="./images/icon-cover.png">
+						<img class="host-avatar" src="./images/icon-tvlogo.png">
+		    		</section>
+		    		<section class="info-wrapper">
+		    			<p class="tips host-tips">我是新闻频道主持人<span class="lock-name"></span>，您的<span class="lock-type">家人</span><label></label>给您送了一份新春祝福。</p>
+		    			<p class="tips user-tips none">我是<label>说吧用户</label>，我给您送了一份新春祝福。</p>
+		    		</section>
+		    	</section>
+			</section>
+			<section class="mask">
+				<a href="javascript:void(0);" id="btn-unpack" class="btn-unpack"><p>请点击下方查看</p>拆开</a>
+				<img class="tv" src="./images/icon-tv.png">
+				<p class="copyright">页面由央视新闻提供</p>
+			</section>
+		</section>
+		<section class="showCard-wrapper">
+			<section class="showCard-container">
+				<img src="./images/swiper-default.jpg">
+		    </section>
+		    <section class="card-container">
+		    	<section class="edit-container">
+		    		<section class="avatar-wrapper">
+						<img class="cover" src="./images/icon-cover.png">
+						<img class="host-avatar" src="./images/icon-tvlogo.png">
+		    		</section>
+		    		<section class="info-wrapper">
+		    			<p class="host-name"></p>
+		    			<section class="info-box voice-show none">
+		    				<a href="javascript:void(0);" id="btn-play" class="btn-play">
+								<span class="icon-sound"></span>
+								<span class="timer"></span>
+								<span class="focus"></span>
+							</a>
+		    			</section>
+		    			<section class="info-box word-show">
+		    				<p></p>
+		    			</section>
+		    		</section>
+		    	</section>
+		    	<img class="icon-monkey" src="./images/icon-monkey.png">
+		    	<img class="icon-boat" src="./images/icon-boat.png">
+				<a href="javascript:void(0);" id="btn-go" class="btn-info btn-go">去祝福</a>
+		    </section>
+		</section>
+	</section>
+
+	<section id="record-dialog" class="dialog none">
+		<section class="record-container">
+			<section class="icon-record"></section>
+		</section>
+		<p>录音中...松手停止</p>
+	</section>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/swiper.min.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	
+	<script src="./js/wx_api_userinfo.js"></script>
+	<!--<script src="./js/authorize_userinfo.js"></script>-->
+
+	<script src="./js/app/index.js"></script>
+</body>
+</html>

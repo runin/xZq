@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>快乐英语电影季</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <section class="home-box">
+        <ul class="ff">
+            <li><img src="images/f1.png"></li>
+            <li><img src="images/f2.png"></li>
+            <li><img src="images/f3.png"></li>
+            <li><img src="images/f4.png"></li>
+            <li><img src="images/f5.png"></li>
+        </ul>
+        <section class="main-top m-t-b">
+            <img class="lo" src="images/lo.png">
+            <section class="countdown none fu" style="opacity:0 !important">
+                <span class="countdown-tip"></span>
+                <span class="detail-countdown"></span>
+            </section>
+            <img class="bg-yao yao-top" src="./images/y1.png">
+        </section>
+        <section class="main-foot m-f-b">
+            <img class="bg-yao yao-bottom" src="./images/y2.png">
+            <section class="footer">
+                <section class="marquee none fu" style="opacity:0 !important"><p class="point"><span></span></p><ul></ul></section>
+                <section class="tab">
+                    <a href="link.html" onclick="$('.tab a').removeClass('active');$(this).addClass('active');"><img src="images/s1.png"></a>
+                    <a href="javascript:void(0);" class="active" onclick="$('.tab a').removeClass('active');$(this).addClass('active');"><img src="images/s2.png"></a>
+                    <a href="talk.html" onclick="$('.tab a').removeClass('active');$(this).addClass('active');"><img src="images/s3.png"></a>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!-- <input type="button" class="none" id="test" value="红包按钮" style="position:fixed;left:0;bottom:20%;z-index:9999999999999999;"> -->
+
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/lottery.js"></script>
+</body>
+</html>

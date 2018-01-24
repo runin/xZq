@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>九州天空城</title>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+</head>
+<body>
+   <a href="javascript:;" class="btn-goback" id="btn-goback" data-collect="true" data-collect-flag="btn-back" data-collect-desc="返回商城按钮"><img src="./images/btn-back.png"></a>
+    <section class="good-wrapper">
+        <section class="swiper-container">
+            <section class="swiper-wrapper"></section>
+            <section class="swiper-pagination"><section class="wrapper"></section></section>
+        </section>
+        <h1></h1>
+        <section><span class="yp">￥<label></label></span><span class="mkp">￥<label></label></span><span class="kc">库存：<label></label>件</span></section>
+        <section class="type none">
+            <span>产品规格</span>
+            <section class="type-detail">
+                <section class="none" id="color-wrapper"></section>
+                <section class="none" id="size-wrapper"></section>
+            </section> 
+        </section>
+        <section>
+            <span>购买数量</span>
+            <section class="quantity-wrapper">
+                <a class="quantity-decrease no"><em id="minus">-</em></a>
+                <input type="tel" class="quantity" size="4" value="1" id="number" onblur="modify();">
+                <a class="quantity-increase" id="quantityPlus"><em id="plus">+</em></a>
+            </section>
+        </section>
+        <section>
+            <span>商品详情</span>
+            <p class="detail"></p>
+        </section>
+    </section>
+    <section class="userinfo-wrapper none">
+        <section class="fill">
+            <p><label>送<span class="hidden">吖</span>至:</label><input type="text" class="address" /></p>
+            <p><label>收货人:</label><input type="text" class="realName" /></p>
+            <p><label>手机号:</label><input type="tel" class="phone" /></p>
+        </section>
+        <section class="order">
+            <img src="">
+            <section class="order-detail">
+                <h1></h1>
+                <h3 class="none">已选规格：<label></label></h3>
+                <p>￥<label></label></p>
+                <i>数量：<label></label></i>
+            </section>
+        </section>
+        <section class="order-tips">
+            <p>如有疑问请致电：<a href="tel:4000168890">400-016-8890</a></p>
+        </section>
+        <a href="javascript:;" class="btn-submit" data-collect="true" data-collect-flag="btn-submit" data-collect-desc="立即付款按钮">立即付款</a>
+        <a href="javascript:;" class="btn-exchange none" data-collect="true" data-collect-flag="btn-exchange" data-collect-desc="确认兑换按钮">确认兑换</a>
+    </section> 
+    <a href="javascript:;" class="btn btn-pay" data-collect="true" data-collect-flag="btn-pay" data-collect-desc="立即购买按钮">立即购买</a>
+    
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/swiper.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/detail.js"></script>
+    <script src="./js/app/dialog.js"></script>
+</body>
+</html>

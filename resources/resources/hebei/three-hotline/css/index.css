@@ -1,0 +1,129 @@
+body {
+  background: #180346 url(../images/index-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+header img.logo {
+  margin: 10px;
+}
+header a.btn-rule {
+  display: inline-block;
+  background: url("../images/rule-btn.png") no-repeat;
+  background-size: 80px auto;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  float: right;
+  margin: 10px 15px;
+}
+.body-div {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.body-div .go {
+  display: inline-block;
+  background: url(../images/dh.png) no-repeat;
+  background-size: 120px 103px;
+  width: 120px;
+  height: 103px;
+}
+.body-div .detil {
+  color: #fff;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+.go{
+  text-align: center;
+}
+.go-div{
+  margin: 0 auto;
+  width: 120px;
+
+}
+.huatong.animated{
+  -webkit-animation: wobble 0.5s linear infinite forwards;
+  animation: wobble 0.5s linear infinite forwards;
+}
+.phone.animated{
+  -webkit-animation: bottom 0.5s 0.1s linear infinite forwards;
+  animation: bottom 0.5s 0.1s linear infinite forwards;
+}
+.huatong, .phone{
+  display: block;
+}
+@-webkit-keyframes wobble {
+   25% { -webkit-transform: rotate(20deg); }
+   75% { -webkit-transform: rotate(-20deg);}
+ }
+@-webkit-keyframes bottom {
+  35% {   -webkit-transform: translateY(8px); }
+  75% { -webkit-transform: translateY(0px);}
+}
+.phone{
+   margin: -38px auto 0 -6px;
+ }
+.active{
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: active;
+  animation-name: active;
+  -webkit-transform-origin: left bottom;
+}
+@-webkit-keyframes  active{
+  20%{
+    -webkit-transform: rotateZ(-20deg);
+  }
+  /*60%{
+     -webkit-transform: rotateZ(-60deg);
+   }
+  80%{
+    -webkit-transform: rotateZ(-70deg);
+  }*/
+  100%{
+    -webkit-transform: rotateZ(-80deg);
+  }
+ }
+#div_subscribe_area {
+  height: 50px;
+  overflow: hidden;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  max-height: 76px;
+  width: 100%;
+}
+footer .copyright {
+  position: static;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+  .body-div {
+    bottom: 50px;
+  }
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+  .body-div {
+    bottom: 80px;
+  }
+}

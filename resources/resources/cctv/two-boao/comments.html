@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>博鳌解码 群策群力</title>
+	
+	<!-- common.min.css -->
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<!-- 
+	<link rel="stylesheet" href="./css/common.min.css" /> -->
+	
+	<!-- index.min.css -->
+	<link rel="stylesheet" href="./css/index.css" />
+	<!-- 
+	<link rel="stylesheet" href="./css/index.min.css" /> -->
+</head>
+<body class="body-cmt body-detail">
+	
+	<!-- 页面内容 -->
+	<section id="main" class="main">
+		<div class="wrapper" id="wrapper">
+			<article>
+				<section class="header" id="header">
+					<img src="./images/banner.jpg" class="banner">
+					<nav class="none">
+						<div class="logo none" id="logo"></div>
+						<div class="pv none" id="pv"><span>参与人数: <strong id="pvtotal"></strong></span></div>	
+					</nav>
+					<a href="#" class="btn-back" id="btn-back">返回首页</a>
+					<div class="info">
+						<label id="myname"></label>
+						<a class="avatar" id="avatar">
+							<img src="./images/blank.gif" />
+						</a>
+					</div>
+					
+				</section>
+				<section class="content" id="content">
+					<div class="loadmore hidden" id="loadmore"><i></i><span>加载中，请稍候...</span></div>
+				</section>
+			</article>
+			<footer class="copyright">页面由央视新闻提供<br/>新掌趣科技制作 & Powered by holdfun.cn</footer>
+		</div>
+	</section>
+	
+	<a href="#" class="btn-top" id="btn-top"></a>
+	<section id="cmt-box" class="cmt-box c-box none">
+		<p><input type="text" class="input-cmt" id="input-cmt" /></p>
+		<a href="#" class="btn-send" id="btn-send">发送</a>
+	</section>
+	<!-- 页面内容END -->
+	
+	<!-- plugins.min.js -->
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/iscroll-probe.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+	<!-- 
+	<script src="./js/plugins.min.js"></script> -->
+	
+	<script src="http://yaotv.qq.com/c/=/shake_tv/include/js/jsapi_authorize.js,/shake_tv/include/js/jsapi_subscribe.js,/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="./js/config.js"></script>
+	
+	<!-- index.min.js -->
+	<script src="./js/app/index.js"></script>
+	<!-- 
+	<script src="./js/index.min.js"></script> -->
+	
+	<script src="./js/wx_api_userinfo.js"></script>
+</body>
+</html>

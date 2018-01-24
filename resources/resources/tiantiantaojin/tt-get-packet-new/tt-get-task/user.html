@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/core.css" rel="stylesheet" type="text/css" />
+    <link href="css/user.css" rel="stylesheet" type="text/css" />
+    <link href="css/dialog.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobile-select-area.css" rel="stylesheet" type="text/css" />
+    <title></title>
+</head>
+<body>
+     <header id="header">
+        <ul class="user-information">
+            <li>
+                <div class="head-img"></div>
+            </li>
+            <li id="user-name"></li>
+            <li>
+               <i class="money-market-icon"></i>
+               <span id="money-amount"></span>
+            </li>
+        </ul>
+        <div class="user-personal-information none">
+        <p>
+        	<label>
+        		姓名
+        	</label>
+        	<input type="text" class="name">
+        </p>
+        <p>
+            <label>
+        		地址
+        	</label>
+        	<input type="text" class="address">
+        </p>
+        <p>
+        	<label>
+        		电话
+        	</label>
+        	<input type="tel" class="mobile">
+        </p>
+       <!--  <p class="pop-sex">
+            <label>
+        		性别
+        	</label>
+        	<input type="text" class="sex" placeholder="未设置>" readonly="readonlye">
+        </p> -->
+        <p class="pop-age">
+            <label>
+        		年龄
+        	</label>
+          <input type="text" id="txt_area" placeholder="未设置>" class="age"/>
+          <input type="hidden" id="hd_area" value="2,1,1"/>
+        </p>
+   </div>
+   <div class="arrow">
+   		<img src="./images/arrowdown.png" class="arrowdown">
+   </div>
+    </header>
+
+    <div class="user-task-about">
+        <nav>
+            <div class="tab-div">
+                    <a href="javascript:void(0)" data-collect="true" class="my-all-task click-style"
+                           data-collect-flag="tt-get-myalltask"
+                           data-collect-desc="天天淘金-我的全部任务" id="my-all-task">
+                           <span>我的全部任务</span>
+                    </a>
+                    <a href="javascript:void(0)" data-collect="true" class="much-makemoney"
+                           data-collect-flag="tt-get-exchange-prize"
+                           data-collect-desc="天天淘金-已兑换的奖品" id="exchange-prize">
+                           <span>已兑换的奖品</span>
+                    </a>
+            </div>
+          </nav>
+          <section>
+               <div class="user-list">
+                <ul id="list">
+                </ul>
+            </div>
+          </section>
+   </div>
+
+   <!-- 年龄选择弹层 -->
+   <!-- <section class="sex-pop-dialog none">
+   	 <div class="sex-pop-content">
+   	 	<ul>
+   	 		<li>男</li>
+   	 		<li>女</li>
+   	 	</ul>
+	   	 <div class="sex-pop-cancel">
+	   	 	取消
+	   	 </div>
+   	 </div>
+   </section> -->
+</body>
+</html>

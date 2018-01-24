@@ -1,0 +1,133 @@
+﻿
+.barrage-wrapper
+{
+ background-color:Transparent !important;    
+}
+.comments
+{
+    background-color: Transparent;
+    border: none;
+    border-top: 2px solid #6FB3DD;
+    border-bottom: 2px solid #6FB3DD;
+}
+.comment-input-wrapper
+{
+    overflow: hidden;
+    position:relative;
+    height:80px;
+    bottom:0px;
+}
+
+
+.comment-input
+{
+    position:absolute;
+    height: 70px;
+    width:100%;
+    bottom:0px;
+    background-color: #0284E2;
+    
+}
+
+.comment-input .ok
+{
+    width: 50px;
+    border: none;
+    background: url('../images/send_btn.png')no-repeat center center;
+    background-size: contain;
+     position:absolute;
+     top:14px;
+     height:40px;
+}
+
+.input-wrapper
+{   position:relative;
+    height: 42px;
+    margin-left:80px !important;
+    border:none !important;
+    background-color:#4DB4FF !important;
+    box-shadow:none !important; 
+    top:14px;
+      
+}
+.input-wrapper input
+{
+     height:42px !important;
+     line-height:42px !important;
+     border:none !important;
+     padding-left:10px !important;
+  
+}
+.input-arrow
+{
+  position:absolute;
+  left:-15px;
+  height:100%;   
+  top:0px; 
+    
+}
+.headimg
+{
+ width:50px;
+ height:50px;
+ border-radius:100%;
+ position:absolute;
+ top:-4px;
+ left:-70px;
+     
+}
+.people_hear
+{
+    -webkit-animation-name: people_heara;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;   
+    -webkit-transform-origin: center bottom
+}
+@-webkit-keyframes people_heara{
+0% {
+	
+	 -webkit-transform:rotate(0deg);
+}
+25% {
+     -webkit-transform:rotate(20deg);
+}
+50% {
+     -webkit-transform:rotate(0deg);
+}
+70% {
+     -webkit-transform:rotate(-20deg);
+}
+100% {
+	 -webkit-transform:rotate(0deg);
+
+}
+}
+
+.a-wrapper
+{
+    
+ height:32px !important;    
+}
+.a-wrapper a
+{
+   line-height:32px !important;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: White;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: White;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: White;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: White;
+}
+.people_name
+{
+  color:#4DB4FF;    
+}

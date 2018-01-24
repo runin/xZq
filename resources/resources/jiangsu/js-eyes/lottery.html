@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>新闻眼</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+	<div class="main" id="main">
+		<div id="not-open" class="red-env">
+			<div class="tip">
+				<h1>恭喜您！</h1>
+				<h2>抢到了新闻眼的红包一个，新闻眼在这儿给您拜年啦，祝您羊年发大财！记得收看节目哦 </h2>
+			</div>
+			<a href="#" data-collect="true"
+				   data-collect-flag="js-eyes-index-jifen-btn"
+				   data-collect-desc="新闻眼首页进入积分页面" class="btn-click" id="btn-click"></a>
+		     <!--<span>更多互动关注微信公众号“江苏新闻”</span>
+-->
+		</div>
+		<div id="open" class="none">
+			<div class="red-env-open">
+				<div class="con">
+					<h1>恭喜您</h1>
+					<h2 id="prize-tt">运气太好了，恭喜您获得iPhone6一部</h2>
+				</div>
+				<!--<span>更多互动关注微信公众号“江苏新闻”</span>-->
+			</div>
+			<a href="javascript:share();" data-collect="true"
+			data-collect-flag="js-eyes-baoliao-submit-btn"
+			data-collect-desc="爆料页面提交线索" class="btn btn-share none" id="btn-share">嘚瑟一下</a>
+			<p style="text-align: center;color: #E7141A;margin: 0px auto 0px;font-size: 16px;">分享给好友嘚瑟一下</p>
+			<a href="#" data-collect="true"
+			data-collect-flag="js-eyes-baoliao_index-btn"
+			data-collect-desc="爆料页面返回首页" class="btn-back-simple">返回</a>
+		</div>
+		
+	</div>
+	
+	<div class="copyright">
+			<p>页面由江苏广电总台新闻中心提供 </p>  
+			<p>Powered by holdfun.cn</p>
+	</div>
+
+	<script src="js/config.js"></script>
+    <script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+	
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/lottery.js"></script>
+
+</body>
+</html>

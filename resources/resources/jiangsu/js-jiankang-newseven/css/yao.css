@@ -1,0 +1,361 @@
+body,html{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:#d7f5fd;
+	background-image:url(../images/bg_c.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:top center;
+	overflow:hidden;
+}
+.main-logo{
+	width:72%;
+	height:26%;
+	margin:12% auto 0;
+	background-image:url(../images/main_logo.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:top center;
+}
+.yao-bg{
+	width:52%;
+	height:33%;
+	margin:0 auto;
+	background-image:url(../images/yao_bg.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+.yaoing{
+	-webkit-animation-name: yao;
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes yao{
+0% {
+	-webkit-transform:rotate(0);
+}
+50% {
+	-webkit-transform:rotate(-60deg);
+}
+100% {
+	-webkit-transform:rotate(0);
+}
+}
+.yao-tips{
+	position:absolute;
+	top:45%;
+	left:2%;
+	width:96%;
+	height:20px;
+	line-height:20px;
+	border-radius:5px;
+	text-align:center;
+	font-size:14px;
+	color:#ff6c00;
+	display:none;
+	z-index:99;
+}
+.y-tips{
+	display:block;
+	-webkit-animation-name: yaotips;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes yaotips{
+0% {
+	top:45%;
+}
+80% {
+	top:15%;
+}
+100% {
+	top:10px;
+}
+}
+.main-time{
+	position:absolute;
+	bottom:60px;
+	left:11%;
+	width:78%;
+	height:50px;
+	line-height:50px;
+	padding:0 0 0 10px;
+	box-sizing:content-box;
+	background-image:url(../images/clock_bg.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:top center;
+	text-align:center;
+	font-size:16px;
+	color:#229dd1;
+}
+.main-time span{
+	display:inline-block;
+	margin:0 2px 0 0;
+	font-size:18px;
+	font-weight:bold;
+	color:#fffc00;
+}
+.surplus{
+	position:absolute;
+	bottom:110px;
+	width:100%;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:14px;
+	color:#007abf;
+}
+.surplus span{
+	margin:0 5px;
+	color:#fe0002;
+}
+.pop-con{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:99;
+}
+.t-redbao{
+	-webkit-animation-name: thongbao;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes thongbao{
+0% {
+	-webkit-transform:translatey(-600px);
+}
+60% {
+	-webkit-transform:translatey(50px);
+}
+90% {
+	-webkit-transform:translatey(0);
+}
+}
+.g-redbao{
+	-webkit-animation-name: ghongbao;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes ghongbao{
+0% {
+	-webkit-transform:translatey(0);
+}
+60% {
+	-webkit-transform:translatey(-30px);
+}
+100% {
+	-webkit-transform:translatey(600px);
+}
+}
+.pop-redbao{
+	position:absolute;
+	top:10%;
+	left:10%;
+	width:80%;
+	height:80%;
+	z-index:99;
+}
+
+.redbao-top{
+	height:30%;
+	background-image:url(../images/redbao_01.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:top center;
+	overflow:hidden;
+}
+.redbao-top.dlbao{
+	background-image:url(../images/redbao_03.png);
+}
+.redbao-con{
+	height:70%;
+	background-image:url(../images/redbao_02.png);
+	background-size:100% auto;
+	overflow:hidden;
+}
+.congratulations{
+	height:20%;
+	line-height:20px;
+	margin:20% 0 0;
+	text-align:center;
+	color:#ffea01;
+}
+.dlbao .congratulations{
+	display:none;
+}
+.card-coupons{
+	width:80%;
+	height:22%;
+	margin:5% auto 0;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+.card-ms{
+	width:80%;
+	line-height:20px;
+	margin:5px auto 0;
+	text-indent:2em;
+	font-size:14px;
+	color:#ffee2c;
+}
+.phone-title{
+	height:25px;
+	line-height:25px;
+	margin:10px 10% 0;
+	font-size:12px;
+	color:#ffee2c;
+}
+.phone-text{
+	width:80%;
+	height:32px;
+	line-height:32px;
+	margin:8px 10% 0;
+	border-radius:5px;
+	border:none;
+	background:#fff;
+	text-indent:10px;
+	font-size:14px;
+}
+
+a.pop-btn-a,
+a.pop-btn-c{
+	position:absolute;
+	bottom:25px;
+	left:25%;
+	width:52%;
+	height:42px;
+	line-height:42px;
+	background:#ffb400;
+	border-radius:21px;
+	text-align:center;
+	box-shadow:0 1px 1px #e80023;
+	font-size:18px;
+	color:#fff;
+}
+a.pop-btn-b{
+	display:block;
+	position:absolute;
+	bottom:30%;
+	left:10%;
+	width:80%;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	font-size:14px;
+	color:#ffef2d;
+	z-index:99;
+}
+a.pop-btn-c{
+	left:10%;
+	width:80%;
+	font-size:16px;
+}
+.phone-check{
+	line-height:22px;
+	margin:5px 10% 0;
+	font-size:14px;
+	color:#ffee2c;
+}
+.success-text{
+	position:absolute;
+	top:46%;
+	width:100%;
+	text-align:center;
+	font-size:18px;
+	color:#ffee2c;
+}
+.error-text{
+	position:absolute;
+	top:38%;
+	left:10%;
+	width:80%;
+	line-height:26px;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+}
+.error-text img{
+	width:80%;
+	margin:0 0 5px;
+}
+.error-text p{
+	line-height:18px;
+	font-size:14px;
+}
+.money{
+	position:absolute;
+	top:45%;
+	width:100%;
+	text-align:center;
+	color:#ffef2d;
+}
+.money span{
+	margin:0 5px;
+	font-size:36px;
+	font-weight:bold;
+}
+.cjdlb{
+	position:absolute;
+	top:40%;
+	width:100%;
+	height:18%;
+	background-image:url(../images/cjdlb.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+.pop-close{
+	position:absolute;
+	top:-10px;
+	right:-10px;
+	width:28px;
+	height:28px;
+	background-image:url(../images/close.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	z-index:3;
+}
+@media screen and (min-device-height :480px) and (max-device-height :500px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+.main-logo{
+	margin:10% auto 0;
+}
+.phone-title{
+	margin:8px 10% 0;
+}
+.card-coupons{
+	height:20%;
+}
+.phone-text{
+	height:30px;
+	line-height:30px;
+}
+a.pop-btn-a,
+a.pop-btn-c{
+	bottom:20px;
+	height:40px;
+	line-height:40px;
+}
+.error-text{
+	top:35%;
+}
+}
+@media screen and (min-device-width :320px) and (max-device-height :350px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+.congratulations{
+	font-size:14px;
+}
+}

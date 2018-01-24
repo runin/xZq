@@ -1,0 +1,226 @@
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	width: 100%;
+	margin:0 auto;
+	overflow:hidden;
+	background:#d9080b url(../images/index-bg.jpg) no-repeat top center;
+	background-size: 100%;
+}
+
+
+.btn-rule{
+	display: inline-block;
+	color: #cd0001;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 1;
+	padding:4px 6px;
+	font-weight: 700;
+	font-size: 12px;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff391), to(#ff9305));    
+}
+footer {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: 0px;
+    left: 0;
+    overflow: hidden;
+    padding-bottom: 82px;
+    background:url(../images/bg.jpg) no-repeat bottom center;
+	background-size: 100%;
+}
+footer .join-box {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+footer .join-box a {
+	display: inline-block;
+	width: 46%;
+	
+}
+footer .join-box  .join-title{
+	display: block;
+	width: 100%;
+	margin: 10px auto;
+	opacity: 0;
+}
+footer .join-box p{
+	color: #fff;
+	font-size: 10px;
+}
+footer .follow-box{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	z-index: 9999;
+}
+footer .copyright {
+	position: relative;
+	font-size: 12px;
+	height: 28px;
+	line-height: 13px;
+	opacity: 0.6;
+	margin: 0 auto;
+}
+footer #div_subscribe_area {
+	height:50px;
+	overflow:hidden;
+}
+.join-box .btn-group{
+	 opacity: 0;
+}
+.showme{
+	-webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: show;
+    animation-name: show;
+    -webkit-animation-delay:.5s;
+    animation-delay: .5s;
+    opacity: 0;
+}
+.bounceInUp {
+	-webkit-animation-delay: 1s;
+    animation-delay: 1s;
+	-webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+	-webkit-animation-name: bounceInUp;
+	animation-name: bounceInUp;
+	opacity: 0;
+}
+@-webkit-keyframes bounceInUp {
+	0%,
+	100%,
+	60%,
+	75%,
+	90% {
+		-webkit-animation-timing-function: cubic-bezier(0.215, .61, .355, 1);
+		animation-timing-function: cubic-bezier(0.215, .61, .355, 1)
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 3000px, 0);
+		transform: translate3d(0, 3000px, 0);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, -20px, 0);
+		transform: translate3d(0, -20px, 0);
+	}
+	75% {
+		-webkit-transform: translate3d(0, 10px, 0);
+		transform: translate3d(0, 10px, 0);
+	}
+	90% {
+		-webkit-transform: translate3d(0, -5px, 0);
+		transform: translate3d(0, -5px, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes bounceInUp {
+	0%,
+	100%,
+	60%,
+	75%,
+	90% {
+		-webkit-animation-timing-function: cubic-bezier(0.215, .61, .355, 1);
+		animation-timing-function: cubic-bezier(0.215, .61, .355, 1);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 3000px, 0);
+		transform: translate3d(0, 3000px, 0);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, -20px, 0);
+		transform: translate3d(0, -20px, 0);
+	}
+	75% {
+		-webkit-transform: translate3d(0, 10px, 0);
+		transform: translate3d(0, 10px, 0);
+	}
+	90% {
+		-webkit-transform: translate3d(0, -5px, 0);
+		transform: translate3d(0, -5px, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+
+@-webkit-keyframes show{
+    0% {
+        -webkit-transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes show{
+    0% {
+        -webkit-transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* iPhone4 */
+@media screen and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 550px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+footer .join-box a {
+    width: 42%;
+}
+}
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+footer .join-box a {
+    width: 30%;
+}
+}

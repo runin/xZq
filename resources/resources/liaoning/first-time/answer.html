@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>第一时间</title>
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/answer.css" />
+</head>
+<body>
+<img class="answer-tlt" src="images/answer-titl.png"/>
+<a href="#" class="back-home btn" data-collect="true"
+   data-collect-flag="first-time-answer-back-home" data-collect-desc="答题提交按钮">返 回</a>
+
+<h1 class="answer-title"><span></span></h1>
+<section class="tm"></section>
+<a href="#" class="tj btn" data-collect="true" data-collect-flag="first-time-answer-tj" data-collect-desc="答题提交按钮">提 交</a>
+<div class="copyright"></div>
+
+<!--弹层-s-->
+<section id="tc" class="tc animated none">
+    <!--刮奖-s-->
+    <div class="gj none">
+        <h2>哎呦</h2>
+        <h3>不错哦，<br/>获得刮刮卡一张</h3>
+        <div class="wrapper">
+            <div class="paint" id="paint"></div>
+            <div class="cover none" id="cover"></div>
+        </div>
+        <img src="images/gj-bottom.jpg" />
+        <div class="lottery-win none">
+            <h4>请填写您的正确信息，以便顺利领奖</h4>
+            <p><label class="nl">姓 名:</label><input class="name" type="text"></p>
+            <p><label class="ml">电 话:</label><input class="mobile" type="rel"></p>
+            <p><label class="al">地 址:</label><input class="address" type="text"></p>
+        </div>
+        <a href="#" class="confirm btn none" data-collect="true" data-collect-flag="first-time-answer-confirm" data-collect-desc="答题提交按钮">确 定</a>
+        <a href="#" class="back btn none" data-collect="true" data-collect-flag="first-time-answer-back" data-collect-desc="答题返回按钮">好 的</a>
+    </div>
+    <!--刮奖-e-->
+    <!--答错-s-->
+    <div class="dt-error none">
+        <img src="images/error.jpg" />
+        <a href="#" class="close btn" data-collect="true" data-collect-flag="first-time-answer-close" data-collect-desc="答题返回按钮">好 的</a>
+    </div>
+    <!--答错-e-->
+</section>
+<!--弹层-e-->
+<script src="js/config.js"></script>
+
+<!--<script src="./js/plugins/zepto.min.js"></script>-->
+<!--<script src="./js/plugins/zepto.cookie.min.js"></script>-->
+<!--<script src="./js/plugins/zepto.fx.min.js"></script>-->
+<!--<script src="./js/plugins/md5.js"></script>-->
+<!--<script src="./js/plugins/common.js"></script>-->
+
+<script src="./js/common.min.js"></script>
+<script src="./js/lottery.min.js"></script>
+
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/lottery.min.js"></script>
+
+<script src="./js/app/answer.js"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>个人中心</title>
+	<link rel="stylesheet" href="./css/cssreset-min.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/user.css" />
+	<script src="./js/wx_api.js"></script>
+	<script>
+		hideWeiXinShareMenuItem();
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="avatar">
+			<div class="avatar-wrapper">
+				<img src="http://yao.holdfun.cn/portal/resources/news/images/user/avatar_png8.png" />
+			</div>
+			<p>西安观众</p>
+		</div>
+		
+		<div class="list">
+			<ul>
+				<li>
+					<ol>
+						<li class="none"><a class="ph">我的排行：<strong>-</strong></a></li>
+						<li class="border"><a class="jf">我的积分：<strong>-</strong></a></li>
+						<li><a href="javascript:toUrl('gift.html')" class="nav lp" data-collect="true" data-collect-flag="news-user-my-gift" data-collect-desc="个人中心 我的礼品">我的礼品：<strong>-</strong></a></li>
+					</ol>
+				</li>
+				<li><a href="javascript:toUrl('mall.html')" class="nav hg" data-collect="true" data-collect-flag="news-main-gift-mall" data-collect-desc="个人中心 礼品换购">积分换礼<i></i></a></li>
+				<li class=" none"><a href="#" class="nav jm">预约电视节目</a></li>
+			</ul>
+		</div>
+		
+		<a href="javascript:toUrl('index.html')" class="btn-back" data-collect="true" data-collect-flag="news-user-back" data-collect-desc="个人中心 返回首页">返回</a>
+	</div>
+	<div class="copyright copyright2 hidden">页面由西安广播电视台提供</div>
+	
+	<!--<script src="./js/config.js"></script>
+	<script src="./js/zepto.min.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src="./js/share.js"></script>
+	<script src="./js/data_collect.js"></script>-->
+
+	<script src="./js/config.js"></script>
+	<script src="./js/index.min.js"></script>
+	<script src="./js/user.js"></script>
+</body>
+</html>

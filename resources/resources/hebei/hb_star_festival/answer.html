@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>明星同乐会</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/audio.css" />
+    <link rel="stylesheet" href="./css/answer.css" />
+</head>
+<body>
+
+    <!-- 页面内容 -->
+    <header class="none">
+        <label class="icon"><img src="" /></label>
+        <!--music-->
+        <section class="ui-audio" id="ui-audio">
+            <div id="coffee-flow" class="coffee-flow">
+                <a href="#" class="audio-icon"></a>
+                <label></label>
+            </div>
+        </section>
+        <a href="#" class="jifen-btn ranking none" data-collect="true" data-collect-flag="hb-star-festival-detail-miaoshu" data-collect-desc="查看积分排行榜"></a>
+        <a href="#" class="outer answer-outer none" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+    </header>
+
+    <section class="wrapper">
+        <!--<a href="#" class="jifen-btn ranking none" data-collect="true" data-collect-flag="hb-star-festival-detail-miaoshu" data-collect-desc="查看积分排行榜"></a>-->
+        <div class="nav">
+            <ul>
+                <li>
+                    <a id="guess-a" href="#" class="curr" data-collect="true" data-collect-flag="hb-star-festival-detail-miaoshu" data-collect-desc="疯狂猜图">疯狂猜图</a>
+                </li>
+                <li>
+                    <a id="dan-a" href="#" data-collect="true" data-collect-flag="hb-star-festival-detail-guige" data-collect-desc="弹幕评论">弹幕评论</a>
+                </li>
+            </ul>
+        </div>
+        <div class="detail-list">
+            <ul id="detail-list">
+                <li class="xq">
+                    <div id="guess-img"></div>
+                    <div class="none" id="count-down">
+                        <div class="countdown" data-stime="" data-etime=""></div>
+                        <a href="#" class="jifen-see-btn ranking none" data-collect="true" data-collect-flag="hb-star-festival-detail-miaoshu" data-collect-desc="答题页面-查看积分排行榜按钮"></a>
+                        <a href="#" class="outer answer-outer1 none" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+                    </div>
+                </li>
+                <li class="cs">
+                    <article id="article">
+                        <div class="comments" id="comments"></div>
+                        <div class="ctrls">
+                            <p><input id="input-comment" type="text" placeholder="biu biu biu  biu~" /></p>
+                            <a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="hb-star-festival-comment" data-collect-desc="答题页面-发表评论按钮">发射</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 页面内容END -->
+
+    <!-- 抽中奖_S 已被隐藏-->
+    <section class="modal none" id="lottery-bingo">
+        <a href="#" class="lottery-bingo-btn" data-collect="true" data-collect-flag="hb-star-festival-lotterybtn" data-collect-desc="中奖领取奖品按钮"></a>
+    </section>
+    <!-- 抽中奖_E -->
+    <img src="images/rule.png" class="none">
+
+    <script src="./js/config.js"></script>
+
+    <!-- plugins.min.js -->
+    <!--<script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/common.js"></script>-->
+
+    <script src="./js/common.min.js"></script>
+
+    <!--<script src="./js/plugins/iscroll-lite.js"></script>
+    <script src="./js/plugins/barrage.js"></script>
+    <script src="./js/plugins/coffee.js"></script>
+    <script src="./js/plugins/audio.js"></script>-->
+
+    <script src="./js/answer.common.min.js"></script>
+    <script src="js/msg.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <!-- <script src="./js/test/data.js"></script> -->
+
+    <!-- answer.min.js -->
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/answer.js"></script>
+
+    <script>
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1000217047'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1000217047' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+
+</body>
+</html>

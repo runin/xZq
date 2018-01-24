@@ -1,0 +1,181 @@
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+    background: url(../images/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+header {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+header .award-list {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    background-color: #22365c;
+    font-size: 13px;
+    color: #FFF;
+    text-align: center;
+    opacity: 0;
+    overflow: hidden;
+}
+header .slogan-box {
+	position: relative;
+	width: 85%;
+	margin: 3% auto;
+}
+header .icon-mobile {
+	position: absolute;
+	width: 12%;
+	top: -5%;
+	left: 44%;
+}
+header .countdown {
+	display: inline-block;
+    margin: 0 auto 3%;
+    padding: 2px 18px 4px;
+    background-color: #203050;
+    text-align: center;
+    border-radius: 28px;
+    border: 1px solid rgba(255,255,255,.5);
+    box-shadow: 0 0 3px rgba(0,0,0,.5) inset;
+}
+header .countdown * {
+	font-size: 13px;
+	color: #FFF;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.5);
+}
+header .countdown .detail-countdown label {
+    color: #fec836;
+    margin: 0 4px 0 2px;
+    padding: 1px 2px 0;
+    border: 1px solid #000;
+    border-top: 1px solid #706e6f;
+    border-left: 1px solid #675151;
+    border-radius: 2px;
+    box-shadow: 2px 2px 1px rgba(0,0,0,.3);
+    background-image: -webkit-linear-gradient(-90deg, #353334, #290b0b);
+}
+header .countdown .detail-countdown * {
+	font-weight: bolder;
+}
+.wheel-box {
+	position: relative;
+	width: 88%;
+	margin: 5% auto 0;
+	overflow: hidden;
+}
+.wheel-box .btn-wheel {
+	position: absolute;
+	width: 78%;
+	height: 78%;
+	top: 11%;
+	left: 11%;
+	-webkit-transform-origin: 50% 50% 0 !important;
+	-webkit-transition-timing-function: steps(3600, end) !important;
+}
+.wheel-box .icon-start {
+	position: absolute;
+    width: 64%;
+    height: 64%;
+    top: 18%;
+    left: 18%;
+}
+footer {
+	width: 100%;
+	position: absolute;
+    left: 0;
+	bottom: 0;
+    z-index: 99;
+}
+footer .info-box {
+	width: 100%;
+	margin: 0 auto 5%;
+	text-align: center;
+}
+footer .info-box p, footer .info-box a {
+	display: block;
+	color: #F5F5F5;
+	font-size: 16px;
+}
+footer .info-box p {
+	font-size: 14px;
+	opacity: 0;
+}
+footer .info-box a {
+	margin-top: 2%;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+#tttj {
+	position: absolute;
+	bottom: 13%;
+	left: 3%;
+	z-index: 99;
+	text-align: center;
+}
+#tttj img {
+	display: block;
+	width: 38px;
+	margin: 0 auto;
+}
+#tttj p {
+	margin-top: 3px;
+	width: 48px;
+	color: #FFF;
+	font-size: 10px;
+	line-height: 13px;
+	-webkit-transform: scale(.9);
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	header .slogan-box {
+        width: 72%;
+        margin: 2% auto;
+    }
+	.wheel-box {
+		position: relative;
+		width: 72%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.wheel-box .btn-wheel {
+		position: absolute;
+		width: 72%;
+		height: 72%;
+		top: 14%;
+		left: 14%;
+	}
+	footer .info-box {
+		margin: 0 auto 2%;
+	}
+	footer .info-box a {
+		margin-top: 1%;
+	}
+}
+
+/* huaweiH6 */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+	.wheel-box {
+	    position: relative;
+	    width: 80%;
+	    margin: 3% auto 0;
+	    overflow: hidden;
+	}
+	.wheel-box .btn-wheel {
+		position: absolute;
+		width: 74%;
+		height: 74%;
+		top: 13%;
+		left: 13%;
+	}
+}

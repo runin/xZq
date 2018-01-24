@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>天方宴谈</title>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/talk.css" />
+</head>
+<body>
+	<header>
+		<img class="icon-tvlogo" src="./images/icon-tvlogo.png">
+		<section class="btn-wrapper">
+			<a href="javascript:void(0);" id="btn-go2lottery" data-collect="true" data-collect-flag="btn-go2lottery" data-collect-desc="去摇奖按钮"><img src="./images/btn-go2lottery.png"></a>
+		</section>
+	</header>
+	<section class="container">
+		<img class="TM" src="">
+	</section>
+	<footer>
+		<section class="talk-wrapper">
+			<section id="article">
+				<section class="comments" id="comments"></section>
+			</section>
+			<img class="mic" src="./images/lineMic.png">
+			<section class="ctrls">
+				<img class="avatar-comment" src="./images/avatar/default-avatar.jpg">
+				<input id="input-comment" type="text" placeholder="输入您想要说的话~" maxlength="20" />
+			    <a href="javascript:void(0);" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="talk-comment" data-collect-desc="弹幕发送按钮">发&nbsp;送</a>
+			</section>
+		</section>
+		<p class="copyright">页面由云南电视台提供<br>新掌趣科技技术支持&Powered by holdfun.cn</p>
+	</footer>
+	
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/talk.js"></script>
+	<script src="./js/app/msg.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

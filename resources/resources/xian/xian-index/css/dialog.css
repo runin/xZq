@@ -1,0 +1,306 @@
+
+.modal {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 100;
+	color: #fff370;
+	text-align: right;
+	overflow-y: auto;
+	
+}
+.modal .dialog{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	
+}
+.modal .btn-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: url(../images/icon-close.png) no-repeat;
+	background-size:26px ;
+}
+
+.lott{
+	width: 90%;
+	height: 70%;
+	background: url(../images/lott-bg.jpg) no-repeat;
+	background-size: cover;
+	color: #fff;
+	position: absolute;
+	top:15%;
+	left: 5%;
+	padding: 14px;
+	border-radius: 6px;
+	border : 1px solid #e9e908;
+
+}
+.outerQuan{
+	height: 56%;
+	top:22%;
+}
+.lott h1{
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+}
+.lott p{
+	font-size: 14px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.lott .award-img{
+	display: block;
+	width: 100%;
+	padding: 6px 0px;
+}
+.outerQuan .award-img{
+	padding: 14px 0px 18px;
+}
+.lott .award-img img{
+	display: block;
+}
+.lott .btn-award{
+	display: block;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background:#ffea00;
+	color: #f42e0d;
+	margin: 0 auto;
+	border-radius: 12px;
+	
+}
+.contact{
+	width: 100%;
+	padding-bottom: 10px;
+}
+.contact input{
+	width: 100%;
+	border-radius: 4px;
+	border:none;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 6px;
+	padding:0 10px;
+}
+.rule-dialog{
+	background: url(../images/rule_bg.png) no-repeat;
+	background-size: 100% 100%;
+	color: #ad4100;
+	
+}
+.rule-dialog .btn-close{
+	position: absolute;
+    top: 10px;
+    right: 10px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/close.png) no-repeat;
+	background-size:16px ;
+}
+.rule-dialog h2{
+	padding-top: 20px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+.rule-dialog .content{
+	padding: 10px 20px;	
+	text-align: left;
+	font-size: 14px;
+}
+.rule-dialog .rule-con{
+	height: 100%;
+	overflow: auto;
+}
+.dialog-copyright {
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+    right: 5px;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    height: 60px;
+    background: url(../images/dialog-copyright.png) no-repeat center;
+    background-size: 80%;
+}
+.code{
+	font-size: 18px;
+	color :#fff;
+	display:block;
+	text-align: center;
+	padding: 2px 4px 10px;
+	word-wrap: break-word;
+}
+.contact .tip{
+	color: #fff;
+	font-size: 12px;
+	text-align: left;
+}
+
+/*加载按钮 -s*/
+.loader{
+    margin: 0 auto;
+    width: 72px;
+}
+.loader span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background: #F26C0D;
+    border-radius: 50px;
+    margin: 0 2px;
+    -webkit-animation: loader 1s infinite alternate;
+    -moz-animation: loader 1s infinite alternate;
+}
+.loader span:nth-of-type(2) {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+.loader span:nth-of-type(3) {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+}
+.loader span:nth-of-type(4) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+.loader span:nth-of-type(5) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+}
+@-webkit-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+@-moz-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.rule-dialog h2 {
+		padding-top: 30px;
+		line-height: 20px;
+	}
+	.lott{
+		top: 8%;
+		height: 84%;
+		padding-top: 0px;
+    }
+    .outerQuan{
+    	top:18%;
+    	height: 64%;
+    	padding-top: 2%;
+    }
+    .lott h1{
+		line-height: 34px;
+	}
+    .lott .award-img{
+		padding:0px;
+	}
+	.outerQuan .award-img{
+		padding: 6px 0px 10px;
+	}
+	.code{
+		padding: 2px 4px;
+	}
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	 
+	.lott .award-img{
+		padding: 2px 0px;
+	}
+	.outerQuan .award-img{
+		padding: 10px 0px 14px;
+	}
+	.lott{
+		padding-top: 10px;
+    }
+    .lott h1{
+		line-height: 34px;
+	}
+	.code{
+		padding: 2px 4px;
+	}
+    
+}
+
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	lott{
+		top: 13%;
+		height: 74%;
+		padding-top: 0px;
+    }
+    .outerQuan{
+    	top:20%;
+    	height: 60%;
+    	padding-top: 2%;
+    }
+    .lott .award-img{
+		padding: 0 0px 4px;
+	}
+	.outerQuan .award-img{
+		padding: 14px 0px 18px;
+	}
+	.code{
+		padding: 2px 4px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

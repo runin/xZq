@@ -1,0 +1,63 @@
+br{
+	width:0px;
+	height:0px;
+}
+.countdown{ 
+	display:inline-block;
+	color:#fff;
+	text-align: center;
+	font-size: 16px;
+	border-radius:4px ;
+	padding: 0 30px;
+	border: 1px solid #cbac62;
+	/*border-top-left-radius: 0;
+	border-top-left-right: 0;*/
+	border-top: none;
+	position: relative;
+	
+}
+.countdown::before{
+	content: "";
+	width: 26px;
+	height: 1px;
+	background: #cbac62;
+	position: absolute;
+	top: 1px;
+	left: 0px;
+}
+.countdown::after{
+	content: "";
+	width: 26px;
+	height: 1px;
+	background: #cbac62;
+	position: absolute;
+	top: 1px;
+	right: 0px;
+}
+.tip-box{
+	display: inline-block;
+	margin-top: -10px;
+	text-align: center;
+}
+.countdown .countdown-tip,.text-tip{
+	width: 100%;
+	text-align: center;
+	color: #c8a75d;
+    display:inline-block;
+    font-size: 14px;
+    line-height: 20px;
+}	
+.detail-countdown{
+	display:inline-block;
+	height:20px;
+	line-height: 20px;
+	color: #c8a75d;
+	border-radius:16px ;
+}
+
+.detail-countdown label{
+	padding: 1px 6px;
+	color: #e7ca88;
+	margin: 0 2px;
+	font-size: 16px;
+}

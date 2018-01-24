@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+body{margin:0;padding:0; font-family:"Microsoft Yahei"; font-size:14px; color:#3e3e3e; background:#e5e5e5;}
+ul,ol{ list-style-type:none;padding: 0px;overflow: visible;}
+h1, h2, h3, h4, h5, h6, form, div, p, i, img, ul, li, ol, table, tr, td, fieldset, label, legend,dt,dd,dl{margin:0;padding:0;}
+section, article, aside, header, footer, nav, dialog, figure {display: block;}
+figure {margin:0;}
+a {text-decoration: none;}
+a:hover {text-decoration:none;}
+button{ cursor:pointer;}
+img{ border:0;}
+em{ font-style:normal;}
+.hide{ display:none;}.red{color:#F00;}.blue{color:#357ac7;}.left{ float:left;}.right{ float:right;}.fd{ overflow:auto;zoom:1; overflow:hidden;}.ml10{margin-left:10px;}
+.p17{padding:17px;}.mb15{margin-bottom:15px;}
+.box-orient-h {-webkit-box-orient:horizontal;-moz-box-orient:horizontal;-o-box-orient:horizontal;-ms-box-orient:horizontal;box-orient:horizontal;display:-webkit-box;display:-moz-box;display:box;}
+.box-orient-v {-webkit-box-orient:vertical;-moz-box-orient:vertical;-o-box-orient:vertical;-ms-box-orient:vertical;box-orient:vertical;display:-webkit-box;display:-moz-box;display:box;}
+.box-flex {-webkit-box-flex:1;-moz-box-flex:1;-o-box-flex:1;-ms-box-flex:1;box-flex:1;}
+.none {display: none !important;}
+.rdbg{background:#df0408;}
+/*index*/
+.mod_top{height:220px; background:url(../images/title.png) no-repeat center 10px #df0408;padding:20px 0;background-size:320px auto;}
+.mod_box{padding:8px 8px 20px;}
+.send_btn{height:48px;display:block;background:#e22121;color:#FFF;text-align:center;font-size:16px;line-height:48px;border-radius:5px;margin-bottom:10px;}
+.send_btn:hover{background:#b81010;}
+.active_box{padding:8px;background:#FFF;margin-bottom:8px;line-height:24px;}
+.active_box img{float:left;margin-right:10px;}
+.active_box h4{color:#e33030;}
+.active_box span{color:#666;}
+.active_box p{color:#000;}
+.details h2{font-size:15px;color:#000;line-height:32px;}
+.details .d_item{background:#FFF;padding:8px;}
+.details .d_item em{color:#e22121;}
+.sharebtnbox{padding-bottom:10px;height:46px;line-height:44px;}
+.sharebtnbox a{display:block;border:1px #e33030 solid;line-height:44px;border-radius:5px;height:44px;text-align:center;font-size:16px;color:#e33030;width:50%;}
+.sharebtnbox a:hover{line-height:44px;border:1px #ce1b1b solid;}
+.sharebtnbox .sharebtn{background:#e33030;color:#FFF;margin-right:8px;}
+.sharebtnbox .sharebtn i{width:20px;height:20px;display:inline-block;background:url(../images/sicon.png) no-repeat;background-size:20px 20px;vertical-align:-4px;margin-right:10px;display:none;}
+.sharebtnbox .sharebtn:hover{background: #ce1b1b;}
+.cjbox h2{color:#fe5d5d;text-align:left;border-bottom:1px #e5e5e5 solid;margin-bottom:10px;line-height:24px;font-weight:500;padding-bottom:10px;}
+.cjbox p{padding-bottom:10px;line-height:24px;}
+.cjbox p em{color:#fe5d5d;}
+.sharebtnbox .tpbtn i{width:20px;height:20px;display:inline-block;background:url(../images/love.png) no-repeat;background-size:20px 20px;vertical-align:-4px;margin-right:8px;display:none;}
+.sharebtnbox .tpbtn:hover{background:#e33030;color:#fff;}
+.sharebtnbox a.tpbtned,.sharebtnbox a.tpbtned:hover{background:#ccc;color:#333;border:1px #ccc solid;}
+.cjbox h3{font-size:14px;color:#000;font-weight:500;line-height:30px;}
+.cjbox p input{width:99%;height:30px;line-height:30px;background:#e9e8e8;border:1px #ccc solid;font-size:14px;}
+.cjbox p span{clear:both;color:#999;line-height:30px;}
+.share_box{width:100%;height:100%;position:fixed; background:url(../images/sharebg.png) no-repeat right 4px rgba(0,0,0,0.5);z-index:9999999;background-size:320px auto;}
+.share_box .refresh_btn{width:31px;height:31px; background:url(../images/ref.png) no-repeat center center;display:block;position:absolute;right:10px;bottom:5px;}
+.share_box .back_btn{position:absolute;left:10px;bottom:5px;border:0;width:31px;height:31px; background:url(../images/back.png) no-repeat center center;display:block;}
+.relist li{padding-left:30px;}
+#sed{background: #ffd800;color:#000;margin-top:10px;}
+#sed:active{background:#ffa800;color:#FFF;}
+#xs_box{padding:0 15px;}
+#xs_box h2{height:30px;line-height:30px;color:#FFF;font-size:14px;font-weight:500;}
+#xs_box textarea{width:100%;height:121px;border:0;}
+#xs_box input{width:100%;height:36px;line-height:36px;border:0;font-size:15px;}
+
+/** 抽奖 */
+.lottery-wrapper { padding: 6px 25px; margin: 0 auto; width: 320px; background-color: #FFF7DF;}
+.lottery-container {position: relative;}
+.lottery-title {margin-bottom: 10px;line-height: 20px;font-size: 15px;font-weight: bold;text-align: center;color: #ee4142;}
+.lottery-tips {margin-bottom: 10px;width: 100%;}
+.lottery-btn {position: absolute;left: 76px;top: 77px;display: inline-block;vertical-align: top;}
+.img-gift {position: relative;left: 30px;top: -47px;width: 237px;}
+.img-bg {width: 270px;}
+.img-btn {width: 117px;	}
+.img-tips-bg {position: absolute;left: -18px;top: -45px;}
+.feedback{display:block;padding:10px; text-align:right;color:#fe785d;font-family:"宋体";}

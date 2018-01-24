@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>龙斗之英雄传说</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/yao.css" />
+</head>
+
+<body>
+<!--摇一摇声音-->
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio><!--中奖声音-->
+<!-- 玻璃碎声音<audio preload="auto" id="audio-c" src="images/audio-c.mp3"></audio>-->
+
+<!--摇一摇红包-s-->
+<section class="home-box">
+  <div id="yao-redbao" class="page">
+    <div class="main-top m-t-b">
+      <div class= "marquee none"><ul></ul></div>
+      <p class="count">
+        目前参与人数：<label></label>
+        <a href="#" class="outer none" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"><img src="./images/ling.png"></a>
+      </p>
+    </div>
+    <div class="main-foot m-f-b">
+      <input type="button" class="none" id="test" value="test">
+      <div class="yao-text">
+        <p class="texta"><span>抢大奖 和家人一起摇一摇</span></p>
+        <p class="none textb"><span>啊哦，差一点就抢到了，继续加油</span></p>
+      </div>
+      <div class="countdown none"></div>
+      <div class="footer">
+        <a href="#" class="back-home" id="back-home" data-collect="true"
+           data-collect-flag="ldzyxcs-yao-back-home" data-collect-desc="返回首页"></a>
+        <div class="copyright"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--摇一摇红包-e-->
+
+<!--中奖-s-->
+<section class="yao-gift none" id="yao-gift">
+  <!--戳礼盒-s-->
+  <div class="lh-bg none" id="lh-bg">
+    <a href="#" class="btn-close" data-collect="true" data-collect-flag="ldzyxcs-yao-btn-close"
+       data-collect-desc="关闭按钮"><img src="images/close.png"></a>
+    <img class="img-lh" src="images/lh.png">
+    <label class="ts">温馨提示：点击礼盒可打开</label>
+  </div>
+  <!--戳礼盒-e-->
+
+  <div class="lh-info none" id="info">
+    <a href="#" class="btn-close" data-collect="true" data-collect-flag="ldzyxcs-yao-btn-close"
+       data-collect-desc="关闭按钮"><img src="images/close.png"></a>
+    <h2></h2>
+    <div class="gift-hongbao">
+      <img src="" />
+    </div>
+    <div class="btn-box-b">
+      <h3>请填写您的手机号，以便顺利领奖</h3>
+      <input type="text" class="name" placeholder="姓名"/>
+      <input type="tel" class="mobile" placeholder="手机号码" maxlength="11" min="11"/>
+      <input type="text" class="address" placeholder="收件地址"/>
+      <a name="" type="button" class="btn-b" id="btn-lq" data-collect="true"
+             data-collect-flag="ldzyxcs-yao-redpack-btn"
+             data-collect-desc="领红包按钮">领 取</a>
+      <a name="" type="button" class="btn-b none" id="btn-back" data-collect="true"
+             data-collect-flag="ldzyxcs-yao-redpack-btn"
+             data-collect-desc="返回按钮">返 回</a>
+    </div>
+  </div>
+</section>
+<!--中奖-e-->
+
+<div class="none">
+  <img src="images/home_logo_a.jpg" />
+  <img src="images/home_logo_b.jpg" />
+  <img src="images/gift-bg.png" />
+  <img src="images/lh.png" />
+  <img src="images/lh-top.png" />
+</div>
+
+<script src="js/config.js"></script>
+
+<!--<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>-->
+
+<script src="./js/common.min.js"></script>
+<script src="./js/shake.min.js"></script>
+
+
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="js/app/yao.js"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no" />
+<title>靓妆直播间</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/lottery.css" />
+</head>
+
+<body>
+	<img class="top" src="images/top.png" />
+	<div class="main">
+		<div class="lottery ">
+			<img
+				src="http://yao.holdfun.cn/portal/resources/news/images/blank.gif"
+				class="img-bg" id="img_lottery_bg" /> <a href="#" data-collect="true"
+				data-collect-flag="js-beautiful-outfit-lottery-btn"
+				data-collect-desc=抽奖页面抽奖" class="btn-lottery" id="btn-lottery">
+				<img
+				src="images/lottery_btn.png"
+				class="btn-img" />
+			</a>
+		</div>
+		<div class="box box-phone none" id="box-phone">
+			<img src="images/tlt.png" />
+			<h2>
+				<span class="prize"></span>
+			</h2>
+			<h3>请填写领奖信息：</h3>
+			<p>
+				<label>姓名:</label><input type="text" name="name" maxlength="11" min="11" id="name">
+				<label>电话:</label><input type="number" name="phone" maxlength="11" min="11" id="phone">
+				<label class="add">地址:</label><textarea type="text" name="add" maxlength="25" id="address"></textarea>
+			</p>
+			<a name="anchor"></a>
+			<a href="#" data-collect="true"
+				data-collect-flag="js-beautiful-outfit-submit-btn"
+				data-collect-desc="抽奖页面领奖" class="btn-red btn-submit "
+				id="btn-submit"></a>
+			<img class="share-img none" src="images/share.png" />
+		</div>
+	</div>
+	<div class="copyright"></div>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+	<script src="./js/plugins/jQueryRotate.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+
+	<script src="./js/app/index.js"></script>
+
+</body>
+</html>

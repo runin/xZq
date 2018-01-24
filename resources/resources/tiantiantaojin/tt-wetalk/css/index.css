@@ -1,0 +1,502 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+    overflow-y: scroll;
+    background-color: #ebebeb;
+}
+.layer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*min-height: 100%;*/
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.list-wrapper {
+    margin-top: 10px;
+    background-color: #FFF;
+    border-top: 1px solid #d7d7d7;
+    /*padding-bottom: 60px;*/
+}
+/*.list-wrapper .list:nth-child(1) {
+    border-top: 1px solid #d7d7d7;
+}*/
+.keyTips {
+    width: 100%;
+    margin-top: 50%;
+    text-align: center;
+    font-size: 26px;
+    color: #CACACA;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+.list-wrapper .list {
+    position: relative;
+    background-color: #FFF;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 10px 10px 10px 0;
+    margin-left: 10px;
+    font-size: 0;
+    color: #333;
+}
+.list-wrapper .list:last-child {
+    border-bottom: 0 none;
+    margin-bottom: 60px;
+}
+.list-wrapper .list > img {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-radius: 6px;
+}
+.list-wrapper .list > section {
+    position: relative;
+    margin-left: 10px;
+    display: inline-block;
+    width: calc(100% - 80px);
+    width: -webkit-calc(100% - 80px);
+    top: 2px;
+    height: 50px;
+    font-size: 14px;
+    vertical-align: top;
+    overflow: hidden;
+}
+.list-wrapper .list > section .name {
+    font-size: 17px;
+}
+.list-wrapper .list > section .desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #999;
+    width: 80%;
+    height: 24px;
+    vertical-align: middle;
+    white-space:nowrap;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+}
+.list-wrapper .list > section .desc > img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom;
+}
+.list-wrapper .list i {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 13px;
+    font-style: normal;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+}
+.send-wrapper {
+    width: 100%;
+    min-height: 50px;
+    padding: 8px 10px;
+    background-color: #FFF;
+    border-top: 1px solid #d7d7d7;;
+    text-align: center;
+}
+.send-wrapper .btn-emoji {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 6px;
+    bottom: 3px;
+    vertical-align: bottom;
+}
+.send-wrapper #conment {
+    display: inline-block;
+    outline: 0;
+    border: 0 none;
+    border-bottom: 1px solid #d7d7d7;
+    min-width: 180px;
+    width: calc(100% - 116px);
+    width: -webkit-calc(100% - 116px);
+    /*height: 34px;*/
+    min-height: 34px;
+    max-height: 75px;
+    vertical-align: top;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -webkit-user-select: initial !important;
+    -webkit-writing-mode: horizontal-tb;
+    text-rendering: auto;
+    text-align: start;
+    word-break: break-all;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.send-wrapper #conment * {
+    -webkit-user-select: initial !important;
+}
+.send-wrapper #conment:hover {
+    border-bottom: 1px solid #45c017;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+}
+.send-wrapper #conment .editor {
+    position: relative;
+    line-height: 25px;
+    top: 4px;
+}
+.send-wrapper #conment .editor img {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0 2px;
+}
+.send-wrapper .btn-send {
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #45c017;
+    color: #FFF;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 6px;
+    vertical-align: bottom;
+}
+.emoji-wrapper {
+    position: relative;
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    background-color: #FFF;
+    padding: 10px 0 0;
+}
+.emoji-wrapper ul {
+    padding: 0 0 10px;
+}
+.emoji-wrapper ul li {
+    display: inline-block;
+    width: 12.4%;
+    padding: 6px;
+}
+.emoji-wrapper ul.big {
+    text-align: left;
+}
+.emoji-wrapper ul.big li {
+    display: inline-block;
+    width: 24.8%;
+    padding: 3px 18px;
+    text-align: center;
+}
+.emoji-wrapper ul li p {
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+}
+.emoji-tab {
+    width: 100%;
+    background-color: #FFF;
+    color: #333;
+    text-align: left;
+    border-top: 1px solid #E8E8E8;
+}
+.emoji-tab span {
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 13px;
+    font-size: 13px;
+    border-right: 1px solid #E8E8E8;
+}
+/*.emoji-tab span.hover {
+    font-size: 12px;
+    font-weight: bold;
+}*/
+.emoji-tab span.hover:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #FFF;
+    left: 0;
+    top: -1px;
+}
+.chat-wrapper .time-wrapper {
+    width: 100%;
+    text-align: center;
+}
+.chat-wrapper .time-wrapper i {
+    display: inline-block;
+    font-style: normal;
+    font-size: 12px;
+    color: #FFF;
+    padding: 4px 6px 3px;
+    background-color: #cfcfcf;
+    border-radius: 2px;
+    margin: 10px auto 0;
+}
+.chat-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 0 10px 60px 10px;
+    overflow: hidden;
+}
+.chat-wrapper > section {
+    width: 86%;
+    margin: 10px 0;
+    font-size: 0;
+    float: left;
+}
+.chat-wrapper > section.me {
+    float: right;
+    text-align: right;
+}
+.chat-wrapper > section.me > img {
+    float: right;
+}
+.chat-wrapper > section.me > p {
+    margin-left: 0;
+    margin-right: 18px;
+}
+.chat-wrapper > section > img {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: top;
+}
+.chat-wrapper > section > img.ani {
+    margin-left: 12px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 6px;
+}
+.chat-wrapper > section.me > img.ani {
+    margin-right: 12px;
+}
+.chat-wrapper > section > p * {
+    word-break: break-all;
+}
+.chat-wrapper > section > p {
+    display: inline-block;
+    position: relative;
+    margin-left: 18px;
+    padding: 8px 13px;
+    max-width: 72%;
+    font-size: 15px;
+    line-height: 25px;
+    border: 1px solid #DEDEDE;
+    background-color: #FFF;
+    vertical-align: middle;
+    border-radius: 3px;
+    word-break: break-all;
+    top: 4px;
+    color: #111;
+    text-align: left;
+}
+.chat-wrapper > section.me > p {
+    background-color: #b1e866;
+    border: 1px solid #B9DEB2;
+}
+.chat-wrapper > section.me > p * {
+    font-size: initial !important;
+    background-color: transparent !important;
+}
+.chat-wrapper > section > p:before, .chat-wrapper > section > p:after {
+    content: '';
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    position: absolute;
+    border-width: 10px;
+    top: 10px;
+    border-radius: 3px;
+}
+.chat-wrapper > section > p:before {
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #DEDEDE transparent transparent;
+    left: -20px;
+}
+.chat-wrapper > section > p:after {
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #FFF transparent transparent;
+    left: -19px;
+}
+.chat-wrapper > section.me > p:before {
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #B9DEB2;
+    left: initial;
+    right: -20px;
+}
+.chat-wrapper > section.me > p:after {
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #B1E866;
+    left: initial;
+    right: -19px;
+}
+.chat-wrapper > section > p img {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: text-bottom;
+    margin: 0 4px;
+    font-size: 0 !important;
+    background-color: transparent !important;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+#share-chat {}
+#share-chat .share-wrapper {
+    position: absolute;
+    width: 78%;
+    top: 146px;
+    left: 11%;
+    z-index: 2;
+}
+#share-chat .btn-close {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: -14px;
+    right: -14px;
+}
+@-webkit-keyframes tick {
+    0% {opacity: 0; }
+    10% {opacity: 1; }
+    20% {opacity: 1; }
+    100% {opacity: 0; }
+}
+@keyframes tick {
+    0% {opacity: 0; }
+    10% {opacity: 1; }
+    20% {opacity: 1; }
+    100% {opacity: 0; }
+}
+#share-chat > img {
+    position: absolute;
+    opacity: 0;
+    -webkit-transform-origin: bottom left;
+    -webkit-animation-fill-mode: forwards;
+}
+#share-chat > img:nth-child(1) {
+    width: 52px;
+    height: 52px;
+    top: 0px;
+    right: 15px;
+    -webkit-transform: rotate(16deg);
+    -webkit-animation: tick 2.5s 2s infinite ease-in-out;
+}
+#share-chat > img:nth-child(2) {
+    width: 36px;
+    height: 36px;
+    top: 60px;
+    right: 36px;
+    -webkit-transform: rotate(6deg);
+    -webkit-animation: tick 2.5s 1.5s infinite ease-in-out;
+}
+#share-chat > img:nth-child(3) {
+    width: 26px;
+    height: 26px;
+    top: 88px;
+    right: 75px;
+    -webkit-transform: rotate(30deg);
+    -webkit-animation: tick 2.5s 1s infinite ease-in-out;
+}
+#share-chat > img:nth-child(4) {
+    width: 20px;
+    height: 20px;
+    top: 126px;
+    right: 100px;
+    -webkit-transform: rotate(-6deg);
+    -webkit-animation: tick 2.5s .5s infinite ease-in-out;
+}
+#share-chat > img:nth-child(5) {
+    width: 13px;
+    height: 13px;
+    top: 150px;
+    right: 120px;
+    -webkit-transform: rotate(-10deg);
+    -webkit-animation: tick 2.5s 0s infinite ease-in-out;
+}
+#record-chat footer > img {
+    width: 70%;
+    margin: 20px auto;
+}
+#record-chat .qrcode-wrapper {
+    width: 100%;
+    margin: 20px auto 10px;
+    float: none;
+    clear: both;
+    font-size: 0;
+    color: #111;
+    text-align: center;
+}
+#record-chat .qrcode-wrapper img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto 8px;
+    vertical-align: middle;
+    padding-top: 30px;
+}
+#record-chat .qrcode-wrapper p {
+    display: inline-block;
+    position: relative;
+    margin-left: 0;
+    padding: 1px 5px;
+    max-width: 98%;
+    font-size: 15px;
+    line-height: 22px;
+    border: 0 none;
+    background-color: rgba(235, 235, 235, 0.6);
+    vertical-align: middle;
+    border-radius: 0;
+    word-break: break-all;
+    top: 0;
+    color: #111;
+    text-align: center;
+}
+#record-chat .qrcode-wrapper p:before, #record-chat .qrcode-wrapper p:after {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+} /* 这是针对缺省样式 (必须的) */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+} /* 滚动条的滑轨背景颜色 */
+::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+} /* 滑块颜色 */
+::-webkit-scrollbar-button {
+    background-color: transparent;
+} /* 滑轨两头的监听按钮颜色 */
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>芝麻开门</title>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<link rel="stylesheet" href="css/core.css" />
+	<link rel="stylesheet" href="css/apply.css" />
+</head>
+<body>
+	<section class="wrapper">
+		<section id="apply_dialog" class="dialog-wrapper none">
+			<section class="apply-dialog">
+				<section class="apply-dialog-close"></section>
+				<section class="apply-success-header">
+					<img src="./images/apply-success.png">
+				</section>
+				<section class="apply-tips">
+					<p>您的报名信息我们已经收到，</p>
+					<p>请耐心等待我们工作人员联系。</p>
+				</section>
+				<section class="apply-success-ok">
+					<a id="back_btn" href="javascript:void(0)">分享给你的搭档</a>
+				</section>
+				<p class="oa-tips">搭档两人均参与报名才有效哦~</p>
+			</section>
+		</section>
+		<section class="popup none" id="pop-share">
+	        <section class="content">
+	            <img class="icon-share" src="./images/share.png">
+	            <p>点击右上角，分享至自己的搭档，一起报名参与芝麻开门吧</p>
+	        </section>
+	    </section>
+		<header>
+			<img title="我要报名" alt="我要报名" src="./images/slogan.png">
+		</header>	
+		<section class="body">
+			<section class="form-wrapper">
+				<section class="form-header"></section>
+				<section class="form-header-mask"></section>
+				<section class="form-bg"></section>
+				<section class="form">
+					<section class="form-item">
+						<label>
+							姓名:
+						</label>
+						<section class="form-item-input">
+							<input type="text" name="name" placeholder="请输入姓名" maxlength="8" />
+						</section>
+					</section>
+					<section class="form-item">
+						<label>
+							性别:
+						</label>
+						<section class="form-item-input radio">
+							<label>
+								<input type="radio" name="sex" value='man' />男
+							</label>
+							<label>
+								<input type="radio" name="sex" value='woman' />女
+							</label>
+						</section>
+					</section>
+					<section class="form-item">
+						<label>
+							年龄:
+						</label>
+						<section class="form-item-input select">
+							<select name="age" id="age">
+								<option value="0">请选择...</option>
+							</select>
+						</section>
+					</section>
+					<section class="form-item">
+						<label>
+							手机号码:
+						</label>
+						<section class="form-item-input">
+							<input type="number" name="phone" placeholder="" />
+						</section>
+					</section>
+					<section class="form-item">
+						<label>
+							身份证号:
+						</label>
+						<section class="form-item-input">
+							<input type="text" name="pin" placeholder="选填" maxlength="18" />
+						</section>
+					</section>
+					<section class="form-item">
+						<label>
+							微信号:
+						</label>
+						<section class="form-item-input">
+							<input type="text" name="wxid" placeholder="" />
+						</section>
+					</section>
+					<section class="form-item">
+						<label>
+							所在地:
+						</label>
+						<section class="form-item-input select">
+							<select name="province" id="province">
+								<option value="0">请选择...</option>
+							</select>
+							<select name="city" id="city">
+								<option value="0">请选择...</option>
+							</select>
+						</section>
+					</section>
+					<section class="form-item">
+						<label>
+							婚姻状态:
+						</label>
+						<section class="form-item-input radio">
+							<label>
+								<input type="radio" name="marry" value='marry' />已婚
+							</label>
+							<label>
+								<input type="radio" name="marry" value='unmarry' />未婚
+							</label>
+						</section>
+					</section>
+					<section class="form-item multi">
+						<label>
+							就职单位/职业:
+						</label>
+						<section class="form-item-input textarea">
+							<textarea name="job" placeholder="限制30字以内" data-limit="30"></textarea>
+						</section>
+					</section>
+					<section class="form-item multi">
+						<label>
+							就读学校/科系:
+						</label>
+						<section class="form-item-input textarea">
+							<textarea name="school" placeholder="限制30字以内" data-limit="30"></textarea>
+						</section>
+					</section>
+					<section class="form-item multi">
+						<label>
+							专长/才艺:
+						</label>
+						<section class="form-item-input textarea">
+							<textarea name="skilled" placeholder="选填，限制100字以内" data-limit="100"></textarea>
+						</section>
+					</section>
+					<section class="form-item multi">
+						<label>
+							演出经验:
+						</label>
+						<section class="form-item-input textarea">
+							<textarea name="show" placeholder="选填，限制100字以内" data-limit="100"></textarea>
+						</section>
+					</section>
+					<section class="form-item">
+						<label>
+							照片:
+						</label>
+						<section id="upload-box" class="photo-wrapper upload-box">
+						
+							<a href="javascript:void(0)" class="icon btn-upload"></a>
+						</section>
+					</section>
+					<p class="photo-tips">个人照或和搭档两人合影</p>
+				</section>
+			</section>
+
+			<section class="form-wrapper">
+				<section class="form-header-xuantian"></section>
+				<section class="form-header-mask-xuantian"></section>
+				<section class="form-bg"></section>
+				<section class="form xuantian">
+					<section class="form-item multi">
+						<label>
+							简单生动描述自己个性:
+						</label>
+						<section class="form-item-input textarea">
+							<textarea name="hobby" placeholder="限制100字以内" data-limit="100"></textarea>
+						</section>
+					</section>
+					<section class="form-item multi">
+						<label>
+							想找谁做搭档，为什么:
+						</label>
+						<section class="form-item-input textarea">
+							<textarea name="partner" placeholder="限制100字以内" data-limit="100"></textarea>
+						</section>
+					</section>
+					<section class="form-item multi">
+						<label>
+							两人最有趣／难忘的事:
+						</label>
+						<section class="form-item-input textarea">
+							<textarea name="experience" placeholder="限制100字以内" data-limit="100"></textarea>
+						</section>
+					</section>
+					<section class="form-item multi">
+						<label>
+							最想要什么奖品，为什么:
+						</label>
+						<section class="form-item-input textarea">
+							<textarea name="award" placeholder="限制100字以内" data-limit="100"></textarea>
+						</section>
+					</section>
+					<section class="form-item multi">
+						<label>
+							答题／游戏／抢奖品的优势:
+						</label>
+						<section class="form-item-input textarea">
+							<textarea name="advantage" placeholder="选填，限制100字以内" data-limit="100"></textarea>
+						</section>
+					</section>
+				</section>
+			</section>
+
+			<a data-collect="true" data-collect-flag="zhimakaimen-apply-submit" data-collect-desc="芝麻开门-报名-报名提交" class="submit" href="javascript:void(0);">提 交</a>
+			<p class="pledge">我们承诺保证您的信息安全</p>
+		</section>
+	</section>
+	
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/xss.min.js"></script>
+	<script src="./js/plugins/upload.min.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/app/apply.js"></script>
+</body>
+</html>

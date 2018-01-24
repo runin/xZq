@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>沈视晚报</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+<!--<header class= "marquee">-->
+<!--<div><ul></ul></div>-->
+<!--</header>-->
+<div class="main" data-margin="70">
+	<input type="hidden" id="noRunShare" value="true">
+	<a class="logo animated" id="logo"></a>
+	<section class="xn-btn">
+		<div class="bn" data-collect="true"
+			 data-collect-flag="sy-news-index-bn"
+			 data-collect-desc="新闻调查首页进入拜年页面" ><img src="images/bn.png"></div>
+		<div class="mxp" data-collect="true"
+			 data-collect-flag="sy-news-index-mxp"
+			 data-collect-desc="新闻调查首页进入明信片页面" ><img src="images/mxp.png"></div>
+	</section>
+	<a href="#" data-collect="true"
+	   data-collect-flag="sy-cks-index_start-btn"
+	   data-collect-desc="新闻调查首页进入调查页面" class="btn-begin" id="btn-begin">开始</a>
+
+	<a href="baoliao.html" data-collect="true"
+	   data-collect-flag="sy-cks-index_baoliao-btn"
+	   data-collect-desc="新闻调查首页进入爆料页面" class="icon border baoliao"> 我要爆料</a>
+
+	<a data-collect="true"
+	   data-collect-flag="sy-cks-index_baoliao-btn"
+	   data-collect-desc="新闻调查首页进入爆料页面" id="comments" class="icon border apply">话题评论</a>
+</div>
+<div class="copyright"></div>
+
+<div class="tab animated none" id="tab">
+	<a href="#" data-collect="true"
+	   data-collect-flag="news-index-jifen-btn"
+	   data-collect-desc="新闻调查首页进入积分页面" class="jifen" id="jifen">积分商城</a> <span class="none">|</span>
+	<a href="#" data-collect="true"
+	   data-collect-flag="sy-cks-index-history-btn"
+	   data-collect-desc="新闻调查首页进入往期页面" id="apply" class="diaocha none">我要报名</a> <span>|</span>
+	<a data-collect="true"
+	   data-collect-flag="sy-cks-index-rule-btn"
+	   data-collect-desc="新闻调查首页进入规则页面" class="rule">查看规则</a>
+</div>
+
+<!--活动规则-->
+<section class="rule-section none">
+	<div>
+		<h2></h2>
+		<div class="con"></div>
+		<a class="btn" id="rule-close">我知道了</a>
+	</div>
+</section>
+	
+<div class="none">
+	<img src="images/star.png"/>
+	<img src="images/aureole.png"/>
+	<img src="images/j-bg.jpg"/>
+	<img src="images/jTop-bg.png"/>
+	<img src="images/lihe.png"/>
+	<img src="images/not-tsy.png"/>
+	<img src="images/not-z.png"/>
+	<img src="images/zz.png"/>
+</div>
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/hidpi_canvas.min.js"></script>
+
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/wx_api_userinfo.js"></script>
+<!--<script src="./js/wx_api_base.js"></script>-->
+
+<script src="./js/app/dialog.js"></script>
+<script src="./js/app/index.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

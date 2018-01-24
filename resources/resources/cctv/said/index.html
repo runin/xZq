@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>说吧</title>
+<link rel="stylesheet" href="./css/index.css" />
+<link rel="stylesheet" href="./css/upload.css" />
+</head>
+
+<body>
+
+<section class="head">
+  <img src="images/topimages.png" />
+  <span class="cctv-logo"><img src="images/logo.png" /></span>
+</section>
+<section class="number">已有 <label id="pvtotal"></label> 位通过说吧表达了自己的思念</section>
+<section class="way">你可以通过以下方式走进说吧</section>
+
+<section class="redio-video">
+  <div class="redio" id="sredio">
+    <img src="images/radio.png" />
+    <p>音频</p>
+  </div>
+  <div class="video video-add upload-box">
+    <a href="javascript:void(0)" class="icon btn-upload">
+      <img src="images/video.png" />
+      <p>视频</p>
+    </a>
+  </div>
+  
+</section>
+<section class="v-text">
+又是一年清明时<br />还记得你多久没去墓前祭奠亲人了吗？<br />除了扫墓<br />你还会用什么样的方式去祭奠他呢？<br />说说你和他之间印象最深的事<br />有没有遗憾？想对他说点啥？<br />经历了生死离别后<br />你对生命和生活有哪些感悟？<br />
+清明说吧<br />说出你对已逝亲人 挚友 先贤的<br />思念和尊敬 让爱传承
+</section>
+<section class="footer">页面由央视新闻提供<br/>由新掌趣科技技术支持 & Powered by holdfun.cn</section>
+
+
+<section class="popbox none" id="popradio">
+    <div class="pop-redio">
+        <a href="###" class="pop-close" id="popclose"></a>
+        <div class="redio-ing"><span id="anredio"></span></div>
+        <div class="uploading">
+          <span id="lying" class="none">正在录音中...</span>
+          <span id="upling" class="none">上传中...</span>
+        </div>
+        <div class="popbtn">
+            <a href="###" class="btn-a" id="startbtn">开始录音</a>
+            <a href="###" class="btn-a none" id="stopbtn">停止录音</a>
+            <a href="###" class="btn-a none" id="shitingbtn">试听</a>
+            <a href="###" class="btn-a nonebtn">提交</a>
+            <a href="###" class="btn-a none" id="keepbtn">提交</a>
+        </div>
+    </div>
+</section>
+<section class="popsuccess">感谢参与<br />您的视频已成功提交！</section>
+
+<!--一键关注-->
+<div id="div_subscribe_area" class="guanzhu"></div>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<!--<script src="./js/plugins/iscroll-probe.min.js"></script>-->
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/sha1.min.js"></script>
+
+<!--<script src="http://yaotv.qq.com/c/=/shake_tv/include/js/jsapi_authorize.js,/shake_tv/include/js/jsapi_subscribe.js,/shake_tv/include/js/jsapi_share.js"></script>-->
+
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+<script src="./js/config.js"></script>
+<script src="./js/wx_api_userinfo.js"></script>
+<script src="./js/app/upload.js"></script>
+<script src="./js/app/voice.js"></script>
+<script src="./js/app/video.js"></script>
+
+
+
+</body>
+</html>

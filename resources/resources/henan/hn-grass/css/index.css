@@ -1,0 +1,27 @@
+﻿.copyright
+{
+    color: #babcbc;
+    font-size: 12px;
+    line-height: 1.2em;
+}
+
+.indexlog
+{
+  display:block;
+  width:60%;
+  position:absolute;
+  bottom:10%;
+  left:50%;
+  margin-left:-30%;
+}
+
+.gobtn
+{
+  display:block;
+  width:40%;
+  height:40px;
+  position:absolute;
+  bottom:10%;
+  left:50%;
+  margin-left:-20%; 
+}

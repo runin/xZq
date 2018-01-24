@@ -1,0 +1,158 @@
+.main{ 
+	padding: 0 0 38px;
+	overflow-x: hidden;
+}
+.quiz{
+	text-align: center;
+}
+.quiz-icon{
+	width: 50%;
+	text-align:center;
+	padding: 12% 0;
+	margin: 0 auto;
+}
+.quiz-icon img{
+	width: 100%;
+}
+.quiz-info{
+	width: 100%;
+	padding: 5% 16% 0;
+	color: #fff;
+	text-align: left;
+}
+.quiz-info h2{
+	font-size: 15px;
+	line-height: 20px;
+	word-wrap: break-word;
+	margin: 10px auto;
+	text-decoration: underline;
+}
+.quiz-info span{
+	display: inline-block;
+	width: 49%;
+	border-radius: 20px;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+}
+.quiz-info span.selected{
+	background: -webkit-gradient(linear, 30% 0, 90% 0%, from(rgba(250,250,250,0.5)), to(rgba(250,250,250,0)));
+	
+}
+.quiz .back-before{
+	margin-top: 10px;
+}
+.quiz-right .quiz-info .za{
+	width: 100%;
+	position: relative;
+}
+.quiz-right .quiz-info h1{
+	color: #fff;
+	font-size: 26px;
+	text-align: center;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+.quiz-right .quiz-info img.egg{
+	width: 72%;
+}
+.quiz-right .quiz-info img.chui{
+	width: 34%;
+	position: absolute;
+	top:0;
+	right:6%;
+}
+.quiz-right .zaegg{
+	animation: zaegg 1s 0.1s linear;
+	-webkit-animation: zaegg 1s 0.1s linear ;
+}
+@-webkit-keyframes zaegg{
+	20%{
+		-webkit-transform:rotate(30deg);
+	}
+	60%{
+		-webkit-transform:rotate(0deg);
+	
+	}
+	80%{
+		-webkit-transform:rotate(-30deg);
+	
+	}
+	
+}
+@keyframes zaegg{
+	20%{
+		transform:rotate(30deg);
+	}
+	60%{
+		transform:rotate(0deg);
+	}
+	80%{
+		transform:rotate(-30deg);
+	}
+	
+}
+.quiz-wrong .back-index {
+  margin-top: 40px;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	body{
+		height: 100%;
+	    background: #a5180f url(../images/bg.jpg) no-repeat;
+	    background-size: 100% 100%;
+	    overflow: hidden;
+	}
+	.quiz-icon {
+		width: 44%;
+		padding: 8% 0;
+	}
+	.quiz .back-before {
+	  	margin-top: 0px;
+	}
+	.quiz-info span {
+	    height: 30px;
+	    line-height: 30px;
+	    margin-bottom: 3px;
+	}
+	.back-before {
+	  font-size: 15px;
+	  padding: 4px 20px;
+	  margin-top: 10px;
+	}
+	.quiz-right .quiz-info h1 {
+	  font-size: 20px;
+	  line-height: 30px;
+	  margin-bottom: 10px;
+	}
+	.quiz-wrong .back-index {
+		margin-top: 20px;
+	}
+	.quiz-info {
+	  padding: 3% 16% 0;
+	}
+}
+
+/*iphone5 cui*/
+@media screen and (min-device-width:320px) and (min-device-height:560px) {
+	.quiz-info span {
+	  height: 34px;
+	  line-height: 34px;
+	  margin-bottom: 6px;
+	}
+	.quiz-info {
+	  padding: 3% 16% 0;
+	}
+}
+/*dai*/
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.quiz .back-before {
+	   margin-top: 0px;
+	}
+}
+

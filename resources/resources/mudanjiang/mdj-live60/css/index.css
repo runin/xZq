@@ -1,0 +1,85 @@
+.index-btn{
+  background-image: url(../images/index-btn.png);
+  background-size: 250px;
+  display: block;
+  width: 250px;
+  height: 223px;
+  text-align: center;
+  margin: 62% auto 0;
+  color: #fff;
+  font-size: 26px;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.count-time{
+  font-size: 16px;
+  display: block;
+  padding-top: 42%;
+}
+.countdown{
+  padding-top: 36%;
+  font-size: 46px;
+}
+.follow-box {
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+#div_subscribe_area {
+	width:100%;
+	height: 50px;
+	overflow: hidden;
+}
+.lottery img{
+  width: 39%;
+  margin-top: 41%;
+}
+.lotteryed img{
+  width: 35%;
+  margin-top: 35%;
+}
+nav{
+	width:25%;
+	position: absolute;
+	top:4px;
+	right: 4px;
+}
+.btn-rule{
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	padding:2px 6px;
+	margin: 6px 0;
+	border:1px solid #60b7d8;
+	border-radius: 20px;
+	text-align: center;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.index-btn{
+	  margin: 55% auto 0!important;
+  		height: 200px!important;  
+  		background-size: 200px!important;
+	  width: 200px!important;
+	}
+}
+/*iphone5 */
+@media screen
+and (min-device-width:320px)
+and (min-device-height:560px) {
+	.index-btn{
+	  margin: 68% auto 0!important;
+  		height: 252px!important;
+	}
+}
+/*shang*/
+@media screen
+and (min-device-width:320px)
+and (min-device-height:860px) {
+	.index-btn{
+	  margin: 68% auto 0!important;
+	}
+}

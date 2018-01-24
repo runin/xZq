@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>新闻日日睇</title>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="css/comments.css" />
+</head>
+<body>
+<img src="images/fudai.png" class="none"/>
+<img src="images/not-lott.png" class="none"/>
+<div class="main" id="main">
+    <section class="nav">
+    	<img src="images/day.png" />
+        <a class="back-index" id="back-index" data-collect="true"
+       data-collect-flag="tv-gznews-dayday-comments-back-index"
+       data-collect-desc="投票页返回首页"></a>
+    </section>
+     <div class="answer-box">
+		<div class="time-box none"></div>
+		<div class="show-box hidden">
+			<div class="item">
+				<ul></ul>
+			</div>
+		</div>
+	</div>
+    <p class="com-head"><label>0</label>人发表评论</p>
+    <ul id="sx-ul" class="sx-ul">
+    	<span id="top-comment"></span>
+    	<span class="nor-comment" id="nor-comment"></span>
+    </ul>
+    <div class="spinner none lodd" id="mallSpinner" >
+			<div class="spinner-wrapper">
+				<div class="spinner-container container1">
+					<div class="circle1"></div>
+					<div class="circle2"></div>
+					<div class="circle3"></div>
+					<div class="circle4"></div>
+				</div>
+				<div class="spinner-container container2">
+					<div class="circle1"></div>
+					<div class="circle2"></div>
+					<div class="circle3"></div>
+					<div class="circle4"></div>
+				</div>
+				<div class="spinner-container container3">
+					<div class="circle1"></div>
+					<div class="circle2"></div>
+					<div class="circle3"></div>
+					<div class="circle4"></div>
+				</div>
+			</div>
+	</div>
+    <footer>
+        <input type="text" id="comments-info"  placeholder="发表您的精彩评论吧"/>
+        <input type="submit" id="send" value="发送" data-collect="true"
+               data-collect-flag="tv-gznews-dayday-comments-send"
+               data-collect-desc="发送"/>
+    </footer>
+    <a class="top-back none" data-collect="true"
+       data-collect-flag="tv-gznews-dayday-comments-top-back"
+       data-collect-desc="返回置顶"><label>顶部</label></a>
+</div>
+
+	<script src="js/config.js"></script>	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="js/app/dialog.js"></script>
+	<script src="js/app/comments.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

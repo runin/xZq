@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>成都二套跨年晚会</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/card.css" />
+
+    <script src="./js/wx_api.js"></script>
+</head>
+<body>
+
+<div class="main" id="main">
+    <h1>集齐12生肖卡片，即可获得iPhone6 Plus一部</h1>
+    <div class="div-ul">
+        <ul id="card-ul" class="card-ul"></ul>
+    </div>
+    <a href="javascript:toUrl('index.html');" data-collect="true"
+       data-collect-flag="cd-party-card-btn"
+       data-collect-desc="页面返回首页" class="btn zhufu none"  id="back-home">返回首页</a>
+    <a data-collect="true"
+       data-collect-flag="cd-party-card-get-btn"
+       data-collect-desc="领取奖品" class="btn zhufu btn-back-simple none" id="get-award">领取奖品</a>
+    <p class="copyright">此页面由成都电视台提供</p>
+
+</div>
+
+
+<script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.min.js"></script>
+<script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.cookie.min.js"></script>
+<script language="javascript" type="text/javascript">
+    document.write("<script src=\"http://cdn.holdfun.cn/resources/services/cd2-party/quizinfo.js?"+new Date().getTime()+"\"><\/script>");
+    document.write("<script src=\"http://cdn.holdfun.cn/resources/services/cd2-party/card.js?"+new Date().getTime()+"\"><\/script>");
+    document.write("<script src=\"http://cdn.holdfun.cn/resources/services/cd2-party/prize.js?"+new Date().getTime()+"\"><\/script>");
+</script>
+<script src="./js/config.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/md5.js"></script>
+<script src="./js/share.js"></script>
+<script src="./js/data_collect.js"></script>
+<script src="./js/card.js"></script>
+</body>
+</html>

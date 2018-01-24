@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>2015新掌趣年终会</title>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <section class="home-box">
+        <section class="window">
+            <div class="curtain ctl"></div>
+            <div class="curtain ctr"></div>
+            <div class="cover"></div>
+            <div class="container">
+                <img class="icon-slogan" src="./images/icon-slogan.png">
+                <div class="cdbox none">
+                    <p>抢大奖倒计时</p>
+                    <div class="digi"></div>
+                </div>
+            </div>
+        </section>
+        <section class="main-top m-t-b ihome hide">
+            <section class="fail-tips none">
+                <p>跟着我的节奏<i>摇</i>起来</p>
+            </section>
+            <section class="countdown none">
+                <span class="countdown-tip"></span>
+                <span class="detail-countdown"></span>
+            </section>
+            <p class="thanks-tips"></p>
+            <img class="bg-yao yao-top" src="./images/bg-wheel-top.png">
+            <img class="bg-yao yao-top yao-tip-top yao-tip hide" src="./images/bg-tip-top.png">
+        </section>
+        <section class="main-foot m-f-b ihome hide">
+            <section class="bg-yao yao-bottom">
+                <img class="yao-tip-bottom yao-tip hide" src="./images/bg-tip-bottom.png">
+                <img src="./images/bg-wheel-bottom.png">
+                <img class="logo" src="./images/logo.png">
+            </section>
+            <section class="footer">
+                <section class="marquee hidden"><ul></ul></section>
+                <!-- <section class="copyright"></section> -->
+            </section>
+        </section>
+        <section class="S10">
+            <p></p>
+        </section>
+    </section>
+    <canvas class="snow-canvas" speed="1" interaction="false" size="6" count="18" opacity="0.00001" start-color="rgba(255,255,0,1)" end-color="rgba(255,255,255,0.3)" wind-power="3" image="false" width="980" height="700"></canvas>
+    
+    <!-- <input type="button" class="none" id="test" value="红包按钮" style="position:absolute;top:30%;z-index:9999999999;"> -->
+
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/jquery.2.1.0.min.js"></script>
+    <script src="./js/plugins/snow.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/index.js"></script>
+</body>
+</html>

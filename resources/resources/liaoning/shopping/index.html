@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>宜佳购物</title>
+	
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/idangerous.swiper.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+	
+</head>
+<body>
+	
+	<div class="main">
+
+		<div class="swiper-container" id="swiper-container">
+			<div class="swiper-wrapper" id="swiper-wrapper"></div>
+
+		</div>
+
+		<div class="none rob-red" id="rob-red"><i></i></div>
+		<p class="copyright">页面由辽宁广播电视台提供 <br/>技术支持由新掌趣提供</p>
+	</div>
+
+    <div class="bottom-btn none">
+    </div>
+	<div class="masking has_red none" id="masking">
+		<img id="rotate-img" class="rotate-img" src="http://cdn.holdfun.cn/resources/services/shopping/images/shexian.png">
+        <div class="red-page">
+            <!--领取红包-->
+            <div id="get-red" class="none">
+                <div id="first-imglogo">
+                    <div class="first-imglogo"></div>
+                    <h1 class="none first-theme" id="first-theme"></h1>
+                </div>
+
+                <div id="share-imglogo" class="share-imglogo none">
+                    <h1 class="none theme" id="share-theme"></h1>
+                </div>
+                <a href="javascript:void(0);" class="redbtn" id="get-redbtn" data-collect="true" data-collect-flag="shopping-index-getRedbtn" data-collect-desc="宜佳购物  领取、帮忙红包按钮"><!--领取红包--></a>
+            </div>
+
+            <!--获得红包-->
+            <div id="result-red" class="none">
+                <div class="result-imglogo" id="result-imglogo">
+                    <div class="result-imgnei">
+                        <p class="jin-e" id="jin-e"></p>
+                        <h1 class="none gongxi" id="gongxi"></h1>
+                    </div>
+                </div>
+                <div id="add-user">
+                    <p class="add-red">
+                        <label></label>
+                        <span></span>
+                    </p>
+                    <a href="javascript:void(0);" class="redbtn" id="immediate-use" data-collect="true" data-collect-flag="shopping-index-immediateUse" data-collect-desc="宜佳购物  立即使用红包">立即使用</a>
+                </div>
+                <ul id="ul-package" class="ul-package box-orient-h"></ul>
+
+
+                <div id="renPin-friend">
+                    <p class="none result-theme" id="wan-openRedfin"></p>
+                    <p class="none result-theme" id="succeed-theme"></p>
+                    <p class="none not-openRedfin" id="not-openRedfin"></p>
+                </div>
+            </div>
+        </div>
+
+		<p class="copyright">页面由辽宁广播电视台提供</p>
+	</div>
+	
+	<script src="js/config.js"></script>
+    <script src="js/zepto.min.js"></script>
+	<script src="./js/zepto.cookie.min.js"></script>
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src="./js/data_collect.js"></script>
+	<script src="./js/weixinapi.js"></script>
+    <script src="./js/wx_api_base.js"></script>
+	
+	<script src="./js/common.js"></script>
+    <script src="./js/share.js"></script>
+	<script src="./js/idangerous.swiper.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+</html>

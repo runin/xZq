@@ -1,0 +1,239 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    font-size: 14px;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/menu.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top center;
+    overflow: hidden;
+}
+
+.bg-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top center;
+    padding: 2px;
+}
+
+.bg-border {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 2px solid #ff0007;
+}
+
+.foot-btn {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 8%;
+    text-align: center;
+}
+
+/*倒计时*/
+header .countdown
+{
+    margin-bottom:10px;
+    position: relative;
+    width:90%;
+    left:5%;
+    padding:10px 14px 2px 14px;
+    line-height: 34px;
+    text-align: center;
+    border-bottom:1px solid #866060;
+}
+.countdown-tip {
+    z-index: 2;
+    color: #fff;
+    margin-left: 2px;
+}
+
+.countdown .detail-countdown {
+    z-index: 2;
+    /*background-size: 30px auto;*/
+    display: inline-block;
+    font-weight: bolder;
+    color: #fff;
+}
+.f-btn:active
+{
+    opacity: 0.5;
+}
+a.f-btn {
+    float: left;
+    width: 50%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center center;
+    left: 0px;
+    position: relative;
+    opacity: 1;
+    -webkit-transition:all .5s linear;
+}
+
+.btn_dm {
+    background-image: url("../images/index/btn-left.png");
+    background-size: 100% auto;
+}
+
+.btn_qd {
+    background-image: url("../images/index/btn-right.png");
+    background-size: 100% auto;
+}
+
+.btn_dm.selected {
+    background-image: url("../images/index/select-btn-lf.png");
+    background-size: 100% auto;
+}
+
+.btn_qd.selected {
+    background-image: url("../images/index/select-btn-rt.png");
+    background-size: 100% auto;
+}
+
+
+/*弹幕样式start*/
+
+.comments {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    /*  background:rgba(103,99,94,.5);*/
+}
+
+article {
+    position: relative;
+}
+
+article:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /*background: -webkit-gradient(linear, left top, right top, from(rgba(250,250,250,0.1)), color-stop(0.5, rgba(250,250,250,1)), to(rgba(250,250,250,0.2)));*/
+}
+
+article .ctrls {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background: #cc282d;
+}
+
+.ctrls p {
+    position: relative;
+    margin: 8px 60px 8px 4px;
+}
+
+.ctrls p input {
+    width: 100%;
+    height: 40px;
+    padding: 2px 10px;
+    background: #880004;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+}
+
+.ctrls p input.error {
+    border: 1px solid #f00;
+}
+
+.ctrls a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    right: -46px;
+    top: 10px;
+}
+
+.c_topic {
+    color: White;
+    word-wrap: break-word;
+    padding: 5px 5px;
+    padding-left: 10px;
+    min-height: 28px;
+}
+
+.me {
+    border: 2px solid red!important;
+    border-radius: 30px !important;
+    /*height: 36px!important;*/
+}
+
+.me .c_head_img {
+    top: 2px;
+    left: 8px;
+    font-size: 16px!important;
+}
+
+.c_head_img {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    overflow: hidden;
+    margin-right: 5px;
+    float: left;
+}
+
+.c_head_img_img {
+    width: 28px;
+    margin-right: 4px;
+}
+
+.comment_item {
+    border-radius: 2px;
+    padding: 4px 8px 4px 2px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: rgba(66, 40, 58, .8);
+    /*  border:2px solid #fff;*/
+}
+
+
+/* iPhone4 */
+
+@media screen and (min-device-width:320px) and (max-device-height:500px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio:2) {
+    .foot-btn {
+        position: absolute;
+    }
+    article .ctrls {
+        bottom: 44px;
+    }
+}
+
+
+/* iPhone5 */
+
+@media screen and (min-device-width: 320px) and (min-device-height: 500px) and (max-device-height: 570px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    article .ctrls {
+        bottom: 44px;
+    }
+    .foot-btn {
+        position: absolute;
+        bottom: -4px;
+    }
+}

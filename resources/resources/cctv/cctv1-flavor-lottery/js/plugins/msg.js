@@ -1,0 +1,2 @@
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/3.jpg'></div>" + "“好吃就把菜给买下”吃货的最高境界！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/6.jpg'></div>" + "央视这次放大招了，安利《中国味道》");

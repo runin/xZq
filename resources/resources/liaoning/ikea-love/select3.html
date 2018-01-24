@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>宜佳购物</title>
+	
+	<link rel="stylesheet" href="./css/select3.css" />
+</head>
+<body>
+	
+	<div class="wrapper">
+		<div class="banner">
+
+			<div class="tm">
+				<li>3.宜佳购物的微信号是？</li>
+			</div>
+
+			<div class="xzt">
+				<form name="reg" onsubmit="return checkform(this);">
+					<table border="0" id="male">
+						<tr>
+							<td align="left"><input type="radio" id="sex_nomale"
+								name="sex" value="C" class="passwordtrendsdetail" data-collect="true" data-collect-flag="ln-select3-check3" data-collect-desc="第三题-选项三"/><label
+								name="sex_nomale" for="sex_nomale">A.yijiagouwu</label><br /></td>
+						</tr>
+						<tr>
+							<td align="left"><input type="radio" id="sex_male"
+								checked="checked" name="sex" value="A" class="passwordShow" data-collect="true" data-collect-flag="ln-select3-check1" data-collect-desc="第三题-选项一"/><label
+								name="sex_male" for="sex_male">B.yijia</label><br /></td>
+						</tr>
+						<tr>
+							<td align="left"><input type="radio" id="sex_female"
+								name="sex" value="B" class="passwordchanneldetail" data-collect="true" data-collect-flag="ln-select3-check2" data-collect-desc="第三题-选项二"/><label
+								name="sex_female" for="sex_female">C.gouwu</label><br /></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+
+			<div class="djqr">
+				<li><img src="./images/yj_error.png" /></li>
+			</div>
+			<div class="jr">
+				<li><a href="javascript:end()"><img src="./images/yj_right.png" /></a></li>
+			</div>
+		</div>
+	</div>
+	<div id="sctck" class="sctck none">
+		<span>输入手机号参与抽奖，百万大奖等你带回家！</span>
+		<div class="tel"> 
+			<input type="number" class="mobile" placeholder="例：13888888888 (必填)" />
+		</div>
+		<a class="btn" id="btn-award" data-collect="true" data-collect-flag="cd-express-combtn" data-collect-desc="深夜快递-确定按钮">确定</a>
+	</div>
+	
+	<footer class="copyright">本页面由辽宁广播电视台提供</footer>
+	<!-- 页面内容END -->
+	
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+	<script src="./js/app/select3.js"></script> 
+</body>
+</html>

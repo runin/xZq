@@ -1,0 +1,114 @@
+body {
+    background: #BFEDFA url(../images/common-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+.main {
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-size: 15px;
+}
+.tips{
+    margin: 40px auto;
+    text-align: center;
+    color: #0688CC;
+    font-size: 14px;
+}
+.gift{
+    margin-top: -17px;
+    padding-top: 17px;
+    margin-bottom: 50px;
+}
+.gift-bg{
+    background: rgb(217,212,195);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(217,212,195,1)), color-stop(100%,rgba(251,249,246,1)));
+    background: -webkit-linear-gradient(left,  rgba(217,212,195,1) 0%,rgba(251,249,246,1) 100%);
+    background: linear-gradient(to right,  rgba(217,212,195,1) 0%,rgba(251,249,246,1) 100%);
+}
+.gift-timeline {
+    position: relative;
+
+    padding-left: 28px;
+}
+.gift-timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: #0688CC;
+}
+.gift-timeline li {
+    padding-left: 27px;
+
+    margin-top: 17px;
+    position: relative;
+}
+.gift-timeline li:last-child:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gift-time {
+    color: #0688CC;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.gift-icon {
+    width: 26px;
+
+    height: 26px;
+    border: 2px solid #0688CC;
+    border-radius: 50%;
+    position: absolute;
+    left: -12px;
+    background: #fff;
+}
+.gift-icon:before {
+    content: '';
+    background: url(../images/gift-icon.png) no-repeat;
+    background-size: 14px auto;
+    width: 14px;
+    height: 17px;
+    display: block;
+    margin-left: 4px;
+    margin-top: 3px;
+}
+.gift-content {
+    background: #FFFFFF;
+
+    border-radius: 8px 0 0 8px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.gift-content div.des{
+    font-size: 13px;
+}
+.gift-content h2 {
+    color: #0688CC;
+    font-size: 12px;
+    border-top: 2px solid #0688CC;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+.gift-content h2:before{
+    content: '奖品名称：';
+    display: inline-block;
+    font-weight: bold;
+}
+.gift-content p {
+    color: #0688CC;
+    font-size: 13px;
+    line-height: 24px;
+}
+.gift-content p:last-child:before{
+    content: '兑奖码：';
+    display: inline-block;
+    font-weight: bold;
+}
+

@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title></title>
+    <style>
+        html,body,video {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        #video {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: auto;
+        }
+
+        #time {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            font-size: 30px;
+        }
+
+        #chance1,#chance2,#chance3 {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 9;
+            display: none;
+            left: 0;
+            top: 0;
+        }
+
+        #chance3 {
+            background-color: rgba(0,0,0,0);
+        }
+
+        #sharepic {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            display: none;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .animation1 {
+            -webkit-animation: pulse 1.5s .2s infinite both;
+            -moz-animation: pulse 1.5s .2s infinite both;
+        }
+
+        @-webkit-keyframes pulse {
+            0% {
+                -webkit-transform: scale(1)
+            }
+
+            50% {
+                -webkit-transform: scale(1.1)
+            }
+
+            100% {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @-moz-keyframes pulse {
+            0% {
+                -moz-transform: scale(1)
+            }
+
+            50% {
+                -moz-transform: scale(1.1)
+            }
+
+            100% {
+                -moz-transform: scale(1)
+            }
+        }
+        #chance3 .end{
+            width: 74%;
+            position: absolute;
+            bottom: 16%;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            display: none;
+        }
+        #again{
+            display: inline-block;
+            width: 40%;
+            float: left;
+        }
+        #share{
+            display: inline-block;
+            width: 40%;
+            float: right;
+        }
+        #addfadein{
+            position:absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        #nuan{
+            width: 30%;
+            float: left;
+            margin-top: 4%;
+        }
+        #baqi{
+            width: 44%;
+            float: right;
+        }
+        .girl{
+            width: 100%;
+        }
+        #chance2 div{
+            width: 74%;
+            position: absolute;
+            bottom: 30%;
+            left: 0;
+            right: 0;
+            margin:0 auto;
+        }
+        #eyes{
+            width: 30%;
+            float: left;
+            margin-left: 12%;
+        }
+        #hand{
+            width: 30%;
+            float: right;
+            margin-right: 12%;
+        }
+        .dunce{
+            width: 100%;
+        }
+        #chance1 div{
+            width: 80%;
+            position: absolute;
+            bottom: 30%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div id="time"></div>
+<video id="video" src="http://statics.holdfun.cn/szh/szh.mp4" preload="auto" webkit-playsinline="true" playsinline="true" x5-video-player-type="h5"></video>
+<div id="chance1">
+    <div>
+        <p><img class="dunce" src="img/q1.png" ></p>
+        <p>
+            <img id="eyes" class="animation1" src="img/q21.png" >
+            <img id="hand" class="animation1" src="img/q31.png" >
+        </p>
+    </div>
+</div>
+<div id="chance2">
+    <div>
+        <p><img class="girl" src="img/q4.png"></p>
+        <p>
+            <img id="nuan"  class="animation1" src="img/q61.png" >
+            <img id="baqi"  class="animation1" src="img/q51.png" >
+        </p>
+    </div>
+</div>
+<div id="chance3">
+    <img id="addfadein" src="img/share.jpg">
+    <div class="end">
+        <p>
+            <span id="again"><img src="img/q8.png" width="100%"></span>
+            <span id="share"><img src="img/q9.png" width="100%"></span>
+        </p>
+    </div>
+</div>
+<img id="sharepic" src="img/q10.jpg">
+</body>
+<script src="js/jquery-2.1.0.js"></script>
+<script>
+
+    var g={};
+    g.b1=0;
+    g.b2=0;
+    g.b3=0;
+    g.b4=0;
+    g.b5=0;
+    g.b6=0;
+    g.b7=0;
+    g.b8=0;
+    g.eyes=0;
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    var video = document.getElementById("video"), flag;
+    function play() {
+        video.currentTime = 0;
+        video.play();
+        setTimeout(function(){
+            document.body.style.backgroundColor = "#000";
+            video.style.backgroundColor = "#000";
+        }, 1000);
+    }
+
+    function changeTimer(timer){
+        video.currentTime = timer || 0;
+        switch (timer){
+            case 0://跳舞开始时间
+                video.currentTime = "35.270";
+                break;
+            case 1://跳舞完成开心时间
+                video.currentTime = "63.983";
+                break;
+            case 2://唱歌完成时间
+                video.currentTime = "31.553";
+                break;
+            case 3://选择意愿程度
+                video.currentTime = "80.501";
+                break;
+            case 4://愿意开始
+                video.currentTime = "82.682";
+                break;
+            case 5://愿意结束
+                video.currentTime = "100.328";
+                break;
+            case 6://非常愿意开始
+                video.currentTime = "100.877";
+                break;
+            case 7://非常愿意结束
+                video.currentTime = "105.531";
+                break;
+            case 8://点击唱歌开始
+                video.currentTime = "13.680";
+                break;
+            default:
+                video.currentTime = 0;
+        }
+    };
+
+    //监听
+    video.addEventListener("timeupdate",function () {
+        var time = video.currentTime+"";
+        var ts = parseFloat(time).toFixed(3)*1000;
+        /*console.log(time);
+        $("#time").html(ts);*/
+        //选择1暂停
+        if(ts>12713&&g.b1==0){
+            video.pause();
+            $("#chance1").fadeIn(500);
+            g.b1=1;
+        }
+
+        //唱歌播放结束暂停
+        if(ts>32837&&g.b2==0){
+            changeTimer(1);
+            video.play();
+            g.b2=1;
+        }
+
+        //选择2暂停
+        if(ts>80501&&g.b3==0){
+            changeTimer(4);
+            video.pause();
+            $("#chance2").fadeIn(500);
+            g.b3=1;
+        }
+
+        //愿意播放暂停
+        /*if(ts>99864&&g.b4==0){console.log("愿意播放暂停");
+            video.pause();
+            changeTimer(7);
+            video.play();
+            g.b4=1;
+        }*/
+
+//        非常愿意播放暂停
+            if(ts>107520&&g.b5==0){console.log("非常愿意播放暂停");
+                $("#video").fadeOut(500);
+                $("#chance3").fadeIn(500,function(){
+                    $('#addfadein').delay(600).fadeIn(500);
+                    $('.end').delay(600).fadeIn(500);
+                });
+                g.b5=1;
+            }
+    });
+
+    //点击唱歌
+    $("#eyes").click(function(){
+        $("#chance1").fadeOut(500);
+        changeTimer(8);
+        video.play();
+    });
+
+    //点击跳舞
+    $("#hand").click(function(){
+        g.b2=1;
+        video.pause();
+        $("#chance1").fadeOut(500);
+        changeTimer(0);
+        video.play();
+    });
+
+    //选择愿意
+    $("#nuan").click(function(){
+        $("#chance2").fadeOut(500);
+        changeTimer(4);
+        video.play();
+    });
+
+    //选择非常愿意
+    $("#baqi").click(function(){
+        g.b4=1;
+        $("#chance2").fadeOut(500);
+        changeTimer(4);
+        video.play();
+    });
+
+    video.addEventListener("ended",function(){
+        if (!flag) {
+            $("#video").fadeOut(1000);
+            video.remove();
+            flag = 1;
+        }
+    }, false);
+
+    //点击分享
+    $("#share").click(function(){
+        parent.locationUrl();
+    });
+
+    $("#sharepic").click(function(){
+        $("#sharepic").hide();
+    });
+
+    $("#again").click(function(){
+        $("#sharepic").show();
+    });
+</script>
+</html>

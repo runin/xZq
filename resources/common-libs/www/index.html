@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" > 
+		<title>素材开发文档</title>
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		
+		<link rel="stylesheet" type="text/css" href="./css/SyntaxHighlighter/shCoreDefault.css"/>
+
+
+	</head>
+	<body>
+		<header>
+			<section class="header-content">
+				<a href="./index.html" class="logo">
+					<img src="./images/logo.png" title="新掌趣" alt="新掌趣" />
+				</a>
+			</section>
+		</header>
+		<section class="main">
+			<nav>
+				<ul class="nav-list">
+					<li>
+						<h2>素材基础</h2>
+						<ul>
+							<li class="active"><a href="index.html">文档结构</a></li>
+							<li><a href="core.html">基本功能</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>公共组件</h2>
+						<ul>
+							<li><a href="reserve.html">预约</a></li>
+							<li><a href="subscribe.html">一键关注</a></li>
+							<li><a href="barrage.html">弹幕组件</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>工具方法</h2>
+						<ul>
+							<li><a href="date.html">日期</a></li>
+							<li><a href="string.html">URL处理</a></li>
+							<li><a href="countDown.html">倒计时</a></li>
+							<li><a href="tips.html">Tips(替代alert)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<section class="content-wrapper">
+				<section class="content">
+					<section class="content-header">
+						<h1>文档结构</h1>
+						<p>最后更新时间：2015/5/29 15:00	更新人：陈智博<a class="float-right" href="mailto:bobchen@holdfun.cn">报错</a></p>
+					</section>
+					<section class="content-detail">
+						<p>注意：所有文件请使用utf-8编码，UNIX换行符(\n)</p>
+						<h2>meta</h2>
+						<pre class="brush: html;">
+							<!-- 页面编码 -->
+							&lt;meta charset="utf-8" />
+							
+							<!-- 禁止用户缩放 -->
+							&lt;meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+							
+							<!-- IOS中Safari允许全屏浏览 -->
+							&lt;meta name="apple-mobile-web-app-capable" content="yes">
+
+							<!-- IOS中Safari顶端状态条样式 -->
+							&lt;meta name="apple-mobile-web-app-status-bar-style" content="black">
+						</pre>
+
+						<h2>css</h2>
+						<pre class="brush: html;">
+							<!-- 样式reset以及core.js对应样式 -->
+							&lt;link rel="stylesheet" href="./css/core.css" &gt;
+
+							<!-- 当前素材公用样式以及util.js对应样式 -->
+							&lt;link rel="stylesheet" href="./css/util.css" &gt;
+
+							<!-- 当前页样式 -->
+							&lt;link rel="stylesheet" href="./css/XXX.css" &gt;
+						</pre>
+
+						<h2>js</h2>
+						<pre class="brush: html;">
+							<!-- 素材配置 -->
+							&lt;script src="./js/config.js"></script>
+
+							<!-- 微信jsapi依赖zepto的一些方法 -->
+							&lt;script src="./js/plugins/zepto.min.js"></script>
+							&lt;script src="./js/plugins/zepto.cookie.min.js"></script>
+
+							<!-- 微信分享组件,关注组件,预约组件,授权组件 -->
+							&lt;script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+							
+							<!-- 分享链接中，openid需要MD5 -->
+							&lt;script src="./js/plugins/md5.js"></script>
+
+							<!-- 统计,版本检查，分享等最基础功能 -->
+							&lt;script src="./js/plugins/core.js"></script>
+
+							<!-- 微信授权 -->
+							&lt;script src="./js/plugins/authorize_userinfo.js"></script>
+
+							<!-- 当前素材用到的工具方法 -->
+							&lt;script src="./js/plugins/util.js"></script>
+							
+							<!-- 当前页业务逻辑 -->
+							&lt;script src="./js/app/XXX.js"></script>
+
+							<!-- 腾讯分析代码 -->
+							&lt;script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+						</pre>
+
+						<a href="svn://svn.holdfun.cn/yaotv/trunk/zq-tv-resources/common-libs/www/download/example.zip" target="_blank">模板下载</a>
+					</section>
+				</section>
+			</section>
+
+		</section>
+
+		<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shCore.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shBrushXml.js"></script>
+		<script type="text/javascript" src="./css/SyntaxHighlighter/shBrushJScript.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+	</body>
+</html>
+

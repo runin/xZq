@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>转出好人生</title>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+<!--摇一摇声音-->
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio>
+<section class="home-box">
+  <div class="main-top m-t-b">
+  	<div class= "marquee hidden"><ul></ul></div>
+	<p class="count hidden">目前参与人数：<label>0</label></p>
+    <a class="ddtj wobble none" id="ddtj" href="" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+    <div class="countdownBox">
+    	<span class="spon"><img src="images/spon.png"></span>
+		<div class="countdown none">
+	        <span class="countdown-tip"></span>
+	        <span class="detail-countdown"></span>
+	    </div>
+    </div>
+      <div class="rednum none">还剩<span>0</span>个奖品，继续加油！</div>
+      <img class="yao-a" src="images/yao-a.png">
+  </div>
+  <div class="main-foot m-f-b">
+      <img class="yao-b" src="images/yao-b.png">
+      <input type="button" class="hidden" id="test" value="test">
+      <div class="per">
+          <img class="head wobble" src="images/head-l.png" />
+          <img class="logo" src="images/emd-l.png" />
+          <img class="body" src="images/body-l.png" />
+      </div>
+	<div class="copyright"></div>
+  </div>
+</section>
+
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/shake.min.js"></script>
+
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+
+<script src="./js/app/dialog.js"></script>
+<script src="./js/app/lottery.js"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+
+</body>
+</html>

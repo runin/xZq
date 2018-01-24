@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/vote.css" />
+</head>
+<body>
+<section class="layer none" id="layer">
+    <h2>点击明星头像，进入投票页面</h2>
+    <img src="images/hand.png" />
+</section>
+<img class="rank-tlt" src="images/vote-tlt.png" />
+<header>
+    <section class="energy">
+        <label class="none" id="lottery-answerPage">0S</label>
+        <label class="none" id="detail"></label>
+        <div class="progress">
+            <div class="progress-bar" id="progress-bar" style="width:3%;"></div>
+        </div>
+    </section>
+    <span class="gift"><img id="gift" src="images/gift.png" data-collect="true" data-collect-flag="details-gift" data-collect-desc="去摇奖页礼盒"/></span>
+</header>
+<section class="player" id="player">
+    <!--<div class="items player-li1">
+        <img src="images/test-rank.png" />
+        <div class="info-con">
+            <h1>1周杰伦</h1>
+            <h2>男神也有一颗小公举的心</h2>
+        </div>
+    </div>-->
+</section>
+<section class="vote-countdown-out" id="vote-countdown-out">
+    <div class="countdown vote-countdown none" id="vote-countdown">
+        <div class="right">
+            <span class="countdown-tip items-count"></span>
+            <span class="detail-countdown items-count"></span>
+            <span class="loading none">请稍后...</span>
+        </div>
+    </div>
+    <div class="copyright"></div>
+</section>
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/voteBarrage.js"></script>
+<script src="./js/plugins/xss.min.js"></script>
+
+<script src="./js/app/vote.js"></script>
+<script src="./js/app/countDown.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

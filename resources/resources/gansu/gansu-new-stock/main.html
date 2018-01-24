@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>交易日</title>
+
+    <link rel="stylesheet" href="./css/core.css"/>
+    <link rel="stylesheet" href="./css/util.css"/>
+    <link rel="stylesheet" href="./css/main.css?f=40"/>
+</head>
+<body>
+<header>
+    <section id="count-user">目前人数：<span id="count-span">0</span></section>
+    <img id="logo" src="images/logo-min.png">
+    <section class="count-down none">
+        <h1>距离下次答题抽奖还有</h1>
+        <strong>00:00:00</strong>
+    </section>
+    <section class="game-on none">
+        <section class="game-question none">
+            <p class="question"></p>
+            <section class="answer">
+
+            </section>
+            <section class="submit" data-collect="true" data-collect-flag="gansu-newstock-vote-submit"
+                     data-collect-desc="交易日 投票-提交">
+                投票
+            </section>
+        </section>
+        <section class="game-choujiang none">
+            <p class="question"></p>
+            <section class="choujiang none" data-collect="true" data-collect-flag="gansu-newstock-luck-submit"
+                     data-collect-desc="交易日 抽奖-提交">
+                抽奖
+            </section>
+            <section class="vote">
+
+            </section>
+        </section>
+    </section>
+    <section class="game-over none">
+        今天抽奖已经结束，明天再来吧~
+    </section>
+</header>
+<section class="content">
+    <!--<section class="text-group">
+        <section class="img-wrapper"><img src="images/avatar.jpg"/></section>
+        <span class="text">有上涨空上涨空间吗上涨空间吗间吗！！</span>
+    </section>-->
+</section>
+<footer>
+    <section class="topic">
+        <a href="javascript:void(0);" id="topic-content"></a>
+    </section>
+    <section class="comment">
+        <section class="input-wrapper">
+            <input type="text" id="topic-text" placeholder="说说您的观点吧。"/>
+        </section>
+        <span class="send" data-collect="true" data-collect-flag="gansu-newstock-comment-send"
+              data-collect-desc="交易日 评论-发送">发送</span>
+    </section>
+</footer>
+
+<section class="noprise none">
+    <section class="noprise-bg">
+        <section class="noprise-text">
+            <img src="images/cry-min.png"/>
+
+            <p class="text">真遗憾，没有中奖<br/>下次加油喽~</p>
+            <a class="tttj none" href="javascript:void(0)" data-collect="true" data-collect-flag="tttj"
+               data-collect-desc="天天淘金"></a>
+            <section class="button" data-collect="true" data-collect-flag="gansu-newstock-noprise-next"
+                     data-collect-desc="交易日 未中奖-再来一次">
+                下次换个姿势再抽奖哦！
+            </section>
+        </section>
+    </section>
+    <section class="close" data-collect="true" data-collect-flag="gansu-newstock-noprise-close"
+             data-collect-desc="交易日 未中奖-关闭"></section>
+</section>
+
+<section class="redpack none">
+    <section class="redpack-bg">
+        <section class="redpack-text">
+            <section class="button" data-collect="true" data-collect-flag="gansu-newstock-redpack-open"
+                     data-collect-desc="交易日 中奖-拆开">拆开看看
+            </section>
+        </section>
+    </section>
+</section>
+
+<section class="redpack-open none">
+    <section class="redpack-open-bg">
+        <section class="redpack-open-title">
+            <p>恭喜您，获得大礼包一份</p>
+        </section>
+        <section class="redpack-open-text">
+            <img src="images/logo-min.png"/>
+            <section class="form">
+                <p>请填写您的联系方式以便顺利领奖</p>
+                <input class="input-item" id="name" type="text" placeholder="姓名"/>
+                <input class="input-item" id="mobile" type="text" placeholder="手机号码"/>
+                <input class="input-item" id="address" type="text" placeholder="收件地址"/>
+            </section>
+            <section class="button" data-collect="true" data-collect-flag="gansu-newstock-redpack-get"
+                     data-collect-desc="交易日 红包-领取">
+                确定
+            </section>
+        </section>
+    </section>
+    <section class="close" data-collect="true" data-collect-flag="gansu-newstock-redpack-close"
+             data-collect-desc="交易日 红包-关闭"></section>
+</section>
+
+<section class="redpack-over none">
+    <section class="redpack-over-bg">
+        <section class="redpack-over-text">
+            <p class="text">恭喜您，领取成功~</p>
+            <a class="tttj none" href="javascript:void(0)" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+            <section class="button" data-collect="true" data-collect-flag="gansu-newstock-redpack-over-confirm"
+                     data-collect-desc="交易日 领取奖品成功-确认">
+                确定
+            </section>
+        </section>
+    </section>
+    <section class="close" data-collect="true" data-collect-flag="gansu-newstock-redpack-over-close"
+             data-collect-desc="交易日 领取奖品成功-关闭"></section>
+</section>
+
+<script src="./js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/core.js"></script>
+<script src="./js/plugins/authorize_userinfo.js?ran=28"></script>
+<script src="./js/plugins/util.js"></script>
+<script src="./js/plugins/count.down.js"></script>
+<script src="./js/plugins/barrage.js"></script>
+<script src="./js/app/main.js?f=30"></script>
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

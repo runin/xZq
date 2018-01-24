@@ -1,0 +1,549 @@
+.modal {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	background-size: 100% 100% ;
+	z-index: 100;
+	color: #fff370;
+	overflow: hidden;
+}
+
+.modal .dialog{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	overflow-y: auto;
+	position: relative;
+}
+.modal .lottery-close,.btn-close{
+    position: absolute;
+    top: 55px;
+    right: -10px;
+	width: 30px;
+	height: 30px;
+	background: url(../images/lottery-close.png) no-repeat;
+	background-size:100% auto;
+	z-index: 9999;
+}
+.lott{
+	position: absolute;
+	top:13%;
+	left: 5%;
+	background: url(../images/lottery-bg.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding-top: 30%;
+}
+.lott-box{
+	width: 85%;
+	height: 100%;
+	margin: 0 auto;
+	overflow-y: auto;
+}
+.lott-box .congrate{
+	width: 56%;
+}
+.lott-box .tt{
+	color: #fff;
+}
+.lott .good-btn{
+	display: block ;
+	width: 50%;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 20px;
+	background: #f1d77b;
+	color: #ab1921;
+	font-size: 16px;
+	margin: 0 auto;
+	margin-top: 6px;
+	
+}
+.gift {
+	width: 100%;
+	margin: 0 auto;
+	padding: 4px 0px 4px;
+}
+.gift img{
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+.quan{
+	width: 100%;
+	text-align: center;
+	border-radius: 6px;
+	position: relative;
+}
+.quan .gift{
+	padding: 12px 0;
+}
+.quan .tip{
+	font-size: 20px;
+	padding: 0 16px;
+}
+.btn-style{
+	padding: 10px 0 0;
+	
+	
+}
+.btn-style img{
+	display: block;
+	width: 100%;
+}
+.btn-box{
+}
+.btn-box .good-btn{
+	
+	margin: 0 auto;
+}
+.red-bao{
+	border-radius: 18px;
+}
+.red-bao .gift{
+	padding: 14% 16%;
+}
+.red-bao .good-btn{
+	background: #e1c470;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	color: #ab1921;
+	border :2px solid rgba(0,0,0,0.2);
+	line-height: 31px
+}
+.red-head{
+	display: block;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.red-logo{
+	width: 34%;
+	position: absolute;
+	top:8%;
+	left: 50%;
+	margin-left: -17%;
+}
+.all-goods{
+	text-align: center;
+	height: 80%;
+	border-radius: 6px;
+	overflow-y: auto;
+}
+.all-goods .tip {
+	font-weight: bolder;
+	padding: 4px 10px;
+	border-bottom:1px solid #000;
+}
+
+.all-goods .gift-text h4 {
+	font-size: 13px;
+	margin: 3px auto;
+	text-align: left;
+	color: #fff;
+}
+.all-goods .gift-text p{
+	font-size: 14px;
+	color: #fff;
+	text-align: left;
+	padding: 2px 0;
+}
+.all-goods .gift-text label{
+	display: inline-block;
+	width: 20%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.all-goods .gift-text input {
+  display: inline-block;
+  width: 80%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0px;
+  border: 1px #fff solid;
+  border-radius: 4px;
+  text-indent: 5px;
+  background: #fff;
+  color: #000;
+  margin-left: -6px;
+
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #666666;
+}
+
+
+.btn-b{ 
+	width: 35%; 
+	height: 35px;
+	border-radius: 5px;
+	border: none;
+	background: #da2323;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	outline:none;
+}
+
+
+.modal-rul .rule-dialog {
+	position: absolute;
+	top:20%;
+	left: 7%;
+	padding: 10px;
+	width: 86%;
+	height: 60%;
+	background: url(../images/qus-bg.png)no-repeat center;
+	background-size: 100% 100%;
+}
+.modal-rul .rule-box{
+	width: 100%;
+	height: 100%;
+	background:url(../images/rank-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+    color: #fff;
+    text-align: left;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 4px;
+    border-radius: 6px;
+    position: relative;
+}
+.rule-dialog h2{
+	text-align: center;
+	margin: 0 6%; 
+	padding: 8% 28% 3%;
+	line-height: 40px;
+}
+.modal-rul .btn-close{
+	position: absolute;
+    top: 10px;
+    right:10px;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url(../images/rul-close.png) no-repeat;
+	background-size:100% auto;
+	z-index: 9999;
+}
+.rule-dialog {
+	background: url(../images/bg-rule.png) no-repeat;
+	background-size: cover;
+}
+.rule-dialog .btn-close {
+	width: 28px;
+	height: 28px;
+	background: #be3494 url(../images/close-icon.png) no-repeat center;
+	background-size:50%;
+	top:14px;
+	border-radius: 50%;
+	opacity: 0.8;
+}
+.rule-dialog .btn-back {
+	position: absolute;
+	width: 52%;
+	bottom: 3%;
+	left: 24%;
+}
+.rule-dialog .content {
+	width: 100%;
+	height: 50%;
+	padding: 0 5% 5%;
+	word-break: break-all;
+	font-size: 15px;
+	text-align: left;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.rule-dialog .content * {
+	font-size: 15px !important;
+	text-align: left !important;
+	color: #FFF !important;
+	background: transparent !important;
+}
+
+
+.modal .guide-dialog {
+	width: 80%;
+	height: 70%;
+	top:15%;
+	left: 10%;
+    background: url(../images/guide-dialog.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.guide-dialog div {
+  height: 69px;
+  color: #de8200;
+  text-align: center;
+  font-size: 17px;
+}
+.guide-dialog .guide-content {
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+}
+.guide-dialog img {
+  display: block;
+  width: 60%;
+   margin: 5% auto 0;
+}
+.guide-dialog div h1 {
+    font-size: 21px;
+}
+
+.guide-dialog p {
+  border-bottom: 1px solid #fff2b5;
+  height: 33px;
+  line-height: 20px;
+  margin: 10px 20px;
+  font-size: 14px;
+}
+.guide-dialog label {
+	
+    margin-right: 5px;
+}
+.guide-dialog .btn {
+  display: block;
+  margin: 9px auto 0;
+  width: 50%;
+  height: 70px;
+  line-height: 70px;
+  font-size: 15px;
+  background: url(../images/btn.png) no-repeat;
+  background-size: 100% auto;
+}
+
+
+@-webkit-keyframes ft {
+	0%{
+
+	}
+	20%{
+		transform: scale(1.5,0.7) ;-webkit-transform: scale(1.5,0.7);
+	}
+	40%{
+		transform: scale(0.7,1.5) ;-webkit-transform: scale(0.7,1.5);
+	}
+	60%{
+		transform: scale(1.5,0.7) ;-webkit-transform: scale(1.5,0.7);
+	}
+	80%{
+		transform: scale(0.7,1.5) ;-webkit-transform: scale(0.7,1.5);
+	}
+	100% {
+		transform: scale(1,1) ;-webkit-transform: scale(1,1);
+	}
+}
+
+/*加载按钮 -s*/
+.loader{
+    margin: 0 auto;
+    width: 72px;
+}
+.loader span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background: #F26C0D;
+    border-radius: 50px;
+    margin: 0 2px;
+    -webkit-animation: loader 1s infinite alternate;
+    -moz-animation: loader 1s infinite alternate;
+}
+.loader span:nth-of-type(2) {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+.loader span:nth-of-type(3) {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+}
+.loader span:nth-of-type(4) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+.loader span:nth-of-type(5) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+}
+@-webkit-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+@-moz-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+.none{
+	display: none;
+}
+.hidden{
+	visibility: hidden;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.goods h1 {
+	   font-size: 14px;
+	   height: 36px;
+	   line-height: 18px;
+	}
+	.goods .gift {
+	    padding: 0% 10%;
+	}
+	.gift-text h2 {
+	  font-size: 13px;
+	  height: 20px;
+	  line-height: 20px;
+	}
+	input.textphone{
+	  height: 34px;
+	  line-height: 34px;
+	}
+	p.textphone {
+		height: 30px;
+	    line-height: 30px;
+	}
+	 .guide-dialog img {
+	    display: block;
+	    width: 50%;
+	    margin: 2% auto 0;
+	}
+	.guide-dialog p {
+	    height: 33px;
+	    line-height: 20px;
+	    margin: 4px 20px;
+	}
+	.all-goods .gift-text p{
+		padding: 1px 0;
+	}
+	.all-goods .gift-text input {
+	  height: 26px;
+	  line-height: 26px;
+	}
+	.all-goods .gift-text .good-btn {
+	  display: block;
+	  width: 48%;
+	  margin: 3px auto 0;  
+	  height: 30px;
+  	 line-height: 30px;
+	}
+	.lott .good-btn{
+		height: 30px;
+  	 	line-height: 30px;
+     }
+	.all-goods .gift {
+	  padding: 4px 8px 0px;
+	}
+	.lott{
+		width: 230px!important;
+		height: 376px!important;
+		top:20px!important;
+		left: 45px!important;
+		padding-top: 27%;
+	}
+	.all-goods .tip {
+	  padding: 2px 20px;
+	}
+	.modal-rul .rule-dialog {
+		height: 80%!important;
+		top:10%!important;	
+	}
+	.modal-rul .rule-box {
+		height: 100%!important;
+	}
+	.rule-dialog .content {
+	  height: 76%!important;
+	 
+	}
+	.quan .gift {
+	    padding: 4px 18px;
+	}
+	.lott-box .congrate{
+		width: 54%;
+	}
+	.red-bao .gift{
+		padding: 6% 19%;
+	}
+	.red-bao .good-btn{
+		line-height: 26px;
+	}
+
+}
+
+/* iPhone5 */
+@media screen and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone6 */
+@media screen and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+ 
+}
+/* huawei honor-6 */
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.lott{
+		padding-top: 28%;
+	}
+	.red-bao .gift{
+		padding: 10% 16%;
+	}
+}
+
+/* mi2*/
+@media screen and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.quan .gift {
+	    padding: 14px 0px;
+	}
+	.lott-box .congrate {
+	    width: 62%;
+	}
+	.lott{
+		padding-top: 32%;
+	}
+	.tt{
+		line-height: 24px;
+	}
+	.gift{
+		padding: 6px 0;
+	}
+	.all-goods .gift-text p{
+		padding: 4px 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+

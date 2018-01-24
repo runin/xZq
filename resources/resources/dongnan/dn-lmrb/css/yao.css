@@ -1,0 +1,484 @@
+body
+{
+    position: relative;
+
+    width: 100vmin;
+    min-height: 100vh;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+}
+/*背景广告*/
+.home-box-bg
+{
+    position: absolute;
+    top: 50%;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 210px;
+    margin-top: -102px;
+
+    background-image: url(../images/yao-bg.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+.info-box
+{
+    font-size: 16px;
+    font-weight: bolder;
+
+    position: absolute;
+    top: 60px;
+
+    width: 100%;
+
+    color: white;
+}
+.yao-back-btn
+{
+    position: absolute;
+    top: 18px;
+    left: 10px;
+
+    width: 25%;
+}
+a.yao-back
+{
+    position: absolute;
+    top: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 60px;
+}
+.marquee
+{
+    font-size: 13px;
+    /*height: 20px;*/
+    line-height: 20px;
+
+    top: 0;
+
+    overflow: hidden;
+
+    height: 20px;
+
+    text-align: center;
+
+    color: #fff;
+    background: #6d4000;
+}
+
+.countdown
+{
+    font-size: 18px;
+    line-height: 36px;
+
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 25%;
+
+    width: 50%;
+    height: 50px;
+
+    text-align: center;
+    color: #d38100;
+    font-weight: bolder;
+    /*border-top: 1px solid #009bb4;*/
+    /*border-bottom: 1px solid #009bb4;*/
+    /*border-radius: 5px;*/
+    /*border-right:1px solid #4be1f9;*/
+    /*background: -webkit-linear-gradient(top, #fff 0%,#fff 10%, #4be1f9 100%);*/
+}
+.countdown-tip
+{
+    z-index: 2;
+    margin-left:5px;
+    width: 100%;
+}
+.countdown .detail-countdown
+{
+    z-index: 2;
+    /*background-size: 30px auto;*/
+
+    /*display: inline-block;*/
+	font-weight: bolder;
+    color: #d38100;
+}
+.countdown .detail-countdown label
+{
+	font-weight: bold;
+    color: white;
+    /*border-radius: 2px;*/
+    border: 1px solid #f2be6a;
+    background: -webkit-linear-gradient(top, #ea9207 0%,#ea9207 10%, #ea9309 100%);
+}
+.countdown .detail-countdown .dian{
+    background: none!important;
+    border: none!important;
+}
+.countdown  .yao-hand
+{
+	height:50px;
+	width:50px;
+	border-radius: 100%;
+	border:1px solid #4be1f9;
+	background:-webkit-linear-gradient(top, #fff 0%,#fff 10%, #4be1f9 100%);
+	margin-top:-45px;
+	margin-left:-30px;
+
+}
+.outer
+{
+    font-size: 18px;
+    line-height: 18px;
+
+    position: absolute;
+    z-index: 500;
+    right: 0;
+    bottom: 72px;
+
+    width: 100%;
+    height: 18px;
+
+    text-align: center;
+
+    color: #0085bd;
+}
+.outer:hover,
+.outer:visited
+{
+    color: red;
+}
+.follow-box {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 26px;
+}
+.copyright {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    height: 26px;
+    line-height: 13px;
+}
+.hand-style
+{
+	width: 46px;
+    height: 38px;
+    position: absolute;
+    top: -3px;
+    left: -23px;
+}
+.footer
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/*yao-s*/
+.home-box
+{
+    position: absolute;
+    top: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+.main-top
+{
+    position: absolute;
+    top: 1px;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    -webkit-transition: -webkit-transform .2s ease;
+    background-image: url('../images/home_logo_a.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+
+.main-foot
+{
+    position: absolute;
+    bottom: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+
+    -webkit-transition: -webkit-transform .2s ease;
+
+    background-image: url('../images/home_logo_b.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+
+.yao-text
+{
+    font-size: 16px;
+    line-height: 30px;
+
+    margin-top: 30%;
+
+    text-align: center;
+
+    color: white;
+}
+.yao-text p
+{
+    position: relative;
+  
+    min-height: 30px;
+    color: white;
+}
+.yao-text p.texta span
+{
+    font-size: 17px;
+    font-weight: bold;
+
+    color: white;
+}
+.yao-text p:last-child span
+{
+    position: relative;
+
+    width: 100%;
+}
+.yaonone-text
+{
+    display: block;
+
+    -webkit-animation-name: nonetext;
+            animation-name: nonetext;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+
+            animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+#test
+{
+    position: absolute;
+    bottom: 50px;
+
+    width: 100px;
+    height: 50px;
+
+    color: #fff;
+    background: red;
+}
+.btn-rule{
+    position: absolute;
+    bottom: 36px;
+    width: 50%;
+    left: 25%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background: url("../images/yao-btn-rule.png") no-repeat;
+    background-size: 100% 100%;
+}
+.rule-section{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*width: 100%;*/
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30% 5.5%;
+    color: #006695;
+}
+.rule-section div:first-child{
+    height: 100%;
+    border-radius: 5px;
+    /*background: rgba(227,12,184, .5);*/
+    background: url("../images/rule-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    padding: 0 6% 4%;
+    position: relative;
+    overflow: hidden;
+}
+.rule-section div.con h2{
+    font-size: 18px;
+    margin: 3% auto 2%;
+    text-align: center;
+    height: 7%;
+    color: #006695;
+}
+.rule-section div a.close{
+    display: inline-block;
+    /*background: #fff;*/
+    background-size: 20px auto;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    border-radius: 100%;
+}
+.rule-section div a.close p{
+    width: 35%;
+    margin: 21px auto 18px 11px;
+}
+.rule-section div div.con{
+    height: 88%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+}
+.rule-section div div.con div.con-htm{
+    height: 92%;
+    margin-top: 6%;
+    overflow: auto;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+.wobble{
+-webkit-animation:wobble 1.5s .2s ease infinite both;
+-moz-animation:wobble 1.5s .2s ease infinite both ;
+}
+@-webkit-keyframes wobble{
+0%{-webkit-transform:translateX(0%)}
+15%{-webkit-transform:translateX(-25%) rotate(-5deg)}
+30%{-webkit-transform:translateX(20%) rotate(3deg)}
+45%{-webkit-transform:translateX(-15%) rotate(-3deg)}
+60%{-webkit-transform:translateX(10%) rotate(2deg)}
+75%{-webkit-transform:translateX(-5%) rotate(-1deg)}
+100%{-webkit-transform:translateX(0%)}
+}
+@keyframes nonetext
+{
+    0%
+    {
+        top: -300px;
+
+        opacity: 0;
+    }
+    100%
+    {
+        top: 0;
+
+        opacity: 1.0;
+    }
+}
+@-webkit-keyframes nonetext
+{
+    0%
+    {
+        top: -300px;
+
+        opacity: 0;
+    }
+    100%
+    {
+        top: 0;
+
+        opacity: 1.0;
+    }
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2)
+{
+    .yao-text
+    {
+        font-size: 14px;
+        line-height: 23px;
+
+        margin-top: 25%;
+    }
+    .dialog .pi-tips
+    {
+        margin-top:5%;
+    }
+    .countdown
+    {
+        top: 60%;
+        width:50%;
+        height:50px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+    .countdown  .yao-hand
+	{
+		height:44px;
+		width:44px;
+		border-radius: 100%;
+		border:1px solid #4be1f9;
+		margin-top:-40px;
+		margin-left:-20px;
+
+	}
+    .yao-text p
+    {
+        position: relative;
+
+        min-height: inherit;
+    }
+    /*.copyright*/
+    /*{*/
+        /*line-height: 10px;*/
+
+        /*-webkit-transform: scale(.9);*/
+    /*}*/
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2)
+{
+     .countdown
+    {
+        top: 50%;
+        width:50%;
+        font-size: 15px;
+    }
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait)
+{
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2)
+{
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>深圳卫视黄金剧场</title>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+
+	<!-- <link rel="stylesheet" href="./css/style.min.css" /> -->
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/answer.css"/>
+	<link rel="stylesheet" href="./css/talk.css" />
+</head>
+<body class="now">
+	<div class="talkbg"></div>
+	<div class="queshow">
+		<div class="queshow-que">活动未开始</div>
+		<img src="images/talk-qus-preshow.png" />
+		<div class="goque">
+			<a id="aqiandao" class="to_guess" data-collect="true" data-collect-flag="szws-theater-talk-openluck" data-collect-desc="答题页面-开始答题按钮">
+				去竞猜
+			</a>
+		</div>
+	</div>
+	<a class="ranking" id="ranking" data-collect="true" data-collect-flag="answer-rank" data-collect-desc="答题页面-积分排行按钮"></a>
+	<a class="yao-btn"  id="yao-btn" data-collect="true" data-collect-flag="answer-yao" data-collect-desc="答题页面-摇奖按钮">
+		<span>开奖啦！</span><img src="./images/yao-btn.png" class="yao-red">
+	</a>
+	 <div class="tttj none" id="tttj" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+            <img class="wobble" src="./images/icon-redbag.png">
+            <span></span>
+     </div>
+	<!-- <a class="linkout none" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a> -->
+	<header>
+		<div class="qa-wrapper ">
+			<div class="wrapper">
+				<div class="c-item question" id="question"></div>
+				<div class="c-item answered none" id="answered">
+					<div class="anw-no none">
+						<img class="quelogo" src="./images/talk-qus-logo.png" />
+						<h3 id="answer-tip" class="none">太遗憾了，答错了</h3>
+						<img class="noad" src="./images/thank-tip-img.png" />
+						<div class="dakai" id="close-btn">继续加油</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="timer none">
+		<div class="timer-black"></div>
+		<h3></h3>
+		<div class="timer-tips"><h4>距离竞猜还有：</h4><h4 class="time-box" id="time-box"></h4></div>
+	</div>
+    <div id="body" class="body">
+        <ul id="comment_list" class="content">
+        </ul>
+    </div>
+    <p class="mesg-tip" id="mesg-tip">有新消息</p>
+	<footer class="footer">
+		<img class="handimg" src="" />
+		<input id="input_text" type="text" placeholder="留言15字以内" />
+		<a id="input_submit" data-collect="true" data-collect-flag="szws-theater-talk-submit" data-collect-desc="聊天室页-评论发送按钮">
+			<img src="images/talk-inp-send.png" />
+		</a>
+	</footer>
+	<div class="chkbox">
+		<img src="images/chk-top.png" />
+		<div class="l">聊天室<img src="images/chkbox-l.png"></div>
+		<div class="r">签到<img src="images/chkbox-r.png"></div>
+	</div>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+	<script src="js/app/dialog.js"></script>
+	<script src="./js/plugins/scrollTo.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+    
+	<script src="./js/app/talk.js"></script>
+	<script src="js/app/answer.js"></script>
+	<script src="js/app/talkctrl.js"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

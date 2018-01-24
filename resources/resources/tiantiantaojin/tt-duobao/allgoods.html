@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" http-equiv="content-type" content="text/html" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Pragram" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link href="css/core.css" rel="stylesheet" type="text/css" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/allgoods.css" rel="stylesheet" type="text/css" />
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+    <title>全部商品</title>
+</head>
+<body>
+  <header>
+       <div class="fix-tab-div">
+          <a href="javascript:void(0)" data-collect="true" class="index-goods click-bg"
+              data-collect-flag="tt-duobao-indexgoods"
+              data-collect-desc="天天夺宝-首页" id="index-goods">
+              首页
+          </a>
+          <a href="javascript:void(0)" data-collect="true" class="all-goods click-bg focus"
+              data-collect-flag="tt-duobao-allgoods"
+              data-collect-desc="天天夺宝-全部商品" id="all-goods">
+              全部商品
+           </a>
+          <a href="javascript:void(0)" data-collect="true" class="show-prize  click-bg"
+              data-collect-flag="tt-duobao-show-prize"
+              data-collect-desc="天天夺宝-个人中心" id="show-prize">
+               晒单
+           </a>
+          <a href="javascript:void(0)" data-collect="true" class="user-center click-bg"
+              data-collect-flag="tt-duobao-user-center"
+              data-collect-desc="天天夺宝-个人中心" id="user-center">
+               个人中心
+           </a>
+          <div class="line-div first-left"></div>
+          <div class="line-div second-left"></div>
+          <div class="line-div third-left"></div>
+       </div>
+  </header>
+  <section>
+    <div class="list-filter">
+            <div class="btn-allgoods" liststyle="0">
+                <a href="javascript:void(0)" class=""><span class="txt-red">全部商品</span><i class="ico arrow-down"></i></a>
+            </div>
+            <div class="btn-popular">
+                <ul class="btn-popular-list">
+                        <li class=" " datastyle="1">
+                          <a href="#">人气</a>
+                        </li>
+                        <li class=" " datastyle="2">
+                          <a href="#">最新</a>
+                        </li>
+                        <li class=" " datastyle="3">
+                          <a href="#">剩余人次</a>
+                        </li>
+                        <li class="needsnum">
+                          <a href="#" class="down">总需人次<i class="ico sortarrow"></i></a>
+                        </li>
+                </ul>
+            </div>
+            <!-- 所有分类列表 -->
+            <div class="allgoods-small-list none" style="" afmoldstyle="">
+                <ul class="">
+                        <li liststyle="1"> <a href="#"><i class="ico ico-type ico-type1"></i>数码产品</a></li>
+                        <li liststyle="2"> <a href="#"><i class="ico ico-type ico-type2"></i>家用电器</a></li>
+                        <li liststyle="3"> <a href="#"><i class="ico ico-type ico-type3"></i>美妆洗护</a></li>
+                        <li liststyle="4"> <a href="#"><i class="ico ico-type ico-type4"></i>轻奢包履</a></li>
+                        <li liststyle="5"> <a href="#"><i class="ico ico-type ico-type5"></i>母婴用品</a></li>
+                        <li liststyle="6"> <a href="#"><i class="ico ico-type ico-type6"></i>吃货必备</a></li>
+                        <li liststyle="7"> <a href="#"><i class="ico ico-type ico-type7"></i>珠宝配饰</a></li>
+                        <li liststyle="8"> <a href="#"><i class="ico ico-type ico-type8"></i>正品海淘</a></li>
+                        <li liststyle="9"> <a href="#"><i class="ico ico-type ico-type9"></i>创意家居</a></li>
+                        
+                </ul>
+            </div>
+             <div class="line-div filter-first-left"></div>
+      </div>
+      <div class="goods-list">
+        <ul>
+        </ul>
+      </div>
+  </section>
+  <div>
+        <a class="shop-cart" href="./html/goods/shopcart.html" id="shop-cart">
+            <i class="ico ico-miniCart"></i>
+            <b class="shop-cart-count" data-pro="count" style="display:none">0</b>
+        </a>
+  </div>
+  <div class="loading-space none">
+    --上拉显示更多--
+  </div>
+
+  <div class="footer-bar" data-collect="true" data-collect-flag="tt-duobao-index-rule" data-collect-desc="天天夺宝-首页规则">
+       <a href="#" class="txt-red font12" >什么是一元夺宝？</a>
+       <img src="./images/footer-bar.jpg">
+  </div>
+
+ <!--活动规则-->
+  <section class="modal none">
+   
+  </section>
+   <!--中奖者用户信息-->
+</body>
+
+<script src="js/config.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.min.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.cookie.min.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.selector.min.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.touch.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.fx.min.js" type="text/javascript"></script>
+
+<script src="js/plugins/md5.js" type="text/javascript"></script>
+<script src="js/authorize_userinfo.js" type="text/javascript"></script>
+<script src="js/plugins/core.js" type="text/javascript"></script>
+<script src="js/plugins/sha1.min.js" type="text/javascript"></script>
+<script src="js/jssdk.js" type="text/javascript"></script>
+<script src="js/app/allgoods.js" type="text/javascript"></script>
+<script src="js/app/cartset.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</html>

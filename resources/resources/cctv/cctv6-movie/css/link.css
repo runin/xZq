@@ -1,0 +1,38 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+    overflow-y: scroll;
+	background: url(../images/bg.jpg) no-repeat top center #FFF;
+	background-size: 100% 100%;
+}
+.container {
+    width: 88%;
+    text-align: center; 
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.lo {
+    width: 41%;
+    margin: 15px auto 20px;
+}
+#article {
+    width: 100%;
+    font-size: 0;
+}
+#article a {
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    font-size: 0;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+}

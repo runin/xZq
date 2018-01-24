@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>积分商城</title>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
+</head>
+<body data-type="shopping">
+<!--<img class="header-top" id="header-top" src="images/test-detail.jpg" />-->
+
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="info">
+    <h1 class="items" id="shop-name"><!--毛绒公仔（泰迪熊）--></h1>
+    <h2 class="items"><label id="value"><!--800--></label>积分</h2>
+</div>
+<div class="chunk"></div>
+<section class="detail">
+    <h1>详情介绍</h1>
+    <div class="content">
+        <!--详情介绍详-->
+    </div>
+</section>
+<a href="#" class="btn btn-buy" id="btn-buy" data-collect="true" data-collect-flag="shopping-btn-buy" data-collect-desc="立即兑换">立即兑换</a>
+<a href="#" class="btn btn-buy none" id="toUrl" data-collect="true" data-collect-flag="shopping-btn-toUrl" data-collect-desc="点击领取">点击领取</a>
+
+<div class="ctrl" id="ctrl">
+    <a href="#" class="btn-close" data-collect="true"
+       data-collect-flag="first-time-gift-detail-close" data-stoppropagation="true"
+       data-collect-desc="礼品详情 关闭我要兑换">
+        <i></i>
+    </a>
+    <p>
+        <label>兑换数量：</label>
+        <a href="#" class="btn-minus" data-collect="true"
+           data-collect-flag="first-time-gift-detail-minus" data-collect-desc="礼品详情 减少数量"></a>
+        <input type="number" id="amount" class="amount" value="1" maxlength="4" />
+        <a href="#" class="btn-plus" data-collect="true"
+           data-collect-flag="first-time-gift-detail-plus" data-collect-desc="礼品详情 增加数量"></a>
+    </p>
+    <p>
+        <label>姓名：</label>
+        <input type="text" id="name" class="name"/>
+    </p>
+    <p>
+        <label>电话：</label>
+        <input type="number" id="mobile" class="mobile" maxlength="11" />
+    </p>
+    <p>
+        <label>地址：</label>
+        <input type="text" id="address" class="address" />
+    </p>
+    <a href="#" class="btn btn-exchangenow" data-collect="true"
+       data-stoppropagation="true" data-collect-flag="shooping-detail-exchangenow" data-collect-desc="立即兑换">立即兑换</a>
+    <div id="copyright_gift" style="padding-bottom:0px;"></div>
+</div>
+
+<script src="./js/config.js"></script>
+<script src="./js/plugins/swiper.min.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/common.js"></script>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="./js/app/detail.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

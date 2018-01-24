@@ -1,0 +1,235 @@
+*
+{
+	padding:0px;
+	margin:0px;
+}
+li
+{
+    list-style-type:none;
+}
+.index-bg
+{
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+
+html
+{
+   height:100%;
+   width:100%;
+}
+/*头部开始*/
+header
+{
+  width:100%;
+  text-align: center;
+
+}
+header .theme
+{
+   position: relative;
+   top:0px;
+   left:0px;
+}
+header .money
+{
+    position: relative;
+    width: 20%;
+    float: left;
+    margin-top: -12%;
+}
+.count
+{
+  height:30px;
+  width:80%;
+  position: relative;
+  background-image:url(../images/people-count.png);
+  background-position: top center;
+  background-size: 100% 100%;
+  margin-left:10%;
+  margin-top:20px;
+  color:#fff;
+  text-align: center;;
+  line-height: 30px;
+  clear:both;
+
+}
+.content
+{
+  position: relative;
+  width:100%;
+  margin-top:14%;
+  color:#fff;
+}
+.content p
+{
+  height:40px;
+  line-height: 40px;
+}
+.join-btn
+{
+    height: 51px;
+    display: block;
+}
+a>img
+{
+  width:42%;
+  margin-top: 10px;
+}
+.tel-class
+{
+  height:30px;
+  width:60%;
+}
+
+.btn-scale
+{
+  animation:btnscale 3.5s ease-out;
+  -webkit-animation:btnscale 3.5s ease-out;
+}
+
+@keyframes btnscale
+{
+  20%,40%,60%,80%
+  {
+    transform:scale(0.8);
+    background:red;
+  }
+  10%,30%,50%,70%,90%
+  {
+    transform:scale(0.6);
+    background:yellow;
+  }
+  0%,100%
+  {
+    transform:scale(1);
+    background: #4397DF;
+  }
+}
+@-webkit-keyframes btnscale
+{
+   20%,40%,60%,80%
+  {
+    -webkit-transform:scale(0.8);
+     background:red;
+  }
+  10%,30%,50%,70%,90%
+  {
+    -webkit-transform:scale(0.6);
+    background:yellow;
+  }
+  0%,100%
+  {
+    -webkit-transform:scale(1);
+    background: #4397DF;
+  }
+}
+.btnbounceOut{
+    -webkit-animation:bounceOut 1s ease both;
+}
+@-webkit-keyframes bounceOut{
+0%{-webkit-transform:scale(1)}
+25%{-webkit-transform:scale(.95)}
+50%{opacity:1;
+-webkit-transform:scale(1.1)}
+75%{opacity:1;
+-webkit-transform:scale(.3)}
+100%{opacity:1;
+-webkit-transform:scale(1)}
+}
+/*适配*/
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 480px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+   .record-content
+  {
+     margin-top: -1%;  
+  }
+  header .title-img
+  {
+   width:60%;
+  }
+  .command-input
+  {
+   margin-top: 1%; 
+  }
+  .input-entry
+  {
+     top:-50px;
+  }
+  .botton-ok
+  {
+    margin-top:-30px;
+  }
+  .red-content {
+    margin-top: 20%!important;
+  }
+  .record-content .record-bg {
+    height: 160px;
+    width:100%;
+  }
+  .record-content .record-infor
+  {
+    height:64%;
+  }
+ 
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+  .record-content
+  {
+     margin-top: 0px;  
+  }
+  .user-formation
+  {
+    font-size: 13px!important;
+    margin-top: -10px;
+  }
+
+  .input-entry
+  {
+      top:-50px;
+  }
+  .record-content .record-infor
+  {
+    height:66%;
+  }
+}
+
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+  .record-content
+  {
+      margin-top: 0px;  
+  }
+  .record-content .record-infor
+  {
+      max-height: 186px;
+  }
+  header .title-img
+  {
+    max-width:54%;
+    margin-top: 10px;
+  }
+  .command-input
+  {
+   margin-top: 1%; 
+  }
+  .botton-ok
+  {
+    margin-top:-20px auto;
+  }
+}
+
+
+

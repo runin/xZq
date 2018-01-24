@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<title>新闻辩论赛 我有我观点</title>
+	    
+	    <link rel="stylesheet" href="css/reset.css" />    
+		<link rel="stylesheet" href="css/core.css" />
+		<!-- <link rel="stylesheet" href="css/app.min.css" /> -->
+		
+		<link rel="stylesheet" href="css/comment.css" />
+
+	</head>
+	<body>
+		<section class="wrapper-bg"></section>
+		<section class="wrapper none">
+			<header>
+				<a class="btn-back" href="./index.html"  data-collect="true" data-collect-flag="news-debate-comment-back" data-collect-desc="辩论赛-评论页返回首页">
+					点击这里返回辩论赛首页
+				</a>
+			</header>
+			
+			<section class="main">
+				<ul id="comment_list" class="comment-list">
+					<li id="comment_loading" class="comment-list-loading none"></li>
+				</ul>
+			</section>
+			
+			<footer>
+				<p id="submit_tips" class="submit-tips">
+					发表成功！审核通过后就能看到您的评论啦
+				</p>
+				<p id="new_tips" class="new-tips" data-collect="true" data-collect-flag="news-debate-comment-new-tips" data-collect-desc="辩论赛-新评论提醒">
+				</p>
+				<p class="tv-tips">页面由XX电视台提供</p>
+				<section class="input-box-wrapper">
+					<section class="input-box">
+						<input id="input_text" type="text" placeholder="说说您支持的观点吧" />
+					</section>
+					<a id="input_submit" class="input-submit" href="javascript:void(0);"  data-collect="true" data-collect-flag="news-debate-comment-comment-submit" data-collect-desc="辩论赛-评论页发送">
+						发送
+					</a>
+				</section>
+			</footer>
+		</section>
+
+		<!-- <script src="./js/data.js"></script>	-->
+
+		<script src="./js/plugins/zepto.min.js"></script>
+		<script src="./js/plugins/zepto.cookie.min.js"></script>
+		<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+		<script src="./js/config.js"></script>		
+		<script src="./js/wx_api_userinfo.js"></script>
+		
+		<script src="./js/plugins/md5.js"></script>
+		<script src="./js/plugins/common.js"></script>
+		<script src="./js/plugins/data_collect.js"></script>
+		<script src="./js/plugins/weixinapi.js"></script>
+		<script src="./js/plugins/share.js"></script>
+		
+		<!-- <script src="./js/plugins.min.js"></script>-->
+		<script src="js/app/comment.js"></script>
+	</body>
+</html>

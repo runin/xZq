@@ -1,0 +1,132 @@
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+    background-color: #faefe5;
+}
+
+.con-box {
+    position: relative;
+    margin: 50px 12px 15px;
+    padding: 20px;
+    border: 1px #e86960 solid;
+    box-sizing: border-box;
+}
+
+.enjoy-top {
+    position: absolute;
+    top: -33px;
+    left: 3%;
+    width: 94%;
+    height: 66px;
+    background-image: url(../images/enjoy_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.enjoy-assistant {
+    line-height: 24px;
+    margin: 10% 0 5%;
+    color: #835d1d;
+}
+
+.con-box p {
+    line-height: 24px;
+    margin: 5px 0 0;
+    color: #2d2d2d;
+}
+
+.c-blue {
+    color: #44598b;
+}
+
+a.a-btn {
+    display: block;
+    width: 65%;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px auto 0;
+    background-color: #e86960;
+    border: 1px #c93d33 solid;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px #777;
+    text-align: center;
+    color: #fff;
+}
+
+.take-care {
+    margin: 40px 0 0;
+    text-align: center;
+    color: #835d1d;
+}
+
+
+/* iPhone4 */
+
+@media screen and (min-device-width:320px) and (max-device-height:500px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio:2) {
+    .enjoy-assistant {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .con-box p {
+        line-height: 18px;
+        font-size: 14px;
+    }
+    a.a-btn {
+        height: 38px;
+        line-height: 38px;
+        font-size: 14px;
+    }
+}
+
+
+/* iPhone5 */
+
+@media screen and (min-device-width: 320px) and (min-device-height: 500px) and (max-device-height: 570px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .enjoy-assistant {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .con-box p {
+        line-height: 18px;
+        font-size: 14px;
+    }
+    a.a-btn {
+        height: 38px;
+        line-height: 38px;
+        font-size: 14px;
+    }
+}
+
+
+/* iPhone6 */
+
+@media screen and (min-device-width: 360px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/****ip 6 plus*****/
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {}
+
+
+/* huawei honor-6 */
+
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {}
+
+.demoimg {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tipimg,
+.pushimg {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

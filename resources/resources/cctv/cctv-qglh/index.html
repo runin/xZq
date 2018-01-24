@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>全国两会</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/baoliao.css" />
+</head>
+<body>
+	<div class="main" id="main">
+		<img class="logo" src="images/logo.jpg"/>
+		<div class="form-group">
+			<span class="state" id="state"></span>
+			<div class="form-item">
+				 <h1 id="comm-title"></h1>
+				 <h2 class="h2-tlt" id="comm-des"></h2>
+				<textarea class="content" id="content" placeholder="请表达您的观点，我们将会在节目中展现。"></textarea>
+			</div>
+			<a href="#" data-collect="true"
+			data-collect-flag="cctv-qglh-submit-btn"
+			data-collect-desc="两会议政讨论提交内容" class="btn btn-submit" id="btn-submit">提交</a>
+		</div>	
+		<div class="succ none">
+			<h1 class="succ-title">感谢您的评论</h1>
+			<div class="btn-item">
+				<a href="index.html" data-collect="true"
+					data-collect-flag="cctv-qglh-btn-back-comment"
+					data-collect-desc="两会议政返回继续评论" class="btn btn-submit" id="btn-back">继续评论</a>
+					<a href="#" data-collect="true"
+					data-collect-flag="cctv-qglh-btn-enter"
+					data-collect-desc="两会议政返回两会朋友圈" class="btn btn-submit" id="btn-enter">两会朋友圈</a>
+			</div>
+		</div>
+	</div>
+	  <div class="copyright"></div>
+
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	
+	<script src="http://yaotv.qq.com/c/=/shake_tv/include/js/jsapi_authorize.js,/shake_tv/include/js/jsapi_subscribe.js,/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="./js/wx_api_userinfo.js"></script>
+
+	<script src="./js/app/baoliao.js"></script>
+	
+	
+</body>
+</html>

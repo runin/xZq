@@ -1,0 +1,60 @@
+
+body {
+	height: 100%;
+	background: url(../images/view-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+footer {
+	position:absolute;
+	width:100%;
+	z-index:1;
+	bottom:0;
+	left: 0;
+	overflow: hidden;
+}
+
+footer .join-box {
+	position:relative;
+	width:100%;
+	margin:0 auto 25%;
+	text-align: center;
+	-webkit-animation-name:bounceInUp;
+	animation-name:bounceInUp;
+	-webkit-animation-delay:3.2s;
+	animation-delay:3.2s;
+}
+footer .join-box a {
+	display: inline-block;
+	width: 34%;
+	height: 40px;
+	line-height: 40px;
+	background: url(../images/btn-bg.png) no-repeat;
+	background-size: 100% 100% ;
+	color: #a11450;
+	font-size: 17px;
+	font-weight: bold;
+	margin: 0 3%;
+}
+
+footer .copyright {
+	position: static;
+	font-size: 12px;
+	height: 28px;
+	line-height: 13px;
+	color: #ffffff;
+	opacity: 0.6;
+	margin: 0 auto 3px;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+
+	footer .join-box {
+		margin: 0 auto 8%;
+	}
+}

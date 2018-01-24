@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="keywords" content="护送程序猿去约会" />
+	<meta name="description" content="圣诞节的夜晚，任劳任怨的程序猿还是加班到深夜。为了赶赴午夜约会，程序猿冲上天台化身超人朝恋人飞去。路上雷电冰雹交加，天气十分恶劣，请护送程序猿去约会。" />
+    <title>护送程序猿去约会</title>
+	
+	
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		body{
+			overflow:hidden;
+			background:#20577d;
+		}
+		#container{
+			position:absolute;
+			overflow:hidden;	
+		}
+		#container .stage{
+			display:none;
+		}
+		.stage{
+			width:100%;
+			height:100%;
+		}
+		#stage_loading{
+			background:#20577d;
+			text-align:center;
+			background : -webkit-linear-gradient(top,#20577d,#2c4765);
+			background : -moz-linear-gradient(top,#20577d,#2c4765);
+			background : linear-gradient(top,#20577d,#2c4765);
+			
+			-webkit-text-shadow: #1d314a 2px 1px 0;
+			-moz-text-shadow: #1d314a 2px 1px 0;
+			text-shadow: #1d314a 2px 1px 0;
+		}
+		#loading_bar{
+			position:relative;
+			font-family:Helvetica;
+			color:white;
+			font-weight:bold;
+		}
+		#cnzz_container{
+			display:none;
+		}
+		.preloading{
+			color:white;
+			text-align:center;
+			-webkit-text-shadow: #1d314a 2px 1px 0;
+			-moz-text-shadow: #1d314a 2px 1px 0;
+			text-shadow: #1d314a 2px 1px 0;
+			position:relative;
+			font-family: Helvetica;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<p id="preloading" class="preloading">Loading...</p>
+	<script type="text/javascript">
+		var preloading = document.getElementById("preloading");
+		preloading.style.top = window.screen.height/2 + "px";
+	</script>
+	
+	<div id="container">
+		<div id="stage_loading" class="stage">
+			<div id="loading_bar">Loading...</div>
+		</div>
+		<div id="main" class="stage"></div>
+	</div>
+	
+	<div style="display:none">
+		<audio id="myaudio" src="./bgm.ogg" controls="controls" loop="loop" hidden="true" preload="auto"></audio>
+	</div>
+	
+	<script type="text/javascript" src="./js/jquery&cookie-2.1.1.min.js"></script>
+	<script type="text/javascript" src="./js/pixi.js?time=201412241559"></script>
+	<script type="text/javascript" src="./js/game.min.js?time=201412241559"></script>
+	
+	<script type="text/javascript" src="./js/weixin-share.js"></script>
+	<div id="cnzz_container">
+		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253811684'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1253811684%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+		<script type="text/javascript">
+			var _czc = _czc || [];
+			_czc.push(["_setAccount", "1253811684"]);
+		</script>
+	</div>
+	
+</body>
+</html>

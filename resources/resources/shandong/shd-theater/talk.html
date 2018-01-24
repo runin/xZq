@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>爱家剧场</title>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/swiper.3.1.7.min.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/talk.css"/>
+</head>
+<body class="now">
+	<img class="imgbg" src="./images/com-bg.jpg" />
+	<img class="shk-hd" src="./images/shk-hd.png" />
+	<section class="countdown none">
+		<span class="countdown-tip"></span>
+		<span class="detail-countdown"></span>
+	</section>
+	<div class="round-bg">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--<div class="swiper-slide"></div>-->
+                <!--<div class="swiper-slide"></div>-->
+                <!--<div class="swiper-slide"></div>-->
+            </div>
+            <!--<div class="swiper-pagination"></div>-->
+        </div>
+		<section class="info-box none">
+			<img src="images/pv-head.png" />
+			<p class="getRed-num">当前在线人数：<label></label></p>
+		</section>
+        <!--<section class="AD">-->
+            <!--<img src="images/yt.png" />-->
+            <!--<p>点击抢购新鲜烟台大樱桃</p>-->
+            <!--<a id="yt" data-collect="true" data-collect-flag="outlink2" data-collect-desc="聊天室页-樱桃外链"></a>-->
+        <!--</section>-->
+	</div>
+	<div id="body" class="body">
+		<ul id="comment_list" class="content">
+		</ul>
+	</div>
+	<p class="mesg-tip" id="mesg-tip">有新消息</p>
+    <a id="talk-dialog-open" data-collect="true" data-collect-flag="talk-dialog-open" data-collect-desc="聊天室页-评论弹层打开按钮">
+        <img src="images/inp-toggle.png" />
+    </a>
+	<section class="talk-dialog none">
+		<footer class="footer">
+			<input id="input_text" type="text" placeholder="输入您想要说的话~" />
+			<a id="input_submit" data-collect="true" data-collect-flag="talk-submit" data-collect-desc="聊天室页-评论发送按钮">
+				<img src="images/talk-dialog-btn.png" />
+			</a>
+			<a id="talk-dialog-cls" data-collect="true" data-collect-flag="talk-dialog-cls" data-collect-desc="聊天室页-评论弹层关闭按钮">
+				<img src="images/btn-close.png" />
+			</a>
+		</footer>
+	</section>
+	<div class="bottom">
+		<a class="btn-person" data-collect="true" data-collect-flag="to-person" data-collect-desc="聊天室页-个人中心按钮"></a>
+		<a class="btn-talk"></a>
+		<a class="btn-tg" data-collect="true" data-collect-flag="to-tiger" data-collect-desc="聊天室页-老虎机按钮"></a>
+	</div>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/swiper.3.1.7.jquery.min.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/scrollTo.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="js/app/dialog.js"></script>
+	<script src="js/app/talk.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

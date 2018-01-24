@@ -1,0 +1,287 @@
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	background: url(../images/bg-index.jpg) no-repeat bottom center ;
+	background-size: cover;
+	overflow: hidden;
+}
+header{
+
+}
+header .icon-toyota{
+	display: block;
+	width: 50%;
+	margin: 5% auto;
+}
+header .card-tips{
+	position: relative;
+	width: 80%;
+	margin: auto;
+}
+header .card-tips .icon-tips{
+	display: block;
+	width: 100%;
+}
+header .card-tips .card-light1{
+	display: block;
+	position: absolute;
+	width: 15%;
+	top: -18px;
+	left: -5%;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+header .card-tips .card-light2{
+	display: block;
+	position: absolute;
+	width: 18%;
+	top: -10px;
+	left: 47%;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-delay: .8s;
+	animation-delay: .8s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+header .card-tips .card-light3{
+	display: block;
+	position: absolute;
+	width: 15%;
+	top: -10px;
+	right: -2%;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-delay: 1.4s;
+	animation-delay: 1.4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+header .card-back-btn{
+	display: block;
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	color: #fff;
+	width: 60px;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.3)));
+	text-align: center;
+	border-radius: 15px;
+	line-height: 25px;
+	font-size: 15px;
+	border: 1px solid #555568;
+}
+header .card-rule-btn{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 21%;
+}
+.icon-qss{
+	display: block;
+	position: absolute;
+	width: 50%;
+	bottom: 5px;
+	left: 25%;
+}
+.swiper-slide{
+	position: relative;
+}
+.swiper-slide .card-btn{
+	position: absolute;
+	display: block;
+	bottom: 10px;
+	left: 28%;
+	width: 44%;
+	background: url(../images/btn-bg.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 45px;
+	color: #431406;
+	letter-spacing: 2px;
+}
+.swiper-slide .card-none-cover{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.55);
+}
+.swiper-slide .card-num{
+	display: block;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	background-color: red;
+	border-radius: 100%;
+	font-size: 14px;
+	overflow: hidden;
+}
+.dialog-card-demand{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	z-index: 9999;
+}
+.dialog-card-demand .share-img{
+	display: block;
+	position: absolute;
+	width: 60%;
+	right: 10%;
+	top: 2%;
+}
+.dialog-card-share{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	z-index: 9999;
+}
+.dialog-card-share .share-img{
+	display: block;
+	position: absolute;
+	width: 60%;
+	right: 10%;
+	top: 2%;
+}
+.dialog-card-prize{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	z-index: 9999;
+}
+.dialog-card-prize .dialog-content{
+	position: absolute;
+	width: 75%;
+	left: 15%;
+	top: 17%;
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.dialog-card-prize .dialog-content .icon-prize-close{
+	position: absolute;
+	width: 30px;
+	right: 0;
+	top: -50px;
+}
+.dialog-card-prize .dialog-content .prize-img{
+	width: 100%;
+	display: block;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.dialog-card-prize .dialog-content .info-box{
+	background-color: #fff;
+	padding: 2% 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.dialog-card-prize .dialog-content .info-box p{
+	display: block;
+	width: 95%;
+	margin: 2% auto;
+	text-align: center;
+	color: #c4c4c4;
+	font-size: 14px;
+}
+.dialog-card-prize .dialog-content .info-box .prize-tips{
+	color: #46302f;
+	padding: 5px 0;
+	font-size: 15px;
+}
+.dialog-card-prize .dialog-content .info-box input{
+	display: inline-block;
+	width: 75%;
+	border: 1px solid #c4c4c4;
+	border-radius: 5px;
+	line-height: 23px;
+	padding: 3px 5px;
+}
+.dialog-card-prize .dialog-content .prize-btn{
+	display: block;
+	width: 44%;
+	background: url(../images/btn-bg.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 45px;
+	color: #431406;
+	letter-spacing: 2px;
+	margin: auto;
+}
+.dialog-card-prize .dialog-content .confirm-box{
+	background-color: #fff;
+	padding: 2% 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: center;
+}
+.dialog-card-prize .dialog-content .confirm-box .exchange-tips{
+	color: #46302f;
+	padding: 5px 0;
+	font-size: 15px;
+}
+.dialog-card-prize .dialog-content .confirm-box .prize-cancel-btn{
+	display: inline-block;
+	width: 40%;
+	background: url(../images/btn-bg-blue.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	letter-spacing: 2px;
+	margin: auto 2%;
+}
+.dialog-card-prize .dialog-content .confirm-box .prize-accept-btn{
+	display: inline-block;
+	width: 40%;
+	background: url(../images/btn-bg.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 45px;
+	color: #431406;
+	letter-spacing: 2px;
+	margin: auto 2%;
+}
+.fadeOutUp {
+	-webkit-animation-name: fadeOutUp;
+	animation-name: fadeOutUp;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}

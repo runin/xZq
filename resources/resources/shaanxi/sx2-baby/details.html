@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>陕西二套-萌宝详情页</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/details.css" />
+
+    <script src="./js/wx_api.js"></script>
+</head>
+<body>
+
+<div class="main">
+    <div id="school-title"> </div>
+    <div id="votenum"> </div>
+    <img id="bb-img" src="" />
+
+    <section class="ui-audio" id="ui-audio">
+        <div id="coffee-flow" class="btn-audio">
+            <a href="#" class="audio-icon" data-collect="true" data-collect-flag="ah-index-audiobtn" data-collect-desc="音乐按钮"></a>
+            <strong class="audio-txt hide">关闭</strong>
+        </div>
+    </section>
+
+
+    <div class="school-name" id="school-name"><!--幼儿园名称--></div>
+    <div class="slogan" id="slogan"><!--参与口号--></div>
+    <div class="program-name" id="program-name"><!--节目名称--></div>
+    <div class="program-about" id="program-about"><!--节目介绍--></div>
+
+    <a id="vote" href="javascript:void(-1);">投TA一票</a>
+    <div id="surplus"><!--剩余3票--></div>
+    <a href="javascript:share();">为TA拉票</a>
+    <a href="javascript:toUrl('list.html');">返回重选</a>
+
+    <!--投票成功--弹框-->
+    <div class="none" id="succ-dialog">
+        <h1>投票成功</h1>
+        <div id="succ-deta"></div>
+        <a href="javascript:toUrl('lottery.html');">投票</a>
+    </div>
+
+    <p class="copyright">页面由陕西广播电视台提供</p>
+</div>
+
+
+<script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.min.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/md5.js"></script>
+<script src="./js/share.js"></script>
+<script src="./js/data_collect.js"></script>
+<script src="./js/details.js"></script>
+<script src="./js/coffee.js"></script>
+<script src="./js/audio.js"></script>
+</body>
+</html>

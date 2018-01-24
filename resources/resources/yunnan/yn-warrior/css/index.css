@@ -1,0 +1,226 @@
+html {
+	height: 100%;
+}
+body {
+	margin: 0 auto;
+	padding: 0;
+  background: url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-position: center center;
+}
+header {
+  position: absolute;
+  right: 0px;
+  top: 8px;
+  width: 32%;
+  z-index: 1;
+}
+header .rule{
+  background: url(../images/rule.png) 0 0 no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 100px;
+  height: 26px;
+}
+header .reserve{
+  background: url(../images/reserve.png) 0 0 no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 100px;
+  height: 26px;
+}
+.tvlogo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: auto;
+  width: 30%;
+  z-index: 4;
+}
+section {
+	position: absolute;
+	width: 100%;
+	z-index: 4;
+	bottom: 0;
+}
+
+article {
+  color: #d8d8d8;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+}
+.title{
+  width: 88%;
+  margin: 0 auto;
+}
+.btn-join {
+  width: 72%;
+  display: block;
+  margin: 0px auto;
+}
+.btn-join img {
+  max-width: 100%;
+}
+.copyright {
+  height: 30px;
+  line-height: 13px;
+  color: #e0e0e0;
+  opacity: 1;
+  margin-top: 10px;
+  text-shadow: 0 0 2px rgba(0,0,0,.9);
+}
+.btn-box {
+	  width: 34%;
+  margin: 2% auto 0;
+}
+.btn-box a {
+	display: inline-block;
+}
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+#div_subscribe_area {
+	height: 50px;
+	overflow: hidden;
+}
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/shoot0.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: 99999;
+}
+.wrapper .gun-box {
+  position: absolute;
+  width: 45%;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  font-size: 0;
+}
+.wrapper .gun-box .gun-fire {
+  position: absolute;
+  width: 20%;
+  top: -8%;
+  right: -13%;
+  opacity: 0;
+  animation: twinkling 0.5s infinite ease-in-out;
+  -webkit-animation: twinkling 0.5s infinite ease-in-out;
+}
+.wrapper .gun-tips {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #D2D2D2;
+}
+.wrapper .gun-cross {
+  position: absolute;
+  width: 35%;
+  top: 28%;
+  left: 40%;
+  animation: guncross 3s infinite ease-in-out;
+  -webkit-animation: guncross 3s infinite ease-in-out;
+}
+.wrapper .wall-after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.shoot .gun-box {
+  animation: page_shake 0.8s ease-in-out;
+  -webkit-animation: page_shake 0.8s ease-in-out;
+}
+.wrapper .shoot1 {
+  background: url(../images/shoot1.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: 1
+}
+.wrapper .shoot2 {
+  background: url(../images/shoot2.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: 2;
+}
+.wrapper .shoot3 {
+  background: url(../images/shoot3.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: 3;
+}
+.fade-zoom-out {
+  animation: fade-zoom-out 2.6s ease-out forwards;
+  -webkit-animation: fade-zoom-out 2.6s ease-out forwards;
+}
+@-webkit-keyframes fade-zoom-out {
+  5% {opacity: 1;-webkit-transform: scale(1);}
+  90% {opacity: 0;-webkit-transform: scale(100);}
+  100% {opacity: 0;}
+}
+@keyframes fade-zoom-out {
+  5% {opacity: 1;transform: scale(1);}
+  90% {opacity: 0;transform: scale(100);}
+  100% {opacity: 0;}
+
+}
+@keyframes twinkling{
+  0%, 50%, 100% {opacity: 1;transform: scale(1);} 
+  25%, 75% {opacity: 0;transform: scale(0);} 
+}
+@-webkit-keyframes twinkling{
+  0%, 50%, 100% {opacity: 1;-webkit-transform: scale(1);} 
+  25%, 75% {opacity: 0;-webkit-transform: scale(0);}
+}
+@keyframes shootone{
+  0% {opacity: 1;transform: scale(1);} 
+  100% {opacity: 1;transform: scale(1.3);} 
+}
+@-webkit-keyframes shootone{
+  0% {opacity: 1;-webkit-transform: scale(1);} 
+  100% {opacity: 1;-webkit-transform: scale(1.3);} 
+}
+@keyframes page_shake {
+  from {transform:rotate(0deg);}
+  4% {transform:rotate(3deg);}
+  12.5% {transform:rotate(-3deg);}
+  21% {transform:rotate(3deg);}
+  29% {transform:rotate(-3deg);}
+  37.5% {transform:rotate(3deg);}
+  46% {transform:rotate(-3deg);}
+  50%,to {transform:rotate(0deg);}
+}
+@-webkit-keyframes page_shake {
+  from {-webkit-transform:rotate(0deg);}
+  4% {-webkit-transform:rotate(3deg);}
+  12.5% {-webkit-transform:rotate(-3deg);}
+  21% {-webkit-transform:rotate(3deg);}
+  29% {-webkit-transform:rotate(-3deg);}
+  37.5% {-webkit-transform:rotate(3deg);}
+  46% {-webkit-transform:rotate(-3deg);}
+  50%,to {-webkit-transform:rotate(0deg);}
+}
+@-webkit-keyframes guncross {
+  0% {-webkit-transform: translateX(40%);}
+  17% {-webkit-transform: translateX(70%);}
+  34% {-webkit-transform: translateX(35%);}
+  51% {-webkit-transform: translateX(5%);}
+  68% {-webkit-transform: translateX(0%);}
+  86% {-webkit-transform: translateX(25%);}
+  100% {-webkit-transform: translateX(40%);}
+}
+@keyframes guncross {
+  0% {transform: translateX(40%);}
+  17% {transform: translateX(70%);}
+  34% {transform: translateX(35%);}
+  51% {transform: translateX(5%);}
+  68% {transform: translateX(0%);}
+  86% {transform: translateX(25%);}
+  100% { transform: translateX(40%);}
+}

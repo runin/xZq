@@ -1,0 +1,284 @@
+@charset "utf-8";
+/* CSS Document */
+
+.click-a{
+	-webkit-animation-name:hover-a;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+}
+.click-b{
+	-webkit-animation-name:hover-b;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+}
+.click-c{
+	-webkit-animation-name:hover-c;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+}
+.click-d{
+	-webkit-animation-name:hover-d;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+}
+.click-e{
+	-webkit-animation-name:hover-e;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 2;
+}
+.star-a .click-a span,
+.star-a .click-b span,
+.star-a .click-c span,
+.star-a .click-d span,
+.star-b .click-a span,
+.star-b .click-b span,
+.star-b .click-c span,
+.star-b .click-d span{
+	background-image:url(../images/biaoqing/yuan_bq_02.png);
+}
+.star-c .click-a span,
+.star-c .click-b span,
+.star-c .click-c span,
+.star-d .click-a span,
+.star-d .click-b span,
+.star-d .click-c span{
+	background-image:url(../images/biaoqing/yuan_bq_08.png);
+}
+
+@-webkit-keyframes hover-a {
+20%, 53%, 80%, from, to {
+	-webkit-animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1);
+	animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1);
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0)
+}
+40%, 43% {
+	-webkit-animation-timing-function:cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	animation-timing-function:cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	-webkit-transform:translate3d(0, -30px, 0);
+	transform:translate3d(0, -30px, 0)
+}
+70% {
+	-webkit-animation-timing-function:cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	animation-timing-function:cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	-webkit-transform:translate3d(0, -15px, 0);
+	transform:translate3d(0, -15px, 0)
+}
+90% {
+	-webkit-transform:translate3d(0, -4px, 0);
+	transform:translate3d(0, -4px, 0)
+}
+}
+
+@-webkit-keyframes hover-b {
+from {
+	-webkit-transform:scale3d(1, 1, 1);
+	transform:scale3d(1, 1, 1)
+}
+30% {
+	-webkit-transform:scale3d(1.25, 0.75, 1);
+	transform:scale3d(1.25, 0.75, 1)
+}
+40% {
+	-webkit-transform:scale3d(0.75, 1.25, 1);
+	transform:scale3d(0.75, 1.25, 1)
+}
+50% {
+	-webkit-transform:scale3d(1.15, 0.85, 1);
+	transform:scale3d(1.15, 0.85, 1)
+}
+65% {
+	-webkit-transform:scale3d(0.95, 1.05, 1);
+	transform:scale3d(0.95, 1.05, 1)
+}
+75% {
+	-webkit-transform:scale3d(1.05, 0.95, 1);
+	transform:scale3d(1.05, 0.95, 1)
+}
+to {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1)
+}
+}
+
+@-webkit-keyframes hover-c {
+20% {
+	-webkit-transform:rotate3d(0, 0, 1, 15deg);
+	transform:rotate3d(0, 0, 1, 15deg)
+}
+40% {
+	-webkit-transform:rotate3d(0, 0, 1, -10deg);
+	transform:rotate3d(0, 0, 1, -10deg)
+}
+60% {
+	-webkit-transform:rotate3d(0, 0, 1, 5deg);
+	transform:rotate3d(0, 0, 1, 5deg)
+}
+80% {
+	-webkit-transform:rotate3d(0, 0, 1, -5deg);
+	transform:rotate3d(0, 0, 1, -5deg)
+}
+to {
+	-webkit-transform: rotate3d(0, 0, 1, 0deg);
+	transform: rotate3d(0, 0, 1, 0deg)
+}
+}
+
+@-webkit-keyframes hover-d {
+from {
+	-webkit-transform:scale3d(1, 1, 1);
+	transform:scale3d(1, 1, 1)
+}
+10%, 20% {
+	-webkit-transform:scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+	transform:scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)
+}
+30%, 50%, 70%, 90% {
+	-webkit-transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+}
+40%, 60%, 80% {
+	-webkit-transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+}
+to {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1)
+}
+}
+@-webkit-keyframes hover-e {
+11.1%, from, to {
+	-webkit-transform:none;
+	transform:none
+}
+22.2% {
+	-webkit-transform:skewX(-12.5deg) skewY(-12.5deg);
+	transform:skewX(-12.5deg) skewY(-12.5deg)
+}
+33.3% {
+	-webkit-transform:skewX(6.25deg) skewY(6.25deg);
+	transform:skewX(6.25deg) skewY(6.25deg)
+}
+44.4% {
+	-webkit-transform:skewX(-3.125deg) skewY(-3.125deg);
+	transform:skewX(-3.125deg) skewY(-3.125deg)
+}
+55.5% {
+	-webkit-transform:skewX(1.5625deg) skewY(1.5625deg);
+	transform:skewX(1.5625deg) skewY(1.5625deg)
+}
+66.6% {
+	-webkit-transform:skewX(-0.78125deg) skewY(-0.78125deg);
+	transform:skewX(-0.78125deg) skewY(-0.78125deg)
+}
+77.7% {
+	-webkit-transform:skewX(0.39063deg) skewY(0.39063deg);
+	transform:skewX(0.39063deg) skewY(0.39063deg)
+}
+88.8% {
+	-webkit-transform:skewX(-0.19531deg) skewY(-0.19531deg);
+	transform:skewX(-0.19531deg) skewY(-0.19531deg)
+}
+}
+
+/*weishi*/
+.star-a .tang-yuan-a .a-weishi,
+.star-b .tang-yuan-a .a-weishi,
+.star-c .tang-yuan-a .a-weishi,
+.star-d .tang-yuan-a .a-weishi,
+.star-a .tang-yuan-b .a-weishi,
+.star-b .tang-yuan-b .a-weishi,
+.star-c .tang-yuan-b .a-weishi,
+.star-d .tang-yuan-b .a-weishi,
+.star-a .tang-yuan-c .a-weishi,
+.star-b .tang-yuan-c .a-weishi,
+.star-c .tang-yuan-c .a-weishi,
+.star-d .tang-yuan-c .a-weishi,
+.star-a .tang-yuan-d .a-weishi,
+.star-b .tang-yuan-d .a-weishi,
+.star-c .tang-yuan-d .a-weishi,
+.star-d .tang-yuan-d .a-weishi{
+	background-image:url(../images/biaoqing/yuan_bq_02.png);
+}
+/*xizao*/
+.star-a .tang-yuan-a .a-xizao,
+.star-b .tang-yuan-a .a-xizao,
+.star-c .tang-yuan-a .a-xizao,
+.star-d .tang-yuan-a .a-xizao,
+.star-a .tang-yuan-b .a-xizao,
+.star-b .tang-yuan-b .a-xizao,
+.star-c .tang-yuan-b .a-xizao,
+.star-d .tang-yuan-b .a-xizao,
+.star-a .tang-yuan-c .a-xizao,
+.star-b .tang-yuan-c .a-xizao,
+.star-c .tang-yuan-c .a-xizao,
+.star-d .tang-yuan-c .a-xizao,
+.star-a .tang-yuan-d .a-xizao,
+.star-b .tang-yuan-d .a-xizao,
+.star-c .tang-yuan-d .a-xizao,
+.star-d .tang-yuan-d .a-xizao{
+	background-image:url(../images/biaoqing/yuan_bq_03.png);
+}
+/*bianbian*/
+.star-a .tang-yuan-a .a-bianbian,
+.star-b .tang-yuan-a .a-bianbian,
+.star-c .tang-yuan-a .a-bianbian,
+.star-d .tang-yuan-a .a-bianbian,
+.star-a .tang-yuan-b .a-bianbian,
+.star-b .tang-yuan-b .a-bianbian,
+.star-c .tang-yuan-b .a-bianbian,
+.star-d .tang-yuan-b .a-bianbian,
+.star-a .tang-yuan-c .a-bianbian,
+.star-b .tang-yuan-c .a-bianbian,
+.star-c .tang-yuan-c .a-bianbian,
+.star-d .tang-yuan-c .a-bianbian,
+.star-a .tang-yuan-d .a-bianbian,
+.star-b .tang-yuan-d .a-bianbian,
+.star-c .tang-yuan-d .a-bianbian,
+.star-d .tang-yuan-d .a-bianbian{
+	background-image:url(../images/biaoqing/yuan_bq_05.png);
+}
+/*dagong*/
+.star-a .tang-yuan-a .a-dagong,
+.star-b .tang-yuan-a .a-dagong,
+.star-c .tang-yuan-a .a-dagong,
+.star-d .tang-yuan-a .a-dagong,
+.star-a .tang-yuan-b .a-dagong,
+.star-b .tang-yuan-b .a-dagong,
+.star-c .tang-yuan-b .a-dagong,
+.star-d .tang-yuan-b .a-dagong,
+.star-a .tang-yuan-c .a-dagong,
+.star-b .tang-yuan-c .a-dagong,
+.star-c .tang-yuan-c .a-dagong,
+.star-d .tang-yuan-c .a-dagong,
+.star-a .tang-yuan-d .a-dagong,
+.star-b .tang-yuan-d .a-dagong,
+.star-c .tang-yuan-d .a-dagong,
+.star-d .tang-yuan-d .a-dagong{
+	background-image:url(../images/biaoqing/yuan_bq_06.png);
+}
+/*dasao*/
+.star-a .tang-yuan-a .a-dasao,
+.star-b .tang-yuan-a .a-dasao,
+.star-c .tang-yuan-a .a-dasao,
+.star-d .tang-yuan-a .a-dasao,
+.star-a .tang-yuan-b .a-dasao,
+.star-b .tang-yuan-b .a-dasao,
+.star-c .tang-yuan-b .a-dasao,
+.star-d .tang-yuan-b .a-dasao,
+.star-a .tang-yuan-c .a-dasao,
+.star-b .tang-yuan-c .a-dasao,
+.star-c .tang-yuan-c .a-dasao,
+.star-d .tang-yuan-c .a-dasao,
+.star-a .tang-yuan-d .a-dasao,
+.star-b .tang-yuan-d .a-dasao,
+.star-c .tang-yuan-d .a-dasao,
+.star-d .tang-yuan-d .a-dasao{
+	background-image:url(../images/biaoqing/yuan_bq_04.png);
+}
+

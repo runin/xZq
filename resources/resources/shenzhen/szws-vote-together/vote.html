@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>一块投吧</title>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/swiper.css" />
+	<link rel="stylesheet" href="./css/vote.css" />
+</head>
+<body>
+	<img class="red-pack wobble" id="red-pack" data-collect="true" data-collect-flag="vote-red-pack" data-collect-desc="理财红包按钮" src="images/red-pack.png" />
+    <span class="detail-countdown none"></span>
+	<section class="main">
+		<div  class="swiper-control"></div>
+	</section>
+	<a data-collect="true" data-collect-flag="detail-back-btn" data-collect-desc="选手揭晓-返回按钮" class="btn-join back" id="vote-back">返回首页</a>
+	<section class="detail-box none">
+		<div class="detail-assit">
+			<div class="detail">
+				
+			</div>
+			<div class="detail-btn">
+				<a  data-collect="true" data-collect-flag="vote-btn-view" data-collect-desc="查看项目详情按钮" class="btn-join" id="btn-view">查看项目详情</a><br />
+				<a data-collect="true" data-collect-flag="detail-back-btn" data-collect-desc="选手详情-返回按钮" class="btn-join back" id="btn-back">返回</a>
+				<a data-collect="true" data-collect-flag="detail-godan-btn" data-collect-desc="选手详情-不服来弹" class="btn-join" id="btn-godan">不服来弹</a>
+			</div>
+		</div>
+	</section>
+	<div class="copyright"></div>
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/swiper.min.js"></script>
+	
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="./js/app/vote.js"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+html, body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	background: url(../images/bg.jpg) no-repeat top center #FFF;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+footer .lotips {
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    top: initial;
+    left: initial;
+    bottom: 100px;
+    right: 3%;
+    z-index: 9999999;
+}
+.ctrls {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 3px;
+    z-index: 999;
+    font-size: 0;
+    text-align: left;
+}
+.ctrls:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: url(../images/dia.png) no-repeat;
+    background-size: 100% 100%;
+    bottom: -8px;
+    left: 32%;
+    z-index: 9999;
+    pointer-events: none;
+}
+.ctrls input {
+	display: inline-block;
+    width: 80%;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    border: 0 none;
+    color: #333;
+    outline: 0 none;
+    padding: 5px 12px;
+    overflow: hidden;
+    z-index: 9;
+    background: url(../images/bg_input.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: bottom;
+}
+.ctrls a {
+    display: inline-block;
+    width: 16%;
+    height: 38px;
+    text-align: center;
+    background: url(../images/btn_send.jpg) no-repeat;
+    background-size: 100% 100%;
+    margin-left: 2%;
+}
+.ctrls input::-webkit-input-placeholder {
+    color: rgba(0,0,0,.5);
+}
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9;
+}
+.container .lo {
+    width: 36%;
+    margin: 15px auto 0;
+}
+#article {
+	position: relative;
+    width: 100%;
+    height: 38%;
+    z-index: 0;
+    overflow: hidden;
+}
+#article .comments .comment_item {
+    background: url(../images/bg_dm.png) no-repeat;
+    background-size: 100% 100%;
+	border-radius: 50px !important;
+	padding: 4px 40px 4px 45px !important;
+	height: auto !important;
+	line-height: auto !important;
+	font-size: 15px !important;
+	color: #eb9e41 !important;
+    border-radius: 0 !important;
+    text-shadow: 0 0 5px rgba(208,0,0,1);
+}
+#article .comments .comment_item:after {
+    content: '';
+    position: absolute;
+    left: 42%;
+    bottom: -7px;
+    background: url(../images/dia.png) no-repeat;
+    background-size: 100% 100%;
+    width: 36px;
+    height: 15px;
+    z-index: 99;
+}
+#article .comments .comment_item .c_head_img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    float: left;
+    top: -4px;
+    left: -7px;
+    overflow: hidden;
+    border: 2px solid #e5bf8b;
+}
+#article .comments .comment_item .c_head_img img {
+    position: relative;
+    -webkit-transform: scale(1.2);
+    border-radius: 30px;
+}
+#article .comments .dream, #article .comments .dream * {
+    color: #FFF !important;
+	font-size: 17px !important;
+}
+#article .comments .dream {
+    // background-color: rgba(0,0,0,.5) !important;
+    // border: 1px solid rgba(255,255,255,.6) !important;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    background: url(../images/btn-nav.jpg) no-repeat center;
+    background-size: 100% 100px;
+    background-position: 0 0;
+    font-size: 0;
+}
+.footer a {
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+}
+.footer.active {
+    background-size: 100% 100px;
+    background-position: 0 -50px;
+}
+.countdown {
+    background: url(../images/bg_time.jpg) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    color: #FFB05B;
+    text-shadow: 0 0 5px rgba(208,0,0,1);
+    font-size: 15px;
+}
+.countdown i {
+    position: relative;
+    font-style: normal;
+    padding: 1px 2px;
+    background: #000;
+    margin: 0 3px;
+    border-radius: 2px;
+    color: #FFF;
+    border: 1px solid #333;
+    font-size: 14px;
+    border-right-color: #222;
+    border-bottom-color: #222;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    top: -1px;
+}

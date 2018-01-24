@@ -1,0 +1,320 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>荔枝元宵包袱铺</title>
+	
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/util.css" />
+
+	<link rel="stylesheet" href="./css/index.css" />
+	<link rel="stylesheet" href="./css/rolling.css" />
+	<link rel="stylesheet" href="./css/rule.css" />
+	<link rel="stylesheet" href="./css/cover.css" />
+	<link rel="stylesheet" href="./css/award.css" />
+	<link rel="stylesheet" href="./css/nothing.css" />
+	
+</head>
+<body>
+	
+	<section id="main" class="main none">
+		<section class="main-bg-top"></section>
+		<section class="main-bg-bottom"></section>
+		<section class="logo">
+			<img src="./images/icon-logo.png" />
+		</section>
+		<section class="userinfo">
+			<section class="userinfo-avatar">
+				<img id="avatar" src="./images/avatar.jpg" onerror="this.src='./images/avatar.jpg'" />
+			</section>
+			<section class="userinfo-detail">
+				<p class="text-overflow">昵称：<span id="nickname">匿名</span></p>
+				<p class="text-overflow">金币：<img src="./images/icon-coin.png" > <span id="gold"> --</span></p>
+				<section class="gold-cost none">
+					<img src="./images/icon-coin.png"> X30
+				</section>
+			</section>
+		</section>
+		<section id="to_rule" class="rule-btn can-tap">
+			<img src="./images/icon-rule.png" />
+			规则
+		</section>
+
+		<section class="words">
+			<section class="words-run">
+				<p>黄艺馨：客官请进，欢迎光临</p>
+				<p>黄艺馨：我跑堂小哥服务热情，包您满意</p>
+				<p>柳岩：眼睛不要盯错范围，元宵才是我</p>
+				<p>柳岩：满满的心意，我是这里的美厨娘</p>
+				<p>彭宇：大家排队买单啊，钱交我这里</p>
+				<p>李湘：元宵一碗，您可要记得点一个赞哦</p>
+				<p>黄艺馨：客官请进，欢迎光临</p>
+			</section>
+		</section>
+
+		<section class="btns">
+			<section class="btn-item can-tap">
+				<img id="to_game" src="./images/icon-game-enter.png" />
+			</section>
+			<section id="to_rolling" class="btn-item can-tap">
+				<img src="./images/icon-yao-enter.png" />
+			</section>
+		</section>
+
+		<section id="mcdw"  class="maincd none">
+			<section class="maincd-bg">
+				<img src="./images/bg-mcd.png" />
+			</section>
+			<p id="mcd-top">距终极大奖</p>
+			<p>开启还有</p>
+			<p id="mcd">00:00:00</p>
+		</section>
+
+		<section class="bgm playing">
+			<img src="./images/icon-voice.png" />
+		</section>
+	</section>
+
+	<section id="rolling" class="rolling dialog-wrapper none">
+		<section class="dialog">
+			<section id="rolling_close" class="btn-close">
+			</section>
+			<section class="tips">
+				每转一次会消耗30金币哦
+			</section>
+
+			<section class="roulette-outer-wrapper">
+				<section class="roulette-wrapper wrapper">
+					<img class="roulette-bg" src="./images/bg-wheel.png" />
+					<section class="roulette-needle-wrapper">
+						<img class="roulette-needle roulette-needle-start" src="./images/lottery_btn.png" />
+					</section>
+					
+					<img percent="true" x-percent="0.393" y-percent="0.393" w-percent="0.214" h-percent="0.214" class="roulette-btn disabled" src="./images/icon-roulette-start-btn.png" />
+					
+					<section class='none'>
+						<audio preload="auto" id="audio_shake" src="./music/audio-a.mp3"></audio>
+						<audio preload="auto" id="audio_win" src="./music/audio-b.mp3"></audio>
+						<audio preload="auto" id="audio_bgm" loop="loop" src="./music/bg.mp3"></audio>
+					</section>
+				</section>
+			</section>
+
+			<section class="rolling-countdown">
+				<p id="rolling_text" >距本轮抽奖结束还有</p>
+				<p id="rolling_num" class="rolling-coutdown-num">00:00:00</p>
+			</section>
+		</section>
+	</section>
+
+	<section id="rule" class="rule dialog-wrapper none">
+		<section class="dialog">
+			<section id="rule_close" class="btn-close">
+			</section>
+			<section class="rule-content">
+			</section>
+		</section>
+	</section>
+
+	<section id="cover" class="cover dialog-wrapper none">
+		<section class="bg">
+		</section>
+		<section class="cover-content">
+			<section class="cover-title">
+				<img src="http://yaotv.qq.com/shake_tv/auto2/2016/02/24fhrcyiktg69bg/icon-main-title.png" />
+			</section>
+			<section class="cover-tips none">
+				先送你50个元宵币<br />和我们一起来冒险吧
+			</section>
+			<section id="cover_btn" class="cover-btn can-tap">
+				进入店铺
+			</section>
+
+			<footer>
+				页面由江苏卫视提供 & Powered by holdfun.cn
+			</footer>
+		</section>
+
+		<section class="bgm playing">
+			<img src="./images/icon-voice.png" />
+		</section>
+	</section>
+
+	<section id="door" class="door dialog-wrapper none">
+		<section class="bg">
+		</section>
+		<section class="logo">
+			<img src="./images/icon-logo.png" />
+		</section>
+		<section class="door-title">
+			<img src="./images/icon-title.png" />
+		</section>
+
+		<section class="door-kuang">
+		</section>
+		<section class="door-kuang-bg"></section>
+		<section class="door-shan left-door"></section>
+		<section class="door-shan right-door"></section>
+
+		<section id="cloud" class="door-cloud">
+			<img class="t1" src="./images/icon-game-tangyuan3.png" />
+			<img class="t2" src="./images/icon-game-tangyuan4.png" />
+			<img class="tc" src="http://yaotv.qq.com/shake_tv/auto2/2016/02/24fhrcyiktg69bg/icon-cloud.png" />
+		</section>
+
+		<section id="touch">
+			<img src="./images/icon-push.png" />
+		</section>
+
+		<section class="bgm playing">
+			<img src="./images/icon-voice.png" />
+		</section>
+
+		<footer style="z-index:2;">
+			页面由江苏卫视提供 & Powered by holdfun.cn
+		</footer>
+	</section>
+
+	<section id="infiniti_award_dialog" class="award-wrapper dialog-wrapper none">
+		<section class="dialog">
+			
+			<section class="award-input-wrapper">
+				<section class="award-input-item">
+					<label>姓 名</label>
+					<section class="award-input">
+						<input id="infiniti_name" type="text" />
+					</section>
+				</section>
+
+				<section class="award-input-item">
+					<label>电 话</label>
+					<section class="award-input">
+						<input id="infiniti_tel" type="tel" />
+					</section>
+				</section>
+
+				<section class="award-input-item">
+					<label>地 址</label>
+					<section class="award-input">
+						<input  id="infiniti_addr" type="text" />
+					</section>
+				</section>
+			</section>
+
+			<section class="award-btn can-tap">
+				马上去领取
+			</section>
+		</section>
+	</section>
+
+	<section id="suning_award_dialog" class="award-wrapper dialog-wrapper none">
+		<section class="dialog">
+			
+			<section class="award-input-wrapper">
+				<section class="award-input-item">
+					<label>姓名</label>
+					<section class="award-input">
+						<input id="suning_name" type="text" />
+					</section>
+				</section>
+
+				<section class="award-input-item">
+					<label>电话</label>
+					<section class="award-input">
+						<input id="suning_tel" type="tel" />
+					</section>
+				</section>
+
+				<section class="award-input-item">
+					<label>地址</label>
+					<section class="award-input">
+						<input  id="suning_addr" type="text" />
+					</section>
+				</section>
+			</section>
+
+			<section class="award-btn can-tap">
+				马上去领取
+			</section>
+		</section>
+	</section>
+
+	<section id="didi_award_dialog" class="award-wrapper dialog-wrapper none">
+		<section class="dialog">
+			<p class="didi-tips">每档红包每个手机号只能领取一次哦</p>
+			<section class="award-input-wrapper">
+				<section class="award-input-item">
+					<label><img src="./images/icon-didi.png"></label>
+					<section class="award-input">
+						<input id="didi_tel" placeholder="输入手机号，领取红包" type="tel" />
+					</section>
+				</section>
+			</section>
+
+			<section class="award-btn can-tap">
+				点击领取滴滴红包
+			</section>
+		</section>
+	</section>
+
+	<section id="kaquan_award_dialog" class="award-wrapper dialog-wrapper none">
+		<section class="dialog">
+		</section>
+	</section>
+
+	<section id="wailian_award_dialog" class="award-wrapper dialog-wrapper none">
+		<section class="dialog">
+		</section>
+	</section>
+
+	<section id="nothing_dialog" class="award-wrapper dialog-wrapper none">
+		<section class="dialog">
+			<p class="no-1">别灰心，好运总在下次</p>
+
+			<section class="award-images">
+				<img src="./images/qrcode.jpg" />
+			</section>
+			<p class="no-2">长按关注江苏卫视，发现更多精彩</p>
+
+			<section class="award-btn can-tap">
+				<img src="./images/btn-award-nothing.png">
+			</section>
+		</section>
+	</section>
+	
+
+	<script src="./js/config.js"></script>
+	<script src="./js/zepto.min.js"></script>
+	<script src="./js/plugins/shake.js"></script>
+	<script src="./js/plugins/jquery.keyframes.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+	<script src="./js/plugins/authorize_userinfo.js"></script>
+	<script src="./js/plugins/core.js"></script>	
+	<script src="./js/plugins/util.js"></script>
+
+	<script src="./js/app/cover.js"></script>
+	<script src="./js/app/index.js"></script>
+	<script src="./js/app/rule.js"></script>
+	<script src="./js/app/countdown.js"></script>
+	<script src="./js/app/indexcountdown.js"></script>
+	<script src="./js/app/rolling.js"></script>
+	<script src="./js/app/award.js"></script>
+	<script src="./js/app/nothing.js"></script>
+	<script src="./js/app/subscribe.js"></script>
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=54397941" charset="UTF-8"></script>
+	<script type="text/javascript" src="http://pingjs.qq.com/h5/stats.js" name="MTAH5" sid="500002280"></script>
+
+</body>
+</html>

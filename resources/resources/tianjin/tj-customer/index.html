@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+</head>
+<body>
+
+<div class="main" id="main">
+	<img class="logo" src="./images/home-logo.png">
+    <section class="nav">
+    	<div id="lottery-tip">
+    			<span class="time-tips"></span><span class="detail-countdown"></span>
+                
+        </div>
+        <a id="lottery-time" class="btn none" data-collect="true" 
+             data-collect-flag="tj-customer-comments-lottery-time"
+             data-collect-desc="礼盒抽奖">立即抽奖
+        </a>
+        <a name="home" class="btn border" id="btn-baoliao" data-collect="true"
+	       data-collect-flag="tj-customer-comments-news-tip"
+	       data-collect-desc="我要参与">我要参与</a> 
+    </section>
+     <div class="arrow-box">
+	     <a id="rule" class="btn-small border" data-collect="true"
+             data-collect-flag="tj-customer-comments-rule"
+             data-collect-desc="活动规则">领奖规则</a>
+        <a name="home" class="btn-small border " id="gift-list" data-collect="true"
+	       data-collect-flag="tj-customer-comments-reward-list"
+	       data-collect-desc="中奖记录">中奖纪录</a> 
+	 </div>
+</div>
+    <div class="copyright"></div>
+
+	<script src="js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	
+	<script src="js/app/dialog.js"></script>
+	<script src="js/app/index.js"></script>
+</body>
+</html>

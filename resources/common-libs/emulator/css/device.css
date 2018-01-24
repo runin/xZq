@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.apple_iphone_5s > .landscape
+{
+	width: 1588px;
+	height: 752px;
+	background-image: url(../images/template.landscape.svg);
+	background-repeat: no-repeat;
+}
+
+.apple_iphone_5s > .landscape > .viewport
+{
+	left: 226px;
+	top: 56px;
+	width: 1136px;
+	height: 640px;
+}
+
+.apple_iphone_5s > .portrait
+{
+	width: 752px;
+	height: 1588px;
+	background-image: url(../images/template.portrait.svg);
+	background-repeat: no-repeat;
+}
+
+.apple_iphone_5s > .portrait > .viewport
+{
+	left: 56px;
+	top: 226px;
+	width: 640px;
+	height: 1136px;
+}

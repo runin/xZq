@@ -1,0 +1,10 @@
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/0q.jpg' class='c_head_img_img' /></div><div class='comment'>加油！加油！中国选手最棒！</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/1q.jpg' class='c_head_img_img' /></div><div class='comment'>打的人热血沸腾啊</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/2q.jpg' class='c_head_img_img' /></div><div class='comment'>简直太帅了</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/3q.jpg' class='c_head_img_img' /></div><div class='comment'>最喜欢有腹肌的男人</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/4q.jpg' class='c_head_img_img' /></div><div class='comment'>节目好好看啊</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/5q.jpg' class='c_head_img_img' /></div><div class='comment'>怎么练腹肌，教我！教我！</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/6q.jpg' class='c_head_img_img' /></div><div class='comment'>河南卫视的节目太棒了</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/7q.jpg' class='c_head_img_img' /></div><div class='comment'>身材都太好了，赞！</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/8q.jpg' class='c_head_img_img' /></div><div class='comment'>哇哇哇，打得好</div></div>");
+window.CACHEMSG.push("<div class='cor'><div class='c_head_img'><img src='./images/head/9q.jpg' class='c_head_img_img' /></div><div class='comment'>选手们都很棒，32个赞</div></div>");

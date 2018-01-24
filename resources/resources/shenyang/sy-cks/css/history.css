@@ -1,0 +1,75 @@
+
+h2 {
+    color: #F26C0D;
+	
+    font-size: 20px;
+    padding: 15px 0 14px 20px;
+    border-bottom: 1px solid #D2CCC7;
+}
+.list {
+    padding: 0 10px;
+	
+}
+.list li {
+    border-bottom: 1px solid #D2CCC7;
+	font-size: 0;
+}
+.list label {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    font-size: 12px;
+    color: #666666;
+    width: 68px;
+}
+.list a {
+    display: -webkit-box;
+	
+    -webkit-box-orient: horizontal;
+    padding: 20px 0 23px 12px;
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+}
+.list a:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 0px;
+	height: 100%;
+}
+.list a i {
+	background: url(../images/icons.png) no-repeat -14px -32px;
+	background-size: 169px auto;
+	width: 10px;
+	height: 18px;  
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+.list a:hover i {
+	background-position: 0 -32px;
+}
+.list a:hover:after {
+	background-position: -20px 0px;
+}
+.list a strong {
+    display: -webkit-box;
+	
+    font-size: 18px;
+    color: #F9B30A;
+}
+.list .content {
+    border-left: 1px solid #C0B5AF;
+	
+    display: block;
+    padding-left: 9px;
+    padding-right: 105px;
+    margin-left: 10px;
+    width: 100%;
+}
+.list .content span {
+    font-size: 12px;
+	
+    color: #000000;
+    display: -webkit-box;
+}

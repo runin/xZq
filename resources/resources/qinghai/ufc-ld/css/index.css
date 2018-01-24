@@ -1,0 +1,111 @@
+html{
+  background-color: #000;
+}
+.page:nth-child(1) {
+  /*background: url(../images/bg1.jpg) no-repeat;
+  background-size: 100% 100%;*/
+}
+.page:nth-child(1) .logo {
+  width: 32%;
+  margin: 8px 6px;
+}
+.page:nth-child(1) header {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 70px;
+}
+.page:nth-child(1) header .ctrls {
+  position: relative;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2px 0px 8px;
+  -webkit-animation-delay: 1s;
+}
+.page:nth-child(1) header .ctrls:after {
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-bottom-color: rgba(86, 24, 23, 0.8);
+  border-width: 5px;
+  margin-left: 7px;
+}
+.page:nth-child(1) header .ctrls a {
+  color: #fff;
+  display: block;
+  border: 1px solid #fff;
+  font-size: 12px;
+  text-align: center;
+  width: 62px;
+  height: 22px;
+  line-height: 21px;
+  margin: 2px auto 0;
+  -webkit-transform: scale(0.9);
+}
+.page:nth-child(2) {
+  background: url(../images/page-top.jpg) top center no-repeat;
+  background-size: contain;
+}
+.page:nth-child(2) img {
+  border: 6px solid #181C1D;
+}
+.page:nth-child(2) div.list-f {
+  /*-webkit-column-count: 2;*/
+  margin: auto 10%;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.zoom-in {
+  -webkit-animation-name: zoom-in;
+  animation-name: zoom-in;
+}
+@-webkit-keyframes zoom-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .page:nth-child(2) div.list-f {
+    margin: auto 19%;
+  }
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 550px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .page:nth-child(2) div.list-f {
+    margin: auto 9%;
+  }
+}
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .page:nth-child(2) div.list-f {
+    margin: auto 11%;
+  }
+  .page:nth-child(2) {
+    background: url(../images/page-top.jpg) center -10px no-repeat;
+    background-size: contain;
+  }
+}

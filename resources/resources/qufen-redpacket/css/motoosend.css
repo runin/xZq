@@ -1,0 +1,121 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.redpack {
+    position: absolute;
+    top: 13%;
+    left: 8%;
+    width: 84%;
+    height: 74%;
+    background: url('../images/mesend.png') no-repeat center center;
+    background-size: 100% 100%;
+    z-index: 999;
+}
+
+.head {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #dcbc83;
+    padding: 3px;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    top: 37%;
+    box-shadow: 0px 0px 30px #e6d28d;
+}
+
+
+/****ip 4*****/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    .head {
+        width: 70px;
+        height: 70px;
+        margin-left: -35px;
+    }
+}
+/****ip 5*****/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    .head {
+        width: 74px;
+        height: 74px;
+        margin-left: -37px;
+    }
+}
+/****ip 6*****/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    .head {
+        width: 84px;
+        height: 84px;
+        margin-left: -42px;
+    }
+}
+
+/****ip 6 plus*****/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
+    .head {
+        width: 90px;
+        height: 90px;
+        margin-left: -45px;
+    }
+}
+
+.userHead {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #b18c4a;
+    border-radius: 100%;
+}
+
+.opeater-div {
+    position: absolute;
+    top: 62%;
+    text-align: center;
+    width: 100%;
+}
+
+.opeater-div p {
+    color: #dcbc83;
+    overflow: hidden;
+}
+
+.gotosend {
+    display: inline-block;
+    width: 70%;
+    margin: 0 auto;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    border-radius: 5px;
+    line-height: 40px;
+    color: #fbceb1;
+}
+
+.opeater-div{
+
+     padding-left: 15px;
+     padding-right: 15px;
+}

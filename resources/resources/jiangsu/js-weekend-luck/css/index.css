@@ -1,0 +1,277 @@
+
+body {
+	height: 100%;
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+header{
+	padding: 10px;
+	position: relative;
+}
+header .ctrls {
+	width:30%;
+	position:absolute;
+	right: 0px;
+
+}
+a.btn {
+	display:block;
+	width: 120px;
+	height: 52px;
+	line-height: 46px;
+	position: absolute;
+	background: url(../images/airplane.png) no-repeat;
+	background-size: 100% auto;
+	color: #fff;
+	-webkit-transform:rotate(-14deg) ;
+	transform:rotate(-14deg) ;
+	font-size: 13px;
+	text-align: center;
+}
+header .ctrls .btn-reserve{
+	left: -10px;
+	opacity: 0;
+	-webkit-animation-duration:2s;
+	animation-duration:2s;
+	-webkit-transform-origin:center center;
+	transform-origin:center center;
+	-webkit-animation-name:fly-in;
+	animation-name:fly-in;
+	-webkit-animation-delay:2s;
+	animation-delay:2s;
+	-webkit-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+.btn-rule{
+	position: absolute;
+	top:60px;
+	left: 0;
+	z-index: 3;
+	-webkit-transform:rotate(-20deg) ;
+	transform:rotate(-20deg) ;
+}
+header .tvlogo {
+	display:block;
+	width:30%;
+	height:50px;
+	z-index:99;
+	background:url(../images/tv-logo.png) no-repeat;
+	background-size:100% auto;
+}
+section.main {
+	position: relative;
+	text-align: center;
+	z-index: 0;
+}
+
+section.main .logo {
+	position:absolute;
+	top: 10%;
+	left: 6%;
+	width: 88%;
+	z-index: 2;
+	-webkit-animation-name:bounceUp;
+	animation-name:bounceUp;
+	-webkit-animation-delay:1s;
+	animation-delay:1s;
+	-webkit-animation-duration:0.8s;
+	animation-duration:0.8s;
+
+}
+section.main .money{
+	position:absolute;
+	top: 0%;
+	left: 3%;
+	width: 94%;
+	z-index: 1;
+	-webkit-animation-name:zoom-in;
+	animation-name:zoom-in;
+	-webkit-animation-delay:2s;
+	animation-delay:2s;
+	-webkit-animation-duration:0.2s;
+	animation-duration:0.2s;
+}
+footer {
+	position:absolute;
+	width:100%;
+	z-index:1;
+	bottom:0;
+	left: 0;
+	overflow: hidden;
+}
+
+footer .join-box {
+	position:relative;
+	width:100%;
+	margin: 0 auto 12%;
+	text-align: center;
+	-webkit-animation-name:bounceInUp;
+	animation-name:bounceInUp;
+	-webkit-animation-delay:3.2s;
+	animation-delay:3.2s;
+}
+footer .join-box a {
+	display: inline-block;
+	width: 34%;
+	height: 40px;
+	line-height: 40px;
+	background: url(../images/btn-bg.png) no-repeat;
+	background-size: 100% 100% ;
+	color: #a11450;
+	font-size: 17px;
+	font-weight: bold;
+	margin: 0 3%;
+}
+
+footer .copyright {
+	position: static;
+	font-size: 12px;
+	height: 28px;
+	line-height: 13px;
+	color: #ffffff;
+	opacity: 0.6;
+	margin: 0 auto 3px;
+}
+footer #div_subscribe_area {
+	height:50px;
+	overflow:hidden;
+}
+.ani {
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+	-webkit-animation-duration:1s;
+	-webkit-animation-delay:0.5s;
+	-webkit-animation-timing-function:ease;
+	-webkit-animation-fill-mode:both;
+	animation-duration:1s;
+	animation-delay:0.5s;
+	animation-timing-function:ease;
+	animation-fill-mode:both;
+	-webkit-transform-origin:top center;
+	transform-origin:top center;
+}
+.container1 > div,.container2 > div,.container3 > div {
+	background-color:#FFF;
+}
+
+@-webkit-keyframes bounceUp {
+	0% {opacity:0;-webkit-transform:translateY(2000px);}
+	100% {-webkit-transform:translateY(0);}
+}
+@keyframes bounceUp {
+	0% {opacity:0;transform:translateY(2000px);}
+	100% {transform:translateY(0);}
+}
+@-webkit-keyframes fly-in {
+	0% {opacity:0;-webkit-transform:translate(-800px,300px) rotate(0);}
+	60% {opacity:1;-webkit-transform:translate(-10px,0px) rotate(-14deg);}
+	80% {opacity:1;-webkit-transform:translate(-22px,5px) rotate(-14deg);}
+	100% {opacity:1;-webkit-transform:translate(-10,0) rotate(-14deg);}
+}
+@keyframes fly-in {
+	0% {opacity:0;transform:translate(-800px,300px) rotate(0);}
+	60% {opacity:1;transform:translate(-10px,0px)rotate(-14deg);}
+	80% {opacity:1;transform:translate(-22px,0px) rotate(-14deg);}
+	100% {opacity:1;transform:translate(-10,0) rotate(-14deg);}
+}
+@-webkit-keyframes zoom-in {
+	0% {opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3);}
+	50% {opacity:1;}
+}
+@keyframes zoom-in {
+	0% {opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3);}
+	50% {opacity:1;}
+}
+@-webkit-keyframes shake{
+    0% {opacity:0;-webkit-transform:translateY(0);}
+    10%,30%,50%,70%,90% {opacity:1;-webkit-transform:translateY(-6px);}
+    20%,40%,60%,80% {-webkit-transform:translateY(6px);}
+    100% {-webkit-transform:translateY(0);}
+}
+@keyframes shake{ 
+    0% {opacity:0;transform:translateY(0);}
+    10%,30%,50%,70%,90% {opacity:1;transform:translateY(-6px);}
+    20%,40%,60%,80% {-transform:translateY(6px);}
+    100% {transform:translateY(0);}
+}
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-webkit-keyframes bounceInUp {
+  0% {opacity: 0;-webkit-transform: translateY(2000px);}
+  60% {opacity: 1;-webkit-transform: translateY(0px);}
+  80% {-webkit-transform: translateY(10px);}
+  100% {-webkit-transform: translateY(0);}
+}
+@keyframes bounceInUp {
+  0% {opacity: 0;transform: translateY(2000px);}
+  60% {opacity: 1;transform: translateY(0px);}
+  80% {transform: translateY(10px);}
+  100% {transform: translateY(0);}
+}
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+  100% {
+    -webkit-transform: translateY(-190px);
+  }
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	section.main {
+		margin-top: -10px;
+	}
+	section.main .logo {
+		width: 70%;
+		left: 15%;
+	}
+	section.main .money {
+		width: 80%;
+		left: 10%;
+	}
+	footer .join-box {
+		margin: 0 auto 8%;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    section.main {
+		margin-top: -10px;
+	}
+}
+/*dai*/
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	section.main {
+		margin-top: -30px;
+	}
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	section.main {
+		margin-top: 20px;
+	}
+	footer .join-box {
+		margin: 0 auto 16%;
+	}
+}

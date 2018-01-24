@@ -1,0 +1,237 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+
+	background:#b80c22 url(../images/bg-body.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	overflow-y: auto;
+}
+.main {
+	height: auto;
+	min-height: 100%;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	position: relative;
+}
+
+.logo {
+	width: 74px;
+	height: 74px;
+	background:#ffffff url(../images/baoliao_logo.png) no-repeat center;
+	background-size: 80%;
+	border-radius: 6px;
+	margin: 0 auto;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.form-group {
+    padding: 0 30px 0px;
+}
+.form-item{
+	padding-bottom: 50px;
+}
+.form-item p{
+	font-size: 16px;
+	color: #fff;
+	margin: 10px auto;
+}
+.form-item textarea {
+    border-radius: 5px;
+	color: #ea0a10;
+    width: 100%;
+    height: 80px;
+    padding: 3px;
+    border: 1px solid #BBBBBB;
+     font-size: 14px;
+}
+.form-item .img-ctrl {
+	
+    /* height: 52px; */
+    margin-top: 8px;
+    margin-bottom: 16px;
+    position: relative;
+}
+.form-item input {
+	display: inline-block;
+	width: 100%;
+    height: 34px;
+    padding: 2px 10px;
+    color: #ea0a10;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 14px;
+    border-radius: 8px; 
+    border:none;
+    -webkit-appearance: none;
+    -webkit-text-fill-color:#ea0a10;
+    -webkit-opacity:1;
+}
+ 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #ea0a10;
+}
+.upload-form {
+	height: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+}
+.input-file-upload {
+    opacity: 0;
+   	width: 0px;
+	height: 0px;
+}
+.icon {
+	display: inline-block;
+	vertical-align: top;
+	width: 52px;
+	height: 52px;
+	line-height: 52px;
+	border-radius: 10px;
+	text-align: center;
+}
+.icon:before {
+	content: '';
+	display: inline-block;
+	vertical-align: -2px;
+	background: url(../images/baoliao-plus.png) no-repeat 0 0;
+	background-size: 28px auto;
+}
+.img-ctrl .btn-preview {
+    border: 1px solid #ED192F;
+	
+}
+.img-ctrl .img-preview {
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #FF8500;
+	border-radius: 10px;
+	text-align: center;
+	width: 52px;
+	height: 52px;
+	line-height: 52px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.img-ctrl .img-preview .close {
+	content: '';
+	display: block;
+	background: url(http://yao.holdfun.cn/portal/resources/news/images/close.png) no-repeat 0 0;
+	background-size: 18px auto;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: -6px;
+	top: -8px;
+	cursor: pointer;
+}
+.img-ctrl .img-preview .uploading {
+	display: none;
+}
+.img-ctrl .img-preview.loading .uploading {
+	height: 25px;
+	width: 25px;
+	margin: 0px auto;
+	position: relative;
+	-webkit-animation: loading-rotation .6s infinite linear;
+	animation: loading-rotation .6s infinite linear;
+	border-left: 3px solid rgba(255, 153, 163, 0.55);
+	border-right: 3px solid rgba(255, 153, 163, 0.55);
+	border-bottom: 3px solid rgba(255, 153, 163, 0.55);
+	border-top: 3px solid rgba(238,26,46,.85);
+	border-radius: 100%;
+	display: block;      
+	line-height: 0;
+	font-size: 0;
+}
+.img-ctrl .img-preview .lc {
+	position: absolute;
+	left: 13px;
+	top: 13px;
+}
+.img-ctrl .img-preview .ic {
+    display: block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.img-ctrl .btn-preview:before {
+    width: 28px;
+    height: 20px;
+}
+.img-ctrl .img-preview img {
+	vertical-align: -11px;
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%;
+}
+.img-ctrl .btn-upload {
+    border: 2px dotted #fff;
+	
+}
+.img-ctrl .btn-upload:before {
+    width: 28px;
+    height: 28px;
+    vertical-align: -7px;
+}
+
+.btn-submit {
+    background: #ffffeb;
+    display: block;
+    width: 58%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto 0;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 18px;
+    color: #cb1228;
+}
+.btn-submit:link, .btn-submit:visited, .btn-submit:hover, .btn-submit:active {
+     color: #cb1228;
+}
+.btn-back-simple{
+	margin: 20px auto 0;
+	text-decoration: underline;
+	display: block;
+	width: 40%;
+	text-align: center;
+}
+.preview-box {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	z-index: 9999999;
+	background-size: 320px auto;
+	top: 0;
+	left: 0;
+}
+
+.loading-btn{
+    background: #ccc;
+    color: #fff;
+}
+.copyright{
+	position: absolute;
+	bottom: 0;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+   .btn-submit {
+	    height: 40px;
+	    line-height: 40px;
+	    border-radius: 20px;
+   }
+}

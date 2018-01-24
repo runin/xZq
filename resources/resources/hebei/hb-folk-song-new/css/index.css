@@ -1,0 +1,149 @@
+body{
+    /* -webkit-perspective: 800; */
+    -webkit-perspective-origin: left top;
+    -webkit-transform-style: preserve-3d;
+    /*-webkit-transform-style：-webkit-perserve-3d;*/
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    overflow: hidden;
+    -webkit-animation: flash .3s 0s infinite ease-in-out;
+    -webkit-transform-origin: bottom;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes flash {
+    0% {background: url(../images/flash1.png) no-repeat;background-size: 100% 100%;transform: scale(1);opacity: .9;}
+    50% {background: url(../images/flash2.png) no-repeat;background-size: 100% 100%;transform: scale(1);opacity: 1;}
+    100% {background: url(../images/flash1.png) no-repeat;background-size: 100% 100%;transform: scale(1);opacity: .9;}
+}
+@-webkit-keyframes flash {
+    0% {background: url(../images/flash1.png) no-repeat;background-size: 100% 100%;transform: scale(1);opacity: .9;}
+    50% {background: url(../images/flash2.png) no-repeat;background-size: 100% 100%;transform: scale(1);opacity: 1;}
+    100% {background: url(../images/flash1.png) no-repeat;background-size: 100% 100%;transform: scale(1);opacity: .9;}
+}
+.logo{
+    width: 12%;
+    margin: 10px 8px;
+}
+header {
+    position: absolute;
+    right: 8px;
+    top: 4px;
+}
+header .ctrls {
+    position: relative;
+    text-align: center;
+    width: 77px;
+    height: 50px;
+    padding: 2px 0px 0px;
+    -webkit-animation-delay: 2s;
+
+}
+header .ctrls a:first-child {
+    display: block;
+    width: 77px;
+    height: 25px;
+    background: url(../images/rule.png)center no-repeat;
+    background-size: cover;
+}
+header .ctrls a:last-child {
+    display: block;
+    width: 77px;
+    height: 25px;
+    background: url(../images/yuyue.png)center no-repeat;
+    background-size: cover;
+}
+header .ctrls a:last-child {
+    margin-top: 5px;
+}
+
+.animated {
+    -webkit-transform-delay: .3;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.zoom-in {
+    -webkit-animation-name: zoom-in;
+    animation-name: zoom-in;
+}
+@-webkit-keyframes zoom-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.hand{
+    position: absolute;
+    bottom: 33%;
+    background: url(../images/hand.png) no-repeat;
+    background-size: cover;
+    width: 31px;
+    height: 40px;
+    right: 6%;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-fill-mode: none;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: rotate;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate-reverse;
+}
+@-webkit-keyframes rotate {
+    0% {
+        animation-timing-function: ease-in;
+        -webkit-transform: rotateZ(0deg);
+    }
+
+    100% {
+        animation-timing-function: ease-in;
+        -webkit-transform: rotateZ(65deg);
+    }
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 35%;
+    /* border: 1px solid red; */
+}
+footer img.sj{
+    position: absolute;
+    right: 0;
+    width: 88px;
+    height: 85px;
+    bottom: 0;
+    /* -webkit-transform: scale(3); */
+}
+.new-spinner .new-overlay {
+    background:rgba(0,0,0,.5);
+}
+#div_subscribe_area {
+    height: 50px;
+    overflow:hidden;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.copyright{
+    position: static;
+
+}

@@ -1,0 +1,68 @@
+﻿body, html
+{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color:#CEF3FC;
+}
+.main
+{   padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url("../images/two_code_bg.jpg") no-repeat center center;
+    background-size: cover;    
+}
+
+.twoimg
+{
+    display: block;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    margin-left:-25%;
+}
+@media (min-height:568px)
+{
+   .twoimg
+  {
+      top: 20%;   
+  } 
+}
+footer
+{   position:absolute;
+    bottom:1px;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #339BDC;
+    z-index:9;
+ 
+}
+
+.fadein
+{
+    -webkit-animation-name: fadeina;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    opacity:0; 
+}
+@-webkit-keyframes fadeina
+{
+    0%
+    {
+      opacity:0; 
+    }
+    100%
+    {
+      opacity:1;  
+    }
+    
+}

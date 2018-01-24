@@ -1,0 +1,171 @@
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	background: url(../images/bg-index.jpg) no-repeat bottom center ;
+	background-size: cover;
+	overflow: hidden;
+}
+header {
+	position: relative;
+	width: 100%;
+}
+header .tvlogo {
+	position: absolute;
+	width: 15%;
+	top: 10px;
+	left: 8px;
+}
+header .btn-box {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+header .btn-box .btn {
+	display: inline-block;
+	margin: 3px auto;
+	padding: 4px 16px;
+	border: 2px solid #fff;
+	color: #FFF;
+	font-size: 12px;
+}
+.index-title{
+	position: absolute;
+	width: 50%;
+	top: 7%;
+	left: 25%;
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.index-logo{
+	position: absolute;
+	width: 76%;
+	top: 13%;
+	left: 12%;
+	z-index: 9;
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.index-light{
+	position: absolute;
+	width: 100%;
+	top: 14%;
+	opacity: 0;
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+	-webkit-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+.index-main{
+	position: absolute;
+	width: 80%;
+	top: 31%;
+	left: 10%;
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.index-car1{
+	position: absolute;
+	width: 37%;
+	top: 65%;
+	right: 11%;
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.index-car2{
+	position: absolute;
+	width: 30%;
+	top: 67%;
+	left: 22%;
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.index-btn{
+	position: relative;
+	display: block;
+	margin: 0 auto 1%;
+	width: 40%;
+	background: url(../images/btn-bg.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 50px;
+	color: #431406;
+	font-weight: bold;
+	letter-spacing: 2px;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+footer{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.reserve{
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	color: #fff;
+	width: 85px;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.3)));
+	text-align: center;
+	border-radius: 15px;
+	line-height: 25px;
+	font-size: 15px;
+	border: 1px solid #555568;
+}
+/* iPhone4 */
+@media screen
+ and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.ADlogo {
+		top: 9%;
+	}
+}
+@media screen
+ and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+	.ADlogo {
+		top: 8%;
+	}
+}

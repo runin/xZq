@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>vivo极速影院</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body class="intro">
+    <audio preload="auto" id="audio-a" src="./sounds/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="./sounds/audio-b.mp3" class="preload"></audio>
+    <a class="btn-intro-close" id="btn-intro-close" href="javascript:void(0);"><img src="./images/btn-intro-close.png"></a>
+    <header>
+        <p class="count hidden">在线人数：<label>0</label>人</p>
+        <a href="javascript:void(0);" class="btn-go2back none" id="btn-go2back" data-collect="true" data-collect-flag="lottery-go2back" data-collect-desc="返回首页按钮">返回</a>
+    </header>
+    <section class="container">
+        <section class="fail-tips none">
+            <p>跟着我的节奏<i>摇</i>起来</p>
+        </section>
+        <section class="countdown none">
+            <span class="countdown-tip"></span>
+            <span class="detail-countdown"></span>
+        </section>
+    </section>
+    <footer>
+        <section class="vivo-box">
+            <img class="icon-intro" src="./images/icon-intro.png">
+            <img class="icon-X6" src="./images/icon-X6.png">
+            <img class="icon-vivoDoll" src="./images/icon-vivoDoll.png">
+        </section>
+        <p class="thanks-tips none"></p>
+        <section class="marquee hidden"><ul></ul></section>
+        <section class="copyright">页面由CCTV6提供<br>新掌趣科技技术支持&Powered by holdfun.cn</section>
+    </footer>
+    <!-- <a class="btn none" id="test" style="position:absolute;top:50%;z-index:9999999999;">红包按钮</a> -->
+
+    <script src="./js/config.js"></script>
+    <script src='./js/plugins/jquery.2.1.0.min.js'></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/lottery.js"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=50922772" charset="UTF-8"></script>
+</body>
+</html>

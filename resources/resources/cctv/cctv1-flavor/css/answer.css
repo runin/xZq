@@ -1,0 +1,286 @@
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	text-align: center;
+	background: url(../images/bg-vote.jpg) no-repeat top center #EEE;
+	background-size: cover;
+}
+header {
+	position:relative;
+	width:100%;
+	text-align: center;
+	opacity: 0;
+	z-index:99;
+}
+header .countdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 5%;
+    background: url(../images/bg-cd.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #5e000a;
+    padding: 3% 10%;
+    font-size: 14px;
+    font-weight: bolder;
+    z-index: 98;
+}
+header .countdown .countdown-tip {
+    font-weight: bolder;
+}
+header .countdown .detail-countdown label {
+    color: #5e000a;
+    font-weight: bolder;
+}
+.tongji-box {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color: #FFF;
+	background-color: rgba(0,0,0,.5);
+	z-index: 9999999999;
+	overflow: hidden;
+	overflow-y: scroll;
+	-webkit-transform: scale(1);
+	opacity: 1;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.tongji-box.hide {
+	-webkit-transform: scale(6);
+	opacity: 0;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.tongji-box .tongji-info-box {
+	position: relative;
+	width: 90%;
+	margin: 12% auto 0;
+	padding: 5%;
+	background-color: rgba(182,0,21,.3);
+	border: 1px solid #b60015;
+	border-radius: 5px;
+}
+.tongji-box .tongji-info-box .btn-tongji-close {
+	position: absolute;
+	width: 12%;
+	top: -10px;
+	right: -10px;
+}
+.tongji-box .tongji-info-box .tongji-tips {
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: bolder;
+}
+.tongji-box .tongji-info-box .tongji-canvas {
+	margin: 6% auto 0;
+}
+.tongji-box .tongji-info-box .tongji-result {
+	display: inline-block;
+	margin: 8% auto 0;
+}
+.tongji-box .tongji-info-box .tongji-result p {
+	width: 100%;
+	height: 15px;
+	line-height: 15px;
+	font-size: 15px;
+	text-align: left;
+}
+.tongji-box .tongji-info-box .tongji-result p * {
+	vertical-align: middle;
+}
+.tongji-box .tongji-info-box .tongji-result p:nth-child(1) {
+	margin-bottom: 5px;
+}
+.tongji-box .tongji-info-box .tongji-result p i {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+	border-radius: 2px;
+}
+.tongji-box .tongji-info-box .tongji-result p:nth-child(1) i {
+	background-color: #eb001c;
+}
+.tongji-box .tongji-info-box .tongji-result p:nth-child(2) i {
+	background-color: #ff5a4e;
+}
+.tongji-box .tongji-info-box .tongji-result p span {
+	margin-right: 12px;
+}
+.tongji-box .tongji-info-box .tongji-result p label {
+	font-weight: bolder;
+}
+.container {
+	position: relative;
+	padding: 5% 0 100px;
+	width: 100%;
+	opacity: 0;
+	z-index: 9;
+}
+.container .info-box {
+	position: relative;
+	width: 82%;
+	margin: 0 auto;
+	z-index: 99;
+}
+.container .info-box .answer-box {
+	width: 100%;
+	padding: 0 3%;
+	background: url(../images/bg-show-body.png) repeat-y;
+	background-size: 100% auto;
+}
+.container .info-box .answer-box .food-name {
+	width: 90%;
+	margin: 0 auto 3%;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: bolder;
+	color: #7b0000;
+}
+.container .info-box .answer-box .food {
+	width: 88%;
+	margin: 0 auto;
+}
+.container .item-box {
+	width: 88%;
+	margin: 5% auto 0;
+}
+.container .item-box a {
+	display: inline-block;
+	margin: 0 2%;
+	background-color: #910010;
+	padding: 3% 8%;
+	font-size: 15px;
+	color: #FFF;
+	border-radius: 3px;
+	opacity: 0;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.container .item-box a:hover {
+	background-color: #7b0000;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.container .item-box a.voted, .container .item-box a.voted:hover {
+	background-color: #B1B1B1;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.container article {
+	position:absolute;
+	top:10%;
+	left: 0;
+	width:100%;
+	height:80px;
+	z-index:-1;
+}
+.container article .comments {
+	opacity: .6;
+}
+.container article .comments .comment_item .c_head_img {
+	position: relative;
+	width:30px;
+	height:30px;
+	border-radius:30px;
+	border:2px solid rgba(140,100,193,0.5);
+	float: left;
+	left: -8px;
+	overflow:hidden;
+}
+.container article .comments .comment_item .me-content {
+	border: 2px solid rgba(0,0,0,.3);
+	border-radius: 30px;
+	padding: 0 8px;
+	overflow: hidden;
+}
+.container article .comments .comment_item .c_head_img img {
+	position: relative;
+	-webkit-transform: scale(1.2);
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+footer .ctrls {
+	position: relative;
+	display: block;
+	width: 100%;
+	height:50px;
+	text-align: center;
+	margin-bottom: 3%;
+	opacity: 0;
+	z-index: 999;
+}
+footer .ctrls input {
+	display:inline-block;
+	width: 70%;
+	padding: 18px 50px 18px 16px;
+	font-size: 14px;
+	border:0 none;
+	color:#fff;
+	outline:0 none;
+	background: url(../images/icon-input.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+footer .ctrls a {
+	position: relative;
+	padding-left: 15px;
+	margin-left: -38px;
+	width: 90px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	display:inline-block;
+	color:#fff;
+	font-size:16px;
+	color: #333;
+	font-weight: bolder;
+	background: url(../images/btn-send.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 999;
+}
+.no-show .zan-box {
+	opacity: 0;
+}
+::-webkit-input-placeholder {
+    color: #FFF;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	.tongji-box .tongji-info-box {
+		margin-top: 6%;
+		width: 80%;
+	}
+	.tongji-box .tongji-info-box .tongji-tips {
+		font-size: 16px;
+	}
+	.tongji-box .tongji-info-box .tongji-canvas canvas {
+		position: relative;
+		margin: 0;
+		left: -6%;
+		-webkit-transform: scale(.8);
+		margin: 0 auto;
+	}
+	.container .info-box {
+		margin-top: 2%;
+	}
+}

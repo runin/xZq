@@ -1,0 +1,196 @@
+.reserve{
+    background: url(../images/reserve.png) 0 0 no-repeat;
+    background-size: 100%;
+    width: 20%;
+    height: 86px;
+    display: block;
+    position: absolute;
+    right: 7%;
+    top: 3%;
+}
+.tv-logo{
+    display: inline-block;
+    width: 40%;
+    margin: 4% 0 0 4%;
+}
+.per{
+    float: left;
+    margin-top: 15%;
+}
+.logo{
+    width: 66%;
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: 17%;
+    margin-right: 5%;
+}
+.head{
+    display: inline-block;
+    width: 19%;
+    margin-left: 10%;
+    margin-top: 0%;
+    float: left;
+}
+.body{
+    display: inline-block;
+    width: 10%;
+    margin-top: -4%;
+    margin-left: 11%;
+    float: left;
+}
+.pai{
+    width: 100%;
+    display: block;
+    margin: 15% 0 0 0%;
+    float: left;
+}
+.more{
+    display: block;
+    float: left;
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #beb610;
+}
+
+
+@-webkit-keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .per {
+        float: left;
+        margin-top: 5%;
+    }
+    .pai {
+        margin: 5% 0 0 0%;
+    }
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 375px)
+and (min-device-height : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .reserve {
+        width: 15%;
+        height: 30%;
+    }
+}
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .per {
+        float: left;
+        margin-top: 10%;
+    }
+    .pai {
+        margin: 5% 0 0 0%;
+    }
+}
+/* yi*/
+@media screen
+and (min-device-width : 360px)
+and (max-device-height : 519px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .per {
+        float: left;
+        margin-top: 10%;
+    }
+    .pai {
+        margin: 5% 0 0 0%;
+    }
+}

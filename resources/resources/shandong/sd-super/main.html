@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=640, user-scalable=no">
+	<script src="./js/plugins/zepto.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">$(function () {var DEFAULT_WIDTH = 640,ua = navigator.userAgent.toLowerCase(),deviceWidth = window.screen.width,devicePixelRatio = window.devicePixelRatio || 1,targetDensitydpi;if(ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4){targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');}});</script><style type="text/css">.none{display:none !important;}</style>
+	<title></title>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/vote.css" />
+	<link rel="stylesheet" href="./css/over.css" />
+	<link rel="stylesheet" href="./css/lottery.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+</head>
+<body>
+	<section class="page knone" id="vote">
+		<div class="boxs ttv" style="opacity: 0;">
+			<div class="box box1" data-box="1" data-collect="true" data-collect-flag="box1" data-collect-desc="宝箱1"><img src="./images/box1.png"><b></b></div>
+			<div class="box box2" data-box="2" data-collect="true" data-collect-flag="box2" data-collect-desc="宝箱2"><img src="./images/box2.png"><b></b></div>
+			<div class="box box3" data-box="3" data-collect="true" data-collect-flag="box3" data-collect-desc="宝箱3"><img src="./images/box3.png"><b></b></div>
+			<div class="box box4" data-box="4" data-collect="true" data-collect-flag="box4" data-collect-desc="宝箱4"><img src="./images/box4.png"><b></b></div>
+			<div class="box box5" data-box="5" data-collect="true" data-collect-flag="box5" data-collect-desc="宝箱5"><img src="./images/box5.png"><b></b></div>
+			<div class="box box6" data-box="6" data-collect="true" data-collect-flag="box6" data-collect-desc="宝箱6"><img src="./images/box6.png"><b></b></div>
+			<i></i><i></i><i></i><i></i><i></i><i></i>
+		</div>
+		<div class="down ttv" style="opacity: 0;">
+			<div class="leftbig">
+				<p>本轮您有<label>3</label>次开箱机会  点击宝箱,寻找大奖</p>
+			</div>
+			<div class="lottery-cd none vote-cd">
+				<fieldset class="lottery-countdown-field">
+					<legend class="lottery-tip"></legend>
+				</fieldset>
+				<span class="lottery-countdown"></span>
+			</div>
+		</div>
+		<div class="gold">
+			<a href="javascript:void(0)" data-collect="true" data-collect-flag="vote-ugo" data-collect-desc="宝箱页优品惠" data-url="http://m.ugoshop.com/"><img src="./images/ugo.png"></a>
+			<a href="javascript:void(0)" data-collect="true" data-collect-flag="vote-998-2" data-collect-desc="宝箱页998红包" data-url="http://m.maimaicn.com/buyer/egghit.html?luckyId=23&mId=170790"><img src="./images/998.png"></a>
+			<a href="javascript:void(0)" class="tttj none" data-collect="true" data-collect-flag="vote-tttj" data-collect-desc="宝箱页业务推广" data-url=""></a>
+			<!--<a href="javascript:void(0)" data-collect="true" data-collect-flag="vote-hs" data-collect-desc="宝箱页海参优惠券" data-url="https://h5.koudaitong.com/v2/ump/promocard/fetch?alias=kyamfy5s"><img src="./images/hs.gif"></a>-->
+		</div>
+		<p class="thanks-tips">恭喜额外获得一次抽奖机会</p>
+	</section>
+	<section class="page knone" id="lottery">
+		<audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+		<audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+		<section class="home-box">
+			<div class="main-top m-t-b">
+				<p class="pv knone">当前累计人数：<label>0</label></p>
+				<div class="lottery-cd none main-cd">
+					<fieldset class="lottery-countdown-field">
+						<legend class="lottery-tip"></legend>
+					</fieldset>
+					<span class="lottery-countdown"></span>
+				</div>
+				<div class="yao-text none">
+		            <p class="yao-text-default"><span>跟着我的节奏&nbsp;<i>摇</i>&nbsp;起来</span></p>
+		        </div>
+				<p class="thanks-tips">姿势摆的好，就能中大奖</p>
+				<img class="bg-yao yao-top" src="./images/bg-lottery-yao-top.png">
+			</div>
+			<div class="main-foot m-f-b">
+				<img class="bg-yao yao-bottom" src="./images/bg-lottery-yao-bottom.png">
+				<section class="marquee none"><ul></ul></section>
+			</div>
+		    <!-- <a id="test" style="position: absolute;z-index: 999;width: 60px;height: 60px;line-height: 60px;background: red;color: #FFF;border-radius: 100%;top: 50%;left: 10px;font-size: 28px;text-align: center;">摇</a> -->
+		</section>
+	</section>
+	<section class="page knone" id="over">
+		<div class="icon-nextgift">
+			<img class="over-tips" src="./images/icon-overtips.png">
+			<img src="images/icon-over-light.png" class="over-light1">
+			<img src="images/icon-over-light.png" class="over-light2">
+			<img src="images/icon-over-light.png" class="over-light3">
+		</div>
+		<div class="over-cards"><ul id="stack_over" class="stack stack--iman"></ul></div>
+		<div class="gold">
+			<a href="javascript:void(0)" data-collect="true" data-collect-flag="over-ugo" data-collect-desc="结束页优品惠" data-url="http://m.ugoshop.com/"><img src="./images/ugo.png"></a>
+			<a href="javascript:void(0)" data-collect="true" data-collect-flag="over-mmhb" data-collect-desc="结束页买买买红包" data-url="http://m.maimaicn.com/buyer/egghit.html?luckyId=23&mId=138059"><img src="./images/mmhb.png"></a>
+			<a href="javascript:void(0)" class="tttj none" data-collect="true" data-collect-flag="over-tttj" data-collect-desc="结束页业务推广" data-url=""></a>
+			<!--<a href="javascript:void(0)" data-collect="true" data-collect-flag="over-hs" data-collect-desc="结束页海参优惠券" data-url="https://h5.koudaitong.com/v2/ump/promocard/fetch?alias=kyamfy5s"><img src="./images/hs.gif"></a>-->
+		</div>
+	</section>
+	<footer>
+		<div class="copyright"></div>
+	</footer>
+
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/lottery.js"></script>
+	
+	<script src="./js/app/main.js"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=60436876" charset="UTF-8"></script>
+</body>
+</html>

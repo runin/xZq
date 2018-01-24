@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>靓妆直播间</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+	<header class="nav">
+		<img src="images/paint.png" class="none" />
+		<nav>
+			<a href="#" class="hd-btn" id="btn-pocket" data-collect="true" data-collect-flag="js-mother-day-index-pocket" data-collect-desc="首页-我的口袋按钮">我的口袋</a>
+		</nav>
+	</header>
+<div class="main" id="main">
+	
+	<p class="count hidden">目前参与人数：<label></label></p>
+	<div class="lottery">
+		<p class="lottery-tip"></p>
+		<span class="detail-countdown none"></span>
+		
+		<div class="card-box hidden">
+			<div class="card-laywer none" id="lottery-btn"></div>
+			<div class="card hidden"></div>
+		</div>
+	</div>
+    <div class="lottery-end none">
+		<img src="images/end-tlt.png" />
+		<span>快去靓妆官网（www.lzwg.com）</span>
+		<span>使用你的优惠券吧！</span>
+		<span>敬请期待下期节目，惊喜大奖等着你！</span>
+		<span>快看看下面的精彩评论吧！</span>
+	</div>
+	 <ul id="sx-ul">
+    	<span id="top-comment"></span>
+    	<span class="nor-comment" id="nor-comment"></span>
+    </ul>
+	    <div class="spinner none lodd" id="mallSpinner" >
+				<div class="spinner-wrapper">
+					<div class="spinner-container container1">
+						<div class="circle1"></div>
+						<div class="circle2"></div>
+						<div class="circle3"></div>
+						<div class="circle4"></div>
+					</div>
+					<div class="spinner-container container2">
+						<div class="circle1"></div>
+						<div class="circle2"></div>
+						<div class="circle3"></div>
+						<div class="circle4"></div>
+					</div>
+					<div class="spinner-container container3">
+						<div class="circle1"></div>
+						<div class="circle2"></div>
+						<div class="circle3"></div>
+						<div class="circle4"></div>
+					</div>
+				</div>
+		</div>
+	
+	<footer>
+        <input type="text" id="comments-info" class="comments-info" placeholder="参与实时互动，精彩评论上电视"/>
+        <button type="submit" id="send" class="send" value="发送" data-collect="true"
+               data-collect-flag="js-mother-day-comments-send"
+               data-collect-desc="发送">发送</button>
+    </footer>
+    <a class="top-back none" data-collect="true"
+       data-collect-flag="js-mother-day-comments-top-back"
+       data-collect-desc="返回置顶"><label>top</label></a>
+</div>
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/lotteryCard.js"></script>
+
+<!-- <script src="./js/plugins.min.js"></script> -->
+
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+<script src="./js/wx_api_userinfo.js"></script>
+
+<script src="./js/app/dialog.js"></script>
+<script src="./js/app/lottery.js"></script>
+
+
+
+</body>
+</html>

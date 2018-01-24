@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>我要找到你</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/baoliao.css" />
+</head>
+<body>
+	<div class="main">
+		<div class="tlt">＊请确保您所发布信息的真实性，一经核实您的信息将有机会在电视屏幕下方显示</div>
+		<div class="form-group">
+			<div class="form-item">
+				<label class="fa"><img src="images/bei.png"></label>
+				<select class="fa" id="xun-type">
+					<option value="">请选择</option>
+				</select>
+
+				<input type="text" id="title" class="name" placeholder="线索标题"/>
+
+				<input type="text" id="xun-name" class="fa name"  placeholder="姓名"/>
+
+				<textarea class="content" id="content" placeholder="被寻人的年龄，身高，体重，体貌特征、失散地点、时间、过程等...."></textarea>
+				<div class="img-ctrl" id="img-ctrl">
+					<!-- <a href="#" class="icon btn-preview" id="btn-preview"></a> -->
+					<a href="#" class="icon btn-upload" id="btn-upload" data-collect="true" data-collect-flag="anhui-find-baoliao-upload-btn" data-collect-desc="爆料页面 上传图片按钮"></a>
+				</div>
+				<form id="upload-form" class="upload-form" enctype="multipart/form-data" method="post" action="http://test.holdfun.cn/portal/fileupload/image">
+				    <input type="file" class="input-file-upload none" id="input-file-upload" onchange="fileSelected();" accept="image/*" capture>
+				</form>
+			</div>
+			<div class="form-item">
+				<label class="fa"><img src="images/lian.png"></label>
+				<input type="text" id="name" class="fa name"  placeholder="姓名"/>
+				<input type="number" id="phone" class="phone"  placeholder="电话"/>
+			</div>
+
+		</div>
+		<a href="#" data-collect="true"
+		   data-collect-flag="anhui-find-baoliao-submit-btn"
+		   data-collect-desc="爆料页面提交线索" class="btn btn-submit" id="btn-submit">提 交</a>
+	</div>
+	
+	<div class="copyright"></div>
+
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+	<!-- plugins.min.js
+	<script src="./js/plugins.min.js"></script>-->
+
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+
+	<script src="./js/app/baoliao.js"></script>
+</body>
+</html>

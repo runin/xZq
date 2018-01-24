@@ -1,0 +1,256 @@
+/* 通用弹层样式_S */
+.modal {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.modal:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.8);
+    z-index:99;
+}
+.modal .dialog {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    z-index: 99999;
+}
+.modal .dialog .btn-dialog-close {
+    position: absolute;
+    top: 13vh;
+    right: 7vh;
+    width: 42px;
+    height: 42px;
+    background: url(../images/close.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999999999;
+}
+.modal .dialog .dialog-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 999;
+    text-align: center;
+}
+.modal .dialog .dialog-content .input-box {
+    position: absolute;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 28px;
+    color: #333;
+    left: 5%;
+    bottom: 2vh;
+}
+.modal .dialog .dialog-content .input-box .label {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.modal .dialog .dialog-content .input-box p {
+    width: 100%;
+    margin: 6px 0 0;
+}
+.modal .dialog .dialog-content .input-box span {
+    display: inline-block;
+}
+.modal .dialog .dialog-content .input-box input {
+    display: inline-block;
+    width: 70%;
+    padding: 8px 12px;
+    line-height: 23px;
+    border: 0 none;
+    border-radius: 3px;
+    color: #FFF;
+    background-color: rgba(0,0,0,.3);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4) inset;
+}
+.modal .dialog .dialog-content .input-box input::-webkit-input-placeholder {
+    color: #666 !important;
+}
+.modal .dialog .dialog-content .info-box {
+    text-align: left;
+    width: 70%;
+    margin: 6% auto 0;
+    font-size: 17px;
+    line-height: 26px;
+    color: #FFF;
+}
+.dialog-body {
+    position: relative;
+    width: 72vw;
+    height: 62vh;
+    margin: 25vh auto 0;
+    background: #fffce1;
+    text-align: center;
+}
+.award-img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.modal .dialog .t1 {
+    position: absolute;
+    height: 28vh;
+    top: -18vh;
+    left: 50%;
+    margin-left: -20vh;
+    pointer-events: none;
+    z-index: 2;
+}
+.modal .dialog .btn-lottery {
+    position: relative;
+    display: block;
+    z-index: 3;
+    width: 22vh;
+    margin: 3vh auto 0;
+    text-align: center;
+}
+.modal .dialog .btn-link-use {
+    display: block;
+    position: absolute;
+    width: 22vh;
+    bottom: 2vh;
+    left: 50%;
+    margin-left: -11vh;
+}
+@-webkit-keyframes hand {
+    0% {
+        -webkit-transform: rotate(0deg) scale(1,1) translate3d(0,0,0);
+    }
+    50% {
+        -webkit-transform: rotate(-6deg) scale(.9,.9) translate3d(-10px,-10px,0);
+    }
+    100% {
+        -webkit-transform: rotate(0deg) scale(1,1) translate3d(0,0,0);
+    }
+}
+@keyframes hand {
+    0% {
+        transform: rotate(0deg) scale(1,1) translate3d(0,0,0);
+    }
+    50% {
+        transform: rotate(-6deg) scale(.9,.9) translate3d(-10px,-10px,0);
+    }
+    100% {
+        transform: rotate(0deg) scale(1,1) translate3d(0,0,0);
+    }
+}
+.modal .dialog .btn-lottery:after {
+    content: '';
+    position: absolute;
+    width: 5.5vh;
+    height: 5.5vh;
+    background: url(../images/hand.png) no-repeat;
+    background-size: 100% 100%;
+    bottom: -2vh;
+    right: 0;
+    z-index: 4;
+    pointer-events: none;
+
+    animation: hand .8s 0s infinite forwards alternate;
+    -webkit-animation: hand .8s 0s infinite forwards alternate;
+}
+.modal .dialog .btn-lottery img {
+    width: 100%;
+}
+/* 通用弹层样式_E */
+
+#thanks-dialog .t2 {
+    position: absolute;
+    height: 24vh;
+    top: -19vh;
+    left: 50%;
+    margin-left: -19.5vh;
+    pointer-events: none;
+}
+#thanks-dialog .dialog-body {
+    position: relative;
+    width: 72vw;
+    height: 56vh;
+    margin: 22vh auto 0;
+    padding-top: 7vh;
+    background: #fffce1;
+    text-align: center;
+}
+#thanks-dialog .dialog-body .qr {
+    position: relative;
+    z-index: 9999;
+    width: 32vh;
+    height: 32vh;
+    margin: 0 auto;
+    padding: 1.5vh;
+    border: 1px solid #dcc79c;
+    border-radius: 30px;
+}
+#thanks-dialog .dialog-body .qr img {
+    width: 100%;
+    height: 100%;
+}
+#thanks-dialog .dialog-body .qr .fix {
+    position: absolute;
+    top: -28vh;
+    left: -0.1vh;
+    opacity: 0;
+}
+#thanks-dialog .dialog-body .qr:after {
+    content: '';
+    position: relative;
+    top: 3vh;
+    color: #341d08;
+    font-size: 22px;
+    pointer-events: none;
+}
+#thanks-dialog .dialog-body .qr1:after {
+    content: '下载新英体育APP  欣赏精彩英超赛事';
+}
+#thanks-dialog .dialog-body .qr2:after {
+    content: '长按识别二维码 欣赏精彩英超赛事';
+}
+#thanks-dialog .btn-thanks-lottery {
+    display: inline-block;
+}
+#thanks-dialog .btn-thanks-lottery img {
+    height: 6vh;
+}
+#thanks-dialog .btn-lottery-box {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 1vh;
+}
+
+@-webkit-keyframes lesup {
+    0% { -webkit-transform: rotateY(15deg); }
+    100% { -webkit-transform: rotateY(-15deg); }
+}
+@keyframes lesup {
+    0% { transform: rotateY(15deg); }
+    100% { transform: rotateY(-15deg); }
+}
+.modal .dialog .t1, .modal .dialog .t2 {
+    transform: rotateY(15deg);
+    -webkit-transform: rotateY(15deg);
+
+    -webkit-animation: lesup 3s 0s infinite alternate;
+    animation: lesup 3s 0s infinite alternate;
+}

@@ -1,0 +1,158 @@
+body{
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg-record.jpg) no-repeat top center fixed #03010c;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.container {
+  width: 100%;
+  height: 93%;
+  margin-bottom: 50px;
+  overflow-y: scroll;
+}
+.tip{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  color: #FFB800;
+  padding: 4px 10px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bolder;
+  width: 100%;
+  background-color: rgba(8, 16, 42, 0.8);
+  z-index: 9;
+}
+.content {
+  padding: 24px 0 10px;
+}
+.content ul{
+	padding:0;
+}
+.content ul li{
+  width: 100%;
+  list-style: none;
+  background-color: rgba(8, 16, 42, 0.8);
+  margin: 5px 0 3px;
+  padding: 10px 0;
+  position: relative;
+  overflow: auto;
+  min-height: 64px;
+}
+.content ul li img{
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 10px;
+}
+.con-box {
+  width: 100%;
+  padding-left: 64px;
+  overflow: hidden;
+}
+.con{
+  width: 100%;
+  padding-right: 8px;
+  overflow: hidden;
+}
+.content ul li .prname{
+  color: #ffb800;
+  font-size: 16px;
+  font-weight: bolder;
+  max-height: 168px;
+  line-height: 21px;
+  margin: 2px 5px;
+  display: block;
+  position: relative;
+  word-break: break-all;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.content ul li .prtime{
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin: 0 6px;
+  float: left;
+}
+.content ul li a{
+  position: absolute;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  bottom: 6px;
+  right: 6px;
+  padding: 2px 12px;
+  border-radius: 20px;
+  border: 2px solid #212a54;
+  color: #FFF;
+  font-size: 12px;
+  background-image: -webkit-linear-gradient(-90deg, #4f65b7, #2b396d);
+}
+.content ul li .noaccept{
+  background: #5e5d5d;
+}
+.back{
+  display: block;
+  background: red;
+  padding: 10px;
+  text-align: center;
+  margin: 5px 100px;
+  border-radius: 20px;
+  color: #fff;
+}
+.norecord{
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  color: #FFF;
+  opacity: 0.8;
+  margin-top: 58%;
+  font-weight: bolder;
+  text-shadow: 2px 2px 1px rgba(0,0,0,.8);
+  padding: 0 10px;
+}
+.qrcode img{
+  margin: 10px auto;
+}
+.qrsure-btn{
+  width: 60%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 35px;
+  background: #fe0000;
+  font-size: 14px;
+  color: #fff!important;
+  display: block;
+  margin: auto;
+}
+.qrtext{
+  margin: 20px;
+  text-align: center;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: 9;
+}
+/* 很小的手机 */
+@media screen
+and (max-device-width : 300px)
+and (max-device-height : 460px) {
+  .award-img {
+    display: none !important;
+  }
+  .award-luckEt, .award-luck {
+    font-size: 13px;
+    font-weight: bolder;
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>过年了</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/make.css">
+</head>
+<body class="error">
+<img src="images/voice-icon.png" class="none"/>
+
+<section class="card-section">
+	<div class="card">
+		<img id="hk" cardID="hk1" src="images/card/hk1.jpg" />
+		
+	    <section id="card-img" class="card-img">
+	    	<a class="back" id="back" data-collect="true" data-collect-flag="hn-party-make-back" data-collect-desc="返回去摇奖" >去摇奖</a>
+	    	<img class="card-bg" src="images/card-bg.png" />
+	    	<div class="upload-box">
+		        <img class="push_img" src="images/default-head.png" alt="" />
+		        <a href="javascript:void(0)" data-collect="true" data-collect-flag="make-btn-upload" data-collect-desc="上传图片" class="btn_upload" id="btn_upload"><img src="images/tj.png"></a>
+	        </div>
+	    </section>
+	    <section class="card-dia">
+	    	<div class="dia">
+	    		<label class="head_img"><img src="images/default-head.png"/></label>
+	    		<div class="info-box word-wrapper">
+	    			<textarea class="zfy" placeholder="快输入您的祝福吧~"></textarea>
+	    			<a class="switch-btn voice-btn" id="switch-voice" data-collect="true" data-collect-flag="make-btn-upload-voice" data-collect-desc="上传语音"><img src="images/voice-icon.png"/></a>
+	    		</div>
+	    		<section class="info-box voice-wrapper none">
+	    			<section class="voice-show none">
+			    		<a href="javascript:void(0);" id="btn-play" class="btn-play">
+							<span class="icon-sound"></span>
+							<span class="timer"></span>
+							<span class="focus"></span>
+						</a>
+			    	</section>
+		    		<a href="javascript:void(0);" id="btn-voice" class="btn-voice none">长按&nbsp;录音</a>
+		    		<a href="javascript:void(0);" id="switch-word" class="switch-btn switch-word"><img src="./images/btn-word.png"></a>
+		    	</section>
+	    	</div>
+			<a class="btn none" id="ok" data-collect="true"
+			   data-collect-flag="make-ok" data-collect-desc="进入分享页" >送给她/他</a>
+			<a class="btn" id="wyzhk" data-collect="true"
+			   data-collect-flag="make-wyzhk" data-collect-desc="返回贺卡模板页" >生成专属祝福</a>
+		</section>
+		<div class="copyright"></div>
+	</div>
+	<div class="arrow"></div>
+</section>
+<section id="mainPage" class="page none"></section>
+<form id="upload-form" class="upload-form none" style="width: 0;height:0;" enctype="multipart/form-data" method="post" action="http://test.holdfun.cn/portal/fileupload/image">
+	<input type="file" class="input-file-upload" id="input-file-upload" onchange="fileSelected();" accept="image/*" capture>
+</form>
+<section class="card-warp none">
+	<div class="card-list">
+		<h1 class="diamond-title"><span>选</span><span>择</span><span>拜</span><span>年</span><span>卡</span><span>片</span></h1>
+		<div class="card-hk" data_id="hk1"><img src="images/card/hk1.jpg"></div>
+		<div class="card-hk" data_id="hk2"><img src="images/card/hk2.jpg"></div>
+		<div class="card-hk" data_id="hk3"><img src="images/card/hk3.jpg"></div>
+		<a class="btn btn-crm" id="btn-crm" data-collect="true" data-collect-flag="make-crm-btn" data-collect-desc="卡片制作-选择贺卡确认按钮">确 定</a>
+	</div>
+</section>
+<section id="record-dialog" class="dialog none">
+	<section class="record-container">
+		<section class="icon-record"></section>
+		</section>
+	<p>录音中...松手停止</p>
+</section>
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.selector.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/weixinapi.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/sha1.min.js"></script>
+
+<script src="js/plugins/hammer.min.js"></script>
+<script src="js/plugins/exif.js"></script>
+
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="js/app/voice.js"></script>
+<script src="js/app/make.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

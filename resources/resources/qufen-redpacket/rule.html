@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>答题红包</title>
+    <style type="text/css">
+    html,
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('images/rulebg.jpg') no-repeat center center;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .gotosend {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        width: 38%;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        margin-left: -19%;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
+    
+    .qufenlog {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        bottom: 15%;
+        left: 50%;
+        margin-left: -50px;
+    }
+    /* iPhone4 */
+    
+    @media screen and (min-device-width:320px) and (max-device-height:500px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio:2) {
+        .gotosend {
+            top: 56%;
+        }
+        .qufenlog {
+            bottom: 13%;
+        }
+    }
+    /* iPhone5 */
+    
+    @media screen and (min-device-width: 320px) and (min-device-height: 500px) and (max-device-height: 570px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+        .gotosend {
+            top: 57%;
+        }
+        .qufenlog {
+            bottom: 13%;
+        }
+    }
+    /* iPhone6 */
+    
+    @media screen and (min-device-width: 360px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+        .gotosend {
+            top: 58%;
+        }
+        .qufenlog {
+            bottom: 13%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="gotosend">去发答题红包</a>
+    <img src="images/qufenlog.jpg" class="qufenlog" alt="" />
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+.door-wrapper{
+	position: absolute;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24fhrcyiktg69bg/bg-game-door.png) no-repeat;
+	background-size: 100% 100%;
+	left: 0;
+	bottom: 10%;
+	width: 100%;
+	height: 83%;
+	z-index: 2;
+}
+.rule-wrapper{
+	position: absolute;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24fhrcyiktg69bg/bg-game-cover-bottom.png) no-repeat;
+	background-size: 100% 100%;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 18%;
+	z-index: 3;
+}
+.door-shan{
+	position: absolute;
+	width: 31%;
+	height: 45%;
+	bottom: 33%;	
+	z-index: 1;
+	transition: all 1s;
+}
+.door-shan.door-left{
+	background: url(../images/icon-game-door-left.jpg) no-repeat;
+	background-size: 100% 100%;
+	left: 19%;
+}
+.door-shan.door-right{
+	background: url(../images/icon-game-door-right.jpg) no-repeat;
+	background-size: 100% 100%;
+	right: 19%;
+}
+
+.tangyuan1{
+    position: absolute;
+    width: 23%;
+    bottom: 11%;
+    left: 7%;
+    z-index: 3;
+}
+.tangyuan2{
+    position: absolute;
+    width: 21%;
+    bottom: 18%;
+    right: 16%;
+    z-index: 3;
+}
+.tangyuan3{
+    position: absolute;
+    width: 17%;
+    bottom: 27%;
+    left: 32%;
+    z-index: 3;
+}
+
+#touch{
+    position: absolute;
+    width: 12%;
+    top: 45%;
+    left: 47%;
+    z-index: 1;
+    -webkit-animation: touch 4s 0s ease infinite;
+	animation: touch 4s 0s ease infinite;
+}
+
+@-webkit-keyframes touch{
+  100%{
+  	opacity: 0;
+    -webkit-transform:scale(0.8);
+    transform:scale(0.8);
+  }
+  70%{
+  	opacity: 1;
+  	-webkit-transform:scale(0.8);
+    transform:scale(0.8);
+  }
+  30%{
+  	opacity: 1;
+  	-webkit-transform:scale(1.0);
+    transform:scale(1.0);
+  }
+  0% {
+  	opacity: 0;
+    -webkit-transform:scale(1.0);
+    transform:scale(1.0);
+  }
+}
+
+
+#stage_index.open .door-right{
+    transform: scaleX(0.7) skewY(10deg);
+    transform-origin: 98% 50%;
+    box-shadow: inset 0px 0px 1000px rgba(0,0,0,0.4);
+}
+#stage_index.open .door-left{
+    transform: scaleX(0.7) skewY(-10deg);;
+    transform-origin: 2% 50%;
+    box-shadow: inset 0px 0px 1000px rgba(0,0,0,0.4);
+}
+
+.rule-item{
+    position: absolute;
+    background-size: 100% 100%;
+    left: 3%;
+    bottom: 4%;
+    width: 94%;
+    z-index: 3;
+}

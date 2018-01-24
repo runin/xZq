@@ -1,0 +1,149 @@
+body {
+    background: #f8f8f9;
+}
+a,a:hover {
+	text-decoration: none;
+}
+.main {
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-size: 15px;
+}
+.avatar {
+    text-align: center;
+    padding: 30px 0 20px;
+}
+.avatar .avatar-wrapper {
+	width: 80px;
+    height: 80px;
+	margin: 0 auto;
+}
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+.avatar p {
+    color: #9A6E29;
+	
+    margin-top: 8px;
+}
+.list a {
+    height: 45px;  line-height: 45px;
+	
+    color: #333;
+    display: block;
+    padding: 0 10px;
+}
+
+.list a.hg {
+	position: relative;
+}
+.list a.hg:before {
+    background-position: -166px -52px;
+}
+.list a.hg i {
+	display: block;
+	background: url(../images/icon_hot.png) no-repeat 0 0;
+	background-size: 42px auto;
+	width: 42px;
+	height: 22px;
+	position: absolute;
+	left: 76px;
+	top: 4px;
+}
+.list a.jm:before {
+    background-position: -88px -52px;
+	
+}
+.list a.nav:after {
+    background-position: -208px 9px;
+	
+    width: 12px;
+    height: 23px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 0;
+}
+
+.list a.nav {
+	
+}
+
+.list ul li {
+	padding-left: 30px;
+	color: #333333;
+    margin-top: 1px;
+    background: #eeedf0;
+}
+
+.list li.border {
+}
+a.btn-back {
+    display: block;
+    margin-top: 60px;
+    color: #8C592E;
+    text-shadow: 0 1px 1px #FBFFC3;
+    background: #ffc12d;
+}
+a.btn-back:hover {
+    background: #ffc12d;
+    color: #8C592E;
+    text-shadow: 0 1px 1px #FBFFC3;
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1100px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1200px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	a.btn-back {
+	    margin-top: 30px;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 570px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:3) {
+
+
+}

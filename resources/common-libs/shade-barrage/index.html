@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <title>无标题文档</title>
+    <link rel="stylesheet" href="css/core.css" />
+    <style>
+        .body {
+            width: 90%;
+            margin-left: 5%;
+            float: left;
+            margin-top: 2%;
+            height: 100%;
+            overflow-y: auto;
+        }
+        .page-con{
+            /*position: relative;*/
+        }
+        .content {
+            width: 100%;
+        }
+        .content li {
+            height: 45px;
+            margin: 0 auto;
+        }
+        .content li:first-child {
+           opacity: .2;
+        }
+        .content li:nth-child(2) {
+           opacity: .4;
+        }
+        .content li:nth-child(3) {
+           opacity: .6;}
+        .content li:nth-child(4) {
+           opacity: .8;
+        }
+        .content li:nth-child(5) {
+           opacity: 1;
+            -webkit-animation-name:f1;
+            -webkit-animation-duration: 1.5s;
+            -webkit-animation-timing-function: ease-in;
+            -webkit-animation-iteration-count:1;
+            -webkit-animation-fill-mode: forwards;
+            -webkit-transform-origin: left center;
+        }
+        @-webkit-keyframes f1{
+            0%{
+                -webkit-transform: scale(.2) ;
+            }
+            100%{
+                -webkit-transform:scale(1);
+            }
+        }
+        .content li .ron {
+            display: inline-block;
+            width: 75%;
+            margin-top: 6px;
+        }
+        .content li .ron-me {
+            position: relative;
+            float: right;
+        }
+        .content li .ron p {
+            font-size: 12px;
+            color: #fff;
+            margin-left: 18px;
+            margin-bottom: 2px;
+        }
+        .content li .ron .tar {
+            width: 100%;
+            text-align: right;
+            padding-right: 36px;
+            margin-top: -9px;
+        }
+        .content li label:first-child{
+            position: relative;
+            top: 0;
+        }
+        .content li label {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            display: inline-block;
+            border: 2px solid #FFF;
+            overflow: hidden;
+        }
+        .content li img {
+            border-radius: 100%;
+        }
+        .content li .triangle {
+            position: relative;
+            display: inline-block;
+            float: left;
+            margin-top: 4%;
+            margin-left: 5px;
+            display: block;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            border-bottom: 5px solid transparent;
+            border-top: 5px solid transparent;
+            border-left: none;
+            border-right: 5px solid #6D5C93;
+        }
+        .content li .triangle-top {
+            position: relative;
+            display: inline-block;
+            float: left;
+            margin-top: 23%;
+            margin-left: -13%;
+            display: block;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            border-bottom: 8px solid #6D5C93;
+            border-top: none;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+        }
+        .content li .triangle-right {
+            position: relative;
+            display: inline-block;
+            float: right;
+            margin-top: 4%;
+            margin-right: 2%;
+            display: block;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            border-bottom: 5px solid transparent;
+            border-top: 5px solid transparent;
+            border-right: none;
+            border-left: 5px solid #6D5C93;
+        }
+        .content li .article {
+            max-width: 85%;
+            display: inline-block;
+            zoom: 1;
+            padding: 0 10px;
+            background: url(images/comment-plt-bg.png) repeat-x;
+            background-size: 100% 100%;
+            color: #fff;
+            word-break: break-all;
+            font-size: 12px;
+            text-overflow: ellipsis;
+            display: -webkit-inline-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 27px;
+            line-height: 27px;
+        }
+        .content li .article-right {
+            max-width: 85%;
+            display: inline-block;
+            zoom: 1;
+            padding: 0 10px;
+            background: url(images/comment-plt-bg.png) repeat-x;
+            background-size: 100% 100%;
+            color: #fff;
+            word-break: break-all;
+            font-size: 12px;
+            padding-left: 0;
+            text-overflow: ellipsis;
+            display: -webkit-inline-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 27px;
+            line-height: 27px;
+            padding-left: 5px;
+        }
+        .fr {
+            float: right;
+        }
+        .fl {
+            float: left;
+        }
+        .box{margin:20px;width:90%;height:180px;overflow:hidden;border:1px solid #ccc;padding:0 10px 15px;font-size:14px;}
+    </style>
+
+</head>
+
+<body>
+<div class="box">
+    <ul id="comment_list" class="content"></ul>
+</div>
+<script src="js/zepto.min.js"></script>
+<script src="js/zepto.textSlider.js"></script>
+<script>
+    $(function(){
+        var t = '',me = this;
+        $.each(msg, function(i, items){
+           t += items;
+        });
+        $('#comment_list').append(t);
+        $(".box").textSlider({
+            speed: 30, //数值越大，速度越慢
+            line: 4    //触摸翻滚的条数
+        });
+    });
+    var msg =
+            [
+                '<li><label class="fl"><img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM5zibaUichPjt3Zp9iaOEltzticjlLPXUYA4XEFX5eCtxKkHw/64"></label><div class="ron"><span class="triangle"></span><div class="article fl">1哈哈哈哈哈哈哈哈哈哈</div></div></li>',
+                '<li><label class="fl"><img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM5zibaUichPjt3Zp9iaOEltzticjlLPXUYA4XEFX5eCtxKkHw/64"></label><div class="ron"><span class="triangle"></span><div class="article fl">2哈哈哈哈哈哈哈哈哈哈</div></div></li>',
+                '<li><label class="fl"><img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM5zibaUichPjt3Zp9iaOEltzticjlLPXUYA4XEFX5eCtxKkHw/64"></label><div class="ron"><span class="triangle"></span><div class="article fl">3哈哈哈哈哈哈哈哈哈哈</div></div></li>',
+                '<li><label class="fl"><img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM5zibaUichPjt3Zp9iaOEltzticjlLPXUYA4XEFX5eCtxKkHw/64"></label><div class="ron"><span class="triangle"></span><div class="article fl">4哈哈哈哈哈哈哈哈哈哈</div></div></li>',
+                '<li><label class="fl"><img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM5zibaUichPjt3Zp9iaOEltzticjlLPXUYA4XEFX5eCtxKkHw/64"></label><div class="ron"><span class="triangle"></span><div class="article fl">5哈哈哈哈哈哈哈哈哈哈</div></div></li>',
+                '<li><label class="fl"><img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM5zibaUichPjt3Zp9iaOEltzticjlLPXUYA4XEFX5eCtxKkHw/64"></label><div class="ron"><span class="triangle"></span><div class="article fl">6哈哈哈哈哈哈哈哈哈哈</div></div></li>',
+                '<li><label class="fl"><img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM5zibaUichPjt3Zp9iaOEltzticjlLPXUYA4XEFX5eCtxKkHw/64"></label><div class="ron"><span class="triangle"></span><div class="article fl">7哈哈哈哈哈哈哈哈哈哈</div></div></li>',
+                '<li><label class="fl"><img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM5zibaUichPjt3Zp9iaOEltzticjlLPXUYA4XEFX5eCtxKkHw/64"></label><div class="ron"><span class="triangle"></span><div class="article fl">8哈哈哈哈哈哈哈哈哈哈</div></div></li>',
+                '<li><label class="fl"><img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM5zibaUichPjt3Zp9iaOEltzticjlLPXUYA4XEFX5eCtxKkHw/64"></label><div class="ron"><span class="triangle"></span><div class="article fl">9哈哈哈哈哈哈哈哈哈哈</div></div></li>',
+                '<li><label class="fl"><img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM5zibaUichPjt3Zp9iaOEltzticjlLPXUYA4XEFX5eCtxKkHw/64"></label><div class="ron"><span class="triangle"></span><div class="article fl">10哈哈哈哈哈哈哈哈哈哈</div></div></li>'
+            ];
+</script>
+</body>

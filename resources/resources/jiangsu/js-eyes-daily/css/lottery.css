@@ -1,0 +1,208 @@
+.main{
+	width: auto;
+	padding-bottom :40px;
+	text-align: center;
+}
+header{
+	padding-top: 60px;
+	background: url(../images/tv-logo.png) no-repeat 0px 10px;
+	background-size: 30%;
+	margin: 0 20px;
+}
+.vote-logo{
+	width: 80%;
+	margin: 10px auto;
+}
+.vote-title{
+	width: 80%;
+	color: #fff;
+	font-weight: bold;
+	font-size: 21px;
+	margin: 0 auto;
+}
+.content-items{
+	width: auto;
+
+}
+.content-items ul{
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	padding: 0 10px;
+	margin: 0 20px;
+}
+.content-items ul li{
+	font-size: 17px;
+	line-height: 20px;
+	padding:16px 80px 16px 0px;
+    background: url(../images/zan.png) no-repeat center right ;
+	background-size: 40px 40px;
+	border-bottom: 1px solid #c71f1f;
+	text-align: left;
+	word-wrap: break-word;
+}
+.content-items ul li:last-child{
+	border: none;
+}
+.content-items ul li.selected{
+	 background: url(../images/zan-ed.png) no-repeat center right ;
+	 background-size: 40px 40px;
+}
+.progress{
+    color: #fff;
+    font-size: 12px;
+}
+ul.progress li{
+    width: 100%; 
+    margin: 5px auto 5px;
+    line-height: 26px;
+    background: url(../images/zan.png) no-repeat center right ;
+    background-size: 40px 40px;
+}
+.progress li label{
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 17px;
+}
+.progress li .lv{
+	display: inline-block;
+	width: 40%;
+	position: absolute;
+	left: 70%;
+	top : -1px;
+    color: #fff;
+    background: none;
+    z-index: 3;
+    line-height: 14px;
+    height: 14px;
+}
+.progress li p{
+    display:block;
+    width: 100%;
+    border :1px solid #fff;
+    height: 14px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+}
+.progress li .bar{
+    background: #fff;
+    width: 0%;
+    border-radius: 3px;
+    display: block;
+    height: 14px;
+    -webkit-transition: width 1s ease-out .2s;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    z-index: 2;
+}
+.outer{
+	color: #fff;
+	display: inline-block;
+	position: absolute;
+	right: 16px;
+	top:20px;
+	font-size: 14px;
+}
+.ddtj{
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+    padding-left: 4px;
+    text-decoration: underline;
+}
+.ddtj-before{
+    background: url(../images/redenve.png) 0 0 no-repeat;
+    background-size: 20px;
+    height: 26px;
+    width: 20px;
+    display: inline-block;
+    float: left;
+}
+@-webkit-keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}

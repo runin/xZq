@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <title>昆明广播电视台</title>
+        <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/core.css" />
+        <link rel="stylesheet" href="./css/dialog.css" />
+        <link rel="stylesheet" href="./css/yaoyiyao.css" />
+    </head>
+    <body  pagename='yaoyiyao'>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+<!-- 摇奖页面 -->
+<section class="yao-bg">
+    <div class="main-top m-t-b">
+        <div class="marquee none">
+        <ul></ul>
+    </div>
+    <a class="yao-back" id="yao-btn-back" data-collect="true" data-collect-flag="km-index-join" data-collect-desc="首页-进入活动">
+    <img src="./images/yao-back.png" class="yao-back">
+    </a>
+    <div class="info-box">
+        <p class="count none"></p>
+    </div>
+
+    <div class="countdown">
+        <img src="./images/yao-hand.png" class="yao-hand wobble">
+        <span class="countdown-tip"></span>
+        <span class="detail-countdown"></span>
+    </div>
+    <div class="tttj none" id="tttj" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+            <img class="wobble" src="./images/icon-redbag.png">
+            <span></span>
+     </div>
+    <!-- 摇奖提示语 -->
+</div>
+<div class="main-foot m-f-b">
+    <div class="weizhongjang">
+        <p class="yao-cool-tips none"><span>手气不太好，继续加油~</span></p>
+    </div>
+    <div class="bussines-logo-show">
+        <div class="logo-content">
+            <ul>
+                <li>
+                    <div class="logo-img-box" data-collect="true" data-collect-flag="goods-box-goods1" data-collect-desc="" data-detailName ="" data-detailContent ="">
+                        <img class="logo-img" src="images/logo/logo3.png" onerror='$(this).addClass("none")' />
+                        <p class="logo-name">让你天天安睡<br>的投资平台</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo-img-box" data-collect="true" data-collect-flag="logo-box-logo1" data-collect-desc="" data-detailName ="" data-detailContent ="">
+                        <img class="logo-img" src="images/logo/logo4.png" onerror='$(this).addClass("none")' />
+                        <p class="logo-name">双11不用秒杀<br>的秒杀价</p>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="logo-img-box" data-collect="true" data-collect-flag="goods-box-goods1" data-collect-desc="" data-detailName ="" data-detailContent ="">
+                        <img class="logo-img" src="images/logo/logo2.png" onerror='$(this).addClass("none")' />
+                        <p class="logo-name">不选索菲亚<br>何必要定制</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="logo-img-box" data-collect="true" data-collect-flag="logo-box-logo" data-collect-desc="" data-detailName ="" data-detailContent ="">
+                        <img class="logo-img" src="images/logo/logo1.png" onerror='$(this).addClass("none")' />
+                        <p class="logo-name">百家连锁<br>全国质保</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo-img-box" id="hongruilai" data-collect="true" data-collect-flag="logo-box-logo5" data-collect-desc="" data-detailName ="" data-detailContent ="">
+                        <img class="logo-img" src="images/logo/logo5.png" onerror='$(this).addClass("none")' />
+                        <p class="logo-name">让人生红<br>起来</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo-img-box" id="kunming" data-collect="true" data-collect-flag="logo-box-logo6" data-collect-desc="" data-detailName ="" data-detailContent ="">
+                        <img class="logo-img" src="images/logo/logo6.png" onerror='$(this).addClass("none")' />
+                        <p class="logo-name">本地大号昆明<br>吃喝玩乐</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- <div class="test" id="test" style="background:red;color:#fff;height:40px;width:100px;position:absolute;z-index: 200;top:30%;">test</div> -->
+</section>
+<footer>
+<p class="copyright"></p>
+</footer>
+<!-- 背景图片 -->
+<div class="home-box-bg"></div>
+<!-- <div id="test" style="background:red;width:120px;height:20px;z-index: 100;bottom:10%;position:absolute">test</div> -->
+<script src="./js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/zepto.selector.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/app/dialog.js"></script>
+<script src="./js/plugins/shake.js"></script>
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/app/yaoyiyao.js"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

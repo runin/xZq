@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" http-equiv="content-type" content="text/html" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Pragram" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link href="css/core.css" rel="stylesheet" type="text/css" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+    <title>天天淘金代金券使用说明</title>
+</head>
+<style>
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 50px !important;
+}
+
+body {
+    position: relative;
+    background: url("images/red-exchange-bg.jpg") top center;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    line-height: 1.666;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.red-packetbutton {
+    position: relative;
+    width: 44%;
+    margin-left: 28%;
+    display: block;
+    background: #FFD036;
+    color: #c0202c;
+    height: 40px;
+    border-radius: 21px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.content {
+    position: relative;
+    margin: 5% auto 5% auto;
+    text-align: center;
+}
+
+.exchange-title,
+.luck-word {
+    text-align: center;
+}
+
+.luck-word img {
+    width: 60%;
+    margin: 5px;
+}
+
+.exchange-title img {
+    width: 60%;
+}
+
+.exchange-infor {
+    position: relative;
+    text-align: left;
+    margin: 5% auto 2% auto;
+    padding: 0px 30px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.joinscale-btn {
+    -webkit-animation: ft .6s ease-out both;
+    animation: ft .6s ease-out both;
+}
+
+@-webkit-keyframes ft {
+    0% {}
+    20% {
+        -webkit-transform: scale(1.5, .7);
+        transform: scale(1.5, .7);
+    }
+    40% {
+        -webkit-transform: scale(.7, 1.5);
+        transform: scale(.7, 1.5);
+    }
+    60% {
+        -webkit-transform: scale(1.5, .7);
+        transform: scale(1.5, .7);
+    }
+    80% {
+        -webkit-transform: scale(.7, 1.5);
+        transform: scale(.7, 1.5);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+.qt-code {
+    position: relative;
+    z-index: 2;
+    width: 56%;
+    left: 20%;
+}
+
+.footer {
+    position: absolute;
+    bottom: -4px;
+    z-index: 1;
+}
+
+@media screen and (min-device-width:320px) and (max-device-height:500px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio:2) {
+    .content {
+        margin: 0px auto;
+    }
+}
+</style>
+
+<body>
+    <div class="exchange-top">
+        <img src="./images/red-exchange-top.png" alt="">
+    </div>
+    <div class="content">
+        <div class="exchange-title">
+            <img src="./images/exchange-title.png" alt="">
+        </div>
+        <div class="exchange-infor">
+            <p>第一步：点击此页面下方“立即兑换”按钮。</p>
+            <p>第二步：长按二维码进入【天天淘金】点击“查看代金券”。</p>
+        </div>
+        <div class="luck-word">
+            <img src="./images/luck-word.png" alt="">
+        </div>
+        <a href="#" data-collect="true" class="red-packetbutton click-bg" data-collect-flag="tt-duobao-red-guideexchange" data-collect-desc="天天夺宝-引导代金券兑换" id="">
+               立即兑换
+        </a>
+    </div>
+    <div class="qt-code">
+        <img src="./images/qt-code.png" alt="">
+    </div>
+    <script src="js/config.js" type="text/javascript"></script>
+    <script src="js/plugins/zepto.min.js" type="text/javascript"></script>
+    <script src="js/plugins/zepto.cookie.min.js" type="text/javascript"></script>
+    <script src="js/plugins/zepto.selector.min.js" type="text/javascript"></script>
+    <script src="js/plugins/zepto.touch.js" type="text/javascript"></script>
+    <script src="js/plugins/zepto.fx.min.js" type="text/javascript"></script>
+    <script src="js/plugins/md5.js" type="text/javascript"></script>
+    <script src="js/plugins/core.js" type="text/javascript"></script>
+    <script src="js/plugins/sha1.min.js" type="text/javascript"></script>
+    <script src="js/authorize_userinfo_v3.js" type="text/javascript"></script>
+    <script src="js/jssdk.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+<script>
+
+// 拉起公众号下的所有卡卷
+$(function() {
+    $("body").height($(window).height());
+    wx.ready(function() {
+        // getResult("wx/getCardId",{kind:1},"cardIdCallBackHandler",true);获取卡卷信息
+        getResult("wx/cardInfo/" + busiAppId, {}, "cardInfoCallBackHandler", false);
+    });
+});
+function cardInfoCallBackHandler(data) {
+    if (data.result) {
+        var timestamp = data.message.timestamp;
+        var nor_sr = data.message.nonr_str;
+        var sigature = data.message.signature;
+        // var cardId = data.message.cardId;
+        // alert(cardId);
+        //拉起卡卷列表
+        $(".red-packetbutton").click(function(e) {
+            e.preventDefault();
+            $(this).css({
+                "-webkit-animation-name": "ft",
+                "-webkit-animation-iteration-count": "1",
+                "-webkit-animation-duration": ".6s"
+            });
+        });
+        $(".red-packetbutton").on("webkitAnimationEnd", function() {
+            $(".red-packetbutton").css({
+                "-webkit-animation": ""
+            });
+            //核销卡卷
+            wx.chooseCard({
+                timestamp: timestamp, // 卡券签名时间戳
+                nonceStr: nor_sr, // 卡券签名随机串
+                cardSign: sigature, // 卡券签名
+                // cardId: cardId, // 卡券签名
+                success: function(res) {
+                    var cardInfo = JSON.parse(res.cardList);
+                    var code = cardInfo[0].encrypt_code; //获取用户卡卷code
+                    var cardId = cardInfo[0].card_id;
+                    getResult("wx/rechargeRedNew", {
+                        appId: busiAppId,
+                        openId: openid,
+                        qfOpenid:tttj_openid,
+                        code: encodeURIComponent(code),
+                        cardId: cardId
+                    }, "rechargeRedNewCallBackHandler", false);
+                }
+            });
+        });
+        //拉起卡卷结束
+    } else {
+        showTips("获取卡卷信息失败");
+    }
+};
+function rechargeRedNewCallBackHandler(data) {
+    if (data.result) {
+        showTips("代金券兑换成功!");
+        if (data.subscrie == "1") {
+            toUrl("./html/user/redpacket.html");
+        }
+    } else {
+        showTips("啊哦，网络在开小差噢，稍后再试试吧~");
+    }
+};
+</script>
+
+</html>

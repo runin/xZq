@@ -1,0 +1,228 @@
+body{
+    background: #BFEDFA url(../images/common-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+header{
+    background: #0086AC;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+header label{
+    display: block;
+    width: 20%;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .8);
+    overflow: hidden;
+    margin: 0 auto 1%;
+}
+header label img{
+    vertical-align: middle;
+}
+header div.sum-jf span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav{
+    display: -webkit-box;
+    background: #91B2BC;
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+}
+nav div{
+    width: 50%;
+    padding: 2% 0;
+    text-align: center;
+}
+nav div.active{
+    background: #00B4FF;
+    border-bottom: 1px solid #91B2BC;
+}
+.list{
+    padding-bottom: 70px;
+}
+.list li{
+    margin-bottom: 5px;
+    background-color: rgba(0,0,0,0.05);
+}
+.list li a{
+    display: block;
+    margin: 1% 3% 2% 6%;
+    padding-top: 2px;
+}
+.list li a img{
+    width: 22%;
+    margin-right: 3%;
+}
+.list .right {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-top: 5px;
+}
+.list .right h2{
+    font-size: 15px;
+    color: #0085BC;
+    line-height: 25px;
+}
+.list .right p{
+    font-size: 13px;
+    color: #000;
+}
+.list .right p span.price{
+    font-size: 12px;
+    color: #4C4C4C;
+    -webkit-transform: scale(.9);
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+/*.list li:first-child .right:after,.list li:nth-child(2) .right:after,.list li:nth-child(3) .right:after{
+    display: block;
+    background: url(../images/hot-bg.png) no-repeat;
+    background-size: 36px auto;
+    width: 36px;
+    height: 37px;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top: -13px;
+    right: -36px;
+    color: #fff;
+    padding: 2px;
+}
+.list li:first-child .right:after{
+    content: '热门 1';
+}
+.list li:nth-child(2) .right:after{
+    content: '热门 2';
+}
+.list li:nth-child(3) .right:after{
+    content: '热门 3';
+}*/
+.back-btn {
+    margin: 10px auto;
+    width: 35%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 35px;    
+    line-height: 35px;
+}
+
+.gift{
+    margin-top: -17px;
+    padding-top: 17px;
+    margin-bottom: 50px;
+}
+.gift-timeline {
+    position: relative;
+
+    padding-left: 28px;
+}
+.gift-timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: #0688CC;
+}
+.gift-timeline li {
+    padding-left: 27px;
+
+    margin-top: 17px;
+    position: relative;
+}
+.gift-timeline li:last-child:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gift-time {
+    color: #0688CC;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.gift-icon {
+    width: 26px;
+
+    height: 26px;
+    border: 2px solid #0688CC;
+    border-radius: 50%;
+    position: absolute;
+    left: -12px;
+    background: #fff;
+}
+.gift-icon:before {
+    content: '';
+    background: url(../images/gift-icon.png) no-repeat;
+    background-size: 14px auto;
+    width: 14px;
+    height: 17px;
+    display: block;
+    margin-left: 4px;
+    margin-top: 3px;
+}
+.gift-content {
+    background: #FFFFFF;
+
+    border-radius: 8px 0 0 8px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.gift-content div.des{
+    font-size: 13px;
+}
+.gift-content h2 {
+    color: #0688CC;
+    font-size: 12px;
+}
+.gift-content h2:before{
+    content: '商品名称：';
+    display: inline-block;
+    font-weight: bold;
+}
+.gift-content p {
+    color: #0688CC;
+    font-size: 13px;
+    line-height: 24px;
+    border-top: 1px solid #B2DFEB;
+    border-bottom: 1px solid #B2DFEB;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+.gift-content p:last-child:before{
+    content: '花费积分：';
+    display: inline-block;
+    font-weight: bold;
+}
+.btn-loadmore{
+    background: #D2CCC7;
+}
+
+.lodd{
+    position:static;
+    margin-bottom: 60px;
+}
+.spinner.lodd .spinner-wrapper {
+    width: 25px;
+    height: 25px;
+}
+.lodd .container1 > div,.lodd .container2 > div,.lodd .container3 > div {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+}

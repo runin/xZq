@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<title>在美好，遇见最美的自己</title>
+	  
+	<link rel="stylesheet" href="./css/normalize.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/parallax.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+	<script src="./js/wx_api.js"></script>
+</head>
+<body>
+	<section class="ui-audio" data-src=''>
+		<div id="coffee-flow" class="btn-audio" data-collect="true" data-collect-flag="beauty-audio" data-collect-desc="音乐开关按钮">
+			<a href="#" class="audio-icon"></a>
+			<strong class="audio-txt hide">关闭</strong>
+		</div>
+	</section>
+	<section class="copyright">
+		<p>页面由西安广播电视台提供</p>
+	</section>
+	
+	<section class="wrapper-front none">
+		<canvas style="position: fixed; left: 50%; top: 0px; width: 640px; margin-left: -320px; height: 100%; z-index: 20; background-color: transparent;" width="759" height="597"></canvas>
+	</section>
+	
+	<section class="wrapper wrapper-back">
+		<div class="pages" id="pages">
+			<!-- 封面 -->
+			<div class="page page-firs cover" id="cover">
+			   	<div class="content">
+			   		<div class="content-container"></div>
+			   	</div>
+			</div>
+		
+			<!-- 横向广告page -->
+			<div class="page page-firs page-swipe" id="cross">
+				<div class="swipe-wrapper">
+			   		<div id="swipe" class="swipe">
+						<div class="swipe-wrap" id="swipe-wrap"></div>
+					</div>
+			   	</div>
+		   	</div>
+		   	
+			<!-- 刮奖页面 -->
+			<div class="page sign page-firs" id="sign">
+				<div class="invite-befor none">
+					<h1>恭喜您获得一张刮刮卡，快来试试运气！</h1>
+					<!--刮奖page-->
+					<div class="sign-form sign-gua none">
+						<div class="sd-body">
+							<div class="lottery-item lottery-container" id="lottery-container"></div>
+						</div>
+					</div>
+					<!--填写page-->
+					<div class="sign-form none" id="lottery-result">
+
+						<div class="result-img" id="result-img"></div>
+						<h1 class="none">
+							<a href="#" class="btn-rule">点击查看报名规则</a>
+						</h1>
+						<p class="award-info"></p>
+						<p class="award-state"></p>
+						<p class="item-txt"><input type="text" id="s-name" class="name" placeholder="姓名" /></p>
+						<p class="item-txt"><input type="number" id="a-mobile" class="mobile" placeholder="联系电话" /></p>
+						<p class="item-ctrl"><a href="#" class="btn btn-sign" id="btn-award" data-collect="true" data-collect-flag="beauty-btn-award" data-collect-desc="确定领奖按钮">确定</a></p>
+					</div>
+
+					<div id="sign-map" class="bd-map sign-map" data-mapindex="197170" data-detal="" data-longitude="108.905298" data-latitude="34.265336">
+						<h1 class="sj-add">
+							<label>商家地址</label><a href="#" data-collect="true" data-collect-flag="beauty-map" data-collect-desc="点击查看地图">点击查看地图</a>
+						</h1>
+						<address>
+							<img id="addr" src="#">
+						</address>
+					</div>
+				</div>
+
+				<!--邀请闺蜜-->
+				<div class="invite none" id="invite">
+					<h1></h1>
+					<h2></h2>
+					<div class="invite-award">
+						<img src="#" id="b-click" data-collect="true" data-collect-flag="beauty-b-click" data-collect-desc="点击打开礼物">
+						<span class="invite-sm"></span><a href="#" class="btn-rule" data-collect="true" data-collect-flag="beauty-rule" data-collect-desc="点击查看活动规则">点击查看活动规则</a>
+					</div>
+					<p class="invite-gm none"><a href="#" class="btn invite-ctrl btn-share" data-collect="true" data-collect-flag="beauty-invite-gm" data-collect-desc="马上邀请闺蜜">马上邀请闺蜜</a></p>
+					<ul class="none" id="invite-ul"></ul>
+				</div>
+
+				<!--打开礼物-->
+				<div class="open-gift none">
+					<div id="ling-gift"></div>
+					<p class=""><a href="tel:029-88756666" class="btn open-ctrl tel-ctrl" data-collect="true" data-collect-flag="beauty-tel-ctrl" data-collect-desc="拨打客服电话"></a></p>
+					<p class=""><a href="#" class="btn open-ctrl btn-share" data-collect="true" data-collect-flag="beauty-btn-share" data-collect-desc="晒晒大奖">晒晒大奖</a></p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	<!-- 弹层 - 规则-->
+	<div class="sign-dialog sign-rule none" id="sign-rule">
+		<div class="sd-head">
+			<h2>活动规则</h2>
+			<a href="#" class="btn-closedlg" data-collect="true" data-collect-flag="beauty-rule-close" data-collect-desc="点击关闭活动规则"></a>
+		</div>
+		<div class="sd-body">
+			
+		</div>
+	</div>
+
+    
+    <div class="bdmap bigopen" id="bdmaps">
+        <!--地图插件元素-->
+        <div class='bk'></div>
+    </div>
+
+	<div class="masking none"></div>
+
+    <script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.min.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src="./js/share.js"></script>
+	<script src="./js/data_collect.js"></script>
+	<script src="./js/parallax.js"></script>
+	<script src="./js/coffee.js"></script>
+	<script src="./js/lottery.js"></script>
+	<script src="./js/map.js"></script>
+	<script src="./js/swipe.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+</html>

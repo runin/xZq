@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>娱乐乐翻天</title>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/yao.css" />
+</head>
+
+<body>
+<!--摇一摇声音-->
+
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio><!--中奖声音-->
+<!-- 玻璃碎声音<audio preload="auto" id="audio-c" src="images/audio-c.mp3"></audio>-->
+
+<!--摇一摇红包-s-->
+<section class="home-box">
+  <div id="yao-redbao" class="page">
+    <div class="main-top m-t-b">
+      <section class="marquee none"><ul></ul></section>
+      <header>
+        <a href="#" class="back-btn" data-collect="true"
+           data-collect-flag="yao-back-btn" data-collect-desc="返回首页按钮"></a>
+        <div class="zx-tt">
+          <p class="count none">当前在线人数：<label></label>人</p>
+          <a href="#" class="outer none" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+          <a href="#" class="outer-text none" id="out2t" data-collect="true"
+             data-collect-flag="out-link2" data-collect-desc="天天淘金"></a>
+        </div>
+      </header>
+      <div class="yao-text">
+        <p class="visibility textb"><span>啊哦，差一点就抢到了，继续加油</span></p>
+      </div>
+    </div>
+    <div class="main-foot m-f-b">
+      <!--<input type="button" class="" id="test" value="test">-->
+      <div class="footer-div">
+        <div class="btn-box">
+          <a href="#" class="back-rule" data-collect="true"
+             data-collect-flag="yao-back-btn" data-collect-desc="活动规则"></a>
+          <a href="#" class="back-toinfo" data-collect="true"
+             data-collect-flag="yao-back-btn" data-collect-desc="去个人中心"></a>
+        </div>
+        <div class="countdown none">
+          <!--<img class="hand" src="images/hand.png" />-->
+          <span class="countdown-tip items-count"></span>
+          <span class="detail-countdown items-count"></span>
+          <span class="loading none">请稍后...</span>
+        </div>
+      </div>
+      <div class="zan-zhu none">
+        <h4>活动由以下商家赞助</h4>
+        <div class="zz-img"></div>
+      </div>
+      <div class="footer">
+        <div class="copyright"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--摇一摇红包-e-->
+
+<div class="none">
+  <img src="images/home_logo_a.jpg" />
+  <img src="images/home_logo_b.jpg" />
+</div>
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/sha1.min.js"></script>
+<script src="./js/plugins/shake.min.js"></script>
+
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="./js/app/yao.js"></script>
+<script src="./js/app/dialog.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

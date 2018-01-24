@@ -1,0 +1,190 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    overflow: hidden;
+}
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat bottom center;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 0;
+}
+.container1 > div, .container2 > div, .container3 > div {
+  background-color: #FFF;
+  }
+header {
+    width: 100%;
+    position: relative;
+    z-index: 99;
+}
+header .ctrls {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    text-align: center;
+    width: 61px;
+    height: 69px;
+    padding: 12px 0px 0px;
+    -webkit-animation-delay: 2s;
+    z-index: 99;
+}
+header .ctrls a {
+    color: #664C24;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+    background: url(../images/rule-btn.png)center no-repeat;
+    background-size: cover;
+}
+header .ctrls a:last-child {
+    margin-top: 5px;
+}
+header .tvlogo {
+    position: absolute;
+    width: 12%;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+}
+header .light {
+    width: 100%;
+}
+.zoom-in {
+    -webkit-animation-name: zoom-in;
+    animation-name: zoom-in;
+}
+#line {
+  position: absolute;
+  top: -60%;
+  right: 4%;
+  width: 15%;
+  z-index: 10;
+}
+.light {
+    position: absolute;
+    width: 100%;
+    top: -20px;
+    left: 0;
+    z-index: 0;
+}
+#finger {
+    position: absolute;
+  top: 38%;
+  right: 15%;
+  width: 8%;
+  z-index: 0;
+  animation: fx-guide 1.8s infinite ease-in-out forwards;
+  -webkit-animation: fx-guide 1.8s infinite ease-in-out forwards;
+  z-index: 2;
+}
+.logo {
+      width: 96%;
+  position: absolute;
+  left: 2%;
+  top: 20%;
+  z-index: 2;
+  -webkit-animation: spin 1s linear;
+}
+@-webkit-keyframes zoom-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-40px);
+    }
+    
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+}
+}
+@-webkit-keyframes  fx-guide {
+  0% {opacity: 0;top: 20%;}
+  30% {opacity: 1;top: 30%;}
+  70% {opacity: 1;top: 60%;}
+  90% {opacity: 0;top: 70%;}
+  100% {opacity: 0;top: 20%;}
+}
+@keyframes  fx-guide {
+  0% {opacity: 0;top: 20%;}
+  30% {opacity: 1;top: 30%;}
+  70% {opacity: 1;top: 60%;}
+  90% {opacity: 0;top: 70%;}
+  100% {opacity: 0;top: 20%;}
+}
+.index-center{
+    /*background: url(../images/index-ren.png) no-repeat;
+    background-size: cover;*/
+    width: 241px;
+    height: 251px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 56px;
+}
+.index-center a{
+    background: url(../images/btn-anniu.png) no-repeat;
+    background-size: cover;
+    width: 221px;
+    height: 69px;
+    display: block;
+    position: absolute;
+    bottom: 31px;
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    #line {
+        top: -70%;
+    }
+}

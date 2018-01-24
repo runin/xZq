@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/details.css" />
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body data-type="details">
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+<section class="body">
+    <header class="none">
+        <section class="energy">
+            <label class="none" id="lottery-answerPage">0S</label>
+            <label class="none" id="detail"></label>
+            <div class="progress">
+                <div class="progress-bar" id="progress-bar" style="width:3%;"></div>
+            </div>
+        </section>
+        <span class="gift"><img id="gift" src="images/gift.png" data-collect="true" data-collect-flag="details-gift" data-collect-desc="去摇奖页礼盒"/></span>
+    </header>
+    <a href="javascript:void(0);" class="check-rank" data-collect="true" data-collect-flag="detail-rank" data-collect-desc="点击查看票数排行">去看TA的排名</a>
+    <!-- <img class="check-rank" data-collect="true" data-collect-flag="detail-rank" data-collect-desc="点击查看票数排行" src="images/go-rank.png" /> -->
+    <p class="yao-shou">摇动手机即可为我加油哦~~</p>
+
+    <section class="barrage" id="barrage">
+        <div class="cor-assist">
+            <div class="comments" id="comments"></div>
+        </div>
+    </section>
+    <section class="footer none">
+        <div class="num visibility"><img src="images/zan.png"/><div><span></span><!-- 票--></div></div>
+        <div class="con-right">
+            <div id="staic-heart">
+                <img src="images/1.png"/>
+                <img src="images/2.png"/>
+                <img src="images/3.png"/>
+                <img src="images/4.png"/>
+                <img src="images/5.png"/>
+            </div>
+            <div class="none" id="heart-animation"></div>
+
+            <img class="shou-dm" id="switch" src="images/shou-dm.png" data-collect="true" data-collect-flag="details-switch" data-collect-desc="弹幕开关"/>
+        </div>
+    </section>
+    <section id="vote-countdown-out" class="none">
+        <div class="countdown vote-countdown none" id="vote-countdown">
+            <div class="right">
+                <span class="countdown-tip items-count"></span>
+                <span class="detail-countdown items-count"></span>
+                <span class="loading none">请稍后...</span>
+            </div>
+        </div>
+        <div class="copyright"></div>
+    </section>
+
+    <article id="article" class="">
+        <div class="ctrls">
+            <p>
+                <span><input id="input-comment" type="text" placeholder="发表言论上屏为TA加油吧~~" /></span>
+                <a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="hn-party-comment-send-btn" data-collect-desc="发表评论按钮">发送</a>
+            </p>
+            <div class="copyright"></div>
+        </div>
+    </article>
+
+    <section id="look-rank" class="look-rank none">
+        <img class="check-rank none" data-collect="true" data-collect-flag="detail-rank" data-collect-desc="点击查看票数排行" src="images/go-rank.png" />
+        <div class="copyright"></div>
+    </section>
+
+
+</section>
+
+<section class="layer none" id="layer">
+    <div>
+        <h1>摇动手机即可为我加油哦~~</h1>
+        <img src="images/ha.png" />
+    </div>
+</section>
+
+<!--<input type="button" class="" id="test" value="test">-->
+<script src="./js/config.js"></script>
+<script type="text/javascript">
+    var sharePage = 'details.html';
+</script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/barrage.js"></script>
+<script src="./js/plugins/xss.min.js"></script>
+
+<script src="./js/app/details.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

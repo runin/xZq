@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="css/common.min.css" />
+
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/lottery.css" />
+</head>
+<body data-type="lottery">
+        <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+        <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+        <section class="home-box">
+            <section class="main-top m-t-b">
+                <header>
+                    <section id="marquee" class="marquee hidden"><ul></ul></section>
+                    <div class="count hidden">当前在线人数: <label></label>人</div>
+
+                    <a href="#" class="myself" id="myself" data-collect="true" data-collect-flag="lottery-myself" data-collect-desc="我的奖品" >我的奖品</a>
+                    <p class="thanks-tips"></p>
+                </header>
+
+                <img class="bg-yao yao-top" src="./images/bg-wheel-top.png">
+            </section>
+            <section class="main-foot m-f-b">
+                <img class="bg-yao yao-bottom" src="./images/bg-wheel-bottom.png">
+                <section class="footer">
+                    <section class="countdown none" id="lottery-countdown">
+                        <img class="hand" src="images/hand.png" />
+                        <span class="countdown-tip"></span>
+                        <span class="detail-countdown"></span>
+                    </section>
+                    <section class="fail-tips none">
+                        <p>跟着我的节奏<i>摇</i>起来</p>
+                    </section>
+                </section>
+                <div class="copyright"></div>
+            </section>
+        </section>
+        <!--<input type="button" class="" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;">-->
+
+        <section class="layer none" id="layer">
+        </section>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/lottery.js"></script>
+
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>网络人气王pk战</title>
+    <link rel="stylesheet" href="./css/core.css">
+    <style type="text/css">
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;
+    }
+    
+    img {
+        display: block;
+        box-sizing: border-box;
+    }
+    
+    .top {
+        width: 100%;
+    }
+    
+    .bottom {
+        width: 100%;
+        border: 2px solid red;
+    }
+    
+    .gobtn {
+        width: 50%;
+        height: 8%;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        margin-left: -25%;
+    }
+    
+    .topic {
+        background: url("images/arrow.png") no-repeat center center;
+        background-size: contain;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        vertical-align: middle;
+    }
+    
+    .main {
+        padding: 20px 20px;
+        border: 2px solid red;
+    }
+    
+    .main h1 {
+        font-size: 16px;
+    }
+    
+    .main p {
+        margin-top: 20px;
+    }
+    
+    @media (max-height:480px) {
+        .gobtn {
+            top: 30%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="gobtn"></a>
+    <img src="images/top.jpg" class="top" />
+    <div class="main">
+        <h1> <span class="topic"></span> 活动说明</h1>
+        <p>1.打气活动于2016年3月4日开始，3月6日20：30结束，观众共有1次打气机会，点击【我要打气】为你心中的网络人气王提升人气值</p>
+        <p>2.节目结束后，人气值将会在界面中显示，最高的选手将获得【人气王】头衔;</p>
+        <p>3.凡参与活动观众，都可获得参与奖一份；若你所支持的选手成为【人气王】，你将获得现金红包1个；</p>
+        <p>4.红包领取方式请在活动界面【奖励详情】中进行查看。</p>
+    </div>
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/util.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/util.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/core.js"></script>
+    <script type="text/javascript">
+    $(".gobtn").click(function() {
+        window.location.href = "index.html";
+
+    });
+    </script>
+</body>
+
+</html>

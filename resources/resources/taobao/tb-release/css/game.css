@@ -1,0 +1,214 @@
+body{
+    background: url("../images/game-bg.jpg") 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.pt{
+    display: block;
+    width: 80%;
+    margin: 35% auto 0;
+    position: relative;
+    background: url("../images/pt-bg.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    padding: 3%;
+    border-radius: 5px;
+}
+.pt .item{
+    display: inline-block;
+    position: absolute;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+    z-index: 10;
+}
+.select{
+    opacity: .8;
+    box-shadow: 0 0 8px #000;
+}
+.tip{
+    width:100%;
+    display: block;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 14px;
+    color: #d29e72;
+}
+.countdown {
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    background: rgba(253,119,0,0.2);
+    padding: 2%;
+    display: block;
+    width: 54%;
+    position: absolute;
+    top: 12%;
+    left: 23%;
+    z-index: 9;
+    border-radius: 25px;
+    border: 2px solid #c45b02;
+    box-shadow: 0 0 10px #f9eaa0;
+}
+.countdown:before{
+    content: '';
+    background: url("../images/icon-tip.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    position: absolute;
+    top: -50px;
+    height: 40px;
+    width: 70%;
+    left: 15%;
+}
+.countdown span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.2em;
+}
+.countdown .detail-countdown{
+    font-size: 16px;
+}
+
+
+.comments-section{
+    position: absolute;
+    z-index: 9999;
+    bottom: 50px;
+    width: 100%;
+}
+article{
+    position: relative;
+}
+article .comments {
+    position: relative;
+}
+.ctrls p {
+    width: 100%;
+    padding: 7px 0;
+    position: relative;
+    margin: 0 auto;
+}
+
+.ctrls p input {
+    width: 78%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    padding: 0 5px;
+    background: transparent;
+    color: #E5F8BA;
+    outline: none;
+    border: 1px solid #9c4802;
+}
+.c_head_img {
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    overflow: hidden;
+    float: left;
+    margin-right: 5px;
+    margin-left: 1px;
+}
+
+.c_head_img_img {
+    width: 28px;
+    margin-right: 4px;
+}
+.comment {
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2px;
+    margin-left: 30px;
+    padding: 0px 6px;
+}
+.comment_item{
+    background: rgba(245,186,148,.8);
+    border-radius: 20px;
+}
+.me-cor{
+    border: 1px solid #8c64c1;
+    border-radius: 30px !important;
+    height: 28px!important;
+    line-height: 26px!important;
+}
+input::-webkit-input-placeholder {
+    color:#d29e72!important;
+    font-size: 14px;
+}
+input[placeholder], [placeholder], *[placeholder] {
+    color:#d29e72!important;
+    font-size: 14px;
+}
+.ctrls{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.ctrls p input.error {
+    border: 1px solid #f00;
+}
+.ctrls p a {
+    clear: both;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #9c4802;
+    border-radius: 5px;
+    text-align: center;
+    color: #d29e72;
+}
+.funnyshow {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    left: 5px;
+}
+.funnyshow img {
+    width: 80px !important;
+    height: auto !important;
+    border-radius: inherit!important;
+}
+.btn-tab{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.btn-movie{
+    display: inline-block;
+    width: 49%;
+    height: 45px;
+    background: url("../images/btn-movie.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.btn-lottery{
+    display: inline-block;
+    width: 49.5%;
+    height: 45px;
+    background: url("../images/btn-yao.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.switch-on{
+    display: block;
+    position: absolute;
+    background: url("../images/switch-on.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 45px;
+    height: 43px;
+    bottom: 20%;
+    right: 0;
+    z-index: 99999;
+}
+.switch-off{
+    display: block;
+    position: absolute;
+    background: url("../images/switch-off.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 46px;
+    height: 40px;
+    bottom: 20%;
+    right: 0;
+    z-index: 99999;
+}

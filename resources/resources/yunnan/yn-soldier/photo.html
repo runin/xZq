@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>士兵突击</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/photo.css" />
+</head>
+<body>
+	<div class="main">
+		<div class="photoBox none">
+			<header class="nav">
+				<a class="btn-join" id="btn-yao" data-collect="true" data-collect-flag="tv-yunnan-soldier-photo-turn-yao" data-collect-desc="合照-进入摇一摇页面按钮"><img src="images/yao-red.png"></a>
+				<a class="btn-join" id="btn-cor" data-collect="true" data-collect-flag="tv-yunnan-soldier-photo-turn-comment" data-collect-desc="士兵突击合照页面-进入评论页面按钮"><img src="images/cor-btn.png"></a>
+			</header>
+			<div class="form-item">
+				<a href="#" class="icon btn-upload requesting" id="btn-upload" data-collect="true" data-collect-flag="tv-yunnan-soldier-photo-upload-btn" data-collect-desc="我要合照页面 上传图片按钮"></a>
+				<div class="star-photo">
+					<img class="star" id="star" src="" />
+					<div class="img-ctrl" id="img-ctrl"></div>
+				</div>
+				<form id="upload-form" class="upload-form none" enctype="multipart/form-data" method="post" action="http://test.holdfun.cn/portal/fileupload/image">
+					<input type="file" class="input-file-upload" id="input-file-upload" onchange="fileSelected();" accept="image/*" capture>
+				</form>
+			    <div class="photoBox-info">
+					<img class="photo-tip" src="images/photo-tip.png" />
+				</div>
+			</div>
+			<div class="photo-btn">
+				<a href="#" data-collect="true"
+					data-collect-flag="tv-yunnan-soldier-photoed-submit-btn"
+					data-collect-desc="我要合照页面提交照片按钮" class="btn-submit submit none" id="btn-submit"></a>
+					<a href="#" data-collect="true"
+					data-collect-flag="tv-yunnan-soldier-photoed-rephoto-btn"
+					data-collect-desc="我要合照页面重选照片按钮" class="btn-submit rephoto none" id="btn-rephoto"></a>
+			</div>
+		</div>
+		<div class="photoedBox none">
+			<div class="photoed-info">
+				<div class="form-item">
+					<div class="mix-info">
+						<img class="final-photo" src="" />
+					</div>
+				</div>
+			</div>
+			<a href="#" data-collect="true"
+							data-collect-flag="tv-yunnan-soldier-photo-rephoto-btn"
+							data-collect-desc="返回重新合照" class="btn-refresh returnphoto none" id="btn-refresh"></a>
+		</div>
+    </div>
+	
+	<div class="copyright none"></div>
+	
+	<script src="js/config.js"></script>
+<!-- 打素材时如下代码请删掉 -->
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	  <script src="js/plugins/hammer.min.js" type="text/javascript"></script>
+	
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script> 
+	<script src="./js/authorize_userinfo.js"></script>
+	
+  
+    <script src="js/app/exif.js" type="text/javascript"></script>
+    <script src="./js/app/photo.js"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+	
+</body>
+</html>

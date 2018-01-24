@@ -1,0 +1,21 @@
+body {
+	background: url(http://yao.holdfun.cn/portal/resources/news/images/bg.jpg) repeat-y center 0;
+	background-size: cover;
+}
+
+.main {
+	margin: 0 auto;
+	padding: 16px 0 0;
+	overflow-x: hidden;
+}
+.container {
+	background: url(http://yao.holdfun.cn/portal/resources/news/images/top.png) no-repeat center top;
+	background-size: contain;
+    margin: 10px 23px;
+    border: 1px solid #CCC8C3;
+    min-height: 300px;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 10px 15px;
+}
+.btn-back{margin:15px auto 20px;}

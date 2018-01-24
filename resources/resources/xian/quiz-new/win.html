@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no" />
+<title>这里是西安</title>
+<link rel="stylesheet" href="css/cssreset-min.css" />
+<link rel="stylesheet" href="css/core.css" />
+<link rel="stylesheet" href="css/notwin.css" />
+</head>
+<body>
+	<div class="share_box none" id="div-share-box">
+		<a href="javascript:void(0)" class="back_btn"></a> <a
+			href="javascript:void(0)" class="refresh_btn"></a>
+	</div>
+	<div class="main winmain" id="winmain">
+		<div class="labrreybox">
+			<img id="img_lottery_bg" src="./images/blank.gif" width="268">
+			<a href="javascript:void(0);" class="lottery-btn" id="lottery-btn"
+				data-collect="true" data-collect-flag="quiz-lottery-btn"
+				data-collect-desc="答题抽奖转盘按钮"> <img
+				src="http://yao.holdfun.cn/portal/resources/quiz/images/zz.png"
+				width="116" class="img-btn">
+			</a>
+		</div>
+		<!--获得奖品 s-->
+		<div class="hj_box none" id="hj_box">
+			<div class="hjtext">
+				<p class="result_info_1 pcf">
+					<em class="f18">恭喜您：</em><br /> 获得了<em id="prize_name"></em>
+				</p>
+				<div id="input_phone_div" class="none">
+					<p class="pcf">请填写手机号码，便于您领奖</p>
+					<p class="pcf">
+						<input id="phone" type="number">
+					</p>
+					<div>
+						<span class="tip"></span>
+					</div>
+				</div>
+				<p id="integral_desc" class="none">
+					<span>(积分可用于兑换奖品)</span>
+				</p>
+				<p id="phone_label" class="result_info_1 none">
+					您的获奖手机：<em id="phone_html"></em><label class="tip"></label>
+				</p>
+				<div class="ctrl">
+					<a id="submit_btn" href="javascript:void(0);" class="btn"
+						data-collect="true" data-collect-flag="quiz-lottery-phone-btn"
+						data-collect-desc="抽奖后提交手机号码按钮">确定</a> <a id="goBack_btn"
+						href="javascript:toUrl('index.html');" class="btn none"
+						data-collect="true" data-collect-flag="quiz-lottery-goback-btn"
+						data-collect-desc="返回首页">返回首页</a> 
+				</div>
+			</div>
+		</div>
+		<!--获得奖品 e-->
+	</div>
+	<div class="copyright2">页面由西安广播电视台提供<br>新掌趣科技技术支持&amp;Powered by holdfun.cn</div>
+
+    <script src="js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/common.js"></script>
+    <script src="js/plugins/jQueryRotate.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/win.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>新闻日日睇</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/index.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+</head>
+<body>
+	<section>
+        <header class="nav-header">
+        	<a data-collect="true"
+				data-collect-flag="tv-gznews-dayday-baoliao-btn"
+				data-collect-desc="首页进入爆料页面" class="btn-join btn-bao"><i><img src="images/bao.png"></i>我要爆料</a>
+			<a data-collect="true"
+			   data-collect-flag="tv-gznews-dayday-vote-btn"
+			   data-collect-desc="首页进入爆料页面" id="comments" class="btn-join btn-vote"><i><img src="images/vote.png"></i>参与投票</a>
+			<a data-collect="true"
+			   data-collect-flag="tv-gznews-dayday-vote-btn"
+			   data-collect-desc="首页进入爆料页面" id="comments" class="btn-join btn-submit"><i><img src="images/submit.png"></i>报名抽奖</a>
+			<a data-collect="true"
+			   data-collect-flag="tv-gznews-dayday-vote-btn"
+			   data-collect-desc="首页进入爆料页面" id="comments" class="btn-join btn-gift"><i><img src="images/gift.png"></i>中奖记录</a>
+            <a class="btn-join btn-rule" id="rule" data-collect="true" data-collect-flag="tv-gznews-dayday-index-rule-btn" data-collect-desc="首页-活动规则按钮"><i><img src="images/view.png"></i>查看规则</a>
+            <!--<a href="#" class="rule btn-rule none" id="btn-reserve" data-collect="true" data-collect-flag="tv-gznews-dayday-appointment" data-collect-desc="首页-节目预约按钮">节目预约</a>-->
+            <div class="turn-box">
+            	<a class="turn-btn" data-collect="true" data-collect-flag="tv-gznews-dayday-index-sidebar-btn" data-collect-desc="首页-左抽屉伸显示隐藏按钮"><i></i></a>
+            	<span class="clicktip clickMe">点我</span>
+            	<span class="hand handMove"><img src="images/hand.png"></span>
+            </div>
+        </header>
+        <div class="tv-logo"><img src="images/tv-logo.png"/></div>
+        <div class="title-logo showme"><img src="images/title-logo.png"/></div>
+		<div class="follow-box">
+			<div class="copyright"></div>
+			<div id="div_subscribe_area" class="div_subscribe_area_class"></div>
+		</div>
+	</section>
+	<script src="js/config.js"></script>	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/index.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

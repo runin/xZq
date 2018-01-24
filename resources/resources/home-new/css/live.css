@@ -1,0 +1,98 @@
+body{
+    background-color: #f1f1f1;
+}
+.h520, .h520 .wrapper {
+    height: 520px;
+}
+.h620, .h620 .wrapper {
+    height: 620px;
+}
+.wrapper {
+    display: table;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.fy_logo {
+    position: relative;
+    width: 100%;
+}
+.fy_logo p {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #ff4b6d;
+}
+.fy_logo i:before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background: #ae21ff;
+    top: -3px;
+    left: 75px;
+}
+.fy_logo i:after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background: #feee3f;
+    top: -3px;
+    left: 275px;
+}
+.fy_logo img {
+    display: block;
+    width: 180px;
+    padding: 15px 0;
+}
+.banner {
+    width: 100%;
+    background: url(../img/fy_page0_bg.jpg) center center no-repeat;
+    background-size: 100% 520px;
+}
+.banner .title {
+    float: left;
+    height: 150px;
+    margin-top: 140px;
+}
+.banner .qr-box {
+    font-size: 17px;
+    color: #FFF;
+    text-align: center;
+    padding-top: 110px;
+    float: right;
+}
+.page {
+    font-size: 44px;
+    color: #333;
+    line-height: 90px;
+}
+#page1, #page3 {
+    width: 100%;
+    background-color: #FFF;
+}
+#page2 {
+    width: 100%;
+    background: url(../img/fy_page2_bg.jpg) center center no-repeat;
+    background-size: 100% 620px;
+}
+.page .main {
+    position: absolute;
+    bottom: 0;
+    left: -170px;
+}
+.page .rightmain {
+    position: absolute;
+    bottom: 0;
+    right: -170px;
+}
+.page .des {
+    width: 100%;
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+.page .right .des {
+    text-align: left;
+}

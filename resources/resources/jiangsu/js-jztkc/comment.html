@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>九州天空城</title>
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/comment.css">
+</head>
+<body>
+<img class="comment-tlt" src="images/comment-tlt.png" />
+<!--首页-s-->
+<section id="index" class="index items">
+    <!--<div class="video-div">
+        <video x-webkit-airplay="true" webkit-playsinline="yes" class="video" id="video" preload="auto"
+               data-collect="true" data-collect-flag="index-vedio-play-btn" data-collect-desc="朋友圈-视频播放按钮">
+            <source src="http://cdn.holdfun.cn/resources/services/tv_cctv6_man/yanghe.webm" type="video/webm" />
+            <source src="http://cdn.holdfun.cn/resources/services/tv_cctv6_man/yanghe.mp4" type="video/mp4" />
+            您的浏览器不支持视频
+        </video>
+        <a href="#" class="play" data-collect="true" data-collect-flag="index-vedio-play-btn" data-collect-desc="朋友圈-视频播放按钮">
+            <img src="images/icon-play.png" />
+        </a>
+    </div>-->
+     <div class="ddtj none">
+	     <a class="ddtj-box" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+			<img src="images/redenve.png" />
+		 </a>
+	  </div>
+    <div class="video-div" data-collect="true" data-collect-flag="index-video" data-collect-desc="首页-视频点击">
+        <section class="video" id="video"></section>
+    </div>
+    <div class="detail" id="detail"></div>
+
+    <div class="page-con none">
+        <section class="talkroom none" id="talkroom">
+            <div class="talk-title">
+                <img id="title-img" src="images/avatar.png">
+                <div class="content">
+                    <p id="title-per" class="per"></p>
+                    <p id="title-que" class="que"></p>
+                </div>
+            </div>
+        </section>
+        <div id="body" class="body box">
+            <ul id="comment_list" class="content"></ul>
+        </div>
+
+        <footer class="footer">
+            <section class="energy">
+                <div class="energy-top">
+                    <img class="gift" id="gift" src="images/comment-gift.png" />
+                    <div class="progress">
+                        <label class="after"></label>
+                        <div class="progress-bar" id="progress-bar" style="height:10%"></div>
+                    </div>
+                </div>
+                <label class="none" id="lottery-answerPage"></label>
+            </section>
+            <section class="nav nav-shop" id="nav">
+                <a id="btn-topic" data-collect="true" data-collect-flag="btn-topic" data-collect-desc="话题按钮"><img src="images/comment-btn-ht.png"/></a>
+                <a id="btn-huopu" data-collect="true" data-collect-flag="btn-card" data-collect-desc="九州好货铺按钮"><img src="images/comment-btn-hp.png"/></a>
+                <a class="active" id="btn-shop" data-collect="true" data-collect-flag="gzj-tour-talk-submit" data-collect-desc="聊天室页-评论发送按钮"><img id="input_submit" src="images/comment-btn-fs.png"/></a>
+            </section>
+            <section class="send-con">
+                <label><span><img class="avatar-img" src="images/avatar.png" /></span></label>
+                <input id="input_text" type="text" placeholder="输入您要发送的信息………" />
+            </section>
+
+        </footer>
+    </div>
+</section>
+<!--首页-e-->
+
+<script src="./js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/zepto.textSlider.js"></script>
+<script src="./js/plugins/xss.min.js"></script>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="./js/app/comment.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</html>

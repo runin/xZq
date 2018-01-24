@@ -1,0 +1,94 @@
+body{ 
+  background-image: url(../images/bg-body.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+ 
+}
+
+.prize-box{
+	 min-height: 100%;
+  height: auto;
+  padding-bottom: 50px;
+  padding-top: 14px;
+  position: relative;
+}
+.back-btn{
+	display: block;
+	width: 22%;
+	margin-left: 14px;
+}
+.prize-title{
+	padding:3% 22% 3%;
+}
+.prize-car{
+	padding: 0 14% 3% 14%;
+}
+.prize-list{
+    margin:0 5%;
+    padding-top: 20px;
+    color: #fff;
+    background: url(../images/line.png) no-repeat top;
+    background-size: 100%;
+}
+.prize-list li{
+	  display: block;
+	  width: 100%;
+    border-bottom: 1px dotted #959faa;
+    
+}
+.prize-item{
+	width: 100%;
+	padding: 10px 0;
+	position: relative;
+}
+.prize-item label{
+	  width: 50px;
+	  height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 2px solid #e24180;
+    overflow: hidden;
+}
+.prize-item img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+   
+   
+}
+.prize-item div{
+    width: 80%;
+    display: block;
+    font-size: 14px;
+    position: absolute;
+    bottom: 12px;
+    left: 20%;
+}
+.prize-item div p{
+		line-height: 24px;
+		height: 24px;
+		overflow: hidden;
+}
+.prize-item div{
+    vertical-align: bottom;
+}
+
+.prize-item div p:nth-child(1){
+   font-size: 13px;
+}
+.prize-item div p:nth-child(2){
+  font-size: 12px;
+}
+.prize-item div p:nth-child(2) span{
+	display: inline-block;
+	padding-right: 14px;
+}
+
+.no-prize{
+	padding: 20% 0;
+	color:rgba(207,207,207,0.7);
+	font-size: 22px;
+	text-align: center;
+}

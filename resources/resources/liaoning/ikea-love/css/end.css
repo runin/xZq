@@ -1,0 +1,222 @@
+html,body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+html,button,input,select,textarea {
+	color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+a {
+	color: #00e;
+}
+
+a:visited {
+	color: #551a8b;
+}
+
+a:hover {
+	color: #06e;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+	resize: vertical;
+}
+
+.wrapper {
+	background-color: #FFFFFF;
+	overflow: hidden;
+	height: 100%;
+}
+
+.banner {
+	background: url(../images/yj_js.jpg) no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.yhmt {
+	position: relative;
+	top: 9%;
+	overflow: hidden;
+}
+
+.yhmt li {
+	list-style: none outside none;
+	display: block;
+}
+
+.yhmt li a {
+	color: #111111;
+	font: "宋体";
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.yhmt li img {
+	border-radius: 7px;
+}
+
+.yhmt1 {
+	height: 45px;
+	margin: 0 20%;
+}
+
+.yhmt2 {
+	float: left;
+}
+
+.yhmt3 {
+	float: left;
+	height: 20px;
+	margin-left: -17px;
+	margin-top: -13px;
+}
+
+.zhanghao {
+	font-size: 12px;
+	position: relative;
+	top: 22%;
+	margin: 0 31%;
+	height: 28%;
+}
+
+.zhanghao ul,li,dl,dt,dd {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+
+.zhanghao ul li {
+	float: left;
+	width: 165px;
+	padding-bottom: 15px;
+	margin-left: 5px;
+	margin-left: 3px;
+}
+
+.zhanghao ul li dt img {
+	float: left;
+	border-radius: 7px;
+	width: 50px;
+}
+
+.zhanghao ul li dd {
+	width: 85px;
+	float: left;
+	padding-left: 3px;
+	color: #111111;
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+/*用户1*/
+.zhanghao1 {
+	font-size: 1em;
+	position: relative;
+	top: 0;
+	margin: 0 14%;
+	height: 11%;
+}
+
+.zhanghao1 ul,li,dl,dt,dd {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+
+dt {
+	width: 35%;
+	float: left;
+}
+
+dd {
+	width: 60%;
+}
+
+.zhanghao1 ul li {
+	float: left;
+	width: 50%;
+	padding-bottom: 0.5em;
+}
+
+.zhanghao1 ul li dt img {
+	float: left;
+	border-radius: 7px;
+	width: 80%;
+}
+
+.zhanghao1 ul li dd {
+	float: left;
+	padding-left: 3px;
+	color: #111111;
+	font-size: 0.6em;
+}
+
+.dddc {
+	position: absolute;
+	top: 52%;
+	width:100%;
+}
+
+.iphone {
+	position: absolute;
+	bottom: 12%;
+	width: 100%;
+}
+
+.iphone img {
+	width: 30%;
+}
+
+.iphones {
+	position: absolute;
+	top: 39%;
+	right: 16%;
+}
+
+.iphones img {
+	width: 50%;
+}
+
+.copyright {
+	font-size: 10px;
+	bottom: 7px;
+	width: 100%;
+	color: #fff;
+	height: 20px;
+	line-height: 20px;
+	opacity: 0.6;
+	text-align: center;
+	position: absolute;
+}

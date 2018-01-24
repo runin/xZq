@@ -1,0 +1,107 @@
+<!DOCTYPE html>  
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <link rel="stylesheet" href="./css/core.css" />
+  <link rel="stylesheet" href="./css/idangerous.swiper.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/barrage.css" />
+</head>
+
+<body>
+
+    <section class="bg-blur blur">
+      <section height="100%" width="100%" id="canvas">
+      </section>
+      <section height="100%" width="100%" id="canvas-show" >
+        <img id="srcimg" src="" />
+      </section>
+    </section>
+    
+    <section class="main-box">
+      <div class="head_logo"><span id="head_logo"></span></div>
+      <div class="my-info">
+        <div class="head-url"><i></i></div>
+        <div class="my-name"><label id="nickname"></label><i class="icon-user"></i></div>
+        <div class="my-jp" data-collect="true" data-collect-flag="education-jp" data-collect-desc="我的奖品"><label id="my-jiangpin">0</label><i class="icon-jp"></i></div>
+        <div class="my-gold" data-collect="true" data-collect-flag="education-jf" data-collect-desc="我的积分"><label id="integration">0</label><i class="icon-money"></i></div>
+        <div class="my-pm" data-collect="true" data-collect-flag="education-pm" data-collect-desc="我的排名"><label id="my-paiming">0</label><i class="icon-pm"></i></div>
+      </div>
+
+      <!--轮播图-->
+      <section class="scroll-box">
+        <div class="scroll-con">
+          <div class="swiper-container">
+            <div class="swiper-wrapper" id="swiper-data">
+            </div>
+          </div>
+          <div class="pagination none"></div>
+          <div class="order-box"></div>
+        </div>
+      </section>
+
+      <!--底部按钮-->
+      <div class="foot-bg"></div>
+      <div class="foot-btn">
+        <a href="javascript:void(0)" class="f-btn btn_dm none" id="comment-btn" data-name="评论管理" data-collect="true" data-collect-flag="education-dm-btn" data-collect-desc="评论管理"></a>
+        <a href="javascript:void(0)" class="f-btn btn_qd none" id="signgl-btn" data-name="签到管理" data-collect="true" data-collect-flag="education-jrqd-btn" data-collect-desc="签到管理"></a>
+        <a href="javascript:void(0)" class="f-btn btn_ph none" id="program-btn" data-name="节目单管理" ata-collect="true" data-collect-flag="education-ph-btn" data-collect-desc="节目单管理"></a>
+        <a href="javascript:void(0)" class="f-btn btn_jc none" id="mall-btn" data-name="商城管理" data-collect="true" data-collect-flag="education-jc-btn" data-collect-desc="商城管理"></a>
+      </div>
+    </section>
+    
+    
+    <!--评论弹幕-->
+    <section class="pop-box none">
+      <div class="comment-box in-up">
+        <div class="comments"> </div>
+        <div class="comment-form"> <a href="javascript:void(0);" class="gohome"></a>
+          <input name="ipt-text" type="text" class="comment-input" id="comment-input-text" placeholder="说说你的看法吧~" />
+          <input name="ipt-btn" type="button" id="send" class="comment-btn" data-collect="true" data-collect-flag="btn-comment" data-collect-desc="说说你的看法吧" />
+        </div>
+      </div>
+    </section>
+
+    <script type="text/html" id="tmpl_barrage">
+        <section class="bitem">
+              <section class="bitem-img">
+                  <img tmpl-attr="src" tmpl-name="src" onerror="this.src='./images/avatar.jpg'" src="${src}" />
+              </section>
+              <section class="bitem-content">
+                  <p tmpl-attr="html" tmpl-name="content">${content}</p>
+              </section>
+          </section>
+    </script>
+        
+    <script src="js/config.js"></script> 
+    <script src="./js/plugins/zepto.min.js"></script> 
+    <script src="./js/plugins/zepto.touch.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script> 
+    <script src="./js/plugins/zepto.fx.min.js"></script> 
+    <script src="./js/plugins/md5.js"></script> 
+    <script src="./js/plugins/core.js"></script> 
+    <script src="./js/plugins/util.js"></script> 
+    <script src="./js/plugins/authorize_userinfo.js"></script>
+    <script src="./js/app/countDown.js"></script> 
+    <script src="./js/app/idangerous.swiper-2.0.min.js"></script>
+    <script src="./js/app/zepto.barrage.js"></script>
+
+    <script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script> 
+    
+    <script src="./js/app/index.js"></script>
+    <script src="./js/app/nav.js"></script>
+    <script src="./js/app/jifen.js"></script>
+    <script src="./js/app/sign.js"></script> 
+    <script src="./js/app/rank.js"></script> 
+    <script src="./js/app/award.js"></script> 
+    <script src="./js/app/barrage.js"></script> 
+    
+    <script src="./js/app/init.js"></script> 
+    <!-- <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"> -->
+</body>
+</html>

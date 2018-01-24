@@ -1,0 +1,50 @@
+body {
+  background: #91CFDA;
+}
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.lottery {
+  position: relative;
+  width: 73%;
+  margin: 20px auto 0;
+  overflow: hidden;
+  background: url(../images/turntable-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  padding: 1px 0 13px 9px;
+}
+.lottery .btn-img {
+  position: absolute;
+  width: 78%;
+  height: 78%;
+  top: 11%;
+  /*left: 10%;*/
+  left: calc(10% + 4px);
+  -webkit-transform-origin: 50% 50% 0 !important;
+  -webkit-transition-timing-function: steps(3600, end) !important;
+}
+.lottery .btn-lottery {
+  position: absolute;
+  width: 64%;
+  height: 64%;
+  top: 18%;
+  left: 18%;
+}
+.lottey-draw {
+  position: relative;
+  clear: both;
+}
+.lh {
+  position: absolute;
+  bottom: -18%;
+  right: 12%;
+  width: 40%;
+}
+.info {
+  color: #F64A43;
+  font-size: 12px;
+  margin: 15px auto;
+  text-align: center;
+}

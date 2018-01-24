@@ -1,0 +1,701 @@
+footer {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-size: 100% 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.fail-bg {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 210px;
+    margin-top: -105px;
+    overflow: hidden;
+    background: url(../images/thank-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.weizhongjang
+{
+  position: relative;
+  text-align: center;
+}
+.yao-cool-tips {
+    color: #00606e;
+    font-weight: bolder;
+}
+
+.btn-back {
+    position: absolute;
+    display: inline-block;
+    width: 26%;
+    top: 15px;
+    padding: 8px 0;
+    border-radius: 20px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bolder;
+}
+
+.yao-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #130F38;
+}
+
+.main-top {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 1px;
+    background: url(../images/bg-lottery-top.jpg) no-repeat bottom center;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 1;
+    -webkit-transition: -webkit-transform .2s ease;
+}
+
+.main-foot {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50%;
+    background: url(../images/bg-lottery-bottom.jpg) no-repeat top center;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 1;
+    -webkit-transition: -webkit-transform .2s ease;
+}
+.tv-logo
+{
+    position: relative;
+    width:40%;
+    margin-left:30%;
+}
+.marquee-box
+{
+    position: absolute;
+    width: 60%;
+    bottom: 25%;
+    text-align: center;
+    left: 30%;
+    z-index: 2;
+
+}
+.marquee {
+   font-size: 13px;
+    /* background: #dd9c34; */
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: absolute;
+    z-index: 10;
+    color: #00606e;
+    text-align: left;
+    overflow: hidden;
+    margin-left:42px;
+    width:80%;
+}
+.icon-scroll
+{
+    position:relative; 
+    display: inline-block;
+    width:40px;
+    float:left;
+    top:-10px;
+
+}
+.marquee ul
+{
+    position: relative;
+    width:80%;
+}
+.marquee ul li {
+    width:100%;
+    position: relative;
+    color: #00606e;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/*倒计时*/
+
+.countdown {
+    position: relative;
+    font-size: 12px;
+    line-height: 40px;
+    z-index: 2;
+    margin: 10% auto 6% auto;
+    width: 80%;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    background: #fc7202;
+    border:1px solid #fca600;
+}
+
+.countdown-tip {
+    z-index: 2;
+    margin-left: -10px;
+}
+
+.countdown .detail-countdown {
+    z-index: 2;
+    /*background-size: 30px auto;*/
+    display: inline-block;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.countdown .yao-hand {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-top: -5px;
+    margin-left: -3px;
+    float: left;
+}
+.top-btn
+{
+  position: relative;
+  width:100%;
+  height:60px;
+}
+.yao-theme
+{
+    max-width: 70%;
+    margin-left: 15%;
+}
+.prize-show {
+    max-height: 90px;
+    width: 26%;
+    /*background: -webkit-linear-gradient(215deg, #1582F9 0%, #0C3D9A 100%);*/
+    color: #fff;
+    float: right;
+    text-align: center;
+    right: 0px;
+    position: absolute;
+    top: 20px;
+    padding: 2px 0px;
+}
+.info-box
+{
+  position: relative;
+  text-align: left;
+  color:#d86103;
+  padding-left:10px;
+  font-weight: bolder;
+  margin:2% 0px;
+}
+.test {
+    height: 70px;
+    width: 28px;
+    background: -webkit-linear-gradient(top, #1582F9 0%, #0C3D9A 100%);
+    color: #fff;
+    float: left;
+    text-align: center;
+    left: 10px;
+    position: relative;
+    z-index: 1000;
+}
+#tttj {
+  /*  top: 26px;*/
+    position: relative;
+    display: inline-block;
+    z-index: 9;
+    text-align: center;
+    left: 42%;
+    text-align: center;
+}
+#tttj img {
+    display: inline-block;
+    width: 16px;
+    margin: 0 auto;
+}
+#tttj span{
+    display: inline-block;
+    color: red;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.monkeyL
+{
+    position: absolute;
+    z-index: 0;
+    left: 0px;
+    width: 36%;
+    bottom: 70px;
+}
+.monkeyT
+{
+    left:10px;
+    position: absolute;
+    z-index: 0;
+    width: 24%;
+    bottom: 65px;
+}
+.monkeyT >img
+{
+    width:100%;
+}
+.monkeyR
+{
+    right: 0px;
+    position: absolute;
+    z-index: 0;
+    width: 26%;
+    bottom: 70px;
+}
+.ftbanner
+{
+    position: relative;
+    z-index: 1;
+}
+.footer-nav
+{
+    position: fixed;
+    z-index: 1300;
+    bottom: 0;
+    background: #00606e;
+    width: 100%;
+    height: 45px;
+}
+.footer-nav > div
+{
+    line-height: 45px;
+
+    position: relative;
+
+    float: left;
+
+    /*width: 33.3%;*/
+    width: 50%;
+    height: 100%;
+
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    background: #00606e;
+}
+.footer-nav > div.focus:before
+{
+    position: absolute;
+    content: "";
+    top: -8px;
+    left: 50%;
+    margin-left: -10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 8px solid #00b6d1;
+   /* -webkit-animation:cross_move 5s 0.5s infinite ease-in-out;
+    animation:cross_move 5s 0.5s infinite ease-in-out;
+    animation-fill-mode: both;
+    backface-visibility: visible;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: visible;*/
+}
+.footer-nav img
+{
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    vertical-align: middle;
+}
+.icon-label
+{
+    position: absolute;
+    width: 30px;
+    height: 18px;
+    background: url("../images/icon-arrow.png");
+    background-size: 100% 100%;
+   
+    top: -25px;
+    left: 50%;
+    margin-left: -15px;
+}
+.footer-nav > div.focus
+{
+    background: #00b6d1;
+}
+/*倒计时红包动画*/
+.none-tips{
+    animation-name:nonetext;
+    -webkit-animation-name:nonetext;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1;
+    animation-duration:0.5s;
+    -webkit-animation-duration:0.5s;
+    animation-delay:0.1s;
+    -webkit-animation-delay:0.1s;
+    animation-timing-function:linear;
+    -webkit-animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes nonetext{
+    0%{
+        transform:translateY(-300px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity:1.0;
+    }
+}
+@-webkit-keyframes nonetext{
+     0%{
+        -webkit-transform:translateY(-300px);
+        opacity:0;
+    }
+    100%{
+        -webkit-transform:translateY(0px);
+        opacity:1.0;
+    }
+}
+.wobble {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    -webkit-animation: 3s waggle;
+    animation: 3s waggle;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+.lightmove{
+    position: absolute;
+    height:60px;
+    top:0px;
+    width:100%;
+    z-index: 1;
+    background: url("../images/shine.png") no-repeat;
+    background-size: 100% 100%;
+    background-image: -webkit-linear-gradient(0deg, rgba(34, 41, 87, 0.6) 30%, #fff 60%, rgba(34, 41, 87, 0.6) 100%);  
+    -webkit-animation: lightmove 5s 0.5s infinite ease-in-out;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: visible;
+}
+.btn-market
+{
+    position: absolute;
+    width:28px;
+    right:0px;
+    font-size: 14px;
+}
+.btn-market img
+{
+    display: block;
+    position: relative;
+}
+@-webkit-keyframes waggle {
+    0%, 7% {
+        transform: rotateZ(0);
+        -webkit-transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+        -webkit-transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+        -webkit-transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+        -webkit-transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+        -webkit-transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+        -webkit-transform: rotateZ(0);
+    }
+}
+.footer-nav > div.focus:active:before
+{
+    position: absolute;
+    content: "";
+    top: -8px;
+    left: 50%;
+    margin-left: -10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 8px solid #3378b1!important;
+   /* -webkit-animation:cross_move 5s 0.5s infinite ease-in-out;
+    animation:cross_move 5s 0.5s infinite ease-in-out;
+    animation-fill-mode: both;
+    backface-visibility: visible;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: visible;*/
+}
+.btn-nav:active {
+  background: #3378b1!important; /* Old browsers */
+  background: -webkit-linear-gradient(to bottom,  #3378b1 0%,#2989d8 0%,#4086c2 100%)!important; 
+}
+.btn-nav:active:after{
+  content: "";
+  display:block;
+  width: 2px;
+  height: 2px;
+  position:absolute;
+  border-radius:2px;
+  top:50%;
+  left: 50%;
+  margin: -1px 0 0 -1px;
+  z-index:2;
+  background: rgba(255,255,255,1);
+  box-shadow:0 0 10px 5px rgba(255,255,255,0.5),
+    0 0 20px 10px rgba(255,255,255,0.5),
+    0 0 30px 15px rgba(255,255,255,0.4),
+    0 0 40px 20px rgba(255,255,255,0.3),
+    0 0 50px 25px rgba(255,255,255,0.3),
+    0 0 60px 30px rgba(255,255,255,0.3),
+    0 0 70px 35px rgba(255,255,255,0.3);
+-webkit-box-shadow:0 0 10px 5px rgba(255,255,255,0.5),
+    0 0 20px 10px rgba(255,255,255,0.5),
+    0 0 30px 15px rgba(255,255,255,0.4),
+    0 0 40px 20px rgba(255,255,255,0.3),
+    0 0 50px 25px rgba(255,255,255,0.3),
+    0 0 60px 30px rgba(255,255,255,0.3),
+    0 0 70px 35px rgba(255,255,255,0.3);
+}
+.parallax-arrow {
+  -webkit-animation:varrow 3500ms 1000ms ease infinite;
+  animation:varrow 3500ms 1000ms ease infinite
+}
+@-webkit-keyframes varrow {
+  from {
+  opacity:0;
+  -webkit-transform:translate3d(-50%, 10px, 0);
+  transform:translate3d(-50%, 10px, 0)
+}
+to {
+  opacity:1;
+  -webkit-transform:translate3d(-50%, 0, 0);
+  transform:translate3d(-50%, 0, 0)
+}
+}
+@keyframes varrow {
+  from {
+      opacity:0;
+      -webkit-transform:translate3d(-50%, 10px, 0);
+      transform:translate3d(-50%, 10px, 0)
+   }
+    to 
+    {
+      opacity:1;
+      -webkit-transform:translate3d(-50%, 0, 0);
+      transform:translate3d(-50%, 0, 0)
+    }
+}
+/* iPhone4 */
+
+@media screen and (min-device-width: 320px) and (max-device-height: 500px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .prize-show
+    {
+        width:20%;
+        top:21px;
+    }
+    .btn-back
+    {
+        width:20%;
+        top:15px;
+    }
+    .info-box
+    {
+        margin:0px;
+    }
+    .count
+    {
+        font-size: 14px;
+    }
+    .top-btn
+    {
+      height:50px;
+    }
+    #tttj {
+        /*top:22px;*/
+    }
+    .yao-theme {
+        max-width: 50%;
+        margin-left: 25%;
+    }
+    .marquee-box {
+        bottom: 24%;
+    }
+    .countdown
+    {
+        height: 30px;
+        line-height: 30px;
+        margin:10% auto 2% auto;
+    }
+    .countdown .yao-hand
+    {
+        height:30px;
+        width:30px;
+        margin-top:-1px;
+    }
+    .weizhongjang
+    {
+        font-size: 13px;
+    }
+}
+
+/*.none-tips {
+    opacity: 0;
+    animation-name: nonetips;
+    -webkit-animation-name: nonetips;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes nonetips {
+    0% {
+        transform: translate(-10px, 0px);
+        opacity: 0;
+    }
+    20% {
+        transform: translate(10px, 0px);
+        opacity: 1;
+    }
+    40% {
+        transform: translate(-10px, 0px);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(10px, 0px);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-10px, 0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes nonetips {
+    0% {
+        -webkit-transform: translate(-10px, 0px);
+        opacity: 0;
+    }
+    20% {
+        -webkit-transform: translate(10px, 0px);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translate(-10px, 0px);
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: translate(10px, 0px);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(-10px, 0px);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}*/
+
+.button-highlight {
+    -webkit-animation-name: glowing-highlight;
+    animation-name: glowing-highlight;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (min-device-width: 320px) and (min-device-height: 500px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .top-btn
+    {
+        height:54px;
+    }
+
+    .countdown
+    {
+        margin:10% auto 5% auto;
+    }
+
+
+}
+
+
+/* luo */
+
+@media screen and (min-device-width: 1000px) and (min-device-height: 1000px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+@-webkit-keyframes glowing-highlight {
+  from {
+    -webkit-box-shadow: 0 0 0 rgba(172,117,11, 0.3);
+            box-shadow: 0 0 0 rgba(172,117,11, 0.3); 
+    }
+  50% {
+    -webkit-box-shadow: 0 0 20px rgba(172,117,11, 0.8);
+            box-shadow: 0 0 20px rgba(172,117,11, 0.8); 
+        }
+  to {
+    -webkit-box-shadow: 0 0 0 rgba(172,117,11, 0.3);
+            box-shadow: 0 0 0 rgba(172,117,11, 0.3);
+     } 
+}
+@keyframes glowing-highlight {
+  from {
+    -webkit-box-shadow: 0 0 0 rgba(172,117,11, 0.3);
+            box-shadow: 0 0 0 rgba(172,117,11, 0.3); }
+  50% {
+    -webkit-box-shadow: 0 0 20px rgba(172,117,11, 0.8);
+            box-shadow: 0 0 20px rgba(172,117,11, 0.8); }
+  to {
+    -webkit-box-shadow: 0 0 0 rgba(172,117,11, 0.3);
+            box-shadow: 0 0 0 rgba(172,117,11, 0.3); }
+}

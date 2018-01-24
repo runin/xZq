@@ -1,0 +1,90 @@
+.school-name:before{
+     content:'幼儿园名称:';
+ }
+
+.slogan:before{
+    content:'参与口号:';
+}
+
+.program-name:before{
+    content:'节目名称:';
+}
+
+.program-about:before{
+    content:'节目介绍:';
+}
+
+html{
+    background:red;
+}
+.ui-audio {
+    position: absolute;
+    top: -15px;
+    right: 2px;
+    width: 50px;
+    height: 70px;
+    z-index: 200;
+    -webkit-transform: scale(0.5);
+}
+
+.btn-audio {
+    width: 50px;
+    padding-top: 29px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.btn-audio strong,.btn-audio .audio-icon {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    vertical-align: middle;
+}
+
+.btn-audio strong {
+    font-size: 20px;
+    color: #fff;
+    opacity: 1;
+    position: absolute;
+    right: 8px;
+    top: 70px;
+    text-align: right;
+}
+
+.btn-audio .audio-icon {
+    width: 44px;
+    height: 44px;
+    background: url(../images/icon-audio.png) no-repeat 0px 0;
+    background-size: 44px;
+    position: absolute;
+}
+.btn-audio .audio-icon.animated {
+    -webkit-animation: reverseRotataZ 1.2s linear infinite;
+}
+
+@-webkit-keyframes reverseRotataZ {
+    0%{
+        -webkit-transform: rotateZ(0deg);
+    }
+    100%{
+        -webkit-transform :rotateZ(-360deg);
+    }
+}
+
+.btn-audio strong.hide {
+    opacity: 0;
+}
+
+.btn-audio strong.animated {
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.coffee-steam-box {
+    left: 4px !important;
+    top: -95px !important;
+}
+
+.coffee-steam img {
+    width: 22px !important;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>珠江剧场</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/swiper.min.css" />
+<link rel="stylesheet" href="./css/pai.css" />
+</head>
+<body>
+	<section class="main" >
+		<ul id="goodsList">
+		</ul>
+		<div class="time-box hidden"><span class="time-tips"></span><span class="detail-countdown"></span></div>
+    </section>
+    <footer class="bottom-nav">
+    	<div class="order none" id="order">
+			<label>收货信息</label>
+			<input type="text" class="name" id="name" placeholder="姓名" />
+			<input type="number" class="mobile" id="mobile" placeholder="电话" />
+			<input type="text" class="address" id="address" placeholder="收货地址" />
+			<a class="btn btn-order-close" id="btn-order-close" data-collect="true" data-collect-flag="tv-guangzhou-zhujiang-order-close-btn" data-collect-desc="订单页面关闭按钮"></a>
+			<a class="btn btn-order" id="btn-order" data-collect="true" data-collect-flag="tv-guangzhou-zhujiang-order-btn" data-collect-desc="提交订单">提交订单</a>
+		</div>
+    	<nav>
+    		<a class="btn-act btn-yao" data-collect="true" data-collect-flag="tv-guangzhou-zhujiang-index-join-yao" data-collect-desc="首页-进入摇奖页面">摇奖<i></i></a>
+    		<a class="btn-act btn-pai hover" data-collect="true" data-collect-flag="tv-guangzhou-zhujiang-index-join-pai" data-collect-desc="首页-抢拍页面">抢拍<i class="bounceInDown"></i></a>
+    		<a class="btn-act btn-dan" data-collect="true" data-collect-flag="tv-guangzhou-zhujiang-index-join-dan" data-collect-desc="首页-进入弹幕页面">弹幕<i></i></a>
+    	</nav>
+    </footer>
+	<!--<div class="copyright"></div>
+-->
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/swiper.min.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script> 
+	
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/pai.js"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

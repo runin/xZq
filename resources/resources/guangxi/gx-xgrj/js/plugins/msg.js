@@ -1,0 +1,11 @@
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/0.jpg'></div>" + "我要上春晚终于上了！期待已久呢~");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/1.jpg'></div>" + "不知道猴年春晚会有什么样的改变……");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/2.jpg'></div>" + "中了洋河的红包，哦也");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/3.jpg'></div>" + "这期嘉宾还可以呢，这猴子也太可爱了吧");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/5.jpg'></div>" + "我要上春晚，我要中大奖！");
+// window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/6.jpg'></div>" + "");
+// window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/7.jpg'></div>" + "");
+// window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/8.jpg'></div>" + "");
+// window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/7.jpg'></div>" + "");
+// window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/11.jpg'></div>" + "");
+// window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/12.jpg'></div>" + "");

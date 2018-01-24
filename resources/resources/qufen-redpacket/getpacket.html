@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>答题红包</title>
+    <link rel="stylesheet" href="./css/core.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/getpacket.css?v=1.0">
+</head>
+
+<body>
+    <section class="pop-bg" id="taored">
+        <div class="p-chai rubberband">
+            <i class="headurl"></i>
+            <p class="p-text">你的好友给你发了一个红包</p>
+            <span class="btn-box taobtn_a">
+<!-- 
+            <a href="javascript:void(0)" class="btn-a taobtn "></a> -->
+
+            <img src="images/money.png" alt=""   style="width:100%;height:100%" /> 
+
+            </span>
+        </div>
+    </section>
+    <section class="pop-bg  none" id="answer">
+        <div class="p-wenda animated bounceInRight" id="AnsDiv">
+            <div class="AnsDiv-msg">抢答正确答案，即获红包</div>
+            <h2 class="p-title"></h2>
+            <div class="a-list">
+            </div>
+            <footer>
+                <span class="gotolookfriend seft_look none">看看大家的手气></span>
+                <p class="gotolook-p">可抢红包<span class="rn">4</span>/<span class="tn">5</span></p>
+            </footer>
+        </div>
+        <div class="p-wenda none" id="ErrorDiv">
+            <h2 class="p-error">答错了，红包溜走了~</h2>
+            <a href="javascript:void(0)" data-flag="metoosend" data-collect=true data-desc="我也发答题红包按钮" class="btn-fa">我也要发答题红包</a>
+            <footer class="gofooter">
+                <span class="gotolookfriend" data-flag="lookbtn" data-collect=true data-desc="看手气按钮">看看大家的手气></span>
+            </footer>
+        </div>
+        <div class="p-wenda none" id="takeover">
+            <h2 class="p-error">手慢了，红包溜走了~</h2>
+            <a href="javascript:void(0)" class="btn-fa" data-flag="metoosend" data-collect=true data-desc="我也发答题红包按钮">我也要发答题红包</a>
+            <footer class="gofooter">
+                <span class="gotolookfriend" data-flag="lookbtn" data-collect=true data-desc="看手气按钮">看看大家的手气></span>
+            </footer>
+        </div>
+        <div class="p-wenda none" id="redpackoutime">
+            <h2 class="p-error">超过5小时没有领取,红包已失效~</h2>
+            <a href="javascript:void(0)" class="btn-fa" data-flag="metoosend" data-collect=true data-desc="我也发答题红包按钮">我也要发答题红包</a>
+            <footer class="gofooter">
+                <span class="gotolookfriend" data-flag="lookbtn" data-collect=true data-desc="看手气按钮">看看大家的手气></span>
+            </footer>
+        </div>
+        <div class="p-wenda none" id="hasAns">
+            <h2 class="p-error">你已经答过此红包咯~</h2>
+            <a href="javascript:void(0)" class="btn-fa" data-flag="metoosend" data-collect=true data-desc="我也发答题红包按钮">我也要发答题红包</a>
+            <footer class="gofooter">
+                <span class="gotolookfriend" data-flag="lookbtn" data-collect=true data-desc="看手气按钮">看看大家的手气></span>
+            </footer>
+        </div>
+    </section>
+    <section class="pop-bg  none" id="start_hasAns">
+        <div class="p-wenda">
+            <h2 class="p-error">你已经答过此红包咯~</h2>
+            <a href="javascript:void(0)" class="btn-fa" data-flag="metoosend" data-collect=true data-desc="我也发答题红包按钮">我也要发答题红包</a>
+            <footer class="gofooter">
+                <span class="gotolookfriend" data-flag="lookbtn" data-collect=true data-desc="看手气按钮">看看大家的手气></span>
+            </footer>
+        </div>
+    </section>
+    <section class="pop-bg  none" id="start_takeover">
+        <div class="p-wenda">
+            <h2 class="p-error">手慢了，红包溜走了~</h2>
+            <a href="javascript:void(0)" class="btn-fa" data-flag="metoosend" data-collect=true data-desc="我也发答题红包按钮">我也要发答题红包</a>
+            <footer class="gofooter">
+                <span class="gotolookfriend" data-flag="lookbtn" data-collect=true data-desc="看手气按钮">看看大家的手气></span>
+            </footer>
+        </div>
+    </section>
+    <section class="pop-bg  none" id="start_timeout">
+        <div class="p-wenda">
+            <h2 class="p-error">超过5小时没有领取,红包已失效</h2>
+            <a href="javascript:void(0)" class="btn-fa" data-flag="metoosend" data-collect=true data-desc="我也发答题红包按钮">我也要发答题红包</a>
+            <!--          <a href="javascript:void(0)" class="btn-fa">
+               <img src="images/motoosendbtn.png" align="">
+            </a> -->
+        </div>
+    </section>
+    <section class="pop-bg none" id="qrcodediv">
+        <div class="qrcode-middle">
+            <img src="images/qufenlog.jpg" class="qrcode-img" data-flag="qrcodebtn" data-collect=true data-desc="关注公众号图片" />
+            <p>长按二维码，发送答题红包，获取红包动态</p>
+        </div>
+    </section>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/plugins/zepto.min.js" type="text/javascript"></script>
+    <script src="js/plugins/zepto.cookie.min.js" type="text/javascript"></script>
+    <script src="js/plugins/zepto.fx.min.js" type="text/javascript"></script>
+    <script src="./js/config.js"></script>
+    <script src="js/authorize_userinfo.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="./js/app/getpacket.js?v=1.0"></script>
+    <script src="js/reportlog.js" type="text/javascript"></script>
+    <script src="js/share.js" type="text/javascript"></script>
+    <img src="images/hongbao_bg02.png" class="none">
+</body>
+
+</html>

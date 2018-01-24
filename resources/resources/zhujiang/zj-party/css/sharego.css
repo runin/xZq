@@ -1,0 +1,289 @@
+@charset"UTF-8";
+body {
+  background: url(../images/sharego-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+header {
+  height: 12vh;
+}
+header img.dn {
+  width: 46%;
+  display: block;
+  margin: 0 auto;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+.not-chai {
+  background: url(../images/not-chai.jpg) no-repeat;
+  background-size: 100% 100%;
+  width: 96%;
+  height: 75vh;
+  margin: 0 auto 0;
+}
+.not-chai .cy {
+  color: #AE1B30;
+  width: 63%;
+  margin: 0 auto;
+  height: 41vh;
+}
+.not-chai .cy h2 {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 16px auto 5px;
+  padding-top: 22%;
+}
+.not-chai .cy p {
+  font-size: 12px;
+  line-height: 22px;
+}
+.not-chai .cy-bottom {
+  font-size: 15px;
+  color: #AE1B30;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.not-chai .cy-bottom .btn {
+  background: #F7CE65;
+  border-radius: 5px;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 15px;
+}
+.check {
+  background: #FFFFFF url(../images/check.jpg) no-repeat;
+  background-size: 100% auto;
+  width: 96%;
+  height: 75vh;
+  margin: 0 auto 0;
+  padding-top: 80px;
+}
+.check .start {
+  clear: both;
+  margin: 0 auto 25px;
+  height: 60px;
+  width: 265px;
+}
+.check .start.zfy {
+  height: 130px;
+}
+.check .start label {
+  display: inline-block;
+  background: url(../images/share-user.png) no-repeat;
+  background-size: 100% 100%;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  padding: 5px;
+  overflow: hidden;
+}
+.check .start label img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.check .start .triangle-right {
+  background: #981820;
+  border-radius: 5px;
+  display: inline-block;
+  width: 165px;
+  height: 40px;
+  margin-top: 20px;
+  float: right;
+}
+.check .start .triangle-right:before {
+  content:'';
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+  margin-left: -8px;
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #981820;
+  border-left: none;
+}
+.check .start .triangle-right i {
+  background: url(../images/s3.png) no-repeat center center;
+  background-size: 14px auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 23px;
+  height: 28px;
+  float: left;
+  margin: 5px 0 0 6px;
+}
+.check .start .triangle-right.scale i {
+  -webkit-animation-name: voice-playing;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+}
+.check .start .triangle-right .duri {
+  color: #fff;
+  font-size: 12px;
+  float: right;
+  margin-top: 11px;
+  margin-right: 10px;
+}
+.check .start .gx {
+  height: 35px;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  font-size: 13px;
+  display: block;
+  width: 165px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #981820;
+  color: #fff;
+  border-radius: 5px;
+  float: right;
+  margin-top: 20px;
+  height: 80px;
+  padding: 10px;
+}
+.check .start i {
+  margin-top: 30px;
+  margin-left: -4px;
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #981820;
+  border-left: none;
+  float: right;
+}
+.check .check-bottom {
+  clear: both;
+  width: 160px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+@-webkit-keyframes voice-playing {
+  0% {
+    background-image: url(../images/s1.png);
+  }
+  30% {
+    background-image: url(../images/s1.png);
+  }
+  70% {
+    background-image: url(../images/s2.png);
+  }
+  100% {
+    background-image: url(../images/s3.png);
+  }
+}
+@-webkit-keyframes bounceInUp {
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: -10;
+  -webkit-animation-play-state: running;
+}
+@-webkit-keyframes bounceOutDown {
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+  40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+.bounceOutDown {
+  -webkit-animation-name: bounceOutDown;
+  animation-name: bounceOutDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* iPhone4 */
+@media screen and (min-device-width: 320px) and (max-device-height: 500px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .not-chai .cy {
+    height: 40vh;
+  }
+  .not-chai .cy h2 {
+    padding-top: 16%;
+  }
+  .check .start.zfy {
+    height: 80px;
+  }
+  .check .check-bottom {
+    width: 130px;
+  }
+}
+/* iPhone5 */
+@media screen and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+  .check .start.zfy {
+    height: 90px;
+  }
+  .check .start {
+    height: 50px;
+  }
+}
+@media screen and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+  .check .start.zfy {
+    height: 95px;
+  }
+}

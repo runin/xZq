@@ -1,0 +1,434 @@
+body{
+	background-color: #3c816a;
+	background-image: url(../images/yao-center.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center center;
+	min-height: 100vh;
+	position: relative;
+}
+.main-top .marquee {
+	color: white;
+	font-size: 13px;
+	background: #f461a9;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	overflow: hidden;
+	top: 0;
+}
+.footer-div{
+	margin: 20% 15px 0;
+	color: #044b82;
+	/*text-shadow: 1px 1px 1px #044b82;*/
+	clear: both;
+}
+.noaw-bg{
+	width: 80%;
+}
+.zx-tt{
+	font-size: 14px;
+	color: white;
+	width: 70%;
+	margin: 0 auto;
+	float: left;
+}
+.count{
+	margin: 2px 0;
+	font-weight: bold;
+	float: left;
+	height: 33px;
+	line-height: 33px;
+}
+.outer{
+	position: absolute;
+	top: 40%;
+	left: 10px;
+	color: #0089ab;
+	/*text-decoration:  underline;*/
+	/*font-weight: bold;*/
+	background: url("../images/out2.png") no-repeat;
+	width: 50px;
+	height: 50px;
+	background-size: 100% 100%;
+	-webkit-animation: picshake 3s infinite;
+}
+.outer-text{
+	position: absolute;
+	top: 40%;
+	left: 68px;
+	width: auto;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	margin-right: 10px;
+	font-size: 14px;
+}
+.hand{
+	display: inline-block;
+	width: 17%;
+	vertical-align: top;
+	margin-top: -5px;
+}
+.btn-box{
+	position: relative;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 10%;
+	height: 30px;
+}
+.back-rule{
+	position: absolute;
+	width: 80px;
+	height: 26px;
+	background: url("../images/btn-rule.png") no-repeat;
+	background-size: 100% 100%;
+	left: 10%;
+}
+.back-toinfo{
+	position: relative;
+	width: 100px;
+	height: 30px;
+	background: url("../images/btn-toinfo.png") no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	margin: auto;
+}
+.start{
+	-webkit-animation: 3s waggle;
+	animation: 3s waggle;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-delay: -1;
+	animation-delay: -1;
+}
+@-webkit-keyframes waggle {
+	0%, 7% {
+		transform: rotateZ(0);
+		-webkit-transform: rotateZ(0);
+	}
+	15% {
+		transform: rotateZ(-15deg);
+		-webkit-transform: rotateZ(-15deg);
+	}
+	20% {
+		transform: rotateZ(10deg);
+		-webkit-transform: rotateZ(10deg);
+	}
+	25% {
+		transform: rotateZ(-10deg);
+		-webkit-transform: rotateZ(-10deg);
+	}
+	30% {
+		transform: rotateZ(6deg);
+		-webkit-transform: rotateZ(6deg);
+	}
+	35% {
+		transform: rotateZ(-4deg);
+		-webkit-transform: rotateZ(-4deg);
+	}
+	40%, 100% {
+		transform: rotateZ(0);
+		-webkit-transform: rotateZ(0);
+	}
+}
+.countdown{
+	height: 60px;
+	line-height: 26px;
+	border-radius: 3px;
+	font-size: 18px;
+	/*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);*/
+	text-align: center;
+	font-weight: bold;
+	/*background: url(../images/djs-bg.png) no-repeat;*/
+	background-size: 250px auto;
+	width: 250px;
+	margin: 0 auto;
+	color: white;
+}
+.countdown .detail-countdown{
+	width: 230px;
+	display: inline-block;
+}
+.countdown .detail-countdown label{
+	display: inline-block;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-left: 2px;
+	margin-right: 2px;
+	border-radius: 3px;
+	color: #f4e2c6;
+	float: left;
+}
+.countdown .detail-countdown .dian1{
+	width: 50px;
+	height: 30px;
+	background: url("../images/dian1.png")no-repeat;
+	background-size: 100% 100%;
+	border: none!important;
+	/*display: inline-flex;*/
+}
+.countdown .detail-countdown .dian2{
+	background: url("../images/dian2.png")no-repeat;
+	width: 30px;
+	height: 30px;
+	background-size: 100% 100%;
+	border: none!important;
+	/*display: inline-flex;*/
+}
+.countdown .detail-countdown .dian3{
+	width: 30px;
+	height: 30px;
+	background: url("../images/dian3.png")no-repeat;
+	background-size: 100% 100%;
+	border: none!important;
+	/*display: inline-flex;*/
+}
+.countdown .detail-countdown .bor{
+	background: url("../images/dian.png") no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+}
+.countdown .detail-countdown .bor>label{
+
+}
+.countdown .countdown-tip,.loading{
+	font-weight: bold;
+}
+.countdown-tip>img{
+	height: 35px;
+	width: auto;
+}
+.copyright {
+	position: relative;
+	color: #fff;
+	line-height: 13px;
+	margin-top: 3px;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+}
+
+header {
+	width: 95%;
+	margin: 10px auto;
+}
+
+header .back-btn{
+	width: 80px;
+	height: 26px;
+	color: #0089ab;
+	font-size: 16px;
+	float: right;
+	background: url("../images/btn-back.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+/*yao-s*/
+.home-box {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.main-top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 50%;
+	background-image: url('../images/home_logo_a.jpg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100% 100%;
+	/*box-sizing: border-box;*/
+	-webkit-transition: -webkit-transform .2s ease;
+}
+.main-foot {
+	position: absolute;
+	bottom: 1px;
+	width: 100%;
+	height: 50%;
+	background-image: url('../images/home_logo_b.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% 100%;
+	/*box-sizing: border-box;*/
+	-webkit-transition: -webkit-transform .2s ease;
+}
+.yao-text{
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	margin: 6vh auto 0;
+}
+.yao-text p{
+	position:relative;
+	min-height: 30px;
+	color: #359dc8;
+}
+.yao-text p.texta span{
+	color: #DA2323;
+	font-weight: bold;
+	font-size: 17px;
+}
+.yao-text p:last-child span{
+	position:relative;
+	width:100%;
+}
+.yaonone-text{
+	animation-name:nonetext;
+	-webkit-animation-name:nonetext;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-duration:0.5s;
+	-webkit-animation-duration:0.5s;
+	animation-delay:0.1s;
+	-webkit-animation-delay:0.1s;
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	display: block;
+}
+#test{
+	/*visibility: hidden;*/
+}
+.visibility{
+	visibility: hidden;
+}
+@keyframes nonetext{
+	0%{
+		top:-300px;
+		opacity:0;
+	}
+	100%{
+		top:0;
+		opacity:1.0;
+	}
+}
+@-webkit-keyframes nonetext{
+	0%{
+		top:-300px;
+		opacity:0;
+	}
+	100%{
+		top:0;
+		opacity:1.0;
+	}
+}
+/*yao-e*/
+
+.new{
+	display: block;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	margin: 10px auto;
+	background: url(../images/new.png) no-repeat;
+	background-size: 200px 40px;
+}
+.disabled{
+	background: url(../images/disabled.png) no-repeat;
+	background-size: 200px 40px;
+}
+.zan-zhu{
+	width: 95%;
+	margin: 0 auto;
+}
+.zan-zhu h4{
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 5px;
+}
+.zan-zhu div{
+	display: inline-block;
+}
+.zan-zhu img{
+	display: inline-block;
+	border: 1px solid #fff;
+}
+.zan-zhu .zz-img{
+	-webkit-column-count: 3;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.copyright {
+		-webkit-transform: scale(.9);
+	}
+	.yao-text{
+		margin: 3vh auto 0;
+	}
+	.zx-tt {
+		font-size: 14px;
+	}
+	.count {
+		margin: 2px 0;
+	}
+	.footer-div {
+		margin: 40px 15px 0;
+	}
+	.new {
+		display: block;
+		width: 150px;
+		height: 30px;
+		line-height: 30px;
+		margin: 10px auto 3px;
+		background: url(../images/new.png) no-repeat;
+		background-size: 150px 30px;
+	}
+	.disabled {
+		background: url(../images/disabled.png) no-repeat;
+		background-size: 150px 30px;
+	}
+	.zan-zhu h4 {
+		font-size: 12px;
+		margin-bottom: 2px;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait){
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+
+@-webkit-keyframes picshake {
+	0%{
+
+	}
+	20% {
+		-webkit-transform: rotate(45deg);
+	}
+	10%,30% {
+		-webkit-transform: rotate(-45deg);
+	}
+	40%{
+		-webkit-transform: rotate(0deg);
+	}
+}

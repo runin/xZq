@@ -1,0 +1,202 @@
+html {
+	background: #EDEDED;
+}
+a,a:hover {
+	text-decoration: none;
+}
+.main {
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-size: 15px;
+}
+.cover {
+    min-height: 180px;
+	
+}
+.cover img {
+    max-height: 100%;
+	
+    max-width: 100%;
+}
+.info {
+    background: #fff;
+	
+    text-align: center;
+    border-bottom: 1px solid #E7E7E7;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.info.nonav {
+    background: #EEEEEE;
+	
+    border: 0 none;
+    padding-bottom: 6px;
+}
+.info h2 {
+    color: #000000;
+	
+    margin-bottom: 15px;
+}
+.info p {
+    color: #666666;
+	
+}
+.info .icon-xian {
+	display: inline-block;
+	vertical-align: -9px;
+	margin-right: 6px;
+	background: url(http://yao.holdfun.cn/portal/resources/portal/images/logo_xian.png) no-repeat 0 0;
+	/* background-size: 30px auto; */
+	width: 36px;
+	height: 32px;
+}
+.nav {
+    background: #fff;
+    position: relative;
+    height: 42px;
+}
+.nav:before {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	top: 6px;
+	background: #E7E7E7;
+}
+.nav.nonav {
+    display: none;
+	
+}
+.nav li {
+    width: 50%;
+	
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    text-align: center;
+    background: #fff;
+    padding-bottom: 3px;
+}
+.nav a {
+    display: block;
+	
+    color: #000;
+    padding-top: 3px;
+}
+.nav a.curr, .nav a:hover {
+    border-bottom: 3px solid #CB2D44;
+	
+    color: #df3131;
+}
+.detail-list {
+	
+}
+.detail-list li {
+    color: #333333;
+	
+    padding: 0 12px;
+}
+.detail-list li h2 {
+    border-bottom: 1px solid #D6D6D6;
+	
+    padding: 20px 5px 5px;
+    margin-bottom: 5px;
+}
+.detail-list li h2:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+	background: url(http://yao.holdfun.cn/portal/resources/portal/images/icons_detail.png) no-repeat 0 0;
+	background-size: 125px auto;
+}
+.detail-list p {
+    text-indent: 2em;
+	
+    line-height: 28px;
+    padding: 0 5px;
+}
+.detail-list .content {
+	
+}
+.detail-list .content h2:before {
+    width: 22px;
+	
+    height: 20px;
+    vertical-align: -3px;
+}
+.detail-list .intro {
+	
+}
+.detail-list .intro h2:before {
+    width: 22px;
+	
+    height: 15px;
+    vertical-align: -2px;
+    background-position: -24px 0;
+}
+.detail-list.nonav .intro h2:before {
+    display: none;
+	
+}
+.detail-list .method {
+	
+}
+.detail-list .method h2:before {
+    width: 16px;
+	
+    height: 23px;
+    background-position: -49px 0;
+    vertical-align: -6px;
+}
+
+.detail-list .rule {
+	
+}
+
+.detail-list .rule h2:before {
+    width: 23px;
+    height: 24px;
+    background-position: -67px 0;
+    vertical-align: -5px;
+}
+
+.detail-list .winners {
+	
+}
+.detail-list .winners h2:before {
+    width: 22px;
+	
+    height: 17px;
+    background-position: -94px 0;
+    vertical-align: -3px;
+}
+.winners .win-item {
+    border-bottom: 1px dashed #D8D8D8;
+	
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.winners h2:before {
+	width: 22px;
+	height: 17px;
+	background-position: -94px 0;
+	vertical-align: -3px;
+}
+.winners .user-info {
+    text-indent: 0;
+	
+    color: #DF3131;
+    margin-bottom: 5px;
+}
+.winners .user-info .name {
+	margin-left: 20px;
+}
+.winners .award-info {
+    text-indent: 0;
+	
+}
+
+

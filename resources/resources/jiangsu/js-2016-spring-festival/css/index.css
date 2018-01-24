@@ -1,0 +1,527 @@
+#index{
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/01/957pprijv1qnhi/images/bg-main.jpg) no-repeat center;
+	float: left;
+}
+footer{
+	position: absolute;
+	font-size: 12px;
+	color: white;
+	bottom: 3px;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+}
+/*
+ * 头部样式
+ */
+.index-header{
+	background: url(../images/bg-main-top.jpg) no-repeat center;
+	overflow: hidden;
+	padding: 0 8px;
+	padding-top: 3px;
+	position: relative;
+}
+.index-header .index-header-logo{
+	float: left;
+	padding-top: 2px;
+}
+.index-header .index-header-logo img{
+	height: 33px;
+}
+.index-header .index-header-link{
+	float: right;
+	padding-top: 2px;
+}
+.index-header .index-header-link img{
+	height: 33px;
+}
+
+/*
+ * END OF 头部样式
+ */
+/*
+ * 头部汤圆
+ */
+.index-header .icon-tangyuan{
+	width: 33px;
+	height: 33px;
+	position: relative;
+}
+.index-header .icon-tangyuan .icon-tangyuan-bg{
+	width: 100%;
+	height: 100%;
+}
+.index-header .icon-tangyuan .icon-tangyuan-face{
+	height: 18px;
+	position: absolute;
+	top: 8px;
+	left: 0px;
+}
+.index-tangyuan-voice{
+	position: absolute;
+	right: 48px;
+	top: 0px;
+	font-size: 12px;
+	color: white;
+	line-height: 33px;
+	padding-top: 2px;
+}
+/*
+ * END OF 头部汤圆
+ */
+/*
+ * 卡槽样式
+ */
+.index-cards{
+	background: url(../images/bg-card-cao.png) no-repeat center;
+	overflow: hidden;
+	margin: 3px 0 8px;
+}
+.index-cards-content{
+	float: left;
+	overflow: hidden;
+}
+.index-cards-content .index-cards-item{
+	float: left;
+	margin: 0 3px;
+}
+.index-cards-content .index-cards-item{
+	outline:none;
+}
+.index-cards-content-inner{
+	position: relative;
+}
+.index-cards-content-inner .slick-arrow{
+	top: 0px;
+	position: absolute;
+	text-indent: -1000em;
+	border: none;
+	background: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.index-cards-content-inner .slick-prev{
+	left: -22px;
+	background-image: url(../images/icon-arrow-left.png);
+}
+.index-cards-content-inner .slick-next{
+	right: -22px;
+	background-image: url(../images/icon-arrow-right.png);
+}
+.index-cards-content-inner .slick-list{
+	overflow: hidden;
+}
+.index-cards .index-cards-btns{
+	float: left;
+}
+.index-cards .index-cards-btns .index-cards-btn:first-child{
+	margin-bottom: 5px;
+}
+#btn_rank{
+	animation: taped 2s ease infinite;
+	background: url(../images/btn-bang.png) no-repeat center;
+}
+#btn_door{
+	background: url(../images/btn-door.png) no-repeat center;	
+	position: relative;
+}
+#btn_door .index-cards-btn-cover{
+    width: 100%;
+    height: 0%;
+    background: url(../images/btn-door-unlock.png) no-repeat bottom;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0px;
+    -webkit-transition: height 1.4s ease;
+    transition: height 1.4s ease;
+}
+/*
+ * END OF 卡槽样式
+ */
+
+/*
+ * 倒计时样式
+ */
+.index-countdown{
+	background: url(../images/bg-countdown.png) no-repeat center;
+	position: relative;
+}
+#bar_countdown{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.index-countdown .bar-blink-wrapper{
+	position: relative;
+	width: 8%;
+	height: 100%;
+	background: url(../images/bar-countdown.png) repeat-x;
+	transition: width 0.8s linear 0s;
+}
+.index-countdown .bar-blink-wrapper .bar-blink{
+	position: absolute;
+	width: 39px;
+	height: 7px;
+	background: url(../images/bar-countdown-head.png) no-repeat center;
+	background-size: cover;
+	right: 0px;
+	top: 0px;
+	-webkit-animation: blink 3s ease-in-out infinite;
+	animation: blink 3s ease-in-out infinite;
+}
+.bar-tips{
+	position: absolute;
+	bottom: -75px;
+	width: 100%;
+	opacity: 0;
+	-webkit-animation: slideUp 3s ease;
+	animation: slideUp 3s ease;
+	z-index: 2;
+}
+
+
+.bar-tips .bar-tips-dialog{
+	width: 200px;
+	background:rgba(0,0,0,.6);
+	text-align: center;
+	margin: 0 auto;
+	color: white;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	padding: 12px 0;
+	font-size: 14px;
+	line-height: 21px;
+}
+.bar-tips .bar-tips-arrow{
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	border: 10px solid transparent;
+	border-bottom-color: rgba(0,0,0,0.6);
+	position: absolute;
+	top: -20px;
+}
+.index-countdown .bar-yao-btn{
+	position: absolute;
+	right: -1%;
+	top: -30%;
+	height: 100%;
+}
+/*
+ * END OF 倒计时样式
+ */
+
+/*
+ * 话题样式
+ */
+.index-topic{
+	margin: 8px 0;
+}
+.index-topic .index-topic-icon{
+	width: 20px;
+	height: 15px;
+	background: url(../images/icon-comment.png) no-repeat center;
+	background-size: 20px 15px;
+	float: left;
+	top: 3px;
+	position: relative;
+}
+.index-topic h2{
+	margin-left: 25px;
+	font-size: 16px;
+	color: white;
+}
+/*
+ * END OF 话题样式
+ */
+
+
+/*
+ * 评论导航样式
+ */
+.index-comment-nav{
+	overflow: hidden;
+	border-bottom: 1px solid #a70300;
+	padding-bottom: 8px;
+	padding-top: 8px;
+}
+.index-comment-nav-list{
+	overflow: hidden;
+	margin: 0 auto;
+}
+.index-comment-nav-list .nav-list-item{
+	position: relative;
+	display: block;
+	float: left;
+	background: url(../images/border-comment-nav.png) no-repeat center;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+}
+.index-comment-nav-list .nav-list-item p{
+	color: #fae274;
+    font-size: 14px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.index-comment-nav-list .nav-list-item.active p{
+    color: white;
+    font-weight: bold;
+}
+.index-comment-nav-list .sper{
+	position: relative;
+	float: left;
+	background: url(../images/icon-comment-nav.png) no-repeat center;
+}
+.index-comment-nav-list .nav-list-item:first-child{
+	left: 3px;
+}
+.index-comment-nav-list .nav-list-item:last-child{
+	left: -3px;
+}
+/*
+ * END OF 评论导航样式
+ */
+
+/*
+ * 评论列表样式
+ */
+.index-comment-list{
+ 	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	position: relative;
+	z-index: 1;
+}
+.comment-list-wrapper{
+
+}
+.comment-list-empty{
+	padding: 30px 8px 10px;
+	color: rgba(0,0,0,0.4);
+	text-align: center;
+	font-size: 14px;
+}
+.comment-list-item{
+	overflow: hidden;
+	position: relative;
+	border-bottom: 1px dotted #ce0207;
+	padding: 6px 8px 10px;
+}
+.comment-list-item:last-child{
+	border-bottom: none;
+}
+.comment-list-item .comment-list-avatar{
+	width: 40px;
+	height: 40px;
+	padding: 2px;
+	float: left;
+	background-color: #b30101;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	position: relative;
+}
+.comment-list-item .comment-list-avatar img{
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.comment-list-item .comment-list-avatar .comment-v{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 14px;
+	height: 14px;
+	background: url(../images/icon-v.png) no-repeat center;
+	background-size: contain;
+}
+.comment-list-item .comment-list-content{
+	margin-left: 48px;
+	margin-right: 45px;
+	color: #FFF;
+}
+.comment-list-item .comment-list-content h3{
+	margin: 2px 0 3px;
+	font-size: 14px;
+}
+.comment-list-item .comment-list-content p{
+	font-size: 12px;
+	line-height: 1.4;
+	word-break: break-all;
+}
+
+.comment-list-item .comment-list-agree{
+	position: absolute;
+	right: 8px;
+	top: 15px;
+	width: 45px;
+}
+.comment-list-item .comment-list-agree .comment-list-heart{
+	width: 30px;
+	height: 15px;
+	margin: 0 auto;
+	background: url(../images/icon-heart.png) no-repeat center;
+	background-size: contain;
+}
+.comment-list-item.praised .comment-list-agree .comment-list-heart{
+	background-image: url(../images/icon-heart-active.png);
+}
+.comment-list-item .comment-list-mark{
+	color: #730007;
+	font-size: 12px;
+	width: 45px;
+	text-align: center;
+}
+.comment-list-item.praised .comment-list-mark{
+	color: white;
+}
+
+.comment-list-item .comment-list-content .comment-voice{
+	height: 16px;
+	position: relative;
+}
+
+.comment-list-item .comment-list-content .comment-voice{
+	position: relative;
+}
+.comment-list-item .comment-list-content .comment-voice-detail{
+	height: 16px;
+	background: url(../images/icon-voice-bg.jpg) repeat-x center;
+	background-size: auto 16px;
+	margin-left: 11px;
+	margin-right: 20px;
+	position: relative;
+	color: #b30101;
+	font-size: 12px;
+}
+.comment-list-item .comment-list-content .comment-voice-detail i{
+	float: right;
+	padding-right: 2px;
+}
+.comment-list-item .comment-list-content .comment-voice-left{
+	height: 16px;
+	width: 11px;
+	background: url(../images/icon-voice-left.png) no-repeat right;
+	background-size: 11px 16px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.comment-list-item .comment-list-content .comment-voice-right{
+	height: 16px;
+	width: 10px;
+	background: url(../images/icon-voice-right.png) no-repeat right;
+	background-size: contain;
+	position: absolute;
+	right: -9px;
+	top: 0px;
+}
+
+.comment-list-item .comment-list-content .commnet-voice-icon{
+	height: 9px;
+	margin-top: 4px;
+}
+.comment-list-item .comment-list-content .active .commnet-voice-icon{
+	-webkit-animation: playing 2s ease infinite;
+	animation: playing 2s ease infinite;
+}
+/*
+ * END OF 评论列表样式
+ */
+
+/*
+ * 评论发表样式
+ */
+.index-comment-input-wrapper{
+	border-top: 1px solid #a70300;
+	position: relative;
+	padding: 14px 8px 0px;
+}
+.index-comment-input-wrapper .input-wrapper{
+	box-shadow: inset 0px 0px 3px #101018;
+	background-color: #232939;
+	border: 1px solid #101018;
+	margin-right: 45px;
+	margin-left: 45px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.index-comment-input-wrapper .input-wrapper input{
+	border:none;
+	background: none;
+	line-height: 32px;
+	font-size: 14px;
+	color: #fff;
+	width: 100%;
+	text-shadow: 1px 1px 2px #101018;
+	padding: 0 3px 0px 8px;
+}
+
+.index-comment-input-wrapper .voice-input-wrapper{
+	box-shadow: 0px 0px 3px #101018;
+	background-color: #232939;
+	border: 1px solid #101018;
+	margin-right: 45px;
+	margin-left: 45px;
+	-webkit-border-radius: 22px;
+	border-radius: 22px;
+	-webkit-transition: box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease;
+}
+.index-comment-input-wrapper .voice-input-wrapper.recording{
+	box-shadow: 0px 0px 0px #101018;
+}
+#voice_input{
+	line-height: 32px;
+	font-size: 14px;
+	color: #fff;
+	width: 100%;
+	text-shadow: 1px 1px 2px #101018;
+	padding: 0 3px 0px 8px;
+	text-align: center;
+}
+
+.index-comment-input-wrapper .input-submit,
+.index-comment-input-wrapper .btn-voice{
+	width: 34px;
+	height: 34px;
+	box-shadow: inset 0px 0px 3px #101018;
+	border: 1px solid #101018;
+	background-color: #232939;
+	-webkit-border-radius: 17px;
+	border-radius: 17px;
+	position: absolute;
+	right: 8px;
+	top: 14px;
+	text-align: center;
+}
+.index-comment-input-wrapper .btn-voice{
+	left: 8px;
+}
+.index-comment-input-wrapper .input-submit img{
+	height: 12px;
+	margin-top: 10px;
+}
+.index-comment-input-wrapper .btn-voice img{
+	height: 22px;
+	margin-top: 4px;
+}
+.index-comment-input-wrapper .btn-voice.active img{
+	height: 22px;
+	margin-top: 6px;
+}
+/*
+ * END OF 评论发表样式
+ */
+
+ .index-comment-bg{
+ 	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqsiik9j5hwp/bg-suning.jpg) no-repeat center;
+ 	background-size: 100% 100%;
+ 	position: absolute;
+ 	bottom: 0px;
+ 	left: 0px;
+ 	opacity: 0.2;
+ }
+ .index-comment-input{
+ 	position: relative;
+ 	z-index: 1;
+ }

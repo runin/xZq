@@ -1,0 +1,670 @@
+body
+{
+    height: 100%;
+    color: #666;
+    background-color: #f8f8f8;
+}
+/*十元图标*/
+.ico-label-ten-l {
+    background-position: -100px -85px;
+}
+.ico-label-l {
+    top:5px;
+    left:0px;
+    width: 40px;
+    height: 45px;
+}
+li
+{
+    list-style-type: none;
+}
+.ico-noopen
+{
+    position: absolute;
+    background-position: -162px -240px;
+    top:2px;
+    left:0px;
+    width: 40px;
+    height: 40px;
+}
+/*轮播图样式开始*/
+.ui-slider-dots > b
+{
+    width: 8px;
+    height: 8px;
+
+    border-radius: 4px;
+    background: #b7b7b7;
+}
+.text-grey
+{
+    font-size: 13px;
+
+    color: #999;
+}
+.font13
+{
+    font-size: 13px;
+}
+/*商品详细信息*/
+.goods-main
+{
+    background-color: #fff;
+}
+.goods-warp
+{
+    position: relative;
+
+    padding: 10px 10px;
+}
+
+.goods-bg-pic
+{
+    position: relative;
+    min-height: 180px;
+    margin: 0 auto 5px auto;
+    background: #fff;
+}
+.goods-img
+{
+    position: relative;
+
+    display: block;
+}
+/*商品信息介绍开始*/
+.tt-goods-infor
+{
+    position: relative;
+}
+.tt-goods-infor p
+{
+    color: #999;
+}
+.tt-goods-infor .canbuy .periods-id
+{
+    color: red;
+}
+.canbuy > p:first-child
+{
+    margin-bottom: 10px;
+
+    color: #666!important;
+}
+.buyforbidden > p:first-child
+{
+    margin-bottom: 5px;
+
+    color: #666!important;
+}
+
+.tt-goods-infor p.bar
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 5px;
+    margin: 5px 0;
+
+    border-radius: 5px;
+    background-color: #efeeee;
+}
+.loading-space
+{
+    text-align: center;
+}
+/*商品信息介绍结束*/
+
+/*商品揭奖倒计时*/
+.open-countdown
+{
+    position: relative;
+
+    overflow: hidden;
+
+    margin-top: 2%;
+    padding: 10px;
+    text-align: center;
+    background: #f91546;
+}
+.open-countdown .countdown
+{
+    position: relative;
+    color: #242424;
+}
+.fetal-H
+{
+    background: -webkit-linear-gradient(top, #2a2a2a 0%, #4a4a4a 40%,#696969 50%, #242424 100%);
+    background: linear-gradient(to bottom, #2a2a2a 0%,#4a4a4a 40%, #696969 20%, #242424 100%);
+    padding:4px 2px;
+    color: #fff;
+    font-weight: bolder;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 2px;
+
+
+}
+.fetal-H label
+{
+     font-weight: bolder;
+}
+/*用户参与状态*/
+.duobao-states
+{
+    position: relative;
+
+    color: #999;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    background: #fff;
+}
+.duobao-states p
+{
+    display: none;
+}
+/*用户参与*/
+.state-have
+{
+    font-size: 12px;
+
+    position: relative;
+
+    overflow: auto;
+
+    width: 90%;
+    max-height: 120px;
+    margin: 10px auto;
+    padding: 5px;
+
+    text-align: left;
+}
+
+.state-have .rp-times,
+.state-have .num-list
+{
+    display: block;
+}
+
+/*没有参与*/
+.state-no
+{
+    line-height: 40px;
+
+    position: relative;
+
+    width: 70%;
+    height: 40px;
+    margin: 10px auto;
+    padding: 20px auto;
+
+    text-align: center;
+}
+.state-no > .text-no
+{
+    display: block;
+}
+
+/*图文详情*/
+.duobao-detail-image
+{
+    font-size: 14px;
+
+    padding: 5px 10px;
+
+    text-align: left;
+
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.lead{
+    float: right;
+    width: 30px;
+    text-align: center;
+    color: #999;
+}
+
+/*本期结束*/
+.winner-box
+{
+    position: relative;
+    overflow: hidden;
+    margin-top: 2%;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+
+.join-over
+{
+    
+}
+
+.join-over .avatar
+{
+    float: left;
+    overflow: hidden;
+
+    margin-top: 10px;
+    margin-left: 10px;
+
+    border-radius: 50%;
+}
+.join-over .winner-infor
+{
+    font-size: 12px;
+
+    margin-left: 60px;
+    padding: 5px;
+}
+.ico-label-winner {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left:0px;
+    top:0px;
+    background-position: 0 -240px;
+}
+.winner-infor p
+{
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+
+    color: #666;
+}
+
+.avatar img
+{
+    display: block;
+}
+.winner-num
+{
+    overflow: hidden;
+
+    margin: 2% 0 0;
+    padding: 10px 0;
+
+    color: #999;
+    color: #fff;
+    background: #f91546;
+}
+.left-wn
+{
+    line-height: 18px;
+
+    float: left;
+
+    text-indent: 5px;
+}
+
+.right-wn
+{
+    font-size: 14px;
+
+    float: right;
+
+    margin-right: 5px;
+    padding: 2px 4px;
+
+    text-align: center;
+
+    color: #f91546;
+    border: 0;
+    border-radius: 8px;
+    background: #fff;
+}
+
+/*参与者信息结束*/
+.btn-seckill
+{
+    font-size: 18px;
+
+    position: fixed;
+    bottom: 3%;
+
+    width: 50%;
+    margin-left: 25%;
+    padding: 8px 10px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 5%;
+    background-color: #f91546;
+}
+/*本期结束前往下一期*/
+.next-editor
+{
+    font-size: 15px;
+
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    padding: 10px 10px;
+
+    text-align: center;
+
+    color: #fff;
+    border-top: 1px solid #e8e8e8;
+    background-color: rgba(231,231,231,.9);
+}
+
+.next-tips
+{
+    font-size: 16px;
+    line-height: 18px;
+
+    float: left;
+
+    margin-top: 13px;
+
+    text-indent: 5px;
+
+    color: #666;
+}
+
+.next-join-btn
+{
+    font-size: 16px;
+
+    float: right;
+
+    margin-right: 5px;
+    padding: 8px 30px;
+
+    text-align: center;
+
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    background: #f91546;
+}
+.countdown-tip
+{
+    color: rgba(255,255,255,1);
+}
+
+/*活动规则*/
+.btn-rule
+{
+    position: fixed;
+    right: 5px;
+    bottom: 12%;
+
+    max-width: 50px;
+}
+.btn-rule img
+{
+    display: block;
+}
+
+
+.modal
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.lodd
+{
+    position: static;
+
+    margin-bottom: 60px;
+}
+.spinner.lodd .spinner-wrapper
+{
+    width: 25px;
+    height: 25px;
+}
+.lodd .container1 > div,
+.lodd .container2 > div,
+.lodd .container3 > div
+{
+    width: 6px;
+    height: 6px;
+
+    background-color: #fff;
+}
+.btn-wap
+{
+    position: fixed;
+    bottom: 0%;
+    padding: 8px 10px;
+    border-width: 1px 0;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #D4D4D4;
+    background: rgba(240,240,240,.8);
+    text-align: center;
+}
+.btn-wap a
+{
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    border-width: 0;
+    border-style: solid;
+    padding: 0 15px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none!important;
+    outline: none;
+    width: 112px;
+}
+.btn-wap .btn-message
+{
+    margin-right: 10px;
+    background: #f91546;
+    border-color: #f91546;
+}
+.btn-wap .before-seckill
+{
+    margin-right: 10px;
+    background: #959595;
+    border-color: rgba(248,248,248,0.2);
+}
+.msgbox {
+    position: fixed;
+    z-index: 999;
+    background: rgba(248,248,248,0.9);
+    border-radius: 5px;
+    color: #333;
+    width:70%;
+    left:15%;
+}
+.msgbox-bd {
+    padding: 25px 15px;
+    text-align: center;
+}
+.msgbox-bd .msgbox-title
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.bounceout-right
+{
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-direction: alternate; /* Safari 和 Chrome */
+            animation-direction: alternate;
+}
+@-webkit-keyframes bounceOutRight
+{
+    0%
+    {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    20%
+    {
+        -webkit-transform: translateX(-20px);
+                transform: translateX(-20px);
+
+        opacity: 1;
+    }
+    100%
+    {
+        -webkit-transform: translateX(2000px);
+                transform: translateX(2000px);
+
+        opacity: 0;
+    }
+}
+.bouncein-right
+{
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-direction: alternate; /* Safari 和 Chrome */
+            animation-direction: alternate;
+}
+@-webkit-keyframes bounceInRight
+{
+    0%
+    {
+        -webkit-transform: translateX(2000px);
+
+        opacity: 0;
+    }
+    60%
+    {
+        -webkit-transform: translateX(-30px);
+
+        opacity: 1;
+    }
+    80%
+    {
+        -webkit-transform: translateX(10px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+    }
+}
+.bounceInDown
+{
+    -webkit-animation-name: bounceInDown;
+    -webkit-animation-duration: .8s;
+
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+}
+.bounceOutDown
+{
+    -webkit-animation-name: bounceOutDown;
+    -webkit-animation-duration: .8s;
+
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes bounceInDown
+{
+    0%,
+    60%,
+    75%,
+    90%,
+    100%
+    {
+        -webkit-animation-timing-function: cubic-bezier(.215, .610, .355, 1.000);
+                animation-timing-function: cubic-bezier(.215, .610, .355, 1.000);
+    }
+
+    0%
+    {
+        -webkit-transform: translate3d(0, -3000px, 0);
+                transform: translate3d(0, -3000px, 0);
+    }
+
+    60%
+    {
+        -webkit-transform: translate3d(0, 25px, 0);
+                transform: translate3d(0, 25px, 0);
+    }
+
+    75%
+    {
+        -webkit-transform: translate3d(0, -10px, 0);
+                transform: translate3d(0, -10px, 0);
+    }
+
+    90%
+    {
+        -webkit-transform: translate3d(0, 5px, 0);
+                transform: translate3d(0, 5px, 0);
+    }
+
+    100%
+    {
+        -webkit-transform: none;
+                transform: none;
+    }
+}
+@-webkit-keyframes bounceOutDown
+{
+    20%
+    {
+        -webkit-transform: translate3d(0, -10px, 0);
+                transform: translate3d(0, -10px, 0);
+    }
+
+    40%,
+    45%
+    {
+        -webkit-transform: translate3d(0, 20px, 0);
+                transform: translate3d(0, 20px, 0);
+    }
+
+    100%
+    {
+        -webkit-transform: translate3d(0, -2000px, 0);
+                transform: translate3d(0, -2000px, 0);
+    }
+}
+
+/*适配*/
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 480px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2)
+{
+    .next-join-btn
+    {
+        padding: 5px 15px;
+    }
+    .next-tips
+    {
+        margin-top: 10px;
+    }
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2)
+{
+    .next-join-btn
+    {
+        padding: 5px 15px;
+    }
+    .next-tips
+    {
+        margin-top: 10px;
+    }
+}

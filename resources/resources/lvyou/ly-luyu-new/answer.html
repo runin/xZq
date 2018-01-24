@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, address=no">
+    <title>鲁豫有约</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/answer.css" />
+</head>
+<body>
+    <div class="answer-round">
+        <div class="round">第<p>1</p>题</div>
+        <div class="time-box"><p>10</p><span>s</span></div>
+        <div class="game-over none">
+            <p>游&nbsp戏&nbsp结&nbsp束</p>
+            <span>您&nbsp的&nbsp成&nbsp绩&nbsp为</span>
+        </div>
+    </div>
+    <div class="r-bg">
+        <div class="arr"></div>
+        <div class="rolling">
+            <div class="top"><p></p><span></span></div>
+            <div class="left"><p></p><span></span></div>
+            <div class="right"><p></p><span></span></div>
+            <div class="bottom"><span></span><p></p></div>
+        </div>
+        <img class="answer-r" src="images/answer-r.png" />
+        <img class="answer-w" src="images/answer-w.png" />
+        <img class="answer-t" src="images/answer-t.png" />
+        <div class="score-box none">
+            <img class="score-A" src="images/score-A.png" />
+            <img class="score-B" src="images/score-B.png" />
+            <img class="score-C" src="images/score-C.png" />
+        </div>
+    </div>
+    <section class="container">
+        <p class="thanks-tips"></p>
+    </section>
+    <div class="answer-box">
+        <a id="answer-yes" data-collect="true" data-collect-flag="answer-yes" data-collect-desc="正确按钮">YES&nbsp正确</a>
+        <a id="answer-no" data-collect="true" data-collect-flag="answer-no" data-collect-desc="错误按钮">NO&nbsp错误</a>
+    </div>
+    <div class="lottery-box none">
+        <div class="answer-Rnumb"><img src="images/icon-r.png" /><p></p></div>
+        <div class="answer-Wnumb"><img src="images/icon-w.png" /><p></p></div>
+        <p class="congratulate"></p>
+        <a id="lottery" data-collect="true" data-collect-flag="lottery" data-collect-desc="答题抽奖">抽&nbsp奖</a>
+    </div>
+    <footer>
+        <section class="copyright" style="color:#1e1e37;"></section>
+    </footer>
+    <script src="js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="js/app/answer.js"></script>
+
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

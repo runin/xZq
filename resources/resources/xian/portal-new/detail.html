@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>栏目详情</title>
+	<link rel="stylesheet" href="./css/cssreset-min.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/detail.css" />
+</head>
+<body>
+	<div class="main">
+		<div class="cover" id="cover">
+		</div>
+		<div class="info" id="info">
+			<h2>-</h2>
+			<p>-</p>
+		</div>
+		<div class="nav" id="nav">
+			<ul>
+				<li><a href="#" class="curr" data-collect="true" data-collect-flag="portal-detail-kandian" data-collect-desc="节目详情 栏目内容">栏目内容</a></li>
+				<li><a href="#" data-collect="true" data-collect-flag="portal-detail-hudong" data-collect-desc="节目详情 电视互动">电视互动</a></li>
+			</ul>
+		</div>
+		
+		<ul class="detail-list" id="detail-list">
+			<li>
+				<div class="content none" id="content">
+					<h2>本期内容</h2>
+				</div>
+				
+				<div class="intro none" id="intro">
+					<h2>栏目介绍</h2>
+				</div>
+			</li>
+			<li class="none">
+				<div class="method none" id="method">
+					<h2>电视互动参与办法</h2>
+				</div>
+				<div class="rule none" id="rule">
+					<h2>活动规则</h2>
+				</div>
+				<div class="winners none" id="winners">
+					<h2>上期中奖名单</h2>
+				</div>
+			</li>
+		</ul>
+		
+		<a href="javascript:toUrl('main.html')" class="btn-back" data-collect="true" data-collect-flag="portal-detail-back" data-collect-desc="节目详情 返回首页">返回</a>
+	</div>
+	<div class="copyright copyright2 hidden">页面由西安广播电视台提供</div>
+	
+    <script src="js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/detail.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

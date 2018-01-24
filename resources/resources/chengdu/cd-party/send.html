@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>成都二套跨年晚会</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css"/>
+    <link rel="stylesheet" href="./css/send.css" />
+    <script src="./js/wx_api.js"></script>
+</head>
+<body>
+<div class="main">
+    <section>
+        <p class="song-top"><img src="images/song-top.png" /></p>
+        <div class="form-group">
+            <div class="form-item">
+                <textarea class="content" id="content" placeholder="编辑祝福内容，成功提交就有机会赢取猪牛羊大奖"></textarea>
+                <input type="number" id="phone" class="phone" placeholder="联系电话： 例：13888888888"/>
+                <a href="javascript:toUrl('baoliao_success.html');" data-collect="true"
+                   data-collect-flag="cd-party-send-zhufu-btn"
+                   data-collect-desc="送祝福按钮" class="btn btn-submit send-btn" id="btn-submit">提交祝福</a>
+            </div>
+        </div>
+        <a href="#" data-collect="true"
+           data-collect-flag="cd-party-send-btn"
+           data-collect-desc="页面返回首页" class="btn zhufu btn-back-simple">返回首页</a>
+    </section>
+
+    <section class="modal modal-guide none" id="success-dialog">
+        <div class="dialog guide-dialog zhufu-dialog">
+            <div class="suc-tlt" id="suc-tlt"></div>
+            <div class="suc-describe" id="suc-describe"></div>
+            <a id="jingcai" class="btn jingcai" data-collect="true"
+               data-collect-flag="cd-party-send-jingcai"
+               data-collect-desc="欢天喜地去竞猜" >欢天喜地去竞猜</a>
+        </div>
+    </section>
+</div>
+
+<div class="copyright">
+    <img id="copyright-logo" class="copyright-logo" src="images/logo.png" />
+    此页面由成都电视台提供
+</div>
+
+<script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.min.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/md5.js"></script>
+<script src="./js/share.js"></script>
+<script src="./js/data_collect.js"></script>
+<script src="./js/dialog.js"></script>
+<script src="./js/send.js"></script>
+</body>
+</html>

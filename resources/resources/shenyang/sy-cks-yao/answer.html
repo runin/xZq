@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>蔡昊敞开说</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/answer.css" />
+<link rel="stylesheet" href="./css/history.css" />
+</head>
+<body>
+    <div class="main answer-main">
+        <div class="answer-container none">
+			<div id="ddtj" class="ddtj-div none"  data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+				<i class="ddtj-before wobble"></i>
+				<p class="ddtj"></p>
+			</div>
+        	<a href="#" data-collect="true"
+		   data-collect-flag="sy-cks-answer-history-btn"
+		   data-collect-desc="新闻调查首页进入历史调查页面" class="history" id="history">>往期调查</a>
+	        <!--选择答题 s-->
+	        <div class="answer none">
+	            <div id="current_box">
+	            </div>
+	            <a class="sub none" id="submitBtn" href="javascript:void(-1);"  data-collect="true" data-collect-flag="sy-cks-surveyed-submitBtn-btn" data-collect-desc="提交新闻调查">提 交</a>
+	        </div>
+	        <!--选择答题 e-->
+	        <!--已经参与调查 s-->
+	        <div class="surveyed none">
+	            <div id="surveyed">
+	            </div>
+				<a class="sub" id="toYao" data-collect="true" data-collect-flag="sy-news-surveyed-to-lottery-btn" data-collect-desc="返回首页">去摇奖</a>
+	        </div>
+	        <!--已经参与调查 e-->
+        </div>
+    </div>
+    <div id="history-list" class="main none">
+		<h2>往期调查</h2>
+		<ul class="list" id="list">
+			
+		</ul>
+		<a href="#" class="btn-loadmore none" data-collect="true"
+			data-collect-flag="sy-cks-history_more-btn"
+			data-collect-desc="新闻调查往期页面加载更多"><i></i>加载更多</a> <a
+			href="#" data-collect="true"
+			data-collect-flag="sy-cks-history-index-btn"
+			data-collect-desc="新闻调查往期页面返回首页" id="history-back" class="btn-back-simple">返回</a>
+	</div>
+    <div class="copyright">页面由沈阳广播电视台·新闻频道提供</div>
+    
+    <script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/data_collect.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+
+    <script src="js/app/answer.js"></script>
+    <script src="js/app/history.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</body>
+</html>

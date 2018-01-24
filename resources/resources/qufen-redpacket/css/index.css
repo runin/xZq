@@ -1,0 +1,406 @@
+body,
+html {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    min-height: 100%;
+    background-color: #fffaf6;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #999;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #999;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #999;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #999;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #fffaf6;
+    padding: 15px 15px;
+}
+
+input {
+    border: 0px;
+}
+
+.main .top dt {
+    float: left;
+    padding: 10px;
+    padding-left: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.main .top dt label {
+    display: inline-block;
+    padding-left: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.top dd {
+    padding-left: 50%;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    position: relative;
+    z-index: 1;
+}
+
+.icon_hongbao {
+    width: 15px;
+    vertical-align: middle;
+}
+
+.icon_wen {
+    width: 15px;
+    vertical-align: middle;
+}
+
+.top dd input {
+    width: 100%;
+    height: 45px;
+}
+
+.question_dd {
+    height: 80px;
+    padding-left: 20% !important;
+    position: relative;
+}
+
+#question {
+    width: 100%;
+    border: 0px;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-left: 30%;
+    padding-top: 11px;
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+.bottom input {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.tip {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.submitBtn {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    background-color: #efbfb9;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size: : 14px;
+}
+
+.submitBtn_sure {
+    background-color: Red;
+}
+
+#money {
+    padding-right: 30px;
+}
+
+#redNum {
+    padding-right: 30px;
+}
+
+.yuan {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+}
+
+
+/*******µ¯¿ò*********/
+
+.popwin {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999999;
+}
+
+.pop_model {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.pop_contain {
+    position: absolute;
+    top: 13%;
+    left: 8%;
+    width: 84%;
+    height: 74%;
+    background: url('../images/hongbao_bg01.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.pop_hear {
+    width: 80px;
+    height: 80px;
+    background: url('../images/icon-avatar.png') no-repeat center center;
+    background-size: contain;
+    border-radius: 100%;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    margin: 0 0 0 -40px;
+}
+
+@media (max-height:568px) {
+    .pop_hear {
+        width: 70px;
+        height: 70px;
+        background: url('../images/icon-avatar.png') no-repeat center center;
+        background-size: contain;
+        border-radius: 100%;
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        margin: 0 0 0 -35px;
+    }
+}
+
+.pop_msg {
+    text-align: center;
+    color: #DCBC83;
+    position: absolute;
+    top: 42%;
+    width: 100%;
+}
+
+.pop_btn {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: #DCBC83;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    margin-left: -45px;
+    padding: 5px;
+    box-shadow: 0px 0px 30px #e6d28d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.pop_btn_a {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: pop_btn_a;
+    -moz-animation-name: pop_btn_a;
+    -o-animation-name: pop_btn_a;
+    animation-name: pop_btn_a;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pop_btn_a {
+    0% {
+        -webkit-transform: rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+    }
+}
+
+.pop_btn_border {
+    width: 100%;
+    height: 100%;
+    background: url('../images/shang.png') no-repeat center center;
+    background-size: 48%;
+    border-radius: 100%;
+    border: 2px solid #b18c4a;
+}
+
+@media (max-height:480px) {
+    .pop_btn {
+        width: 70px;
+        height: 70px;
+        margin-left: -35px;
+    }
+}
+
+
+/******ºì°üÀàÐÍ*********/
+
+.red_type {
+    margin-top: 8px;
+    margin-bottom: -10px;
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.ping_hand {
+    color: rgba(59, 64, 131, 0.5);
+}
+
+
+/*****footer*******/
+
+footer {
+    margin-top: 15px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #bab5b5;
+}
+
+
+/*******·ÖÏí²ã********/
+
+.share {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999999999;
+    top: 0px;
+    left: 0px;
+}
+
+.sharemsg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 16px;
+    color: White !important;
+}
+
+.share_arrow {
+    height: 60px;
+}
+
+.subject {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.subject span {
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.subject img {
+    vertical-align: middle;
+    width: 16px;
+}
+
+.turnt {
+    -webkit-animation-name: turnt;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes turnt {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.cursor {
+    display: block;
+    width: 1px;
+    height: 1em;
+    position: absolute;
+    top: 15px;
+    left: 88px;
+    z-index: 9999;
+}
+
+
+/*这里是闪烁光标*/
+
+.cursor.blink {
+    -webkit-animation: blink 1s infinite steps(1, start);
+}
+
+
+/*这里设置动画blink*/
+
+@keyframes blink {
+    0%,
+    100% {
+        background-color: #000;
+        color: #aaa;
+    }
+    50% {
+        background-color: #bbb;
+        /* not #aaa because it's seem there is Google Chrome bug */
+        color: #000;
+    }
+}
+.bottom_con{
+ position: relative;
+
+}
+.ansicon{
+
+ position: absolute;
+ right: 5px;
+ height: 50%;
+ top: 25%;
+
+
+}

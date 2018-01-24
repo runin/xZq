@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+	<title>2016CCTV网络春晚</title>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/swiper.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+	<section class="swiper-container">
+	    <section class="swiper-wrapper">
+			<section class="swiper-slide swiper-slide1">
+				<img src="images/icon-denglong.png" class="icon-denglong">
+				<img src="images/icon-logo.png" class="icon-logo">
+				<img src="images/icon-gua.png" class="icon-gua">
+				<img src="images/icon-fu.png" class="icon-fu">
+				<img src="images/icon-fudai.png" class="icon-fudai">
+				<img src="images/icon-word.png" class="icon-word">
+				<img class="gold" src="images/icon-gold.png">
+				<section class="hammer-box">
+					<img src="images/icon-array.png" id="array">
+					<p class="copyright"></p>
+					<section id="div_subscribe_area" class="div_subscribe_area_class"></section>
+				</section>
+			</section>
+			<section class="swiper-slide swiper-slide2" id="shake-box">
+				<section class="showOver none">
+					<img src="images/icon-header.jpg" class="icon-header">
+					<img src="images/icon-denglong.png" class="icon-denglong">
+					<img src="images/icon-pao.png" class="icon-pao">
+					<img class="icon-end" src="./images/icon-end.png">
+					<img class="icon-lun round" src="./images/icon-lun.png">
+					<img class="icon-monkey" src="./images/icon-monkey.png">
+					<section class="hammer-box">
+						<p class="copyright"></p>
+					</section>
+				</section>
+				<section class="home-box">
+					<img src="images/icon-header.jpg" class="icon-header">
+					<div id="shake" class="shake-content none">
+						<div class="marquee hidden">
+							<ul></ul>
+						</div>
+						<img src="images/icon-denglong.png" class="icon-denglong">
+						<img src="images/icon-pao.png" class="icon-pao">
+						<section class="countdown none">
+							<span class="countdown-tip"></span>
+							<span class="detail-countdown"></span>
+						</section>
+						<section class="yao-content">
+							<img class="coin" src="images/coin.png">
+							<img class="icon-yaoTip" src="images/icon-yaoTip.png">
+							<img class="fudai" src="images/fudai.png">
+						</section>
+						<div class="rednum">
+							<img src="images/icon-jindai.png">
+							<p>剩余奖品<br><span class="left-num">213156456</span></p>
+						</div>
+					</div>
+					<div id="before-shake" class="shake-content none">
+						<img class="conner up" src="images/icon-conner.png">
+						<img class="gold" src="images/icon-gold.png">
+						<section class="countdown none">
+							<span class="countdown-tip"></span>
+							<span class="detail-countdown"></span>
+						</section>
+						<div class="video-div">
+							<video x-webkit-airplay="true" webkit-playsinline="yes" class="video" id="video" preload="auto" poster="./images/bg-poster-default.jpg" data-collect="true" data-collect-flag="index-vedio-play-btn" data-collect-desc="首页-视频播放按钮">
+								<source src="http://cdn.holdfun.cn/upload/video/vedio.webm" type="video/webm" />
+								<source src="http://cdn.holdfun.cn/upload/video/vedio.mp4" type="video/mp4" />
+								您的浏览器不支持视频
+							</video>
+							<img class="play" src="images/icon-play.png" data-collect="true" data-collect-flag="index-vedio-play-btn" data-collect-desc="首页-视频播放按钮">
+							<img class="pack" src="images/icon-gold-pack.png">
+						</div>
+						<img class="next" src="images/icon-next.png">
+						<img class="prize" src="images/icon-prize.png">
+						<img class="conner down" src="images/icon-conner.png">
+					</div>
+					<p class="copyright"></p>
+				</section>
+				<input type="button" class="none" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;">
+			</section>
+	    </section>
+	</section>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/zepto.swiper.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script>
+	<script src="./js/plugins/shake.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="./js/app/index.js"></script>
+	<script src="./js/app/lottery.js"></script>
+	<script src="./js/app/dialog.js"></script>
+
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=54288221" charset="UTF-8"></script>
+</body>
+</html>

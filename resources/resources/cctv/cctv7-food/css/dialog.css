@@ -1,0 +1,267 @@
+
+.modal {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(41,115,41,0.8);
+	z-index: 100;
+	color: #fff370;
+	text-align: right;
+}
+.modal .dialog{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.modal .btn-close{
+    position: absolute;
+    top: 8%;
+    right: 20px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../images/icon-close.png) no-repeat;
+	background-size:30px ;
+}
+.not-lott{
+	padding-top: 30%;
+	width: 100%;
+	height: 100%;
+	background: url(../images/no-award.png) no-repeat center bottom;
+	background-size: 80%;
+	text-align: center;
+	font-size: 16px;
+}
+.not-lott h1{
+	line-height: 24px;
+	margin: 10px auto;
+}
+.not-lott p{
+	margin: 0 20px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	vertical-align: top;
+}
+.not-lott p img{
+	display: inline-block;
+	width: 200px;
+}
+.not-lott p span{
+	display: inline-block;
+	width: 80px;
+	height: 23px;
+	line-height: 23px;
+	vertical-align: top;
+}
+.lott{
+	padding-top: 10%;
+	width: 100%;
+	height: 100%;
+	
+}
+.lott h1{
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+}
+.lott p{
+	font-size: 14px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	vertical-align: top;
+}
+.lott p span{
+	display: inline-block;
+	height: 23px;
+	vertical-align:top;
+}
+.lott p img{
+	width: 200px;
+}
+.lott .redBao{
+	display: block;
+	width: 100%;
+	height: 80%;
+	padding-top: 50px;
+	position: absolute;
+	bottom: 10px;
+	background: url(../images/award.png) no-repeat center top;
+	background-size: 90%;
+}
+.lott .redBao img{
+	display: block;
+	margin: 0 auto;
+	width:60%
+}
+.lott .btn-award{
+	display: block;
+	width: 100%;
+	height: 40px;
+	background: url(../images/award-btn.png) no-repeat center;
+	background-size: 36%;
+	margin-top: 10px;
+}
+.lott label.ad{
+	display: inline-block;
+	width: 72px; 
+	height: 72px;
+	border-radius: 50%;
+	border:2px solid #ffda2f;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	top:30%;
+	margin-left: -36px;
+	margin-top: -36px;
+	overflow: hidden;
+}
+.lott label.ad img{
+	width: 100%;
+	height: 100%;
+}
+.rule-dialog{
+	background: url(../images/rule_bg.png) no-repeat;
+	background-size: 100% 100%;
+	color: #ad4100;
+	
+}
+.rule-dialog .btn-close{
+	position: absolute;
+    top: 10px;
+    right: 10px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/close.png) no-repeat;
+	background-size:16px ;
+}
+.rule-dialog h2{
+	padding-top: 20px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+.rule-dialog .content{
+	padding: 10px 20px;	
+	text-align: left;
+	font-size: 14px;
+}
+.rule-dialog .rule-con{
+	height: 100%;
+	overflow: auto;
+}
+.dialog-copyright {
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+    right: 5px;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    height: 60px;
+    background: url(../images/dialog-copyright.png) no-repeat center;
+    background-size: 80%;
+}
+
+
+
+/*加载按钮 -s*/
+.loader{
+    margin: 0 auto;
+    width: 72px;
+}
+.loader span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background: #F26C0D;
+    border-radius: 50px;
+    margin: 0 2px;
+    -webkit-animation: loader 1s infinite alternate;
+    -moz-animation: loader 1s infinite alternate;
+}
+.loader span:nth-of-type(2) {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+.loader span:nth-of-type(3) {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+}
+.loader span:nth-of-type(4) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+.loader span:nth-of-type(5) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+}
+@-webkit-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+@-moz-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.rule-dialog h2 {
+		padding-top: 30px;
+		line-height: 20px;
+	}
+	.lott{
+		padding-top: 0px;
+    }
+    .not-lott{
+    	padding-top: 20%;
+    }
+    .modal .btn-close{
+	    top: 10px;
+	    right: 14px;
+	}
+	.lott .redBao{
+		padding-top: 30px;
+	}
+	.lott .redBao img {
+	    width: 56%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

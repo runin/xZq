@@ -1,0 +1,75 @@
+body {
+	background: url(../images/bg-body.jpg) repeat-y center 0;
+	background-size: cover;
+}
+.main {
+	margin: 0 auto;
+	padding-top: 70px;
+}
+.lingjiang-info {
+	position: relative;
+	text-align: left;
+	font-size: 14px;
+	color: #333;
+	margin: 18px;
+	padding: 8px 16px; 
+	border: 8px solid #FFF;
+	border-image: url(../images/mail-bg.png) 10 round round;
+	background-color: #f3f1e3;
+}
+.lingjiang-info h2 {
+	text-align: center;
+	font-size: 18px;
+	color: #111;
+	font-weight: bolder;
+	margin-bottom: 10px; 
+}
+.lingjiang-info p {
+	width: 90%;
+	line-height: 18px;
+	border-bottom: 1px solid #bfad78;
+	padding: 5px 0; 
+}
+.lingjiang-info .gzmark {
+	position: absolute;
+	top: 3%;
+	right: 3%;
+}
+p.lingjiang-tip {
+	font-size: 16px;
+	padding: 0 18px 20px;
+	line-height: 23px;
+	text-align: center;
+}
+p.lingjiang-tip:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/smile.png) no-repeat 0 0;
+	background-size: 22px auto;
+	width: 22px;
+	height: 22px;
+	margin: -1px 0 0 6px;
+}
+.dst-logo{
+	background: url(../images/logo.png) no-repeat 0 0;
+	background-size: 58px auto;
+	width: 68px;
+	height: 58px;
+	position: absolute;
+	top: 10px;
+	left: 6px;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.lingjiang-info {
+		margin-top: 0; 
+	}
+	p.lingjiang-tip {
+		padding-bottom: 0;
+	}
+}

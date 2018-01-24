@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>网罗天下</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="css/question.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+</head>
+<body>
+
+    <a data-collect="true"
+       data-collect-flag="question-back-btn"
+       data-collect-desc="答题返回首页" id="back-btn" class="back">返回首页</a>
+    <a class="ddtj none" id="ddtj" href="" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+    <div class="main" id="main">
+        <div class="tilt">
+            <img src="images/day.png">
+        </div>
+        <div class="countdown none">
+            <span class="countdown-tip"></span>
+            <span class="detail-countdown"></span>
+        </div>
+        <div class="arrow-box">
+            <h2 id="comm-title" class="h2-tlt"></h2>
+        </div>
+        <!--支持-->
+        <div id="sup">
+        </div>
+        <div class="index-btn bounceInUp none">
+            <a data-collect="true"
+               data-collect-flag="question-submit-btn"
+               data-collect-desc="答题提交" id="submit" class="apply">提&nbsp;&nbsp;&nbsp;&nbsp;交</a>
+
+            <a href="lottery.html" data-collect="true"
+               data-collect-flag="question-lottery-btn"
+               data-collect-desc="答题进入摇奖" id="lottery" class="apply lottery">进入摇奖</a>
+        </div>
+
+        <div class="follow-box">
+            <div class="copyright"></div>
+        </div>
+
+    </div>
+
+	<script src="js/config.js"></script>	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="js/app/dialog.js"></script>
+	<script src="js/app/question.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

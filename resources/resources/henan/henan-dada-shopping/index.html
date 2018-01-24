@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/barrage.css" />
+</head>
+<body>
+<header>
+    <div id="ddtj" class="ddtj-div visibility"  data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+        <img src="images/icon-promotion.png" />
+    </div>
+    <section>
+        <label class="countdown none" id="lottery-countdown" >
+            <span class="countdown-tip"></span>
+            <span class="detail-countdown"></span>
+        </label>
+        <div class="ad-box none"><img src=""/></div>
+    </section>
+    <img src="images/icon-logo.png" class="icon-logo">
+    <a class="btn-rule" id="rule" data-collect="true" data-collect-flag="index-rule" data-collect-desc="活动规则按钮">
+        <img src="images/icon-rule.png">
+    </a>
+    <a class="btn-rule" id="jfsc" data-collect="true" data-collect-flag="index-jfsc" data-collect-desc="积分商城入口">
+        <img src="images/jfsc.png">
+    </a>
+</header>
+
+<article class="none" id="article">
+    <div class="comments" id="comments"></div>
+</article>
+<div class="ctrls" id="ctrls">
+    <div class="copyright"></div>
+    <p>
+        <input id="input-comment" type="text" placeholder="我有话说………" />
+        <a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="barrage-comment-send" data-collect-desc="发表评论按钮"></a>
+    </p>
+</div>
+
+<script src="./js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/barrage.plug.js"></script>
+<script src="./js/plugins/msg.js"></script>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="./js/app/dialog.js"></script>
+<script src="./js/app/barrage.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

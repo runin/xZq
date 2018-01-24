@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>好玩TVGO</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    
+</head>
+<body>
+
+<div class="main page-a none" id="main">
+		<img class="logo" src="./images/home-logo.png">
+		<div id="end-lottery-tip" class="none">
+		    <span class="end-time-tips"></span><span class="end-detail-countdown"></span>
+		</div>
+	    <div class="nav">
+	    	
+	        <a id="lottery-time" class="btn lottery-btn is-openid" data-collect="true" 
+	             data-collect-flag="tj-playtv-comments-lottery-time"
+	             data-collect-desc="礼盒抽奖">立即抽奖
+	        </a>
+			 <div class="tab">
+			     <a class="rule" class="btn-small border is-openid" data-collect="true"
+		             data-collect-flag="tj-playtv-comments-rule"
+		             data-collect-desc="活动规则">领奖规则</a>
+		        <a name="home" class="btn-small border gift-list is-openid" data-collect="true"
+			       data-collect-flag="tj-playtv-comments-reward-list"
+			       data-collect-desc="中奖记录">中奖纪录</a> 
+			 </div>
+	    </div> 
+</div>
+<section class="page-b none">
+	<div id="lottery-tip">
+	    <span class="time-tips"></span><span class="detail-countdown"></span>
+	</div>
+	<img class="logo" src="./images/home-logo.png">
+	<div class="tips">
+	    <div class="tab">
+			<a class="rule" class="btn-small border is-openid" data-collect="true"
+				             data-collect-flag="tj-playtv-comments-rule"
+				             data-collect-desc="活动规则">领奖规则</a>
+			<a name="home" class="btn-small border gift-list is-openid"  data-collect="true"
+					       data-collect-flag="tj-playtv-comments-reward-list"
+					       data-collect-desc="中奖记录">中奖纪录</a> 
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="copyright"></div>
+	<!--<div id="div_subscribe_area" class="div_subscribe_area_class">
+	</div>-->
+</footer>
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	
+	<script src="js/app/dialog.js"></script>
+	<script src="js/app/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" http-equiv="content-type" content="text/html" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Pragram" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link href="css/core.css" rel="stylesheet" type="text/css" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/slider.css" rel="stylesheet" type="text/css" />
+    <link href="css/slider.default.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/seckill.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+    <title>夺宝首页</title>
+</head>
+
+<body>
+    <header>
+        <div class="fix-tab-div">
+            <a href="javascript:void(0)" data-collect="true" class="index-goods focus click-bg" data-collect-flag="tt-duobao-indexgoods" data-collect-desc="天天夺宝-首页" id="index-goods">
+              首页
+          </a>
+            <a href="javascript:void(0)" data-collect="true" class="all-goods click-bg" data-collect-flag="tt-duobao-allgoods" data-collect-desc="天天夺宝-全部商品" id="all-goods">
+              全部商品
+           </a>
+            <a href="javascript:void(0)" data-collect="true" class="show-prize  click-bg" data-collect-flag="tt-duobao-show-prize" data-collect-desc="天天夺宝-个人中心" id="show-prize">
+               晒单
+           </a>
+            <a href="javascript:void(0)" data-collect="true" class="user-center click-bg" data-collect-flag="tt-duobao-user-center" data-collect-desc="天天夺宝-个人中心" id="user-center">
+               个人中心
+           </a>
+            <div class="line-div first-left"></div>
+            <div class="line-div second-left"></div>
+            <div class="line-div third-left"></div>
+        </div>
+    </header>
+    <!-- 图片轮播开始 -->
+    <section class="section1">
+        <div class="slider" id="slider">
+        </div>
+    </section>
+    <!-- 图片轮播结束 -->
+    <!-- 秒杀开始 -->
+    <section class="section-seckill none">
+        <div class="wrap-seckill font14">
+            <div class="seckill-time clearfix">
+                <div class="seckill-title"></div>
+                <div class="countdown-show">
+                    <strong class="skill-countdown-tip">16点</strong>
+                    <span class="skill-countdown" etime=""></span>
+                </div>
+            </div>
+            <div class="seckill-goods">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 秒杀结束 -->
+    <!-- 最新揭晓开始-->
+    <section class="section2">
+        <div class="warp-new-opened">
+            <div class="new-opened-title font14 none">
+                最新揭晓
+                <label class="font12 click-btn-default">更多</label>
+            </div>
+            <div class="new-opened-goods">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 最新揭晓结束 -->
+    <section class="section3">
+        <div class="wrap-goods-title none">
+            <h3 class="font14">今日热门商品<i class="ico-more ico-hot" title="热卖产品"></i></h3>
+            <label class="font12 click-btn-default">更多</label>
+        </div>
+        <div class="goods-list">
+            <ul>
+            </ul>
+        </div>
+    </section>
+    <div class="loading-space click-btn-default font12 none">
+        --点击查看更多--
+    </div>
+    <div>
+        <a class="shop-cart none" href="./html/goods/shopcart.html" id="shop-cart">
+            <i class="ico ico-miniCart"></i>
+            <b class="shop-cart-count" data-pro="count" style="display:none!important">0</b>
+        </a>
+    </div>
+    <footer class="none">
+        <div class="footer-bar" data-collect="true" data-collect-flag="tt-duobao-index-rule" data-collect-desc="天天夺宝-首页规则">
+            <a href="#" class="txt-red font12">什么是一元夺宝？</a>
+            <img src="./images/footer-bar.jpg">
+        </div>
+    </footer>
+    <!--活动引导层-->
+    <section class="modal none">
+        <div class="rule-section">
+            <a class="rule-close" data-collect="true" data-collect-flag="duobao-rule-close-btn" data-collect-desc="活动规则-关闭按钮">
+                <img src="./images/close-btn.png">
+            </a>
+            <div class="con">
+                <h1>什么是一元夺宝？</h1>
+                <div class="con-htm">
+                    <img src="./images/step1.png" class="step1">
+                    <img src="./images/step2.png" class="step2">
+                    <img src="./images/step3.png" class="step3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--活动引导层-->
+</body>
+<script src="js/config.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.min.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.cookie.min.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.selector.min.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.touch.js" type="text/javascript"></script>
+<script src="js/plugins/zepto.fx.min.js" type="text/javascript"></script>
+<script src="js/plugins/slider_loop.js" type="text/javascript"></script>
+<script src="js/plugins/md5.js" type="text/javascript"></script>
+<script src="js/authorize_userinfo.js" type="text/javascript"></script>
+<script src="js/plugins/core.js" type="text/javascript"></script>
+<script src="js/plugins/sha1.min.js" type="text/javascript"></script>
+<script src="js/jssdk.js" type="text/javascript"></script>
+<script src="js/app/index.js" type="text/javascript"></script>
+<script src="js/app/seckill.js" type="text/javascript"></script>
+<script src="js/app/cartset.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+</html>

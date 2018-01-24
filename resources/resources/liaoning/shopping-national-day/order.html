@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>宜佳购物</title>
+	
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="http://cdn.holdfun.cn/resources/common/plugin/swipe/idangerous.swiper.css" />
+	<link rel="stylesheet" href="./css/order.css" />
+	<link rel="stylesheet" href="./css/confirm.css" />
+	
+</head>
+<body>
+
+	<section class="main">
+		<div class="wrapper order-wrapper" id="order-wrapper">
+			<div class="swiper-container none" id="swiper-container">
+				<div class="swiper-wrapper" id="swiper-wrapper">
+					
+				</div>
+				<div class="pagination"></div>
+			</div>
+			
+			<h2>商品信息</h2>
+			<div class="bg-white ui-info">
+				<div class="ui-item good-name" id="good-name">
+					<div class="item-content"></div>
+				</div>
+				<div id="good-zp" class="good-zp none"></div>
+				<div class="ui-item none" id="color-wrapper">
+					<label>颜色:</label>
+					<div class="item-content"></div>
+				</div>
+				<div class="ui-item none" id="size-wrapper">
+					<label>规格:</label>
+					<div class="item-content"></div>
+				</div>
+				<div class="ui-item">
+					<label>数量:</label>
+					<div class="item-content">
+						<span class="stock-wrap">
+							<a href="#" class="icon-sprites stock-tool tool-minus" data-step="-1" data-collect="true" data-collect-flag="shopping-order-minus" data-collect-desc="宜佳购物  减少订单数"></a>
+							<input type="text" class="tool-num" id="tool-num" value="1" disabled="disabled" />
+							<a href="#" class="icon-sprites stock-tool tool-plus" data-step="1" data-collect="true" data-collect-flag="shopping-index-plus" data-collect-desc="宜佳购物  增加订单数"></a>
+						</span>
+					</div>
+				</div>
+				<div class="ui-item none">
+					<label>清单:</label>
+					<div class="item-content" id="good-list"></div>
+				</div>
+				<div class="ui-item">
+					<label>单价:</label>
+					<div class="item-content per-price red" id="per-price"></div>
+				</div>
+			</div>
+			
+			<h2>收货信息</h2>
+			<div class="bg-white ui-address">
+				<div class="ui-item">
+					<label><strong>*</strong>手机:</label>
+					<div class="item-content">
+						<input type="number" id="mobile" />
+					</div>
+				</div>
+				<div class="ui-item">
+					<label>姓名:</label>
+					<div class="item-content">
+						<input type="text" id="name" />
+					</div>
+				</div>
+				<div class="ui-item">
+					<label>地址:</label>
+					<div class="item-content">
+						<textarea type="text" id="address" /></textarea>
+					</div>
+				</div>
+			</div>
+			
+			<div class="bg-white ui-ship">
+				<div class="ui-item">
+					<label>支付方式:</label>
+					<div class="item-content">货到付款</div>
+				</div>
+			</div>
+			<div class="bg-white ui-ctrl">
+				<p class="ui-ctrl-total">合计: ￥<span class="ctrl-total total-money">-</span></p>
+				<a href="#" class="btn btn-confirm" id="btn-confirm" data-collect="true" data-collect-flag="shopping-order-submitorder" data-collect-desc="宜佳购物  提交订单">提交订单</a>
+			</div>
+		</div>
+		
+		<div class="wrapper confirm-wrapper none" id="confirm-wrapper">
+			<div class="ui-order">
+				<div class="ui-order-info">
+					<p class="info-title good-name" id="info-title"></p>
+					<p class="info-standard none" id="info-standard"></p>
+					<span class="info-price per-price"></span>
+					<span class="info-num"><em>X</em><span>1</span></span>
+				</div>
+				<div class="ui-order-item">
+					<label>手机号:</label>
+					<div class="item-content mobile"></div>
+				</div>
+				<div class="ui-order-item">
+					<label>收货人:</label>
+					<div class="item-content name"></div>
+				</div>
+				<div class="ui-order-item ui-item-address">
+					<label>收货地址:</label>
+					<div class="item-content address"></div>
+				</div>
+				<div class="ui-order-item">
+					<label>支付方式:</label>
+					<div class="item-content">货到付款</div>
+				</div>
+				<div class="ui-order-total">合计: ￥<span class="total-money"></span> <label id='dikou-jg' class="red-dikou none">(红包抵扣<span>0</span>元)</label></div>
+			</div>
+			<a href="#" class="btn btn-border btn-modify" id="btn-modify" data-collect="true" data-collect-flag="shopping-order-backtomodify" data-collect-desc="宜佳购物 返回修改">返回修改</a>
+			<a href="#" class="btn btn-submit" id="btn-submit" data-collect="true" data-collect-flag="shopping-order-confirmorder" data-collect-desc="宜佳购物 确认订单">确认订单</a>
+		</div>
+		
+		<div class="copyright">页面由辽宁广播电视台提供<br/>技术支持由新掌趣提供</div>
+	</section>
+	
+	<script src="js/config.js"></script>
+    <script src="http://cdn.holdfun.cn/resources/common/plugin/zepto/zepto.min.js"></script>
+	<script src="./js/zepto.cookie.min.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="./js/wx_api.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src="./js/data_collect.js"></script>
+	<script src="./js/weixinapi.js"></script>
+	
+	<script src="./js/common.js"></script>
+	<script src="./js/share.js"></script>
+	<script src="http://cdn.holdfun.cn/resources/common/plugin/swipe/idangerous.swiper.js"></script>
+	<script src="./js/order.js"></script>
+</body>
+</html>

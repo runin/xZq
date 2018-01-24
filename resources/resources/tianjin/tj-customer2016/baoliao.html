@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>我们都是消费者</title>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/baoliao.css" />
+</head>
+<body>
+	<div class="main">
+		<div class="form-group">
+			<div class="logo"></div>
+			<div class="form-item">
+				<p></p>
+				<textarea class="content" id="content" placeholder="在这里写下你想说的话，您生活中如果遇到消费维权的事都可以告诉我们，我们还会给予奖励"></textarea>
+				<div class="img-ctrl" id="img-ctrl">
+					<!-- <a href="#" class="icon btn-preview" id="btn-preview"></a> -->
+					<a href="#" class="icon btn-upload" id="btn-upload" data-collect="true" data-collect-flag="baoliao-upload-btn" data-collect-desc="爆料页面 上传图片按钮"></a>
+					<form id="upload-form" class="upload-form" enctype="multipart/form-data" method="post" action="http://test.holdfun.cn/portal/fileupload/image">
+					    <input type="file" class="input-file-upload" id="input-file-upload" onchange="fileSelected();" accept="image/*" capture>
+					</form>
+				</div>
+				<input type="tel" class="mobile" placeholder="电话" />
+			</div>
+			<a href="#" data-collect="true"
+			data-collect-flag="baoliao-submit-btn"
+			data-collect-desc="爆料页面提交线索" class="btn btn-submit" id="btn-submit">确 定 提 交</a>
+		</div>
+		<a href="#" data-collect="true"
+			data-collect-flag="baoliao-index-btn"
+			data-collect-desc="爆料页面返回首页" class="btn-back-simple">返回</a>
+			<div class="copyright"></div>
+	 </div>
+	 
+
+	
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/xss.min.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="./js/app/baoliao.js"></script>
+</body>
+</html>

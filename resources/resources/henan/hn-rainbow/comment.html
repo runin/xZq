@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>乡里彩虹城里雨</title>
+    <link rel="stylesheet" href="./css/core.css">
+    <link rel="stylesheet" href="./css/util.css">
+    <link rel="stylesheet" href="./css/resize.css">
+    <link rel="stylesheet" href="./css/transform.all.css">
+    <link rel="stylesheet" href="./css/barrage.css">
+    <link href="css/comment.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <section class="main" style="background: url(http://cdn.holdfun.cn/resources/images/clueImg/2015/12/15/e3cddbbcad2a409cbe0fd09210373cb9.jpg);">
+        <!---倒计时--->
+        <div class="downcount none">
+            <img src="images/yao.png" class="yaoimg" />
+            <span class="minute">00</span><span>分</span> <span class="second">00</span> <span>秒</span>
+        </div>
+        <!---去摇奖----->
+        <div class="gotolottery none">
+            <img src="images/yao.png" class="yaoimg" />
+        </div>
+
+        <!---去玩游戏----->
+        <div class="play_game">
+           
+        </div>
+        <div class="send_comment">
+            <div class="send_hear">
+            </div>
+            <div class="send_btn">
+                发送</div>
+            <div class="send_textdiv">
+                <input class="send_text" type="text">
+            </div>
+        </div>
+        <section class="barrage-wrapper wrapper" data-x="0" data-y="180" style="width: 371px;
+            height: 422px;">
+            <section class="comments">
+            </section>
+            <section class="comment-input-wrapper">
+                <section class="comment-input" style="visibility: hidden;">
+                    <section class="input-wrapper">
+                        <input id="input" type="text" placeholder="说说您的观点吧." value="输入内容示例">
+                    </section>
+                    <a class="ok" id="submit" href="javascript:void(0)">发送</a>
+                </section>
+            </section>
+        </section>
+        <p class="copyright done">
+            页面由河南卫视提供
+            <br>
+            河南摇电视互动平台技术支持</p>
+    </section>
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/core.js"></script>
+    <script src="js/plugins/authorize_userinfo.js"></script>
+    <script src="./js/plugins/util.js"></script>
+    <script src="./js/diy/event.js"></script>
+    <script src="./js/diy/resize.js"></script>
+    <script src="./js/diy/dialog.js"></script>
+    <!-- <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"> -->
+    <script type="text/html" id="tmpl_barrage">
+			<section class="bitem">
+				<section class="bitem-img">
+					<img tmpl-attr="src" tmpl-name="src" onerror="this.src='./images/avatar.jpg'" src="${src}">
+				</section>
+				<section class="bitem-content">
+					<p tmpl-attr="html" tmpl-name="content">${content}</p>
+				</section>
+			</section>
+		</script>
+    <script src="./js/app/zepto.barrage.js"></script>
+    <script src="./js/app/barrage.js"></script>
+    <script src="js/app/countDown.js"></script>
+    <script src="./js/app/comment.js"></script>
+</body>
+</html>

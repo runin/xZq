@@ -1,0 +1,253 @@
+html{
+	height: 100%;
+}
+body
+{ 
+  height: 100%;
+  background-image: url(../images/page2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.scroll{
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+.count{
+	width: 100%;
+	height: 36px;
+	line-height: 34px;
+	color: #fff;
+	font-size: 12px;
+	text-align: left;
+	padding-left:2% ;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+	position: relative;
+}
+header{
+	position: relative;
+}
+.header-nav{
+	padding: 20px 10px 0;
+	position: relative;
+}
+.back-btn{
+	display: block;
+	width: 20%;
+	position: absolute;
+	right: 10px;
+}
+
+.outer{
+  display: block;
+  font-size: 15px;
+  text-decoration: underline;
+  color: #ffecc5;
+  width:100%;
+  text-align: center;
+  height:30px;
+  line-height: 30px;
+}
+.outer:hover,.outer:visited{
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+header{
+	width: 100%;
+	height: 120px;
+	z-index: 4;
+}
+.danmu-bg{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+article {
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 46px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 999999;
+}
+.cor-assist{
+	   width: 96%;
+	   border-radius: 50%;
+	   margin: 0 auto;   
+}
+.comments{
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+
+}
+.ctrls{
+	height: 56px;
+}
+.ctrls p {
+	  position: relative;
+   	padding: 10px 20px 10px 10px;
+    text-align: left;  
+}
+.ctrls p::before{
+	display: block;
+	content: "";
+	position: absolute;
+	width: 21px;
+	height: 36px;
+	left: 60px;
+	margin: 0;
+}
+.ctrls p label{
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	border:2px solid rgba(140,100,193,0.5);
+  border-radius:100%;
+  float: left;
+  overflow: hidden;
+  margin-top: -2px;
+}
+.ctrls p .head_img{
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+.ctrls p input {
+  display: inline-block;
+  width: 62%;
+  height: 36px;
+  border: none;
+  padding: 0 6px 0 8px;
+  background:url(../images/cor-input-bg.png);
+  background-size: 100% 100%;
+  color: #fff;
+  outline: none;
+  border-radius: 4px ;
+  border-bottom-left-radius: none;
+  border-top-left-radius: none;
+  margin-left: 22px;
+}
+
+.ctrls p input.error {
+	border: 1px solid #f00;
+}
+.ctrls a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background: url(../images/send-btn.png) no-repeat center;
+  background-size: 100% auto;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  right: 16px;
+  top: 9px;
+}
+.c_head_img {
+  width: 28px;
+  height: 28px;
+  border:2px solid rgba(140,100,193,0.5);
+  border-radius: 28px;
+  overflow: hidden;
+  float: left;
+  margin-right: 5px; 
+}
+
+.c_head_img_img {
+  width: 28px;
+  margin-right: 4px;
+}
+.comment {
+   height: 28px;
+   line-height: 28px;
+   border-radius: 2px;
+   margin-left: 30px;
+   padding: 0px 6px;
+}
+
+.me-cor{
+	border: 1px solid #8c64c1;
+	border-radius: 30px !important;
+	height: 28px!important;
+    line-height: 26px!important;
+}
+input::-webkit-input-placeholder { 
+    color:#fff!important;
+    font-size: 12px;
+}
+input[placeholder], [placeholder], *[placeholder] {
+   color:#fff!important;
+   font-size: 12px;
+}
+
+.wobble{
+-webkit-animation:wobble 1s .2s ease infinite both;
+-moz-animation:wobble 1s .2s ease infinite both ;
+}
+@-webkit-keyframes wobble{
+0%{-webkit-transform:translateX(0%)}
+15%{-webkit-transform:translateX(-25%) rotate(-5deg)}
+30%{-webkit-transform:translateX(20%) rotate(3deg)}
+45%{-webkit-transform:translateX(-15%) rotate(-3deg)}
+60%{-webkit-transform:translateX(10%) rotate(2deg)}
+75%{-webkit-transform:translateX(-5%) rotate(-1deg)}
+100%{-webkit-transform:translateX(0%)}
+}
+/* iPhone4 */
+@media screen and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	.time-text {
+	    bottom: 2px;
+	}
+	.header-nav{
+		padding: 10px 10px 0;
+	}
+	.ad-detail .detail-box {
+    top: 21%;
+    height: 58%;
+
+  }
+}
+/* iPhone5 */
+@media screen and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone6 */
+@media screen and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+ 
+}
+/* huawei honor-6 */
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.ad-detail .detail-box {
+    top: 21%;
+    height: 56%;
+
+  }
+}
+
+/* mi2*/
+@media screen and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}

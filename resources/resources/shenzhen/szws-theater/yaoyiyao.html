@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <title>深圳卫视黄金剧场</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/core.css" />
+        <link rel="stylesheet" href="./css/dialog.css" />
+        <link rel="stylesheet" href="./css/yaoyiyao.css" />
+        <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    </head>
+    <body>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+<!-- 摇奖页面 -->
+<section class="yao-bg">
+    <div class="main-top m-t-b">
+      <div class="marquee none"><ul></ul></div>
+      <div class="top-btn">
+          <a href="#" class="btn-back" id="btn-back" data-collect="true" data-collect-flag="tv-szws-back" data-collect-desc="抽奖页面-返回答题页面">
+            <img src="./images/back-btn-bg.png">
+          </a>
+      </div>
+      <div class="info-box">
+          <p class="count none"></p>
+       </div>
+      <div class="weizhongjang">
+            <p class="yao-cool-tips none"><span>运气不太好哦，不要灰心，继续加油！</span></p>
+      </div>
+    </div>
+    <div class="main-foot m-f-b">
+    </div>
+</section>
+<footer>
+    <!-- 摇奖提示语 -->
+    <div class="countdown">
+        <p class="countdown-tip"></p>
+        <p class="detail-countdown"> </p>
+    </div>
+    <p class="copyright"></p>
+</footer>
+<div class="fail-bg">
+</div>
+<!--   <div class="test" id="test">
+    test
+  </div> -->
+<script src="./js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/shake.js"></script>
+<script src="./js/plugins/zepto.selector.min.js"></script>
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/app/dialog.js"></script>
+<script src="./js/app/yaoyiyao.js"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+}
+
+section.qt-bg {
+    position: relative;
+    background: url(../images/bd-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: auto;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.page-decorate {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.wrap-page {
+    position: relative;
+    margin-top: 10%;
+}
+
+.warp-title {
+    text-align: center;
+}
+
+.warp-title img:first-child {
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    max-width: 64%;
+}
+
+.warp-title img:last-child {
+    margin-top: -2px;
+    position: relative;
+    display: block;
+    max-width: 14%;
+}
+
+.wrap-qtcode {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.qtcode {
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    width: 44%;
+    left: 28%;
+}
+
+.qtcode p {
+    position: relative;
+    float: left;
+    font-size: 1.4rem;
+    color: #ffe68a;
+    font-weight: bolder;
+    margin-top: -0.5%;
+    width: 200%;
+    margin-left: -50%;
+    text-align: center;
+}
+
+.test {
+    position: absolute;
+    z-index: 100;
+    width: 200px;
+    height: 48px;
+    background: blue;
+    color: white;
+    top: 0px;
+    text-align: center;
+    line-height: 48px;
+}
+
+
+/* iPhone5 */
+
+@media screen and (min-device-width: 320px) and (min-device-height: 500px) and (max-device-height: 578px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .qtcode p {
+        margin-top: -2.5%;
+    }
+}
+/* iPhone5 */
+
+@media screen and (min-device-width: 320px) and (max-device-height: 500px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .qtcode p {
+        margin-top: -2.5%;
+    }
+}

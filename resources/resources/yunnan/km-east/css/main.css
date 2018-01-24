@@ -1,0 +1,64 @@
+html{
+    overflow-y: scroll;
+}
+body{
+    overflow-y: scroll;
+}
+.bg{
+    width: 100%;
+    height: auto;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: 100% auto;
+}
+.out-link1{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 40%;
+    height: 18%;
+    display: block;
+    /*background-color: #003366;*/
+}
+.out-link2{
+    position: absolute;
+    top: 25%;
+    right: 18%;
+    width: 30%;
+    height: 8%;
+    /*background-color: #0000FF;*/
+}
+.out-label1{
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 21%;
+}
+.out-label1>img{
+    position: relative;
+    width: 29%;
+    margin: 2%;
+    height: auto;
+    float: left;
+}
+.out-label2{
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 21%;
+}
+.out-label2>img{
+    position: relative;
+    width: 29%;
+    margin: 2%;
+    height: auto;
+    float: left;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.copyright{
+    width: 100%;
+    bottom: 0;
+}

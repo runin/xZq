@@ -1,0 +1,239 @@
+html {
+    overflow: auto;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: url(../images/index-bg.jpg) no-repeat top center;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+a
+{
+    color:#fff!important;
+}
+header {
+    width: 100%;
+    z-index: 1;
+}
+
+.tv-logo {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20%;
+    height: 33px;
+    z-index: 99;
+    background: url(../images/tv-logo.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.btn-rule
+{
+    position: absolute;
+    top:10px;
+    right:10px;
+    width:80px;
+    height:24px;
+    line-height: 22px;
+    border:2px solid #fefefe;
+    color:#fefefe;
+    font-size: 14px;
+    text-align: center;
+}
+header .tv-infor
+{
+    text-align: center;
+    position: relative;
+    margin-top: 48px;
+    color:#fefefe;
+}
+.tv-infor .tv-theme
+{
+    width:64%;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    z-index: 4;
+    text-align: center;
+}
+.middle-content
+{
+    position: relative;
+    clear: both;
+    width:80%;
+    margin-left:10%;
+    overflow: hidden;
+}
+.movie-image
+{
+    position: relative;
+    margin:10px 0px;
+    width:50%;
+    float: left;
+}
+.index-join {
+    position: relative;
+    float:right;
+    width:35%;
+    display: block;
+    color:#fff;
+    /*background-image: -webkit-linear-gradient(top,#E67413 0%,#E67413 10%,#DF431A 100%); */
+    border-radius: 10px;
+    top: 20px;
+}
+.my-card {
+    position: absolute;
+    width:35%;
+    text-align: center;
+    float:right;
+    /*background-image: -webkit-linear-gradient(top,#E67413 0%,#E67413 10%,#DF431A 100%); */
+    border-radius: 10px;
+    bottom:20px;
+    right:0px;
+}
+.middle-prize-show
+{
+    margin:3% 0px;
+    width:80%;
+    margin-left:10%;
+}
+.bussines-logo-show
+{
+    position: relative;
+    text-align: center;
+    clear: both;
+}
+.logo-img
+{
+    width:80%;
+}
+
+.logo-content {
+    position: relative;
+    width: 98%;
+    margin:2px auto 0px;
+    text-align: left;
+    z-index: 9;
+}
+.logo-content ul {
+    font-size: 13px;
+    color: #FFF;
+}
+.logo-content ul li {
+    display: inline-block;
+    width: 30%;
+
+    margin: 0 1% 2%;
+    text-align: center;
+    
+}
+.logo-content ul li .logo-img-box {
+    position: relative;
+    width: 100%;
+   /* background: url(../images/good-load.png) no-repeat transparent;*/
+    background-size: cover;
+    border: 0;
+    border-radius: 10px;
+}
+.logo-content ul li .logo-img-box img {
+    width: 100%;
+    border: 0 !important;
+    background: transparent !important;
+}
+.bussiness-phone
+{
+    position: relative;
+    width:80%;
+    margin-left:10%;
+    background: #0076ca;
+    color:#fff;
+    height:30px;
+}
+.phoen-icon
+{
+    position: relative;
+    height:20px;
+    width:26px;
+    top:5px;
+    color:#fff;
+
+}
+.copyright {
+    position: relative;
+    text-align: center;
+    color: #e0e0e0;
+    opacity: 1;
+    top: 8px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, .9);
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    clear:both;
+    height: 40px;
+
+}
+
+#div_subscribe_area {
+    height: 50px;
+    overflow: hidden;
+}
+
+.join-img {
+    max-width: 80%;
+    position: relative;
+    margin: 2px auto;
+}
+
+.bounceInUp {
+    -webkit-animation: bounceInUp 1s 1s ease both;
+    animation: bounceInUp 1s 1s ease both;
+}
+
+@-webkit-keyframes bounceInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(2000px);
+        transform: translateY(2000px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    80% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.rotateOutUpLeft {
+    -webkit-animation: rotateOutUpLeft .9s ease both;
+    animation: rotateOutUpLeft .9s ease both;
+}
+
+@-webkit-keyframes rotateOutUpLeft {
+    0% {
+        -webkit-transform-origin: left top;
+        -webkit-transform: rotate(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform-origin: left top;
+        -webkit-transform: rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+}
+

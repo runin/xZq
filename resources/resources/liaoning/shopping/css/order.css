@@ -1,0 +1,283 @@
+body {
+	background-color: #E4E4E4;
+}
+
+.main {
+	position: relative;
+	padding-bottom: 100px;
+}
+
+label {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	font-size: 16px;
+	height: 35px;
+	line-height: 35px;
+	color: #666;
+}
+
+.red {
+	color: #f00;
+}
+
+.confirm-wrapper {
+	padding-top: 8px;
+}
+
+.order-wrapper h2 {
+	margin: 12px 0 0px 18px;
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+}
+
+.item-content {
+	margin-left: 46px;
+	margin-top: -32px;
+	min-height: 35px;
+	line-height: 30px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.item-content input {
+	width: 100%;
+	padding: 0 0 0 2px;
+	outline: 0 none;
+	border: 0 none;
+	height: 30px;
+	background: #F6F6F6;
+}
+
+.item-content textarea{
+	background: #F6F6F6;
+	width: 100%;
+	border: none;
+}
+
+.item-content .rule-item {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0px 12px;
+	border: 1px solid #CAC8C8;
+	margin-right: 12px;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	min-width: 35px;
+	text-align: center;
+	color: #666666;
+}
+
+.item-content .rule-item.disabled {
+	background: #ccc;
+	color: #eee;
+}
+
+.item-content .rule-item.curr {
+	border: 1px solid #f00;
+	color: #f00;
+}
+
+.good-zp {
+	font-size: 12px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	line-height: 22px;
+	color: #999;
+	border-bottom: 1px dotted #E8E5E5;
+}
+
+.swiper-container {
+	overflow: hidden;
+	/* border-bottom: 1px solid #DBD6D4; */
+}
+
+.swiper-container img {
+	max-width: 100%;
+	max-height: 100%;
+	border-bottom: 1px solid #DBD6D4;
+	vertical-align: top;
+}
+
+.swiper-container, .swiper-slide {
+	width: 100%;
+}
+
+.stock-wrap {
+	position: relative;
+	margin-top: 0px;
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	height: 31px;
+	color: #666666;
+}
+
+.stock-wrap .tool-minus {
+	background-position: -46px 10px;
+	background-size: 105px auto;
+	width: 29px;
+	height: 30px;
+	float: left;
+}
+
+.stock-wrap .tool-plus {
+	background-position: -22px 10px;
+	background-size: 105px auto;
+	float: left;
+	width: 29px;
+	height: 30px;
+}
+
+.stock-wrap .tool-num {
+	width: 38px;
+	float: left;
+	height: 29px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 0 none;
+	border-bottom: 0 none;
+	text-align: center;
+	outline: 0 none;
+	padding: 0;
+	background: #fff;
+}
+
+.stock-num {
+	margin-left: 14px;
+	font-size: 14px;
+	color: #666666;
+}
+
+.stock-num strong {
+	font-weight: normal;
+	margin-left: 10px;
+}
+
+.ui-item {
+	border-bottom: 1px dotted #E8E5E5;
+}
+
+.ui-item:last-child {
+	border: 0 none;
+}
+
+.ui-info {
+	padding: 0 11px;
+}
+
+.ui-info .ui-item {
+	padding: 6px 0;
+	min-height: 35px;
+}
+
+.ui-info label {
+	color: #666;
+}
+
+.ui-address .ui-item {
+	padding: 6px 0px 6px;
+	margin-left: 11px;
+	margin-right: 11px;
+}
+
+.ui-address .ui-item strong {
+	color: #f00;
+	font-size: 12px;
+	margin-left: -5px;
+	margin-right: 2px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 5px;
+}
+
+.ui-address .ui-item .item-content {
+	margin-top: -34px;
+}
+
+.ui-ship .ui-item {
+	margin-left: 12px;
+}
+
+.ui-ship .ui-item .item-content {
+	margin-left: 77px;
+}
+
+.ui-ship .ui-item label {
+	width: 80px;
+}
+
+.ui-ship .ui-item .item-content {
+	font-size: 16px;
+	color: #000;
+}
+
+.ui-ctrl {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #CACACA;
+	padding: 10px 20px;
+	z-index: 10000;
+	min-height: 60px;
+	margin: 0;
+	border-radius: 0;
+}
+
+.ui-ctrl-total {
+	font-size: 16px;
+	color: #f00;
+	margin-top: 10px;
+	display: none;
+}
+
+.ui-ctrl-fare {
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+.ui-ctrl .btn-confirm {
+	position: absolute;
+	right: 18px;
+	left: 18px;
+	top: 12px;
+	width: 50%;
+}
+
+.copyright {
+	position: absolute!important;
+	bottom: 65px;
+	color: #555;
+}
+
+.swiper-pagination-switch {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #ccc;
+	margin: 0 4px;
+	cursor: pointer;
+}
+
+.swiper-active-switch {
+	background: #F93838;
+}
+
+.pagination {
+	position: absolute;
+	left: 0;
+	text-align: center;
+	bottom: 2px;
+	width: 100%;
+}
+
+.red-dikou{
+	font-size: 12px;
+	display:inline-block;
+	color: red;
+	width: auto;
+}

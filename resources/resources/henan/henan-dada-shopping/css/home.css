@@ -1,0 +1,165 @@
+body {
+  background: #F4F4F4;
+}
+header {
+  background: url(../images/home-header.jpg) no-repeat;
+  background-size: 100% 100%;
+  padding: 30px 3% 28px;
+  box-shadow: 1px 0px 10px 3px rgba(0, 0, 0, 0.6);
+  margin-bottom: 9px;
+}
+header .left label {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.39);
+  padding: 3px;
+}
+header .left label img {
+  border-radius: 68px;
+}
+header .left div {
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  left: 90px;
+}
+header .left div h3.nickname {
+  font-size: 14px;
+}
+header .left div h3.jf-value {
+  font-size: 12px;
+  line-height: 25px;
+}
+header a.btn {
+  position: absolute;
+  right: 3%;
+  top: 45px;
+  display: block;
+  background: #4da9f7;
+  width: 72px;
+  height: 28px;
+  line-height: 29px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 13px;
+  color: #FFF;
+}
+header a.btn:hover {
+  color: #FFF;
+}
+header a.btn.signed {
+  opacity: .56;
+}
+.swiper-pagination-bullet-active {
+  background: #ff7373;
+}
+.nav {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 0;
+  text-align: center;
+  margin-bottom: 10px;
+  background: #FFF;
+  padding: 9px 0;
+}
+.nav span {
+  display: block;
+  color: #5D5D5D;
+}
+.nav span:before {
+  content:'';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 2px;
+  vertical-align: sub;
+}
+.nav span:first-child:before {
+  background: url(../images/home-icon-jfrule.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.nav span:nth-child(2):before {
+  background: url(../images/home-icon-zqjf.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.nav span:last-child:before {
+  background: url(../images/home-icon-jfrecord.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.show {
+  box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: #FFF;
+}
+.show .lottery {
+  display: inline-block;
+  width: 43%;
+  padding: 5px;
+}
+.show .prize {
+  display: inline-block;
+  width: 55%;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+.show .prize img {
+  padding: 5px;
+}
+.show .prize a:first-child img{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+fieldset {
+  border-top: 1px solid #c4c4c4;
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+  margin: 15px auto;
+}
+fieldset legend {
+  padding: 0 8px;
+}
+ul li {
+  box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  font-size: 12px;
+  color: #333333;
+  margin-bottom: 3px;
+  text-align: center;
+}
+ul li a {
+  display: inline-block;
+  width: 49%;
+  background: #FFF;
+  padding: 10px 0;
+  color: #333333;
+}
+ul li a:hover {
+  color: #333333;
+}
+ul li a:last-child{
+  margin-left: 3px;
+}
+ul li a h1 {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+ul li a h2 {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+ul li a h2 label {
+  color: #F58B19;
+}

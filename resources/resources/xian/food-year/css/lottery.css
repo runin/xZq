@@ -1,0 +1,313 @@
+.modal, .dialog {
+	width: 100%;
+	height: 100%;
+}
+/** 抽奖  */
+.lottery-dialog {
+	background: #BC0C0C url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-cj.jpg) no-repeat center center;
+    
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	color: #fdc728;
+	padding-top: 38%;
+}
+.lottery-dialog .hammer {
+	
+    height: 250px;
+}
+.lottery-dialog .btn-hammer {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-hammer.png) no-repeat 0 0;
+	
+    background-size: 112px auto;
+    display: block;
+    width: 115px;
+    height: 158px;
+    margin-left: 50%;  
+    margin-top: 16px;
+}
+
+.broken .lottery-dialog .hammer:before {
+	content: '';
+	display: block;
+	background: url(../images/icon-feng.png) no-repeat 0 0;
+	background-size: 80px auto;
+	width: 26%;
+	height: 24%;
+	position: absolute;
+	left: 36%;
+	top: 40%;
+}
+.lottery-dialog .btn-hammer.animated {
+	-webkit-animation-name: broken;
+    -webkit-animation-duration: 800ms;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes broken {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(-42deg);
+		transform: rotate(-42deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}		
+}
+
+.lottery-dialog p {
+    text-align: center;
+	
+}
+.lottery-dialog .ctrl {
+    position: absolute;
+	
+    left: 0;
+    right: 0;
+    bottom: 4%;
+    text-align: center;
+    font-size: 14px;
+}
+.lottery-dialog .ctrl .btn-again {
+    width: 40vw;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.lottery-dialog .light {
+	display: none;
+	background: rgba(255,250,166,0.58);
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+	margin-left: -5px;
+	right: 0;
+	top: 50%;
+	margin-top: -10px;
+	bottom: 0;
+    border-radius: 100%;
+    z-index: 10;
+    -webkit-box-shadow: 0px 0px 140px rgba(255,250,166,1), 0px 0px 140px rgba(255,250,166,1),0px 0px 150px rgba(255,250,166,0.9),0px 0px 160px rgba(255,250,166,0.9),0px 0px 170px rgba(255,250,166,0.8),0px 0px 180px rgba(255,250,166,0.8),0px 0px 190px rgba(255,250,166,0.7),0px 0px 200px rgba(255,250,166,0.7),0px 0px 210px rgba(255,250,166,0.6),0px 0px 220px rgba(255,250,166,0.6),0px 0px 230px rgba(255,250,166,0.5);
+	box-shadow: 0px 0px 140px rgba(255,250,166,1), 0px 0px 140px rgba(255,250,166,1),0px 0px 150px rgba(255,250,166,0.9),0px 0px 160px rgba(255,250,166,0.9),0px 0px 170px rgba(255,250,166,0.8),0px 0px 180px rgba(255,250,166,0.8),0px 0px 190px rgba(255,250,166,0.7),0px 0px 200px rgba(255,250,166,0.7),0px 0px 210px rgba(255,250,166,0.6),0px 0px 220px rgba(255,250,166,0.6),0px 0px 230px rgba(255,250,166,0.5);
+}
+
+.animated .lottery-dialog .light {
+	display: block;
+	-webkit-animation-name:boune;
+    -webkit-animation-duration: 700ms;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-iteration-count:1;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes boune {
+	0% {
+		-webkit-transform: scale(1);
+		opacity: 0.1;
+	}
+	50% {
+		-webkit-transform: scale(50);
+		opacity: 0.5;
+		background: rgba(255,250,166,0.8);
+	}
+	100% {
+		-webkit-transform: scale(100);	
+		opacity: 1;
+		background: rgba(255,250,166,1);
+	}		
+}
+
+.award-dialog .box {
+	height: 48%;
+	position: relative;
+	overflow: hidden;
+}
+.award-dialog .prize {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-prize.png) no-repeat center center;
+    background-size: cover;
+	
+    height: 100%;
+    margin: 0 -10%;
+    text-align: center;
+    padding-top: 10%;  
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+.award-dialog .prize:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.award-dialog .prize img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.award-dialog .prize.p1 img {
+    max-width: 80%;
+}
+
+.award-dialog .ctrl {
+    color: #fff;
+    padding-top: 5%;
+    text-align: center;
+}
+.award-dialog .ctrl h2 {
+    text-align: center;
+    font-size: 16px;
+}
+.award-dialog .content {
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+.award-dialog .content p {
+    font-size: 12px;
+    text-align: left;
+}
+.award-dialog .content input {
+    width: 100%;
+    border: 0 none;
+    background: #fff;
+    height: 36px;
+    font-size: 16px;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    margin-top: 8px;
+    color: #979797;
+    outline: none;
+}
+.award-dialog .ctrl .btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 23px 5px 0 5px;
+    width: 35%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    border-radius: 20px;
+}
+.award-dialog .award-succ {
+	display: none;
+}
+.award-dialog .award-succ h2 {
+    text-align: left;
+    text-indent: 2em;
+    padding: 0 6%;
+}
+.award-dialog .award-succ h3 {
+    text-align: center;
+    margin-top: 10%;
+    color: #FDC728;
+}
+.award-dialog .award-succ .btn {
+    margin-top: 10px;
+    letter-spacing: 0;
+}
+.award-succ-dialog .prize img {
+	display: none;
+}
+.award-succ-dialog .prize:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/icon-ljsu.png) no-repeat center center;
+	background-size: cover;
+	width: 80%;
+	height: 80%;
+}
+
+.award-succ-dialog .ctrl {
+	display: none;
+}
+.award-succ-dialog .award-succ {
+	display: block;
+}
+
+
+#confirm-dialog {
+    position: absolute;
+    color: #fdc728;
+    border-radius: 6px;
+    z-index: 1000;
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-result.jpg) no-repeat 0 0;  background-size: cover;
+    overflow: hidden;
+}
+#confirm-dialog:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 100;
+}
+.confirm-dialog {
+    width: 80%;
+	
+    max-height: 25%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    padding: 5%;
+    position: fixed;
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg.jpg) no-repeat 0 0;  
+    background-size: 260px auto;
+    border-radius: 8px;
+    z-index: 100;
+}
+.confirm-dialog .content {
+    margin-bottom: 6px;
+	
+}
+.confirm-dialog .ctrl {
+    text-align: center;
+	
+    margin-right: -10px;
+}
+.confirm-dialog .ctrl .btn {
+    margin-right: 10px;
+	
+}
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.award-dialog .box {
+		height: 45%;
+	}
+	.award-dialog .content input {
+	    height: 30px;
+	}
+	.award-dialog .ctrl .btn {
+	    height: 30px;
+	    line-height: 30px;
+	    font-size: 14px;
+	    margin-top: 5%;
+	}
+	
+	.lottery-dialog {
+		padding-top: 25%;
+	}
+}

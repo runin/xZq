@@ -1,0 +1,331 @@
+
+.modal{
+	position:fixed;
+	top:0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	width:100%;
+	height:100%;
+	background: url(../images/bg-body.jpg) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+	z-index: 1;
+}
+.dialog {
+	position:absolute;
+	width: 80%;
+	height: 80%;
+	top:10%;
+	left: 10%;
+	color:#333333;
+	z-index:1000;
+	overflow-y:auto ;
+}
+.dialog-inner {
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	width:100%;
+	height:100%;
+	-webkit-transform:translateZ(0);
+	transform:translateZ(0);
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	user-select:none;
+	-webkit-text-size-adjust:none;
+	text-size-adjust:none;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	overflow: hidden;
+}
+.modal .btn-close {
+	position:absolute;
+	background:url(../images/icon-close.png) no-repeat;
+	background-size:28px auto;
+	display:block;
+	width:30px;
+	height:30px;
+	z-index:10000;
+}
+
+.wrong-dialog{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	padding-top: 30%;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+}
+.wrong-dialog .wrong-title{
+	width: 84%;
+}
+#fudai-dialog i {
+	position: absolute;
+	display: block;
+	width: 110px;
+	height: 110px;
+	line-height: 110px;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 100%;
+	background-color: #ffaa3b;
+	font-style: normal;
+	margin: 90% auto 0;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.3);
+	bottom: 18%;
+	left: 50%;
+	margin-left: -55px;
+}
+
+.fudai-dialog{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	padding-top: 16%;
+	text-align: center;
+}
+ .fudai-dialog .right-title{
+	width:85% ;
+}
+.fudai-dialog .fudai-round{
+	position:absolute;
+	width:100%;
+	height:32%;
+	bottom: 0;
+	background:#e3384a;
+}
+.fudai-dialog .fudai-round .fudai{ 
+	position: absolute;
+	width: 100%;
+	top: -100%;
+	left: 0%;
+}
+.btn-join {
+	display: inline-block;
+	width: 34%;
+	height: 40px;
+	line-height: 40px;
+	background: url(../images/btn-bg.png) no-repeat;
+	background-size: 100% 100% ;
+	color: #a11450;
+	font-size: 17px;
+	font-weight: bold;
+	margin: 4% 3% 0;
+	text-align: center;
+}
+.border-top{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+@-webkit-keyframes fudai-zoom {
+	0% {
+	opacity:0.4;
+	-webkit-transform:scale(0);
+}
+100% {
+	opacity:1;
+	-webkit-transform:scale(1);
+}
+}@keyframes fudai-zoom {
+	0% {
+	opacity:0.4;
+	transform:scale(0);
+}
+100% {
+	opacity:1;
+	transform:scale(1);
+}
+}
+.lottery-dialog .content {
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.lottery-dialog .award-lottery {
+	height:100%;
+	width:100%;
+	position: absolute;
+}
+.lottery-dialog .award-win{
+	width: 100%;
+	height: 80%;
+    background:#fff8e6;
+    padding: 0 10px;
+}
+.award-win h5 {
+	color:#c5092b;
+	font-size:14px;
+	text-align:center;
+	margin: 0 0 2%;
+}
+.award-win h4 {
+	color:#666666;
+	font-size:12px;
+	line-height: 16px;
+	text-align:center;
+	margin: 2% 0;
+}
+.lottery-dialog .award-img{
+	padding: 10% 0 6%;
+}
+.lottery-dialog .award-img img {
+	max-width: 100%;
+}
+
+#lottery-dialog .contact p {
+	margin-top:6px;
+}
+#lottery-dialog .info-crm p{
+	padding: 0 30px;
+	word-wrap: break-word;
+	font-size: 15px;
+}
+#lottery-dialog .contact p label{
+	display: inline-block;
+	width: 30%;
+	margin-right: -4px;
+	text-align: center;
+	height: 32px;
+	line-height: 32px;
+	font-size: 15px;
+	color: #333333;
+}
+#lottery-dialog .contact input {
+	background:#fff;
+	border:0 none;
+	border-radius:4px;
+	height:32px;
+	padding:0 6px;
+	width:70%;
+	outline:0 none;
+	box-shadow: 1px 1px 1px #cac7c0 inset;
+	border:1px solid #cac7c0;
+}
+.lottery-dialog .contact .btn {
+	margin:4% auto;
+	background:#ec7220;
+}
+.lottery-dialog .contact-btn{
+	width: 100%;
+	height: 20%;
+	text-align: center;
+
+}
+
+.award-none{
+	padding: 20% 0 ;
+	text-align: center;
+}
+
+.award-none .btn-join{
+	width: 150px;
+	margin-top: 50px;
+}
+.rule-dialog {
+	font-size: 14px;
+	color: #193733;
+	overflow: hidden;
+	
+}
+.rule-dialog .content{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 68%;
+	
+}
+.rule-dialog .rule-content{
+	position: absolute;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background: #fff8e6;
+	padding: 5% 5% 0;
+	padding-bottom: 64px;
+	
+	
+}
+.rule-dialog .rule{
+	width: 100%;
+	height: 100%;
+	padding: 3%;
+	overflow-y: auto;
+	
+}
+.rule-dialog .border-top{
+	position: absolute;
+	top:-6px;
+}
+.rule-dialog .rule-top{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	
+}
+.rule-dialog .btn-back{
+	width: 100px;
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -50px;
+}
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	.fudai-dialog {
+  		padding-top: 0;
+	}
+	.fudai-dialog .fudai-round{
+		height: 36%;
+	}
+	.lottery-dialog .award-img {
+	  padding: 3% 0;
+	}
+	.award-win h5 {
+	  margin: 0 0 1%;
+	}
+	.lottery-dialog .award-win {
+	  padding: 0 30px;
+	}
+	#lottery-dialog .info-crm p{
+		padding: 0 10px;
+	}
+	.rule-dialog .content{
+		position: absolute;
+		bottom: 40px;
+		width: 100%;
+		height: 60%;
+		
+	}
+}
+/*dai*/
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.lottery-dialog .award-img {
+	  padding: 4% 0;
+	}
+}

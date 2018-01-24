@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>mc影院</title>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/util.css" />
+	<link rel="stylesheet" href="./css/index.css" /> 
+</head>
+<body>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload" hidden="hidden"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload" hidden="hidden"></audio>
+    <audio preload="auto" id="audio-c" src="images/audio-c.mp3" class="preload" hidden="hidden"></audio>
+    <input name="yao" type="button" id="yao-pv" data-collect="true" data-collect-flag="yao-pv" data-collect-desc="摇一摇" hidden="hidden" />
+    
+    <section class="dowm-time none">距离摇奖还有：<span id="downTime"></span></section>
+    <section class="dowm-end none">今天摇奖已结束！</section>
+    <section class="pop"></section>
+    <section class="rule-btn" data-collect="true" data-collect-flag="mc-rule" data-collect-desc="规则"></section>
+    <section class="yaojixi"></section>
+    <section class="mc-box"></section>
+    <section class="mc-barrels"></section>
+    <section class="mycard"><a  href="my_card.html" class="mycard-btn" data-collect="true" data-collect-flag="mc-mycard" data-collect-desc="我的卡劵">我的卡劵</a></section>
+	<footer>
+		<p class="copyright"></p>
+	</footer>
+    
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	
+	<script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/sha1.min.js"></script>
+    
+	<script src="./js/plugins/core.js"></script>
+	<script src="./js/plugins/authorize_userinfo.js"></script>
+	<script src="./js/plugins/util.js"></script>
+	
+    <script src="./js/app/countDown.js"></script>
+    <script src="./js/plugins/shake.js"></script>
+	<script src="./js/app/index.js"></script>
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=50694779" charset="UTF-8"></script>
+</body>
+</html>

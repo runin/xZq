@@ -1,0 +1,202 @@
+html{
+	width: 100%;
+	height: 100%;	
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+.scroll{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+
+}
+.main{
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	position: relative;
+	padding-bottom: 40px;
+}
+.reserve{
+    background: url(../images/reserve.png) 0 0 no-repeat;
+    background-size: 100%;
+    width: 20%;
+    height: 86px;
+    display: block;
+    position: absolute;
+    right: 7%;
+    top: 3%;
+}
+.tv-logo{
+    display: inline-block;
+    width: 40%;
+    margin: 4% 0 0 4%;
+}
+.erweima,.pre{
+	width: 88%;
+	margin: 0 auto;
+	padding: 3% 0;
+}
+.erweima img,.pre img{
+	display: block;
+	width: 100%;
+}
+.pre-img{
+	background: url(../images/tuo.png) no-repeat center bottom;
+	background-size: 100% auto;
+	padding-bottom: 10px;
+	
+}
+.all{
+	display: block;
+	width: 90%;
+	min-height: 120px;
+	position: relative;
+	margin: 0 auto;
+	border: 4px solid #ff9138;
+}
+.all img{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	
+}
+.info{
+	width: 100%;
+	height: 60px;
+	background: rgba(0,0,0,0.4);
+	color: #fff;
+	padding:0  10px ;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.info span{
+	display: block;
+	width: 100%;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+@-webkit-keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -7deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-0%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+   
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 375px)
+and (min-device-height : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    
+}
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+   
+}
+/* yi*/
+@media screen
+and (min-device-width : 360px)
+and (max-device-height : 519px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+   
+}

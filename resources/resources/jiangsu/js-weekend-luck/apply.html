@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<title>周末好运到</title>
+	    <link rel="stylesheet" href="css/reset.css" />    
+		<link rel="stylesheet" href="css/core.css" />
+		<link rel="stylesheet" href="css/apply.css" />	
+	</head>
+	<body>
+		<section class="wrapper">
+
+			<section id="apply_dialog" class="dialog-wrapper none">
+				<section class="apply-dialog">
+					<img src="images/succ-title.png">
+					<section class="apply-tips">
+						<img src="images/border-top.png">
+						<div class="apply-tips-box">
+							<p>您的报名信息我们已经收到，</p>
+							<p>请耐心等待我们工作人员联系。</p>
+							<a id="back-btn" class="btn-back">返回</a>
+						</div>
+					</section>	
+				</section>
+			</section>
+
+			<header>
+				<img title="我要报名" alt="我要报名" src="./images/title-apply.png">
+			</header>	
+			<section class="form-body-box">
+				<img class="border-top" src="images/border-top.png" />
+				<section class="form-body">
+					<section class="form-wrapper">
+						<section class="form-header">必填</section>
+						<section class="form">
+							<section class="form-item">
+								<label>
+									姓名
+								</label>
+								<section class="form-item-input">
+									<input type="text" name="name" placeholder="请输入姓名" />
+								</section>
+							</section>
+							<section class="form-item">
+								<label>
+									性别
+								</label>
+								<section class="form-item-input radio">
+									<label>
+										<input type="radio" name="sex" value='1' />男
+									</label>
+									<label>
+										<input type="radio" name="sex" value='2' />女
+									</label>
+								</section>
+							</section>
+							<section class="form-item">
+								<label>
+									年龄
+								</label>
+								<section class="form-item-input small">
+									<input type="text"  name="age" placeholder="" />
+								</section>
+							</section>
+							<section class="form-item">
+								<label>
+									电话
+								</label>
+								<section class="form-item-input">
+									<input type="text" name="phone" placeholder="" />
+								</section>
+							</section>
+							<section class="form-item">
+								<label>
+									省市
+								</label>
+								<section class="form-item-input select">
+									<select name="province" id="province">
+										<option value="0">请选择...</option>
+									</select>
+									<select name="city" id="city">
+										<option value="0">请选择...</option>
+									</select>
+								</section>
+							</section>
+							<section class="form-item">
+								<label style="margin-right:10px;">
+									照片
+								</label>
+								<section id="upload-box" class="photo-wrapper upload-box">
+								
+									<a href="javascript:void(0)" class="icon btn-upload"></a>
+								</section>
+							</section>
+						</section>
+					</section>
+	
+					<section class="form-wrapper">
+						<section class="form-header">选填</section>
+						<section class="form xuantian">
+							<section class="form-item">
+								<label>
+									爱好
+								</label>
+								<section class="form-item-input">
+									<input type="text" name="hobby" placeholder="" />
+								</section>
+							</section>
+							<section class="form-item">
+								<label>
+									特别的经历
+								</label>
+								<section class="form-item-input textarea">
+									<textarea name="experience"></textarea>
+								</section>
+							</section>
+							<section class="form-item">
+								<label>
+									是否选择搭档
+								</label>
+								<section class="form-item-input radio">
+									<label>
+										<input type="radio" name="who" value='1' checked="checked"/>是
+									</label>
+									<label>
+										<input type="radio" name="who" value='2' />否
+									</label>
+								</section>
+							</section>
+							<section class="form-item who">
+								<label>
+									搭档会选谁
+								</label>
+								<section class="form-item-input radio">
+									<label>
+										<input type="radio" name="partner" value="另一半" />另一半
+									</label>
+									<label>
+										<input type="radio" name="partner" value="好朋友" />好朋友
+									</label>
+									<label>
+										<input type="radio" name="partner" value="亲人" />亲人
+									</label>
+									<label>
+										<input type="radio" name="partner" value="其他" />其他
+									</label>
+								</section>
+							</section>
+							<section class="form-item multi">
+								<label>
+									选择他(她)作为搭档理由
+								</label>
+								<section class="form-item-input textarea">
+									<textarea name="partner-remark"></textarea>
+								</section>
+							</section
+						</section>
+						<a data-collect="true" data-collect-flag="tv-jiangsu-week-luck-apply-submit" data-collect-desc="周末好运到-报名-报名提交" class="btn-back" id="submit"  href="javascript:void(0);">提&nbsp&nbsp&nbsp交</a>
+					</section>
+				</section>
+			</section>
+		</section>
+		<footer>
+				<p>页面由江苏卫视提供</p>
+				<p>一真科技技术支持 & Powered by holdfun.cn</p>
+			</footer>
+		<script src="./js/config.js"></script>
+		<script src="./js/plugins/zepto.min.js"></script>
+		<script src="./js/plugins/zepto.cookie.min.js"></script>
+		<script src="./js/plugins/md5.js"></script>
+		<script src="./js/plugins/common.js"></script>
+		
+		<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+	    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	    <script src="./js/authorize_userinfo.js"></script>
+
+	
+		
+		
+		<script src="./js/plugins/upload.min.js"></script>
+		<script src="./js/app/apply.js"></script>
+
+		<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	</body>
+</html>

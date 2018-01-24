@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>网络人气王pk战</title>
+<link rel="stylesheet" href="./css/core.css">
+<link rel="stylesheet" href="./css/barrage.css">
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/animate.min.css">
+<link rel="stylesheet" href="./css/index2.css">
+</head>
+
+<body>
+  <div class="index-box">
+    <section class="rule-con"> <i class="rule-img"></i>
+      <div class="rule-text">共有1次机会为选手打气，节目结束后我们将会对打气用户进行红包、礼劵等奖品进行反馈</div>
+    </section>
+    <section class="nav-box">
+      <ul class="nav-con">
+        <li class="on">活动</li>
+        <li>领奖</li>
+      </ul>
+    </section>
+    <ul class="activity-reward">
+      <li class="activity">
+        <section class="encourage-box">
+          <ul class="encourage-list clearfix">
+          </ul>
+        </section>
+        <section class="exercise-reward">
+          <div class="exercise-reward-line"></div>
+          <div class="exercise-reward-title">活动奖励</div>
+          <div class="exercise-reward-border"></div>
+        </section>
+        <!--评论列表-->
+        <section class="comment-list-box">
+          <ul id="comment-list">
+          </ul>
+        </section>
+        <!--发表评论--> 
+        <!--       <section class="comment-box">
+                      <div class="comment-form">
+                          <a href="javascript:void(0)" class="comment-close comment-select"></a>
+                          <input name="" type="text" class="comment-input-text" id="comment-input-text" placeholder="发个弹幕吧~红星可以点哦" />
+                          <a href="javascript:void(0)" class="send" id="send">发送</a>
+                      </div>
+                  </section> --> 
+        <!--弹幕--> 
+        <!--          <section class="danmu-box">
+                      <section class="barrage-wrapper">
+                          <section class="comments">
+                          </section>
+                          <section class="comment-input-wrapper none">
+                              <section class="comment-input">
+                                  <section class="input-wrapper">
+                                      <input id="barrinput" type="text" placeholder="发个弹幕吧~红星可以点哦" value="输入内容示例">
+                                  </section>
+                                  <a class="ok" class="send_btn" id="submit" href="javascript:void(0)">发送</a>
+                              </section>
+                          </section>
+                      </section>
+                  </section> --> 
+      </li>
+      <li class="reward  none">
+        <section class="hd-explain-box">
+          <h2><i class="icon-attrow-a"></i> 活动说明：</h2>
+          <ul>
+            <li><i>1</i>每位观众有1次机会，可选择心中的
+              <label class="c-red">网络人气王</label>
+              ；</li>
+            <li><i>2</i>节目结束后，将显示出所有选手的人气值，人气值最高的选手将获得【人气王】称号；</li>
+            <li><i>3</i>支持过人气王的观众，将获得不定额的
+              <label class="c-red">现金红包</label>
+              ；</li>
+            <li><i>4</i>参与过打气活动的观众均可获得节目赠送的
+              <label class="c-red">优惠券</label>
+              一张</li>
+          </ul>
+        </section>
+        <section class="lq-hongbao-box">
+          <h2><i class="icon-attrow-a"></i> 活动说明 <i class="icon-attrow-b"></i></h2>
+          <p>成功押中人气王并为其打气的观众，将会在节目结束1个小时后获得不等额现金红包一个，请前往“
+            <label class="c-red">服务通知</label>
+            ”领取该红包，24小时内未成功领取的红包将会被退回哦。</p>
+          <div class="lq-hongbao-img"><img src="images/rule_bg01.jpg" /></div>
+        </section>
+        <section class="lq-card-box">
+          <h2><i class="icon-attrow-a"></i> 活动说明 <i class="icon-attrow-b"></i></h2>
+          <p class="only-card">只可选择一张优惠券</p>
+          <div class="down-time"></div>
+          <h3 class=""></h3>
+          <div class="lq-card-con">
+            <ul id="lq-card">
+              <li>
+                <p>?</p>
+                <a href="javascript:void(0)" class="lq-card-btn">?</a> </li>
+              <li>
+                <p>?</p>
+                <a href="javascript:void(0)" class="lq-card-btn">?</a> </li>
+              <li>
+                <p>?</p>
+                <a href="javascript:void(0)" class="lq-card-btn">?</a> </li>
+            </ul>
+          </div>
+          <div class="record-title none">最近一次中奖记录：</div>
+          <div class="record-list none"></div>
+        </section>
+      </li>
+    </ul>
+  </div>
+  <section class="showimg none">
+    <div> <img src="images/bg_red.jpg" class="bigimg animated fadeInUp"> </div>
+  </section>
+  <section class="comment-box">
+    <section class="danmu-box">
+      <section class="barrage-wrapper">
+        <section class="comments"> </section>
+        <section class="comment-input-wrapper none">
+          <section class="comment-input">
+            <section class="input-wrapper">
+              <input id="barrinput" type="text" placeholder="发个弹幕吧~红星可以点哦" value="输入内容示例">
+            </section>
+            <a class="ok" class="send_btn" id="submit" href="javascript:void(0)">发送</a> </section>
+        </section>
+      </section>
+    </section>
+    <div class="comment-form"> <a href="javascript:void(0)" class="comment-close comment-select"></a>
+      <input name="" type="text" class="comment-input-text" id="comment-input-text" placeholder="发个弹幕吧~红星可以点哦" />
+      <a href="javascript:void(0)" class="send" id="send">发送</a> </div>
+  </section>
+  <script src="./js/config.js"></script> 
+  <script src="./js/plugins/zepto.min.js"></script> 
+  <script src="./js/plugins/util.js"></script> 
+  <script src="./js/plugins/zepto.cookie.min.js"></script> 
+  <script src="./js/plugins/util.js"></script> 
+  <script src="./js/plugins/zepto.fx.min.js"></script> 
+  <script src="./js/plugins/zepto.cookie.min.js"></script> 
+  <script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script> 
+  <script src="./js/plugins/md5.js"></script> 
+  <script src="./js/plugins/core.js"></script> 
+  <script src="./js/plugins/authorize_userinfo.js"></script> 
+  <script type="text/html" id="tmpl_barrage">
+          <section class="bitem">
+              <section class="bitem-img">
+                  <img tmpl-attr="src" tmpl-name="src" onerror="this.src='./images/avatar.jpg'" src="${src}">
+              </section>
+              <section class="bitem-content">
+                  <p tmpl-attr="html" tmpl-name="content">${content}</p>
+              </section>
+          </section>
+      </script> 
+  <script src="./js/app/sha1.min.js"></script> 
+  <script src="./js/app/countDown.js"></script> 
+  <script src="./js/plugins/zepto.barrage.js"></script> 
+  <script src="./js/plugins/barrage.js"></script> 
+  <script src="./js/app/index.js"></script> 
+  <script src="./js/app/player.js"></script> 
+  <script src="./js/app/reward.js"></script> 
+  <script src="./js/app/comment.js"></script> 
+  <script src="./js/app/lottery.js"></script> 
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+  <script src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>黄金100秒</title>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/lottery.css" />
+</head>
+<body>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <section class="home-box">
+        <section class="main-top m-t-b">
+            <section class="marquee none"><ul></ul></section>
+            <section class="header-box">
+                <section class="logo-box">
+                    <img src="./images/icon-tvlogo.png">
+                    <i></i>
+                    <img src="./images/icon-sponsorlogo.png">
+                </section>
+                <section class="count hidden"><h5>当前参与人数</h5><label></label></section>
+            </section>
+            <section class="product-box-pull on">
+                <i></i>
+                <img class="icon-clicktips" src="./images/icon-clicktips.png">
+            </section>
+            <section class="product-box">
+                <section class="detail-box"><ul></ul></section>
+                <a class="btn-pack" href="javascript:void(0);"></a>
+            </section>
+            <img class="icon-lotterytip" src="./images/icon-lotterytip.png">
+            <p class="thanks-tips"></p>
+            <img class="bg-yao yao-top" src="./images/bg-wheel-top.png">
+        </section>
+        <section class="main-foot m-f-b">
+            <img class="bg-yao yao-bottom" src="./images/bg-wheel-bottom.png">
+            <section class="tttj none" id="tttj" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+                <img class="waggle" src="./images/icon-redbag.png">
+                <p>更多红包点击这里</p>
+            </section>
+            <section class="footer">
+                <img class="icon-countdowntips" src="./images/icon-countdowntips.png">
+                <section class="countdown none">
+                    <span class="countdown-tip"></span>
+                    <span class="detail-countdown"></span>
+                </section>
+                <section class="rednum none">还剩<span>0</span>个奖品，继续加油!</section>
+                <section class="copyright">页面由CCTV1提供<br>新掌趣科技技术支持&amp;Powered by holdfun.cn</section>
+            </section>
+        </section>
+    </section>
+    <!-- <input type="button" class="none" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;"> -->
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.selector.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/sha1.min.js"></script>
+    <script src="./js/plugins/shake.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/lottery.js"></script>
+
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

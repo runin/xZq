@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>沈阳剧场</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/answer.css" />
+</head>
+<body>
+	<header>
+		<div class="hd-wrapper">
+			<a class="ranking" id="ranking" data-collect="true" data-collect-flag="sy-tvshow-answer-rank" data-collect-desc="答题页面-积分排行按钮"><img src="images/answer-rank-bg.png" border="0"><span>积分排行</span></a>
+			<h2 class="logo"></h2>
+		</div>
+		<div class="qa-wrapper">
+			<div class="wrapper">
+				<div class="c-item question" id="question"></div>
+				<div class="c-item answered none" id="answered">
+					<h3 id="answer-tip">很遗憾，答错了，认真看剧吧!</h3>
+					<div class="timer">
+						<h4>距离下次答题抽奖还有</h4>
+						<h5 class="time-box" id="time-box"></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<article id="article">
+		<div class="comments" id="comments"></div>
+		<div class="ctrls">
+			<div class="funny-box">
+				<img class="funny1" src="./images/funny/funny1.png" data-item="/:funny1" border="0">
+				<img class="funny2" src="./images/funny/funny2.png" data-item="/:funny2" border="0">
+				<img class="funny3" src="./images/funny/funny3.png" data-item="/:funny3" border="0">
+			</div>
+			<p>
+				<input id="input-comment" type="text" placeholder="弹幕吐槽来一发" />
+				<a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="sy-tvshow-answer-comment" data-collect-desc="答题页面-发表评论按钮">发送</a>
+			</p>
+		</div>
+	</article>
+	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/barrage.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/plugins/msg.js"></script>
+	<script src="./js/app/answer.js"></script>
+	<img src="./images/rank-bg.jpg" class="preload">
+	<img src="./images/paper.png" class="preload">
+	<img src="./images/shine.png" class="preload">
+	<img src="./images/lottery-none.png" class="preload">
+	<img src="./images/lottery-bg.png" class="preload">
+	
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

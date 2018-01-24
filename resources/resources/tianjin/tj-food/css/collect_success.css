@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+body {
+  width:100%;
+  min-height:100%;
+  background:url(../images/bg.jpg) no-repeat bottom center #f6efda fixed;
+  background-size:cover;
+  overflow:hidden;
+  position: relative;
+}
+.main {
+  margin: 0 auto;
+  padding-top: 35%;
+  width: 80%;
+}
+a:link, a:visited, a:hover, a:active {
+  color:#FFF !important;
+}
+h2 {
+  text-align: center;
+  color: #FF6600;
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn-back {
+  background:#ff6600;
+  display:block;
+  width:62%;
+  height:40px;
+  line-height:40px;
+  margin:23px auto 0;
+  border-radius:22px;
+  text-align:center;
+  font-size:18px;
+  color:#fff;
+}
+h2:before {
+	content: '';
+display: inline-block;
+vertical-align: middle;
+background: url(../images/smile.png) no-repeat 0 0;
+background-size: 37px auto;
+width: 38px;
+height: 38px;
+margin-right: 10px;
+}
+p {
+  font-size: 15px;
+  margin-top: 28px;
+  line-height: 20px;
+  color: #c34e00;
+  text-align: left;
+}
+.btn-back {
+	letter-spacing: 10px;
+	margin: 35% auto 0;
+}
+a.back-btn:visited, a.back-btn:active{
+  color: #FFF;
+}
+.trim {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.trim span, .trim img {
+    display: block;
+}
+.trim .icon-leaf1 {
+    position: absolute;
+    width: 36%;
+    right: 0;
+    top: -8%;
+}
+.trim .icon-chili {
+    position: absolute;
+    width: 10%;
+    top: 10%;
+    right: 8%;
+}
+.trim .icon-leaf4-1 {
+    position: absolute;
+    width: 6%;
+    bottom: 35%;
+    left: 10%;
+}
+.trim .icon-leaf4-2 {
+    position: absolute;
+    width: 4%;
+    bottom: 60%;
+    right: 12%;
+    opacity: .5;
+}
+.trim .icon-leaf4-3 {
+    position: absolute;
+    width: 10%;
+    bottom: 25%;
+    right: 35%;
+}
+.copyright {
+  position: absolute;
+  bottom: 3px;
+}

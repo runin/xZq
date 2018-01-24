@@ -1,0 +1,183 @@
+/*
+* 素材全局样式
+*/
+
+/*
+ *	红包
+ */
+.hongbao-wrapper{
+	background: rgba(0,0,0,0.75);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+.hongbao{
+	height: 0px;
+	background: url("../images/bg-hongbao.png") no-repeat center;
+	background-size: contain;
+	margin: 0 5%;
+	position: relative;
+	-webkit-animation-name: pcon-ing;
+	-webkit-animation-duration: 0.3s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+}
+
+.hongbao-title{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 0px;
+	font-size: 18px;
+	color: #ffea01;
+	text-align: center;
+	position: absolute;
+	top: 0px;
+}
+.hongbao-title p{
+	width: 70%;
+	margin: 0 auto;
+}
+.hongbao-ticket{
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 90px;
+}
+
+.hongbao-click{
+	font-size: 18px;
+	color: white;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 0px;
+	top: 0px;
+	background:#ffa200;
+}
+
+.hongbao-click-wrapper{
+	width: 100%;
+	margin-top: 10px;
+}
+.hongbao-click-wrapper .hongbao-click{
+	width: 40%;
+	margin: 0 auto;
+	position: static;
+	display: block;
+	line-height: 38px;
+	border-radius: 5px;
+}
+.hongbao-ticket-input{
+	padding-top: 10px;
+}
+.hongbao-ticket-input .tips{
+	font-size: 12px;
+	color: white;
+	text-align: left;
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+.hongbao-close{
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 21px;
+	height: 21px;
+	background: url("../images/icon-close.png") no-repeat;
+	background-size: cover;
+}
+
+.input-wrapper{
+	background: #eeeeee;
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	line-height: 22px;
+	border-radius: 5px;
+}
+.input-wrapper input{
+	background: none;
+	border: none;
+	width: 100%;
+	color: #be4d3d;
+	font-size: 12px;
+	line-height: 30px;
+	font-size: 14px;
+	padding: 0 5px;
+}
+#ticket_confirm .hongbao-ticket{
+	padding-top: 80px;
+}
+#ticket_confirm .input-wrapper{
+	background: none;
+	color: white;
+	font-size: 12px;
+}
+#hongbao_back{
+	margin-top: 10px;
+	background: #8D0000;
+}
+.hongbao-cash{
+	font-size: 18px;
+	color: #ffea01;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+.hongbao-cash span{
+	font-size: 40px;
+}
+#tttj{
+	color: red;
+	font-size: 14px;
+	padding-top: 3px;
+	text-decoration: underline;
+	position: absolute;
+	right: 8px;
+	top: 0px;
+	text-shadow: 0px 0px 1px #FFF8DC;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #DD897D;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #DD897D;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #DD897D;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #DD897D;
+}
+
+@-webkit-keyframes pcon-ing {
+ 0% {
+ -webkit-transform:scale(0.9, 0.9);
+}
+ 50% {
+ -webkit-transform:scale(0.8, 0.8);
+}
+ 100% {
+ -webkit-transform:scale(1, 1);
+}
+
+keyframes pcon-ing {
+ 0% {
+ 	transform:scale(0.9, 0.9);
+}
+ 50% {
+ 	transform:scale(0.8, 0.8);
+}
+ 100% {
+ 	transform:scale(1, 1);
+}
+
+/*
+ *	END OF红包
+ */

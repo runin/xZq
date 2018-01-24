@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="author" content="" />
+		<meta name="viewport"  content="width=device-width, initial-scale=1,  minimum-scale=0.5, maximum-scale=1.0,user-scalable=no" /> 
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="MobileOptimized" content=""/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>西安直播间-新闻调查</title>
+		<script src="js/wx_api.js"></script>
+		<link href="css/global.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<input type="hidden" id="noRunShare" value="true">
+		<div class="logo"></div>
+		<div class="mod_top"></div>
+		<div class="nav box-orient-h">
+			<a href="javascript:void(-1);" class="box-flex active" id="survey_current_tab" data-collect="true" data-collect-flag="survey_current_tab" data-collect-desc="本期调查选项卡">本期调查</a>
+			<a href="javascript:void(-1);" class="box-flex" id="survey_activity_tab" data-collect="true" data-collect-flag="survey_activity_tab" data-collect-desc="活动说明选项卡">活动说明</a>
+			<a href="javascript:void(-1);" class="box-flex" id="survey_history_tab" data-collect="true" data-collect-flag="survey_history_tab" data-collect-desc="往期调查选项卡">往期调查</a>
+		</div>
+		<div class="spinner none" id="survey-loading">
+		  <div class="bounce1"></div>
+		  <div class="bounce2"></div>
+		  <div class="bounce3"></div>
+		</div>
+		<!--本期调查 s-->
+		<div class="mod_box question_box">
+			 <div class="wihtebg mb10" id="current_box"></div>
+			 <a id="submitBtn" href="javascript:void(-1);" class="send_btned none" data-collect="true" data-collect-flag="survey_submit_btn" data-collect-desc="提交新闻调查"></a>
+			 <a id="view_prize_btn" href="javascript:void(-1);" class="viewprize none">查看我的奖品>></a>
+		</div>
+		<!--本期调查 e-->
+		<!--活动说明 s-->
+		<div class="mod_box details none">
+			<h2>活动规则</h2>
+			<div class="d_item">
+			    <p>每期节目，我们都为大家准备了丰厚的礼品，你只需要参与我们的调查或提供新闻线索、参与新闻评论，就能获得抽奖机会，幸运大转盘，天天有好礼！</p>	
+			</div>
+			<h2>参与方式</h2>
+			<div class="d_item">
+			    <p>每晚<em>18:00——19:00，</em>对着《西安直播间》摇动手机，参与新闻调查<!-- ；<em>18:30——19:00</em>摇动手机，发表您的新闻观点或者爆料新闻线索 -->，均有获奖机会。（每人每天抽奖一次）</p>	
+			</div>
+			<h2>活动奖品</h2>
+			<div class="d_item">
+			    <p>1、"蓉记鲜鲜鲜"500元代金券<br />
+		           2、"蓉记鲜鲜鲜"鲜享大礼篮<br />
+		           3、花田巷子葡萄酒礼盒<br />
+		           4、巧学蛙电子书包<br />
+		           5、手工自制月饼<br />
+		           6、有奖积分<br />
+			    </p>	
+			</div>
+		</div>
+		<!--活动说明 e-->
+		<!--往期调查 s-->
+		<div class="mod_box none">
+			<span id="survey_history_box"></span>
+			<a href="javascript:void(-1);" class="btn-viewmore none" id="surey_history_more" data-collect="true" data-collect-flag="survey_history_more" data-collect-desc="新闻调查往期查看更多">查看更多</a>
+		</div>
+		<!--往期调查 e-->
+		<div class="copyright2">页面由西安广播电视台提供</div>
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/md5.js"></script>
+        <script src="js/share.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/data_collect.js"></script>
+	</body>
+</html>

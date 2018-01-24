@@ -1,0 +1,377 @@
+footer {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    background: url('../images/yao-bg.jpg') top center no-repeat;
+    background-size: 100% 100%;
+}
+
+.marquee {
+    position: absolute;
+    top: -1px;
+    height: 21px;
+    line-height: 21px;
+    background: #004987;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+#yao-btn-back {
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 5px;
+    width: 24%;
+    z-index: 1;
+    background-size: 100% 100%;
+}
+
+.yao-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.main-top {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 1px;
+    background: url(../images/bg-lottery-top.jpg) no-repeat bottom center;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 1;
+    -webkit-transition: -webkit-transform .2s ease;
+}
+
+.main-foot {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50%;
+    background: url(../images/bg-lottery-bottom.jpg) no-repeat top center;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 1;
+    -webkit-transition: -webkit-transform .2s ease;
+}
+
+
+/*倒计时*/
+
+.countdown {
+    font-size: 12px;
+    line-height: 34px;
+    position: relative;
+    z-index: 2;
+    top: 26%;
+    left: 7%;
+    width: 86%;
+    height: 34px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    background: #005b99;
+}
+
+.countdown-tip {
+    z-index: 2;
+    margin-left: -10px;
+}
+
+.countdown .detail-countdown {
+    z-index: 2;
+    /*background-size: 30px auto;*/
+    display: inline-block;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.countdown .yao-hand {
+    position: relative;
+    height: 50px;
+    width: 49px;
+    border-radius: 100%;
+    margin-top: -10px;
+    margin-left: -2px;
+    float: left;
+}
+
+.info-box {
+    position: absolute;
+    top: 28px;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    z-index: 2;
+}
+
+.weizhongjang {
+    position: relative;
+    margin: 5% auto 10px;
+    text-align: center;
+    color: #fff;
+    height: 40px;
+    line-height: 60px;
+}
+
+.yao-cool-tips span {
+    padding: 5px;
+    color: #fff;
+}
+
+.home-box-bg {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 210px;
+    margin-top: -105px;
+    overflow: hidden;
+    background: url(../images/thank-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/*商家图标*/
+
+.logo-content {
+    position: relative;
+    width: 98%;
+    margin: 2px auto 0px;
+    text-align: left;
+    z-index: 9;
+}
+
+.logo-content ul {
+    font-size: 13px;
+    color: #FFF;
+}
+
+.logo-content ul li {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1% 2%;
+    text-align: center;
+}
+
+.logo-content ul li .logo-img-box {
+    position: relative;
+    width: 100%;
+    /*background: url(../images/good-load.png) no-repeat transparent;*/
+    background-size: cover;
+    border: 0;
+    border-radius: 10px;
+}
+
+.logo-content ul li .logo-img-box img {
+    width: 100%;
+    border: 1px solid #005599;
+    background: transparent !important;
+}
+
+.bussines-logo-show {
+        position: relative;
+        max-height: 56%;
+        overflow: auto;
+  }
+
+#tttj {
+    top: 32px;
+    position: absolute;
+    display: inline-block;
+    z-index: 9;
+    text-align: center;
+    left: 42%;
+    text-align: center;
+}
+#tttj img {
+    display: inline-block;
+    width: 22px;
+    margin: 0 auto;
+}
+#tttj span{
+    display: inline-block;
+    color: red;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.wobble {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    -webkit-animation: 3s waggle;
+    animation: 3s waggle;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-delay: -1;
+    animation-delay: -1;
+}
+
+@-webkit-keyframes waggle {
+    0%, 7% {
+        transform: rotateZ(0);
+        -webkit-transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+        -webkit-transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+        -webkit-transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+        -webkit-transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+        -webkit-transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+        -webkit-transform: rotateZ(0);
+    }
+}
+
+/* iPhone4 */
+
+@media screen and (min-device-width: 320px) and (max-device-height: 500px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    /*倒计时*/
+    .countdown {
+        font-size: 12px;
+        line-height: 30px;
+        position: relative;
+        z-index: 2;
+        top: 28%;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 20px;
+        background: #005b99;
+    }
+    .countdown .yao-hand {
+        position: relative;
+        height: 46px;
+        width: 45px;
+        border-radius: 100%;
+        margin-top: -10px;
+        margin-left: -2px;
+        float: left;
+    }
+    .logo-content ul li .logo-img-box {
+        position: relative;
+        width: 70%;
+        background-size: cover;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 15%;
+    }
+    .bussines-logo-show {
+        position: relative;
+        max-height: 48%;
+        overflow: auto;
+    }
+}
+
+.none-tips {
+    opacity: 0;
+    animation-name: nonetips;
+    -webkit-animation-name: nonetips;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes nonetips {
+    0% {
+        transform: translate(-10px, 0px);
+        opacity: 0;
+    }
+    20% {
+        transform: translate(10px, 0px);
+        opacity: 1;
+    }
+    40% {
+        transform: translate(-10px, 0px);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(10px, 0px);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-10px, 0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes nonetips {
+    0% {
+        -webkit-transform: translate(-10px, 0px);
+        opacity: 0;
+    }
+    20% {
+        -webkit-transform: translate(10px, 0px);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translate(-10px, 0px);
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: translate(10px, 0px);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(-10px, 0px);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (min-device-height: 500px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* luo */
+
+@media screen and (min-device-width: 1000px) and (min-device-height: 1000px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}

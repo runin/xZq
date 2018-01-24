@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>2016广东春晚</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/lottery.css" />
+</head>
+<body>
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+    <section class="home-box">
+        <section class="main-top m-t-b">
+            <header>
+                <img class="ljgz" src="images/ljgz.png" data-collect="true"
+                     data-collect-flag="zj-party-lottery-ljgz" data-collect-desc="打开领奖规则弹层" />
+                <section class="marquee hidden"><ul></ul></section>
+                <section class="fail-tips none">
+                    <p>跟着我的节奏<i>摇</i>起来</p>
+                </section>
+                <section class="countdown none">
+                    <span class="countdown-tip"></span>
+                    <span class="detail-countdown"></span>
+                </section>
+                <div id="ddtj" class="ddtj-div visibility"  data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+                    <i class="ddtj-before wobble"></i>
+                    <p class="ddtj"></p>
+                </div>
+                <img class="jmd program-move" src="images/jmd.png" data-collect="true"
+                     data-collect-flag="zj-party-lottery-jmd" data-collect-desc="进入节目单" />
+            </header>
+
+            <img class="bg-yao yao-top" src="./images/bg-wheel-top.png">
+        </section>
+        <section class="main-foot m-f-b">
+            <img class="bg-yao yao-bottom" src="./images/bg-wheel-bottom.png">
+            <section class="footer">
+                <a class="big-award visibility" id="big-award"><img src="images/dj-tip.png"></a>
+                <a class="card" id="card" data-collect="true"
+                   data-collect-flag="zj-party-lottery-card" data-collect-desc="进入明星贺卡页" >
+                    <img class="" src="images/mxhk.png"/>
+                </a>
+                <section class="count hidden"><h5>截至目前在线人数有：</h5><label></label><h5>人</h5></section>
+                <!--<p class="thanks-tips"></p>-->
+            </section>
+        </section>
+    </section>
+    <div class="none">
+        <img src="images/t1.jpg" />
+        <img src="images/t2.jpg" />
+        <img src="images/t3.jpg" />
+        <img src="images/t4.jpg" />
+        <img src="images/t5.jpg" />
+        <img src="images/t6.jpg" />
+        <img src="images/t7.jpg" />
+        <img src="images/bg-lottery-bottom.jpg" />
+        <img src="images/bg-lottery-top.jpg" />
+        <img src="images/bg-wheel-bottom.png" />
+        <img src="images/bg-wheel-top.png" />
+    </div>
+     <!--<input type="button" class="" id="test" value="红包按钮" style="position:absolute;top:50%;z-index:9999999999;">-->
+
+    <script src="./js/config.js"></script>
+
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.selector.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/touch.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="js/sha1.min.js"></script>
+    <script src="js/shake.min.js"></script>
+
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="js/wx_api_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+
+    <script src="./js/app/lottery.js"></script>
+
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

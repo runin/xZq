@@ -1,0 +1,312 @@
+
+body,html{
+	height:100%;
+	background-color:#052e5d;
+	background-image:url(../images/yaoing01.jpg);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	font-size:14px;
+	overflow:hidden;
+}
+.main-box{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.main-top{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:50%;
+	background-image:url(../images/bg_b.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:center;
+	overflow:hidden;
+}
+.yaoing .main-top{
+	top:-13%;
+	box-shadow:0 0 10px #222;
+	-webkit-animation-name: yaotop;
+	-webkit-animation-duration: 0.7s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes yaotop{
+0%{
+	top:0;
+}
+30%,70%{
+	top:-13%;
+}
+100%{
+	top:0;
+}
+}
+.main-bottom{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:50%;
+	background-color:#000;
+	background-image:url(../images/bg_c.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:center;
+	overflow:hidden;
+}
+.yaoing .main-bottom{
+	box-shadow:0 0 10px #222;
+	-webkit-animation-name: yaobottom;
+	-webkit-animation-duration: 0.7s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes yaobottom{
+0%{
+	bottom:0;
+}
+30%,70%{
+	bottom:-13%;
+}
+100%{
+	bottom:0;
+}
+}
+.time-box{
+	position:absolute;
+	top:50%;
+	left:10%;
+	width:80%;
+	height:40px;
+	padding:0 0 0 45px;
+	border-radius:20px;
+	border:2px #00acfc solid;
+	box-sizing:border-box;
+}
+.time-box i{
+	position:absolute;
+	top:-8px;
+	left:-5px;
+	width:50px;
+	height:50px;
+	border-radius:100%;
+	border:2px #00acfc solid;
+	background-image:url(../images/icon_yao.jpg);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+.time-box .dowmtime{
+	display:block;
+	height:40px;
+	line-height:38px;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+}
+.jp-number{
+	position:absolute;
+	top:70%;
+	left:10%;
+	width:80%;
+	height:30px;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+	text-shadow:0 2px 0 #036b97;
+}
+.jp-number span{
+	display:inline-block;
+	margin:0 3px;
+	font-size:20px;
+	color:#0cf6ff;
+	text-shadow:0 2px 0 #036b97;
+}
+.rule-top{
+	height:9%;
+	margin:10% 15px 0 30px;
+	border-bottom:1px #fff solid;
+	background-image:url(../images/rule_title.png);
+	background-repeat:no-repeat;
+	background-size:50%;
+	background-position:top;
+}
+.rule-con{
+	height:78%;
+	margin:5% 0 0;
+	padding:0 15px 0 30px;
+	color:#fff;
+	overflow:hidden;
+	overflow-y:auto;
+}
+.yao-box{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	padding:0 15px 0 30px;
+	box-sizing:border-box;
+}
+.prize-top{
+	height:9%;
+	line-height:22px;
+	margin:12% 0 0;
+	background-image:url(../images/zj_title.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center center;
+}
+.prize-img{
+	height:20%;
+	margin:5% 0 0;
+	background-image:url(../images/temp/img01.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center center;
+}
+.prize-tips{
+	height:20px;
+	margin:5% 0 0;
+	font-size:12px;
+	color:#fff;
+}
+.ipt-texta{
+	width:100%;
+	height:32px;
+	padding:0 5px;
+	margin:5% 0 0;
+	border-radius:5px;
+	border:none;
+	background:#fff;
+	box-sizing:border-box;
+}
+a.btn-a{
+	position:absolute;
+	left:25%;
+	bottom:30px;
+	width:50%;
+	height:35px;
+	line-height:32px;
+	margin:0 0 0 3%;
+	border-radius:16px;
+	border:2px #2c3a70 solid;
+	box-shadow:0 2px 0 rgba(255,255,255,0.2) inset;
+	text-shadow:0 1px 0 #333;
+	background:-webkit-linear-gradient(#3b5091, #2b396d);
+	text-align:center;
+	color:#fff;
+}
+.not-top{
+	height:15%;
+	margin:10% 0 0;
+	background-image:url(../images/title_bg02.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:top center;
+}
+.not-img{
+	display:block;
+	width:80%;
+	margin:10% auto 0;
+	text-align:center;
+}
+.not-img>img{
+	max-width:100%;
+	border:3px #fff solid;
+}
+.success-text{
+	position:absolute;
+	left:0;
+	top:40%;
+	width:100%;
+	padding:0 0 0 30px;
+	line-height:22px;
+	text-align:center;
+	box-sizing:border-box;
+	font-size:18px;
+	color:#fff;
+}
+
+/* iPhone4 */
+@media screen and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+.time-box{
+	height:35px;
+	padding:0 0 0 40px;
+	border-radius:16px;
+}
+.time-box i{
+	top:-7px;
+	width:45px;
+	height:45px;
+}
+.time-box .dowmtime{
+	height:35px;
+	line-height:32px;
+	font-size:14px;
+}
+.jp-number{
+	font-size:14px;
+}
+.jp-number span{
+	font-size:16px;
+}
+}
+
+/* iPhone5 */
+@media screen and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+.time-box .dowmtime{
+	font-size:14px;
+}
+.jp-number{
+	font-size:14px;
+}
+.jp-number span{
+	font-size:18px;
+}
+}
+
+/* iPhone6 */
+@media screen and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+ 
+}
+
+/* huawei honor-6 */
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+.main-bottom{
+	bottom:1px;
+	height:50.2%;
+}
+}
+
+.none{
+	display:none;
+}
+
+footer{
+	position: absolute;
+	bottom: 8px;
+	font-size: 10px;
+	color: rgba(255,255,255,0.6);
+	text-align: center;
+	width: 100%;
+
+}

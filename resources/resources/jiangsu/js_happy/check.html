@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>幸福剧场</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <style type="text/css">html{height:100%;overflow:hidden}body{width:100%;min-height:100%;overflow:hidden;overflow-y:scroll;background:#f5f5f5}header{position:fixed;width:100%;top:0;left:0;background:#22292c;color:#F5F5F5;text-align:center;padding:13px 0;font-size:22px;z-index:999}.content{position:relative;width:100%;margin:0 auto;min-height:100%;padding:75px 0;text-align:center;overflow:hidden}p{font-size:15px;color:#333;text-align:center;width:72%;margin:0 auto 10px;word-break:break-all}.ss{display:block;width:80%;text-align:center;font-size:22px;line-height:28px;font-weight:700;color:#666;margin:0 auto 20px}.ss label{display:block;font-size:22px;font-weight:700;margin:10px auto}.low .ss{margin-top:30%}.s{display:block;width:100%;padding-left:5%;text-align:left;font-size:15px;line-height:20px;font-weight:700;color:#888;margin-bottom:20px}.btn{position:absolute;display:inline-block;width:74%;height:42px;line-height:42px;background:#ff932a;border-radius:4px;color:#FFF;font-size:16px;bottom:30px;left:13%}ul{display:block;width:100%;text-align:left;margin:6% auto 20px;background:#FFF}ul li{width:100%;padding:13px 26px;border-bottom:1px solid #CCC;font-size:15px}.s404 img{width:56%;margin:25% auto 20px}</style>
+</head>
+<body>
+    <header>
+        <h1>奖 品 核 销 平 台</h1>
+    </header>
+    <section class="content">
+        <section class="page s404 none">
+            <img src="./images/404.png">
+            <p class="ss">哎呀！出错了！</p>
+            <p>很抱歉，您还没有登录权限！</p>
+        </section>
+        <section class="page canget none">
+            <p class="s">已扫描到用户中奖信息：</p>
+            <ul>
+                <li class="p-an none">奖品名称：<label></label></li>
+                <li class="p-nn none">姓名：<label></label></li>
+                <li class="p-tel none">电话：<label></label></li>
+                <li class="p-id none">身份证号：<label></label></li>
+                <li class="p-time none">中奖时间：<label></label></li>
+            </ul>
+            <a href="javascript:void(0);" class="btn btn-award">核对无误，立即下发</a>
+        </section>
+        <section class="page low geting none">
+            <p class="s">已扫描到用户中奖信息：</p>
+            <p class="ss">奖品<label class="p-an"></label>下发成功</p>
+            <a href="javascript:void(0);" class="btn btn-qrcode">再次扫码</a>
+        </section>
+        <section class="page low error none">
+            <p class="ss">信息查询失败，不允许继续操作！</p>
+            <a href="javascript:void(0);" class="btn btn-qrcode">再次扫码</a>
+        </section>
+        <section class="page low syserr none">
+            <p class="ss">系统错误，请联系接口人！</p>
+            <a href="javascript:void(0);" class="btn btn-fresh">刷新页面</a>
+        </section>
+    </section>
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="./js/app/check.js"></script>
+</body>
+</html>

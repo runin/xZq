@@ -1,0 +1,39 @@
+body {
+    background: url("../images/new-top.jpg") no-repeat 0 0, url("../images/new-bottom.jpg") no-repeat 0px bottom, #F8F8F8 repeat-y 0 0;
+    background-size: contain;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+ul {
+    width: 87%;
+    margin: 15% auto;
+}
+ul li {
+    padding: 10px;
+    background: rgba(1, 71, 141, 0.1);
+    margin-top: 1px;
+}
+ul li h2 {
+    font-size: 19px;
+    color: #3A66B6;
+    margin: 0 auto;
+    text-align: center;
+}
+ul li div {
+    margin: 8px;
+}
+ul li div img {
+    border: 10px solid #fff;
+    box-shadow: 1px 6px 24px rgba(0, 0, 0, 0.5);
+}
+a.back {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.copyright {
+    color: #fff;
+}

@@ -1,0 +1,285 @@
+/*抽奖等待页面loading  start*/
+.rockpacket-section
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+}
+.red-content
+{
+    position: relative;
+    margin:40% auto; 
+    text-align: center 
+}
+.round-bg
+{
+    position: relative;
+    margin:0 auto; 
+    background: url('../images/waitprize.png') top center no-repeat;
+    background-size:100% 100%; 
+    height:200px;
+    width:200px;
+    border-radius:150px;
+    -webkit-animation:moverotate 8s linear infinite;
+    animation:moverotate 8s linear infinite;
+}
+.red-packet
+{
+    position: absolute;
+    height:88px;
+    width:64px;
+    top:50px; 
+    left:50%;
+    margin-left:-30px;
+}
+div.spanner{
+  position: relative;
+  margin: 20px auto;
+  width:110px;
+}
+.wait-word
+{
+    position: absolute;
+    line-height: 25px;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.spanner > div{
+  width: 6px;
+  height: 6px;
+  background-color:#4397D9;;
+  border-radius: 100%;
+  position: relative;
+  float:left;
+  -webkit-animation: bouncedelayx 1s infinite linear;
+  animation: bouncedelayx 1s infinite linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  margin-right:5px;
+}
+.spanner .circle1 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.spanner .circle2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+ 
+.spanner .circle3 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+ 
+.spanner .circle4 {
+  -webkit-animation-delay: -0.7s;;
+  animation-delay:  -0.7s;
+}
+.spanner .circle5 {
+  -webkit-animation-delay:  -0.6s;;
+  animation-delay: -0.6s;;
+}
+ 
+.spanner .circle6 {
+  -webkit-animation-delay:  -0.5s;;
+  animation-delay:  -0.5s;;
+}
+ 
+.spanner .circle7 {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+.spanner .circle8 {
+  -webkit-animation-delay:  -0.3s;;
+  animation-delay: -0.3s;;
+}
+ 
+.spanner .circle9 {
+  -webkit-animation-delay:  -0.2s;;
+  animation-delay:  -0.2s;;
+}
+ 
+.spanner .circle10 {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+}
+
+@-webkit-keyframes bouncedelayx {
+  100%
+  { 
+    background:#B9B9B9;
+  }
+}
+ 
+@keyframes bouncedelayx {
+  100%
+  { 
+    background:#B9B9B9; 
+  }
+}
+/*抽奖等待页面loading  start*/
+
+/*背景旋转 start*/
+@-webkit-keyframes  moverotate
+ {
+    0% 
+    {
+        -webkit-transform:rotateZ(0deg);
+    }
+    100% 
+    {
+        -webkit-transform:rotateZ(360deg);
+    }
+ }
+ @keyframes  moverotate
+ {
+    0% 
+    {
+        transform:rotate(0deg);
+    }
+    100% 
+    {
+        transform:rotateZ(360deg);
+    }
+ }
+
+ /*背景旋转 end*/
+.modal {
+	content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+}
+.dialog {
+    position: absolute;
+    color: #fdc728;
+    z-index: 1000;
+    overflow: hidden;
+    background: transparent;
+}
+.pop-label
+{
+    position: relative;   
+    width:40%;
+    margin:9% auto;
+}
+.lottery-close{
+    top: -15px!important;
+    right:-15px!important;
+}
+
+.lottery-dialog{
+    overflow: inherit;
+}
+
+.rule-dialog {
+    color: #333333;
+    height:auto;
+    background: #FBFBFD;
+    padding-bottom:2%;
+}
+.rule-dialog h3 {
+  margin-top:15%;
+    height: 32px;
+    color:#2D78BD;
+    text-align: center;
+}
+.rule-dialog h4 {
+    height: 32px;
+    color:#4A8EC6;
+    text-align: center;
+}
+.rule-dialog .content {
+	overflow-y: scroll;
+    margin: 0% 6% 0;
+    height: 64%;
+}
+.rule-dialog .rule {
+    padding: 6% 0;
+    font-size: 14px;
+    line-height: 24px;
+    max-height: 100%;
+	min-height: 100%;
+    overflow-y: auto;
+}
+.rule-dialog .close{
+   position: absolute;
+   right: 5px;
+   color: rgba(69,67,55,1);
+   top: 5px;
+   font-size: 1.2em;
+   height: 25px;
+   width: 25px;
+   line-height: 25px;
+   text-align: center;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   font-weight: bold;
+}
+.back{
+	margin-top: 4px;
+}
+
+
+.rule-con
+{
+    position: relative;
+    text-align: center;
+
+}
+.rule-con::-webkit-scrollbar
+{
+    width:0px
+}
+
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.modal-rule
+{
+    z-index: 102;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 480px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .pop-label
+  {
+    margin:2% auto;
+  }
+}
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .pop-label
+  {
+    margin:8% auto;
+  }
+}
+@media screen
+and (max-width : 320px)
+{
+    .rule-dialog{
+        top:80px!important;
+    }
+}

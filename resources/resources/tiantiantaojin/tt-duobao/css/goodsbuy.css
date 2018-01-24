@@ -1,0 +1,181 @@
+body
+{
+  background: #F8F8F8;
+}
+.tt-goods
+{
+  background: #fff;
+  padding: 10px 0px;
+}
+.goods-rp
+{
+    overflow: hidden;
+    color:#999999;
+    font-size:13px;
+    margin-bottom: 5px;
+
+}
+.left-rp
+{
+    float: left;
+    line-height: 18px;
+}
+.txt-red
+{
+    color:#f91546;
+}
+.txt-blue
+{
+   color:#f91546; 
+}
+.right-rp
+{
+    float: right;
+    border: 0;
+    text-align: right;
+    margin-right:20px;
+}
+.tt-goods
+{
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #C2C2C2;
+}
+.tt-goods-img
+{
+    position: relative;
+    float: left;
+    width:80px;
+    text-align: center;
+    margin:0px 10px;
+    /*border:1px solid #C2C2C2;*/
+}
+.tt-goods-img img
+{
+    display: block;
+}
+.tt-goods-infor
+{
+    position: relative;
+    margin-left: 100px;
+   /* width:calc(100% - 100px);
+    width:-webkit-calc(100% - 100px);*/
+}
+.tt-goods-infor p
+{
+   margin-bottom: 4px; 
+}
+
+.tt-goods-submit
+{
+    position: fixed;
+    width:100%;
+    font-size: 16px;
+    padding: 15px 10px;
+    border-top: 1px solid #C2C2C2;
+    bottom: 0px;
+    background: #fff;
+}
+
+.btn-submit
+{
+    position: absolute;
+    right: 10px;
+    padding: 4px 12px;
+    bottom: 12px;
+    background-color:#f91546; 
+    box-shadow: 1px 1px 4px #999;
+    border-radius: 2px;
+    color: #fff;
+}
+.btn-submit span
+{
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background: #fff;
+  display: inline-block;
+  margin:0px 2px;
+  vertical-align: middle;
+}
+
+.dm-count-chose
+{
+  height: 40px;
+  line-height: 40px;
+  padding: 2px 0px;
+}
+.dm-count-chose a{
+  margin-top: 5px;
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 30px;
+  border: 1px solid #ccc;
+  line-height: 30px;
+  padding: 0;
+  vertical-align: top;
+  text-align: center;
+  overflow: hidden;
+  outline: none;
+}
+.dm-count-chose input
+{
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #666;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  outline: 0;
+  background: #FFF;
+  margin-top: 5px;
+  border-radius: 0px;
+  -webkit-appearance:none; 
+  ime-mode: disabled;
+}
+.db-reduce
+{
+    background-color:#f3f3f3;
+    color: #666666;
+}
+.db-increase
+{
+    background-color:#f91546;
+    color: #fff;
+    border-left: 1px solid transparent;
+}
+a,a:hover{ 
+    text-decoration:none;
+} 
+
+/*适配*/
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 480px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .tt-goods-submit
+   {
+    font-size: 14px;
+   }
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+   .tt-goods-submit
+   {
+    font-size: 14px;
+   }
+
+}

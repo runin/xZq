@@ -1,0 +1,36 @@
+body{
+	background: #fff;
+}
+.main {
+	padding: 100px 0;
+	color:#000;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+}
+h2.icon:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/succ-yes.png) no-repeat 0 0;
+	background-size: 44px auto;
+	width: 44px;
+	height: 44px;
+	margin-right: 10px;
+}
+
+.btn-back{
+	width: 60%;
+	background: #ff8400;
+	margin-top: 30%;
+	border-radius: 6px;
+	height: 46px;
+	line-height: 46px;
+}
+
+
+.btn-back:hover,.btn-back:visited{
+	background: #ff8400;
+}

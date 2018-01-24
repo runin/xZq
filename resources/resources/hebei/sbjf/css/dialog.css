@@ -1,0 +1,706 @@
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.dialog {
+	position:absolute;
+	color:#D6305A;
+	border-radius:6px;
+	z-index:1000;
+}
+.dialog-inner {
+	position:absolute;
+	z-index:1;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	width:100%;
+	height:100%;
+	-webkit-transform:translateZ(0);
+	transform:translateZ(0);
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	user-select:none;
+	-webkit-text-size-adjust:none;
+	text-size-adjust:none;
+}
+.modal .btn-close {
+    position: absolute;
+    background: url(../images/close.png) top center no-repeat;
+    background-size: 100% auto;
+    width: 30px;
+    height: 30px;
+    right: 12px!important;
+    top: 9px!important;
+    z-index: 10000;
+}
+.modal:before {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.7);
+	z-index:100;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+.award-win, .award-card{
+    /*position: absolute;
+    bottom: 44px;
+    width: 100%;*/
+}
+.award-card{
+    bottom: 84px;
+}
+#rule-dialog .btn-close {
+    background: url(../images/close.png) top center no-repeat;
+    background-size: 100% auto;
+    width: 30px;
+    height: 30px;
+    right: 12px!important;
+    top: 9px!important;
+}
+.rule-dialog {
+    color: #fff;
+    background:url("../images/rule-bg.png") no-repeat;
+    background-size: 270px auto;
+    width: 270px;
+    height: 443px;
+}
+.rule-dialog .rule-t{
+    width: 78px;
+    margin: 30px auto 20px;
+    display: block;
+}
+.rule-dialog .content {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    padding-top: 10px;
+    border-top: 1px dotted rgba(0, 0, 0, .8);
+    height: calc(100% - 110px);
+    height: -webkit-calc(100% - 110px);
+}
+.rule-dialog .rule {
+	font-size:14px;
+	line-height:24px;
+	max-height:100%;
+	overflow-y:auto;
+	color:#FFF;
+	margin-top:0;
+}
+.rule-dialog p {
+	line-height:22px;
+}
+.rule-dialog h3 {
+	margin-top:22px;
+	font-size:16px;
+}
+.qrbox {
+	display:none;
+}
+.qr .qrbox {
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,.6);
+	z-index:999;
+}
+.qr .btn-close {
+	display:block !important;
+}
+.qr .qrbox img {
+	position:absolute;
+	width:70%;
+	height:auto;
+	top:30%;
+	left:15%;
+	z-index:1000;
+}
+#success-dialog i {
+	width:60%;
+	margin:13% auto 0;
+}
+#success-dialog p {
+	text-align:center;
+	margin:65% auto 0;
+	color:#ffea00;
+	font-size:15px;
+}
+
+.dialog-copyright {
+	position:absolute;
+	bottom:0;
+	left:-5px;
+	right:-5px;
+	font-size:14px;
+	text-align:center;
+	color:#f00;
+}
+
+
+.lottery-dialog {
+    /*width: 285px!important;
+    height: 390px!important;*/
+}
+.lottery-dialog .btn{
+    margin: 8px auto 0;
+}
+.lottery-dialog .award-win .btn-back {
+    margin-top: 20px;
+}
+.lottery-dialog .award-red{
+    position: relative;
+    height: 98%;
+}
+.lottery-dialog .award-red div.open h2,.lottery-dialog .award-red div.lq h2,.lottery-dialog .award-card h2{
+    color: #996633;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 41px;
+    font-weight: bold;
+}
+.lottery-dialog .award-red div.lq h2 {
+    margin: 10px 6% 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.lottery-dialog .award-card h2{
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+/*.lottery-dialog .award-red img.pi,.lottery-dialog .award-card img.pi{
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 84%;
+    max-width: 240px;
+    max-height: 230px;
+}*/
+.lottery-dialog .award-card a.btn,.lottery-dialog .award-red a.btn{
+    margin-top: 30px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.lottery-dialog .award-red img.img-red{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.lottery-dialog .content {
+    padding-top: 5px;
+    height: 100%;
+    position: relative;
+}
+.lottery-dialog .back {
+    height: 100%;
+}
+
+.lottery-dialog h2{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    margin: 6px 10px 0;
+    width: 66%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.lottery-dialog .award-win img.pi,.lottery-dialog .award-card img.pi {
+    margin: 2px auto 0px;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    max-height: 95px;
+    width: 225px;
+}
+.lottery-dialog .award-code img.er-tlt{
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+.lottery-dialog .award-code img.pi{
+    width: 86%;
+    display: block;
+    margin: 40px auto 0;
+}
+.lottery-dialog .contact {
+    /*padding: 5px 10%;
+    margin-top: 27px;*/
+}
+.lottery-dialog .contact h4 {
+    color: #FF00F6;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.lottery-dialog .contact h4.awarded-tip {
+    display: none;
+
+}
+
+.lottery-awarded .contact h4.awarded-tip {
+    display: block;
+
+}
+.lottery-dialog .contact p {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #fff;
+}
+.lottery-dialog .contact p label{
+    display: inline-block;
+    width: 50px;
+}
+.lottery-dialog .contact input {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, .5);
+    height: 26px;
+    padding: 0 6px;
+    outline: 0 none;
+    background: -webkit-linear-gradient(top,  #e1e1e1 0%,#ffffff 100%);
+    color: #A83126;
+    width: calc(100% - 50px);
+    width: -webkit-calc(100% - 50px);
+}
+.lottery-dialog .contact input.disabled {
+    background: transparent;
+    border: none;
+    -webkit-text-fill-color: #fff;
+    -webkit-opacity:1;
+    color: #fff;
+    font-weight: bold;
+    padding: 0;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #A83126;
+}
+
+.lottery-dialog .contact .btn-award {
+    display: block;
+
+}
+.lottery-dialog .contact .btn-share {
+    display: none;
+}
+
+.lottery-awarded .contact .btn-award {
+    display: none;
+
+}
+.lottery-awarded .contact .btn-share {
+    display: block;
+}
+
+.jf-dialog{
+    color: #333333;
+    background:url("../images/jf-bg.png") no-repeat;
+    background-size: 295px auto;
+    width: 295px;
+    height: 457px;
+}
+.jf-dialog .contact{
+    padding: 12px 10%;
+}
+.jf-dialog .btn{
+    width: 145px;
+    background-size: cover;
+    height: 53px;
+    margin: 37px auto;
+    line-height: 61px;
+
+}
+.jf-dialog .btn img.tj{
+    width: 50px;
+}
+.jf-dialog .btn img.confirm{
+     width: 74px;
+ }
+.jf-dialog .jf-top{
+    padding: 0 5px;
+    margin: 30px auto 10px;
+    display: block;
+}
+
+.red-dialog{
+    color: #fff;
+    background:url("../images/red-bg.png") no-repeat;
+    background-size: 295px auto;
+    width: 295px;
+    height: 429px;
+    font-size: 15px;
+}
+.red-dialog .award-card{
+    width: 192px;
+    margin: 190px auto;
+    text-align: center;
+}
+.red-dialog .award-card h2{
+    margin-bottom: 25px;
+}
+.red-dialog .award-card img.pi{
+    width: 155px;
+    max-height: 47px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.red-dialog .btn{
+    color: #AB1921;
+    font-size: 15px;
+    width: 100px;
+    height: 31px;
+    line-height: 31px;
+    background: url(../images/lq.png) no-repeat;
+    background-size: 100px auto;
+}
+
+.wllottery-dialog .award-card h3 {
+    color: #fff;
+    font-size: 15px;
+    width: 225px;
+    text-align: center;
+    margin: 24px auto 15px;
+    text-overflow: ellipsis;
+    display: -webkit-box!important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 34px;
+}
+.wllottery-dialog .award-card img.pi {
+     width: 225px;
+     max-height: 97px;
+     overflow: hidden;
+ }
+.wllottery-dialog .award-card a.btn {
+    margin-top: 80px;
+}
+
+.er-dialog .btn-close {
+    position: absolute;
+    background: url(../images/close.png) top center no-repeat;
+    background-size: 100% auto;
+    width: 30px;
+    height: 30px;
+    right: 12px!important;
+    top: -30px!important;
+    z-index: 10000;
+}
+
+.thanks-dialog {
+    color: #333333;
+    background:url("../images/thanks-error-dt.png") no-repeat;
+    background-size: 295px auto;
+    width: 295px;
+    height: 339px;
+}
+.thanks-dialog img{
+    width: 175px;
+    display: block;
+    margin: 35px auto 56px;
+    max-height: 166px;
+}
+.thanks-dialog h2{
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+.error-img{
+    width: 242px!important;
+    margin: 74px auto 75px!important;
+}
+
+.ll-dialog{
+    color: #333333;
+    background:url("../images/thanks-error-dt.png") no-repeat;
+    background-size: 295px auto;
+    width: 295px;
+    height: 339px;
+}
+.ll-dialog .dt-t{
+    margin-top: 50px;
+}
+.ll-dialog .content{
+    margin: 10px 15px 0;
+}
+.ll-dialog .question{
+    font-size: 15px;
+    color: #fff;
+    height: 113px;
+    margin-bottom: 39px;
+    overflow: hidden;
+}
+.ll-dialog .dt-btn{
+    -webkit-column-count: 2;
+    text-align: center;
+}
+.ll-dialog .btn{
+    display: inline-block;
+}
+.ll-dialog .yes img{
+    width: 15px;
+    margin-top: 10px;
+}
+.ll-dialog .no{
+    background: url(../images/no.png) no-repeat;
+    background-size: 100px auto;
+}
+.rank-dialog {
+    color: #333333;
+    background:url("../images/rule-bg.png") no-repeat;
+    background-size: 270px auto;
+    width: 270px;
+    height: 443px;
+}
+.rank-dialog .btn-close{
+    position: absolute;
+    background: url(../images/close.png) no-repeat;
+    background-size: 28px auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    z-index: 10000;
+}
+.rank-dialog .rank-top {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height: 22%;
+}
+.rank-dialog .rank-top img{
+    width: 78px;
+    padding: 15px 0 10px;
+}
+.rank-dialog .rank-top h3{
+    font-size: 14px;
+    padding: 7px;
+    border-bottom: 1px dotted rgba(0, 0, 0, .8);
+}
+.rank-dialog .infor{
+    font-size: 12px;
+    -webkit-transform: scale(0.9);
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.rank-dialog .list {
+    height: 75%;
+
+}
+.rank-dialog .border {
+
+
+}
+.rank-dialog .list .content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+.rank-dialog .list ul {
+    text-align: center;
+}
+.rank-dialog .list li {
+    padding: 2% 4%;
+    border-bottom: 1px dotted rgba(0, 0, 0, .8);
+}
+.rank-dialog .list span {
+    display: inline-block;
+    font-size: 13px;
+    vertical-align: middle;
+    border-radius: 0px;
+}
+.rank-dialog .r-avatar {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 100%;
+    overflow: hidden;
+    border-radius: 100%!important;
+    border: 1px solid rgba(190,166,137, 0.6);
+}
+.rank-dialog .r-avatar img {
+    border-radius: 100%;
+}
+.rank-dialog .r-name {
+    width: 50px;
+    text-align: center;
+}
+.rank-dialog ul li:first-child .r-name:before,.rank-dialog ul li:nth-child(2) .r-name:before,.rank-dialog ul li:nth-child(3) .r-name:before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+}
+.rank-dialog ul li:first-child .r-name:before{
+    background: url("../images/1.png");
+    background-size: 15px auto;
+}
+.rank-dialog ul li:nth-child(2) .r-name:before{
+    background: url("../images/2.png");
+    background-size: 15px auto;
+}
+.rank-dialog ul li:nth-child(3) .r-name:before{
+    background: url("../images/3.png");
+    background-size: 15px auto;
+}
+.rank-dialog .r-nn {
+    width: 24%;
+    margin-left: 2px;
+    text-overflow: ellipsis;
+    display: -webkit-inline-box!important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.rank-dialog .r-rank {
+    width: 42%;
+    vertical-align: text-bottom !important;
+    text-align: left;
+    padding-left: 4px;
+    text-overflow: ellipsis;
+    display: -webkit-inline-box!important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.rank-dialog .r-rank .jf-num {
+    vertical-align: text-bottom;
+    margin-left: 10px;
+
+}
+.rank-dialog .r-rank .jf-num img{
+    width: 23px;
+
+}
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .rank-dialog {
+        color: #333333;
+        background: url("../images/rule-bg.png") no-repeat;
+        background-size: 230px auto;
+        width: 230px;
+        height: 377px;
+    }
+    .rank-dialog .rank-top {
+        height: 26%;
+    }
+    .rank-dialog .list {
+        height: 68%;
+    }
+    .rank-dialog .list li {
+        padding: 2% 5px;
+    }
+    .rank-dialog .r-rank {
+        width: 40%;
+    }
+    .rank-dialog .r-nn {
+        width: 22%;
+    }
+    .rule-dialog {
+        color: #fff;
+        background: url("../images/rule-bg.png") no-repeat;
+        background-size: 230px auto;
+        width: 230px;
+        height: 377px;
+    }
+    .red-dialog {
+        color: #fff;
+        background: url("../images/red-bg.png") no-repeat;
+        background-size: 280px auto;
+        width: 280px;
+        height: 407px;
+    }
+    .jf-dialog {
+        color: #333333;
+        background: url("../images/jf-bg.png") no-repeat;
+        background-size: 249px auto;
+        width: 249px;
+        height: 385px;
+    }
+    .lottery-dialog .award-win img.pi, .lottery-dialog .award-card img.pi {
+        max-height: 71px;
+        width: 168px;
+    }
+    .lottery-dialog .contact p label {
+        width: 44px;
+    }
+    .jf-dialog .contact {
+        padding: 12px 14%;
+    }
+    .lottery-dialog .contact input {
+        height: 22px;
+    }
+    .jf-dialog .btn {
+        width: 130px;
+        height: 48px;
+        line-height: 57px;
+        margin: 30px auto;
+    }
+    .jf-dialog .jf-top {
+        margin: 37px auto 10px;
+    }
+    .wllottery-dialog .award-card a.btn {
+        margin-top: 55px;
+    }
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone6plus */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .rank-dialog .rank-top {
+        height: 24%;
+    }
+}

@@ -1,0 +1,11 @@
+var domain_url = "http://test.holdfun.cn/portal/";
+var resourceType = "1";
+var version = "V1.5";
+var share_img = "http://yaotv.qq.com/shake_tv/img/6e5a250e-75ed-49db-b903-a2fbd47840e7.jpg";
+var share_title = "《医馆笑传》安徽卫视“赫”岁上演，40万金条摇新春！";
+var share_desc = "电视机前收看《医馆笑传》的同时,通过微信摇一摇(歌曲)参与互动 , 答题吐槽还能赢金条！";
+var share_url = window.location.href;
+var share_group = share_title;
+var shaketv_appid = 'wx6ffe3f8cfc8412d7';
+var yao_avatar_size = 64;
+var yao_tv_id = 10051;

@@ -1,0 +1,100 @@
+body
+{
+    background-color: White;
+}
+.none
+{
+    display: none;
+}
+
+*
+{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    outline: 0 none;
+}
+.pre_mainPage
+{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 600px;
+    min-width: 250px;
+    padding-bottom: 30px;
+}
+.pre_img_div
+{
+
+    height: 223px;
+    position: relative;
+}
+.pre_item
+{
+    position: relative;
+    margin-top: 10px;
+}
+.pre_tip
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: White;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    z-index:1;
+}
+
+.pre_play
+{
+    color: Gray;
+    min-height: 20px;
+    line-height: 1em;
+    margin-top: 15px;
+    padding-right:90px;
+    padding-bottom:10px;
+    font-size:14px;
+}
+.pre_btn
+{
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    color: White;
+    background-color: #666666;
+    border-radius: 5px;
+    z-index:9;
+}
+.pre_btn_select
+{
+    color: White;
+    background-color: #6FCB42;
+}
+.pre_link
+{
+ display:block;
+ width:100%;
+ height:100%;
+ position:absolute;
+ top:0px;
+ left:0px;
+ z-index:1;
+     
+}
+.item_img
+{
+ width:100%;
+ position:absolute;
+}
+ #iframe_reserve_v2_pre
+{
+ display:none;
+ height:0px !important;
+ width:0px !important; 
+ visibility:hidden !important;   
+}

@@ -1,0 +1,1318 @@
+html {
+	height: 100%;
+}
+body {
+	background-image: url('../images/f_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+* {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-appearance: none;
+}
+input, img, a {
+	outline: none;
+	-webkit-outline: none;
+	margin: 0 auto;
+	border: none;
+}
+a:link, a:visited, a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+span, i, em, div, section {
+	outline: none;
+	-webkit-outline: none;
+	border: none;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+	appearance: none;
+	-webkit-appearance: none;
+}
+.yellow {
+	color: #ffff00;
+}
+.red {
+	color: #f00;
+}
+#firstPage {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	text-align: center;
+}
+.f_left {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 30%;
+}
+.f_right {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 90px;
+}
+.f_tip {
+	margin: 0 auto;
+	margin-top: 110px;
+	width: 220px;
+}
+.bool {
+	position: absolute;
+	left: 0px;
+	top: 150px;
+	height: 200px;
+}
+@media screen and (min-width:1023px) {
+.f_tip {
+	width: 420px;
+}
+.bool {
+	position: absolute;
+	left: 0px;
+	top: 250px;
+	height: 280px;
+}
+}
+#selectPage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-attachment: fixed;
+}
+.selectPage_main {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.selectPage_tip {
+	width: 80%;
+	height: 5%;
+	margin: 20% auto 0;
+	background: url('../images/selectPage_tip.png') no-repeat center left;
+	background-size: contain;
+}
+.selectPage_tip img {
+	width: 240px;
+	padding-left: 10px;
+}
+.selectItem {
+	width: 90%;
+	height: 22%;
+	margin: 10% auto 0;
+	border-radius: 5px;
+	text-align: center;
+	position: relative;
+	margin-top: 23px;
+	background-color: rgba(255,255,255,0.5);
+}
+.selectPage_con {
+	display: block;
+	height: 100%;
+	padding: 0 5%;
+}
+.selectItem a:active {
+	border-radius: 5px;
+	background-color: #FF3300;
+}
+.selectItem_2 .team_name_text {
+	color: #000;
+}
+.selectPage_radius {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+.selectPage_radius.qiud-a {
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.selectPage_radius.qiud-b {
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.selectPage_radius img {
+	width: 80%;
+}
+.team_name {
+	display: inline-block;
+	height: 100px;
+	line-height: 100px;
+	padding-left: 10px;
+	font-size: 30px;
+	color: White;
+	overflow: hidden;
+}
+.team_name_text {
+	display: inline-block;
+	width: auto;
+	height: 100%;
+	line-height: 550%;
+	margin: 0 0 0 10%;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+	color: #fff;
+}
+@media screen and (min-device-width :320px) and (max-device-height :480px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+.selectPage_radius {
+	width: 80px;
+	height: 80px;
+	margin: 0;
+}
+.team_name_text {
+	line-height: 420%;
+}
+}
+@media screen and (min-device-width :320px) and (min-device-height :560px) and (max-device-height :600px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+.selectPage_radius {
+	width: 90px;
+	height: 90px;
+}
+.team_name_text {
+	line-height: 500%;
+}
+}
+.footer {
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	width: 100%;
+	font-size: 12px;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+a.now_take {
+	display: block;
+	width: 65%;
+	height: 50px;
+	margin: 25% auto 0;
+	text-align: center;
+	background-color: #FF3300;
+	line-height: 50px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	border-radius: 30px;
+}
+a.f_rule {
+	display: block;
+	margin: 10% auto 0;
+	color: white;
+	width: 80px;
+}
+#mainPage {
+	position: relative;
+	width: 100%;
+	padding: 0 0 50px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+.encounter {
+	overflow: hidden;
+	overflow-y: scroll;
+	scrollbar-base-color: rbga(0, 0, 0, 0.3);
+	-webkit-scrollbar-base-color: rbga(0, 0, 0, 0.3);
+}
+.top {
+	height: 40px;
+	position: relative;
+}
+.participation {
+	color: White;
+	font-size: 18px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	left: 10px;
+	top: 15px;
+}
+.part_num {
+	color: #EBF000;
+}
+.top_log {
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	width: 20%;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;
+}
+.middle {
+	margin: 5% auto 0;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+.team1, .team2 {
+	position: relative;
+	display: inline-block;
+	width: 28%;
+	min-height: 100px;
+	background-color: Red;
+	background: url('../images/arrow_bg.png') no-repeat center top;
+	background-size: contain;
+	text-align: center;
+	vertical-align: middle;
+}
+.cheack-arrow {
+	position: absolute;
+	right: 0px;
+	bottom: 38px;
+	width: 25%;
+	height: 25%;
+	background: url('../images/check-arrow.png') no-repeat center center;
+	background-size: contain;
+}
+.team-logo {
+	height: 72px;
+	margin: 6% 0 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+.team-logo img {
+	width: 60%;
+	vertical-align: middle;
+}
+@media screen and (min-device-width :320px) and (max-device-height :500px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+.team-logo {
+	height: 60px;
+	margin: 6% 0 0;
+}
+}
+@media screen and (min-device-width :320px) and (min-device-height :560px) and (max-device-height :600px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+.team-logo {
+	height: 60px;
+	margin: 6% 0 0;
+}
+}
+.team-name {
+	height: 40px;
+	line-height: 40px;
+	margin: 2% 0 0;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+}
+.team1_portNo {
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	font-family: Arial;
+}
+.team2_portNo {
+	height: 30px;
+	line-height: 30px;
+	background-color: Yellow;
+}
+.vs {
+	display: inline-block;
+	width: 25%;
+	height: 70px;
+	min-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+.vs .vsimg {
+	display: block;
+	margin: 0 15%;
+}
+.vs img {
+	width: 100%;
+}
+.vs p {
+	margin: 8px 0 0;
+}
+.vs .vstext {
+	display: block;
+	font-size: 12px;
+	color: #fff;
+}
+#zwtime {
+	display: block;
+	padding: 5px 0 0;
+	font-family: Arial;
+	font-size: 16px;
+	color: #ffff00;
+}
+.comment-box {
+	margin: 20px 4% 0;
+	padding: 10px;
+	border-radius: 8px 8px 0 0;
+	background: rgba(0,0,0,0.5);
+	color: #48c417;
+}
+.comment-count {
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #fff;
+}
+.comment-count:before {
+	content: "";
+	display: inline-block;
+	width: 12%;
+	height: 22px;
+	background: url('../images/tack_tip.png') no-repeat left top;
+	background-size: contain;
+	vertical-align: middle;
+}
+.comment-list li {
+	padding: 8px 10px 10px 0;
+	border-bottom: 1px #fff solid;
+	border-color: rgba(255,255,255,0.2);
+	overflow: hidden;
+}
+.comment-list li:last-child {
+	border-bottom: none;
+}
+.comment-list li img {
+	float: left;
+	width: 18%;
+	margin: 5px 0 0 0;
+	/*
+    border:2px #fff solid;
+    border-color: rgba(255,255,255,0.2);
+    */
+	border-radius: 100%;
+	overflow: hidden;
+}
+.review-text {
+	margin: 0 0 0 18%;
+	padding: 0 0 0 15px;
+}
+.review-text h3 {
+	line-height: 25px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #ffff00;
+}
+.review-text p {
+	padding: 5px 0 0;
+}
+.comment-input {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: #0a0b0a;
+	z-index: 999999;
+}
+.comment-input div {
+	height: 30px;
+	padding:10px 75px 0 10px;
+}
+.comment-copyright {
+	display: block;
+	margin: 30px 0 40px;
+	text-align: center;
+	line-height: 20px;
+	color: #31720b;
+	font-size: 12px;
+	overflow: hidden;
+}
+.text-a {
+	width: 100%;
+	line-height: 20px;
+	padding: 5px 0;
+	border: none;
+	border-radius: 5px;
+	background: #0d2701;
+	text-indent: 5px;
+	font-size: 12px;
+	color: #48c417;
+	overflow: hidden;
+}
+.text-a::-webkit-input-placeholder {
+ color: #2f581d;
+}
+.text-b {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border: none;
+	border-radius: 5px;
+	background: #e5dcc3;
+	text-indent: 5px;
+	font-size: 12px;
+}
+.text-c {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	margin: 10px 0 0;
+	border: none;
+	background: none;
+	text-indent: 5px;
+	font-size: 14px;
+}
+a.btn-a, a.btn-c, a.btn-d, a.btn-e {
+	display: block;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 15px auto 0;
+	background-color: #FF3300;
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	border-radius: 40px;
+	color: #fff;
+}
+/*
+.btn-b {
+	width: 18%;
+	height: 30px;
+	line-height: 30px;
+	border: none;
+	background: none;
+	text-align: center;
+	color: #fff;
+	overflow: hidden;
+}
+*/
+.btn-b {
+	position:absolute;
+	top:10px;
+	right:0;
+	width:65px;
+	height:30px;
+	line-height:30px;
+	border:none;
+	background:none;
+	text-align:center;
+	color:#fff;
+	z-index:9999;
+}
+a.btn-c {
+	background-color: #333;
+}
+a.btn-d {
+	width: 60%;
+	height: 38px;
+	line-height: 38px;
+	margin: 8% auto 0;
+	font-size: 18px;
+}
+a.btn-e {
+	width: 60%;
+	height: 38px;
+	line-height: 38px;
+	margin: 5% auto 0;
+	font-size: 18px;
+}
+a.btn-a.none, a.btn-c.none {
+	display: none;
+}
+/*抽奖*/
+.a-close {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	background: url(../images/icon-close.png) no-repeat 3px 3px;
+	background-size: 22px auto;
+	display: block;
+	width: 30px;
+	height: 30px;
+	z-index: 10000
+}
+.safety-text {
+	line-height: 30px;
+	padding: 50px 20px;
+	font-size: 16px;
+	color: #333;
+}
+.lottery-box:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+	z-index: 100;
+}
+.lottery-box h4 {
+	line-height: 20px;
+	padding: 10px 20px 0;
+	text-align: left;
+	font-weight: normal;
+	font-size: 16px;
+}
+.lottery-text {
+	position: absolute;
+	top: 8%;
+	left: 8%;
+	width: 84%;
+	height: 84%;
+	border-radius: 10px;
+	background: #fdfdef;
+	z-index: 999;
+	-webkit-animation-name: pcon-ing;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes pcon-ing{
+    0% 
+    {
+        -webkit-transform:scale(1,1);
+    }
+    50% {
+        -webkit-transform:scale(0.9,0.9);
+    }
+    100% {
+        -webkit-transform:scale(1,1);
+    }
+}
+.lottery-con {
+	height: 100%;
+}
+.lottery-text ul {
+	display: block;
+	height: 90%;
+	margin: 4% 0 0;
+	padding: 0 5px;
+}
+.lottery-text li {
+	float: left;
+	width: 44%;
+	height: 29%;
+	margin: 3%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.lotterycon {
+	display: inline-table;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.lotterycon.white {
+	background: #fff;
+}
+.lotterycon.on {
+	background: #d9da8a;
+}
+.chest {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background: url('../images/chest.png') no-repeat center center;
+	background-size: cover;
+}
+.chest.key {
+	animation-name: chestkey;
+	-webkit-animation-name: chestkey;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+}
+@keyframes chestkey {
+ 0% {
+ transform: rotateY(0deg);
+ -webkit-transform: rotateY(0deg);
+}
+ 50% {
+ transform: rotateY(360deg);
+ -webkit-transform: rotateY(360deg);
+}
+ 100% {
+ transform: rotateY(0deg);
+ -webkit-transform: rotateY(0deg);
+}
+}
+@-webkit-keyframes chestkey {
+ 0% {
+ transform: rotateY(0deg);
+ -webkit-transform: rotateY(0deg);
+}
+ 50% {
+ transform: rotateY(360deg);
+ -webkit-transform: rotateY(360deg);
+}
+ 100% {
+ transform: rotateY(0deg);
+ -webkit-transform: rotateY(0deg);
+}
+}
+.chest.opacity {
+	animation-name: chestopacity;
+	-webkit-animation-name: chestopacity;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes chestopacity {
+ from {
+ opacity: 1.0;
+}
+to {
+	opacity: 0;
+}
+}
+@-webkit-keyframes chestopacity {
+ from {
+ opacity: 1.0;
+}
+to {
+	opacity: 0;
+}
+}
+.chest i {
+	display: block;
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.prizes {
+	display: block;
+	height: 100%;
+}
+.prizes.none {
+	display: none;
+}
+.prizes-name {
+	display: block;
+	height: 20%;
+	line-height: 150%;
+	margin: 2% 0 0;
+	text-align: center;
+	font-size: 14px;
+}
+.prizes-img {
+	display: block;
+	height: 55%;
+	margin: 0 5px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	text-align: center;
+}
+.prizes-draw {
+	display: block;
+	height: 20%;
+	line-height: 200%;
+	margin: 5% 0 0;
+	border-radius: 0 0 10px 10px;
+	background: #b7b869;
+	text-align: center;
+	font-size: 13px;
+	color: #d10000;
+}
+.prizes:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.3);
+}
+.lotterycon.on .prizes:before {
+	display: none;
+}
+.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.winning-img {
+	height: 26%;
+	margin: 5% 5% 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.winning-name {
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	color: #ff3300;
+}
+.winning-name i {
+	font-style: normal;
+}
+.winning-write {
+	line-height: 25px;
+	margin: 5% 8% 0;
+	font-size: 14px;
+	color: #666;
+}
+.winning-form {
+	position: relative;
+	height: 40px;
+	padding: 0 5px 0 50px;
+	margin: 3% 8% 0;
+	border: 1px #d3d3d3 solid;
+	border-radius: 5px;
+}
+.winning-form span {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 45px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #999;
+}
+.success-title {
+	width: 50%;
+	height: 20%;
+	margin: 0 auto;
+	background: url('../images/lq-success.png') no-repeat center center;
+	background-size: contain;
+}
+.success-img {
+	width: 80%;
+	height: 40%;
+	margin: 5% auto 15%;
+	background: url('../images/ipad.jpg') no-repeat center center;
+	background-size: contain;
+}
+.chance {
+	display: block;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+}
+.lg-cheer {
+	position: fixed;
+	bottom: -410px;
+	left: 0;
+	width: 100%;
+	height: 410px;
+	background: #f9e32b;
+}
+.lg-cheer.fixed {
+	animation-name: lging;
+	-webkit-animation-name: lging;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+ @keyframes lging {
+ 0% {
+ bottom: -410px;
+}
+ 100% {
+ bottom: 0;
+}
+}
+@-webkit-keyframes lging {
+ 0% {
+ bottom: -410px;
+}
+ 100% {
+ bottom: 0;
+}
+}
+.lg-cheer.siledown {
+	animation-name: down;
+	-webkit-animation-name: down;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+ @keyframes down {
+ 0% {
+ bottom: 0;
+}
+ 100% {
+ bottom: -410px;
+}
+}
+@-webkit-keyframes down {
+ 0% {
+ bottom: 0;
+}
+ 100% {
+ bottom: -410px;
+}
+}
+@media screen and (min-device-width :320px) and (min-device-height :560px) and (max-device-height :600px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+.lg-cheer {
+	height: 350px;
+}
+ @keyframes lging {
+ 0% {
+ bottom: -350px;
+}
+ 100% {
+ bottom: 0;
+}
+}
+ @-webkit-keyframes lging {
+ 0% {
+ bottom: -350px;
+}
+ 100% {
+ bottom: 0;
+}
+}
+ @keyframes down {
+ 0% {
+ bottom: 0;
+}
+ 100% {
+ bottom: -350px;
+}
+}
+ @-webkit-keyframes down {
+ 0% {
+ bottom: 0;
+}
+ 100% {
+ bottom: -350px;
+}
+}
+}
+.lg-cheer:before {
+	content: "";
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0);
+}
+.cheer-time {
+	width: 55%;
+	height: 45px;
+	line-height: 40px;
+	margin: 8% auto;
+	padding: 0 10px;
+	border: 1px #333 solid;
+	border-radius: 45px;
+	text-align: center;
+}
+.cheer-time span {
+	display: inline-block;
+	margin: 0 2%;
+	vertical-align: middle;
+	text-align: center;
+}
+.cheer-img {
+	width: 32%;
+	height: 40px;
+	background: url('../images/downtime.png') no-repeat center center;
+	background-size: contain;
+}
+.cheer-djs {
+	width: 35%;
+	height: 30px;
+	line-height: 30px;
+	margin: 3px 0 0;
+}
+.cheer-djs em {
+	display: inline-block;
+	width: 44%;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 5px;
+	margin: 0 3%;
+	background: #000;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: bold;
+	color: #f9e32b;
+}
+.drum {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 71%;
+	background: url('../images/drum.jpg') no-repeat center bottom;
+	background-size: contain;
+	text-align: center;
+}
+.drum-logo {
+	position: absolute;
+	bottom: 105px;
+	left: 50%;
+	width: 30%;
+	height: 30%;
+	margin: 0 0 0 -15%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.drum-start {
+	position: absolute;
+	bottom: 162px;
+	left: 50%;
+	width: 22%;
+	height: 20%;
+	margin: 0 0 0 -11%;
+	background: url('../images/onstart.png') no-repeat center center;
+	background-size: contain;
+}
+.drumclick {
+	position: absolute;
+	bottom: 65px;
+	left: 29%;
+	display: inline-block;
+	width: 43%;
+	height: 50%;
+	border-radius: 100%;
+}
+.drum-number {
+	position: absolute;
+	top: -10%;
+	right: 12%;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 100%;
+	background: #fff;
+	text-align: center;
+	color: #f00;
+	font-style: normal;
+	font-size: 18px;
+}
+.great-left, .great-right {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height: 43%;
+	margin: 60% 0 0;
+	background: url('../images/great-left.png') no-repeat center center;
+	background-size: contain;
+	z-index: 1000;
+}
+.great-right {
+	background: url('../images/great-right.png') no-repeat center center;
+	background-size: contain;
+}
+.great-left.on {
+	animation-name: gon;
+	-webkit-animation-name: gon;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-perspective: 20;
+	perspective: 20;
+}
+@keyframes gon {
+ 0% {
+ transform:matrix(1.0, 0.0, 0.0, 1.0, 0, 0);
+ -webkit-transform:matrix(1.0, 0.0, 0.0, 1.0, 0, 0);
+}
+ 100% {
+ -webkit-transform:matrix(1.0, -0.2, 0.0, 1.0, 0, -20);
+ -webkit-transform:matrix(1.0, -0.2, 0.0, 1.0, 0, -20);
+}
+}
+@-webkit-keyframes gon {
+ 0% {
+ transform:matrix(1.0, 0.0, 0.0, 1.0, 0, 0);
+ -webkit-transform:matrix(1.0, 0.0, 0.0, 1.0, 0, 0);
+}
+ 100% {
+ -webkit-transform:matrix(1.0, -0.2, 0.0, 1.0, 0, -20);
+ -webkit-transform:matrix(1.0, -0.2, 0.0, 1.0, 0, -20);
+}
+}
+.great-right.on {
+	animation-name: ron;
+	-webkit-animation-name: ron;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-perspective: 20;
+	perspective: 20;
+}
+@keyframes ron {
+ 0% {
+ transform:matrix(1.0, 0.0, 0.0, 1.0, 0, 0);
+ -webkit-transform:matrix(1.0, 0.0, 0.0, 1.0, 0, 0);
+}
+ 100% {
+ -webkit-transform:matrix(1.0, -0.2, 0.0, 1.0, 0, -20);
+ -webkit-transform:matrix(1.0, -0.2, 0.0, 1.0, 0, -20);
+}
+}
+@-webkit-keyframes ron {
+ 0% {
+ transform:matrix(1.0, 0.0, 0.0, 1.0, 0, 0);
+ -webkit-transform:matrix(1.0, 0.0, 0.0, 1.0, 0, 0);
+}
+ 100% {
+ -webkit-transform:matrix(1.0, 0.2, 0.0, 1.0, 0, -20);
+ -webkit-transform:matrix(1.0, 0.2, 0.0, 1.0, 0, -20);
+}
+}
+ @media screen and (min-device-width :320px) and (max-device-height :500px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+.lottery-text ul {
+	margin: 2% 0 0;
+}
+.lottery-text li {
+	height: 29%;
+	margin: 2% 3%;
+}
+.prizes-draw {
+	height: 22%;
+	line-height: 180%;
+	margin: 3% 0 0;
+}
+.cheer-time {
+	margin: 5% auto;
+}
+.winning-img {
+	height: 23%;
+}
+.winning-form {
+	height: 30px;
+	margin: 3% 8% 0;
+}
+.winning-form span {
+	height: 30px;
+	line-height: 30px;
+}
+.text-c {
+	margin: 5px 0 0;
+}
+.lg-cheer {
+	height: 300px;
+}
+ @keyframes lging {
+ 0% {
+ bottom: -300px;
+}
+ 100% {
+ bottom: 0;
+}
+}
+ @-webkit-keyframes lging {
+ 0% {
+ bottom: -300px;
+}
+ 100% {
+ bottom: 0;
+}
+}
+ @keyframes down {
+ 0% {
+ bottom: 0;
+}
+ 100% {
+ bottom: -300px;
+}
+}
+ @-webkit-keyframes down {
+ 0% {
+ bottom: 0;
+}
+ 100% {
+ bottom: -300px;
+}
+}
+.drum-number {
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+}
+.drumclick {
+	bottom: 60px;
+	left: 27%;
+	width: 45%;
+	height: 65%;
+}
+.great-left,  .great-right {
+	width: 50%;
+	height: 45%;
+	margin: 60% 0 0;
+}
+.drum-logo {
+	bottom: 110px;
+	width: 26%;
+	height: 20%;
+	margin: 0 0 0 -13%;
+}
+.drum-start {
+	bottom: 150px;
+}
+}
+@media screen and (min-device-width :320px) and (min-device-height :560px) and (max-device-height :600px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+.drum-start {
+	bottom: 145px;
+}
+.drum-logo {
+	bottom: 105px;
+	width: 26%;
+	height: 20%;
+	margin: 0 0 0 -13%;
+}
+.drumclick {
+	bottom: 55px;
+}
+}
+ @media screen and (min-device-height :1500px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+.lg-cheer {
+	height: 320px;
+}
+ @keyframes lging {
+ 0% {
+ bottom: -320px;
+}
+ 100% {
+ bottom: 0;
+}
+}
+ @-webkit-keyframes lging {
+ 0% {
+ bottom: -320px;
+}
+ 100% {
+ bottom: 0;
+}
+}
+ @keyframes down {
+ 0% {
+ bottom: 0;
+}
+ 100% {
+ bottom: -320px;
+}
+}
+ @-webkit-keyframes down {
+ 0% {
+ bottom: 0;
+}
+ 100% {
+ bottom: -320px;
+}
+}
+.drum-number {
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+}
+.drumclick {
+	bottom: 70px;
+	left: 27%;
+	width: 45%;
+	height: 65%;
+}
+.great-left,  .great-right {
+	width: 50%;
+	height: 45%;
+	margin: 60% 0 0;
+}
+.drum-logo {
+	bottom: 120px;
+	width: 26%;
+	height: 20%;
+	margin: 0 0 0 -13%;
+}
+.drum-start {
+	bottom: 160px;
+}
+}
+.lodd {
+	position: static;
+	width: 100%;
+}
+.guanzhu {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px
+}
+.scroll-top {
+	position: fixed;
+	bottom: 70px;
+	right: 5px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 100%;
+	background-image: url(../images/scrollTop.png);
+	background-color: rgba(0,0,0,0.4);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 70%;
+	color: #fff;
+}
+.none, .chest.none, .prizes-draw.none {
+	display: none;
+}

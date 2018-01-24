@@ -1,0 +1,512 @@
+.dialog {
+  position: absolute;
+  color: #D6305A;
+  border-radius: 6px;
+  z-index: 1000;
+  overflow: hidden;
+}
+.dialog-inner {
+  position: absolute;
+  z-index: 1;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+   overflow: hidden;
+}
+.modal .btn-close {
+    position: absolute;
+    background: url(../images/rank-close.png) no-repeat;
+    background-size: 28px auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    z-index: 10000;
+    top:5px;
+    right:5px;
+    -webkit-animation:closeRotato 4s infinite linear; 
+    animation:closeRotato 4s infinite linear; 
+}
+@keyframes closeRotato
+{
+  0%
+  {   transform-origin:center center;
+      transform:rotateZ(0deg);
+  }
+  100%
+  {   transform-origin:center center;
+      transform:rotateZ(360deg);
+  }
+}
+@-webkit-keyframes closeRotato
+{
+  0%
+  {   -webkit-transform-origin:center center;
+      -webkit-transform:rotateZ(0deg);
+  }
+  100%
+  {   -webkit-transform-origin:center center;
+      -webkit-transform:rotateZ(360deg);
+  }
+}
+.modal:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  z-index: 100;
+}
+
+
+.qrbox {
+  display: none;
+}
+.qr .qrbox {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 999;
+}
+.qr .btn-close {
+  display: block !important;
+}
+.qr .qrbox img {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: 30%;
+  left: 15%;
+  z-index: 1000;
+}
+/*弹出层动画*/
+.pop-zoom
+{
+  -webkit-animation:popzoom 0.5s  linear;
+  animation:popzoom 0.5s linear;
+}
+
+.pop-opacity
+{
+  -webkit-animation:popopacity 0.5s  linear;
+  animation:popopacity 0.5s linear;
+}
+/*弹出层缩放动画*/
+@keyframes popzoom {
+  20% {
+       transform:scale(0.8);
+  }
+  
+  100% {
+      transform:scale(1);
+  }
+}
+
+@-webkit-keyframes popzoom{
+  20% {
+    -webkit-transform:scale(0.8);
+  }
+  
+  100% {
+    -webkit-transform:scale(1);
+  }
+}
+/*弹出层透明动画*/
+@keyframes popopacity {
+  40% {
+       opacity: 0.2;
+  }
+  
+  100% {
+      opacity: 1;
+  }
+}
+@-webkit-keyframes popopacity {
+  40% {
+       opacity: 0.2;
+  }
+  
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes fudai-zoom {
+  0% {
+    opacity: 0.4;
+    transform:scale(0);
+  }
+  
+  100% {
+    opacity: 1;
+    transform:scale(1);
+  }
+}
+.dialog-copyright {
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  right: -5px;
+  font-size: 14px;
+  text-align: center;
+  color: #f00;
+}
+
+/*隐藏关闭按钮*/
+/*#lottery-dialog .btn-close {
+  display: none;
+}*/
+.lottery-none .lottery-dialog {
+  color: #FFF;
+  background: url(../images/red-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  top: 10%!important;
+  left: 5%!important;
+  width: 90%!important;
+  height: 77%!important;
+    overflow-y: scroll;
+
+}
+.lottery-dialog .award-none {
+    height: 75%;
+    position: relative;
+}
+.black{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.5;
+    background-color: #000000;
+}
+
+.lottery-dialog .award-none .btn-close {
+    position: relative;
+    display: block !important;
+    background: url(../images/back-btn.png) 0 0 no-repeat;
+    background-size: 100%;
+    width: 50%;
+    height: 42px;
+    margin: -10% auto;
+    animation:none!important;
+    -webkit-animation:none!important;
+}
+.award-win h5, .award-none h5 {
+  color: #fff608;
+  font-size: 18px;
+  text-align: center;
+  margin: 20% 0 2%;
+}
+.award-win h5.awardwin-tips{
+  font-size: 21px;
+  color: #f6ff00;
+  margin: 10px auto;
+  text-align: center;
+  
+}
+.award-none h5 {
+  color: #fff608;
+  font-size: 20px;
+  text-align: center;
+  margin: 20% 0 10%;
+}
+.award-none p {
+  color: #fff608;
+  font-size: 15px;
+  margin: 0 auto 8%;
+}
+.award-none img {
+  margin-top: 45%;
+  max-width: 100%;
+}
+.lottery-none .award-win {
+  display: none;
+    border-radius: 8px;
+}
+
+.lottery-none .award-none {
+    display: block !important;
+    height: 100%;
+    width: 86%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.lottery-dialog h2 {
+  text-align: center;
+  color: #FFF;
+  padding: 8% 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.lottery-dialog .content {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  position: relative;
+}
+.lottery-dialog .back {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.lottery-dialog .award-win{
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.lottery-dialog .content .cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.lottery-dialog .content .cover.zshow {
+  opacity: 1;
+}
+.lottery-dialog .content .cover p {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #000;
+  font-size: 14px;
+  text-shadow: 1px 1px 10px #FF9F00;
+}
+.lotteried .lottery-dialog .content .cover,
+.lottery-none .lottery-dialog .content .cover,
+.lotteried .lottery-dialog .content .cover {
+  display: none;
+}
+.lottery-dialog .content .cover .btn-corner {
+    position: absolute;
+  
+    left: 0;
+    bottom: 0;
+    width: 45%;
+    height: 25%;
+    /* background: red; */
+}
+
+.lottery-dialog h3 {
+color: #FFF;
+  text-align: center;
+  padding-top: 13%;
+  font-size: 15px;
+  line-height: 17px;
+}
+.lottery-dialog .award-img {
+  width: 90%;
+  margin: 3% auto 10%;
+  text-align: center;
+}
+.lottery-dialog .award-img:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 240px;
+  left: 0;
+  top: 10%;
+  /*background: url(../images/shine.png) no-repeat;
+  background-size: 100% auto;*/
+  z-index: -1;
+}
+.lottery-dialog .award-img img {
+  vertical-align: top;
+  /*width:185.86px;*/
+    width: 90%;
+}
+.lottery-dialog .contact {
+  position: relative;
+  padding: 0;
+  z-index: 9999;
+  margin-top: 6%;
+  text-align: center;
+  padding-left:20px;
+  padding-right:20px;
+}
+.lottery-dialog .contact h4 {
+    color: white;
+    font-size: 12px;
+    text-align: left;
+}
+.lottery-dialog .redbag h4, .lottery-dialog .redbag .share, .lottery-dialog .redbag p, .lottery-dialog .redbag .btn-award {
+  display: none !important;
+}
+.lottery-dialog .redbag .btn-red {
+  display: block !important;
+  color: #FFF !important;
+}
+.lottery-dialog .contact h4.award-tip {
+    color: white;
+}
+.lottery-dialog .contact h4.awarded-tip {
+    display: none;
+
+}
+.lottery-awarded .contact h4 {
+
+}
+.lottery-awarded .contact h4.award-tip {
+    display: none;
+    color: white;
+}
+.lottery-awarded .contact h4.awarded-tip {
+    display: block;
+
+}
+#lottery-dialog .contact p {
+    /*margin-top: 6px;*/
+    color: #666666;
+    font-size: 15px;
+    line-height: 18px;
+    background-color: white;
+    border-radius: 6px;
+    margin: 8px auto;
+    font-weight: bold;
+}
+
+#lottery-dialog .contact input {
+    height: 35px;
+    padding: 0 6px;
+    width: 100%;
+    color: #666;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+input::-webkit-input-placeholder {
+    color: #666666 !important;
+}
+.lottery-dialog .contact .btn {
+    margin: 10% auto;
+    height: 45px;
+    line-height: 42px;
+    background: url(../images/award-btn.png) 0 0 no-repeat;
+    background-size: 100%;
+    border-radius: 0;
+    border: 0;
+}
+
+.lottery-dialog .contact .btn-red {
+  display: none;
+}
+.lottery-dialog .contact .share {
+    text-align: center;
+    font-size: 14px;
+    color: #FFF;
+}
+.lottery-dialog .contact .btn-share {
+    display: none;
+    color: #FFF;
+    letter-spacing: 6px;
+}
+
+
+.award-win{
+    overflow: hidden;
+    background: url(../images/award-bg.jpg) no-repeat!important;
+    background-size: 100% 100%!important;
+    border: 1px solid rgba(253,173,2,0.5);
+    padding: 0 0;
+}
+.award-win .btn-award{
+    display: block;
+    letter-spacing: 6px;
+    font-size: 20px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background: #fd8107;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+}
+.btn{
+    box-shadow: none;
+    border: 0;
+    outline: none;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 550px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+ }
+
+/* Other */
+@media screen
+and (min-device-height : 580px)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+
+/*dai*/
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait)
+{
+ .lottery-dialog .award-img {
+    margin: 5% auto 15%;
+  }
+}
+@-webkit-keyframes toggle {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes dispshow {
+    0% {
+        opacity: 0; -webkit-transform: scale(0.8,0.8)
+    }
+    100% {
+        opacity: 1; -webkit-transform: scale(1,1)
+    }
+}
+
+@-webkit-keyframes disphide {
+    0% {
+        opacity: 1; -webkit-transform: scale(1,1)
+    }
+    100% {
+        opacity: 0; -webkit-transform: scale(0.8,0.8)
+    }
+}

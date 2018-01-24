@@ -1,0 +1,136 @@
+html {
+    background: #F3F2F0;
+}
+body{
+    background-color: #F3F2F1;
+    background-image: none;
+}
+a,a:hover {
+	text-decoration: none;
+}
+.main {
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-size: 15px;
+}
+.avatar {
+    text-align: center;
+    padding:20px 0;
+    background: -webkit-linear-gradient(top left, #CE3434 0%, #F54646 100%);
+}
+.avatar .avatar-wrapper {
+	width: 80px;
+    height: 80px;
+	margin: 0 auto;
+}
+.avatar img {
+    max-width: 100%;
+border-radius: 35px;
+}
+.avatar p {
+    color: #fff;
+	
+    margin-top: 8px;
+}
+.list a {
+    height: 45px;  line-height: 45px;
+	
+    color: #000000;
+    display: block;
+    padding: 0 10px;
+}
+.list a:hover {
+	background: #f2f1f1;
+}
+.list a:before, .list a.nav:after {
+	content: '';
+	display: inline-block;
+	vertical-align: -5px;
+	background: url(http://yao.holdfun.cn/portal/resources/news/images/icons.png) no-repeat 0 0;
+	background-size: 218px auto;
+	width: 24px;
+	height: 24px;
+	margin-right: 12px;
+}
+.list a.ph:before {
+    background-position: -192px -52px;
+	
+}
+.list a.jf:before {
+    background-position: -114px -52px;
+	
+}
+.list a.lp:before {
+    background-position: -140px -52px;
+	
+}
+.list a.hg {
+	position: relative;
+}
+.list a.hg:before {
+    background-position: -166px -52px;
+}
+.list a.hg i {
+	display: block;
+	background: url(http://yao.holdfun.cn/portal/resources/news/images/user/icon_hot.png) no-repeat 0 0;
+	background-size: 42px auto;
+	width: 42px;
+	height: 22px;
+	position: absolute;
+	left: 114px;
+	top: 4px;
+}
+.list a.jm:before {
+    background-position: -88px -52px;
+	
+}
+.list a.nav:after {
+    background-position: -208px 9px;
+	
+    width: 12px;
+    height: 23px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 0;
+}
+.list a.ph strong {
+    color: #E7141A;
+	
+}
+.list a.jf strong {
+    color: #E7141A;
+	
+}
+.list a.lp strong {
+    color: #E7141A;
+	
+}
+.list a.nav {
+	
+}
+.list ul>li {
+    border-top: 1px solid #E8E5E5;
+	
+    border-bottom: 1px solid #E8E5E5;
+    margin-top: 11px;
+    background: #FBFBFA;
+}
+.list ol>li {
+    padding: 0;
+	
+}
+.list ol>li.border {
+	
+    border-bottom: 1px solid #E8E5E5;
+}
+a.user-back{
+    background: #E7141A;
+    color: #fff;
+}
+a.user-back:hover{
+    background: #E7141A;
+    color: #fff;
+}
+.copyright {
+    color: #CCCCCC;
+}

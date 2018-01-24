@@ -1,0 +1,112 @@
+
+
+body {
+	height: 100%;
+    background: #fff url(../images/wea-bg.jpg) no-repeat ;
+    background-size: cover;
+}
+.tv-logo{
+	padding: 10px 16px 10px;
+	padding-right: 66%;
+}
+.main{
+	width: 90%;
+	height: 80%;
+	border : 1px solid rgba(170,116,0,0.9);
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 6px;
+	overflow-y: auto;
+	font-size: 14px;
+	line-height: 20px;
+}
+.main img{
+	display: block;
+	width: 100%;
+}
+.copyright{
+	color: #fff;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #000;
+}
+@-webkit-keyframes bounceInDown {
+	0%, 100%, 60%, 75%, 90% {
+		-webkit-animation-timing-function: cubic-bezier(0.215, .61, .355, 1);
+		animation-timing-function: cubic-bezier(0.215, .61, .355, 1)
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -200px, 0);
+		transform: translate3d(0, -200px, 0)
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 25px, 0);
+		transform: translate3d(0, 25px, 0)
+	}
+	75% {
+		-webkit-transform: translate3d(0, -10px, 0);
+		transform: translate3d(0, -10px, 0)
+	}
+	90% {
+		-webkit-transform: translate3d(0, 5px, 0);
+		transform: translate3d(0, 5px, 0)
+	}
+	100% {
+		-webkit-transform: none;
+		transform: none
+	}
+}
+@keyframes bounceInDown {
+	0%, 100%, 60%, 75%, 90% {
+		-webkit-animation-timing-function: cubic-bezier(0.215, .61, .355, 1);
+		animation-timing-function: cubic-bezier(0.215, .61, .355, 1)
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -300px, 0);
+		transform: translate3d(0, -300px, 0)
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 25px, 0);
+		transform: translate3d(0, 25px, 0)
+	}
+	75% {
+		-webkit-transform: translate3d(0, -10px, 0);
+		transform: translate3d(0, -10px, 0)
+	}
+	90% {
+		-webkit-transform: translate3d(0, 5px, 0);
+		transform: translate3d(0, 5px, 0)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none
+	}
+}
+.bounceInDown {
+	-webkit-animation-name: bounceInDown;
+	animation-name: bounceInDown;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-duration:1s;
+	-webkit-animation-duration:1s;
+	animation-delay:1s;
+	-webkit-animation-delay:1s;
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}

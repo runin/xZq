@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=devicewidth, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>鲁豫有约</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/comment.css" />
+</head>
+<body>
+	<div class="scroll">
+		<div class="container">
+			<header>
+				<div class="header-nav">
+				    <a id="back-btn" class="current-btn back-btn" href="index.html" data-collect="true" data-collect-flag="cor-back-index-btn" data-collect-desc="评论页面返回首页按钮"></a>
+				</div>
+			</header>
+			<div class="cor-assist">
+				<div class="comments" id="comments"></div>
+			</div>
+			<article id="article">
+				<div class="ctrls">
+				    <p>
+						<label><img class="head_img" src="images/danmu-head.jpg" /></label>
+						<input id="input-comment" type="text" placeholder="我对鲁豫有话说" />
+						<a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="comment-send-btn" data-collect-desc="发表评论按钮">发送</a>
+					</p>
+				</div>
+			</article>
+		</div>
+	</div>
+	 <p class="count hidden">截至目前，在线人数有<span></span>人</p>
+</body>
+    <script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/barrage.js"></script>
+	<script src="./js/plugins/msg.js"></script>
+
+	<script src="./js/plugins/common.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/app/comment.js"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=50922772" charset="UTF-8"></script>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>答题红包</title>
+    <link rel="stylesheet" href="./css/core.css">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="top">
+            <dl class="top_item">
+                <dt>
+                    <label>
+                        红包个数</label>
+                    <img src="./images/rednum.png" class="icon_hongbao" alt="">
+                </dt>
+                <dd>
+                    <input type="text" placeholder="填写个数" id="redNum" />
+                    <span class="yuan">个</span>
+                </dd>
+            </dl>
+            <dl class="top_item">
+                <dt>
+                    <label id="moneytext">
+                        红包总额</label>
+                    <img src="./images/moneyicon.png" class="icon_hongbao" alt="">
+                </dt>
+                <dd>
+                    <input type="text" placeholder="填写金额" id="money" onkeyup="" onafterpaste="if(isNaN(value))value=''" />
+                    <span class="yuan">元</span>
+                </dd>
+            </dl>
+            <p class="red_type">
+                <span>当前是拼手气红包,</span><span class="ping_hand">改为普通红包</span></p>
+            <dl class="top_item">
+                <dt>
+                    <label>
+                        提问</label>
+                    <i></i></dt>
+                <dd class="question_dd">
+                    <textarea maxlength="28" placeholder="填写问题 限制28个字符" id="question"> </textarea>
+                    <div class="subject"> <span>换一题</span> <img src="images/subicon.png" /> </div>
+                </dd>
+            </dl>
+        </div>
+        <div class="bottom">
+            <div class="bottom_con">
+                <img src="images/ansright.png" class="ansicon" />
+                <input type="text" placeholder="正确答案 限制10个字符" maxlength="10" id="correct_answer" />
+            </div>
+            <div class="bottom_con">
+                <img src="images/anserror.png" class="ansicon" />
+                <input type="text" placeholder="混淆答案 限制10个字符" maxlength="10" id="error_answer1" />
+            </div>
+            <div class="bottom_con">
+                <img src="images/anserror.png" class="ansicon" />
+                <input type="text" placeholder="混淆答案 限制10个字符" maxlength="10" id="error_answer2" />
+            </div>
+            <div class="tip">
+                至少填写2个答案</div>
+        </div>
+        <a href="#" class="submitBtn" data-flag="saijihongbao" data-collect=true data-desc="塞进红包按钮">塞进红包</a>
+        <footer>
+            <p>
+                未领取的红包，将于24小时后将退回发红包方
+            </p>
+        </footer>
+    </section>
+    <section class="popwin none">
+        <div class="pop_model">
+        </div>
+        <div class="pop_contain clearfix animated flipInY">
+            <div class="pop_hear">
+            </div>
+            <div class="pop_msg">
+                红包封好了，快去发给朋友吧
+            </div>
+            <div class="pop_btn pop_btn_a" data-flag="shang" data-collect=true data-desc="赏按钮">
+                <div class="pop_btn_border">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="share  none">
+        <div class="sharemsg">
+            点击“...”
+            <img src="./images/share_arrow.png" alt="" class="share_arrow" />
+            <br /> 分享给好友吧~
+        </div>
+    </div>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/plugins/zepto.min.js" type="text/javascript"></script>
+    <script src="js/plugins/zepto.cookie.min.js" type="text/javascript"></script>
+    <script src="js/plugins/zepto.fx.min.js" type="text/javascript"></script>
+    <script src="./js/config.js"></script>
+    <script src="js/authorize_userinfo.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="./js/app/index.js"></script>
+    <script src="js/reportlog.js" type="text/javascript"></script>
+    <script src="js/share.js" type="text/javascript"></script>
+    <img src="./images/hongbao_bg01.png" class="none">
+</body>
+
+</html>

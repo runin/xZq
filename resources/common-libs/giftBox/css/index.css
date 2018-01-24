@@ -1,0 +1,172 @@
+/*                   俺是小提示                       */
+/*****************************************************/
+/***********请在复制使用本段代码时删除注释************/
+/*****************************************************/
+
+.giftbox {
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 60px;
+    margin-left: -75px;
+    z-index: 10;
+    cursor: pointer;
+}
+.giftbox:after {
+    position: absolute;
+    color: #fff;
+    font-family: 'Peralta', serif;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    z-index: 1000;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.giftbox > div {
+    background: #D60225;
+    position: absolute;
+}
+.giftbox .cover {
+    top: -78px;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    z-index: 2;
+}
+.giftbox .box {
+    bottom: 60%;
+    height: 80%;
+    left: 5%;
+    right: 5%;
+    z-index: 99;
+}
+.giftbox > div:after, .giftbox > div:before {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+.giftbox > div:before {
+    background: #fdc56d;
+    width: 20px;
+    left: 50%;
+    height: 100%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.giftbox .box:after {
+    background: rgba(0,0,0,0.1);
+    left: 0;
+    height: 10px;
+    width: 100%;
+}
+.giftbox .cover div {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -15px;
+}
+.giftbox .cover div:before, .giftbox .cover div:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: transparent;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 5px #fdc56d;
+}
+.giftbox .cover div:before {
+    -webkit-transform: translateX(-45%) skewY(40deg);
+    transform: translateX(-45%) skewY(40deg);
+}
+.giftbox .cover div:after {
+    -webkit-transform: translateX(45%) skewY(-40deg);
+    transform: translateX(45%) skewY(-40deg);
+}
+.step-1 .giftbox {
+    -webkit-animation: wobble 0.5s linear infinite forwards;
+    animation: wobble 0.5s linear infinite forwards;
+}
+.step-1 .giftbox .cover, .step-1 .giftbox .cover div {
+    -webkit-animation: wobble 0.5s 0.1s linear infinite forwards;
+    animation: wobble 0.5s 0.1s linear infinite forwards;
+}
+.step-2 .giftbox .cover {
+    transform-origin: 100% 100%;
+    -webkit-animation: flyUp 1.3s ease-out forwards;
+    animation: flyUp 1.3s ease-out forwards;
+}
+
+@-webkit-keyframes wobble {
+    25% { -webkit-transform: rotate(10deg); }
+    75% { -webkit-transform: rotate(-10deg);}
+}
+
+@-webkit-keyframes flyUp {
+    75% { opacity: 1;}
+    100% {
+        -webkit-transform: translateY(-2000%) rotate(145deg);}
+}
+.page-a span{
+    display: block;
+    position: absolute;
+    color: #000;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode:forwards;
+}
+.wer {
+    position: absolute;
+    bottom: 260%;
+    left: -15%;
+    z-index: 9;
+    opacity: 0;
+}
+.wer.page-a {
+    opacity: 1;
+}
+
+/* 飘落彩带的几个默认动画_S */
+@-webkit-keyframes f1 {
+    0%{-webkit-transform: scale(.5) translate(150px,250px) rotateY(20deg) rotateZ(20deg);}
+    25%{opacity: .3;-webkit-transform: translate(50px,100px) rotateY(80deg) rotateZ(80deg);}
+    50%{opacity:.6;-webkit-transform: translate(0px,10px) rotateY(120deg) rotateZ(120deg);}
+    75%{opacity: .4;-webkit-transform: translate(-150px,-100px) rotateY(220deg) rotateZ(220deg);}
+    100% {opacity:0;-webkit-transform: scale(16) translate(-200px,-220px) rotateY(360deg) rotateZ(360deg);}
+}
+@-webkit-keyframes f2 {
+    0%{-webkit-transform: scale(.5) translate(170px,250px) rotateX(20deg) rotateZ(-80deg);}
+    50%{opacity:.6;-webkit-transform: translate(70px,10px) rotateX(80deg) rotateZ(-180deg);}
+    100% {opacity:0;-webkit-transform: scale(16) translate(-100px,-250px)  rotateX(-120deg) rotateZ(-120deg);}
+}
+@-webkit-keyframes f3 {
+    0%{-webkit-transform: scale(.5) translate(200px,250px) rotateY(20deg) rotateZ(-180deg);}
+    75%{opacity: .4;-webkit-transform: translate(130px,10px) rotateY(120deg) rotateZ(80deg);}
+    100% {opacity:0;-webkit-transform: scale(16) translate(100px,-250px) rotateY(320deg) rotateZ(380deg);}
+}
+@-webkit-keyframes f4 {
+    0%{-webkit-transform: scale(.5) translate(150px,250px) rotateY(20deg) rotateZ(20deg);}
+    25%{opacity: .3;-webkit-transform: translate(200px,100px) rotateY(80deg) rotateZ(80deg);}
+    50%{opacity:.6;-webkit-transform: translate(230px,10px) rotateY(120deg) rotateZ(120deg);}
+    75%{opacity: .4;-webkit-transform: translate(250px,-100px) rotateY(220deg) rotateZ(220deg);}
+    100% {opacity:0;-webkit-transform: scale(16) translate(280px,-220px) rotateY(360deg) rotateZ(360deg);}
+}
+@-webkit-keyframes f5 {
+    0%{-webkit-transform: scale(.5) translate(170px,250px) rotateX(20deg) rotateZ(-80deg);}
+    50%{opacity:.6;-webkit-transform: translate(330px,10px) rotateX(80deg) rotateZ(-180deg);}
+    100% {opacity:0;-webkit-transform: scale(16) translate(400px,-250px) rotateX(-120deg) rotateZ(-120deg);}
+}
+@-webkit-keyframes f6 {
+    0%{-webkit-transform: scale(.5) translate(200px,250px) rotateY(20deg) rotateZ(-180deg);}
+    75%{opacity: .4;-webkit-transform: translate(270px,10px) rotateY(120deg) rotateZ(80deg);}
+    100% {opacity:0;-webkit-transform: scale(16) translate(350px,-250px) rotateY(320deg) rotateZ(380deg);}
+}
+/* 飘落彩带的几个默认动画_E */

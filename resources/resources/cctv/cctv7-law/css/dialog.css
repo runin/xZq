@@ -1,0 +1,387 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+  z-index: 100;
+  overflow: hidden;
+}
+.modal .btn-close {
+	position: absolute;
+    background:url(../images/close-icon.png) center no-repeat;
+	background-size:40% auto;
+    display: block;
+    width: 35px;
+    height: 35px;
+    z-index: 10000;
+    top:0px;
+    right:15px;
+}
+.dialog {
+  position: absolute;
+  color: #D6305A;
+  border-radius: 6px;
+  z-index: 1000;
+  overflow: hidden;
+}
+.dialog-assist{
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+}
+
+.thank-dialog,.rule-dialog {
+	position: absolute;
+	color:#fff;
+	width: 80%;
+	height: 66%;
+	left: 10%;
+	top:17%;
+	padding: 2%;
+}
+.rule-dialog .dialog-assist{
+	background:url(../images/dia-bg.jpg) top center no-repeat;
+	background-size:100% 100%;
+	padding: 8% 2%;
+}
+.rule-dialog h1 {
+	color:#ffee99;
+	height:36px;
+	line-height:34px;
+	text-align:center;
+	font-size:17px;
+	font-weight:bolder;
+	width: 50%;
+	letter-spacing: 2px;
+	border: 1px solid #ffee99;
+	margin: 0 auto 4%;
+}
+.rule-dialog .content {
+	position:static;
+	margin:0 auto;
+	width:88%;
+	height: calc(100% - 50px);
+	height: -webkit-calc(100% - 50px);
+	max-height:86%;
+	overflow: hidden;
+}
+.rule-dialog .rule {
+	height: 100%;
+	font-size:14px;
+	line-height:24px;
+	overflow-y:auto;
+	color:#FFF;
+}
+.rule-dialog p {
+	line-height:16px;
+}
+.thank-dialog .btn-close,.rule-dialog .btn-close{
+	background-color: #b3000d;
+	border-radius: 50%;
+	right: 2px;
+}
+.thank-dialog {
+	padding:8% 14px;
+}
+.thank-dialog .dialog-assist{
+	padding:12% 0 0;
+	position: relative;
+}
+.thank-dialog h1 {
+	color:#ffee99;
+	text-align:center;
+	font-size:17px;
+	font-weight: 900;
+	width: 90%;
+	margin: 0 auto;
+	-webkit-background-clip: text;    /*按文字裁剪*/        
+    -webkit-text-fill-color: transparent;    /*文字的颜色使用背景色*/    
+    background-color: #ffee99;    /*设置一个背景色*/        
+    background-image: -webkit-linear-gradient(0deg, rgba(255, 238, 153, 0.6) 30%, #fff 60%, rgba(255, 238, 153, 0.6) 100%);        /*设置渐变的背景，按对角线渐变*/
+    background-blend-mode: hard-light;    /*设置背景为混合模式下的强光模式*/
+    background-size: 200%;x`
+}
+@-webkit-keyframes shine {
+    0% {background-position: 130%;}
+    100% {background-position: -50%;}
+}
+.thank-dialog img{
+	display: block;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: -1;
+	border-radius: 6px;
+}
+.thank-dialog .btn-close{
+	top: -10px;
+    right: -10px;
+}
+@keyframes closeRotato
+{
+  0%
+  {   transform-origin:center center;
+      transform:rotateZ(0deg);
+  }
+  100%
+  {   transform-origin:center center;
+      transform:rotateZ(360deg);
+  }
+}
+@-webkit-keyframes closeRotato
+{
+  0%
+  {   -webkit-transform-origin:center center;
+      -webkit-transform:rotateZ(0deg);
+  }
+  100%
+  {   -webkit-transform-origin:center center;
+      -webkit-transform:rotateZ(360deg);
+  }
+}
+.lottery-good{
+	width: 100%;
+	height: 100%;
+	padding:25% 16% 10%;
+	overflow:hidden;
+	text-align: center;
+	background:url(../images/lottery-bg.png) top center no-repeat;
+	background-size:100% 100%;
+}
+.lottery-assit{
+	height: 100%;
+	overflow-y:auto ;
+	
+}
+.lottery-card{
+	width: 100%;
+	height: 70%;
+	position: absolute;
+	top: 15%;
+	left: 0px;
+	padding:26% 16% 10%;
+}
+.lottery-card .award-img{
+	padding: 6% 10% 16%;
+}
+.lottery-good  .contact h4{
+	font-size: 10px;
+	text-align: left;
+	color: #8d4200;
+}
+
+
+.lottery-good .award-img {
+  width: 100%;
+  text-align: center;
+}
+.lottery-dialog .award-img img {
+   display: block;
+}
+.lottery-dialog .contact {
+  position: relative;
+  padding: 0;
+  z-index: 9999;
+  text-align: center;
+}
+
+
+#lottery-dialog .contact p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    border-radius: 6px;
+    margin: 4px auto;
+    text-align: left;
+}
+
+#lottery-dialog .contact input {
+    height: 36px;
+    padding: 2px 10px;
+    width: 100%;
+    color: #cc7800;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background:#fff;
+    background-size: 100% 100%;
+    font-size: 14px;
+}
+.lottery-good .btn{
+	 display: inline-block;
+	letter-spacing: 6px;
+	font-size: 14px;
+	margin: 0 auto;
+	border-radius: 20px;
+	color: #fff;
+	background: #b30000;
+	text-align: center;
+	padding: 8px 30px;
+}
+ 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #cc7800;
+}
+.prize-dialog .content{
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+}
+.prize-dialog .prize-list{
+	height: 87%;
+    color: #fff;
+    padding: 0 2%;
+ 
+}
+.prize-list li{
+	display: block;
+	width: 100%;
+    padding: 0 6px;
+    
+}
+.prize-list li:nth-child(even){
+	background: #e72e45;
+}
+.prize-item{
+	width: 100%;
+	padding: 10px 0;
+	position: relative;
+}
+.prize-item label{
+	width: 50px;
+	height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+.prize-item img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+   
+   
+}
+.prize-item div{
+    width: 74%;
+    display: block;
+    font-size: 14px;
+    float: right;
+}
+.prize-list li::after,.prize-item div::after{
+	content: "";
+	clear: both;
+	display: block;
+	width: 0;
+	height: 0px;
+}
+.prize-item div p{
+	width: 100%;
+	padding: 2px 0;
+}
+.prize-item div{
+    vertical-align: bottom;
+}
+
+.prize-item div p:nth-child(1){
+   font-size: 13px;
+}
+.prize-item div p:nth-child(2){
+  font-size: 12px;
+}
+.prize-item div p:nth-child(2) span{
+	display: block;
+	padding-right: 14px;
+}
+
+.no-prize{
+	padding: 20px 0;
+	color:rgba(207,207,207,0.7);
+	font-size: 22px;
+	text-align: center;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+.thank-dialog {
+    padding: 5% 6%;
+}
+.dialog-assist{
+	padding: 0 8%;
+}
+#lottery-dialog .contact input{
+	height: 26px;
+	line-height: 26px;
+}
+.lottery-good{
+	padding:30% 18% 10%;
+}
+.lottery-good .btn {
+    font-size: 12px;
+    padding: 4px 20px;
+}
+.lottery-good .award-img {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 550px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+#lottery-dialog .contact input{
+	height: 30px;
+	line-height: 30px;
+}
+.lottery-good{
+	padding:24% 18% 10%;
+}
+}
+
+
+
+
+/*dai*/
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait)
+{
+.thank-dialog{
+	padding:4% 6%;
+}
+.lottery-card {
+    height: 78%;
+    top: 11%;
+}
+#lottery-dialog .contact input{
+	height: 30px;
+	line-height: 30px;
+}
+.lottery-good{
+	padding:22% 18% 10%;
+}
+}
+@-webkit-keyframes toggle {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}

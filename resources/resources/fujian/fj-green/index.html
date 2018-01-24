@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>惜福护绿</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+    <audio preload="auto"  class="preload" id="audio-a" src="./sounds/audio-a.mp3"></audio>
+    <audio preload="auto"  class="preload" id="audio-b" src="./sounds/audio-b.mp3"></audio>
+    <audio preload="auto"  class="preload" id="audio_bgm" loop="loop" src="./sounds/bg.mp3"></audio>
+    <img class="preload" src="./images/icon-music2.png">
+    <img class="preload" src="./images/icon-music3.png">
+    <header>
+        <img class="tvlogo" src="./images/icon-tvlogo.png">
+        <section id="xf5" class="drop-wrapper none" data-collect="true" data-collect-flag="xf5" data-collect-desc="吸粉位置5">
+            <img src="./images/icon-drop.png">
+            <p>更多精彩</p>
+        </section>
+    </header>
+    <section class="container">
+        <section class="cover-wrapper">
+            <img src="./images/cover.png">
+            <section class="shake-wrapper none">
+                <img class="noshake" src="./images/icon-shake.png">
+            </section>
+        </section>
+        <section class="lottery-wrapper">
+            <section class="layer-wrapper">
+                <section id="tree" class="tree">
+                    <img class="icon-tree1" src="./images/icon-tree1.png">
+                    <img class="icon-tree2" src="./images/icon-tree2.png">
+                    <img class="icon-tree3" src="./images/icon-tree3.png">
+                    <img class="icon-tree4" src="./images/icon-tree4.png">
+                </section>
+                <section class="layer-bg layer-bg1 none">
+                    <img class="q-cloud icon-cloud1" src="./images/icon-cloud1.png">
+                    <img class="q-cloud icon-cloud2" src="./images/icon-cloud2.png">
+                    <section class="hand-tips">
+                        <p></p><p></p>
+                        <img class="icon-hand" src="./images/icon-hand.png">
+                    </section>
+                    <section class="rain-wrapper none">
+                        <img src="./images/icon-rain.png">
+                        <img src="./images/icon-rain.png">
+                        <img src="./images/icon-rain.png">
+                        <img src="./images/icon-rain.png">
+                        <img src="./images/icon-rain.png">
+                        <img src="./images/icon-rain.png">
+                    </section>
+                </section>
+                <section class="layer-bg layer-bg2 none">
+                    <img class="q-cloud icon-cloud3-1" src="./images/icon-cloud3.png">
+                    <img class="q-cloud icon-cloud3-2" src="./images/icon-cloud3.png">
+                    <img class="q-cloud icon-cloud4" src="./images/icon-cloud4.png">
+                    <img class="q-cloud icon-cloud5" src="./images/icon-cloud5.png">
+                    <img class="icon-bird none" src="./images/icon-bird.png">
+                    <section class="sun-wrapper">
+                        <p></p>
+                        <img class="none" src="./images/icon-shine.png">
+                    </section>
+                    <section class="hand-tips">
+                        <p></p><p></p>
+                        <img class="icon-hand" src="./images/icon-hand.png">
+                    </section>
+                </section>
+                <img class="mountain" src="./images/icon-mountain.png">
+            </section>
+        </section>
+        <section class="lotter-shadow"></section>
+    </section>
+    <section class="countdown none must-none">
+        <span class="countdown-tip"></span>
+        <span class="detail-countdown none"></span>
+    </section>
+    <section class="fail-tips none">
+        <p>继续<i>摇</i> 奖品还有很多</p>
+    </section>
+    <section class="thanks-tips"></section>
+    <footer>
+        <a id="xf6" class="tttj none" href="javascript:void(0);" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+            <i>1</i>
+            <img src="./images/icon-fan.png">
+        </a>
+        <section class="copyright">
+            页面由福建广电新媒体有限公司提供<br>新掌趣科技技术支持 & Powered by holdfun.cn</section>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <a id="music" href="javascript:void(0);" data-collect="true" data-collect-flag="music" data-collect-desc="音乐开关按钮">
+                            <img src="./images/tran.png">
+                        </a>
+                    </td>
+                    <td class="hide">
+                        <a id="xf1" href="javascript:void(0);" data-collect="true" data-collect-flag="xf1" data-collect-desc="吸粉位置1"></a>
+                    </td>
+                    <td class="hide">
+                        <a id="xf2" href="javascript:void(0);" data-collect="true" data-collect-flag="xf2" data-collect-desc="吸粉位置2"></a>
+                    </td>
+                    <td class="hide">
+                        <a id="xf3" href="javascript:void(0);" data-collect="true" data-collect-flag="xf3" data-collect-desc="吸粉位置3"></a>
+                    </td>
+                    <td class="hide">
+                        <a id="xf4" href="javascript:void(0);" data-collect="true" data-collect-flag="xf4" data-collect-desc="吸粉位置4">
+                            <img src="./images/icon-add.png">
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="div_subscribe_area" id="div_subscribe_area"></div>
+    </footer>
+    <!-- <input type="button" class="none" id="test" value="红包按钮" style="position:absolute;top:50%;left:3%;z-index:9999999999;"> -->
+
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/dialog.js"></script>
+    <script src="./js/app/index.js"></script>
+
+    <img class="preload" src="./images/icon-clock.png">
+    <img class="preload" src="./images/default-award.png">
+    <img class="preload" src="./images/bg-dialog.png">
+    <img class="preload" src="./images/btn-get.png">
+    <img class="preload" src="./images/default-award.png">
+
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

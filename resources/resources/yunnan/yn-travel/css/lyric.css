@@ -1,0 +1,182 @@
+body {
+	width: 100%;
+	background-color: #F7F7F7;
+}
+header {
+	width: 100%;
+	overflow: hidden;
+}
+header a {
+	display: block;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 34px;
+	line-height: 34px;
+	background-color: #ffa423;
+	color: #FFF;
+	/*border-bottom: 1px solid #e68700;*/
+	box-shadow: 0 2px 2px rgba(0,0,0,.3);
+	text-align: center;
+	font-size: 14px;
+	font-weight: bolder;
+	z-index: 99;
+}
+header a:visited, header a:hover, header a:active {
+	color: #FFF;
+}
+section {
+	width: 100%;
+	margin: 34px auto 0;
+}
+section ul {
+	width: 100%;
+}
+section ul li {
+	position: relative;
+	width: 100%;
+	box-shadow: 0 2px 2px rgba(0,0,0,.3);
+	font-size: 0;
+	margin: 13px auto 0;
+}
+section ul li div {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	padding: 10px;
+	background-color: rgba(0,0,0,.3);
+	overflow: auto;
+}
+.confirm section ul li div, .share section ul li div {
+	background-color: transparent;
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+}
+section ul li input {
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-shadow: 1px 2px 1px #000;
+	color: #FFF;
+	font-size: 14px;
+	z-index: 2;
+	border: none;
+	font-weight: bold;
+	border: 1px dashed #BDBDBD;
+	background: none;
+	border-radius: 5px;
+}
+.confirm section ul li input, .share section ul li input {
+	border: 0 none;
+}
+section ul li i {
+	position: absolute;
+	width: 28%;
+	height: 60%;
+	top: 5px;
+	right: 5px;
+	background: url(../images/logo.png) no-repeat;
+	background-size: 100% auto;
+	z-index: 1;
+}
+section .help {
+	width: 100%;
+	background-color: #FFF;
+	padding: 5%;
+	color: #333;
+	box-shadow: 0 2px 2px rgba(0,0,0,.3);
+	font-size: 15px;
+}
+.confirm section .help, .share section .help {
+	display: none;
+}
+section .help h2 {
+	font-weight: bolder;
+	padding-bottom: 3px;
+	margin-bottom: 4px;
+	border-bottom: 1px solid #333;
+}
+section .help p {
+	font-size: 14px;
+	line-height: 18px;
+}
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width:100%;
+	margin:20px auto 0;
+	text-align:center;
+	overflow: auto;
+}
+footer .copyright {
+	font-size: 12px;
+	height: 26px;
+	line-height: 13px;
+	color: #333;
+	margin-bottom: 3px;
+	opacity: 1;
+}
+footer .lyric-btn {
+	display: inline-block;
+	width: 55%;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #FFF;
+	background-color: #ffa61a;
+	border-radius: 38px;
+	margin-bottom: 20px;
+}
+footer .lyric-share, footer p {
+	display: none;
+}
+.confirm footer .lyric-confirm, .confirm footer p {
+	display: none;
+}
+.confirm footer .lyric-share {
+	display: inline-block;
+}
+.share footer .lyric-btn {
+	display: none;
+}
+.share footer p {
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: 20px;
+	font-weight: bolder;
+	color: #BDBDBD;
+	-webkit-animation: tada 2s linear infinite;
+	-webkit-animation-delay:.2s;
+	animation: tada 2s linear infinite;
+	animation-delay:.2s;
+}
+::-webkit-input-placeholder {
+	color: #FFF;
+	opacity: 0.9;
+	text-shadow: 0 0 0 rgba(0,0,0,1);
+	font-weight: normal;
+}
+@-webkit-keyframes tada {
+	0% {-webkit-transform: scale(1);}	
+	6%, 12% {-webkit-transform: scale(0.9) rotate(-3deg);}
+	18%, 30%, 42%, 54% {-webkit-transform: scale(1.1) rotate(3deg);}
+	24%, 36%, 48% {-webkit-transform: scale(1.1) rotate(-3deg);}
+	60% {-webkit-transform: scale(1) rotate(0);}
+	100% {-webkit-transform: scale(1) rotate(0);}
+}
+@keyframes tada {
+	0% {transform: scale(1);}	
+	6%, 12% {transform: scale(0.9) rotate(-3deg);}
+	18%, 30%, 42%, 54% {transform: scale(1.1) rotate(3deg);}
+	24%, 36%, 48% {transform: scale(1.1) rotate(-3deg);}
+	60% {transform: scale(1) rotate(0);}
+	100% {transform: scale(1) rotate(0);}
+}

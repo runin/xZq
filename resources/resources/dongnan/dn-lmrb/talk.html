@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>辣妈俏爸</title>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/talk.css" />
+	<link rel="stylesheet" href="./css/answer.css"/>
+</head>
+<body class="now">
+    <img class="preload" src="./images/talk-tolottery-start.png">
+    <audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+	<img class="imgbg" src="./images/com-bg.jpg" alt=""/>
+    <section class="container">
+        <p class="thanks-tips"></p>
+    </section>
+    <section class="countdown none">
+        <!--<span class="countdown-tip"></span>-->
+        <span class="detail-countdown"></span>
+    </section>
+    <section>
+        <a class="btn-tolottery" id="tolottery" data-collect="true" data-collect-flag="tolottery" data-collect-desc="答题页面-去摇奖"></a>
+        <div class="time-box"></div>
+        <!--<a class="btn-rank" id="btn-rank" data-collect="true" data-collect-flag="tolottery" data-collect-desc="答题页面-去摇奖"></a>-->
+        <a class="linkout none" id="linkout" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+        <div class="answer-box">
+            <div class="item">
+                <ul></ul>
+            </div>
+            <div class="wait none">
+                <h1>活动还没开始，敬请期待~</h1>
+                <img src="images/que-book.png" />
+            </div>
+        </div>
+    </section>
+    <!--<img class="round-bg" src="images/tv-logo.png" />-->
+    <p class="topic"></p>
+    <div id="body" class="body">
+        <ul id="comment_list" class="content">
+        </ul>
+    </div>
+    <p class="mesg-tip" id="mesg-tip">有新消息</p>
+    <footer class="footer">
+        <img class="handimg" src="" />
+        <input id="input_text" type="text" placeholder="留言15字以内" />
+        <a id="input_submit" data-collect="true" data-collect-flag="szws-bestex-talk-submit" data-collect-desc="聊天室页-评论发送按钮">
+            <img src="images/talk-inp-send.png" />
+        </a>
+    </footer>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/scrollTo.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="js/app/dialog.js"></script>
+	<script src="js/app/talk.js"></script>
+	<script src="js/app/answer.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

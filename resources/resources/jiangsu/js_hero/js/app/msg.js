@@ -1,0 +1,10 @@
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/0.jpg'></div>" + "只要勇敢面对困境的，都是“英雄”~");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/11.jpg'></div>" + "被预告片吸引");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/8.jpg'></div>" + "虽然没有太多明星，素人也很棒，比心，");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/6.jpg'></div>" + "终于揭开神秘面纱");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/3.jpg'></div>" + "喜欢这个英雄系列的电影都是我的最爱的");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/1.jpg'></div>" + "满满正能量");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/2.jpg'></div>" + "骨子里的热血不被现实的平淡所稀释，牛");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/4.jpg'></div>" + "看得根 ~ 本 ~ 停 ~ 不 ~ 下 ~ 来！");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/5.jpg'></div>" + "一家人都在看");
+window.CACHEMSG.push("<div class='c_head_img'><img src='./images/avatar/7.jpg'></div>" + "千面部队的征途是星辰和大海！");

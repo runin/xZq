@@ -1,0 +1,118 @@
+*{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+    height: 100%;
+    background: url("../images/qiandao-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.chkbox{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+}
+.chkbox>div{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: #ccab00;
+    text-align: center;
+    line-height: 45px;
+    color: #ffffff;
+}
+.handimg{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    left: 10px;
+    border-radius: 35px;
+}
+.chkbox>.r{
+}
+.chkbox>.l{
+    background-color: #5b5100;
+
+}
+.chkbox>img{
+    position: absolute;
+    width: 50%;
+    top: -5px;
+    height: 5px;
+    right: 0;
+}
+.r>img,.l>img{
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    top: 10px;
+}
+.qiandao{
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 7px;
+    bottom: 18%;
+    display: none;
+    background-color: #ffdd00;
+    color: #ef001b;
+}
+.alert{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.alert>.black{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 10;
+}
+.alert>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+}
+.alert>.cls{
+    position: absolute;
+    top: 26%;
+    right: 7%;
+    width: 30px;
+    height: 30px;
+    background: url("../images/talk-qus-cls.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 100;
+}
+.alert>p{
+    position: absolute;
+    width: 60%;
+    height: 60px;
+    line-height: 26px;
+    text-align: center;
+    left: 20%;
+    top: 32%;
+    /*background-color: #00aff0;*/
+    z-index: 120;
+}
+.alert>.ok{
+    position: absolute;
+    width: 30%;
+    height: 35px;
+    bottom: 46%;
+    left: 35%;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 7px;
+    background-color: #7f7007;
+    color: #ffffff;
+    z-index: 150;
+}

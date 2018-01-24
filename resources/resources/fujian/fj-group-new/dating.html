@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>帮帮团</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dating.css" />
+</head>
+<body>
+	<div class="main">
+		<div class="content none">
+			<div class="logo box-shadow box-radius"></div>
+			<div class="form-item">
+				<label><span>*</span>姓名：</label>
+				<input type="text" id="name" placeholder="your name">
+			</div>
+			<div class="form-item">
+				<label><span>*</span>性别：</label>
+				<select id="sex">
+					<option value="男">男</option>
+					<option value="女">女</option>
+				</select>
+			</div>
+			<div class="form-item">
+				<label><span>*</span>出生年月：</label>
+				<input type="text" id="birthday" placeholder="birthday">
+			</div>
+			<div class="form-item">
+				<label><span>*</span>联系电话：</label>
+				<input type="text"  id="phone" placeholder="mobile">
+			</div>
+			<div class="form-item">
+				<label><span>*</span>职业：</label>
+				<input type="text" id="occupation" placeholder="occupation">
+			</div>
+			<div class="form-item">
+				<label><span>*</span>年薪：</label>
+				<input type="text" id="salary" placeholder="salary">
+			</div>
+			<div class="form-item">
+				<label>兴趣爱好：</label>
+				<input type="text" id="hobby" placeholder="hobby">
+			</div>
+			<div class="form-item">
+				<label>择偶期望：</label>
+				<textarea rows="3" cols="20" id="description" placeholder="限100字"></textarea>
+			</div>
+			<div class="form-group">
+				<a href="#" data-collect="true"
+				data-collect-flag="fj-group-dating-submit-btn"
+				data-collect-desc="相亲页面提交" class="btn btn-submit" id="btn-submit">提交报名</a>
+			</div>
+		</div>
+		<div class="succ none">
+			<h2>报名成功！</h2>
+			<p>您的报名信息我们已经收到，稍后会有工作人员与您联系，请耐心等待。</p>
+			<a href="index.html" data-collect="true"
+			data-collect-flag="fj-group-baoliao-success-index-btn"
+			data-collect-desc="曝料成功页面返回首页" class="btn-back sign">返回首页</a>
+		</div>
+		<div class="already none">
+			<h2>您已经参与过报名！</h2>
+			<p>您的报名信息我们已经收到，稍后会有工作人员与您联系，请耐心等待。</p>
+			<a href="index.html" data-collect="true"
+			data-collect-flag="fj-group-baoliao-success-index-btn"
+			data-collect-desc="曝料成功页面返回首页" class="btn-back sign">返回首页</a>
+		</div>
+	</div>
+	
+	<div class="copyright">页面由福建综合频道提供Powered by holdfun.cn</div>
+	
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	
+	<script src="http://yaotv.qq.com/c/=/shake_tv/include/js/jsapi_authorize.js,/shake_tv/include/js/jsapi_subscribe.js,/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	
+	<script src="./js/app/dating.js"></script>
+
+	
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=640, user-scalable=no">
+	<title>我们相爱吧</title>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script type="text/javascript">$(function () {var DEFAULT_WIDTH = 640,ua = navigator.userAgent.toLowerCase(),deviceWidth = window.screen.width,devicePixelRatio = window.devicePixelRatio || 1,targetDensitydpi;if(ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4){targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');}});</script>
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<a href="sign.html" class="btn-sign db">去签到</a>
+		<div class="box box1">
+			<h1 class="db">精彩花絮</h1>
+			<div class="swiper-container">
+				<div class="swiper-wrapper"></div>
+				<div class="swiper-pagination swiper-pagination-white"></div>
+				<div class="swiper-button-next swiper-button-white"></div>
+				<div class="swiper-button-prev swiper-button-white"></div>
+			</div>
+		</div>
+		<div class="box box4">
+			<div class="time">
+				<p></p>
+				<i></i>
+			</div>
+			<div class="award none">
+				<span>下轮大奖预告：</span>
+				<div class="scroll">
+					<div class="lists">
+						<p>5块2秒杀节目同款款</p>
+						<p>5块2秒杀节目同款同款</p>
+						<p>5块2秒杀节目同款同款同款</p>
+						<p>5块2秒杀节目同款同款同款同款</p>
+						<p>5块2秒杀节目同款同款同款同款同款</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box box2">
+			<h1 class="db">相爱连线</h1>
+			<p>任选一组喜爱的cp,为他们的幸福牵上红线吧</p>
+			<div class="cp">
+				<a href="vote.html"><img src="images/a2.jpg"></a>
+				<a href="vote.html"><img src="images/a2.jpg"></a>
+				<a href="vote.html"><img src="images/a2.jpg"></a>
+			</div>
+		</div>
+		<div class="box box3">
+			<p>网易严选为我们挑选了贴心小礼物哦~</p>
+			<div class="gift clearfix"></div>
+		</div>
+		<div class="popup rule">
+			<div class="container">
+				<a href="javascript:;" class="btn-rule-close"></a>
+				<p class="title db">大奖预告</p>
+				<div class="wrapper key"></div>
+			</div>
+		</div>
+	</div>
+	<div class="bg bg2 pa"></div>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/app/time.js"></script>
+	<script src="./js/app/main.js"></script>
+
+	<script>
+	</script>
+</body>
+</html>

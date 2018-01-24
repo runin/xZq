@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=640, user-scalable=no">
+	<title>我们相爱吧</title>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script type="text/javascript">$(function () {var DEFAULT_WIDTH = 640,ua = navigator.userAgent.toLowerCase(),deviceWidth = window.screen.width,devicePixelRatio = window.devicePixelRatio || 1,targetDensitydpi;if(ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4){targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');}});</script>
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<p class="num">相爱次数：<label>0</label></p>
+		</div>
+		<div class="time">
+			<p></p>
+			<i></i>
+		</div>
+		<div class="main">
+			<i class="total pa">0</i>
+			<div class="heart pa"><p class="pa"></p></div>
+		</div>
+		<div class="box box5">
+			<h1 class="db">爱要勇敢追：</h1>
+			<p>使用下方严选小道具为喜爱的cp幸福助力，使他们牵手成功~一分钟内点击次数越高，成功几率越大。</p>
+		</div>
+		<a href="javascript:;" class="btn-vote"></a>
+	</div>
+	<div class="bg bg2 pa"></div>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/app/time.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/vote.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>中国味道</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/answer.css" />
+</head>
+<body>
+	<img src="./images/icon-food-load.gif" class="preload">
+	<img src="./images/btn-close.png" class="preload">
+	<header>
+        <section class="countdown">
+            <span class="countdown-tip"></span>
+            <span class="detail-countdown"></span>
+        </section>
+	</header>
+	<section class="tongji-box hide none">
+		<section class="tongji-info-box">
+			<a href="javascript:void(0);" class="btn-tongji-close" id="btn-tongji-close" data-collect="true" data-collect-flag="answer-btn-tongji-close" data-collect-desc="答题页-统计关闭按钮"><img src="./images/btn-close.png"></a>
+			<p class="tongji-tips">看看大家想不想吃这道菜吧~</p>
+			<section class="tongji-canvas"></section>
+			<section class="tongji-result"></section>
+		</section>
+	</section>
+	<section class="container">
+		<section class="info-box">
+			<img src="./images/bg-show-header.png">
+			<section class="answer-box"></section>
+			<img src="./images/bg-show-footer.png">
+		</section>
+		<section class="item-box"></section>
+        <article id="article">
+            <section class="comments" id="comments"></section>
+        </article>
+	</section>
+	<footer>
+        <section class="ctrls">
+            <input id="input-comment" type="text" placeholder="说说你的看法……" />
+            <a href="javascript:void(0);" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="answer-btn-comment" data-collect-desc="答题页-弹幕发射按钮">发射</a>
+        </section>
+        <section class="copyright">页面由CCTV1提供<br>新掌趣科技技术支持&amp;Powered by holdfun.cn</section>
+	</footer>
+	
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/zepto.touch.js"></script>
+	<script src="./js/plugins/zepto.canvas.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+    <script src="./js/plugins/barrage.js"></script>
+	
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/plugins/msg.js"></script>
+	<script src="./js/app/answer.js"></script>
+	
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=51332319" charset="UTF-8"></script>
+</body>
+</html>

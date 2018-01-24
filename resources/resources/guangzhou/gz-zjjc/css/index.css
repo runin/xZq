@@ -1,0 +1,369 @@
+
+body{
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+	text-align: center;
+}
+header{
+	padding: 12px 16px 0;
+	position: relative;
+}
+.header-nav{
+	position: absolute;
+	right: 16px;
+	top: 0px;
+	width: 80px;
+	text-align: center;
+}
+.header-nav .btn{
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	line-height: 26px;
+	border :2px solid #fff;
+	font-size: 14px;
+	color: #fff;
+	margin-top: 6px;
+	
+}
+.bounceIn {
+	-webkit-animation-name: bounceIn;
+	animation-name: bounceIn;
+	-webkit-animation-duration: 1s;
+     animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.tv-logo{
+	padding-right: 46%;
+}
+.title-logo{
+	padding: 0 15%;
+	padding-top: 8px;
+}
+
+.showme{
+	 -webkit-animation-duration: 0.5s;
+     animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: show;
+    animation-name: show;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+@-webkit-keyframes show{
+    0% {
+        -webkit-transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1.4);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+.join-btn{
+	display:inline-block ;
+	width: 70%;
+	margin: 10px auto;
+	position: absolute;
+	bottom: 40px;
+	left: 15%;
+}
+#div_subscribe_area {
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	position: relative;
+	z-index: 9999;
+}
+/*六边形*/
+.box{
+	position: relative;
+	width: 300px; 
+	margin: -16px auto;     
+	backface-visibility: visible;
+	-webkit-transform: rotateY(360deg);
+	transform: rotateZ(360deg);  
+}
+.lineF, .lineS{            
+	position: absolute;            
+	/*visibility: hidden;*/
+}        
+.lineS{            
+	top: 130px;            
+	left: 75px;   
+	 
+}        
+.boxF, .boxS, .boxT, .overlay {            
+	width: 150px;            
+	height: 200px;            
+	overflow: hidden;     
+}    
+.boxF, .boxS{            
+	visibility: hidden;        
+}       
+.boxF {            
+	transform: rotate(120deg);            
+	float: left;            
+	-ms-transform: rotate(120deg);            
+	-moz-transform: rotate(120deg);            
+	-webkit-transform: rotate(120deg);        
+}        
+.boxS{            
+	transform: rotate(-60deg);            
+	-ms-transform: rotate(-60deg);            
+	-moz-transform: rotate(-60deg);            
+	-webkit-transform: rotate(-60deg);        
+}        
+.boxT{            
+	transform: rotate(-60deg);            
+	background: no-repeat 50% center;            
+	background-size: 125% auto;            
+	-ms-transform: rotate(-60deg);            
+	-moz-transform: rotate(-60deg);            
+	-webkit-transform: rotate(-60deg);            
+	visibility: visible; 
+	backface-visibility: visible; 
+	/*background: red; */  
+}                   
+
+.boxT img {            
+	display: block;
+	width: 100%；
+}
+@-webkit-keyframes bounceIn {
+	0%, 100%, 20%, 40%, 60%, 80% {
+		-webkit-animation-timing-function: cubic-bezier(0.215, .61, .355, 1);
+		animation-timing-function: cubic-bezier(0.215, .61, .355, 1)
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3)
+	}
+	20% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1)
+	}
+	40% {
+		-webkit-transform: scale3d(.9, .9, .9);
+		transform: scale3d(.9, .9, .9)
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+		transform: scale3d(1.03, 1.03, 1.03)
+	}
+	80% {
+		-webkit-transform: scale3d(.97, .97, .97);
+		transform: scale3d(.97, .97, .97)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+@keyframes bounceIn {
+	0%, 100%, 20%, 40%, 60%, 80% {
+		-webkit-animation-timing-function: cubic-bezier(0.215, .61, .355, 1);
+		animation-timing-function: cubic-bezier(0.215, .61, .355, 1)
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3)
+	}
+	20% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1)
+	}
+	40% {
+		-webkit-transform: scale3d(.9, .9, .9);
+		transform: scale3d(.9, .9, .9)
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+		transform: scale3d(1.03, 1.03, 1.03)
+	}
+	80% {
+		-webkit-transform: scale3d(.97, .97, .97);
+		transform: scale3d(.97, .97, .97)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+/*@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale3d(0.2, 0.2, 0.2);
+		transform: scale3d(0.2, 0.2, 0.2)
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+		opacity: 1;
+	}
+}
+@keyframes pulse {
+	0% {
+		-webkit-transform: scale3d(0.2, 0.2, 0.2);
+		transform: scale3d(0.2, 0.2, 0.2)
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+		opacity: 1;
+	}
+}*/
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: rotateY(180deg);
+		transform: rotateZ(180deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);;
+	}
+}
+@keyframes pulse {
+	0% {
+		-webkit-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+.pulse {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+	animation-duration:1s;
+	-webkit-animation-duration:1s;
+	animation-delay:1s;
+	-webkit-animation-delay:1s;
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.box{
+		width: 200px;  
+		margin: -10px auto;               
+	}
+	.boxF, .boxS, .boxT, .overlay {            
+		width: 100px;            
+		height: 134px;                 
+	} 
+	.lineS {
+	  top: 86px;
+	  left: 50px;
+	}
+	.title-logo {
+	  padding: 10px 20% 0;
+	}
+	.join-btn {
+	  width: 60%;
+	  left: 20%;
+	  margin: 0;
+	}
+}
+
+
+/*iphone5*/
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.box{
+		width: 240px;   
+		margin: -10px auto;                
+	}
+	.boxF, .boxS, .boxT, .overlay {            
+		width: 120px;            
+		height: 160px;                 
+	} 
+	.lineS {
+	  top: 104px;
+	  left: 60px;
+	}
+
+}
+/* iPhone6 */
+@media screen
+and (min-device-width:375px)
+and (min-device-height:667px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	.box{
+		margin: 0px auto;                
+	}
+	.title-logo {
+	  padding: 0 15%;
+	  padding-top: 26px;
+	}
+	.join-btn {
+	  bottom: 60px;
+	}
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.box{
+		margin: -16px auto;               
+	}
+	.title-logo {
+	  padding: 0 15%;
+	  padding-top: 8px;
+	}
+	.join-btn {
+	  bottom: 40px;
+	}
+}
+/*dai*/
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+	.box{
+		width: 240px;   
+		margin: -10px auto;                
+	}
+	.boxF, .boxS, .boxT, .overlay {            
+		width: 120px;            
+		height: 160px;                 
+	} 
+	.lineS {
+	  top: 104px;
+	  left: 60px;
+	}
+	.join-btn {
+	  width: 64%;
+	  left: 23%;
+	  bottom: 40px;
+	}
+}
+
+@media screen and (min-device-width:320px) and (min-device-height:860px) {
+	
+}
+

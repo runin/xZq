@@ -1,0 +1,371 @@
+body{
+    background-image: url('../images/bg_01.jpg');
+    background-color: #035fbb;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.main,
+.main-a{ 
+    position: absolute; 
+    top: 0; 
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
+}
+.main-a{ 
+    background: url('../images/line.png'), -webkit-gradient(linear, 0 0, 20% 100%, from(rgba(0,159,251,0.4)), to(rgba(13,32,93,0.8)));  
+    
+}
+.home-logo{ 
+    width: 32%;
+    height: 15%; 
+    margin: 5% auto 0;
+    background-image: url('../images/adc_logo.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    text-align: center;
+}
+.main-img{ 
+    height: 35%; 
+    margin: 5% 3% 0;
+    background-image: url('../images/main_img.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    text-align: center;
+    -webkit-animation-name: pcon-ing;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes pcon-ing{
+    0% 
+    {
+        -webkit-transform:scale(1,1);
+    }
+    50% {
+        -webkit-transform:scale(0.9,0.9);
+    }
+    100% {
+        -webkit-transform:scale(1,1);
+    }
+}
+.main-time{ 
+    width: 70%;
+    height: 6%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    text-align: center;
+}
+.main-time.img7{ 
+    background-image: url('../images/downtime_7.png');
+}
+.main-time.img6{ 
+    background-image: url('../images/downtime_6.png');
+}
+.main-time.img5{ 
+    background-image: url('../images/downtime_5.png');
+}
+.main-time.img4{ 
+    background-image: url('../images/downtime_4.png');
+}
+.main-time.img3{ 
+    background-image: url('../images/downtime_3.png');
+}
+.main-time.img2{ 
+    background-image: url('../images/downtime_2.png');
+}
+.main-time.img1{ 
+    background-image: url('../images/downtime_1.png');
+}
+.main-time.img8,
+.main-time.img9{ 
+    width: 100%;
+    height: 8%;
+    background-image: url('../images/liveing.png');
+}
+.main-time.img9{ 
+    background-image: url('../images/xxcy.png');
+}
+.main-btn,
+.record-btn{ 
+    position: relative;
+    height: 9%;
+    margin: 8% auto 0;
+    text-align: center;
+    z-index: 9;
+}
+.main-btn a,
+.record-btn a{
+    display: inline-block; 
+    width: 30%; 
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5%;
+    border-radius: 5px;
+    box-shadow: 0 -4px 0 #db9a00 inset, 0 2px 4px #444;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#fdf681), to(#f5cb08));
+    text-align: center;
+    color: #8f010f;
+}
+.record-btn a{
+    width: 40%; 
+}
+
+.rockets{ 
+    position: absolute;
+    bottom: -15%; 
+    left: 42%;
+    width: 15%;
+    height: 15%;
+    background-image: url('../images/rockets.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    z-index: 1;
+    animation-name:rcmoving;
+    -webkit-animation-name:rcmoving;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1;
+    animation-duration:1.5s;
+    -webkit-animation-duration:1.5s;
+    animation-timing-function:linear;
+    -webkit-animation-timing-function:linear;
+    animation-fill-mode:forwards; 
+    -webkit-animation-fill-mode:forwards;
+}
+@keyframes rcmoving{
+    0%{
+        transform:translateY(-15%);
+        -webkit-transform:translateY(-15%);
+    }
+    35%{
+        transform:translateY(-150%);
+        -webkit-transform:translateY(-150%);
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        transform:translateY(-700%);
+        -webkit-transform:translateY(-700%);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes rcmoving{
+    0%{
+        transform:translateY(-15%);
+        -webkit-transform:translateY(-15%);
+    }
+    35%{
+        transform:translateY(-150%);
+        -webkit-transform:translateY(-150%);
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        transform:translateY(-700%);
+        -webkit-transform:translateY(-700%);
+        opacity: 0;
+    }
+}
+
+/*record*/
+.stars-a,
+.stars-b{ 
+    position: fixed; 
+    top: 5%; 
+    left: 5%;
+    width: 6%;
+    height: 5%;
+    background-image: url('../images/stars_01.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 9;
+}
+.stars-b{ 
+    position: fixed; 
+    top: auto; 
+    left: auto;
+    bottom: 15%;
+    right: 10%;
+    width: 5%;
+    height: 4%;
+    background-image: url('../images/stars_02.png');
+}
+.record-box{
+    height: 60%;
+    margin: 18% 20px 0 30px;
+    padding: 0 0 30px;
+    background-image: url('../images/border_line.png');
+    background-repeat: no-repeat;
+    background-position: 18px 0;
+    background-size: contain;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.record-box li{
+    position: relative;
+    height: 165px;
+}
+.gift_boxes{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px; 
+    height: 38px;
+    border-radius: 100%;
+    border: 2px solid #0091f0;
+    background-color: #fff;
+    background-image: url('../images/gift_boxes.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+.record-box li h2{
+    height: 35px;
+    line-height: 35px;
+    margin: 0 0 0 50px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+}
+.record-box li .record-name{
+    margin: 10px 0 0 50px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+.record-box li .record-name p{
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px #bdbdbd solid;
+    color: #666;
+}
+.record-box li .record-name p:first-child{
+    color: #333;
+}
+.record-box li .record-name p:last-child{
+    border-bottom:none;
+}
+@media screen and (min-device-width :320px) and (max-device-height :600px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+  .record-box{
+    height: 55%;
+    margin: 18% 20px 0 30px;
+    background-position: 14px 0;
+  }
+  .gift_boxes{ 
+    width: 30px; 
+    height: 30px;
+  }
+  .record-box li h2{
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 0 40px;
+    font-size: 16px;
+  }
+  .record-box li .record-name{
+    margin: 10px 0 0 40px;
+    padding: 5px 10px;
+  }
+  .record-box li .record-name p{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+}
+/*rule*/
+.rule-box:before{
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 5;
+}
+.rule{ 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px; 
+    height: 440px;
+    margin: -220px 0 0 -150px;
+    background-image: url('../images/rule_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 9;
+    -webkit-animation-name: pcon-ing;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+}
+.rule-con{
+    height: 245px;
+    margin: 155px 40px 0 30px;
+    font-size: 14px;
+    color: #a40001; 
+}
+.rule-title{
+    height:22px;
+    text-align: center;
+    background-image: url('../images/lz_rule.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.rule-text{
+    height:200px;
+    margin: 15px 0 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.rule-img{ 
+    height: 100%;
+    background-image: url('../images/yaotype.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.close{ 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url('../images/close.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+@media screen and (min-device-width :320px) and (max-device-height :600px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio:2) {
+  .rule{ 
+    top: 50%;
+    left: 50%;
+    width: 260px; 
+    height: 386px;
+    margin: -193px 0 0 -130px;
+  }  
+  .rule-con{
+    height: 215px;
+    margin: 135px 38px 0 25px;
+  }
+  .rule-title{
+    height:18px;
+  }
+  .rule-text{
+    height:180px;
+    margin: 15px 0 0;
+  }
+}
+
+
+

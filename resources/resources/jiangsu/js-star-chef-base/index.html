@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/everyWeek.css" />
+</head>
+<body>
+<header>
+    <img class="tlt" src="images/everyWeek-tlt.png" />
+    <img class="hdgz" id="hdgz" src="images/rule-btn.jpg" />
+    <div class="synopsis" id="synopsis"></div>
+    <section class="swiper-control">
+        <section class="swiper-container">
+            <section class="swiper-wrapper"></section>
+        </section>
+    </section>
+</header>
+
+<section class="friend">
+    <div class="scroll">
+        <section class="main">
+            <section class="friend-content none"></section>
+        </section>
+    </div>
+    <section class="showImg none">
+        <div class="load-bg none"><span></span></div>
+    </section>
+    <div class="ctrls none">
+        <p>
+            <input id="input-comment" type="text" placeholder="说说你的看法吧~" />
+            <a href="#" class="btn-comment" id="btn-send" data-collect="true" data-collect-flag="everyWeek-comment-send-btn" data-collect-desc="朋友圈页-发表评论按钮">发送</a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    <img class="user" id="user" src="images/user.png" />
+    <section class="btn-con">
+        <div>
+            <a href="#" class="btn-rank" id="btn-rank" data-collect="true" data-collect-flag="everyWeek-btn-rank" data-collect-desc="排行榜按钮"><img src="images/rank.png" /></a>
+        </div>
+        <div>
+            <a href="#" class="btn-pre" id="btn-pre" data-collect="true" data-collect-flag="everyWeek-btn-rank" data-collect-desc="往期挑战按钮"><img src="images/pre.png" /></a>
+        </div>
+    </section>
+    <div class="copyright"></div>
+</footer>
+
+<!--摇奖提示-S-->
+<section id="time-tips" class="time-tips mask none">
+    <div class="con">
+        <h1>摇奖时间到啦！</h1>
+        <a href="#" class="go-lottery" id="go-lottery" data-collect="true" data-collect-flag="everyWeek-btn-lottery" data-collect-desc="去摇奖按钮">去摇奖</a>
+        <a href="#" class="close-tip" id="close-tip" data-collect="true" data-collect-flag="everyWeek-btn-tip" data-collect-desc="留在此页按钮">留在此页</a>
+    </div>
+</section>
+<!--摇奖提示-E-->
+
+<!--活动规则-S-->
+<section id="rule-tips" class="rule-tips mask none">
+    <div class="con">
+        <a href="#" class="close-rule" id="close-rule" data-collect="true" data-collect-flag="everyWeek-close-rule" data-collect-desc="关闭活动规则按钮"></a>
+        <h1>活动规则</h1>
+        <div class="rule-con">
+            <div class="fill" id="fill"></div>
+        </div>
+    </div>
+</section>
+<!--活动规则-E-->
+
+<section class="not-vs none" id="not-vs">还没有人发起挑战呢<br/>赶快抢沙发~~~</section>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/scrollTo.js"></script>
+<script src="./js/plugins/swiper.min.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/xss.min.js"></script>
+
+<script src="./js/app/everyWeek.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

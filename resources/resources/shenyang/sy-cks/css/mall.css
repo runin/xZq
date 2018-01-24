@@ -1,0 +1,146 @@
+body {
+	background-color: #EEEEEE;
+}
+.main {
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+h1 {
+    height: 40px;
+	
+    line-height: 40px;
+    background: #EDEDED;
+    font-size: 15px;
+    padding: 0 10px;
+}
+.btn-loadmore {
+    background: #F3F3F3;
+	
+    color: #bbb;
+}
+.btn-loadmore:hover {
+    background: #eee;
+	
+}
+.tips {
+    background: #EDEDED;
+	
+    color: #5f5f5f;
+    line-height: 28px;
+    padding: 8px 10px;
+    font-size: 12px;
+}
+.tips h2 {
+	
+}
+.tips p {
+    line-height: 24px;
+	
+    text-indent: 2em;
+}
+.list {
+    font-size: 15px;
+	
+}
+.list li {
+    overflow: hidden;
+}
+
+.list li a {
+	display: block;
+	text-decoration: none;
+	padding: 12px;
+	min-height: 90px;
+}
+.list li a:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icons.png) no-repeat -208px 9px;
+	background-size: 218px auto;
+	width: 12px;
+	height: 23px;
+	float: right;
+	margin-top: 30px;
+}
+.list li a:hover {
+	background: #F2F1F1;
+}
+.list .left {
+    width: 125px;
+	
+    height: 90px;
+    border: 1px solid #EDEDED;
+    text-align: center;
+}
+.list .right {
+	
+    min-height: 78px;
+    float: left;
+    padding-top: 12px;
+    max-width: 145px;
+}
+.list .right h2 {
+    color: #5f5f5f;
+	
+    margin-bottom: 5px;
+}
+/* .list .right h2:before {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 16px;
+	background: url(http://yao.holdfun.cn/portal/resources/news/images/icons.png) no-repeat -70px -54px;
+	background-size: 218px auto;
+	float: left;
+	margin-right: 7px;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+ */
+.list img {
+    max-width: 125px;
+	
+    max-height: 90px;
+    margin-right: 10px;
+    float: left;
+}
+
+.list p {
+	color: #F26C0D;
+	text-decoration: none;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.list .price {
+	font-size: 12px;
+	color: #5f5f5f;
+	text-decoration: line-through;
+	margin-left: 10px;
+}
+.list .btn-exchange {
+    background: #1eb5c2;
+	
+    color: #fff;
+    text-decoration: none;
+    width: 95px;
+    height: 26px;
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+.list .btn-exchange:hover {
+	background: #1198a4;
+}
+.gift-tip {
+	font-size: 16px;
+	color: #F26C0D;
+	margin-left: 12px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+.btn-back {
+	margin: 20px auto 40px;
+}

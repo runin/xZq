@@ -1,0 +1,241 @@
+.dialog {
+  position: absolute;
+  color: #D6305A;
+  border-radius: 6px;
+  z-index: 1000;
+  overflow: hidden;
+  background: #F23968;
+}
+.modal .btn-close {
+    position: absolute;
+    background: url(../images/icon-close.png) no-repeat 3px 3px;
+    background-size: 22px auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    z-index: 10000;
+}
+.modal:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.75);
+	z-index: 100;
+}
+.modal .btn-close {
+  display: none;
+}
+.fudai {
+  position: absolute;
+  width: 285px!important;
+  height: 404px!important;
+  background: url(../images/click-lottery.jpg) no-repeat;
+  background-size: 285px auto;
+  z-index: 1000;
+  border-radius: 7px;
+}
+/*.fudai {
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  top: 15%;
+  left: 10%;
+  background: url(../images/redbg.png) no-repeat;
+  background-size: 100% 100%;
+  z-index: 1000;
+}*/
+.fudai i {
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  background-color: #ff9600;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.6);
+  border-radius: 100%;
+  left: -webkit-calc((100% - 90px) / 2);
+  left: calc((100% - 90px) / 2);
+  bottom: 13%;
+}
+.fudai p {
+  margin: 30% auto 0;
+  text-align: center;
+  font-size: 18px;
+  color: #fcff00;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+.lottery-dialog {
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  top: 15%;
+  left: 10%;
+  background: url(../images/redbg.png) no-repeat;
+  background-size: 100% 100%;
+  z-index: 1000;
+}
+.lottery-dialog .award-none {
+    margin: 4% 5% !important;
+  text-align: center;
+}
+.lottery-dialog .award-none .btn-close {
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+.lottery-dialog .award-none img {
+  max-width: 50%;
+}
+.lottery-dialog .award-none h5 {
+      color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 20% 0 8%;
+}
+.lottery-none .award-win {
+  display: none;
+}
+.lottery-none .award-none {
+    display: block !important;
+}
+.lottery-dialog h2 {
+  text-align: center;
+  color: #FFF;
+  padding: 8% 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+.lottery-dialog h3 {
+color: #FFF;
+  text-align: center;
+  padding-top: 13%;
+  font-size: 15px;
+  line-height: 17px;
+}
+.lottery-dialog .award-img {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+.lottery-dialog .award-img img {
+    max-width: 76%;
+}
+.lottery-dialog h4 {
+    color: #FFF;
+    font-size: 12px;
+}
+.lottery-dialog .contact {
+  width: 84%;
+  margin: 3px auto 0;
+}
+.lottery-dialog .awardwin-tips {
+  width: 90%;
+  margin: 10% auto 3%;
+  text-align: center;
+  color: #f6ff00;
+  font-size: 16px;
+  line-height: 20px;
+}
+.lottery-dialog h4.award-tip {
+}
+.lottery-dialog h4.awarded-tip {
+    display: none;
+}
+.lottery-awarded h4 {
+}
+.lottery-awarded h4.award-tip {
+    display: none;
+}
+.lottery-awarded h4.awarded-tip {
+    display: block;
+}
+.lottery-dialog .award-win .btn-close {
+  display: none;
+}
+.lottery-dialog .award-win .btn-award {
+  display: block;
+}
+.lottery-awarded .award-win .btn-close {
+  display: block;
+}
+.lottery-awarded .award-win .btn-award {
+  display: none;
+}
+#lottery-dialog p {
+  margin-top: 6px;
+  color: #FFF;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 6px auto;
+}
+.lottery-awarded .q-mobile {
+  font-size: 17px !important;
+}
+#lottery-dialog input {
+  background: #d53d26;
+  border: 0 none;
+  border-radius: 4px;
+  height: 36px;
+  padding: 2px 6px;
+  width: 100%;
+  outline: 0 none;
+  color: #FFFFFF;
+  line-height: 32px;
+  font-size: 17px;
+}
+.lottery-dialog .btn {
+background: #fd8107;
+  position: absolute;
+  width: 60%;
+  bottom: 7% !important;
+  left: 20% !important;
+  top: auto !important;
+  right: auto !important;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,.2);
+}
+.lottery-dialog .btn-award {
+    display: block;
+    color: #FFF;
+}
+.lottery-awarded .btn-award {
+    display: none;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .lottery-dialog .award-none h5 {
+    margin: 14% 0 6%;
+  }
+  .lottery-dialog .award-none img {
+    max-width: 40%;
+  }
+  .lottery-dialog .awardwin-tips {
+    margin: 4% auto 1%;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .lottery-dialog .award-img img {
+    max-width: 64%;
+  }
+}
+/* Other */
+@media screen
+and (min-device-height : 580px)
+and (-webkit-min-device-pixel-ratio: 2) {
+}

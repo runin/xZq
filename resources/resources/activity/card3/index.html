@@ -1,0 +1,411 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src='files/kawa.js'></script>
+    <script type="text/javascript">
+        initViewport();
+        function initViewport()
+        {
+            if(/Android (\d+\.\d+)/.test(navigator.userAgent))
+            {
+                var version = parseFloat(RegExp.$1);
+
+                if(version>2.3)
+                {
+                    var phoneScale = parseInt(window.screen.width)/500;
+                    document.write('<meta name="viewport" content="width=500, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+
+                }
+                else
+                {
+                    document.write('<meta name="viewport" content="width=500, target-densitydpi=device-dpi">');
+                }
+            }
+            else if(navigator.userAgent.indexOf('iPhone') != -1)
+            {
+                var phoneScale = parseInt(window.screen.width)/500;
+                document.write('<meta name="viewport" content="width=500, height=750,initial-scale=' + phoneScale +', user-scalable=no" /> ');         //0.75   0.82
+            }
+            else
+            {
+                document.write('<meta name="viewport" content="width=500, height=750,initial-scale=0.64" /> ');         //0.75   0.82
+
+            }
+            document.write('<style>@-webkit-keyframes rotatemusic {from {-webkit-transform: rotate(0deg);}to { -webkit-transform: rotate(360deg);}}::-webkit-input-placeholder {color: #000;}</style>');
+
+            if(navigator.userAgent.match(/iPad/i)=="ipad" || navigator.userAgent.match(/iPhone/i)=="iPhone")
+            {
+                document.ontouchmove = function(e)
+                {
+                    e.preventDefault();
+                }
+            }
+        }
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>心累</title>
+
+    <style type="text/css">
+        <!--
+        body {
+            -webkit-touch-callout: none;
+            -webkit-text-size-adjust: none;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        div#content1 {
+            position: relative;
+            border: 1px solid #000;
+            width: 500px;
+            height: 815px;
+            margin: 0 auto;
+            top: 0px;
+            overflow: hidden;
+            clear: both;
+        }
+
+        div#bg {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        div#taiyang {
+            position: absolute;
+            left: 172px;
+            top: 616px;
+            -webkit-transform-origin: center center;
+            -webkit-animation: fadeIn 0.5s 0.0s infinite linear alternate both;
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0.3;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        div#niao1 {
+            position: absolute;
+            left: 100px;
+            top: 276px;
+            -webkit-animation: fly2 15s 0s infinite linear alternate both;
+        }
+
+        @-webkit-keyframes fly2 {
+            0% {
+                opacity: 1;
+                -webkit-transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotatez(0deg) scale(0.8, 0.8);
+                opacity: 1
+            }
+            30% {
+                opacity: 0;
+                -webkit-transform: translate(180px, -100px) rotateX(40deg) rotateY(10deg) rotatez(5deg) scale(0.4, 0.4);
+                opacity: 1
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: translate(220px, -200px) rotateX(5deg) rotateY(30deg) rotatez(-10deg) scale(0.6, 0.6);
+                opacity: 0.8
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: translate(300px, -300px) rotateX(-10deg) rotateY(-5deg) rotatez(10deg) scale(0.8, 0.8);
+                opacity: 0.2
+            }
+        }
+
+        div#niao2 {
+            position: absolute;
+            left: 0px;
+            top: 376px;
+            -webkit-animation: fly3 10s 3.0s infinite linear alternate both;
+        }
+
+        @-webkit-keyframes fly3 {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotatez(0deg) scale(0.4, 0.4);
+                opacity: 1
+            }
+            30% {
+                opacity: 1;
+                -webkit-transform: translate(130px, -100px) rotateX(-40deg) rotateY(10deg) rotatez(5deg) scale(0.6, 0.6);
+                opacity: 1
+            }
+            60% {
+                opacity: 0;
+                -webkit-transform: translate(240px, -350px) rotateX(5deg) rotateY(-30deg) rotatez(-10deg) scale(0.4, 0.4);
+                opacity: 0.8
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(360px, -150px) rotateX(-10deg) rotateY(-5deg) rotatez(40deg) scale(0.2, 0.2);
+                opacity: 0.2
+            }
+        }
+
+        @-webkit-keyframes fly4 {
+            0% {
+                -webkit-transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotatez(0deg) scale(1, 1);
+                opacity: 1
+            }
+            20% {
+                -webkit-transform: translate(150px, -100px) rotateX(20deg) rotateY(-10deg) rotatez(-5deg) scale(1.2, 1.2);
+                opacity: 1
+            }
+            40% {
+                -webkit-transform: translate(-150px, 100px) rotateX(-5deg) rotateY(20deg) rotatez(10deg) scale(1.3, 1.3);
+                opacity: 0.8
+            }
+            60% {
+                -webkit-transform: translate(130px, 300px) rotateX(5deg) rotateY(-30deg) rotatez(10deg) scale(1.3, 1.3);
+                opacity: 1
+            }
+            80% {
+                -webkit-transform: translate(-130px, 300px) rotateX(20deg) rotateY(5deg) rotatez(-10deg) scale(1.3, 1.3);
+                opacity: 0.8
+            }
+            100% {
+                -webkit-transform: translate(60px, -300px) rotateX(-10deg) rotateY(10deg) rotatez(20deg) scale(1.5, 1.5);
+                opacity: 0.2
+            }
+        }
+
+        @-webkit-keyframes fly5 {
+            0% {
+                -webkit-transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotatez(0deg) scale(1.5, 1.5);
+                opacity: 1
+            }
+            30% {
+                -webkit-transform: translate(100px, -100px) rotateX(-40deg) rotateY(10deg) rotatez(5deg) scale(1.8, 1.8);
+                opacity: 1
+            }
+            60% {
+                -webkit-transform: translate(200px, -250px) rotateX(5deg) rotateY(-30deg) rotatez(-10deg) scale(2.3, 2.3);
+                opacity: 0.8
+            }
+            100% {
+                -webkit-transform: translate(180px, -350px) rotateX(-10deg) rotateY(-5deg) rotatez(40deg) scale(2.5, 2.5);
+                opacity: 0.2
+            }
+        }
+
+        div#foot {
+            position: fixed;
+            width: 500px;
+            left: 330px;
+            bottom: 20px;
+            z-index: 6000;
+        }
+
+        -->
+    </style>
+    <style type="text/css">
+        .none{
+            display: none!important;
+        }
+        .share-content{
+            position: absolute;
+            top:0;
+            left: 0;
+            background: rgba(0,0,0,.6);
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+        }
+        .share-content img{
+            position: absolute;
+            top: 0;
+            right: 30px;
+        }
+        .share-btn{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.247059);
+            text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 1px;
+            box-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 3px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            animation-iteration-count: infinite;
+            animation-name: bluePulse;
+            animation-duration: 3s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-name: bluePulse;
+            -webkit-animation-duration: 3s;
+            padding: 8px 19px 9px;
+            background-color: rgb(45, 174, 191);
+            text-align: center;
+            line-height: 30px;
+            font-size: 22px;
+            position: fixed;
+            bottom: 20px;
+            left: 135px;
+            width: 200px;
+            height: 30px;
+            z-index: 10000;
+            color: rgb(255, 255, 255) !important;
+        }
+        @-webkit-keyframes bluePulse{
+            from { background-color: #007d9a; -webkit-box-shadow: 0 0 9px #333; }50% {  background-color: #2daebf; -webkit-box-shadow: 0 0 18px #2daebf; }to { background-color: #007d9a; -webkit-box-shadow: 0 0 9px #333;}
+        }
+    </style>
+
+</head>
+<body onLoad="kawa_init();">
+<script>
+    words = '人有时候感到很累，累的身心疲惫，累的心力交瘁。不想和任何人说话，连生气和计较的力气都没有了，只想一个人静静的发呆，因为，有太多的无奈，无法释怀~';
+
+    kawa_data = {
+        words: words,
+        replace_words: '#replace_words#',
+        text_box: '50 50 400 263', // 左 上 宽 高，空格分隔，只写数字，单位强制为px
+        mode: 'up',     // up, left
+        speed: 40,     // 每秒移动的像素
+        text_color: '#C2DAD9', // rgb(1,2,3) 'black'
+        font_size: '20pt',
+        line_height: '40pt',
+        text_align: 'left',
+        font_weight: 'bold',
+        music: 'files/shijianzhuyu.mp3',     // url
+        replace_music: '#replace_music#',
+        music_name: '',
+        replace_music_name: '#replace_music_name#',
+        icon: 'http://tu.kagirl.net/pic/2112/x2112.jpg',
+        title: '送给你',
+        desc: words,
+        modify: 'no',
+        replace_modify: 'yes',
+        cardid: '2112',
+        share_url: '#share_url#',  // 当分享的是微信页面时才需要改这里
+        font_ip: '115.28.135.41:8000',
+        modify_optfile: 'xinqing',
+        modify_optwords: '#modify_optwords#',
+        show_words: 'yes',
+        write_param_1: 'inputtype=singleline&showsel=no&prompt=' + encodeURIComponent('输入对方的名字：'),
+        channel: 'zuixinyu'
+    };
+</script>
+
+<div id="content1">
+
+    <div id="bg">
+        <img src="files/2112_1.jpg"/>
+    </div>
+    <div id="taiyang">
+        <img src="files/2112_2.jpg"/>
+    </div>
+    <div id="niao1">
+        <img src="files/2112_niao.gif"/>
+    </div>
+    <div id="niao2">
+        <img src="files/2112_niao.gif"/>
+    </div>
+</div>
+
+<a class="share-btn" id="share-btn">
+    分享贺卡 祝福接力
+</a>
+<div class="share-content none" id="share-content">
+    <img id="share" src="files/share.png">
+</div>
+</body>
+
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../zepto.min.js"></script>
+<script type="text/javascript">
+    var btn = objid("share-btn");
+    var content = objid("share-content");
+    var share = objid("share");
+    btn.onclick = function () {
+        location.href = 'http://mp.weixin.qq.com/s?__biz=MzI4MjM1OTM0Mw==&mid=100000222&idx=1&sn=625dda844c7b01763b76773185265895&chksm=6b9a629e5cedeb88f5b7050331a1fc6fa672935b760c47a4ecd89fca4479ea1bc24c2e59a77d&mpshare=1&scene=1&srcid=09298AIhldJIybTk6xSeeqOg#wechat_redirect';
+    };
+    content.onclick = function () {
+        content.className = "share-content none";
+    };
+    share.onclick = function (e) {
+        e.stopPropagation();
+    };
+    var wxConfig = function(){
+        //后台获取jsapi_ticket并wx.config
+        $.ajax({
+            type: "GET",
+            url: "http://tttj.holdfun.cn/mpAccount/mobile/wx/apiTicket/wxb4196cbe04d66ab6/jsapi",
+            data: {},
+            async: true,
+            dataType: "jsonp",
+            jsonpCallback: "ApiTicketCallBackHandler",
+            timeout: 15000,
+            complete: function() {
+            },
+            success : function(data) {
+                if (!data.result) {
+                    return;
+                }
+                var url = window.location.href.split('#')[0];
+                var nonceStr = 'df51d5cc9bc24d5e86d4ff92a9507361';
+                var timestamp = Math.round(new Date().getTime()/1000);
+                var signature = hex_sha1('jsapi_ticket=' + data.apiTicket + '&noncestr=' + nonceStr + '&timestamp=' + timestamp + '&url=' + url);
+                //权限校验
+                wx.config({
+                    debug: false,
+                    appId: 'wxb4196cbe04d66ab6',
+                    timestamp: timestamp,
+                    nonceStr:nonceStr,
+                    signature:signature,
+                    jsApiList: [
+                        'onMenuShareTimeline',
+                        'onMenuShareAppMessage',
+                        'hideAllNonBaseMenuItem',
+                        'onMenuShareQQ',
+                        'onMenuShareWeibo'
+                    ]
+                });
+
+            },
+            error : function(xmlHttpRequest, error) {
+            }
+        });
+    };
+
+    var configShare = function () {
+        wx.onMenuShareAppMessage({
+            title: '送给你', // 分享标题
+            desc: '送上我的祝福，祝你平安快乐', // 分享描述
+            link: location.href, // 分享链接
+            imgUrl: 'http://cdn.holdfun.cn/tttj/mpAccount/resources/images/2016/09/30/e0386ccc0af64e2e93b5829ade486434.png', // 分享图标
+            type: '', // 分享类型,music、video或link，不填默认为link
+            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+            success: function () {
+                // 用户确认分享后执行的回调函数
+                location.href = 'http://mp.weixin.qq.com/s?__biz=MzI4MjM1OTM0Mw==&mid=100000222&idx=1&sn=625dda844c7b01763b76773185265895&chksm=6b9a629e5cedeb88f5b7050331a1fc6fa672935b760c47a4ecd89fca4479ea1bc24c2e59a77d&mpshare=1&scene=1&srcid=09298AIhldJIybTk6xSeeqOg#rd';
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+        wx.onMenuShareTimeline({
+            title: '送给你', // 分享标题
+            link: location.href, // 分享链接
+            imgUrl: 'http://cdn.holdfun.cn/tttj/mpAccount/resources/images/2016/09/30/e0386ccc0af64e2e93b5829ade486434.png', // 分享图标
+            success: function () {
+                // 用户确认分享后执行的回调函数
+                location.href = 'http://mp.weixin.qq.com/s?__biz=MzI4MjM1OTM0Mw==&mid=100000222&idx=1&sn=625dda844c7b01763b76773185265895&chksm=6b9a629e5cedeb88f5b7050331a1fc6fa672935b760c47a4ecd89fca4479ea1bc24c2e59a77d&mpshare=1&scene=1&srcid=09298AIhldJIybTk6xSeeqOg#rd';
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+    };
+    wx.ready(function(){
+        configShare();
+    });
+    wxConfig();
+</script>
+</html>  

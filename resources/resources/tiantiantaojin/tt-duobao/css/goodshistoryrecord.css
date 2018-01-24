@@ -1,0 +1,91 @@
+body {
+    height: 100%;
+    color: #666;
+    background-color: #f8f8f8;
+}
+.histroy-record-content
+{
+	padding:0px 10px;
+}
+.histroy-record-content >ul>li
+{
+	margin-bottom:5px;
+	border:1px solid #e8e8e8;
+}
+
+.record-title 
+{
+	text-align:justify;
+	background: #e9e9e9;
+	padding: 5px 10px;
+}
+.ico-noopen
+{
+    position: absolute;
+    background-position: -162px -240px;
+    top:2px;
+    left:0px;
+    width: 40px;
+    height: 40px;
+}
+/*头部标题*/
+.record-title 
+{
+	text-align:justify;
+	background: #e9e9e9;
+	padding: 5px 10px;
+}
+
+/*里面内容*/
+.li-record
+{
+    position: relative;
+	background: #fff;
+	padding: 5px 10px;
+}
+
+/*中奖者头像*/
+.li-record .avatar img
+{
+    float: left;
+    overflow: hidden;
+
+    border-radius:5px;
+}
+/*中奖者信息*/
+.li-record .winner-infor
+{
+    font-size: 12px;
+
+    margin-left: 50px;
+}
+.winner-infor p
+{
+	 line-height: 22px;
+}
+
+/*加载提示*/
+.loading-space
+{
+    height: 80px;
+    position: relative;
+    /*background-color: #999999;*/
+     line-height: 40px; 
+    text-align: center;
+    width: 100%;
+    color: #999999;
+}
+/*加载showLodaing*/
+.lodd{
+    position:static;
+    margin-bottom: 60px;
+}
+.spinner.lodd .spinner-wrapper {
+    width: 25px;
+    height: 25px;
+}
+.lodd .container1 > div,.lodd .container2 > div,.lodd .container3 > div {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+}

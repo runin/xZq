@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>幸福剧场</title>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <style type="text/css">
+        body {
+            background: #f0f0f0;
+            text-align: center;
+            padding: 46% 0 60px;
+        }
+        h1 {
+            font-size: 14px;
+            margin: 0 auto 40px;
+            color: #222;
+        }
+        p {
+            position: relative;
+            width: 78%;
+            margin: 0 auto 20px;
+            font-size: 14px;
+        }
+        p:before {
+            position: absolute;
+            content: '姓名';
+            height: 40px;
+            line-height: 40px;
+            top: 0;
+            left: 0;
+            padding-left: 8px;
+            width: 46px;
+        }
+        input {
+            display: block;
+            outline: 0;
+            border: 0 none;
+            width: 100%;
+            padding: 0 8px 0 50px;
+            height: 40px;
+            line-height: 38px;
+            border: 1px solid #CCC;
+            color: #666;
+            border-radius: 3px;
+        }
+        input:focus {
+            border: 1px solid #0DA7D8;
+        }
+        a {
+            display: inline-block;
+            width: 78%;
+            height: 40px;
+            line-height: 40px;
+            background: #0DA7D8;
+            border-radius: 4px;
+        }
+        .showTips {
+            position: absolute !important !important;
+            width: 100% !important;
+            height: 100% !important;
+            top: 0 !important;
+            left: 0 !important;
+            background: rgba(255,255,255,.95) !important;
+            color: #333 !important;
+            padding: 50% 18px 0 !important;
+            max-width: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>请填写真实的姓名，以便生成核销账号</h1>
+    <p><input type="text" name="realName" class="realName" placeholder="您的真实姓名"></p>
+    <a href="javascript:void(0);" id="collect">领取核销权限</a>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="./js/app/collect.js"></script>
+</body>
+</html>

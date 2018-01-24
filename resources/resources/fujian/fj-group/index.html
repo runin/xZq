@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>帮帮团</title>
+	
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css"/>
+	<link rel="stylesheet" href="./css/index.css" />
+
+</head>
+<body>
+	
+	<div class="main" id="main">
+        <section id="index" class="none">
+
+            <img id="logo" class="logo" src="images/home-logo.png" />
+            <!--首页-->
+            <div class="btn-group"> 
+	            <a id="activity" class="btn go box-gradient" data-collect="true"
+	               data-collect-flag="fj-group-go-btn"
+	               data-collect-desc="进入互动" >进入互动</a>
+	             <a id="lottery" class="btn go box-gradient" data-collect="true"
+               data-collect-flag="fj-group-lottery-btn"
+               data-collect-desc="开始抽奖" >开始抽奖</a> 
+               <div id="lottery-time" class="not-started">
+	             <span class="count-des"></span>
+	             <span id="detail-countdown" class="detail-countdown"></span>
+              </div>
+			</div>
+			  
+            <label class="rule btn-rule" data-collect="true"
+                   data-collect-flag="fj-group-rule-btn"
+                   data-collect-desc="活动规则按钮" >活动规则</label>
+
+            <p class="copyright">页面由福建综合频道提供Powered by holdfun.cn </p>
+        </section>
+
+        <section id="from" class="from none">
+        	
+            	<img class="from-logo" src="images/t-home-logo.png" />
+            	
+            <ul> 
+                <li><i>1. 每晚18:00 锁定福建电视台综合频道《帮帮团》</i></li>
+                <li><i>2. 打开微信，进入摇一摇 (选歌曲)</i></li>
+                <li><i>3.对着电视摇一摇</i></li>
+                <li><i>4.参与互动就有机会赢取超值礼品</i></li>
+            </ul>
+            <a id="try" class="btn try" data-collect="true"
+               data-collect-flag="fj-group-go-try"
+               data-collect-desc="进入互动" >马上去试试</a>
+               <p id="share-copyright" class="copyright">页面由福建综合频道提供 Powered by holdfun.cn</p>
+        </section>
+
+	</div>
+	
+	<script language="javascript" type="text/javascript">
+        document.write("<script src=\"http://yaotv-test.oss-cn-shenzhen.aliyuncs.com/resources/services/fj_group/activity.js?"+new Date().getTime()+"\"><\/script>");
+    </script>
+    <!-- <script src="./data/prizeact.js"></script>
+    <script src="./data/prize.js"></script> -->
+	
+	<script src="js/config.js"></script>
+<!-- 打素材时如下代码请删掉 -->
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+<!-- 压缩后的plugins.min.js -->
+<!-- <script src="./js/plugins/plugins.min.js"></script> -->
+	
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	
+<!-- 打素材时如下代码请删掉 -->
+	<script src="./js/app/dialog.js"></script>
+	<script src="js/app/lottery.js"></script>
+	<script src="./js/app/index.js"></script>
+<!-- 压缩后的index.min.js -->
+<!-- 	<script src="./js/app/index.min.js"></script> -->
+	
+</body>
+</html>

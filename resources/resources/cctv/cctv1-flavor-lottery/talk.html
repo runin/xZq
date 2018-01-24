@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>中国味道</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/talk.css" />
+</head>
+<body>
+    <header>
+        <section class="countdown none">
+            <span class="countdown-tip"></span>
+            <span class="detail-countdown"></span>
+        </section>
+    </header>
+    <section class="container">
+        <article id="article">
+            <section class="comments" id="comments"></section>
+        </article>
+    </section>
+    <section class="tttj none" id="tttj" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+        <img class="waggle" src="./images/icon-redbag.png">
+        <p>更多红包点击这里</p>
+    </section>
+    <footer>
+        <section class="ctrls">
+            <input id="input-comment" type="text" placeholder="说说你的看法……" />
+            <a href="javascript:void(0);" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="vote-btn-comment" data-collect-desc="投票页-弹幕发射按钮">发射</a>
+        </section>
+        <section class="copyright">页面由CCTV1提供<br>新掌趣科技技术支持&amp;Powered by holdfun.cn</section>
+    </footer>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/zepto.fx.min.js"></script>
+    <script src="./js/plugins/zepto.touch.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/common.js"></script>
+    <script src="./js/plugins/barrage.js"></script>
+
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/plugins/msg.js"></script>
+    <script src="./js/app/talk.js"></script>
+    <img src="./images/bg-thanks.png" class="preload">
+    <img src="./images/btn-thanks-close.png" class="preload">
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=51332319" charset="UTF-8"></script>
+</body>
+</html>

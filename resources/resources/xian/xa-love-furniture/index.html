@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<title>爱尚家居</title>
+
+	<link rel="stylesheet" href="./css/normalize.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/parallax.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+<div id="loading">
+</div>
+<section class="copyright"></section>
+
+<section class="wrapper none" id="wrapper">
+	<div class="wrapper-front" id="wrapper-front">
+		<img class="logo" src="images/logo.png" />
+        <div class="start"></div>
+		<a class="test is-openid" id="test" data-collect="true"
+		   data-collect-flag="xa-love-furniture-text-btn"
+		   data-collect-desc=开始测试"></a>
+		<a class="rule is-openid none" id="rule" data-collect="true"
+		   data-collect-flag="xa-love-furniture-rule-btn"
+		   data-collect-desc=活动规则"></a>
+	</div>
+
+	<div class="wrapper wrapper-back none" id="wrapper-back">
+		<div class="pages" id="pages">
+			<!-- 封面 -->
+			<div class="page cover" id="cover">
+				<div class="content">
+					<div class="content-container" id="question"></div>
+					<span class="parallax-first none" id="parallax-first"></span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section id="from" class="from none">
+	<div class="ui-logo"><img src="images/gift.png"></div>
+	<div class="bg-con">
+		<img class="bg-center" src="images/from-center.png">
+		<img class="bg-bottom" src="images/bottom.png">
+		<section class="copyright"></section>
+	</div>
+</section>
+
+<section class="rule-con none">
+	<a id="close" class="close" data-collect="true"
+	   data-collect-flag="xa-love-furniture-go-close"
+	   data-collect-desc="关闭按钮" ></a>
+	<img src="images/rule-top.png" />
+	<div>
+		<section class="rule-section"></section>
+		<a id="know" class="btn-red know" data-collect="true"
+		   data-collect-flag="xa-love-furniture-go-enter"
+		   data-collect-desc="我知道了" >我知道了</a>
+	</div>
+	</div>
+</section>
+
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+
+	<script src="js/app/index.js"></script>
+</body>
+</html>

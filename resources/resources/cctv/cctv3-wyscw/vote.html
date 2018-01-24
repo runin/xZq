@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>我要上春晚</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/vote.css" />
+</head>
+<body>
+	<img src="./images/icon-player-load.png" class="preload">
+	<img src="./images/icon-monkey.png" class="preload">
+    <audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+	<section class="container">
+		<section class="main-vote">
+		    <section class="header">
+				<a href="javascript:void(0);" class="btn-reserve none" id="btn-reserve" data-collect="true" data-collect-flag="vote-go2reserve" data-collect-desc="预约按钮"><img src="./images/btn-reserve.png"></a>
+				<a href="javascript:void(0);" class="btn-go2lottery" id="btn-go2lottery" data-collect="true" data-collect-flag="vote-go2lottery" data-collect-desc="进入摇奖礼盒"><img src="./images/icon-bottle.png"></a>
+				<section class="lotteryCountdown none">
+					<span class="lottery-tip"><label></label></span>
+					<span class="lottery-countdown"></span>
+					<span class="shake-tip">就能摇奖喽～</span>
+				</section>
+			</section>
+			<section class="show-slogan" id="show-slogan">
+				<img class="btn-go" src="./images/btn-go.png">
+				<img class="tips-vote" src="./images/tips-vote.png">
+				<img class="icon-light" src="./images/icon-light.png">
+			</section>
+			<section class="countdown none">
+		        <span class="countdown-tip"><label></label></span>
+		        <span class="detail-countdown"></span>
+		    </section>
+			<p class="tips-info">温馨提示：点赞支持你喜欢的选手，如果他/她今晚获得的点赞数最高，你就有机会获得抽大奖的机会哦！</p>
+			<section class="vote-box"></section>
+		</section>
+	</section>
+	<section class="luck-box none">
+		<img class="icon-gift" src="./images/icon-gift.png" data-collect="true" data-collect-flag="vote-giftbox" data-collect-desc="打开抽奖礼盒">
+		<section class="icon-rays" id="icon-rays"></section>
+	</section>
+	<footer>
+		<a href="javascript:void(0);" class="btn-go2vote active" id="btn-go2vote" data-collect="true" data-collect-flag="vote-go2vote" data-collect-desc="进入投票按钮">投票区<i></i></a>
+		<a href="javascript:void(0);" class="btn-go2talk" id="btn-go2talk" data-collect="true" data-collect-flag="vote-go2talk" data-collect-desc="进入评论按钮">评论区<i></i></a>
+	</footer>
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/zepto.selector.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/plugins/vote.data.js"></script>
+	<script src="./js/app/vote.js"></script>
+	<script src="./js/app/dialog.js"></script>
+
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=52438912" charset="UTF-8"></script>
+
+	<img src="./images/icon-gift.png" class="preload">
+	<img src="./images/icon-rays.png" class="preload">
+	<img src="./images/icon-lottery-yhlogo.png" class="preload">
+</body>
+</html>

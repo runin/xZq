@@ -1,0 +1,145 @@
+body{
+    background-color: #F8F8F8;
+}
+.share-label{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #666666;
+}
+.share-title{
+    margin-top: 10px;
+}
+.share-label>p{
+    position: absolute;
+    width: 80px;
+    left: 20px;
+    height: 30px;
+    top: 5px;
+}
+.share-title-inp{
+    position: absolute;
+    width: -webkit-calc(100% - 130px);
+    left: 100px;
+    height: 26px;
+    top: 2px;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+}
+.share-talk{
+    height: 150px;
+}
+.share-talk-inp{
+    position: absolute;
+    width: -webkit-calc(100% - 130px);
+    left: 100px;
+    height: 148px;
+    top: 2px;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+}
+.share-label span{
+    position: absolute;
+    width: 80px;
+    left: 100px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    top: 2px;
+    border-radius: 2px;
+    color: #000000;
+    background: -webkit-linear-gradient(top, #fafafa 0%,#dcdcdc 100%);
+    border: 1px solid #aaaaaa;
+    /*opacity: 0;*/
+}
+.share-pick{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #000000;
+    /*background: -webkit-linear-gradient(top, #fafafa 0%,#dcdcdc 100%);*/
+    border: 1px solid #aaaaaa;
+    opacity: 0;
+}
+.share-msg{
+    position: relative;
+    width: -webkit-calc(100% - 40px);
+    left: 20px;
+    line-height: 30px;
+    word-break: break-all;
+    margin-top: 0;
+    color: #d7d7d7;
+    height: auto;
+}
+.share-r{
+    position: relative;
+    width: 50px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #f91546;
+    margin-right: 5%;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    float: right;
+}
+.share-l{
+    position: relative;
+    width: 50px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #AAAAAA;
+    margin-left: 5%;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    float: left;
+}
+.preview{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+}
+.preview-pic{
+    position: relative;
+    width: 20%;
+    margin-left: 4%;
+    margin-top: 5%;
+    border-radius: 8px;
+    float: left;
+}
+.preview-pic>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.preview-pic>.preview-close{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    top: -10px;
+    /*border-radius: 8px;*/
+    background: url("../images/btn-cls.png") no-repeat;
+    background-size: 100% 100%;
+}
+.preview-pick{
+    border-radius: 8px;
+    border: 1px dashed #AAAAAA;
+}
+.preview-pick>div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #AAAAAA;
+    text-align: center;
+}

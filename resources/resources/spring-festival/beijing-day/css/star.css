@@ -1,0 +1,529 @@
+html {
+    background: url(../images/bg-didi.jpg) no-repeat 0 0;  
+    background-size: cover;
+    height: 100%;
+}
+body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.hidden .spinner {
+	visibility: visible;
+}
+
+.bomb-box, .didi-box,
+.h-bomb .star-box,
+.h-didi .star-box,
+.h-bomb .tip-share  {
+	display: none;
+}
+.h-bomb .bomb-box,
+.h-didi .didi-box {
+	display: block;
+}
+
+.h-didi-nottime .didi-nottime {
+	display: block;
+}
+.h-didi-nottime .didi-award .award-inner {
+    background: url(../images/icon-gai.jpg) no-repeat center bottom;
+    background-size: 100% auto;
+    padding-top: 5%;
+}
+.didi-nottime h3 {
+    text-align: center;
+	
+    font-size: 18px;
+    color: #cf2a2a;
+}
+.didi-nottime .countdown {
+    text-align: center;
+    margin-top: 5%;
+    height: 60px;
+}
+.didi-nottime .countdown i {
+    display: inline-block;
+	
+    vertical-align: middle;
+    margin: -10px 5px 0;
+    height: 64px;
+    line-height: 64px;
+    font-style: normal;
+    font-size: 50px;
+    color: #fefefe;
+}
+.didi-nottime .countdown span {
+    display: inline-block;
+	
+    vertical-align: middle;
+    font-size: 45px;
+    background: rgba(0,0,0,0.75);
+    border-radius: 6px;
+    color: #fefefe;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+}
+.didi-nottime .btn-card {
+    display: block;
+	
+    background: #c00000;  border-radius: 20px;  color: #ffd74d;
+    width: 50%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin: 10% auto 0;
+}
+
+.h-bomb {
+	height: 100%;
+	background: #000;
+}
+.h-bomb body {
+	background: #000;
+    height: 100%;
+    overflow: hidden;
+}
+
+.h-bomb .copyright {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+	background: #000;
+}
+.h-didi {
+	background: #EEEFF0;
+	height: auto;
+}
+.h-didi body {
+	background: #fff url(../images/bg-didi.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+
+.h-didi header .logo {
+    /* background-size: auto 17px; */
+}
+
+.h-didi footer.copyright {
+	background: #EEEFF0;
+    padding-top: 10px;
+	margin: 0;
+}
+.h-didi-none body {
+    height: 100%;
+	
+}
+.h-star {
+	background: url(../images/bg-simple.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+
+/** 爆竹 **/
+.bomb-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+	
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    overflow: hidden;
+}
+
+.bomb-box h2 {
+    color: #b51e23;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20px;
+}
+.bomb-box .icon-bomb {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/icon-bomb.png) no-repeat center center;
+	background-size: 100%;
+	margin: 0 auto;
+	opacity: 0;
+	z-index: 0;
+}
+.bomb-box .baozhu {
+	
+    width: 120px;
+    height: 240px;
+    background: url(../images/icon-baozhu.png) no-repeat center bottom;
+    background-size: 78px auto;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -60px;
+    margin-top: -110px;
+    z-index: 1;
+}
+.bomb-box .baozhu .yinxin {
+    position: absolute;
+    left: 0;
+    right: -2px;
+    bottom: 153px;
+    width: 13px;
+    height: 70px;
+    background: url(../images/icon-yx.png) no-repeat center bottom;
+    background-size: 13px auto;
+    margin: 0 auto;
+}
+.bomb-box .baozhu .yinxin .icon-yx {
+	content: '';
+	width: 65px;
+	height: 65px;
+	background: url(../images/icon-fire.png) no-repeat 0 0;
+	background-size: 65px auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin-left: -26px;
+	margin-top: -30px;
+	-webkit-transform: scale(0.6);
+	display: none;
+}
+
+
+.bomb-box.fire .yinxin,
+.bomb-box.fire .yinxin .icon-yx,
+.bomb-box.bombing .icon-bomb {
+	-webkit-animation-name: firing;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: both;
+}
+.bomb-box.fire .yinxin .icon-yx {
+	display: block;
+	-webkit-animation-name: fire;
+	-webkit-animation-duration: 100ms;
+}
+.bomb-box.bombing .icon-bomb {
+	z-index: 10;
+	-webkit-animation-name: bombing;
+	-webkit-animation-duration: 300ms;
+	-webkit-animation-delay: 100ms;
+}
+.bomb-box.bombing .yinxin {
+	opacity: 0;
+}
+@-webkit-keyframes firing {
+	0% {
+		height: 70px;
+	}
+	10% {
+		height: 70px;
+	}
+	30% {
+		height: 68px;
+	}
+	100% {
+		height: 10px;
+	}		
+}
+@-webkit-keyframes fire {
+	0% {
+		-webkit-transform: scale(0.6);
+	}
+	100% {
+		-webkit-transform: scale(1.1);
+	}		
+}
+@-webkit-keyframes bombing {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0.6);
+	}
+	40% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(10);
+	}
+}
+
+
+/** 滴滴红包 **/
+.didi-box .tip-didi {
+    margin-top: 6%;
+}
+
+.didi-box .tip-didi:before {
+	content: '';
+	display: block;
+	height: 62px;
+	background: url(../images/icon-didi.png) no-repeat center 0;
+	background-size: 62px auto;
+}
+.didi-box .tip-didi h2 {
+    width: 275px;
+
+    margin: 3% auto 0;
+    background: rgba(255,255,255,0.8);
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #532d00;
+}
+
+.didi-award {
+    margin: 5% auto 0;
+    position: relative;
+}
+.didi-award .award-inner {
+	width: 300px;
+	padding-top: 7%;
+	height: 300px;
+	background: url(../images/didi-card.png) no-repeat center 0;
+    
+	background-size: 100% auto;
+	margin: 0 auto;
+}
+.didi-award:after {
+	content: '';
+	display: block;
+	height: 50px;
+	background: url(../images/icon-cloud.png) no-repeat center 0;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+}
+.didi-award .num {
+    margin: 0 auto;
+
+    width: 170px;
+    height: 70px;
+    background: url(../images/icon-award.png) no-repeat 0 0;
+    background-size: auto 70px;
+    padding-left: 42px;
+}
+.didi-award .num strong {
+    font-size: 32px;
+
+    line-height: 70px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 119px;
+    height: 70px;
+    text-align: center;
+    color: #cf2a2a;
+}
+
+.didi-award .ctrl {
+    margin-top: 4%;
+}
+.h-didi-none .didi-award .ctrl {
+	margin-top: 10%;
+}
+
+.didi-award .ctrl a {
+    display: block;
+    margin: 0 auto 4%;
+    width: 55%;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: #c00000;
+    border-radius: 20px;
+    color: #ffd74d;
+    font-size: 16px;
+}
+
+.didi-award .ctrl .btn-card, 
+.didi-award.awarded .btn-award {
+	display: none;
+}
+
+
+.didi-award .info {
+    width: 70%;
+    margin: 6% auto 4%;
+}
+.didi-award .info label {
+    color: #532d00;
+
+    font-size: 14px;
+    display: block;
+    width: 70px;
+    height: 34px;
+    line-height: 30px;
+}
+.didi-award .info .text {
+	
+    height: 34px;
+    margin: -34px 10px 0 74px;
+}
+.didi-award .info input {
+    border: 0 none;
+
+    height: 100%;
+    background: rgba(255,255,255,0.9);
+    border-radius: 6px;
+    padding: 0 4px;
+    width: 100%;
+    outline: 0 none;
+}
+.didi-award.awarded label, 
+.didi-award.awarded .text {
+	display: none;
+}
+.didi-award.awarded .btn-card,
+.didi-none .didi-award .btn-card {
+	display: block;
+}
+.didi-award.awarded .confirm {
+	display: block !important;
+	color: #532d00;
+	font-size: 14px;
+	margin: 0 -10px;
+	text-align: center;
+	line-height: 22px;
+}
+
+.didi-none .didi-award h3 {
+    text-align: center;
+    font-size: 46px;
+    margin-left: 12%;
+    margin-top: 35px;
+    letter-spacing: 3px;
+    color: #cf2a2a;
+}
+
+.didi-none,
+.h-didi-none .didi-hb {
+	display: none;
+}
+.h-didi-none .didi-none {
+	display: block;
+}
+.star-box h2 {
+    color: #ffd74d;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ffd74d;
+    margin: 7% 6% 7% 7%;
+    padding-bottom: 3%;
+}
+ul {
+    padding-bottom: 5%;
+    text-align: center;
+	max-width: 360px;
+	margin: 0 auto;
+}
+li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3%;
+	margin-left: 3%;
+    margin-bottom: 5%;
+    width: 56px;
+}
+li .avatar {
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    border-radius: 100%;
+    background: #cc9966;
+    border: 3px solid #cc9966;
+    position: relative;
+}
+
+li .avatar img {
+    width: 100%;
+    height: 100%;
+	
+    border-radius: 100%;
+}
+li span {
+    color: #d6000f;
+    font-size: 14px;
+}
+.btn-sendcard {
+    color: #ffd74d;
+    background: #c00000;
+    display: block;
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+}
+footer.copyright {
+    margin-top: 5%;
+}
+
+.star-list .selected .avatar {
+	box-shadow: 1px 5px 10px rgba(255,215,77, 0.5);
+	border-color: #ffd74d;
+}
+.star-list .selected span {
+	color: #ffd74d;
+	font-weight: bold;
+}
+.star-list .scale .avatar img {
+	display: none;
+}
+.star-list .scale .icon-voice {
+	content: '';
+	display: block !important;
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../images/v3.png);
+	background-size: 14px auto;
+	-webkit-animation-name: voice-playing;
+    -webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	background-color: #94572F;
+	border-radius: 100%;
+}
+
+.star-list li.scale .avatar {
+    -webkit-animation-name: horizontal-scale;
+    -webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes horizontal-scale {
+	0% {
+    	-webkit-transform: rotateY(0deg);
+    }
+    18% {
+    	-webkit-transform: rotateY(360deg);
+    }
+    100% {
+    	-webkit-transform: rotateY(360deg);
+    }
+}

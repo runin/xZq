@@ -1,0 +1,52 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="author" content="" />
+        <meta name="viewport"  content="width=device-width; initial-scale=1;  minimum-scale=0.5; maximum-scale=1.0;user-scalable=no;" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="MobileOptimized" content=""/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>西安最萌宝宝评选</title>
+        <script src="js/wx_api.js"></script>
+        <link href="css/global.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="pm">
+            <span id="ticket"></span>
+            <em id="ranking"></em>
+        </div>
+        <div class="spinner" id="baby-loading">
+		  <div class="bounce1"></div>
+		  <div class="bounce2"></div>
+		  <div class="bounce3"></div>
+		</div>
+        <!--活动说明详细页 s-->
+        <div class="mod_box none" id="share-ticket">
+            <div class="vote_div">
+                <p><img src="" width="100%" id="bigPhoto"></p>
+                <dl class="babyinfo box-orient-h">
+                    <dt>萌宝宝：</dt>
+                    <dd class="box-flex"><em id="name"></em></dd>
+                </dl>
+                <dl class="babyinfo box-orient-h">
+                    <dt>介绍：</dt>
+                    <dd class="box-flex" id="introduction"></dd>
+                </dl>
+            </div>
+            <!--活动说明详细页 e-->
+            <a href="javascript:moreRang();" class="send_btn" data-collect="true" data-collect-flag="baby-baby_info-back-index-btn" data-collect-desc="宝宝详情更多排名">更多排名</a>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/md5.js"></script>
+        <script src="js/share.js"></script>
+        <script src="js/baby_info.js"></script>
+        <script src="js/data_collect.js"></script>
+    </body>
+</html>

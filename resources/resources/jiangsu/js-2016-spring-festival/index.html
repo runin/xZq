@@ -1,0 +1,1019 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>2016我们更幸福</title>
+	
+	<!--<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/util.css" />
+	<link rel="stylesheet" href="./css/cover.css" />
+	<link rel="stylesheet" href="./css/index.css?v=1" />
+	<link rel="stylesheet" href="./css/dialog-welcome.css" />
+	<link rel="stylesheet" href="./css/dialog-rank.css" />
+	<link rel="stylesheet" href="./css/yao.css" />
+
+	<link rel="stylesheet" href="./css/dialog-card.css" />
+	<link rel="stylesheet" href="./css/dialog-card-send.css" />
+	<link rel="stylesheet" href="./css/dialog-card-accept.css?v=2" />
+	<link rel="stylesheet" href="./css/dialog-card-view.css" />
+	<link rel="stylesheet" href="./css/dialog-card-get.css" />
+	<link rel="stylesheet" href="./css/dialog-card-unlock.css" />
+	<link rel="stylesheet" href="./css/dialog-card-unlocking.css" />
+	<link rel="stylesheet" href="./css/dialog-vip.css" />
+	<link rel="stylesheet" href="./css/award.css" />
+	<link rel="stylesheet" href="./css/nothing.css" />
+	<link rel="stylesheet" href="./css/guide.css" />
+	<link rel="stylesheet" href="./css/dialog-tangyuan.css" />
+	<link rel="stylesheet" href="./css/zhibo.css" />
+	<link rel="stylesheet" href="./css/video-js.css" /> 
+	<link rel="stylesheet" href="./css/rollingrecord.css" />
+	<link rel="stylesheet" href="./css/rule.css" /> -->
+
+	<link rel="stylesheet" href="./css/style.min.css" />
+	
+</head>
+<body>
+
+	<section id="cover" class="none">
+		<section class="cover-top">
+
+		</section>
+		<section class="cover-bottom">
+			<section class="arrow left-bottom"></section>
+			<section class="arrow right-bottom"></section>
+		</section>
+		<p id="loading_bar" class="loadbar">加载中...</p>
+		<section class="suning-icon">
+			<img src="http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqsiik9j5hwp/icon-suning.png" />
+		</section>
+
+		<footer>
+			页面由江苏卫视提供 & Powered by holdfun.cn
+		</footer>
+
+	</section>
+
+	<section id="page_wrapper" class="page-wrapper none" >
+
+		<section id="index">
+			<section class="index-header">
+				<section class="index-header-logo">
+					<img src="./images/logo-js.png" alt="江苏卫视" />
+				</section>
+				<section class="index-tangyuan-voice">
+				</section>
+				<section class="index-header-link can-tap">
+					<img id="default_tangyuan" src="./images/icon-tangyuan.png" alt="养我养我" />
+					<section id="selected_tangyuan" class="icon-tangyuan none">
+						<img class="icon-tangyuan-bg" src="http://yaotv.qq.com/shake_tv/auto2/2016/01/957pprijv1qnhi/images/tangyuan/yuan_a_01.png" />
+						<img class="icon-tangyuan-face" src="http://yaotv.qq.com/shake_tv/auto2/2016/01/957pprijv1qnhi/images/tangyuan/yuan_bq_04.png" />
+					</section>
+				</section>
+			</section>
+			<section class="index-cards">
+				<section class="index-cards-content">
+					<section id="card_list" class="index-cards-content-inner">
+					</section>
+				</section>
+				<section class="index-cards-btns">
+					<section id="btn_rank" class="index-cards-btn can-tap"></section>
+					<section id="btn_door" class="index-cards-btn can-tap">
+						<section id="btn_door_cover" class="index-cards-btn-cover"></section>
+					</section>
+				</section>
+			</section>
+
+			<section class="index-countdown">
+				<section id="bar_countdown">
+					<section class="bar-blink-wrapper">
+						<section class="bar-blink"></section>
+					</section>
+				</section>
+				<section id="btn_yao" class="bar-yao-btn can-tap">
+					<img src="http://yaotv.qq.com/shake_tv/auto2/2016/02/24csquwik0arn4j/icon-fu.png" />
+				</section>
+				<section id="tips_countdown" class="bar-tips none">
+					<section class="bar-tips-dialog">
+						<p>距离抽大奖时间还有<br/><span id="tips_timeleft">00:00:00</span></p>
+						<section class="bar-tips-arrow"></section>
+					</section>
+				</section>
+			</section>
+
+			<section class="index-topic">
+				<section class="index-topic-icon"></section>
+				<h2 id="topic_content"></h2>
+			</section>
+
+			<section class="index-comment-nav">
+				<ul class="index-comment-nav-list">
+					<li id="btn_zan" class="nav-list-item active"><p>精品帖</p></li>
+					<li class="sper" style="left:1.5px"></li>
+					<li id="btn_friend" class="nav-list-item"><p>好友帖</p></li>
+					<li class="sper" style="left:-1.5px"></li>
+					<li id="btn_time" class="nav-list-item"><p>时序帖</p></li>
+				</ul>
+			</section>
+
+			<section class="index-comment-list">
+				<ul id="comment_list" class="comment-list-wrapper">
+				</ul>
+			</section>
+
+			<section class="index-comment-input">
+				<section class="index-comment-input-wrapper">
+					<section id="btn_voice" class="btn-voice can-tap">
+						<img src="./images/icon-record-white.png" title="语音" />
+					</section>
+					<section id="btn_record_voice" class="voice-input-wrapper none">
+						<p id="voice_input">按住 说话</p>
+					</section>
+					<section id="comment_input_wrapper" class="input-wrapper">
+						<input id="comment_input" type="text" placeholder="快来讲讲你的故事" />
+					</section>
+					<section id="comment_submit" class="input-submit can-tap">
+						<img src="./images/icon-tick.png" title="提交评论" />
+					</section>
+				</section>
+			</section>
+
+			<section class="index-comment-bg">
+
+			</section>
+		</section>
+
+
+
+		<section id="yao">
+			<section class="yao-wrapper wrapper">
+				<section id="rollingrecord" class="rollingrecord-wrapper wrapper">
+					<p></p>
+				</section>
+				<section id="btn_suning" class="suning-yao-logo dh-flying">
+					<img src="http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqsiik9j5hwp/icon-suning-yao.png" />
+				</section>
+				<section id="rule_btn">
+					活动规则
+				</section>
+				<section id="cover_top" class="cover-wrapper">
+					<img class="cover-top" src="http://yaotv.qq.com/shake_tv/auto2/2016/01/957pprijv1qnhi/images/bg-yao-top.jpg" />
+					<section class="cover-light">
+						<img src="./images/icon-light.png" />
+					</section>
+					<section class="cover-tips">
+						姿势摆的好，红包到手早
+					</section>
+					<section class="cover-sum award-count">
+					</section>
+				</section>
+				<section id="cover_bottom" class="cover-wrapper">
+					<img class="cover-bottom" src="http://yaotv.qq.com/shake_tv/auto2/2016/01/957pprijv1qnhi/images/bg-yao-bottom.jpg" />
+					<section class="count-down-wrapper">
+						<h2>距本轮摇奖结束还有</h2>
+						<ul class="count-down-time">
+							<li class="count-down-num"><span id="yao_countdown_hour">0</span></li>
+							<li class="count-down-num">
+								<span id="yao_countdown_hour2">0</span>
+								<section class="count-down-min">时</section>
+							</li>
+							<li class="count-down-space"></li>
+							<li class="count-down-num"><span id="yao_countdown_min">0</span></li>
+							<li class="count-down-num">
+								<span id="yao_countdown_min2">0</span>
+								<section class="count-down-min">分</section>
+							</li>
+							<li class="count-down-space"></li>
+							<li class="count-down-num"><span id="yao_countdown_sec">0</span></li>
+							<li class="count-down-num">
+								<span id="yao_countdown_sec2">0</span>
+								<section class="count-down-min">秒</section>
+							</li>
+						</ul>
+					</section>
+					<section id="btn_back_index" class="btn-back-index">返回首页</section>
+				</section>
+				<section class='none'>
+					<audio preload="auto" id="audio_shake" src="./music/audio-a.mp3"></audio>
+					<audio preload="auto" id="audio_win" src="./music/audio-b.mp3"></audio>
+				</section>
+			</section>
+		</section>
+
+
+	</section>
+
+
+	<section id="welcome_dialog" class="welcome-dialog dialog-wrapper none">
+		<section class="welcome-dialog-bg welcome-dialog-top"></section>
+		<section class="welcome-dialog-bg welcome-dialog-bottom"></section>
+		<section class="dialog">
+			<section class="welcome-fan">
+			</section>
+			<section class="welcome-text">
+				<p>你是2016年</p>
+				<p>第<span class="gold">0</span>个开启幸福的人</p>
+			</section>
+			<section class="welcome-btn can-tap">
+			</section>
+		</section>
+	</section>
+	
+	<section id="rank_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="arrow left-top"></section>
+			<section class="arrow right-top"></section>
+			<section class="arrow left-bottom"></section>
+			<section class="arrow right-bottom"></section>
+			<section id="btn_rank_close" class="btn-close can-tap"><img src="./images/btn-close.png" /></section>
+			<section class="rank-suning">
+				<img src="http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqsiik9j5hwp/icon-suning.png" />
+			</section>
+			<h2>江苏卫视2016年度幸福榜</h2>
+			<section class="rank-nav">
+				<h3 class="tab tab-friend active">好友排行</h3>
+				<h3 class="tab tab-global ">全国排行</h3>
+			</section>
+			<section class="rank-friend-list ">
+
+			</section>
+			<section class="rank-global-list none">
+				<section class="rank-list-item">
+					<section class="rank-list-avatar">
+						<img class="my-avatar" src="./images/avatar.jpg" onerror="this.src='./images/avatar.jpg'" />
+					</section>
+					<section class="my-nickname rank-list-name text-overflow"></section>
+					<section class="rank-list-detail">第<span id="my_rank" class="red">-</span>名/<span id="my_card" class="red">0</span>张</section>
+				</section>
+				<p></p>
+				<p style="text-align:center;font-size:14px;color:#000;">您在江苏卫视 <br/> 2016年攒卡集幸福中</p>
+				<p id="my_card_tips" class="big" style="text-align:center;font-size:20px;color:#e70103;">共获得了0枚卡片</p>
+				<p id="my_global_rank" style="text-align:center;font-size:14px;color:#000;">只击败了全国5%的用户</p>
+				<section style="position:absolute;bottom:8px;width:100%;text-align:center;color:#a0a0a0;font-size:12px;">革命尚未成功，同志仍需努力。</section>
+			</section>
+		</section>
+	</section>
+
+	<section id="rule_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="arrow left-top"></section>
+			<section class="arrow right-top"></section>
+			<section class="arrow left-bottom"></section>
+			<section class="arrow right-bottom"></section>
+			<section id="btn_rule_close" class="btn-close can-tap"><img src="./images/btn-close.png" /></section>
+			<h2>活动规则</h2>
+			<section class="rule-list">
+<p>1. 参与江苏卫视春晚互动，有机会获得实物与卡券大奖；</p>
+<p>2. 春晚奖品有滴滴红包（28元、38元、68元、668元、2016元）五档丰厚大礼包、PPTV裸眼3D手机、Blomberg智能冰箱、苏宁（100元家电、50元3C、20元超市母婴、6元全额使用）礼券、腾讯游戏新年卡等更多好礼；</p>
+<p>3. 参与明星贺卡环节，领取祝福卡牌，可以制作贺卡送给好友，好友在收到贺卡的同时，也会收到一个滴滴红包；</p>
+<p>4. 参与明星贺卡环节，集齐明星祝福卡牌，即可开启豪华vip抽奖，英菲尼迪QX60一年使用权及周边车模等你来拿；</p>
+<p>5. 参与春晚互动摇奖环节，指定时间内摇动手机即有机会获得奖品，请按照提示领取，获实物大奖后如未填写领奖信息，直接离开页面，将视为自动放弃领奖机会；</p>
+<p>6. 本活动最终解释权归江苏卫视所有，如有疑问可咨询幸福热线：025-96088</p>
+<p>7. 英菲尼迪QX60一年使用权的相关派奖及后续使用情况由英菲尼迪负责，详情咨询：010-59251545</p>
+<p>8. pptv裸眼3d手机、blomberg智能冰箱的相关派奖及后续使用情况由苏宁负责：详情咨询：4008365365</p>
+			</section>
+		</section>
+	</section>
+
+	<section id="card_send_dialog" class="dialog-wrapper none">
+		<section class="dialog big-dialog">
+			<section class="btn-close can-tap">
+				<img src="./images/btn-close.png" />
+			</section>
+			<section class="card-top-light">
+				<img src="./images/icon-dialog-light.png" />
+			</section>
+			<section class="card-detail-content">
+				<section class="card-video-wrapper">
+					<section class="video-wrapper">
+					</section>
+					<section class="arrow left-top"></section>
+					<section class="arrow right-top"></section>
+					<section class="arrow left-bottom"></section>
+					<section class="arrow right-bottom"></section>
+				</section>
+				<section class="card-recorder">
+					<section class="card-tips-wrapper">
+						<section class="card-avatar">
+							<img class="my-avatar" src="./images/avatar.jpg" onerror="this.src='./images/avatar.jpg'" />
+						</section>
+						<section class="card-send-tips">
+							<h2 class="text-overflow my-nickname"></h2>
+							<p>发送给好友，说出您的祝福！</p>
+						</section>
+					</section>
+					<section class="card-input-wrapper">
+						<section class="card-input">
+							<input style="-webkit-user-modify: read-write-plaintext-only" type="text" placeholder="写下您的祝福.." >
+						</section>
+
+						<section class="card-voice-input none">
+							按住 说话
+						</section>
+
+						<section class="card-record-switcher">
+							<img src="./images/icon-record.png" />
+						</section>
+					</section>
+					
+					<section class="card-voice-preview none">
+						<section class="comment-voice">
+							<section class="comment-voice-detail">
+								<img class="commnet-voice-icon" src="./images/icon-voice-play.png" />
+								<i class="comment-duration"></i>
+								<section class="comment-voice-right"></section>
+							</section>
+							<section class="comment-voice-left"></section>
+						</section>
+						<section class="card-record-reset">
+							<img src="./images/icon-record.png" />
+						</section>
+					</section>
+
+				</section>
+			</section>
+			<section class="card-gift-tips">
+				<p>好友打开贺卡时<br/>还会收到滴滴红包哦</p>
+			</section>
+			<section id="card_send_btn" class="card-send-btn can-tap">
+				<img src="./images/btn-to-friend.png" />
+			</section>
+			<section class="card-background-cloud">
+				<img src="./images/icon-cloud.png" />
+			</section>
+		</section>
+	</section>
+
+
+	<section id="card_accept_dialog" class="dialog-wrapper none">
+		<section class="dialog big-dialog">
+			
+			<section class="card-top-light">
+				<img src="./images/icon-dialog-light.png" />
+			</section>
+			<section class="card-detail-content">
+				<section class="card-video-wrapper">
+					<section class="video-wrapper">
+					</section>
+					<section class="arrow left-top"></section>
+					<section class="arrow right-top"></section>
+					<section class="arrow left-bottom"></section>
+					<section class="arrow right-bottom"></section>
+				</section>
+
+
+				<section class="card-recorder">
+					<section class="card-tips-wrapper">
+						<section class="card-avatar">
+							<img class="headerimg" src="./images/avatar.jpg" onerror="this.src='./images/avatar.jpg'" />
+						</section>
+						<section class="card-send-tips">
+							<h2 class="nickname text-overflow"></h2>
+							<p>给您发送了一段新年祝福！</p>
+						</section>
+					</section>
+					
+					<section class="card-voice-preview none">
+						<section class="comment-voice">
+							<section class="comment-voice-detail">
+								<img class="commnet-voice-icon" src="./images/icon-voice-play.png" />
+								<i class="comment-duration"></i>
+								<section class="comment-voice-right"></section>
+							</section>
+							<section class="comment-voice-left"></section>
+						</section>
+					</section>
+
+					<section class="card-text-wrapper none">
+						<section class="card-text">
+							<p class="text-overflow"></p>
+							<p class="text-show none"></p>
+						</section>
+						<section class="card-text-more">
+							<img src="./images/icon-drop.png" />
+						</section>
+					</section>
+
+				</section>
+
+
+			</section>
+			<section class="card-gift-tips">
+				<p>感谢好友的祝福<br/>也为好友送去一份祝福</p>
+			</section>
+			<section class="card-send-btn can-tap">
+				<img src="./images/btn-join.png" />
+			</section>
+			<section class="card-background-cloud">
+				<img src="./images/icon-cloud.png" />
+			</section>
+		</section>
+	</section>
+
+
+	<section id="card_send_guide" class="dialog-wrapper none">
+		<section class="cloud-wrapper">
+			<section class="cloud">
+				<img src="./images/send-share.png" />
+			</section>
+		</section>
+	</section>
+
+	
+	<section id="card_view_dialog_small" class="dialog-wrapper none">
+		<section class="dialog card-view-dialog small-dialog">
+			<section id="card_view_dialog_small_close" class="btn-close can-tap">
+				<img src="./images/btn-close.png" />
+			</section>
+			<section class="card-top-light">
+				<img src="./images/icon-dialog-light.png" />
+			</section>
+			<section class="card-detail-content">
+				<section class="card-video-wrapper">
+					<section class="video-wrapper">
+					</section>
+					<section class="arrow left-top"></section>
+					<section class="arrow right-top"></section>
+					<section class="arrow left-bottom"></section>
+					<section class="arrow right-bottom"></section>
+				</section>
+			</section>
+			<section class="card-title">
+			</section>
+			<section class="card-text">
+			</section>
+			<section id="card_small_make_btn" class="card-make-btn can-tap">
+				<img src="./images/btn-make.png" />
+			</section>
+			<section class="card-background-cloud">
+				<img src="./images/icon-cloud-small.png" />
+			</section>
+		</section>
+	</section>
+
+	<section id="card_view_dialog_big" class="dialog-wrapper none">
+		<section class="dialog card-view-dialog big-dialog">
+			<section class="btn-close can-tap">
+				<img src="./images/btn-close.png" />
+			</section>
+			<section class="card-top-light">
+				<img src="./images/icon-dialog-light.png" />
+			</section>
+			<section class="card-detail-content">
+				<section class="card-video-wrapper">
+					<section class="video-wrapper">
+					</section>
+					<section class="arrow left-top"></section>
+					<section class="arrow right-top"></section>
+					<section class="arrow left-bottom"></section>
+					<section class="arrow right-bottom"></section>
+				</section>
+			</section>
+			<section class="card-title">
+			</section>
+			<section class="card-text">
+			</section>
+			<section class="card-friend-list">
+				<ul>
+					<li><img src="./images/avatar.jpg"></li>
+					<li><img src="./images/avatar.jpg"></li>
+					<li><img src="./images/avatar.jpg"></li>
+					<li><img src="./images/avatar.jpg"></li>
+				</ul>
+				<p class="card-friend-tips">成功get，感谢好友鼎力相助</p>
+			</section>
+			<section  id="card_big_make_btn" class="card-make-btn can-tap">
+				<img src="./images/btn-make.png" />
+			</section>
+			<section class="card-background-cloud">
+				<img src="./images/icon-cloud.png" />
+			</section>
+		</section>
+	</section>
+
+	<section id="card_get_dialog" class="dialog-wrapper none">
+		<section class="dialog small-dialog">
+			<section class="card-top-light">
+				<img src="./images/icon-dialog-light.png" />
+			</section>
+			<section class="card-detail-content">
+				<section class="card-video-wrapper">
+					<img class="card-get-cover" src="./images/bg-poster-default.png" />
+					<section class="arrow left-top"></section>
+					<section class="arrow right-top"></section>
+					<section class="arrow left-bottom"></section>
+					<section class="arrow right-bottom"></section>
+				</section>
+			</section>
+			<section class="card-title">
+			</section>
+			<section class="card-text">
+			</section>
+			<section class="card-get-btn can-tap">
+				<img src="./images/btn-get.png" />
+			</section>
+			<section class="card-background-cloud">
+				<img src="./images/icon-cloud-small.png" />
+			</section>
+		</section>
+	</section>
+
+	<section id="card_unlock_dialog" class="dialog-wrapper none">
+		<section class="dialog small-dialog">
+			<section class="btn-close can-tap">
+				<img src="./images/btn-close.png" />
+			</section>
+			<section class="card-top-light">
+				<img src="./images/icon-dialog-light.png" />
+			</section>
+			<section class="card-detail-content">
+				<section class="card-video-wrapper">
+					<img class="card-cover" onerror="./images/default-bg-unlock.jpg" src="./images/default-bg-unlock.jpg" />
+					<img class="locking" src="./images/big-unlock-full.png">
+				</section>
+			</section>
+			<section class="card-title">
+			</section>
+			<section class="card-text">
+			</section>
+			<section class="card-get-btn can-tap">
+				<img src="./images/btn-to-unlock.png" />
+			</section>
+			<section class="card-background-cloud">
+				<img src="./images/icon-cloud-small.png" />
+			</section>
+		</section>
+	</section>
+
+	<section id="card_unlocking_dialog" class="dialog-wrapper none">
+		<section class="dialog big-dialog">
+			<section class="btn-close can-tap">
+				<img src="./images/btn-close.png" />
+			</section>
+			<section class="card-top-light">
+				<img src="./images/icon-dialog-light.png" />
+			</section>
+			<section class="card-detail-content">
+				<section class="card-video-wrapper">
+					<img class="card-cover" src="./images/default-bg-unlock.jpg" />
+					<img class="locking" src="./images/big-unlock-2.png">
+				</section>
+			</section>
+			<section class="card-title">
+			</section>
+			<section class="card-text">
+			</section>
+			<section class="card-friend-list">
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+				<p class="card-friend-tips"></p>
+			</section>
+			<section class="card-unlocking-btn can-tap">
+				<img src="./images/btn-friend-unlock.png" />
+			</section>
+			<section class="card-background-cloud">
+				<img src="./images/icon-cloud.png" />
+			</section>
+		</section>
+	</section>
+
+	<section id="card_unlock_guide" class="dialog-wrapper none">
+		<section class="cloud-wrapper">
+			<section class="cloud">
+				<img src="http://yaotv.qq.com/shake_tv/auto2/2016/02/24fhr2vikbk1hdt/share.png" />
+			</section>
+		</section>
+	</section>
+
+
+	<section id="vip_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="vip-container">
+			    <section id="carousel" class="panels-backface-invisible">
+			    </section>
+		  </section>
+		  <section class="vip-light">
+		  		<img src="./images/icon-light.png">
+		  </section>
+		  <section id="btn_biaoqing" class="download">
+		  	<section class="download-cover">
+		  		<img src="http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqsiik9j5hwp/download.png" />
+		  	</section>
+		  	<section class="download-text">
+		  		<p class="big">荔枝猴微信表情包上线</p>
+		  		<p class="">春晚荔枝猴伴您猴住幸福一整年哦</p>
+		  	</section>
+		  	<section class="download-link">
+		  		下载
+		  	</section>
+		  </section>
+		  <section class="vip-title">
+		  		<h2>&nbsp;</h2>
+		  		<p class="award-count"></p>
+		  </section>
+		  <section class="vip-start can-tap disabled">
+		  		<img src="./images/btn-vip-start-gray.png" />
+		  </section>
+		  <section class="vip-close">
+		  		返回首页
+		  </section>
+
+		  <section id="btn_didi" class="icon-didi dh-infi">
+		  	<img src="http://yaotv.qq.com/shake_tv/auto2/2016/02/24csqsiik9j5hwp/icon-didi.png" />
+		  </section>
+
+		</section>
+	</section>
+
+	<section id="voice_record_tips" class="qy-loading none">
+        <section class="qy-loading-logo">
+            <section class="qy-logo-1"></section>
+            <section class="qy-logo-2"></section>
+        </section>
+        <section class="qy-loading-tips">正在录音</section>
+    </section>
+
+    <section id="infiniti_award_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			
+			<section class="award-input-wrapper">
+				<section class="award-input-item">
+					<label>姓 名</label>
+					<section class="award-input">
+						<input id="infiniti_name" type="text" />
+					</section>
+				</section>
+
+				<section class="award-input-item">
+					<label>电 话</label>
+					<section class="award-input">
+						<input id="infiniti_tel" type="tel" />
+					</section>
+				</section>
+
+				<section class="award-input-item">
+					<label>地 址</label>
+					<section class="award-input">
+						<input  id="infiniti_addr" type="text" />
+					</section>
+				</section>
+			</section>
+
+			<section class="award-btn can-tap">
+				马上去领取
+			</section>
+		</section>
+	</section>
+
+	<section id="suning_award_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			
+			<section class="award-input-wrapper">
+				<section class="award-input-item">
+					<label>姓名</label>
+					<section class="award-input">
+						<input id="suning_name" type="text" />
+					</section>
+				</section>
+
+				<section class="award-input-item">
+					<label>电话</label>
+					<section class="award-input">
+						<input id="suning_tel" type="tel" />
+					</section>
+				</section>
+
+				<section class="award-input-item">
+					<label>地址</label>
+					<section class="award-input">
+						<input  id="suning_addr" type="text" />
+					</section>
+				</section>
+			</section>
+
+			<section class="award-btn can-tap">
+				马上去领取
+			</section>
+		</section>
+	</section>
+
+	<section id="didi_award_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<p class="didi-tips">滴滴携手江苏卫视，让您新年坐好一点</p>
+			<section class="award-input-wrapper">
+				<section class="award-input-item">
+					<label><img src="./images/award/icon-didi.png"></label>
+					<section class="award-input">
+						<input id="didi_tel" placeholder="输入手机号，领取红包" type="tel" />
+					</section>
+				</section>
+			</section>
+
+			<section class="award-btn can-tap">
+				点击领取滴滴红包
+			</section>
+		</section>
+	</section>
+
+	<section id="kaquan_award_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+		</section>
+	</section>
+
+	<section id="tangyuan_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<a href="javascript:void(0)" class="btn-horn can-tap"></a>
+
+			<section class="btn-box">
+				<a href="javascript:void(0)" class="btn-a-0"></a>
+				<a href="javascript:void(0)" class="btn-a-1"></a>
+				<a href="javascript:void(0)" class="btn-a-2"></a>
+				<a href="javascript:void(0)" class="btn-a-3"></a>
+			</section>
+
+			<section class="btn-text">
+				<span>灰色</span>
+				<span>红色</span>
+				<span>紫色</span>
+				<span>绿色</span>
+			</section>
+
+			<section class="plase-select"></section>
+
+			
+			<section class="rotate-box">
+				<div id="showcase" class="noselect">
+					<img class="cloud9-item" data-id="id1" src="http://yaotv.qq.com/shake_tv/auto2/2016/01/957pprijv1qnhi/images/tangyuan/t_yuan_c.png" alt="c">
+					<img class="cloud9-item" data-id="id0" src="http://yaotv.qq.com/shake_tv/auto2/2016/01/957pprijv1qnhi/images/tangyuan/t_yuan_d.png" alt="d">
+					<img class="cloud9-item" data-id="id2" src="http://yaotv.qq.com/shake_tv/auto2/2016/01/957pprijv1qnhi/images/tangyuan/t_yuan_a.png" alt="a">
+					<img class="cloud9-item" data-id="id3" src="http://yaotv.qq.com/shake_tv/auto2/2016/01/957pprijv1qnhi/images/tangyuan/t_yuan_b.png" alt="b">
+				</div>
+			</section>
+		</section>
+	</section>
+
+
+	<section id="tangyuan_get_dialog" class="pop-bg none">
+		<section class="top-text">宠物挣金币，可以用于元宵晚会抽奖哦</section>
+	    <section class="pet-box">
+		    <section id="pet_type" class="pet-bg inup">
+		    	<span></span>
+		   	</section>
+		    <i class="pet-shade"></i>
+		    <i class="bolt"></i>
+	    </section>
+	    <section class="congrats-text">恭喜你获得一个宠物<br />小宠物变身大明星<br />你家宝贝变成谁？</section>
+	    <a href="javascript:void(0)" class="btn-a" id="what-play">怎么玩</a>
+    </section>
+
+    <section id="tangyuan_collect_dialog" class="collect none">
+    	<a href="javascript:void(0)" class="i-close can-tap"></a>
+    </section>
+    
+
+	<section id="nothing_dialog" class="dialog-wrapper none">
+		<section class="dialog">
+			<section class="arrow left-top"></section>
+			<section class="arrow right-top"></section>
+			<section class="arrow left-bottom"></section>
+			<section class="arrow right-bottom"></section>
+
+			<section class="card-top-light">
+				<img src="./images/icon-dialog-light.png" />
+			</section>
+
+			<section class="award-images">
+				<img src="./images/nothing/nothing.jpg" />
+			</section>
+
+			<section class="award-btn can-tap">
+				<img src="./images/btn-award-nothing.png">
+			</section>
+		</section>
+	</section>
+
+	<section id="guide_countdown" class="guide none" data-order="3">
+		<section class="icon">
+			<img src="http://yaotv.qq.com/shake_tv/auto2/2016/02/24fhr2vikbk1hdt/countdown-icon-.png" />
+		</section>
+		<img class="tips" src="./images/guide/countdown.png" />
+	</section>
+
+	<section id="guide_vip" class="guide none" data-order="2">
+		<section class="icon">
+			<img src="./images/guide/vip-icon.png" />
+		</section>
+		<img class="tips" src="./images/guide/vip.png" />
+	</section>
+
+	<section id="guide_unlock" class="guide none" data-order="1">
+		<section class="icon">
+			<img src="./images/guide/unlock-icon.png" />
+		</section>
+		<img class="tips" src="./images/guide/unlock.png" />
+	</section>
+
+	<section id="zhibo" class="dialog-wrapper none">
+		<section class="dialog">
+			<section id="tv">
+				<section class="tv-bg">
+					<img class="tv-font" src="./images/icon-tv.png" />
+					<section class="tv-snow"></section>
+					<section class="tv-cover none">
+					</section>
+					<img class="tv-default" src="./images/icon-tv-content.png" />
+				</section>
+			</section>
+		</section>
+	</section>
+
+
+	<footer class="none">
+		<p>页面由XXX提供<br />新掌趣科技技术支持&Powered by holdfun.cn</p>
+	</footer>
+
+	<script id="tmpl_comment" type="text/html">
+		<li class="comment-list-item ${praised}">
+			<section class="comment-list-avatar">
+				<img src="${src}" onerror="this.src='./images/avatar.jpg'" />
+				<section class="comment-v ${vip}">
+				</section>
+			</section>
+			<section class="comment-list-content">
+				<h3 class="text-overflow">${name}</h3>
+				<p>${content}</p>
+			</section>
+			<section class="comment-list-agree ${pcshow}" uid="${uid}">
+				<section class="comment-list-heart"></section>
+				<section class="comment-list-mark">${pc}</section>
+			</section>
+		</li>
+	</script>
+
+	<script id="tmpl_voice" type="text/html">
+		<li class="comment-list-item ${praised}">
+			<section class="comment-list-avatar">
+				<img src="${src}" onerror="this.src='./images/avatar.jpg'" />
+				<section class="comment-v ${vip}">
+				</section>
+			</section>
+			<section class="comment-list-content">
+				<h3 class="text-overflow">${name}</h3>
+				<section class="comment-voice">
+					<section class="comment-voice-detail" style="${size}" data-vid="${vid}" data-len="${length}">
+						<img class="commnet-voice-icon" src="./images/icon-voice-play.png" />
+						<i>${duration}</i>
+						<section class="comment-voice-right"></section>
+					</section>
+					<section class="comment-voice-left"></section>
+				</section>
+			</section>
+			<section class="comment-list-agree ${pcshow}" uid="${uid}">
+				<section class="comment-list-heart"></section>
+				<section class="comment-list-mark">${pc}</section>
+			</section>
+		</li>
+	</script>
+
+	<script id="tmpl_comment_empty" type="text/html">
+		<li class="comment-list-empty">- 暂无内容 -</li>
+	</script>
+
+	<script id="tmpl_card_item" type="text/html">
+		<section class="index-cards-item ${lockClass}" data-id="${id}" data-index="${index}" >
+			<img src="${img}" title="${title}" data-src="${unlock}" />
+		</section>
+	</script>
+
+	<script id="tmpl_rank_mine" type="text/html">
+		<section class="rank-list-item">
+			<section class="rank-list-avatar">
+				<img src="${avatar}" onerror="this.src='./images/avatar.jpg'" />
+			</section>
+			<section class="rank-list-name text-overflow">${name}</section>
+			<section class="rank-list-detail">第<span class="red">${rank}</span>名/<span class="red">${card}</span>张</section>
+		</section>
+	</script>
+
+	<script id="tmpl_rank_list" type="text/html">
+		<section class="rank-list-item rank-${rank}">
+			<section class="rank-list-avatar">
+				<img src="${avatar}" onerror="this.src='./images/avatar.jpg'" />
+			</section>
+			<section class="rank-list-name text-overflow">${name}</section>
+			<section class="rank-list-card">${card}张卡</section>
+			<section class="rank-list-rank">
+				<p class="text-rank">${rank}</p>
+				<section class="rank-list-award">${rank}</section>
+			</section>
+
+		</section>
+	</script>
+
+	<script id="tmpl_rank_empty" type="text/html">
+		<section class="rank-list-empty">
+			给好友发张拜年贺卡<br/>即可看到排名哦
+		</section>
+	</script>
+
+	<script id="tmpl_vip_prize" type="text/html">
+		<figure>
+	      	<section class="vip-item">
+	      		<section class="vip-item-cover">
+	      			<img src="${image}" />
+	      		</section>
+	      		<p>${name}</p>
+	      	</section>
+	      </figure>
+	</script>
+
+	<script id="tmpl_video" type="text/html">
+		<video id="${id}" class="video video-js" x-webkit-airplay="true" webkit-playsinline="true" style="height:${height}px;width:${width}px;" poster="${poster}" >
+            <source src="${src}" type="video/mp4">
+        </video>
+	</script>
+
+	
+
+
+	<script src="./js/default.js"></script>
+	<script src="./js/config.js"></script>
+
+	<!--<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/zepto.touch.js"></script>
+	<script src="./js/plugins/zepto.selector.js"></script>
+	<script src="./js/plugins/callbacks.js"></script>
+	<script src="./js/plugins/deferred.js"></script>--> 
+	<script src="./js/zepto.min.js"></script>
+
+	<script src="./js/plugins/jquery.min.js"></script>
+	<script type="text/javascript">
+		$.noConflict();
+	</script>
+
+	<!--<script src="./js/plugins/shake.js"></script>
+	<script src="./js/plugins/jquery.html5Loader.js"></script>
+	<script src="./js/plugins/jquery.reflection.js"></script>
+	<script src="./js/plugins/jquery.cloud9carousel.js"></script>
+	<script src="./js/plugins/jquery.keyframes.js"></script>
+	<script src="./js/plugins/slick.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script> -->
+	<script src="./js/plugins.min.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="http://cdn.holdfun.cn/jsws2016video/video.min.js"></script>
+
+
+	<script src="./js/plugins/core.js"></script>
+	<script src="./js/plugins/authorize_userinfo.js"></script>
+
+	<!--<script src="./js/plugins/util.js"></script>
+	<script src="./js/app/loader.js"></script>
+	<script src="./js/app/router.js?v=7"></script>
+	<script src="./js/app/countdown.js"></script>
+	<script src="./js/app/guide.js"></script>
+	<script src="./js/app/welcome.js"></script>
+	
+	<script src="./js/app/card-send.js"></script>
+	<script src="./js/app/card-accept.js?v=2"></script>
+	<script src="./js/app/card-view.js"></script>
+	<script src="./js/app/card-get.js"></script>
+	<script src="./js/app/card-unlock.js"></script>
+	<script src="./js/app/card-unlocking.js"></script>
+	<script src="./js/app/card.js"></script>
+
+	<script src="./js/app/comment.js"></script>
+	<script src="./js/app/rank.js"></script>
+	<script src="./js/app/yao.js?v=1"></script>
+	<script src="./js/app/voice.js"></script>
+	<script src="./js/app/vip.js"></script>
+	<script src="./js/app/tangyuan.js"></script>
+	<script src="./js/app/award.js"></script>
+	<script src="./js/app/nothing.js"></script>
+	<script src="./js/app/share.js"></script>
+	<script src="./js/app/zhibo.js?v=1"></script>
+	<script src="./js/app/rollingrecord.js?v=2"></script>
+	<script src="./js/app/rule.js"></script>
+	<script src="./js/app/subscribe.js"></script>
+	
+	<script src="./js/app/index.js"></script>-->
+	<script src="./js/app.min.js"></script>
+	
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=54397941" charset="UTF-8"></script>
+
+		
+</body>
+</html>

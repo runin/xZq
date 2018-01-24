@@ -1,0 +1,322 @@
+html {
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow:hidden;
+    overflow-y: scroll;
+}
+
+#J_background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	z-index: -1;
+}
+#J_window {
+	position: absolute;
+	width: 100%;
+	top: -6%;
+	left: 0;
+	z-index: 98;
+	pointer-events: none;
+}
+#J_shine {
+	position: absolute;
+	width: 70%;
+	top: -5%;
+	right: -2%;
+	z-index: 99;
+	opacity: .8;
+	pointer-events: none;
+}
+
+.swiper-container {
+    overflow: visible;
+}
+.swiper-pagination-bullet {
+    opacity: .45;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+.swiper-slide img {
+	width: 100%;
+}
+.swiper-pagination-bullet-active, .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    background: url(../images/icon-white.png) no-repeat transparent;
+    background-size: 100% 100%;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -26px;
+}
+.swiper-button-next, .swiper-button-prev {
+    width: 20px;
+    height: 26px;
+    margin-top: -13px;
+    cursor: pointer;
+    -moz-background-size: 20px 26px;
+    -webkit-background-size: 20px 26px;
+    background-size: 20px 26px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+#J_swiper {
+	width: 100%;
+	margin: 0% auto 5%;
+}
+
+#J_countdown {
+	position: relative;
+	width: 72%;
+	margin: 13% auto 0;
+	color: #eaca9b;
+	text-align: center;
+}
+.lottery-cd {
+	position: relative;
+	padding: 5px 18px;
+	background: #000;
+	border-radius: 80px;
+	font-size: 14px;
+	border: 1px solid #83704a;
+	border-bottom-color: #967247;
+	border-left-color: #695A5A;
+	border-right-color: #868686;
+}
+.lottery-cd:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 49px;
+    top: -16px;
+    left: -9px;
+    background: url(../images/icon-flash.png) no-repeat;
+    z-index: 9;
+    background-size: 100%;
+}
+.lottery-cd:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 49px;
+    bottom: -16px;
+    right: -9px;
+    background: url(../images/icon-flash.png) no-repeat;
+    z-index: 9;
+    background-size: 100%;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.lottery-cd label {
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'DIGI';
+	color: #FFF;
+	background-image: -webkit-linear-gradient(-90deg, #2d2d2d, #420404);
+	border: 1px solid #424242;
+	border-bottom-color: #1a0302;
+	border-right-color: #1a0302;
+	padding: 1px 2px;
+	margin: 0 4px 0 3px;
+	border-radius: 2px;
+	min-width: 22px;
+	text-align: center;
+}
+
+#J_marqueen {
+    display: block;
+    width: 70%;
+    margin: 6% auto 2%;
+    color: #F4F4F4;
+    font-size: 14px;
+    height: 28px;
+    text-align: center;
+    opacity: 0;
+}
+#J_marqueen:after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: url(../images/icon-split.png) no-repeat;
+	background-size: 100% auto;
+	margin: 5% auto 3%;
+	z-index: 999;
+}
+#J_marqueen ul {
+    overflow:hidden;
+    zoom:1;
+    text-align: center;
+}
+#J_marqueen li {
+    display: block;
+    margin:0 10px;
+    text-align:center;
+    float:left;
+    height: 28px;
+    line-height: 28px;
+}
+#J_marqueen span {
+    position: relative;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 8px;
+    color: #939393;
+}
+/*#J_marqueen span:before {
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 5px;
+    left: -6px;
+    background: url(../images/icon-gift.png) no-repeat;
+    background-size: 100% 100%;
+}*/
+
+
+#J_content {
+	position: relative;
+	margin: 9% auto 32px;
+	padding: 10px 0 0;
+	width: 100%;
+	min-height: 100px;
+	background: url(../images/icon-shadow.png) no-repeat;
+	background-size: 100% auto;
+	font-size: 0;
+	z-index: 1;
+}
+#J_content a {
+	display: block;
+	width: 95%;
+	margin: 0 auto;
+	padding: 3% 10px 0;
+	font-size: 14px;
+	color: #939393;
+	text-align: center;
+}
+#J_content a:after {
+	content: '';
+	display: block;
+	margin: 3% auto 0;
+	width: 100%;
+	height: 3px;
+	background: url(../images/icon-split.png) no-repeat;
+	background-size: 100% auto;
+}
+#J_content a img {
+	display: inline-block;
+	width: 88px;
+	height: 88px;
+	border: 2px solid #434343;
+	border-top-color: #828282;
+	border-left-color: #9C9C9C;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+#J_content a .wrapper {
+	position: relative;
+	display: inline-block;
+	width: calc(100% - 106px);
+	width: -webkit-calc(100% - 106px);
+	text-align: left;
+	vertical-align: top;
+}
+#J_content a .wrapper:after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 20px;
+	height: 32px;
+	background: url(../images/icon-arrow.png) no-repeat;
+	background-size: 100% 100%;
+	top: 18%;
+	right: 6%;
+}
+#J_content a .wrapper h1 {
+	display: inline-block;
+	padding: 10px 15px 18px;
+	margin: 0 0 3px;
+	font-size: 16px;
+	background: url(../images/icon-title.png) no-repeat;
+	background-size: 100% 100%;
+	color: #eaca9b;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+#J_content a .wrapper h3 {
+	font-size: 14px;
+	color: #eaca9b;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	margin: 0 0 2px;
+}
+#J_content a .wrapper p {
+	position: relative;
+	font-size: 13px;
+	overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+	width: calc(100% - 20px);
+	width: -webkit-calc(100% - 20px);
+	padding-right: 44px;
+}
+#J_content a .wrapper p:after {
+	position: absolute;
+	display: inline-block;
+	content: '等大奖';
+	top: 0;
+	right: 0;
+}
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:570px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone6 */
+@media screen
+and (min-device-width:360px)
+and (max-device-width:667px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone6plus */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+
+/* HUAWEI H6 */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+}

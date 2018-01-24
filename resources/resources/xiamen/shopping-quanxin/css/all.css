@@ -1,0 +1,60 @@
+body{
+	background: #e5e5e5;
+}
+.all-list{
+	margin-bottom: 35px;
+}
+.all-list li{
+	background: white;
+	border-top: 1px solid #e0e0e0;
+	opacity: 0;
+	transform: rotateX(-90deg);
+	transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+	background: rgba(255, 255, 255, 0.5);
+}
+.all-list li.empty{
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+	padding: 10px;	
+}
+.all-list li.show {
+  opacity: 1;
+  transform: none;
+  transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+}
+
+.all-list li:first-child{
+	border-top: none;
+}
+.all-list li a{
+	display: block;
+	overflow: hidden;
+	padding: 10px;
+}
+.all-list li a .img-detail{
+	float: left;
+	width: 64px;
+	height: 64px;
+	overflow: hidden;
+}
+.all-list li a .content-detail{
+	margin-left: 74px;
+	line-height: 22px;
+	font-size: 16px;
+	color: black;
+}
+.all-list li a .content-detail h2{
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow: hidden;
+	margin-bottom: 7px;
+}
+.all-list li a .content-detail p{
+	color: #666666;
+	font-size: 12px;
+	line-height: 18px;
+}
+.all-list li a .content-detail p .red{
+	color: #ff0000;
+}

@@ -1,0 +1,375 @@
+.modal {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0px;
+	right:0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 100;
+}
+
+.dialog {
+    position: absolute;
+    color: #fdc728;
+    border-radius: 10px;
+    z-index: 1000;
+    background: url(../images/dia-bg.jpg) no-repeat;
+    background-size:100% 100%;
+    padding-top: 20px;  
+}
+.red{
+	background: url(../images/red.jpg) no-repeat;
+    background-size:100% 100%;
+}
+.modal-guide {
+	height: auto !important;
+}
+.modal .btn-close {
+	display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: url(../images/close.png) no-repeat center;
+    background-size: 70%;
+    z-index: 10000;
+}
+
+.btn-close{
+    top: 6px!important;
+    right:6px!important;
+}
+
+.lottery-dialog{
+    overflow: inherit;
+}
+
+.rule-dialog {
+    padding-top: 5%;
+}
+.rule-dialog h2 {
+	color: #ffe402;
+    height: 32px;
+    margin: 0 6%;
+    line-height: 32px;
+    font-size: 18px;
+    text-align: center;
+}
+.rule-dialog .content {
+	overflow-y: scroll;
+    margin: 0% 6% 0;
+    padding:20px 0;
+    color: #fff;
+    font-size: 14px;
+    
+}
+
+.rule-dialog p {
+	
+}
+.rule-dialog h3 {
+    margin-top: 22px;
+	
+    font-size: 16px;
+}
+.rule li{
+    font-size:12px;
+    border-top: 1px solid #999999;
+    padding-top: 10px;
+    margin-bottom:10px;
+}
+.rule li span{
+    color: #333333;
+    margin: 5px 5px 0;
+    line-height: 16px;
+}
+.rule li i{
+    display: inline-block;
+    margin-top: 4px;
+    font-style: normal;
+    width: 28px;
+    height:28px;
+    border-radius:14px;
+    -webkit-border-radius:14px;
+    background:#CE0A09;
+    color:#fff;
+    text-align:center;
+    line-height: 28px;
+}
+.rule li label{
+    color: #999999;
+    float:right;
+    margin-top: 5px;
+}
+/*.record-con:before,.record-con:after{
+    content: '';
+    border-top:none;
+}*/
+.dialog-copyright {
+    position: absolute;
+    bottom: 0px;
+    left: -5px;
+    right: -5px;
+    font-size: 12px;
+    transform: scale(0.7);
+    text-align: center;
+    color: #655B5B;
+}
+
+/** 抽奖  */
+.lottery-dialog {
+	color: #fdc728;
+}
+
+.btn-share{
+    display:block;
+    width:60%;
+    height:40px;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+    margin: 20px auto 10px;
+    background: #0096ff;
+    letter-spacing: 6px;
+    text-decoration: none;
+}
+
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.lott,.not-lott{
+	height: 100%;
+    padding:10px;
+    text-align: center;
+}
+.lott img{
+    width: 80%;
+    margin: 0 auto;
+}
+.lott h1.lott-fill{
+	width: 72%;
+    height: 24px;
+    background: url(../images/lott.png) no-repeat center;
+    background-size:84% ;
+    margin: 0 auto;
+}
+.lott h1.info-confirm{
+	width: 72%;
+    height: 24px;
+    background: url(../images/confirm.png) no-repeat center;
+    background-size:84% ;
+	margin: 0 auto 10px;
+}
+.lott h2{
+    color: #FAA105;
+    width: 235px;
+    margin: 0 auto 20px;
+    font-size: 15px;
+	white-space: normal;
+	word-break: break-all;
+	text-overflow: ellipsis;
+}
+.lott .red-bao{
+	height: 100%;
+	color: #fff;
+	padding: 18% 0;
+}
+.lott .red-bao .award-tip{
+	 font-size: 21px;
+}
+.lott .red-bao img{
+	display: block;
+	width: 60%;
+	margin: 20% auto;
+	
+}
+.btn-red{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #ffaa3b;
+	margin: 0 auto;
+	line-height: 80px;
+}
+.bth-aw{
+   width: 60%;
+   background: #0096ff;
+   font-size:18px ;
+   letter-spacing: 6px;
+   height: 36px;
+   line-height: 36px;
+   margin-top: 5px;
+   
+}
+
+input {
+    display: block;
+    width: 80%;
+    border: 0 none;
+    border: 1px solid #00d8ff;
+    height: 34px;
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    margin: 5px auto 5px;
+    color: #fff!important;
+    outline: none;
+    background: rgba(255,255,255,0.3);
+}
+input.nonetext {
+	border:none;
+	height: 20px;
+	line-height: 20px;
+	background: none;
+	font-size: 14px;
+	word-wrap: break-word;
+	color: #fff!important;
+}
+
+.not-lott h1{
+	width: 40%;
+    height: 30px;
+    background: url(../images/not-lott.png) no-repeat center;
+    background-size:100% ;
+    margin: 0px auto;
+}
+.not-lott img{
+	display: block;
+    width: 80%;
+    margin: 30px auto;
+}
+.lott-back{
+    width: 60%;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	 .lott h1.lott-fill{
+		width: 60%;
+	    height: 16px;
+	    margin: 4 auto 0;
+	 }
+	 .lott h1.info-confirm{
+	 	margin: 6 auto;
+	 }
+	 .lott img{
+	 	width: 70%;
+	 }
+	 input{
+	 	width: 80%;
+	 	height: 30px;
+	 }
+	 .btn-share {
+	 	 width: 54%;
+	     font-size:16px ;
+	     height: 32px;
+	     line-height: 32px;
+		 margin: 10px auto;
+	 }
+	 .bth-aw{
+	   width: 54%;
+	   font-size:16px ;
+	   letter-spacing: 4px;
+	   height: 32px;
+	   line-height: 32px;   
+	}
+	.not-lott img{
+		display: block;
+	    width: 80%;
+	    margin: 20px auto;
+	}
+	.lott .red-bao{
+		padding: 4% 0;
+	}
+	.lott .red-bao img{
+		margin: 12% auto;
+	}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .lott .red-bao{
+	padding: 14% 0;
+}
+}
+/*self*/
+@media screen and (min-device-width:320px) and (min-device-height:860px) {
+	.not-lott img{
+		display: block;
+	    width: 80%;
+	    margin: 44px auto;
+	}
+}
+/*dai*/
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+  	.not-lott img{
+		display: block;
+	    width: 80%;
+	    margin: 24px auto;
+	}
+	.lott .red-bao{
+		padding: 7% 0;
+	}
+}
+/*加载按钮 -s*/
+.loader{
+    margin: 0 auto;
+    width: 72px;
+}
+.loader span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background: #F26C0D;
+    border-radius: 50px;
+    margin: 0 2px;
+    -webkit-animation: loader 1s infinite alternate;
+    -moz-animation: loader 1s infinite alternate;
+}
+.loader span:nth-of-type(2) {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+.loader span:nth-of-type(3) {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+}
+.loader span:nth-of-type(4) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+.loader span:nth-of-type(5) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+}
+@-webkit-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+@-moz-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+/*加载按钮 -e*/

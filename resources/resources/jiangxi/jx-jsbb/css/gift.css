@@ -1,0 +1,153 @@
+body{
+    background: url(../images/bg-body.jpg) no-repeat fixed;
+    background-size:100% 100%;
+
+}
+.main {
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-size: 15px;
+	padding-bottom: 50px;
+}
+.gift-header{
+	width: 100%;
+	background: rgba(255,255,255,0.3);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 20px 0px;
+	color: #fff;
+	
+}
+.gift-header p:first-child{
+	width: 100%;
+}
+.gift-header p:first-child label{
+	display: inline-block;
+	border: 4px solid rgba(106,106,133,0.7);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.gift-header p:first-child img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.gift-header p:last-child span{
+	font-size: 15px;
+}
+.gift-timeline {
+    position: relative;
+	
+    padding-left: 28px;
+}
+.list p.empty{
+	line-height: 200px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+}
+.gift-timeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 5px;
+	background: #194ad9;
+}
+.gift-timeline li {
+    padding-left: 27px;
+	
+    margin-top: 17px;
+    position: relative;
+}
+.gift-timeline li:last-child:before {
+	content: '';
+	display: block;
+	width: 5px;
+	height: 100%;
+	background: #194ad9;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.gift-time {
+    color: #fff;
+    padding-top: 5px;
+}
+.gift-icon {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #194ad9;
+    border-radius: 50%;
+    position: absolute;
+    left: -12px;
+    background: #fff;
+}
+.gift-icon:before {
+	content: '';
+	background: url(../images/gift-icon.png) no-repeat center;
+	background-size: 16px auto;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.gift-content {
+    background: transparent;
+	position: relative;
+    border-radius: 8px 0 0 8px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.gift-content h2 {
+	width: 60%;
+    color: #fff;
+    padding:0 20px 0 0 ;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+.gift-content .view-detail{
+	font-size: 14px;
+	color: #000;
+	padding: 2px 8px;
+	background: #fff;
+	border:1px solid #00b2f4;
+	position: absolute;
+	top:0px;
+	right:16px;
+}
+.gift-content p {
+    color: #fff;
+	
+    line-height: 24px;
+}
+
+.btn-loadmore{
+    background: #D2CCC7;
+}
+.btn-back{
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	background: #00aff0;
+}
+.btn-back:hover{
+	background: #00aff0;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.list p.empty{
+		line-height: 140px;
+		color: #fff;
+		font-size: 16px;
+		text-align: center;
+	}	
+} 

@@ -1,0 +1,408 @@
+body{
+	background: #010127;
+}
+.wrapper{
+	background: url("../images/bg-apply.jpg") no-repeat top center;
+	background-size: cover;
+}
+header{
+	text-align: center;
+	padding-top: 20px
+}
+header img{
+	width: 60%;
+}
+.form-wrapper{
+	margin: 10px 10px 30px 25px;
+	padding: 10px 10px 10px 20px;
+	border: 2px solid #016fb9;
+	position: relative;
+}
+.form-wrapper .form-header{
+	width: 213px;
+	height: 153px;
+	position: absolute;
+	left: -19px;
+	top: -16px;
+	background: url("../images/bg-form.png") no-repeat;
+	background-size: cover;
+	z-index: 4;
+}
+.form-wrapper .form-header-xuantian{
+	width: 212px;
+	height: 132px;
+	position: absolute;
+	left: -19px;
+	top: -19px;
+	background: url("../images/bg-form-xuantian.png") no-repeat;
+	background-size: cover;
+	z-index: 4;
+}
+.form-wrapper .form-header-mask{
+	width: 2px;
+	height: 110px;
+	background: #000;
+	position: absolute;
+	left: -2px;
+	top: 19px;
+	z-index: 3;
+}
+.form-wrapper .form-header-mask-xuantian{
+	width: 2px;
+	height: 93px;
+	background: #000;
+	position: absolute;
+	left: -2px;
+	top: 14px;
+	z-index: 3;
+}
+.form-wrapper .form-bg{
+	width: 100%;
+	height: 100%;
+	background: #101a4b;
+	opacity: 0.4;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+.form-wrapper .form{
+	position: relative;
+	z-index: 5;
+}
+
+.form-item{
+	overflow: hidden;
+	padding: 5px 0;
+}
+.form-item label{
+	color: #dfdfdf;
+	display: block;
+	line-height: 30px;
+	height: 30px;
+	font-size: 14px;
+	float: left;
+	width: 30px;
+}
+.form-item.multi label{
+	line-height: 20px;
+}
+.xuantian .form-item label{
+	width: 80px;
+}
+.form-item .form-item-input{
+	margin-left: 40px;
+	background: #fff;
+	border-radius: 3px;
+	height: 30px;
+	overflow: hidden;
+}
+.xuantian .form-item .form-item-input{
+	margin-left: 90px;
+}
+.xuantian .form-item .form-item-input{
+	height: auto;
+}
+.form-item .form-item-input.radio,
+.form-item .form-item-input.select,
+.form-item .form-item-input.textarea{
+	background: none;
+}
+.form-item .form-item-input.small{
+	width: 80px;
+}
+.form-item .form-item-input input[type='text']{
+	border-radius: 3px;
+	width: 100%;
+	background: none;
+	border: none;
+	padding: 0px 5px;
+	color: #333;
+	font-size: 14px;
+	line-height: 30px;
+}
+.form-item .form-item-input.radio label{
+	line-height: 30px;
+	height: 30px;
+	display: block;
+	float: left;
+	width: 50px;
+	color: #dfdfdf;
+}
+.xuantian .form-item .form-item-input.radio label{
+	width: 80px;
+}
+.form-item .form-item-input select{
+	line-height: 30px;
+	height: 30px;
+	font-size: 14px;
+	width: 80px;
+}
+.form-item .form-item-input input[type='radio']{
+	margin-right: 5px;
+	position: relative;
+	top: -1px;
+}
+.form-item .form-item-input textarea{
+	height: 80px;
+	border-radius: 3px;
+	width: 100%;
+	border: none;
+	padding: 0px 3px;
+	color: #333;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+a.submit{
+	display: block;
+	margin: 10px auto 0;
+	height: 46px;
+	width: 173px;
+	background: url("../images/bg-submit-btn.png") no-repeat center;
+	background-size: cover;
+	text-align: center;
+	line-height: 46px;
+	font-size: 18px;
+	color: white;
+	position: relative;
+	left: -10px;
+}
+
+p.pledge{
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	position: relative;
+	left: -10px;
+	margin: 10px 0px 5px;
+}
+
+footer{
+	color: #888;
+	text-align: center;
+	font-size: 12px;
+	width: 100%;
+	padding-bottom: 5px;
+}
+footer p{
+	text-align: center;
+}
+
+/***** upload *****/
+.upload-box form {
+	height: 0;
+	opacity: 0;
+	position: absolute;
+	top: -100px;
+}
+.upload-box form input {
+    opacity: 0;
+}
+.upload-box .icon {
+	display: inline-block;
+	vertical-align: top;
+	width: 52px;
+	height: 52px;
+	line-height: 52px;
+	border-radius: 10px;
+	text-align: center;
+}
+.upload-box .icon:before {
+	content: '';
+	display: inline-block;
+	vertical-align: -2px;
+	background: url(http://yao.holdfun.cn/portal/resources/news/images/icons.png) no-repeat 0 0;
+	background-size: 169px auto;
+}
+
+.upload-box .img-preview {
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #babbc2;
+	border-radius: 10px;
+	text-align: center;
+	width: 52px;
+	height: 52px;
+	line-height: 52px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.form-item .photo-wrapper a.add{
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 36px;
+	border: 1px dashed #dfdfdf;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+}
+.upload-box .img-preview .close {
+	content: '';
+	display: block;
+	background: url(../images/close.png) no-repeat 0 0;
+	background-size: 18px auto;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: -6px;
+	top: -5px;
+	cursor: pointer;
+}
+.upload-box .img-preview .uploading {
+	display: none;
+}
+.upload-box .img-preview.loading .uploading {
+	height: 25px;
+	width: 25px;
+	margin: 0px auto;
+	position: relative;
+	-webkit-animation: loading-rotation .6s infinite linear;
+	animation: loading-rotation .6s infinite linear;
+	border-left: 3px solid rgba(255, 153, 163, 0.55);
+	border-right: 3px solid rgba(255, 153, 163, 0.55);
+	border-bottom: 3px solid rgba(255, 153, 163, 0.55);
+	border-top: 3px solid rgba(238,26,46,.85);
+	border-radius: 100%;
+	display: block;      
+	line-height: 0;
+	font-size: 0;
+}
+.upload-box .img-preview .lc {
+	position: absolute;
+	left: 13px;
+	top: 13px;
+}
+.upload-box .img-preview .ic {
+    display: block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.upload-box .img-preview img {
+	vertical-align: -11px;
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%;
+}
+.upload-box .btn-upload {
+    border: 2px dotted #5e5e5e;
+	
+    margin-bottom: 10px;
+}
+.upload-box .btn-upload:before {
+    width: 28px;
+	
+    height: 28px;
+    background-position: -79px 0px;
+    vertical-align: -7px;
+}
+
+.preview-box {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	z-index: 9999999;
+	background-size: 320px auto;
+	top: 0;
+	left: 0;
+}
+@-webkit-keyframes loading-rotation {
+   from {-webkit-transform: rotate(0deg);}
+   to {-webkit-transform: rotate(359deg);}
+}
+@keyframes loading-rotation {
+   from {transform: rotate(0deg);}
+   to {transform: rotate(359deg);}
+}
+
+/***** 弹出层 *****/
+.dialog-wrapper{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 30;
+}
+.dialog-wrapper .dialog-wrapper-bg{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	z-index: 30;
+	opacity: 0.7;
+}
+.apply-dialog{
+	width: 90%;
+	margin: 40px auto 0;
+	padding: 10px 20px 20px 0px;
+	border: 2px solid #016fb9;
+	position: relative;
+	z-index: 40;
+	min-height: 400px;
+}
+.apply-dialog .apply-dialog-bg{
+	width: 100%;
+	height: 100%;
+	background: #101a4b;
+	opacity: 0.8;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}
+.apply-dialog .apply-dialog-close{
+	width: 15px;
+	height: 15px;
+	background: url("../images/icon-close.png") no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	z-index: 40;
+}
+
+.apply-dialog .apply-success-header{
+	z-index: 20;
+	position: relative;
+	padding: 60px 10% 20px;
+}
+.apply-dialog .apply-tips{
+	color: #fefefe;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	z-index: 20;
+	padding: 25px 0 85px;
+}
+.apply-dialog .apply-tips p{
+	position: relative;
+	left: 10px;
+}
+.apply-success-ok{
+	position: relative;
+	z-index: 20;
+	width: 100%;
+}
+.apply-success-ok a{
+	display: block;
+	width: 173px;
+	height: 46px;
+	line-height: 46px;
+	margin: 0 auto;
+	background: url("../images/bg-submit-btn.png") no-repeat center;
+	background-size: cover;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+}
+/***** END OF弹出层 *****/

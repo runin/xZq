@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!--首页-s-->
+<section id="index" class="index items">
+    <!--<div class="video-div">
+        <video x-webkit-airplay="true" webkit-playsinline="yes" class="video" id="video" preload="auto"
+               data-collect="true" data-collect-flag="index-vedio-play-btn" data-collect-desc="朋友圈-视频播放按钮">
+            <source src="http://cdn.holdfun.cn/resources/services/tv_cctv6_man/yanghe.webm" type="video/webm" />
+            <source src="http://cdn.holdfun.cn/resources/services/tv_cctv6_man/yanghe.mp4" type="video/mp4" />
+            您的浏览器不支持视频
+        </video>
+        <a href="#" class="play" data-collect="true" data-collect-flag="index-vedio-play-btn" data-collect-desc="朋友圈-视频播放按钮">
+            <img src="images/icon-play.png" />
+        </a>
+    </div>-->
+    <div class="video-div" data-collect="true" data-collect-flag="index-video" data-collect-desc="首页-视频点击">
+        <section class="video" id="video"></section>
+    </div>
+
+    <div class="page-con none">
+        <section class="talkroom none" id="talkroom">
+            <div class="talk-title">
+                <img id="title-img" src="images/avatar.png">
+                <div class="content">
+                    <p id="title-per" class="per"></p>
+                    <p id="title-que" class="que"></p>
+                </div>
+            </div>
+        </section>
+        <section class="countdown none" id="lottery-countdown" data-collect="true" data-collect-flag="index-switch-btn" data-collect-desc="首页-去摇奖">
+            <img src="images/head.png">
+            <label id="go-lottery"></label>
+            <span class="countdown-tip"></span>
+            <span class="detail-countdown"></span>
+        </section>
+        <div id="body" class="body swiper-no-swiping">
+            <ul id="comment_list" class="content"></ul>
+        </div>
+        <div class="switch" data-collect="true" data-collect-flag="index-switch-btn" data-collect-desc="首页-评论开关">
+            <label id="qp"><span>电视弹幕投票开关</span></label>
+            <div></div>
+        </div>
+        <p class="mesg-tip" id="mesg-tip">有新消息，点击查看</p>
+        <footer class="footer none" id="sjt" >
+            <img class="sjt" src="images/sjt.png" />
+            <input id="input_text" type="text" placeholder="说说你的看法吧~~~" />
+            <a id="input_submit" data-collect="true" data-collect-flag="index-talk-submit" data-collect-desc="聊天室页-评论发送按钮"></a>
+        </footer>
+    </div>
+</section>
+<!--首页-e-->
+
+
+<!--报名-s-->
+<section id="sign" class="sign items none">
+    <section class="not-start none" id="not-start">活动尚未开始，请耐心等待!</section>
+    <section class="none" id="info">
+        <div id="user-con" class="user-con">
+            <input class="name" name="name" type="text" placeholder="姓名"/>
+            <input class="age" name="age" type="text" placeholder="年龄"/>
+            <input class="sex" name="sex" type="text" placeholder="性别"/>
+            <input class="phone" name="phone" type="tel" placeholder="电话"/>
+            <input class="address" name="address" type="text" placeholder="地址"/>
+        </div>
+        <div class="role none">
+            <span>期望饰演角色</span>
+            <label class="" data-type="警 察" data-collect="true" data-collect-flag="role-jc-btn" data-collect-desc="报名页-警察单选按钮"></label>
+            <label class="selected" data-type="罪 犯" data-collect="true" data-collect-flag="role-zf-btn" data-collect-desc="报名页-罪犯单选按钮"></label>
+        </div>
+        <div class="upload-box" id="upload-box">
+            <a href="javascript:void(0)" class="icon btn-upload"></a>
+        </div>
+        <a class="submit" id="submit" data-collect="true" data-collect-flag="submit-btn" data-collect-desc="报名页-提交按钮">
+            <img src="images/submit.jpg" />
+        </a>
+    </section>
+    <section class="succeed none" id="succeed">
+        <img class="gx-wan" src="images/gx-wan.png" />
+        <h1>请耐心等待节目组与您联系。</h1>
+        <div class="press none">
+            <div class="jc">
+                <img class="jc-press" src="images/press.png" />
+                <img class="jc-img" src="" />
+            </div>
+            <div class="zf">
+                <img class="zf-press" src="images/press.png" />
+                <img class="zf-img" src="" />
+            </div>
+            <h2>角色报名情况</h2>
+        </div>
+    </section>
+</section>
+<!--报名-e-->
+
+<!--答题-s-->
+<section id="answer" class="answer items none">
+    <h1 class="tlt"></h1>
+    <section class="swiper-control">
+        <section class="swiper-container">
+            <section class="swiper-wrapper"></section>
+            <section class="swiper-pagination"></section>
+            <section class="swiper-button-next swiper-button-white"></section>
+            <section class="swiper-button-prev swiper-button-white"></section>
+        </section>
+    </section>
+</section>
+<!--答题-s-->
+
+<!--花絮-s-->
+<section id="sidelights" class="sidelights items none">
+	<div class="huaxubox">
+	   	<div class="viediobox">
+			<h1 class="title1"><img src="images/title1.png" /></h1>
+			<div class="huaxu" ><div id="video-after"></div></div>
+		</div>
+		<div class="viediobox">
+			<h1 class="title2"><img src="images/title2.png" /></h1>
+			<div class="huaxu" ><div id="video-interview"></div></div>
+		</div>
+	</div>
+</section>
+<!--花絮-s-->
+
+<!--选项卡-s-->
+<section id="tab" class="tab ">
+    <div id="dm" data-collect="true" data-collect-flag="dm-btn" data-collect-desc="弹幕按钮">
+        <img src="images/dm.png" />
+    </div>
+    <div id="bm" data-collect="true" data-collect-flag="bm-btn" data-collect-desc="报名按钮">
+        <div class="bm-qp none" id="bm-qp">
+            <h3 id="wysjm" data-collect="true" data-collect-flag="wysjm-btn" data-collect-desc="我要当演员按钮">我要当演员</h3>
+            <h3 id="bmpcy" data-collect="true" data-collect-flag="bmpcy-btn" data-collect-desc="报名片场游按钮">报名片场游</h3>
+        </div>
+        <img id="bm-img" src="images/bm.png" />
+    </div>
+    <div id="dt" data-collect="true" data-collect-flag="dt-btn" data-collect-desc="答题按钮">
+        <img src="images/dt.png" />
+    </div>
+    <div id="hx" data-collect="true" data-collect-flag="hx-btn" data-collect-desc="花絮按钮">
+        <img src="images/hx.png" />
+    </div>
+</section>
+<!--选项卡-e-->
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="js/config.js"></script>
+
+<!--<script src="js/plugins/zepto.min.js"></script>
+	<script src="js/plugins/zepto.cookie.min.js"></script>
+	<script src="js/plugins/zepto.selector.min.js"></script>
+	<script src="js/plugins/zepto.fx.min.js"></script>
+	<script src="js/plugins/touch.js"></script>
+	<script src="js/plugins/md5.js"></script>-->
+<script src="js/zepto.base.min.js"></script>
+<script src="js/scrollTo.js"></script>
+<script src="js/upload.min.js"></script>
+<script src="js/swiper.min.js"></script>
+
+<script src="js/wx_api_userinfo.js"></script>
+<script src="js/common.js"></script>
+
+<script src="js/app/index.js"></script>
+
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="author" content="" />
+		<meta name="viewport"  content="width=device-width; initial-scale=1;  minimum-scale=0.5; maximum-scale=1.0;user-scalable=no;" /> 
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="MobileOptimized" content=""/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>西安最萌宝宝评选</title>
+		<script src="js/wx_api.js"></script>
+		<link href="css/global.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<input type="hidden" id="noRunShare" value="true">
+		<div class="mod_top"></div>
+		<a href="javascript:void(-1);" class="sign none" id="btn-sign-in" data-collect="true" data-collect-flag="baby-index-signin-tab" data-collect-desc="立即签到 ,赢取奖品"><i></i>立即签到  赢取奖品</a>
+		<span class="signed none" id="btn-sign-in-ed" data-collect="true" data-collect-flag="baby-index-furter-tab" data-collect-desc=">本期已签 ,下期再抢"><i></i>本期已签  下期再抢</span>
+		<div class="timebox fd">
+		<div class="lasttime"><i></i>投票截至时间：<em id="vote-end-time"></em></div>
+		<div class="nav box-orient-h">
+			<a href="javascript:void(-1);" class="box-flex active" id="baby_tab" data-collect="true" data-collect-flag="baby-index-current-tab" data-collect-desc="本期萌宝宝">本期萌宝宝</a>
+			<a href="javascript:void(-1);" class="box-flex" id="activity_tab" data-collect="true" data-collect-flag="baby-index-activity-tab" data-collect-desc="活动规则">活动规则</a>
+			<a href="javascript:void(-1);" class="box-flex" id="history_tab" data-collect="true" data-collect-flag="baby-index-history-tab" data-collect-desc="往期萌宝">往期萌宝</a></div>
+		</div>
+		<div class="spinner" id="baby-loading">
+		  <div class="bounce1"></div>
+		  <div class="bounce2"></div>
+		  <div class="bounce3"></div>
+		</div>
+		<!--本期萌宝宝 s-->
+		<div class="mod_box none" id="baby_box"></div>
+		<!--本期萌宝宝 e-->
+		<!--活动规则 s-->
+		<div class="mod_box details none">
+			<h2>栏目介绍</h2>
+			<div class="d_item">
+			    <p>本活动由西安广播电视台新闻综合频道《西安看天下》《乐在西安》栏目倾力打造。</p><p><em>《乐在西安》栏目</em>是我台精心打造全新推出的首档全媒体节目，您可以在电视、音乐交通频率、微信上观看收听。节目以旅游为主，涵盖与旅游相关的如资讯、美食、娱乐、购物等相关内容。同时开设官方微信【乐在西安】<em>lzxakl</em>，官方微博<em>【乐在西安TV】</em>。目前节目开办有：“周末去哪儿”（推荐西安周边好吃好玩好逛的地儿）；“主播带你游天下”（主持人推荐出境游经典线路）等品牌版块。</p>	
+			</div>
+			<h2>活动规则</h2>
+			<div class="d_item mb10">
+				<h2>一.萌宝大奖：</h2>
+			    <p>从8月1日开始的西安最萌宝宝评选，每期五名宝宝参加评选，投票最多者获得摄影卡一张。</p>	
+			    <p><em>参与规则：</em></p>
+			    <p>首先您只能在<em>每晚22：10——22：45</em>期间，点击微信摇一摇参与西安最萌宝宝评选。当然啦，您还可以为萌宝拉票，只需点击拉票，分享微信朋友圈即可。
+		拉票时间：当期节目播出时到下期节目播出前。</p>
+		        <h2>二.签到大奖：</h2>
+		        <p><em>每天前十名签到者</em>会获得曲江农博园门票一张；</p>
+		        <p><em>连续签到一个月您将有机会获得由康辉西安国际旅行社提供的超级旅游大奖——两个免费境外游名额。</em></p>
+			</div>
+			<h2>境外游大奖参与规则</h2>
+			<div class="d_item mb10">
+				<p><em>连续一个月微信摇一摇签到</em></p>		
+		我们最终将会通过公开抽奖，在满足该条件的用户中抽取<em>两位幸运用户</em>，赢得<em>旅游大奖</em>。<p>
+			</div>
+		</div>
+		<!--活动规则 e-->
+		<!--往期萌宝 s-->
+		<div class="mod_box none">
+			<span id="history-field"></span>
+			<a href="javascript:void(-1);" class="btn-viewmore none" id='baby_history_more' data-collect="true" data-collect-flag="baby_history_more" data-collect-desc="萌宝宝查看更多">查看更多</a>
+		</div>	
+		<!--往期萌宝 e-->
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/md5.js"></script>
+        <script src="js/share.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/data_collect.js"></script>
+	</body>
+</html>

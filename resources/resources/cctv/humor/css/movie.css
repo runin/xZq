@@ -1,0 +1,166 @@
+.main {
+	background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg.jpg) no-repeat 0 0;
+	background-size: cover;
+	min-height: 100vh;
+}
+.share-tip {
+    color: #fff;
+    position: absolute;
+    right: 11px;
+    top: 12px;
+    background: #F2831A;
+    border-radius: 6px;
+    width: 64%;
+}
+.share-tip .content {
+	position: relative;
+	border-radius: 8px;
+	padding: 5px 2px;
+	text-align: center;
+}
+.share-tip .content:after, .share-tip .content:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.share-tip .content:after {
+	border-width: 6px;   
+	border-bottom-color: #f2831a;
+	right: 10px;
+	left: auto;
+}
+.share-tip .content:before {
+	border-width: 6px;   
+	border-bottom-color: #f2831a;
+	right: 10px;
+	left: auto;
+}
+.share-tip span {
+	display: none;
+	vertical-align: top;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	font-size: 12px;
+	margin-left: 4px;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 4px;
+	margin-top: 3px;
+}
+.share-tip span:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icon-share.png) no-repeat -25px 0;
+	background-size: 50px auto;
+	width: 25px;
+	height: 25px;
+}
+.share-tip span:nth-child(2) {
+	
+}
+.share-tip span:nth-child(2):before {
+    background-position: 1px 0;
+	
+}
+.share-tip p {
+	font-size: 13px;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+}
+.ui-content {
+    padding: 22% 12px 10%;
+	
+    color: #fff;
+}
+.ui-content h2 {
+    margin: 0 -6px 5px;
+	
+    font-size: 18px;
+    min-height: 24px;
+}
+.ui-content h2 span {
+    font-size: 12px;
+	
+    margin-left: 4px;
+    color: #fff;
+}
+.ui-content p {
+    font-size: 15px;
+	
+}
+.ui-content p.tips {
+    margin-top: 10px;
+	
+    margin-bottom: -4px;
+    font-size: 12px;
+    color: #FEC000;
+}
+.cover {
+    background: url(http://cdn.holdfun.cn/ahtvcomedian/images/material/bg-movie.jpg) no-repeat center center;
+	
+    background-size: cover;
+    height: 215px;
+    margin-top: 9px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.cover:before {
+	/* content: ''; */
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+}
+.cover img {
+    position: absolute;
+	
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 0;
+}
+.btn-player {
+	background: url(../images/icon-player.png) no-repeat 0 0;
+	background-size: 68px auto;
+	display: inline-block;
+	vertical-align: middle;
+	width: 68px;
+	height: 68px;
+	margin: 0 auto;
+	z-index: 111;
+	position: relative;
+}
+
+.btn-comeon {
+    display: block;
+	
+    margin: 10px auto 10px;
+    width: 55%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #FF3535;
+    border-radius: 50px;
+    color: #fff;
+}
+dl.vote-result {
+    padding: 15px 12%;
+}
+.vote-result dt {
+    color: #fff;
+	
+    font-size: 16px;
+}

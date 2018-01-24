@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>和美北京中国梦</title>
+	
+	<!-- common.min.css
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" /> -->
+	<!--  -->
+	<link rel="stylesheet" href="./css/common.min.css" />
+	
+	<!-- card.min.css
+	<link rel="stylesheet" href="./css/card.css" /> -->
+	<!--  -->
+	<link rel="stylesheet" href="./css/card.min.css" />
+</head>
+<body>
+	
+	<!-- 页面内容 -->
+	<header>
+		<div class="logo"></div>
+	</header>
+	<section class="wrapper" id="wrapper">
+		<div class="cover">
+			<img src="./images/card-hd.jpg" />
+		</div>
+		<div class="content hidden" id="content">
+			<div class="star" id="star">
+				<div class="avatar">
+					<img src="./images/blank.gif" />
+				</div>
+				<div class="bless">
+					<h3 class="ellipsis name"></h3>
+					<div class="arrow-left voice" id="star-voice">
+						<i class="icon-voice icon-voice-star"></i>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="me" id="me">
+				<div class="avatar">
+					<img src="./images/blank.gif" />
+				</div>
+				<div class="bless">
+					<h3 class="ellipsis name"></h3>
+					<div class="ctrl text" id="ctrl">
+						<a href="#" class="btn-type" id="btn-type"><span></span></a>
+						<div class="words">
+							<a href="#" class="btn-voice" id="btn-voice">点一下说出您的祝福</a>
+							<input type="text" class="no-border" id="input-bless" placeholder="输入您的祝福" />
+						</div>
+					</div>
+					<div class="arrow-left wish none">
+						<div class="wish-txt" id="wish-txt"></div>
+					</div>
+					<div class="arrow-left voice none" id="me-voice">
+						<i class="icon-voice"></i>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="modal modal-speak none" id="speak-dialog">
+		<div class="dialog speak-dialog relocated">
+			<p class="err-tip none" id="err-tip">录音时间太短</p>
+			<a href="#" class="btn-press" id="btn-press">按住说话</a>
+		</div>
+	</section>
+	
+	<div class="ctrl-box">
+		<h4 class="tips">亲友收到贺卡时，也可以抢得红包哦！</h4>
+		<a href="#" class="btn-sendcard" id="btn-sendcard">抢红包啦！</a>
+		<a href="star.html" class="btn-opendidi" id="btn-opendidi">我也发贺卡抢红包</a>
+	</div>
+	
+	<footer class="copyright">页面由BTV文艺频道和BTV北京卫视提供<br />新掌趣科技制作 powered by holdfun.cn</footer>
+	<!-- 页面内容END -->
+	
+	<!-- plugins.min.js
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.longpress.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+	<script src="./js/plugins/sha1.min.js"></script> -->
+	<!--  -->
+	<script src="./js/plugins.min.js"></script>
+	
+	<script src="http://yaotv.qq.com/c/=/shake_tv/include/js/jsapi_authorize.js,/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/wx_api_userinfo.js"></script>
+	
+	<!-- test/data.js
+	<script src="./js/test/data.js"></script> -->
+	
+	<!-- card.min.js
+	<script src="./js/app/data.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/card.js"></script> -->
+	<!--  -->
+	<script src="./js/card.min.js"></script>
+</body>
+</html>

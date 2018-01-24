@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>我要找到你</title>
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/core.css" />
+	<link rel="stylesheet" href="css/person.css" />
+</head>
+<body>
+	
+	<!-- 页面内容 -->
+	<header>
+		<div class="ctrls">
+			<div class="name">
+				<img id="xun-name" src=""/>
+				<div class="for-help">
+					<span>
+						<img src="images/love.png" />
+					</span>
+					<span>给他加油</span>
+				</div>
+			</div>
+			<span class="title" id="title"><!--打击黑砖窑为救孩子--></span>
+		    <span class="title-intro">已有 <label id="sc-count">0</label> 人为他加油</span>
+		    <span class="share-tips">点击右上角将故事分享出去，您的随手转发，或许成就一个奇迹。</span>
+		</div>
+
+	</header>
+	<section class="content">
+		<div class="person-info">
+			<div class="info-box"></div>
+			<a class="more none"></a>
+		</div>
+	</section>
+	<div class="help">
+		<!-- <a id="share-btn" href="#" class="btn" data-collect="true" data-collect-flag="anhui-find-share-btn" data-collect-desc="我要找人 传递信息" >传递爱心</a>-->
+		<a id="xs-btn" href="#" title="提供线索" class="btn help-btn" data-collect="true" data-collect-flag="anhui-find-clue-btn" data-collect-desc="我要找人 提供线索" >提供线索</a><a id="xr-btn" href="#" title="发布寻人" class="btn help-btn" data-collect="true" data-collect-flag="anhui-find-find-btn" data-collect-desc="我要找人 发布寻人" >发布寻人</a>
+	</div>
+
+	<script src="js/config.js"></script>
+	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+<!-- plugins.min.js
+	<script src="./js/plugins.min.js"></script>-->
+
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+
+	<script src="./js/app/person.js"></script>
+</body>
+</html>

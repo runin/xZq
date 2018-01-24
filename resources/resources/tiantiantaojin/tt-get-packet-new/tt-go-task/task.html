@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/task.css" rel="stylesheet" type="text/css" />
+    <title>任务栏</title>
+</head>
+<body>
+    <!-- 头部图片导航区 -->
+        <header id="header">
+            <div class="taotao-recommend">
+                 <img src="./images/taotao-recommand.png" alt="" class="taotao-img">
+                  <marquee direction="left" behavior="scroll" scrollamount="1" scrolldelay="0" loop="-1" >天天淘金用户首次登陆自动赢取10金币，更多任务、敬请期待！
+                  </marquee>
+                <!--  <img src='./images/arrowred-down.png' class="arrow arrowdown"> -->
+            </div>
+            <div class="top-image-nav none">
+                <div class="top-image-nav1 img-nav">
+                    <div class="hot-label">
+                      <p>Hot</p>
+                    </div>
+                </div>
+                <div class="top-image-nav2 img-nav">
+                  <div class="hot-label">
+                      <p>Hot</p>
+                  </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 任务列表 -->
+        <section>
+            <div class="tab-div">
+                <a href="javascript:void(0)" data-collect="true" class="all-task click-style"
+                   data-collect-flag="tt-get-all-task"
+                   data-collect-desc="天天淘金-全部任务" id="all-task">全部任务&nbsp;&nbsp;<span class="icon-ctrl"></span></a>
+                   <span style="margin: 0px 1%;" class="mid-line">|</span>
+                <a href="javascript:void(0)" data-collect="true" class="much-makemoney"
+                   data-collect-flag="tt-get-much-makemoney"
+                   data-collect-desc="天天淘金-最赚钱" id="much-makemoney">
+                    <p class="reflect-name"><span class="menu-name">最赚钱</span>&nbsp;&nbsp;<span class="icon-ctrl"></span> </p>
+                   <div class="tag-bg none">
+                      <p><span class="pop-name">最赚钱</span>&nbsp;&nbsp;<span class="icon-ctrl"></span> </p>
+                      <p><span>最容易</span>&nbsp;&nbsp;<span class="icon-space"></span></p>
+                      <p><span>最人气</span>&nbsp;&nbsp;<span class="icon-space"></span></p>
+                   </div>
+                   </a>
+            </div>
+            <div class="result-list">
+                <ul id="list">
+                </ul>
+            </div>
+        </section>
+<body>
+</html>
+

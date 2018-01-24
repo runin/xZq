@@ -1,0 +1,27 @@
+body {
+	background-size: 100% 100%;
+}
+
+.main {
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+h2 {
+    text-align: center;
+	display: block;
+    color: #fff;
+    font-size: 18px;
+	margin : 30px auto 70px;
+}
+
+h2:before {
+	content: '';
+	display: block;
+	vertical-align: middle;
+	background: url(../images/smile.png) no-repeat;
+	background-size: 63px auto;
+	width: 63px;
+	height: 63px;
+	margin: 0 auto 20px;
+}

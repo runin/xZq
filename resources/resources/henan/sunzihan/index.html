@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <meta name="wxm:timeline_title" content="孙子涵：跟我约会吧！">
+    <meta name="wxm:appmessage_title" content="孙子涵：跟我约会吧！">
+    <meta name="wxm:appmessage_desc" content="天呐，这让我怎么拒绝！">
+    <!-- 分享缩略图，必须为绝对路径，且图片链接必须为http协议（由于安卓微信客户端无法获取https的分享图片，仅此处需要强制http协议）-->
+    <meta name="wxm:img_url" content="http://cdn.holdfun.cn/question/period/images/201729/926312a803b64c9b8844333b16d31ad9.png">
+    <script type="text/javascript">
+        document.write('<meta name="wxm:link" content="'+ location.href +'">');
+    </script>
+    <title>孙子涵：跟我约会吧！</title>
+</head>
+<script src="//wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.min.js"></script>
+<script src="js/jquery-2.1.0.js"></script>
+<script>document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);</script>
+<link rel="stylesheet" href="css/index.css">
+<body>
+<img id="haha" src="img/w1.jpg">
+<img id="qinxi" src="img/test.jpg">
+<img id="play" style="display: none;" src="img/play1.png" width="80px">
+<div id="loadbg">
+    <div id="loading">
+        <div id="load">
+            <div class="container none">
+                <span id="total"></span>
+                <div id="bar" style="width:0%;"></div>
+            </div>
+            <p>打开声音，听孙子涵跟你说</p>
+        </div>
+    </div>
+</div>
+<script>
+    var share = new WxMoment.Share();
+    new WxMoment.OrientationTip();
+    function run(){
+        var bar = document.getElementById("bar");
+        var total = document.getElementById("total");
+        bar.style.width=parseInt(bar.style.width) + 1 + "%";
+        total.innerHTML = bar.style.width;
+        $("#haha").fadeOut(10000);
+        $("#qinxi").fadeIn(10000);
+        if(bar.style.width == "100%"){
+            window.clearTimeout(timeout);
+            $("#loadbg").fadeOut();
+            $("#play").fadeIn(500);
+//            $("#wrap").fadeIn();
+//                $('#v1').show();
+//                window.frames['v1'].play();
+            return;
+        }
+        var timeout=window.setTimeout("run()",100);
+    }
+
+    function loading() {
+        start();
+        $('body').append('<audio loop="loop" autoplay="autoplay" id="mp3" style="display: none" src="media/bg.mp3"></audio>');
+        mp3 = $('#mp3')[0];
+        mp3.volume = 0.8;
+        $('html').one('touchstart',function(){
+            mp3.play();
+        });
+    }
+    function start() {
+        $('body').append('<iframe src="v2.html?v=5" id="v1" name="v1" frameborder="0"></iframe>');
+    }
+
+    $('#play').on('click', playVideo1);
+
+    function playVideo1() {
+        window.frames['v1'].play();
+        $('#play,#haha').fadeOut(1000);
+        setTimeout(function(){
+            $('#v1').fadeIn(500);
+        },500);
+    }
+    function locationUrl() {
+        window.location.href="http://dwz.cn/5haTrg";
+    }
+    window.onload = function() {
+        run();
+        loading();
+//        $("#loadbg").fadeOut();
+    };
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+</body>
+</html>

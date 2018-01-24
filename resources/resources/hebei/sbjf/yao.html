@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>十八酒坊剧场</title>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/yao.css" />
+</head>
+
+<body>
+<!--摇一摇声音-->
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio><!--中奖声音-->
+<!-- 玻璃碎声音<audio preload="auto" id="audio-c" src="images/audio-c.mp3"></audio>-->
+
+<!--摇一摇红包-s-->
+<section class="home-box">
+  <div id="yao-redbao" class="page">
+    <div class="main-top m-t-b">
+      <header>
+        <img class="record" data-collect="true"
+             data-collect-flag="yao-record" data-collect-desc="积分排行按钮" src="images/rank-logo.png" />
+        <img class="yao-a" src="images/yao-a.png" />
+      </header>
+
+      <div class="zx-tt">
+        <div id="ddtj" class="ddtj-div none"  data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+          <i class="ddtj-before wobble"></i>
+          <p class="ddtj"></p>
+        </div>
+      </div>
+
+      <div class="footer-div">
+
+        <div class="countdown ">
+          <span class="countdown-tip items-count"></span>
+          <span class="detail-countdown items-count"></span>
+          <span class="loading none">请稍后...</span>
+        </div>
+        <img class="detai" src="images/detai.png" />
+      </div>
+
+    </div>
+    <div class="main-foot m-f-b">
+      <!--<input type="button" class="" id="test" value="test">-->
+      <!--<div class="yao-text">
+        <p class="visibility textb"><span>啊哦，差一点就抢到了，继续加油</span></p>
+      </div>-->
+      <div class="footer">
+        <div class="copyright"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--摇一摇红包-e-->
+
+
+<div class="none">
+  <img src="images/home_logo_a.jpg" />
+  <img src="images/home_logo_b.jpg" />
+  <img src="images/thanks.png" />
+  <img src="images/thanks-error-dt.png" />
+  <img src="images/red-bg.png" />
+  <img src="images/jf-bg.png" />
+</div>
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/sha1.min.js"></script>
+<script src="./js/plugins/shake.min.js"></script>
+
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="./js/app/yao.js"></script>
+<script src="./js/app/dialog.js"></script>
+<script src="./js/app/answer.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	
+</body>
+</html>

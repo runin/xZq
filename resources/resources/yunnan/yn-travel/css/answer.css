@@ -1,0 +1,213 @@
+body {
+	overflow:hidden;
+	margin:0 auto;
+	background:url(../images/answer-bg.jpg) bottom center no-repeat;
+	background-size:cover;
+}
+header {
+	width:100%;
+	margin: 0 auto;
+}
+header p {
+	display:inline-block;
+	float:left;
+	font-size:15px;
+	font-weight:bolder;
+	color:#0d5d7f;
+	opacity: 0;
+	margin: 10px 0 0 4%;
+}
+header p label {
+	color:#ff7200;
+}
+header a {
+	position: absolute;
+	display: block;
+	text-align: center;
+	top: 5px;
+	right: 4%;
+	height: 26px;
+	line-height: 20px;
+	color: #e6930f;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bolder;
+	z-index: 99;
+	border: 2px solid #e6930f;
+	border-radius: 40px;
+	padding: 2px 8px;
+}
+header a i {
+	font-style: normal;
+	font-family: Arial;
+	margin-left: 3px;
+	font-weight: 900;
+}
+section {
+	width:90%;
+	margin:16% auto 0;
+}
+section .logo {
+	width:96%;
+	margin:0 auto;
+}
+section .answer-box {
+	position: relative;
+	width:96%;
+	height:170px;
+	margin:13% auto 5%;
+	padding: 2%;
+	background:url(../images/answer-board.png) no-repeat top center;
+	background-size:100% 100%;
+	text-align: center;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.6);
+	font-size: 15px;
+	color: #ff6c00;
+}
+section .answer-box .item, section .answer-box .item ul, section .answer-box .item ul li {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+section .answer-box .item ul li {
+	padding: 12% 3% 0;
+	text-align: center;
+}
+section .answer-box .item ul li > p {
+	width: 97%;
+	font-size: 15px;
+	line-height: 17px;
+	color: #ff6c00;
+	word-break: break-all;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 auto 8%;
+}
+section .answer-box .item ul li div {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+section .answer-box .item ul li .dorA a {
+	display: inline-block;
+	width: 45%;
+	height: 36px;
+	line-height: 36px;
+	background-color: #f6727c;
+	color: #FFF;
+	border-radius: 10px;
+	margin: 0 2%;
+}
+section .answer-box .item ul li .dorB span {
+	display: inline-block;
+	width: 40%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #f6727c;
+	color: #FFF;
+	border-radius: 10px;
+	margin: 3px;
+}
+section .answer-box .item ul li .dorB span.right {
+	background-color: #f6727c;
+	color: #FFF;
+	-webkit-animation: neon 1.5s ease-in-out infinite alternate;
+  	animation: neon 1.5s ease-in-out infinite alternate; 
+}
+section .answer-box .item ul li .dorB span.wrong {
+	background-color: #F3F3F3;
+	color: #9B9B9B;
+}
+section .answer-box .wait {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+section .answer-box .wait h1 {
+	font-size: 15px;
+	font-weight: bolder;
+	color: #0086ee;
+	margin-top: 12%;
+}
+section .answer-box .wait img {
+	position: absolute;
+	width: 96%;
+	bottom: 2%;
+	left: 2%;
+}
+section .answer-box .hat {
+	position: absolute;
+	width: 30%;
+	top: -20%;
+	right: -10%;
+}
+section .time-box {
+	width:90%;
+	margin:5% auto 0;
+	height:34px;
+	line-height:30px;
+	text-align:center;
+	font-size:13px;
+	color:#FFF;
+	border:2px solid #FFF;
+	border-radius:30px;
+	text-shadow: 2px 2px 3px rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,.2)
+}
+section .time-box span i {
+	font-style: normal;
+}
+footer {
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	overflow: auto;
+}
+footer .copyright {
+	font-size: 12px;
+	height: 26px;
+	line-height: 13px;
+	color: #007ED7;
+	margin-bottom: 3px;
+	opacity: 1;
+}
+footer::-webkit-input-placeholder {
+	color:#FFF;
+}
+#ddtj {
+  display: block;
+  color: #FFF;
+  font-size: 13px;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 8px;
+  text-decoration: underline;
+}
+#lottery-dialog::-webkit-input-placeholder {
+	color:#333;
+}
+@-webkit-keyframes neon {
+	from { box-shadow: 0 0 6px #fff, 0 0 12px #fff, 0 0 18px #FF7983;}
+	to { box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #FF7983;}
+}
+@keyframes neon {
+	from { box-shadow: 0 0 6px #fff, 0 0 12px #fff, 0 0 18px #FF7983;}
+	to { box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #FF7983;}
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	section {
+		width: 90%;
+		margin: 3% auto 0;
+	}
+	section .answer-box {
+		margin: 8% auto 4%;
+	}
+}

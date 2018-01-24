@@ -1,0 +1,11 @@
+./js/_plugins/zepto.min.js
+./js/_plugins/md5.js
+./js/_plugins/data_collect.js
+./js/_plugins/weixin.js
+./js/_plugins/common.js
+./js/_plugins/parallax.js
+./js/_plugins/coffee.js
+./js/_plugins/audio.js
+./js/_plugins/shake.js
+./js/_plugins/scrollbox.js
+./js/_plugins/iscroll-lite.js

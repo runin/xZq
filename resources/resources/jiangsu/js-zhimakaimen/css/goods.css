@@ -1,0 +1,184 @@
+.wrapper{
+	background: url("../images/bg-mall.jpg") no-repeat;
+	background-size: cover;
+}
+header{
+	background: #0e3a81;
+	overflow: hidden;
+}
+header .user-info{
+	float: left;
+}
+header .user-info .avatar{
+	float: left;
+	margin: 10px;
+}
+header .user-info .avatar img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 3px solid #0759a3;
+}
+header .user-info .name{
+	float: left;
+	background: url("../images/bg-btn.png") no-repeat center;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	width: 100px;
+	margin-top: 25px;
+	font-size: 16px;
+}
+header .score{
+	float: right;
+	font-size: 16px;
+	color: white;
+	margin-top: 28px;
+}
+
+.nav{
+	overflow: hidden;
+}
+.nav a{
+	display: block;
+	line-height:50px;
+	height: 50px;
+	width: 50%;
+	float: left; 
+	text-align: center;
+	font-size: 18px;
+	color: #5c91cf;
+	background: #0b2560;
+}
+.nav a.active{
+	color: white;
+	background: #031248;
+}
+
+.goods-list{
+	padding: 10px;
+}
+.goods-list li{
+	border-bottom: 1px dashed #ddd;
+}
+.goods-list li a{
+	overflow: hidden;
+	display: block;
+	padding: 10px 0;
+}
+.goods-list li a .cover{
+	float: left;
+}
+.goods-list li a .cover img{
+	width: 100px;
+	height: 80px;
+	border: 3px solid #ddd;
+}
+.goods-list li a .detail{
+	margin-left: 115px;
+}
+.goods-list li a .detail h2{
+	font-size: 18px;
+	color: #ffad00;
+	padding-bottom: 5px;
+}
+.goods-list li a .detail p{
+	color: white;
+	font-size: 14px;
+}
+
+.order-list{
+	padding: 10px;
+}
+.order-list li{
+	border-bottom: 1px dashed #ddd;
+}
+.order-list li a{
+	overflow: hidden;
+	display: block;
+	padding: 6px 10px 10px 10px;
+	border: 1px solid #dfdfdf;
+	margin: 10px 0;
+}
+.order-list li .order-time{
+	font-size: 12px;
+	color: #e0dfe0;
+	border-bottom: 1px solid #dfdfdf;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+.order-list li .order-time .order-time-blue{
+	color: #4970a6;
+}
+.order-list li a .cover{
+	float: left;
+}
+.order-list li a .cover img{
+	width: 100px;
+	height: 80px;
+	border: 3px solid #ddd;
+}
+.order-list li a .detail{
+	margin-left: 115px;
+}
+.order-list li a .detail h2{
+	font-size: 18px;
+	color: #ffad00;
+	padding-bottom: 5px;
+}
+.order-list li a .detail p{
+	color: white;
+	font-size: 14px;
+}
+
+
+.big-cover{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.big-cover img{
+	padding: 3px;
+	background: url("../images/bg-mall-wrapper.jpg") no-repeat center;
+	background-size: cover;
+}
+.goods-score{
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px 0 20px;
+	position: relative;
+}
+.goods-score h2{
+	color: #ffad00;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.goods-score p{
+	color: #ede0f3;
+	font-size: 14px;
+}
+.goods-score .submit{
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	display: block;
+	width: 75px;
+	height: 28px;
+	line-height: 28px;
+	background: url("../images/bg-submit.png") no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+}
+.tab-content{
+	padding-top: 10px;
+	color: white;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 24px;
+}

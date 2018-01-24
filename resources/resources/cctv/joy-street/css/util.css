@@ -1,0 +1,429 @@
+/*
+* 素材全局样式
+*/
+body{
+	background: #44241a;
+}
+/*
+ *	头部
+ */
+
+header{
+	height: 45px;
+	background: #44241a;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+header .back{
+	left: 3px;
+	top: 7px;
+	position: absolute;
+	display: block;
+	width: 32px;
+}
+header .countdown{
+	width: 152px;
+	height: 38px;
+	line-height: 38px;
+	margin: 0 auto;
+	background: url("../images/bg-countdown.png") no-repeat;
+	background-size: contain;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	position: relative;
+	top: 4px;
+}
+header .countdown.active{
+	text-indent: -1000em;
+	background-image: url('../images/bg-countdown-hongbao.png');
+}
+header .rule{
+	position: absolute;
+	right: 3px;
+	top: 10px;
+	display: block;
+	border: 1px solid #e9b85c;
+	color: #e9b85c;
+	font-size: 14px;
+	padding: 3px 8px;
+	border-radius: 12px;
+}
+header .reserve{
+	position: absolute;
+	left: 3px;
+	top: 10px;
+	display: block;
+	border: 1px solid #e9b85c;
+	color: #e9b85c;
+	font-size: 14px;
+	padding: 3px 8px;
+	border-radius: 12px;
+}
+.main-content{
+	padding-top: 45px;
+}
+/*
+ *	END OF 头部
+ */
+ 
+
+ .submit{
+	display: block;
+	width: 45px;
+	height: 45px;
+	line-height: 43px;
+	border: 1px solid #ffc000;
+	text-align: center;
+	font-size: 14px;
+	color: #ffea00;
+	margin: 20px auto;
+	border-radius: 50%;
+	background-color: rgb(150, 80, 35);
+	box-shadow: 1px 1px 10px #965023;
+}
+
+/*
+ *	活动详情
+ */
+ .right-top-container{
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	z-index: 1;
+}
+.right-top-container a{
+	display: block;
+	border: 1px solid #e9b85c;
+	color: #e9b85c;
+	font-size: 14px;
+	padding: 3px 8px;
+	border-radius: 12px;
+	margin-bottom: 5px;
+}
+
+.dialog-wrapper{
+	background: rgba(0,0,0,0.65);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+.dialog{
+	height: 0px;
+	margin: 0 5%;
+	position: relative;
+}
+.dialog .tab-wrapper{
+	padding-top: 40px;
+}
+.dialog .tab{
+	width: 263px;
+	line-height: 42px;
+	height: 42px;
+	background-size: cover;
+	margin: 0 auto;
+	overflow: hidden;
+	background-image: url("../images/bg-tab.jpg");
+	padding: 0 5px;
+}
+
+.dialog .tab a{
+	color: #c6a282;
+	text-shadow:1px 1px 2px #1d110a;	
+	display: block;
+	float: left;
+	width: 63px;
+	height: 41px;
+	line-height: 41px;
+	text-align: center;
+	font-size: 14px;
+}
+.dialog .tab a.active{
+	text-shadow:none;
+	color: #431800;
+	background-repeat: no-repeat;
+	background-size: 63px 30px;
+  	background-position: 0px 6px;
+}
+#tab_rule.active{
+	background-image: url('../images/tab-left-active.png');
+}
+#tab_score.active{
+	background-image: url('../images/tab-center-active.png');
+}
+#tab_all_score.active{
+	background-image: url('../images/tab-center-active.png');
+}
+#tab_ticket.active{
+	background-image: url('../images/tab-right-active.png');
+}
+
+
+
+.dialog .dialog-content{
+	position: relative;
+	z-index: 2;
+}
+.dialog .dialog-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+.dialog .dialog-top{
+	width: 100%;
+	height: 0px;
+	background: url("../images/bg-dialog-top.png") no-repeat;
+	background-size: contain;
+}
+.dialog .dialog-center{
+	width: 100%;
+	height: 0px;
+	background: url("../images/bg-dialog.jpg") repeat-y;
+	background-size: contain;
+}
+.dialog .dialog-bottom{
+	width: 100%;
+	height: 0px;
+	background: url("../images/bg-dialog-bottom.png") no-repeat;
+	background-size: contain;
+}
+
+
+.dialog .rule{
+	color: #c6a282;
+	font-size: 12px;
+	line-height: 24px;
+	padding: 0 10%;
+	overflow-y: scroll;
+}
+.dialog .dialog-close{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	right: -10px;
+	background: url("../images/icon-close.png") no-repeat;
+	background-size: cover;
+	z-index: 2;
+}
+.dialog .my-score .detail{
+	font-size: 14px;
+	color: #e9b85c;
+	text-align: center;
+}
+.dialog .rank-list{
+	margin-top: 5px;
+	overflow-y: scroll;
+}
+.dialog .rank-list li{
+	overflow: hidden;
+	padding: 2px 20px;
+}
+.dialog .rank-list li .avatar{
+	width: 40px;
+	height: 40px;
+	float: left;
+	padding: 2px;
+	background: #cc9966;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.dialog .rank-list li .avatar img{
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.dialog .rank-list li .nickname{
+	width: 60%;
+	float: left;
+	font-size: 12px;
+	color: #c6a282;
+	line-height: 38px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding: 0 10px;
+}
+.dialog .rank-list li .rank{
+	width: 20%;
+	float: left;
+	font-size: 12px;
+	color: #c6a282;
+	line-height: 38px;
+	text-align: right;
+}
+#content_score,
+#content_ticket{
+	overflow-y: scroll;
+}
+
+.dialog .rank-list .ticket-wrapper{
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+	color: #c6a282;
+	font-size: 14px;
+	border-bottom: 1px dotted #c6a282;
+	padding: 10px 0;
+}
+
+.ticket-wrapper .ticket-name{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.ticket-wrapper .ticket-code{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.ticket-wrapper .center{
+	text-align: center;
+	color: #e9b85c;
+}
+/*
+ *	END OF 活动详情
+ */
+.dialog .separator{
+	min-height: 30px;
+	background: url("../images/bg-separator.png") no-repeat bottom;
+	background-size: contain;
+	text-align: center;
+}
+#info,
+#tttj{
+	text-align: center;
+	color: #2f9bff;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: underline;
+}
+.info-wrapper{
+	height: 0px;
+	background: #b05b39;
+	transition: height .3s ease;
+	overflow: hidden;
+}
+.info-wrapper .top-border{
+	border-bottom: 3px solid #ff8103;
+	height: 3px;
+	width: 100%;
+	box-shadow : 0px 1px 5px #44241A;
+}
+.info-wrapper .bottom-border{
+	border-top: 3px solid #ff8103;
+	height: 3px;
+	width: 100%;
+	box-shadow : 0px -1px 5px #44241A;
+}
+#guize .info-wrapper label{
+	font-size: 12px;
+	color: white;
+}
+#guize .info-wrapper input{
+	background: #c4856c;
+	border: none;
+	font-size: 14px;
+	color: white;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 3px;
+	height: 32px;
+	border-radius: 0px;
+	width: auto;
+	margin-top: 0px;
+}
+#guize .input-wrapper{
+	margin: 5px 0;
+	background: none;
+	width: auto;
+  	margin: 0 auto;
+  	margin-bottom: 5px;
+  	line-height: 22px;
+  	width: auto;
+}
+#guize .info-input-wrapper{
+	padding: 5px 0;
+}
+#info_submit{
+	background: #44241a;
+	font-size: 16px;
+	color: white;
+	border: 1px solid #e9b85c;
+	box-shadow: 0px 0px 5px #000;
+	padding: 5px 20px;
+	border-radius: 20px;
+	margin: 10px 0;
+}
+.submit-wrapper{
+	padding: 10px 0px 10px;
+}
+::-webkit-input-placeholder {
+    color:    rgb(176, 91, 57);
+}
+:-moz-placeholder {
+    color:    rgb(176, 91, 57);
+}
+::-moz-placeholder {
+    color:    rgb(176, 91, 57);
+}
+:-ms-input-placeholder {
+    color:    rgb(176, 91, 57);
+}
+
+.slide-wrapper{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	z-index: 100;
+	left: 0px;
+	top: 0px;
+}
+.slide{
+	position: absolute;
+	bottom: 150px;
+	right: 0px;
+	width: 70%;
+	-webkit-animation:'slide' 5s infinite ease;
+}
+
+@-webkit-keyframes slide{
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(0,0px);
+	}
+	
+	40% {
+		opacity: 1;
+		-webkit-transform: translate(-30px,0px);
+	}
+
+	80% {
+		opacity: 1;
+		-webkit-transform: translate(-30px,0px);
+	}
+	
+	90% {
+		opacity: 0;
+		-webkit-transform: translate(-30px,0px);
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+#div_subscribe_area{
+	height: 50px;
+	overflow: hidden;
+	position:relative;
+	z-index:9999999999999;
+}

@@ -1,0 +1,43 @@
+﻿body, html
+{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.bg,.bg_default
+{
+    background-position: center;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: absolute;
+    -webkit-animation-name: fadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 3s;
+    width:100%;
+    height:100%;
+}
+.bg_default
+{
+   background-image: url('../images/guide_a.jpg');
+}
+@-webkit-keyframes fadeInOut {
+    0% {
+        opacity:0;
+     }
+    100% {
+        opacity:1;
+    }
+}
+
+.footer
+{
+ position:fixed;
+  bottom:0px;
+  width:100%;  
+  text-align:center;
+  font-size:13px;
+  height:50px;  
+}

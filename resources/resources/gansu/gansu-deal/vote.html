@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>甘肃卫视《交易日》</title>
+<link rel="stylesheet" href="./css/deal.css" />
+<link rel="stylesheet" href="./css/vote.css" />
+</head>
+
+<body>
+
+<!--答题-->
+<section class="encounter">
+  <section class="touxiang"><a href="#" id="my-record"><span id="myuser"><img src="" /></span>我的战绩</a> </section>
+  <section class="mingren none"></section>
+  <section class="survey">
+    <h3 id="s-title" class="none"></h3>
+    <!--投票-->
+    <div id="inquire-into" class="none">
+      <div id="vote"></div>
+    </div>
+    <!--投票结果-->
+    <div id="vote-result" class="none">
+      <div class="result"></div>
+    </div>
+    <a href="###" class="btn-a none" id="vote-btn" data-collect="true" data-collect-flag="jyr-tp" data-collect-desc="投票">投票</a>
+    <a href="###" class="btn-a none" id="lottery-btn" data-collect="true" data-collect-flag="jyr-cj" data-collect-desc="抽奖">抽奖</a>
+    <!--倒计时-->
+    <div class="countdown none"><span id="vote-cd"></span><span id="vote-time"></span></div>
+  </section>
+</section>
+
+<!--弹幕-->
+<article id="article">
+  <div class="comments" id="comments"></div>
+  <div class="ctrls">
+    <p>
+      <input id="input-comment" type="text" placeholder="biu-biu biu~~~" />
+      <a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="yn-wudu-answer-comment" data-collect-desc="答题页面-发表评论按钮">发射</a> </p>
+  </div>
+</article>
+<!--
+  <section class="scroll-top none"></section>
+  <section class="review-input">
+    <div class="review-input-text">
+      <input name="" type="text" class="text-a" id="comments-info" placeholder="写评论上电视，更有奖品拿哦" />
+      <input name="" type="submit" class="btn-b" id="send" value="发送" data-collect="true" data-collect-flag="gz-live-comments-send" data-collect-desc="发送" />
+    </div>
+  </section>
+  --> 
+
+<script src="./js/config.js"></script> 
+<script src="./js/plugins/zepto.min.js"></script> 
+<script src="./js/plugins/zepto.cookie.min.js"></script> 
+<script src="./js/plugins/barrage.js"></script> 
+<!--
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script> 
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+--> 
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script> 
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script> 
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script> 
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi.js" type="text/javascript"></script> 
+<script src="./js/plugins/md5.js"></script> 
+<script src="./js/plugins/weixinapi.js"></script> 
+<script src="./js/plugins/common.js"></script> 
+<script src="./js/authorize_userinfo.js"></script> 
+<script src="./js/app/dialog.js"></script> 
+<script src="./js/app/vote.js"></script> 
+<!--
+<script src="./js/app/comments.js"></script> 
+--> 
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

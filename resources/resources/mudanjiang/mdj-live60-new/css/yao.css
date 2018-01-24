@@ -1,0 +1,517 @@
+body{
+    margin:0;
+    padding:0;
+    font-size:14px;
+    color:#da2323;
+
+    background-color: #DBF7FF;
+    background-image: url('../images/yao_bg01.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+}
+body.change-bg{
+    background-image: url(../images/common-bg.jpg) !important;
+    background-size: cover;
+}
+a.outer{
+    font-size: 12px;
+    color: #DB2323;
+    text-decoration: underline;
+    display: block;
+    margin: 3px auto 0;
+}
+.fjtv-logo{
+    margin:6% auto;
+    text-align:center;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    transition-delay: 2s;
+    -webkit-transition-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+.fjtv-logo img{
+    width: 86%;
+    margin-bottom: 15px;
+}
+.countdown{
+    height: 25px;
+    line-height: 25px;
+    margin: 3% 18% 1%;
+    border-radius: 3px;
+    background: #007FA3;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.back-home{
+    color: #0170AA;
+    font-size: 18px;
+    text-decoration: underline;
+    margin: 10px auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.copyright.anima{
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: anima;
+    animation-name: anima;
+}
+@-webkit-keyframes anima {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+.bounceInDown {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+}
+
+
+
+/*yao*/
+.home-box {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.main-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #E8E6D9;
+    background-image: url('../images/home_logo_a.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.yao .m-t-b {
+    animation-name: mtop;
+    -webkit-animation-name: mtop;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-duration: 1.8s;
+    -webkit-animation-duration: 1.8s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes mtop {
+    0%, 90% {
+        -webkit-transform: translateY(0px);
+    }
+    50%, 30% {
+        -webkit-transform: translateY(-100px);
+    }
+}
+.main-foot {
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    height: 50%;
+    background-color: #E8E6D9;
+    background-image: url('../images/home_logo_b.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.yao .m-f-b {
+    animation-name: mfoot;
+    -webkit-animation-name: mfoot;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-duration: 1.8s;
+    -webkit-animation-duration: 1.8s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes mfoot {
+    0%, 90% {
+        -webkit-transform: translateY(0px);
+    }
+    30%, 50% {
+        -webkit-transform: translateY(100px);
+    }
+}
+.yao-text{
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin: 31% auto 0;
+}
+.yao-text p{
+    position:relative;
+    min-height: 30px;
+    color: #007FA3;
+}
+.yao-text p.texta span{
+    color: #007FA3;
+    font-weight: bold;
+    font-size: 17px;
+}
+.yao-text p:last-child span{
+    position:relative;
+    width:100%;
+}
+.yaonone-text{
+    animation-name:nonetext;
+    -webkit-animation-name:nonetext;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1;
+    animation-duration:0.5s;
+    -webkit-animation-duration:0.5s;
+    animation-delay:0.1s;
+    -webkit-animation-delay:0.1s;
+    animation-timing-function:linear;
+    -webkit-animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    display: block;
+}
+@keyframes nonetext{
+    0%{
+        top:-300px;
+        opacity:0;
+    }
+    100%{
+        top:0;
+        opacity:1.0;
+    }
+}
+@-webkit-keyframes nonetext{
+    0%{
+        top:-300px;
+        opacity:0;
+    }
+    100%{
+        top:0;
+        opacity:1.0;
+    }
+}
+
+.animated {
+    -webkit-animation-delay: 500ms;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes bounce-in-up {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 3000px, 0);
+        transform: translate3d(0, 3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.bounce-in-up {
+    -webkit-animation-name: bounce-in-up;
+    animation-name: bounce-in-up;
+}
+
+
+.page{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.gift{
+    margin: 10% 6% 0;
+    text-align: center;
+}
+.gift-hongbao{
+    margin: 20% auto 0;
+    text-align: center;
+    overflow: hidden;
+}
+.gift-hongbao h3{
+    font-size: 14px;
+    margin: 10px 20px 5px;
+}
+.gift-hongbao span.djm{
+    display: block;
+    color: #006092;
+    font-size: 12px;
+}
+.gift-hongbao span label{
+    font-size: 26px;
+}
+.flow{
+    margin: 18% 12% 10%;
+    text-align: center;
+}
+
+.gift-hongbao img.pi{
+    width: 240px;
+    height: 179px;
+}
+.gift-text{
+    line-height: 25px;
+    margin: 2% 0 0;
+    text-align: center;
+    font-size: 16px;
+}
+.gift-touch{
+    margin: 4% 21% 0;
+    overflow: hidden;
+}
+.gift-touch li{
+    position: relative;
+    line-height: 20px;
+    padding: 5px 2px 0 35px;
+    font-size: 12px;
+    color: #000;
+}
+.gift-touch li.title{
+    padding: 5px 0 0;
+    text-align: center;
+}
+.gift-touch li span{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 35px;
+    line-height: 25px;
+}
+.btn-box-b{
+    padding: 0;
+    text-align: center;
+    color: #0688CC;
+}
+.btn-box-b h2{
+    width: 72%;
+    text-align: left;
+    margin: 0 auto;
+}
+input::-webkit-input-placeholder {
+    color: #006FA9;
+    font-size: 16px;
+}
+.btn-box-b input{
+    width: 75%;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding:0 5px;
+    margin-top: 4px;
+    color: #006FA9;
+    font-size: 16px;
+}
+.btn-m{
+    margin: 15% 0 1%;
+}
+.btn-f{
+    margin: 10% 0 1%;
+}
+.text-a{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    border: 1px #ccc solid;
+    border-radius: 3px;
+    text-indent: 5px;
+    font-size: 12px;
+}
+.btn-b{
+    width: 200px;
+}
+.btn-c{
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 6px;
+    border: none;
+    background: #0688CC;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    display: block;
+    margin: 15px auto 0;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .gift-hongbao {
+        margin: 10% auto 0;
+    }
+    .gift-hongbao img.pi {
+        width: 200px;
+        height: 149px;
+    }
+    .btn-box-b input {
+        height: 30px;
+        line-height: 30px;
+    }
+    .btn-f {
+       margin: 5% 0 1%;
+    }
+    .copyright {
+        height: 20px;
+        line-height: 11px;
+        -webkit-transform: scale(.8);
+        margin-bottom: 0;
+    }
+    .back-home {
+        margin: 5px auto;
+    }
+    .fjtv-logo img {
+        width: 76%;
+        margin-bottom: 4px;
+    }
+    .fjtv-logo {
+        margin: 1% auto;
+    }
+    a.outer {
+        margin: 0 auto 0;
+    }
+    .gift-hongbao img.pi {
+        width: 160px;
+        height: 119px;
+    }
+    .btn-f {
+        margin: 4% 0 1%;
+    }
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .gift-hongbao img.pi {
+        width: 190px;
+        height: 142px;
+    }
+    .btn-f {
+        margin: 5% 0 1%;
+    }
+    .gift-hongbao {
+        margin: 10% auto 0;
+    }
+}
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation : portrait){
+    .gift-hongbao img.pi {
+        width: 200px;
+        height: 149px;
+    }
+    .btn-f {
+        margin: 9% 0 1%;
+    }
+}

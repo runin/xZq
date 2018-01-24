@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" >
+	<title>大首映</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/core.css">
+	<link rel="stylesheet" type="text/css" href="./css/game.css">
+	<link rel="stylesheet" type="text/css" href="./css/dialog.css">
+</head>
+<body>
+
+	<section class="countdown-section">
+		<div class="countdown none" id="lottery-countdown" >
+			<span class="countdown-tip"></span>
+			<span class="detail-countdown"></span>
+		</div>
+	</section>
+	<section class="pt">
+	</section>
+	<p class="tip">点击任意两张图片交换位置进行拼图</p>
+	<section class="comments-section none">
+		<article class="none" id="article">
+			<div class="comments" id="comments"></div>
+		</article>
+		<div class="ctrls" id="ctrls">
+			<p>
+				<input id="input-comment" type="text" placeholder="留言20字以内" />
+				<a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="barrage-comment-send" data-collect-desc="发表评论按钮">发送</a>
+			</p>
+		</div>
+	</section>
+	<div class="btn-tab">
+		<a href="#" class="btn-movie" data-collect="true" data-collect-flag="barrage-btn-movie" data-collect-desc="电影按钮"></a>
+		<a href="#" class="btn-lottery" data-collect="true" data-collect-flag="barrage-btn-lottery" data-collect-desc="摇奖按钮"></a>
+	</div>
+	<a class="switch-on" id="switch"></a>
+
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+	<script src="./js/plugins/barrage.plug.js"></script>
+	<script src="./js/plugins/msg.js"></script>
+	<script src="./js/plugins/xss.min.js"></script>
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/game.js"></script>
+	<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

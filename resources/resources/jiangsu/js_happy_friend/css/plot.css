@@ -1,0 +1,167 @@
+html {
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow:hidden;
+    overflow-y: scroll;
+    background: #F5F5F5;
+}
+.tvshow, .detail {
+	position: relative;
+	width: 100%;
+	background: #FFF;
+	margin: 0 auto 16px;
+	box-shadow: 0 3px 3px rgba(0,0,0,.2);
+}
+.tvshow iframe {
+	position: relative;
+	z-index: 90;
+}
+.tvshow .tips {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+	z-index: 999;
+	background: rgba(0,0,0,.5);
+	left: 0;
+	top: 178px;
+	color: #FFF;
+	font-size: 20px;
+	padding: 0 18px;
+	pointer-events: none;
+}
+.tvshow .info, .detail {
+	padding: 8px 18px 22px;
+}
+.tvp_overlay_play, .tvp_overlay_play_try, .tvp_overlay_replay {
+	opacity: .5 !important;
+}
+
+@-webkit-keyframes rotate {
+    0% {-webkit-transform: rotate(0);transform: rotate(0);opacity: 1;}
+    30% {opacity: 0;}
+    50% {opacity: 0;}
+    80% {-webkit-transform: rotate(360deg);transform: rotate(360deg);opacity: 1;}
+    100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@keyframes rotate {
+    0% {-webkit-transform: rotate(0);transform: rotate(0);opacity: 1;}
+    30% {opacity: 0;}
+    50% {opacity: 0;}
+    80% {-webkit-transform: rotate(360deg);transform: rotate(360deg);opacity: 1;}
+    100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+@-webkit-keyframes showing {
+    0% {-webkit-transform: scale(1,0);transform: scale(1,0);}
+    100% {-webkit-transform: scale(1,1);transform: scale(1,1);}
+}
+@keyframes showing {
+    0% {-webkit-transform: scale(1,0);transform: scale(1,0);}
+    100% {-webkit-transform: scale(1,1);transform: scale(1,1);}
+}
+
+@-webkit-keyframes live {
+    /*0% {-webkit-transform: scale(1.5);transform: scale(1.5);opacity: 0;}*/
+    /*100% {-webkit-transform: scale(1);transform: scale(1);opacity: 1;}*/
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes live {
+    /*0% {-webkit-transform: scale(1.5);transform: scale(1.5);opacity: 0;}*/
+    /*100% {-webkit-transform: scale(1);transform: scale(1);opacity: 1;}*/
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+
+
+    /*0% {-webkit-transform: scale(1,0);transform: scale(1,.5);opacity: 0;}*/
+    /*100% {-webkit-transform: scale(1,1);transform: scale(1,1);opacity: 1;}*/
+
+/*    0%{opacity: 0}
+    20%{opacity: .4;-webkit-transform:skew(40deg,10deg) scale(1.2,.8)}
+    30%{opacity: .4;-webkit-transform:skew(-20deg,10deg) scale(1.1,.8)}
+    45%{opacity: 0;-webkit-transform:skew(10deg,0deg) scale(.8,.7)}
+    55%{opacity: 0}
+    70% {opacity: .4;-webkit-transform:skew(10deg,5deg) scale(1,.8)}
+    80% {opacity: .6;-webkit-transform:skew(-8deg,5deg) scale(1,.7)}
+    90% {opacity: .6;-webkit-transform:skew(0deg,0deg) scale(1,1)}
+    100% {opacity: 1}*/
+}
+
+.btn-rule {
+	display: block;
+	width: 30%;
+	height: 26px;
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	right: 9%;
+}
+.btn-rule  img{
+	display: inline-block;
+	width: auto;
+	height: 100%;
+}
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+	header .icon-tvlogo {
+		width: 10%;
+		margin:8% 0 0 16%;
+	}
+	.container {
+	    position: relative;
+	    width: 72%;
+	    margin: 6% auto 0;
+	}
+	.btn-play .play-tips {
+	    font-size: 12px;
+	}
+	.btn-rule {
+		right: 13%;
+	}
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:570px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* iPhone6 */
+@media screen
+and (min-device-width:360px)
+and (max-device-width:667px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}
+
+/* HUAWEI H6 */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+	header .icon-tvlogo {
+		margin:8% 0 0 16%;
+	}
+	.container {
+	    position: relative;
+	    width: 74%;
+	    margin: 6% auto 0;
+	}
+	.btn-rule {
+		right: 13%;
+	}
+}

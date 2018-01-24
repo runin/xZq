@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no" />
+<title>CCTV7乡约</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+	<header>
+		<a href="#" class="rule btn-rule none" id="btn-reserve" data-collect="true" data-collect-flag="cctv7-meet-index-reserve" data-collect-desc="首页-节目预约按钮">预约收看</a>
+	</header>
+	<section class="tvlogo"><img src="images/tv-logo.png" /></section>
+	<section class="main">
+		<div class="miji">
+			<div class="index-tit"><img src="images/index-tit.png" border="0"></div>
+			<a href="#" id="btn-rule" data-collect="true" data-collect-flag="cctv7-meet-index-rule" data-collect-desc="首页-活动规则按钮">
+				<img src="images/giftbox-close.png" border="0">
+			</a>
+		</div>
+		<div class="countdown-body none clear">
+			<div class="zzs-logo fl-l"><img src="images/zzs-logo.png" border="0"></div>
+			<div class="countdown-box fl-r">
+				<p class="countdown-tips">提醒您，距离<label></label>抢红包还有:</p>
+				<div class="countdown-time"></div>
+				<p class="countdown-copyright clear">本活动由深圳爱维艾夫医院管理有限公司提供红包赞助</p>
+			</div>
+		</div>
+		<a class="btn-goin none" data-collect="true" data-collect-flag="cctv7-meet-index-play" data-collect-desc="首页-进入投票页面按钮" id="btn-begin"></a>
+		<div class="copyright"></div>
+	</section>
+	<section class="waiting">
+		<img class="tit" src="images/waiting-tit.png" border="0" />
+		<img src="images/concern.png" border="0" />
+		<p>4月28日至5月2日 每晚21:17<br />每期一万份现金红包</p>
+		<div class="copyright"></div>
+	</section>
+
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script> 
+	<script src="./js/wx_api_base.js"></script>
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/main.js"></script>
+</body>
+</html>

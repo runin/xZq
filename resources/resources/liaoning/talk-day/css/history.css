@@ -1,0 +1,209 @@
+body {
+    background: url(../images/his-bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+.tv-logo{
+	padding: 10px 16px 10px;
+	padding-right: 66%;
+	position: relative;
+}
+.back-btn{
+	display: block;
+	width: 18%;
+	position: absolute;
+	right: 20px;
+	top:10px;
+}
+.his-con {
+	width: 90%;
+	height: 80%;
+	padding: 20px 10px 40px;
+	margin: 0 auto;
+	border : 4px solid rgba(170,116,0,0.4);
+	overflow-y: auto;
+}
+.his-con header{
+	padding-left: 32%;
+	background: url(../images/his-logo.png) no-repeat left;
+	background-size: 28%;
+}
+.word-con{
+	padding: 10px 0;
+	font-size: 12px;
+	line-height: :18;px;
+	color: #383838;
+}
+.data{
+	position: relative;
+	padding-bottom: 6px;
+	border-bottom: 2px solid #484848;
+}
+
+.data span:nth-child(1){
+	font-size: 30px;
+	color: #da7100;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000;
+}
+.data span:nth-child(2){
+	font-size: 20px;
+	color: #da7100;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000;
+	position: absolute;
+	right: 0;
+	bottom: 6px;
+}
+.data-info{
+	position: relative;
+	padding-bottom: 6px;
+	border-bottom: 2px solid #484848;
+	font-size: 20px;
+	color: #383838;
+	font-weight: bold;
+}
+.data-info span{
+		font-weight: bold;
+}
+.data-info span:nth-child(2){
+	font-weight: bold;
+	position: absolute;
+	right: 0;
+	bottom: 6px;
+
+}
+.fadein {
+    -webkit-animation-name: fadein_a;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes fadein_a {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.Transparent {
+    background-color: rgba(255,255,255,0.5);
+}
+.fadeout {
+    -webkit-animation-name: fadeout_a;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes fadeout_a {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+.pass_barrage {
+    -webkit-animation-name: pass_barrage_a;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes pass_barrage_a {
+    100% {
+        -webkit-transform:translateX(-300px);
+    }
+}
+::-webkit-input-placeholder {
+    color: #FFF;
+}
+
+#lottery-dialog ::-webkit-input-placeholder {
+    color: #333;
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+	50% {
+		-webkit-transform: scale3d(1.4, 1.4, 1.4);
+		transform: scale3d(1.4, 1.4, 1.4)
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+@keyframes pulse {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+	50% {
+		-webkit-transform: scale3d(1.4, 1.4, 1.4);
+		transform: scale3d(1.4, 1.4, 1.4)
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+.pulse {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+	animation-iteration-count:5;
+	-webkit-animation-iteration-count:5;
+	animation-duration:1s;
+	-webkit-animation-duration:1s;
+	animation-delay:1s;
+	-webkit-animation-delay:1s;
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .qa-wrapper .answered .timer {
+        margin-top: 0;
+        padding: 4px 0;
+    }
+    .qa-wrapper .question dt {
+        margin-bottom: 2px;
+    }
+    .qa-wrapper .answered h5 {
+        margin-top: 0;
+    }
+    header .qa-wrapper {
+        padding:0;
+    }
+    header .hd-wrapper {
+        margin-bottom: 0px;
+        padding-top: 4px;
+    }
+    .qa-wrapper .answered h5 {
+        font-size: 18px;
+    }
+
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 570px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .qa-wrapper .answered .timer {
+        margin-top: 2%;
+    }
+    .qa-wrapper .answered h5 {
+        margin-top: 0;
+    }
+
+}

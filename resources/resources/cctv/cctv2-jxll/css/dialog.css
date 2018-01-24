@@ -1,0 +1,326 @@
+.modal {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.6);
+	z-index: 999;
+	color: #FFF;
+	text-align: center;
+}
+.modal .dialog {
+	width: 100%;
+	height: 100%;
+	position: relative;
+    overflow-y: scroll;
+    padding-bottom: 3px;
+}
+#thanks-dialog {
+    overflow: hidden !important;
+}
+.modal .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../images/btn-close.png) no-repeat;
+	background-size:30px;
+	z-index: 9999999999;
+}
+.rule-dialog {
+	background: url(../images/bg-rule.png) no-repeat;
+	background-size: cover;
+}
+.rule-dialog .btn-close {
+	width: 28px;
+	height: 28px;
+	background: url(../images/btn-rule-close.png) no-repeat;
+	background-size:28px;
+}
+.rule-dialog .btn-back {
+	position: absolute;
+	width: 52%;
+	bottom: 3%;
+	left: 24%;
+}
+.rule-dialog .content {
+	width: 100%;
+	height: 50%;
+	margin-top: 52%;
+	padding: 0 5% 5%;
+	word-break: break-all;
+	font-size: 15px;
+	text-align: left;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.rule-dialog .content * {
+	font-size: 15px !important;
+	text-align: left !important;
+	color: #FFF !important;
+	background: transparent !important;
+}
+#lottery-dialog{
+    /*overflow-y: scroll;*/
+}
+.lottery-dialog {
+	width: 100%;
+	height: 100%;
+	background: url(../images/lottery-bg.png) no-repeat;
+	background-size: 100% 100%;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	overflow: hidden !important;
+    overflow-y: scroll !important;
+}
+.lottery-dialog .lottery-btn {
+    display: block;
+    width: 52%;
+    margin: 5% auto;
+    background: #364885;
+    border: 2px solid #2c3b70;
+    border-radius: 15px;
+    height: 30px;
+    line-height: 26px;
+    color: #fff;
+}
+#Entlottery-dialog .lottery-dialog .lott-box {
+    width: 90%;
+    height: auto;
+    margin: 12% auto 0;
+    color: #333;
+    font-size: 15px;
+    line-height: 20px;
+}
+.lottery-dialog .lott-box {
+	width: 90%;
+    height: auto;
+    margin: 18% auto 0;
+	color: #333;
+	font-size: 15px;
+	line-height: 20px;
+    overflow: hidden;
+}
+.modal-lottery .btn-close {
+    opacity: 0;
+}
+.lottery-dialog .lott-box .award-tips {
+	width: 95%;
+	margin: 3% auto;
+}
+.lottery-dialog .lott-box .award-img{
+    width: 85%;
+    margin: 4% auto;
+}
+.lottery-dialog .lott-box .award-luck{
+    color: #ffca2f;
+    font-size: 17px;
+    font-weight: bold;
+}
+.lottery-dialog .lott-box .award-luckEt {
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+}
+.lottery-dialog #not-lott .ltp {
+	font-size: 15px;
+	color: #FFF;
+}
+.lottery-dialog .lott-box .inp .ple{
+    color: #fff;
+    display: block;
+    width: 95%;
+    text-align: center;
+    margin: 2% auto;
+    font-size: 12px;
+}
+.lottery-dialog .lott-box .inp{
+    color: #fff;
+}
+.lottery-dialog .lott-box .inp p{
+    color: #fff;
+    display: block;
+    margin: 3% auto;
+}
+.lottery-dialog .lott-box .inp p input{
+    width: 70%;
+}
+.lottery-dialog .lott-box .code .ple{
+    color: #fff;
+    font-size: 12px;
+}
+.lottery-dialog .lott-box .code .cd{
+    color: #c5092b;
+    display: block;
+    margin: 3% auto;
+    background: #fff;
+    height: 28px;
+    line-height: 28px;
+    width: 90%;
+    border-radius: 5px;
+}
+.lottery-dialog .lott-box .result .ple{
+    color: #fff;
+    font-size: 12px;
+}
+.lottery-dialog .lott-box .result .cd{
+    color: #fff;
+    display: block;
+    margin: 3% auto;
+    height: 22px;
+    line-height: 22px;
+    width: 90%;
+}
+.lottery-dialog .lott-box .code .prize-desc{
+    background: none;
+    color: #B6B4B4;
+    font-size: 12px;
+    line-height: 15px;
+    height: auto;
+}
+.redlottery-dialog {
+    width: 100%;
+    height: 100%;
+    background: url(../images/red-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.redlottery-dialog .award-lpt{
+    color: #d32430;
+    display: block;
+    margin-top: 3%;
+}
+.redlottery-dialog .award-logo{
+    display: block;
+    width: 35%;
+    margin: 8% auto 0;
+}
+.redlottery-dialog .award-img{
+    display: block;
+    width: 65%;
+    margin: 15% auto 0;
+}
+.redlottery-dialog .lottery-btn{
+    display: block;
+    background: #ebcf76;
+    width: 35%;
+    margin: 20% auto 0;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    color: #ab1921;
+}
+.redlottery-dialog .award-ly{
+    display: block;
+    margin-top: 5%;
+    color: #fff;
+    font-size: 12px;
+    padding: 0px 10px;
+}
+.thanks-dialog img{
+    width: 90%;
+    margin: 36% auto 0;
+    display: block;
+}
+#Entlottery-dialog {
+    /*overflow-y: scroll;*/
+}
+#Entlottery-dialog #ent-result .lottery-btn {
+    display: inline-block;
+    width: 40%;
+    margin: 5% 5px;
+}
+.award-phone{
+    color: #fff;
+}
+.award-phone:before{
+    content: '';
+    background: url(../images/tel.png) 0 0 no-repeat;
+    background-size: 100%;
+    height: 12px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    #Entlottery-dialog .lottery-dialog .lott-box {
+        /*height: 56%;*/
+        margin: 6% auto 0;
+    }
+    #Entlottery-dialog .lottery-dialog .lott-box .award-img {
+      width: 66%;
+      margin: 3% auto;
+    }
+    .thanks-dialog img{
+        width: 90%;
+        margin: 25% auto 0;
+        display: block;
+    }
+    .lottery-dialog .lott-box .award-tips {
+        width: 92%;
+        margin: 1% auto 1%;
+    }
+    .lottery-dialog .lott-box {
+        margin: 8% auto 0;
+    }
+    .lottery-dialog .lott-box .award-img {
+        margin: 1% auto;
+    }
+    .lottery-dialog .lott-box .inp p {
+        margin: 1% auto;
+    }
+
+    .lottery-dialog .lott-box .code .cd{
+        margin: 1% auto;
+    }
+    .lottery-dialog .lott-box .result .cd{
+        margin: 1% auto;
+    }
+    .redlottery-dialog .award-logo{
+        margin: 6% auto 0;
+    }
+    .redlottery-dialog .award-img{
+        width: 60%;
+        margin: 5% auto 0;
+    }
+    .redlottery-dialog .lottery-btn{
+        margin: 10% auto 0;
+    }
+    .redlottery-dialog .award-ly{
+        margin-top: 5%;
+    }
+}
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .redlottery-dialog .award-logo{
+        width: 35%;
+        margin: 6% auto 0;
+    }
+    .redlottery-dialog .award-img{
+        width: 60%;
+        margin: 10% auto 0;
+    }
+    .redlottery-dialog .lottery-btn{
+        margin: 15% auto 0;
+    }
+    #lottery-dialog .lottery-dialog .lott-box {
+        margin: 9% auto 0;
+    }
+}

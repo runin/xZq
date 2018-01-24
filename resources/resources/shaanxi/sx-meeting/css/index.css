@@ -1,0 +1,84 @@
+body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:url(../images/bg.jpg) no-repeat #FFF8F2;
+    background-size:100% 100%;
+    z-index: 0;
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    -webkit-animation: bgscaleIn 10s 0s 1 linear;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes bgscaleIn {
+    0% {-webkit-transform: scale(1.6);transform: scale(1.6);}
+    100% {-webkit-transform: scale(1.1);transform: scale(1.1);}
+}
+@keyframes bgscaleIn {
+    0% {-webkit-transform: scale(1.6);transform: scale(1.6);}
+    100% {-webkit-transform: scale(1.1);transform: scale(1.1);}
+}
+.ad-box{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: url(../images/tv-logo.png) no-repeat;
+	background-size: 11% auto;
+	background-position: 16px 10px;
+	padding-top: 22%;
+	
+}
+.ad-box .logo{
+	width: 70%;
+	margin: 0 auto;
+}
+.ad-box .command{
+	padding-top: 14%;
+	width: 65%;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #be9c34;
+}
+.ad-box .command p{
+	text-align: center;
+	padding: 6px 0;
+}
+.ad-box .command input{
+	width: 100%;
+	display: block;
+	background: rgba(45,37,9,0.7);
+	border-radius: 30px;
+	border: 1px solid #ffd549;
+	height: 50px;
+	line-height: 48px;
+	padding: 0 16px;
+	color: #be9c34;
+}
+.ad-box .command .btn-sub{
+	display: block;
+	width: 36%;
+	background: #e8c545;
+	border-radius: 20px;
+	color: #543c01;
+	font-size: 15px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	margin: 16px auto;
+}
+ 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #be9c34;
+}

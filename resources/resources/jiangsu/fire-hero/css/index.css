@@ -1,0 +1,211 @@
+body{
+    background: url(../images/index-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+}
+.item{
+    display: block;
+    background: url(../images/items-bg.png) no-repeat;
+    background-size: 100% 100%;
+    width: 85vw;
+    overflow: hidden;
+    margin: 8% auto 0;
+    border-radius: 22px;
+    box-shadow: 1px 1px 18px rgba(0,0,0,.5),inset 1px 1px 18px rgba(0,0,0,.5);
+    padding: 15px;
+    /*max-height: 59vh;*/
+}
+.item .tv-img{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.item .tv-img img:nth-child(1){
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.item .tv-img img:nth-child(2){
+    position: absolute;
+    top:0;
+    -webkit-animation: shining 0.2s infinite;
+    height: 100%;
+}
+.item .tv-img div{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.item .tv-img div img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.item .tv-img div:before{
+    content: '';
+    display: block;
+    box-shadow: inset 1px 0px 20px 0px rgba(0,0,0,1);
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+@-webkit-keyframes shining {
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+footer{
+    width: 88vw;
+    /*margin: 10% auto 0;*/
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+}
+footer .tv-left{
+    width: 6%;
+    position: absolute;
+    left: 0;
+}
+footer .tv-right{
+    width: 6%;
+    margin-right: 12px;
+    position: absolute;
+    right: 0;
+}
+footer .center{
+    width: 100%;
+    display: block;
+}
+footer .name{
+    width: 38%;
+    margin: -10px 31% 0;
+}
+footer .tv-bottom{
+    width: 40%;
+    margin: 6px 30% 0;
+}
+footer .bottom{
+    width: 98%;
+    margin: 0 auto;
+}
+footer .bottom a.go{
+    display: block;
+    width: 33%;
+    margin: 5px auto 0;
+}
+footer .bottom a.go img{
+    padding-top: 15px;
+}
+footer .bottom .bottom-left{
+    width: 13%;
+    float: left;
+}
+footer .bottom .bottom-right{
+    width: 13%;
+    float: right;
+    position: relative;
+}
+footer .bottom .bottom-right .yy-top{
+
+}
+footer .bottom .bottom-right .yy{
+    position: absolute;
+    top: 0;
+}
+
+.copyright {
+    color: rgba(244,243,234, .7);
+    position: absolute;
+    bottom: -2px;
+    opacity: 1;
+    -webkit-transform: scale(.8);
+    line-height: 16px;
+    margin-bottom: 0;
+}
+.rotate{
+    display: block;
+    -webkit-animation-name: rotate;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes rotate{
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(90deg);
+    }
+}
+
+@media screen and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .item{
+        height: 250px;
+        width: 281px;
+    }
+    footer{
+        width: 88vw;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10%;
+
+    }
+}
+/* iPhone5 */
+@media screen and (device-width: 320px)
+and (device-height : 568px){
+}
+/* iPhone6 */
+@media screen and (device-width : 375px)
+and (device-height : 667px){
+}
+
+@media screen and (device-width : 360px) {
+    footer {
+        bottom: 9%;
+    }
+    footer .name {
+        width: 32%;
+        margin: -10px 34% 0;
+    }
+    footer .bottom a.go{
+        width: 30%;
+     }
+    footer .bottom a.go img {
+         padding-top: 0px;
+    }
+    .item {
+        margin: 7% auto 0;
+    }
+    footer .bottom .bottom-right {
+        width: 10%;
+        right: 2px;
+        top: -2px;
+    }
+    footer .bottom .bottom-left {
+        width: 10%;
+    }
+}
+/* mi2*/
+@media screen and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}
+/* iPhone6plus */
+@media screen and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+}

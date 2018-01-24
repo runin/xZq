@@ -1,0 +1,36 @@
+html{
+    height: 100%
+}
+body{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background: url(../images/record-bg.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.icon-logo{
+    position: absolute;
+    display: block;
+    width: 45%;
+    top: 10px;
+    left: 10px;
+}
+.icon-main{
+    display: block;
+    margin: 35% auto 80px;
+    width: 62%;
+    display: none;
+}
+.item{
+    width: 40%;
+    margin: 0 auto 40px;
+    display: none;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

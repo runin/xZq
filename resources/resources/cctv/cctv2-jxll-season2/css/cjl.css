@@ -1,0 +1,27 @@
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	background: url(../images/download-bg.jpg) 0 0 no-repeat;
+	background-color: #FCE6B5;
+	background-size: 100%;
+	overflow: scroll;
+}
+.down-btn{
+	width: 50%;
+	margin: 120% auto 0;
+}
+.tip{
+	width: 96%;
+	margin: 5% auto 0;
+	font-size: 13px;
+	color: #fe492a;
+	font-weight: bolder;
+}
+.download-tip{
+	width: 35%;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}

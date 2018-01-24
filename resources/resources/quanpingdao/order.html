@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>频道导航</title>
+	
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/order.css" />
+
+</head>
+<body>
+	<section class="progressive-logo">
+		<h1>兑换纪录</h1>
+	</section>
+	<section class="progressive-list">
+		<ul class="order-list" id="progressive">
+		</ul>
+		<a href="javascript:void(0);" class="more none">查看更多</a>
+	</section>
+    
+    
+	<section class="progressive-foot">
+		<section class="progressive-btns">
+			<section class="progressive-btns-wrapper">
+				<a href="mall.html" class="btn-a">返 回</a>
+			</section>
+		</section>
+	</section>
+
+	<footer class="copyright none"></footer>
+
+	<script id="tmpl_list" type="text/html">
+		<li>
+			<a href="javascript:void(0);">
+				<p class="order-time"><span class="order-time-blue">下单时间</span>：${time}</p>
+				<section class="cover">
+					<img src="${img}">
+				</section>
+				<section class="detail">
+					<h2>${name}</h2>
+					<p>实付：${pay}积分</p>
+					<p class="total">单价：${score}积分&nbsp;&nbsp;数量：${num}</p>
+				</section>
+			</a>
+		</li>
+	</script>
+	
+
+	<script src="js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.touch.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+
+	<script src="https://yaotv.qq.com/shake_tv/include/js/jsapi.js"></script>
+
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/core.js"></script>
+	<script src="./js/plugins/authorize_userinfo.js"></script>
+	<script src="./js/plugins/util.js"></script>
+
+	<script src="./js/app/order.js"></script>
+
+
+	<!-- <script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"> -->
+</body>
+</html>

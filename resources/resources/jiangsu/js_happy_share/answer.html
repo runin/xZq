@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>幸福剧场</title>
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/answer.css" />
+</head>
+<body>
+<img preload="auto" class="none" src="images/icon-window.png" style="height: 0px;width: 0px;" />
+<img preload="auto" class="none" src="images/btn-dia-award.png" style="height: 0px;width: 0px;" />
+<img preload="auto" class="none" src="images/btn-ok.png" style="height: 0px;width: 0px;" />
+<img preload="auto" class="none" src="images/qus-default.jpg" style="height: 0px;width: 0px;" />
+<!--目前参与人数-->
+<section class="count none"></section>
+<!--上帮好友展示-->
+<div class="friend none">
+	<span class="f-tip">一起玩的人</span>
+	<span class="heads"></span>
+</div>
+<div class="yao-countdown hidden">
+	    <span class="yao-countdown-tip none"></span>
+	    <i class="icon-gift"><img src="images/icon-gift.png"></i>
+	    <span class="progress"><i></i></span>
+	    <span class="yao-detail-countdown"></span>
+</div>
+<section class="qus-sec">
+	<div class="countdown none">
+		<span class="countdown-tip"></span>
+		<span class="detail-countdown"></span>
+	</div>
+	<div class="question" id="question">
+	    <dl class="disabled"></dl>
+	</div>
+</section>
+<a href="javascript:void(0);" class="btn-act none" data-collect="true" data-collect-flag="btn-act" data-collect-desc="好友助攻打开按钮"><img src="./images/btn-act.png" /><p>合力拿大奖</p></a>
+<a class="btn-plot hidden" id="btn-plot" data-collect="true" data-collect-flag="btn-plot" data-collect-desc="剧情打开按钮"><img src="./images/icon-tv.png" /></a>
+<section class="nav-answer" id="nav">
+	<a class="active" id="btn-answer" data-collect="true" data-collect-flag="btn-answer" data-collect-desc="答题按钮"></a>
+	<a id="btn-card" data-collect="true" data-collect-flag="btn-card" data-collect-desc="集卡按钮"></a>
+	<a id="btn-shop" data-collect="true" data-collect-flag="btn-shop" data-collect-desc="商城按钮"></a>
+</section>
+
+<script src="js/config.js"></script>
+<script src="js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/xss.min.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="js/plugins/common.js"></script>
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="./js/app/dialog.js"></script>
+<script src="./js/app/answer.js"></script>
+</body>
+</html>

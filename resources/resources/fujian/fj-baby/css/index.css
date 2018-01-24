@@ -1,0 +1,313 @@
+body {
+  background: url(../images/main-bg.jpg) no-repeat top center;
+  background-size: 100% 100vh;
+  min-height: 100%;
+}
+
+header div.ctrls a {
+  display: block;
+  padding: 5px 3px;
+  background-color: white;
+  border-radius: 3px;
+  color: #0085bd;
+  /*font-weight: bold;*/
+  margin: 10px 10px auto;
+  float: right;
+}
+img.logo{
+  margin: 10px;
+}
+div.ctrls {
+  display: inline-block;
+  font-size: 14px;
+  /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);*/
+  float: right;
+  margin-right: 12px;
+}
+header div.ctrls a#btn-reserve {
+}
+section.bottom {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+section.bottom img.logo {
+  width: 70%;
+  margin: 0 auto;
+}
+section.bottom img.logo.zoomIn {
+  animation-duration: 0.9s;
+  -webkit-animation: zoomIn 0.9s ease 600ms 1 both;
+  animation-timing-function: ease;
+  animation-delay: 600ms;
+  animation-iteration-count: 1;
+  animation-direction: initial;
+  animation-fill-mode: both;
+  animation-play-state: initial;
+  -webkit-animation-play-state: initial;
+  animation-name: zoomIn;
+  -webkit-animation-name: zoomIn;
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+footer {
+  /*margin-top: 60%;*/
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+}
+footer a.yj {
+  display: block;
+  text-align: center;
+  background: url(../images/main-btn.png) no-repeat;
+  background-size: 120px 30px;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  color: #f1f1f1;
+  font-weight: bold;
+  margin: 0 auto;
+}
+footer a div.items-div{
+  padding-top: 16px;
+}
+footer a.yj img.iphone{
+  width: 38px;
+}
+/*section.bottom footer a.yj img.iphone {*/
+  /*box-sizing: border-box;*/
+  /*-webkit-animation: 3s waggle;*/
+  /*animation: 3s waggle;*/
+  /*-webkit-animation-iteration-count: infinite;*/
+  /*animation-iteration-count: infinite;*/
+  /*-webkit-animation-delay: -1;*/
+  /*animation-delay: -1;*/
+/*}*/
+@-webkit-keyframes waggle {
+  0%, 7% {
+    transform: rotateZ(0);
+    -webkit-transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+    -webkit-transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+    -webkit-transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+    -webkit-transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+    -webkit-transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+    -webkit-transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+    -webkit-transform: rotateZ(0);
+  }
+}
+footer a.yj img.index-yao {
+  width: 125px;
+}
+footer a.yj.fadeInLeft {
+  -webkit-animation: fadeInLeft 1s ease 900ms both;
+  animation-delay: 900ms;
+  animation-name: fadeInLeft;
+}
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/*活动规则-s*/
+.rule-section{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*width: 100%;*/
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30% 5.5%;
+  color: #006695;
+}
+.rule-section div:first-child{
+  height: 100%;
+  border-radius: 5px;
+  /*background: rgba(227,12,184, .5);*/
+  background: url("../images/rule-bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  padding: 0 6% 4%;
+  position: relative;
+  overflow: hidden;
+}
+.rule-section div.con h2{
+  font-size: 18px;
+  margin: 3% auto 2%;
+  text-align: center;
+  height: 7%;
+  color: #006695;
+}
+.rule-section div a.close{
+  display: inline-block;
+  /*background: #fff;*/
+  background-size: 20px auto;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  border-radius: 100%;
+}
+.rule-section div a.close p{
+   width: 35%;
+   margin: 21px auto 18px 11px;
+ }
+.rule-section div div.con{
+  height: 88%;
+  margin-bottom: 2%;
+  padding-top: 2%;
+}
+.rule-section div div.con div.con-htm{
+  height: 92%;
+  margin-top: 6%;
+  overflow: auto;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+}
+.pc1{
+  position: absolute;
+  width: 3%;
+  top: 24%;
+  left: 15%;
+  opacity: 0;
+  -webkit-animation: moon1 2s infinite linear;
+}
+.pc2{
+  position: absolute;
+  width: 4%;
+  top: 33%;
+  left: 70%;
+  opacity: 0;
+  -webkit-animation: moon2 3.2s infinite linear;
+}
+.pc3{
+  position: absolute;
+  width: 5%;
+  top: 35%;
+  left: 25%;
+  opacity: 0;
+  -webkit-animation: moon2 3.5s infinite linear;
+}
+.pc4{
+  position: absolute;
+  width: 4%;
+  top: 40%;
+  left: 45%;
+  opacity: 0;
+  -webkit-animation: moon3 2.6s infinite linear;
+}
+.pc5{
+  position: absolute;
+  width: 4%;
+  top: 36%;
+  left: 60%;
+  opacity: 0;
+  -webkit-animation: moon1 3.3s infinite linear;
+}
+.pc6{
+  position: absolute;
+  width: 3%;
+  top: 22%;
+  left: 62%;
+  opacity: 0;
+  -webkit-animation: moon2 4s infinite linear;
+}
+.copyright{
+  color: #00a3bc;
+}
+.follow-box {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  zoom: 1;
+  clear: both;
+}
+/*活动规则-e*/
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  section.bottom footer {
+    /*margin-top: 55%;*/
+  }
+}
+
+
+@-webkit-keyframes moon1 {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    top: 70%;
+    left: 30%;
+    opacity: 0;
+  }
+}@-webkit-keyframes moon2 {
+   0%{
+     opacity: 0;
+   }
+   50%{
+     opacity: 1;
+   }
+  100%{
+    top: 60%;
+    left: 60%;
+    opacity: 0;
+  }
+}@-webkit-keyframes moon3 {
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+  100%{
+    top: 65%;
+    left: 20%;
+    opacity: 0;
+  }
+}

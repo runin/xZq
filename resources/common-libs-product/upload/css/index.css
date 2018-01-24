@@ -1,0 +1,14 @@
+.wrapper {
+	width: 90%;
+	margin: 10px auto;
+	padding: 10px 10px 0 10px;
+	background: rgb(238, 238, 238);
+	border: 1px solid #C2C2C2;
+	border-radius: 8px;
+}
+.form-item .upload-box {
+	
+    /* height: 52px; */
+    margin-top: 8px;
+    margin-bottom: 16px;
+}

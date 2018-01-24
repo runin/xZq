@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>士兵突击</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+	<link rel="stylesheet" href="./css/answer.css" />
+</head>
+<body>
+	<header>
+		<div class="hd-wrapper">
+			<a href="#" data-collect="true"
+							data-collect-flag="tv-yunnan-soldier-comment-return-index-btn"
+							data-collect-desc="返回重新合照" class="btn-back-index" id="btn-back"></a>
+			<p id="count"></p>
+			<!--<a class="ranking" id="ranking" data-collect="true" data-collect-flag="sy-tvshow-answer-rank" data-collect-desc="答题页面-积分排行按钮">积分排行</a>-->
+			<h2 class="logo"><img src="images/small-sponsor.png"/></h2>
+		</div>
+		<div class="qa-wrapper">
+			<p class="cor-content"></p>
+		</div>
+	</header>
+	
+	<article id="article">
+		<div class="comments" id="comments"></div>
+		<div class="ctrls">
+			<!--<div class="funny-box">
+				<img class="funny1" src="./images/funny/funny1.png" data-item="/:funny1" border="0">
+				<img class="funny2" src="./images/funny/funny2.png" data-item="/:funny2" border="0">
+				<img class="funny3" src="./images/funny/funny3.png" data-item="/:funny3" border="0">
+			</div>-->
+			<p>
+				<input id="input-comment" type="text" placeholder="九寨沟宋城请你弹幕吐槽来一发" />
+				<a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="tv-yunnan-soldier-comment-send" data-collect-desc="答题页面-发表评论按钮">发射</a>
+			</p>
+		</div>
+	</article>
+	
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/zepto.fx.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/barrage.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_reserve.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/plugins/msg.js"></script>
+	<script src="./js/app/answer.js"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

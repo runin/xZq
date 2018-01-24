@@ -1,0 +1,221 @@
+html {
+	height: 100%;
+}
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	background:url(../images/bg-content.jpg) no-repeat top center fixed;
+	background-size:cover;
+}
+section {
+	width:100%;
+	height: 100%;
+}
+img {
+	display: block;
+}
+.answer-box .item, .answer-box .item ul, .answer-box .item ul li {
+	width: 100%;
+	height: 100%;
+	padding-bottom: 2%;
+	overflow: hidden;
+}
+.answer-box{
+	width:90%;
+	margin: 0 auto;
+	padding-bottom: 30%;
+}
+.answer-box img.border-top{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.show-box {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	color: #ff6c00;
+	margin-top: -1px;
+}
+.time-box {
+	padding: 20px 20px 30px;
+	font-size:16px;
+	color:#FFF;
+	text-align: center;
+	overflow: hidden;
+}
+.time-box .countdown-tip {
+	display: block;
+	margin-bottom: 2%;
+}
+.time-box .detail-countdown {
+	position: relative;
+	margin-top: 8px;
+}
+.time-box .detail-countdown p {
+	display: inline-block;
+	font-size: 22px;
+	background: url(../images/bg-time.png) no-repeat center center;
+	background-size: cover;
+	padding: 4px;
+	border-radius: 6px;
+	font-weight: bolder;
+	margin: 0 5px;
+}
+.time-box .detail-countdown p label {
+	font-weight: bolder;
+}
+.time-box .detail-countdown > label {
+	font-size: 15px;
+	display: inline-block;
+}
+.answer-box .item {
+	color: #FFF;
+	background: url(../images/bg-ask-body.png) repeat-y;
+	background-size: 100% auto;
+}
+.answer-box .item ul li {
+	text-align: center;
+}
+.answer-box .item ul li i {
+	display: none !important;
+}
+.answer-box .item ul li p {
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: bolder;
+	padding:3% 6% 6% ;
+	text-align: left;
+}
+.answer-box .q-item {
+	display: inline-block;
+	width: 90%;
+	height: 42px;
+	line-height: 42px;
+	background-color: #fffbcb;
+	color: #ff7600;
+	border-radius: 6px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bolder;
+	position: relative;
+	margin: 4px 5%;
+	padding: 0 15px;
+}
+.answer-box .q-item i{
+	display: block;
+	content:"";
+	position: absolute;
+	top:10px;
+	left: 7px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #ededed;
+	box-shadow: 2px 2px 2px #c8c8c8 inset;
+}
+.answer-box .q-item i.selected::before{
+	display: block;
+	content:"";
+	position: absolute;
+	top :3px;
+	left: 3px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #0a4482;
+	box-shadow: 1px 1px 1px #186da3 inset;
+}
+.answer-box .item ul li .dorB span {
+	display: inline-block;
+	width: 90%;
+	height: 42px;
+	line-height: 42px;
+	background-color: #CBCBCB;
+	color: #989898;
+	border-radius: 6px;
+	margin: 4px 5%;
+	padding: 0 15px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bolder;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #A9A9A9;
+}
+.answer-box .item ul li .dorB .right {
+  background-color: #FFE800;
+  border: 1px solid #DD6C27;
+  color: #FF2700;
+}
+.answer-box .item ul li .dorB .right:after {
+	content: '(正确答案)';
+	display: inline-block;
+	font-size: 12px;
+	font-weight: normal;
+	margin-left: 5px;
+}
+.answer-box .item ul li .dorB span i {
+	display: block;
+	content:"";
+	position: absolute;
+	top:10px;
+	left: 7px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #ededed;
+	box-shadow: 2px 2px 2px #c8c8c8 inset;
+}
+.answer-box .item ul li .dorB span.selected i::before {
+	display: block;
+	content:"";
+	position: absolute;
+	top :3px;
+	left: 3px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #0a4482;
+	box-shadow: 1px 1px 1px #186da3 inset;
+}
+.answer-box .item ul li .dorB span.right i::before {
+	display: block;
+	content:"√";
+	position: absolute;
+	font-size: 12px;
+	top :3px;
+	left: 3px;
+	width: 10px;
+	height: 10px;
+	line-height: 10px;
+}
+#lottery-dialog::-webkit-input-placeholder {
+	color:#333;
+}
+footer {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+footer a {
+	display: block;
+	width: 46%;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 36px;
+	background-color: #ffad0b;
+	color: #FFF;
+	margin: 0 auto 5%;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+}

@@ -1,0 +1,84 @@
+.main h1{
+    font-size:14px;
+    color:#fff;
+    text-align: center;
+    margin: 28px auto 20px;
+}
+.div-ul{
+    background: url(../images/con1.png) repeat-y;
+    background-size: 300px auto;
+    width:300px;
+    height:383px;
+    margin: 0 auto 21px;
+    padding: 10px;
+}
+.div-ul:before{
+      content: '';
+      display: block;
+      background: url("../images/top1.png") no-repeat;
+      background-size: 300px auto;
+      width:300px;
+      height:6px;
+    margin: -15px 0 0 -11px;
+}
+.div-ul:after{
+    content: '';
+    display: block;
+    background: url("../images/bot1.png") no-repeat;
+    background-size: 300px auto;
+    width:300px;
+    height:6px;
+    margin: 3px 0 0 -11px;
+}
+.card-ul{
+    width: 280px;
+    height:374px;
+    margin: 4px 0 0 0;
+    display: block;
+    border-top: 1px solid #E5C5C5;
+    border-left: 1px solid #E5C5C5;
+}
+.card-ul li{
+    width:93px;
+    height: 93px;
+    border-bottom: 1px solid #E5C5C5;
+    border-right: 1px solid #E5C5C5;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+}
+.card-ul li.select-img:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 92px;
+    height: 94px;
+    background: rgba(245,171,173,.8);
+    z-index: 1;
+}
+.card-ul li img{
+    width: 72px;
+    margin-top: 10px;
+}
+.card-ul li.selected-img{
+    border:1px solid #9A2436;
+}
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .main h1{
+        margin: 10px auto;
+    }
+}
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .main h1{
+        margin: 10px auto;
+    }
+}

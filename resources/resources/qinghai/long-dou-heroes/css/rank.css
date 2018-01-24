@@ -1,0 +1,148 @@
+body{
+    background: #000 url(../images/vote-bg.jpg) no-repeat center top;
+    background-size: cover;
+    min-height: 100%;
+    width: 100vmin;
+}
+.logo{
+    width: 30%;
+    margin: 8px 6px;
+}
+section{
+    margin: 25px auto 0;
+    width: 90vw;
+    height: 65vh;
+    overflow: auto;
+    position: relative;
+}
+section .box{
+    display: -webkit-box;display: -webkit-flex;
+    overflow-y: hidden;
+    align-items: flex-end;;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: end;
+    bottom: 10px;
+    position: absolute;
+}
+section .box .items{
+    margin-top: 10px;
+    margin-right: 9px;
+    align-items: flex-end;
+    display: block;
+}
+section label.after {
+    font-size: 12px;
+    color: #DC6022;
+    -webkit-transform: scale(.8);
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+section label.name{
+    font-size: 12px;
+    color: #fff;
+    height: 100px;
+    overflow: hidden;
+    writing-mode: lr-tb;
+    writing-mode: tb-rl;
+    width: 1em;
+    letter-spacing: 1em;
+    display: inline-block;
+    word-break: break-all;
+    display: block;
+    margin: 5px auto;
+}
+section .progress {
+    position: relative;
+}
+
+section .progress.after {
+    display: block;
+    color: #FF6316;
+    font-size: 12px;
+    position: absolute;
+    right: 9px;
+    top: -1px;
+    z-index: 1;
+    text-align: right;
+    line-height: 16px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+section .progress-bar {
+    border-radius: 4px;
+    min-height: 1px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    transition-property: width, background-color;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+section .progress-bar:before,section .progress-bar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+section .progress-bar:before {
+    bottom: 0;
+    background: url(../images/stripes.png) 0 0 repeat;
+    border-radius: 4px 4px 0 0;
+}
+section .progress-bar:after {
+    z-index: 2;
+    bottom: 45%;
+    border-radius: 4px;
+}
+section .progress > .progress-bar {
+    background: rgb(198,255,0); /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(198,255,0,1)), color-stop(50%,rgba(105,210,0,1)), color-stop(100%,rgba(198,255,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(198,255,0,1) 0%,rgba(105,210,0,1) 50%,rgba(198,255,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to bottom,  rgba(198,255,0,1) 0%,rgba(105,210,0,1) 50%,rgba(198,255,0,1) 100%);
+
+
+}
+
+footer{
+    background: #000 url(../images/rank-bottom.jpg) no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100vmin;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+footer a.back-home{
+    background: url(../images/back.png) no-repeat;
+    background-size: cover;
+    height: 43px;
+    width: 143px;
+    display: block;
+    margin: 23px auto 0;
+}
+#finger {
+    position: absolute;
+    top: 18%;
+    right: 15%;
+    width: 8%;
+    z-index: 0;
+    animation: fx-guide 1.8s infinite ease-in-out forwards;
+    -webkit-animation: fx-guide 1.8s infinite ease-in-out forwards;
+    z-index: 2;
+}
+#finger img{
+    -webkit-transform: rotateZ(90deg);
+}
+@-webkit-keyframes  fx-guide {
+    0% {opacity: 0;right: 20%;}
+    30% {opacity: 1;right: 30%;}
+    70% {opacity: 1;right: 60%;}
+    90% {opacity: 0;right: 70%;}
+    100% {opacity: 0;right: 20%;}
+}

@@ -1,0 +1,311 @@
+html, body {
+    height: 100%;
+}
+body{
+    background: #04030E url(../images/hbvote-bg.jpg) no-repeat;
+    background-size: 100%,100%;
+    overflow: hidden;
+}
+header{
+    text-align: center;
+    padding: 5% 3% 2%;
+}
+header label{
+    color: #fff;
+    font-size: 12px;
+}
+header a.btn{
+    display: inline-block;
+}
+.main{
+    padding: 0 3%;
+}
+.main .count-down{
+    height: 30px;
+    line-height: 30px;
+    color: #FFD06B;
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 9px;
+    margin-top: 3%;
+}
+.main .count-down:before,.main .count-down:after{
+    content: '';
+    display: inline-block;
+    background: url(../images/hb-yan.png) no-repeat;
+    background-size: 100%;
+    width: 25px;
+    height: 37px;
+    float: right;
+}
+.main .count-down:before{
+    -webkit-transform: rotateY(180deg);
+    float: left;
+}
+.main .count-down div{
+    display: inline-block;
+}
+.main .count-down i{
+    font-style: normal;
+    font-weight: bold;
+}
+
+.swiper-container{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.swiper-slide label{
+    color: #fff;
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 4px;
+}
+.swiper-slide label img.select{
+    -webkit-opacity: 0.6;
+    opacity: 0.6;
+}
+.swiper-slide span.tj{
+    display: inline-block;
+    width: 100%;
+    max-height: 32px;
+    height: 0;
+    background: #D0A567;
+    -webkit-transition: height 1.5s ease-out 0.2s;
+    transition: height 1.5s ease-out 0.2s;
+}
+.swiper-slide label div.sup-div div:first-child{
+    color: #D0A567;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    writing-mode: lr-tb;
+    writing-mode: tb-rl;
+    width: 1em;
+    letter-spacing: 1em;
+    display: inline-block;
+    word-break: break-all;
+    width: 10%;
+}
+.swiper-slide label div.sup-div div:last-child{
+    color: #CD9E5C;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+    display: inline-block;
+    padding-left: 15px;
+    width: 50%;
+}
+.swiper-slide label i{
+    display: inline-block;
+    background: url(../images/hb-zan.png) no-repeat 29% center;
+    background-size: 20px auto;
+    width: 100%;
+    height: 22px;
+    margin-right: 3px;
+    vertical-align: middle;
+    padding-left: 15px;
+    font-style: initial;
+    font-size: 15px;
+    color: #F1DB99;
+    text-align: center;
+    margin-bottom: 3px;
+    opacity: 0;
+}
+.swiper-slide label i.zan{
+    -webkit-animation-name:zan;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes zan {
+    from {
+        opacity:0;
+        -webkit-transform:scale(0.5);
+        transform:scale(0.5);
+    }
+    to {
+        opacity:1;
+        -webkit-transform:scale(1);
+        transform:scale(1);
+    }
+}
+.swiper-slide label div.sup-div div .label-vn{
+    -webkit-transform: scale(.9);
+}
+.swiper-slide label div.sup-div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.center .jian-left,.center .jian-right{
+    display: block;
+    width: 25px;
+    height: 34px;
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode:forwards;
+}
+.center .jian-left{
+    background: url(../images/left.png) no-repeat;
+    background-size: 25px auto;
+    left: 8px;
+    -webkit-animation-name:fLeft;
+}
+.center .jian-right{
+    background: url(../images/right.png) no-repeat;
+    background-size: 25px auto;
+    right: 8px;
+    -webkit-animation-name:fRight;
+}
+
+@-webkit-keyframes fLeft {
+    from {
+        -webkit-transform:translateX(100%);
+        transform:translateX(100%);
+        -webkit-opacity:0;
+    }
+    to {
+        -webkit-transform:translateX(0);
+        transform:translateX(0);
+        -webkit-opacity:1;
+    }
+}
+@-webkit-keyframes fRight {
+    from {
+        -webkit-transform:translateX(-100%);
+        transform:translateX(-100%);
+        -webkit-opacity:0;
+    }
+    to {
+        -webkit-transform:translateX(0);
+        transform:translateX(0);
+        -webkit-opacity:1;
+    }
+}
+.center img.tishi{
+    display: block;
+    width: 100%;
+    max-width: 204px;
+    margin: 0 auto;
+    text-align: center;
+}
+.center .outer{
+    color: #FCD761;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+}
+.vote{
+    padding: 40% 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    color: #fff;
+}
+.vote a.applay-btn{
+    margin: 10px auto;
+    background: #DB3774;
+    color: #fff;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.btn-disabled{
+    color: #BBB9B1;
+}
+.visibility{
+    visibility: hidden;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .center table {
+        left: 8%;
+    }
+    .center table td {
+        width: 30%;
+        margin: 2% 0 0 0;
+    }
+    .main .count-down{
+        margin-top: 0;
+    }
+    .swiper-container {
+        margin-bottom: 2px;
+    }
+    .swiper-slide label img.select{
+        -webkit-filter:brightness(.5) !important;
+        -webkit-filter: brightness(50%) !important;
+        filter: brightness(50%);
+        filter:brightness(.5);
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+    header{
+        padding: 0 3% 2%;
+    }
+    .center img.tishi {
+        max-width: 150px;
+    }
+	
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .index-center{
+        bottom: 100px;
+    }
+    .index-center {
+        height: 256px;
+    }
+    .swiper-slide label img.select{
+        -webkit-filter:brightness(.5) !important;
+        -webkit-filter: brightness(50%) !important;
+        filter: brightness(50%);
+        filter:brightness(.5);
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+    .swiper-container {
+        margin-bottom: 15%;
+    }
+    .main {
+        padding: 20px 3%;
+    }
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .swiper-slide label img.select{
+        -webkit-filter:brightness(.5) !important;
+        -webkit-filter: brightness(50%) !important;
+        filter: brightness(50%);
+        filter:brightness(.5);
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+
+}

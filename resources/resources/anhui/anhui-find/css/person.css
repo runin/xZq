@@ -1,0 +1,156 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0 auto;
+	background: url(../images/bg-body1.jpg);
+	background-size: cover;
+}
+header {
+	margin: 0 auto;
+	width: 90%;
+	text-align: right;
+	position: relative;
+}
+header .ctrls {
+	padding: 18% 0 7% 50%;
+	background-position:bottom left;
+	background-size: 50%;
+}
+.ctrls span{
+	display: block;
+	text-align: left;
+	color: #ffffff;
+}
+.ctrls span.title{
+	
+	padding: 6px 4px;
+	color: #ffffff;
+	font-weight: blod;
+	font-size: 15px;
+	margin: 4px 0;
+	
+}
+.ctrls span.title img{
+	width: 100%;
+}
+.ctrls span.title-intro{
+	font-size: 12px;
+	line-height: 20px;
+	margin-left: 7px;
+}
+.ctrls span.title-intro label{
+	color: #FF0;
+}
+.name{
+	position: relative;
+}
+.name img{
+	width: 50%;
+	margin-right: 50%;
+}
+.for-help{
+	width: 50%;
+	position: absolute;
+    bottom: 0;
+	right: 0px;
+}
+.for-help span {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #ffff00;
+	font-size: 12px;
+	outline:none;
+}
+.for-help span img{
+	margin: 0 auto;
+	width: 40%;
+}
+/*
+.help{
+	width: 80%;
+	margin-left: 20%;
+	position: absolute;
+	right: 0px;
+	bottom: 16px;
+}
+.help a.help-btn{
+	width: 40%;
+	display: inline-block;
+	margin-left: 6px;
+	background: #ebcb22;
+	height: 30px;
+	line-height: 30px;
+	border: 30px;
+	position: static;
+}
+*/
+.ctrls span.share-tips{
+	margin:5px 0 0 7px;
+	font-size: 12px;
+	color: #FF0;
+}
+.pictures ul{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+.pictures ul li{
+	display: inline-block;
+	width: 14.2857143%;
+}
+.pictures ul li img{
+	width: 100%;
+}
+.help{
+	width: 100%;
+	text-align: center;
+	background: #ffffff;
+	padding: 10px 0px;
+	position: fixed;
+	bottom: 0;
+	z-index: 2;
+}
+.help a.help-btn{
+	width: 35%;
+	display: inline-block;
+	margin: 0 5%;
+	background: #FE5D5D;
+	height: 40px;
+	line-height: 40px;
+	border: 40px;
+	position: static;
+}
+.person-info{
+	width: 90%;
+	background: rgba(142,202,254,0.8);
+	color:#ffffff;
+	border-radius: 10px;
+	padding: 10px 0px 0px;
+	z-index: 1;
+	text-align: left;
+	margin: 0 auto;
+}
+.info-box{
+	margin: 15px auto 0px;
+	padding: 0px 20px;
+	height: 95%;
+	overflow-y: scroll;
+}
+.person-info p{
+	line-height: 24px;
+	font-size: 14px;
+	margin: 0;
+}
+.more{
+	display: inline-block;
+	position: absolute;
+	bottom: 80px;
+	right: 10px;
+	height: 30px;
+	width: 30px;
+	background: url(../images/arrow-down.png);
+	background-size: cover;
+}

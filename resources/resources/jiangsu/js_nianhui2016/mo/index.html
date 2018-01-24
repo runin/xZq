@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>2017年江苏广电招商年会</title>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+	<!-- <link rel="stylesheet" href="bokeh-style.css"> -->
+</head>
+<body>
+	<audio preload="auto" id="audio-a" src="images/audio-a.mp3" class="preload"></audio>
+	<audio preload="auto" id="audio-b" src="images/audio-b.mp3" class="preload"></audio>
+	<section class="swiper-container">
+	    <section class="swiper-wrapper">
+	        <section class="swiper-slide swiper-slide1">
+	        	<div class="cover-box">
+	        		<img class="tvlogo" src="./images/tvlogo.png">
+	        		<div class="logo">
+	        			<img src="./images/logo.png">
+	        			<i class="blink l1"></i>
+	        			<i class="blink l2"></i>
+	        			<i class="blink l3"></i>
+	        			<i class="blink l4"></i>
+	        			<i class="blink l5"></i>
+	        		</div>
+	        	</div>
+	        	<div class="hammer-box">
+	        		<div class="tips">
+	        			<p>友情提示：</p>
+	        			<p>请您点击右上角收藏本链接，方便您在退出时找回。或者打开蓝牙，点击“微信”-“发现”-“摇一摇”-“摇周边”，进入互动，参与摇奖。</p>
+	        		</div>
+					<img src="./images/arrow.png" id="array">
+	        		<p class="copyright none"></p>
+	        		<div id="div_subscribe_area" class="div_subscribe_area_class none"></div>
+	        	</div>
+	        	<div class="stars"></div>
+	        </section>
+	        <section class="swiper-slide swiper-slide2">
+	        	<div class="cover-box home-box">
+		            <div id="marqueen"><ul></ul></div>
+		            <div id="pv">当前人数 <label></label> 人</div>
+		            <div class="thanks-tips"></div>
+		            <img class="main" src="./images/main.png">
+	        	</div>
+	        	<div class="zanzu happy">
+		        	<div class="ff">
+		        		<img src="./images/ff.png">
+	        			<i class="blink l6"></i>
+	        			<i class="blink l7"></i>
+	        			<i class="blink l8"></i>
+		        	</div>
+	        		<div class="f">
+	        			<img class="m roll1" src="./images/roll1.png">
+	        			<img class="roll2" src="./images/roll2.png">
+	        			<img class="roll3" src="./images/roll3.png">
+	        			<img class="roll4" src="./images/roll4.png">
+	        			<img class="roll5" src="./images/roll5.png">
+	        			<img class="roll6" src="./images/roll6.png">
+	        			<img class="roll7" src="./images/roll7.png">
+	        			<img class="roll8" src="./images/roll8.png">
+	        			<img class="roll9" src="./images/roll9.png">
+	        			<img class="roll10" src="./images/roll10.png">
+	        			<img class="roll11" src="./images/roll11.png">
+	        			<img class="li1" src="./images/l1.png">
+	        			<img class="li2" src="./images/l2.png">
+	        			<img class="li3" src="./images/l3.png">
+	        			<img class="t1" src="./images/t1.png">
+	        			<img class="t2" src="./images/t3.png">
+	        			<img class="t3" src="./images/t2.png">
+	        			<img class="tri1" src="./images/tri1.png" style="opacity:0">
+	        			<img class="tri2" src="./images/tri2.png">
+	        		</div>
+	        		<div class="sui">
+	        			<img class="s1" src="./images/s1.png">
+	        			<img class="s2" src="./images/s2.png">
+	        			<img class="s3" src="./images/s3.png">
+	        			<img class="s4" src="./images/s4.png">
+	        		</div>
+	        	</div>
+	        	<div class="hammer-box">
+	                <div class="countdown none" style="opacity:0 !important;">
+	                	<span class="countdown-tip"></span>
+	                	<span class="detail-countdown"></span>
+	                </div>
+	        		<p class="copyright"></p>
+	        	</div>
+	        	<div class="stars"></div>
+			    <input type="button" id="test" class="none" value="红包按钮" style="position:absolute;top:30%;z-index:99999;">
+	        </section>
+	    </section>
+	</section>
+	<script src="./js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/swiper.min.js"></script>
+	<script src="./js/plugins/common.js"></script>
+
+	<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/authorize_userinfo.js"></script>
+
+	<script src="./js/app/index.js"></script>
+</body>
+</html>

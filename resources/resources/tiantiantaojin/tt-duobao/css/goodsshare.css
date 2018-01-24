@@ -1,0 +1,128 @@
+body{
+    background-color: #F8F8F8;
+    font-size: 14px;
+}
+/*悬浮导航栏处start*/
+.fix-tab-div
+{
+    position: fixed;
+    top:0px;
+    height:36px;
+    width:100%;
+    background: #fff;
+    z-index:3;
+}
+.line-div
+{
+    height: 28px;
+    width: 1px;
+    position: absolute;
+    top:4px;
+    margin-left: 50%;
+    background: #aaaaaa;
+   /* box-shadow: 1px 1px 2px #eee;*/
+}
+/*首页开始*/
+.first-left
+{
+    margin-left:24.8%;
+}
+.second-left
+{
+   margin-left:49.8%;
+}
+.third-left
+{
+   margin-left:74.8%;
+}
+.fix-tab-div a
+{
+    float:left;
+    width:25%;
+    text-align: center;
+    position: relative;
+    line-height: 36px;
+    font-size: 15px;
+    border-bottom:2px solid #EEEEEF;
+    color:#333333;
+    background: #fff;
+}
+/*首页结束*/
+.focus
+{     color:#f91546!important;
+      border-bottom:2px solid #f91546!important;  
+}
+
+.share-content
+{
+    margin-top: 36px;
+    padding: 10px;
+    
+}
+.share-content-pp{
+    margin-top: 10px;
+}
+.share-content ul li
+{
+    border:1px solid #cccccc;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.share-content .abbr{
+    overflow: hidden;
+}
+.share-content .abbr .pic {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    float:left;
+}
+.w-show p
+{
+    margin-bottom: 2px;
+}
+ p .flow-right
+ {
+    position:absolute;
+    right:20px;
+ }
+.share-content .abbr .txt {
+    padding-left: 10px;
+    height: 90px;
+    overflow: auto;
+    line-height: 1.66;
+    margin-top: -3px;
+    margin-left: 90px;
+    white-space: normal;
+    overflow-x:hidden; 
+    word-break: break-word;
+}
+
+/*加载提示*/
+.loading-space
+{
+    height: 80px;
+    position: relative;
+    /* background-color: #999999; */
+    /* line-height: 40px; */
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    color: #999999;
+}
+/*加载showLodaing*/
+.lodd{
+    position:static;
+    margin-bottom: 60px;
+}
+.spinner.lodd .spinner-wrapper {
+    width: 25px;
+    height: 25px;
+}
+.lodd .container1 > div,.lodd .container2 > div,.lodd .container3 > div {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+}

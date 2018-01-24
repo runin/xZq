@@ -1,0 +1,50 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="author" content="" />
+        <meta name="viewport"  content="width=device-width, initial-scale=1,  minimum-scale=0.5, maximum-scale=1.0,user-scalable=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="MobileOptimized" content=""/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>西安直播间-幸运中大奖</title>
+        <script src="js/wx_api.js"></script>
+        <link href="css/global.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body class="wihtebg">
+		<div class="logo"></div>
+    	<div class="share_box " style="display: none;" id="div-share-box">
+		   	<a href="javascript:void();" class="back_btn"></a>
+		</div>
+		<div class="spinner" id="survey_prize_loading">
+		  <div class="bounce1"></div>
+		  <div class="bounce2"></div>
+		  <div class="bounce3"></div>
+		</div>
+        <div class="mod_box cjbox none" id="cjbox_div">
+            <p><img src="http://yao.holdfun.cn/portal/resources/survey/images/cj.jpg" width="100%"></p>
+            <h2>恭喜您，获得<span id="prize"></span></h2>
+            <p id="phone_html">您的手机号为：<em id="phone"></em>， <font id="prize_link_tip"></font></p>
+            <div class="mod_box cjbox none" id="mod_phone_box">
+            	<h3>请补充您的手机号</h3>
+            	<p><input type="number" maxlength="11" min="11" id="phone_input"><span id="win_prize_tip"></span></p>
+            	<a href="javascript:submitAward();" class="send_btn" id="btn-submit" data-collect="true" data-collect-flag="survey_lottery_phone_add" data-collect-desc="补充手机号确认领奖">确认领奖</a>
+       		</div>
+       		<div class="sharebtnbox box-orient-h none" id="btn_box_div">
+            	<a href="javascript:toUrl('index.html');" class="box-flex tpbtn" data-collect="true" data-collect-flag="survey_lottery_back_btn" data-collect-desc="返回首页"><i></i>返回首页</a>
+            </div>
+        </div>
+		<div class="copyright2">页面由西安广播电视台提供</div>
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/md5.js"></script>
+        <script src="js/share.js"></script>
+        <script src="js/win_step2.js"></script>
+		<script src="js/data_collect.js"></script>
+    </body>
+</html>

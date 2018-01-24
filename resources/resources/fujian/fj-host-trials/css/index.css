@@ -1,0 +1,129 @@
+body {
+	background: url("../images/bg-body.jpg") no-repeat;
+	background-size: cover;
+}
+header a {
+  color: #FFF;
+  display: block;
+  border: 1px solid #FFF;
+  font-size: 13px;
+  text-align: center;
+  width: 72px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 20px;
+  margin: 6px auto 0;
+  position: absolute;
+  right: 16px;
+  top: 9px;
+}
+.logo{
+  width: 96%;
+  margin: 8% auto 20px;
+  display: block;
+}
+.main{
+	
+}
+.main p{
+	font-size: 15px;
+	color: #fff;
+	margin: 0 10%;
+}
+.main a{
+  border: solid 3px #89aca9;
+  color: #f68b1f;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c8c7c1), color-stop(100%,#fff7f8));
+  background: -webkit-linear-gradient(top, #c8c7c1 0%,#fff7f8 100%);
+  height: 50px;
+  width: 50%;
+  line-height: 44px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.follow-box {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	clear: both;
+  text-align: center;
+}
+#div_subscribe_area {
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+}
+.copyright {
+	position: static;
+	color: #710a00;
+}
+.zzs {
+  max-width: 62%;
+  text-align: center;
+}
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1100px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+@media screen 
+and (min-device-width : 360px) 
+and (min-device-height : 1200px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 570px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .logo {
+    width: 86%;
+    margin: 6% auto 18px;
+  }
+  .main a {
+    height: 42px;
+    width: 43%;
+    line-height: 36px;
+    font-size: 15px;
+  }
+}
+
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (device-aspect-ratio:16/9) and (device-aspect-ratio:16/10) and (device-aspect-ratio:4/3)
+and (-webkit-min-device-pixel-ratio : 0) {
+
+}
+
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+
+}

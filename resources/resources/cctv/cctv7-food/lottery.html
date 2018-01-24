@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>食尚大转盘</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/dialog.css?t=rt" />
+    <link rel="stylesheet" href="./css/lottery.css?t=f" />
+</head>
+<body>
+<!--摇一摇声音-->
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio>
+<audio preload="auto" id="audio-c" src="images/audio-c.mp3"></audio>
+<section class="home-box">
+  <div class="main-top m-t-b">
+  	<div class= "marquee none"><ul></ul></div>
+	<p class="count hidden">目前参与人数：<label></label></p>
+    <a class="ddtj none" id="ddtj" href="" data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金"></a>
+	<div class="countdown none">距离摇奖结束还有<span class="detail-countdown"></span></div>
+  </div>
+  <div class="main-foot m-f-b">
+    <input type="button" class="none" id="test" value="test">
+    <div class="yao-text">
+      <p class="texta"><span>抢红包 抢大奖 和家人一起摇一摇</span></p>
+      <p class="none textb"><span>啊哦，差一点就抢到了，继续加油</span></p>
+    </div>
+    <div class="rednum none">还剩<span>0</span>个红包，继续加油！</div>
+    <div class="zanzhu">红包由<img src="./images/zanzhu.jpg">赞助！</div>
+	<div class="copyright"></div>
+  </div>
+</section>
+
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/zepto.selector.min.js"></script>
+<script src="./js/plugins/md5.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/shake.js"></script>
+
+<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script> 
+<script src="./js/authorize_userinfo.js"></script>
+
+<script src="./js/app/dialog.js"></script>
+<script src="./js/app/lottery.js"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+body{
+	background: #37bb68 url(../images/bg_bpdy.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+header{
+	padding: 20px 16px;
+	height: 70px;
+	position: relative;
+}
+header span{
+	display: inline-block;
+	width: 100%;
+	font-size: 18px;
+	text-align: center;
+	color: #de691b;
+	font-weight: bold;
+	line-height: 50px;
+}
+header .reserve{
+	 width: 50px;
+	 height: 80px;
+	 background: url(../images/reserve.png) no-repeat center;
+	 background-size: 100%;
+	 position: absolute;
+	 top :20px;
+	 right : 20px
+}
+.logo{
+	margin: 0px auto 20px;
+	display: block;
+	width: 90%;
+}
+.index-btn{
+	width: 100%;
+	text-align: center;
+}
+.index-btn .erweima-box{
+	display: inline-block;
+	width: 44%;
+	padding: 4px;
+	
+}
+.index-btn .erweima-box img{
+	width: 100%;
+}
+.index-btn .text-tips{
+	display: inline-block;
+	width: 50%;
+	padding: 10px 0px 0;
+}
+.index-btn .text-tips p{
+	float: right;
+	line-height: 18px;
+	font-size: 12px;
+	color: #fff;
+	text-align: left;
+}
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	header {
+	    padding: 10px 16px;
+	    height: 40px;
+	}
+	header span{
+		line-height: 10px;
+	}
+	.logo {
+	    margin: 0px auto 10px;
+	    width: 80%;
+	}
+	.index-btn .erweima-box{
+		width: 40%;
+	}
+	.index-btn .text-tips{
+		width: 50%;
+	}
+}

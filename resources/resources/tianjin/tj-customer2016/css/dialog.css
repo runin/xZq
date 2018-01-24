@@ -1,0 +1,269 @@
+/*公共样式S*/
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+  z-index: 9999;
+  overflow-y: auto;
+}
+.modal .btn-close {
+	position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    z-index: 10000;
+    top:0px;
+    right:0px;
+	border-radius: 50%;
+}
+.dialog {
+  position: absolute;
+  color: #D6305A;
+  width: 80%;
+  height: 90%;
+  left: 10%;
+  top: 10%;
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.dialog-assist {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.dialog-assist .code{
+	width: 100%;
+	text-align: center;
+	color: #ff262f;
+	font-size: 19px;
+	line-height: 20px;
+	margin: 10px auto;
+	text-align: center;
+}
+.dialog .btn-dia {
+	display: inline-block;
+	width: 38%;
+	margin: 8px auto 0;
+	text-align: center;
+	background-color: #e3514e;
+	border-radius: 26px;
+	color: #fff;
+	z-index: 9999;
+	font-size: 14px;
+	padding: 6px 0px;
+	font-weight: bold;
+}
+/*公共样式E*/
+.dialog-assist img{
+	display: block;
+	width: 100%;
+}
+
+/*中奖弹层S*/
+.lottery-dialog{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.lott-title{
+	width: 100%;
+	margin: 0 auto;
+
+}
+.lottery-dialog .dialog-assist{
+	background: #fcfcfc;
+	padding: 0 0 5%;
+	border-radius: 2px;
+}	
+.dialog-assist .award-img {
+  width: 84%;
+  height: 100%;
+  padding: 4% 0 0;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+
+}
+.dialog-assist .award-img img {
+   display: block;
+}
+.dialog-assist .contact-info {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding:4% 5%;
+  z-index: 9999;
+  text-align: center;
+
+}
+.dialog-assist .contact h4{
+	color: #9b6115;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: left;
+}
+.dialog-assist .contact p {
+	width: 100%;
+    font-size: 15px;
+    line-height: 18px;
+    border-radius: 6px;
+    margin: 4px auto;
+    text-align: left;
+}
+
+.dialog-assist .contact input {
+	display: inline-block;
+	width: 100%;
+    height: 28px;
+    padding: 2px 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 14px;
+    border-radius: 4px; 
+    border:none;
+    -webkit-appearance: none;
+    -webkit-text-fill-color:#000;
+    -webkit-opacity:1;
+}
+.lottery-dialog .contact input:disabled {
+    background:#fff;
+    color: #000;
+}
+ 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #000;
+}
+/*中奖弹层E*/
+/*rule弹层S*/
+.rule-dialog {
+    color: #fff;
+    overflow: hidden;
+    padding: 3%;
+    top: 20%;
+    height: 60%;
+    position: fixed!important;
+    bottom: 0px;
+}
+.rule-dialog h1{
+    text-align: center;
+    padding: 16px 0 6px;
+    font-weight: bolder;
+}
+.rule-dialog .content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #fff7ec;
+    border-radius: 6px;
+    color: #c36e00 !important;
+}
+.rule-dialog .content .rule-content{
+    padding: 0px 14px;
+    font-size: 14px;
+    height: 80%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+.rule-dialog .content p, .rule-dialog .content span {
+    color: #c36e00 !important;
+}
+#rule-dialog .btn-close{
+    position: absolute;
+    background: url(../images/icon-rule-close.png) no-repeat center;
+    background-size: 20px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 0!important;
+    right: 0 !important;
+    border-radius: 100%;
+    background-color: #fff7ec;
+}
+/*rule弹层E*/
+.dispshow {
+  -webkit-animation-name: dispshow;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  -webkit-backface-visibility:hidden;
+}
+.disphide {
+  -webkit-animation-name: disphide;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  -webkit-backface-visibility:hidden;
+
+}
+@-webkit-keyframes dispshow {
+    0% {opacity: 1; -webkit-transform: scale(1,0.01)}
+    100% {opacity: 1; -webkit-transform: scale(1)}
+}
+@-webkit-keyframes disphide {
+    0% {opacity: 1; -webkit-transform: scale(1)}
+    100% {opacity: 1; -webkit-transform: scale(1,0.01)}
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+ 
+}
+/* huawei honor-6 */
+@media screen and (min-device-width:1000px) and (min-device-height:1000px) {
+
+
+}
+@media screen and (device-width : 360px) {
+
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+/* shang 华为---适用分辨率在 1280*720 */
+@media screen and (device-width : 720px)
+and (device-height : 1280px){
+	
+}
+@-webkit-keyframes toggle {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}

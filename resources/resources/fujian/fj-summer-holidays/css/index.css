@@ -1,0 +1,149 @@
+body{
+	background: #6fb902;
+}
+.main{
+	background: url('../images/bg-index.jpg');
+	width: 100%;
+	height: 0px;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.nav-wrapper{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+}
+
+.nav{
+	overflow: hidden;
+}
+.nav a{
+	display: block;
+	width: 128px;
+	height: 44px;
+	text-indent: -1000em;
+	background-size: cover;
+	margin: 0 auto;
+}
+#yao_link{
+	background-image: url('../images/bg-btn.png');
+	text-indent: 0em;
+	font-size: 14px;
+	text-align: center;
+	line-height: 44px;
+	background-size: cover;	
+	width: 162px;
+	height: 44px;
+	color: white;
+}
+#yao_link.active{
+	background-image: url('../images/btn-yao.png');
+	text-indent: -1000em;
+	width: 128px;
+	height: 44px;
+}
+#vote_link{
+	background-image: url('../images/btn-vote.png');
+	margin-top: 10px;
+}
+
+footer{
+	color: #003366;
+	font-size: 12px;
+	text-align: center;
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+/*
+ *	规则弹出层
+ */
+ #rule{
+	position: absolute;
+	right: 3px;
+	top: 5px;
+	color: #00cae2;
+	border-radius: 12px;
+	font-size: 12px;
+	line-height: 24px;
+	width: 55px;
+	height: 32px;
+	background: url("../images/icon-cloud.png") no-repeat;
+	background-size: cover;
+	display: block;
+	padding-top: 9px;
+	padding-left: 4px;
+}
+ #preBtn{
+	position: absolute;
+	right: 3px;
+	top: 45px;
+	color: #00cae2;
+	border-radius: 12px;
+	font-size: 12px;
+	line-height: 24px;
+	width: 55px;
+	height: 32px;
+	background: url("../images/icon-cloud.png") no-repeat;
+	background-size: cover;
+	display: block;
+	padding-top: 9px;
+	padding-left: 4px;
+}
+
+
+.dialog-wrapper{
+	background: rgba(0,0,0,0.75);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+.dialog{
+	height: 0px;
+	background: white;
+	margin: 0 5%;
+	position: relative;
+	border-radius: 20px;
+	border: 3px solid #00ccff;
+}
+
+.dialog-title{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 35px;
+	padding-bottom: 15px;
+	font-size: 18px;
+	color: #ffea01;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+.dialog-title img{
+	width: 100px;
+}
+.dialog-content{
+	width: 80%;
+	margin: 0 auto;
+	font-size: 14px;
+	color: #666;
+	padding: 15px 0;
+	line-height: 24px;
+	overflow-y:scroll;
+}
+.dialog-close{
+	display: block;
+	position: absolute;
+	right: -15px;
+	top: -15px;
+	width: 30px;
+	height: 30px;
+	background: url("../images/icon-close.png") no-repeat;
+	background-size: cover;
+}
+/*
+ *	END OF 规则弹出层
+ */

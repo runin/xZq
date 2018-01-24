@@ -1,0 +1,79 @@
+body,html{
+	height:100%;
+	background-color:#d7f5fd;
+	background-image:url(../images/bg_a.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:top center;
+	overflow:hidden;
+}
+.header{
+	position:absolute;
+	width:100%;
+	height:38%;
+	background-image:url(../images/line_a.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:bottom center;
+	overflow:hidden;
+}
+.down-time{
+	height:18px;
+	line-height:16px;
+	margin:15px 0 0 15px;
+	font-size:14px;
+}
+.down-time span{
+	margin:0 0 0 5px;
+	color:#fe0002;
+}
+.rule-btn,
+a.partake-btn{
+	position:absolute;
+	top:10px;
+	right:5px;
+	width:26%;
+	height:30px;
+	line-height:30px;
+	border-radius:15px;
+	background:#eccd01;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	z-index:2;
+}
+a.partake-btn{
+	top:45px;
+	background:#07c4fb;
+}
+.experts{
+	position:absolute;
+	bottom:1px;
+	left:0;
+	width:100%;
+	height:72%;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:bottom center;
+}
+.profile-text{
+	position:absolute;
+	top:41%;
+	left:0;
+	width:100%;
+	height:44%;
+	line-height:22px;
+	padding:5px 20px;
+	font-size:14px;
+	color:#666;
+	overflow:hidden;
+	overflow-y:auto;
+}
+.main-t-tips{
+	line-height:18px;
+	margin:5px 30% 0 15px;
+	font-size:12px;
+}
+.main-t-tips.hidden{
+	visibility:hidden;
+}

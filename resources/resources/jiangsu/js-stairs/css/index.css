@@ -1,0 +1,91 @@
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	background: url(../images/bg.jpg) no-repeat top center ;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+header {
+	position: relative;
+	width: 100%;
+}
+header .tvlogo {
+	position: absolute;
+	width: 13%;
+	top: 10px;
+	left: 10px;
+}
+header .reserve {
+	margin: 10px 6px 0 0;
+	color: #481718;
+	float: right;
+	font-size: 16px;
+	border: 2px solid #481718;
+	padding: 2px 10px;
+	border-radius: 50px;
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	font-size: 0;
+	text-align: center;
+	z-index: 99;
+}
+footer .copyright {
+	opacity: .8;
+	line-height: 13px;
+	-webkit-transform: scale(.9);
+}
+footer .btn {
+	position: relative;
+	display: block;
+	width: 76%;
+	margin: 0 auto;
+}
+footer .btn img {
+	position: relative;
+	z-index: 1;
+}
+footer .btn .icon-light {
+    position: absolute;
+    width: 60%;
+    bottom: -10%;
+    left: 0;
+    -webkit-animation: cross-light 5s 0.5s infinite ease-in-out;
+    -webkit-animation-fill-mode: both;
+    -webkit-backface-visibility: visible;
+}
+footer .btn-rule {
+	display: inline-block;
+	font-size: 15px;
+	margin: 10px auto 8%;
+	color: #330d0d;
+	border-bottom: 1px solid #330d0d;
+	text-shadow: 1px 1px 1px rgba(255,255,255,.5);
+}
+footer #div_subscribe_area {
+	width: 100%;
+}
+
+@-webkit-keyframes cross-light {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.2) translateX(0);
+    }
+    30% {
+        opacity: 1;
+        -webkit-transform: scale(1.2) translateX(60px);
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: scale(1) translateX(90px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(.2) translateX(0);
+    }
+}

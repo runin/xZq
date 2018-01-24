@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<title>梦想美丽家</title>
+
+	<link rel="stylesheet" href="./css/normalize.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/parallax.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+	<link rel="stylesheet" href="./css/lottery.css" />
+	<!--<link rel="stylesheet" href="./css/index.min.css" />-->
+</head>
+<body>
+<div id="loading">
+</div>
+<section class="copyright"></section>
+
+<section class="wrapper none" id="wrapper">
+	<div class="wrapper-front" id="wrapper-front">
+        <div class="start"></div>
+		<a class="test is-openid" id="test" data-collect="true"
+		   data-collect-flag="cd-beautiful-dreamer-text-btn"
+		   data-collect-desc=开始测试"></a>
+		<a class="rule is-openid" id="rule" data-collect="true"
+		   data-collect-flag="cd-beautiful-dreamer-rule-btn"
+		   data-collect-desc=活动规则"></a>
+	</div>
+
+	<div class="wrapper wrapper-back none" id="wrapper-back">
+		<div class="pages" id="pages">
+			<!-- 封面 -->
+			<div class="page cover" id="cover">
+				<!--<div class="meteor"></div>-->
+				<div class="content">
+					<div class="content-container" id="question"></div>
+					<span class="parallax-first none" id="parallax-first"></span>
+				</div>
+			</div>
+
+			<!-- 报名页面 -->
+			<div class="main page sign page-firs" id="sign">
+				<img class="sign-logo" src="images/lottery-logo.png" />
+				<div class="lottery">
+					<img
+						src="http://yao.holdfun.cn/portal/resources/news/images/blank.gif"
+						class="img-bg" id="img_lottery_bg" />
+					<a href="#" data-collect="true"
+						 data-collect-flag="cd-beautiful-dreamer-lottery-lottery-btn"
+						 data-collect-desc=抽奖页面抽奖" class="btn-lottery" id="btn-lottery">
+					<img src="images/lottery-btn.png" class="btn-img" />
+				</a>
+				</div>
+				<div class="box box-phone none" id="box-phone">
+					<h2>
+						<span class="prize"></span>
+					</h2>
+					<h3>请填写您的联系方式，以便顺利领奖</h3>
+					<p>
+						<label>姓名:</label><input type="text" name="phone" maxlength="11" min="11" id="name" />
+						<label>电话:</label><input type="number" name="phone" maxlength="11" min="11" id="phone"/>
+						<span id="win_prize_tip" class="win_prize_tip"></span>
+
+					</p>
+					<div class="group-btn">
+						<a href="#" data-collect="true"
+						   data-collect-flag="cd-beautiful-dreamer-lottery-submit-btn"
+						   data-collect-desc="抽奖页面领奖" class="btn-red btn-submit"
+						   id="btn-submit">立即领奖</a>
+						<span class="address none address-info">领奖地址:</span>
+						<a href="#" data-collect="true"
+						   data-collect-flag="cd-beautiful-dreamer-lottery-view-btn"
+						   data-collect-desc="查看领奖地址" class="btn-red btn-submit address-info none"
+						   id="btn-address">点击查看</a>
+					</div>
+				</div>
+
+				<!--谢谢参与-->
+				<section class="box thank none" id="thank">
+					很遗憾未中奖,感谢您的参与！
+					<a
+						data-collect="true"
+						data-collect-flag="cd-beautiful-dreamer-lottery-index-btn"
+						data-collect-desc="抽奖页面返回首页" class="btn-back-simple">返回首页</a>
+				</section>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section id="from" class="from none">
+	<div class="ui-logo ui-logo-tv"></div>
+	<div class="from-contant">
+		<p class="home-logo"></p>
+		<div class="from-con">
+			<ul>
+				<li><i>锁定成都经济频道《梦想美丽家》</i></li>
+				<li><i>打开微信，进入摇一摇（电视）</i></li>
+				<li><i>对着电视摇一摇</i></li>
+				<li><i>参与互动就有机会赢取超值礼品</i></li>
+			</ul>
+			<div class="try-div">
+				<a id="try" class="btn-red try is-openid" data-collect="true"
+				   data-collect-flag="cd-beautiful-dreamer-go-try"
+				   data-collect-desc="进入互动" >现在就去试试</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="rule-con none">
+	<a id="close" class="close" data-collect="true"
+	   data-collect-flag="cd-beautiful-dreamer-go-close"
+	   data-collect-desc="关闭按钮" ></a>
+	<img src="images/rule-top.png" />
+	<div>
+		<section class="rule-section"></section>
+		<a id="know" class="btn-red know" data-collect="true"
+		data-collect-flag="cd-beautiful-dreamer-go-enter"
+		data-collect-desc="我知道了" >我知道了</a>
+	</div>
+	</div>
+</section>
+
+	<script src="js/config.js"></script>
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/parallax.js"></script>
+	<script src="./js/plugins/jQueryRotate.js"></script>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+
+	<script src="js/app/index.js"></script>
+	<script src="js/app/lottery.js"></script>
+</body>
+</html>

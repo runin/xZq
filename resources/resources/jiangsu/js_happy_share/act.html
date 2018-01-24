@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>幸福剧场</title>
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/act.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+</head>
+<body>
+    <section class="bg"></section>
+    <p class="lastcount hidden">今日机会 <label class="c-left">1</label>/<label class="c-total">1</label></p>
+    <img class="icon-reserve none" src="./images/act-title.png">
+    <div class="countdown none">
+        <span class="countdown-tip"></span>
+        <span class="detail-countdown"></span>
+    </div>
+    <section class="container none">
+        <div class="main">
+            <div class="img-wrapper">
+                <div class="img-mask"></div>
+                <img class="mainer" src="./images/main.png">
+                <span class="main-tip">本期需集齐卡图</span>
+                <a href="javascript:void(0)" class="act-btn-chenggong none"><img src="./images/act-ok.png"></a>
+            </div>
+            <p class="intro"></p>
+        </div>
+        <p class="jg-tip">卡牌还未集齐，等下再来看看哦~</p>
+        <p class="end-tips none">您已参与过本期抽奖，请下期再来！</p>
+        <div class="btnbox">
+            <a href="javascript:void(0);" class="btn-la none" data-collect="true" data-collect-flag="act-btn-la" data-collect-desc="按钮-拉帮结派"><img src="./images/act-btn-la.png"></a>
+            <!-- <a href="javascript:void(0);" class="btn-jieguo none" data-collect="true" data-collect-flag="act-btn-jieguo" data-collect-desc="按钮-查看结果"><img src="./images/act-btn-jieguo.png"></a> -->
+            <a href="javascript:void(0);" class="btn-back none" data-collect="true" data-collect-flag="act-btn-back" data-collect-desc="按钮-参与过返回前页"><img src="./images/icon-back.png"></a>
+            <a href="javascript:void(0);" class="btn-lot none" data-collect="true" data-collect-flag="act-btn-lot" data-collect-desc="按钮-集齐卡牌抽奖"><img src="./images/act-btn-lot.png"></a>
+        </div>
+    </section>
+    <section class="pop-dialog none" id="share">
+        <section class="dialog-wrapper">
+            <div class="act-share">
+                <img src="./images/act-share.png">
+                <i><img src="./images/act-img-shine.png"></i>
+                <i><img src="./images/act-img-shine.png"></i>
+                <i><img src="./images/act-img-shine.png"></i>
+                <span class="none"><img src="./images/coin.png"></span>
+                <span class="none"><img src="./images/coin.png"></span>
+                <span class="none"><img src="./images/coin.png"></span>
+            </div>
+        </section>
+    </section>
+    <section class="pop-dialog none" id="jieguo">
+        <section class="dialog-wrapper">
+            <div class="jieguo-wrapper">
+                <div class="haha">
+                    <div class="countdown none">
+                        <span class="countdown-tip"></span>
+                        <span class="detail-countdown"></span>
+                    </div>
+                    <div class="img-wrapper">
+                        <div class="img-mask"></div>
+                        <img class="mainer" src="./images/main.png">
+                        <a href="javascript:void(0)" class="act-btn-chenggong none"><img src="./images/act-ok.png"></a>
+                    </div>
+                    <p class="jg-tip">卡牌还未集齐，等下再来看看哦~</p>
+                    <a href="javascript:void(0);" class="btn-lot none" data-collect="true" data-collect-flag="act-btn-lot" data-collect-desc="按钮-集齐卡牌抽奖"><img src="./images/act-btn-lot.png"></a>
+                    <a href="javascript:void(0);" class="btn-hao none" data-collect="true" data-collect-flag="act-btn-hao" data-collect-desc="按钮-未集齐卡牌返回"><img src="./images/act-btn-hao.png"></a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="pop-dialog none" id="sorry">
+        <section class="dialog-wrapper">
+            <div class="sorry-wrapper">
+                <div class="haha">
+                    <a href="javascript:void(0);" class="btn-x" data-collect="true" data-collect-flag="act-btn-x" data-collect-desc="按钮-卡牌抽奖未中奖"><img src="./images/act-btn-x.png"></a>
+                    <img src="./images/act-title-nolot.png">
+                    <img src="./images/act-img-nolot.png">
+                    <a href="javascript:void(0);" class="btn-bye" data-collect="true" data-collect-flag="act-btn-bye" data-collect-desc="按钮-卡牌抽奖未中奖"><img src="./images/act-btn-bye.png"></a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer class="none">
+        <section class="copyright"></section>
+    </footer>
+
+    <script src="./js/config.js"></script>
+    <script type="text/javascript">
+        var sharePage = 'act.html';
+    </script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="./js/app/act.js"></script>
+    <script src="./js/app/dialog.js"></script>
+</body>
+</html>

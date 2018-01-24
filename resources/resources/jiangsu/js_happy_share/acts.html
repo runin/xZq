@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>幸福剧场</title>
+    <script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/act.css" />
+</head>
+<body>
+    <section class="bg"></section>
+    <section class="container none">
+        <h1 class="mfr">好友<label></label>向您发起了一次帮助请求</h1>
+        <p class="jieshu none">本期助力已结束，您来晚啦！</p>
+        <div class="countdown none">
+            <span class="countdown-tip"></span>
+            <span class="detail-countdown"></span>
+        </div>
+        <div class="main">
+            <div class="img-wrapper">
+                <div class="img-mask"></div>
+                <img class="mainer" src="./images/main.png">
+                <a href="javascript:void(0)" class="act-btn-chenggong none"><img src="./images/act-ok.png"></a>
+            </div>
+            <div class="btnbox">
+                <a href="javascript:void(0);" class="btn-help" data-collect="true" data-collect-flag="act-btn-help" data-collect-desc="按钮-帮他攒卡"><img src="./images/act-btn-help.png"></a>
+                <a href="javascript:void(0);" class="btn-join" data-collect="true" data-collect-flag="act-btn-join" data-collect-desc="按钮-我也参加"><img src="./images/act-btn-join.png"></a>
+            </div>
+            <h5>集齐5张卡牌，即可抽取江苏卫视剧场大礼！</h5>
+        </div>
+    </section>
+    <footer class="none">
+        <section class="copyright"></section>
+    </footer>
+
+    <script src="./js/config.js"></script>
+    <script type="text/javascript">
+        var sharePage = 'acts.html';
+    </script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="./js/authorize_userinfo.js"></script>
+    <script src="./js/app/acts.js"></script>
+</body>
+</html>

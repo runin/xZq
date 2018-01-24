@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title></title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/baoliao.css" />
+	<link rel="stylesheet" href="./css/dialog.css" />
+</head>
+<body>
+	<div class="main">
+		<img class="title" src="images/title.png" />
+		<div class="form-group">
+			
+			<div class="form-item">
+				<textarea class="content" id="content" placeholder="在这里写下您想说的话"></textarea>
+				<div class="img-ctrl" id="img-ctrl">
+					<a href="#" class="icon btn-upload" id="btn-upload" data-collect="true" data-collect-flag="tj-customer-baoliao-upload-btn" data-collect-desc="爆料页面 上传图片按钮"></a>
+				</div>
+				<form id="upload-form" class="upload-form" enctype="multipart/form-data" method="post" action="http://test.holdfun.cn/portal/fileupload/image">
+				    <input type="file" class="input-file-upload" id="input-file-upload" onchange="fileSelected();" accept="image/*" capture>
+				</form>
+			</div>
+			<a href="#" data-collect="true"
+			data-collect-flag="tj-customer-baoliao-submit-btn"
+			data-collect-desc="爆料页面提交线索" class="btn btn-submit" id="btn-submit">提交线索</a>
+		</div>
+		<a href="#" data-collect="true"
+			data-collect-flag="tj-customer-baoliao_index-btn"
+			data-collect-desc="爆料页面返回首页" class="btn-back-simple">返回首页</a>
+	</div>
+	
+	<div class="copyright"></div>
+	
+	<script src="js/config.js"></script>
+
+	<script src="./js/plugins/zepto.min.js"></script>
+	<script src="./js/plugins/zepto.cookie.min.js"></script>
+	<script src="./js/plugins/md5.js"></script>
+	<script src="./js/plugins/weixinapi.js"></script>
+	<script src="./js/plugins/common.js"></script>
+	<script src="./js/plugins/share.js"></script>
+
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_authorize.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+	<script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_subscribe.js"></script>
+	<script src="./js/wx_api_base.js"></script>
+	
+
+	<script src="./js/app/dialog.js"></script>
+	<script src="./js/app/baoliao.js"></script>
+
+	
+</body>
+</html>

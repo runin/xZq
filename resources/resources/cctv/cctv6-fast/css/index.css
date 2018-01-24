@@ -1,0 +1,83 @@
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+body img {
+    display: block;
+}
+header {
+    position: relative;
+    width: 100%;
+    z-index: 99999;
+}
+header .icon-tvlogo {
+    width: 28%;
+    margin: 8px 0 0 8px;
+}
+header .icon-logo {
+    width: 96%;
+    margin: 0 auto;
+}
+footer {
+	width: 100%;
+	position: absolute;
+    left: 0;
+	bottom: 0;
+    z-index: 99;
+}
+footer .icon-car {
+    max-width: 110%;
+    margin-left: 8%;
+    margin-bottom: 5%;
+}
+footer .btn-play {
+    position: relative;
+    display: block;
+    width: 46%;
+    margin: 3% auto;
+    z-index: 999;
+}
+
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    header .icon-logo {
+        width: 90%;
+        margin: 0 auto;
+    }
+    footer .btn-play {
+        position: relative;
+        display: block;
+        width: 36%;
+        margin: 3% auto;
+        z-index: 999;
+    }
+    footer .icon-car {
+        max-width: 90%;
+        margin-left: 16%;
+        margin-bottom: 2%;
+    }
+}
+
+
+/* huaweiH6 */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+    header .icon-logo {
+        width: 92%;
+        margin: -3% auto 0;
+    }
+    footer .icon-car {
+        max-width: 106%;
+        margin-left: 6%;
+        margin-bottom: 3%;
+    }
+}

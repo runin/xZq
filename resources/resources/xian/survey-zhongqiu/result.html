@@ -1,0 +1,50 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="author" content="" />
+		<meta name="viewport"  content="width=device-width; initial-scale=1;  minimum-scale=0.5; maximum-scale=1.0;user-scalable=no;" /> 
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="MobileOptimized" content=""/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>西安直播间-新闻调查</title>
+		<script src="js/wx_api.js"></script>
+		<link href="css/global.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<input type="hidden" id="noRunShare" value="true">
+		<div class="share_box none" id="div-share-box">
+		   	<a href="javascript:void(-1);" class="back_btn"></a>
+		</div>
+		<div class="logo"></div>
+		<div class="mod_top"></div>
+		<div class="spinner" id="survey-loading">
+		  <div class="bounce1"></div>
+		  <div class="bounce2"></div>
+		  <div class="bounce3"></div>
+		</div>
+		<!--活动说明详细页 s-->
+		<div class="mod_box question_box wihtebg none" id="survey-boby">
+			<h2 id="survey-title"></h2>
+			<p id="survey-img" class="none"><img src="" width="100%"></p>
+			<ul class="qulist" id="survey-attr"></ul>
+		    <div class="sharebtnbox box-orient-h">
+		    	<a class="box-flex sharebtn" id="btn-share" data-collect="true" data-collect-flag="survey-share" data-collect-desc="分享"><i></i>分享</a>
+		    	<a href="javascript:toUrl('index.html');" class="box-flex" data-collect="true" data-collect-flag="survey_result_back_btn" data-collect-desc="更多调查">更多调查</a>
+		    </div>
+		</div>
+		<!--活动说明详细页 e-->
+		<div class="copyright2">页面由西安广播电视台提供</div>
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script src="js/config.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/md5.js"></script>
+        <script src="js/share.js"></script>
+        <script src="js/result.js"></script>
+		<script src="js/data_collect.js"></script>
+	</body>
+</html>

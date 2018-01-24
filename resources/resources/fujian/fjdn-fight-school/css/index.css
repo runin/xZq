@@ -1,0 +1,343 @@
+body{
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat bottom center #124234;
+    background-size: cover;
+    overflow: hidden;
+}
+header {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 11;
+}
+header .ctrls {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+}
+header .ctrls a {
+    display: block;
+    color: #FFF;
+    font-size: 12px;
+    text-align: center;
+    width: 60px;
+    margin-bottom: 5px;
+}
+header .tvlogo {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 36%;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.container .logo {
+    position: relative;
+    width: 84%;
+    margin: 25% auto 0;
+    text-align: center;
+    z-index: 13;
+}
+.container .logo .tips-time {
+    position: absolute;
+    width: 50%;
+    top: -11%;
+    left: 13%;
+}
+.container .logo .show-logo {
+    width: 88%;
+    margin: 5% auto;
+}
+.container .logo .glove {
+    position: absolute;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-duration: .8s;
+    animation-delay: 2s;
+    animation-fill-mode: both
+}
+.container .logo .glove-l {
+    width: 72%;
+    top: 48%;
+    left: -6%;
+    -webkit-transform:rotate(-15deg);
+    -webkit-animation-name: glove-l;
+}
+.container .logo .glove-r {
+    width: 56%;
+    top: 38%;
+    right: -8%;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0) rotate(-15deg);
+    -webkit-animation-name: glove-r;
+}
+.icon-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.icon {
+    position: absolute;
+}
+.icon-math {
+    width: 34%;
+    top: 24%;
+    left: 4%;
+}
+.icon-award {
+    width: 14%;
+    top: 24%;
+    right: 10%;
+}
+.icon-123 {
+    width: 16%;
+    top: 12%;
+    right: 6%;
+}
+.icon-book {
+    width: 18%;
+    top: 55%;
+    right: 16%;
+}
+.icon-cloud {
+    width: 20%;
+    bottom: 11%;
+    right: 5%;
+}
+.icon-glass {
+    width: 18%;
+    top: 51%;
+    right: 4%;
+}
+.icon-car {
+    width: 22%;
+    top: 52%;
+    left: 6%;
+    z-index: 12;
+}
+.icon-ruler {
+    width: 33%;
+    top: -96%;
+    right: 2%;
+}
+footer {
+	position: absolute;
+    width: 100%;
+    left: 0;
+	bottom: 0;
+    z-index: 50;
+}
+footer .btn-go2record {
+    display: block;
+    width: 33%;
+    margin: 0 auto 2%;
+}
+footer .join-box {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 12%;
+}
+footer .join-box .join {
+    width: 62%;
+    margin: 0 auto;
+    z-index: 1;
+}
+footer .join-box .chalk {
+    position: absolute;
+    top: -3%;
+    height: 100%;
+    right: 70%;
+    max-width: none;
+    z-index: 2;
+}
+footer .join-box .honor {
+    width: 66%;
+    position: absolute;
+    top: 0;
+    left: 17%;
+    opacity: 0;
+    z-index: 0;
+}
+footer .join-box .honor-ani {
+    -webkit-animation-name: honor-ani;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+}
+footer .footer-box {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+footer .footer-box img {
+    display: block;
+}
+footer .footer-box .copyright{
+    position: absolute;
+    width: 100%;
+    line-height: 13px;
+    bottom: 10px;
+    left: 0;
+	color: #cdcdcd;
+}
+footer #div_subscribe_area{
+    height:50px;
+    overflow:hidden;
+}
+.rubberBand {
+    -webkit-animation-name: rubberBand;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-name: rubberBand;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both
+}
+.rubberBand2 {
+    -webkit-animation-name: rubberBand;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-name: rubberBand;
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+@-webkit-keyframes honor-ani {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    
+    40% {
+        -webkit-transform: perspective(400px) rotateX(-35deg);
+    }
+    
+    70% {
+        -webkit-transform: perspective(400px) rotateX(35deg);
+    }
+    
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes rubberBand-old {
+    0% {
+        -webkit-transform: perspective(400px) rotateY(0);
+        -webkit-animation-timing-function: ease-out;
+    }
+    40% {
+        -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+        -webkit-animation-timing-function: ease-out;
+    }
+    50% {
+        -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+        -webkit-animation-timing-function: ease-in;
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotateY(360deg) scale(1);
+        -webkit-animation-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: perspective(400px) scale(1);
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+@-webkit-keyframes rubberBand {
+    0% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1)
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25,0.75,1);
+        transform: scale3d(1.25,0.75,1)
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75,1.25,1);
+        transform: scale3d(0.75,1.25,1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15,0.85,1);
+        transform: scale3d(1.15,0.85,1)
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95,1.05,1);
+        transform: scale3d(.95,1.05,1)
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05,.95,1);
+        transform: scale3d(1.05,.95,1)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1)
+    }
+}
+@-webkit-keyframes glove-l {
+    0% {
+        top: 20%;
+        left: 60%;
+        -webkit-transform:scale(0.2) rotate(-15deg);
+    }
+    100% {
+        top: 48%;
+        left: -6%;
+        -webkit-transform:scale(1) rotate(-15deg);
+    }
+}
+@-webkit-keyframes glove-r {
+    0% {
+        top: 20%;
+        right: 60%;
+        -webkit-transform:scale(0.2) matrix(-1, 0, 0, 1, 0, 0) rotate(-15deg);
+    }
+    100% {
+        top: 38%;
+        right: -8%;
+        -webkit-transform:scale(1) matrix(-1, 0, 0, 1, 0, 0) rotate(-15deg);
+    }
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .container .logo {
+        width: 70%;
+        margin: 18% auto 0;
+    }
+    .icon-car {
+        display: none;
+    }
+    .icon-ruler, .icon-cloud {
+        display: none;
+    }
+    footer .btn-go2record {
+        margin: 0 auto 1%;
+    }
+    footer .join-box {
+        margin: 0 auto 3%;
+    }
+}
+/* huawei honor-6 */
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px) {
+    .container .logo {
+        width: 76%;
+        margin: 18% auto 0;
+    }
+}

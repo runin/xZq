@@ -1,0 +1,315 @@
+#infiniti_award_dialog{
+	background: rgba(0, 0, 0, 0.75);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	z-index: 50;
+}
+#infiniti_award_dialog .dialog{
+	background: transparent no-repeat center;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	position: relative;
+	width: 80%;
+	height: 80%;
+	padding: 10px;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	top:30px;
+	
+}
+
+#infiniti_award_dialog .award-images{
+	position: absolute;
+	top: 10%;
+	left: 0px;
+	height: 70%;
+	text-align: center;
+	width: 100%;
+}
+#infiniti_award_dialog .award-images img{
+	height: 100%;
+	border: 3px solid #af0400;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+#infiniti_award_dialog .award-input-wrapper{
+	padding-top: 80%
+}
+#infiniti_award_dialog .award-input-item{
+	overflow: hidden;
+	background: white;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 2% 0px;
+}
+#infiniti_award_dialog .award-input-item label{
+	float: left;
+	width: 40px;
+	font-size: 14px;
+	color: #27415c;
+	line-height: 32px;
+	text-align: center;
+}
+#infiniti_award_dialog .award-input-item .award-input{
+	margin-left: 40px;
+	color: #27415c;
+}
+#infiniti_award_dialog .award-input-item .award-input input{
+	border: none;
+	background: none;
+	line-height: 32px;
+	padding: 0px;
+	font-size: 14px;
+	width: 100%;
+}
+#infiniti_award_dialog .award-btn{
+    background: #092634;
+    line-height: 32px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    width: 50%;
+    margin: 3% auto 0px;
+}
+
+
+
+#didi_award_dialog{
+	background: rgba(0, 0, 0, 0.75);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	z-index: 10;
+	z-index: 50;
+}
+#didi_award_dialog .dialog{
+	background: url(../images/default-didi.jpg) no-repeat center;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	position: relative;
+	width: 80%;
+	height: 80%;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	top:30px;
+	
+}
+
+#didi_award_dialog .award-images{
+	position: absolute;
+	top: 10%;
+	left: 0px;
+	height: 70%;
+	text-align: center;
+	width: 100%;
+}
+#didi_award_dialog .award-images img{
+	height: 100%;
+	border: 3px solid #af0400;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#didi_award_dialog .award-btn{
+	position: absolute;
+    width: 100%;
+    height: 32px;
+    left: 0px;
+    bottom: 3%;
+    text-align: center;
+    background: #d0b33e;
+    line-height: 32px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    width: 90%;
+    left: 5%;
+}
+
+
+#didi_award_dialog .award-input-wrapper{
+	position: absolute;
+	bottom: 12%;
+	width: 90%;
+	left: 5%;
+}
+#didi_award_dialog .award-input-item{
+	overflow: hidden;
+	background: white;
+	-webkit-border-radius: 16px;
+	border-radius: 16px;
+	margin: 5px 0px;
+}
+#didi_award_dialog .award-input-item label img{
+	line-height: 32px;
+	height: 16px;
+}
+#didi_award_dialog .award-input-item label{
+	float: left;
+	width: 40px;
+	font-size: 14px;
+	color: #27415c;
+	padding-top: 9px;
+	text-align: center;
+}
+#didi_award_dialog .award-input-item .award-input{
+	margin-left: 40px;
+	color: #27415c;
+}
+#didi_award_dialog .award-input-item .award-input input{
+	border: none;
+	background: none;
+	line-height: 32px;
+	padding: 0px;
+	font-size: 14px;
+	width: 100%;
+	color: #333;
+}
+#didi_award_dialog .didi-tips{
+	position: absolute;
+	top: 72%;
+	text-align: center;
+	color: #fcf6f6;
+	font-size: 12px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+#kaquan_award_dialog{
+	background: rgba(0, 0, 0, 0.75);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	z-index: 50;
+}
+#kaquan_award_dialog .dialog{
+	background: transparent no-repeat center;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	position: relative;
+	width: 80%;
+	height: 80%;
+	padding: 10px;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	top:30px;
+	
+}
+
+
+
+
+
+#suning_award_dialog{
+	background: rgba(0, 0, 0, 0.75);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	z-index: 50;
+}
+#suning_award_dialog .dialog{
+	background: transparent no-repeat center;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	position: relative;
+	width: 80%;
+	height: 80%;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	top:30px;
+	
+}
+
+#suning_award_dialog .award-images{
+	position: absolute;
+	top: 10%;
+	left: 0px;
+	height: 70%;
+	text-align: center;
+	width: 100%;
+}
+#suning_award_dialog .award-images img{
+	height: 100%;
+	border: 3px solid #af0400;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+#suning_award_dialog .award-input-wrapper{
+    padding-top: 107%;
+    width: 70%;
+    margin: 0 auto;
+}
+#suning_award_dialog .award-input-item{
+	overflow: hidden;
+	background: white;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 2% 0px;
+}
+#suning_award_dialog .award-input-item label{
+	float: left;
+	width: 40px;
+	font-size: 14px;
+	color: #333;
+	line-height: 28px;
+	text-align: center;
+}
+#suning_award_dialog .award-input-item .award-input{
+	margin-left: 40px;
+	color: #27415c;
+}
+#suning_award_dialog .award-input-item .award-input input{
+	border: none;
+	background: none;
+	line-height: 28px;
+	padding: 0px;
+	font-size: 14px;
+	width: 100%;
+}
+#suning_award_dialog .award-btn{
+    background: #443523;
+    line-height: 32px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    width: 50%;
+    margin: 3% auto 0px;
+}

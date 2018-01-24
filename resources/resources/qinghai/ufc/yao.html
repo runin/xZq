@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>龙斗之UFC</title>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<link rel="stylesheet" href="./css/core.css" />
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/dialog.css" />
+<link rel="stylesheet" href="./css/yao.css" />
+</head>
+
+<body>
+<!--摇一摇声音-->
+<audio preload="auto" id="audio-a" src="images/audio-a.mp3"></audio>
+<audio preload="auto" id="audio-b" src="images/audio-b.mp3"></audio><!--中奖声音-->
+<img src="images/lottery-bg.png" class="none" />
+<!--摇一摇红包-s-->
+
+
+<section class="home-box">
+    <div class="main-top m-t-b">
+    	<div class="marquee none"><ul></ul></div>
+    	<div class="header-nav">
+	        <a href="#" class="btn-back" id="btn-back" data-collect="true"
+							   data-collect-flag="yao-btn-back" data-collect-desc="摇一摇页面-返回首页按钮"><img src="images/back-btn.png" /></a>
+	        <p class="count hidden">当前在线人数：<label></label></p>
+        </div>
+        <div class="yao-text">
+            <p class="none textb"><span>啊哦，差一点就抢到了，继续加油</span></p>
+        </div>
+        <div id="ddtj" class="ddtj-div none"  data-collect="true" data-collect-flag="tttj" data-collect-desc="天天淘金">
+          <img src="images/red-bao.png"/>
+          <p class="ddtj">点击领取<br />更多红包</p>
+        </div>
+    </div>
+    <div class="main-foot m-f-b">
+    	<!--<input type="button" class="" id="test" value="test">-->
+	    <div class="countdown none">
+		    <span class="countdown-tip">摇奖结束</span>
+		    <span class="detail-countdown"></span>
+		</div>
+		
+		<div class="turn-box">
+			<a href="#" class="btn-speak" id="btn-speak" data-collect="true" data-collect-flag="yao-btn-speak" data-collect-desc="摇一摇页面-跳转我要发言按钮">我要发言</a>
+		</div>
+		<div class="copyright"></div>
+  	</div>
+</section>
+<!--摇一摇红包-e-->
+
+<script src="js/config.js"></script>
+
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/plugins/zepto.cookie.min.js"></script>
+<script src="./js/plugins/zepto.fx.min.js"></script>
+<script src="./js/plugins/zepto.selector.min.js"></script>
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/plugins/weixinapi.js"></script>
+<script src="./js/plugins/md5.js"></script>
+
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+<script src="./js/plugins/shake.js"></script>
+<script src="./js/plugins/sha1.min.js"></script>
+
+<script src="./js/app/yao.js"></script>
+<script src="./js/app/dialog.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+	
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/vote.css" />
+</head>
+<body data-type="vote">
+<h1>为您喜欢的节目投票吧</h1>
+<section class="support none">
+    <div class="heart-layer none"></div>
+    <img src="images/test-vote.jpg" />
+</section>
+<h3>可无限次投票，节目获得的票数越多，奖品越豪华</h3>
+<a href="#" class="vote-btn" id="vote-info" data-collect="true" data-collect-flag="vote-support" data-collect-desc="为此节目投票">为此节目投票</a>
+<section class="countdown none" id="vote-countdown">
+    <span class="countdown-tip"></span>
+    <span class="detail-countdown"></span>
+</section>
+<div class="copyright"></div>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/plugins/zepto.min.js"></script>
+<script src="./js/authorize_userinfo.js"></script>
+<script src="./js/plugins/common.js"></script>
+
+<script src="./js/app/vote.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

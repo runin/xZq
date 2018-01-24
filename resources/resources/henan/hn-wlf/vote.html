@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>武林风</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <!-- <link rel="stylesheet" href="css/common/reset.css" />
+   <link rel="stylesheet" href="css/common/core.css" />-->
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/vote.css" />
+    <link rel="stylesheet" href="./css/comment.css" />
+</head>
+<body class="body-vote">
+<header>
+    <div class="go-dm">
+        <img id="dm-jt" class="dm-jt" src="images/x-jt.png" />
+        <img id="hand-jt" class="hand-jt" src="images/x-jtsh.png" />
+    </div>
+
+    <a id="go-lottery" class="go-lottery"
+       data-collect="true" data-collect-flag="cor-back-index-btn" data-collect-desc="去摇奖页按钮">
+        <img class="hand" src="images/hand.png" /><span></span>
+    </a>
+
+    <section class="countdown none" id="lottery-countdown">
+        <span class="countdown-tip"></span>
+        <span class="detail-countdown"></span>
+    </section>
+
+</header>
+
+<section class="vote-info none">
+    <ul></ul>
+</section>
+
+<div class="countdown none" id="vote-countdown">
+    <div class="right">
+        <span class="countdown-tip items-count"></span>
+        <span class="detail-countdown items-count"></span>
+        <span class="loading none">请稍后...</span>
+    </div>
+</div>
+
+<div class="fix" id="fix">
+    <div id="div_subscribe_area" style=""></div>
+</div>
+
+<div class="copyright"></div>
+
+<section class="dm-section none" id="dm-section">
+    <div class="container">
+        <div class="go-vote">
+            <img id="vote-jt" class="vote-jt" src="images/x-votejt.png" />
+            <img id="hand-votejt" class="hand-votejt" src="images/x-jtvotesh.png" />
+        </div>
+        <div class="cor-assist">
+            <div class="comments" id="comments"></div>
+        </div>
+        <article id="article">
+            <div class="ctrls">
+                <p>
+                    <!--<label><img class="head_img" src="images/avatar.png" /></label>-->
+                    <input id="input-comment" type="text" placeholder="快来发表您的意见吧~~" />
+                    <a href="#" class="btn-comment" id="btn-comment" data-collect="true" data-collect-flag="comment-send-btn" data-collect-desc="发表评论按钮">发射</a>
+                </p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<div class="none">
+    <img src="images/gift-bg.png"/>
+</div>
+
+<script src="https://wximg.gtimg.com/shake_tv/include/js/jsapi.js"></script>
+<script src="js/config.js"></script>
+
+<!--<script src="js/plugins/zepto.min.js"></script>
+<script src="js/plugins/zepto.cookie.min.js"></script>
+<script src="js/plugins/zepto.selector.min.js"></script>
+<script src="js/plugins/zepto.fx.min.js"></script>
+<script src="js/plugins/touch.js"></script>
+<script src="js/plugins/md5.js"></script>-->
+<script src="js/zepto.base.min.js"></script>
+
+<script src="js/barrage.js"></script>
+<script src="js/msg.js"></script>
+<script src="js/sha1.min.js"></script>
+<script src="js/zepto.picLazyLoad.min.js"></script>
+<script src="js/wx_api_userinfo.js"></script>
+<script src="js/common.js"></script>
+
+<script src="js/app/dialog.js"></script>
+<script src="js/app/lottery.js"></script>
+<script src="js/app/comment.js"></script>
+<script src="js/app/vote.js"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

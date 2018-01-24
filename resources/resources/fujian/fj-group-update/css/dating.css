@@ -1,0 +1,104 @@
+
+.main {
+	margin: 0 auto;
+	padding-top: 25px;
+}
+   
+.logo {
+	background: url(../images/fjtv1-logo.png) no-repeat 0 0;
+	background-size: 189px auto;
+	width: 189px;
+	height: 70px;
+	margin: 0 auto;
+}
+.form-group {
+  padding: 0 18px;
+  margin-top: 15px;
+  margin-bottom: 48px;
+}
+.btn-submit{
+	background-color: #f30917;
+}
+.btn-back{
+  color: #fff;
+  text-decoration: underline;
+  margin: 10px auto;
+}
+.form-item{
+  margin: 8px auto;
+
+}
+.form-item input{
+  background: rgba(0,0,0,0.1);
+  border: none;
+  height: 26px;
+}
+.form-item select{
+  width: 55px;
+  background-color: #eeeeee;
+}
+.form-item textarea{
+  background: rgba(0,0,0,0.1);
+  border: none;
+}
+.form-item label span{
+	color:red;
+}
+.content{
+  margin: auto 4%;
+  padding-left: 10px;
+}
+.content label{
+  width: 30%;
+  display: block;
+  float: left;
+  color: #fff;
+  font-size: 15px;
+	
+}
+.copyright {
+	position: relative;
+	bottom: 0px;
+	z-index: 0;
+	color: #000000;
+	font-size: 10px;
+	opacity: 0.6;
+	text-align: center;
+	clear: both;
+	width: 100%;
+}
+h2 {
+    text-align: center;
+	font-weight: bold;
+    color: #ff0000;
+    font-size: 20px;
+}
+h2:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icons.png) no-repeat -58px 0;
+	background-size: 169px auto;
+	width: 38px;
+	height: 38px;
+	margin-right: 10px;
+}
+p {
+    padding: 0 40px;
+	margin-left: 15px;
+    font-size: 14px;
+    margin-top: 28px;
+    line-height: 25px;
+    color: #000;
+    text-align: center;
+}
+.succ{
+  margin-top: 25%;
+}
+.already{
+	margin-top: 25%;
+}
+.sign{
+  margin: 50px auto;
+  text-decoration: blink;
+}

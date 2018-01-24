@@ -1,0 +1,117 @@
+body{
+	background: #b0b4bc;	
+}
+.content{
+	width: 100%;
+	background: url('../images/bg-comment.jpg') no-repeat;
+	background-size: cover;
+}
+.comment-input-wrapper{
+	width: 100%;
+}
+.comment-input{
+	position: relative;
+	background: rgba(0,0,0,0.3);
+	height: 45px;
+	border-top: 1px solid #ccc;
+}
+.comment-input .input-wrapper{
+	border-bottom: 1px solid #ddd;
+	margin-right: 70px;
+	margin-left: 10px;
+	margin-top: 7px;
+	padding-left: 10px;
+}
+.comment-input .input-wrapper input{
+	width: 100%;
+	border: none;
+	background: none;
+	font-size: 16px;
+	line-height: 30px;
+	height: 30px;
+	color: white;
+}
+.comment-input .submit{
+	font-size: 16px;
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	display: block;
+	line-height: 31px;
+	height: 31px;
+	width: 60px;
+	border: 1px solid #ddd;
+	color: white;
+	background: rgba(255,255,255,0.3);
+	text-align: center;
+}
+
+.comments{
+	overflow: hidden;
+	position: relative;
+}
+
+.bitem{
+	overflow: hidden;
+}
+.bitem .bitem-img{
+	float: left;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	background-color: white;
+	padding: 2px;
+	position: relative;
+	z-index: 2;
+}
+.bitem .bitem-img img{
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.bitem .bitem-content{
+	color: white;
+	line-height: 34px;
+	background: rgba(34,134,217,0.8);
+	position: relative;
+	margin-left: 25px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding-left: 25px;
+	padding-right: 10px;
+	z-index: 1;
+}
+
+.bitem.new .bitem-content{
+	color: #ffff00;
+}
+
+#baise {
+	position: absolute;
+	top: -7px;
+	width: 75px;
+	left: 5px;
+}
+#tttj{
+	display: block;
+	text-align: left;
+	width: 100%;
+	font-size: 15px;
+	color: #F4FF64;
+	text-decoration: underline;
+	line-height: 22px;
+	padding-left: 28px;
+}
+.tttj-wrapper{
+	height: 22px;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #7BAFC5;
+  background-color: rgba(0,0,0,0.3);
+  line-height: 12px;
+  padding-bottom: 2px;
+}

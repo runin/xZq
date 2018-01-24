@@ -1,0 +1,295 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+    /*overflow-y: scroll;*/
+	background: url(../images/bg.jpg) no-repeat center center #FFF;
+	background-size: auto 100%;
+    font-size: 0;
+}
+header {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	z-index: 10;
+}
+header .btn-go2back {
+    display: inline-block;
+    margin: 10px 8px 0 0;
+    background: url(../images/btn.png) no-repeat;
+    background-size: 100% 100%;
+    float: right;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bolder;
+    padding: 5px 15px;
+    text-align: center;
+}
+header .count {
+	display: inline-block;
+    margin: 10px 0 0 8px;
+	float: left;
+	background: url(../images/bg-meterBar.png) no-repeat;
+	background-size: 100% 100%;
+	font-size: 14px;
+    font-weight: bolder;
+	color: #FFF;
+    padding: 5px 15px;
+}
+header .count label {
+	font-size: 14px;
+    font-weight: bolder;
+}
+.btn {
+    display: inline-block;
+    background: url(../images/btn.png) no-repeat;
+    background-size: 100% 100%;
+    float: right;
+    font-size: 15px;
+    color: #FFF;
+    font-weight: bolder;
+    padding: 5px 15px;
+}
+.container {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	z-index: 8;
+}
+.vivo-box {
+	position: relative;
+	width: 72%;
+	margin: 0 auto;
+}
+.intro .vivo-box {
+    margin-bottom: -10%;
+}
+.vivo-box .icon-X6 {
+	position: absolute;
+	width: 38%;
+	right: -10%;
+	top: -10%;
+}
+.vivo-box .icon-X6.wobble, .intro .icon-X6 {
+    -webkit-animation: tada 2.3s 0s infinite ease-in-out;
+    -webkit-transform-origin: bottom;
+    -webkit-animation-fill-mode: forwards;
+}
+.intro .btn-intro-close {
+    position: absolute;
+    display: block;
+    width: 15%;
+    top: 8px;
+    right: 8px;
+    z-index: 9999999999;
+}
+.intro .icon-X6 {
+    width: 32%;
+    right: -6%;
+    top: -5%;
+}
+.vivo-box .icon-intro, .btn-intro-close {
+    display: none;
+}
+.intro .vivo-box .icon-intro {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: -5%;
+    top: -32%;
+    z-index: 99;
+}
+.marquee {
+    display: block;
+    width: 100%;
+    padding: 0 3%;
+    margin: 0 auto 5%;
+    color: #FFF;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    overflow: hidden;
+}
+.marquee span {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    height: 28px;
+    line-height: 28px;
+    color: rgba(0,0,0,.6);
+    border-bottom: 1px dashed rgba(0,0,0,.6);
+}
+.countdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: #FFF !important;
+    font-size: 14px !important;
+    padding: 5px 13px;
+    margin-top: 6%;
+    background-image: -webkit-linear-gradient(-90deg, #15abeb, #0f7dcd);
+    border-radius: 18px;
+    box-shadow: 2px 4px 0 #3a6187;
+    z-index: 98;
+}
+.countdown .detail-countdown label {
+    display: inline-block;
+    margin: 0 3px 0 5px;
+    width: 23px !important;
+    height: 22px !important;
+    line-height: 21px !important;
+    color: #fec836 !important;
+    background-color: #2e1a1b !important;
+    border-radius: 3px !important;
+}
+.thanks-tips {
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: #FFF;
+    font-weight: bolder;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    -webkit-backface-visibility:hidden;
+}
+.thanks-tips.show {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    -webkit-backface-visibility:hidden;
+}
+.shake-info {
+    color: #FFF;
+    font-size: 18px;
+    margin-top: 3%;
+}
+.shake-info-bottom {
+    color: #FFF;
+    font-size: 18px;
+    margin-bottom: 3%;
+}
+.fail-tips {
+	width: 100%;
+	text-align: center;
+	margin: 10% auto 0;
+}
+.fail-tips * {
+	font-size: 20px;
+	font-weight: bolder;
+	color: #008CD6;
+	font-style: normal;
+	text-shadow: 0 0 10px rgba(255,255,255,.5);
+}
+.fail-tips i {
+	display: inline-block;
+	font-size: 32px;
+	margin: -6% 8px 0;
+	font-weight: bolder;
+	color: #0067AD;
+	font-style: normal;
+    -webkit-animation: tada 2s 0s infinite ease-in-out;
+    -webkit-transform-origin: bottom;
+    -webkit-animation-fill-mode: both;
+}
+.intro:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.intro footer {
+    z-index: 999999;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9;
+}
+@-webkit-keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+    5%,10% {
+        -webkit-transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);
+        transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);
+    }
+    15%,25%,35%,45% {
+        -webkit-transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);
+        transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);
+    }
+    20%,30%,40% {
+        -webkit-transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);
+        transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);
+    }
+    50% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+    100% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+}
+@keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1)
+    }
+    5%,10% {
+        -webkit-transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);
+        transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)
+    }
+    15%,25%,35%,45% {
+        -webkit-transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);
+        transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)
+    }
+    20%,30%,40% {
+        -webkit-transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);
+        transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)
+    }
+    50% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1)
+    }
+    100% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1)
+    }
+}
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .vivo-box {
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+    .vivo-box {
+        position: relative;
+        width: 62%;
+        margin: 0 auto;
+    }
+}

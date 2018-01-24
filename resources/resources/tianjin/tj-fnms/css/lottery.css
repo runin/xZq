@@ -1,0 +1,532 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg-yao-default.jpg) no-repeat center center #001854;
+    background-size: 100% auto;
+}
+.main-top .count {
+    font-size: 13px;
+    color: #fff;
+    text-align: left;
+    margin: 5px;
+    display: inline-block;
+    width: 45%;
+}
+.back{
+    display: block;
+    width: 30%;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    background: url(../images/btn-bg.png) 0 0 no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    color: #fff;
+    font-size: 13px;
+    padding-left: 6%;
+    line-height: 26px;
+}
+a.hover {
+    color:#fff;
+}
+.info-box {
+    position: relative;
+    width: 100%;
+}
+.content-box {
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+    text-align: center;
+}
+.per{
+    position: absolute;
+    display: block;
+    width: 25%;
+    top: 20%;
+    left: 3%;
+}
+.lottery-tip{
+    position: absolute;
+    display: block;
+    width: 60%;
+    top: 30%;
+    left: 32%;
+}
+.countdown{
+    height: 52px;
+    line-height: 45px;
+    margin: 30% 16% 0% 24%;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 15px;
+    color: #9d0400;
+    background: url(../images/count.png) 0 0 no-repeat;
+    background-size: 100%;
+    width: 72%;
+}
+.countdown .detail-countdown label {
+    color: #fec836;
+    font-weight: bolder;
+    margin: 0 1px;
+    padding: 2px 3px;
+    border: 1px solid #000;
+    border-top: 1px solid #706e6f;
+    border-left: 1px solid #675151;
+    border-radius: 2px;
+    box-shadow: 2px 2px 1px rgba(0,0,0,.3);
+    background-image: -webkit-linear-gradient(-90deg, #353334, #290b0b);
+}
+.hidden {
+    visibility:hidden;
+}
+
+.marquee{
+    color: #fff;
+    font-size: 13px;
+    height: 50px;
+    line-height: 25px;
+    text-align: center;
+    overflow: hidden;
+    margin: 50% auto 0;
+    width: 80%;
+}
+.marquee ul li{
+    border-bottom: dashed 1px #a3a3a3;
+    overflow: hidden;
+}
+.marquee ul li .coin{
+    background: url(../images/coin.png) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 7%;
+    height: 23px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.home-box {
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.home-box .bg-yao {
+    display: block;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    opacity: 1;
+}
+.home-box .yao-top {
+    bottom: 0;
+}
+.home-box .yao-bottom {
+    top: 0;
+}
+.main-top {
+    position:absolute;
+    top:1px;
+    width:100%;
+    height:50%;
+    background: url(../images/bg-lottery-top.jpg) no-repeat bottom center;
+    background-size:cover;
+    box-sizing:border-box;
+}
+.main-foot {
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    height:50%;
+    background: url(../images/bg-lottery-bottom.jpg) no-repeat top center;
+    background-size:cover;
+    box-sizing:border-box;
+}
+.yao-text{
+    line-height: 30px;
+    margin: 10% 0 0;
+    text-align: center;
+    font-size: 16px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.6);
+    color: #fff;
+}
+.yao-text p{
+    position:relative;
+    min-height: 37px;
+    z-index: 30;
+}
+.yao-text p span {
+    font-size: 16px;
+    font-weight: bolder;
+}
+.yao-text p span i {
+    font-size: 32px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: bolder;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .2s;
+    -webkit-animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: ease;
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-iteration-count: infinite;
+}
+.yaonone-text{
+    animation-name:nonetext;
+    -webkit-animation-name:nonetext;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1;
+    animation-duration:0.5s;
+    -webkit-animation-duration:0.5s;
+    animation-delay:0.1s;
+    -webkit-animation-delay:0.1s;
+    animation-timing-function:linear;
+    -webkit-animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    display: block;
+}
+@-webkit-keyframes wobble {
+    0% { -webkit-transform: translateX(0%); }
+    15% { -webkit-transform: translateX(-25%) rotate(-5deg); }
+    30% { -webkit-transform: translateX(20%) rotate(3deg); }
+    45% { -webkit-transform: translateX(-15%) rotate(-3deg); }
+    60% { -webkit-transform: translateX(10%) rotate(2deg); }
+    75% { -webkit-transform: translateX(-5%) rotate(-1deg); }
+    100% { -webkit-transform: translateX(0%); }
+}
+@keyframes wobble {
+    0% { transform: translateX(0%); }
+    15% { transform: translateX(-25%) rotate(-5deg); }
+    30% { transform: translateX(20%) rotate(3deg); }
+    45% { transform: translateX(-15%) rotate(-3deg); }
+    60% { transform: translateX(10%) rotate(2deg); }
+    75% { transform: translateX(-5%) rotate(-1deg); }
+    100% { transform: translateX(0%); }
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    z-index: 8;
+}
+@keyframes nonetext {
+    0% {top:-300px;opacity:0;}
+    100% {top:0;opacity:1.0;}
+}
+@-webkit-keyframes nonetext {
+    0% {top:-300px;opacity:0;}
+    100% {top:0;opacity:1.0;}
+}
+
+.zanzhu{
+    display: block;
+    width: 90%;
+    margin: 3% auto 0;
+}
+
+.fly-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.5);
+}
+.fly-box .person{
+    position: absolute;
+    width: 290px;
+    height: 369px;
+    top: 50%;
+    left: 50%;
+    margin-top: -184px;
+    margin-left: -145px;
+    z-index: 99;
+}
+.fly-box .pack{
+    width: 40%;
+    margin-left: 55%;
+}
+.fly-box span{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    display: inline-block;
+    opacity: 0;
+    z-index: 5;
+}
+.fly-box span:nth-child(1), .fly-box span:nth-child(4) {
+    width: 76px;	/*图片宽高根据原始图片宽高等比缩放，然后写到这里，以保证图片不变形*/
+    height: 69px;
+    background: url(../images/icon-flower1.png) no-repeat;
+    background-size: 100%;
+}
+.fly-box span:nth-child(2), .fly-box span:nth-child(5) {
+    width: 91px;
+    height: 84px;
+    background: url(../images/icon-flower2.png) no-repeat;
+    background-size: 100%;
+}
+.fly-box span:nth-child(3), .fly-box span:nth-child(6) {
+    width: 73px;
+    height: 71px;
+    background: url(../images/icon-flower3.png) no-repeat;
+    background-size: 100%;
+}
+.fly-box span:nth-child(7), .fly-box span:nth-child(8), .fly-box span:nth-child(9) {
+    width: 69px;
+    height: 69px;
+    background: url(../images/icon-flower4.png) no-repeat;
+    background-size: 100%;
+}
+.fly-box span:nth-child(1){
+    transform: translate(10px,30px);	/*translate(x,y)定义 2D 转换，元素从其当前位置移动，需要给定left(x坐标)和top(y坐标)*/
+    -webkit-transform: translate(10px,30px);
+    -webkit-animation-name:f1;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-delay:2s;
+}
+.fly-box span:nth-child(2){
+    -webkit-transform: translate(150px,0px);
+    transform: translate(150px,0px);
+    -webkit-animation-name:f2;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-delay:5s;
+}
+.fly-box span:nth-child(3){
+    -webkit-transform: translate(200px,30px);
+    transform: translate(90px,30px);
+    -webkit-animation-name:f3;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-delay:1.5s;
+}
+.fly-box span:nth-child(4){
+    -webkit-transform: translate(300px,0px);
+    transform: translate(100px,0px);
+    -webkit-animation-name:f4;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-delay:0.8s;
+}
+.fly-box span:nth-child(5){
+    -webkit-transform: translate(160px,30px);
+    transform: translate(120px,30px);
+    -webkit-animation-name:f5;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-delay:0s;
+}
+.fly-box span:nth-child(6){
+    -webkit-transform: translate(130px,0px);
+    transform: translate(130px,0px);
+    -webkit-animation-name:f6;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-delay:1.2s;
+}
+.fly-box span:nth-child(7){
+    -webkit-transform: translate(150px,30px);
+    transform: translate(150px,30px);
+    -webkit-animation-name:f7;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-delay:0.8s;
+}
+.fly-box span:nth-child(8){
+    -webkit-transform: translate(180px,0px);
+    transform: translate(180px,0px);
+    -webkit-animation-name:f8;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-delay:1s;
+}
+.fly-box span:nth-child(9){
+    -webkit-transform: translate(200px,30px);
+    transform: translate(200px,30px);
+    -webkit-animation-name:f9;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-delay:0.6s;
+}
+/*rotateX(angle) 定义沿着 X 轴的 3D 旋转*/
+/*rotateY(angle) 定义沿着 Y 轴的 3D 旋转*/
+/* 定义沿着 Z 轴的 3D 旋转*/
+@-webkit-keyframes f1 {
+    0%{opacity: 0;-webkit-transform: translate(0px,30px);}
+    25%{opacity: 1;-webkit-transform: translate(0px,160px);}
+    50%{-webkit-transform: translate(0px,320px);}
+    75%{opacity: 0;-webkit-transform: translate(0px,440px);}
+    100% {opacity: 0;-webkit-transform: translate(0px,630px);}
+}
+@-webkit-keyframes f2 {
+    0%{opacity: 0;-webkit-transform: translate(100px,0px);}
+    20%{opacity: 1;-webkit-transform: translate(100px,180px) ;}
+    40%{-webkit-transform: translate(100px,260px);}
+    60%{-webkit-transform: translate(100px,340px);}
+    80% {opacity: 0;-webkit-transform: translate(100px,420px);}
+    100% {opacity: 0;-webkit-transform: translate(100px,500px);}
+}
+@-webkit-keyframes f3 {
+    0%{opacity: 0;-webkit-transform: translate(200px,30px) ;}
+    25%{opacity: 1;-webkit-transform: translate(200px,130px) ;}
+    50%{-webkit-transform: translate(200px,230px) ;}
+    75%{opacity: 0;-webkit-transform: translate(200px,330px);}
+    100% {opacity: 0;-webkit-transform: translate(200px,430px);}
+}
+@-webkit-keyframes f4 {
+    0%{opacity: 0;-webkit-transform: translate(10px,0px) ;}
+    20%{opacity: 1;-webkit-transform: translate(10px,100px) ;}
+    40%{-webkit-transform: translate(10px,320px) ;}
+    60%{-webkit-transform: translate(10px,450px);}
+    80% {opacity: 0;-webkit-transform: translate(10,600px);}
+    100% {opacity: 0;-webkit-transform: translate(10px,700px);}
+}
+@-webkit-keyframes f5 {
+    0%{opacity: 0;-webkit-transform: translate(160px,30px) ;}
+    25%{opacity: 1;-webkit-transform: translate(160px,130px) ;}
+    50%{-webkit-transform: translate(160px,320px) ;}
+    75%{opacity: 0;-webkit-transform: translate(160px,430px) ;}
+    100% {opacity: 0;-webkit-transform: translate(160px,570px);}
+}
+@-webkit-keyframes f6 {
+    0%{opacity: 0;-webkit-transform: translate(60px,0px) ;}
+    25%{opacity: 1;-webkit-transform: translate(60px,190px) ;}
+    50%{-webkit-transform: translate(60px,300px);}
+    75%{opacity: 0;-webkit-transform: translate(60px,430px);}
+    100% {opacity: 0;-webkit-transform: translate(60px,600px);}
+}
+@-webkit-keyframes f7 {
+    0%{opacity: 0;-webkit-transform: translate(80px,30px) ;}
+    25%{opacity: 1;-webkit-transform: translate(80px,200px) ;}
+    50%{-webkit-transform: translate(80px,320px);}
+    75%{opacity: 0;-webkit-transform: translate(80px,540px);}
+    100% {opacity: 0;-webkit-transform: translate(80px,700px);}
+}
+@-webkit-keyframes f8 {
+    0%{opacity: 0;-webkit-transform: translate(180px,0px) ;}
+    25%{opacity: 1;-webkit-transform: translate(180px,200px) ;}
+    50%{-webkit-transform: translate(180px,320px);}
+    75%{opacity: 0;-webkit-transform: translate(180px,440px);}
+    100% {opacity: 0;-webkit-transform: translate(180px,580px);}
+}
+@-webkit-keyframes f9 {
+    0%{opacity: 0;-webkit-transform: translate(250px,30px) ;}
+    20%{opacity: 1;-webkit-transform: translate(250px,200px) ;}
+    40%{-webkit-transform: translate(250px,260px);}
+    60%{-webkit-transform: translate(250px,440px);}
+    80% {opacity: 0;-webkit-transform: translate(250px,500px);}
+    100% {opacity: 0;-webkit-transform: translate(250px,700px);}
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .home-box .bg-yao {
+        display: block;
+        position: absolute;
+        width: 70%;
+        left: 15%;
+    }
+    .marquee{
+        margin: 35% auto 0;
+    }
+    .per{
+        top: 15%;
+    }
+    .lottery-tip{
+        top: 25%;
+    }
+    .countdown{
+        margin: 23% 16% 0% 23%;
+    }
+}
+@media screen
+and (min-device-width:1000px)
+and (min-device-height:1000px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:3) {
+    .index-btn {
+        margin-bottom: 10%;
+    }
+    .countdown{
+        line-height: 48px;
+    }
+    .marquee{
+        margin: 45% auto 0;
+    }
+}
+
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .countdown{
+        line-height: 50px;
+    }
+}

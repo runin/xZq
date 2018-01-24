@@ -1,0 +1,109 @@
+.back-btn{
+    display: block;
+    width: 27%;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    font-size: 14px;
+}
+.top{
+    position: relative;
+}
+.top img{
+    display: block;
+}
+.top .title-bg{
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 16%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(0,0,0,0.2);
+}
+
+.top .title-bg .title{
+    font-size: 25px;
+}
+
+
+.item .desc{
+    margin: 15px auto 5px;
+}
+.desc .flag{
+    font-weight: bold;
+    color: #f78a00;
+    margin-left: 20px;
+}
+.item ul li{
+    margin-bottom: 20px;
+}
+
+.line-item img{
+    display: block;
+}
+.line-item div{
+    background: rgba(0,0,0,0.4);
+    margin-top: -50px;
+    position: relative;
+    height: 50px;
+    padding-top: 7px;
+}
+.line-item div .line-buy{
+
+    display: block;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+    background: #ff8711;
+    height: 35px;
+    line-height: 33px;
+    border-radius: 20px;
+    color: #fff;
+}
+.copyright {
+    color: #005d67;
+}
+.sign-tip{
+    display: block;
+    position: absolute;
+    color: #FFF;
+    font-size: 13px;
+    overflow: hidden;
+    z-index: 2;
+    top: 10px;
+    left: 5px;
+}
+.sign-tip span{
+    color: #f3f000;
+}
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .sign-tip{
+        font-size: 13px;
+    }
+}
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .top .title-bg{
+        padding-top: 18%;
+    }
+}

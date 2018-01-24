@@ -1,0 +1,150 @@
+
+html{height:100%}
+.main {
+	margin: 0 auto;
+	padding: 10px 0px 0px;
+	color: #fff;
+}
+.sign-logo{
+	margin: 10px auto 0;
+	width: 290px!important;
+	display: block;
+}
+.lottery {
+    position: relative;
+    width: 256px;
+    height: 256px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.btn-lottery {
+    position: absolute;
+    left: 95px;
+    top: 93px;
+    width: 66px;
+    height: 66px;
+}
+.btn-img{
+	position: absolute;
+    top: -16px;
+}
+.box {
+    margin: 0 40px;
+    padding-bottom: 10px;
+	
+}
+.box h2 {
+	margin: 6px 0px 0px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+.box h3 {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.box label{
+	display: inline-block;
+	width: 18%;
+	line-height: 30px;
+	vertical-align: -4px;
+	font-size: 12px;
+}
+.box input {
+    margin-top: 4px;
+    width: 74%;
+    height: 30px;
+    border: 1px solid #CCCCCC;
+    padding: 0 2px;
+    font-size: 12px;
+	color: #000;
+}
+.group-btn{
+	width: 100%;
+	text-align: center;
+}
+.btn-red {
+	display: inline-block;
+	width: 60%;
+	margin:4px auto 0;
+	background: #f9e249;
+	border-radius: 6px;
+	height: 32px;
+	line-height: 32px;
+	color: #8f010f;
+	font-size: 15px;
+	box-shadow: 1px 6px 2px #db9a00;
+}
+.address{
+	display: inline-block;
+	color: #fff;
+	width: auto;
+	line-height: 36px;
+	font-size: 12px;
+}
+
+.win_prize_tip{
+    color: #3e3e3e;
+    font-size: 12px;
+}
+
+.loading-btn{
+    background: #ccc;
+    color: #fff;
+    
+}
+
+.show{
+    display: block!important;
+}
+
+.thank{
+    text-align: center;
+}
+.btn-back-simple{
+	color: #fff;
+	text-decoration: underline;
+}
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.logo{
+		margin: 0px 0px;
+    }
+    .main {
+        padding: 6px 0px 0px;
+    }
+    .official {
+        margin: 5px auto 0;
+    }
+    .lottery {
+	    position: relative;
+	    width: 206px;
+	    height: 206px;
+	    margin: 0px auto;
+	    overflow: hidden;
+	}
+	.btn-lottery {
+	    position: absolute;
+	    left: 76px;
+	    top: 76px;
+	    width: 56px;
+	    height: 56px;
+	}
+	.box h2{
+		margin-top: 0px;
+	}
+	.box input {
+		margin-top: 2px;
+	    height: 26px;
+	}
+	.btn-red {
+		margin:2px auto 0;
+		height: 28px;
+		line-height: 28px;
+	}
+}

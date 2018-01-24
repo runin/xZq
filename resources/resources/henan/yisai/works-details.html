@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=750, user-scalable=no">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script type="text/javascript">$(function () {var DEFAULT_WIDTH = 750,ua = navigator.userAgent.toLowerCase(),deviceWidth = window.screen.width,devicePixelRatio = window.devicePixelRatio || 1,targetDensitydpi;if(ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4){targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');}});</script>
+    <title></title>
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body data-type="works-details"><!--作品详情分享-->
+<section class="wrap works-details-page">
+    <header>
+        <div class="vedio-con">
+            <video webkit-playsinline playsinline width="100%" height="auto" controls poster="">
+                <source src="" type="video/mp4"></source>
+            </video>
+        </div>
+        <div class="bar">
+            <label id="uptime"> </label>
+            <span id="veidoTime"> </span>
+        </div>
+    </header>
+    <section class="orient-h center">
+        <p><label id="avatar"><img src="" /></label></p>
+        <div class="info">
+            <h1 class="ellipsis" id="title"></h1>
+            <div class="desc" id="desc"></div>
+            <h2 class="ellipsis" id="username"></h2>
+            <h3 class="ellipsis" id="teaname"></h3>
+        </div>
+    </section>
+    <section class="comment">
+        <div class="top">最新评论</div>
+        <div class="bottom" id="bottom"></div>
+    </section>
+</section>
+
+<script src="js/config.js"></script>
+<script src="js/plugins/common.js"></script>
+
+<script src="js/app/jssdk.js"></script>
+<script src="js/app/main.js"></script>
+</body>
+</html>

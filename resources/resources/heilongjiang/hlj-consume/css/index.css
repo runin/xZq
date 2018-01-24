@@ -1,0 +1,236 @@
+*{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+	background: #042e56 url(../images/bg.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.main{
+	padding-top: 200px;
+}
+.main-cont{
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.toolgd{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("../images/tool-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.saoyisao{
+	position: absolute;
+	width: 40%;
+	left: 30%;
+	bottom: 40%;
+}
+.toolgd>div{
+	position: absolute;
+	width: 80%;
+	left: 10%;
+	text-align: center;
+	color: #c8c8c8;
+	bottom: 12%;
+	font-size: 10px;
+}
+#toolcpr{
+	bottom: 10px;
+}
+.toolgd>p{
+	position: absolute;
+	background-color: #d3464f;
+	border-radius: 3px;
+	width: 80px;
+	top: 3%;
+	right: 3%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #ffffff;
+}
+.rank{
+	position: absolute;
+	display: block;
+	color: #664c24;
+	right: 10px;
+	top: 10px;
+	background: #d2be99;
+	padding: 2px 7px;
+	border-radius: 9px;
+}
+.tab {
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+	margin: 70px 50px 0px;
+	background: #052d54 url(../images/border.png)no-repeat;
+	background-size: 100% 100%;
+
+}
+
+.tab span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 1px;
+	height: 16px;
+	line-height: 16px;
+	margin: 0 20px;
+	color: #145a9c;
+	-webkit-backface-visibility: hidden;
+}
+.tab a {
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+	text-align: center;
+	height: 16px;
+	line-height: 16px;
+	-webkit-backface-visibility: hidden;
+}
+.tab a:hover {
+	text-decoration: underline;
+}
+.tab .jifen {
+	position: relative;
+}
+.tab .jifen.news:after {
+	content: '';
+	display: block;
+	width: 11px;
+	height: 11px;
+	background: #FFEF00;
+	border-radius: 10px;
+	position: absolute;
+	right: -12px;
+	top: -5px;
+}
+.main .btn-begin {
+	display: block;
+	border: 4px solid #fff;
+	width: 118px;
+	height: 118px;
+	margin: 0 auto;
+	background: url(../images/index-btn.png) no-repeat 0 0;
+	background-size: 100% 100%;
+	-webkit-border-radius: 100%;
+	line-height: 114px;
+	font-size: 32px;
+	color: #fff;
+	text-shadow: 0px 1px 2px rgba(150, 150, 150, 1);
+	text-align: center;
+	-webkit-animation-name: breathe;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 2700ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+}
+.index-btn{
+	margin-top: 10px;
+	margin-bottom: 80px;
+}
+.follow-box {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	clear: both;
+}
+#div_subscribe_area {
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+}
+
+@-webkit-keyframes breathe {
+	0% {opacity: 0.8; box-shadow: 0px 0px 60px 8px rgba(255, 255, 255, 0.3);}
+	100% {opacity: 1; box-shadow: 0px 0px 60px 15px rgba(255, 255, 255, 1);}
+}
+
+@-webkit-keyframes disp {
+	0% {opacity: 1; -webkit-transform: scale(1,1)}
+	100% {opacity: 0.2; -webkit-transform: scale(1.3,1.3)}
+}
+
+@media screen
+and (min-device-width : 360px)
+and (min-device-height : 1100px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+@media screen
+and (min-device-width : 360px)
+and (min-device-height : 1200px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* iPhone6 */
+@media screen
+and (min-device-width : 360px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.tab {
+		margin: 60px 50px 0px;
+	}
+}
+@media screen
+and (min-device-width : 360px)
+and (min-device-height : 500px)
+and (max-device-height : 570px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+	.main{
+		padding-top: 200px!important;
+	}
+	.tab {
+		margin: 40px 50px 0px;
+	}
+}
+/* iPhone4 */
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.main .btn-begin{
+		width: 100px;
+		height: 100px;
+		line-height: 92px;
+	}
+	.main{
+		padding-top: 180px!important;
+	}
+	.tab {
+		margin: -40px 50px 0px;
+	}
+	@media screen
+	and (min-device-width : 720px)
+	and (max-device-height : 1280px)
+	and (orientation : portrait)
+	and (device-aspect-ratio:16/9) and (device-aspect-ratio:16/10) and (device-aspect-ratio:4/3)
+	and (-webkit-min-device-pixel-ratio : 0) {
+
+	}
+
+	@media screen
+	and (min-device-width:1000px)
+	and (min-device-height:1000px) {
+	}
+}

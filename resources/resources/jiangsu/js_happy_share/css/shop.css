@@ -1,0 +1,466 @@
+html {
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow:hidden;
+    overflow-y: scroll;
+}
+
+html {
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow:hidden;
+    overflow-y: scroll;
+}
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:url(../images/bg-ans.jpg) no-repeat #FFF8F2;
+    background-size:100% 100%;
+    z-index: 0;
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    -webkit-animation: bgscaleIn 12s 0s 1 linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.swiper-control {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    overflow: initial;
+    opacity: 0;
+    z-index: 3;
+}
+.swiper-control .swiper-container {
+    overflow: initial;
+}
+.swiper-control .swiper-pagination-bullet-active, .swiper-control .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    background: url(../images/icon-dot.png) no-repeat transparent;
+    background-size: 100% 100%;
+}
+.swiper-control .swiper-slide {
+    position: relative;
+    background: url(../images/icon-window.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 19px 19px 19px 21px;
+}
+.swiper-control .swiper-slide .image-wrapper {
+    position: relative;
+    box-shadow: 0 0 13px rgba(0,0,0,.5);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 99;
+}
+.swiper-control .swiper-slide .image-wrapper > img {
+    pointer-events: none;
+}
+.swiper-control .swiper-slide .image-wrapper > p {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -300px;
+    top: 0;
+    background-image: -moz-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+    background-image: -webkit-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+    transform: skewx(-32deg);
+    -webkit-transform: skewx(-32deg);
+    opacity: .8;
+    /*z-index: 99;*/
+    pointer-events: none;
+}
+.swiper-control .swiper-slide.boom .image-wrapper > p {
+    display: block;
+    -webkit-animation: shineFlash .7s 0s 1 linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.swiper-control .swiper-slide .image-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/icon-line.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 99;
+    pointer-events: none;
+}
+.swiper-control .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-control .swiper-pagination-custom, .swiper-control .swiper-pagination-fraction {
+    bottom: 16px;
+    left: 0;
+    width: 100%;
+}
+.swiper-control .swiper-button-next, .swiper-control .swiper-container-rtl .swiper-button-prev {
+    right: -42px;
+}
+.swiper-control .swiper-button-prev, .swiper-control .swiper-container-rtl .swiper-button-next {
+    left: -42px;
+}
+.swiper-control .swiper-button-next, .swiper-control .swiper-button-prev {
+    width: 38px;
+    height: 70%;
+    top: 0;
+    margin-top: 15%;
+    -webkit-background-size: 20px 32px;
+    background-size: 20px 32px;
+    opacity: 0;
+}
+.info-box {
+	position: absolute;
+	width: 96%;
+	left: 2.2%;
+	bottom: 2.8%;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	padding: 6px 8px;
+	z-index: 9;
+	background: rgba(0,0,0,.65);
+	color: #E2E2E2;
+}
+.info-box h1 {
+    height: 36px;
+	line-height: 18px;
+    font-size: 16px;
+    margin-bottom: 3px;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.info-box .yp {
+	font-size: 16px;
+	color: #DE0013;
+	font-weight: bold;
+}
+.info-box .mkp {
+	font-size: 12px;
+	margin-left: 10px;
+	text-decoration: line-through;
+}
+
+.btn-ljgm, .btn-ljdh {
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 47px;
+    bottom: -56px;
+    left: calc((100% - 120px) / 2);
+    left: -webkit-calc((100% - 120px) / 2);
+    overflow: hidden;
+}
+.btn-ljgm {
+    /*display: none;*/
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center; 
+    z-index: 99;
+    font-size: 0;
+}
+
+.icon-reserve {
+    position: relative;
+    width: 75%;
+    margin: 7% auto -2%;
+    z-index: 99;
+}
+
+.tel {
+	position: relative;
+	z-index: 99;
+	width: 100%;
+	text-align: center;
+    text-shadow: 0 0 6px rgba(255,255,190,.8);
+    margin: 0 auto 1%;
+}
+
+.main {
+	padding-bottom: 120px;
+}
+
+link-wrapper::-webkit-scrollbar {
+    width: 0 !important;
+} /* 这是针对缺省样式 (必须的) */
+link-wrapper::-webkit-scrollbar-track {
+    background-color: transparent !important;
+} /* 滚动条的滑轨背景颜色 */
+link-wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent !important; 
+} /* 滑块颜色 */
+link-wrapper::-webkit-scrollbar-button {
+    background-color: transparent !important;
+} /* 滑轨两头的监听按钮颜色 */
+link-wrapper::-webkit-scrollbar-corner {
+    background-color: transparent !important;
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+
+::-webkit-scrollbar {
+    width: 0 !important;
+} /* 这是针对缺省样式 (必须的) */
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
+} /* 滚动条的滑轨背景颜色 */
+::-webkit-scrollbar-thumb {
+    background-color: transparent !important; 
+} /* 滑块颜色 */
+::-webkit-scrollbar-button {
+    background-color: transparent !important;
+} /* 滑轨两头的监听按钮颜色 */
+::-webkit-scrollbar-corner {
+    background-color: transparent !important;
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+
+
+@-webkit-keyframes scaleIn {
+    0% {-webkit-transform: scale(1.3);transform: scale(1.3);}
+    100% {-webkit-transform: scale(1);transform: scale(1);}
+}
+@keyframes scaleIn {
+    0% {-webkit-transform: scale(1.3);transform: scale(1.3);}
+    100% {-webkit-transform: scale(1);transform: scale(1);}
+}
+
+@-webkit-keyframes bgscaleIn {
+    0% {-webkit-transform: scale(1.6);transform: scale(1.6);}
+    100% {-webkit-transform: scale(1.1);transform: scale(1.1);}
+}
+@keyframes bgscaleIn {
+    0% {-webkit-transform: scale(1.6);transform: scale(1.6);}
+    100% {-webkit-transform: scale(1.1);transform: scale(1.1);}
+}
+
+@-webkit-keyframes shineFlash {
+    /*0% {left: -300px;}*/
+    /*100% {left: 300px;}*/
+    0% {-webkit-transform: translateX(-300px) skewx(-32deg);transform: translateX(-300px) skewx(-32deg);}
+    100% {-webkit-transform: translateX(600px) skewx(-32deg);transform: translateX(600px) skewx(-32deg);}
+}
+@keyframes shineFlash {
+    /*0% {left: -300px;}*/
+    /*100% {left: 300px;}*/
+    0% {-webkit-transform: translateX(-300px) skewx(-32deg);transform: translateX(-300px) skewx(-32deg);}
+    100% {-webkit-transform: translateX(600px) skewx(-32deg);transform: translateX(600px) skewx(-32deg);}
+}
+
+@-webkit-keyframes show {
+    0% {-webkit-transform: translateY(-50px) scale(1);transform: translateY(-50px) scale(1);}
+    100% {-webkit-transform: translateY(0) scale(1);transform: translateY(0) scale(1);}
+}
+@keyframes show {
+    0% {-webkit-transform: translateY(-50px) scale(1);transform: translateY(-50px) scale(1);}
+    100% {-webkit-transform: translateY(0) scale(1);transform: translateY(0) scale(1);}
+}
+
+@-webkit-keyframes hide {
+    0% {display: block;position: relative;top: 0;-webkit-transform: translateY(0);transform: translateY(0);opacity: 1;}
+    80% {display: block;position: relative;top: 0;-webkit-transform: translateY(-200px);transform: translateY(-200px);opacity: 0;}
+    100% {display: none;position: absolute;top: -1000%;}
+}
+@keyframes hide {
+    0% {display: block;position: relative;top: 0;-webkit-transform: translateY(0);transform: translateY(0);opacity: 1;}
+    80% {display: block;position: relative;top: 0;-webkit-transform: translateY(-200px);transform: translateY(-200px);opacity: 0;}
+    100% {display: none;position: absolute;top: -1000%;}
+}
+
+@-webkit-keyframes roll {
+    from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@keyframes roll {
+    from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+@-webkit-keyframes flash {
+    0% {opacity: .3;}
+    20% {opacity: .3;}
+    30% {opacity: .5;}
+    50% {opacity: .4;}
+    70% {opacity: .4;}
+    90% {opacity: .5;}
+    100% {opacity: .3;}
+}
+@keyframes flash {
+    0% {opacity: .3;}
+    20% {opacity: .3;}
+    30% {opacity: .5;}
+    50% {opacity: .4;}
+    70% {opacity: .4;}
+    90% {opacity: .5;}
+    100% {opacity: .3;}
+}
+
+@-webkit-keyframes infoOn {
+    0% {-webkit-transform: translateY(-110px);transform: translateY(-110px);}
+    100% {-webkit-transform: translateY(0);transform: translateY(0);}
+}
+@keyframes infoOn {
+    0% {-webkit-transform: translateY(-110px);transform: translateY(-110px);}
+    100% {-webkit-transform: translateY(0);transform: translateY(0);}
+}
+
+@-webkit-keyframes infoOFF {
+    0% {-webkit-transform: translateY(0);transform: translateY(0);}
+    100% {-webkit-transform: translateY(-110px);transform: translateY(-110px);}
+}
+@keyframes infoOFF {
+    0% {-webkit-transform: translateY(0);transform: translateY(0);}
+    100% {-webkit-transform: translateY(-110px);transform: translateY(-110px);}
+}
+
+
+
+/* iPhone4 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .icon-reserve {
+        width: 72%;
+    }
+    .swiper-control {
+        width: 66%;
+    }
+    .link-container h2 {
+        margin: 8% auto 4%;
+    }
+    #tips-nobody h2 {
+        margin: 8% auto 4%;
+    }
+}
+
+/* iPhone5 */
+@media screen
+and (min-device-width:320px)
+and (max-device-height:570px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .info i {
+        position: absolute;
+        display: inline-block;
+        width: 34px;
+        height: 50px;
+        bottom: -50px;
+        right: 3px;
+    }
+    .swiper-control {
+        width: 73%;
+    }
+    .solo-wrapper {
+        width: 72%;
+    }
+    .link-container .link-wrapper {
+        margin: 0 auto;
+    }
+    #tips-nobody h2 {
+        width: 76%;
+        margin: 4% auto;
+    }
+    .link-container h2 {
+        margin: 8% auto 4%;
+    }
+}
+
+/* iPhone6 */
+@media screen
+and (min-device-width:360px)
+and (max-device-width:667px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+    .film-wrapper {
+        width: 120px;
+        height: 112px;
+        top: 50px;
+        right: 222px;
+        -webkit-transform: scale(1);
+    }
+    .swiper-control {
+        width: 72%;
+    }
+    .link-container h2 {
+        margin: 8% auto 4%;
+    }
+    #tips-nobody h2 {
+        margin: 8% auto 4%;
+    }
+}
+
+/* iPhone6plus */
+@media screen
+and (min-device-width : 400px)
+and (max-device-width : 740px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .swiper-control {
+        width: 74%;
+    }
+    .info i {
+        position: absolute;
+        display: inline-block;
+        width: 42px;
+        height: 65px;
+        bottom: -65px;
+        right: 5px;
+    }
+    .link-container h2 {
+        margin: 8% auto 4%;
+    }
+    #tips-nobody h2 {
+        margin: 8% auto 4%;
+    }
+}
+
+/* HUAWEI H6 */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px) {
+    .icon-reserve {
+        margin: 5% auto -2%;
+        width: 78%;
+    }
+    .swiper-control {
+        width: 65%;
+    }
+    .link-container h2 {
+        width: 86%;
+        font-size: 16px;
+        margin: 4% auto;
+    }
+    #tips-nobody h2 {
+        margin: 4% auto;
+    }
+    .solo-wrapper {
+        width: 64%;
+    }
+    .info i {
+        position: absolute;
+        display: inline-block;
+        width: 34px;
+        height: 53px;
+        bottom: -53px;
+        right: 3px;
+    }
+}

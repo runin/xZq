@@ -1,0 +1,131 @@
+html {
+    background: #000;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../images/a.jpg) no-repeat center center;
+    background-size: 100% auto;
+    overflow: hidden;
+}
+fieldset {
+    width: 52%;
+    margin: 0 auto 30px;
+    color: #333;
+    border: 0 none;
+    border-top: #d73e33 solid 2px;
+    font-size: 26px;
+}
+fieldset span {
+    padding: 0 10px;
+    background: #FFFBDE;
+}
+.home-box {
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+/*.home-box .bg-yao {
+    display: block;
+    position: absolute;
+    width: 620px;
+    left: 50%;
+    margin-left: -310px;
+    pointer-events: none;
+}*/
+.home-box .bg-yao {
+    display: block;
+    position: absolute;
+    width: 58vh;
+    left: calc((100vw - 58vh) / 2);
+    left: -webkit-calc((100vw - 58vh) / 2);
+    pointer-events: none;
+}
+.yao .bg-yao {
+    opacity: 1;
+}
+.home-box .yao-top {
+    bottom: 0;
+}
+.home-box .yao-bottom {
+    top: 0;
+}
+.main-top {
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:50vh;
+    background: url(../images/b1.png) no-repeat bottom center;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.main-foot {
+    position:absolute;
+    bottom:1px;
+    width:100%;
+    height:50vh;
+    background: url(../images/b2.png) no-repeat top center;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.main-foot .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    z-index: 8;
+}
+
+.countdown {
+    background-size: 100% 100%;
+    text-align: center;
+    width: 100%;
+    color: #a92424;
+    padding-top: 16%;
+}
+.countdown b {
+    font-style: normal;
+    font-size: 70px;
+    padding: 7px 12px;
+    background: url(../images/tt.png) no-repeat;
+    background-size: 100% 100%;
+}
+.countdown .mao {
+    position: relative;
+    top: -10px;
+    font-size: 60px;
+    padding: 0 10px;
+}
+.swiper-container {
+    position: absolute;
+    bottom: 5vh;
+    margin: 0 auto;
+    width: 90%;
+    left: 5%;
+}
+.swiper-container img {
+    width: 100%;
+}
+.copy {
+    position: absolute;
+    width: 100%;
+    bottom: 16vh;
+    font-size: 22px;
+    color: #a92424;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 6;
+}
+.tttj {
+    display: inline-block;
+    font-size: 25px;
+    color: #a92424;
+    z-index: 666;
+    padding: 10px 5px 3px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #a92424;
+}

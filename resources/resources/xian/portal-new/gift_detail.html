@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>礼品详情</title>
+	<link rel="stylesheet" href="./css/cssreset-min.css" />
+	<link rel="stylesheet" href="./css/core.css" />
+	<link rel="stylesheet" href="./css/gift_detail.css" />
+</head>
+<body>
+	<div class="main">
+		<div class="cover" id="cover"></div>
+		<div class="info" id="info">
+			<h2>-</h2>
+			<p>
+				<span class="jf"><strong id="jf">-</strong>积分</span>
+				<span class="price">￥<strong>-</strong></span>
+				<span class="kc">剩余：<strong>-</strong></span>
+			</p>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="#" class="curr" data-collect="true" data-collect-flag="portal-gift-detail-miaoshu" data-collect-desc="礼品详情 商品描述">商品描述</a></li>
+				<li><a href="#" data-collect="true" data-collect-flag="portal-gift-detail-guige" data-collect-desc="礼品详情 规格参数">规格参数</a></li>
+			</ul>
+		</div>
+		<div class="detail-list">
+			<ul id="detail-list">
+				<li class="xq">
+					<p>-</p>
+				</li>
+				<li class="cs none">
+					<p>-</p>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="ctrl" id="ctrl">
+			<a href="#" class="btn-close" data-collect="true" data-stoppropagation="true" data-collect-flag="portal-gift-detail-exchange-close" data-collect-desc="礼品详情 关闭兑换"><i></i></a>
+			<p>
+				<label>兑换数量：</label>
+				<a href="#" class="btn-minus" data-collect="true" data-collect-flag="portal-gift-detail-minus" data-collect-desc="礼品详情 减少数量"></a>
+				<input type="number" id="amount" class="amount" value="1" maxlength="4"/>
+				<a href="#" class="btn-plus" data-collect="true" data-collect-flag="portal-gift-detail-plus" data-collect-desc="礼品详情 增加数量"></a>
+			</p>
+			<p>
+				<label>手机号码：</label>
+				<input type="number" id="mobile" class="mobile" maxlength="11" />
+			</p>
+			<a href="#" class="btn btn-exchange" data-collect="true" data-stoppropagation="true" data-collect-flag="portal-gift-detail-exchange" data-collect-desc="礼品详情 我要兑换">我要兑换</a>
+			<a href="#" class="btn btn-exchangenow" data-collect="true" data-stoppropagation="true" data-collect-flag="portal-gift-detail-exchangenow" data-collect-desc="礼品详情 立即兑换">立即兑换</a>
+			<div class="copyright copyright2" id="copyright_gift" style="padding-bottom:0px;">页面由西安广播电视台提供</div>
+		</div>
+	</div>
+	
+    <script src="js/config.js"></script>
+    <script src="./js/plugins/zepto.min.js"></script>
+    <script src="./js/plugins/zepto.cookie.min.js"></script>
+    <script src="./js/plugins/md5.js"></script>
+    <script src="./js/plugins/common.js"></script>
+
+    <script src="http://yaotv.qq.com/shake_tv/include/js/jsapi_share.js"></script>
+    <script src="./js/authorize_userinfo.js"></script>
+
+    <script src="./js/app/gift_detail.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=45330147" charset="UTF-8"></script>
+</body>
+</html>

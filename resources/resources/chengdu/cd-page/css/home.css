@@ -1,0 +1,119 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+#star-box
+{
+    position: absolute;
+    top:0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+body {
+    position: relative;
+    background: url(../images/index-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    overflow: auto;
+    height: 100%;
+    background-position:top center;
+    /*background-attachment:fixed; */
+}
+header
+{
+	text-align: center;
+}
+.tvlogo {
+    position: relative;
+    width: 24%;
+    margin-top: 18%;
+}
+.tvtheme{
+    position: relative;
+    width: 24%;
+}
+.join-box
+{
+	font-size: 14px;
+	color:#ff3d3d;
+	margin-bottom: 10%;
+}
+.figure-print
+{
+	display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: url("../images/figure-print.png") top center no-repeat;
+    background-size: 100% auto;
+    z-index: 1;
+    margin-bottom: 10px;
+
+}
+.figure-scanf
+{
+    display: inline-block;
+    top:0px;
+    position: absolute;
+    width: 80px;
+    margin-left:-80px;
+    background: url("../images/figurscan.png") top center no-repeat;
+    background-size: 100% auto;
+    z-index:2;
+    height: 10px;
+    opacity: 0;
+    -webkit-transition:all 1s linear;
+       transition:all 1s linear;
+}
+.scanborder
+{
+    display:block;
+    top:-14px;
+    position: absolute;
+    width: 100px;
+    height:100px;
+    left: 50%;
+    margin-left: -50px;
+    background: url("../images/scanborder.png") top center no-repeat;
+    background-size: 100% auto;
+    z-index:3;
+}
+footer
+{
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+	color:#979797;
+	text-align: center;
+	font-size: 12px;
+}
+.index-flowcenter{
+    -webkit-animation:flowcenter 1s  ease both;
+    -moz-animation:flowcenter 1s ease both;
+}
+@-webkit-keyframes flowcenter
+{
+    0%{
+        opacity:0;
+        -webkit-transform:scale(.3);
+        transform:scale(.3);
+     }
+    50%
+    {
+        opacity:1;
+        -webkit-transform:scale(1.05);
+        transform:scale(1.05)
+   }
+    70%
+    {
+         -webkit-transform:scale(.9);
+        transform:scale(.9)
+    }
+    100%
+    {
+        -webkit-transform:scale(1);
+        transform:scale(1);
+    }
+}

@@ -1,0 +1,189 @@
+#main{
+	width: 100%;
+	height: 100%;
+	background: #e42704;
+}
+.main-bg-top{
+	width: 100%;
+	height: 59.86%;
+	background: url(http://yaotv.qq.com/shake_tv/auto2/2016/02/24fhrcyiktg69bg/bg-main-top.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+.main-bg-bottom{
+	width: 100%;
+	height: 40.14%;
+	background: url(../images/bg-main-bottom.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+
+/*
+ * logo
+ */
+.logo{
+    position: absolute;
+    left: 2%;
+    top: 1%;
+    width: 20%;
+}
+/*
+ * END OF logo
+ */
+
+/*
+ * 个人信息
+ */
+.userinfo{
+	position: absolute;
+	left: 20%;
+	top: 2%;
+	width: 60%;
+	height: 50px;
+	padding: 3px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	border: 2px solid #af0400;
+	background: #ffffb4;
+	background-image:-webkit-linear-gradient(right, #e2c279 10% , #ffffb4 30%,  #ffffb4 70%, #e2c279 90% );
+  	background-image:linear-gradient(right, #e2c279 10% , #ffffb4 30%,  #ffffb4 70%, #e2c279 90% );
+  	z-index: 2;
+}
+.userinfo .userinfo-avatar{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.userinfo .userinfo-avatar img{
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.userinfo .userinfo-detail{
+	color: #9b0200;
+	font-size: 14px;
+	margin-left: 45px;
+}
+.userinfo .userinfo-detail p{
+	font-size: 14px;
+	line-height: 18px;
+	padding-top: 1px;
+}
+.userinfo .userinfo-detail img{
+	height: 16px;
+	position: relative;
+	top: 2px;
+}
+/*
+ * END OF 个人信息
+ */
+
+/*
+ * 规则
+ */
+.rule-btn{
+	position: absolute;
+	top: 2%;
+	right: 3%;
+	font-size: 14px;
+	color: white;
+}
+.rule-btn img{
+	height: 14px;
+	position: relative;
+	top: 2px;
+	right: -1px;
+}
+ /*
+ * END OF 规则
+ */
+
+/*
+ * 台词
+ */
+.words{
+	position: absolute;
+	height: 34px;
+	width: 90%;
+	bottom: 32%;
+	left: 5%;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	background: #af0400;
+	border: 1px solid #9e0400;
+	padding: 0 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.words p{
+	line-height: 32px;
+}
+.words-run.moving{
+	-webkit-transition: -webkit-transform 0.8s;
+	transition: transform 0.8s;
+}
+ /*
+ * END OF 台词
+ */
+
+/*
+ * 按钮
+ */
+.btns{
+	position: absolute;
+	height:28%;
+	width: 90%;
+	bottom: 3%;
+	left: 5%;
+	font-size: 14px;
+	color: white;
+}
+.btns .btn-item{
+	height: 100%;
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding: 10px;
+}
+.btns .btn-item img{
+	height: 100%;
+}
+/*
+ * END OF 按钮
+ */
+
+
+ .bgm{
+    position: absolute;
+    width: 10%;
+    top: 2%;
+    right: 3%;
+ }
+ #main .bgm{
+ 	top: 14%;
+ }
+
+
+
+ .maincd{
+ 	position: absolute;
+ 	width: 100%;
+ 	text-align: center;
+ 	top: 48%;
+ 	color: white;
+ 	font-size: 12px;
+ 	color: #9b0200;
+ }
+ .maincd-bg{
+ 	width: 30%;
+ 	left: 35%;
+ 	height: 100%;
+ 	position: absolute;
+ 	top: 0%;
+ }
+ .maincd p{
+ 	position: relative;
+ 	z-index: 1;
+ }
+ #mcd label{
+ 	font-weight: bold;
+ }

@@ -1,0 +1,74 @@
+
+.info-list{
+	padding: 80px 0px 0px; 
+}
+ header.top-nav{
+	width: 100%;
+	height: 60px;
+	background: #fff;
+	color: #fff;
+	position: fixed;
+	top:0px;
+	padding: 10px;
+}
+ header.top-nav nav{
+	width: 100%;
+	height: 40px;
+	border:1px solid #cacaca;
+	background: #f6f6f6;
+	border-radius: 2px;
+	padding: 4px;
+	text-align: center;
+}
+ header.top-nav nav a{
+	display: inline-block;
+	width: 49%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+	color: #535353;
+}
+ header.top-nav nav a.active{
+	background: #ab0d0d;
+	border-radius: 2px;
+	color: #fff;
+}
+.audio-list{
+	width: 100%;
+	text-align: center;	
+}
+.audio-list label{
+	display: block;
+	padding:0px 10px;
+}
+.audio-list img{
+	width: 100%;
+	margin-bottom: 14px;
+}
+.info-detail {
+	text-align: center;
+}
+.introduce{
+	padding: 100px 0px 0px; 
+}
+.intro-con{
+	margin: 0px 7%;
+	background: url(../images/intro-bg.png) no-repeat;
+	background-size:100% 100% ;
+}
+.intro-con h2{
+	padding:0 6%;
+	height: 50px;
+	line-height: 50px;
+	border-bottom:2px solid  #818181;
+	font-weight: bold;
+}
+.intro-con .con{
+	padding:4% 6%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	word-wrap: break-word;
+	font-size: 12px;
+}

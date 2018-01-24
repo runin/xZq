@@ -1,0 +1,245 @@
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	width: 100%;
+	margin:0 auto;
+	overflow:hidden;
+	background:#e62c1f url(../images/index-bg.jpg) no-repeat top center;
+	background-size: 100%;
+}
+
+
+.btn-rule{
+	display: inline-block;
+	color: #cd0001;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 1;
+	width: 16%; 
+}
+.container{
+	width: 100%;
+	height: 100%;
+	padding-top: 15%;
+}
+.join-box{
+	text-align: center;
+}
+.join-box .title-person{
+	display: block;
+	width: 66%;
+	margin: 0 auto;
+	opacity: 0;
+}
+
+.join-box a {
+	display: block;
+	width: 54%;	
+	margin: 0 auto;
+	opacity: 0;
+	color: #fff;
+}
+.join-box a.btn-reserve{
+	text-decoration: underline;
+}
+.title-logo{
+	display: block;
+	width: 100%;
+	opacity: 0;
+}
+.follow-box{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	z-index: 9999;
+}
+.copyright {
+	position: relative;
+	font-size: 12px;
+	height: 28px;
+	line-height: 13px;
+	opacity: 0.6;
+	margin: 0 auto;
+}
+#div_subscribe_area {
+	height:50px;
+	overflow:hidden;
+}
+
+.showme{
+	-webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: show;
+    animation-name: show;
+    -webkit-animation-delay:.5s;
+    animation-delay: .5s;
+    opacity: 0;
+}
+.bounceInUp {
+	-webkit-animation-delay: 1s;
+    animation-delay: 1s;
+	-webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+	-webkit-animation-name: bounceInUp;
+	animation-name: bounceInUp;
+	opacity: 0;
+}
+@-webkit-keyframes bounceInUp {
+	0%,
+	100%,
+	60%,
+	75%,
+	90% {
+		-webkit-animation-timing-function: cubic-bezier(0.215, .61, .355, 1);
+		animation-timing-function: cubic-bezier(0.215, .61, .355, 1)
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 3000px, 0);
+		transform: translate3d(0, 3000px, 0);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, -20px, 0);
+		transform: translate3d(0, -20px, 0);
+	}
+	75% {
+		-webkit-transform: translate3d(0, 10px, 0);
+		transform: translate3d(0, 10px, 0);
+	}
+	90% {
+		-webkit-transform: translate3d(0, -5px, 0);
+		transform: translate3d(0, -5px, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes bounceInUp {
+	0%,
+	100%,
+	60%,
+	75%,
+	90% {
+		-webkit-animation-timing-function: cubic-bezier(0.215, .61, .355, 1);
+		animation-timing-function: cubic-bezier(0.215, .61, .355, 1);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 3000px, 0);
+		transform: translate3d(0, 3000px, 0);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, -20px, 0);
+		transform: translate3d(0, -20px, 0);
+	}
+	75% {
+		-webkit-transform: translate3d(0, 10px, 0);
+		transform: translate3d(0, 10px, 0);
+	}
+	90% {
+		-webkit-transform: translate3d(0, -5px, 0);
+		transform: translate3d(0, -5px, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+
+@-webkit-keyframes show{
+    0% {
+        -webkit-transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes show{
+    0% {
+        -webkit-transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* iPhone4 */
+@media screen and (min-device-width:320px)
+and (max-device-height:500px)
+and (orientation:portrait)
+and (-webkit-min-device-pixel-ratio:2) {
+.container {
+    padding-top: 10%;
+}
+.join-box .title-person {
+    width: 53%;
+}
+.title-logo {
+    width: 80%;
+    margin: 0 auto;
+}
+}
+/* iPhone5 */
+@media screen
+and (min-device-width : 320px)
+and (min-device-height : 550px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+.container {
+    padding-top: 10%;
+}
+.join-box .title-person {
+    width: 64%;
+}
+}
+/* luo */
+@media screen
+and (min-device-width : 1000px)
+and (min-device-height : 1000px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+.container {
+    padding-top: 6%;
+}
+.join-box .title-person {
+    width: 58%;
+}
+}
+/* mi2*/
+@media screen
+and (min-device-width : 720px)
+and (max-device-height : 1280px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+.container {
+    padding-top: 12%;
+}
+}

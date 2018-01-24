@@ -1,0 +1,285 @@
+*{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    width: 100%;
+    height: 100%;
+    background: url("../images/sign-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.chs{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: 300px;
+    border-radius: 4px;
+    border: 1px #ff008a solid;
+    box-shadow: 0 0 2px 2px #c4117c;
+    background-color: rgba(129,13,85,.6);
+    color: white;
+    font-size: 20px;
+}
+.chs span{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 4px;
+    left: 4px;
+    border-radius: 5px;
+    background-color: #3e3e3e;
+    opacity: 0;
+}
+.chs-watch{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    top: 20px;
+}
+.chs-watch>div{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 10px;
+    top: 32px;
+    border-radius: 10px;
+    background-color: white;
+}
+.chs-watch p{
+    position: absolute;
+    width: 70%;
+    text-align: left;
+    left: 20%;
+}
+.chs-join{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    top: 100px;
+}
+.chs-join p{
+    position: absolute;
+    width: 70%;
+    text-align: left;
+    left: 20%;
+}
+.chs-join>div{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 10px;
+    top: 32px;
+    border-radius: 10px;
+    background-color: white;
+}
+.chs-sign{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    top: 230px;
+    border: 1px #ff008a solid;
+    box-shadow: 0 0 2px 2px #940a56;
+    background-color: rgba(151,27,83,.6);
+    border-radius: 6px;
+}
+.submit{
+    position: absolute;
+    top: 100px;
+    width: 80%;
+    height: 330px;
+    left: 10%;
+    opacity: 0;
+    border: 1px #ff008a solid;
+    box-shadow: 0 0 2px 2px #940a56;
+    background-color: rgba(151,27,83,.6);
+    border-radius: 6px;
+}
+.submit>.btn-back{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: 30px;
+    background: url("../images/back.png") no-repeat;
+    background-size: 100% 100%;
+}
+.sign>.btn-submit{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    bottom: -25%;
+    /*background: url("../images/submit.png") no-repeat;*/
+    /*background-size: 100% 100%;*/
+    border: 1px #ff008a solid;
+    box-shadow: 0 0 2px 2px #940a56;
+    background-color: rgba(151,27,83,.6);
+    border-radius: 6px;
+}
+.sign{
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    top: 20px;
+}
+.sign>div{
+    width: 100%;
+    height: 40px;
+}
+.sign>div>span{
+    position: absolute;
+    width: 24%;
+    height: 26px;
+    line-height: 26px;
+    text-align: right;
+    color: white;
+}
+.sign>div>input{
+    position: absolute;
+    width: 60%;
+    left: 25%;
+    height: 26px;
+    /*top: 7px;*/
+    vertical-align: middle;
+    border-radius: 4px;
+    outline: none;
+}
+.boy,.girl{
+    position: absolute;
+    width: 30%;
+    left: 25%;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    outline: none;
+    color: white;
+}
+.boy>input{
+    width: 30%;
+    height: 70%;
+    left: 20%;
+}
+.girl>input{
+    width: 30%;
+    height: 70%;
+    left: 20%;
+}
+.girl{
+    left: 55%;
+}
+.chuang>p{
+    position: absolute;
+    width: 24%;
+    text-align: right;
+    line-height: 19px;
+    color: white;
+}
+.chuang>span{
+    position: absolute;
+    width: 30%;
+    left: 25%;
+    line-height: 19px!important;
+    text-align: center;
+}
+.plan{
+    position: absolute;
+    width: 30%;
+    right: 15%;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: white;
+}
+.plan>img{
+    position: absolute;
+    width: 16px;
+    height: 26px;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #7d0000;
+    z-index: 5;
+}
+.chkbox{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    border-radius: 4px;
+    background-color: white;
+    top: 26px;
+    height: 0;
+    overflow-y: scroll;
+    z-index: 50;
+    /*height: 50px;*/
+}
+.chkbox p{
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+.issubmit{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    top: 40%;
+}
+.issubmit>img{
+    position: absolute;
+    width: 30px;
+    left: 10%;
+}
+.issubmit>div{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    /*background: url("../images/btn-back.png") no-repeat;*/
+    /*background-size: 100% 100%;*/
+    background-color: rgba(147,27,80,.6);
+    border-radius: 20px;
+    top: 40%;
+    display: none;
+}
+.issubmit a{
+    color: white!important;
+}
+.sign-bg{
+    position: absolute;
+    background-color: #820d55;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.footer{
+    position: absolute;
+    /*bottom: 0;*/
+    left: 0;
+    right: 0;
+}
+@-webkit-keyframes toggle {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
